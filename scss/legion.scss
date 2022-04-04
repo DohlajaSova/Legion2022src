@@ -2277,6 +2277,7 @@ a.button{
                         width:50%;
                         border-radius:$border-radius;
                         overflow:hidden;
+                        transform: translateZ(0);
                         &-img{
                             display:block;
                             width:100%;

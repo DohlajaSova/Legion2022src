@@ -600,6 +600,7 @@ docReady(function() {
     let feedbackOpener = document.querySelectorAll(".js-popup-feedback-open");
     let feedbackCloser = document.querySelector(".js-popup-feedback-close");
     let feedbackSubmiter = document.querySelector(".js-popup-feedback-send");
+    let bodyOpened;
     for (i=0; i<feedbackOpener.length; i++){
         let feedbackBody = document.querySelector(".popup-feedback");
         let feedbackBodyContent = document.querySelector(".popup-feedback__content");
@@ -608,6 +609,15 @@ docReady(function() {
                 e.preventDefault();
                 feedbackBody.classList.add("active");
                 document.querySelector("body").classList.add("popup-open");
+                bodyOpened = document.querySelector(".popup-open");
+                if (bodyOpened != null){
+                    bodyOpened.addEventListener("click", function(e){
+                        if (e.target.classList.contains("popup-feedback") || e.target.parentNode.classList.contains("popup-feedback")){
+                            feedbackBody.classList.remove("active");
+                            document.querySelector("body").classList.remove("popup-open");
+                        }
+                    }, false);
+                }
             }, false);
             feedbackCloser.addEventListener("click", function(e){
                 e.preventDefault();
@@ -625,8 +635,7 @@ docReady(function() {
             }, false);
         }
     }
-
-
+    
     
     // круг с цифрами
     let circleText = document.querySelector(".circle-text");
