@@ -214,12 +214,12 @@ docReady(function() {
     let lastScrollTop = 0;
     let windowWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     let i,j;
+    let backButton = document.querySelector(".js-top");
 
     if (windowWidth <= 550)
     {
+        let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         window.onscroll = function() {
-            let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
             if (bodyScrollTop > 50){
                 stickyHeader.classList.add('header_scrolled');
             } else {
@@ -234,6 +234,14 @@ docReady(function() {
             lastScrollTop = bodyScrollTop <= 0 ? 0 : bodyScrollTop;
         };
     }
+
+    window.onscroll = function() {
+        let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (bodyScrollTop < 500) backButton.classList.add("hide");
+        else backButton.classList.remove("hide");
+    }
+
     
     // слайдер с проектом
     let sliderDots = document.querySelectorAll(".js-cases-dots");

@@ -432,6 +432,8 @@ a:hover {
   right: 30px;
   top: calc(50% - 29px);
   z-index: 200; }
+  .back.hide {
+    display: none; }
 
 h1, .h1 {
   font: 400 96px / 1.1 Dopis;
@@ -2664,7 +2666,7 @@ a.button {
       .teammate__body_name {
         font-size: 24px;
         color: #1E2738;
-        margin-bottom: 24px; }
+        margin-bottom: 12px; }
       .teammate__body_position {
         font-size: 16px;
         color: #949191; }
