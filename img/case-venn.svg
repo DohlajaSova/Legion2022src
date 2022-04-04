@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="243px" viewBox="0 0 242 243" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group Copy 2</title>
+    <defs>
+        <radialGradient cx="33.0215669%" cy="18.3263644%" fx="33.0215669%" fy="18.3263644%" r="84.6859235%" id="radialGradient-1">
+            <stop stop-color="#388EFB" offset="0%"></stop>
+            <stop stop-color="#375FFF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Tagline-2021" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-2" transform="translate(0.000000, 0.929687)">
+            <circle id="Oval" fill="#FFFFFF" cx="121" cy="121" r="121"></circle>
+            <circle id="Oval-Copy" fill="url(#radialGradient-1)" cx="121" cy="121" r="106.061728"></circle>
+            <path d="M121,185.234568 C156.475772,185.234568 185.234568,156.475772 185.234568,121 C185.234568,121 56.7654321,121 56.7654321,121 C56.7654321,156.475772 85.5242277,185.234568 121,185.234568 Z" id="Oval-Copy-2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

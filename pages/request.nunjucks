@@ -1,0 +1,7 @@
+<!-- request.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Заявка - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+    {% include "partials/request.nunjucks" %}
+{% endblock %}

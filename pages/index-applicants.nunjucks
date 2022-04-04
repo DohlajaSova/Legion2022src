@@ -1,0 +1,21 @@
+<!-- index-applicants.nunjucks -->
+{% extends "layout-main.nunjucks" %}
+{% block title %} Соискателям - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/top.nunjucks" %}
+  {% include "partials/towel/cases.nunjucks" %}
+  {% include "partials/towel/about.nunjucks" %}
+  {% include "partials/towel/category-applicants.nunjucks" %}
+  {% include "partials/towel/team.nunjucks" %}
+  {% include "partials/towel/problems-applicants.nunjucks" %}
+  {% include "partials/towel/vacancies.nunjucks" %}
+  {% include "partials/towel/projects1.nunjucks" %}
+  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+  {% include "partials/towel/news.nunjucks" %}
+
+  {% include "partials/popup-video-team.nunjucks" %}
+  {% include "partials/popup-feedback.nunjucks" %}
+
+{% endblock %}

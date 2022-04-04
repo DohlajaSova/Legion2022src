@@ -1,0 +1,69 @@
+<div class="not-all-the-same">
+    <div class="container">
+        <div class="not-all-the-same__content">
+            <h2>Нам <br><em>не всё равно</em></h2>
+        </div>
+        <div class="not-all-the-same__accordion accordion js-accordion">
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Инициатива</h3>
+                <div class="accordion__item_body">
+                    <h4>Предлагаем лучшие решения для развития продукта</h4>
+                    <p>Ищем новые решения на&nbsp;рынке, предлагаем возможности для улучшения проекта клиента. Если мы&nbsp;знаем, что можно сделать лучше, мы&nbsp;не&nbsp;молчим об&nbsp;этом. Развиваем отрасль вместе с&nbsp;коллегами, делимся знаниями на&nbsp;мероприятиях.</p>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="https://habr.com/ru/company/e-legion/blog/421529/" target="_blank" class="project__article project__article_small project-article">
+                            <div class="project-article_top">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame1.jpg" alt="Netflix, Uber, Google на MBLT DEV 2018">
+                            </div>
+                            <div class="project-article_link">
+                              <div class="project-article_link-title">Netflix, Uber, Google на&nbsp;MBLT&nbsp;DEV&nbsp;2018</div>
+                              <div class="project-article_link-arrow">Смотреть статью →</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Эффективность</h3>
+                <div class="accordion__item_body">
+                    <h4>Легионеры знают, что время&nbsp;— это деньги</h4>
+                    <p>Выстраиваем прозрачную коммуникацию с&nbsp;заказчиком, чёткие процессы внутри команды и управляем проектными рисками. Предоставляем клиенту полный доступ к&nbsp;документации и&nbsp;регулярно обновляем статус проекта.</p>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="project__article project__article_small project-article">
+                            <div class="project-article_top">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-news2.jpg" alt="Микросервисы. Не всё то золото, что хайп">
+                            </div>
+                            <div class="project-article_link">
+                              <div class="project-article_link-title">Микросервисы. Не&nbsp;всё&nbsp;то&nbsp;золото, что&nbsp;хайп</div>
+                              <div class="project-article_link-arrow">Смотреть статью →</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Вовлечённость</h3>
+                <div class="accordion__item_body">
+                    <h4>Полное погружение в проект&nbsp;— ключ к&nbsp;успешному делу</h4>
+                    <p>Всегда держим руку на&nbsp;пульсе: готовы выслушать любые «боли» и&nbsp;сомнения заказчика, поддерживаем коммуникацию с&nbsp;клиентом на&nbsp;всех этапах, подскажем, какое решение лучше выбрать и&nbsp;почему.</p>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="" class="project__article project__article_small project-article">
+                            <div class="project-article_top">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame2.jpg" alt="JetKid номинация «Лучшее мобильное решение/активация»">
+                            </div>
+                            <div class="project-article_link">
+                              <div class="project-article_link-title">JetKid <br>номинация «Лучшее мобильное решение/активация»</div>
+                              <div class="project-article_link-arrow">Смотреть статью →</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,211 @@
+$c0: $color-grey-light; /* background */
+$c1: $color-grey-dark; /* text */
+
+$track-h: 60px; /* track height */
+$thumb-d: 60px; /* thumb width */
+$label-h: 30px; /* label widths */
+
+@mixin track() {
+	border: none;
+	padding: 0;
+	width: 100%;
+    height: $track-h;
+	background: none;
+	color: transparent;
+}
+
+@mixin thumb($m: 0) {
+	box-sizing: border-box;
+	margin-top: $m;
+	border: none;
+	width: $thumb-d;
+    height: $thumb-d;
+	border-radius: 50%;
+    box-shadow: 
+		0 1px .125em rgba(#ae725a, .5), 
+		0 1px .25em rgba(#ae725a, .5);
+    background: $color-grey-light;
+	transition: none;
+	pointer-events: auto;
+	cursor: pointer
+}
+
+%mid {
+	grid-column: 2;
+	grid-row: 2;
+	place-self: center;
+	width: var(--track-w);
+	pointer-events: none
+}
+
+.range{
+	--i: var(--wide, 1);
+	--j: var(--narr, 0);
+	--notj: calc(1 - var(--j));
+	--hl: 0;
+	--nothl: calc(1 - var(--hl));
+	@media (max-width: 570px) { --wide: 0 }
+    @media (max-width: 440px) { --narr: 1 }
+
+    &:not(.js) {
+        output, .wrap::after { visibility: hidden }
+    }
+
+    &__wrap {
+        --n-cols: calc((var(--max) - var(--min)) / var(--step)); /* number of steps*/
+        --label-w: 70px; /* label width */
+        --track-w: 100%; /* size of dynamical slider */
+        --u: calc(var(--track-w) / var(--n-cols)); /* size of a step */
+        --m: calc(.5*(var(--a) + var(--b)));
+
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-rows: $label-h max-content $label-h;
+        grid-template-columns: var(--label-w) var(--track-w) var(--label-w);
+        filter: brightness(.8);
+
+        &::before, &::after {
+            @extend %mid;
+            z-index: -1;
+            height: $track-h;
+            border-radius: $track-h;
+            content: ''
+        }
+
+        &::before {
+            background: $color-grey-light;
+        }
+
+        &::after {
+            background: $color-blue;
+            --mask: 
+                linear-gradient(90deg, 
+                        red calc(#{.5*$thumb-d} + (var(--a) - var(--min))*var(--u)/var(--step)), 
+                        transparent 0), 
+                linear-gradient(90deg, 
+                        red calc(-#{.5*$thumb-d} + (var(--b) - var(--min))*var(--u)/var(--step)), 
+                        transparent 0);
+            mask: var(--mask);
+            mask-composite: exclude
+        }
+
+        &:focus-within { filter: none }
+
+        .sr-only {
+            position: absolute;
+            clip-path: inset(50%);
+        }
+
+        input[type='range'] {
+            &, &::-webkit-slider-thumb, 
+            &::-webkit-slider-runnable-track {
+                -webkit-appearance: none;
+                position:relative;
+                z-index:2;
+            }
+
+            @extend %mid;
+            min-height: 1*$thumb-d;
+            height: 1*$track-h;
+            background: none;
+
+            &::-webkit-slider-runnable-track { @include track() }
+            &::-moz-range-track { @include track() }
+
+            &::-webkit-slider-thumb { @include thumb(calc(.5*(#{$track-h} - #{$thumb-d}))) }
+            &::-moz-range-thumb { @include thumb() }
+
+            & + [for] {
+                display: grid;
+                justify-self: start;
+                margin-left: calc(.5*var(--u));
+                padding-bottom: .75rem;
+                transform: translate(calc(var(--c)*var(--u) - 50%));
+
+                &::after {
+                    display: block;
+                    padding: .25em .75em;
+                    transform-origin: 50% 100%;
+                    transform: scale(var(--hl));
+                    border-radius: .25em;
+                    box-shadow: 
+                        inset 0 0 2px #ff7747, 
+                        inset 0 0 .25em #bc3c0f, 
+                        inset 0 0 .5em #cf3f10,
+                        0 1px #fc7444;
+                    opacity: var(--hl);
+                    transition: .3s ease-out;
+                    transition-property: transform, opacity
+                }
+            }
+
+            &, & + [for] { grid-column: 2 }
+
+            &:focus {
+                outline: solid 0 transparent;
+
+                &, & + [for] { --hl: 1 }
+            }
+        }
+
+        output[for] {
+            grid-row: 1;
+            font-size: 1.25em;
+            counter-reset: lbl var(--lbl);
+
+            &:after {
+                content: counter(lbl) ' млн';
+            }
+
+            & + output[for] {
+                --k: var(--parity, 1);
+                --notk: calc(1 - var(--k));
+                --sgnk: calc(1 - 2*var(--k));
+                grid-column: calc(2*var(--notk) + 1);
+                align-self: center;
+                justify-self: var(--parity, end);
+                overflow: hidden;
+                grid-row-end: span 3;
+                opacity: calc(4*var(--sgnk)*(var(--c) - var(--m)) + 1);
+                color: rgba($c1, calc(var(--i)))
+            }
+
+            &:nth-of-type(3n) {
+                --parity: 0;
+            }
+        }
+
+        output[for='a'] { --c: var(--a); --lbl: var(--lbl-a) }
+        output[for='b'] { --c: var(--b); --lbl: var(--lbl-b) }
+
+        datalist {
+            display: grid;
+            grid-auto-flow: column;
+            grid-row: 3;
+            place-self: start stretch;
+            margin-top:-50px;
+            padding: 0 #{.5*$thumb-d};
+            justify-content: space-between;
+        }
+
+        option {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: var(--u);
+            font-size: var(--notj);
+            text-align: center;
+
+            &::before {
+                align-self: center;
+                width:1px;
+                height:40px;
+                background:$color-grey-dark;
+                content: "";
+            }
+
+            &:not(:nth-child(3n + 1)) { color: rgba($c1, var(--notj)) }
+        }
+    }
+
+}

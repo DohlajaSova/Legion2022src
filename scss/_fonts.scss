@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Dopis';
+    src: url('fonts/Dopis-Regular.eot');
+    src: local('fonts/Dopis Regular'), local('Dopis-Regular'),
+        url('fonts/Dopis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Dopis-Regular.woff2') format('woff2'),
+        url('fonts/Dopis-Regular.woff') format('woff'),
+        url('fonts/Dopis-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dopis';
+    src: url('fonts/Dopis-Light.eot');
+    src: local('fonts/Dopis Light'), local('Dopis-Light'),
+        url('fonts/Dopis-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Dopis-Light.woff2') format('woff2'),
+        url('fonts/Dopis-Light.woff') format('woff'),
+        url('fonts/Dopis-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

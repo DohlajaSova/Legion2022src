@@ -1,0 +1,110 @@
+<div class="request">
+    <div class="container">
+        <h1 class="request__title">Расскажите нам о&nbsp;задаче</h1>
+        <div class="request__lead"></div>
+        <h3>Что нужно сделать?</h3>
+        <div class="request__select select select-inline select-inline_wide">
+            <select>
+                <option>Разработать приложение с&nbsp;нуля</option>
+                <option>Провести аудит&nbsp;МП</option>
+                <option>Проанализировать конкурентов</option>
+                <option>Проработать дизайн-решение</option>
+                <option>Запустить продукт на&nbsp;рынок</option>
+                <option>Другое</option>
+            </select>
+        </div>
+        <h3>Какой бюджет?</h3>
+        <div class="request__range range">
+            <div class="range__wrap" role="group" aria-label="multi thumb slider with ruler" style="--a: 3; --b: 5; --min: 0; --max: 8; --lbl-a: 15; --lbl-b: 21">
+                <label class="sr-only" for="a">От:</label>
+                <input id="a" type="range" min="0" max="8" step="1" value="3" aria-valuetext="15" list="l">
+                <output for="a" aria-hidden="true"></output>
+                <output for="a" aria-hidden="true"></output>
+                <output for="a" aria-hidden="true"></output>
+                <label class="sr-only" for="b">До:</label>
+                <input id="b" type="range" min="0" max="8" step="1" value="5" aria-valuetext="21" list="l">
+                <output for="b" aria-hidden="true"></output>
+                <output for="b" aria-hidden="true"></output>
+                <output for="b" aria-hidden="true"></output>
+                <datalist id="l">
+                    <option value="0" label="6"></option>
+                    <option value="1" label="9"></option>
+                    <option value="2" label="12"></option>
+                    <option value="3" label="15"></option>
+                    <option value="4" label="18"></option>
+                    <option value="5" label="21"></option>
+                    <option value="6" label="24"></option>
+                    <option value="7" label="27"></option>
+                    <option value="8" label="30"></option>
+                </datalist>
+            </div>
+        </div>
+        <div class="request__select select select-inline">
+            <select>
+                <option>3–5 млн рублей</option>
+                <option>5–10 млн рублей</option>
+                <option>10–20 млн рублей</option>
+                <option>20+ млн рублей</option>
+            </select>
+        </div>
+        <h3>Какие платформы?</h3>
+        <div class="request__select select select-inline">
+            <select>
+                <option value="ios">iOS</option>
+                <option value="android">Android</option>
+                <option value="web">Web</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
+        <h3>Есть ли описание проекта?</h3>
+        <div class="request__textarea request__file">
+            <textarea placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
+            <label class="button button_grey button_wide" for="request-file">Загрузите файл, не&nbsp;более 15&nbsp;Мб</label>
+            <input type="file" id="request-file">
+        </div>
+
+        <div class="request__form">
+            <h3>Представьтесь, пожалуйста</h3>
+                <div class="request__form_item">
+                    <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
+                    <label for="name" class="request__form_label">Как вас зовут?</label>
+                    <span class="request__form_error">Введите ваше имя</span>
+                </div>
+                <div class="request__form_item">
+                    <input name="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
+                    <label for="company" class="request__form_label">Из какой вы компании?</label>
+                    <span class="request__form_error">Введите название компании</span>
+                </div>
+                <div class="request__form_item">
+                    <input name="phone" type="tel" class="request__form_input" placeholder="Телефон">
+                    <label for="phone" class="request__form_label">Телефон</label>
+                    <span class="request__form_error">Введите ваш телефон</span>
+                </div>
+                <div class="request__form_item">
+                    <input name="mail" type="email" class="request__form_input" placeholder="Почта">
+                    <label for="mail" class="request__form_label">Почта</label>
+                    <span class="request__form_error">Введите вашу почту</span>
+                </div>
+        </div>
+        <h3>И последнее: как вы узнали о нас?</h3>
+        <div class="request__select select select-inline">
+            <select multiple="multiple">
+                <option selected="selected">Рейтинги</option>
+                <option>Социальные сети</option>
+                <option>СМИ</option>
+                <option>Рекомендации</option>
+                <option selected="selected">Поисковая выдача</option>
+                <option>Конференции</option>
+                <option>Я не помню</option>
+            </select>
+        </div>
+        <div class="request__comment-container">
+            <div class="request__comment">
+              Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
+            </div>
+            <div class="request__button">
+              <button class="button button_white">Обсудить задачу</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="principles">
+    <div class="container">
+        <div class="principles__content">
+            <h2>Наш <br><em>подход</em></h2>
+            <div class="principles__content_text">
+                <p>Анализируем рынок, проверяем гипотезы, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и&nbsp;задумываемся о&nbsp;смыслах.</p>
+                <p>Управляем проектами на&nbsp;основе данных, используем практики из&nbsp;процессного и&nbsp;продуктового подходов.</p>
+            </div>
+            <div class="principles__video_inline">
+                <iframe style="width:100%" width="560" height="315" src="https://www.youtube.com/embed/0TRVnkOo71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

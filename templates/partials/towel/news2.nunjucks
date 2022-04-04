@@ -1,0 +1,28 @@
+<div class="news">
+    <div class="container">
+        <h2>Блог компании</h2>
+        <div class="news__items">
+            <a href="" class="news-item news-item_wide">
+                <div class="news-item__img"><img src="/assets/css/img/temp-news4.jpg" alt=""></div>
+                <div class="news-item__date">5 мая 2021</div>
+                <div class="news-item__head">7 кругов SRM</div>
+                <div class="news-item__lead">В новой статье  наш iOS-разработчик Андрей Глухих подробно описал, с&nbsp;какими проблемами вы&nbsp;можете столкнуться при работе с&nbsp;SPM, и&nbsp;стоит&nbsp;ли оно того</div>
+            </a>
+            <a href="" class="news-item">
+                <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>
+                <div class="news-item__date">5 мая 2021</div>
+                <div class="news-item__head">Золото в номинации «Лучшее мобильное решение/активация»</div>
+                <div class="news-item__lead">Совсем недавно на&nbsp;премии Tagline Awards 2020-2021 приложение My&nbsp;JetKid получило золото в&nbsp;номинации «Лучшее мобильное решение/активация»</div>
+            </a>
+            <a href="" class="news-item">
+                <div class="news-item__img"><img src="/assets/css/img/temp-news5.jpg" alt=""></div>
+                <div class="news-item__date">5 мая 2021</div>
+                <div class="news-item__head">Премьера сериала Осенние визиты по&nbsp;книге Сергея Лукьяненко</div>
+                <div class="news-item__lead">e-Legion выступил спонсором экранизации известной книги Сергея Лукьяненко&nbsp;- Осенние визиты. Премьера одноименного сериала прошла в&nbsp;кинотеатре Космос.</div>
+            </a>
+        </div>
+        <div class="news__button">
+            <a href="" class="button button_default">Смотреть все новости</a>
+        </div>
+    </div>
+</div>

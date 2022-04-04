@@ -1,0 +1,45 @@
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <a href="/about.html" class="problems-slider-groups__item">
+                            <h3>Вовлечённость</h3>
+                        </a>
+                        <a href="/about.html" class="problems-slider-groups__item">
+                            <h3>Инициатива</h3>
+                        </a>
+                        <a href="/about.html" class="problems-slider-groups__item">
+                            <h3>Эффективность</h3>
+                        </a>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <h4>Принципы работы</h4>
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg6">
+            <div class="problems__review">
+                <div class="problems__review_top">
+                    <img class="problems__review_top-img" src="/assets/css/img/temp-author3.png" alt="Никита Жеребцов"/>
+                    <div class="problems__review_rubr">Цитаты сотрудников</div>
+                    <div class="problems__review_body">
+                        e-legion&nbsp;— это возможность делать свою работу так, как ты&nbsp;считаешь нужным и&nbsp;правильным, интересные проекты,
+                        постоянный рост, семейная атмосфера, спецы, которые из&nbsp;просто коллег превращаются в&nbsp;близких друзей.
+                    </div>
+                </div>
+                <div class="problems__review_author">
+                    <h3 class="problems__review_author-name">Никита Жеребцов</h3>
+                    <p class="problems__review_author-position">руководитель отдела дизайна</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

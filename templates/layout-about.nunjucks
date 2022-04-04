@@ -1,0 +1,42 @@
+<!doctype html>
+<!--[if IE 9 ]><html class="ie9 ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock %}e-legion</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/elegion.css">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/css/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/css/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/css/img/favicon-16x16.png">
+	{% block links %}{% endblock %}
+</head>
+<body class="body_about">
+<div class="content-wrapper">
+	<header class="header">
+		<div class="container">
+			{% include "partials/header.nunjucks" %}
+		</div>
+	</header>
+    <div class="header-dummy"></div>
+    {% include "partials/towel/pmenu.nunjucks" %}
+	{% block content %} {% endblock %}
+	<div class="bottom-dummy"></div>
+</div>
+<footer class="footer cleared">
+    {% include "partials/footer-back.nunjucks" %}
+    <div class="container cleared">
+        {% include "partials/footer.nunjucks" %}
+    </div>
+</footer>
+{% block after_body %}{% endblock %}
+<script src="assets/js/tiny-slider.js"></script>
+<script src="assets/js/elegion.js"></script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

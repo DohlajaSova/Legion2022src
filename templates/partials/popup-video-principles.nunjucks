@@ -1,0 +1,13 @@
+<div class="popup-video">
+    <div class="popup-video__close">
+        <a href="" class="js-popup-video-close"></a>
+    </div>
+    <div class="popup-video__container">
+        <div class="popup-video__head">
+            Наш подход
+        </div>
+        <div class="popup-video__content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0TRVnkOo71s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

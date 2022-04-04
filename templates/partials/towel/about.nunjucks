@@ -1,0 +1,28 @@
+<div class="about">
+    <div class="container">
+        <div class="about__animation circle">
+            <div class="circle-pic"></div>
+            <div class="about__animation_items circle-text">
+                <div class="circle-text__item">
+                    <div class="circle-text__item_number">&gt;80</div>
+                    <div class="circle-text__item_label">клиентов со всего мира</div>
+                </div>
+                <div class="circle-text__item">
+                    <div class="circle-text__item_number">2005</div>
+                    <div class="circle-text__item_label">год основания компании</div>
+                </div>
+                <div class="circle-text__item">
+                    <div class="circle-text__item_number">150+</div>
+                    <div class="circle-text__item_label">сотрудников<br>&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <div class="about__text">
+            <p>Разрабатываем решения для бизнеса: от&nbsp;мобильных приложений и&nbsp;цифровых систем до&nbsp;стратегий отраслевого лидерства.</p>
+
+            <p>Наши клиенты&nbsp;— ведущие компании на&nbsp;своём рынке, которым мы&nbsp;помогаем удерживать конкурентное преимущество.</p>
+
+            <p class="about__text_link"><a href="/about.html">Подробнее о компании →</a></p>
+        </div>
+    </div>
+</div>

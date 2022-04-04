@@ -1,0 +1,23 @@
+<div class="footer__container footer__container_bottom">
+    <div class="footer__contacts">
+        <div><a href="tel:+78122009509" itemprop="telephone"><em>+7 812 200&nbsp;95&nbsp;09</em></a></div>
+        <div><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></div>
+    </div>
+    <div class="footer__social social">
+        <a href="https://vk.com/elegion" target="_blank" class="social_vk"></a>
+        <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt"></a>
+        <a href="https://habr.com/ru/company/e-legion/blog/" target="_blank" class="social_h"></a>
+        <a href="https://vc.ru/u/414482-e-legion" target="_blank" class="social_vc"></a>
+    </div>
+    <div class="footer__button">
+        <a href="/" class="button button_white footer__button_link">Перейти на главную</a>
+    </div>
+</div>
+<div class="footer__container">
+    <div class="footer__copyright">
+        <span class="footer__copyright_copy">&copy; e-legion</span>
+        <span class="footer__copyright_about">
+            <span>Входим в IT-холдинг <a href="https://dzsystems.com" target="_blank">DZ SYSTEMS</a></span>
+        </span>
+    </div>
+</div>

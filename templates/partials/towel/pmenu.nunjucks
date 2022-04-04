@@ -1,0 +1,36 @@
+<div class="pmenu">
+    <div class="container">
+        <div class="pmenu__logo" title="e-legion">
+            <a href="/"></a>
+        </div>
+        <div class="pmenu__mmenu">
+            <a href="/request.html">Написать нам</a>
+            <span class="pmenu__mmenu_lang">&nbsp;</span>
+            <div class="pmenu__mmenu_close header__hmenu active">
+                <a href="" class="js-top-menu-inner"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pmenu__menu">
+            <a href="/about.html">о компании</a>
+            <a href="/inprocess.html">карьера</a>
+            <a href="/inprocess.html">услуги</a>
+            <a href="/inprocess.html">faq</a>
+            <a href="/portfolio.html">портфолио</a>
+            <a href="/contacts.html">контакты</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pmenu__contacts">
+            <div><a href="tel:+78122009509" itemprop="telephone"><em>+7 812 200&nbsp;95&nbsp;09</em></a></div>
+            <div><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></div>
+        </div>
+        <div class="pmenu__social social">
+            <a href="https://vk.com/elegion" target="_blank" class="social_vk"></a>
+            <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt"></a>
+            <a href="https://habr.com/ru/company/e-legion/blog/" target="_blank" class="social_h"></a>
+            <a href="https://vc.ru/u/414482-e-legion" target="_blank" class="social_vc"></a>
+        </div>
+    </div>
+</div>

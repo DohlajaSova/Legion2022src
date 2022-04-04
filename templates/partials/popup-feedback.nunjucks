@@ -1,0 +1,72 @@
+<div class="popup-feedback">
+    <div class="popup-feedback__close">
+        <a href="" class="js-popup-feedback-close"></a>
+    </div>
+    <div class="popup-feedback__container">
+        <div class="popup-feedback__head">
+            Расскажите нам о&nbsp;задаче
+        </div>
+        <div class="popup-feedback__content">
+            <div class="request">
+                <div class="container">
+                    <div class="request__form">
+                        <h3>Представьтесь, пожалуйста</h3>
+                        <div class="request__form_item">
+                            <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
+                            <label for="name" class="request__form_label">Как вас зовут?</label>
+                            <span class="request__form_error">Введите ваше имя</span>
+                        </div>
+                        <div class="request__form_item">
+                            <input name="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
+                            <label for="company" class="request__form_label">Из какой вы компании?</label>
+                            <span class="request__form_error">Введите название компании</span>
+                        </div>
+                        <div class="request__form_item">
+                            <input name="phone" type="tel" class="request__form_input" placeholder="Телефон">
+                            <label for="phone" class="request__form_label">Телефон</label>
+                            <span class="request__form_error">Введите ваш телефон</span>
+                        </div>
+                        <div class="request__form_item">
+                            <input name="mail" type="email" class="request__form_input" placeholder="Почта">
+                            <label for="mail" class="request__form_label">Почта</label>
+                            <span class="request__form_error">Введите вашу почту</span>
+                        </div>
+                    </div>
+
+                    <h3>Что нужно сделать?</h3>
+                    <div class="request__select select select-inline select-inline_wide">
+                        <select>
+                            <option>Разработать приложение с&nbsp;нуля</option>
+                            <option>Провести аудит&nbsp;МП</option>
+                            <option>Проанализировать конкурентов</option>
+                            <option>Проработать дизайн-решение</option>
+                            <option>Запустить продукт на&nbsp;рынок</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+                    <h3>Есть ли описание проекта?</h3>
+                    <div class="request__textarea request__file">
+                        <textarea placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
+                        <label class="button button_grey button_wide" for="request-file">Загрузите файл, не&nbsp;более 15&nbsp;Мб</label>
+                        <input type="file" id="request-file">
+                    </div>
+
+                    <div class="request__comment-container">
+                        <div class="request__comment">
+                          Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
+                        </div>
+                        <div class="request__button">
+                          <button class="button button_white js-popup-feedback-send">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="answer__container">
+                    <h2>Спасибо!</h2>
+                    <p>Мы свяжемся с&nbsp;вами в&nbsp;течение одного рабочего дня <small>(если это не&nbsp;пятница).</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

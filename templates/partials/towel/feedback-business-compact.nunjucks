@@ -1,0 +1,6 @@
+<div class="feedback feedback_compact feedback_business">
+    <div class="container">
+        <h2>Расскажите нам о&nbsp;задаче</h2>
+        <a href="" class="feedback__button js-popup-feedback-open"></a>
+    </div>
+</div>

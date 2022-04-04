@@ -1,0 +1,11 @@
+<div class="top">
+    <div class="container">
+        <div class="h1">
+            Разрабатываем цифровые решения для&nbsp;бизнеса
+        </div>
+        <div class="top__buttons">
+            <a href="#feedback" class="top__buttons_plus js-popup-feedback-open"></a>
+            <a href="#feedback" class="button button_default js-popup-feedback-open">Обсудить задачу<em> →</em></a>
+        </div>
+    </div>
+</div>

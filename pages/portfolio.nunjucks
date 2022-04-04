@@ -1,0 +1,12 @@
+<!-- portfolio.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Портфолио - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/cases2.nunjucks" %}
+  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+  {% include "partials/towel/projects1.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+{% endblock %}

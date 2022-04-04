@@ -1,0 +1,89 @@
+<div class="contacts">
+    <div class="container">
+        <h1 class="contacts__title">Наши контакты</h1>
+        <div class="contacts__lead">
+            <span class="contacts__lead_welcome">Мы будем рады <a href="">пообщаться с&nbsp;вами</a></span>
+            <a class="contacts__lead_phone" href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
+            <a class="contacts__lead_email" href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a>
+        </div>
+        <div class="contacts__map map">
+            <div class="map__select select select-inline js-map-select">
+                <select>
+                    <option value="spb">Санкт-Петербург</option>
+                    <option value="msk">Москва</option>
+                    <option value="kzn">Казань</option>
+                    <option value="klg">Калининград</option>
+                </select>
+            </div>
+            <ul class="map__addresses" itemscope itemtype="http://schema.org/Organization">
+                <li>
+                    <address class="js-map-address active" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="15" data-center-lat="59.99350" data-center-lng="30.25057" data-marker-lat="59.99512" data-marker-lng="30.25057" data-route-points="59.989610,30.255414; 59.989744,30.255387; 59.989728,30.254567; 59.990681,30.254357; 59.990756,30.254073; 59.990764,30.252963; 59.995204,30.252893; 59.995427,30.251048; 59.995054,30.250833; 59.995121,30.25057" data-id="spb">
+                        <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="59.99512"/>
+                        <meta itemprop="longitude" content="30.25057"/>
+                        </span>
+                        <div class="map__addresses_block">
+                            <p class="map__addresses_title" itemprop="addressLocality">Санкт-Петербург</p>
+                            <p class="map__addresses_street">
+                                <span itemprop="postalCode">197374</span>, <span itemprop="streetAddress">ул.&nbsp;Оптиков&nbsp;4</span><br>
+                                <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
+                            </p>
+                            <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
+                        </div>
+                    </address>
+                </li>
+                <li>
+                    <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="55.655888" data-marker-lng="37.551484" data-id="msk">
+                        <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="55.655888"/>
+                        <meta itemprop="longitude" content="37.551484"/>
+                        </span>
+                        <div class="map__addresses_block">
+                            <p class="map__addresses_title">Москва</p>
+                            <p class="map__addresses_street">
+                                <span itemprop="postalCode">117246</span>, <span itemprop="streetAddress">Научный проезд&nbsp;8&nbsp;стр.&thinsp;1, офис&nbsp;431</span><br>
+                                <a href="tel:+74996537156" itemprop="telephone">+7&nbsp;499&nbsp;653&nbsp;71&nbsp;56</a>
+                            </p>
+                            <p class="map__addresses_email"><a href="mailto:sales@dz.ru" itemprop="email">sales@dz.ru</a></p>
+                        </div>
+                    </address>
+                </li>
+                <li>
+                    <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="55.782066" data-marker-lng="49.131561" data-id="kzn">
+                        <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="55.782066"/>
+                        <meta itemprop="longitude" content="49.131561"/>
+                        </span>
+                        <div class="map__addresses_block">
+                            <p class="map__addresses_title">Казань</p>
+                            <p class="map__addresses_street">
+                                <span itemprop="postalCode">420107</span>, <span itemprop="streetAddress">ул.&nbsp;Петербургская&nbsp;50, к.&nbsp;5, офис&nbsp;404</span><br>
+                                <a href="tel:+78435705407" itemprop="telephone">+7&nbsp;843&nbsp;570&nbsp;540&nbsp;7</a>
+                            </p>
+                            <p class="map__addresses_email"><a href="mailto:kazan@dz.ru" itemprop="email">kazan@dz.ru</a></p>
+                        </div>
+                    </address>
+                </li>
+                <li>
+                    <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="54.724697" data-marker-lng="20.467470" data-id="klg">
+                        <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="54.724697"/>
+                        <meta itemprop="longitude" content="20.467470"/>
+                        </span>
+                        <div class="map__addresses_block">
+                            <p class="map__addresses_title">Калининград</p>
+                            <p class="map__addresses_street">
+                                <span itemprop="postalCode">236022</span>, <span itemprop="streetAddress">ул.&nbsp;Карла Маркса&nbsp;59</span><br>
+                                <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
+                            </p>
+                            <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
+                        </div>
+                    </address>
+                </li>
+            </ul>
+            <div class="contacts__container_outer"><div class="contacts__container_inner">
+                <div class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-language="ru" data-marker-image="/assets/css/img/map-point-active.svg"></div>
+            </div></div>
+        </div>
+    </div>
+</div>

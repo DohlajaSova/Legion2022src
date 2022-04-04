@@ -1,0 +1,67 @@
+<div class="some-projects">
+    <div class="container">
+        <div class="some-projects__content">
+            <h2>Наши <em>проекты</em></h2>
+        </div>
+        <div class="cases"><div class="cases-container"><div class="cases-container_inner">
+            <div class="js-randomcases-container"><div class="some-projects__list">
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"><span>6</span></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
+                    <span class="cases__case_name">Пятёрочка</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-tinkoff.svg" alt="Тинькофф"></span>
+                    <span class="cases__case_name">Тинькофф</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"><span>3</span></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
+                    <span class="cases__case_name">Tele2</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"></span>
+                    <span class="cases__case_name">Globus</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"><span>2</span></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"></span>
+                    <span class="cases__case_name">Альфа-Инвестиции</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"></span>
+                    <span class="cases__case_name">Burger King</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-jetsport.svg" alt="Jet"></span>
+                    <span class="cases__case_name">Jet</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+                <span class="cases__case"><div class="cases__case_inner">
+                <div class="cases__case_number"></div>
+                <div class="cases__case_container"><div class="cases__case_contents">
+                    <span class="cases__case_logo"><img src="/assets/css/img/case-may24.svg" alt="May24"></span>
+                    <span class="cases__case_name">May24</span>
+                    <span class="cases__case_arrow"></span>
+                </div></div></div></span>
+            </div></div>
+        </div></div></div>
+    </div>
+</div>

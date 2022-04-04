@@ -1,0 +1,29 @@
+<div class="problems">
+    <div class="container">
+        <a href="/inprocess.html" class="problems__item problems__item_bg1">
+            <h3>Дискавери фаза</h3>
+            <p>Подготовим поэтапный план того, как должен строиться конкурентоспособный продукт</p>
+            <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+        </a>
+        <a href="/inprocess.html" class="problems__item problems__item_bg2">
+            <h3>Комплексная разработка <span class="nowrap">digital-продуктов</span></h3>
+            <p>Реализуем проекты «под ключ»</p>
+            <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+        </a>
+        <a href="/inprocess.html" class="problems__item problems__item_bg3">
+            <h3>Контроль качества</h3>
+            <p>Тестируем, ищем баги, проводим аудит</p>
+            <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+        </a>
+        <a href="#feedback" class="problems__item problems__item_bg4">
+            <div class="problems__item_container">
+                <h3>Индивидуальное <br/>решение ваших задач</h3>
+                <div class="problems__item_plus"></div>
+                <div class="problems__item_button">Обсудить задачу →</div>
+            </div>
+        </a>
+        <div class="problems__all hide">
+            <a href="" class="button button_default">Еще услуги</a>
+        </div>
+    </div>
+</div>
