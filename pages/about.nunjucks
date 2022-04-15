@@ -6,7 +6,6 @@
 
   {% include "partials/towel/top-about.nunjucks" %}
   {% include "partials/towel/who-are-we.nunjucks" %}
-  {% include "partials/towel/not-all-the-same.nunjucks" %}
   {% include "partials/towel/team2.nunjucks" %}
   {% include "partials/towel/to-work.nunjucks" %}
   {% include "partials/towel/cases-random.nunjucks" %}

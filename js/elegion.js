@@ -207,6 +207,24 @@ function portfolioRefresh(limit){
         moreButton.parentNode.classList.add("hide");
 }
 
+function vacanciesRefresh(limit){
+    let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner")[0];
+    let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
+    let shown = 0;
+    for (let i=0; i<vacanciesBlocks.children.length; i++){
+        vacanciesBlocks.children[i].classList.add("not-shown");
+    }
+    for (let i=0; i<vacanciesBlocks.children.length; i++){
+        if (!vacanciesBlocks.children[i].classList.contains("hide")){
+            shown++;
+            if (shown <= limit)
+                vacanciesBlocks.children[i].classList.remove("not-shown");
+        }
+    }
+    if (shown <= limit)
+        moreButton.parentNode.classList.add("hide");
+}
+
 docReady(function() {
     // фиксим хедер при скролле
     let stickyHeader = document.getElementsByClassName('header')[0];
@@ -464,6 +482,47 @@ docReady(function() {
             })
         }
     }
+	
+    // фильтр на странице вакансий
+    let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner");
+    let vacanciesTypes = document.querySelectorAll(".js-vacancies-types");
+
+    if (vacanciesBlocks.length >0)
+    {
+        let curLimit = document.querySelectorAll(".js-vacancies-container")[0].dataset.limit*1;
+        let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
+        moreButton.addEventListener("click", function(e){
+            e.preventDefault();
+            curLimit += 4;
+            vacanciesRefresh(curLimit);
+        })
+        vacanciesRefresh(curLimit);
+
+        for (i=0; i<vacanciesTypes.length; i++){
+            let types = new Array();
+            for (j=0; j<vacanciesBlocks[0].children.length; j++){
+                let typeString = vacanciesBlocks[0].children[j].dataset.types.slice(1,vacanciesBlocks[0].children[j].dataset.types.length-1);
+                types[j] = typeString.split(",");
+            }
+
+            vacanciesTypes[i].addEventListener("click", function(e){
+                let options = e.target.parentNode.parentNode.childNodes[0];
+                e.preventDefault();
+                let selectedType = options.selectedOptions[0].value;
+
+                for (j=0; j<types.length; j++){
+                    if (!types[j].includes("'" + selectedType + "'")){
+                        vacanciesBlocks[0].children[j].classList.add("hide");
+                    }
+                    else{
+                        vacanciesBlocks[0].children[j].classList.remove("hide");
+                    }
+                }
+                vacanciesRefresh(curLimit);
+            })
+        }
+    }
+	
 
     // блок вакансий
     let vacancyBlocks = document.querySelectorAll(".vacancy");

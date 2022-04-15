@@ -1,0 +1,70 @@
+<div class="not-all-the-same">
+    <div class="container">
+        <div class="not-all-the-same__content">
+            <h2>Ценности <br><em>легионеров</em></h2>
+        </div>
+        <div class="not-all-the-same__accordion accordion js-accordion">
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Инициатива</h3>
+                <div class="accordion__item_body">
+                    <h4>Развиваем отрасль и&nbsp;делимся знаниями</h4>
+                    <p>Выступаем на&nbsp;конференциях, организуем митапы, делимся лучшими практиками и&nbsp;неудачным опытом. Поддерживаем коллег по&nbsp;бизнесу и&nbsp;всегда открыты к&nbsp;сотрудничеству.</p>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="https://habr.com/ru/company/e-legion/blog/421529/" target="_blank" class="project__article project__article_small project-article">
+                            <div class="project-article_top">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame1.jpg" alt="Митап Tele2. Дизайн продуктов в телекоме: как всё устроено">
+                            </div>
+                            <div class="project-article_link">
+                              <div class="project-article_link-title">Митап Tele2. Дизайн продуктов в телекоме: как всё устроено <br><br>
+                              Никита Жеребцов</div>
+                              <div class="project-article_link-arrow">Подробнее →</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Эффективность</h3>
+                <div class="accordion__item_body">
+                    <h4>Непрерывно анализируем и&nbsp;оптимизируем процессы</h4>
+                    <p>Получаем новый опыт, анализируем негативные аспекты, выделяем главное. Адаптируемся, чтобы в&nbsp;следующий раз достичь лучшего результата.</p>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="project__article project__article_small project-article">
+                            <div class="project-article_top">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-news2.jpg" alt="Процесс анализа в мобильной разработке">
+                            </div>
+                            <div class="project-article_link">
+                              <div class="project-article_link-title">Процесс анализа в&nbsp;мобильной разработке <br><br>Настя Московкина</div>
+                              <div class="project-article_link-arrow">Подробнее →</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Вовлечённость</h3>
+                <div class="accordion__item_body">
+                    <h4>Выступаем не&nbsp;только в&nbsp;роли «исполнителя», но&nbsp;и&nbsp;«партнёра» клиента</h4>
+                    <p>Участовуем в&nbsp;стратегических сессиях клиентов, тесно интегрируемся в&nbsp;структуру заказчика, вместе отвечаем за&nbsp;результат.</p>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="" class="project__article project__article_small project-article">
+                            <div class="project-article_top">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame2.jpg" alt="Команда e-legion на Tele2 Power Day">
+                            </div>
+                            <div class="project-article_link">
+                              <div class="project-article_link-title">Команда e-legion на&nbsp;Tele2 Power&nbsp;Day</div>
+                              <div class="project-article_link-arrow">Подробнее →</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
