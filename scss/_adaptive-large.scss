@@ -553,6 +553,29 @@
             }
         }
     }
+    .service__section {
+        height: 450px;
+        img {
+            height: 100%;
+        }
+    }
+    .service__section_info {
+        padding: 40px 25px 20px 35px 
+    }
+    .service__section_info-title{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .service__section_info-description{
+        font-size: 20px;
+    }
+    .service__feature_inner-case__visual {
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
+    }
+    .service__feature_inner-case__brief {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: $screen-md) {
@@ -1242,4 +1265,9 @@
             }
         }
     }
+    .service__feature_inner-case__visual {
+        grid-template-columns: 90px 90px;
+        grid-template-rows: 90px 90px;
+    }
 }
+

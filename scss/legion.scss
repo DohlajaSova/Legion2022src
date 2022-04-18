@@ -3210,7 +3210,7 @@ a.button{
             &_name{
                 font-size:24px;
                 color:$color-blue-dark;
-                margin-bottom:12px;
+                margin-bottom:24px;
             }
             &_position{
                 font-size:16px;
@@ -3499,6 +3499,179 @@ a.button{
             }
         }
     }
+}
+
+.service {
+    display: flex;
+    flex-flow: column  nowrap;
+    margin: auto;
+    max-width: 1440px;
+    width: calc(100vw - 60px);
+    &__header {
+        &-accent {
+            color: $color-blue-light;
+        }
+    }
+    &__section{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background: #F0F0F0;
+        border-radius: 42px;
+        margin: 90px 0px 140px;
+        &_img {
+            width: 50%;
+            border-radius: 42px;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &_info {
+            display: flex;
+            flex-flow: column nowrap;
+            color: $color-blue-dark;
+            padding: 52.5px 38px 27px 45px;
+            overflow: hidden;
+            width: 50%;
+            &-title {
+                line-height: 130%;
+                font-size: 46px;
+                margin-bottom: 40px;
+            }
+            &-description {
+                line-height: 130%;
+                font-size: 24px;
+            }
+            &-icon {
+                align-self: flex-end;
+                margin-top: auto;
+            }
+        }
+        &_info:hover {
+            cursor: url($img-path + "vacancy-plus.svg") auto;
+        }
+    }
+    &__feature{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding: 40px 0 100px;
+        &_info {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            // display: grid;
+            // grid-template-columns: auto auto;
+            // column-gap: 40px;
+            margin-bottom: 90px;
+            &-title {
+                font-size: 46px;
+                line-height: 130%;
+                width: 50%;
+                margin-right: 20px;
+            }
+            &-description {
+                font-size: 24px;
+                line-height: 130%;
+                width: 50%;
+            }
+        }
+        &_inner {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            // display: grid;
+            // grid-template-columns: auto auto;
+            // column-gap: 40px;
+            &-wrapper {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            &-description {
+                font-size: 14px;
+                line-height: 130%;
+                margin-left: auto;
+                color: #949191;
+                width: 150px;
+            }
+            &-icon {
+                margin-right: 20px;
+            }
+            &-case {
+                width: 50%; 
+                background: #F0F0F0;
+                border-radius: 42px;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto;
+                &__visual {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(calc(50% - 6px), 137px));
+                    grid-template-rows: repeat(2, minmax(auto, 137px));
+                    background-color: $color-blue-dark;
+                    border-radius: 38px;
+                    row-gap: 12px;
+                    column-gap: 12px;
+                    padding: 13px 18px;
+                    min-height: 200px;
+                    width: fit-content;
+                    &_wrapper {
+                        border-radius: 38px;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        padding: 17px;
+                    }
+                }
+                &__brief {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-between;
+                    padding: 30px;
+                    // width: inherit;
+                    &-title {
+                        font-size: 24px;
+                        line-height: 130%;
+                    }
+                    &-transition {
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: #949191;
+                    }
+                }
+            }
+        }
+        border-bottom: 1px solid #949191;
+    }
+    &> div:last-child{
+        border: none;
+        padding-bottom: 0px;
+        margin-bottom: 120px;
+    }
+}
+
+.icon_plus, .icon_arrow {
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:url($img-path + "vacancy-plus.svg") center center no-repeat $color-green;
+    flex-shrink:0;
+}
+.icon_plus {
+    background:url($img-path + "vacancy-plus.svg") center center no-repeat $color-green;
+}
+.icon_arrow {
+    background:url($img-path + "arrow3grey.svg") center center no-repeat $color-green;
 }
 
 @keyframes rotating {

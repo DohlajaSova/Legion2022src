@@ -114,6 +114,22 @@
             }
         }
     }
+    .service {
+        &__feature {
+            &_inner {
+                &-case {
+                    grid-template-columns: auto;
+                    grid-template-rows: auto auto;
+                    &__visual {
+                        grid-template-rows: repeat(2, calc(50vw - 56px));
+                        grid-template-columns: repeat(2, calc(50vw - 56px));
+                        width: 100%;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -173,5 +189,17 @@
                 }
             }
         }
+    }
+    .service__section_info-title {
+        font-size: 24px;
+    }
+    .service__feature_info-title {
+        font-size: 28px;
+    }
+    .service__section_info-description, .service__feature_info-description, .service__feature_inner-case__brief-title{
+        font-size: 16px;
+    }
+    .service__feature_inner-case__brief-transition {
+        font-size: 12px;
     }
 }
