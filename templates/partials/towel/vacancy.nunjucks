@@ -1,0 +1,78 @@
+<div class="vacancypage">
+    <div class="container">
+        <div class="vacancypage__content">
+            <div class="vacancypage__content_brief">
+                <h3>Описание</h3>
+                <dl>
+                    <dt>Опыт</dt>
+                    <dd>1–3 года</dd>
+                    <dt>Город</dt>
+                    <dd>Санкт-Петербург</dd>
+                </dl>
+            </div>
+            <div class="vacancypage__content_text">
+                <p>Привет! Нам в команду нужен человек-Android, который умеет писать чистый и качественный код.</p>
+                <p>Вместе будем находить новые решения и делать крутые продукты для большой аудитории.</p>
+                <div><a href="#feedback" class="button button_default button_wide">Откликнуться</a></div>
+            </div>
+            
+        </div>
+        <div class="vacancypage__accordion accordion js-accordion">
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Обязанности</h3>
+                <div class="accordion__item_body">
+                    <ul>
+                        <li>Выстраивать архитектуру приложений</li>
+                        <li>Создавать анимации</li>
+                        <li>Создавать кастомные UI-элементы</li>
+                        <li>Писать Unit-тесты</li>
+                        <li>Участвовать в&nbsp;Code Review</li>
+                        <li>Планировать организацию процесса разработки</li>
+                        <li>Участвовать в&nbsp;анализе требований</li>
+                        <li>Изучать новые технологий и&nbsp;повышать уровень собственных знаний</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Необходимые навыки</h3>
+                <div class="accordion__item_body">
+                    <ul>
+                        <li>Знание Android SDK</li>
+                        <li>Опыт разработки на Java/Kotlin</li>
+                        <li>Глубокое знание компьютерных технологий, включая сети</li>
+                        <li>Архитектурные шаблоны и&nbsp;шаблоны проектирования</li>
+                        <li>Опыт параллельного и многопоточного программирования</li>
+                        <li>Умение искать информацию и&nbsp;находить решения</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Преимуществом будет</h3>
+                <div class="accordion__item_body">
+                    <ul>
+                        <li>Опыт программирования на&nbsp;C++</li>
+                        <li>Умение писать Unit-тесты</li>
+                        <li>Опыт написания UI-компонентов</li>
+                        <li>Представление о&nbsp;работе Continuous Integration и&nbsp;опыт её&nbsp;настройки</li>
+                        <li>Знание классических алгоритмов и&nbsp;структур данных</li>
+                        <li>Владение английским языком</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Мы предлагаем</h3>
+                <div class="accordion__item_body">
+                    <ul>
+                        <li>Гибкий график работы</li>
+                        <li>Офис в&nbsp;7&nbsp;минутах ходьбы от&nbsp;м.&nbsp;Старая Деревня</li>
+                        <li>Компенсацию спорта, обучения и&nbsp;медицины</li>
+                        <li>Обучение и&nbsp;систему наставничества, которые помогут быстро расти и&nbsp;получать новые грейды</li>
+                        <li>Возможность писать статьи для отраслевых медиа и&nbsp;выступать на&nbsp;конференциях и&nbsp;митапах</li>
+                        <li>Владение английским языком</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

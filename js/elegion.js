@@ -526,29 +526,31 @@ docReady(function() {
 
     // блок вакансий
     let vacancyBlocks = document.querySelectorAll(".vacancy");
-    for (i=0; i<vacancyBlocks.length; i++){
-        vacancyBlocks[i].addEventListener("mouseover", function(e){
-            e.preventDefault();
-            let vacancyContainer = this.children[0]; // контейнер с вакансией
-            let vacancyContainerHeight = vacancyContainer.getBoundingClientRect().height;
-            let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
-            let vacanceNameHeight = vacancyName.getBoundingClientRect().height+100;
-            let vacancyTitle = vacancyName.parentNode;
-            let vacancyBody = vacancyTitle.nextElementSibling;
-            vacancyTitle.style.top = vacanceNameHeight - vacancyContainerHeight + "px";
-            vacancyBody.style.top = vacanceNameHeight - vacancyContainerHeight + "px";
-            vacancyBody.style.height = vacancyContainerHeight - vacanceNameHeight + 92 + "px";
-        }, false);
-        vacancyBlocks[i].addEventListener("mouseout", function(e){
-            e.preventDefault();
-            let vacancyContainer = this.children[0]; // контейнер с вакансией
-            let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
-            let vacancyTitle = vacancyName.parentNode;
-            let vacancyBody = vacancyTitle.nextElementSibling;
-            vacancyTitle.style.top = "0px";
-            vacancyBody.style.top = "0px";
-            vacancyBody.style.height = "100%";
-        }, false);
+    if (vacancyBlocks.length) {
+        for (i=0; i<vacancyBlocks.length; i++){
+            vacancyBlocks[i].addEventListener("mouseover", function(e){
+                e.preventDefault();
+                let vacancyContainer = this.children[0]; // контейнер с вакансией
+                let vacancyContainerHeight = vacancyContainer.getBoundingClientRect().height;
+                let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
+                let vacanceNameHeight = vacancyName.getBoundingClientRect().height+100;
+                let vacancyTitle = vacancyName.parentNode;
+                let vacancyBody = vacancyTitle.nextElementSibling;
+                vacancyTitle.style.top = vacanceNameHeight - vacancyContainerHeight + "px";
+                vacancyBody.style.top = vacanceNameHeight - vacancyContainerHeight + "px";
+                vacancyBody.style.height = vacancyContainerHeight - vacanceNameHeight + 92 + "px";
+            }, false);
+            vacancyBlocks[i].addEventListener("mouseout", function(e){
+                e.preventDefault();
+                let vacancyContainer = this.children[0]; // контейнер с вакансией
+                let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
+                let vacancyTitle = vacancyName.parentNode;
+                let vacancyBody = vacancyTitle.nextElementSibling;
+                vacancyTitle.style.top = "0px";
+                vacancyBody.style.top = "0px";
+                vacancyBody.style.height = "100%";
+            }, false);
+        }
     }
     
     // выпадающее меню
