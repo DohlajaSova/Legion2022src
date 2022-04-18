@@ -1,1 +1,150 @@
-﻿
+﻿<div class="service">
+    <h1 class="service__header">Помогаем создавать <span class="service__header-accent">рентабельные</span> продукты</h1>
+    <div class="service__section">
+        <div class="service__section_img">
+            <img src="/assets/css/img/service-feature.png" alt="">
+        </div>
+        <div class="service__section_info">
+            <div class="service__section_info-title">
+                Индивидуальное решение ваших задач
+            </div>
+            <div class="service__section_info-description">
+                Гибко подстраиваемся под процессы, подключаемся к проекту на любом этапе, вместе ищем новые решения и реализуем лучшие практики на рынке.
+            </div>
+            <div class="icon_plus service__section_info-icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="service__feature">
+        <div class="service__feature_info">
+            <div class="service__feature_info-title">
+                Дискавери фаза
+            </div>
+            <div class="service__feature_info-description">
+                Поэтапный план того, как должен строиться конкурентноспособный продукт. Помогаем определить путь цифровой модернизации для развития бизнеса.
+            </div>
+        </div>
+        <div class="service__feature_inner">
+            <div class="service__feature_inner-wrapper">
+                <div class="icon_arrow service__feature_inner-icon">
+                </div>
+                <div class="service__feature_inner-description">
+                    Подробнее об услуге и этапах работы
+                </div>
+            </div>
+            <div class="service__feature_inner-case">
+                <div class="service__feature_inner-case__visual">
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-tele2.svg" alt="Теле2">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-shell.svg" alt="Shell">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-globus.svg" alt="Глобус">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-uralsib.svg" alt="Уралсиб">
+                    </div>
+                </div>
+                <div class="service__feature_inner-case__brief">
+                    <div class="service__feature_inner-case__brief-title">
+                        Клиенты и кейсы
+                    </div>
+                    <div class="service__feature_inner-case__brief-transition">
+                        Подробнее → 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service__feature">
+        <div class="service__feature_info">
+            <div class="service__feature_info-title">
+                Комплексная разработка digital-продуктов
+            </div>
+            <div class="service__feature_info-description">
+                Анализируем рынок, проектируем интерфейсы, пишем код, тестируем системы, поддерживаем и масштабируем.
+            </div>
+        </div>
+        <div class="service__feature_inner">
+            <div class="service__feature_inner-wrapper">
+                <div class="icon_arrow service__feature_inner-icon">
+                </div>
+                <div class="service__feature_inner-description">
+                    Подробнее об услуге и этапах работы
+                </div>
+            </div>
+            <div class="service__feature_inner-case">
+                <div class="service__feature_inner-case__visual">
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-globus.svg" alt="Глобус">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-ad.svg" alt="Альфа">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-jetsport.svg" alt="Jetsport">
+                    </div>
+                </div>
+                <div class="service__feature_inner-case__brief">
+                    <div class="service__feature_inner-case__brief-title">
+                        Клиенты и кейсы
+                    </div>
+                    <div class="service__feature_inner-case__brief-transition">
+                        Подробнее → 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service__feature">
+        <div class="service__feature_info">
+            <div class="service__feature_info-title">
+                Контроль качества
+            </div>
+            <div class="service__feature_info-description">
+                Проведём независимый аудит качества, подготовим отчёт, подбёрем решение или команду под ваши задачи.
+            </div>
+        </div>
+        <div class="service__feature_inner">
+            <div class="service__feature_inner-wrapper">
+                <div class="icon_arrow service__feature_inner-icon">
+                </div>
+                <div class="service__feature_inner-description">
+                    Подробнее об услуге и этапах работы
+                </div>
+            </div>
+            <div class="service__feature_inner-case">
+                <div class="service__feature_inner-case__visual">
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-tele2.svg" alt="Теле2">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-shell.svg" alt="Shell">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-uralsib.svg" alt="Уралсиб">
+                    </div>
+                    <div class="service__feature_inner-case__visual_wrapper">
+                        <img src="/assets/css/img/case-tinkoff.svg" alt="Тинькофф">
+                    </div>
+                </div>
+                <div class="service__feature_inner-case__brief">
+                    <div class="service__feature_inner-case__brief-title">
+                        Клиенты и кейсы
+                    </div>
+                    <div class="service__feature_inner-case__brief-transition">
+                        Подробнее → 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
