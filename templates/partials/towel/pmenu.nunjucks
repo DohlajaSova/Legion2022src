@@ -14,8 +14,8 @@
     <div class="container">
         <div class="pmenu__menu">
             <a href="/about.html">о компании</a>
-            <a href="/inprocess.html">карьера</a>
-            <a href="/inprocess.html">услуги</a>
+            <a href="/career.html">карьера</a>
+            <a href="/services.html">услуги</a>
             <a href="/inprocess.html">faq</a>
             <a href="/portfolio.html">портфолио</a>
             <a href="/contacts.html">контакты</a>
