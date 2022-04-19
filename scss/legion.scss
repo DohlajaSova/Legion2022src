@@ -1008,6 +1008,9 @@ a.button{
                 }
             }
         }
+		&:last-child{
+			border-bottom:none;
+		}
     }
 }
 
@@ -1797,6 +1800,33 @@ a.button{
             margin-bottom:90px;
         }
     }
+	&_background{
+		background-color:$color-blue-dark;
+		color:$color-white;
+		padding:120px 0 10px;
+		h2, .h2,
+		h3, .h3{
+			color:$color-white;
+		}
+		.accordion{
+			&__item{
+				border-bottom-color:$color-white;
+				&_head{
+					&::before{
+						background-color:$color-blue-light;
+					}
+					&::after{
+						background-color:$color-blue-light;
+					}
+				}
+				&_body{
+					h4{
+						color:$color-white;
+					}
+				}
+			}
+		}
+	}
 }
 
 .problems{
@@ -2700,9 +2730,13 @@ a.button{
         }
 		&_send{
 			border:1px dashed $color-black;
+			cursor:pointer;
 			.vacancy__title{
 				background:$color-white;
 			}
+		}
+		&.not-shown{
+			display:none;
 		}
     }
 	&.vacancies_page{
@@ -2710,6 +2744,12 @@ a.button{
 		color:$color-black;
 		h2{
 			color:$color-black;
+		}
+		.cases__title{
+			text-align:left;
+		}
+		.cases__lead{
+			height:37px;
 		}
 	}
 }

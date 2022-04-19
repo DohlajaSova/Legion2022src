@@ -16,7 +16,7 @@
     <div class="container">
         <div class="vacancies__container">
             <div class="vacancies__list js-vacancies-container" data-limit="4"><div class="vacancies__container_inner">
-                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','spb','remote']">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </a>
-                <span class="vacancies__list_item vacancy vacancy_send" data-types="['all','spb','msk','kzn','klg','remote']">
+                <span class="vacancies__list_item vacancy vacancy_send js-popup-feedback-open" data-types="['all','spb','msk','kzn','klg','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>

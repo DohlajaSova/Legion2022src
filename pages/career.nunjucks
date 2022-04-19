@@ -8,7 +8,7 @@
   {% include "partials/towel/team3.nunjucks" %}
   {% include "partials/towel/vacancies2.nunjucks" %}
   {% include "partials/towel/values.nunjucks" %}
-  {% include "partials/towel/news.nunjucks" %}
+  {% include "partials/towel/news3.nunjucks" %}
 
   {% include "partials/popup-feedback.nunjucks" %}
 

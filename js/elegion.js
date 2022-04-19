@@ -223,6 +223,8 @@ function vacanciesRefresh(limit){
     }
     if (shown <= limit)
         moreButton.parentNode.classList.add("hide");
+	else
+        moreButton.parentNode.classList.remove("hide");
 }
 
 docReady(function() {
@@ -536,9 +538,12 @@ docReady(function() {
                 let vacanceNameHeight = vacancyName.getBoundingClientRect().height+100;
                 let vacancyTitle = vacancyName.parentNode;
                 let vacancyBody = vacancyTitle.nextElementSibling;
-                vacancyTitle.style.top = vacanceNameHeight - vacancyContainerHeight + "px";
-                vacancyBody.style.top = vacanceNameHeight - vacancyContainerHeight + "px";
-                vacancyBody.style.height = vacancyContainerHeight - vacanceNameHeight + 92 + "px";
+				let sendAdjust = 0;
+				if (this.classList.contains("vacancy_send"))
+					sendAdjust = 120;
+                vacancyTitle.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
+                vacancyBody.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
+                vacancyBody.style.height = sendAdjust + vacancyContainerHeight - vacanceNameHeight + 92 + "px";
             }, false);
             vacancyBlocks[i].addEventListener("mouseout", function(e){
                 e.preventDefault();
