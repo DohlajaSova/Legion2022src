@@ -2968,11 +2968,17 @@ a.button {
     .service__section_img {
       width: 50%;
       border-radius: 42px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative;
+      max-height: 720px;
+      min-height: 517px; }
       .service__section_img img {
         display: block;
         width: 100%;
-        height: auto; }
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
     .service__section_info {
       display: flex;
       flex-flow: column nowrap;

@@ -3567,10 +3567,16 @@ a.button{
             width: 50%;
             border-radius: 42px;
             overflow: hidden;
+            position: relative;
+            max-height: 720px;
+            min-height: 517px;
             img {
                 display: block;
                 width: 100%;
                 height: auto;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
         &_info {
