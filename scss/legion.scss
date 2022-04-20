@@ -2483,7 +2483,8 @@ a.button{
         }
     }
 	&.feedback_applicants{
-		background-color:$color-blue;
+        background:url($img-path + "vacancy-bg2.svg") left -40% top -80px no-repeat $color-blue;
+        background-size:auto calc(100% + 200px);
         h2{
             color:$color-white;
         }

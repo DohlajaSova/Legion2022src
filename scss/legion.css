@@ -1022,6 +1022,8 @@ a.button {
     max-height: 1000px;
     padding-bottom: 70px;
     transition: max-height 0.7s, padding-bottom 0.7s; }
+  .accordion__item:last-child {
+    border-bottom: none; }
 
 .cases {
   margin-bottom: 75px; }
@@ -1650,6 +1652,21 @@ a.button {
       width: 50%;
       padding-right: 4%;
       margin-bottom: 90px; }
+  .not-all-the-same_background {
+    background-color: #1E2738;
+    color: #fff;
+    padding: 120px 0 10px; }
+    .not-all-the-same_background h2, .not-all-the-same_background .h2,
+    .not-all-the-same_background h3, .not-all-the-same_background .h3 {
+      color: #fff; }
+    .not-all-the-same_background .accordion__item {
+      border-bottom-color: #fff; }
+      .not-all-the-same_background .accordion__item_head::before {
+        background-color: #84AEFF; }
+      .not-all-the-same_background .accordion__item_head::after {
+        background-color: #84AEFF; }
+      .not-all-the-same_background .accordion__item_body h4 {
+        color: #fff; }
 
 .problems {
   margin-bottom: 80px; }
@@ -2154,7 +2171,8 @@ a.button {
       background: url("img/icon-plus2.svg") center top no-repeat;
       background-size: contain; }
   .feedback.feedback_applicants {
-    background-color: #2864D9; }
+    background: url("img/vacancy-bg2.svg") left -40% top -80px no-repeat #2864D9;
+    background-size: auto calc(100% + 200px); }
     .feedback.feedback_applicants h2 {
       color: #fff; }
     .feedback.feedback_applicants .feedback__form_error,
@@ -2333,14 +2351,21 @@ a.button {
       background: #2864D9;
       transition: top 0.5s step-start, height 0.5s step-start, background 0.5s step-start; }
     .vacancies .vacancy_send {
-      border: 1px dashed #000; }
+      border: 1px dashed #000;
+      cursor: pointer; }
       .vacancies .vacancy_send .vacancy__title {
         background: #fff; }
+    .vacancies .vacancy.not-shown {
+      display: none; }
   .vacancies.vacancies_page {
     background-color: transparent;
     color: #000; }
     .vacancies.vacancies_page h2 {
       color: #000; }
+    .vacancies.vacancies_page .cases__title {
+      text-align: left; }
+    .vacancies.vacancies_page .cases__lead {
+      height: 37px; }
 
 .footer {
   background-color: #1E2738;
