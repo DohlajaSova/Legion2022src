@@ -613,7 +613,7 @@ a.button {
 .header {
   background-color: #fff;
   padding: 33px 0 83px;
-  height: 152px;
+  height: 36px;
   position: relative;
   width: 100%; }
   .header > .container {
@@ -938,6 +938,28 @@ a.button {
   .pmenu__social {
     font-size: 0;
     width: 40%; }
+
+.breadcrumbs {
+  margin-top: 53px; }
+  .breadcrumbs li {
+    display: inline; }
+    .breadcrumbs li::after {
+      content: "→";
+      display: inline-block;
+      margin: 0 10px;
+      transform: rotate(180deg);
+      position: relative;
+      top: -2px;
+      color: #000;
+      opacity: 0.4; }
+    .breadcrumbs li:last-child::after {
+      display: none; }
+  .breadcrumbs_on-bg a,
+  .breadcrumbs_on-bg span {
+    color: #fff; }
+  .breadcrumbs_on-bg a {
+    color: #000;
+    opacity: 0.4; }
 
 .top {
   margin-bottom: 87px; }
@@ -1792,6 +1814,19 @@ a.button {
         .problems__item_bg6 .problems__link .problems__item_plus {
           min-height: 315px;
           height: auto; }
+    .problems__item_bg7 {
+      background: #F0F0F0; }
+      .problems__item_bg7 h3 {
+        color: #000; }
+      .problems__item_bg7 p {
+        color: #000; }
+      .problems__item_bg7 .problems__more {
+        color: #949191; }
+        .problems__item_bg7 .problems__more::before {
+          background-color: #949191; }
+        .problems__item_bg7 .problems__more::after {
+          background-image: url("img/arrow3grey.svg");
+          opacity: 0.5; }
     .problems__item_plus {
       display: block;
       background: url("img/icon-plus.svg") center top no-repeat;
@@ -2885,6 +2920,30 @@ a.button {
     color: #fff;
     width: 100%; }
 
+.body_service .header {
+  background-color: transparent; }
+  .body_service .header__logo {
+    background-image: url("img/logo-white.svg"); }
+  .body_service .header__hmenu {
+    background-image: url("img/icon-menu2.svg"); }
+  .body_service .header__mmenu > a {
+    color: #fff; }
+    .body_service .header__mmenu > a.header__mmenu_lang {
+      color: #1E2738; }
+.body_service .top {
+  background: url("img/service.jpg") top center no-repeat;
+  background-size: 100% auto;
+  min-height: 544px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 70px;
+  margin-top: -152px; }
+  .body_service .top > .container {
+    align-items: flex-end; }
+  .body_service .top .h1 {
+    color: #fff;
+    width: 100%; }
+
 .years {
   display: flex;
   flex-direction: column;
@@ -3079,6 +3138,35 @@ a.button {
     border: none;
     padding-bottom: 0px;
     margin-bottom: 120px; }
+  .service-descr .principles__content_text {
+    margin-bottom: 35px; }
+  .service-descr__accordion {
+    border-top: 1px solid #949191;
+    border-bottom: 1px solid #949191;
+    margin-bottom: 120px; }
+    .service-descr__accordion .accordion__item_body p {
+      font-size: 24px;
+      margin-bottom: 35px; }
+    .service-descr__accordion .problems {
+      margin-top: 50px;
+      margin-bottom: 40px; }
+      .service-descr__accordion .problems__item_bg5 h3 {
+        font-size: 24px;
+        padding: 0 10%; }
+      .service-descr__accordion .problems__item_bg7 .problems-slider-groups__statics_dots li {
+        border-color: #949191; }
+        .service-descr__accordion .problems__item_bg7 .problems-slider-groups__statics_dots li.tns-nav-active {
+          background-color: #949191; }
+      .service-descr__accordion .problems-slider-groups .cases__case_contents {
+        height: calc(100% - 62px); }
+      .service-descr__accordion .problems-slider-groups .cases__case_number,
+      .service-descr__accordion .problems-slider-groups .cases__case_name,
+      .service-descr__accordion .problems-slider-groups .cases__case_arrow {
+        display: none; }
+      .service-descr__accordion .problems-slider-groups .cases__case_logo {
+        height: calc(100% + 107px); }
+      .service-descr__accordion .problems-slider-groups .cases__case:hover .cases__case_contents {
+        top: 0; }
 
 .vacancypage__content {
   border-top: 1px solid #949191;

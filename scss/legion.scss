@@ -504,7 +504,7 @@ a.button{
 .header{
 	background-color:$color-white;
 	padding:33px 0 83px;
-    height:152px;
+    height:36px;
 	position:relative;
     width:100%;
 	& > .container{
@@ -896,6 +896,38 @@ a.button{
 		width:40%;
 	}
 
+}
+
+.breadcrumbs{
+    margin-top:53px;
+    li{
+        display:inline;
+        &::after{
+            content: "→";
+            display:inline-block;
+            margin:0 10px;
+            transform:rotate(180deg);
+            position:relative;
+            top:-2px;
+            color:$color-black;
+            opacity:0.4;
+        }
+        &:last-child{
+            &::after{
+                display:none;
+            }
+        }
+    }
+    &_on-bg{
+        a,
+        span{
+            color:$color-white;
+        }
+        a{
+            color:$color-black;
+            opacity:0.4;
+        }
+    }
 }
 
 .top{
@@ -1991,6 +2023,25 @@ a.button{
 					height:auto;
 				}
 			}
+        }
+        &_bg7{
+            background:$color-grey-light;
+            h3{
+                color:$color-black;
+            }
+			p{
+                color:$color-black;
+			}
+            .problems__more{
+                color:$color-grey-dark;
+                &::before{
+                    background-color:$color-grey-dark;
+                }
+                &::after{
+                    background-image:url($img-path + "arrow3grey.svg");
+                    opacity:0.5;
+                }
+            }
         }
         &_plus{
 			display:block;
@@ -3467,6 +3518,42 @@ a.button{
     }
 }
 
+.body_service{
+    .header{
+        background-color:transparent;
+        &__logo{
+            background-image:url($img-path + "logo-white.svg");
+        }
+        &__hmenu{
+            background-image:url($img-path + "icon-menu2.svg");
+        }
+        &__mmenu{
+            & > a{
+                color:$color-white;
+                &.header__mmenu_lang{
+                    color:$color-blue-dark;
+                }
+            }
+        }
+    }
+    .top{
+        background:url($img-path + "service.jpg") top center no-repeat;
+        background-size:100% auto;
+        min-height:544px;
+        display:flex;
+        justify-content:flex-end;
+        padding-bottom:70px;
+        margin-top:-152px;
+		& > .container{
+			align-items:flex-end;
+		}
+        .h1{
+            color:$color-white;
+            width:100%;
+        }
+    }
+}
+
 .years{
     display:flex;
     flex-direction:column;
@@ -3707,6 +3794,56 @@ a.button{
         border: none;
         padding-bottom: 0px;
         margin-bottom: 120px;
+    }
+    &-descr{
+        .principles__content_text{
+            margin-bottom:35px;
+        }
+        &__accordion{
+            border-top:1px solid $color-grey-dark;
+            border-bottom:1px solid $color-grey-dark;
+            margin-bottom:120px;
+            .accordion__item{
+                &_body{
+                    p{
+                        font-size:24px;
+                        margin-bottom:35px;
+                    }
+                }
+            }
+            .problems{
+                margin-top:50px;
+                margin-bottom:40px;
+                &__item{
+                    &_bg5 h3{
+                        font-size:24px;
+                        padding:0 10%;
+                    }
+                    &_bg7 .problems-slider-groups__statics_dots li{
+                        border-color:$color-grey-dark;
+                        &.tns-nav-active{
+                            background-color:$color-grey-dark;
+                        }
+                    }
+                }
+                &-slider-groups{
+                    .cases__case_contents{
+                        height:calc(100% - 62px);
+                    }
+                    .cases__case_number,
+                    .cases__case_name,
+                    .cases__case_arrow{
+                        display:none;
+                    }
+                    .cases__case_logo{
+                        height:calc(100% + 107px);
+                    }
+                    .cases__case:hover .cases__case_contents{
+                        top:0;
+                    }
+                }
+            }
+        }
     }
 }
 

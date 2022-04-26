@@ -1,0 +1,567 @@
+<div class="service-descr">
+    <div class="container">
+        <div class="principles">
+            <div class="container">
+                <div class="principles__content">
+                    <h2>Проект <br><em>«под ключ»</em></h2>
+                    <div class="principles__content_text">
+                        <p>Обеспечиваем полный цикл разработки всего продукта или его отдельных блоков.</p>
+                        <p>Анализируем рынок, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и масштабируем продукт.</p>
+                        <a href="" class="button button_default js-popup-feedback-open">Обсудить проект</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-descr__accordion accordion js-accordion">
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Анализ</h3>
+                <div class="accordion__item_body">
+                    <p>Обеспечиваем полный цикл разработки всего продукта или его отдельных блоков.</p>
+                    <p>Анализируем рынок, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и&nbsp;масштабируем продукт.</p>
+                    <div class="service-descr__sliders">
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Техническое задание</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Требования к&nbsp;API</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Пользовательские сценарии</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
+            <span class="cases__case_name">Пятёрочка</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
+            <span class="cases__case_name">Tele2</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"></span>
+            <span class="cases__case_name">Globus</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Прототипирование</h3>
+                <div class="accordion__item_body">
+                    <p>Визуализируем структуру мобильного приложения. Создаём концептуальную модель приложения&nbsp;— описываем экраны и&nbsp;элементы.</p>
+                    <p>Формируем дизайн-концепцию приложения и&nbsp;создаём интерактивный прототип.</p>
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Карта экранов</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Концептуальная модель сервиса</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Интерактивный прототип</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-tea.svg" alt="Tea.ru"></span>
+            <span class="cases__case_name">Tea.ru</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"><span>2</span></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"></span>
+            <span class="cases__case_name">Альфа-Инвестиции</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"><span>3</span></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
+            <span class="cases__case_name">Tele2</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Дизайн</h3>
+                <div class="accordion__item_body">
+                    <p>Создаём концепцию приложения и&nbsp;разрабатываем дизайн. Адаптируем фирменный стиль заказчика к&nbsp;гайдлайнам платформ.</p>
+                    <p>Продумываем и&nbsp;отрисовываем состояния экранов, элементов дизайна, приветственного экрана.</p>
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Дизайн приложения</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>UI-kit</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Графические материалы</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-yota.svg" alt="Yota"></span>
+            <span class="cases__case_name">Yota</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"><span>3</span></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
+            <span class="cases__case_name">Tele2</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-raif.svg" alt="Райф"></span>
+            <span class="cases__case_name">Райф</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Разработка</h3>
+                <div class="accordion__item_body">
+                    <p>Пишем чистый и стабильный код на&nbsp;Swift, Objective-C, Java и&nbsp;Kotlin. Тестируем приложения с&nbsp;помощью Unit- и&nbsp;UI-тестов.</p>
+                    <p>Используем современные подходы и&nbsp;автоматизированный процесс разработки, CI/CD.</p>
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Файл для загрузки приложения в&nbsp;App Store, Google Play, AppGallery</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Исходный код приложения</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Автоматизированный процесс разработки, CI/CD</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"><span>3</span></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-yandex.svg" alt="Yandex"></span>
+            <span class="cases__case_name">Yandex</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"></span>
+            <span class="cases__case_name">Burger King</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-spyking.svg" alt="Spiking"></span>
+            <span class="cases__case_name">Spiking</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Контроль качества</h3>
+                <div class="accordion__item_body">
+                    <p>Контролируем качество на&nbsp;всех этапах разработки продукта.</p>
+                    <p>Параллельно с разработкой проводим тестирование на&nbsp;реальных девайсах. Готовим тестовую документацию&nbsp;— разрабатываем чек-листы и&nbsp;тест-кейсы.</p>
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Чек-листы и&nbsp;тест-кейсы для проведения тестирования</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>UI-автотесты</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Автоматизация тестирования backend</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-sber.svg" alt="Сбер"></span>
+            <span class="cases__case_name">Сбер</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
+            <span class="cases__case_name">Tele2</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
+            <span class="cases__case_name">Пятёрочка</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Техническая поддержка</h3>
+                <div class="accordion__item_body">
+                    <p>Оперативно реагируем на&nbsp;обратную связь от&nbsp;пользователей, фиксируем баги и&nbsp;исправляем ошибки.</p>
+                    <p>Работаем по&nbsp;согласованным Service Level Agreement.</p>
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Оперативное решение технических проблем</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Работа с отзывами пользователей</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>«Первая помощь» при аварийных ситуациях</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
+            <span class="cases__case_name">Tele2</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"></span>
+            <span class="cases__case_name">Globus</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
+            <span class="cases__case_name">Пятёрочка</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3 class="accordion__item_head">Управление проектом</h3>
+                <div class="accordion__item_body">
+                    <p>Для ведения проекта мы&nbsp;выделяем менеджера, который планирует и&nbsp;регулирует процессы работы: распределяет задачи, управляет рисками, определяет загрузку команды.</p>
+                    <p>Совместно с&nbsp;менеджером заказчик определяет приоритет работ, методологию ведения проекта, периодичность отчётов.</p>
+<div class="problems">
+    <div class="container">
+        <div class="problems__item problems__item_bg5">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h3>Отчётность</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Выбор методологии ведения проекта</h3>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h3>Постоянная коммуникация с&nbsp;заказчиком</h3>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg7">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"><span>2</span></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"></span>
+            <span class="cases__case_name">Альфа-Инвестиции</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-aushan.svg" alt="Ашан"></span>
+            <span class="cases__case_name">Ашан</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                        <span class="problems-slider-groups__item">
+        <span class="cases__case">
+        <div class="cases__case_number"></div>
+        <div class="cases__case_container"><div class="cases__case_contents">
+            <span class="cases__case_logo"><img src="/assets/css/img/case-888.svg" alt="888"></span>
+            <span class="cases__case_name">888</span>
+            <span class="cases__case_arrow"></span>
+        </div></div></span>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
