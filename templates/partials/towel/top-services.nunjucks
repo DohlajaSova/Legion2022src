@@ -70,13 +70,13 @@
             </div>
         </div>
         <div class="service__feature_inner">
-            <div class="service__feature_inner-wrapper">
+            <a href="/service.html" class="service__feature_inner-wrapper">
                 <div class="icon_arrow service__feature_inner-icon">
                 </div>
                 <div class="service__feature_inner-description">
                     Подробнее об услуге и этапах работы
                 </div>
-            </div>
+            </a>
             <div class="service__feature_inner-case">
                 <div class="service__feature_inner-case__visual">
                     <div class="service__feature_inner-case__visual_wrapper">
