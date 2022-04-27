@@ -1102,6 +1102,30 @@
             }
         }
     }
+    .client {
+        &__info {
+            flex-flow: column nowrap;
+            margin-bottom: 60px;
+            &_stats {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                width: 100%;
+                margin-bottom: 60px;
+                row-gap: 30px;
+                column-gap: 40px;
+                &-state {
+                    max-width: unset;
+                    // &__prop {
+                    //     margin-bottom: 13px;
+                    // }
+                }
+            }
+            &_text {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {

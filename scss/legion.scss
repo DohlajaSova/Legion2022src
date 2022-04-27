@@ -1234,6 +1234,19 @@ a.button{
                 padding: 0 20px 20px 0;
                 font-size:0;
 			}
+            .cases__case_desc{
+				position:absolute;
+				left:0;
+				bottom:0;
+                display:none;
+                text-align:left;
+                padding: 0 20px 20px 30px;
+                text-decoration: none;
+                text-transform: none;
+				color:$color-black;
+                font-size: 16px;
+                line-height: 130%;
+            }
 			&:hover{
 				.cases__case_contents{
 					top:0;
@@ -1403,7 +1416,7 @@ a.button{
         position:relative;
         &.active,
         &.tns-slide-active{
-            .cases__case_photo{
+            .cases__case_photo, .cases__case_desc{
                 display:block;
             }
         }
@@ -1995,6 +2008,13 @@ a.button{
         &_plus{
 			display:block;
 			background:url($img-path + "icon-plus.svg") center top no-repeat;
+			background-size:contain;
+			height:369px;
+            margin-bottom:-28px;
+        }
+        &_arrow{
+			display:block;
+			background:url($img-path + "icon-arrow.svg") center top no-repeat;
 			background-size:contain;
 			height:369px;
             margin-bottom:-28px;
@@ -3551,11 +3571,6 @@ a.button{
     margin: auto;
     max-width: 1440px;
     width: calc(100vw - 60px);
-    &__header {
-        &-accent {
-            color: $color-blue-light;
-        }
-    }
     &__section{
         display: flex;
         flex-flow: row nowrap;
@@ -3767,6 +3782,160 @@ a.button{
     }
 }
 
+.client {
+    &__breadcrumbs {
+        font-size: 16px;
+        line-height: 130%;
+        margin-left: 30px;
+        margin-bottom: 60px;
+        a {
+            text-decoration: none;
+            color: $color-grey-dark;
+        }
+    }
+    &__header {
+        text-align: center;
+    }
+    &__present {
+        margin-bottom: 50px;
+        &>img {
+            width: 100%;
+        }
+        &_mobile {
+            display: none;
+        }
+    }
+    &__info {
+        width: calc(100vw - 60px);
+        margin: auto;
+        margin-bottom: 120px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &_stats {
+            width: 40%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            &-state {
+                display: flex;
+                flex-flow: column nowrap;
+                font-size: 16px;
+                line-height: 130%;
+                max-width: 270px;
+                &__prop {
+                    margin-bottom: 15px;
+                    color: $color-grey-dark;
+                }
+                &__value {
+                    color: $color-blue-dark;
+                }
+            }
+        }
+        &_text {
+            width: 40%;
+            &>p {
+                font-size: 24px;
+                line-height: 130%;
+                color: $color-blue-dark;
+            }
+            &>p:first-child {
+                margin-bottom: 30px;
+            }
+        }
+        &>.cases__case {
+            margin-top: 120px;
+            margin-left: auto;
+            max-width: 649px;
+            min-height: 327px;
+            width: inherit;
+        }
+        &>.projects {
+            margin-top: 120px;
+            width: 100%;
+        }
+        .cases-slider__item_nomination .h2{
+            font-size: 74px!important;
+        }
+        .cases-slider__item_nomination p {
+            font-size: 24px!important;
+        }
+        .cases-slider__statics_title, .cases-slider__item_project-link {
+            font-size: 16px!important;
+        }
+    }
+    &__cases {
+        &_header {
+            margin-bottom: 80px;
+        }
+        width: calc(100vw - 60px);
+        margin: auto;
+        margin-bottom: 120px;
+        &_wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        &_block {
+            position: relative;
+            border-top: 1px solid $color-blue-dark;
+            padding: 40px 20px 40px 40px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            color: $color-blue-dark;
+            &.inactive {
+                color: $color-grey-dark;
+                padding-left: 0px;
+            }
+            &-name {
+                font-size: 46px;
+                line-height: 130%;
+            }
+            &-parts {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                color: $color-grey-dark;
+                &__feature {
+                    margin-right: 40px;
+                }
+                &__feature:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &_block:last-child {
+            border-bottom: 1px solid $color-blue-dark;
+        }
+        &_block:first-child {
+            transition: all 1s linear;
+        }
+        &_block:first-child:hover {
+            cursor: url($img-path + "cursor-client.png"), auto;
+        }
+        &_block:first-child:before {
+            margin-right: 20px;
+            position: absolute;
+            z-index: 0;
+            top: 56px;
+            left: 0px;
+            opacity: 0;
+            content: '';
+            transition: visibility 0s, opacity 0.25s linear;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #2864D9;
+        }
+        &_block:first-child:hover:before {
+            opacity: 1;
+        }
+    }
+    &.cases__case {
+        width: 50%!important;
+    }
+}
 .icon_plus, .icon_arrow {
     width:56px;
     height:56px;
@@ -3779,6 +3948,10 @@ a.button{
 }
 .icon_arrow {
     background:url($img-path + "arrow3grey.svg") center center no-repeat $color-green;
+}
+
+.header-accent {
+    color: $color-blue-light;
 }
 
 @keyframes rotating {
