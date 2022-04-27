@@ -306,8 +306,8 @@ docReady(function() {
     }
     
     // слайдер с принципами
-    let sliderProblemsDots = document.querySelectorAll(".js-problems-groups-dots");
-    for (i=0; i<sliderProblemsDots.length; i++){
+    //let sliderProblemsDots = document.querySelectorAll(".js-problems-groups-dots");
+    //for (i=0; i<sliderProblemsDots.length; i++){
         /*sliderProblemsDots[i].addEventListener("click", function(e){
             e.preventDefault();
             let slider = this.parentNode.previousElementSibling; // контейнер со слайдами
@@ -324,18 +324,23 @@ docReady(function() {
                 sliderControls[clickedItemNumber].classList.add("active");
             }
         }, false);*/
-    }
-    if (document.querySelectorAll(".js-problems-slider-groups").length > 0)
+    //}
+    let sliderProblems = document.querySelectorAll(".js-problems-slider-groups");
+    let sliderProblemsDots = document.querySelectorAll(".js-problems-groups-dots");
+    let sliderProblemsSlider = new Array();
+    if (sliderProblems.length > 0)
     {
-        let sliderProblems = tns({
-            container: '.js-problems-slider-groups',
-            items: 1,
-            controls: false,
-            navPosition: 'bottom',
-            navContainer: '.js-problems-groups-dots',
-            mouseDrag: true,
-            slideBy: 'page'
-        });
+        for (i=0; i<sliderProblems.length; i++){
+            sliderProblemsSlider[i] = tns({
+                container: sliderProblems[i],
+                items: 1,
+                controls: false,
+                navPosition: 'bottom',
+                navContainer: sliderProblemsDots[i],
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
     }
 
     // слайдер со статьями
