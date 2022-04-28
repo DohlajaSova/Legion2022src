@@ -4049,7 +4049,7 @@ a.button{
             transition: all 1s linear;
         }
         &_block:first-child:hover {
-            cursor: url($img-path + "cursor-client.png"), auto;
+            cursor: url($img-path + "cursor-client.jpg"), auto;
         }
         &_block:first-child:before {
             margin-right: 20px;
