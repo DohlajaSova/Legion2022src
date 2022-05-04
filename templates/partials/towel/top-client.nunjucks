@@ -1,7 +1,11 @@
 ﻿<div class="client">
-    <div class="client__breadcrumbs">
-        <a href="#">Клиенты и кейсы</a> → <a href="#"><span class="header-accent">Клиент: Пятерочка</span></a>
-    </div>
+	<ul class="client__breadcrumbs breadcrumbs ">
+		<li><a href="/clients.html">Клиенты и кейсы</a></li>
+		<li><span class="header-accent">Клиент: Пятерочка</span></li>
+	</ul>
+    <!-- <div class="">
+        <a href="#">К</a> → <a href="#"><span class="header-accent"></span></a>
+    </div> -->
   <h1 class="client__header">Пятёрочка</h1>
   <div class="client__present">
 	<img class="client__present_desktop" src="/assets/css/img/client-5ka-preview.jpg" alt="Пятёрочка" />

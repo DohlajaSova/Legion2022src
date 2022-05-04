@@ -3921,9 +3921,13 @@ a.button{
 
 .client {
     &__breadcrumbs {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
         font-size: 16px;
         line-height: 130%;
-        margin-left: 30px;
+        width: calc(100vw - 60px);
+        // margin-left: 30px;
         margin-bottom: 60px;
         a {
             text-decoration: none;
@@ -3944,13 +3948,14 @@ a.button{
     }
     &__info {
         width: calc(100vw - 60px);
+        max-width: 1440px;
         margin: auto;
         margin-bottom: 120px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         &_stats {
-            width: 40%;
+            width: 50%;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -3959,6 +3964,7 @@ a.button{
                 flex-flow: column nowrap;
                 font-size: 16px;
                 line-height: 130%;
+                flex-basis: 50%;
                 max-width: 270px;
                 &__prop {
                     margin-bottom: 15px;
@@ -3970,7 +3976,7 @@ a.button{
             }
         }
         &_text {
-            width: 40%;
+            width: 50%;
             &>p {
                 font-size: 24px;
                 line-height: 130%;
@@ -4006,6 +4012,7 @@ a.button{
             margin-bottom: 80px;
         }
         width: calc(100vw - 60px);
+        max-width: 1440px;
         margin: auto;
         margin-bottom: 120px;
         &_wrapper {
@@ -4020,9 +4027,8 @@ a.button{
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            color: $color-blue-dark;
+            color: $color-grey-dark;
             &.inactive {
-                color: $color-grey-dark;
                 padding-left: 0px;
             }
             &-name {
@@ -4046,10 +4052,11 @@ a.button{
             border-bottom: 1px solid $color-blue-dark;
         }
         &_block:first-child {
-            transition: all 1s linear;
+            transition: all .25s linear;
         }
         &_block:first-child:hover {
             cursor: url($img-path + "cursor-client.jpg"), auto;
+            color: $color-blue-dark;
         }
         &_block:first-child:before {
             margin-right: 20px;

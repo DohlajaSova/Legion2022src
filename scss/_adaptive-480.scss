@@ -178,6 +178,9 @@
                     }
                 }
             }
+            &_stats {
+                grid-template-columns: 1fr;
+            }
         }
         &__cases{
             &_block{
