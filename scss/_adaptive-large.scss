@@ -1132,6 +1132,10 @@
     .projects{
         &__panels{
             grid-template-columns:1fr;
+            grid-template-rows: 2fr 1fr 1fr;
+            &-client {
+                grid-template-columns:1fr 1fr;
+            }
         }
         .project{
             &_tall{
@@ -1154,6 +1158,14 @@
                             }
                         }
                     }
+                }
+                &-client {
+                    grid-column-end: span 2;
+                }
+            }
+            &-wide {
+                &-client {
+                    grid-column-end: span 2;
                 }
             }
             &__article{

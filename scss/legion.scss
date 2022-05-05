@@ -2067,7 +2067,10 @@ a.button{
 			display:block;
 			background:url($img-path + "icon-arrow.svg") center top no-repeat;
 			background-size:contain;
-			height:369px;
+			// height:369px;
+            height: 90%;
+            max-height: 265.47px;
+            max-width: 265.47px;
             margin-bottom:-28px;
         }
         &_button{
@@ -2083,6 +2086,12 @@ a.button{
                 left:0;
                 transition:height 0.5s ease;
             }
+        }
+        &_clientContainer {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
         }
     }
     &-complex{
@@ -2252,7 +2261,11 @@ a.button{
         display:grid;
         grid-gap:17px;
         grid-template-columns: 1fr 1fr;
-				margin-bottom:149px;
+        margin-bottom:149px;
+        &-client {
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
     }
     .project{
         background-color:$color-grey-light;
@@ -2265,6 +2278,15 @@ a.button{
             grid-row-end:span 2;
             height:0;
             padding-bottom:100%;
+            &-client {
+                padding-bottom: calc(100% + 17px);
+                grid-column-end: span 2;
+            }
+        }
+        &_wide {
+            &-client {
+                grid-column-end: span 2;
+            }
         }
         &__review{
             display:flex;
@@ -4075,9 +4097,6 @@ a.button{
         &_block:first-child:hover:before {
             opacity: 1;
         }
-    }
-    &.cases__case {
-        width: 50%!important;
     }
 }
 .icon_plus, .icon_arrow {
