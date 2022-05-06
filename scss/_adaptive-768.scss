@@ -1035,6 +1035,9 @@
                     }
                 }
             }
+            &-client {
+                grid-column-end: span 2;
+            }
         }
     }
     .principles{
@@ -1134,6 +1137,12 @@
         background:$color-white;
         &__panels{
             margin-bottom:45px;
+            &-client {
+                grid-template-columns: 290px;
+                grid-template-rows: 500px 500px 250px 250px;
+                width: 290px;
+                margin: auto;
+            }
         }
         .project{
             border-radius:30px;
@@ -1174,6 +1183,9 @@
                 }
                 &_body{
                     font-size:18px;
+                    &-client {
+                        font-size: 14px;
+                    }
                 }
                 &_author{
                     padding:43px 33px 55px;
@@ -1189,6 +1201,12 @@
                     &-position{
                         font-size:18px;
                         max-width:100%;
+                        &-client {
+                            font-size: 14px;
+                        }
+                    }
+                    &-client {
+                        font-size: 16px;
                     }
                 }
             }
@@ -1260,8 +1278,8 @@
                 }
             }
             &_tall{
-                height:auto;
-                padding-bottom:0;
+                height: auto;
+                padding-bottom: 0;
                 .project__review{
                     &_container{
                         position:relative;
@@ -1269,6 +1287,11 @@
                     &_top{
                         height:0;
                         padding-bottom:100%;
+                        &-client {
+                            height: auto;
+                            padding-bottom: 0;
+
+                        }
                     }
                     &_author{
                         padding-top:33px;
@@ -1309,6 +1332,9 @@
                     }
                 }
             }
+        }
+        &-client {
+            margin-bottom: 40px;
         }
     }
     .news{

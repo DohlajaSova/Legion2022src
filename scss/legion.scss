@@ -1157,6 +1157,10 @@ a.button{
 		background-color:$color-grey-light;
 		border-radius:$border-radius;
 		text-align:center;
+        &-client {
+            width: 100%;
+            height: 100%;
+        }
 		&_container{
 			overflow:hidden;
 			position:absolute;
@@ -2280,13 +2284,17 @@ a.button{
             padding-bottom:100%;
             &-client {
                 padding-bottom: calc(100% + 17px);
-                grid-column-end: span 2;
+                // grid-column-end: span 2;
             }
         }
         &_wide {
             &-client {
                 grid-column-end: span 2;
             }
+        }
+        &_single-client {
+            width: 100%;
+            height: 100%;
         }
         &__review{
             display:flex;
@@ -2413,6 +2421,9 @@ a.button{
                             &:hover{
                                 transform:scale(1.07);
                             }
+                            &-client {
+                                height: 100%;
+                            }
                         }
                     }
                     &_link{
@@ -2433,6 +2444,9 @@ a.button{
                             text-align:left;
                         }
                     }
+                }
+                &-client {
+                    height: 100%;
                 }
             }
             &_container{
@@ -2479,6 +2493,9 @@ a.button{
                 }
             }
         }
+    }
+    &-client {
+        margin-bottom: 120px;
     }
 }
 
@@ -4044,7 +4061,7 @@ a.button{
         &_block {
             position: relative;
             border-top: 1px solid $color-blue-dark;
-            padding: 40px 20px 40px 40px;
+            padding: 40px 20px 40px 0px;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
@@ -4078,6 +4095,7 @@ a.button{
         }
         &_block:first-child:hover {
             cursor: url($img-path + "cursor-client.jpg"), auto;
+            padding-left: 40px;
             color: $color-blue-dark;
         }
         &_block:first-child:before {

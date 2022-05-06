@@ -157,34 +157,34 @@
     </div>
   </div>
 
-  <!-- <div class="projects">
+  <div class="projects projects-client">
     <div class="container">
       <div class="projects__panels projects__panels-client">
         <div class="project project_tall project_tall-client" >
           <div class="project__review_container">
             <div class="project__review">
-              <div class="project__review_top">
+              <div class="project__review_top project__review_top-client">
                 <img
                   class="project__review_top-img hide"
                   src="/assets/css/img/temp-author.png"
                   alt="Tele2"
                 />
                 <div class="project__review_rubr">Отзыв</div>
-                <div class="project__review_body">
+                <div class="project__review_body project__review_body-client">
                   Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших
                   инструментов для торговой сети. С&nbsp;2019&nbsp;года наша
                   команда и&nbsp;e-legion работают над&nbsp;улучшением
                   пользовательского пути и&nbsp;реализацией новых сложных задач.
                 </div>
               </div>
-              <div class="project__review_author">
+              <div class="project__review_author project__review_author-client">
                 <img
                   class="project__review_author-img"
                   src="/assets/css/img/logo-5ka.svg"
                   alt="Пятёрочка"
                 />
                 <h3 class="project__review_author-name">Павел Бабий</h3>
-                <p class="project__review_author-position">
+                <p class="project__review_author-position project__review_author-position-client">
                   начальник управления цифровых платформ федеральной торговой
                   сети «Пятёрочка»
                 </p>
@@ -196,11 +196,11 @@
           <a
             href="#"
             target="_blank"
-            class="project__article project__article_small project-article"
+            class="project__article project__article_small project-article project__article_small-client"
           >
             <div class="project-article_top">
               <img
-                class="project-article_top-img"
+                class="project-article_top-img project-article_top-img-client"
                 src="/assets/css/img/temp-projects-5ka-spy.jpg"
                 alt="«Шпионский клуб»: итоги первого года работы"
               />
@@ -213,7 +213,7 @@
             </div>
           </a>
         </div>
-        <div class="project client cases__case cases__case_info" style="width: 100%; height: 100%;">
+        <div class="project client cases__case cases__case-client cases__case_info">
           <div class="cases__case_container">
             <div class="cases__case_contents cases__case_contents-slider">
               <div class="cases-slider-info">
@@ -271,9 +271,9 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   
-  <div class="container projects">
+  <!-- <div class="container projects">
     <div class="who-we-are__content">
       <div class="who-we-are__widget " style="grid-template-rows: 1fr 1fr;">
         <div class="who-we-are__widget_item double">
@@ -397,5 +397,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
