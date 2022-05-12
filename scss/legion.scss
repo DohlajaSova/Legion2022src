@@ -1763,8 +1763,14 @@ a.button{
     }
     &_case{
         .principles__content{
-            h2{
+            h2,
+            .h2,
+            .principles__content_head{
                 width:42%;
+            }
+            .principles__content_head h2,
+            .principles__content_head .h2{
+                width:100%;
             }
             h3{
                 margin:80px 0 40px;

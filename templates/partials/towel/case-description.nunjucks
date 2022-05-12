@@ -13,7 +13,13 @@
 <div class="principles principles_case">
     <div class="container">
         <div class="principles__content">
-            <h2>Улучшаем <br>сервис вместе</h2>
+            <div class="principles__content_head">
+                <h2>Улучшаем <br>сервис вместе</h2>
+                <div class="principles__content_buttons store">
+                    <a href="" class="button button_grey store_ios"><span>Download on the</span> <b>App Store</b></a>
+                    <a href="" class="button button_grey store_android"><span>Download on</span> <b>Google Play</b></a>
+                </div>
+            </div>
             <div class="principles__content_text">
                 <p>Мы начали работать над приложением не&nbsp;с&nbsp;нуля. Оно&nbsp;уже было в&nbsp;сторах c&nbsp;большим количеством пользователей. Нам&nbsp;было важно поддерживать работу приложения, параллельно создавая новую архитектуру и&nbsp;функциональность.</p>
                 
