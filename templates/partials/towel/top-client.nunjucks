@@ -1,11 +1,9 @@
 ﻿<div class="client">
-  <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
         <li><a href="/clients.html">Клиенты и кейсы</a></li>
         <li><span>Клиент: Пятерочка</span></li>
       </ul>
-  </div>
-
+  
   <h1 class="client__header">Пятёрочка</h1>
 
   <div class="client__present">
@@ -21,7 +19,6 @@
     />
   </div>
     
-  <div class="container">    
       <div class="client__info">
         <div class="client__info_stats">
           <div class="client__info_stats-state">
@@ -125,9 +122,7 @@
           </div>
         </div>
       </div>
-  </div>
     
-  <div class="container">    
       <div class="client__cases">
         <h2 class="client__cases_header">
           Связанные <em>кейсы</em>
@@ -159,7 +154,6 @@
           </div>
         </div>
       </div>
-  </div>
 
   <div class="projects projects-client">
     <div class="container">

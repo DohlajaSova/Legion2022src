@@ -821,6 +821,9 @@
         }
     }
     .client {
+        &__breadcrumbs {
+            padding: 0 15px;
+        }
         &__info {
             .cases-slider__item_nomination .h2{
                 font-size: 46px!important;

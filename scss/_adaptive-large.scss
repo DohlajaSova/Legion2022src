@@ -47,6 +47,11 @@
             padding:0 30px;
         }
     }
+    .client {
+        &__breadcrumbs {
+            padding: 0 30px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1440px) {
