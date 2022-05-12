@@ -918,6 +918,14 @@ a.button{
             }
         }
     }
+    a,
+    span{
+        color:$color-blue-light;
+    }
+    a{
+        color:$color-black;
+        opacity:0.4;
+    }
     &_on-bg{
         a,
         span{
@@ -3693,17 +3701,20 @@ a.button{
 
 .service {
     display: flex;
-    flex-flow: column  nowrap;
-    margin: auto;
-    max-width: 1440px;
-    width: calc(100vw - 60px);
+    flex-flow: column nowrap;
+    &__header{
+        em{
+            color:$color-blue-light;
+            font-style:normal;
+        }
+    }
     &__section{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         background: #F0F0F0;
         border-radius: 42px;
-        margin: 90px 0px 140px;
+        margin: 60px 0px 140px;
         &_img {
             width: 50%;
             border-radius: 42px;
@@ -3960,18 +3971,8 @@ a.button{
 
 .client {
     &__breadcrumbs {
-        max-width: 1440px;
-        margin: auto;
+        margin: 0 0 60px;
         display: flex;
-        font-size: 16px;
-        line-height: 130%;
-        width: calc(100vw - 60px);
-        // margin-left: 30px;
-        margin-bottom: 60px;
-        a {
-            text-decoration: none;
-            color: $color-grey-dark;
-        }
     }
     &__header {
         text-align: center;
@@ -3986,10 +3987,7 @@ a.button{
         }
     }
     &__info {
-        width: calc(100vw - 60px);
-        max-width: 1440px;
-        margin: auto;
-        margin-bottom: 120px;
+        margin-bottom: 140px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -4003,8 +4001,8 @@ a.button{
                 flex-flow: column nowrap;
                 font-size: 16px;
                 line-height: 130%;
-                flex-basis: 50%;
-                max-width: 270px;
+                width: 50%;
+                padding-right: 10%;
                 &__prop {
                     margin-bottom: 15px;
                     color: $color-grey-dark;
@@ -4026,11 +4024,11 @@ a.button{
             }
         }
         &>.cases__case {
-            margin-top: 120px;
+            margin-top: 90px;
             margin-left: auto;
-            max-width: 649px;
-            min-height: 327px;
-            width: inherit;
+            max-width:none;
+            min-height:0;
+            width: 50%;
         }
         &>.projects {
             margin-top: 120px;
@@ -4047,13 +4045,14 @@ a.button{
         }
     }
     &__cases {
+        margin-bottom: 120px;
         &_header {
             margin-bottom: 80px;
+            em{
+                color:$color-blue-light;
+                font-style:normal;
+            }
         }
-        width: calc(100vw - 60px);
-        max-width: 1440px;
-        margin: auto;
-        margin-bottom: 120px;
         &_wrapper {
             display: flex;
             flex-flow: column nowrap;
@@ -4066,9 +4065,10 @@ a.button{
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            color: $color-grey-dark;
+            color: $color-blue-dark;
             &.inactive {
                 padding-left: 0px;
+                color: $color-grey-dark;
             }
             &-name {
                 font-size: 46px;
@@ -4096,7 +4096,6 @@ a.button{
         &_block:first-child:hover {
             cursor: url($img-path + "cursor-client.jpg"), auto;
             padding-left: 40px;
-            color: $color-blue-dark;
         }
         &_block:first-child:before {
             margin-right: 20px;
@@ -4110,7 +4109,7 @@ a.button{
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            background-color: #2864D9;
+            background-color: $color-blue;
         }
         &_block:first-child:hover:before {
             opacity: 1;
@@ -4129,10 +4128,6 @@ a.button{
 }
 .icon_arrow {
     background:url($img-path + "arrow3grey.svg") center center no-repeat $color-green;
-}
-
-.header-accent {
-    color: $color-blue-light;
 }
 
 @keyframes rotating {

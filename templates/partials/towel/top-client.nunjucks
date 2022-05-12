@@ -1,11 +1,11 @@
 ﻿<div class="client">
-  <ul class="client__breadcrumbs breadcrumbs">
-    <li><a href="/clients.html">Клиенты и кейсы</a></li>
-    <li><span class="header-accent">Клиент: Пятерочка</span></li>
-  </ul>
-  <!-- <div class="">
-        <a href="#">К</a> → <a href="#"><span class="header-accent"></span></a>
-    </div> -->
+  <div class="container">
+      <ul class="client__breadcrumbs breadcrumbs">
+        <li><a href="/clients.html">Клиенты и кейсы</a></li>
+        <li><span>Клиент: Пятерочка</span></li>
+      </ul>
+  </div>
+
   <h1 class="client__header">Пятёрочка</h1>
 
   <div class="client__present">
@@ -20,141 +20,145 @@
       alt="Пятёрочка"
     />
   </div>
-
-  <div class="client__info">
-    <div class="client__info_stats">
-      <div class="client__info_stats-state">
-        <p class="client__info_stats-state__prop">Услуга</p>
-        <p class="client__info_stats-state__value">
-          Комплексная мобильная разработка
-        </p>
-      </div>
-      <div class="client__info_stats-state">
-        <p class="client__info_stats-state__prop">Сотрудничество</p>
-        <p class="client__info_stats-state__value">с 2019 года</p>
-      </div>
-      <div class="client__info_stats-state">
-        <p class="client__info_stats-state__prop">Работы</p>
-        <p class="client__info_stats-state__value">
-          Аналитика, разработка, тестирование, поддержка
-        </p>
-      </div>
-      <div class="client__info_stats-state">
-        <p class="client__info_stats-state__prop">Кейсы/Команда</p>
-        <p class="client__info_stats-state__value">3</p>
-      </div>
-    </div>
-    <div class="client__info_text">
-      <p>
-        В 2019 году мы начали работать над мобильным приложением «Пятёрочка» для
-        постоянных покупателей торговой сети.
-      </p>
-      <p>
-        В приложении доступны виртуальная карта, личный кабинет пользователя,
-        каталог товаров, сервис доставки, обратная связь и уникальный для рынка
-        функциональность — «Шпионский клуб».
-      </p>
-    </div>
-    <div class="cases__case cases__case_double">
-      <div class="cases-slider">
-        <div class="cases-slider__item active">
-          <div class="cases-slider__item_nomination">
-            <h3 class="h2">+2 млн</h3>
-            <p>прирост пользователей<br />за&nbsp;2021&nbsp;год</p>
-          </div>
-          <div class="cases-slider__item_project">
-            <div class="cases-slider__item_project-photo">
-              <a href="/inprocess.html"
-                ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
-              /></a>
-            </div>
-            <div class="cases-slider__item_project-link">
-              <a href="/inprocess.html">Еда и напитки</a>
-            </div>
-          </div>
-        </div>
-        <div class="cases-slider__item">
-          <div class="cases-slider__item_nomination">
-            <h3 class="h2">9 млн</h3>
-            <p>
-              ежемесячно показатель MAU растёт в среднем
-              на&nbsp;3%&nbsp;(12.2021)
+    
+  <div class="container">    
+      <div class="client__info">
+        <div class="client__info_stats">
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Услуга</p>
+            <p class="client__info_stats-state__value">
+              Комплексная мобильная разработка
             </p>
           </div>
-          <div class="cases-slider__item_project">
-            <div class="cases-slider__item_project-photo">
-              <a href="/inprocess.html"
-                ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
-              /></a>
-            </div>
-            <div class="cases-slider__item_project-link">
-              <a href="/inprocess.html">Еда и напитки</a>
-            </div>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Сотрудничество</p>
+            <p class="client__info_stats-state__value">с 2019 года</p>
           </div>
-        </div>
-        <div class="cases-slider__item">
-          <div class="cases-slider__item_nomination">
-            <h3 class="h2">36 млн</h3>
-            <p>
-              оценок<br />от пользователей<br />в&nbsp;месяц на&nbsp;купленные
-              товары
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Работы</p>
+            <p class="client__info_stats-state__value">
+              Аналитика, разработка, тестирование, поддержка
             </p>
           </div>
-          <div class="cases-slider__item_project">
-            <div class="cases-slider__item_project-photo">
-              <a href="/inprocess.html"
-                ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
-              /></a>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Кейсы/Команда</p>
+            <p class="client__info_stats-state__value">3</p>
+          </div>
+        </div>
+        <div class="client__info_text">
+          <p>
+            В 2019 году мы начали работать над мобильным приложением «Пятёрочка» для
+            постоянных покупателей торговой сети.
+          </p>
+          <p>
+            В приложении доступны виртуальная карта, личный кабинет пользователя,
+            каталог товаров, сервис доставки, обратная связь и уникальный для рынка
+            функциональность — «Шпионский клуб».
+          </p>
+        </div>
+        <div class="cases__case cases__case_double">
+          <div class="cases-slider">
+            <div class="cases-slider__item active">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">+2 млн</h3>
+                <p>прирост пользователей<br />за&nbsp;2021&nbsp;год</p>
+              </div>
+              <div class="cases-slider__item_project">
+                <div class="cases-slider__item_project-photo">
+                  <a href="/inprocess.html"
+                    ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
+                  /></a>
+                </div>
+                <div class="cases-slider__item_project-link">
+                  <a href="/inprocess.html">Еда и напитки</a>
+                </div>
+              </div>
             </div>
-            <div class="cases-slider__item_project-link">
-              <a href="/inprocess.html">Еда и напитки</a>
+            <div class="cases-slider__item">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">9 млн</h3>
+                <p>
+                  ежемесячно показатель MAU растёт в среднем
+                  на&nbsp;3%&nbsp;(12.2021)
+                </p>
+              </div>
+              <div class="cases-slider__item_project">
+                <div class="cases-slider__item_project-photo">
+                  <a href="/inprocess.html"
+                    ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
+                  /></a>
+                </div>
+                <div class="cases-slider__item_project-link">
+                  <a href="/inprocess.html">Еда и напитки</a>
+                </div>
+              </div>
             </div>
+            <div class="cases-slider__item">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">36 млн</h3>
+                <p>
+                  оценок<br />от пользователей<br />в&nbsp;месяц на&nbsp;купленные
+                  товары
+                </p>
+              </div>
+              <div class="cases-slider__item_project">
+                <div class="cases-slider__item_project-photo">
+                  <a href="/inprocess.html"
+                    ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
+                  /></a>
+                </div>
+                <div class="cases-slider__item_project-link">
+                  <a href="/inprocess.html">Еда и напитки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__statics js-cases-dots">
+            <div class="cases-slider__statics_dots">
+              <ul>
+                <li class="active"><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </div>
+            <div class="cases-slider__statics_title">Пятёрочка: Cкидки и акции</div>
           </div>
         </div>
       </div>
-      <div class="cases-slider__statics js-cases-dots">
-        <div class="cases-slider__statics_dots">
-          <ul>
-            <li class="active"><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </div>
-        <div class="cases-slider__statics_title">Пятёрочка: Cкидки и акции</div>
-      </div>
-    </div>
   </div>
-
-  <div class="client__cases">
-    <h2 class="client__cases_header">
-      Связанные <span class="header-accent">кейсы</span>
-    </h2>
-    <div class="client__cases_wrapper">
-      <div class="client__cases_block">
-        <div class="client__cases_block-name">Обратная связь</div>
-        <div class="client__cases_block-parts">
-          <div class="client__cases_block-parts__feature">шпионский клуб</div>
-          <div class="client__cases_block-parts__feature">чат с оператором</div>
-        </div>
-      </div>
-      <div class="client__cases_block inactive">
-        <div class="client__cases_block-name">Маркетинг</div>
-        <div class="client__cases_block-parts">
-          <div class="client__cases_block-parts__feature">анализ рынка</div>
-          <div class="client__cases_block-parts__feature">retail</div>
-          <div class="client__cases_block-parts__feature">исследование</div>
-        </div>
-      </div>
-      <div class="client__cases_block inactive">
-        <div class="client__cases_block-name">Бонусная система</div>
-        <div class="client__cases_block-parts">
-          <div class="client__cases_block-parts__feature">
-            мобильные приложение
+    
+  <div class="container">    
+      <div class="client__cases">
+        <h2 class="client__cases_header">
+          Связанные <em>кейсы</em>
+        </h2>
+        <div class="client__cases_wrapper">
+          <div class="client__cases_block">
+            <div class="client__cases_block-name">Обратная связь</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">шпионский клуб</div>
+              <div class="client__cases_block-parts__feature">чат с оператором</div>
+            </div>
           </div>
-          <div class="client__cases_block-parts__feature">retail</div>
+          <div class="client__cases_block inactive">
+            <div class="client__cases_block-name">Маркетинг</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">анализ рынка</div>
+              <div class="client__cases_block-parts__feature">retail</div>
+              <div class="client__cases_block-parts__feature">исследование</div>
+            </div>
+          </div>
+          <div class="client__cases_block inactive">
+            <div class="client__cases_block-name">Бонусная система</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">
+                мобильные приложение
+              </div>
+              <div class="client__cases_block-parts__feature">retail</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="projects projects-client">

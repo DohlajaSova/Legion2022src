@@ -1,5 +1,6 @@
-﻿<div class="service">
-    <h1 class="service__header">Помогаем создавать <span class="header-accent">рентабельные</span> продукты</h1>
+﻿<div class="container">
+<div class="service">
+    <h1 class="service__header">Помогаем создавать <em>рентабельные</em> продукты</h1>
     <div class="service__section">
         <div class="service__section_img">
             <img src="/assets/css/img/temp-principles2.jpg" alt="">
@@ -147,4 +148,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
