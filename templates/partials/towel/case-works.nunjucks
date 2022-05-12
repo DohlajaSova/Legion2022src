@@ -1,1 +1,57 @@
-﻿
+<div class="vacancies vacancies_page">
+    <div class="container">
+        <div class="vacancies__container">
+            <h2>На этом проекте <br/><em>мы сделали</em></h2>
+            <div class="vacancies__list">
+                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Анализ</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">Погружаемся в&nbsp;предметную область, детализируем функциональные и&nbsp;другие требования...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Разработка</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">Пишем код на&nbsp;Swift, Objective-C, Java и&nbsp;Kotlin. Тестируем приложения с&nbsp;помощью Unit- и&nbsp;UI-тестов...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Поддержка</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">Оптимизируем мобильные продукты под обновления iOS и&nbsp;Android и&nbsp;новые устройства...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Контроль качества</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">Обеспечиваем качественную работу приложений&nbsp;— находим слабые места в&nbsp;реализации и&nbsp;процессах, которые могут вызвать проблемы...</div>
+                            <div class="vacancy__body_link">Подробнеее →</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
