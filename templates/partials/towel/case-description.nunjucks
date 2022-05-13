@@ -10,6 +10,41 @@
     </div>
 </div>
 
+<div class="problems problems_case">
+    <div class="container">
+        <div class="problems__item problems__item_bg8">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <h4>FAQ</h4>
+                            <img src="/assets/css/img/temp-5ka-phone1.jpg" alt="Пятёрочка">
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h4>Поддержка</h4>
+                            <img src="/assets/css/img/temp-5ka-phone2.jpg" alt="Пятёрочка">
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <h4>Рейтинг товаров</h4>
+                            <img src="/assets/css/img/temp-5ka-phone3.jpg" alt="Пятёрочка">
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg9">
+            <img src="/assets/css/img/temp-5ka-phone4.jpg" alt="Пятёрочка">
+        </div>
+    </div>
+</div>
+
 <div class="principles principles_case">
     <div class="container">
         <div class="principles__content">

@@ -1721,6 +1721,12 @@ a.button{
                 margin-bottom:0;
             }
         }
+		&_head{
+			display:flex;
+			flex-direction:column;
+			justify-content:space-between;
+			margin-bottom:90px;
+		}
         p{
             font:$text1;
             margin-bottom:32px;
@@ -1728,6 +1734,45 @@ a.button{
 		.button{
             width:100%;
             margin-top:50px;
+		}
+		&_buttons{
+			.button{
+				display:inline-flex;
+				flex-direction:column;
+				align-items:flex-start;
+				width:40%;
+				line-height:1.2;
+				margin-right:20px;
+				position:relative;
+				padding-left:90px;
+				padding-right:30px;
+				&:last-child{
+					margin-right:0;
+				}
+				&::before{
+					content:"";
+					width:28px;
+					height:28px;
+					position:absolute;
+					left:57px;
+					background-size:contain;
+					background-position:left center;
+					background-repeat:no-repeat;
+				}
+				span{
+					font-size:10px;
+				}
+				&.store_ios{
+					&::before{
+						background-image:url($img-path + "icon-store-appstore.svg");
+					}
+				}
+				&.store_android{
+					&::before{
+						background-image:url($img-path + "icon-store-googleplay.svg");
+					}
+				}
+			}
 		}
     }
     &__video{
@@ -2116,6 +2161,14 @@ a.button{
                 }
             }
         }
+        &_bg8{
+			background:$color-green-light;
+			overflow:hidden;
+		}
+        &_bg9{
+			background:$color-grey-light;
+			overflow:hidden;
+		}
         &_plus{
 			display:block;
 			background:url($img-path + "icon-plus.svg") center top no-repeat;
