@@ -35,21 +35,21 @@ function objToQuery(obj) {
 function closeAllSelect(elmnt) {
   /* A function that will close all select boxes in the document,
   except the current select box: */
-  let x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
+  let selectItems, selectSelected, i, xl, yl, arrNo = [];
+  selectItems = document.getElementsByClassName("select-items");
+  selectSelected = document.getElementsByClassName("select-selected");
+  xl = selectItems.length;
+  yl = selectSelected.length;
   for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
+    if (elmnt == selectSelected[i]) {
       arrNo.push(i)
     } else {
-      y[i].classList.remove("select-arrow-active");
+        selectSelected[i].classList.remove("select-arrow-active");
     }
   }
   for (i = 0; i < xl; i++) {
     if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
+        selectItems[i].classList.add("select-hide");
     }
   }
 }
@@ -448,7 +448,6 @@ docReady(function() {
                 let options = e.target.parentNode.parentNode.childNodes[0];
                 e.preventDefault();
                 let selectedType = options.selectedOptions[0].value;
-
                 for (j=0; j<types.length; j++){
                     if (!types[j].includes("'" + selectedType + "'")){
                         portfolioBlocks[0].children[j].classList.add("hide");
@@ -734,65 +733,97 @@ docReady(function() {
     // кастомный селект
     if (document.querySelector('.select'))
     {
-        let x, i, j, l, ll, selElmnt, a, b, c;
+        let selectsByClass, i, j, sbcLength, SBTLength, selectsByTag, divCreated, div2Created, div3Created;
         /* Look for any elements with the class "select": */
-        x = document.getElementsByClassName("select");
-        l = x.length;
-        for (i = 0; i < l; i++) {
-          selElmnt = x[i].getElementsByTagName("select")[0];
-          ll = selElmnt.length;
+        selectsByClass = document.getElementsByClassName("select");
+        sbcLength = selectsByClass.length;
+
+        for (i = 0; i < sbcLength; i++) {
+          selectsByTag = selectsByClass[i].getElementsByTagName("select")[0];
+          SBTLength = selectsByTag.length;
           /* For each element, create a new DIV that will act as the selected item: */
-          a = document.createElement("DIV");
-          a.setAttribute("class", "select-selected");
-          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-		  //a.innerHTML = Array.prototype.slice.call(selElmnt.selectedOptions);
-		  console.log(selElmnt.selectedOptions);
-          x[i].appendChild(a);
+          divCreated = document.createElement("DIV");
+          divCreated.setAttribute("class", "select-selected");
+          divCreated.innerHTML = selectsByTag.options[selectsByTag.selectedIndex].innerHTML;
+          
+		  //divCreated.innerHTML = Array.prototype.slice.call(selectsByTag.selectedOptions);
+          selectsByClass[i].appendChild(divCreated);
           /* For each element, create a new DIV that will contain the option list: */
-          b = document.createElement("DIV");
-          b.setAttribute("class", "select-items select-hide");
-          for (j = 0; j < ll; j++) {
+          div2Created = document.createElement("DIV");
+          div2Created.setAttribute("class", "select-items select-hide");
+
+          for (j = 0; j < SBTLength; j++) {
             /* For each option in the original select element,
             create a new DIV that will act as an option item: */
-            c = document.createElement("DIV");
-            c.innerHTML = selElmnt.options[j].innerHTML;
-            if (j == 0) {c.setAttribute("class", "same-as-selected");}
+            div3Created = document.createElement("DIV");
+            div3Created.innerHTML = selectsByTag.options[j].innerHTML;
+
+            if (j == 0) {div3Created.setAttribute("class", "same-as-selected");}
             /*custom options*/
-            if  (selElmnt.options[j].value == "ios" ||
-                 selElmnt.options[j].value == "android" ||
-                 selElmnt.options[j].value == "web" ||
-                 selElmnt.options[j].value == "other")
+            if  (selectsByTag.options[j].value == "ios" ||
+                 selectsByTag.options[j].value == "android" ||
+                 selectsByTag.options[j].value == "web" ||
+                 selectsByTag.options[j].value == "other")
             {
-                newClass = "iconed_" + selElmnt.options[j].value;
-                c.classList.add("iconed");
-                c.classList.add(newClass);
+                newClass = "iconed_" + selectsByTag.options[j].value;
+                div3Created.classList.add("iconed");
+                div3Created.classList.add(newClass);
             }
-            c.addEventListener("click", function(e) {
+            
+            div3Created.addEventListener("click", function(e) {
+                function updateSelect(removed, change, eHTML) {
+                    selectSelected = document.getElementsByClassName("select-selected");
+                    let sll = selectSelected.length
+                    for (let one = 0; one < sll; one++) {
+                    if (eHTML == selectSelected[one].innerHTML) {
+                        if(removed) {
+                            selectSelected[one].innerHTML = selectSelected[one].innerHTML.split(', ').filter(function(f) { return f !== removed }).join(', ');
+                        } else {
+                            if(selectSelected[one].innerHTML) {
+                                selectSelected[one].innerHTML = selectSelected[one].innerHTML.concat(', ' + change)
+                            } else {
+                                selectSelected[one].innerHTML = change;
+                            }
+                        }
+                      }
+                    }
+                }
+
                 /* When an item is clicked, update the original select box,
                 and the selected item: */
-                let y, i, k, s, h, sl, yl;
-                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                sl = s.length;
-                h = this.parentNode.previousSibling;
+                let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl;
+                selectsByTagDiv3 = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = selectsByTagDiv3.length;
+                pvsSibling = this.parentNode.previousSibling;
                 for (i = 0; i < sl; i++) {
-                  if (s.options[i].innerHTML == this.innerHTML) {
-                    s.selectedIndex = i;
-                    h.innerHTML = this.innerHTML;
-                    y = this.parentNode.getElementsByClassName("same-as-selected");
-                    yl = y.length;
-                    for (k = 0; k < yl; k++) {
-                      y[k].classList.remove("same-as-selected");
+                    if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
+                        selectsByTagDiv3.selectedIndex = i;
+                        // pvsSibling.innerHTML = this.innerHTML;
+                        optionSelected = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = optionSelected.length;
+                        let removed = false;
+                        for (k = 0; k < yl; k++) {
+                            if(optionSelected[k]?.innerHTML == this.innerHTML) {
+                                // if(~optionSelected[k]?.innerHTML?.indexOf(this.innerHTML)) {
+                                removed = optionSelected[k]?.innerHTML; //  check why triggering error
+                                optionSelected[k]?.classList.remove("same-as-selected");
+                            }
+                        }
+                        if(!removed){
+                            this.classList.add("same-as-selected");
+                        }
+                        const change = removed || this.innerHTML;
+                        updateSelect(removed, change, pvsSibling.innerHTML);
+                        break;
                     }
-                    this.classList.add("same-as-selected");
-                    break;
-                  }
                 }
-                h.click();
+                // pvsSibling.click(); // ???
             });
-            b.appendChild(c);
+            div2Created.appendChild(div3Created);
           }
-          x[i].appendChild(b);
-          a.addEventListener("click", function(e) {
+          
+          selectsByClass[i].appendChild(div2Created);
+          divCreated.addEventListener("click", function(e) {
             /* When the select box is clicked, close any other select boxes,
             and open/close the current select box: */
             e.stopPropagation();
