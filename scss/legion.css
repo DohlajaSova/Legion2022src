@@ -1626,8 +1626,13 @@ a.button {
         position: absolute;
         width: 100%;
         height: 100%; }
-.principles_case .principles__content h2 {
+.principles_case .principles__content h2,
+.principles_case .principles__content .h2,
+.principles_case .principles__content .principles__content_head {
   width: 42%; }
+.principles_case .principles__content .principles__content_head h2,
+.principles_case .principles__content .principles__content_head .h2 {
+  width: 100%; }
 .principles_case .principles__content h3 {
   margin: 80px 0 40px; }
 
