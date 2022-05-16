@@ -1026,11 +1026,13 @@
 					display:flex;
                     flex-direction:column;
                     justify-content:center;
-					height:61px;
+					// height:61px;
+                    min-height: 61px;
 					margin-bottom:0;
 					padding:12px 70px 10px 35px;
 					border-radius:30px;
-					line-height:23px;
+					line-height: 32px;
+					// line-height:23px;
 					cursor:pointer;
 					background-color:$color-blue;
 					color:$color-white;
@@ -1049,12 +1051,14 @@
 					&::before{
 						background-color:$color-white;
 						border-radius:50%;
-						top:6px;
+                        top: calc(50% - 23px);
+						// top:6px;
 						right:14px;
 					}
 					&::after{
 						background:url($img-path + "arrow2blue.svg") center center no-repeat;
-						top:10px;
+                        top: calc(50% - 17px);
+						// top:10px;
 						right:14px;
 						background-size:60%;
 						z-index:11;
@@ -1067,6 +1071,7 @@
 						&::after{
 							transform:rotate(180deg);
                             top:6px;
+                            top: calc(50% - 20px);
 						}
                         & + .select-items{
                             z-index:22;
