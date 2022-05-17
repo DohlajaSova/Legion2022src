@@ -594,7 +594,8 @@ a.button {
     display: none; }
   .select-inline .select-hide {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    column-gap: 10px; }
     .select-inline .select-hide div {
       color: #949191;
       display: flex;
@@ -1596,12 +1597,44 @@ a.button {
     margin-bottom: 90px; }
     .principles__content_text *:last-child {
       margin-bottom: 0; }
+  .principles__content_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 90px; }
   .principles__content p {
     font: 400 24px / 1.3 Dopis;
     margin-bottom: 32px; }
   .principles__content .button {
     width: 100%;
     margin-top: 50px; }
+  .principles__content_buttons .button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    line-height: 1.2;
+    margin-right: 20px;
+    position: relative;
+    padding-left: 90px;
+    padding-right: 30px; }
+    .principles__content_buttons .button:last-child {
+      margin-right: 0; }
+    .principles__content_buttons .button::before {
+      content: "";
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      left: 57px;
+      background-size: contain;
+      background-position: left center;
+      background-repeat: no-repeat; }
+    .principles__content_buttons .button span {
+      font-size: 10px; }
+    .principles__content_buttons .button.store_ios::before {
+      background-image: url("img/icon-store-appstore.svg"); }
+    .principles__content_buttons .button.store_android::before {
+      background-image: url("img/icon-store-googleplay.svg"); }
 .principles__video {
   width: 100%;
   padding-bottom: 40%;
@@ -1884,6 +1917,12 @@ a.button {
         .problems__item_bg7 .problems__more::after {
           background-image: url("img/arrow3grey.svg");
           opacity: 0.5; }
+    .problems__item_bg8 {
+      background: #82D997;
+      overflow: hidden; }
+    .problems__item_bg9 {
+      background: #F0F0F0;
+      overflow: hidden; }
     .problems__item_plus {
       display: block;
       background: url("img/icon-plus.svg") center top no-repeat;
@@ -3453,7 +3492,10 @@ a.button {
   .team,
   .to-work,
   .some-projects,
-  .dummy__container {
+  .dummy__container,
+  .client__info,
+  .client__cases,
+  .client__breadcrumbs {
     padding-left: 30px;
     padding-right: 30px; }
 
@@ -3797,7 +3839,12 @@ a.button {
     grid-template-rows: 100px 100px; }
 
   .service__feature_inner-case__brief {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .client__info .cases-slider__item_nomination .h2 {
+    font-size: 54px !important; }
+  .client__info .cases-slider__item_nomination p {
+    font-size: 20px !important; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
@@ -3823,8 +3870,12 @@ a.button {
   .pmenu__social {
     width: 60%; }
 
-  .select-inline .select-hide div {
-    width: 50%; }
+  .select-inline .select-hide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+    .select-inline .select-hide div {
+      width: 100%; }
 
   .about {
     margin-bottom: -42px; }
@@ -4094,11 +4145,12 @@ a.button {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 61px;
+      height: auto;
+      min-height: 61px;
       margin-bottom: 0;
       padding: 12px 70px 10px 35px;
       border-radius: 30px;
-      line-height: 23px;
+      line-height: 32px;
       cursor: pointer;
       background-color: #2864D9;
       color: #fff;
@@ -4115,11 +4167,11 @@ a.button {
       .request__select.select-inline_wide .select-selected::before {
         background-color: #fff;
         border-radius: 50%;
-        top: 6px;
+        top: calc(50% - 23px);
         right: 14px; }
       .request__select.select-inline_wide .select-selected::after {
         background: url("img/arrow2blue.svg") center center no-repeat;
-        top: 10px;
+        top: calc(50% - 17px);
         right: 14px;
         background-size: 60%;
         z-index: 11; }
@@ -4129,7 +4181,8 @@ a.button {
           opacity: 0.5; }
         .request__select.select-inline_wide .select-selected.select-arrow-active::after {
           transform: rotate(180deg);
-          top: 6px; }
+          top: 6px;
+          top: calc(50% - 20px); }
         .request__select.select-inline_wide .select-selected.select-arrow-active + .select-items {
           z-index: 22; }
     .request__select.select-inline_wide .select-items {
@@ -4175,7 +4228,14 @@ a.button {
       .client__info_stats-state {
         max-width: unset; }
     .client__info_text {
-      width: 100%; } }
+      width: 100%; }
+    .client__info .cases__case_double {
+      width: 100%;
+      padding-bottom: 48%; }
+    .client__info .cases-slider__item_nomination .h2 {
+      font-size: 74px !important; }
+    .client__info .cases-slider__item_nomination p {
+      font-size: 24px !important; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -4183,7 +4243,8 @@ a.button {
     .projects__panels-client {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 2fr 1fr 1fr;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      overflow: hidden; }
   .projects .project_tall {
     grid-row-end: unset; }
     .projects .project_tall-with-slider {
@@ -4859,7 +4920,8 @@ a.button {
   .request__file {
     margin-bottom: 10px; }
   .request__select.select-inline_wide .select-selected {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 24px; }
 
   .popup-video__container,
   .popup-feedback__container {
@@ -4880,6 +4942,9 @@ a.button {
     .service__feature_info-description {
       width: 100%; }
 
+  .client__breadcrumbs, .client__cases, .client__info {
+    padding-left: 15px;
+    padding-right: 15px; }
   .client__info .cases-slider__item_nomination .h2 {
     font-size: 46px !important; }
   .client__info .cases-slider__item_nomination p {
@@ -5367,7 +5432,6 @@ a.button {
   .client__breadcrumbs {
     font-size: 9px;
     line-height: 130%;
-    margin-left: 15px;
     margin-bottom: 40px; }
   .client__info > .cases__case {
     min-height: 580px; }
@@ -5398,7 +5462,10 @@ a.button {
       width: 100%;
       font-size: 14px; }
   .client__info_stats {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    .client__info_stats .client__info_stats-state {
+      width: 100%; }
   .client__cases_block-name {
     font-size: 24px; } }
 @media only screen and (max-width: 375px) {

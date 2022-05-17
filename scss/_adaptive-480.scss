@@ -180,6 +180,9 @@
             &_stats {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
+                .client__info_stats-state{
+                    width:100%;
+                }
             }
         }
         &__cases{

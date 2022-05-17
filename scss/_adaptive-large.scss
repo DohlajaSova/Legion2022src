@@ -583,6 +583,14 @@
     .service__feature_inner-case__brief {
         padding: 20px;
     }
+    .client__info .cases-slider__item_nomination{
+        .h2{
+            font-size:54px !important;
+        }
+        p{
+            font-size:20px !important;
+        }
+    }
 }
 
 @media only screen and (max-width: $screen-md) {
@@ -1143,6 +1151,20 @@
             }
             &_text {
                 width: 100%;
+            }
+            .cases__case_double{
+                width:100%;
+                padding-bottom:48%;
+            }
+            .cases-slider{
+                &__item_nomination{
+                    .h2{
+                        font-size:74px !important;
+                    }
+                    p{
+                        font-size:24px !important;
+                    }
+                }
             }
         }
     }
