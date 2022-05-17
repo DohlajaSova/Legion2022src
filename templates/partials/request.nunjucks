@@ -49,7 +49,7 @@
         </div>
         <h3>Какие платформы?</h3>
         <div class="request__select select select-inline">
-            <select id="multiple2" name="Выберите платформу">
+            <select name="Выберите платформу">
                 <option value="ios">iOS</option>
                 <option value="android">Android</option>
                 <option value="web">Web</option>

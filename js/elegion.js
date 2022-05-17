@@ -804,18 +804,25 @@ docReady(function() {
                 for (i = 0; i < sl; i++) {
                     if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
                         selectsByTagDiv3.selectedIndex = i;
+                        if(!isMultiple){
+                            pvsSibling.innerHTML = this.innerHTML
+                        }
                         optionSelected = this.parentNode.getElementsByClassName("same-as-selected");
                         yl = optionSelected.length;
                         let removed = false;
-                        for (k = 0; k < yl; k++) {
-                            if(isMultiple) {
+                        if(isMultiple) {
+                            for (k = 0; k < yl; k++) {
                                 if(optionSelected[k]?.innerHTML == this.innerHTML) {
                                     removed = optionSelected[k]?.innerHTML; //  check why triggering error
                                     optionSelected[k]?.classList.remove("same-as-selected");
                                 }
-                            } else {
-
                             }
+                        } else {
+                            for (k = 0; k < yl; k++) {
+                                optionSelected[k].classList.remove("same-as-selected");
+                            }
+                            this.classList.add("same-as-selected");
+
                         }
                         if(isMultiple){
                             if (!removed) {
@@ -827,7 +834,9 @@ docReady(function() {
                         break;
                     }
                 }
-                // pvsSibling.click(); // ???
+                if(!isMultiple){
+                    pvsSibling.click(); // ???
+                }
             });
             div2Created.appendChild(div3Created);
           }
