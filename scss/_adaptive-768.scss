@@ -822,8 +822,9 @@
         }
     }
     .client {
-        &__breadcrumbs {
-            padding: 0 15px;
+        &__breadcrumbs, &__cases, &__info {
+            padding-left:15px;
+            padding-right:15px;
         }
         &__info {
             .cases-slider__item_nomination .h2{

@@ -24,7 +24,10 @@
     .team,
     .to-work,
     .some-projects,
-    .dummy__container{
+    .dummy__container,
+    .client__info,
+    .client__cases,
+    .client__breadcrumbs{
         padding-left:30px;
         padding-right:30px;
     }
@@ -45,11 +48,6 @@
 	.request{
         .container{
             padding:0 30px;
-        }
-    }
-    .client {
-        &__breadcrumbs {
-            padding: 0 30px;
         }
     }
 }
