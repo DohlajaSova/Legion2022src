@@ -771,21 +771,26 @@ docReady(function() {
             }
             
             div3Created.addEventListener("click", function(e) {
-                function updateSelect(removed, change, eHTML) {
+
+                function updateSelect(removed, change, eHTML, placeh) {
                     selectSelected = document.getElementsByClassName("select-selected");
                     let sll = selectSelected.length
+                    const placeholder = placeh || 'Выберите';
                     for (let one = 0; one < sll; one++) {
-                    if (eHTML == selectSelected[one].innerHTML) {
-                        if(removed) {
-                            selectSelected[one].innerHTML = selectSelected[one].innerHTML.split(', ').filter(function(f) { return f !== removed }).join(', ');
-                        } else {
-                            if(selectSelected[one].innerHTML) {
-                                selectSelected[one].innerHTML = selectSelected[one].innerHTML.concat(', ' + change)
+                        if (eHTML == selectSelected[one].innerHTML) {
+                            if(removed) {
+                                selectSelected[one].innerHTML = selectSelected[one].innerHTML.split(', ').filter(function(f) { return f !== removed }).join(', ');
+                                if(!selectSelected[one].innerHTML) {
+                                    selectSelected[one].innerHTML = placeholder;
+                                }
                             } else {
-                                selectSelected[one].innerHTML = change;
+                                if(selectSelected[one].innerHTML != placeholder) {
+                                    selectSelected[one].innerHTML = selectSelected[one].innerHTML.concat(', ' + change)
+                                } else {
+                                    selectSelected[one].innerHTML = change;
+                                }
                             }
                         }
-                      }
                     }
                 }
 
@@ -793,27 +798,32 @@ docReady(function() {
                 and the selected item: */
                 let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl;
                 selectsByTagDiv3 = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                const isMultiple = selectsByTagDiv3.id.startsWith('multiple')
                 sl = selectsByTagDiv3.length;
                 pvsSibling = this.parentNode.previousSibling;
                 for (i = 0; i < sl; i++) {
                     if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
                         selectsByTagDiv3.selectedIndex = i;
-                        // pvsSibling.innerHTML = this.innerHTML;
                         optionSelected = this.parentNode.getElementsByClassName("same-as-selected");
                         yl = optionSelected.length;
                         let removed = false;
                         for (k = 0; k < yl; k++) {
-                            if(optionSelected[k]?.innerHTML == this.innerHTML) {
-                                // if(~optionSelected[k]?.innerHTML?.indexOf(this.innerHTML)) {
-                                removed = optionSelected[k]?.innerHTML; //  check why triggering error
-                                optionSelected[k]?.classList.remove("same-as-selected");
+                            if(isMultiple) {
+                                if(optionSelected[k]?.innerHTML == this.innerHTML) {
+                                    removed = optionSelected[k]?.innerHTML; //  check why triggering error
+                                    optionSelected[k]?.classList.remove("same-as-selected");
+                                }
+                            } else {
+
                             }
                         }
-                        if(!removed){
-                            this.classList.add("same-as-selected");
+                        if(isMultiple){
+                            if (!removed) {
+                                this.classList.add("same-as-selected");
+                            }
+                            const change = removed || this.innerHTML;
+                            updateSelect(removed, change, pvsSibling.innerHTML, selectsByTagDiv3.name);
                         }
-                        const change = removed || this.innerHTML;
-                        updateSelect(removed, change, pvsSibling.innerHTML);
                         break;
                     }
                 }

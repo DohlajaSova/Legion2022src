@@ -623,8 +623,11 @@
     .select{
         &-inline{
             .select-hide{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
                 div{
-                    width:50%;
+                    width:100%;
                 }
             }
         }

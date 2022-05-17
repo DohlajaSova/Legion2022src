@@ -4,7 +4,7 @@
         <div class="request__lead"></div>
         <h3>Что нужно сделать?</h3>
         <div class="request__select select select-inline select-inline_wide">
-            <select>
+            <select id="multiple-1" name="Выберите вариант">
                 <option>Разработать приложение с&nbsp;нуля</option>
                 <option>Провести аудит&nbsp;МП</option>
                 <option>Проанализировать конкурентов</option>
@@ -49,7 +49,7 @@
         </div>
         <h3>Какие платформы?</h3>
         <div class="request__select select select-inline">
-            <select>
+            <select id="multiple2" name="Выберите платформу">
                 <option value="ios">iOS</option>
                 <option value="android">Android</option>
                 <option value="web">Web</option>
@@ -88,12 +88,12 @@
         </div>
         <h3>И последнее: как вы узнали о нас?</h3>
         <div class="request__select select select-inline">
-            <select multiple="multiple">
+            <select id="multiple-3" name="Выберите вариант">
                 <option selected="selected">Рейтинги</option>
                 <option>Социальные сети</option>
                 <option>СМИ</option>
                 <option>Рекомендации</option>
-                <option selected="selected">Поисковая выдача</option>
+                <option>Поисковая выдача</option>
                 <option>Конференции</option>
                 <option>Я не помню</option>
             </select>
