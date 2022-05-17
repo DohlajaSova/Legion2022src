@@ -480,6 +480,7 @@ a.button{
             &-hide{
                 display:flex;
 				flex-wrap:wrap;
+                column-gap: 10px;
                 div{
                     color:$color-grey-dark;
                     display:flex;
