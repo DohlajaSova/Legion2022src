@@ -1,5 +1,5 @@
 <div class="request">
-    <div class="container">
+    <div class="container" style="overflow:hidden">
         <h1 class="request__title">Расскажите нам о&nbsp;задаче</h1>
         <div class="request__lead"></div>
         <h3>Что нужно сделать?</h3>

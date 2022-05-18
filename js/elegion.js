@@ -637,11 +637,19 @@ docReady(function() {
 				val = +_t.value,
 				_o = _p.querySelector(`option[value='${val}']`), 
 				lbl = +_o.label;
-	
-			_t.setAttribute('aria-valuetext', lbl);
+            // console.log( _p.clientWidth)
+            // console.log({_p})
+            let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            console.log({wwidth})
+            console.log(_p.clientWidth)
+            // let wdd = wwidth < 1200 ? wwidth : (wwidth < 1025 ? wwidth - 30 :_p.clientWidth)
+            let wdd = wwidth > 1330 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60)
+            // ( _p.clientWidth < 441 ? _p.clientWidth - 300 : _p.clientWidth - 120) : _p.clientWidth - 220
+            console.log({wdd})
+            _t.setAttribute('aria-valuetext', lbl);
 			_p.style.setProperty(`--${_t.id}`, val);
 			_p.style.setProperty(`--lbl-${_t.id}`, lbl+"");
-			_p.style.setProperty(`--wd`, _p.clientWidth);
+			_p.style.setProperty(`--wd`, wdd); // 60 - padding
 		}
 	
 		document.querySelectorAll('.range input[type="range"]')[0].addEventListener('input', rangeMonitor, false);

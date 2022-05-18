@@ -62,6 +62,7 @@ $label-h: 50px; /* label widths */
 		grid-auto-flow: row dense;
 		grid-template-rows: $label-h max-content $label-h;
 		grid-template-columns: var(--label-w) var(--middl-w) var(--label-w);
+		justify-content: center;
 		//filter: brightness(.8);
 		
 		&::before, &::after {
