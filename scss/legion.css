@@ -46,7 +46,8 @@
     display: grid;
     grid-auto-flow: row dense;
     grid-template-rows: 50px max-content 50px;
-    grid-template-columns: var(--label-w) var(--middl-w) var(--label-w); }
+    grid-template-columns: var(--label-w) var(--middl-w) var(--label-w);
+    justify-content: center; }
     .range__wrap::before, .range__wrap::after {
       z-index: -1;
       height: 60px;
@@ -586,6 +587,38 @@ a.button {
     text-align: center;
     font-weight: 700; }
 
+.device {
+  width: 324px;
+  margin: 0 auto; }
+  .device__wrapper {
+    position: relative;
+    width: 324px;
+    margin: 0;
+    height: max-content; }
+  .device__screen {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    left: 7px;
+    top: 5px;
+    border-radius: 0;
+    width: 289px;
+    height: auto; }
+  .device__shadow {
+    position: relative;
+    z-index: 3;
+    top: 0;
+    margin: -20px 0;
+    width: calc(100% - 20px);
+    border-radius: 40px; }
+  .device__phone {
+    width: 324px;
+    margin: -10px;
+    position: relative;
+    z-index: 4;
+    object-fit: cover;
+    height: auto; }
+
 .select {
   position: relative; }
   .select select {
@@ -748,7 +781,8 @@ a.button {
     .circle-text__item {
       display: none;
       width: 230px;
-      margin: 10px auto 0; }
+      margin: 10px auto 0;
+      transition: opacity 1000ms; }
       .circle-text__item:first-child {
         display: block; }
       .circle-text__item_number {
@@ -1608,33 +1642,36 @@ a.button {
   .principles__content .button {
     width: 100%;
     margin-top: 50px; }
-  .principles__content_buttons .button {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 40%;
-    line-height: 1.2;
-    margin-right: 20px;
-    position: relative;
-    padding-left: 90px;
-    padding-right: 30px; }
-    .principles__content_buttons .button:last-child {
-      margin-right: 0; }
-    .principles__content_buttons .button::before {
-      content: "";
-      width: 28px;
-      height: 28px;
-      position: absolute;
-      left: 57px;
-      background-size: contain;
-      background-position: left center;
-      background-repeat: no-repeat; }
-    .principles__content_buttons .button span {
-      font-size: 10px; }
-    .principles__content_buttons .button.store_ios::before {
-      background-image: url("img/icon-store-appstore.svg"); }
-    .principles__content_buttons .button.store_android::before {
-      background-image: url("img/icon-store-googleplay.svg"); }
+  .principles__content_buttons {
+    width: 49%;
+    margin-top: -213px; }
+    .principles__content_buttons .button {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 40%;
+      line-height: 1.2;
+      margin-right: 20px;
+      position: relative;
+      padding-left: 90px;
+      padding-right: 30px; }
+      .principles__content_buttons .button:last-child {
+        margin-right: 0; }
+      .principles__content_buttons .button::before {
+        content: "";
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        left: 57px;
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat; }
+      .principles__content_buttons .button span {
+        font-size: 10px; }
+      .principles__content_buttons .button.store_ios::before {
+        background-image: url("img/icon-store-appstore.svg"); }
+      .principles__content_buttons .button.store_android::before {
+        background-image: url("img/icon-store-googleplay.svg"); }
 .principles__video {
   width: 100%;
   padding-bottom: 40%;
@@ -1918,10 +1955,26 @@ a.button {
           background-image: url("img/arrow3grey.svg");
           opacity: 0.5; }
     .problems__item_bg8 {
+      padding: 40px 40px calc(49.2% - 40px);
       background: #82D997;
       overflow: hidden; }
+      .problems__item_bg8 h4 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 24px;
+        padding: 0 35px 50px; }
+      .problems__item_bg8 .device {
+        position: relative;
+        bottom: -15px; }
+      .problems__item_bg8 .problems-slider-groups__statics_dots li {
+        border-color: #949191; }
+        .problems__item_bg8 .problems-slider-groups__statics_dots li.tns-nav-active {
+          background-color: #949191; }
     .problems__item_bg9 {
       background: #F0F0F0;
+      overflow: hidden; }
+    .problems__item_bg10 {
+      background: #1E2738;
       overflow: hidden; }
     .problems__item_plus {
       display: block;
@@ -3448,6 +3501,9 @@ a.button {
   .client__cases_block:first-child:hover:before {
     opacity: 1; }
 
+.client ~ .feedback {
+  margin-bottom: 120px; }
+
 .icon_plus, .icon_arrow {
   width: 56px;
   height: 56px;
@@ -4639,13 +4695,16 @@ a.button {
         margin-bottom: 20px; }
     .client__cases_block:first-child:hover {
       transition: none;
-      cursor: default; }
+      cursor: default;
+      padding-left: 0px; }
     .client__cases_block:first-child:hover:before {
       transition: none;
-      position: static;
       display: none; }
   .client__info > .cases__case {
-    margin-top: 60px; } }
+    margin-top: 60px; }
+
+  .client ~ .feedback {
+    margin-bottom: 60px; } }
 @media only screen and (max-width: 650px) {
   .header,
   .footer,
