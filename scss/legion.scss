@@ -466,6 +466,43 @@ a.button{
 	}
 }
 
+.device{
+    width:324px;
+    margin:0 auto;
+    &__wrapper{
+        position:relative;
+        width:324px;
+        margin:0;
+        height:max-content;
+    }
+    &__screen{
+        position:absolute;
+        z-index:2;
+        object-fit:contain;
+        left:7px;
+        top:5px;
+        border-radius:0;
+        width:289px;
+        height:auto;
+    }
+    &__shadow{
+        position:relative;
+        z-index:3;
+        top:0;
+        margin:-20px 0;
+        width:calc(100% - 20px);
+        border-radius:40px;
+    }
+    &__phone{
+        width:324px;
+        margin:-10px;
+        position:relative;
+        z-index:4;
+        object-fit:cover;
+        height:auto;
+    }
+}
+
 .select{
     position: relative;
     select{
@@ -668,10 +705,12 @@ a.button{
         transform:translateY(-50%) translateX(-50%);
         left:50%;
         top:50%;
+        // opacity: 0;
         &__item{
             display:none;
             width:230px;
             margin:10px auto 0;
+            transition: opacity 1000ms;
             &:first-child{
                 display:block;
             }
@@ -1737,6 +1776,8 @@ a.button{
             margin-top:50px;
 		}
 		&_buttons{
+            width:49%;
+            margin-top:-213px;
 			.button{
 				display:inline-flex;
 				flex-direction:column;
@@ -2163,11 +2204,32 @@ a.button{
             }
         }
         &_bg8{
+            padding: 40px 40px calc(49.2% - 40px);
 			background:$color-green-light;
 			overflow:hidden;
+            h4{
+                color:$color-white;
+                font-weight:400;
+                font-size:24px;
+                padding:0 35px 50px;
+            }
+            .device{
+                position:relative;
+                bottom:-15px;
+            }
+            .problems-slider-groups__statics_dots li{
+                border-color:$color-grey-dark;
+                &.tns-nav-active{
+                    background-color:$color-grey-dark;
+                }
+            }
 		}
         &_bg9{
 			background:$color-grey-light;
+			overflow:hidden;
+		}
+        &_bg10{
+			background:$color-blue-dark;
 			overflow:hidden;
 		}
         &_plus{

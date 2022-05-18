@@ -1,1 +1,105 @@
-﻿
+<div class="case-stages">
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="principles__content">
+                <div class="principles__content_head">
+                    <div class="case-stages__digit">1</div>
+                    <h3>Шпионский клуб</h3>
+                </div>
+                <div class="principles__content_text">
+                    <p>Функциональность «Шпионский клуб»&nbsp;— уникальный сервис проверки магазинов покупателями за&nbsp;вознаграждение в&nbsp;виде бонусных баллов. Таким образом клиент экономит на&nbsp;операционных расходах, не&nbsp;нанимая сторонних агентов для проверок.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="problems problems_case">
+    <div class="container">
+        <div class="problems__item problems__item_bg9">
+            <h3>Что сделали</h3>
+            <ul class="case-stages__list">
+                <li>Выстроили процесс от&nbsp;получения запроса на&nbsp;проверку до&nbsp;отправки выявленных нарушений в&nbsp;магазины</li>
+                <li>Сервис «Шпионского клуба» вынесли из Монолита и&nbsp;оптимизировали, что позволило ускорить загрузку экранов в&nbsp;16&nbsp;раз и&nbsp;победить потерю контента, загружаемого агентами</li>
+                <li>Внедрили автоматический анализ дубликатов фотографий, позволяющий выявлять мошенников и&nbsp;ограничивать им&nbsp;доступ в&nbsp;сервис</li>
+            </ul>
+        </div>
+        <div class="problems__item problems__item_bg10">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <div class="device">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone5.jpg" alt="Пятёрочка">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <div class="device">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone6.jpg" alt="Пятёрочка">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="principles__content">
+                <div class="principles__content_head">
+                    <div class="case-stages__digit">2</div>
+                    <h3>Рейтинг товаров</h3>
+                </div>
+                <div class="principles__content_text">
+                    <p>Пользователи приложения оценивают свои покупки, получая бонусы. Товары с&nbsp;самым высоким рейтингом попадают в&nbsp;подборки.</p>
+                    <p>На основании отзывов компания принимает решения об&nbsp;ассортименте или даже о&nbsp;корректировке рецептуры продуктов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="principles__content">
+                <div class="principles__content_head">
+                    <div class="case-stages__digit">3</div>
+                    <h3>Обратная связь</h3>
+                </div>
+                <div class="principles__content_text">
+                    <p>Создаём возможности для пользователей поделиться мнением, чтобы бизнес смог повысить качество обслуживания в&nbsp;магазинах.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="principles__content">
+                <div class="principles__content_head">
+                    <div class="case-stages__digit">4</div>
+                    <h3>Центр уведомлений</h3>
+                </div>
+                <div class="principles__content_text">
+                    <p>Центр уведомлений позволяет пользователю быть в&nbsp;курсе действующих промокодов, скидок, персональных предложений и&nbsp;получать оповещения от&nbsp;обратной связи.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
