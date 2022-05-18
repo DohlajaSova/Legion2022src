@@ -4218,6 +4218,10 @@ a.button{
         }
     }
 }
+
+.client ~ .feedback {
+    margin-bottom: 120px;
+}
 .icon_plus, .icon_arrow {
     width:56px;
     height:56px;

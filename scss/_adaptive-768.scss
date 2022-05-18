@@ -394,10 +394,10 @@
             &_block:first-child:hover {
                 transition: none;
                 cursor: default;
+                padding-left: 0px;
             }
             &_block:first-child:hover:before {
                 transition: none;
-                position: static;
                 display: none;
             }
         }
@@ -406,6 +406,9 @@
                 margin-top: 60px;
             }
         }
+    }
+    .client ~ .feedback {
+        margin-bottom: 60px;
     }
 }
 
