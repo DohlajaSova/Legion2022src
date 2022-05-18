@@ -18,15 +18,36 @@
                     <div class="problems-slider-groups"><div class="js-problems-slider-groups">
                         <span class="problems-slider-groups__item">
                             <h4>FAQ</h4>
-                            <img src="/assets/css/img/temp-5ka-phone1.jpg" alt="Пятёрочка">
+                            <div class="device">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone1.jpg" alt="Пятёрочка">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
                         </span>
                         <span class="problems-slider-groups__item">
                             <h4>Поддержка</h4>
-                            <img src="/assets/css/img/temp-5ka-phone2.jpg" alt="Пятёрочка">
+                            <div class="device">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone2.jpg" alt="Пятёрочка">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
                         </span>
                         <span class="problems-slider-groups__item">
                             <h4>Рейтинг товаров</h4>
-                            <img src="/assets/css/img/temp-5ka-phone3.jpg" alt="Пятёрочка">
+                            <div class="device">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone3.jpg" alt="Пятёрочка">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
                         </span>
                     </div></div>
                 </div>
@@ -40,7 +61,14 @@
             </div>
         </div>
         <div class="problems__item problems__item_bg9">
-            <img src="/assets/css/img/temp-5ka-phone4.jpg" alt="Пятёрочка">
+            <div class="device">
+                <div class="device__wrapper">
+                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone4.jpg" alt="Пятёрочка">
+                    <div class="device__shadow">
+                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -50,10 +78,6 @@
         <div class="principles__content">
             <div class="principles__content_head">
                 <h2>Улучшаем <br>сервис вместе</h2>
-                <div class="principles__content_buttons store">
-                    <a href="" class="button button_grey store_ios"><span>Download on the</span> <b>App Store</b></a>
-                    <a href="" class="button button_grey store_android"><span>Download on</span> <b>Google Play</b></a>
-                </div>
             </div>
             <div class="principles__content_text">
                 <p>Мы начали работать над приложением не&nbsp;с&nbsp;нуля. Оно&nbsp;уже было в&nbsp;сторах c&nbsp;большим количеством пользователей. Нам&nbsp;было важно поддерживать работу приложения, параллельно создавая новую архитектуру и&nbsp;функциональность.</p>
@@ -63,6 +87,10 @@
                 <p>Нашей основной целью было сформировать сплоченную команду, которая может самостоятельно решить любую задачу. Для&nbsp;этого мы&nbsp;максимально тесно работаем со&nbsp;всеми департаментами и&nbsp;сторонними вендорами заказчика, делимся опытом и&nbsp;выступаем инициаторами изменений в&nbsp;процессах на&nbsp;всех уровнях.</p>
                 
                 <p>Мы&nbsp;всегда думаем над тем, как ещё больше увеличить прозрачность и&nbsp;эффективность коммуникаций.</p>
+            </div>
+            <div class="principles__content_buttons store">
+                <a href="" class="button button_grey store_ios"><span>Download on the</span> <b>App Store</b></a>
+                <a href="" class="button button_grey store_android"><span>Download on</span> <b>Google Play</b></a>
             </div>
         </div>
     </div>
