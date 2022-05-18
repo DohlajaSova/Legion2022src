@@ -714,12 +714,23 @@ docReady(function() {
     
     if (circlePic!= null) {
         circlePic.classList.add("rotating");
-        let num = 2;
+        let num = 3;
         setInterval(function(){
             for (i=0; i<circleText.children.length; i++){
-                circleText.children[i % circleText.children.length].style.display = "none";
+                circleText.children[i % circleText.children.length].style.opacity = "0";
             }
-            circleText.children[num % circleText.children.length].style.display = "block";
+            setTimeout(() => {
+                for (i=0; i<circleText.children.length; i++){
+                    circleText.children[i % circleText.children.length].style.display = "none";
+                }
+            }, 1000);
+            setTimeout(() => {
+                circleText.children[num % circleText.children.length].style.opacity = "0";
+                circleText.children[num % circleText.children.length].style.display = "block";
+                setTimeout(() => {
+                    circleText.children[num % circleText.children.length].style.opacity = "1";
+                }, 250);
+            }, 1000);
             num++;
         }, 5000);
     }
