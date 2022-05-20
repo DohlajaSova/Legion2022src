@@ -1526,6 +1526,61 @@ a.button {
 .cases-slider-info__item.active {
   height: 100%; }
 
+.case-stages__digit {
+  width: 84px;
+  height: 84px;
+  font-size: 46px;
+  line-height: 84px;
+  border-radius: 42px;
+  color: #fff;
+  background: #2864D9;
+  text-align: center;
+  margin-right: 75px; }
+.case-stages__list {
+  margin-top: 40px; }
+  .case-stages__list li {
+    min-height: 40px;
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding-left: 65px; }
+    .case-stages__list li::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      float: left;
+      margin-left: -65px;
+      background: url("img/icon-check.svg") center center no-repeat #24DA8D; }
+    .case-stages__list li:last-child {
+      margin-bottom: 0; }
+  .case-stages__list_ver2 li::before {
+    background: url("img/arrow3grey.svg") center center no-repeat #2864D9;
+    background-size: 53%;
+    margin-top: -6px; }
+.case-stages__layout_left, .case-stages__layout_right {
+  width: 49.2%; }
+.case-stages__layout.problems__item p {
+  font-size: 24px; }
+.case-stages .principles {
+  margin-bottom: 60px; }
+  .case-stages .principles > .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+.case-stages .principles__content {
+  align-items: flex-start; }
+  .case-stages .principles__content_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 0; }
+    .case-stages .principles__content_head h3 {
+      margin-top: 0 !important;
+      flex-grow: 1; }
+  .case-stages .principles__content_text {
+    margin-bottom: 0; }
+
 .project-slider-article__item.active {
   height: 0;
   padding-bottom: calc(100% - 70px); }
@@ -2005,6 +2060,10 @@ a.button {
       display: flex;
       flex-flow: column;
       justify-content: space-between; }
+    .problems__item_wide {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
   .problems-complex {
     overflow: hidden; }
     .problems-complex__first, .problems-complex__second {
@@ -2310,6 +2369,20 @@ a.button {
       display: none; }
 .projects-client {
   margin-bottom: 120px; }
+.projects_case .projects__panels {
+  display: flex;
+  justify-content: space-between; }
+.projects_case .project_tall {
+  width: 49.2%;
+  padding-bottom: 49.2%; }
+.projects_case .project__review_body {
+  width: 68%; }
+.projects_case .problems__item_bg9 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0; }
+  .projects_case .problems__item_bg9 h3 {
+    width: 90%; }
 
 .feedback {
   margin-bottom: 76px;

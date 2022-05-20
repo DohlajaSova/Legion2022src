@@ -1617,6 +1617,84 @@ a.button{
     }
 }
 
+.case-stages{
+    &__digit{
+        width:84px;
+        height:84px;
+        font-size:46px;
+        line-height:84px;
+        border-radius:42px;
+        color:$color-white;
+        background:$color-blue;
+        text-align:center;
+        margin-right:75px;
+    }
+    &__list{
+        margin-top:40px;
+        li{
+            min-height:40px;
+            font-size:24px;
+            margin-bottom:25px;
+            padding-left:65px;
+            &::before{
+                content:"";
+                width:40px;
+                height:40px;
+                border-radius:20px;
+                float: left;
+                margin-left: -65px;
+                background:url($img-path + "icon-check.svg") center center no-repeat $color-green;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &_ver2{
+            li{
+                &::before{
+                    background:url($img-path + "arrow3grey.svg") center center no-repeat $color-blue;
+                    background-size:53%;
+                    margin-top:-6px;
+                }
+            }
+        }
+    }
+    &__layout{
+        &_left,
+        &_right{
+            width:49.2%;
+        }
+        &.problems__item p{
+            font-size: 24px;
+        }
+    }
+    .principles{
+        margin-bottom:60px;
+        > .container{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+        }
+    }
+    .principles__content{
+        align-items:flex-start;
+        &_head{
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            align-items:baseline;
+            margin-bottom:0;
+            h3{
+                margin-top:0 !important;
+                flex-grow:1;
+            }
+        }
+        &_text{
+            margin-bottom:0;
+        }
+    }
+}
+
 .project-slider-article{
     &__item.active{
         height:0;
@@ -2269,6 +2347,11 @@ a.button{
             flex-flow: column;
             justify-content: space-between;
         }
+        &_wide{
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+        }
     }
     &-complex{
         overflow:hidden;
@@ -2668,6 +2751,27 @@ a.button{
     }
     &-client {
         margin-bottom: 120px;
+    }
+    &_case{
+        .projects__panels{
+            display: flex;
+            justify-content: space-between;
+        }
+        .project_tall{
+            width:49.2%;
+            padding-bottom: 49.2%;
+        }
+        .project__review_body{
+            width:68%;
+        }
+        .problems__item_bg9{
+            width:100%;
+            height: auto;
+            padding-bottom: 0;
+            h3{
+                width:90%;
+            }
+        }
     }
 }
 
