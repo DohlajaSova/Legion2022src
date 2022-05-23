@@ -227,6 +227,21 @@ function vacanciesRefresh(limit){
         moreButton.parentNode.classList.remove("hide");
 }
 
+function checkFieldValid(element) {
+    if(!element.value) {
+        addListenerInput(element);
+        return false;
+    }
+    return true;
+}
+
+function addListenerInput(el) {
+    el.addEventListener("input", function input(){
+        el.classList.remove("error");
+        el.removeEventListener("input", input, false);
+    })
+}
+
 docReady(function() {
     // фиксим хедер при скролле
     let stickyHeader = document.getElementsByClassName('header')[0];
@@ -987,6 +1002,33 @@ docReady(function() {
         slideCircle();
         sliderYears.events.on('transitionEnd', slideCircle);
     }
-
+    
+    // кнопка submit данных на странице request
+    if (document.querySelectorAll(".js-request-button").length > 0)
+    {
+        const btn = document.querySelectorAll(".js-request-button")[0];
+        let form = document.getElementById('request__form');
+        btn.onclick = function(){
+            let fields = form.getElementsByTagName('input')
+            console.log({fields})
+            console.log(fields.length)
+            let one;
+            let scrolled = false;
+            for(one = 0; one < fields.length; one++){
+                if(!checkFieldValid(fields[one])) {
+                    if(!scrolled) {
+                        scrolled = true;
+                        // fields[one].scrollIntoView({
+                        //     behavior: "smooth"
+                        // })
+                        form.scrollIntoView({
+                            behavior: "smooth"
+                        })
+                    }
+                    fields[one].classList.add("error");
+                }
+            }
+        }
+    }
 
 });

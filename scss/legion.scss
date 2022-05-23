@@ -3582,6 +3582,11 @@ a.button{
 				}
 			}
 		}
+        &_input {
+            &.error {
+                border-bottom-color:#dc000f;
+            }
+        }
 	}
     &__comment-container{
         display:flex;
