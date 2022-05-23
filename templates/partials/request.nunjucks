@@ -41,10 +41,11 @@
         </div>
         <div class="request__select select select-inline">
             <select>
-                <option>3–5 млн рублей</option>
-                <option>5–10 млн рублей</option>
-                <option>10–20 млн рублей</option>
-                <option>20+ млн рублей</option>
+                <option>6–12 млн рублей</option>
+                <option>12–18 млн рублей</option>
+                <option>18–24 млн рублей</option>
+                <option>24–30 млн рублей</option>
+                <option>30+ млн рублей</option>
             </select>
         </div>
         <h3>Какие платформы?</h3>
