@@ -501,6 +501,50 @@ a.button{
         object-fit:cover;
         height:auto;
     }
+    &_fit-height{
+        width:auto;
+        height:calc(100% - 110px);
+        .device__wrapper{
+            width:auto;
+            height:100%;
+        }
+        .device__screen{
+            width:auto;
+            height:calc(100% - 27px);
+            left:50%;
+            top:14px;
+            transform:translateX(-50%);
+            margin-left:-2px;
+        }
+        .device__shadow{
+            width:auto;
+            height:100%;
+            margin:0;
+            text-align:center;
+        }
+        .device__phone{
+            width:auto;
+            height:100%;
+            margin:0;
+        }
+    }
+    &_wide{
+        width:400px;
+        .device__wrapper{
+            width:100%;
+        }
+        .device__screen{
+            width: 365px;
+            top: 8px;
+            border-radius: 40px;
+        }
+        .device__shadow{
+            width:380px;
+        }
+        .device__phone{
+            width:400px;
+        }
+    }
 }
 
 .select{
@@ -2324,6 +2368,10 @@ a.button{
         &_bg10{
 			background:$color-blue-dark;
 			overflow:hidden;
+            padding:0 0 49.2%;
+            .problems__item_container{
+                padding:38px 30px;
+            }
 		}
         &_plus{
 			display:block;
