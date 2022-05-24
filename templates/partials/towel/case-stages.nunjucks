@@ -28,7 +28,7 @@
                     <div class="problems__item_contents problems__item_contents-slider">
                         <div class="problems-slider-groups"><div class="js-problems-slider-groups">
                             <span class="problems-slider-groups__item">
-                                <div class="device">
+                                <div class="device device_fit-height">
                                     <div class="device__wrapper">
                                         <img class="device__screen" src="/assets/css/img/temp-5ka-phone5.jpg" alt="Пятёрочка">
                                         <div class="device__shadow">
@@ -38,7 +38,7 @@
                                 </div>
                             </span>
                             <span class="problems-slider-groups__item">
-                                <div class="device">
+                                <div class="device device_fit-height">
                                     <div class="device__wrapper">
                                         <img class="device__screen" src="/assets/css/img/temp-5ka-phone6.jpg" alt="Пятёрочка">
                                         <div class="device__shadow">
@@ -61,7 +61,7 @@
         <div class="container">
             <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
                 <div class="case-stages__layout_left"><div class="case-stages__layout_inner">
-                    <div class="device">
+                    <div class="device device_wide">
                         <div class="device__wrapper">
                             <img class="device__screen" src="/assets/css/img/temp-5ka-phone7.jpg" alt="Пятёрочка">
                             <div class="device__shadow">
@@ -139,7 +139,7 @@
                     <div class="problems__item_contents problems__item_contents-slider">
                         <div class="problems-slider-groups"><div class="js-problems-slider-groups">
                             <span class="problems-slider-groups__item">
-                                <div class="device">
+                                <div class="device device_fit-height">
                                     <div class="device__wrapper">
                                         <img class="device__screen" src="/assets/css/img/temp-5ka-phone9.jpg" alt="Пятёрочка">
                                         <div class="device__shadow">
@@ -149,7 +149,7 @@
                                 </div>
                             </span>
                             <span class="problems-slider-groups__item">
-                                <div class="device">
+                                <div class="device device_fit-height">
                                     <div class="device__wrapper">
                                         <img class="device__screen" src="/assets/css/img/temp-5ka-phone10.jpg" alt="Пятёрочка">
                                         <div class="device__shadow">
@@ -159,7 +159,7 @@
                                 </div>
                             </span>
                             <span class="problems-slider-groups__item">
-                                <div class="device">
+                                <div class="device device_fit-height">
                                     <div class="device__wrapper">
                                         <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.jpg" alt="Пятёрочка">
                                         <div class="device__shadow">
@@ -215,7 +215,7 @@
                     <p>С помощью «Центра уведомлений» заказчик увеличил конверсию и количество уникальных пользователей всех продуктов «Пятёрочки».</p>
                 </div></div>
                 <div class="case-stages__layout_right"><div class="case-stages__layout_inner">
-                    <div class="device">
+                    <div class="device device_wide">
                         <div class="device__wrapper">
                             <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
                             <div class="device__shadow">
