@@ -618,6 +618,40 @@ a.button {
     z-index: 4;
     object-fit: cover;
     height: auto; }
+  .device_fit-height {
+    width: auto;
+    height: calc(100% - 110px); }
+    .device_fit-height .device__wrapper {
+      width: auto;
+      height: 100%; }
+    .device_fit-height .device__screen {
+      width: auto;
+      height: calc(100% - 27px);
+      left: 50%;
+      top: 14px;
+      transform: translateX(-50%);
+      margin-left: -2px; }
+    .device_fit-height .device__shadow {
+      width: auto;
+      height: 100%;
+      margin: 0;
+      text-align: center; }
+    .device_fit-height .device__phone {
+      width: auto;
+      height: 100%;
+      margin: 0; }
+  .device_wide {
+    width: 400px; }
+    .device_wide .device__wrapper {
+      width: 100%; }
+    .device_wide .device__screen {
+      width: 365px;
+      top: 8px;
+      border-radius: 40px; }
+    .device_wide .device__shadow {
+      width: 380px; }
+    .device_wide .device__phone {
+      width: 400px; }
 
 .select {
   position: relative; }
@@ -1559,8 +1593,16 @@ a.button {
     margin-top: -6px; }
 .case-stages__layout_left, .case-stages__layout_right {
   width: 49.2%; }
+.case-stages__layout_inner {
+  padding: 60px 40px;
+  height: 100%;
+  border-radius: 42px; }
 .case-stages__layout.problems__item p {
   font-size: 24px; }
+.case-stages__layout_var1 .case-stages__layout_right .case-stages__layout_inner {
+  padding-left: 0; }
+.case-stages__layout_var2 .case-stages__layout_right .case-stages__layout_inner {
+  background-color: #1E2738; }
 .case-stages .principles {
   margin-bottom: 60px; }
   .case-stages .principles > .container {
@@ -2030,7 +2072,10 @@ a.button {
       overflow: hidden; }
     .problems__item_bg10 {
       background: #1E2738;
-      overflow: hidden; }
+      overflow: hidden;
+      padding: 0 0 49.2%; }
+      .problems__item_bg10 .problems__item_container {
+        padding: 38px 30px; }
     .problems__item_plus {
       display: block;
       background: url("img/icon-plus.svg") center top no-repeat;
@@ -2060,10 +2105,16 @@ a.button {
       display: flex;
       flex-flow: column;
       justify-content: space-between; }
-    .problems__item_wide {
+    .problems__item_container {
+      position: absolute;
       width: 100%;
+      height: 100%;
       display: flex;
       justify-content: space-between; }
+    .problems__item_wide {
+      width: 100%;
+      padding: 0 0 49.2%;
+      position: relative; }
   .problems-complex {
     overflow: hidden; }
     .problems-complex__first, .problems-complex__second {
