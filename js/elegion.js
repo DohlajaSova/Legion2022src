@@ -228,9 +228,23 @@ function vacanciesRefresh(limit){
 }
 
 function checkFieldValid(element) {
-    if(!element.value) {
+    if(!element.value || element.value < 2) {
         addListenerInput(element);
         return false;
+    }
+    if(element.type === 'tel'){
+        let v = element.value.replace(/\D+/g,"");
+        if(v.length != 10) {
+            addListenerInput(element);
+            return false;
+        }
+    }
+    if(element.type === 'email'){
+        var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if(!element.value.match(pattern)){
+            addListenerInput(element);
+            return false
+        }
     }
     return true;
 }
@@ -1006,12 +1020,15 @@ docReady(function() {
     // кнопка submit данных на странице request
     if (document.querySelectorAll(".js-request-button").length > 0)
     {
+        document.getElementById('phonefield').addEventListener('input', function (e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+            e.target.value = (!x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : ''));
+        });
+        
         const btn = document.querySelectorAll(".js-request-button")[0];
         let form = document.getElementById('request__form');
         btn.onclick = function(){
             let fields = form.getElementsByTagName('input')
-            console.log({fields})
-            console.log(fields.length)
             let one;
             let scrolled = false;
             for(one = 0; one < fields.length; one++){
