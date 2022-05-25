@@ -2016,6 +2016,10 @@ a.button {
           background-color: #949191; }
         .problems__item_bg3 .problems__more::after {
           background-image: url("img/arrow3grey.svg"); }
+    .problems__item_bg4 .problems__item_container {
+      flex-direction: column;
+      height: calc(100% - 60px);
+      width: calc(100% - 80px); }
     .problems__item_bg4 h3 {
       width: 100%; }
     .problems__item_bg5 {
@@ -2262,7 +2266,7 @@ a.button {
     padding-bottom: 49.3333%; }
   .projects .project_tall {
     grid-row-end: span 2;
-    height: 0;
+    height: 100%;
     padding-bottom: 100%; }
     .projects .project_tall-client {
       padding-bottom: calc(100% + 17px); }
