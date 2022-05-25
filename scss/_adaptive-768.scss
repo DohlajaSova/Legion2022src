@@ -412,6 +412,42 @@
     }
 }
 
+@media only screen and (max-width: 700px) {
+	.contacts{
+		&__title{
+			margin-bottom:20px;
+		}
+		&__lead{
+			flex-wrap:wrap;
+			padding-bottom:30px;
+			margin-bottom:20px;
+			&_phone,
+			&_email{
+				width:100%;
+				font-size:20px;
+			}
+		}
+		.map{
+			&__addresses{
+				margin:14px 0 34px;
+				&_title{
+					display:none;
+				}
+				&_street{
+					width:100%;
+					font-size:16px;
+				}
+				&_email{
+					width:100%;
+					font-size:16px;
+					margin-left:0;
+				}
+			}
+		}
+	}
+
+}
+
 @media only screen and (max-width: 650px) {
     .header,
     .footer,
@@ -679,49 +715,6 @@
             font-size:60px;
         }
     }
-	.contacts{
-		&__title{
-			margin-bottom:20px;
-		}
-		&__lead{
-			flex-wrap:wrap;
-			padding-bottom:30px;
-			margin-bottom:20px;
-			&_welcome{
-				width:100%;
-				margin-bottom:80px;
-				padding-right:0;
-				font-size:16px;
-				text-align:center;
-			}
-			&_phone,
-			&_email{
-				width:50%;
-				font-size:12px;
-				line-height:1;
-			}
-			&_email{
-				text-align:right;
-			}
-		}
-		.map{
-			&__addresses{
-				margin:14px 0 34px;
-				&_title{
-					display:none;
-				}
-				&_street{
-					width:100%;
-					font-size:16px;
-				}
-				&_email{
-					width:100%;
-					font-size:16px;
-					margin-left:0;
-				}
-			}
-		}
-	}
     .cases{
         margin-bottom:75px;
         &__block{

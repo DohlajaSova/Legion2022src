@@ -2,7 +2,6 @@
     <div class="container">
         <h1 class="contacts__title">Наши контакты</h1>
         <div class="contacts__lead">
-            <span class="contacts__lead_welcome">Мы будем рады <a href="">пообщаться с&nbsp;вами</a></span>
             <a class="contacts__lead_phone" href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
             <a class="contacts__lead_email" href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a>
         </div>

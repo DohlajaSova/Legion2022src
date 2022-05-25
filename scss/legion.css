@@ -2857,19 +2857,17 @@ a.button {
   text-align: center;
   margin-bottom: 170px; }
 .contacts__lead {
-  font-size: 24px;
+  font-size: 46px;
   border-bottom: 1px solid #1E2738;
   padding-bottom: 55px;
   margin-bottom: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .contacts__lead_welcome {
-    width: 50%; }
+  .contacts__lead_phone, .contacts__lead_email {
+    white-space: nowrap; }
   .contacts__lead_phone {
-    width: 25%; }
-  .contacts__lead_email {
-    width: 25%; }
+    color: #1E2738 !important; }
 .contacts a {
   color: #84AEFF; }
 .contacts .map__addresses {
@@ -4057,6 +4055,12 @@ a.button {
     .select-inline .select-hide div {
       width: 100%; }
 
+  .map__select .select-hide {
+    display: flex; }
+    .map__select .select-hide div {
+      width: auto;
+      font-size: 24px; }
+
   .about {
     margin-bottom: -42px; }
     .about > .container {
@@ -4308,14 +4312,8 @@ a.button {
 
   .contacts__lead {
     line-height: 31px; }
-    .contacts__lead_welcome {
-      padding-right: 30px; }
-      .contacts__lead_welcome a,
-      .contacts__lead_welcome span {
-        white-space: nowrap; }
     .contacts__lead_phone, .contacts__lead_email {
-      font-size: 16px;
-      white-space: nowrap; }
+      font-size: 34px; }
 
   .request__select.select-selected {
     display: block; }
@@ -4829,6 +4827,27 @@ a.button {
 
   .client ~ .feedback {
     margin-bottom: 60px; } }
+@media only screen and (max-width: 700px) {
+  .contacts__title {
+    margin-bottom: 20px; }
+  .contacts__lead {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    margin-bottom: 20px; }
+    .contacts__lead_phone, .contacts__lead_email {
+      width: 100%;
+      font-size: 20px; }
+  .contacts .map__addresses {
+    margin: 14px 0 34px; }
+    .contacts .map__addresses_title {
+      display: none; }
+    .contacts .map__addresses_street {
+      width: 100%;
+      font-size: 16px; }
+    .contacts .map__addresses_email {
+      width: 100%;
+      font-size: 16px;
+      margin-left: 0; } }
 @media only screen and (max-width: 650px) {
   .header,
   .footer,
@@ -5029,36 +5048,6 @@ a.button {
 
   .category__content {
     font-size: 60px; }
-
-  .contacts__title {
-    margin-bottom: 20px; }
-  .contacts__lead {
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-    margin-bottom: 20px; }
-    .contacts__lead_welcome {
-      width: 100%;
-      margin-bottom: 80px;
-      padding-right: 0;
-      font-size: 16px;
-      text-align: center; }
-    .contacts__lead_phone, .contacts__lead_email {
-      width: 50%;
-      font-size: 12px;
-      line-height: 1; }
-    .contacts__lead_email {
-      text-align: right; }
-  .contacts .map__addresses {
-    margin: 14px 0 34px; }
-    .contacts .map__addresses_title {
-      display: none; }
-    .contacts .map__addresses_street {
-      width: 100%;
-      font-size: 16px; }
-    .contacts .map__addresses_email {
-      width: 100%;
-      font-size: 16px;
-      margin-left: 0; }
 
   .cases {
     margin-bottom: 75px; }

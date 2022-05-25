@@ -638,6 +638,17 @@
             }
         }
     }
+    .map{
+        &__select{
+            .select-hide{
+                display:flex;
+                div{
+                    width:auto;
+                    font-size:24px;
+                }
+            }
+        }
+    }
 	.about{
 		margin-bottom:-42px;
 		> .container{
@@ -1010,17 +1021,9 @@
 	.contacts{
 		&__lead{
 			line-height:31px;
-			&_welcome{
-				padding-right:30px;
-				a,
-				span{
-					white-space:nowrap;
-				}
-			}
 			&_phone,
 			&_email{
-				font-size:16px;
-				white-space:nowrap;
+				font-size:34px;
 			}
 		}
 	}

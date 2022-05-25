@@ -3407,21 +3407,19 @@ a.button{
         margin-bottom:170px;
     }
     &__lead{
-        font-size:24px;
+        font-size:46px;
         border-bottom:1px solid $color-blue-dark;
         padding-bottom:55px;
         margin-bottom:70px;
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        &_welcome{
-            width:50%;;
+        &_phone,
+        &_email{
+            white-space:nowrap;
         }
         &_phone{
-            width:25%;
-        }
-        &_email{
-            width:25%;
+            color:$color-blue-dark !important;
         }
     }
     a{
