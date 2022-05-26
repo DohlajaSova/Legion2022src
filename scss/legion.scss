@@ -1117,6 +1117,8 @@ a.button{
                 background-size:60%;
                 transform:rotate(0deg);
                 transition:transform 0.7s;
+                position: relative;
+                z-index: 100;
             }
         }
         &_body{
@@ -2416,6 +2418,7 @@ a.button{
 			height:100%;
             display:flex;
             justify-content:space-between;
+            left: 0; // !!! checkout
 		}
         &_wide{
             width:100%;
@@ -4131,13 +4134,15 @@ a.button{
                 flex-flow: row nowrap;
                 justify-content: space-between;
                 align-items: flex-end;
+                text-decoration: none!important;
             }
             &-description {
                 font-size: 14px;
                 line-height: 130%;
                 margin-left: auto;
-                color:$color-grey-dark;
+                color:$color-grey-dark!important;
                 width: 150px;
+                text-decoration: none!important;
             }
             &-icon {
                 margin-right: 20px;
@@ -4186,7 +4191,9 @@ a.button{
                         text-align: center;
                         font-size: 16px;
                         line-height: 130%;
-                        color: #949191;
+                        color: #949191!important;
+                        cursor: pointer;
+                        text-decoration: none!important;
                     }
                 }
             }

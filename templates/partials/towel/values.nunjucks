@@ -12,14 +12,14 @@
                     <div class="projects">
                         <div class="project">
                             <a href="https://habr.com/ru/company/e-legion/blog/421529/" target="_blank" class="project__article project__article_small project-article">
-                            <div class="project-article_top">
-                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame5.jpg" alt="Митап Tele2. Дизайн продуктов в телекоме: как всё устроено">
-                            </div>
-                            <div class="project-article_link">
-                              <div class="project-article_link-title">Митап Tele2. Дизайн продуктов в телекоме: как всё устроено <br><br>
-                              Никита Жеребцов</div>
-                              <div class="project-article_link-arrow">Подробнее →</div>
-                            </div>
+                                <div class="project-article_top">
+                                    <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame5.jpg" alt="Митап Tele2. Дизайн продуктов в телекоме: как всё устроено">
+                                </div>
+                                <div class="project-article_link">
+                                <div class="project-article_link-title">Митап Tele2. Дизайн продуктов в телекоме: как всё устроено <br><br>
+                                Никита Жеребцов</div>
+                                <div class="project-article_link-arrow">Подробнее →</div>
+                                </div>
                             </a>
                         </div>
                     </div>

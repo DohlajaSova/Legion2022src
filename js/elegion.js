@@ -951,6 +951,9 @@ docReady(function() {
         let accItems = Array.prototype.slice.call(container.children);
         for (i=0; i<accItems.length; i++){
             accItems[i].addEventListener("click", function(e){
+                if(e.target.className.startsWith('project')){
+                    return;
+                }
                 e.preventDefault();
                 e.target.parentNode.classList.toggle("active");
             }, false);

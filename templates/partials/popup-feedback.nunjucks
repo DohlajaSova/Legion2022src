@@ -35,7 +35,7 @@
 
                     <h3>Что нужно сделать?</h3>
                     <div class="request__select select select-inline select-inline_wide">
-                        <select>
+                        <select id="multiple-1" name="Выберите вариант">
                             <option>Разработать приложение с&nbsp;нуля</option>
                             <option>Провести аудит&nbsp;МП</option>
                             <option>Проанализировать конкурентов</option>

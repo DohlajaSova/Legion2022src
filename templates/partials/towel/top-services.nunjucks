@@ -27,13 +27,13 @@
             </div>
         </div>
         <div class="service__feature_inner">
-            <div class="service__feature_inner-wrapper">
+            <a href="/inprocess.html" class="service__feature_inner-wrapper">
                 <div class="icon_arrow service__feature_inner-icon">
                 </div>
                 <div class="service__feature_inner-description">
                     Подробнее об услуге и этапах работы
                 </div>
-            </div>
+            </a>
             <div class="service__feature_inner-case">
                 <div class="service__feature_inner-case__visual">
                     <div class="service__feature_inner-case__visual_wrapper">
@@ -53,9 +53,9 @@
                     <div class="service__feature_inner-case__brief-title">
                         Клиенты и кейсы
                     </div>
-                    <div class="service__feature_inner-case__brief-transition">
+                    <a href="/inprocess.html" class="service__feature_inner-case__brief-transition">
                         Подробнее → 
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -97,9 +97,9 @@
                     <div class="service__feature_inner-case__brief-title">
                         Клиенты и кейсы
                     </div>
-                    <div class="service__feature_inner-case__brief-transition">
+                    <a href="/inprocess.html" class="service__feature_inner-case__brief-transition">
                         Подробнее → 
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -115,13 +115,13 @@
             </div>
         </div>
         <div class="service__feature_inner">
-            <div class="service__feature_inner-wrapper">
+            <a href="/inprocess.html" class="service__feature_inner-wrapper">
                 <div class="icon_arrow service__feature_inner-icon">
                 </div>
                 <div class="service__feature_inner-description">
                     Подробнее об услуге и этапах работы
                 </div>
-            </div>
+            </a>
             <div class="service__feature_inner-case">
                 <div class="service__feature_inner-case__visual">
                     <div class="service__feature_inner-case__visual_wrapper">
