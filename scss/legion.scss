@@ -2293,6 +2293,11 @@ a.button{
             }
         }
         &_bg4{
+            .problems__item_container{
+                flex-direction:column;
+                height:calc(100% - 60px);
+                width:calc(100% - 80px);
+            }
             h3{
                 width:100%;
             }
@@ -2608,7 +2613,7 @@ a.button{
         }
         &_tall{
             grid-row-end:span 2;
-            height:0;
+            height:100%;
             padding-bottom:100%;
             &-client {
                 padding-bottom: calc(100% + 17px);
@@ -3410,21 +3415,19 @@ a.button{
         margin-bottom:170px;
     }
     &__lead{
-        font-size:24px;
+        font-size:46px;
         border-bottom:1px solid $color-blue-dark;
         padding-bottom:55px;
         margin-bottom:70px;
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        &_welcome{
-            width:50%;;
+        &_phone,
+        &_email{
+            white-space:nowrap;
         }
         &_phone{
-            width:25%;
-        }
-        &_email{
-            width:25%;
+            color:$color-blue-dark !important;
         }
     }
     a{

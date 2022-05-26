@@ -15,7 +15,7 @@
             <p>Тестируем, ищем баги, проводим аудит</p>
             <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
-        <a href="#feedback" class="problems__item problems__item_bg4">
+        <a href="#feedback" class="problems__item problems__item_bg4 js-popup-feedback-open">
             <div class="problems__item_container">
                 <h3>Индивидуальное <br/>решение ваших задач</h3>
                 <div class="problems__item_plus"></div>
