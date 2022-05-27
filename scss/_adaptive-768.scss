@@ -52,6 +52,17 @@
             }
         }
     }
+    .problems{
+        &__item{
+            h3{
+                font-size:24px;
+            }
+            p{
+                font-size:16px;
+                margin-top:14px;
+            }
+        }
+    }
     /*
     .cases{
         .cases-container{
@@ -460,6 +471,7 @@
     .pmenu,
     .top,
     .cases,
+    .service,
     .principles,
     .problems,
     .vacancies,
@@ -774,8 +786,12 @@
         &__item{
             width:100%;
             padding:30px 24px calc(100% - 30px);
+            h3{
+                font-size:35px;
+            }
             p{
-                margin-top:15px;
+                font-size:26px;
+                margin-top:20px;
             }
         }
     }
@@ -1066,15 +1082,25 @@
             }
             p{
                 font-size:16px;
+                margin-bottom:24px;
             }
         }
         &__video{
             order:2;
             margin-bottom:40px;
+            &_inline{
+                margin-bottom:40px;
+            }
         }
     }
     .problems{
         &__item{
+            h3{
+                font-size:27px;
+            }
+            p{
+                font-size:21px;
+            }
             .problems-slider-groups{
                 &__item{
                     h3{
@@ -1142,6 +1168,7 @@
         margin-top:-30px;
         padding-top:60px;
         background:$color-white;
+        overflow:hidden;
         &__panels{
             margin-bottom:45px;
             &-client {

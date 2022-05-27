@@ -209,6 +209,16 @@
 			margin-left:0 !important;
 		}
 	}
+    .problems{
+        &__item{
+            h3{
+                font-size:24px;
+            }
+            p{
+                font-size:16px;
+            }
+        }
+    }
     .projects{
         .project{
             &.project-with-slider{
