@@ -4122,6 +4122,7 @@ a.button{
             // grid-template-columns: auto auto;
             // column-gap: 40px;
             margin-bottom: 90px;
+            color:$color-blue-dark;
             &-title {
                 font-size: 46px;
                 line-height: 130%;
@@ -4266,6 +4267,9 @@ a.button{
                 }
             }
         }
+    }
+    & + .feedback.feedback_applicants{
+        background-image:none;
     }
 }
 
