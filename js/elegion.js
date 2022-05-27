@@ -680,12 +680,17 @@ docReady(function() {
     let feedbackSubmiter = document.querySelector(".js-popup-feedback-send");
     let bodyOpened;
     if(!feedbackOpener.length && feedbackSubmiter) {
-            feedbackSubmiter.addEventListener("click", function(e){
-            let feedbackBody = document.querySelector(".popup-feedback");
+        let feedbackBody = document.querySelector(".popup-feedback");
+        let feedbackBodyContent = document.querySelector(".popup-feedback__content");
+        feedbackSubmiter.addEventListener("click", function(e){
             feedbackBody.classList.add("active");
-            let feedbackBodyContent = document.querySelector(".popup-feedback__content");
             feedbackBodyContent.classList.add("popup-feedback__content_success");
         });
+        setTimeout(function(){
+            feedbackBody.classList.remove("active");
+            document.querySelector("body").classList.remove("popup-open");
+            feedbackBodyContent.classList.remove("popup-feedback__content_success");
+        }, 4000);
     }
     for (i=0; i<feedbackOpener.length; i++){
         let feedbackBody = document.querySelector(".popup-feedback");
