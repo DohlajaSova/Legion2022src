@@ -53,25 +53,25 @@
                         <div class="cases__case_contents cases__case_contents-slider">
                             <div class="cases-slider-info">
                                 <div class="cases-slider-info__item active">
-                                    <a href="">
+                                    <span>
                                         <span class="cases__case_number">№1</span>
                                         <span class="cases__case_name">Премия «Золотое приложение»</span>
                                         <span class="cases__case_photo"><img src="/assets/css/img/temp-premia1.png" alt="Премия «Золотое приложение»"></span>
-                                    </a>
+                                    </span>
                                 </div>
                                 <div class="cases-slider-info__item">
-                                    <a href="">
+                                    <span>
                                         <span class="cases__case_number">№1</span>
                                         <span class="cases__case_name">Конкурс «Рейтинг Рунета»</span>
                                         <span class="cases__case_photo"><img src="/assets/css/img/temp-premia2.png" alt="Конкурс «Рейтинг Рунета»"></span>
-                                    </a>
+                                    </span>
                                 </div>
                                 <div class="cases-slider-info__item">
-                                    <a href="">
+                                    <span>
                                         <span class="cases__case_number">№1</span>
                                         <span class="cases__case_name">Конкурс Tagline Awards</span>
                                         <span class="cases__case_photo"><img src="/assets/css/img/temp-premia3.png" alt="Конкурс Tagline Awards"></span>
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
