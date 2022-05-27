@@ -77,7 +77,7 @@
                 <span class="request__form_error">Введите название компании</span>
             </div>
             <div class="request__form_item">
-                <input autocomplete="ofasdasdasdasdf" name="phone" id="phonefield" type="tel" placeholder="+7 (___) ___-____" class="request__form_input phone">
+                <input autocomplete="ofasdasdasdasdf" name="phone" id="phonefield" type="tel" placeholder="+7 ___ ___ ____" class="request__form_input phone">
                 <label for="phone" class="request__form_label">Телефон</label>
                 <span class="request__form_error">Введите ваш телефон</span>
             </div>
