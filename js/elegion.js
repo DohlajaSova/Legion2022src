@@ -1020,10 +1020,10 @@ docReady(function() {
     // кнопка submit данных на странице request
     if (document.querySelectorAll(".js-request-button").length > 0)
     {
-        document.getElementById('phonefield').addEventListener('input', function (e) {
-            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-            e.target.value = (!x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : ''));
-        });
+        // document.getElementById('phonefield').addEventListener('input', function (e) {
+        //     var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        //     e.target.value = (!x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : ''));
+        // });
         
         const btn = document.querySelectorAll(".js-request-button")[0];
         let form = document.getElementById('request__form');

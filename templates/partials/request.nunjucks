@@ -67,7 +67,7 @@
         <div class="request__form" id="request__form">
             <h3>Представьтесь, пожалуйста</h3>
             <div class="request__form_item">
-                <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
+                <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?" pattern="[0-9]+">
                 <label for="name" class="request__form_label">Как вас зовут?</label>
                 <span class="request__form_error">Введите ваше имя</span>
             </div>
