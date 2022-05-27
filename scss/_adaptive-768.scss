@@ -303,6 +303,12 @@
             width:100%;
             order:1;
         }
+        &__range {
+            display:none;
+            & + .request__select{
+                display: block;
+            }
+        }
     }
     .feedback{
         &_compact{

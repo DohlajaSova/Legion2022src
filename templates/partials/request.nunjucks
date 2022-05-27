@@ -41,10 +41,11 @@
         </div>
         <div class="request__select select select-inline">
             <select>
-                <option>3–5 млн рублей</option>
-                <option>5–10 млн рублей</option>
-                <option>10–20 млн рублей</option>
-                <option>20+ млн рублей</option>
+                <option>6–12 млн рублей</option>
+                <option>12–18 млн рублей</option>
+                <option>18–24 млн рублей</option>
+                <option>24–30 млн рублей</option>
+                <option>30+ млн рублей</option>
             </select>
         </div>
         <h3>Какие платформы?</h3>
@@ -63,28 +64,28 @@
             <input type="file" id="request-file">
         </div>
 
-        <div class="request__form">
+        <div class="request__form" id="request__form">
             <h3>Представьтесь, пожалуйста</h3>
-                <div class="request__form_item">
-                    <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
-                    <label for="name" class="request__form_label">Как вас зовут?</label>
-                    <span class="request__form_error">Введите ваше имя</span>
-                </div>
-                <div class="request__form_item">
-                    <input name="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
-                    <label for="company" class="request__form_label">Из какой вы компании?</label>
-                    <span class="request__form_error">Введите название компании</span>
-                </div>
-                <div class="request__form_item">
-                    <input name="phone" type="tel" class="request__form_input" placeholder="Телефон">
-                    <label for="phone" class="request__form_label">Телефон</label>
-                    <span class="request__form_error">Введите ваш телефон</span>
-                </div>
-                <div class="request__form_item">
-                    <input name="mail" type="email" class="request__form_input" placeholder="Почта">
-                    <label for="mail" class="request__form_label">Почта</label>
-                    <span class="request__form_error">Введите вашу почту</span>
-                </div>
+            <div class="request__form_item">
+                <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?" pattern="[0-9]+">
+                <label for="name" class="request__form_label">Как вас зовут?</label>
+                <span class="request__form_error">Введите ваше имя</span>
+            </div>
+            <div class="request__form_item">
+                <input name="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
+                <label for="company" class="request__form_label">Из какой вы компании?</label>
+                <span class="request__form_error">Введите название компании</span>
+            </div>
+            <div class="request__form_item">
+                <input autocomplete="ofasdasdasdasdf" name="phone" id="phonefield" type="tel" placeholder="+7 ___ ___ ____" class="request__form_input phone">
+                <label for="phone" class="request__form_label">Телефон</label>
+                <span class="request__form_error">Введите ваш телефон</span>
+            </div>
+            <div class="request__form_item">
+                <input name="mail" type="email" class="request__form_input" placeholder="Почта">
+                <label for="mail" class="request__form_label">Почта</label>
+                <span class="request__form_error">Введите вашу почту</span>
+            </div>
         </div>
         <h3>И последнее: как вы узнали о нас?</h3>
         <div class="request__select select select-inline">
@@ -103,7 +104,7 @@
               Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
             </div>
             <div class="request__button">
-              <button class="button button_white">Обсудить задачу</button>
+              <button class="button button_white js-request-button">Обсудить задачу</button>
             </div>
         </div>
     </div>
