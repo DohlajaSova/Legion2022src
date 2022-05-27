@@ -4223,8 +4223,6 @@ a.button{
             margin-bottom:35px;
         }
         &__accordion{
-            border-top:1px solid $color-grey-dark;
-            border-bottom:1px solid $color-grey-dark;
             margin-bottom:120px;
             .accordion__item{
                 &_body{
@@ -4233,10 +4231,17 @@ a.button{
                         margin-bottom:35px;
                     }
                 }
+                &:first-child{
+                    border-top:1px solid $color-grey-dark;
+                }
+                &:last-child{
+                    border-bottom:1px solid $color-grey-dark;
+                }
             }
             .problems{
                 margin-top:50px;
                 margin-bottom:40px;
+                padding:0;
                 &__item{
                     &_bg5 h3{
                         font-size:24px;
@@ -4266,6 +4271,9 @@ a.button{
                     }
                 }
             }
+        }
+        & + .feedback.feedback_applicants{
+            background-image:none;
         }
     }
     & + .feedback.feedback_applicants{

@@ -3450,15 +3450,18 @@ a.button {
   .service-descr .principles__content_text {
     margin-bottom: 35px; }
   .service-descr__accordion {
-    border-top: 1px solid #949191;
-    border-bottom: 1px solid #949191;
     margin-bottom: 120px; }
     .service-descr__accordion .accordion__item_body p {
       font-size: 24px;
       margin-bottom: 35px; }
+    .service-descr__accordion .accordion__item:first-child {
+      border-top: 1px solid #949191; }
+    .service-descr__accordion .accordion__item:last-child {
+      border-bottom: 1px solid #949191; }
     .service-descr__accordion .problems {
       margin-top: 50px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      padding: 0; }
       .service-descr__accordion .problems__item_bg5 h3 {
         font-size: 24px;
         padding: 0 10%; }
@@ -3476,6 +3479,8 @@ a.button {
         height: calc(100% + 107px); }
       .service-descr__accordion .problems-slider-groups .cases__case:hover .cases__case_contents {
         top: 0; }
+  .service-descr + .feedback.feedback_applicants {
+    background-image: none; }
   .service + .feedback.feedback_applicants {
     background-image: none; }
 
@@ -3687,7 +3692,8 @@ a.button {
   .dummy__container,
   .client__info,
   .client__cases,
-  .client__breadcrumbs {
+  .client__breadcrumbs,
+  .service-descr__accordion {
     padding-left: 30px;
     padding-right: 30px; }
 
@@ -4897,6 +4903,7 @@ a.button {
   .vacancies,
   .projects,
   .feedback,
+  .service-descr__accordion,
   .news {
     padding-left: 15px;
     padding-right: 15px; }

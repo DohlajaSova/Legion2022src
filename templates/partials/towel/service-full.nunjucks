@@ -17,8 +17,8 @@
             <div class="accordion__item">
                 <h3 class="accordion__item_head">Анализ</h3>
                 <div class="accordion__item_body">
-                    <p>Обеспечиваем полный цикл разработки всего продукта или его отдельных блоков.</p>
-                    <p>Анализируем рынок, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и&nbsp;масштабируем продукт.</p>
+                    <p>Погружаемся в&nbsp;предметную область, продумываем сценарии пользователя в&nbsp;приложении, анализируем бизнес-процессы и&nbsp;потоки данных.</p>
+                    <p>Составляем техническое задание, готовим требования для взаимодействий.</p>
                     <div class="service-descr__sliders">
 <div class="problems">
     <div class="container">
@@ -90,7 +90,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                 </div>
             </div>
             <div class="accordion__item">
@@ -247,7 +247,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                 </div>
             </div>
             <div class="accordion__item">
@@ -325,7 +325,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                 </div>
             </div>
             <div class="accordion__item">
@@ -403,7 +403,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                 </div>
             </div>
             <div class="accordion__item">
@@ -481,7 +481,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                 </div>
             </div>
             <div class="accordion__item">
@@ -559,7 +559,7 @@
         </div>
     </div>
 </div>
-                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить проект</a>
+                    <a href="" class="button button_default button_wide js-popup-feedback-open">Обсудить задачу</a>
                 </div>
             </div>
         </div>
