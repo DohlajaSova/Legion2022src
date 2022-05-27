@@ -3,9 +3,9 @@
         <a href="" class="js-popup-feedback-close"></a>
     </div>
     <div class="popup-feedback__container">
-        <div class="popup-feedback__head">
+        {# <div class="popup-feedback__head">
             Расскажите нам о&nbsp;задаче
-        </div>
+        </div> #}
         <div class="popup-feedback__content">
             <div class="request">
                 <div class="container">
@@ -34,8 +34,8 @@
                     </div>
 
                     <h3>Что нужно сделать?</h3>
-                    <div class="request__select select select-inline select-inline_wide">
-                        <select id="multiple-1" name="Выберите вариант">
+                    <div class="request__select select select-inline select-inline_wide" id="multiple-container">
+                        <select id="multiple-4" name="Выберите вариант">
                             <option>Разработать приложение с&nbsp;нуля</option>
                             <option>Провести аудит&nbsp;МП</option>
                             <option>Проанализировать конкурентов</option>

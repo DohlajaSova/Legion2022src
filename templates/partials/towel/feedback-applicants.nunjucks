@@ -1,6 +1,6 @@
 <div class="feedback feedback_applicants">
     <div class="container">
-        <form>
+        <form onsubmit="return false">
             <div class="feedback__container">
               <h2><a name="feedback"></a>Напишите нам</h2>
               <div class="feedback__form">
@@ -28,7 +28,7 @@
                   Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
               </div>
               <div class="feedback__button">
-                  <button class="button button_white">Откликнуться</button>
+                  <button class="button button_white js-popup-feedback-send">Откликнуться</button>
               </div>
             </div>
         </form>
