@@ -1109,7 +1109,9 @@ a.button {
       background: url("img/arrow2.svg") center center no-repeat #F0F0F0;
       background-size: 60%;
       transform: rotate(0deg);
-      transition: transform 0.7s; }
+      transition: transform 0.7s;
+      position: relative;
+      z-index: 100; }
   .accordion__item_body {
     width: 50%;
     margin: -50px 0 50px 50%;
@@ -1342,15 +1344,13 @@ a.button {
       display: none; }
   .cases_portfolio .container_portfolio-inner {
     display: flex;
-    width: 101.3333%;
-    margin-right: -1.3333%;
+    width: 100%;
     flex-wrap: wrap; }
   .cases_portfolio .cases-container .container {
     justify-content: flex-start; }
   .cases_portfolio .cases__case {
-    width: 23.6673%;
-    margin-bottom: 15px;
-    margin-right: 1.3333%; }
+    width: 25%;
+    margin-bottom: 15px; }
 
 .cases-slider {
   position: absolute;
@@ -2114,7 +2114,8 @@ a.button {
       width: 100%;
       height: 100%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      left: 0; }
     .problems__item_wide {
       width: 100%;
       padding: 0 0 49.2%;
@@ -2574,10 +2575,10 @@ a.button {
     flex-wrap: wrap;
     padding: 80px 0 60px; }
     .vacancies__container_inner {
-      width: 101.3333%;
-      margin-right: -1.3333%;
+      width: 100%;
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      column-gap: 1.3333%; }
   .vacancies h2 {
     width: 100%;
     color: #fff;
@@ -2596,7 +2597,6 @@ a.button {
       height: 0;
       padding-bottom: 23.6673%;
       margin-bottom: 20px;
-      margin-right: 1.3333%;
       border-radius: 42px; }
       .vacancies__list_item.final {
         width: 49.24%;
@@ -3006,6 +3006,8 @@ a.button {
       border-bottom-color: #dc000f; }
     .request__form_item.error .request__form_error {
       color: #dc000f; }
+  .request__form_input.error {
+    border-bottom-color: #dc000f; }
 .request__comment-container {
   display: flex;
   flex-direction: row-reverse;
@@ -3387,13 +3389,15 @@ a.button {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: flex-end; }
+        align-items: flex-end;
+        text-decoration: none !important; }
       .service__feature_inner-description {
         font-size: 14px;
         line-height: 130%;
         margin-left: auto;
-        color: #949191;
-        width: 150px; }
+        color: #949191 !important;
+        width: 150px;
+        text-decoration: none !important; }
       .service__feature_inner-icon {
         margin-right: 20px; }
       .service__feature_inner-case {
@@ -3435,7 +3439,9 @@ a.button {
             text-align: center;
             font-size: 16px;
             line-height: 130%;
-            color: #949191; }
+            color: #949191 !important;
+            cursor: pointer;
+            text-decoration: none !important; }
   .service > div:last-child {
     border: none;
     padding-bottom: 0px;
@@ -4783,6 +4789,10 @@ a.button {
   .request__button {
     width: 100%;
     order: 1; }
+  .request__range {
+    display: none; }
+    .request__range + .request__select {
+      display: block; }
 
   .feedback_compact h2 {
     width: 70%; }
