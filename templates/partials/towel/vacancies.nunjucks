@@ -3,7 +3,7 @@
         <div class="vacancies__container">
             <h2>Привет, <br/><em>будущий Легионер</em></h2>
             <div class="vacancies__list">
-                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -17,7 +17,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/inprocess.html" class="vacancies__list_item vacancy">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
