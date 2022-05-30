@@ -832,8 +832,13 @@ a.button{
 }
 .popup-feedback{
     &__container{
-        max-height:100%;
-        overflow-y:auto;
+        // max-height:100%;
+        // overflow-y:auto;
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 100px calc(100% - 100px);
+        padding: 20px 60px;
     }
     .answer{
         display:none;
@@ -851,15 +856,19 @@ a.button{
         }
     }
     &__content{
+        height: 100%;
         max-width:1440px;
         background:$color-white;
         border-radius:38px;
-        padding:110px 60px;
+        // padding: 0;
+        padding: 50px 0 50px 20px;
         text-align:left;
         &_success{
             background:$color-green;
             color:$color-white;
             .request{
+                overflow-y: auto;
+                height: 100%;
                 display:none;
             }
             .answer{
@@ -3480,6 +3489,11 @@ a.button{
 }
 
 .request{
+    .container{
+        padding:0 30px;
+    }
+    overflow-y: auto;
+    max-height: 100%;
     &__lead{
         height:87px;
         border-bottom:1px solid $color-blue-dark;
