@@ -897,6 +897,7 @@ a.button{
         display:flex;
         flex-direction:column;
         justify-content:space-between;
+        z-index:2002;
     }
 	a{
 		color:$color-white;

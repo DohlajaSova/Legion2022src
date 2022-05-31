@@ -937,7 +937,8 @@ a.button {
   .pmenu.active {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    z-index: 2002; }
   .pmenu a {
     color: #fff; }
     .pmenu a:hover {
@@ -5262,6 +5263,17 @@ a.button {
 
   .body_about .header.header_sticky {
     background: #1E2738; }
+
+  .body_service .header.header_scrolled {
+    background-color: #fff; }
+    .body_service .header.header_scrolled .header__logo {
+      background-image: url("img/logo.svg"); }
+    .body_service .header.header_scrolled .header__hmenu {
+      background-image: url("img/icon-menu1.svg"); }
+    .body_service .header.header_scrolled .breadcrumbs {
+      display: none; }
+  .body_service .top {
+    margin-bottom: 42px; }
 
   .circle {
     height: 195px; }
