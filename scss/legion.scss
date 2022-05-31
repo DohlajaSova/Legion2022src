@@ -3976,7 +3976,7 @@ a.button{
     }
     .top{
         background:url($img-path + "service.jpg") top center no-repeat;
-        background-size:100% auto;
+        background-size:cover;
         min-height:544px;
         display:flex;
         justify-content:flex-end;
@@ -4269,6 +4269,18 @@ a.button{
                         border-color:$color-grey-dark;
                         &.tns-nav-active{
                             background-color:$color-grey-dark;
+                        }
+                    }
+                    &_container{
+                        top:0;
+                        .cases__case{
+                            padding-bottom:100%;
+                            &_contents{
+                                height:100% !important;
+                            }
+                            &_logo{
+                                height:100% !important;
+                            }
                         }
                     }
                 }

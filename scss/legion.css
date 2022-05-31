@@ -1351,11 +1351,12 @@ a.button {
   .cases_portfolio .container_portfolio-inner {
     display: flex;
     width: 100%;
+    column-gap: 20px;
     flex-wrap: wrap; }
   .cases_portfolio .cases-container .container {
     justify-content: flex-start; }
   .cases_portfolio .cases__case {
-    width: 25%;
+    width: calc(25% - 20px);
     margin-bottom: 15px; }
 
 .cases-slider {
@@ -3251,7 +3252,7 @@ a.button {
       color: #1E2738; }
 .body_service .top {
   background: url("img/service.jpg") top center no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   min-height: 544px;
   display: flex;
   justify-content: flex-end;
@@ -3482,6 +3483,14 @@ a.button {
         border-color: #949191; }
         .service-descr__accordion .problems__item_bg7 .problems-slider-groups__statics_dots li.tns-nav-active {
           background-color: #949191; }
+      .service-descr__accordion .problems__item_container {
+        top: 0; }
+        .service-descr__accordion .problems__item_container .cases__case {
+          padding-bottom: 100%; }
+          .service-descr__accordion .problems__item_container .cases__case_contents {
+            height: 100% !important; }
+          .service-descr__accordion .problems__item_container .cases__case_logo {
+            height: 100% !important; }
       .service-descr__accordion .problems-slider-groups .cases__case_contents {
         height: calc(100% - 62px); }
       .service-descr__accordion .problems-slider-groups .cases__case_number,
@@ -4192,7 +4201,7 @@ a.button {
     padding: 30px 24px calc(49.2% - 30px); }
     .problems__item_bg4 {
       padding-right: 0; }
-    .problems__item_bg5 {
+    .problems__item_bg5, .problems__item_bg7 {
       width: 100%;
       padding-bottom: 100%; }
     .problems__item_bg6 {
@@ -4426,9 +4435,18 @@ a.button {
           background-color: #2864D9;
           color: #fff; }
 
-  .accordion__item_body {
-    width: 100%;
-    margin-left: 0; }
+  .accordion__item {
+    padding: 30px 0 20px; }
+    .accordion__item_head::before {
+      margin-top: 10px; }
+    .accordion__item_head::after {
+      margin-top: -11px; }
+    .accordion__item_body {
+      width: 100%;
+      margin-left: 0; }
+    .accordion__item.active .accordion__item_body {
+      max-height: 10000px;
+      padding-top: 30px; }
 
   .who-we-are__widget {
     grid-template-columns: 1fr 1fr; }
@@ -4705,8 +4723,8 @@ a.button {
     margin-right: -2.3333%; }
   .cases_portfolio .cases__case {
     width: 47.667%;
-    padding-bottom: 47.667%;
-    margin-right: 2.3333%; }
+    width: calc(47.667% - 7.5px);
+    padding-bottom: 47.667%; }
 
   .cases__pagination-arrows {
     display: none; }
@@ -5186,7 +5204,10 @@ a.button {
   .client__info .cases-slider__statics_title {
     font-size: 14px !important; }
   .client__info .cases-slider__item_project-link {
-    font-size: 12px !important; } }
+    font-size: 12px !important; }
+
+  .accordion__item_body p {
+    padding-right: 0; } }
 @media only screen and (max-width: 550px) {
   body {
     font-size: 10px; }

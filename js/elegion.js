@@ -267,8 +267,8 @@ docReady(function() {
 
     if (windowWidth <= 550)
     {
-        let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         window.onscroll = function() {
+            let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             if (bodyScrollTop > 50){
                 stickyHeader.classList.add('header_scrolled');
             } else {
@@ -281,14 +281,19 @@ docReady(function() {
                 stickyHeader.classList.add('header_sticky');
             }
             lastScrollTop = bodyScrollTop <= 0 ? 0 : bodyScrollTop;
+
+            
+            if (bodyScrollTop < 500) backButton.classList.add("hide");
+            else backButton.classList.remove("hide");
         };
     }
+    else{
+        window.onscroll = function() {
+            let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-    window.onscroll = function() {
-        let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-        if (bodyScrollTop < 500) backButton.classList.add("hide");
-        else backButton.classList.remove("hide");
+            if (bodyScrollTop < 500) backButton.classList.add("hide");
+            else backButton.classList.remove("hide");
+        }
     }
 
     
