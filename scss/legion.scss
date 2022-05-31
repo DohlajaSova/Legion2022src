@@ -1094,7 +1094,7 @@ a.button{
 .accordion{
     &__item{
         border-bottom:1px solid $color-grey-dark;
-        padding:40px 0 27px;
+        padding:40px 0 0;
         &_head{
             cursor:pointer;
             &::before{
@@ -4245,7 +4245,7 @@ a.button{
                 &__item{
                     &_bg5 h3{
                         font-size:24px;
-                        padding:0 10%;
+                        padding:0 2%;
                     }
                     &_bg7 .problems-slider-groups__statics_dots li{
                         border-color:$color-grey-dark;
