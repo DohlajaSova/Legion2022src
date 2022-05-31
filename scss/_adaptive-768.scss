@@ -162,8 +162,9 @@
         }
         .cases__case {
             width: 47.667%;
+            width:calc(47.667% - 7.5px);
             padding-bottom: 47.667%;
-            margin-right: 2.3333%;
+            // margin-right: 2.3333%;
         }
     }
     .cases__pagination{
