@@ -1426,6 +1426,7 @@ a.button{
             display:flex;
             // width:101.3333%;
             width: 100%;
+            column-gap: 20px;
             // margin-right:-1.3333%;
             flex-wrap:wrap;
         }
@@ -1435,7 +1436,7 @@ a.button{
             }
         }
         .cases__case{
-            width:25%;
+            width:calc(25% - 20px);
             // width:23.6673%;
             margin-bottom:15px;
             // margin-right:1.3333%;
