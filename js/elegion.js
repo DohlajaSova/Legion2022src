@@ -788,13 +788,10 @@ docReady(function() {
     // кастомный селект
     if (document.querySelector('.select'))
     {
-        // console.log('selected')
         let selectsByClass, i, j, sbcLength, SBTLength, selectsByTag, divCreated, div2Created, div3Created;
         /* Look for any elements with the class "select": */
         selectsByClass = document.getElementsByClassName("select");
-        // console.log({selectsByClass});
         sbcLength = selectsByClass.length;
-        // console.log({sbcLength});
 
         for (i = 0; i < sbcLength; i++) {
           selectsByTag = selectsByClass[i].getElementsByTagName("select")[0];
@@ -857,10 +854,6 @@ docReady(function() {
                 let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl;
                 selectsByTagDiv3 = this.parentNode.parentNode.getElementsByTagName("select")[0];
                 const isMultiple = selectsByTagDiv3.id.startsWith('multiple')
-                console.log(this.parentNode)
-                console.log(this.parentNode.parentNode)
-                console.log({selectsByTagDiv3})
-                console.log({isMultiple})
                 sl = selectsByTagDiv3.length;
                 pvsSibling = this.parentNode.previousSibling;
                 for (i = 0; i < sl; i++) {
