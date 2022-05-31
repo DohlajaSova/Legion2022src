@@ -1351,8 +1351,9 @@ a.button {
       display: none; }
   .cases_portfolio .container_portfolio-inner {
     display: flex;
-    width: 100%;
+    width: calc(100% + 20px);
     column-gap: 20px;
+    margin-right: -20px;
     flex-wrap: wrap; }
   .cases_portfolio .cases-container .container {
     justify-content: flex-start; }
@@ -4720,12 +4721,11 @@ a.button {
   }
   */
   .cases_portfolio .container_portfolio-inner {
-    width: 102.3333%;
-    margin-right: -2.3333%; }
+    width: calc(100% + 40px);
+    margin-right: -20px; }
   .cases_portfolio .cases__case {
-    width: 47.667%;
-    width: calc(47.667% - 7.5px);
-    padding-bottom: 47.667%; }
+    width: calc(50% - 20px);
+    padding-bottom: calc(50% - 20px); }
 
   .cases__pagination-arrows {
     display: none; }
