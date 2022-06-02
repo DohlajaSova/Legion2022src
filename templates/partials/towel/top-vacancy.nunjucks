@@ -1,4 +1,10 @@
 <div class="top top_vacancy">
+  <div class="container">
+      <ul class="client__breadcrumbs breadcrumbs">
+        <li><a href="/career.html">Карьера</a></li>
+        <li><span>Все вакансии</span></li>
+      </ul>
+  </div>
     <div class="container">
         <h1 class="h1">
             Android-разработчик

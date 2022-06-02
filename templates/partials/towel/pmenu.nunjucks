@@ -4,7 +4,7 @@
             <a href="/"></a>
         </div>
         <div class="pmenu__mmenu">
-            <a href="/request.html">Написать нам</a>
+            <a href="/request.html">Обсудить проект</a>
             <span class="pmenu__mmenu_lang">&nbsp;</span>
             <div class="pmenu__mmenu_close header__hmenu active">
                 <a href="" class="js-top-menu-inner"></a>

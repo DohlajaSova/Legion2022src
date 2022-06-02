@@ -1,6 +1,6 @@
 <div class="news">
     <div class="container">
-        <h2>Последние <br>новости <em>легионеров</em></h2>
+        <h2>Новости<br><em>легионеров</em></h2>
         <div class="news__items">
             <a href="https://ratingruneta.ru/apps/" target="_blank" class="news-item news-item_wide">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news1.jpg" alt=""></div>

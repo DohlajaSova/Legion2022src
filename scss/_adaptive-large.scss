@@ -29,7 +29,8 @@
     .client__info,
     .client__cases,
     .client__breadcrumbs,
-    .service-descr__accordion{
+    .service-descr__accordion,
+    .vacancypage{
         padding-left:30px;
         padding-right:30px;
     }
@@ -1395,6 +1396,14 @@
     .service__feature_inner-case__visual {
         grid-template-columns: 90px 90px;
         grid-template-rows: 90px 90px;
+    }
+    .request {
+        &__textarea{
+            textarea{
+                font-size: 18px;
+                min-height: 30px;
+            }
+        }
     }
 }
 

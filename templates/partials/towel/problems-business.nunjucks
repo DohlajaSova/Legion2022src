@@ -3,17 +3,17 @@
         <a href="/inprocess.html" class="problems__item problems__item_bg1">
             <h3>Дискавери фаза</h3>
             <p>Подготовим поэтапный план того, как должен строиться конкурентоспособный продукт</p>
-            <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+            <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
         <a href="/inprocess.html" class="problems__item problems__item_bg2">
             <h3>Комплексная разработка <span class="nowrap">digital-продуктов</span></h3>
             <p>Реализуем проекты «под ключ»</p>
-            <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+            <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
         <a href="/inprocess.html" class="problems__item problems__item_bg3">
             <h3>Контроль качества</h3>
             <p>Тестируем, ищем баги, проводим аудит</p>
-            <div class="problems__more">Подробнее о&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+            <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
         <a href="#feedback" class="problems__item problems__item_bg4 js-popup-feedback-open">
             <div class="problems__item_container">

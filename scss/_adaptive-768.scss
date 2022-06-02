@@ -477,7 +477,8 @@
     .projects,
     .feedback,
     .service-descr__accordion,
-    .news{
+    .news,
+    .vacancypage{
         padding-left:15px;
         padding-right:15px;
     }
@@ -485,6 +486,12 @@
 	.request{
         .container{
             padding:0 15px;
+        }
+        &__textarea{
+            textarea{
+                font-size: 14px;
+                min-height: 24px;
+            }
         }
     }
     .back{

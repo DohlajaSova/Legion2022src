@@ -39,7 +39,7 @@
         </div></div></span>
         <span class="cases__case" data-types="['all','scale']" data-tags="['all','retail']" data-priority="10" data-enlargable="1">
         <div class="cases__case_number"><span>6</span></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
+        <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
             <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
             <span class="cases__case_name">Пятёрочка</span>
             <span class="cases__case_arrow"></span>

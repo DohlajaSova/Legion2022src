@@ -945,6 +945,14 @@ a.button{
 		width:40%;
 		min-width:148px;
 		height:36px;
+        position: relative;
+		a{
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
 	}
 	&__menu{
 		width:100%;
@@ -1326,6 +1334,7 @@ a.button{
             }
 		}
 		&_number{
+            display: none;
 			position:absolute;
 			top:-2px;
 			right:0;
@@ -1366,8 +1375,10 @@ a.button{
 			height:14px;
 		}
 		&:hover{
-			.cases__case_contents{
-				top:-163px;
+			.cases__case_contents {
+                &-active {
+                    top:-163px;
+                }
 			}
 		}
 		&_double{
@@ -1842,17 +1853,17 @@ a.button{
     &__tabs{
         display:flex;
         border-radius: $border-radius $border-radius 0 0;
-        background-color:rgba($color-blue,0.7);
+        background-color:#84AEFF;
         a,
         span{
             font:$text1;
             line-height:98px;
-            color:$color-blue-light;
+            color:#fff;
             display:block;
             height:98px;
             width:50%;
             text-align:center;
-            opacity:0.7;
+            // opacity:0.7;
             border-radius:$border-radius $border-radius 0 0;
             text-decoration:none;
             &.active{
@@ -1875,7 +1886,7 @@ a.button{
     }
 	&.category_applicants{
 		.category__tabs{
-			background-color:rgba($color-blue-light,0.7);
+			background-color:#2864D9;
 			a,
 			span{
 				color:$color-white;
@@ -1886,7 +1897,7 @@ a.button{
 		}
 		.category__content{
 			background-color:$color-blue-light;
-			color:$color-black;
+			color:$color-blue-dark;
 		}
 	}
 }
@@ -3267,6 +3278,14 @@ a.button{
 		width:40%;
 		min-width:148px;
 		height:36px;
+        position: relative;
+		a{
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
 	}
 	&__menu{
 		width:60%;
@@ -3513,10 +3532,14 @@ a.button{
             outline:none;
             display:block;
             width:100%;
-            min-height:40px;
+            min-height:36px;
             border:none;
             border-bottom:1px solid $color-grey-dark;
             color:$color-black;
+            font-size: 24px;
+            resize: none;
+            height: 1.5em;
+            transition: height 0.25s;
         }
         .button{
             margin:50px 0 70px;
