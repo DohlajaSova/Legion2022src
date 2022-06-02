@@ -1132,7 +1132,8 @@ a.button {
     max-height: 0;
     overflow: hidden;
     padding-bottom: 0;
-    transition: max-height 0.7s, padding-bottom 0.7s; }
+    transition: max-height 0.7s, padding-bottom 0.7s;
+    color: #1E2738; }
     .accordion__item_body h4 {
       font-size: 24px;
       font-weight: 300;
@@ -1743,7 +1744,8 @@ a.button {
   .principles__content_text {
     width: 49%;
     padding-right: 4%;
-    margin-bottom: 90px; }
+    margin-bottom: 90px;
+    color: #1E2738; }
     .principles__content_text *:last-child {
       margin-bottom: 0; }
   .principles__content_head {
@@ -3532,7 +3534,8 @@ a.button {
   margin-bottom: 120px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: #1E2738; }
   .vacancypage__content_brief {
     width: 50%;
     padding-right: 10%; }

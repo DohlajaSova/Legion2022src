@@ -1146,6 +1146,7 @@ a.button{
             overflow:hidden;
             padding-bottom:0;
             transition:max-height 0.7s, padding-bottom 0.7s;
+            color:$color-blue-dark;
             h4{
                 font-size:24px;
                 font-weight:300;
@@ -1922,6 +1923,7 @@ a.button{
             width:49%;
             padding-right:4%;
             margin-bottom:90px;
+            color:$color-blue-dark;
             *:last-child{
                 margin-bottom:0;
             }
@@ -4342,6 +4344,7 @@ a.button{
         display:flex;
         flex-direction:row;
         justify-content:space-between;
+        color:$color-blue-dark;
         &_brief{
             width:50%;
             padding-right:10%;
