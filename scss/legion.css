@@ -1358,17 +1358,19 @@ a.button {
       height: calc(100% - 62px); }
     .cases__case.hide, .cases__case.not-shown {
       display: none; }
-  .cases_portfolio .container_portfolio-inner {
-    display: flex;
-    width: calc(100% + 20px);
-    column-gap: 20px;
-    margin-right: -20px;
-    flex-wrap: wrap; }
-  .cases_portfolio .cases-container .container {
-    justify-content: flex-start; }
-  .cases_portfolio .cases__case {
-    width: calc(25% - 20px);
-    margin-bottom: 15px; }
+  .cases_portfolio {
+    padding-top: 120px; }
+    .cases_portfolio .container_portfolio-inner {
+      display: flex;
+      width: calc(100% + 20px);
+      column-gap: 20px;
+      margin-right: -20px;
+      flex-wrap: wrap; }
+    .cases_portfolio .cases-container .container {
+      justify-content: flex-start; }
+    .cases_portfolio .cases__case {
+      width: calc(25% - 20px);
+      margin-bottom: 15px; }
 
 .cases-slider {
   position: absolute;
@@ -3944,29 +3946,32 @@ a.button {
       .top__buttons em {
         display: inline; }
 
-  .cases__case_logo > img {
-    min-width: 37%;
-    max-width: 52%;
-    max-height: 52%; }
-  .cases__case_info .cases__case_photo img {
-    width: 49px; }
-  .cases__case_info .cases__case_number {
-    font-size: 32px;
-    margin-bottom: 6px; }
-  .cases__case_info .cases__case_name {
-    font-size: 11px;
-    padding-right: 20px; }
-  .cases-slider__item_nomination .h2 {
-    font-size: 32px; }
-  .cases-slider__item_nomination p {
-    font-size: 14px; }
-  .cases-slider__item_project-link {
-    font-size: 11px; }
-  .cases-slider__statics_title {
-    font-size: 11px; }
-
   .cases {
     margin-bottom: 45px; }
+    .cases__case_logo > img {
+      min-width: 37%;
+      max-width: 52%;
+      max-height: 52%; }
+    .cases__case_info .cases__case_photo img {
+      width: 49px; }
+    .cases__case_info .cases__case_number {
+      font-size: 32px;
+      margin-bottom: 6px; }
+    .cases__case_info .cases__case_name {
+      font-size: 11px;
+      padding-right: 20px; }
+    .cases-slider__item_nomination .h2 {
+      font-size: 32px; }
+    .cases-slider__item_nomination p {
+      font-size: 14px; }
+    .cases-slider__item_project-link {
+      font-size: 11px; }
+    .cases-slider__statics_title {
+      font-size: 11px; }
+    .cases__lead {
+      height: 47px; }
+    .cases_portfolio {
+      padding-top: 80px; }
 
   .about {
     padding: 80px 30px 150px; }
@@ -4552,7 +4557,8 @@ a.button {
     .projects .project__article_small .project-article_link-title {
       font-size: 24px; }
   .projects .project__review_body {
-    font-size: 24px; }
+    font-size: 24px;
+    padding-right: 30%; }
   .projects .project__review_author {
     padding: 43px 43px 55px; }
   .projects .project .cases-slider__item_project-link {
@@ -4581,12 +4587,24 @@ a.button {
     font-size: 14px; }
   .feedback_compact {
     padding: 60px 30px 20px; }
+    .feedback_compact .container {
+      position: relative; }
+    .feedback_compact .feedback__button {
+      height: 100%;
+      min-height: 0;
+      position: absolute;
+      top: -20px;
+      bottom: 0;
+      right: 0; }
 
   .news .news-item {
     width: 48%; }
     .news .news-item_wide {
       width: 100%;
       margin-bottom: 20px; }
+
+  .cases__tags {
+    font-size: 16px; }
 
   .cases-slider__statics_title {
     top: 18px; }
@@ -5071,6 +5089,9 @@ a.button {
 
   .projects h2 {
     margin-bottom: 30px; }
+  .projects .project__review_body {
+    font-size: 22px;
+    padding-right: 10%; }
 
   .feedback {
     margin-bottom: 40px; }
@@ -5394,6 +5415,11 @@ a.button {
           width: 50%; }
     .cases__case-client {
       grid-column-end: span 2; }
+  .cases__lead {
+    height: 10px;
+    margin-bottom: 35px; }
+  .cases_portfolio {
+    padding-top: 25px; }
 
   .principles {
     background: #fff;
@@ -5565,7 +5591,7 @@ a.button {
           position: relative; }
         .projects .project_tall .project__review_top {
           height: 0;
-          padding-bottom: 100%; }
+          padding-bottom: calc(100% - 34px); }
           .projects .project_tall .project__review_top-client {
             height: auto;
             padding-bottom: 0; }
@@ -5625,6 +5651,12 @@ a.button {
       height: 25px; }
     .feedback__button {
       width: 100%; }
+    .feedback_compact {
+      padding: 60px 30px 50px; }
+      .feedback_compact.feedback_applicants {
+        background-image: none; }
+      .feedback_compact h2 {
+        padding-right: 10%; }
 
   .footer {
     border-radius: 30px 30px 0 0; }

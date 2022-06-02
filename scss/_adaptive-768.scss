@@ -622,6 +622,14 @@
         h2{
             margin-bottom:30px;
         }
+        .project{
+            &__review{
+                &_body{
+                    font-size:22px;
+                    padding-right:10%;
+                }
+            }
+        }
     }
     .feedback{
         margin-bottom:40px;
@@ -1092,6 +1100,13 @@
                 grid-column-end: span 2;
             }
         }
+        &__lead{
+            height:10px;
+            margin-bottom:35px;
+        }
+        &_portfolio{
+            padding-top:25px;
+        }
     }
     .principles{
         background:$color-white;
@@ -1350,7 +1365,7 @@
                     }
                     &_top{
                         height:0;
-                        padding-bottom:100%;
+                        padding-bottom:calc(100% - 34px);
                         &-client {
                             height: auto;
                             padding-bottom: 0;
@@ -1442,6 +1457,15 @@
         }
         &__button{
             width:100%;
+        }
+        &_compact{
+            padding:60px 30px 50px;
+            &.feedback_applicants{
+                background-image:none;
+            }
+            h2{
+                padding-right:10%;
+            }
         }
     }
     .footer{
