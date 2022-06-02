@@ -53,7 +53,7 @@
                         <span class="problems-slider-groups__item">
         <span class="cases__case">
         <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
+        <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
             <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
             <span class="cases__case_name">Пятёрочка</span>
             <span class="cases__case_arrow"></span>
@@ -384,7 +384,7 @@
                         <span class="problems-slider-groups__item">
         <span class="cases__case">
         <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
+        <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
             <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
             <span class="cases__case_name">Пятёрочка</span>
             <span class="cases__case_arrow"></span>
@@ -462,7 +462,7 @@
                         <span class="problems-slider-groups__item">
         <span class="cases__case">
         <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
+        <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
             <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
             <span class="cases__case_name">Пятёрочка</span>
             <span class="cases__case_arrow"></span>

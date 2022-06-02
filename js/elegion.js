@@ -185,8 +185,8 @@ function ContactMap(container, switcherItems, selectControl)
 }
 
 function TextareaOnInput() {
-  this.style.height = "auto";
-  this.style.height = (this.scrollHeight) + "px";
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
 }
 
 function portfolioRefresh(limit){
@@ -655,6 +655,11 @@ docReady(function() {
         for (let i = 0; i < textarea.length; i++) {
           textarea[i].setAttribute("style", "height:" + (textarea[i].scrollHeight) + "px;overflow-y:hidden;");
           textarea[i].addEventListener("input", TextareaOnInput, false);
+            if(windowWidth < 500) {
+                if(textarea[i].id == 'project_desc') {
+                    textarea[i].placeholder = 'Краткая информация'
+                }
+            }
         }
     }
     

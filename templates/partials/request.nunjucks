@@ -59,7 +59,7 @@
         </div>
         <h3>Есть ли описание проекта?</h3>
         <div class="request__textarea request__file">
-            <textarea placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
+            <textarea id="project_desc" placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
             <label class="button button_grey button_wide" for="request-file">Загрузите файл, не&nbsp;более 15&nbsp;Мб</label>
             <input type="file" id="request-file">
         </div>

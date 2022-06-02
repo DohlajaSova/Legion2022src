@@ -7,7 +7,7 @@
             <div class="js-randomcases-container"><div class="some-projects__list">
                 <span class="cases__case"><div class="cases__case_inner">
                 <div class="cases__case_number"><span>6</span></div>
-                <div class="cases__case_container"><div class="cases__case_contents">
+                <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
                     <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
                     <span class="cases__case_name">Пятёрочка</span>
                     <span class="cases__case_arrow"></span>
