@@ -348,12 +348,30 @@
         &__section {
             flex-flow: column nowrap;
             height: auto;
+            margin-bottom: 80px;
             &_info {
                 overflow: unset;
                 width: 100%;
+                height: auto;
+                padding-bottom: 0;
+                &-inner{
+                    padding: 60px 25px 30px;
+                    position: static;
+                }
+                &-title{
+                    font-size: 46px;
+                    margin-bottom: 30px;
+                }
+                &-description{
+                    font-size: 24px;
+                }
+                &-icon{
+                    margin-top: 20px;
+                }
             }
             &_img {
                 width: 100%;
+                padding-bottom: 100%;
             }
         }
         &__feature {
@@ -1498,6 +1516,18 @@
     .service {
         &__section {
             margin:  0 0 40px;
+            &_info {
+                &-inner{
+                    padding: 25px;
+                }
+                &-title{
+                    font-size: 30px;
+                    margin-bottom: 14px;
+                }
+                &-description{
+                    font-size: 18px;
+                }
+            }
         }
         &__feature {
             &_info {

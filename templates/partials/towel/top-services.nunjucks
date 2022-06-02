@@ -5,16 +5,16 @@
         <div class="service__section_img">
             <img src="/assets/css/img/temp-principles2.jpg" alt="">
         </div>
-        <div class="service__section_info">
+        <div class="service__section_info"><div class="service__section_info-inner">
             <div class="service__section_info-title">
                 Индивидуальное решение ваших задач
             </div>
             <div class="service__section_info-description">
-                Гибко подстраиваемся под процессы, подключаемся к проекту на любом этапе, вместе ищем новые решения и реализуем лучшие практики на рынке.
+                Гибко подстраиваемся под процессы, подключаемся к&nbsp;проекту на&nbsp;любом этапе, вместе ищем новые решения и&nbsp;реализуем лучшие практики на&nbsp;рынке.
             </div>
             <div class="icon_plus service__section_info-icon">
             </div>
-        </div>
+        </div></div>
     </div>
 
     <div class="service__feature">
@@ -31,7 +31,7 @@
                 <div class="icon_arrow service__feature_inner-icon">
                 </div>
                 <div class="service__feature_inner-description">
-                    Подробнее об услуге и этапах работы
+                    Подробнее об&nbsp;услуге и&nbsp;этапах работы
                 </div>
             </a>
             <div class="service__feature_inner-case">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="service__feature_inner-case__brief">
                     <div class="service__feature_inner-case__brief-title">
-                        Клиенты и кейсы
+                        Клиенты и&nbsp;кейсы
                     </div>
                     <a href="/inprocess.html" class="service__feature_inner-case__brief-transition">
                         Подробнее → 

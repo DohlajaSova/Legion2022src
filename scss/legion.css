@@ -3371,8 +3371,8 @@ a.button {
       border-radius: 42px;
       overflow: hidden;
       position: relative;
-      max-height: 720px;
-      min-height: 517px; }
+      height: 0;
+      padding-bottom: 50%; }
       .service__section_img img {
         display: block;
         width: 100%;
@@ -3384,9 +3384,22 @@ a.button {
       display: flex;
       flex-flow: column nowrap;
       color: #1E2738;
-      padding: 52.5px 38px 27px 45px;
       overflow: hidden;
-      width: 50%; }
+      width: 50%;
+      height: 0;
+      padding-bottom: 50%;
+      position: relative; }
+      .service__section_info-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 52.5px 38px 27px 45px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
       .service__section_info-title {
         line-height: 130%;
         font-size: 46px;
@@ -4068,25 +4081,18 @@ a.button {
     .teammate__body_name {
       margin-bottom: 5px; }
 
-  .service__section {
-    height: 450px; }
-    .service__section img {
-      height: 100%; }
-
-  .service__section_info {
-    padding: 40px 25px 20px 35px; }
-
+  .service__section img {
+    height: 100%; }
+  .service__section_info-inner {
+    padding: 40px 25px 40px 35px; }
   .service__section_info-title {
-    font-size: 40px;
-    margin-bottom: 30px; }
-
+    font-size: 36px;
+    margin-bottom: 20px; }
   .service__section_info-description {
     font-size: 20px; }
-
   .service__feature_inner-case__visual {
     grid-template-columns: 100px 100px;
     grid-template-rows: 100px 100px; }
-
   .service__feature_inner-case__brief {
     padding: 20px; }
 
@@ -4626,6 +4632,13 @@ a.button {
       .to-work__content_blocks .projects .project:last-child {
         margin-bottom: 0; }
 
+  .service__section_info-inner {
+    padding: 25px; }
+  .service__section_info-title {
+    font-size: 30px;
+    margin-bottom: 14px; }
+  .service__section_info-description {
+    font-size: 18px; }
   .service__feature_inner-case__visual {
     grid-template-columns: 90px 90px;
     grid-template-rows: 90px 90px; }
@@ -4892,12 +4905,26 @@ a.button {
 
   .service__section {
     flex-flow: column nowrap;
-    height: auto; }
+    height: auto;
+    margin-bottom: 80px; }
     .service__section_info {
       overflow: unset;
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      padding-bottom: 0; }
+      .service__section_info-inner {
+        padding: 60px 25px 30px;
+        position: static; }
+      .service__section_info-title {
+        font-size: 46px;
+        margin-bottom: 30px; }
+      .service__section_info-description {
+        font-size: 24px; }
+      .service__section_info-icon {
+        margin-top: 20px; }
     .service__section_img {
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 100%; }
   .service__feature {
     padding: 40px 0 40px; }
     .service__feature_info {
@@ -5678,6 +5705,13 @@ a.button {
 
   .service__section {
     margin: 0 0 40px; }
+    .service__section_info-inner {
+      padding: 25px; }
+    .service__section_info-title {
+      font-size: 30px;
+      margin-bottom: 14px; }
+    .service__section_info-description {
+      font-size: 18px; }
   .service__feature_info {
     flex-flow: column nowrap;
     margin: 0 0 20px 0; }

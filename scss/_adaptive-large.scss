@@ -567,28 +567,33 @@
             }
         }
     }
-    .service__section {
-        height: 450px;
-        img {
-            height: 100%;
+    .service{
+        &__section{
+            img {
+                height: 100%;
+            }
+            &_info {
+                &-inner{
+                    padding:40px 25px 40px 35px;
+                }
+                &-title{
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+                &-description{
+                    font-size: 20px;
+                }
+            }
         }
-    }
-    .service__section_info {
-        padding: 40px 25px 20px 35px 
-    }
-    .service__section_info-title{
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
-    .service__section_info-description{
-        font-size: 20px;
-    }
-    .service__feature_inner-case__visual {
-        grid-template-columns: 100px 100px;
-        grid-template-rows: 100px 100px;
-    }
-    .service__feature_inner-case__brief {
-        padding: 20px;
+        &__feature_inner-case{
+            &__visual {
+                grid-template-columns: 100px 100px;
+                grid-template-rows: 100px 100px;
+            }
+            &__brief {
+                padding: 20px;
+            }
+        }
     }
     .client__info .cases-slider__item_nomination{
         .h2{
@@ -1414,10 +1419,29 @@
             }
         }
     }
-    .service__feature_inner-case__visual {
-        grid-template-columns: 90px 90px;
-        grid-template-rows: 90px 90px;
+    .service{
+        &__section{
+            &_info {
+                &-inner{
+                    padding: 25px;
+                }
+                &-title{
+                    font-size: 30px;
+                    margin-bottom: 14px;
+                }
+                &-description{
+                    font-size: 18px;
+                }
+            }
+        }
+        &__feature_inner-case{
+            &__visual {
+                grid-template-columns: 90px 90px;
+                grid-template-rows: 90px 90px;
+            }
+        }
     }
+
     .request {
         &__textarea{
             textarea{
