@@ -121,8 +121,8 @@
                     grid-template-columns: auto;
                     grid-template-rows: auto auto;
                     &__visual {
-                        grid-template-rows: repeat(2, calc(50vw - 56px));
-                        grid-template-columns: repeat(2, calc(50vw - 56px));
+                        grid-template-rows: repeat(2, calc(50vw - 40px));
+                        grid-template-columns: repeat(2, calc(50vw - 40px));
                         width: 100%;
                         padding: 20px;
                     }

@@ -3521,7 +3521,8 @@ a.button {
         .service-descr__accordion .problems__item_bg7 .problems-slider-groups__statics_dots li.tns-nav-active {
           background-color: #949191; }
       .service-descr__accordion .problems__item_container {
-        top: 0; }
+        top: 0;
+        padding-top: 0; }
         .service-descr__accordion .problems__item_container .cases__case {
           padding-bottom: 100%; }
           .service-descr__accordion .problems__item_container .cases__case_contents {
@@ -5796,8 +5797,8 @@ a.button {
     grid-template-columns: auto;
     grid-template-rows: auto auto; }
     .service__feature_inner-case__visual {
-      grid-template-rows: repeat(2, calc(50vw - 56px));
-      grid-template-columns: repeat(2, calc(50vw - 56px));
+      grid-template-rows: repeat(2, calc(50vw - 40px));
+      grid-template-columns: repeat(2, calc(50vw - 40px));
       width: 100%;
       padding: 20px; }
 
