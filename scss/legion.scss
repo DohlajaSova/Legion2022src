@@ -1146,6 +1146,7 @@ a.button{
             overflow:hidden;
             padding-bottom:0;
             transition:max-height 0.7s, padding-bottom 0.7s;
+            color:$color-blue-dark;
             h4{
                 font-size:24px;
                 font-weight:300;
@@ -1443,6 +1444,7 @@ a.button{
         }
 	}
     &_portfolio{
+        padding-top:120px;
         .container_portfolio-inner{
             display:flex;
             width:calc(100% + 20px);
@@ -1922,6 +1924,7 @@ a.button{
             width:49%;
             padding-right:4%;
             margin-bottom:90px;
+            color:$color-blue-dark;
             *:last-child{
                 margin-bottom:0;
             }
@@ -4112,12 +4115,12 @@ a.button{
         border-radius: 42px;
         margin: 60px 0px 140px;
         &_img {
-            width: 50%;
-            border-radius: 42px;
-            overflow: hidden;
-            position: relative;
-            max-height: 720px;
-            min-height: 517px;
+            width:50%;
+            border-radius:42px;
+            overflow:hidden;
+            position:relative;
+            height:0;
+            padding-bottom:50%;
             img {
                 display: block;
                 width: 100%;
@@ -4131,9 +4134,23 @@ a.button{
             display: flex;
             flex-flow: column nowrap;
             color: $color-blue-dark;
-            padding: 52.5px 38px 27px 45px;
             overflow: hidden;
             width: 50%;
+            height: 0;
+            padding-bottom:50%;
+            position:relative;
+            &-inner{
+                height:100%;
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+                padding:52.5px 38px 27px 45px;
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100%;
+            }
             &-title {
                 line-height: 130%;
                 font-size: 46px;
@@ -4298,6 +4315,7 @@ a.button{
                     }
                     &_container{
                         top:0;
+                        padding-top:0;
                         .cases__case{
                             padding-bottom:100%;
                             &_contents{
@@ -4344,6 +4362,7 @@ a.button{
         display:flex;
         flex-direction:row;
         justify-content:space-between;
+        color:$color-blue-dark;
         &_brief{
             width:50%;
             padding-right:10%;

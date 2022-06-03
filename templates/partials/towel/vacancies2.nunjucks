@@ -93,7 +93,7 @@
                 <a href="" class="js-vacancies-next">&gt;</a>
             </div>
             <div class="cases__pagination-button">
-                <button class="button button_default button_wide js-vacancies-more">Показать еще</button>
+                <button class="button button_grey button_wide js-vacancies-more">Показать еще</button>
             </div>
         </div>
     </div>

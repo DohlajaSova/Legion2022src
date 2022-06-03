@@ -265,7 +265,7 @@ docReady(function() {
     let i,j;
     let backButton = document.querySelector(".js-top");
 
-    if (windowWidth <= 550)
+    if (windowWidth <= 768)
     {
         window.onscroll = function() {
             let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;

@@ -348,12 +348,30 @@
         &__section {
             flex-flow: column nowrap;
             height: auto;
+            margin-bottom: 80px;
             &_info {
                 overflow: unset;
                 width: 100%;
+                height: auto;
+                padding-bottom: 0;
+                &-inner{
+                    padding: 60px 25px 30px;
+                    position: static;
+                }
+                &-title{
+                    font-size: 46px;
+                    margin-bottom: 30px;
+                }
+                &-description{
+                    font-size: 24px;
+                }
+                &-icon{
+                    margin-top: 20px;
+                }
             }
             &_img {
                 width: 100%;
+                padding-bottom: 100%;
             }
         }
         &__feature {
@@ -621,6 +639,14 @@
     .projects{
         h2{
             margin-bottom:30px;
+        }
+        .project{
+            &__review{
+                &_body{
+                    font-size:22px;
+                    padding-right:10%;
+                }
+            }
         }
     }
     .feedback{
@@ -1092,6 +1118,13 @@
                 grid-column-end: span 2;
             }
         }
+        &__lead{
+            height:10px;
+            margin-bottom:35px;
+        }
+        &_portfolio{
+            padding-top:25px;
+        }
     }
     .principles{
         background:$color-white;
@@ -1353,7 +1386,7 @@
                     }
                     &_top{
                         height:0;
-                        padding-bottom:100%;
+                        padding-bottom:calc(100% - 34px);
                         &-client {
                             height: auto;
                             padding-bottom: 0;
@@ -1446,6 +1479,15 @@
         &__button{
             width:100%;
         }
+        &_compact{
+            padding:60px 30px 50px;
+            &.feedback_applicants{
+                background-image:none;
+            }
+            h2{
+                padding-right:10%;
+            }
+        }
     }
     .footer{
         border-radius:30px 30px 0 0;
@@ -1477,6 +1519,18 @@
     .service {
         &__section {
             margin:  0 0 40px;
+            &_info {
+                &-inner{
+                    padding: 25px;
+                }
+                &-title{
+                    font-size: 30px;
+                    margin-bottom: 14px;
+                }
+                &-description{
+                    font-size: 18px;
+                }
+            }
         }
         &__feature {
             &_info {
