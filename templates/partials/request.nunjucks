@@ -78,13 +78,13 @@
             </div>
             <div class="request__form_item">
                 <input autocomplete="ofasdasdasdasdf" name="phone" id="phonefield" type="tel" placeholder="+7 ___ ___ ____" class="request__form_input phone">
-                <label for="phone" class="request__form_label">Телефон</label>
-                <span class="request__form_error">Введите ваш телефон</span>
+                <label for="phone" class="request__form_label">Номер для связи</label>
+                <span class="request__form_error">Введите номер для связи</span>
             </div>
             <div class="request__form_item">
                 <input name="mail" type="email" class="request__form_input" placeholder="Почта">
                 <label for="mail" class="request__form_label">Почта</label>
-                <span class="request__form_error">Введите вашу почту</span>
+                <span class="request__form_error">Введите почту для связи</span>
             </div>
         </div>
         <h3>И последнее: как вы узнали о нас?</h3>
@@ -104,7 +104,7 @@
               Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
             </div>
             <div class="request__button">
-              <button class="button button_white js-request-button">Обсудить задачу</button>
+              <button class="button button_white js-request-button">Отправить</button>
             </div>
         </div>
     </div>
