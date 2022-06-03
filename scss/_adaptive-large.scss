@@ -40,9 +40,6 @@
     .not-all-the-same .projects{
         padding: 0;
     }
-    .back{
-        display:none;
-    }
     .dummy-inprocess__text{
         margin-right:30px;
         width:calc(40% - 30px);
@@ -787,6 +784,9 @@
             padding:30px 24px calc(49.2% - 30px);
             &_bg4{
                 padding-right:0;
+				.problems__item_button{
+					opacity:1;
+				}
             }
             &_bg5,
             &_bg7{
