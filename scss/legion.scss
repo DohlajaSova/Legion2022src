@@ -2333,11 +2333,25 @@ a.button{
             .problems__item_container{
                 flex-direction:column;
                 height:calc(100% - 60px);
-                width:calc(100% - 80px);
+                width:100%;
+				justify-content:center;
             }
+			.problems__item_plus{
+				margin-bottom:-38px;
+			}
+			.problems__item_button{
+				height:0;
+				opacity:0;
+				transition:opacity 1.5s;
+			}
             h3{
                 width:100%;
             }
+			&:hover{
+				.problems__item_button{
+					opacity:1;
+				}
+			}
         }
         &_bg5{
             background:url($img-path + "problems-bg4.svg") bottom right no-repeat $color-blue;
