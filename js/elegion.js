@@ -652,12 +652,16 @@ docReady(function() {
     // автомасштабирование textarea
     const textarea = document.getElementsByTagName("textarea");
     if (textarea.length){
+        console.log('here')
         for (let i = 0; i < textarea.length; i++) {
-          textarea[i].setAttribute("style", "height:" + (textarea[i].scrollHeight) + "px;overflow-y:hidden;");
+        console.log('here')
+        textarea[i].setAttribute("style", "height:" + (textarea[i].scrollHeight) + "px;overflow-y:hidden;");
           textarea[i].addEventListener("input", TextareaOnInput, false);
             if(windowWidth < 500) {
-                if(textarea[i].id == 'project_desc') {
-                    textarea[i].placeholder = 'Краткая информация'
+        console.log('here3')
+        if(textarea[i].id == 'project_desc') {
+        console.log('here4')
+        textarea[i].placeholder = 'Краткая информация'
                 }
             }
         }

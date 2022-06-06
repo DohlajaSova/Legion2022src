@@ -23,9 +23,9 @@
                             <span class="request__form_error">Введите название компании</span>
                         </div>
                         <div class="request__form_item">
-                            <input name="phone" type="tel" class="request__form_input" placeholder="Телефон">
-                            <label for="phone" class="request__form_label">Телефон</label>
-                            <span class="request__form_error">Введите ваш телефон</span>
+                            <input name="phone" type="tel" class="request__form_input" placeholder="Номер для связи">
+                            <label for="phone" class="request__form_label">Номер для связи</label>
+                            <span class="request__form_error">Введите номер для связи</span>
                         </div>
                         <div class="request__form_item">
                             <input name="mail" type="email" class="request__form_input" placeholder="Почта">
@@ -47,7 +47,7 @@
                     </div>
                     <h3>Есть ли описание проекта?</h3>
                     <div class="request__textarea request__file">
-                        <textarea placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
+                        <textarea id="project_desc" placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
                         <label class="button button_grey button_wide" for="request-file">Загрузите файл, не&nbsp;более 15&nbsp;Мб</label>
                         <input type="file" id="request-file">
                     </div>

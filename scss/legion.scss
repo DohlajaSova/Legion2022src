@@ -1318,6 +1318,13 @@ a.button{
             height:calc(100% + 107px);
 			top:0;
 			transition: top ease 0.5s;
+            &-active {
+                animation-name: case-bounce;
+                animation-timing-function: cubic-bezier(0.281, 0.841, 0.421, 1);
+                animation-duration: 2s;
+                animation-iteration-count: 2;
+            }
+
             &-slider{
                 height:100%;
                 z-index:2;
@@ -2041,6 +2048,7 @@ a.button{
         margin-bottom:60px;
         flex-wrap:wrap;
         h2{
+            color: $color-blue-dark;
             width:48%;
             em{
                 color:$color-blue-light;
@@ -3933,20 +3941,20 @@ a.button{
 .body_about{
     .header{
         background-color:transparent;
-        &__logo{
-            background-image:url($img-path + "logo-white.svg");
-        }
-        &__hmenu{
-            background-image:url($img-path + "icon-menu2.svg");
-        }
-        &__mmenu{
-            & > a{
-                color:$color-white;
-                &.header__mmenu_lang{
-                    color:$color-blue-dark;
-                }
-            }
-        }
+        // &__logo{
+        //     background-image:url($img-path + "logo-white.svg");
+        // }
+        // &__hmenu{
+        //     background-image:url($img-path + "icon-menu2.svg");
+        // }
+        // &__mmenu{
+        //     & > a{
+        //         color:$color-white;
+        //         &.header__mmenu_lang{
+        //             color:$color-blue-dark;
+        //         }
+        //     }
+        // }
     }
     .top{
         background:url($img-path + "about.jpg") top center no-repeat;
@@ -4059,6 +4067,7 @@ a.button{
         text-align: center;
         padding:30px 0;
         margin-top:60px;
+        color: $color-blue-dark;
         &::before,
         &::after{
             content:"";
@@ -4603,6 +4612,34 @@ a.button{
     transform: rotate(360deg);
   }
 }
+
+@-moz-keyframes case-bounce {
+    10%  { -moz-transform: scale(1.1,.9)   translateY(0); }
+    0%   { -moz-transform: scale(1,1)      translateY(0); }
+    30%  { -moz-transform: scale(.9,1.1)   translateY(-40px); }
+    50%  { -moz-transform: scale(1.05,.95) translateY(0); }
+    57%  { -moz-transform: scale(1,1)      translateY(-7px); }
+    64%  { -moz-transform: scale(1,1)      translateY(0); }
+    100% { -moz-transform: scale(1,1)      translateY(0); }
+  }
+  @-webkit-keyframes case-bounce {
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    0%   { -webkit-transform: scale(1,1)      translateY(0); }
+    30%  { -webkit-transform: scale(.9,1.1)   translateY(-40px); }
+    50%  { -webkit-transform: scale(1.05,.95) translateY(0); }
+    57%  { -webkit-transform: scale(1,1)      translateY(-7px); }
+    64%  { -webkit-transform: scale(1,1)      translateY(0); }
+    100% { -webkit-transform: scale(1,1)      translateY(0); }
+  }
+  @keyframes case-bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-40px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+  }
 
 //------------------Адаптация---------------
 

@@ -916,7 +916,7 @@
         .h1{
             font-size:36px;
             width:100%;
-            margin-bottom:45px;
+            margin-bottom:85px;
         }
     }
     .cases-slider-info,
@@ -1182,6 +1182,9 @@
                 padding-left:23px;
                 padding-right:23px;
                 border-radius:30px;
+                &-img {
+                    border-radius:29px;
+                }
             }
             &_rubr{
                 font-size:12px;
