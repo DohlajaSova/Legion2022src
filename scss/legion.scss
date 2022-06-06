@@ -3667,6 +3667,11 @@ a.button{
 			position:absolute;
 			top:70px;
 		}
+        &_warning{
+            font-size: 24px;
+            line-height: 110%;
+            color: #949191;
+        }
 		&_input[type="text"],
 		&_input[type="email"],
 		&_input[type="tel"],

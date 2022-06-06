@@ -193,6 +193,16 @@
             }
         }
     }
+    .request {
+        &__lead{
+            height:24px;
+        }
+        &__form{
+            &_warning{
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
