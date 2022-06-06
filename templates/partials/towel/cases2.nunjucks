@@ -1,213 +1,333 @@
-<div class="cases cases_portfolio"><div class="cases-container"><div class="cases-container_inner">
-    <div class="container">
-        <h1 class="cases__title">Клиенты и&nbsp;кейсы</h1>
-        <div class="cases__lead"></div>
-        <div class="cases__filter">
-            <div class="select select-inline js-cases-types"><select>
-                <option value="all">Всё</option>
-                <option value="start">Разработка с нуля</option>
-                <option value="scale">Масштабирование продукта</option>
-                <option value="consult">Консалтинг</option>
-            </select></div>
-            <div class="cases__tags js-cases-tags">
-                <a href="#all" class="active">#all</a>
-                <a href="#retail">#retail</a>
-                <a href="#entertainment">#entertainment</a>
-                <a href="#sports">#sports</a>
-                <a href="#navigation">#navigation</a>
-                <a href="#fintech">#fintech</a>
-                <a href="#ecommerce">#ecommerce</a>
-                <a href="#food">#food</a>
-                <a href="#delivery">#delivery</a>
-                <a href="#education">#education</a>
-                <a href="#socialnetwork">#socialnetwork</a>
-                <a href="#medicine">#medicine</a>
-                <a href="#health">#health</a>
-                <a href="#corporate">#corporate</a>
-                <a href="#it">#IT</a>
-                <a href="#telecom">#telecom</a>
+<div class="cases cases_portfolio">
+    <div class="cases-container">
+        <div class="cases-container_inner">
+            <div class="container">
+                <h1 class="cases__title">Клиенты и&nbsp;кейсы</h1>
+                <div class="cases__lead"></div>
+                <div class="cases__filter">
+                    <div class="select select-inline js-cases-types">
+                        <select>
+                            <option value="all">Всё</option>
+                            <option value="start">Разработка с нуля</option>
+                            <option value="scale">Масштабирование продукта</option>
+                            <option value="consult">Консалтинг</option>
+                        </select>
+                    </div>
+                    <div class="cases__tags js-cases-tags">
+                        <a href="#all" class="active">#all</a>
+                        <a href="#retail">#retail</a>
+                        <a href="#entertainment">#entertainment</a>
+                        <a href="#sports">#sports</a>
+                        <a href="#navigation">#navigation</a>
+                        <a href="#fintech">#fintech</a>
+                        <a href="#ecommerce">#ecommerce</a>
+                        <a href="#food">#food</a>
+                        <a href="#delivery">#delivery</a>
+                        <a href="#education">#education</a>
+                        <a href="#socialnetwork">#socialnetwork</a>
+                        <a href="#medicine">#medicine</a>
+                        <a href="#health">#health</a>
+                        <a href="#corporate">#corporate</a>
+                        <a href="#it">#IT</a>
+                        <a href="#telecom">#telecom</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container js-cases-container-portfolio" data-limit="12">
+                <div class="container_portfolio-inner">
+                    <span
+                        class="cases__case"
+                        data-types="['all','start','consult','telecom']"
+                        data-tags="['all','telecom']"
+                        data-priority="10"
+                        data-enlargable="1">
+                        <div class="cases__case_number">
+                            <span>3</span>
+                        </div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
+                                <span class="cases__case_name">Tele2</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <a
+                        href="/client.html"
+                        class="cases__case"
+                        data-types="['all','scale']"
+                        data-tags="['all','retail']"
+                        data-priority="10"
+                        data-enlargable="1">
+                        <div class="cases__case_number">
+                            <span>6</span>
+                        </div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents cases__case_contents-active">
+                                <span class="cases__case_logo">
+                                    <img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
+                                <span class="cases__case_name">Пятёрочка</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <span
+                        class="cases__case"
+                        data-types="['all','start','consult']"
+                        data-tags="['all','retail','delivery']"
+                        data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"> </span>
+                                <span class="cases__case_name">Globus</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech']" data-priority="10">
+                        <div class="cases__case_number">
+                            <span>2</span>
+                        </div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"> </span>
+                                <span class="cases__case_name">Альфа-Инвестиции</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','food','delivery']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"> </span>
+                                <span class="cases__case_name">Burger King</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','scale']" data-tags="['all','fintech']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-tinkoff.svg" alt="Тинькофф"> </span>
+                                <span class="cases__case_name">Тинькофф</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','navigation','it']" data-priority="10">
+                        <div class="cases__case_number">
+                            <span>3</span>
+                        </div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-yandex.svg" alt="Yandex"> </span>
+                                <span class="cases__case_name">Yandex</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="cases__case"
+                        data-types="['all','start']"
+                        data-tags="['all','retail','ecommerce','delivery']"
+                        data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-tea.svg" alt="Tea.ru"> </span>
+                                <span class="cases__case_name">Tea.ru</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="cases__case"
+                        data-types="['all','start']"
+                        data-tags="['all','retail','ecommerce','delivery']"
+                        data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-may24.svg" alt="May24"> </span>
+                                <span class="cases__case_name">May24</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','scale']" data-tags="['all','socialnetwork']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-venn.svg" alt="Venn"> </span>
+                                <span class="cases__case_name">Venn</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','retail']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-aushan.svg" alt="Ашан"> </span>
+                                <span class="cases__case_name">Ашан</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="cases__case"
+                        data-types="['all','start']"
+                        data-tags="['all','sports','navigation','health']"
+                        data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-jetsport.svg" alt="Jet"> </span>
+                                <span class="cases__case_name">Jet</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','entertainment','sports']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-888.svg" alt="888"> </span>
+                                <span class="cases__case_name">888</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-sber.svg" alt="Сбер"> </span>
+                                <span class="cases__case_name">Сбер</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech','socialnetwork']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-spyking.svg" alt="Spiking"> </span>
+                                <span class="cases__case_name">Spiking</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','it']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-mail.svg" alt="Mail"> </span>
+                                <span class="cases__case_name">Mail</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start','scale']" data-tags="['all','fintech']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-raif.svg" alt="Райф"> </span>
+                                <span class="cases__case_name">Райф</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="cases__case"
+                        data-types="['all','start']"
+                        data-tags="['all','entertainment','education','medicine']"
+                        data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-mel.svg" alt="MEL"> </span>
+                                <span class="cases__case_name">MEL</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','telecom']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-yota.svg" alt="Yota"> </span>
+                                <span class="cases__case_name">Yota</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','education','it']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-microsoft.svg" alt="Microsoft"> </span>
+                                <span class="cases__case_name">Microsoft</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','consult']" data-tags="['all','fintech']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-uralsib.svg" alt="Уралсиб"> </span>
+                                <span class="cases__case_name">Уралсиб</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','consult']" data-tags="['all','corporate']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-shell.svg" alt="Shell"> </span>
+                                <span class="cases__case_name">Shell</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','food','delivery']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-ginza.svg" alt="Ginza"> </span>
+                                <span class="cases__case_name">Ginza</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="cases__case" data-types="['all','start']" data-tags="['all','education']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-lingualeo.svg" alt="LinguaLeo"> </span>
+                                <span class="cases__case_name">LinguaLeo</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cases__pagination">
+                    <div class="cases__pagination-arrows">
+                        <a href="" class="js-cases-prev">&lt;</a>
+                        <a href="" class="js-cases-next">&gt;</a>
+                    </div>
+                    <div class="cases__pagination-button">
+                        <button class="button button_default button_wide js-cases-more">Показать еще</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container js-cases-container-portfolio" data-limit="12"><div class="container_portfolio-inner">
-        <span class="cases__case" data-types="['all','start','consult','telecom']" data-tags="['all','telecom']" data-priority="10" data-enlargable="1">
-        <div class="cases__case_number"><span>3</span></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
-            <span class="cases__case_name">Tele2</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','scale']" data-tags="['all','retail']" data-priority="10" data-enlargable="1">
-        <div class="cases__case_number"><span>6</span></div>
-        <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
-            <span class="cases__case_name">Пятёрочка</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start','consult']" data-tags="['all','retail','delivery']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"></span>
-            <span class="cases__case_name">Globus</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech']" data-priority="10">
-        <div class="cases__case_number"><span>2</span></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"></span>
-            <span class="cases__case_name">Альфа-Инвестиции</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','food','delivery']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"></span>
-            <span class="cases__case_name">Burger King</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','scale']" data-tags="['all','fintech']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-tinkoff.svg" alt="Тинькофф"></span>
-            <span class="cases__case_name">Тинькофф</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','navigation','it']" data-priority="10">
-        <div class="cases__case_number"><span>3</span></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-yandex.svg" alt="Yandex"></span>
-            <span class="cases__case_name">Yandex</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','retail','ecommerce','delivery']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-tea.svg" alt="Tea.ru"></span>
-            <span class="cases__case_name">Tea.ru</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','retail','ecommerce','delivery']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-may24.svg" alt="May24"></span>
-            <span class="cases__case_name">May24</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','scale']" data-tags="['all','socialnetwork']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-venn.svg" alt="Venn"></span>
-            <span class="cases__case_name">Venn</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','retail']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-aushan.svg" alt="Ашан"></span>
-            <span class="cases__case_name">Ашан</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','sports','navigation','health']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-jetsport.svg" alt="Jet"></span>
-            <span class="cases__case_name">Jet</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','entertainment','sports']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-888.svg" alt="888"></span>
-            <span class="cases__case_name">888</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-sber.svg" alt="Сбер"></span>
-            <span class="cases__case_name">Сбер</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech','socialnetwork']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-spyking.svg" alt="Spiking"></span>
-            <span class="cases__case_name">Spiking</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','it']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-mail.svg" alt="Mail"></span>
-            <span class="cases__case_name">Mail</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start','scale']" data-tags="['all','fintech']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-raif.svg" alt="Райф"></span>
-            <span class="cases__case_name">Райф</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','entertainment','education','medicine']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-mel.svg" alt="MEL"></span>
-            <span class="cases__case_name">MEL</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','telecom']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-yota.svg" alt="Yota"></span>
-            <span class="cases__case_name">Yota</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','education','it']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-microsoft.svg" alt="Microsoft"></span>
-            <span class="cases__case_name">Microsoft</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','consult']" data-tags="['all','fintech']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-uralsib.svg" alt="Уралсиб"></span>
-            <span class="cases__case_name">Уралсиб</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','consult']" data-tags="['all','corporate']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-shell.svg" alt="Shell"></span>
-            <span class="cases__case_name">Shell</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','food','delivery']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-ginza.svg" alt="Ginza"></span>
-            <span class="cases__case_name">Ginza</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case" data-types="['all','start']" data-tags="['all','education']" data-priority="10">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-lingualeo.svg" alt="LinguaLeo"></span>
-            <span class="cases__case_name">LinguaLeo</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-    </div></div>
-    <div class="container">
-        <div class="cases__pagination">
-            <div class="cases__pagination-arrows">
-                <a href="" class="js-cases-prev">&lt;</a>
-                <a href="" class="js-cases-next">&gt;</a>
-            </div>
-            <div class="cases__pagination-button">
-                <button class="button button_default button_wide js-cases-more">Показать еще</button>
-            </div>
-        </div>
-    </div>
-</div></div></div>
+</div>

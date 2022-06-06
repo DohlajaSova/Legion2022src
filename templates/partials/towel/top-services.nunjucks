@@ -86,9 +86,9 @@
                     <div class="service__feature_inner-case__visual_wrapper">
                         <img src="/assets/css/img/case-ad.svg" alt="Альфа">
                     </div>
-                    <div class="service__feature_inner-case__visual_wrapper">
+                    <a href="/client.html" class="service__feature_inner-case__visual_wrapper">
                         <img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка">
-                    </div>
+                    </a>
                     <div class="service__feature_inner-case__visual_wrapper">
                         <img src="/assets/css/img/case-jetsport.svg" alt="Jetsport">
                     </div>

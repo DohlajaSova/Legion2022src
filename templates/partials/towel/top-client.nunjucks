@@ -1,7 +1,7 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/clients.html">Клиенты и кейсы</a></li>
+        <li><a href="/client.html">Клиенты и кейсы</a></li>
         <li><span>Клиент: Пятерочка</span></li>
       </ul>
   </div>
@@ -181,7 +181,7 @@
                   пользовательского пути и&nbsp;реализацией новых сложных задач.
                 </div>
               </div>
-              <div class="project__review_author project__review_author-client">
+              <a href="/client.html" class="project__review_author project__review_author-client">
                 <img
                   class="project__review_author-img"
                   src="/assets/css/img/logo-5ka.svg"
@@ -192,7 +192,7 @@
                   начальник управления цифровых платформ федеральной торговой
                   сети «Пятёрочка»
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
