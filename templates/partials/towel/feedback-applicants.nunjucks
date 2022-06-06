@@ -28,7 +28,7 @@
                   Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
               </div>
               <div class="feedback__button">
-                  <button class="button button_white js-popup-feedback-send">Откликнуться</button>
+                  <button class="button button_white js-popup-feedback-send-applicants">Откликнуться</button>
               </div>
             </div>
         </form>

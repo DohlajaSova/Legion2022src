@@ -864,6 +864,7 @@ a.button{
         padding: 50px 0 50px 20px;
         text-align:left;
         &_success{
+            height: fit-content;
             background:$color-green;
             color:$color-white;
             .request{
@@ -2713,7 +2714,6 @@ a.button{
             }
             &_author{
                 padding:23px 43px 55px;
-                text-decoration: none;
                 &-img{
                     float:right;
                     margin-left:20px;
@@ -3675,11 +3675,6 @@ a.button{
 			position:absolute;
 			top:70px;
 		}
-        &_warning{
-            font-size: 24px;
-            line-height: 110%;
-            color: #949191;
-        }
 		&_input[type="text"],
 		&_input[type="email"],
 		&_input[type="tel"],
