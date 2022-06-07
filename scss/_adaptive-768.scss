@@ -865,6 +865,15 @@
         padding:0 15px;
         height: 95vh;
     }
+    .popup-feedback{
+        &__container{
+            padding:0 15px;
+            height: calc(95vh - 100px);
+        }
+        &__close{
+            right: 20px;
+        }
+    }
     .popup-feedback .answer__container{
         padding-right:15%;
         padding-bottom:100px;

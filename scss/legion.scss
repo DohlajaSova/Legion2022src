@@ -780,7 +780,7 @@ a.button{
     top:0;
     width:100%;
     height:100%;
-    z-index:1000;
+    z-index:4000;
     background-color:rgba($color-black,0.81);
     display:none;
 	padding:33px 0 25px;
@@ -799,7 +799,7 @@ a.button{
 		background-size:contain;
 		width:26px;
 		height:26px;
-        z-index:2001;
+        z-index:4001;
 		& > a{
 			display:block;
 			width:100%;
@@ -836,11 +836,11 @@ a.button{
     &__container{
         // max-height:100%;
         // overflow-y:auto;
-        height: 100vh;
+        height: calc(95vh - 100px);
         overflow: hidden;
         display: grid;
         grid-template-rows: 100px calc(100% - 100px);
-        padding: 20px 60px;
+        padding: 0px 60px;
     }
     .answer{
         display:none;
@@ -2926,6 +2926,9 @@ a.button{
         &_headwrap{
             width: 50%;
             margin-bottom:30px;
+            .request__form_warning {
+                color: #fff;
+            }
         }
 	}
 	h2{
@@ -3689,7 +3692,8 @@ a.button{
 		}
         &_warning{
             width: 100%;
-            margin-bottom:70px;
+            margin-bottom: 70px;
+            color: $color-grey-dark;
         }
 		&_input[type="text"],
 		&_input[type="email"],
