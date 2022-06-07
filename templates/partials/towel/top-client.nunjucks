@@ -1,7 +1,7 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/client.html">Клиенты и кейсы</a></li>
+        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
         <li><span>Клиент: Пятерочка</span></li>
       </ul>
   </div>
@@ -133,13 +133,13 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <div class="client__cases_block">
+          <a href="/case.html" class="client__cases_block">
             <div class="client__cases_block-name">Обратная связь</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">шпионский клуб</div>
               <div class="client__cases_block-parts__feature">чат с оператором</div>
             </div>
-          </div>
+          </a>
           <div class="client__cases_block inactive">
             <div class="client__cases_block-name">Маркетинг</div>
             <div class="client__cases_block-parts">

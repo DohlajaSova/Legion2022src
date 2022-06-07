@@ -858,7 +858,8 @@ a.button{
         }
     }
     &__content{
-        height: 100%;
+        height: inherit;
+        // height: 100%;
         max-width:1440px;
         background:$color-white;
         border-radius:38px;
@@ -3670,7 +3671,6 @@ a.button{
         justify-content:space-between;
         h3{
             width:100%;
-            margin-bottom:70px;
         }
 		&_label{
 			font-size:24px;
@@ -3687,6 +3687,10 @@ a.button{
 			position:absolute;
 			top:70px;
 		}
+        &_warning{
+            width: 100%;
+            margin-bottom:70px;
+        }
 		&_input[type="text"],
 		&_input[type="email"],
 		&_input[type="tel"],
@@ -4544,7 +4548,8 @@ a.button{
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            color: $color-blue-dark;
+            color: $color-blue-dark!important;
+            text-decoration: none!important;
             &.inactive {
                 padding-left: 0px;
                 color: $color-grey-dark;
