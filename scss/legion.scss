@@ -941,6 +941,10 @@ a.button{
         &_close{
             display: none;
         }
+        .header__mmenu_lang{
+            color:$color-black!important;
+            background-color: #fff;
+        }
 	}
     &__logo{
 		background:url($img-path + "logo-white.svg") 0 0 no-repeat;
@@ -1908,6 +1912,7 @@ a.button{
 			}
 		}
 		.category__content{
+            overflow: hidden;
 			background-color:$color-blue-light;
 			color:$color-blue-dark;
 		}
@@ -2639,6 +2644,7 @@ a.button{
 }
 
 .projects{
+    overflow: hidden;
     h2{
         width: 50%;
         margin-bottom:50px;
@@ -2913,18 +2919,22 @@ a.button{
 	color:$color-white;
 	&__container{
 		display:flex;
-		justify-content:space-between;
-		flex-wrap:wrap;
+		// justify-content:space-between;
+		flex-flow: row wrap;
 		padding:80px 0;
+        &_headwrap{
+            width: 50%;
+            margin-bottom:30px;
+        }
 	}
 	h2{
-		width:100%;
+		width:50%;
 		color:$color-blue-light;
-		margin-bottom:30px;
+        font-size: 46px;
 	}
 	&__form{
 		width:50%;
-		margin-left:50%;
+		// margin-left:50%;
 		padding-bottom:20px;
 		&_label{
 			font-size:24px;
@@ -3985,6 +3995,7 @@ a.button{
                 color:$color-white;
                 &.header__mmenu_lang{
                     color:$color-blue-dark;
+                    background-color: #fff;
                 }
             }
         }
