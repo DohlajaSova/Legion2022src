@@ -647,10 +647,12 @@ a.button{
 			background:$color-grey-light;
 			display:inline-block;
 			text-align:center;
-			width:30px;
+			// width:30px;
 			height:30px;
-			border-radius:100%;
+			border-radius:30px;
             flex-shrink:0;
+            padding: 0 10px;
+            text-decoration: none!important;
 		}
 	}
     &.header_sticky{
@@ -4019,6 +4021,7 @@ a.button{
                 color:$color-white;
                 &.header__mmenu_lang{
                     color:$color-blue-dark;
+                    background-color: #fff;
                 }
             }
         }
