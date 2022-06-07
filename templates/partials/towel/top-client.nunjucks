@@ -1,7 +1,7 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/clients.html">Клиенты и кейсы</a></li>
+        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
         <li><span>Клиент: Пятерочка</span></li>
       </ul>
   </div>
@@ -65,7 +65,7 @@
               </div>
               <div class="cases-slider__item_project">
                 <div class="cases-slider__item_project-photo">
-                  <a href="/inprocess.html"
+                  <a href="/case.html"
                     ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
                   /></a>
                 </div>
@@ -84,7 +84,7 @@
               </div>
               <div class="cases-slider__item_project">
                 <div class="cases-slider__item_project-photo">
-                  <a href="/inprocess.html"
+                  <a href="/case.html"
                     ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
                   /></a>
                 </div>
@@ -103,7 +103,7 @@
               </div>
               <div class="cases-slider__item_project">
                 <div class="cases-slider__item_project-photo">
-                  <a href="/inprocess.html"
+                  <a href="/case.html"
                     ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
                   /></a>
                 </div>
@@ -133,13 +133,13 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <div class="client__cases_block">
+          <a href="/case.html" class="client__cases_block">
             <div class="client__cases_block-name">Обратная связь</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">шпионский клуб</div>
               <div class="client__cases_block-parts__feature">чат с оператором</div>
             </div>
-          </div>
+          </a>
           <div class="client__cases_block inactive">
             <div class="client__cases_block-name">Маркетинг</div>
             <div class="client__cases_block-parts">
@@ -181,7 +181,7 @@
                   пользовательского пути и&nbsp;реализацией новых сложных задач.
                 </div>
               </div>
-              <div class="project__review_author project__review_author-client">
+              <a href="/client.html" class="project__review_author project__review_author-client">
                 <img
                   class="project__review_author-img"
                   src="/assets/css/img/logo-5ka.svg"
@@ -192,7 +192,7 @@
                   начальник управления цифровых платформ федеральной торговой
                   сети «Пятёрочка»
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

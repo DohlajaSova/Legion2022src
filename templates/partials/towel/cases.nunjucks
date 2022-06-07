@@ -1,90 +1,135 @@
-<div class="cases"><div class="cases-container"><div class="cases-container_inner">
-    <div class="container js-cases-container">
-        <span class="cases__case">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"></span>
-            <span class="cases__case_name">Tele2</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-tinkoff.svg" alt="Тинькофф"></span>
-            <span class="cases__case_name">Тинькофф</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case">
-        <div class="cases__case_number"><span>5</span></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Сбер"></span>
-            <span class="cases__case_name">Альфа-Директ</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"></span>
-            <span class="cases__case_name">Burger King</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"></span>
-            <span class="cases__case_name">Globus</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <span class="cases__case">
-        <div class="cases__case_number"></div>
-        <div class="cases__case_container"><div class="cases__case_contents cases__case_contents-active">
-            <span class="cases__case_logo"><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"></span>
-            <span class="cases__case_name">Пятёрочка</span>
-            <span class="cases__case_arrow"></span>
-        </div></div></span>
-        <div class="cases__case cases__case_double">
-	        <div class="cases-slider">
-                <div class="cases-slider__item active">
-                    <div class="cases-slider__item_nomination">
-                        <h3 class="h2">№1</h3>
-                        <p>номинация «Торговля и&nbsp;услуги»</p>
+<div class="cases">
+    <div class="cases-container">
+        <div class="cases-container_inner">
+            <div class="container js-cases-container">
+                <span class="cases__case">
+                    <div class="cases__case_number"></div>
+                    <div class="cases__case_container">
+                        <div class="cases__case_contents">
+                            <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
+                            <span class="cases__case_name">Tele2</span>
+                            <span class="cases__case_arrow"></span>
+                        </div>
                     </div>
-                    <div class="cases-slider__item_project">
-                        <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"></a></div>
-                        <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                </span>
+                <span class="cases__case">
+                    <div class="cases__case_number"></div>
+                    <div class="cases__case_container">
+                        <div class="cases__case_contents">
+                            <span class="cases__case_logo"><img src="/assets/css/img/case-tinkoff.svg" alt="Тинькофф"> </span>
+                            <span class="cases__case_name">Тинькофф</span>
+                            <span class="cases__case_arrow"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="cases-slider__item">
-                    <div class="cases-slider__item_nomination">
-                        <h3 class="h2">№2</h3>
-                        <p>номинация «Приложение бренда»</p>
+                </span>
+                <span class="cases__case">
+                    <div class="cases__case_number">
+                        <span>5</span>
                     </div>
-                    <div class="cases-slider__item_project">
-                        <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"></a></div>
-                        <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                    <div class="cases__case_container">
+                        <div class="cases__case_contents">
+                            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Сбер"> </span>
+                            <span class="cases__case_name">Альфа-Директ</span>
+                            <span class="cases__case_arrow"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="cases-slider__item">
-                    <div class="cases-slider__item_nomination">
-                        <h3 class="h2">№3</h3>
-                        <p>номинация «Сервисы»</p>
+                </span>
+                <span class="cases__case">
+                    <div class="cases__case_number"></div>
+                    <div class="cases__case_container">
+                        <div class="cases__case_contents">
+                            <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"> </span>
+                            <span class="cases__case_name">Burger King</span>
+                            <span class="cases__case_arrow"></span>
+                        </div>
                     </div>
-                    <div class="cases-slider__item_project">
-                        <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-tele2.png" alt="Tele2"></a></div>
-                        <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                </span>
+                <span class="cases__case">
+                    <div class="cases__case_number"></div>
+                    <div class="cases__case_container">
+                        <div class="cases__case_contents">
+                            <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"> </span>
+                            <span class="cases__case_name">Globus</span>
+                            <span class="cases__case_arrow"></span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="cases-slider__statics js-cases-dots">
-                <div class="cases-slider__statics_dots"><ul>
-                    <li class="active"><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul></div>
-                <div class="cases-slider__statics_title">
-                    Рейтинг Рунета 2021
+                </span>
+                <a href="/client.html" class="cases__case">
+                    <div class="cases__case_number"></div>
+                    <div class="cases__case_container">
+                        <div class="cases__case_contents cases__case_contents-active">
+                            <span class="cases__case_logo">
+                                <img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
+                            <span class="cases__case_name">Пятёрочка</span>
+                            <span class="cases__case_arrow"></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="cases__case cases__case_double">
+                    <div class="cases-slider">
+                        <div class="cases-slider__item active">
+                            <div class="cases-slider__item_nomination">
+                                <h3 class="h2">№1</h3>
+                                <p>номинация «Торговля и&nbsp;услуги»</p>
+                            </div>
+                            <div class="cases-slider__item_project">
+                                <div class="cases-slider__item_project-photo">
+                                    <a href="/client.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"> </a>
+                                </div>
+                                <div class="cases-slider__item_project-link">
+                                    <a href="/client.html">Подробнее о проекте →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cases-slider__item">
+                            <div class="cases-slider__item_nomination">
+                                <h3 class="h2">№2</h3>
+                                <p>номинация «Приложение бренда»</p>
+                            </div>
+                            <div class="cases-slider__item_project">
+                                <div class="cases-slider__item_project-photo">
+                                    <a href="/client.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"> </a>
+                                </div>
+                                <div class="cases-slider__item_project-link">
+                                    <a href="/client.html">Подробнее о проекте →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cases-slider__item">
+                            <div class="cases-slider__item_nomination">
+                                <h3 class="h2">№3</h3>
+                                <p>номинация «Сервисы»</p>
+                            </div>
+                            <div class="cases-slider__item_project">
+                                <div class="cases-slider__item_project-photo">
+                                    <a href="/inprocess.html"><img src="/assets/css/img/case-tele2.png" alt="Tele2"> </a>
+                                </div>
+                                <div class="cases-slider__item_project-link">
+                                    <a href="/inprocess.html">Подробнее о проекте →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases-slider__statics js-cases-dots">
+                        <div class="cases-slider__statics_dots">
+                            <ul>
+                                <li class="active">
+                                    <a href=""></a>
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cases-slider__statics_title">
+                            Рейтинг Рунета 2021
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div></div></div>
+</div>

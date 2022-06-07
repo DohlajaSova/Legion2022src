@@ -647,10 +647,12 @@ a.button{
 			background:$color-grey-light;
 			display:inline-block;
 			text-align:center;
-			width:30px;
+			// width:30px;
 			height:30px;
-			border-radius:100%;
+			border-radius:30px;
             flex-shrink:0;
+            padding: 0 10px;
+            text-decoration: none!important;
 		}
 	}
     &.header_sticky{
@@ -778,7 +780,7 @@ a.button{
     top:0;
     width:100%;
     height:100%;
-    z-index:1000;
+    z-index:4000;
     background-color:rgba($color-black,0.81);
     display:none;
 	padding:33px 0 25px;
@@ -797,7 +799,7 @@ a.button{
 		background-size:contain;
 		width:26px;
 		height:26px;
-        z-index:2001;
+        z-index:4001;
 		& > a{
 			display:block;
 			width:100%;
@@ -834,18 +836,18 @@ a.button{
     &__container{
         // max-height:100%;
         // overflow-y:auto;
-        height: 100vh;
+        height: calc(95vh - 100px);
         overflow: hidden;
         display: grid;
         grid-template-rows: 100px calc(100% - 100px);
-        padding: 20px 60px;
+        padding: 0px 60px;
     }
     .answer{
         display:none;
         &__container{
             background:url($img-path + "icon-plus4.svg") right 108px center no-repeat;
             min-height:268px;
-            padding-right:300px;
+            padding-right:350px;
         }
         h2{
             color:$color-white;
@@ -856,7 +858,8 @@ a.button{
         }
     }
     &__content{
-        height: 100%;
+        height: inherit;
+        // height: 100%;
         max-width:1440px;
         background:$color-white;
         border-radius:38px;
@@ -864,6 +867,7 @@ a.button{
         padding: 50px 0 50px 20px;
         text-align:left;
         &_success{
+            height: fit-content;
             background:$color-green;
             color:$color-white;
             .request{
@@ -937,6 +941,10 @@ a.button{
 		}
         &_close{
             display: none;
+        }
+        .header__mmenu_lang{
+            color:$color-black!important;
+            background-color: #fff;
         }
 	}
     &__logo{
@@ -1318,6 +1326,13 @@ a.button{
             height:calc(100% + 107px);
 			top:0;
 			transition: top ease 0.5s;
+            &-active {
+                animation-name: case-bounce;
+                animation-timing-function: cubic-bezier(0.281, 0.841, 0.421, 1);
+                animation-duration: 2s;
+                animation-iteration-count: 2;
+            }
+
             &-slider{
                 height:100%;
                 z-index:2;
@@ -1898,6 +1913,7 @@ a.button{
 			}
 		}
 		.category__content{
+            overflow: hidden;
 			background-color:$color-blue-light;
 			color:$color-blue-dark;
 		}
@@ -2041,6 +2057,7 @@ a.button{
         margin-bottom:60px;
         flex-wrap:wrap;
         h2{
+            color: $color-blue-dark;
             width:48%;
             em{
                 color:$color-blue-light;
@@ -2628,6 +2645,7 @@ a.button{
 }
 
 .projects{
+    overflow: hidden;
     h2{
         width: 50%;
         margin-bottom:50px;
@@ -2902,18 +2920,25 @@ a.button{
 	color:$color-white;
 	&__container{
 		display:flex;
-		justify-content:space-between;
-		flex-wrap:wrap;
+		// justify-content:space-between;
+		flex-flow: row wrap;
 		padding:80px 0;
+        &_headwrap{
+            width: 50%;
+            margin-bottom:30px;
+            .request__form_warning {
+                color: #fff;
+            }
+        }
 	}
 	h2{
-		width:100%;
+		width:50%;
 		color:$color-blue-light;
-		margin-bottom:30px;
+        font-size: 46px;
 	}
 	&__form{
 		width:50%;
-		margin-left:50%;
+		// margin-left:50%;
 		padding-bottom:20px;
 		&_label{
 			font-size:24px;
@@ -3649,7 +3674,6 @@ a.button{
         justify-content:space-between;
         h3{
             width:100%;
-            margin-bottom:70px;
         }
 		&_label{
 			font-size:24px;
@@ -3666,6 +3690,11 @@ a.button{
 			position:absolute;
 			top:70px;
 		}
+        &_warning{
+            width: 100%;
+            margin-bottom: 70px;
+            color: $color-grey-dark;
+        }
 		&_input[type="text"],
 		&_input[type="email"],
 		&_input[type="tel"],
@@ -3927,20 +3956,20 @@ a.button{
 .body_about{
     .header{
         background-color:transparent;
-        &__logo{
-            background-image:url($img-path + "logo-white.svg");
-        }
-        &__hmenu{
-            background-image:url($img-path + "icon-menu2.svg");
-        }
-        &__mmenu{
-            & > a{
-                color:$color-white;
-                &.header__mmenu_lang{
-                    color:$color-blue-dark;
-                }
-            }
-        }
+        // &__logo{
+        //     background-image:url($img-path + "logo-white.svg");
+        // }
+        // &__hmenu{
+        //     background-image:url($img-path + "icon-menu2.svg");
+        // }
+        // &__mmenu{
+        //     & > a{
+        //         color:$color-white;
+        //         &.header__mmenu_lang{
+        //             color:$color-blue-dark;
+        //         }
+        //     }
+        // }
     }
     .top{
         background:url($img-path + "about.jpg") top center no-repeat;
@@ -3974,6 +4003,7 @@ a.button{
                 color:$color-white;
                 &.header__mmenu_lang{
                     color:$color-blue-dark;
+                    background-color: #fff;
                 }
             }
         }
@@ -4010,6 +4040,7 @@ a.button{
                 color:$color-white;
                 &.header__mmenu_lang{
                     color:$color-blue-dark;
+                    background-color: #fff;
                 }
             }
         }
@@ -4053,6 +4084,7 @@ a.button{
         text-align: center;
         padding:30px 0;
         margin-top:60px;
+        color: $color-blue-dark;
         &::before,
         &::after{
             content:"";
@@ -4520,7 +4552,8 @@ a.button{
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            color: $color-blue-dark;
+            color: $color-blue-dark!important;
+            text-decoration: none!important;
             &.inactive {
                 padding-left: 0px;
                 color: $color-grey-dark;
@@ -4597,6 +4630,34 @@ a.button{
     transform: rotate(360deg);
   }
 }
+
+@-moz-keyframes case-bounce {
+    10%  { -moz-transform: scale(1.1,.9)   translateY(0); }
+    0%   { -moz-transform: scale(1,1)      translateY(0); }
+    30%  { -moz-transform: scale(.9,1.1)   translateY(-40px); }
+    50%  { -moz-transform: scale(1.05,.95) translateY(0); }
+    57%  { -moz-transform: scale(1,1)      translateY(-7px); }
+    64%  { -moz-transform: scale(1,1)      translateY(0); }
+    100% { -moz-transform: scale(1,1)      translateY(0); }
+  }
+  @-webkit-keyframes case-bounce {
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    0%   { -webkit-transform: scale(1,1)      translateY(0); }
+    30%  { -webkit-transform: scale(.9,1.1)   translateY(-40px); }
+    50%  { -webkit-transform: scale(1.05,.95) translateY(0); }
+    57%  { -webkit-transform: scale(1,1)      translateY(-7px); }
+    64%  { -webkit-transform: scale(1,1)      translateY(0); }
+    100% { -webkit-transform: scale(1,1)      translateY(0); }
+  }
+  @keyframes case-bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-40px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+  }
 
 //------------------Адаптация---------------
 

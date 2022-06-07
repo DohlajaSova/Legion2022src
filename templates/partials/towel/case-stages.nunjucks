@@ -252,11 +252,11 @@
                                     Ценной особенностью «Шпионского клуба» был близкий контакт с&nbsp;нашими пользователями&nbsp;— агентами клуба. С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая массу отзывов и&nbsp;идей развития продукта. Многое удалось воплотить!
                                 </div>
                             </div>
-                            <div class="project__review_author">
+                            <a href="/client.html" class="project__review_author">
                                 <img class="project__review_author-img" src="/assets/css/img/logo-5ka.svg" alt="Пятёрочка"/>
                                 <h3 class="project__review_author-name">Марина Янцен</h3>
                                 <p class="project__review_author-position">аналитик проекта</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

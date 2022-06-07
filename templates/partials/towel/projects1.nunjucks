@@ -12,11 +12,11 @@
                                 Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших инструментов для торговой сети. С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.
                             </div>
                         </div>
-                        <div class="project__review_author">
+                        <a href="/client.html" class="project__review_author">
                             <img class="project__review_author-img" src="/assets/css/img/logo-5ka.svg" alt="Пятёрочка"/>
                             <h3 class="project__review_author-name">Павел Бабий</h3>
                             <p class="project__review_author-position">начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -28,8 +28,8 @@
                             <p>Лучшее мобильное решение/активация</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-jetkid.png" alt="Jet Kid"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/case.html"><img src="/assets/css/img/case-jetkid.png" alt="Jet Kid"></a></div>
+                            <div class="cases-slider__item_project-link"><a href="/case.html">Подробнее о проекте →</a></div>
                         </div>
                     </div>
                     <div class="cases-slider__item">
@@ -38,8 +38,8 @@
                             <p>Лучшее ритейл-приложение</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/client.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"></a></div>
+                            <div class="cases-slider__item_project-link"><a href="/client.html">Подробнее о проекте →</a></div>
                         </div>
                     </div>
                     <div class="cases-slider__item">

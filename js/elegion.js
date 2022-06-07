@@ -653,7 +653,7 @@ docReady(function() {
     const textarea = document.getElementsByTagName("textarea");
     if (textarea.length){
         for (let i = 0; i < textarea.length; i++) {
-          textarea[i].setAttribute("style", "height:" + (textarea[i].scrollHeight) + "px;overflow-y:hidden;");
+        textarea[i].setAttribute("style", "height:" + (textarea[i].scrollHeight) + "px;overflow-y:hidden;");
           textarea[i].addEventListener("input", TextareaOnInput, false);
             if(windowWidth < 500) {
                 if(textarea[i].id == 'project_desc') {
@@ -712,8 +712,22 @@ docReady(function() {
     let feedbackOpener = document.querySelectorAll(".js-popup-feedback-open");
     let feedbackCloser = document.querySelector(".js-popup-feedback-close");
     let feedbackSubmiter = document.querySelector(".js-popup-feedback-send");
+    let feedbackSubmiterApplicants = document.querySelector(".js-popup-feedback-send-applicants");
     let bodyOpened;
-    if(!feedbackOpener.length && feedbackSubmiter) {
+    if(feedbackSubmiterApplicants) {
+        let feedbackBody = document.querySelector(".popup-feedback");
+        let feedbackBodyContent = document.querySelector(".popup-feedback__content");
+        feedbackSubmiterApplicants.addEventListener("click", function(e){
+            feedbackBody.classList.add("active");
+            feedbackBodyContent.classList.add("popup-feedback__content_success");
+        });
+        setTimeout(function(){
+            feedbackBody.classList.remove("active");
+            document.querySelector("body").classList.remove("popup-open");
+            feedbackBodyContent.classList.remove("popup-feedback__content_success");
+        }, 4000);
+
+    } else if(!feedbackOpener.length && feedbackSubmiter) {
         let feedbackBody = document.querySelector(".popup-feedback");
         let feedbackBodyContent = document.querySelector(".popup-feedback__content");
         feedbackSubmiter.addEventListener("click", function(e){
@@ -997,7 +1011,7 @@ docReady(function() {
         let accItems = Array.prototype.slice.call(container.children);
         for (i=0; i<accItems.length; i++){
             accItems[i].addEventListener("click", function(e){
-                if(e.target.className.startsWith('project')){
+                if(e.target.className.startsWith('project') || e.target.className.startsWith('cases')){
                     return;
                 }
                 e.preventDefault();

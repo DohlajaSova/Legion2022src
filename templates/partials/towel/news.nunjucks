@@ -6,7 +6,7 @@
                 <div class="news-item__img"><img src="/assets/css/img/temp-news1.jpg" alt=""></div>
                 <div class="news-item__date">12 января 2022</div>
                 <div class="news-item__head">e-legion&nbsp;— в&nbsp;топ-3 разработчиков мобильных приложений 2021&nbsp;года</div>
-                <div class="news-item__lead">По версии «Рейтинг Рунета» e-legion занял третье место в рейтингах разработчиков мобильных приложений и разработчиков дизайна мобильных приложений 2021 года.</div>
+                <div class="news-item__lead">По версии «Рейтинг Рунета» e-legion занял третье место в рейтингах разработчиков мобильных приложений<br/>и разработчиков дизайна мобильных приложений 2021 года.</div>
             </a>
             <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>

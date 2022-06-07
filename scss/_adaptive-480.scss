@@ -102,6 +102,9 @@
         &__comment{
             font-size:9px;
         }
+        h2{
+            font-size: 24px;
+        }
     }
     .footer{
         &__social{
@@ -190,6 +193,16 @@
                 &-name{
                     font-size: 24px;
                 }
+            }
+        }
+    }
+    .request {
+        &__lead{
+            height:24px;
+        }
+        &__form{
+            &_warning{
+                font-size: 16px;
             }
         }
     }
