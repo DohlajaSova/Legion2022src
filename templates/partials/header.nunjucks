@@ -10,6 +10,6 @@
     <a href="/portfolio.html">портфолио</a>
     <a href="/career.html">карьера</a>
     <a href="/contacts.html">контакты</a>
-    <a href="/request.html">обсудить проект</a>
+    {# <a href="/request.html">обсудить проект</a> #}
     <a href="https://www.e-legion.ru/" class="header__mmenu_lang">←&nbsp;старая&nbsp;версия</a>
 </div>
