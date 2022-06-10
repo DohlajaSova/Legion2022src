@@ -5,10 +5,10 @@
     <div class="footer__menu">
         <a href="/about.html">о компании</a>
         <a href="/portfolio.html">портфолио</a>
-        <a href="/request.html">обсудить проект</a>
         <a href="/services.html">услуги</a>
         <a href="/career.html">карьера</a>
         <a href="/contacts.html">контакты</a>
+        <a href="/request.html">обсудить проект</a>
     </div>
 </div>
 <div class="footer__container footer__container_bottom">

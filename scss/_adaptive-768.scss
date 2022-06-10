@@ -467,6 +467,13 @@
     .client ~ .feedback {
         margin-bottom: 60px;
     }
+
+    .body_career {
+        .top {
+            background: url(img/career768.jpg) top center no-repeat;
+            background-size:100% auto;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -525,7 +532,10 @@
     }
     .contacts,
 	.request{
+        overflow-y: unset;
+        max-height: unset;
         .container{
+            overflow: unset!important;
             padding:0 15px;
         }
         &__textarea{
@@ -1051,6 +1061,11 @@
         }
     }
     .cases{
+        &__pagination{
+            &-button {
+                margin-bottom: 30px;
+            }
+        }
         &-slider{
             &__item{
                 &_nomination{
@@ -1138,7 +1153,8 @@
     .principles{
         background:$color-white;
         border-radius: 30px 30px 0 0;
-        margin-top: -42px;
+        margin-top: -65px;
+        // margin-top: -42px;
         padding-top: 60px;
         &__content{
             flex-direction:column;

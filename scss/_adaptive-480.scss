@@ -206,6 +206,12 @@
             }
         }
     }
+    .body_career {
+        .top {
+            // background: url(img/career480.jpg) top center no-repeat;
+            background-size:auto;
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {

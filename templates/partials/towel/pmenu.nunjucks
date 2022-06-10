@@ -3,12 +3,11 @@
         <div class="pmenu__logo" title="e-legion">
             <a href="/"></a>
         </div>
+        <div class="pmenu__mmenu_close header__hmenu active">
+            <a href="" class="js-top-menu-inner"></a>
+        </div>
         <div class="pmenu__mmenu">
-            <a href="/request.html">Обсудить проект</a>
             <a href="https://www.e-legion.ru/" class="header__mmenu_lang">←&nbsp;старая&nbsp;версия</a>
-            <div class="pmenu__mmenu_close header__hmenu active">
-                <a href="" class="js-top-menu-inner"></a>
-            </div>
         </div>
     </div>
     <div class="container">
@@ -16,9 +15,9 @@
             <a href="/about.html">о компании</a>
             <a href="/career.html">карьера</a>
             <a href="/services.html">услуги</a>
-            <a href="/request.html">обсудить проект</a>
             <a href="/portfolio.html">портфолио</a>
             <a href="/contacts.html">контакты</a>
+            <a href="/request.html">обсудить проект</a>
         </div>
     </div>
     <div class="container">

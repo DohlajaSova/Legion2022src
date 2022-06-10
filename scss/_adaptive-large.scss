@@ -59,9 +59,9 @@
     .header{
         &__hmenu{
             display:block;
-            &.pmenu__mmenu_close{
-                display:none;
-            }
+            // &.pmenu__mmenu_close{
+            //     display:none;
+            // }
         }
         &__mmenu{
             a{
@@ -321,6 +321,11 @@
 			font-size:38px;
 		}
 	}
+    .body_career{
+        .top{
+            background-size:auto;
+        }
+    }    
 }
 
 @media only screen and (max-width: 1180px) {
