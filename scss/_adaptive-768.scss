@@ -474,6 +474,14 @@
             background-size:100% auto;
         }
     }
+    .top_case{
+        .top__image-desktop{
+            display: none;
+        }
+        .top__image-tablet{
+            display: block;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
