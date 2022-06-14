@@ -939,9 +939,9 @@ a.button{
 			border-radius:100%;
             margin-right:0 !important;
 		}
-        &_close{
-            display: none;
-        }
+        // &_close{
+        //     display: none;
+        // }
         .header__mmenu_lang{
             color:$color-black!important;
             background-color: #fff;
@@ -1102,6 +1102,12 @@ a.button{
                 top:50%;
                 left:50%;
                 transform:translateX(-50%) translateY(-50%);
+            }
+            &-tablet {
+                display: none;
+            }
+            &-mobile {
+                display: none;
             }
         }
         .top__tags{
