@@ -735,7 +735,7 @@
                 position:relative;
                 color:$color-white;
 				&:nth-child(1){
-					background-color:$color-green;
+					background-color:$color-blue-light;
 					z-index:1;
 				}
 /*				&:nth-child(2){
@@ -1458,6 +1458,18 @@
                 font-size: 18px;
                 min-height: 30px;
             }
+        }
+    }
+    .client ~ .feedback_compact{
+        padding: 110px 30px;
+        h2 {
+            width: 50%;
+        }
+        .feedback__button{
+            min-height: 184px;
+            // top: 0;
+            background-image: url(img/icon-plus-client.svg)!important;
+            position: static;
         }
     }
 }

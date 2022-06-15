@@ -2973,6 +2973,9 @@ a.button{
 			border:none;
 			border-bottom:1px solid rgba($color-white, 0.3);
 			color:$color-white;
+            font-size: 24px;
+            line-height: 130%;
+            resize: none;
 		}
 		&_item{
 			position:relative;
@@ -2988,6 +2991,13 @@ a.button{
 				}
             }
 		}
+        &_input, &_textarea{
+            &-placeholder::placeholder {
+                color: #fff;
+                font-size: 24px;
+                line-height: 130%;
+            }
+        }
 	}
 	&__comment{
 		font-size:16px;

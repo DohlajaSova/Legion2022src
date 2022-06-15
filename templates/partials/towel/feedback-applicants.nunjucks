@@ -9,23 +9,23 @@
                 </div>
                 <div class="feedback__form">
                     <div class="feedback__form_item">
-                        <input name="name" type="text" class="feedback__form_input">
-                        <label for="name" class="feedback__form_label">Имя и фамилия</label>
-                        <span class="feedback__form_error">Введите имя и фамилию</span>
+                        <input name="name" type="text" class="feedback__form_input feedback__form_input-placeholder" placeholder="Имя и фамилия">
+                        <!-- <label for="name" class="feedback__form_label">Имя и фамилия</label> -->
+                        <!-- <span class="feedback__form_error">Введите имя и фамилию</span> -->
                     </div>
                     <div class="feedback__form_item">
-                        <input name="mail" type="email" class="feedback__form_input">
-                        <label for="mail" class="feedback__form_label">Электронная почта</label>
-                        <span class="feedback__form_error">Введите ваш е-мейл</span>
+                        <input name="mail" type="email" class="feedback__form_input feedback__form_input-placeholder" placeholder="Электронная почта">
+                        <!-- <label for="mail" class="feedback__form_label">Электронная почта</label> -->
+                        <!-- <span class="feedback__form_error">Введите ваш е-мейл</span> -->
                     </div>
                     <div class="feedback__form_item">
-                        <input name="phone" type="tel" class="feedback__form_input">
-                        <label for="phone" class="feedback__form_label">Телефон</label>
-                        <span class="feedback__form_error">Введите ваш телефон</span>
+                        <input name="phone" type="tel" class="feedback__form_input feedback__form_input-placeholder" placeholder="Телефон">
+                        <!-- <label for="phone" class="feedback__form_label">Телефон</label> -->
+                        <!-- <span class="feedback__form_error">Введите ваш телефон</span> -->
                     </div>
                     <div class="feedback__form_item">
-                        <textarea name="resume" type="text" class="feedback__form_textarea"></textarea>
-                        <label for="company" class="feedback__form_label">О себе/ссылка на портфолио</label>
+                        <textarea name="resume" type="text" class="feedback__form_textarea feedback__form_textarea-placeholder" placeholder="О себе/ссылка на портфолио"></textarea>
+                        <!-- <label for="company" class="feedback__form_label">О себе/ссылка на портфолио</label> -->
                     </div>
                 </div>
                 <div class="feedback__comment">
