@@ -2128,12 +2128,13 @@ a.button{
 		}
 		.problems__more{
 			left:30px;
-			bottom:20px;
+			bottom:40px;
+            line-height:80px;
 			&::before{
-				margin-top:-30px;
+				margin-top:2px;
 			}
 			&::after{
-				top:23px;
+				top:53px;
 			}
 		}
 		.cases__case{
@@ -2254,7 +2255,7 @@ a.button{
             z-index:1;
             border-radius:40px;
             float:left;
-            margin:-20px 47px 0 0;
+            margin:-20px 27px 0 0;
         }
         &::after{
             content:"";
@@ -2473,6 +2474,7 @@ a.button{
                 z-index:1;
                 height:100%;
                 width:100%;
+                top:0;
                 left:0;
                 transition:height 0.5s ease;
             }

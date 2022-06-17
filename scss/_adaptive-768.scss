@@ -482,6 +482,18 @@
             display: block;
         }
     }
+    .vacancypage{
+        &__content{
+            flex-wrap:wrap;
+            &_brief{
+                width:100%;
+            }
+            &_text{
+                width:100%;
+                margin-top:40px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -517,7 +529,12 @@
 			}
 		}
 	}
-
+    .years{
+        &__year{
+            font-size:140px;
+            margin-top:10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -945,6 +962,9 @@
     }
     .accordion__item_body p{
         padding-right:0;
+    }
+    .tns-horizontal.tns-subpixel > .tns-item.cases__block{
+        display:flex;
     }
 }
 
@@ -1590,5 +1610,14 @@
     }
     .service__feature_inner-case__brief-transition{
         margin-top: 130px;
+    }
+    .years{
+        &__year{
+            font-size:70px;
+            padding:30px 0;
+        }
+        &__bullet{
+            margin-top:-43px;
+        }
     }
 }
