@@ -277,22 +277,18 @@ docReady(function() {
             }
 
             if(bodyScrollTop > wHeight){
-                if (bodyScrollTop > lastScrollTop || bodyScrollTop < 50){
-                    stickyHeader.classList.remove('header_sticky');
-                    setTimeout(() => {
-                        stickyHeader.classList.remove('header_transparent');
-                    }, 1000);
-                    console.log('here')
+                if (bodyScrollTop > lastScrollTop){
+                    stickyHeader.classList.remove('header_shift');
                 } else {
                     stickyHeader.classList.add('header_sticky');
-                    setTimeout(() => {
-                        stickyHeader.classList.add('header_transparent');
-                    }, 250);
+                    stickyHeader.classList.add('header_transparent');
+                    stickyHeader.classList.add('header_shift');
                 }
             } else {
-                stickyHeader.classList.remove('header_sticky');
+                stickyHeader.classList.remove('header_shift');
                 setTimeout(() => {
                     stickyHeader.classList.remove('header_transparent');
+                    stickyHeader.classList.remove('header_sticky');
                 }, 500);
             }
             lastScrollTop = bodyScrollTop <= 0 ? 0 : bodyScrollTop;
