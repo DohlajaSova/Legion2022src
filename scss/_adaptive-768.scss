@@ -973,7 +973,12 @@
             transition:transform .5s ease-in;
             opacity: 0.75;
             // opacity: 0.8;
+            background-color: rgba(30, 39, 56, 0.4);;
             backdrop-filter: brightness(0.5);
+            .js-top-menu {
+                // color: #fff;
+                background: url("img/icon-menu2.svg") 0 0 no-repeat;
+            }
             .header__logo{
                 opacity: 0;
             }

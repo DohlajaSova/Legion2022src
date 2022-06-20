@@ -593,6 +593,7 @@ a.button{
 	& > .container{
 		display:flex;
 		justify-content:space-between;
+        align-items: center;
 	}
 	&__logo{
 		background:url($img-path + "logo.svg") 0 0 no-repeat;
