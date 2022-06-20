@@ -430,8 +430,8 @@ a:hover {
   background-size: 50%;
   transform: rotate(-90deg);
   position: fixed;
-  right: 30px;
-  top: calc(50% - 29px);
+  right: 20px;
+  bottom: 30px;
   z-index: 200; }
   .back.hide {
     display: none; }
@@ -686,7 +686,8 @@ a.button {
   width: 100%; }
   .header > .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .header__logo {
     background: url("img/logo.svg") 0 0 no-repeat;
     background-size: contain;
@@ -1359,7 +1360,7 @@ a.button {
       bottom: 0;
       display: none;
       text-align: left;
-      padding: 0 20px 20px 30px;
+      padding: 0 75px 20px 30px;
       text-decoration: none;
       text-transform: none;
       color: #000;
@@ -2078,7 +2079,8 @@ a.button {
     .problems__item_bg6 {
       background-color: transparent;
       padding: 0;
-      height: auto; }
+      height: 0;
+      padding-bottom: 49.2%; }
       .problems__item_bg6 h3 {
         width: 100%; }
       .problems__item_bg6 .problems__link {
@@ -2088,6 +2090,10 @@ a.button {
         .problems__item_bg6 .problems__link .problems__item_plus {
           min-height: 315px;
           height: auto; }
+      .problems__item_bg6 .problems__review {
+        position: absolute;
+        top: 0;
+        bottom: 0; }
     .problems__item_bg7 {
       background: #F0F0F0; }
       .problems__item_bg7 h3 {
@@ -2254,26 +2260,30 @@ a.button {
         transition: height 0.5s step-start, padding 0.5s step-start; }
   .problems__review {
     background: #F0F0F0;
-    border-radius: 42px; }
+    border-radius: 42px;
+    display: flex;
+    flex-direction: column; }
     .problems__review_top {
       background-color: #84AEFF;
       border-radius: 42px;
       color: #fff;
       position: relative;
       padding: 44px 41px;
-      min-height: 308px; }
+      min-height: 308px;
+      flex-grow: 1; }
       .problems__review_top-img {
         position: absolute;
         bottom: 0;
         right: 0;
         border-radius: 0 0 42px 0;
-        max-width: 50%; }
+        max-width: 50%;
+        max-height: 100%; }
     .problems__review_rubr {
       font-size: 16px;
       margin-bottom: 56px; }
     .problems__review_body {
       font-size: 24px;
-      width: 58%; }
+      width: 65%; }
     .problems__review_author {
       padding: 73px 43px 55px; }
       .problems__review_author-img {
@@ -2287,9 +2297,10 @@ a.button {
         color: #000;
         margin-bottom: 15px; }
       .problems__review_author-position {
-        font-size: 16px;
+        font-size: 16px !important;
         color: #949191;
-        max-width: 45%; }
+        max-width: 45%;
+        margin-top: 0 !important; }
 
 .projects {
   overflow: hidden; }
@@ -2569,7 +2580,7 @@ a.button {
     .feedback_compact .feedback__button {
       width: 30%;
       min-height: 268px;
-      background: url("img/icon-plus2.svg") center top no-repeat;
+      background: url("img/icon-plus2.svg") center center no-repeat;
       background-size: contain; }
   .feedback.feedback_applicants {
     background: url("img/vacancy-bg2.svg") left -40% top -80px no-repeat #2864D9;
@@ -3993,8 +4004,13 @@ a.button {
   .problems__review_top {
     padding-top: 39px;
     padding-bottom: 39px; }
+  .problems__review_rubr {
+    margin-bottom: 26px; }
   .problems__review_body {
-    font-size: 20px; }
+    font-size: 20px;
+    width: 82%;
+    position: relative;
+    z-index: 2; }
 
   .vacancies__list_item {
     width: 32.1%;
@@ -4123,6 +4139,10 @@ a.button {
         background: #1E2738; }
     .problems-complex__links_title {
       font-size: 18px; }
+    .problems__review_author-name {
+      font-size: 24px !important; }
+    .problems__review_author-position {
+      max-width: 100%; }
 
   .vacancies {
     margin-bottom: 67px; }
@@ -4348,7 +4368,7 @@ a.button {
       padding-bottom: calc(100% - 30px); }
     .problems__item_bg6 {
       width: 100%;
-      padding: 0; }
+      padding: 0 0 100%; }
     .problems__item .problems-slider-groups__item h3 {
       font-size: 46px; }
     .problems__item h3 {
@@ -4727,17 +4747,12 @@ a.button {
     order: 3;
     padding: 6px 0 0 20px;
     font-size: 14px; }
-  .feedback_compact {
-    padding: 60px 30px 20px; }
-    .feedback_compact .container {
-      position: relative; }
-    .feedback_compact .feedback__button {
-      height: 100%;
-      min-height: 0;
-      position: absolute;
-      top: -20px;
-      bottom: 0;
-      right: 0; }
+  .feedback_compact .container {
+    position: relative; }
+  .feedback_compact .feedback__button {
+    min-height: 0;
+    height: 184px;
+    top: -20px; }
 
   .news .news-item {
     width: 48%; }
@@ -4790,27 +4805,14 @@ a.button {
     .client ~ .feedback_compact .feedback__button {
       min-height: 184px;
       background-image: url(img/icon-plus-client.svg) !important;
-      position: static; } }
-@media only screen and (max-width: 768px) {
-  .header {
-    position: fixed;
-    transition: transform .5s ease-in;
-    transform: translateY(0);
-    padding-bottom: 23px;
-    z-index: 2001; }
-    .header.header_scrolled {
-      transform: translateY(-100px);
-      transition: transform .5s ease-in;
-      width: 100%;
-      padding-bottom: 0;
-      z-index: 2001; }
-    .header.header_sticky {
-      transform: translateY(0px); }
-    .header + .header-dummy {
-      height: 119px; }
-    .header__mmenu {
-      display: none; }
+      position: static; }
 
+  .project__review_body-client {
+    font-size: 26px !important;
+    margin-top: 60px; }
+    .project__review_body-client br {
+      display: block !important; } }
+@media only screen and (max-width: 768px) {
   .mobile768-show {
     display: block; }
 
@@ -4837,6 +4839,10 @@ a.button {
     font-size: 18px; }
   .projects .project .cases-slider__item_project-link {
     font-size: 15px; }
+
+  .project__review_body-client {
+    font-size: 22px !important;
+    margin-top: 30px; }
 
   .principles__video_play {
     width: 135px;
@@ -5431,12 +5437,17 @@ a.button {
 
   .problems__item {
     width: 100%;
-    padding: 30px 24px calc(100% - 30px); }
+    padding: 30px 0 calc(100% - 30px); }
     .problems__item h3 {
       font-size: 35px; }
     .problems__item p {
       font-size: 26px;
       margin-top: 20px; }
+    .problems__item_bg6 {
+      height: auto;
+      padding: 30px 0; }
+      .problems__item_bg6 .problems__review {
+        position: static; }
 
   .request__file {
     margin-bottom: 10px; }
@@ -5485,8 +5496,42 @@ a.button {
   .accordion__item_body p {
     padding-right: 0; }
 
+  .header {
+    position: fixed;
+    transition: transform .5s ease-in;
+    transform: translateY(0);
+    padding-bottom: 23px;
+    z-index: 2001; }
+    .header.header_scrolled {
+      transform: translateY(-100px);
+      transition: transform .5s ease-in;
+      width: 100%;
+      padding-bottom: 0;
+      z-index: 2001; }
+    .header.header_sticky {
+      transform: translateY(-100px); }
+    .header.header_transparent {
+      transition: transform .5s ease-in;
+      opacity: 0.75;
+      background-color: rgba(30, 39, 56, 0.4);
+      backdrop-filter: brightness(0.5); }
+      .header.header_transparent .js-top-menu {
+        background: url("img/icon-menu2.svg") 0 0 no-repeat; }
+      .header.header_transparent .header__logo {
+        opacity: 0; }
+    .header.header_shift {
+      transform: translateY(0px); }
+    .header + .header-dummy {
+      height: 119px; }
+    .header__mmenu {
+      display: none; }
+
   .tns-horizontal.tns-subpixel > .tns-item.cases__block {
-    display: flex; } }
+    display: flex; }
+
+  .project__review_body-client {
+    font-size: 18px !important;
+    margin-top: 20px; } }
 @media only screen and (max-width: 550px) {
   body {
     font-size: 10px; }
@@ -5709,7 +5754,7 @@ a.button {
       .projects__panels-client {
         grid-template-columns: 290px;
         grid-template-rows: 500px 500px 250px 250px;
-        width: 290px;
+        width: 100%;
         margin: auto; }
     .projects .project {
       border-radius: 30px; }
@@ -5864,12 +5909,10 @@ a.button {
       height: 25px; }
     .feedback__button {
       width: 100%; }
-    .feedback_compact {
-      padding: 60px 30px 50px; }
-      .feedback_compact.feedback_applicants {
-        background-image: none; }
-      .feedback_compact h2 {
-        padding-right: 10%; }
+    .feedback_compact.feedback_applicants {
+      background-image: none; }
+    .feedback_compact h2 {
+      padding-right: 10%; }
 
   .footer {
     border-radius: 30px 30px 0 0; }
@@ -5917,7 +5960,10 @@ a.button {
     font-size: 70px;
     padding: 30px 0; }
   .years__bullet {
-    margin-top: -43px; } }
+    margin-top: -43px; }
+
+  .project__review_body-client {
+    font-size: 14px !important; } }
 @media only screen and (max-width: 480px) {
   .mobile480-show {
     display: block; }
@@ -5979,6 +6025,8 @@ a.button {
     font-size: 9px; }
   .feedback h2 {
     font-size: 24px; }
+  .feedback_compact {
+    padding: 10px 30px 25px 15px; }
 
   .footer__social {
     width: 70%; }
