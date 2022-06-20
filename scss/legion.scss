@@ -1449,7 +1449,7 @@ a.button{
 				bottom:0;
                 display:none;
                 text-align:left;
-                padding: 0 20px 20px 30px;
+                padding:0 75px 20px 30px;
                 text-decoration: none;
                 text-transform: none;
 				color:$color-black;
@@ -2132,12 +2132,13 @@ a.button{
 		}
 		.problems__more{
 			left:30px;
-			bottom:20px;
+			bottom:40px;
+            line-height:80px;
 			&::before{
-				margin-top:-30px;
+				margin-top:2px;
 			}
 			&::after{
-				top:23px;
+				top:53px;
 			}
 		}
 		.cases__case{
@@ -2258,7 +2259,7 @@ a.button{
             z-index:1;
             border-radius:40px;
             float:left;
-            margin:-20px 47px 0 0;
+            margin:-20px 27px 0 0;
         }
         &::after{
             content:"";
@@ -2384,7 +2385,8 @@ a.button{
         &_bg6{
             background-color:transparent;
 			padding:0;
-            height:auto;
+            height:0;
+			padding-bottom:49.2%;
             h3{
                 width:100%;
             }
@@ -2396,6 +2398,11 @@ a.button{
 					min-height:315px;
 					height:auto;
 				}
+			}
+			.problems__review{
+				position:absolute;
+				top:0;
+				bottom:0;
 			}
         }
         &_bg7{
@@ -2477,6 +2484,7 @@ a.button{
                 z-index:1;
                 height:100%;
                 width:100%;
+                top:0;
                 left:0;
                 transition:height 0.5s ease;
             }
@@ -2608,6 +2616,8 @@ a.button{
     &__review{
         background:$color-grey-light;
         border-radius:$border-radius;
+		display:flex;
+		flex-direction:column;
         &_top{
             background-color:$color-blue-light;
             border-radius:$border-radius;
@@ -2615,12 +2625,14 @@ a.button{
             position:relative;
             padding:44px 41px;
             min-height:308px;
+			flex-grow:1;
             &-img{
                 position:absolute;
                 bottom:0;
                 right:0;
-                border-radius: 0 0 $border-radius 0;
-                max-width: 50%;
+                border-radius:0 0 $border-radius 0;
+                max-width:50%;
+				max-height:100%;
             }
         }
         &_rubr{
@@ -2629,7 +2641,7 @@ a.button{
         }
         &_body{
             font-size:24px;
-            width:58%;
+            width:65%;
         }
         &_author{
             padding:73px 43px 55px;
@@ -2646,9 +2658,10 @@ a.button{
                 margin-bottom:15px;
             }
             &-position{
-                font-size:16px;
+                font-size:16px !important;
                 color:$color-grey-dark;
                 max-width:45%;
+				margin-top:0 !important;
             }
         }
     }
