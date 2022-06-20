@@ -271,8 +271,9 @@ a:hover {
     background-size:50%;
     transform: rotate(-90deg);
     position:fixed;
-    right:30px;
-    top:calc(50% - 29px);
+    right:20px;
+    bottom:30px;
+    // top:calc(50% - 29px);
     z-index:200;
     &.hide{
         display:none;
@@ -592,6 +593,7 @@ a.button{
 	& > .container{
 		display:flex;
 		justify-content:space-between;
+        align-items: center;
 	}
 	&__logo{
 		background:url($img-path + "logo.svg") 0 0 no-repeat;
@@ -665,6 +667,9 @@ a.button{
             position: fixed;
             left:calc(50% - 13px);
         }
+    }
+    &.header_transparent{
+        
     }
     .dummy &{
         background-color:transparent;
@@ -3039,7 +3044,8 @@ a.button{
         .feedback__button{
             width:30%;
             min-height:268px;
-            background:url($img-path + "icon-plus2.svg") center top no-repeat;
+            // background:url($img-path + "icon-plus2.svg") center top no-repeat;
+            background:url($img-path + "icon-plus2.svg") center center no-repeat;
             background-size:contain;
         }
     }
