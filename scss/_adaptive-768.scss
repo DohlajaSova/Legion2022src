@@ -43,6 +43,16 @@
             }
         }
     }
+    .project{
+        &__review{
+            &_body{
+                &-client {
+                    font-size: 22px!important;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
     .principles{
         &__video{
             &_play{
@@ -976,7 +986,6 @@
             background-color: rgba(30, 39, 56, 0.4);;
             backdrop-filter: brightness(0.5);
             .js-top-menu {
-                // color: #fff;
                 background: url("img/icon-menu2.svg") 0 0 no-repeat;
             }
             .header__logo{
@@ -994,6 +1003,16 @@
         }
         .tns-horizontal.tns-subpixel > .tns-item.cases__block{
             display:flex;
+        }
+    }
+    .project{
+        &__review{
+            &_body{
+                &-client {
+                    font-size: 18px!important;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }
@@ -1648,6 +1667,15 @@
         }
         &__bullet{
             margin-top:-43px;
+        }
+    }
+    .project{
+        &__review{
+            &_body{
+                &-client {
+                    font-size: 14px!important;
+                }
+            }
         }
     }
 }

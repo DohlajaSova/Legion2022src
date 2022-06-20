@@ -1560,5 +1560,18 @@
             position: static;
         }
     }
+    .project{
+        &__review{
+            &_body{
+                &-client {
+                    font-size: 26px!important;
+                    margin-top: 60px;
+                    br {
+                        display: block!important;
+                    }
+                }
+            }
+        }
+    }
 }
 
