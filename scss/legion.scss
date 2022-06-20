@@ -3043,7 +3043,8 @@ a.button{
         .feedback__button{
             width:30%;
             min-height:268px;
-            background:url($img-path + "icon-plus2.svg") center top no-repeat;
+            // background:url($img-path + "icon-plus2.svg") center top no-repeat;
+            background:url($img-path + "icon-plus2.svg") center center no-repeat;
             background-size:contain;
         }
     }

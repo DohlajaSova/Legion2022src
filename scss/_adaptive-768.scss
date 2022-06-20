@@ -471,6 +471,12 @@
             }
         }
     }
+    // .feedback{
+    //     &_compact{
+    //         // padding:60px 30px 50px;
+    //         padding: 150px 30px 50px;
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1555,7 +1561,7 @@
             width:100%;
         }
         &_compact{
-            padding:60px 30px 50px;
+            // padding:60px 30px 50px;
             &.feedback_applicants{
                 background-image:none;
             }
