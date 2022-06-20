@@ -63,7 +63,7 @@
                                     <span>
                                         <span class="cases__case_number">№1</span>
                                         <span class="cases__case_name">Конкурс «Рейтинг Рунета»</span>
-                                        <span class="cases__case_photo"><img src="/assets/css/img/temp-premia2.png" alt="Конкурс «Рейтинг Рунета»"></span>
+                                        <a href="client.html" class="cases__case_photo"><img src="/assets/css/img/temp-premia2.png" alt="Конкурс «Рейтинг Рунета»"></a>
                                     </span>
                                 </div>
                                 <div class="cases-slider-info__item">
