@@ -258,14 +258,15 @@ function addListenerInput(el) {
 
 docReady(function() {
     // фиксим хедер при скролле
-    let stickyHeader = document.getElementsByClassName('header')[0];
+    const stickyHeader = document.getElementsByClassName('header')[0];
     //let headerOffset = findOffset(stickyHeader);
     let lastScrollTop = 0;
-    let windowWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    const windowWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     let i,j;
-    let backButton = document.querySelector(".js-top");
-
-    if (windowWidth <= 768)
+    const backButton = document.querySelector(".js-top");
+    const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    console.log({wHeight})
+    if (windowWidth <= 650)
     {
         window.onscroll = function() {
             let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -275,10 +276,24 @@ docReady(function() {
                 stickyHeader.classList.remove('header_scrolled');
             }
 
-            if (bodyScrollTop > lastScrollTop || bodyScrollTop < 50){
-                stickyHeader.classList.remove('header_sticky');
+            if(bodyScrollTop > wHeight){
+                if (bodyScrollTop > lastScrollTop || bodyScrollTop < 50){
+                    stickyHeader.classList.remove('header_sticky');
+                    setTimeout(() => {
+                        stickyHeader.classList.remove('header_transparent');
+                    }, 1000);
+                    console.log('here')
+                } else {
+                    stickyHeader.classList.add('header_sticky');
+                    setTimeout(() => {
+                        stickyHeader.classList.add('header_transparent');
+                    }, 250);
+                }
             } else {
-                stickyHeader.classList.add('header_sticky');
+                stickyHeader.classList.remove('header_sticky');
+                setTimeout(() => {
+                    stickyHeader.classList.remove('header_transparent');
+                }, 500);
             }
             lastScrollTop = bodyScrollTop <= 0 ? 0 : bodyScrollTop;
 

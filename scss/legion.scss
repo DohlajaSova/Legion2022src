@@ -271,8 +271,9 @@ a:hover {
     background-size:50%;
     transform: rotate(-90deg);
     position:fixed;
-    right:30px;
-    top:calc(50% - 29px);
+    right:20px;
+    bottom:30px;
+    // top:calc(50% - 29px);
     z-index:200;
     &.hide{
         display:none;
@@ -665,6 +666,9 @@ a.button{
             position: fixed;
             left:calc(50% - 13px);
         }
+    }
+    &.header_transparent{
+        
     }
     .dummy &{
         background-color:transparent;
