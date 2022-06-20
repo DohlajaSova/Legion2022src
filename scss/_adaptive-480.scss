@@ -236,6 +236,12 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .who-we-are__widget_item.double{
+        padding-bottom: 130%;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .top{
         &__buttons{
@@ -316,4 +322,8 @@
     .service__feature_inner-case__brief-transition {
         font-size: 12px;
     }
+    .who-we-are__widget_item.double{
+        padding-bottom: 145%;
+    }
+
 }
