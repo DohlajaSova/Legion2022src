@@ -265,7 +265,6 @@ docReady(function() {
     let i,j;
     const backButton = document.querySelector(".js-top");
     const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    console.log({wHeight})
     if (windowWidth <= 650)
     {
         window.onscroll = function() {

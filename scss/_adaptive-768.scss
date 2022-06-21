@@ -1089,13 +1089,13 @@
     .body_service{
         .header{
             &.header_scrolled{
-                background-color:$color-white;
-                .header__logo{
-                    background-image: url($img-path + "logo.svg");
-                }
-                .header__hmenu{
-                    background-image: url($img-path + "icon-menu1.svg");
-                }
+                // background-color:$color-white;
+                // .header__logo{
+                //     background-image: url($img-path + "logo.svg");
+                // }
+                // .header__hmenu{
+                //     background-image: url($img-path + "icon-menu1.svg");
+                // }
                 .breadcrumbs{
                     display:none;
                 }
