@@ -1725,6 +1725,7 @@ a.button{
         background:$color-blue;
         text-align:center;
         margin-right:75px;
+        flex-shrink:0;
     }
     &__list{
         margin-top:40px;

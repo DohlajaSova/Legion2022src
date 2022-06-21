@@ -1602,7 +1602,8 @@ a.button {
   color: #fff;
   background: #2864D9;
   text-align: center;
-  margin-right: 75px; }
+  margin-right: 75px;
+  flex-shrink: 0; }
 .case-stages__list {
   margin-top: 40px; }
   .case-stages__list li {
@@ -4224,7 +4225,14 @@ a.button {
     font-size: 120px;
     padding: 10px 0; }
   .years__bullet {
-    margin-top: -23px; } }
+    margin-top: -23px; }
+
+  .principles_case .principles__content .principles__content_head {
+    width: 100%; }
+  .principles_case .principles__content .principles__content_text {
+    width: 100%; }
+  .case-stages .principles .principles__content .principles__content_text {
+    padding-left: 159px; } }
 @media only screen and (max-width: 1024px) {
   .problems {
     margin-bottom: 40px; }
@@ -4356,6 +4364,11 @@ a.button {
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
+  .principles__content_buttons {
+    margin-top: -250px; }
+    .principles__content_buttons .button {
+      width: 90%;
+      margin-top: 30px; }
 
   .problems__item {
     padding: 30px 24px calc(49.2% - 30px); }
@@ -4848,6 +4861,21 @@ a.button {
     width: 135px;
     height: 135px;
     margin: -62px 0 0 -62px; }
+  .principles.principles_case .principles__content {
+    flex-direction: column; }
+    .principles.principles_case .principles__content h2 {
+      width: 100%;
+      margin-bottom: 38px; }
+    .principles.principles_case .principles__content h3 {
+      margin: 30px 0 20px; }
+    .principles.principles_case .principles__content_text, .principles.principles_case .principles__content_head {
+      width: 100%;
+      margin-bottom: 0; }
+    .principles.principles_case .principles__content_buttons {
+      width: 100%;
+      margin-top: 0; }
+      .principles.principles_case .principles__content_buttons .button {
+        width: calc(50% - 20px); }
 
   .problems__item h3 {
     font-size: 24px; }
@@ -5152,6 +5180,8 @@ a.button {
     display: none; }
   .top_case .top__image-tablet {
     display: block; }
+  .top_case .top__image img {
+    max-width: none; }
 
   .vacancypage__content {
     flex-wrap: wrap; }
@@ -5586,14 +5616,8 @@ a.button {
   .body_about .header.header_sticky {
     background: #1E2738; }
 
-  .body_service .header.header_scrolled {
-    background-color: #fff; }
-    .body_service .header.header_scrolled .header__logo {
-      background-image: url("img/logo.svg"); }
-    .body_service .header.header_scrolled .header__hmenu {
-      background-image: url("img/icon-menu1.svg"); }
-    .body_service .header.header_scrolled .breadcrumbs {
-      display: none; }
+  .body_service .header.header_scrolled .breadcrumbs {
+    display: none; }
   .body_service .top {
     margin-bottom: 42px; }
 
@@ -5708,6 +5732,8 @@ a.button {
         order: 3;
         padding-right: 0;
         margin-bottom: 0; }
+      .principles__content_buttons {
+        order: 4; }
       .principles__content p {
         font-size: 16px;
         margin-bottom: 24px; }
@@ -6001,7 +6027,19 @@ a.button {
         grid-row-end: unset;
         grid-column-end: unset; }
     .who-we-are__widget .vacancies {
-      margin: 0; } }
+      margin: 0; }
+
+  .case-stages__digit {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+    font-size: 24px; }
+  .case-stages .principles__content_head h3 {
+    font-size: 24px; }
+  .case-stages .principles__content_text {
+    padding-left: 0 !important;
+    margin-top: 15px; } }
 @media only screen and (max-width: 480px) {
   .mobile480-show {
     display: block; }

@@ -61,6 +61,30 @@
                 margin:-62px 0 0 -62px;
             }
         }
+        &.principles_case{
+            .principles__content{
+                flex-direction: column;
+                h2{
+                    width:100%;
+                    margin-bottom: 38px;
+                }
+                h3{
+                    margin:30px 0 20px
+                }
+                &_text,
+                &_head{
+                    width:100%;
+                    margin-bottom: 0;
+                }
+                &_buttons{
+                    width:100%;
+                    margin-top:0;
+                    .button{
+                        width:calc(50% - 20px);
+                    }
+                }
+            }
+        }
     }
     .problems{
         &__item{
@@ -467,6 +491,9 @@
         }
         .top__image-tablet{
             display: block;
+        }
+        .top__image img{
+            max-width: none;
         }
     }
     .vacancypage{
@@ -1267,6 +1294,9 @@
                 padding-right:0;
                 margin-bottom:0;
             }
+            &_buttons{
+                order:4;
+            }
             p{
                 font-size:16px;
                 margin-bottom:24px;
@@ -1725,6 +1755,24 @@
         }
         .vacancies{
             margin:0;
+        }
+    }
+    .case-stages{
+        &__digit{
+            width:60px;
+            height:60px;
+            line-height:60px;
+            margin-right:20px;
+            font-size:24px;
+        }
+        .principles__content_head{
+            h3{
+                font-size:24px;
+            }
+        }
+        .principles__content_text{
+            padding-left:0 !important;
+            margin-top:15px;
         }
     }
 }

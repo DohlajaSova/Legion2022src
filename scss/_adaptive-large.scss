@@ -651,6 +651,25 @@
             margin-top:-23px;
         }
     }
+    .principles{
+        &_case{
+            .principles__content{
+                .principles__content_head{
+                    width:100%;
+                }
+                .principles__content_text{
+                    width:100%;
+                }
+            }
+        }
+        .case-stages &{
+            .principles__content{
+                .principles__content_text{
+                    padding-left:159px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -829,6 +848,15 @@
 				@include horizontal-align(absolute);
 			}
 		}
+        &__content{
+            &_buttons{
+                margin-top: -250px;
+                .button{
+                    width:90%;
+                    margin-top: 30px;
+                }
+            }
+        }
 	}
     .problems{
         &__item{

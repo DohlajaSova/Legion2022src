@@ -89,8 +89,8 @@
                 <p>Мы&nbsp;всегда думаем над тем, как ещё больше увеличить прозрачность и&nbsp;эффективность коммуникаций.</p>
             </div>
             <div class="principles__content_buttons store">
-                <a href="" class="button button_grey store_ios"><span>Download on the</span> <b>App Store</b></a>
-                <a href="" class="button button_grey store_android"><span>Download on</span> <b>Google Play</b></a>
+                <a href="https://apps.apple.com/ru/app/пятёрочка/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
+                <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
             </div>
         </div>
     </div>
