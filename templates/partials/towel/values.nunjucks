@@ -11,7 +11,8 @@
                     <p>Выступаем на&nbsp;конференциях, организуем митапы, делимся лучшими практиками и&nbsp;неудачным опытом. Поддерживаем коллег по&nbsp;бизнесу и&nbsp;всегда открыты к&nbsp;сотрудничеству.</p>
                     <div class="projects">
                         <div class="project">
-                            <a href="https://habr.com/ru/company/e-legion/blog/421529/" target="_blank" class="project__article project__article_small project-article">
+                            {# https://habr.com/ru/company/e-legion/blog/421529/ #}
+                            <a href="https://vk.com/elegion?w=wall-34196694_2048" target="_blank" class="project__article project__article_small project-article">
                                 <div class="project-article_top">
                                     <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame5.jpg" alt="Митап Tele2. Дизайн продуктов в телекоме: как всё устроено">
                                 </div>
@@ -32,7 +33,8 @@
                     <p>Получаем новый опыт, анализируем негативные аспекты, выделяем главное. Адаптируемся, чтобы в&nbsp;следующий раз достичь лучшего результата.</p>
                     <div class="projects">
                         <div class="project">
-                            <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="project__article project__article_small project-article">
+                            {# https://habr.com/ru/company/e-legion/blog/579848/ #}
+                            <a href="https://teletype.in/@e-legion/sQXG-uT_-oy" target="_blank" class="project__article project__article_small project-article">
                             <div class="project-article_top">
                                 <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame6.jpg" alt="Процесс анализа в мобильной разработке">
                             </div>
@@ -52,7 +54,7 @@
                     <p>Участовуем в&nbsp;стратегических сессиях клиентов, тесно интегрируемся в&nbsp;структуру заказчика, вместе отвечаем за&nbsp;результат.</p>
                     <div class="projects">
                         <div class="project">
-                            <a href="" class="project__article project__article_small project-article">
+                            <a href="https://vk.com/elegion?w=wall-34196694_1941" class="project__article project__article_small project-article">
                             <div class="project-article_top">
                                 <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame7.jpg" alt="Команда e-legion на Tele2 Power Day">
                             </div>
