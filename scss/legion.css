@@ -2493,7 +2493,8 @@ a.button {
     width: 49.2%;
     padding-bottom: 49.2%; }
   .projects_case .project__review_body {
-    width: 68%; }
+    width: 68%;
+    position: relative; }
   .projects_case .problems__item_bg9 {
     width: 100%;
     height: auto;
@@ -3972,8 +3973,7 @@ a.button {
   .projects .project__review_rubr {
     margin-bottom: 25px; }
   .projects .project__review_body {
-    font-size: 20px;
-    width: 100%; }
+    font-size: 20px; }
   .projects .project__article_large .project-article_link {
     font-size: 15px; }
   .projects .project__article_large .project-article_top-rubr1 {
@@ -3988,6 +3988,11 @@ a.button {
       font-size: 20px; }
     .projects .project__article_small .project-article_link-arrow {
       font-size: 15px; }
+  .projects_case .project__review_body {
+    width: 90%;
+    font-size: 17px; }
+  .projects_case .problems__item {
+    padding: 40px 40px 0; }
 
   .principles__content {
     margin-bottom: 50px; }
@@ -3997,6 +4002,9 @@ a.button {
       font-size: 24px; }
       .principles__content p .button {
         margin-top: 16px; }
+  .principles_case .problems__item .case-stages__layout_inner {
+    padding-top: 40px;
+    padding-bottom: 40px; }
 
   .problems__review_author {
     padding: 33px 43px 35px; }
@@ -4045,7 +4053,23 @@ a.button {
     font-size: 38px; }
 
   .body_career .top {
-    background-size: auto; } }
+    background-size: auto; }
+
+  .case-stages__list {
+    margin-top: 20px; }
+    .case-stages__list li {
+      font-size: 20px;
+      margin-bottom: 20px; }
+
+  .case-stages__layout h3 {
+    width: 100%; }
+
+  .case-stages__layout.problems__item p {
+    font-size: 20px;
+    margin-top: 20px; }
+
+  .case-stages .principles {
+    margin-bottom: 30px; } }
 @media only screen and (max-width: 1180px) {
   .button,
   a.button,
@@ -4227,12 +4251,45 @@ a.button {
   .years__bullet {
     margin-top: -23px; }
 
+  .principles__content_buttons {
+    margin-top: 0; }
+  .principles__content .button {
+    margin-top: 0; }
+  .principles_case .principles__content_buttons {
+    width: 70%; }
   .principles_case .principles__content .principles__content_head {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
   .principles_case .principles__content .principles__content_text {
     width: 100%; }
+  .principles_case .principles__content h2, .principles_case .principles__content .h2 {
+    width: 72%;
+    margin-bottom: 10px; }
+  .principles_case .principles__content h3 {
+    margin: 40px 0 30px; }
   .case-stages .principles .principles__content .principles__content_text {
-    padding-left: 159px; } }
+    padding-left: 159px; }
+
+  .projects_case .problems__item_bg9 h3 {
+    width: 100%; }
+
+  .case-stages__list {
+    margin-top: 17px; }
+    .case-stages__list_ver2 {
+      margin-top: 27px; }
+
+  .case-stages__list li {
+    font-size: 17px;
+    margin-bottom: 17px; }
+
+  .case-stages__layout.problems__item p {
+    font-size: 17px;
+    margin-top: 17px; }
+
+  .case-stages .problems_case .problems__item {
+    padding: 40px 40px calc(49.2% - 40px); }
+    .case-stages .problems_case .problems__item_wide {
+      padding: 0 0 49.2%; } }
 @media only screen and (max-width: 1024px) {
   .problems {
     margin-bottom: 40px; }
