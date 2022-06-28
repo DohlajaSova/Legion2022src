@@ -15,7 +15,7 @@
     </div>
     <div class="container">
         <div class="vacancies__container">
-            <div class="vacancies__list js-vacancies-container" data-limit="4"><div class="vacancies__container_inner">
+            <div class="vacancies__list js-vacancies-container" data-limit="4" data-page="0"><div class="vacancies__container_inner">
                 <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
@@ -26,7 +26,7 @@
                             <div class="vacancy__body_item">опыт работы от 1 года;</div>
                             <div class="vacancy__body_item">умение составлять структурированную документацию (BRD, FRD, ТЗ); </div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнее →</div>
+                            <div class="vacancy__body_link">Подробнее</div>
                         </div>
                     </div>
                 </a>
@@ -40,7 +40,7 @@
                             <div class="vacancy__body_item">уверенное владение Swift;</div>
                             <div class="vacancy__body_item">знание iOS SDK;</div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнее →</div>
+                            <div class="vacancy__body_link">Подробнее</div>
                         </div>
                     </div>
                 </a>
@@ -54,7 +54,7 @@
                             <div class="vacancy__body_item">знание Android SDK;</div>
                             <div class="vacancy__body_item">опыт разработки на&nbsp;Java/Kotlin;</div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнее →</div>
+                            <div class="vacancy__body_link">Подробнее</div>
                         </div>
                     </div>
                 </a>
@@ -67,11 +67,11 @@
                         <div class="vacancy__body">
                             <div class="vacancy__body_item">глубокое знание SpringBoot, Kafka, FeignClient, REST API, PostgreSQL, JPA, Maven, Git;</div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнеее →</div>
+                            <div class="vacancy__body_link">Подробнеее</div>
                         </div>
                     </div>
                 </a>
-                <span class="vacancies__list_item vacancy vacancy_send js-popup-feedback-open" data-types="['all','spb','msk','kzn','klg','remote']">
+                <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-popup-feedback-open" data-types="['all','spb','msk','kzn','klg','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -89,8 +89,14 @@
     <div class="container">
         <div class="cases__pagination">
             <div class="cases__pagination-arrows">
-                <a href="" class="js-vacancies-prev">&lt;</a>
-                <a href="" class="js-vacancies-next">&gt;</a>
+                <a href="" class="js-vacancies-prev"></a>
+                <a href="" class="js-vacancies-next"></a>
+            </div>
+            <div class="cases__pagination-arrows cases__pagination-transition cases-slider__statics_dots">
+                <ul>
+                    <li class="active "><a class="js-vacancies-page" href="#" data-page="0"></a></li>
+                    <li class=""><a class="js-vacancies-page" href="#" data-page="1"></a></li>
+                </ul>
             </div>
             <div class="cases__pagination-button">
                 <button class="button button_grey button_wide js-vacancies-more">Показать еще</button>
