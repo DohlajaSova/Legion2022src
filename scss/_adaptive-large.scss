@@ -1074,6 +1074,9 @@
             &_bg9{
                 .device{
                     margin-top:30px;
+					&.device_fit-height2{
+						margin-top:0;
+					}
                 }
             }
             .problems-slider-groups__item{

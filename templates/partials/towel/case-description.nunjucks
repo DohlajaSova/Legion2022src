@@ -18,7 +18,7 @@
                     <div class="problems-slider-groups"><div class="js-problems-slider-groups">
                         <span class="problems-slider-groups__item">
                             <h4>FAQ</h4>
-                            <div class="device">
+                            <div class="device device_fit-width">
                                 <div class="device__wrapper">
                                     <img class="device__screen" src="/assets/css/img/temp-5ka-phone1.jpg" alt="Пятёрочка">
                                     <div class="device__shadow">
@@ -29,7 +29,7 @@
                         </span>
                         <span class="problems-slider-groups__item">
                             <h4>Поддержка</h4>
-                            <div class="device">
+                            <div class="device device_fit-width">
                                 <div class="device__wrapper">
                                     <img class="device__screen" src="/assets/css/img/temp-5ka-phone2.jpg" alt="Пятёрочка">
                                     <div class="device__shadow">
@@ -40,7 +40,7 @@
                         </span>
                         <span class="problems-slider-groups__item">
                             <h4>Рейтинг товаров</h4>
-                            <div class="device">
+                            <div class="device device_fit-width">
                                 <div class="device__wrapper">
                                     <img class="device__screen" src="/assets/css/img/temp-5ka-phone3.jpg" alt="Пятёрочка">
                                     <div class="device__shadow">
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="problems__item problems__item_bg9">
-            <div class="device">
+            <div class="device device_fit-height2">
                 <div class="device__wrapper">
                     <img class="device__screen" src="/assets/css/img/temp-5ka-phone4.jpg" alt="Пятёрочка">
                     <div class="device__shadow">
