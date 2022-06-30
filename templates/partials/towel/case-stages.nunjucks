@@ -58,9 +58,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container container-double">
             <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
-                <div class="case-stages__layout_left"><div class="case-stages__layout_inner">
+                <div class="case-stages__layout_left"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
                     <div class="device device_wide">
                         <div class="device__wrapper">
                             <img class="device__screen" src="/assets/css/img/temp-5ka-phone7.jpg" alt="Пятёрочка">
@@ -107,13 +107,50 @@
                         <li>Запустили акцию с&nbsp;вознаграждением пользователей за&nbsp;отзывы, чтобы повысить качество получаемых отзывов</li>
                     </ul>
                 </div></div>
-                <div class="case-stages__layout_right"><div class="case-stages__layout_inner">
-                    <div class="device">
-                        <div class="device__wrapper">
-                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone8.jpg" alt="Пятёрочка">
-                            <div class="device__shadow">
-                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
+                    <div class="problems__item problems__item_bg10">
+                        <div class="problems__item_container">
+                            <div class="problems__item_contents problems__item_contents-slider">
+                                <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                                    <span class="problems-slider-groups__item">
+                                        <div class="device">
+                                            <div class="device__wrapper">
+                                                <img class="device__screen" src="/assets/css/img/temp-5ka-phone8.jpg" alt="Пятёрочка">
+                                                <div class="device__shadow">
+                                                    <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <span class="problems-slider-groups__item">
+                                        <div class="device">
+                                            <div class="device__wrapper">
+                                                <img class="device__screen" src="/assets/css/img/temp-5ka-phone9.jpg" alt="Пятёрочка">
+                                                <div class="device__shadow">
+                                                    <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <span class="problems-slider-groups__item">
+                                        <div class="device">
+                                            <div class="device__wrapper">
+                                                <img class="device__screen" src="/assets/css/img/temp-5ka-phone10.jpg" alt="Пятёрочка">
+                                                <div class="device__shadow">
+                                                    <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div></div>
                             </div>
+                        </div>
+                        <div class="problems-slider-groups__statics">
+                            <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul></div>
                         </div>
                     </div>
                 </div></div>
@@ -133,7 +170,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container container_flexible">
             <div class="problems__item problems__item_bg10">
                 <div class="problems__item_container">
                     <div class="problems__item_contents problems__item_contents-slider">
@@ -141,27 +178,27 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone9.jpg" alt="Пятёрочка">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone10.jpg" alt="Пятёрочка">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
                                         <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.jpg" alt="Пятёрочка">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone13.jpg" alt="Пятёрочка">
                                         <div class="device__shadow">
                                             <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
                                         </div>
@@ -214,10 +251,10 @@
                     </ul>
                     <p>С помощью «Центра уведомлений» заказчик увеличил конверсию и&nbsp;количество уникальных пользователей всех продуктов «Пятёрочки».</p>
                 </div></div>
-                <div class="case-stages__layout_right"><div class="case-stages__layout_inner">
+                <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
                     <div class="device device_wide">
                         <div class="device__wrapper">
-                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
+                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.jpg" alt="Пятёрочка">
                             <div class="device__shadow">
                                 <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
                             </div>
@@ -229,7 +266,7 @@
     </div>
     <div class="projects projects_case">
         <div class="container">
-            <div class="projects__panels">
+            <div class="projects__panels projects__panels_flexible">
                 <div class="project project_tall">
                     <div class="problems__item problems__item_bg9">
                         <h3>Новые функциональности в&nbsp;«Обратной связи»</h3>
