@@ -113,7 +113,7 @@
                             <div class="problems__item_contents problems__item_contents-slider">
                                 <div class="problems-slider-groups"><div class="js-problems-slider-groups">
                                     <span class="problems-slider-groups__item">
-                                        <div class="device">
+                                        <div class="device device_fit-width">
                                             <div class="device__wrapper">
                                                 <img class="device__screen" src="/assets/css/img/temp-5ka-phone8.jpg" alt="Пятёрочка">
                                                 <div class="device__shadow">
@@ -123,7 +123,7 @@
                                         </div>
                                     </span>
                                     <span class="problems-slider-groups__item">
-                                        <div class="device">
+                                        <div class="device device_fit-width">
                                             <div class="device__wrapper">
                                                 <img class="device__screen" src="/assets/css/img/temp-5ka-phone9.jpg" alt="Пятёрочка">
                                                 <div class="device__shadow">
@@ -133,7 +133,7 @@
                                         </div>
                                     </span>
                                     <span class="problems-slider-groups__item">
-                                        <div class="device">
+                                        <div class="device device_fit-width">
                                             <div class="device__wrapper">
                                                 <img class="device__screen" src="/assets/css/img/temp-5ka-phone10.jpg" alt="Пятёрочка">
                                                 <div class="device__shadow">

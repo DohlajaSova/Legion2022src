@@ -641,6 +641,53 @@ a.button {
       width: auto;
       height: 100%;
       margin: 0; }
+  .device_fit-height2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    text-align: center; }
+    .device_fit-height2 .device__wrapper {
+      width: auto;
+      max-height: 100%;
+      text-align: center;
+      height: 100%;
+      top: 20px; }
+    .device_fit-height2 .device__screen {
+      width: auto;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -20px;
+      border-radius: 20px; }
+    .device_fit-height2 .device__shadow {
+      max-height: 100%;
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+    .device_fit-height2 .device__phone {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0; }
+  .device_fit-width {
+    width: 57%; }
+    .device_fit-width .device__wrapper {
+      width: 100%;
+      margin-left: 5%; }
+    .device_fit-width .device__screen {
+      width: calc(100% - 20px);
+      left: 0;
+      top: 0;
+      border-radius: 20px; }
+    .device_fit-width .device__shadow {
+      width: 100%; }
+    .device_fit-width .device__phone {
+      width: 100%; }
   .device_wide {
     width: 400px; }
     .device_wide .device__wrapper {
@@ -4527,6 +4574,8 @@ a.button {
       padding-top: 30px; }
     .problems__item_bg9 .device {
       margin-top: 30px; }
+      .problems__item_bg9 .device.device_fit-height2 {
+        margin-top: 0; }
     .problems__item .problems-slider-groups__item h3 {
       font-size: 46px; }
     .problems__item h3 {
@@ -4941,6 +4990,13 @@ a.button {
 
   .case-stages__layout_var1 .problems__item_container, .case-stages__layout_var2 .problems__item_container {
     flex-wrap: wrap; }
+  .case-stages__layout_var1 .case-stages__layout_left {
+    order: 2; }
+  .case-stages__layout_var1 .case-stages__layout_right {
+    order: 1; }
+    .case-stages__layout_var1 .case-stages__layout_right .case-stages__layout_inner {
+      padding-left: 40px;
+      padding-bottom: 0; }
   .case-stages__layout_var2 .case-stages__layout_right .case-stages__layout_inner .device__wrapper {
     position: absolute;
     left: 50%;
@@ -4960,8 +5016,18 @@ a.button {
   .case-stages .projects .project__review_container {
     position: static; }
   .case-stages .case-stages__layout_inner.case-stages__layout_inner-centered {
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 80px; }
+  .case-stages .problems_case > .container {
+    grid-template-columns: 1fr; }
+    .case-stages .problems_case > .container .problems__item_bg10 {
+      padding-bottom: calc(100% - 40px); }
+  .case-stages .principles_case > .container.container_flexible {
+    grid-template-columns: 1fr; }
+    .case-stages .principles_case > .container.container_flexible .problems__item_bg10 {
+      padding-bottom: calc(100% - 40px); }
+  .case-stages .device_fit-width {
+    max-width: 441px; }
 
   .to-work__content_blocks .projects {
     flex-direction: column;
