@@ -270,9 +270,6 @@ function checkFieldValid(element) {
 //         if(mode === 'siblings'){
 //             if(exclude) {
 //                 let arr = node.childNodes.filter(className);
-//                 console.log({arr})
-//                 console.log({node})
-//                 console.log({className})
 //             }
 //         }
 //     }
@@ -530,6 +527,13 @@ docReady(function() {
                         portfolioBlocks[0].children[j].classList.remove("hide");
                     }
                 }
+                
+                // refresh portfolioTags 
+                for (j=0; j<portfolioTags[0].children.length; j++){
+                    portfolioTags[0].children[j].classList.remove("active");
+                }
+                portfolioTags[0].children[0].classList.add("active");
+                //--
                 portfolioRefresh(curLimit);
             })
         }
@@ -557,6 +561,16 @@ docReady(function() {
 							portfolioBlocks[0].children[j].classList.remove("hide");
 						}
 					}
+
+                    // refresh portfolioTypes 
+                    const el = portfolioTypes[0].parentNode.childNodes[1].querySelector('.select-items');
+                    if(el){
+                        for(let one = 0; one < el.childNodes.length; one++){
+                            el.childNodes[one].classList.remove('same-as-selected');
+                        }
+                        el.childNodes[0].classList.add('same-as-selected');
+                    }
+                    //--
 					portfolioRefresh(curLimit);
 				}
             })
@@ -1026,6 +1040,33 @@ docReady(function() {
         /* If the user clicks anywhere outside the select box,
         then close all select boxes: */
         document.addEventListener("click", closeAllSelect);
+    }
+    if (portfolioBlocks.length >0) {
+        const url = new URL(window.location.href);
+        const cT = url.searchParams?.get("casesTypes")
+        if(cT) {
+            const curLimit = document.querySelectorAll(".js-cases-container-portfolio")[0].dataset.limit*1;
+            const checked = ['all','start', 'scale', 'consult'];
+            const ind = checked.indexOf(cT)
+            if (~ind) {
+                let options = portfolioTypes[0].parentNode.childNodes[1].childNodes[1];
+                let selected = document.querySelectorAll('.same-as-selected')[0];
+                selected.classList.remove('same-as-selected')
+                selected.parentNode.childNodes[ind].classList.add('same-as-selected')
+                options.value = cT;
+                options.selectedOptions[0].value = cT;
+                for (j=0; j<checked.length; j++){
+                    if (!checked[j].includes("'" + cT + "'")){
+                        portfolioBlocks[0].children[j].classList.add("hide");
+                    }
+                    else{
+                        portfolioBlocks[0].children[j].classList.remove("hide");
+                    }
+                }
+                portfolioRefresh(curLimit);
+            }
+        }
+
     }
     
     // блок с фото сотрудников
