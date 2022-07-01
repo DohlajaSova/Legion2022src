@@ -1781,7 +1781,8 @@ a.button {
     line-height: 1.1;
     background-color: #2864D9;
     color: #84AEFF;
-    padding: 187px 195px 187px 71px; }
+    padding: 187px 195px 187px 71px;
+    margin-top: -1px; }
     .category__content em {
       color: #fff;
       font-style: normal; }
