@@ -315,6 +315,18 @@
                             </div>
                         </div>
                     </span>
+                    <span class="zero-case cases__case" data-types="['all','start']" data-tags="['all','education']" data-priority="10">
+                        {# <div class="cases__case_number"></div> #}
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents">
+                                <span class="cases__case_logo">
+                                    <img src="/assets/css/img/icon-lock.svg" alt="LinguaLeo">
+                                </span>
+                                {# <span class="cases__case_name">LinguaLeo</span> #}
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
                 </div>
             </div>
             <div class="container">

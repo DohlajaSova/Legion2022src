@@ -1468,6 +1468,10 @@ a.button{
         &.not-shown{
             display:none;
         }
+        +.zero-case{
+            // display: none!important;
+            visibility: hidden;
+        }
 	}
     &_portfolio{
         padding-top:120px;

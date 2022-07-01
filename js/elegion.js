@@ -203,6 +203,17 @@ function portfolioRefresh(limit){
                 portfolioBlocks.children[i].classList.remove("not-shown");
         }
     }
+    console.log({shown})
+    let zeroC = portfolioBlocks.querySelector('.zero-case')
+    console.log({zeroC})
+    console.log(zeroC.style.display)
+    if(shown === 0 && zeroC){
+        zeroC.style.visibility = 'visible';
+        zeroC.style.display = 'block';
+    } else if(zeroC) {
+        zeroC.style.visibility = 'hidden';
+        zeroC.style.display = 'none';
+    }
     if (shown <= limit)
         moreButton.parentNode.classList.add("hide");
 }
@@ -534,6 +545,9 @@ docReady(function() {
                 }
                 portfolioTags[0].children[0].classList.add("active");
                 //--
+                for (j=0; j<types.length; j++){
+                    portfolioBlocks[0].children[j].classList.add("hide");
+                }
                 portfolioRefresh(curLimit);
             })
         }
