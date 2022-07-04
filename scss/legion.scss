@@ -505,6 +505,7 @@ a.button{
     &_fit-height{
         width:auto;
         height:calc(100% - 110px);
+        padding-top:40px;
         .device__wrapper{
             width:auto;
             height:100%;
@@ -529,6 +530,63 @@ a.button{
             margin:0;
         }
     }
+	&_fit-height2{
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		padding:20px;
+		text-align:center;
+		.device__wrapper{
+			width:auto;
+			max-height:100%;
+			text-align:center;
+			height:100%;
+			top:20px;
+		}
+		.device__screen{
+			width:auto;
+			height:100%;
+			left:50%;
+			transform:translateX(-50%);
+			top:-20px;
+			border-radius:20px;
+		}
+		.device__shadow{
+			max-height:100%;
+			width:100%;
+			height:100%;
+			position:absolute;
+		}
+		.device__phone{
+			width:auto;
+			height:100%;
+			position:absolute;
+			left:50%;
+			transform:translateX(-50%);
+			margin:0;
+		}
+	}
+	&_fit-width{
+		width:57%;
+		.device__wrapper{
+			width:100%;
+			margin-left:5%;
+		}
+		.device__screen{
+			width:calc(100% - 20px);
+			left:0;
+			top: 0;
+			border-radius:40px;
+		}
+		.device__shadow{
+			width:100%;
+		}
+		.device__phone{
+			width:100%;
+		}
+	}
     &_wide{
         width:400px;
         .device__wrapper{
@@ -1798,6 +1856,10 @@ a.button{
 		&_var2{
 			.case-stages__layout_right .case-stages__layout_inner{
 				background-color:$color-blue-dark;
+                padding:0;
+                .device__wrapper{
+                    margin:60px 0 0 10px;
+                }
 			}
 		}
     }
@@ -1928,6 +1990,7 @@ a.button{
         background-color:$color-blue;
         color:$color-blue-light;
         padding:187px 195px 187px 71px;
+        margin-top:-1px;
         em{
             color:$color-white;
             font-style:normal;
@@ -2078,6 +2141,10 @@ a.button{
             h3{
                 margin:80px 0 40px;
             }
+        }
+        .case-stages__layout_var2 .problems__item_bg10{
+            width:100%;
+            padding-bottom:100%;
         }
     }
 }
@@ -2477,6 +2544,7 @@ a.button{
             padding:0 0 49.2%;
             .problems__item_container{
                 padding:38px 30px;
+                top:0;
             }
 		}
         &_plus{

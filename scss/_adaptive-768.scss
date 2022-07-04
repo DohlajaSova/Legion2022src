@@ -1312,6 +1312,9 @@
     }
     .problems{
         &__item{
+			&_arrow{
+				max-width:100%;
+			}
             h3{
                 font-size:27px;
             }
@@ -1392,8 +1395,8 @@
         &__panels{
             margin-bottom:45px;
             &-client {
-                grid-template-columns: 290px;
-                grid-template-rows: 500px 500px 250px 250px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 0.6338fr 250px;
                 width: 100%;
                 margin: auto;
             }
