@@ -1471,6 +1471,22 @@ a.button{
         +.zero-case{
             // display: none!important;
             visibility: hidden;
+            .cases__case_container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .service__feature_inner-case__visual {
+                    grid-template-columns: repeat(2, calc(50% - 7px));
+                    grid-template-rows: repeat(2, calc(50% - 7px));
+                    justify-content: center;
+                    height: 100%;
+                    padding: 14px;
+                    background-color: transparent; border-radius: 0px;
+                    &_wrapper {
+                        border-radius: 30px;
+                    }
+                }
+            }
         }
 	}
     &_portfolio{
@@ -4661,6 +4677,9 @@ a.button{
 }
 .icon_arrow {
     background:url($img-path + "arrow3grey.svg") center center no-repeat $color-green;
+}
+.display-none {
+    display: none;
 }
 
 @keyframes rotating {

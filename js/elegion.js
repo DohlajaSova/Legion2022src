@@ -203,21 +203,48 @@ function portfolioRefresh(limit){
                 portfolioBlocks.children[i].classList.remove("not-shown");
         }
     }
-    console.log({shown})
-    let zeroC = portfolioBlocks.querySelector('.zero-case')
-    console.log({zeroC})
-    console.log(zeroC.style.display)
+    let zeroC = portfolioBlocks.querySelectorAll('.zero-case')
     if(shown === 0 && zeroC){
-        zeroC.style.visibility = 'visible';
-        zeroC.style.display = 'block';
+        zeroC[0].style.visibility = 'visible';
+        zeroC[1].style.visibility = 'visible';
+        zeroC[0].style.display = 'block';
+        zeroC[1].style.display = 'block';
+        randomizeCases();
     } else if(zeroC) {
-        zeroC.style.visibility = 'hidden';
-        zeroC.style.display = 'none';
+        zeroC[0].style.visibility = 'hidden';
+        zeroC[1].style.visibility = 'hidden';
+        zeroC[0].style.display = 'none';
+        zeroC[1].style.display = 'none';
     }
     if (shown <= limit)
         moreButton.parentNode.classList.add("hide");
 }
+function randomizeCases(){
+    const container = document.querySelector(".js-randomcases-container");
+    const childCount = container.children[0].childElementCount;
+    if(container.querySelector('.service__feature_inner-case__visual') && childCount > 4 ) {
+        let rand = [];
+        for (let i=1; i<childCount+1; i++){
+            const child = document.querySelector('.js-randomcases-container > .service__feature_inner-case__visual > .service__feature_inner-case__visual_wrapper:nth-child(' + i + ')');
+            if (child)
+            child.classList.add('display-none');
+        }
+        for (let i=0; i<4; i++){
+            const random = getRandomNumber(rand, childCount)
+            const child = document.querySelector('.js-randomcases-container > .service__feature_inner-case__visual > .service__feature_inner-case__visual_wrapper:nth-child(' + random + ')');
+            if (child)
+                child.classList.remove('display-none');
+                rand.push(random)
 
+        }
+    }
+}
+function getRandomNumber(exclude, limit){
+    let result = Math.floor(1 + Math.random() * limit);
+    if (!~exclude.indexOf(result)){
+        return result;
+    } else return getRandomNumber(exclude, limit);
+}
 function vacanciesRefresh(limit){
     let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner")[0];
     let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
@@ -545,9 +572,9 @@ docReady(function() {
                 }
                 portfolioTags[0].children[0].classList.add("active");
                 //--
-                for (j=0; j<types.length; j++){
-                    portfolioBlocks[0].children[j].classList.add("hide");
-                }
+                // for (j=0; j<types.length; j++){
+                //     portfolioBlocks[0].children[j].classList.add("hide");
+                // }
                 portfolioRefresh(curLimit);
             })
         }
@@ -1114,41 +1141,42 @@ docReady(function() {
     // блок с рандомными проектами
     if (document.querySelectorAll(".js-randomcases-container").length > 0)
     {
-        let container = document.querySelector(".js-randomcases-container");
-        
-        for (i=0; i<4; i++)
-        {
-            let random = Math.floor(1 + Math.random() * container.children[0].childElementCount);
-            child = document.querySelector('.js-randomcases-container > .some-projects__list > .cases__case:nth-child(' + random + ')');
-            if (child)
-                child.remove();
+        if(document.querySelector('.some-projects__list')){
+            let container = document.querySelector(".js-randomcases-container");
+            for (let i=0; i<4; i++)
+            {
+                let random = Math.floor(1 + Math.random() * container.children[0].childElementCount);
+                let child = document.querySelector('.js-randomcases-container > .some-projects__list > .cases__case:nth-child(' + random + ')');
+                // portfolio
+                if (child)
+                    child.remove();
+            }
+            let cases = Array.prototype.slice.call(container.children[0].children);
+            let sliderCases = tns({
+                container: '.js-randomcases-container .some-projects__list',
+                items: 4,
+                gutter: 15,
+                responsive: {
+                    320: {
+                        items: 1,
+                        nav: true
+                    },
+                    640: {
+                        items: 2,
+                        nav: true
+                    },
+                    992: {
+                        items: 4,
+                        nav: false
+                    }
+                },
+                controls: false,
+                nav: false,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
         }
-        let cases = Array.prototype.slice.call(container.children[0].children);
-
-        let sliderCases = tns({
-            container: '.js-randomcases-container .some-projects__list',
-            items: 4,
-            gutter: 15,
-            responsive: {
-                320: {
-                    items: 1,
-                    nav: true
-                },
-                640: {
-                    items: 2,
-                    nav: true
-                },
-                992: {
-                    items: 4,
-                    nav: false
-                }
-            },
-            controls: false,
-            nav: false,
-            navPosition: 'bottom',
-            mouseDrag: true,
-            slideBy: 'page'
-        });
     }
 
     // аккордеон
