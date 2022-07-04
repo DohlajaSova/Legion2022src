@@ -53,7 +53,7 @@
                     <div class="service__feature_inner-case__brief-title">
                         Клиенты и&nbsp;кейсы
                     </div>
-                    <a href="/inprocess.html" class="service__feature_inner-case__brief-transition">
+                    <a href="/portfolio.html?casesTypes=consult" class="service__feature_inner-case__brief-transition">
                         Подробнее → 
                     </a>
                 </div>
@@ -97,7 +97,7 @@
                     <div class="service__feature_inner-case__brief-title">
                         Клиенты и кейсы
                     </div>
-                    <a href="/inprocess.html" class="service__feature_inner-case__brief-transition">
+                    <a href="/portfolio.html?casesTypes=start" class="service__feature_inner-case__brief-transition">
                         Подробнее → 
                     </a>
                 </div>
@@ -141,9 +141,9 @@
                     <div class="service__feature_inner-case__brief-title">
                         Клиенты и кейсы
                     </div>
-                    <div class="service__feature_inner-case__brief-transition">
+                    <a href="/portfolio.html?casesTypes=scale" class="service__feature_inner-case__brief-transition">
                         Подробнее → 
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

@@ -203,10 +203,48 @@ function portfolioRefresh(limit){
                 portfolioBlocks.children[i].classList.remove("not-shown");
         }
     }
+    let zeroC = portfolioBlocks.querySelectorAll('.zero-case')
+    if(shown === 0 && zeroC){
+        zeroC[0].style.visibility = 'visible';
+        zeroC[1].style.visibility = 'visible';
+        zeroC[0].style.display = 'block';
+        zeroC[1].style.display = 'block';
+        randomizeCases();
+    } else if(zeroC) {
+        zeroC[0].style.visibility = 'hidden';
+        zeroC[1].style.visibility = 'hidden';
+        zeroC[0].style.display = 'none';
+        zeroC[1].style.display = 'none';
+    }
     if (shown <= limit)
         moreButton.parentNode.classList.add("hide");
 }
+function randomizeCases(){
+    const container = document.querySelector(".js-randomcases-container");
+    const childCount = container.children[0].childElementCount;
+    if(container.querySelector('.service__feature_inner-case__visual') && childCount > 4 ) {
+        let rand = [];
+        for (let i=1; i<childCount+1; i++){
+            const child = document.querySelector('.js-randomcases-container > .service__feature_inner-case__visual > .service__feature_inner-case__visual_wrapper:nth-child(' + i + ')');
+            if (child)
+            child.classList.add('display-none');
+        }
+        for (let i=0; i<4; i++){
+            const random = getRandomNumber(rand, childCount)
+            const child = document.querySelector('.js-randomcases-container > .service__feature_inner-case__visual > .service__feature_inner-case__visual_wrapper:nth-child(' + random + ')');
+            if (child)
+                child.classList.remove('display-none');
+                rand.push(random)
 
+        }
+    }
+}
+function getRandomNumber(exclude, limit){
+    let result = Math.floor(1 + Math.random() * limit);
+    if (!~exclude.indexOf(result)){
+        return result;
+    } else return getRandomNumber(exclude, limit);
+}
 function vacanciesRefresh(limit){
     let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner")[0];
     let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
@@ -226,6 +264,22 @@ function vacanciesRefresh(limit){
 	else
         moreButton.parentNode.classList.remove("hide");
 }
+function vacanciesTransition(n, perpage) {
+    let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner")[0];
+    let page = document.querySelectorAll(".js-vacancies-container")[0].dataset.page;
+    if(!page || page === n) return;
+
+    document.querySelectorAll(".js-vacancies-container")[0].dataset.page = n;
+    page = n;
+
+    for (let i=0; i<vacanciesBlocks.children.length; i++){
+        vacanciesBlocks?.children[i]?.classList.add("not-shown");
+    }
+
+    for (let i=page*perpage; i < page*perpage + perpage; i++){
+        vacanciesBlocks?.children[i]?.classList.remove("not-shown");
+    }
+}
 
 function checkFieldValid(element) {
     if(!element.value || element.value < 2) {
@@ -243,11 +297,22 @@ function checkFieldValid(element) {
         var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         if(!element.value.match(pattern)){
             addListenerInput(element);
-            return false
+            return false;
         }
     }
     return true;
 }
+// rmClass(this.parentNode.parentNode, 'active', 'siblings', one); example
+// function rmClass(node, className, mode, exclude = 0){
+//     if(mode){
+//         if(mode === 'siblings'){
+//             if(exclude) {
+//                 let arr = node.childNodes.filter(className);
+//             }
+//         }
+//     }
+//     node.classList.remove(className)
+// }
 
 function addListenerInput(el) {
     el.addEventListener("input", function input(){
@@ -489,9 +554,9 @@ docReady(function() {
             }
 
             portfolioTypes[i].addEventListener("click", function(e){
-                let options = e.target.parentNode.parentNode.childNodes[0];
+                let options = e.target.parentNode.parentNode.childNodes[1];
                 e.preventDefault();
-                let selectedType = options.selectedOptions[0].value;
+                let selectedType = options?.selectedOptions[0]?.value;
                 for (j=0; j<types.length; j++){
                     if (!types[j].includes("'" + selectedType + "'")){
                         portfolioBlocks[0].children[j].classList.add("hide");
@@ -500,6 +565,16 @@ docReady(function() {
                         portfolioBlocks[0].children[j].classList.remove("hide");
                     }
                 }
+                
+                // refresh portfolioTags 
+                for (j=0; j<portfolioTags[0].children.length; j++){
+                    portfolioTags[0].children[j].classList.remove("active");
+                }
+                portfolioTags[0].children[0].classList.add("active");
+                //--
+                // for (j=0; j<types.length; j++){
+                //     portfolioBlocks[0].children[j].classList.add("hide");
+                // }
                 portfolioRefresh(curLimit);
             })
         }
@@ -527,6 +602,16 @@ docReady(function() {
 							portfolioBlocks[0].children[j].classList.remove("hide");
 						}
 					}
+
+                    // refresh portfolioTypes 
+                    const el = portfolioTypes[0].parentNode.childNodes[1].querySelector('.select-items');
+                    if(el){
+                        for(let one = 0; one < el.childNodes.length; one++){
+                            el.childNodes[one].classList.remove('same-as-selected');
+                        }
+                        el.childNodes[0].classList.add('same-as-selected');
+                    }
+                    //--
 					portfolioRefresh(curLimit);
 				}
             })
@@ -541,12 +626,28 @@ docReady(function() {
     {
         let curLimit = document.querySelectorAll(".js-vacancies-container")[0].dataset.limit*1;
         let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
+        const transitionButtons = document.querySelectorAll(".js-vacancies-page");
         moreButton.addEventListener("click", function(e){
             e.preventDefault();
             curLimit += 4;
             vacanciesRefresh(curLimit);
         })
-        vacanciesRefresh(curLimit);
+        if(windowWidth > 480) {
+            vacanciesRefresh(curLimit);
+        } else {
+            curLimit = 3;
+            vacanciesRefresh(curLimit);
+            for(let one = 0; one < transitionButtons.length; one++) {
+                transitionButtons[one].addEventListener("click", function(e){
+                    e.preventDefault();
+                    vacanciesTransition(this.dataset.page, curLimit);
+                    for(let two = 0; two < transitionButtons.length; two++){
+                        transitionButtons[two].parentNode.classList.remove('active')
+                    }
+                    this.parentNode.classList.add('active');
+                })
+            }
+        }
 
         for (i=0; i<vacanciesTypes.length; i++){
             let types = new Array();
@@ -556,7 +657,7 @@ docReady(function() {
             }
 
             vacanciesTypes[i].addEventListener("click", function(e){
-                let options = e.target.parentNode.parentNode.childNodes[0];
+            let options = e.target.parentNode.parentNode.childNodes[0];
                 e.preventDefault();
                 let selectedType = options.selectedOptions[0].value;
 
@@ -577,32 +678,67 @@ docReady(function() {
     // блок вакансий
     let vacancyBlocks = document.querySelectorAll(".vacancy");
     if (vacancyBlocks.length) {
-        for (i=0; i<vacancyBlocks.length; i++){
-            vacancyBlocks[i].addEventListener("mouseover", function(e){
-                e.preventDefault();
-                let vacancyContainer = this.children[0]; // контейнер с вакансией
-                let vacancyContainerHeight = vacancyContainer.getBoundingClientRect().height;
-                let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
-                let vacanceNameHeight = vacancyName.getBoundingClientRect().height+100;
-                let vacancyTitle = vacancyName.parentNode;
-                let vacancyBody = vacancyTitle.nextElementSibling;
-				let sendAdjust = 0;
-				if (this.classList.contains("vacancy_send"))
-					sendAdjust = 120;
-                vacancyTitle.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
-                vacancyBody.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
-                vacancyBody.style.height = sendAdjust + vacancyContainerHeight - vacanceNameHeight + 92 + "px";
-            }, false);
-            vacancyBlocks[i].addEventListener("mouseout", function(e){
-                e.preventDefault();
-                let vacancyContainer = this.children[0]; // контейнер с вакансией
-                let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
-                let vacancyTitle = vacancyName.parentNode;
-                let vacancyBody = vacancyTitle.nextElementSibling;
-                vacancyTitle.style.top = "0px";
-                vacancyBody.style.top = "0px";
-                vacancyBody.style.height = "100%";
-            }, false);
+        if(windowWidth > 480){
+            for (i=0; i<vacancyBlocks.length; i++){
+                vacancyBlocks[i].addEventListener("mouseover", function(e){
+                    e.preventDefault();
+                    let vacancyContainer = this.children[0]; // контейнер с вакансией
+                    let vacancyContainerHeight = vacancyContainer.getBoundingClientRect().height;
+                    let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
+                    let vacanceNameHeight = vacancyName.getBoundingClientRect().height+100;
+                    let vacancyTitle = vacancyName.parentNode;
+                    let vacancyBody = vacancyTitle.nextElementSibling;
+                    let sendAdjust = 0;
+                    if (this.classList.contains("vacancy_send"))
+                        sendAdjust = 120;
+                    vacancyTitle.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
+                    vacancyBody.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
+                    vacancyBody.style.height = sendAdjust + vacancyContainerHeight - vacanceNameHeight + 92 + "px";
+                }, false);
+                vacancyBlocks[i].addEventListener("mouseout", function(e){
+                    e.preventDefault();
+                    let vacancyContainer = this.children[0]; // контейнер с вакансией
+                    let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
+                    let vacancyTitle = vacancyName.parentNode;
+                    let vacancyBody = vacancyTitle.nextElementSibling;
+                    vacancyTitle.style.top = "0px";
+                    vacancyBody.style.top = "0px";
+                    vacancyBody.style.height = "100%";
+                }, false);
+            }
+        }
+         else {
+            for (i=0; i<vacancyBlocks.length; i++){
+                vacancyBlocks[i].addEventListener("click", function(e){
+                    if(e.target.className === 'vacancy__body_link'){
+                        return;
+                    }
+                    e.preventDefault();
+                    let vacancyContainer = this.children[0]; // контейнер с вакансией
+                    let vacancyName = vacancyContainer.getElementsByClassName("vacancy__title_name")[0];
+                    let vacancyTitle = vacancyName.parentNode;
+                    const icon = vacancyTitle.children[0];
+                    if(this.style.height === "336px") {
+                        this.style.height = "168px";
+                        vacancyContainer.style.height = "100%";
+                        this.style.maxHeight = "168px";
+                        vacancyContainer.style.maxHeight = "100%";
+                        icon.style.transform="rotate(0deg)";
+                        if(this.id === 'vac_send'){
+                            this.style['padding-bottom'] = "108px";
+                        }
+                    } else {
+                        this.style.height = "336px";
+                        vacancyContainer.style.height = "100%";
+                        this.style.maxHeight = "336px";
+                        vacancyContainer.style.maxHeight = "100%";
+                        icon.style.transform="rotate(135deg)";
+                        if(this.id === 'vac_send'){
+                            this.style['padding-bottom'] = "336px";
+                        }
+                    }
+                }, false);
+            }
         }
     }
     
@@ -687,9 +823,7 @@ docReady(function() {
 				_o = _p.querySelector(`option[value='${val}']`), 
 				lbl = +_o.label;
             let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-            // let wdd = wwidth < 1200 ? wwidth : (wwidth < 1025 ? wwidth - 30 :_p.clientWidth)
             let wdd = wwidth > 1330 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60)
-            // ( _p.clientWidth < 441 ? _p.clientWidth - 300 : _p.clientWidth - 120) : _p.clientWidth - 220
             _t.setAttribute('aria-valuetext', lbl);
 			_p.style.setProperty(`--${_t.id}`, val);
 			_p.style.setProperty(`--lbl-${_t.id}`, lbl+"");
@@ -756,6 +890,9 @@ docReady(function() {
         if (feedbackOpener[i]!= null) {
             feedbackOpener[i].addEventListener("click", function(e){
                 e.preventDefault();
+                if(windowWidth < 481 && e.target.className.startsWith('vacanc') && e.target.className !== 'vacancy__body_link') {
+                    return;
+                }
                 feedbackBody.classList.add("active");
                 document.querySelector("body").classList.add("popup-open");
                 bodyOpened = document.querySelector(".popup-open");
@@ -945,6 +1082,33 @@ docReady(function() {
         then close all select boxes: */
         document.addEventListener("click", closeAllSelect);
     }
+    if (portfolioBlocks.length >0) {
+        const url = new URL(window.location.href);
+        const cT = url.searchParams?.get("casesTypes")
+        if(cT) {
+            const curLimit = document.querySelectorAll(".js-cases-container-portfolio")[0].dataset.limit*1;
+            const checked = ['all','start', 'scale', 'consult'];
+            const ind = checked.indexOf(cT)
+            if (~ind) {
+                let options = portfolioTypes[0].parentNode.childNodes[1].childNodes[1];
+                let selected = document.querySelectorAll('.same-as-selected')[0];
+                selected.classList.remove('same-as-selected')
+                selected.parentNode.childNodes[ind].classList.add('same-as-selected')
+                options.value = cT;
+                options.selectedOptions[0].value = cT;
+                for (j=0; j<checked.length; j++){
+                    if (!checked[j].includes("'" + cT + "'")){
+                        portfolioBlocks[0].children[j].classList.add("hide");
+                    }
+                    else{
+                        portfolioBlocks[0].children[j].classList.remove("hide");
+                    }
+                }
+                portfolioRefresh(curLimit);
+            }
+        }
+
+    }
     
     // блок с фото сотрудников
     if (document.querySelectorAll(".js-team-container").length > 0)
@@ -977,41 +1141,42 @@ docReady(function() {
     // блок с рандомными проектами
     if (document.querySelectorAll(".js-randomcases-container").length > 0)
     {
-        let container = document.querySelector(".js-randomcases-container");
-        
-        for (i=0; i<4; i++)
-        {
-            let random = Math.floor(1 + Math.random() * container.children[0].childElementCount);
-            child = document.querySelector('.js-randomcases-container > .some-projects__list > .cases__case:nth-child(' + random + ')');
-            if (child)
-                child.remove();
+        if(document.querySelector('.some-projects__list')){
+            let container = document.querySelector(".js-randomcases-container");
+            for (let i=0; i<4; i++)
+            {
+                let random = Math.floor(1 + Math.random() * container.children[0].childElementCount);
+                let child = document.querySelector('.js-randomcases-container > .some-projects__list > .cases__case:nth-child(' + random + ')');
+                // portfolio
+                if (child)
+                    child.remove();
+            }
+            let cases = Array.prototype.slice.call(container.children[0].children);
+            let sliderCases = tns({
+                container: '.js-randomcases-container .some-projects__list',
+                items: 4,
+                gutter: 15,
+                responsive: {
+                    320: {
+                        items: 1,
+                        nav: true
+                    },
+                    640: {
+                        items: 2,
+                        nav: true
+                    },
+                    992: {
+                        items: 4,
+                        nav: false
+                    }
+                },
+                controls: false,
+                nav: false,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
         }
-        let cases = Array.prototype.slice.call(container.children[0].children);
-
-        let sliderCases = tns({
-            container: '.js-randomcases-container .some-projects__list',
-            items: 4,
-            gutter: 15,
-            responsive: {
-                320: {
-                    items: 1,
-                    nav: true
-                },
-                640: {
-                    items: 2,
-                    nav: true
-                },
-                992: {
-                    items: 4,
-                    nav: false
-                }
-            },
-            controls: false,
-            nav: false,
-            navPosition: 'bottom',
-            mouseDrag: true,
-            slideBy: 'page'
-        });
     }
 
     // аккордеон
