@@ -2063,7 +2063,6 @@ a.button{
 				align-items:flex-start;
 				width:40%;
 				line-height:1.2;
-				margin-right:20px;
 				position:relative;
 				padding-left:90px;
 				padding-right:30px;
@@ -2094,6 +2093,10 @@ a.button{
 					}
 				}
 			}
+			.button:first-child{
+				margin-right:20px;
+            }
+
 		}
     }
     &__video{
@@ -2145,6 +2148,106 @@ a.button{
         .case-stages__layout_var2 .problems__item_bg10{
             width:100%;
             padding-bottom:100%;
+        }
+    }
+}
+.projects {
+    .case2 {
+        background-color: $color-blue-dark!important;
+    }
+}
+.case2 {
+    &__kpiWrapper {
+        background-color: $color-blue-light!important;
+        .container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            // justify-content: center;
+            align-items: center;
+            padding: 40px 62px 40px 40px;
+        }
+        .circle{
+            // position: relative;
+            display: flex;
+            overflow: visible!important;
+            justify-content: center;
+            align-items: center;
+            &-about {
+                margin-bottom: 100px;
+                position: relative;
+                width: 100%;
+                &__animation {
+                    margin-bottom: 0%;
+                }
+            }
+            &-text {
+                // top: 75%;
+                align-self: center;
+                position: static;
+                transform: none!important;
+            }
+            &-pic {
+                width: 320px;
+                height: 320px;
+                background: url("img/icon-rotate4.png") 50% 50% no-repeat!important;
+            }
+        }
+        .circle-text__item_label {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            color: #fff;
+    }
+    }
+    .principles {
+        &__content{
+            margin-bottom: 0;
+            &_buttons {
+                margin: 60px 0 0px;
+                width: 100%;
+                display: flex;
+                .button{
+                        width:calc(50% - 10px);
+                        margin-top: 0;
+                }
+            }
+        }
+    }
+    .project{
+        &__review {
+            &_body {
+                .project__review_author-name {
+                    color: $color-blue-dark!important;
+                }
+            }
+            &_author {
+                &-name {
+                    color: #fff!important;
+                }
+                &-position {
+                    color: $color-blue-dark!important;
+                }
+            }
+            &_rubr {
+                font-size: 24px;
+                line-height: 130%;
+            }
+            &_top {
+                overflow: hidden;
+                min-height: 350px!important;
+                background-color: $color-grey-light!important;
+                color: $color-blue-dark!important;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                &-img {
+                    top: 0;
+                    transform: scale(1.05);
+                }
+            }
         }
     }
 }
