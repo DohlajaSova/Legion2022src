@@ -234,6 +234,41 @@
             margin-top:-43px;
         }
     }
+    .case2 {
+        .circle{
+            transform: scale(.5);
+            // width: 220px;
+            // height: 220px;
+            &-pic {
+                // width: 220px;
+                // height: 220px;
+            }
+        }
+        .project__tall {
+            padding-bottom: 150%!important;
+        }
+        .project{
+            &__review {
+                &_top {
+                    // padding-bottom:150%!important;
+                }
+            }
+        }
+        .principles {
+            &__content{
+                &_buttons {
+                    margin: 40px 0 60px;
+                    justify-content: space-between;
+                    .button {
+                        padding: 16px 20px 16px 48px;
+                    }
+                    ::before{
+                        left: 17px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
