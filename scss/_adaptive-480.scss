@@ -33,7 +33,7 @@
     .vacancies{
         margin-top: -42px;
         &__container{
-            padding:60px 0;
+            padding:60px 0 0 0;
         }
         &__list{
             &_item{
@@ -265,6 +265,88 @@
                     ::before{
                         left: 17px;
                     }
+                }
+            }
+        }
+    }
+    .vacancy{
+        // pointer-events: none;
+        max-height: 168px;  
+        padding-bottom: 108px;
+        transition: all 0.25s;
+        &__container{
+            background:url($img-path + "vacancy-bg.svg") top right no-repeat $color-grey-light;
+            max-height: 168px;
+            transition: all 0.25s;
+        }
+        &__title {
+            background:transparent!important;
+            height: auto!important;
+            &_icon {
+                transition: transform .25s;
+                margin-bottom: 20px;
+            }
+        }
+        &__body{
+            position:relative;
+            top:0;
+            border-radius:$border-radius;
+            background:transparent!important;
+            margin-top:0!important;
+            padding:10px 25px 25px!important;
+            color:$color-blue-dark!important;
+            height:100%;
+            font-size:16px;
+            display:flex;
+            flex-direction:column;
+            transition:top 0.5s step-end, height 0.5s step-end, background 0.5s step-end;
+            &_link{
+                margin-top:10px!important;
+                height: 46px;
+                padding: 14px 0px;
+                background: $color-blue-dark;
+                border-radius: 100px;
+                color: #fff!important;
+            }
+            &_item{
+                margin-bottom:0px!important;
+            }
+        }
+        &_send {        
+            .vacancy__body_item{
+                display: none;
+            }
+            .vacancy__container {
+                background: #fff;
+            }
+            .vacancy__body {
+                height: 46px;
+                padding: 0px 22px;
+            }
+        }
+        &:hover{
+            &__title{
+                // min-height:130px;
+                // background:url($img-path + "vacancy-bg.svg") top right no-repeat $color-grey-light;
+                // background-size:100% auto;
+                &_icon {
+                    margin-bottom: 20px;
+                }
+            }
+            &__body{
+                background:$color-white;
+                transition: none;
+            }
+        }
+    }
+    .cases__pagination{
+        &-arrows {
+            + .cases-slider__statics_dots {
+                display: block!important;
+                visibility: unset!important;
+                margin: -40px auto 20px auto;
+                + .cases__pagination-button{
+                    display: none;
                 }
             }
         }
