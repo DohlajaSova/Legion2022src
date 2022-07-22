@@ -79,6 +79,9 @@
                 &_buttons{
                     width:100%;
                     margin-top:0;
+                    .button{
+                        width:calc(50% - 20px);
+                    }
                 }
             }
         }
@@ -511,30 +514,6 @@
     //         padding: 150px 30px 50px;
     //     }
     // }
-    .case2 {
-        .project_tall{
-            padding-bottom: 100%!important;
-        }
-        &__kpiWrapper {
-            .project_tall {
-                padding-bottom: 100%;
-            }
-        }
-        .circle{
-            &-text {
-            }
-        }
-        .project__review_top{
-            min-height: 310px !important;
-        }
-        .principles {
-            &__content{
-                &_buttons {
-                    margin: 40px 0 60px;
-                }
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1082,15 +1061,6 @@
                 height: 7px;
                 left: -36px;
                 top: 17px;
-            }
-        }
-    }
-    .case2 {
-        .project{
-            &__review {
-                &_top {
-                    min-height: 250px!important;
-                }
             }
         }
     }
@@ -1806,16 +1776,6 @@
         .principles__content_text{
             padding-left:0 !important;
             margin-top:15px;
-        }
-    }
-    .case2 {
-        .project{
-            &__review {
-                &_top {
-                    min-height: 210px!important;
-                    padding-bottom: 42%!important;
-                }
-            }
         }
     }
 }
