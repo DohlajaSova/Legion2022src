@@ -156,16 +156,16 @@
       <div class="projects__panels projects__panels-client">
         <div class="project project_tall project_tall-client" >
           <div class="project__review_container">
-            <div class="project__review _5ka">
-              <div class="project__review_top project__review_top-client _5ka">
+            <div class="project__review dark">
+              <div class="project__review_top project__review_top-client light">
                 <img
-                  class="project__review_top-img _5ka"
+                  class="project__review_top-img light"
                   src="/assets/css/img/temp-author_babiy.png"
                   alt="Tele2"
                 />
-                <div class="project__review_rubr _5ka">Отзыв</div>
-                <h3 class="project__review_author-name _5ka">Павел<br>Бабий</h3>
-                <div class="project__review_author-position _5ka">
+                <div class="project__review_rubr dark">Отзыв</div>
+                <h3 class="project__review_author-name dark">Павел<br>Бабий</h3>
+                <div class="project__review_author-position dark">
                   начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
                 </div>
               </div>

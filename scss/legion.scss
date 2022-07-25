@@ -1987,6 +1987,9 @@ a.button {
 	&.bg_tele2 {
 		background: url($img-path + "cases-slider-bg_tele2.svg") center/cover no-repeat;
 	}
+	&.bg_alfa {
+		background: url($img-path + "cases-slider-bg_alfa.svg") center/cover no-repeat;
+	}
 }
 
 .cases-slider-info,
@@ -3318,7 +3321,7 @@ a.button {
 			flex-direction: column;
 			height: 100%;
 			border-radius: $border-radius;
-				&._5ka {
+				&.dark {
 					background-color: $color-grey-darkest;
 					color: $color-white;
 				}
@@ -3344,11 +3347,11 @@ a.button {
 					right: 0;
 				}
 
-				&._5ka {
+				&.light {
 					background-color: $color-grey-light;
 				}
 
-				&.tele2 {
+				&.dark {
 					background-color: $color-grey-darkest;
 				}
 
@@ -3357,7 +3360,7 @@ a.button {
 			&_rubr {
 				font-size: 24px;
 				margin: 40px 0 56px 40px;
-				&._5ka {
+				&.dark {
 					color: $color-blue-dark;
 				}
 			}
@@ -3380,11 +3383,11 @@ a.button {
 					font-size: 46px;
 					margin: 40px;
 
-					&._5ka {
+					&.dark {
 						color: $color-blue-dark;
 					}
 
-					&.tele2 {
+					&.light {
 						color: $color-white;
 					}
 				}
@@ -3394,7 +3397,7 @@ a.button {
 					max-width: 55%;
 					position: absolute;
 					left: 40px;
-					&._5ka {
+					&.dark {
 						color: $color-blue-dark;
 					}
 				}

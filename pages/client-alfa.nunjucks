@@ -1,0 +1,14 @@
+<!-- client.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Клиент - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/top-client-alfa.nunjucks" %}
+  {% include "partials/towel/cases-client.nunjucks" %}
+  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+  {% include "partials/towel/cases-client-more.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+  {# {% include "partials/towel/cases-random.nunjucks" %} #}
+{% endblock %}
