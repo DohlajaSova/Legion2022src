@@ -1981,7 +1981,9 @@ a.button {
 			text-align: center;
 		}
 	}
-
+	&.bg_5ka	{
+		background: url($img-path + "cases-slider-bg_5ka.svg") center/cover no-repeat;
+	}
 	&.bg_tele2 {
 		background: url($img-path + "cases-slider-bg_tele2.svg") center/cover no-repeat;
 	}
@@ -3315,6 +3317,11 @@ a.button {
 			display: flex;
 			flex-direction: column;
 			height: 100%;
+			border-radius: $border-radius;
+				&._5ka {
+					background-color: $color-grey-darkest;
+					color: $color-white;
+				}
 
 			&_container {
 				position: absolute;
@@ -3328,7 +3335,7 @@ a.button {
 				overflow: hidden;
 				color: $color-white;
 				position: relative;
-				min-height: 434px;
+				min-height: 350px;
 				flex-grow: 1;
 
 				&-img {
@@ -3337,9 +3344,12 @@ a.button {
 					right: 0;
 				}
 
+				&._5ka {
+					background-color: $color-grey-light;
+				}
+
 				&.tele2 {
 					background-color: $color-grey-darkest;
-					min-height: 350px;
 				}
 
 			}
@@ -3347,6 +3357,9 @@ a.button {
 			&_rubr {
 				font-size: 24px;
 				margin: 40px 0 56px 40px;
+				&._5ka {
+					color: $color-blue-dark;
+				}
 			}
 
 			&_body {
@@ -3367,6 +3380,10 @@ a.button {
 					font-size: 46px;
 					margin: 40px;
 
+					&._5ka {
+						color: $color-blue-dark;
+					}
+
 					&.tele2 {
 						color: $color-white;
 					}
@@ -3377,7 +3394,11 @@ a.button {
 					max-width: 55%;
 					position: absolute;
 					left: 40px;
+					&._5ka {
+						color: $color-blue-dark;
+					}
 				}
+
 			}
 
 		}

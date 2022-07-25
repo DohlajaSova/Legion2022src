@@ -15,15 +15,21 @@
     }
     .cases{
         &__case{
-            min-height:192px!important;
+            min-height:180px!important;
             &_info{
                 grid-column-end:initial;
                 width:44vw!important;
                 .cases__case_number{
                     font-size:32px;
+                    padding: 20px 20px 0;
                 }
                 .cases__case_name{
-                    font-size:9px;
+                    font-size:14px;
+                    padding: 10px 0 20px 20px;
+                }
+                .cases__case_desc{
+                    font-size:12px;
+                    padding:20px 0 20px 20px;
                 }
                 .cases__case_photo{
                     img{
@@ -83,6 +89,9 @@
                 &_top{
                     min-height:210px!important;
                     padding: 20px 30px;
+                    &-img._5ka {
+                        bottom: -17px;
+                    }
                 }
                 &_rubr{
                     font-size:14px;
@@ -95,6 +104,10 @@
                 &_author-position{
                     font-size:14px;
                     left:auto;
+                    &._5ka {
+                        max-width:60%;
+                        font-size:12px;
+                    }
                 }
                 &_body {
                     padding:20px 0 20px 30px;
