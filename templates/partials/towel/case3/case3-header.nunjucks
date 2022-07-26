@@ -1,0 +1,19 @@
+<div class="top top_case">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="/client.html">Клиент: Пятерочка</a></li>
+            <li><span>Рейтинг товаров</span></li>
+        </ul>
+        <h1>Приложение «Пятёрочка». <br>Рейтинг товаров</h1>
+        <div class="top__tags">
+            <span>#масштабированиепродукта</span>
+            <span>#retail</span>
+        </div>
+
+        <div class="top__image">
+            <img class="top__image-desktop" src="/assets/css/img/temp-5ka-top.jpg" alt="Приложение «Пятёрочка». Обратная связь">
+            <img class="top__image-tablet" src="/assets/css/img/temp-5ka-top768.jpg" alt="Приложение «Пятёрочка». Обратная связь">
+            {# <img class="top__image-mobile" src="/assets/css/img/temp-5ka-top480.jpg" alt="Приложение «Пятёрочка». Обратная связь"> #}
+        </div>
+    </div>
+</div>
