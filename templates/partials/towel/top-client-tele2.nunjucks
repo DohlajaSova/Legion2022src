@@ -1,0 +1,198 @@
+﻿<div class="client">
+  <div class="container">
+      <ul class="client__breadcrumbs breadcrumbs">
+        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
+        <li><span>Клиент: Tele2</span></li>
+      </ul>
+  </div>
+  
+  <h1 class="client__header">Tele2</h1>
+
+  <div class="client__present">
+    <img
+      class="client__present_desktop"
+      src="/assets/css/img/client-tele2-preview.jpg"
+      alt="Пятёрочка"
+    />
+    <img
+      class="client__present_mobile"
+      src="/assets/css/img/client-tele2-preview_mobile.jpg"
+      alt="Пятёрочка"
+    />
+  </div>
+    
+  <div class="container">    
+      <div class="client__info">
+        <div class="client__info_stats">
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Услуга</p>
+            <p class="client__info_stats-state__value">
+              Комплексная мобильная разработка
+            </p>
+          </div>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Сотрудничество</p>
+            <p class="client__info_stats-state__value">с 2015 года</p>
+          </div>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Работы</p>
+            <p class="client__info_stats-state__value">
+              Анализ, прототипирование, дизайн, разработка, контроль качества, поддержка
+            </p>
+          </div>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Кейсы/Команда</p>
+            <p class="client__info_stats-state__value">3</p>
+          </div>
+        </div>
+        <div class="client__info_text">
+          <p>
+            «Мой Tele2» — один из основных каналов коммуникации с абонентами мобильного оператора.
+            С помощью приложения пользователи могут управлять счётом, услугами и тарифами online.
+          </p>
+          <p>
+            В 2015 году мы выпустили первую версию приложения «Мой Tele2». Сегодня мы продолжаем наращивать функциональность приложения с сохранением его управляемости, быстродействия, удобства и доступности для пользователей.
+          </p>
+        </div>
+        <div class="cases__case cases__case_double">
+          <div class="cases-slider bg_tele2">
+            <div class="cases-slider__item active">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">15,5 <span>млн</span></h3>
+                <p>количество<br>пользователей обеих<br>платформ</p>
+              </div>
+            </div>
+            <div class="cases-slider__item">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">3 <span>млн</span></h3>
+                <p>
+                  активных<br>пользователей<br>в день
+                </p>
+              </div>
+            </div>
+            <div class="cases-slider__item">  
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">+18%</h3>
+                <p>
+                  прирост новых<br>пользователей<br>за 2021 год
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__statics js-cases-dots">
+            <div class="cases-slider__statics_dots">
+              <ul>
+                <li class="active"><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    
+  <div class="container">    
+      <div class="client__cases">
+        <h2 class="client__cases_header">
+          Связанные <em>кейсы</em>
+        </h2>
+        <div class="client__cases_wrapper">
+          <a href="/case-tele2-1.html" class="client__cases_block client__cases_block-tele2">
+            <div class="client__cases_block-name">Конструктор тарифов</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">сервисы</div>
+              <div class="client__cases_block-parts__feature">экосистема</div>
+            </div>
+          </a>
+          <div class="client__cases_block inactive">
+            <div class="client__cases_block-name">Управление связью</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">сервис Миа</div>
+              <div class="client__cases_block-parts__feature">интеграции</div>
+            </div>
+          </div>
+          <div class="client__cases_block inactive">
+            <div class="client__cases_block-name">Управление остатками ГБ, минут, SMS</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">маркет Tele2</div>
+              <div class="client__cases_block-parts__feature">центр управления</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="projects projects-client">
+    <div class="container">
+      <div class="projects__panels projects__panels-client">
+        <div class="project project_tall project_tall-client" >
+          <div class="project__review_container">
+            <div class="project__review light">
+              <div class="project__review_top project__review_top-client dark">
+                <img
+                  class="project__review_top-img"
+                  src="/assets/css/img/review-author_tele2.png"
+                  alt="Tele2"
+                />
+                <div class="project__review_rubr">Отзыв</div>
+                <h3 class="project__review_author-name light">Александр<br>Смердов</h3>
+                <div class="project__review_author-position light">
+                  руководитель направления<br>мобильных приложений Tele2
+                </div>
+              </div>
+              <div class="project__review_body project__review_body-client">
+                Совместно с e-legion на протяжении 7 лет мы активно работаем над мобильным приложением. Быть на передовой и задавать тренды в мобильной разработке — задача непростая, но мы стараемся быстро адаптироваться к реализации новых задач и предугадывать будущие тренды.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project client cases__case cases__case-client cases__case_info">
+          <div class="cases__case_container">
+            <span class="cases__case_number">№3</span>
+            <span class="cases__case_name"
+              >Рейтинг Рунета 2021<br>номинация<br>«Сервисы»</span
+            >
+            <a href="#" class="cases__case_desc">Подробнее &rarr;</a>
+            <span class="cases__case_photo">
+              <img
+                src="/assets/css/img/cases-premia.png"
+                alt="Конкурс «Рейтинг Рунета»"
+              />
+            </span>
+          </div>
+        </div>
+        <div class="project client cases__case cases__case-client cases__case_info cases__case-blue">
+          <div class="cases__case_container">                    
+            <span class="cases__case_number"></span>
+              <span class="cases__case_name"
+                >Комплексная<br>разработка<br>digital-продуктов</span
+              >
+              <a href="#" class="cases__case_desc">Подробнее об услуге &rarr;</a>
+          </div>
+        </div>
+        <div class="project project_wide-client">
+          <a
+            href="#"
+            target="_blank"
+            class="project__article project__article_small project-article project__article_small-client"
+          >
+            <div class="project-article_top">
+              <img
+                class="project-article_top-img project-article_top-img-client"
+                src="/assets/css/img/cases-tele2-phone.png"
+                alt=""
+              />
+            </div>
+            <div class="project-article_link">
+              <div class="project-article_link-title">
+                Tele2 воплотили идеи клиентов на площадке для продажи услуг
+              </div>
+              <div class="project-article_link-arrow">Смотреть статью →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
