@@ -59,13 +59,6 @@
                 <h3 class="h2">+2 <span>млн</span></h3>
                 <p>прирост пользователей<br />за&nbsp;2021&nbsp;год</p>
               </div>
-              <div class="cases-slider__item_project">
-                <div class="cases-slider__item_project-photo">
-                  <a href="/case1.html"
-                    ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
-                  /></a>
-                </div>
-              </div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -75,13 +68,6 @@
                   на&nbsp;3%&nbsp;(12.2021)
                 </p>
               </div>
-              <div class="cases-slider__item_project">
-                <div class="cases-slider__item_project-photo">
-                  <a href="/case1.html"
-                    ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
-                  /></a>
-                </div>
-              </div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -90,13 +76,6 @@
                   оценок<br />от пользователей<br />в&nbsp;месяц на&nbsp;купленные
                   товары
                 </p>
-              </div>
-              <div class="cases-slider__item_project">
-                <div class="cases-slider__item_project-photo">
-                  <a href="/case1.html"
-                    ><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"
-                  /></a>
-                </div>
               </div>
             </div>
           </div>
