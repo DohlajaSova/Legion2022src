@@ -2252,6 +2252,55 @@ a.button{
     }
 }
 
+.case3 {
+    &__content {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, calc(50% - 10px));
+        grid-template-rows: 650px;
+        &_card {
+            display: flex;
+            flex-flow: column nowrap;
+            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
+            background-size: cover;
+            color: #fff;
+            padding-top: 40px;
+            border-radius: 45px;
+            > * {
+                padding: 0 40px;
+                line-height: 130%;
+            }
+            &-tip {
+                font-size: 24px;
+                margin-bottom: 70px;
+            }
+            &-main {
+                font-size: 46px;
+                margin-bottom: 10px;
+            }
+            &-transition {
+                font-size: 16px;
+                color: #fff!important;
+                text-decoration: none!important;
+                cursor: pointer;
+                margin-bottom: 40px;
+            }
+            &-accent {
+                font-size: 74px;
+            }
+            // &-foreground {
+            //     margin-top: auto;
+            //     width: 100%;
+            // }
+        }
+        &_card:first-child{
+            background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
+            background-size: contain;
+        }
+    }
+}
+
 .who-we-are{
     &__content{
 		display:flex;
