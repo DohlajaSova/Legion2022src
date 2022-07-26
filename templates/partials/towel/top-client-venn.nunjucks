@@ -10,20 +10,28 @@
 
   <div class="client__present">
     <img
-      class="client__present_desktop"
+      class="client__present_desktop venn"
       src="/assets/css/img/client-venn-preview.jpg"
       alt="Venn"
     />
     <img
-      class="client__present_mobile"
+      class="client__present_mobile venn"
       src="/assets/css/img/client-venn-preview_mobile.jpg"
       alt="Venn"
     />
     <img
-      class="client__present-play"
+      class="client__present-play venn"
       src="/assets/css/img/play.fill.svg"
     />
-    <video class="client__present-video" preload="auto" playsinline autoplay loop muted>
+    <video
+      class="client__present-video"
+      poster="/assets/css/img/client-venn-preview.jpg"
+      preload="auto"
+      playsinline
+      autoplay
+      loop
+      muted
+    >
       <source src="/assets/css/img/venn.mp4" type="video/mp4">
     </video>
   </div>
@@ -100,7 +108,7 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <a href="/case1.html" class="client__cases_block">
+          <a href="/case-venn.html" class="client__cases_block client__cases_block-venn">
             <div class="client__cases_block-name">Профиль пользователя</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">режимы доступа</div>

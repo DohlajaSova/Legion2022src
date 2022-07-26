@@ -5463,7 +5463,9 @@ a.button {
 
 		&>img {
 			width: 100%;
-			display: none;
+			&.venn {
+				display: none;
+			}
 		}
 
 		&_mobile {
@@ -5633,6 +5635,11 @@ a.button {
 
 		&_block-tele2:first-child:hover {
 			cursor: url($img-path + "case-tele2.png"), auto;
+			padding-left: 40px;
+		}
+
+		&_block-venn:first-child:hover {
+			cursor: url($img-path + "cursor-client-venn.png"), auto;
 			padding-left: 40px;
 		}
 

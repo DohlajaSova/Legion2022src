@@ -6,7 +6,7 @@
 
   {% include "partials/towel/top-client-alfa.nunjucks" %}
   {% include "partials/towel/cases-client.nunjucks" %}
-  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+  {% include "partials/towel/feedback-business-compact.nunjucks" %}
   {% include "partials/towel/cases-client-more.nunjucks" %}
 
   {% include "partials/popup-feedback.nunjucks" %}
