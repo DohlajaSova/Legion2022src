@@ -1,0 +1,198 @@
+﻿<div class="client">
+  <div class="container">
+      <ul class="client__breadcrumbs breadcrumbs">
+        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
+        <li><span>Клиент: Venn</span></li>
+      </ul>
+  </div>
+  
+  <h1 class="client__header">Venn</h1>
+
+  <div class="client__present">
+    <img
+      class="client__present_desktop"
+      src="/assets/css/img/client-venn-preview.jpg"
+      alt="Venn"
+    />
+    <img
+      class="client__present_mobile"
+      src="/assets/css/img/client-venn-preview_mobile.jpg"
+      alt="Venn"
+    />
+    <img
+      class="client__present-play"
+      src="/assets/css/img/play.fill.svg"
+    />
+    <video class="client__present-video" preload="auto" playsinline autoplay loop muted>
+      <source src="/assets/css/img/venn.mp4" type="video/mp4">
+    </video>
+  </div>
+    
+  <div class="container">    
+      <div class="client__info">
+        <div class="client__info_stats">
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Услуга</p>
+            <p class="client__info_stats-state__value">
+              Масштабирование продукта
+            </p>
+          </div>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Сотрудничество</p>
+            <p class="client__info_stats-state__value">с 2019 года</p>
+          </div>
+          <div class="client__info_stats-state">
+            <p class="client__info_stats-state__prop">Работы</p>
+            <p class="client__info_stats-state__value">
+              Анализ, разработка, контроль качества, поддержка
+            </p>
+          </div>
+        </div>
+        <div class="client__info_text">
+          <p>
+            Friendr AS — норвежский стартап по созданию мобильного приложения для поиска друзей. Cервис помогает находить единомышленников и объединять людей на основе общих интересов, ценностей и предпочтений по всему миру.
+          </p>
+          <p>
+            Команда e-legion подключилась к уже запущенному проекту для создания бэкенда, новой архитектуры и функциональности.
+          </p>
+        </div>
+        <div class="cases__case cases__case_double">
+          <div class="cases-slider bg_venn">
+            <div class="cases-slider__item active">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">+ 11к</h3>
+                <p>прирост новых пользователей за 6 месяцев</p>
+              </div>
+            </div>
+            <div class="cases-slider__item">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">40%</h3>
+                <p>
+                  прирост новых пользователей за 6 месяцев
+                </p>
+              </div>
+            </div>
+            <div class="cases-slider__item">
+              <div class="cases-slider__item_nomination">
+                <h3 class="h2">7 <span>мин</span></h3>
+                <p>
+                  средняя продолжительность сессии пользователя
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__statics js-cases-dots">
+            <div class="cases-slider__statics_dots">
+              <ul>
+                <li class="active"><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    
+  <div class="container">    
+      <div class="client__cases">
+        <h2 class="client__cases_header">
+          Связанные <em>кейсы</em>
+        </h2>
+        <div class="client__cases_wrapper">
+          <a href="/case1.html" class="client__cases_block">
+            <div class="client__cases_block-name">Профиль пользователя</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">режимы доступа</div>
+              <div class="client__cases_block-parts__feature">push-уведомления</div>
+            </div>
+          </a>
+          <div class="client__cases_block inactive">
+            <div class="client__cases_block-name">Поиск друзей</div>
+            <div class="client__cases_block-parts">
+              <div class="client__cases_block-parts__feature">наджи и лайки</div>
+              <div class="client__cases_block-parts__feature">проверка совместимости</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="projects projects-client">
+    <div class="container">
+      <div class="projects__panels projects__panels-client">
+        <div class="project project_tall project_tall-client" >
+          <div class="project__review_container">
+            <div class="project__review dark">
+              <div class="project__review_top project__review_top-client light">
+                <img
+                  class="project__review_top-img light"
+                  src="/assets/css/img/review-author_venn.png"
+                  alt="Tele2"
+                />
+                <div class="project__review_rubr dark">Отзыв</div>
+                <h3 class="project__review_author-name dark">Jesper<br>Algaard</h3>
+                <div class="project__review_author-position dark">
+                  CEO Friendr AS
+                </div>
+              </div>
+              <div class="project__review_body project__review_body-client">
+                In my opinion e-legion is a serious and professional development company, with focus on high quality and with an eye for details. Easy to communicate with, and not afraid to communicate their views, even when it means that we are wrong. I can only give e-legion my highest recommendations.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project project_wide-client">
+          <a
+            href="#"
+            target="_blank"
+            class="project__article project__article_small project-article project__article_small-client"
+          >
+            <div class="project-article_top">
+              <img
+                class="project-article_top-img project-article_top-img-client"
+                src="/assets/css/img/case-venn.jpg"
+                alt=""
+              />
+            </div>
+            <div class="project-article_link">
+              <div class="project-article_link-title">
+                Connecting new friendships \& shared activities nearby
+              </div>
+              <div class="project-article_link-arrow">Смотреть статью →</div>
+            </div>
+          </a>
+        </div>
+        <div class="project client cases__case cases__case-client cases__case_info">
+          <div class="cases__case_container bg_venn">
+            <span class="cases__case_number"></span>
+            <span class="cases__case_name"
+              >
+              <p>Международные проекты</p>
+              Норвежский стартап, которым пользуются во всём мире</span
+            >
+            <span class="cases__case_photo">
+              <img
+                src="/assets/css/img/cases-premia-flag.png"
+                alt=""
+              />
+            </span>
+          </div>
+        </div>
+        <div class="project client cases__case cases__case-client cases__case_info cases__case-blue">
+          <div class="cases__case_container">                    
+            <span class="cases__case_number"></span>
+              <span class="cases__case_name"
+                >Масштабирование продукта</span
+              >
+              <a href="#" class="cases__case_desc">Подробнее об услуге &rarr;</a>
+          </div>
+        </div>
+        <div class="project client" style="background: transparent">
+				<a href="#feedback" class=" " style="padding: 0; height: 100%;">
+			</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

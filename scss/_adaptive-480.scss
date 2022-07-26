@@ -26,6 +26,9 @@
                 .cases__case_name{
                     font-size:14px;
                     padding: 10px 0 20px 20px;
+                    p {
+                        font-size: 18px;
+                    }
                 }
                 .cases__case_desc{
                     font-size:12px;
@@ -171,6 +174,14 @@
             font-size: 9px;
             line-height: 130%;
             margin-bottom: 40px;
+        }
+        &__present {
+            min-height: 360px;
+            &-play {
+                width: 12vw!important;
+                left: 44vw!important;
+                top: 28vw;
+            }
         }
         &__info {
             & > .cases__case {
