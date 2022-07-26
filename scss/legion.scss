@@ -707,263 +707,6 @@ a.button {
 	}
 }
 
-.projects {
-    .case2 {
-        background-color: $color-blue-dark!important;
-    }
-}
-.case2 {
-    &__kpiWrapper {
-        background-color: $color-blue-light!important;
-        .container {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-flow: column nowrap;
-            // justify-content: center;
-            align-items: center;
-            padding: 40px 62px 40px 40px;
-        }
-        .circle{
-            // position: relative;
-            display: flex;
-            overflow: visible!important;
-            justify-content: center;
-            align-items: center;
-            &-about {
-                margin-bottom: 100px;
-                position: relative;
-                width: 100%;
-                &__animation {
-                    margin-bottom: 0%;
-                }
-            }
-            &-text {
-                // top: 75%;
-                align-self: center;
-                position: static;
-                transform: none!important;
-            }
-            &-pic {
-                width: 320px;
-                height: 320px;
-                background: url("img/icon-rotate4.png") 50% 50% no-repeat!important;
-            }
-        }
-        .circle-text__item_label {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            color: #fff;
-    }
-    }
-    .principles {
-        &__content{
-            margin-bottom: 0;
-            &_buttons {
-                margin: 60px 0 0px;
-                width: 100%;
-                display: flex;
-                .button{
-                        width:calc(50% - 10px);
-                        margin-top: 0;
-                }
-            }
-        }
-    }
-    .project{
-        &__review {
-            &_body {
-                .project__review_author-name {
-                    color: $color-blue-dark!important;
-                }
-            }
-            &_author {
-                &-name {
-                    color: #fff!important;
-                }
-                &-position {
-                    color: $color-blue-dark!important;
-                }
-            }
-            &_rubr {
-                font-size: 24px;
-                line-height: 130%;
-            }
-            &_top {
-                overflow: hidden;
-                min-height: 350px!important;
-                background-color: $color-grey-light!important;
-                color: $color-blue-dark!important;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-between;
-                &-img {
-                    top: 0;
-                    transform: scale(1.05);
-                }
-            }
-        }
-    }
-}
-
-.case3 {
-    &__content {
-        display: grid;
-        row-gap: 20px;
-        column-gap: 20px;
-        grid-template-columns: repeat(2, calc(50% - 10px));
-        grid-template-rows: 650px;
-        &_card {
-            display: flex;
-            flex-flow: column nowrap;
-            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
-            background-size: cover;
-            color: #fff;
-            padding-top: 40px;
-            border-radius: 45px;
-            > * {
-                padding: 0 40px;
-                line-height: 130%;
-            }
-            &-tip {
-                font-size: 24px;
-                margin-bottom: 70px;
-            }
-            &-main {
-                font-size: 46px;
-                margin-bottom: 10px;
-            }
-            &-transition {
-                font-size: 16px;
-                color: #fff!important;
-                text-decoration: none!important;
-                cursor: pointer;
-                margin-bottom: 40px;
-            }
-            &-accent {
-                font-size: 74px;
-            }
-            // &-foreground {
-            //     margin-top: auto;
-            //     width: 100%;
-            // }
-        }
-        &_card:first-child{
-            background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
-            background-size: contain;
-        }
-    }
-}
-
-.who-we-are{
-    &__content{
-		display:flex;
-        justify-content:space-between;
-        margin-bottom:60px;
-        flex-wrap:wrap;
-        h2{
-            color: $color-blue-dark;
-            width:48%;
-            em{
-                color:$color-blue-light;
-                font-style:normal;
-                white-space:nowrap;
-            }
-        }
-        &_text{
-            width:50%;
-            padding-right:4%;
-            margin-bottom:90px;
-            *:last-child{
-                margin-bottom:0;
-            }
-        }
-        p{
-            font:$text1;
-            margin-bottom:32px;
-        }
-    }
-    &__widget{
-        display:grid;
-		width:100%;
-        grid-gap: 17px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-bottom: 89px;
-        &_item{
-            background-color:$color-grey-light;
-            border-radius:$border-radius;
-            position:relative;
-            &.double{
-                grid-row-end: span 2;
-                grid-column-end: span 2;
-                height: 0;
-                padding-bottom: 100%;
-            }
-        }
-		&_container{
-			position:absolute;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
-		}
-		.vacancies{
-			height:100%;
-			background-color:transparent;
-			&__list{
-				height:100%;
-			}
-			.vacancy{
-				width:100%;
-			}
-		}
-		.problems__item{
-			width:100%;
-			padding:30px 30px calc(100% - 30px);
-			h3{
-				font-size:24px;
-				width:100%;
-			}
-		}
-		.problems__more{
-			left:30px;
-			bottom:40px;
-            line-height:80px;
-			&::before{
-				margin-top:2px;
-			}
-			&::after{
-				top:53px;
-			}
-		}
-		.cases__case{
-			width:100%;
-			padding-bottom:100%;
-		}
-        .cases__block{
-            flex-wrap:wrap;
-            justify-content:center;
-            padding-top:3%;
-            .cases__case{
-                width:44%;
-                padding-bottom:44%;
-                background-color:$color-white;
-                margin:1.5%;
-                &_name{
-                    height:53px;
-                }
-                &:hover{
-                    .cases__case_contents{
-                        top:-80px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 .select {
 	position: relative;
 
@@ -1101,9 +844,6 @@ a.button {
 			left: calc(50% - 13px);
 		}
 	}
-
-	&.header_transparent {}
-
 	.dummy & {
 		background-color: transparent;
 		padding-bottom: 40px;
@@ -1660,7 +1400,6 @@ a.button {
 				margin: 18px 0 0 0;
 				transition: width 0.7s, height 0.7s, margin-left 0.7s;
 			}
-
 			&::after {
 				content: "";
 				float: right;
@@ -1993,7 +1732,7 @@ a.button {
 			.cases__case_number {
 				display: block;
 				position: static;
-				color: $color-blue-dark;
+				color: $color-grey-dark;
 				font-size: 74px;
 				font-weight: 300;
 				padding: 20px 30px 14px 30px;
@@ -2003,8 +1742,8 @@ a.button {
 			.cases__case_name {
 				display: block;
 				width: 100%;
-				color: $color-blue-dark;
-				font-size: 24px;
+				color: $color-black;
+				font-size: 16px;
 				padding: 0 60px 0 30px;
 				text-align: left;
 				p {
@@ -2015,10 +1754,10 @@ a.button {
 
 			.cases__case_photo {
 				position: absolute;
-				right: 0;
+				left: 0;
 				bottom: 0;
 				right: 0;
-				display: inline;
+				display: none;
 				text-align: right;
 				padding: 0 20px 20px 0;
 				font-size: 0;
@@ -2033,7 +1772,7 @@ a.button {
 				padding: 0 75px 20px 30px;
 				text-decoration: none;
 				text-transform: none;
-				color: $color-grey-dark;
+				color: $color-black;
 				font-size: 16px;
 				line-height: 130%;
 			}
@@ -2794,6 +2533,105 @@ a.button {
 	}
 }
 
+.projects {
+    .case2 {
+        background-color: $color-blue-dark!important;
+    }
+}
+.case2 {
+    &__kpiWrapper {
+        background-color: $color-blue-light!important;
+        .container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            // justify-content: center;
+            align-items: center;
+            padding: 40px 62px 40px 40px;
+        }
+        .circle{
+            // position: relative;
+            display: flex;
+            overflow: visible!important;
+            justify-content: center;
+            align-items: center;
+            &-about {
+                margin-bottom: 100px;
+                position: relative;
+                width: 100%;
+                &__animation {
+                    margin-bottom: 0%;
+                }
+            }
+            &-text {
+                // top: 75%;
+                align-self: center;
+                position: static;
+                transform: none!important;
+            }
+            &-pic {
+                width: 320px;
+                height: 320px;
+                background: url("img/icon-rotate4.png") 50% 50% no-repeat!important;
+            }
+        }
+        .circle-text__item_label {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            color: #fff;
+    }
+    }
+.case3 {
+    &__content {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, calc(50% - 10px));
+        grid-template-rows: 650px;
+        &_card {
+            display: flex;
+            flex-flow: column nowrap;
+            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
+            background-size: cover;
+            color: #fff;
+            padding-top: 40px;
+            border-radius: 45px;
+           >* {
+                padding: 0 40px;
+                line-height: 130%;
+            }
+            &-tip {
+                font-size: 24px;
+                margin-bottom: 70px;
+            }
+            &-main {
+                font-size: 46px;
+                margin-bottom: 10px;
+            }
+            &-transition {
+                font-size: 16px;
+                color: #fff!important;
+                text-decoration: none!important;
+                cursor: pointer;
+                margin-bottom: 40px;
+            }
+            &-accent {
+                font-size: 74px;
+            }
+            // &-foreground {
+            //     margin-top: auto;
+            //     width: 100%;
+            // }
+        }
+        &_card:first-child{
+            background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
+            background-size: contain;
+        }
+    }
+}
 .who-we-are {
 	&__content {
 		display: flex;
@@ -3491,7 +3329,7 @@ a.button {
 		}
 
 		&_rubr {
-			font-size: 24px;
+            font-size:16px;
 			margin-bottom: 56px;
 		}
 
@@ -3501,6 +3339,7 @@ a.button {
 		}
 
 		&_author {
+            padding:73px 43px 55px;
 			&-img {
 				float: right;
 				margin-left: 20px;
@@ -3550,21 +3389,17 @@ a.button {
 			grid-template-rows: 1fr 1fr;
 		}
 	}
-
-	.project {
-		background-color: $color-grey-light;
-		border-radius: $border-radius;
-		position: relative;
-
-		&-with-slider {
-			padding-bottom: 49.3333%;
+    .project{
+        background-color:$color-grey-light;
+        border-radius:$border-radius;
+        position:relative;
+        &-with-slider{
+            padding-bottom:49.3333%;
 		}
-
-		&_tall {
-			grid-row-end: span 2;
-			height: 100%;
-			padding-bottom: 100%;
-
+        &_tall{
+            grid-row-end:span 2;
+            height:100%;
+            padding-bottom:100%;
 			&-client {
 				padding-bottom: calc(100% + 17px);
 				// grid-column-end: span 2;
@@ -3604,7 +3439,8 @@ a.button {
 				overflow: hidden;
 				color: $color-white;
 				position: relative;
-				min-height: 350px;
+                padding:44px 41px;
+                min-height:434px;
 				flex-grow: 1;
 
 				&-img {
@@ -3624,8 +3460,8 @@ a.button {
 			}
 
 			&_rubr {
-				font-size: 24px;
-				margin: 40px 0 56px 40px;
+                font-size:16px;
+                margin-bottom:56px;
 				&.dark {
 					color: $color-blue-dark;
 				}
@@ -3659,8 +3495,9 @@ a.button {
 				}
 
 				&-position {
-					font-size: 24px;
-					max-width: 55%;
+					font-size: 16px;
+                    color:$color-grey-dark;
+					max-width: 45%;
 					position: absolute;
 					left: 40px;
 					&.dark {
@@ -5918,6 +5755,261 @@ a.button {
 			opacity: 1;
 		}
 	}
+}
+
+.projects {
+    .case2 {
+        background-color: $color-blue-dark!important;
+    }
+}
+.case2 {
+    &__kpiWrapper {
+        background-color: $color-blue-light!important;
+        .container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            // justify-content: center;
+            align-items: center;
+            padding: 40px 62px 40px 40px;
+        }
+        .circle{
+            // position: relative;
+            display: flex;
+            overflow: visible!important;
+            justify-content: center;
+            align-items: center;
+            &-about {
+                margin-bottom: 100px;
+                position: relative;
+                width: 100%;
+                &__animation {
+                    margin-bottom: 0%;
+                }
+            }
+            &-text {
+                // top: 75%;
+                align-self: center;
+                position: static;
+                transform: none!important;
+            }
+            &-pic {
+                width: 320px;
+                height: 320px;
+                background: url("img/icon-rotate4.png") 50% 50% no-repeat!important;
+            }
+        }
+        .circle-text__item_label {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            color: #fff;
+    }
+}
+    .principles {
+        &__content{
+            margin-bottom: 0;
+            &_buttons {
+                margin: 60px 0 0px;
+                width: 100%;
+                display: flex;
+                .button{
+                        width:calc(50% - 10px);
+                        margin-top: 0;
+                }
+            }
+        }
+    }
+    .project{
+        &__review {
+            &_body {
+                .project__review_author-name {
+                    color: $color-blue-dark!important;
+                }
+            }
+            &_author {
+                &-name {
+                    color: #fff!important;
+                }
+                &-position {
+                    color: $color-blue-dark!important;
+                }
+            }
+            &_rubr {
+                font-size: 24px;
+                line-height: 130%;
+            }
+            &_top {
+                overflow: hidden;
+                min-height: 350px!important;
+                background-color: $color-grey-light!important;
+                color: $color-blue-dark!important;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                &-img {
+                    top: 0;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+.case3 {
+    &__content {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, calc(50% - 10px));
+        grid-template-rows: 650px;
+        &_card {
+            display: flex;
+            flex-flow: column nowrap;
+            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
+            background-size: cover;
+            color: #fff;
+            padding-top: 40px;
+            border-radius: 45px;
+            > * {
+                padding: 0 40px;
+                line-height: 130%;
+            }
+            &-tip {
+                font-size: 24px;
+                margin-bottom: 70px;
+            }
+            &-main {
+                font-size: 46px;
+                margin-bottom: 10px;
+            }
+            &-transition {
+                font-size: 16px;
+                color: #fff!important;
+                text-decoration: none!important;
+                cursor: pointer;
+                margin-bottom: 40px;
+            }
+            &-accent {
+                font-size: 74px;
+            }
+            // &-foreground {
+            //     margin-top: auto;
+            //     width: 100%;
+            // }
+        }
+        &_card:first-child{
+            background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
+            background-size: contain;
+        }
+    }
+}
+.who-we-are{
+    &__content{
+		display:flex;
+        justify-content:space-between;
+        margin-bottom:60px;
+        flex-wrap:wrap;
+        h2{
+            color: $color-blue-dark;
+            width:48%;
+            em{
+                color:$color-blue-light;
+                font-style:normal;
+                white-space:nowrap;
+            }
+        }
+        &_text{
+            width:50%;
+            padding-right:4%;
+            margin-bottom:90px;
+            *:last-child{
+                margin-bottom:0;
+            }
+        }
+        p{
+            font:$text1;
+            margin-bottom:32px;
+        }
+    }
+    &__widget{
+        display:grid;
+		width:100%;
+        grid-gap: 17px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 89px;
+        &_item{
+            background-color:$color-grey-light;
+            border-radius:$border-radius;
+            position:relative;
+            &.double{
+                grid-row-end: span 2;
+                grid-column-end: span 2;
+                height: 0;
+                padding-bottom: 100%;
+            }
+        }
+		&_container{
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.vacancies{
+			height:100%;
+			background-color:transparent;
+			&__list{
+				height:100%;
+			}
+			.vacancy{
+				width:100%;
+			}
+		}
+		.problems__item{
+			width:100%;
+			padding:30px 30px calc(100% - 30px);
+			h3{
+				font-size:24px;
+				width:100%;
+			}
+		}
+		.problems__more{
+			left:30px;
+			bottom:40px;
+            line-height:80px;
+			&::before{
+				margin-top:2px;
+			}
+			&::after{
+				top:53px;
+			}
+		}
+		.cases__case{
+			width:100%;
+			padding-bottom:100%;
+		}
+        .cases__block{
+            flex-wrap:wrap;
+            justify-content:center;
+            padding-top:3%;
+            .cases__case{
+                width:44%;
+                padding-bottom:44%;
+                background-color:$color-white;
+                margin:1.5%;
+                &_name{
+                    height:53px;
+                }
+                &:hover{
+                    .cases__case_contents{
+                        top:-80px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .client~.feedback {
