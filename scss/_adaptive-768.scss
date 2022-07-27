@@ -525,6 +525,11 @@
         }
         .circle{
             &-text {
+                &__item {
+                    &_label {
+                        font-size: 28px;
+                    }
+                }
             }
         }
         .project__review_top{
