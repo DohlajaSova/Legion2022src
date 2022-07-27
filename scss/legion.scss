@@ -3392,8 +3392,8 @@ a.button {
 		}
 
 		&_rubr {
-            font-size:16px;
-			margin-bottom: 56px;
+            font-size:24px;
+			margin: 40px 0 56px 40px;
 		}
 
 		&_body {
@@ -3523,8 +3523,8 @@ a.button {
 			}
 
 			&_rubr {
-                font-size:16px;
-                margin-bottom:56px;
+                font-size:24px;
+                margin: 40px 0 56px 40px;
 				&.dark {
 					color: $color-blue-dark;
 				}
@@ -3558,9 +3558,9 @@ a.button {
 				}
 
 				&-position {
-					font-size: 16px;
-                    color:$color-grey-dark;
-					max-width: 45%;
+					font-size: 24px;
+                    color:$color-blue-dark;
+					max-width: 55%;
 					position: absolute;
 					left: 40px;
 					&.dark {
@@ -5841,10 +5841,10 @@ a.button {
         }
         &_author {
             &-name {
-                color: #fff!important;
+                color: #fff;
             }
             &-position {
-                color: $color-blue-dark!important;
+                color: $color-blue-dark;
             }
         }
         &_rubr {
