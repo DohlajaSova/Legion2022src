@@ -125,6 +125,15 @@
             margin-top:10px;
         }
     }
+    .case2 {
+        .project{
+            &__review {
+                &_top {
+                    min-height: 300px!important;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -385,6 +394,15 @@
     }
     .case-stages .principles{
         margin-bottom: 30px;
+    }
+    .case2 {
+        .project{
+            &__review {
+                &_top {
+                    min-height: 250px!important;
+                }
+            }
+        }
     }
 }
 
@@ -745,6 +763,21 @@
             padding:0 0 49.2%;
         }
     }
+    .case2 {
+        .principles__content_text{
+            padding-left:0px!important;
+        }
+        .project{
+            &__review {
+                &_author {
+                    &-name {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -864,6 +897,18 @@
                 .problems__item{
                     margin-bottom:0;
                     height:100%;
+                }
+            }
+        }
+    }
+    .case2 {
+        .project_tall{
+            padding-bottom: 60%!important;
+        }
+        .project{
+            &__review {
+                &_top {
+                    min-height: 310px!important;
                 }
             }
         }
@@ -1544,6 +1589,67 @@
     .case-stages__layout_var1.problems__item,
     .case-stages__layout_var2.problems__item{
         padding:0;
+    }
+    .case2 .projects_case .projects__panels{
+            flex-flow: column nowrap;
+        }
+        .projects {
+
+            .project_tall {
+                width: 100%!important;
+            }
+        }
+        .project{
+            &__review{
+                &_rubr{
+                }
+                &_body{
+                }
+                &_top{
+                }
+                &_author{
+                    &-name{
+                        font-size:18px;
+                    &-position{
+                    }
+                    &-img{
+                    }
+                }
+            }
+        }
+    }
+    .case2 {
+        &__kpiWrapper {
+            padding-bottom: 64.2%!important;
+        }
+        .circle{
+            // position: relative;
+            // overflow: visible!important;
+            // &-about {
+            //     margin-bottom: 100px;
+            //     position: relative;
+            //     width: 100%;
+            // }
+            &-text {
+                }
+            &-pic {
+                left: calc(50% - 160px);
+                // width: 344px;
+                // height: 344px;
+            }
+        }
+        .principles {
+            &__content{
+                &_buttons {
+                    margin-top: 40px;
+                    .button{
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
     }
 }
 

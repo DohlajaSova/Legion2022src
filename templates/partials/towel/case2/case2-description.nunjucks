@@ -1,0 +1,19 @@
+<div class="principles principles_case case2">
+    <div class="container">
+        <div class="principles__content">
+            <div class="principles__content_head">
+                <h2>Улучшаем <br>сервис вместе</h2>
+            </div>
+            <div class="principles__content_text">
+                <p>Мы разработали продукт «Шпионский клуб» внутри мобильного приложения «Пятёрочка» для&nbsp;автоматизации процесса проверки контроля качества магазинов.</p>
+                
+                <p>«Шпионский клуб» — уникальный сервис проверки магазинов покупателями за&nbsp;вознаграждение в&nbsp;виде бонусных баллов.</p>
+
+                <div class="principles__content_buttons store">
+                    <a href="https://apps.apple.com/ru/app/пятёрочка/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
+                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

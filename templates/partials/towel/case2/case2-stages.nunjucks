@@ -1,0 +1,118 @@
+<div class="case2 case-stages">
+
+    <div class="problems problems_case">
+        <div class="container">
+            <div class="problems__item problems__item_bg9">
+                <h3>Что сделали</h3>
+                <ul class="case-stages__list">
+                    <li>Выстроили процесс от&nbsp;получения запроса на&nbsp;проверку до&nbsp;отправки выявленных нарушений в&nbsp;магазины</li>
+                    <li>Сервис «Шпионского клуба» вынесли из&nbsp;Монолита и&nbsp;оптимизировали, что позволило ускорить загрузку экранов в&nbsp;16&nbsp;раз и&nbsp;победить потерю контента, загружаемого агентами</li>
+                    <li>Внедрили автоматический анализ дубликатов фотографий, позволяющий выявлять мошенников и&nbsp;ограничивать им&nbsp;доступ в&nbsp;сервис</li>
+                </ul>
+            </div>
+            <div class="problems__item problems__item_bg10">
+                <div class="problems__item_container">
+                    <div class="problems__item_contents problems__item_contents-slider">
+                        <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone5.jpg" alt="Пятёрочка">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone6.jpg" alt="Пятёрочка">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="problems-slider-groups__statics">
+                    <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                        <li></li>
+                        <li></li>
+                    </ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="principles__content">
+                <div class="principles__content_head">
+                    <h3>Агенты в&nbsp;роли «тайных покупателей»</h3>
+                </div>
+                <div class="principles__content_text">
+                    <p>Агенты «Шпионского клуба» выступают в&nbsp;роли «тайного покупателя» и&nbsp;проверяют магазины на&nbsp;предмет свежести продуктов, чистоты и&nbsp;порядка. </p>
+                    <p>Задания постоянно обновляются, адаптируясь под конкретные задачи бизнеса в&nbsp;каждом регионе.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects projects_case">
+        <div class="container">
+             {# projects__panels_flexible #}
+            <div class="projects__panels">
+                <div class="project project_tall case2">
+                    <div class="project__review_container">
+                        <div class="project__review">
+                            <div class="project__review_top">
+                                <img class="project__review_top-img" src="/assets/css/img/temp-author4.png" alt="Марина Янцен"/>
+                                <div class="project__review_rubr">Отзыв</div>
+                                <div class="project__review_body">
+                                    <h3 class="project__review_author-name">Марина Янцен</h3>
+                                    <p class="project__review_author-position">аналитик проекта</p>
+                                </div>
+                            </div>
+                            <span class="project__review_author">
+                                <h3 class="project__review_author-desc">Ценной особенностью «Шпионского клуба» был близкий контакт с&nbsp;нашими пользователями&nbsp;— агентами клуба. С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая массу отзывов и&nbsp;идей развития продукта.</h3>
+                                <h3 class="project__review_author-desc">Многое удалось воплотить!</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project project_tall case2__kpiWrapper">
+                    {% include "partials/towel/case2/case2-kpi.nunjucks" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="problems problems_case">
+        <div class="container container-double">
+            <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
+                <div class="case-stages__layout_left"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
+                    <div class="device device_wide">
+                        <div class="device__wrapper">
+                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone7.jpg" alt="Пятёрочка">
+                            <div class="device__shadow">
+                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="case-stages__layout_right"><div class="case-stages__layout_inner">
+                    <h3>Польза для бизнеса</h3>
+                    <ul class="case-stages__list">
+                        <li>Отказ от&nbsp;внешнего исследования: существенное сокращение расходов</li>
+                        <li>Повышение лояльности покупателей и&nbsp;рост показателей MAU за&nbsp;3 месяца на&nbsp;301%</li>
+                        <li>Увеличение скорости реагирования на&nbsp;замечания со&nbsp;стороны магазинов сети</li>
+                    </ul>
+                    <p>«Шпионский клуб» значительно превзошел стандартную систему «Тайный покупатель» по&nbsp;всем качественным показателям.</p>
+                </div></div>
+            </div></div>
+        </div>
+    </div>
+    
+</div>
