@@ -64,9 +64,6 @@
         <div class="container">
              {# projects__panels_flexible #}
             <div class="projects__panels">
-                <div class="project project_tall case2__kpiWrapper">
-                    {% include "partials/towel/case2/case2-kpi.nunjucks" %}
-                </div>
                 <div class="project project_tall case2">
                     <div class="project__review_container">
                         <div class="project__review">
@@ -79,11 +76,14 @@
                                 </div>
                             </div>
                             <span class="project__review_author">
-                                <h3 class="project__review_author-name">Ценной особенностью «Шпионского клуба» был близкий контакт с&nbsp;нашими пользователями&nbsp;— агентами клуба. С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая массу отзывов и&nbsp;идей развития продукта.</h3>
-                                <h3 class="project__review_author-name">Многое удалось воплотить!</h3>
+                                <h3 class="project__review_author-desc">Ценной особенностью «Шпионского клуба» был близкий контакт с&nbsp;нашими пользователями&nbsp;— агентами клуба. С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая массу отзывов и&nbsp;идей развития продукта.</h3>
+                                <h3 class="project__review_author-desc">Многое удалось воплотить!</h3>
                             </span>
                         </div>
                     </div>
+                </div>
+                <div class="project project_tall case2__kpiWrapper">
+                    {% include "partials/towel/case2/case2-kpi.nunjucks" %}
                 </div>
             </div>
         </div>
