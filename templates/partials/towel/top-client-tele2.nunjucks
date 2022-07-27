@@ -131,7 +131,7 @@
             <div class="project__review light">
               <div class="project__review_top project__review_top-client dark">
                 <img
-                  class="project__review_top-img"
+                  class="project__review_author-img"
                   src="/assets/css/img/review-author_tele2.png"
                   alt="Tele2"
                 />

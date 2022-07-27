@@ -134,12 +134,12 @@
             <div class="project__review dark">
               <div class="project__review_top project__review_top-client light">
                 <img
-                  class="project__review_top-img light"
-                  src="/assets/css/img/temp-author_babiy.png"
+                  class="project__review_author-img light"
+                  src="/assets/css/img/temp-author_dots.png"
                   alt="Tele2"
                 />
                 <div class="project__review_rubr dark">Отзыв</div>
-                <h3 class="project__review_author-name dark">Павел<br>Бабий</h3>
+                <h3 class="project__review_author-name dark">Павел Бабий</h3>
                 <div class="project__review_author-position dark">
                   начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
                 </div>

@@ -3393,7 +3393,7 @@ a.button {
 
 		&_rubr {
             font-size:24px;
-			margin: 40px 0 56px 40px;
+			margin: 40px 0 56px 0;
 		}
 
 		&_body {
@@ -3413,13 +3413,13 @@ a.button {
 
 			&-name {
 				font-size: 24px;
-				color: $color-black;
+				color: $color-blue-dark;
 				margin-bottom: 15px;
 			}
 
 			&-position {
-				font-size: 16px !important;
-				color: $color-grey-dark;
+				font-size: 14px !important;
+				color: $color-blue-dark;
 				max-width: 45%;
 				margin-top: 0 !important;
 			}
@@ -3524,7 +3524,7 @@ a.button {
 
 			&_rubr {
                 font-size:24px;
-                margin: 40px 0 56px 40px;
+                margin: 40px 0 56px 0;
 				&.dark {
 					color: $color-blue-dark;
 				}
@@ -3540,13 +3540,15 @@ a.button {
 				&-img {
 					float: right;
 					margin-left: 20px;
-					max-width: 91px;
-					max-height: 91px;
+					max-width: 83%;
+					position: absolute;
+					right: 0;
+					bottom: 0;
 				}
 
 				&-name {
 					font-size: 46px;
-					margin: 40px;
+					margin: 40px 0;
 
 					&.dark {
 						color: $color-blue-dark;
@@ -3560,8 +3562,8 @@ a.button {
 				&-position {
 					font-size: 24px;
                     color:$color-blue-dark;
-					max-width: 55%;
-					position: absolute;
+					max-width: 45%;
+					//position: absolute;
 					left: 40px;
 					&.dark {
 						color: $color-blue-dark;

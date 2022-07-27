@@ -135,7 +135,7 @@
             <div class="project__review light">
               <div class="project__review_top project__review_top-client dark">
                 <img
-                  class="project__review_top-img"
+                  class="project__review_author-img"
                   src="/assets/css/img/temp-author_dots.png"
                   alt="Альфа-Банк"
                 />
