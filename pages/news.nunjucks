@@ -1,0 +1,12 @@
+<!-- news.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %}Блог. Новости - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/top-news.nunjucks" %}
+  {% include "partials/towel/news-list.nunjucks" %}
+  {% include "partials/towel/feedback-news.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+{% endblock %}
