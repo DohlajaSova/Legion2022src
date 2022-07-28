@@ -175,7 +175,7 @@
 					padding:20px 20px 0;
                 }
                 .cases__case_name{
-                    font-size:15px;
+                    font-size:24px;
 					padding-left:20px;
                 }
             }
@@ -462,7 +462,7 @@
                     margin-bottom:6px;
                 }
                 .cases__case_name{
-                    font-size:11px;
+                    font-size:24px;
                     padding-right:20px;
                 }
             }
@@ -1321,8 +1321,8 @@
             }
             &__review{
                 &_rubr{
-                    font-size:14px;
-                    margin-bottom:14px;
+                    font-size:24px;
+                    margin:0;
                 }
                 &_body{
                     font-size:16px;
@@ -1335,16 +1335,15 @@
                     padding-left:33px;
                     padding-right:33px;
                     &-name{
-                        font-size:20px;
+                        font-size:46px;
                         margin-bottom:8px;
                     }
                     &-position{
-                        font-size:14px;
+                        font-size:24px;
                         max-width:63%;
                     }
                     &-img{
-                        max-width:71px;
-                        max-height:71px;
+                        width:42%;
                     }
                 }
             }
@@ -1873,7 +1872,7 @@
         }
         &__item{
             &_nomination{
-                padding:14px;
+                padding:30px;
                 p{
                     font-size:12px;
                 }
