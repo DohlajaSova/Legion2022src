@@ -451,12 +451,22 @@
                 margin-bottom: 40px;
             }
             &_block {
-                padding: 20px 0;
-                flex-flow: column nowrap;
+                padding: 40px 0 20px;
+                flex-flow: row nowrap;
                 position: static;
-                align-items: flex-start;
+                justify-content: space-between;
                 &-name {
                     margin-bottom: 20px;
+                }
+                &-parts {
+                    flex-direction: column;
+                    min-width: 180px;
+                    &__feature {
+                        margin-bottom: 16px;
+                        &::last-child {
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
             &_block:first-child:hover {
@@ -1382,8 +1392,8 @@
                 }
             }
             &_rubr{
-                font-size:12px;
-                margin-bottom:22px;
+                font-size:24px;
+                margin: 0;
             }
             &_body{
                 font-size:14px;
@@ -1473,8 +1483,8 @@
                     border-radius:30px;
                 }
                 &_rubr{
-                    font-size:16px;
-                    margin-bottom:25px;
+                    font-size:24px;
+                    margin: 0;
                 }
                 &_body{
                     font-size:18px;
@@ -1491,11 +1501,12 @@
                         margin:40px 0 0 0;
                     }
                     &-name{
-                        font-size:20px;
+                        font-size:24px;
+                        margin: 0;
                     }
                     &-position{
-                        font-size:18px;
-                        max-width:100%;
+                        font-size:14px;
+                        max-width:72%;
                         &-client {
                             font-size: 14px;
                         }
@@ -1630,6 +1641,10 @@
         }
         &-client {
             margin-bottom: 40px;
+        }
+
+        &.some-projects {
+            padding-top: 0;
         }
     }
     .news{

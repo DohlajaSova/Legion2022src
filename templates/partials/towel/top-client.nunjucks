@@ -27,7 +27,7 @@
           <div class="client__info_stats-state">
             <p class="client__info_stats-state__prop">Услуга</p>
             <p class="client__info_stats-state__value">
-              Комплексная мобильная разработка
+              Комплексная разработка digital-продуктов
             </p>
           </div>
           <div class="client__info_stats-state">
@@ -59,6 +59,7 @@
                 <h3 class="h2">+2 <span>млн</span></h3>
                 <p>прирост пользователей<br />за&nbsp;2021&nbsp;год</p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -68,15 +69,16 @@
                   на&nbsp;3%&nbsp;(12.2021)
                 </p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
                 <h3 class="h2">36 <span>млн</span></h3>
                 <p>
-                  оценок<br />от пользователей<br />в&nbsp;месяц на&nbsp;купленные
-                  товары
+                  оценок от пользователей в&nbsp;месяц на купленные товары
                 </p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
           </div>
           <div class="cases-slider__statics js-cases-dots">
@@ -101,27 +103,24 @@
           <a href="/case1.html" class="client__cases_block">
             <div class="client__cases_block-name">Обратная связь</div>
             <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">шпионский клуб</div>
+              <div class="client__cases_block-parts__feature">центр уведомлений</div>
               <div class="client__cases_block-parts__feature">чат с оператором</div>
             </div>
           </a>
-          <div class="client__cases_block inactive">
-            <div class="client__cases_block-name">Маркетинг</div>
+          <a href="/case2.html"  class="client__cases_block inactive">
+            <div class="client__cases_block-name">Шпионский клуб</div>
             <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">анализ рынка</div>
-              <div class="client__cases_block-parts__feature">retail</div>
-              <div class="client__cases_block-parts__feature">исследование</div>
+              <div class="client__cases_block-parts__feature">тайный покупатель</div>
+              <div class="client__cases_block-parts__feature">контроль качества</div>
             </div>
-          </div>
-          <div class="client__cases_block inactive">
-            <div class="client__cases_block-name">Бонусная система</div>
+          </a>
+          <a href="/case3.html"  class="client__cases_block inactive">
+            <div class="client__cases_block-name">Рейтинг товаров</div>
             <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">
-                мобильные приложение
-              </div>
-              <div class="client__cases_block-parts__feature">retail</div>
+              <div class="client__cases_block-parts__feature">система оценок</div>
+              <div class="client__cases_block-parts__feature">отзывы</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
   </div>
@@ -136,7 +135,7 @@
                 <img
                   class="project__review_author-img light"
                   src="/assets/css/img/temp-author_dots.png"
-                  alt="Tele2"
+                  alt="Пятёрочка"
                 />
                 <div class="project__review_rubr dark">Отзыв</div>
                 <h3 class="project__review_author-name dark">Павел Бабий</h3>
@@ -173,7 +172,7 @@
         </div>
         <div class="project client cases__case cases__case-client cases__case_info">
           <div class="cases__case_container">
-            <span class="cases__case_number">№1</span>
+            <span class="cases__case_number">№ 1</span>
             <span class="cases__case_name"
               >Рейтинг Рунета 2021<br>номинация «Торговля и услуги»</span
             >

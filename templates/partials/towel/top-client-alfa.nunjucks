@@ -56,9 +56,7 @@
                 <h3 class="h2">+ 23%</h3>
                 <p>увеличение дохода приложения</p>
               </div>
-              <div class="cases-slider__item_project">
-                
-              </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -67,9 +65,7 @@
                   прирост активных<br>пользователей<br>в 2020 году
                 </p>
               </div>
-              <div class="cases-slider__item_project">
-                
-              </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">  
               <div class="cases-slider__item_nomination">
@@ -78,9 +74,7 @@
                   увеличение числа установок
                 </p>
               </div>
-              <div class="cases-slider__item_project">
-                
-              </div>
+              <div class="cases-slider__item_project"></div>
             </div>
           </div>
           <div class="cases-slider__statics js-cases-dots">
@@ -139,7 +133,7 @@
                   src="/assets/css/img/temp-author_dots.png"
                   alt="Альфа-Банк"
                 />
-                <div class="project__review_rubr">Отзыв</div>
+                <div class="project__review_rubr light">Отзыв</div>
                 <h3 class="project__review_author-name light">Виктор<br>Ефимов</h3>
                 <div class="project__review_author-position light">
                   менеджер продукта<br>«Альфа-Инвестиции»
