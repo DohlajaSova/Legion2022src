@@ -60,6 +60,7 @@
             </div>
         </div>
     </div>
+    
     <div class="projects projects_case">
         <div class="container">
              {# projects__panels_flexible #}

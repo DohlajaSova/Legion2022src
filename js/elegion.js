@@ -948,10 +948,8 @@ docReady(function() {
             setTimeout(() => {
                 circleText.children[num % circleText.children.length].style.opacity = "0";
                 circleText.children[num % circleText.children.length].style.display = "block";
-
                 circleAbout.children[num % circleAbout.children.length].style.opacity = "0";
                 circleAbout.children[num % circleAbout.children.length].style.display = "block";
-                
                 setTimeout(() => {
                     circleText.children[num % circleText.children.length].style.opacity = "1";
                     circleAbout.children[num % circleAbout.children.length].style.opacity = "1";

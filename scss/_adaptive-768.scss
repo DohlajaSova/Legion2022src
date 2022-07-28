@@ -508,28 +508,27 @@
             }
         }
     }
-    // .feedback{
-    //     &_compact{
-    //         // padding:60px 30px 50px;
-    //         padding: 150px 30px 50px;
-    //     }
-    // }
     .case2 {
-        .project_tall{
-            padding-bottom: 100%!important;
-        }
-        &__kpiWrapper {
-            .project_tall {
-                padding-bottom: 100%;
-            }
+        .project_tall:first-child{
+            padding-bottom:100%!important;
         }
         .circle{
+            &-about {
+                margin-bottom: 150px;
+
+            }
             &-text {
                 &__item {
                     &_label {
                         font-size: 28px;
                     }
                 }
+            }
+            &-pic {
+                background-size: 300px!important;
+                width: 300px;
+                height: 300px;
+                left: auto;
             }
         }
         .project__review_top{
@@ -539,6 +538,35 @@
             &__content{
                 &_buttons {
                     margin: 40px 0 60px;
+                }
+            }
+        }
+    }
+    .case3 {
+        &__content {
+            display: grid;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns:100%;
+            grid-template-rows: 650px 650px;
+            &_card {
+                padding-top: 40px;
+                > * {
+                    padding: 0 40px;
+                }
+                &-tip {
+                    font-size: 24px;
+                    margin-bottom: 70px;
+                }
+                &-main {
+                    font-size: 46px;
+                    margin-bottom: 10px;
+                }
+                &-transition {
+                    font-size: 16px;
+                }
+                &-accent {
+                    font-size: 74px;
                 }
             }
         }
@@ -1101,6 +1129,37 @@
                 }
             }
         }
+        .project_tall{
+            padding-bottom: 100%!important;
+        }
+        .project_tall:first-child{
+            padding-bottom: 140%!important;
+        }
+    }
+    .case3 {
+        &__content {
+            grid-template-rows: 520px 520px;
+            &_card {
+                > * {
+                    padding: 0 40px;
+                }
+                &-tip {
+                    font-size: 18px;
+                    margin-bottom: 50px;
+                }
+                &-main {
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+                &-transition {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                &-accent {
+                    font-size: 56px;
+                }
+            }
+        }
     }
 }
 
@@ -1173,7 +1232,9 @@
     .circle{
         height:195px;
         &-pic{
-            height:195px;
+            background-size: 250px!important;
+            width: 250px;
+            height: 250px;
         }
         &-text{
             width:195px;
