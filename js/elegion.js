@@ -924,6 +924,7 @@ docReady(function() {
     
     // круг с цифрами
     let circleText = document.querySelector(".circle-text");
+    let circleAbout = document.querySelector(".circle-about");
     let circlePic = document.querySelector(".circle-pic");
     
     if (circlePic!= null) {
@@ -933,16 +934,25 @@ docReady(function() {
             for (i=0; i<circleText.children.length; i++){
                 circleText.children[i % circleText.children.length].style.opacity = "0";
             }
+            for (i=0; i<circleAbout.children.length; i++){
+                circleAbout.children[i % circleAbout.children.length].style.opacity = "0";
+            }
             setTimeout(() => {
                 for (i=0; i<circleText.children.length; i++){
                     circleText.children[i % circleText.children.length].style.display = "none";
+                }
+                for (i=0; i<circleAbout.children.length; i++){
+                    circleAbout.children[i % circleAbout.children.length].style.display = "none";
                 }
             }, 1000);
             setTimeout(() => {
                 circleText.children[num % circleText.children.length].style.opacity = "0";
                 circleText.children[num % circleText.children.length].style.display = "block";
+                circleAbout.children[num % circleAbout.children.length].style.opacity = "0";
+                circleAbout.children[num % circleAbout.children.length].style.display = "block";
                 setTimeout(() => {
                     circleText.children[num % circleText.children.length].style.opacity = "1";
+                    circleAbout.children[num % circleAbout.children.length].style.opacity = "1";
                 }, 250);
             }, 1000);
             num++;

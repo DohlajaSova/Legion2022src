@@ -257,16 +257,6 @@
             background-size:auto;
         }
     }
-    // .top_case{
-    //     .top__image{
-    //         &-mobile{
-    //             display: block;
-    //         }
-    //         &-tablet {
-    //             display: none;
-    //         }
-    //     }
-    // }
     .years{
         &__year{
             font-size:46px;
@@ -279,22 +269,17 @@
     .case2 {
         .circle{
             transform: scale(.5);
-            // width: 220px;
-            // height: 220px;
-            &-pic {
-                // width: 220px;
-                // height: 220px;
+        }
+        &__kpiWrapper {
+            .circle-about{
+                margin-bottom: 150px;
             }
         }
-        .project__tall {
-            padding-bottom: 150%!important;
+        .project_tall{
+            padding-bottom: 200%!important;
         }
-        .project{
-            &__review {
-                &_top {
-                    // padding-bottom:150%!important;
-                }
-            }
+        .project_tall:last-child{
+            padding-bottom: 120%!important;
         }
         .principles {
             &__content{
@@ -393,11 +378,59 @@
             }
         }
     }
+    .case3 {
+        &__container_rate {
+            display: block!important;
+
+        }
+        .circle{
+            &-pic {
+                background-size: 200px!important;
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__content {
+            grid-template-rows: 450px 450px;
+            &_card {
+                >* {
+                    padding: 0 20px;
+                }
+                &-tip {
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                }
+                &-main {
+                    font-size: 28px;
+                }
+                &-accent {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+    .case {
+        &-stages{
+            &__layout{
+                &_inner {
+                    padding: 20px;
+                    &-centered{
+                        padding: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
     .who-we-are__widget_item.double{
         padding-bottom: 130%;
+    }
+    .case2 {
+        .project_tall:last-child{
+            padding-bottom: 140%!important;
+        }
     }
 }
 
@@ -490,6 +523,23 @@
     }
     .who-we-are__widget_item.double{
         padding-bottom: 145%;
+    }
+    .case3 {
+        &__content {
+            grid-template-rows: 400px 400px;
+            &_card {
+                &-tip {
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                }
+                &-main {
+                    font-size: 24px;
+                }
+                &-accent {
+                    font-size: 42px;
+                }
+            }
+        }
     }
 
 }
