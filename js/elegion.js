@@ -924,8 +924,8 @@ docReady(function() {
     
     // круг с цифрами
     let circleText = document.querySelector(".circle-text");
-    let circleAbout = document.querySelector(".circle-about");
     let circlePic = document.querySelector(".circle-pic");
+    let circleAbout = document.querySelector(".circle-about");
     
     if (circlePic!= null) {
         circlePic.classList.add("rotating");

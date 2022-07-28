@@ -1,0 +1,285 @@
+<div class="news news_portfolio">
+    <div class="news-container">
+        <div class="news-container_inner">
+            <div class="container">
+                <div class="news__filter">
+                    <div class="news__tags js-news-tags">
+                        <a href="#all" class="active">Всё</a>
+                        <a href="#cases">Кейсы</a>
+                        <a href="#events">Мероприятия</a>
+                        <a href="#contests">Конкурсы</a>
+                        <a href="#experience">Опыт</a>
+                        <a href="#community">Сообщество</a>
+                        <a href="#legionners">Легионеры</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container js-news-container-portfolio" data-limit="12">
+                <div class="container_portfolio-inner">
+                    <span
+                        class="news__item"
+                        data-tags="['all','telecom']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-tele2.svg" alt="Tele2"> </span>
+                                <span class="news__item_name">Tele2</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <a
+                        href="/client.html"
+                        class="news__item"
+                        data-tags="['all','retail']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents news__item_contents-active">
+                                <span class="news__item_logo">
+                                    <img class="news__item_contents-img" src="/assets/css/img/item-5ka.svg" alt="Пятёрочка"> </span>
+                                <span class="news__item_name">Пятёрочка</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <span
+                        class="news__item"
+                        data-tags="['all','retail','delivery']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-globus.svg" alt="Globus"> </span>
+                                <span class="news__item_name">Globus</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','fintech']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-ad.svg" alt="Альфа-Инвестиции"> </span>
+                                <span class="news__item_name">Альфа-Инвестиции</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','food','delivery']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-burger.svg" alt="Burger King"> </span>
+                                <span class="news__item_name">Burger King</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','fintech']" data-priority="10">
+                        <div class="news__item_number"></div>
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-tinkoff.svg" alt="Тинькофф"> </span>
+                                <span class="news__item_name">Тинькофф</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','navigation','it']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-yandex.svg" alt="Yandex"> </span>
+                                <span class="news__item_name">Yandex</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="news__item"
+                        data-tags="['all','retail','ecommerce','delivery']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-tea.svg" alt="Tea.ru"> </span>
+                                <span class="news__item_name">Tea.ru</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="news__item"
+                        data-tags="['all','retail','ecommerce','delivery']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-may24.svg" alt="May24"> </span>
+                                <span class="news__item_name">May24</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','socialnetwork']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-venn.svg" alt="Venn"> </span>
+                                <span class="news__item_name">Venn</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','retail']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-aushan.svg" alt="Ашан"> </span>
+                                <span class="news__item_name">Ашан</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="news__item"
+                        data-tags="['all','sports','navigation','health']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-jetsport.svg" alt="Jet"> </span>
+                                <span class="news__item_name">Jet</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','entertainment','sports']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-888.svg" alt="888"> </span>
+                                <span class="news__item_name">888</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','fintech']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-sber.svg" alt="Сбер"> </span>
+                                <span class="news__item_name">Сбер</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','fintech','socialnetwork']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-spyking.svg" alt="Spiking"> </span>
+                                <span class="news__item_name">Spiking</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','it']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-mail.svg" alt="Mail"> </span>
+                                <span class="news__item_name">Mail</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','fintech']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-raif.svg" alt="Райф"> </span>
+                                <span class="news__item_name">Райф</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span
+                        class="news__item"
+                        data-tags="['all','entertainment','education','medicine']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-mel.svg" alt="MEL"> </span>
+                                <span class="news__item_name">MEL</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','telecom']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-yota.svg" alt="Yota"> </span>
+                                <span class="news__item_name">Yota</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','education','it']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-microsoft.svg" alt="Microsoft"> </span>
+                                <span class="news__item_name">Microsoft</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','fintech']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-uralsib.svg" alt="Уралсиб"> </span>
+                                <span class="news__item_name">Уралсиб</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','corporate']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-shell.svg" alt="Shell"> </span>
+                                <span class="news__item_name">Shell</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','food','delivery']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-ginza.svg" alt="Ginza"> </span>
+                                <span class="news__item_name">Ginza</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="news__item" data-tags="['all','education']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-lingualeo.svg" alt="LinguaLeo"> </span>
+                                <span class="news__item_name">LinguaLeo</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="zero-item news__item" data-tags="['all']" data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo">
+                                    <img src="/assets/css/img/icon-lock.svg" alt="LinguaLeo">
+                                </span>
+                                {# <span class="news__item_name">LinguaLeo</span> #}
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="news__pagination">
+                    <div class="news__pagination-arrows">
+                        <a href="" class="js-news-prev">&lt;</a>
+                        <a href="" class="js-news-next">&gt;</a>
+                    </div>
+                    <div class="news__pagination-button">
+                        <button class="button button_default button_wide js-news-more">Показать еще</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
