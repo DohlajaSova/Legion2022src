@@ -3283,10 +3283,10 @@ a.button {
 		}
 
 		&_videosection {
-			margin-bottom: 0;
+			margin-bottom: 0!important;
 			position: static!important;
 			.client__present-video {
-				top: 0;
+				top: 0!important;
 			}
 		}
 	}
