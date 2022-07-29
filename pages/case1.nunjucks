@@ -5,9 +5,9 @@
 {% block content %}
 
   {% include "partials/towel/top-case.nunjucks" %}
-  {% include "partials/towel/case-description.nunjucks" %}
+  {% include "partials/towel/case1/case-description.nunjucks" %}
+  {# {% include "partials/towel/case1/case-stages.nunjucks" %} #}
   {% include "partials/towel/case-works.nunjucks" %}
-  {% include "partials/towel/case-stages.nunjucks" %}
   {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
   {% include "partials/towel/cases-random.nunjucks" %}
 
