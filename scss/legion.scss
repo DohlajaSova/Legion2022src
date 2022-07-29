@@ -3219,7 +3219,11 @@ a.button {
 				top: 0;
 			}
 		}
-
+		&_bg11 {
+			background: $color-green;
+			overflow: hidden;
+		}
+		
 		&_plus {
 			display: block;
 			background: url($img-path + "icon-plus.svg") center top no-repeat;
@@ -3276,6 +3280,14 @@ a.button {
 			width: 100%;
 			padding: 0 0 49.2%;
 			position: relative;
+		}
+
+		&_videosection {
+			margin-bottom: 0;
+			position: static!important;
+			.client__present-video {
+				top: 0;
+			}
 		}
 	}
 
