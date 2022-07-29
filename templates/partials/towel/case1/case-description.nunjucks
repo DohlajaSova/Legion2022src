@@ -1,285 +1,432 @@
 <div class="principles principles_case case2">
-    <div class="container">
-        <div class="principles__content">
-            <div class="principles__content_head">
-                <h2>Приложение <br>для покупателей</h2>
-            </div>
-            <div class="principles__content_text">
-                <p>Главная задача для проекта «Пятёрочка» на&nbsp;2021&nbsp;год&nbsp;— увеличение вовлеченности пользователей и&nbsp;расширение онлайн-возможностей потребителей.</p>
+  <div class="container">
+    <div class="principles__content">
+      <div class="principles__content_head">
+        <h2>Приложение <br />для покупателей</h2>
+      </div>
+      <div class="principles__content_text">
+        <p>
+          Главная задача для проекта «Пятёрочка» на&nbsp;2021&nbsp;год&nbsp;—
+          увеличение вовлеченности пользователей и&nbsp;расширение
+          онлайн-возможностей потребителей.
+        </p>
 
-                <p>Поэтому мы&nbsp;сосредоточились на&nbsp;том, чтобы приложение было понятным и&nbsp;удобным в&nbsp;использовании.</p>
+        <p>
+          Поэтому мы&nbsp;сосредоточились на&nbsp;том, чтобы приложение было
+          понятным и&nbsp;удобным в&nbsp;использовании.
+        </p>
 
-                <div class="principles__content_buttons store">
-                    <a href="https://apps.apple.com/ru/app/пятёрочка/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
-                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
-                </div>
-            </div>
+        <div class="principles__content_buttons store">
+          <a
+            href="https://apps.apple.com/ru/app/пятёрочка/id1174271758"
+            class="button button_grey store_ios"
+            target="_blank"
+            ><span>Download on the</span> <b>App Store</b></a
+          >
+          <a
+            href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US"
+            class="button button_grey store_android"
+            target="_blank"
+            ><span>Download on</span> <b>Google Play</b></a
+          >
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="problems problems_case">
-    <div class="container">
-        <div class="problems__item problems__item_bg11">
-            <div class="problems__item_container">
-                <div class="problems__item_contents problems__item_contents-slider">
-                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone16.jpg" alt="Пятёрочка">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone15.jpg" alt="Пятёрочка">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div></div>
-                </div>
-            </div>
-            <div class="problems-slider-groups__statics">
-                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul></div>
-            </div>
-        </div>
-        <div class="problems__item problems__item_bg9">
-            <div class="client__present venn problems__item_videosection">
-                <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.jpg" alt="Venn"/>
-                <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.jpg" alt="Venn"/>
-                <img class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
-                    <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
-                <video
-                    class="client__present-video"
-                    preload="auto"
-                    playsinline
-                    loop
-                    autoplay
-                    muted>
-                    <source src="/assets/css/img/video_5ka.mp4" type="video/mp4">
-                </video>
-            <!-- <div class="device device_fit-height2">
-                <div class="device__wrapper">
-                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone4.jpg" alt="Пятёрочка">
+  <div class="container">
+    <div class="problems__item problems__item_bg11">
+      <div class="problems__item_container">
+        <div class="problems__item_contents problems__item_contents-slider">
+          <div class="problems-slider-groups">
+            <div class="js-problems-slider-groups">
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-5ka-phone16.jpg"
+                      alt="Пятёрочка"
+                    />
                     <div class="device__shadow">
-                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
                     </div>
+                  </div>
                 </div>
-            </div> -->
+              </span>
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-5ka-phone15.jpg"
+                      alt="Пятёрочка"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-5ka-phone12.jpg"
+                      alt="Пятёрочка"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="problems-slider-groups__statics">
+        <div class="problems-slider-groups__statics_dots">
+          <ul class="js-problems-groups-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="problems__item problems__item_bg9">
+      <div class="client__present venn problems__item_videosection">
+        <img
+          class="client__present_desktop venn"
+          src="/assets/css/img/client-venn-preview.jpg"
+          alt="Venn"
+        />
+        <img
+          class="client__present_mobile venn"
+          src="/assets/css/img/client-venn-preview_mobile.jpg"
+          alt="Venn"
+        />
+        <img
+          class="client__present-play venn"
+          src="/assets/css/img/play.fill.svg"
+        />
+        <video
+          class="client__present-video"
+          preload="auto"
+          playsinline
+          loop
+          autoplay
+          muted
+        >
+          <source src="/assets/css/img/video_5ka.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="problems problems_case">
-    <div class="container">
-        <div class="problems__item problems__item_bg11">
-            <div class="problems__item_container">
-                <div class="problems__item_contents problems__item_contents-slider">
-                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone16.jpg" alt="Пятёрочка">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone15.jpg" alt="Пятёрочка">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div></div>
-                </div>
-            </div>
-            <div class="problems-slider-groups__statics">
-                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul></div>
-            </div>
-        </div>
-        <div class="problems__item problems__item_bg9">
-            <div class="client__present venn problems__item_videosection">
-                <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.jpg" alt="Venn"/>
-                <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.jpg" alt="Venn"/>
-                <img class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
-                    <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
-                <video
-                    class="client__present-video"
-                    preload="auto"
-                    playsinline
-                    loop
-                    autoplay
-                    muted>
-                    <source src="/assets/css/img/video_tele2.mp4" type="video/mp4">
-                </video>
-            <!-- <div class="device device_fit-height2">
-                <div class="device__wrapper">
-                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone4.jpg" alt="Пятёрочка">
+  <div class="container">
+    <div class="problems__item problems__item_bg11">
+      <div class="problems__item_container">
+        <div class="problems__item_contents problems__item_contents-slider">
+          <div class="problems-slider-groups">
+            <div class="js-problems-slider-groups">
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-5ka-phone16.jpg"
+                      alt="Пятёрочка"
+                    />
                     <div class="device__shadow">
-                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
                     </div>
+                  </div>
                 </div>
-            </div> -->
+              </span>
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-5ka-phone15.jpg"
+                      alt="Пятёрочка"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-5ka-phone12.jpg"
+                      alt="Пятёрочка"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="problems-slider-groups__statics">
+        <div class="problems-slider-groups__statics_dots">
+          <ul class="js-problems-groups-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="problems__item problems__item_bg9">
+      <div class="client__present venn problems__item_videosection">
+        <img
+          class="client__present_desktop venn"
+          src="/assets/css/img/client-venn-preview.jpg"
+          alt="Venn"
+        />
+        <img
+          class="client__present_mobile venn"
+          src="/assets/css/img/client-venn-preview_mobile.jpg"
+          alt="Venn"
+        />
+        <img
+          class="client__present-play venn"
+          src="/assets/css/img/play.fill.svg"
+        />
+        <video
+          class="client__present-video"
+          preload="auto"
+          playsinline
+          loop
+          autoplay
+          muted
+        >
+          <source src="/assets/css/img/video_tele2.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="principles principles_case">
-    <div class="container">
-        <div class="principles__content">
-            <div class="principles__content_head">
-                <h2>Центр уведомлений</h2>
-            </div>
-            <div class="principles__content_text">
-                <p>Центр уведомлений позволяет пользователю быть в&nbsp;курсе действующих промокодов, скидок, персональных предложений и&nbsp;получать оповещения от&nbsp;обратной связи.</p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="principles__content">
+      <div class="principles__content_head">
+        <h2>Центр уведомлений</h2>
+      </div>
+      <div class="principles__content_text">
+        <p>
+          Центр уведомлений позволяет пользователю быть в&nbsp;курсе действующих
+          промокодов, скидок, персональных предложений и&nbsp;получать
+          оповещения от&nbsp;обратной связи.
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="case-stages">
-    <div class="principles principles_case">
-        <div class="container">
-            <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
-                <div class="case-stages__layout_left"><div class="case-stages__layout_inner">
-                    <h3>Что сделали</h3>
-                    <ul class="case-stages__list">
-                        <li>Выполнили сложную интеграцию с&nbsp;системой, отвечающей за&nbsp;рассылки уведомлений по&nbsp;всем каналам в&nbsp;компании</li>
-                        <li>Добавили персонификацию уведомлений для разных продуктов</li>
-                        <li>Разработали функции управления списком уведомлений&nbsp;— фильтры по&nbsp;категориям и&nbsp;возможность удалять уведомления</li>
-                    </ul>
-                    <p>С помощью «Центра уведомлений» заказчик увеличил конверсию и&nbsp;количество уникальных пользователей всех продуктов «Пятёрочки».</p>
-                </div>
+  <div class="principles principles_case">
+    <div class="container">
+      <div
+        class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"
+      >
+        <div class="problems__item_container">
+          <div class="case-stages__layout_left">
+            <div class="case-stages__layout_inner">
+              <h3>Что сделали</h3>
+              <ul class="case-stages__list">
+                <li>
+                  Выполнили сложную интеграцию с&nbsp;системой, отвечающей
+                  за&nbsp;рассылки уведомлений по&nbsp;всем каналам
+                  в&nbsp;компании
+                </li>
+                <li>
+                  Добавили персонификацию уведомлений для разных продуктов
+                </li>
+                <li>
+                  Разработали функции управления списком уведомлений&nbsp;—
+                  фильтры по&nbsp;категориям и&nbsp;возможность удалять
+                  уведомления
+                </li>
+              </ul>
+              <p>
+                С помощью «Центра уведомлений» заказчик увеличил конверсию
+                и&nbsp;количество уникальных пользователей всех продуктов
+                «Пятёрочки».
+              </p>
             </div>
-                <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
-                    <div class="device device_wide">
-                        <div class="device__wrapper">
-                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.jpg" alt="Пятёрочка">
-                            <div class="device__shadow">
-                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                            </div>
-                        </div>
-                    </div>
-                </div></div>
-            </div></div>
+          </div>
+          <div class="case-stages__layout_right">
+            <div
+              class="case-stages__layout_inner case-stages__layout_inner-centered"
+            >
+              <div class="device device_wide">
+                <div class="device__wrapper">
+                  <img
+                    class="device__screen"
+                    src="/assets/css/img/temp-5ka-phone14.jpg"
+                    alt="Пятёрочка"
+                  />
+                  <div class="device__shadow">
+                    <img
+                      class="device__phone"
+                      src="/assets/css/img/phone-iphone12pro.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="principles principles_case">
-    <div class="container">
-        <div class="principles__content">
-            <div class="principles__content_head">
-                <h2>Обратная связь</h2>
-            </div>
-            <div class="principles__content_text">
-                <p>Создаём возможности для&nbsp;пользователей поделиться мнением, чтобы бизнес смог повысить качество обслуживания в&nbsp;магазинах.</p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="principles__content">
+      <div class="principles__content_head">
+        <h2>Обратная связь</h2>
+      </div>
+      <div class="principles__content_text">
+        <p>
+          Создаём возможности для&nbsp;пользователей поделиться мнением, чтобы
+          бизнес смог повысить качество обслуживания в&nbsp;магазинах.
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="case-stages">
-    <div class="principles principles_case">
-        <div class="container container_flexible">
-            <div class="problems__item problems__item_bg10">
-                <div class="problems__item_container">
-                    <div class="problems__item_contents problems__item_contents-slider">
-                        <div class="problems-slider-groups"><div class="js-problems-slider-groups">
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.jpg" alt="Пятёрочка">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone13.jpg" alt="Пятёрочка">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </span>
-                        </div></div>
+  <div class="principles principles_case">
+    <div class="container container_flexible">
+      <div class="problems__item problems__item_bg10">
+        <div class="problems__item_container">
+          <div class="problems__item_contents problems__item_contents-slider">
+            <div class="problems-slider-groups">
+              <div class="js-problems-slider-groups">
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-5ka-phone11.jpg"
+                        alt="Пятёрочка"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
                     </div>
-                </div>
-                <div class="problems-slider-groups__statics">
-                    <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul></div>
-                </div>
+                  </div>
+                </span>
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-5ka-phone12.jpg"
+                        alt="Пятёрочка"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-5ka-phone13.jpg"
+                        alt="Пятёрочка"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
             </div>
-            <div class="problems__item problems__item_bg9">
-                <h3>Что сделали</h3>
-                <ul class="case-stages__list">
-                    <li>Создали раздел «Связаться», где собраны все возможности оставить обратную связь</li>
-                    <li>Выпустили подборку частых вопросов с&nbsp;тематиками и&nbsp;возможностью поиска</li>
-                    <li>Разработали чат с&nbsp;оператором с&nbsp;возможностью прикреплять файлы и&nbsp;отправлять адрес магазина</li>
-                    <li>Поддержали удалённую настройку списка доступных каналов обратной связи, позволяющую управлять нагрузкой на&nbsp;контактный центр</li>
-                </ul>
-            </div>
+          </div>
         </div>
+        <div class="problems-slider-groups__statics">
+          <div class="problems-slider-groups__statics_dots">
+            <ul class="js-problems-groups-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="problems__item problems__item_bg9">
+        <h3>Что сделали</h3>
+        <ul class="case-stages__list">
+          <li>
+            Создали раздел «Связаться», где собраны все возможности оставить
+            обратную связь
+          </li>
+          <li>
+            Выпустили подборку частых вопросов с&nbsp;тематиками
+            и&nbsp;возможностью поиска
+          </li>
+          <li>
+            Разработали чат с&nbsp;оператором с&nbsp;возможностью прикреплять
+            файлы и&nbsp;отправлять адрес магазина
+          </li>
+          <li>
+            Поддержали удалённую настройку списка доступных каналов обратной
+            связи, позволяющую управлять нагрузкой на&nbsp;контактный центр
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
