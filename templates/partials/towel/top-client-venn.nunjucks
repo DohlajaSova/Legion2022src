@@ -8,7 +8,7 @@
   
   <h1 class="client__header">Venn</h1>
 
-  <div class="client__present">
+  <div class="client__present venn">
     <img
       class="client__present_desktop venn"
       src="/assets/css/img/client-venn-preview.jpg"
@@ -71,6 +71,7 @@
                 <h3 class="h2">+ 11к</h3>
                 <p>прирост новых пользователей за 6 месяцев</p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -79,6 +80,7 @@
                   прирост новых пользователей за 6 месяцев
                 </p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -87,6 +89,7 @@
                   средняя продолжительность сессии пользователя
                 </p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
           </div>
           <div class="cases-slider__statics js-cases-dots">
@@ -134,12 +137,12 @@
             <div class="project__review dark">
               <div class="project__review_top project__review_top-client light">
                 <img
-                  class="project__review_top-img light"
+                  class="project__review_author-img light"
                   src="/assets/css/img/review-author_venn.png"
                   alt="Tele2"
                 />
                 <div class="project__review_rubr dark">Отзыв</div>
-                <h3 class="project__review_author-name dark">Jesper<br>Algaard</h3>
+                <h3 class="project__review_author-name dark">Jesper Algaard</h3>
                 <div class="project__review_author-position dark">
                   CEO Friendr AS
                 </div>

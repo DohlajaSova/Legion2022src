@@ -1732,7 +1732,7 @@ a.button {
 			.cases__case_number {
 				display: block;
 				position: static;
-				color: $color-grey-dark;
+				color: $color-blue-dark;
 				font-size: 74px;
 				font-weight: 300;
 				padding: 20px 30px 14px 30px;
@@ -1743,7 +1743,7 @@ a.button {
 				display: block;
 				width: 100%;
 				color: $color-black;
-				font-size: 16px;
+				font-size: 24px;
 				padding: 0 60px 0 30px;
 				text-align: left;
 				p {
@@ -1757,7 +1757,7 @@ a.button {
 				left: 0;
 				bottom: 0;
 				right: 0;
-				display: none;
+				//display: none;
 				text-align: right;
 				padding: 0 20px 20px 0;
 				font-size: 0;
@@ -2625,6 +2625,10 @@ a.button {
             &_rubr {
                 font-size: 24px;
                 line-height: 130%;
+
+                &.light {
+					color: $color-white !important;
+				}
             }
             &_top {
                 overflow: hidden;
@@ -3424,8 +3428,12 @@ a.button {
 		}
 
 		&_rubr {
-            font-size:16px;
-			margin-bottom: 56px;
+            font-size:24px;
+			margin: 40px 0 56px 0;
+
+			&.light {
+				color: $color-white !important;
+			}
 		}
 
 		&_body {
@@ -3436,22 +3444,21 @@ a.button {
 		&_author {
             padding:73px 43px 55px;
 			&-img {
-				float: right;
-				margin-left: 20px;
-				max-width: 91px;
-				max-height: 91px;
-				max-height: 308px;
+				position: absolute;
+				width: 63%;
+				right: 0;
+				bottom: 0;
 			}
 
 			&-name {
 				font-size: 24px;
-				color: $color-black;
+				color: $color-blue-dark;
 				margin-bottom: 15px;
 			}
 
 			&-position {
-				font-size: 16px !important;
-				color: $color-grey-dark;
+				font-size: 14px !important;
+				color: $color-blue-dark;
 				max-width: 45%;
 				margin-top: 0 !important;
 			}
@@ -3518,7 +3525,7 @@ a.button {
 			height: 100%;
 			border-radius: $border-radius;
 				&.dark {
-					background-color: $color-blue-dark;
+					background-color: $color-blue-dark !important;
 					color: $color-white;
 				}
 
@@ -3545,58 +3552,70 @@ a.button {
 				}
 
 				&.light {
-					background-color: $color-grey-light;
+					background-color: $color-grey-light !important;
 				}
 
 				&.dark {
-					background-color: $color-grey-darkest;
+					background-color: $color-blue-dark !important;
 				}
 
 			}
 
 			&_rubr {
-                font-size:16px;
-                margin-bottom:56px;
+                font-size:24px;
+                margin: 40px 0 56px 0;
+
 				&.dark {
-					color: $color-blue-dark;
+					color: $color-blue-dark !important;
+				}
+
+				&.light {
+					color: $color-white !important;
 				}
 			}
 
 			&_body {
 				font-size: 24px;
-				width: 88%;
 				padding: 40px;
 			}
 
 			&_author {
 				&-img {
-					float: right;
-					margin-left: 20px;
-					max-width: 91px;
-					max-height: 91px;
+					width: 45%;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					z-index: 1;
 				}
 
 				&-name {
 					font-size: 46px;
-					margin: 40px;
+					margin: 40px 0;
+					z-index: 3;
 
 					&.dark {
-						color: $color-blue-dark;
+						color: $color-blue-dark !important;
 					}
 
 					&.light {
-						color: $color-white;
+						color: $color-white !important;
 					}
 				}
 
 				&-position {
-					font-size: 16px;
-                    color:$color-grey-dark;
-					max-width: 45%;
-					position: absolute;
+					font-size: 24px;
+                    color:$color-blue-dark;
+					max-width: 65%;
+					//position: absolute;
 					left: 40px;
+					z-index: 3;
+
 					&.dark {
-						color: $color-blue-dark;
+						color: $color-blue-dark !important;
+					}
+
+					&.light {
+						color: $color-white !important;
 					}
 				}
 
@@ -3946,6 +3965,25 @@ a.button {
 	&.feedback_applicants {
 		background: url($img-path + "vacancy-bg2.svg") left -40% top -80px no-repeat $color-blue;
 		background-size: auto calc(100% + 200px);
+
+		h2 {
+			color: $color-white;
+		}
+
+		.feedback__form_error,
+		.feedback__comment {
+			color: $color-grey-light;
+		}
+
+		&.feedback_compact {
+			.feedback__button {
+				background-image: url($img-path + "icon-plus3.svg");
+			}
+		}
+	}
+
+	&.feedback_client {
+		background: $color-blue-dark;
 
 		h2 {
 			color: $color-white;
@@ -5705,6 +5743,7 @@ a.button {
 
 				&__value {
 					color: $color-blue-dark;
+					max-width: 200px;
 				}
 			}
 		}
@@ -5873,15 +5912,19 @@ a.button {
         }
         &_author {
             &-name {
-                color: #fff!important;
+                color: #fff;
             }
             &-position {
-                color: $color-blue-dark!important;
+                color: $color-blue-dark;
             }
         }
         &_rubr {
             font-size: 24px;
             line-height: 130%;
+
+            &.light {
+				color: $color-white !important;
+			}
         }
         &_top {
             overflow: hidden;

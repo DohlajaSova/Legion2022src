@@ -61,6 +61,7 @@
                 <h3 class="h2">15,5 <span>млн</span></h3>
                 <p>количество<br>пользователей обеих<br>платформ</p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">
               <div class="cases-slider__item_nomination">
@@ -69,6 +70,7 @@
                   активных<br>пользователей<br>в день
                 </p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
             <div class="cases-slider__item">  
               <div class="cases-slider__item_nomination">
@@ -77,6 +79,7 @@
                   прирост новых<br>пользователей<br>за 2021 год
                 </p>
               </div>
+              <div class="cases-slider__item_project"></div>
             </div>
           </div>
           <div class="cases-slider__statics js-cases-dots">
@@ -131,11 +134,11 @@
             <div class="project__review light">
               <div class="project__review_top project__review_top-client dark">
                 <img
-                  class="project__review_top-img"
+                  class="project__review_author-img"
                   src="/assets/css/img/review-author_tele2.png"
                   alt="Tele2"
                 />
-                <div class="project__review_rubr">Отзыв</div>
+                <div class="project__review_rubr light">Отзыв</div>
                 <h3 class="project__review_author-name light">Александр<br>Смердов</h3>
                 <div class="project__review_author-position light">
                   руководитель направления<br>мобильных приложений Tele2
