@@ -1,7 +1,7 @@
 <div class="category"><a name="category"></a>
     <div class="category__tabs">
-        <a href="/index-applicants.html#category">Соискателям</a>
         <span class="active">Бизнесу</span>
+        <a href="/index-applicants.html#category">Соискателям</a>
     </div>
     <div class="category__content">
         У вас задача&nbsp;— <em>у&nbsp;нас&nbsp;решение</em>
