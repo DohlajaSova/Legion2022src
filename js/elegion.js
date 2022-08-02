@@ -371,7 +371,6 @@ docReady(function() {
         }
     }
 
-    
     // слайдер с проектом
     let sliderDots = document.querySelectorAll(".js-cases-dots");
     for (i=0; i<sliderDots.length; i++){
@@ -392,7 +391,40 @@ docReady(function() {
             }
         }, false);
     }
-    
+
+    // обработка свайпа
+    let slider = document.querySelectorAll('.cases-slider');
+    let active = document.querySelectorAll('.cases__case .active') || document.querySelectorAll('.project-with-slider .active');
+    slider.addEventListener('touchstart', (e) => {
+        touchstartX = e.changedTouches[0].screenX;
+    }, false);
+    slider.addEventListener('touchend', (e) => {
+        touchendX = e.changedTouches[0].screenX;
+        // console.log(active, touchstartX, touchendX)
+        if (touchstartX > touchendX) {
+            active.forEach((el) => {                
+                const next = el.nextElementSibling;
+                if (next) {
+                    el.classList.remove('active');
+                    next.classList.add('active');
+                } else {
+                    return;
+                }
+            });
+        } else {
+           active.forEach((el) => {                
+                const prev = el.previousElementSibling;
+                if (prev) {
+                    el.classList.remove('active');
+                    prev.classList.add('active');
+                } else {
+                    return;
+                }
+            }); 
+        }
+        active = document.querySelectorAll('.cases__case .active');
+    }, false);
+
     // слайдер с информацией
     let sliderInfoDots = document.querySelectorAll(".js-cases-info-dots");
     for (i=0; i<sliderInfoDots.length; i++){

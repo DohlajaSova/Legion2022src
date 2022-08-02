@@ -155,7 +155,7 @@
         </div>
         <div class="project project_wide-client">
           <a
-            href="#"
+            href="https://www.producthunt.com/products/venn#venn"
             target="_blank"
             class="project__article project__article_small project-article project__article_small-client"
           >
@@ -168,7 +168,7 @@
             </div>
             <div class="project-article_link">
               <div class="project-article_link-title">
-                Connecting new friendships \& shared activities nearby
+                Connecting new friendships &amp; shared activities nearby
               </div>
               <div class="project-article_link-arrow">Смотреть статью →</div>
             </div>
@@ -196,7 +196,7 @@
               <span class="cases__case_name"
                 >Масштабирование продукта</span
               >
-              <a href="#" class="cases__case_desc">Подробнее об услуге &rarr;</a>
+              <a href="/services.html" class="cases__case_desc">Подробнее об услуге &rarr;</a>
           </div>
         </div>
         <div class="project client" style="background: transparent">

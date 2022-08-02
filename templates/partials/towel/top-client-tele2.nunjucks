@@ -171,7 +171,7 @@
               <span class="cases__case_name"
                 >Комплексная<br>разработка<br>digital-продуктов</span
               >
-              <a href="#" class="cases__case_desc">Подробнее об услуге &rarr;</a>
+              <a href="/services.html" class="cases__case_desc">Подробнее об услуге &rarr;</a>
           </div>
         </div>
         <div class="project project_wide-client">
