@@ -1853,6 +1853,12 @@ a.button {
 	height: 100%;
 	border-radius: $border-radius;
 	overflow: hidden;
+	&.main {
+		border: $color-grey-light 3px solid;
+		.cases-slider__item_nomination {
+			background: $color-white;
+		}
+	}
 
 	&__item {
 		display: flex;
@@ -1941,7 +1947,7 @@ a.button {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		height: 100%;
+		height: 5%;
 
 		&_dots {
 			position: relative;
@@ -2036,7 +2042,7 @@ a.button {
 	}
 
 	&__statics {
-		height: 100%;
+		height: 5%;
 
 		&_dots {
 			position: absolute;
