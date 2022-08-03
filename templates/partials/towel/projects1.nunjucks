@@ -4,21 +4,24 @@
         <div class="projects__panels">
             <div class="project project_tall">
                 <div class="project__review_container">
-                    <div class="project__review">
-                        <div class="project__review_top">
-                            <img class="project__review_top-img hide" src="/assets/css/img/temp-author.png" alt="Tele2"/>
-                            <div class="project__review_rubr">Отзыв</div>
-                            <div class="project__review_body">
-                                Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших инструментов для торговой сети. С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.
-                            </div>
-                        </div>
-                        <a href="/client.html" class="project__review_author">
-                            <img class="project__review_author-img" src="/assets/css/img/logo-5ka.svg" alt="Пятёрочка"/>
-                            <h3 class="project__review_author-name">Павел Бабий</h3>
-                            <p class="project__review_author-position">начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»</p>
-                        </a>
-                    </div>
+            <div class="project__review light">
+              <div class="project__review_top project__review_top-client dark">
+                <img
+                  class="project__review_author-img dark"
+                  src="/assets/css/img/temp-author_dots.png"
+                  alt="Пятёрочка"
+                />
+                <div class="project__review_rubr light">Отзыв</div>
+                <h3 class="project__review_author-name light">Павел Бабий</h3>
+                <div class="project__review_author-position light">
+                  начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
                 </div>
+              </div>
+              <div class="project__review_body project__review_body-client dark">
+                Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших инструментов для торговой сети. С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.
+              </div>
+            </div>
+          </div>
             </div>
             <div class="project project-with-slider">
                 <div class="cases-slider">
@@ -28,8 +31,7 @@
                             <p>Лучшее мобильное решение/активация</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-jetkid.png" alt="Jet Kid"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/cases-slider-bg_jetkid.svg" alt="Jet Kid"></a></div>
                         </div>
                     </div>
                     <div class="cases-slider__item">
@@ -38,8 +40,7 @@
                             <p>Лучшее ритейл-приложение</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/client.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/client.html">Подробнее о проекте →</a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/client.html"><img src="/assets/css/img/cases-slider-bg_5ka.svg" alt="Пятёрочка"></a></div>
                         </div>
                     </div>
                     <div class="cases-slider__item">
@@ -48,8 +49,7 @@
                             <p>Лучшее приложение для телеком/IT/интернет-компании</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-tele2.png" alt="Tele2"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/cases-slider-bg_tele2.svg" alt="Tele2"></a></div>
                         </div>
                     </div>
                 </div>
