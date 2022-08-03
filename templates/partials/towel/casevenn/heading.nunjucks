@@ -1,0 +1,20 @@
+<div class="top top_case">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="/portfolio.html">Портфолио</a></li>
+            <li><a href="/client-venn.html"> Venn</a></li>
+            <li><span>Профиль пользователя</span></li>
+        </ul>
+        <h1>Приложение Venn. <br>Профиль пользователя</h1>
+        
+        <div class="top__tags">
+            <span>#масштабированиепродукта</span>
+            <span>#socialnetwork</span>
+        </div>
+
+        <div class="top__image">
+            <img class="top__image-desktop" src="/assets/css/img/temp-venn-top.jpg" alt="Приложение Venn. Профиль пользователя">
+            <img class="top__image-tablet" src="/assets/css/img/temp-venn-top768.jpg" alt="Приложение Venn. Профиль пользователя">
+        </div>
+    </div>
+</div>

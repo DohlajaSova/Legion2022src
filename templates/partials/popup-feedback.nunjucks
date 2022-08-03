@@ -36,13 +36,13 @@
 
                     <h3>Что нужно сделать?</h3>
                     <div class="request__select select select-inline select-inline_wide" id="multiple-container">
-                        <select id="multiple-4" name="Выберите вариант">
-                            <option>Разработать приложение с&nbsp;нуля</option>
-                            <option>Провести аудит&nbsp;МП</option>
-                            <option>Проанализировать конкурентов</option>
-                            <option>Проработать дизайн-решение</option>
-                            <option>Запустить продукт на&nbsp;рынок</option>
-                            <option>Другое</option>
+                        <select id="multiple-4" name="Выберите вариант" multiple>
+                            <option value="Разработать приложение с нуля" selected="selected">Разработать приложение с&nbsp;нуля</option>
+                            <option value="Провести аудит МП">Провести аудит&nbsp;МП</option>
+                            <option value="Проанализировать конкурентов">Проанализировать конкурентов</option>
+                            <option value="Проработать дизайн-решение">Проработать дизайн-решение</option>
+                            <option value="Запустить продукт на рынок">Запустить продукт на&nbsp;рынок</option>
+                            <option value="Другое">Другое</option>
                         </select>
                     </div>
                     <h3>Есть ли описание проекта?</h3>

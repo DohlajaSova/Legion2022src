@@ -5999,6 +5999,33 @@ a.button {
         }
     }
 }
+
+.case__alfa{
+	&_problems{
+		&-item{
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 40px;
+			height: 100%;
+			position: absolute;
+			left:0;
+			top: 0;
+			&__text{
+				color: #fff;
+				// padding: 0 40px;
+                line-height: 130%;
+				margin:  0 0 40px 0;
+				// font-size: 46px;
+    			font-size: 3vw;
+			}
+			&__img {
+				width: 100%;
+				padding: 0%;
+			}
+		}
+	}
+}
+
 .who-we-are{
     &__content{
 		display:flex;

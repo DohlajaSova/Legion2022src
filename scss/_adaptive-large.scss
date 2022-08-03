@@ -1687,6 +1687,17 @@
             }
         }
     }
+    
+    .case__alfa{
+        &_problems{
+            &-item{
+                padding: 25px;
+                &__text{
+                    margin:  0 0 25px 0;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {
