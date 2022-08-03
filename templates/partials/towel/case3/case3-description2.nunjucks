@@ -75,13 +75,6 @@
             Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
           </div>
           <div class="case3__content_card-transition">Подробнее&nbsp;→</div>
-          <!-- <div class="case3__content_card-foreground">
-            <img
-              class="case3__content_card-foreground-img"
-              src="/assets/css/img/case3-content-foreground.png"
-              alt=""
-            />
-          </div> -->
         </div>
         <div class="case3__content_card">
           <div class="case3__content_card-main">

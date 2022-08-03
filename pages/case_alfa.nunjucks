@@ -1,0 +1,14 @@
+<!-- case.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Приложение «Пятёрочка». Обратная связь - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/casealfa/heading.nunjucks" %}
+  {% include "partials/towel/casealfa/case-description.nunjucks" %}
+  {% include "partials/towel/case-works.nunjucks" %}
+  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+  {% include "partials/towel/cases-random.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+{% endblock %}

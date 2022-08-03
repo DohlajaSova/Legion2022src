@@ -1,0 +1,172 @@
+<div class="principles principles_case case2">
+    <div class="container">
+        <div class="principles__content">
+            <div class="principles__content_head">
+                <h2>Всё для&nbsp;инвестиций</h2>
+            </div>
+            <div class="principles__content_text">
+                <p>В&nbsp;приложении пользователь может сформировать инвестиционный портфель, покупать и&nbsp;продавать акции и&nbsp;облигации российских и&nbsp;иностранных компаний, обменивать валюту по&nbsp;курсу биржи и&nbsp;управлять своим доходом.</p>
+                {# <div class="principles__content_buttons store">
+                    <a href="https://apps.apple.com/ru/app/Alfa/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
+                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
+                </div> #}
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div class="problems problems_case">
+    <div class="container">
+        <div class="problems__item problems__item_bg9">
+            <div class="problems__item_container">
+                <div class="problems__item_contents problems__item_contents-slider">
+                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                        <span class="problems-slider-groups__item">
+                            <div class="device device_fit-height">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-alfa-phone1.jpg" alt="Alfa">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="problems-slider-groups__item">
+                            <div class="device device_fit-height">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-alfa-phone2.jpg" alt="Alfa">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div></div>
+                </div>
+            </div>
+            <div class="problems-slider-groups__statics">
+                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                    <li></li>
+                    <li></li>
+                </ul></div>
+            </div>
+        </div>
+        <div class="problems__item problems__item_bg10 case__alfa_problems">
+            <div class="case__alfa_problems-item">
+                <div class="case__alfa_problems-item__text">Прирост просмотров экранов и активных пользователей за 3 года</div>
+                <img class="case__alfa_problems-item__img" src="/assets/css/img//temp-alfa-pic1.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="principles principles_case">
+    <div class="container">
+        <div class="principles__content">
+            <div class="principles__content_head">
+                <h2>Сбалансированный<br/>портфель</h2>
+            </div>
+            <div class="principles__content_text">
+                <p>А&nbsp;также в&nbsp;online-режиме отслеживать котировки и&nbsp;получать уведомления об&nbsp;изменении цен.</p>
+                <p>Пользователь может формировать инвестиционный портфель: покупать и&nbsp;продавать акции, валюту, облигации, фьючерсы, ПИФы, БПИФы и&nbsp;ETF на&nbsp;бирже. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="case-stages">
+    <div class="principles principles_case">
+        <div class="container container_flexible">
+            <div class="problems__item problems__item_bg10">
+                <div class="problems__item_container">
+                    <div class="problems__item_contents problems__item_contents-slider">
+                        <div class="problems-slider-groups"><div class="js-problems-slider-groups">
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-alfa-phone3.jpg" alt="Alfa">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-alfa-phone4.jpg" alt="Alfa">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="problems-slider-groups__statics">
+                    <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
+                        <li></li>
+                        <li></li>
+                    </ul></div>
+                </div>
+            </div>
+            <div class="problems__item problems__item_bg9">
+                <h3>Настройки конструктора</h3>
+                <ul class="case-stages__list">
+                    <li>Акции</li>
+                    <li>Валюта</li>
+                    <li>Облигации</li>
+                    <li>Фьючерсы</li>
+                    <li>ПИФы и БПИФы</li>
+                    <li>ETF</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="principles principles_case">
+    <div class="container">
+        <div class="principles__content">
+            <div class="principles__content_head">
+                <h2>Управление доходами</h2>
+            </div>
+            <div class="principles__content_text">
+                <p>В&nbsp;приложении «Альфа-Инвестиции» мы&nbsp;добавили спектр возможностей для&nbsp;онлайн-мониторинга изменений на&nbsp;бирже. В&nbsp;приложении пользователь может:</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="case-stages">
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
+                <div class="case-stages__layout_left"><div class="case-stages__layout_inner">
+                    <ul class="case-stages__list">
+                        <li>Открыть брокерский счёт в&nbsp;приложении и&nbsp;пополнять его&nbsp;напрямую со&nbsp;своего банковского счёта.</li>
+                        <li>Просматривать информацию о&nbsp;прибыли и&nbsp;убытках от&nbsp;приобретённых акций.</li>
+                        <li>Проверить статус заявок на&nbsp;покупку или&nbsp;продажу акций.</li>
+                        <li>Узнать дату выплаты дивидендов во&nbsp;вкладке «Купоны».</li>
+                        <li>Вывести с&nbsp;брокерского счёта начисленные дивиденды или&nbsp;средства от&nbsp;продажи ценных бумаг и&nbsp;валюты. </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
+                    <div class="device device_wide">
+                        <div class="device__wrapper">
+                            <img class="device__screen" src="/assets/css/img/temp-alfa-phone5.jpg" alt="Alfa">
+                            <div class="device__shadow"> 
+                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+            </div></div>
+        </div>
+    </div>
+</div>

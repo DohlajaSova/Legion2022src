@@ -1,0 +1,20 @@
+<div class="top top_case">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="/portfolio.html">Портфолио</a></li>
+            <li><a href="/client-tele2.html"> Tele2</a></li>
+            <li><span>Конструктор тарифов</span></li>
+        </ul>
+        <h1>Приложение «Мой Tele2». <br>Конструктор тарифов</h1>
+        
+        <div class="top__tags">
+            <span>#комплекснаяразработка</span>
+            <span>#telecom</span>
+        </div>
+
+        <div class="top__image">
+            <img class="top__image-desktop" src="/assets/css/img/temp-tele2-top.jpg" alt="Приложение «Мой Tele2». Конструктор тарифов">
+            <img class="top__image-tablet" src="/assets/css/img/temp-tele2-top768.jpg" alt="Приложение «Мой Tele2». Конструктор тарифов">
+        </div>
+    </div>
+</div>

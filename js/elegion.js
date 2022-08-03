@@ -989,7 +989,7 @@ docReady(function() {
           /* For each element, create a new DIV that will act as the selected item: */
           divCreated = document.createElement("DIV");
           divCreated.setAttribute("class", "select-selected");
-          divCreated.innerHTML = selectsByTag.options[selectsByTag.selectedIndex].innerHTML;
+          divCreated.innerHTML = selectsByTag?.options[selectsByTag.selectedIndex]?.innerHTML;
           
 		  //divCreated.innerHTML = Array.prototype.slice.call(selectsByTag.selectedOptions);
           selectsByClass[i].appendChild(divCreated);
@@ -1049,6 +1049,8 @@ docReady(function() {
                 for (i = 0; i < sl; i++) {
                     if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
                         selectsByTagDiv3.selectedIndex = i;
+                        selectsByTagDiv3.value = '1,2';
+                        const val = selectsByTagDiv3.value;
                         if(!isMultiple){
                             pvsSibling.innerHTML = this.innerHTML
                         }
