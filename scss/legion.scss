@@ -747,6 +747,11 @@ a.button {
 	}
 }
 
+.button.yaDiskUploader{
+    border-radius:100px;
+    padding:20px 60px;
+}
+
 .header {
 	background-color: $color-white;
 	padding: 33px 0 83px;
@@ -1848,6 +1853,12 @@ a.button {
 	height: 100%;
 	border-radius: $border-radius;
 	overflow: hidden;
+	&.main {
+		border: $color-grey-light 3px solid;
+		.cases-slider__item_nomination {
+			background: $color-white;
+		}
+	}
 
 	&__item {
 		display: flex;
