@@ -1,24 +1,29 @@
 <div class="news">
     <div class="container">
-        <h2>Новости<br><em>легионеров</em></h2>
+        <h2>Кое-что<br><em>на почитать</em></h2>
         <div class="news__items">
-            <a href="https://ratingruneta.ru/apps/" target="_blank" class="news-item news-item_wide">
-                <div class="news-item__img"><img src="/assets/css/img/temp-news1.jpg" alt=""></div>
-                <div class="news-item__date">12 января 2022</div>
-                <div class="news-item__head">e-legion&nbsp;— в&nbsp;топ-3 разработчиков мобильных приложений 2021&nbsp;года</div>
-                <div class="news-item__lead">По версии «Рейтинг Рунета» e-legion занял третье место в рейтингах разработчиков мобильных приложений<br/>и разработчиков дизайна мобильных приложений 2021 года.</div>
+            <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="news-item">
+                <div class="news-item__img"><img src="/assets/css/img/temp-news6.jpg" alt=""></div>
+                <div class="news-item__tag">Легионеры</div>
+                <div class="news-item__head">Я сам не смотрю,<br>но подписался </div>
+                <div class="news-item__lead">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</div>
+            </a>
+            <a href="https://youtu.be/iqwrEaxkrj4" target="_blank" class="news-item txt">
+                <div class="news-item__tag">Опыт</div>
+                <div class="news-item__head">Алгоритм успешного собеседования</div>
+                <div class="news-item__lead">Поделимся советами и проверенными личными лайфхаками о том, как подготовиться к успешному собеседованию.</div>
             </a>
             <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>
-                <div class="news-item__date">21 сентября 2021</div>
-                <div class="news-item__head">Микросервисы. Не&nbsp;всё&nbsp;то&nbsp;золото, что&nbsp;хайп</div>
+                <div class="news-item__tag">Сообщество. Опыт</div>
+                <div class="news-item__head">Custom view<br>на Compose</div>
                 <div class="news-item__lead">Статья от&nbsp;архитектора решений e-legion о&nbsp;том, почему микросервисы&nbsp;— не&nbsp;панацея. Разбираемся, чем монолиты отличаются от&nbsp;микросервисов, и&nbsp;какое решение лучше выбрать.</div>
             </a>
             <a href="https://youtu.be/iqwrEaxkrj4" target="_blank" class="news-item">
-                <div class="news-item__img"><img src="/assets/css/img/temp-news3.jpg" alt=""></div>
-                <div class="news-item__date">31 августа 2021</div>
-                <div class="news-item__head">e-legion meetup: mobile&nbsp;QA от&nbsp;создания ферм до&nbsp;тонкостей релиза</div>
-                <div class="news-item__lead">На&nbsp;митапе спикеры из&nbsp;e-legion, CDEK&nbsp;IT, Avito и&nbsp;Mail.ru group обсудили создание мобильных ферм, performance-тестирование и&nbsp;лайфхаки при&nbsp;релизе приложения в&nbsp;сторы.</div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news9.jpg" alt=""></div>
+                <div class="news-item__tag">Мероприятия. Сообщество</div>
+                <div class="news-item__head">Хакатон<br>e-legion Hack</div>
+                <div class="news-item__lead">Рассказываем, как прошёл наш хакатон, и показываем победителей.</div>
             </a>
         </div>
         <div class="news__button">
