@@ -1094,7 +1094,7 @@ docReady(function() {
                         yl = optionSelected.length;
                         let removed = false;
                         let removedInd = false;
-                        selectsByTagDiv3.options[i].setAttribute('selected', '');
+                        selectsByTagDiv3.options[i].setAttribute('selected', 'selected');
                         if(isMultiple) {
                             for (k = 0; k < yl; k++) {
                                 if(optionSelected[k]?.innerHTML == this.innerHTML) {
