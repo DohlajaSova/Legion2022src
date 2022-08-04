@@ -2725,16 +2725,32 @@ a.button {
             &-accent {
                 font-size: 74px;
             }
-            // &-foreground {
-            //     margin-top: auto;
-            //     width: 100%;
-            // }
         }
         &_card:first-child{
             background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
             background-size: contain;
+			&.casevenn {
+				background:url($img-path + "case_venn-content-foreground.png") bottom left no-repeat $color-blue-dark;
+				background-size: contain;
+			}
         }
     }
+}
+.casevenn {
+    &__content {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns:100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+	
 }
 .who-we-are {
 	&__content {

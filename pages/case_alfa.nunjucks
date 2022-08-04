@@ -1,6 +1,6 @@
 <!-- case.nunjucks -->
 {% extends "layout.nunjucks" %}
-{% block title %} Приложение «Пятёрочка». Обратная связь - {% endblock %}
+{% block title %} Приложение «Альфа-Инвестиции». Портфель - {% endblock %}
 {% block links %} {% endblock %}
 {% block content %}
 

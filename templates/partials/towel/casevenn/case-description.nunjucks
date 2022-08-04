@@ -1,242 +1,383 @@
 <div class="principles principles_case case2">
-    <div class="container">
-        <div class="principles__content">
-            <div class="principles__content_head">
-                <h2>Друзья со&nbsp;всей планеты</h2>
-            </div>
-            <div class="principles__content_text">
-                <p>Основными пользователями сервиса пока остаются норвежцы, но&nbsp;в&nbsp;планах компании расширить географию
-                    присутствия.</p>
-                <p>Приложение ориентировано на&nbsp;англоязычную аудиторию и&nbsp;доступно для&nbsp;скачивания по&nbsp;всему миру —
-                    приложением пользуются в&nbsp;США и&nbsp;Европе.</p>
-                {# <div class="principles__content_buttons store">
-                                    <a href="https://apps.apple.com/ru/app/Venn/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
-                                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
-                                </div> #}
-            </div>
+  <div class="container">
+    <div class="principles__content">
+      <div class="principles__content_head">
+        <h2>Друзья со&nbsp;всей планеты</h2>
+      </div>
+      <div class="principles__content_text">
+        <p>
+          Основными пользователями сервиса пока остаются норвежцы,
+          но&nbsp;в&nbsp;планах компании расширить географию присутствия.
+        </p>
+        <p>
+          Приложение ориентировано на&nbsp;англоязычную аудиторию
+          и&nbsp;доступно для&nbsp;скачивания по&nbsp;всему миру — приложением
+          пользуются в&nbsp;США и&nbsp;Европе.
+        </p>
+        {#
+        <div class="principles__content_buttons store">
+          <a
+            href="https://apps.apple.com/ru/app/Venn/id1174271758"
+            class="button button_grey store_ios"
+            target="_blank"
+            ><span>Download on the</span> <b>App Store</b></a
+          >
+          <a
+            href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US"
+            class="button button_grey store_android"
+            target="_blank"
+            ><span>Download on</span> <b>Google Play</b></a
+          >
         </div>
+        #}
+      </div>
     </div>
+  </div>
 </div>
 <div class="problems problems_case">
+  <div class="container">
+    <div class="problems__item problems__item_bg10">
+      <div class="problems__item_container">
+        <div class="problems__item_contents problems__item_contents-slider">
+          <div class="problems-slider-groups">
+            <div class="js-problems-slider-groups">
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-venn-phone1.jpg"
+                      alt="Venn"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-venn-phone2.jpg"
+                      alt="Venn"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span class="problems-slider-groups__item">
+                <div class="device device_fit-height">
+                  <div class="device__wrapper">
+                    <img
+                      class="device__screen"
+                      src="/assets/css/img/temp-venn-phone3.jpg"
+                      alt="Venn"
+                    />
+                    <div class="device__shadow">
+                      <img
+                        class="device__phone"
+                        src="/assets/css/img/phone-iphone12pro.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="problems-slider-groups__statics">
+        <div class="problems-slider-groups__statics_dots">
+          <ul class="js-problems-groups-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="problems__item problems__item_bg9">
+      <div class="client__present venn problems__item_videosection">
+        <img
+          class="client__present_desktop venn"
+          src="/assets/css/img/client-venn-preview.jpg"
+          alt="Venn"
+        />
+        <img
+          class="client__present_mobile venn"
+          src="/assets/css/img/client-venn-preview_mobile.jpg"
+          alt="Venn"
+        />
+        <img
+          class="client__present-play venn"
+          src="/assets/css/img/play.fill.svg"
+        />
+        <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
+        <video
+          class="client__present-video"
+          preload="auto"
+          playsinline
+          loop
+          autoplay
+          muted
+        >
+          <source src="/assets/css/img/video_venn.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="principles principles_case">
+  <div class="container">
+    <div class="principles__content">
+      <div class="principles__content_head">
+        <h2>Режимы доступа</h2>
+      </div>
+      <div class="principles__content_text">
+        <p>
+          Мы&nbsp;добавили неавторизованную зону, чтобы пользователь мог
+          ознакомиться с&nbsp;возможностями приложения перед регистрацией.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="case-stages">
+  <div class="principles principles_case">
     <div class="container">
-        <div class="problems__item problems__item_bg10">
-            <div class="problems__item_container">
-                <div class="problems__item_contents problems__item_contents-slider">
-                    <div class="problems-slider-groups">
-                        <div class="js-problems-slider-groups">
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-venn-phone1.jpg" alt="Venn">
-                                            <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                            </div>
-                                        </div>
-                                    </span>
-                                    <span class="problems-slider-groups__item">
-                                        <div class="device device_fit-height">
-                                            <div class="device__wrapper">
-                                                <img class="device__screen" src="/assets/css/img/temp-venn-phone2.jpg" alt="Venn">
-                                                    <div class="device__shadow">
-                                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                    </div>
-                                                </div>
-                                            </span>
-                                            <span class="problems-slider-groups__item">
-                                                <div class="device device_fit-height">
-                                                    <div class="device__wrapper">
-                                                        <img class="device__screen" src="/assets/css/img/temp-venn-phone3.jpg" alt="Venn">
-                                                            <div class="device__shadow">
-                                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                            </div>
-                                                        </div>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="problems-slider-groups__statics">
-                                        <div class="problems-slider-groups__statics_dots">
-                                            <ul class="js-problems-groups-dots">
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="problems__item problems__item_bg9">
-                                    <div class="client__present venn problems__item_videosection">
-                                        <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.jpg" alt="Venn"/>
-                                        <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.jpg" alt="Venn"/>
-                                        <img
-                                        class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
-                                        <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
-                                        <video class="client__present-video" preload="auto" playsinline loop autoplay muted>
-                                            <source src="/assets/css/img/video_venn.mp4" type="video/mp4"></video>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="principles principles_case">
-                                <div class="container">
-                                    <div class="principles__content">
-                                        <div class="principles__content_head">
-                                            <h2>Режимы доступа</h2>
-                                        </div>
-                                        <div class="principles__content_text">
-                                            <p>Мы&nbsp;добавили неавторизованную зону, чтобы пользователь мог ознакомиться с&nbsp;возможностями приложения перед
-                                                регистрацией.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="case-stages">
-                                <div class="principles principles_case">
-                                    <div class="container">
-                                        <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1">
-                                            <div class="problems__item_container">
-                                                <div class="case-stages__layout_left">
-                                                    <div
-                                                        class="case-stages__layout_inner">
-                                                        {# <h3>Что сделали</h3> #}
-                                                        <ul class="case-stages__list">
-                                                            <li>Мы создали неавторизованную зону согласно стандартам Apple и&nbsp;Google. Пользователь может использовать базовые
-                                                                функции приложения без регистрации или&nbsp;авторизации.
-                                                                <br/> <br/> Например, просматривать профили других пользователей.
-                                                            </li>
-                                                            <li>Полная функциональность приложения доступна любому пользователю после авторизации по номеру телефона. <br/> <br/>
-                                                                Например, написать сообщение другому пользователю.
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="case-stages__layout_right">
-                                                    <div class="case-stages__layout_inner case-stages__layout_inner-centered">
-                                                        <div class="device device_wide">
-                                                            <div class="device__wrapper">
-                                                                <img class="device__screen" src="/assets/css/img/temp-venn-phone4.jpg" alt="Venn">
-                                                                    <div class="device__shadow">
-                                                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="principles principles_case">
-                                        <div class="container">
-                                            <div class="principles__content">
-                                                <div class="principles__content_head">
-                                                    <h2>Заполнение профиля</h2>
-                                                </div>
-                                                <div class="principles__content_text">
-                                                    <p>Мы&nbsp;разработали все&nbsp;основные функциональности для&nbsp;приложения знакомств: галерея фотографий, доступ
-                                                        к&nbsp;геопозиции, отображение интересов и&nbsp;предпочтений.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="case-stages">
-                                        <div class="principles principles_case">
-                                            <div class="container container_flexible">
-                                                <div class="problems__item problems__item_bg10">
-                                                    <div class="problems__item_container">
-                                                        <div class="problems__item_contents problems__item_contents-slider">
-                                                            <div class="problems-slider-groups">
-                                                                <div class="js-problems-slider-groups">
-                                                                    <span class="problems-slider-groups__item">
-                                                                        <div class="device device_fit-height">
-                                                                            <div class="device__wrapper">
-                                                                                <img class="device__screen" src="/assets/css/img/temp-venn-phone5.jpg" alt="Venn">
-                                                                                    <div class="device__shadow">
-                                                                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </span>
-                                                                            <span class="problems-slider-groups__item">
-                                                                                <div class="device device_fit-height">
-                                                                                    <div class="device__wrapper">
-                                                                                        <img class="device__screen" src="/assets/css/img/temp-venn-phone6.jpg" alt="Venn">
-                                                                                            <div class="device__shadow">
-                                                                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </span>
-                                                                                    <span class="problems-slider-groups__item">
-                                                                                        <div class="device device_fit-height">
-                                                                                            <div class="device__wrapper">
-                                                                                                <img class="device__screen" src="/assets/css/img/temp-venn-phone7.jpg" alt="Venn">
-                                                                                                    <div class="device__shadow">
-                                                                                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </span>
-                                                                                            <span class="problems-slider-groups__item">
-                                                                                                <div class="device device_fit-height">
-                                                                                                    <div class="device__wrapper">
-                                                                                                        <img class="device__screen" src="/assets/css/img/temp-venn-phone8.jpg" alt="Venn">
-                                                                                                            <div class="device__shadow">
-                                                                                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png"></div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="problems-slider-groups__statics">
-                                                                                        <div class="problems-slider-groups__statics_dots">
-                                                                                            <ul class="js-problems-groups-dots">
-                                                                                                <li></li>
-                                                                                                <li></li>
-                                                                                                <li></li>
-                                                                                                <li></li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="problems__item problems__item_bg9">
-                                                                                    <h3>В приложении можно</h3>
-                                                                                    <ul class="case-stages__list">
-                                                                                        <li>Подредактировать фотографии перед загрузкой в&nbsp;галерею</li>
-                                                                                        <li>Добавить текущую или&nbsp;выбранную геопозицию</li>
-                                                                                        <li>Указать не&nbsp;только свои интересы, но&nbsp;ещё&nbsp;и&nbsp;ценности</li>
-                                                                                        <li>Настроить push-уведомления, чтобы не&nbsp;пропустить сообщение от&nbsp;нового друга</li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="case2 case-stages">
-                                                                        <div class="projects projects_case">
-                                                                            <div class="container">
-                                                                                <div class="projects__panels">
-                                                                                    <div class="project project_tall case2">
-                                                                                        <div class="project__review_container">
-                                                                                            <div class="project__review">
-                                                                                                <div class="project__review_top">
-                                                                                                    <img class="project__review_top-img" src="/assets/css/img/temp-author4.png" alt="Марина Янцен"/>
-                                                                                                    <div class="project__review_rubr">Отзыв</div>
-                                                                                                    <div class="project__review_body">
-                                                                                                        <h3 class="project__review_author-name">Марина Янцен</h3>
-                                                                                                        <p class="project__review_author-position">аналитик проекта</p>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <span class="project__review_author">
-                                                                                                    <h3 class="project__review_author-desc">Ценной особенностью «Шпионского клуба» был близкий контакт с&nbsp;нашими
-                                                                                                        пользователями&nbsp;— агентами клуба. С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая массу отзывов
-                                                                                                        и&nbsp;идей развития продукта.</h3>
-                                                                                                    <h3 class="project__review_author-desc">Многое удалось воплотить!</h3>
-                                                                                                </span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="project project_tall case2__kpiWrapper">
-                                                                                        {% include "partials/towel/case2/case2-kpi.nunjucks" %}
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+      <div
+        class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"
+      >
+        <div class="problems__item_container">
+          <div class="case-stages__layout_left">
+            <div class="case-stages__layout_inner">
+              {#
+              <h3>Что сделали</h3>
+              #}
+              <ul class="case-stages__list">
+                <li>
+                  Мы создали неавторизованную зону согласно стандартам Apple
+                  и&nbsp;Google. Пользователь может использовать базовые функции
+                  приложения без регистрации или&nbsp;авторизации. <br />
+                  <br />
+                  Например, просматривать профили других пользователей.
+                </li>
+                <li>
+                  Полная функциональность приложения доступна любому
+                  пользователю после авторизации по номеру телефона. <br />
+                  <br />
+                  Например, написать сообщение другому пользователю.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-stages__layout_right">
+            <div
+              class="case-stages__layout_inner case-stages__layout_inner-centered"
+            >
+              <div class="device device_wide">
+                <div class="device__wrapper">
+                  <img
+                    class="device__screen"
+                    src="/assets/css/img/temp-venn-phone4.jpg"
+                    alt="Venn"
+                  />
+                  <div class="device__shadow">
+                    <img
+                      class="device__phone"
+                      src="/assets/css/img/phone-iphone12pro.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="principles principles_case">
+  <div class="container">
+    <div class="principles__content">
+      <div class="principles__content_head">
+        <h2>Заполнение профиля</h2>
+      </div>
+      <div class="principles__content_text">
+        <p>
+          Мы&nbsp;разработали все&nbsp;основные функциональности
+          для&nbsp;приложения знакомств: галерея фотографий, доступ
+          к&nbsp;геопозиции, отображение интересов и&nbsp;предпочтений.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="case-stages">
+  <div class="principles principles_case">
+    <div class="container container_flexible">
+      <div class="problems__item problems__item_bg10">
+        <div class="problems__item_container">
+          <div class="problems__item_contents problems__item_contents-slider">
+            <div class="problems-slider-groups">
+              <div class="js-problems-slider-groups">
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-venn-phone5.jpg"
+                        alt="Venn"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-venn-phone6.jpg"
+                        alt="Venn"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-venn-phone7.jpg"
+                        alt="Venn"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+                <span class="problems-slider-groups__item">
+                  <div class="device device_fit-height">
+                    <div class="device__wrapper">
+                      <img
+                        class="device__screen"
+                        src="/assets/css/img/temp-venn-phone8.jpg"
+                        alt="Venn"
+                      />
+                      <div class="device__shadow">
+                        <img
+                          class="device__phone"
+                          src="/assets/css/img/phone-iphone12pro.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="problems-slider-groups__statics">
+          <div class="problems-slider-groups__statics_dots">
+            <ul class="js-problems-groups-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="problems__item problems__item_bg9">
+        <h3>В приложении можно</h3>
+        <ul class="case-stages__list">
+          <li>Подредактировать фотографии перед загрузкой в&nbsp;галерею</li>
+          <li>Добавить текущую или&nbsp;выбранную геопозицию</li>
+          <li>
+            Указать не&nbsp;только свои интересы,
+            но&nbsp;ещё&nbsp;и&nbsp;ценности
+          </li>
+          <li>
+            Настроить push-уведомления, чтобы не&nbsp;пропустить сообщение
+            от&nbsp;нового друга
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="case2 case-stages">
+  <div class="projects projects_case">
+    <div class="container">
+      <div class="projects__panels">
+        <div class="project project_tall case2">
+          <div class="project__review_container">
+            <div class="project__review">
+              <div class="project__review_top">
+                <img
+                  class="project__review_top-img"
+                  src="/assets/css/img/temp-author5.png"
+                  alt="Марина Янцен"
+                />
+                <div class="project__review_rubr">Отзыв</div>
+                <div class="project__review_body">
+                  <h3 class="project__review_author-name">Игорь Иевков</h3>
+                  <p class="project__review_author-position">
+                    аккаунт-менеджер
+                  </p>
+                </div>
+              </div>
+              <span class="project__review_author">
+                <h3 class="project__review_author-desc">
+                  Было&nbsp;классно принимать участие в&nbsp;иностранном
+                  стартапе. Ведь отличительные черты стартапов — профессионализм
+                  и&nbsp;большая гибкость всех участников, оперативность
+                  принятия решений и&nbsp;творческих подход.
+                  А&nbsp;ещё&nbsp;было интересно наблюдать, как&nbsp;социальная
+                  сеть наполняется участниками из&nbsp;разных точек планеты.
+                </h3>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="project project_tall">
+          <div class="casevenn__content">
+            <div class="case3__content_card casevenn">
+              <div class="case3__content_card-tip">Публикации</div>
+              <div class="case3__content_card-main">
+                Venn audience
+              </div>
+              <div class="case3__content_card-transition">Подробнее&nbsp;→</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

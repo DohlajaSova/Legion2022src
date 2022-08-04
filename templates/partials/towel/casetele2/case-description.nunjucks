@@ -5,76 +5,71 @@
                 <h2>Настроить тариф <br>для себя</h2>
             </div>
             <div class="principles__content_text">
-                <p>Чтобы предоставить пользователям больше свободыдля&nbsp;конфигурации тарифного плана мы&nbsp;реализовали простой и&nbsp;удобный конструктор тарифов.</p>
-
+                <p>Чтобы предоставить пользователям больше свободыдля&nbsp;конфигурации тарифного плана мы&nbsp;реализовали простой
+                    и&nbsp;удобный конструктор тарифов.</p>
                 <p>С&nbsp;помощью него абоненты могут выбрать пакеты минут, гигабайтов и&nbsp;услуги под свои интересы.</p>
-
                 {# <div class="principles__content_buttons store">
-                    <a href="https://apps.apple.com/ru/app/Tele-2/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
-                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
-                </div> #}
+                                    <a href="https://apps.apple.com/ru/app/Tele-2/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
+                                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
+                                </div> #}
             </div>
         </div>
     </div>
 </div>
- 
 <div class="problems problems_case">
     <div class="container">
         <div class="problems__item problems__item_bg10">
             <div class="problems__item_container">
                 <div class="problems__item_contents problems__item_contents-slider">
-                    <div class="problems-slider-groups"><div class="js-problems-slider-groups">
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-tele2-phone1.jpg" alt="Tele-2">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                    <div class="problems-slider-groups">
+                        <div class="js-problems-slider-groups">
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone1.jpg" alt="Tele-2">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </span>
-                        <span class="problems-slider-groups__item">
-                            <div class="device device_fit-height">
-                                <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone15.jpg" alt="Tele-2">
-                                    <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                            </span>
+                            <span class="problems-slider-groups__item">
+                                <div class="device device_fit-height">
+                                    <div class="device__wrapper">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone15.jpg" alt="Tele-2">
+                                        <div class="device__shadow">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </span>
-                    </div></div>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="problems-slider-groups__statics">
-                <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
-                    <li></li>
-                    <li></li>
-                </ul></div>
+                <div class="problems-slider-groups__statics_dots">
+                    <ul class="js-problems-groups-dots">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="problems__item problems__item_bg9">
             <div class="client__present venn problems__item_videosection">
                 <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.jpg" alt="Venn"/>
                 <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.jpg" alt="Venn"/>
-                <img class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
-                    <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
-                <video
-                    class="client__present-video"
-                    preload="auto"
-                    playsinline
-                    loop
-                    autoplay
-                    muted>
+                <img
+                class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
+                <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
+                <video class="client__present-video" preload="auto" playsinline loop autoplay muted>
                     <source src="/assets/css/img/video_tele2.mp4" type="video/mp4">
                 </video>
+            </div>
         </div>
     </div>
-    </div>
 </div>
-
-
 <div class="principles principles_case">
     <div class="container">
         <div class="principles__content">
@@ -82,40 +77,47 @@
                 <h2>Индивидуальный тариф</h2>
             </div>
             <div class="principles__content_text">
-                <p>Пользователь может выбрать подходящий тариф и&nbsp;дополнить полезными опциями на&nbsp;свой вкус. А&nbsp;если ничего не&nbsp;понравится — настроить тариф под&nbsp;себя.</p>
+                <p>Пользователь может выбрать подходящий тариф и&nbsp;дополнить полезными опциями на&nbsp;свой вкус. А&nbsp;если ничего
+                    не&nbsp;понравится — настроить тариф под&nbsp;себя.</p>
             </div>
         </div>
     </div>
 </div>
-
 <div class="case-stages">
     <div class="principles principles_case">
         <div class="container">
-            <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
-                <div class="case-stages__layout_left"><div class="case-stages__layout_inner">
-                    <h3>Что сделали</h3>
-                    <ul class="case-stages__list">
-                        <li>Реализовали возможность выбора пакета минут и&nbsp;гигабайтов с&nbsp;динамическим изменением стоимости тарифа.</li>
-                        <li>Интегрировались с&nbsp;большим количеством сервисов, чтобы абоненты могли подключить дополнительные опции на&nbsp;выбор во&nbsp;время формирования индивидуального пакета услуг. </li>
-                    </ul>
-                    <p>К&nbsp;примеру, при&nbsp;выборе услуг можно оформить подписку на&nbsp;безлимитный VPN, YouTube Premium, онлайн-кинотеатр Wink или&nbsp;другие собственные сервисы Tele2.</p>
-                </div>
-            </div>
-                <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
-                    <div class="device device_wide">
-                        <div class="device__wrapper">
-                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone3.jpg" alt="Tele-2">
-                            <div class="device__shadow">
-                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+            <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1">
+                <div class="problems__item_container">
+                    <div class="case-stages__layout_left">
+                        <div class="case-stages__layout_inner">
+                            <h3>Что сделали</h3>
+                            <ul class="case-stages__list">
+                                <li>Реализовали возможность выбора пакета минут и&nbsp;гигабайтов с&nbsp;динамическим изменением стоимости тарифа.</li>
+                                <li>Интегрировались с&nbsp;большим количеством сервисов, чтобы абоненты могли подключить дополнительные опции
+                                    на&nbsp;выбор во&nbsp;время формирования индивидуального пакета услуг.
+                                </li>
+                            </ul>
+                            <p>К&nbsp;примеру, при&nbsp;выборе услуг можно оформить подписку на&nbsp;безлимитный VPN, YouTube Premium,
+                                онлайн-кинотеатр Wink или&nbsp;другие собственные сервисы Tele2.</p>
+                        </div>
+                    </div>
+                    <div class="case-stages__layout_right">
+                        <div class="case-stages__layout_inner case-stages__layout_inner-centered">
+                            <div class="device device_wide">
+                                <div class="device__wrapper">
+                                    <img class="device__screen" src="/assets/css/img/temp-tele2-phone3.jpg" alt="Tele-2">
+                                    <div class="device__shadow">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div></div>
-            </div></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 <div class="principles principles_case">
     <div class="container">
         <div class="principles__content">
@@ -123,81 +125,85 @@
                 <h2>Управление цифровыми сущностями</h2>
             </div>
             <div class="principles__content_text">
-                <p>Конструктор тарифов Tele2 — это&nbsp;возможность выбрать не&nbsp;только опции мобильной связи, но&nbsp;и&nbsp;подписки на&nbsp;множество сервисов.</p>
+                <p>Конструктор тарифов Tele2 — это&nbsp;возможность выбрать не&nbsp;только опции мобильной связи,
+                    но&nbsp;и&nbsp;подписки на&nbsp;множество сервисов.</p>
                 <p>Таким образом, абоненты Tele2 сами решают, чем&nbsp;пользоваться и&nbsp;сколько за&nbsp;это&nbsp;платить.</p>
             </div>
         </div>
     </div>
 </div>
-
 <div class="case-stages">
     <div class="principles principles_case">
         <div class="container container_flexible">
             <div class="problems__item problems__item_bg10">
                 <div class="problems__item_container">
                     <div class="problems__item_contents problems__item_contents-slider">
-                        <div class="problems-slider-groups"><div class="js-problems-slider-groups">
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone5.jpg" alt="Tele-2">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                        <div class="problems-slider-groups">
+                            <div class="js-problems-slider-groups">
+                                <span class="problems-slider-groups__item">
+                                    <div class="device device_fit-height">
+                                        <div class="device__wrapper">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone5.jpg" alt="Tele-2">
+                                            <div class="device__shadow">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone6.jpg" alt="Tele-2">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                </span>
+                                <span class="problems-slider-groups__item">
+                                    <div class="device device_fit-height">
+                                        <div class="device__wrapper">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone6.jpg" alt="Tele-2">
+                                            <div class="device__shadow">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone7.jpg" alt="Tele-2">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                </span>
+                                <span class="problems-slider-groups__item">
+                                    <div class="device device_fit-height">
+                                        <div class="device__wrapper">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone7.jpg" alt="Tele-2">
+                                            <div class="device__shadow">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone8.jpg" alt="Tele-2">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                </span>
+                                <span class="problems-slider-groups__item">
+                                    <div class="device device_fit-height">
+                                        <div class="device__wrapper">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone8.jpg" alt="Tele-2">
+                                            <div class="device__shadow">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </span>
-                            <span class="problems-slider-groups__item">
-                                <div class="device device_fit-height">
-                                    <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone9.jpg" alt="Tele-2">
-                                        <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                </span>
+                                <span class="problems-slider-groups__item">
+                                    <div class="device device_fit-height">
+                                        <div class="device__wrapper">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone9.jpg" alt="Tele-2">
+                                            <div class="device__shadow">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </span>
-                        </div></div>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="problems-slider-groups__statics">
-                    <div class="problems-slider-groups__statics_dots"><ul class="js-problems-groups-dots">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul></div>
+                    <div class="problems-slider-groups__statics_dots">
+                        <ul class="js-problems-groups-dots">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="problems__item problems__item_bg9">
@@ -208,7 +214,6 @@
                     <li>Видеосервисы: Wink, Amediateka, Youtube Premium</li>
                     <li>Облачные игры и&nbsp;сервисы Tele2</li>
                     <li>Домашний интернет</li>
-                    
                 </ul>
             </div>
         </div>

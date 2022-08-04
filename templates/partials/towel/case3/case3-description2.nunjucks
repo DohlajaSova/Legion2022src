@@ -7,12 +7,11 @@
         </div>
         <div class="principles__content_text">
           <p>
-            Пользователи приложения оценивают свои покупки, получая бонусы.
-            Товары с&nbsp;самым высоким рейтингом попадают в&nbsp;подборки.
+            Пользователи приложения оценивают свои покупки, получая бонусы. Товары с&nbsp;самым высоким рейтингом попадают
+            в&nbsp;подборки.
           </p>
           <p>
-            На&nbsp;основании отзывов компания принимает решения
-            об&nbsp;ассортименте или даже о&nbsp;корректировке рецептуры
+            На&nbsp;основании отзывов компания принимает решения об&nbsp;ассортименте или даже о&nbsp;корректировке рецептуры
             продуктов.
           </p>
         </div>
@@ -21,9 +20,7 @@
   </div>
   <div class="principles principles_case">
     <div class="container">
-      <div
-        class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"
-      >
+      <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1">
         <div class="problems__item_container">
           <div class="case-stages__layout_left">
             <div class="case-stages__layout_inner">
@@ -31,32 +28,28 @@
               <ul class="case-stages__list">
                 <li>
                   Доработали раздел с&nbsp;подборками лучших товаров
-                  по&nbsp;рейтингу в&nbsp;мобильном приложении
+                                    по&nbsp;рейтингу в&nbsp;мобильном приложении
                 </li>
                 <li>Добавили отображение рейтинга в&nbsp;карточке товара</li>
                 <li>
-                  Запустили эксперимент со&nbsp;специальными ценниками
-                  в&nbsp;офлайн-магазинах, содержащими оценку товаров
+                  Запустили эксперимент со&nbsp;специальными ценниками в&nbsp;офлайн-магазинах, содержащими оценку
+                  товаров
                 </li>
                 <li>
-                  Запустили акцию с&nbsp;вознаграждением пользователей
-                  за&nbsp;отзывы, чтобы повысить качество получаемых отзывов
+                  Запустили акцию с&nbsp;вознаграждением пользователей за&nbsp;отзывы, чтобы повысить качество получаемых
+                  отзывов
                 </li>
               </ul>
             </div>
           </div>
           <div class="case-stages__layout_right">
-            <div
-              class="case-stages__layout_inner case-stages__layout_inner-centered case3"
-            >
+            <div class="case-stages__layout_inner case-stages__layout_inner-centered case3">
               <div class="device device_wide">
-                <div class="device__wrapper">
+                <div
+                  class="device__wrapper">
                   <!-- {# <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.jpg" alt="Пятёрочка"> #} -->
                   <div class="device__shadow">
-                    <img
-                      class="device__phone"
-                      src="/assets/css/img/phone-case3.png"
-                    />
+                    <img class="device__phone" src="/assets/css/img/phone-case3.png"/>
                   </div>
                 </div>
               </div>
