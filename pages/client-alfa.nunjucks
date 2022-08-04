@@ -1,6 +1,6 @@
 <!-- client.nunjucks -->
 {% extends "layout.nunjucks" %}
-{% block title %} Клиент - {% endblock %}
+{% block title %} Клиент - Альфа-Инвестиции {% endblock %}
 {% block links %} {% endblock %}
 {% block content %}
 
