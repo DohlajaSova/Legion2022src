@@ -286,13 +286,13 @@ function checkFieldValid(element) {
         addListenerInput(element);
         return false;
     }
-    if(element.type === 'tel'){
-        let v = element.value.replace(/\D+/g,"");
-        if(v.length != 10) {
-            addListenerInput(element);
-            return false;
-        }
-    }
+    // if(element.type === 'tel'){
+    //     let v = element.value.replace(/\D+/g,"");
+    //     if(v.length != 10) {
+    //         addListenerInput(element);
+    //         return false;
+    //     }
+    // }
     if(element.type === 'email'){
         var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         if(!element.value.match(pattern)){
