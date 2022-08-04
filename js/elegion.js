@@ -1093,18 +1093,22 @@ docReady(function() {
                         optionSelected = this.parentNode.getElementsByClassName("same-as-selected");
                         yl = optionSelected.length;
                         let removed = false;
+                        let removedInd = false;
+                        selectsByTagDiv3.options[i].setAttribute('selected', 'selected');
                         if(isMultiple) {
                             for (k = 0; k < yl; k++) {
                                 if(optionSelected[k]?.innerHTML == this.innerHTML) {
                                     removed = optionSelected[k]?.innerHTML; //  check why triggering error
+                                    removedInd = k; //  check why triggering error
                                     optionSelected[k]?.classList.remove("same-as-selected");
+                                    selectsByTagDiv3.options[i].removeAttribute('selected');
                                 }
                             }
                         } else {
                             for (k = 0; k < yl; k++) {
                                 optionSelected[k].classList.remove("same-as-selected");
                             }
-                            this.classList.add("same-as-selected");
+                            this.classList.add("same-as-selected");                         
 
                         }
                         if(isMultiple){
