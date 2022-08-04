@@ -1,0 +1,20 @@
+<div class="top top_case">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="/portfolio.html">Портфолио</a></li>
+            <li><a href="/client-alfa.html">Альфа-Банк</a></li>
+            <li><span>Портфель</span></li>
+        </ul>
+        <h1>Приложение «Альфа-Инвестиции».<br>Портфель</h1>
+        
+        <div class="top__tags">
+            <span>#комплекснаяразработка</span>
+            <span>#fintech</span>
+        </div>
+
+        <div class="top__image">
+            <img class="top__image-desktop" src="/assets/css/img/temp-alfa-top.jpg" alt=">Приложение «Альфа-Инвестиции». Портфель">
+            <img class="top__image-tablet" src="/assets/css/img/temp-alfa-top768.jpg" alt=">Приложение «Альфа-Инвестиции». Портфель">
+        </div>
+    </div>
+</div>
