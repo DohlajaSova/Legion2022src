@@ -372,37 +372,42 @@ docReady(function() {
     }
 
     // обработка свайпа
-    let slider = document.querySelector('.cases-slider');
-    let active = document.querySelectorAll('.cases__case .active') || document.querySelectorAll('.project-with-slider .active');
-    if (slider) slider.addEventListener('touchstart', (e) => {
-        touchstartX = e.changedTouches[0].screenX;
-    }, false);
-    if (slider) slider.addEventListener('touchend', (e) => {
-        touchendX = e.changedTouches[0].screenX;
-        // console.log(active, touchstartX, touchendX)
-        if (touchstartX > touchendX) {
-            active.forEach((el) => {                
-                const next = el.nextElementSibling;
-                if (next) {
-                    el.classList.remove('active');
-                    next.classList.add('active');
-                } else {
-                    return;
-                }
-            });
-        } else {
-           active.forEach((el) => {                
-                const prev = el.previousElementSibling;
-                if (prev) {
-                    el.classList.remove('active');
-                    prev.classList.add('active');
-                } else {
-                    return;
-                }
-            }); 
-        }
-        active = document.querySelectorAll('.cases__case .active');
-    }, false);
+    const sliders = document.querySelectorAll('.cases-slider');
+    if (sliders.length) {
+        sliders.forEach((slider, index) => swipe(slider, index));
+    }
+    function swipe(slider, index) {
+        let active = document.querySelectorAll(index ? '.project-with-slider .active' : '.cases__case .active');
+        slider.addEventListener('touchstart', (e) => {
+            touchstartX = e.changedTouches[0].screenX;
+        }, false);
+        slider.addEventListener('touchend', (e) => {
+            touchendX = e.changedTouches[0].screenX;
+            // console.log(active, touchstartX, touchendX)
+            if (touchstartX > touchendX) {
+                active.forEach((el) => {                
+                    const next = el.nextElementSibling;
+                    if (next) {
+                        el.classList.remove('active');
+                        next.classList.add('active');
+                    } else {
+                        return;
+                    }
+                });
+            } else {
+               active.forEach((el) => {                
+                    const prev = el.previousElementSibling;
+                    if (prev) {
+                        el.classList.remove('active');
+                        prev.classList.add('active');
+                    } else {
+                        return;
+                    }
+                }); 
+            }
+            active = document.querySelectorAll(index ? '.project-with-slider .active' : '.cases__case .active');
+        }, false);
+    }
 
     
     // слайдер с проектом
