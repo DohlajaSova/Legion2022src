@@ -1087,8 +1087,6 @@ docReady(function() {
                 for (i = 0; i < sl; i++) {
                     if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
                         selectsByTagDiv3.selectedIndex = i;
-                        selectsByTagDiv3.value = '1,2';
-                        const val = selectsByTagDiv3.value;
                         if(!isMultiple){
                             pvsSibling.innerHTML = this.innerHTML
                         }
