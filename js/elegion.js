@@ -1,9 +1,9 @@
 function docReady(fn) {
-	if (document.readyState === "complete" || document.readyState === "interactive") {
-		setTimeout(fn, 1);
-	} else {
-		document.addEventListener("DOMContentLoaded", fn);
-	}
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
 }
 
 function findOffset(element) {
@@ -261,7 +261,7 @@ function vacanciesRefresh(limit){
     }
     if (shown <= limit)
         moreButton.parentNode.classList.add("hide");
-	else
+    else
         moreButton.parentNode.classList.remove("hide");
 }
 function vacanciesTransition(n, perpage) {
@@ -644,21 +644,21 @@ docReady(function() {
 
             portfolioTags[i].addEventListener("click", function(e){
                 e.preventDefault();
-				let selectedTag;
-				if (e.target.getAttribute("href") != null){
-					selectedTag = e.target.getAttribute("href").slice(1);
-					for (j=0; j<portfolioTags[0].children.length; j++){
-						portfolioTags[0].children[j].classList.remove("active");
-					}
-					e.target.classList.add("active");
-					for (j=0; j<tags.length; j++){
-						if (!tags[j].includes("'" + selectedTag + "'")){
-							portfolioBlocks[0].children[j].classList.add("hide");
-						}
-						else{
-							portfolioBlocks[0].children[j].classList.remove("hide");
-						}
-					}
+                let selectedTag;
+                if (e.target.getAttribute("href") != null){
+                    selectedTag = e.target.getAttribute("href").slice(1);
+                    for (j=0; j<portfolioTags[0].children.length; j++){
+                        portfolioTags[0].children[j].classList.remove("active");
+                    }
+                    e.target.classList.add("active");
+                    for (j=0; j<tags.length; j++){
+                        if (!tags[j].includes("'" + selectedTag + "'")){
+                            portfolioBlocks[0].children[j].classList.add("hide");
+                        }
+                        else{
+                            portfolioBlocks[0].children[j].classList.remove("hide");
+                        }
+                    }
 
                     // refresh portfolioTypes 
                     const el = portfolioTypes[0].parentNode.childNodes[1].querySelector('.select-items');
@@ -669,12 +669,12 @@ docReady(function() {
                         el.childNodes[0].classList.add('same-as-selected');
                     }
                     //--
-					portfolioRefresh(curLimit);
-				}
+                    portfolioRefresh(curLimit);
+                }
             })
         }
     }
-	
+    
     // фильтр на странице вакансий
     let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner");
     let vacanciesTypes = document.querySelectorAll(".js-vacancies-types");
@@ -730,7 +730,7 @@ docReady(function() {
             })
         }
     }
-	
+    
 
     // блок вакансий
     let vacancyBlocks = document.querySelectorAll(".vacancy");
@@ -867,39 +867,39 @@ docReady(function() {
     }
     
     // слайдер типа range
-	const range = document.querySelector(".range");
-	if (range != null){
-		document.querySelector(".range").classList.add('js');
-		
-		let outVal = document.createElement("input");
-		outVal.setAttribute('id', 'range');
-		outVal.setAttribute('name', 'range');
-		outVal.setAttribute('type', 'hidden');
-		range.appendChild(outVal);
-		
-		function rangeMonitor(e){
-			let _t;
-			if (e == undefined) _t = document.querySelectorAll('.range input[type="range"]')[0];
-			else _t = _t = e.target; 
-			let _p = _t.parentNode, 
-				val = +_t.value,
-				_o = _p.querySelector(`option[value='${val}']`), 
-				lbl = +_o.label;
+    const range = document.querySelector(".range");
+    if (range != null){
+        document.querySelector(".range").classList.add('js');
+        
+        let outVal = document.createElement("input");
+        outVal.setAttribute('id', 'range');
+        outVal.setAttribute('name', 'range');
+        outVal.setAttribute('type', 'hidden');
+        range.appendChild(outVal);
+        
+        function rangeMonitor(e){
+            let _t;
+            if (e == undefined) _t = document.querySelectorAll('.range input[type="range"]')[0];
+            else _t = _t = e.target; 
+            let _p = _t.parentNode, 
+                val = +_t.value,
+                _o = _p.querySelector(`option[value='${val}']`), 
+                lbl = +_o.label;
             let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
             let wdd = wwidth > 1330 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60)
             _t.setAttribute('aria-valuetext', lbl);
-			_p.style.setProperty(`--${_t.id}`, val);
-			_p.style.setProperty(`--lbl-${_t.id}`, lbl+"");
-			_p.style.setProperty(`--wd`, wdd); // 60 - padding
-			let aVal = document.getElementById('l').children[document.getElementById('a').value].getAttribute('label');
-			let bVal = document.getElementById('l').children[document.getElementById('b').value].getAttribute('label');
-			outVal.setAttribute('value', ''+aVal+'-'+bVal+' млн');
-		}
-	
-		document.querySelectorAll('.range input[type="range"]')[0].addEventListener('input', rangeMonitor, false);
-		document.querySelectorAll('.range input[type="range"]')[1].addEventListener('input', rangeMonitor, false);
-		rangeMonitor();
-	}
+            _p.style.setProperty(`--${_t.id}`, val);
+            _p.style.setProperty(`--lbl-${_t.id}`, lbl+"");
+            _p.style.setProperty(`--wd`, wdd); // 60 - padding
+            let aVal = document.getElementById('l').children[document.getElementById('a').value].getAttribute('label');
+            let bVal = document.getElementById('l').children[document.getElementById('b').value].getAttribute('label');
+            outVal.setAttribute('value', ''+aVal+'-'+bVal+' млн');
+        }
+    
+        document.querySelectorAll('.range input[type="range"]')[0].addEventListener('input', rangeMonitor, false);
+        document.querySelectorAll('.range input[type="range"]')[1].addEventListener('input', rangeMonitor, false);
+        rangeMonitor();
+    }
     
     // выпадающее видео
     let videoOpener = document.querySelector(".js-popup-video-open");
@@ -918,9 +918,13 @@ docReady(function() {
         }, false);
     }
     
+    
+    // обработка форм
+ 
     // выпадающая форма обратной связи
     let feedbackOpener = document.querySelectorAll(".js-popup-feedback-open");
     let feedbackCloser = document.querySelector(".js-popup-feedback-close");
+    /*
     let feedbackSubmiter = document.querySelector(".js-popup-feedback-send");
     let feedbackSubmiterApplicants = document.querySelector(".js-popup-feedback-send-applicants");
     let bodyOpened;
@@ -935,7 +939,7 @@ docReady(function() {
             feedbackBody.classList.remove("active");
             document.querySelector("body").classList.remove("popup-open");
             feedbackBodyContent.classList.remove("popup-feedback__content_success");
-        }, 4000);
+        }, 40000);
 
     } else if(!feedbackOpener.length && feedbackSubmiter) {
         let feedbackBody = document.querySelector(".popup-feedback");
@@ -948,8 +952,10 @@ docReady(function() {
             feedbackBody.classList.remove("active");
             document.querySelector("body").classList.remove("popup-open");
             feedbackBodyContent.classList.remove("popup-feedback__content_success");
-        }, 4000);
+        }, 40000);
     }
+    
+    */
     for (i=0; i<feedbackOpener.length; i++){
         let feedbackBody = document.querySelector(".popup-feedback");
         let feedbackBodyContent = document.querySelector(".popup-feedback__content");
@@ -976,14 +982,22 @@ docReady(function() {
                 feedbackBody.classList.remove("active");
                 document.querySelector("body").classList.remove("popup-open");
             }, false);
-            feedbackSubmiter.addEventListener("click", function(e){
-                feedbackBodyContent.classList.add("popup-feedback__content_success");
-                setTimeout(function(){
+            document.addEventListener('ajaxFormResponse', (e) => {
+                if (e.detail === true || e.details === false) {
+                    console.log('should be closed')
                     feedbackBody.classList.remove("active");
                     document.querySelector("body").classList.remove("popup-open");
-                    feedbackBodyContent.classList.remove("popup-feedback__content_success");
-                }, 4000);
+                }
             }, false);
+            
+            // feedbackSubmiter.addEventListener("click", function(e){
+            //     feedbackBodyContent.classList.add("popup-feedback__content_success");
+            //     setTimeout(function(){
+            //         feedbackBody.classList.remove("active");
+            //         document.querySelector("body").classList.remove("popup-open");
+            //         feedbackBodyContent.classList.remove("popup-feedback__content_success");
+            //     }, 4000);
+            // }, false);
         }
     }
     
@@ -1048,7 +1062,7 @@ docReady(function() {
           divCreated.setAttribute("class", "select-selected");
           divCreated.innerHTML = selectsByTag?.options[selectsByTag.selectedIndex]?.innerHTML;
           
-		  //divCreated.innerHTML = Array.prototype.slice.call(selectsByTag.selectedOptions);
+          //divCreated.innerHTML = Array.prototype.slice.call(selectsByTag.selectedOptions);
           selectsByClass[i].appendChild(divCreated);
           /* For each element, create a new DIV that will contain the option list: */
           div2Created = document.createElement("DIV");
