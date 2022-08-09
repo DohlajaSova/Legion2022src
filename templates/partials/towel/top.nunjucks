@@ -4,7 +4,28 @@
             Разрабатываем цифровые решения для&nbsp;бизнеса
         </div>
         <div class="top__buttons">
-            <a href="#feedback" class="top__buttons_plus js-popup-feedback-open"></a>
+            <a href="#feedback" class="top__buttons_plus js-popup-feedback-open">
+                <!-- <svg width="314" height="369" viewbox="0 0 314 369" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="157.5" cy="157.5" r="53.5" fill="#24DA8D"/>
+                    <path d="M157.499 132.681V182.32" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M182.319 156.949L132.68 156.949" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    
+                    <circle opacity="0.1" cx="157" cy="157" r = "37%" stroke="#24DA8D">
+                        <animate attributename="r" begin="0s" dur="1s" repeatcount="indefinite" from="15%" to="37%"/>
+                    </circle>
+                    <circle opacity="0.1" cx="157" cy="157" r="30%" stroke="#24DA8D" stroke-width="2">
+                        <animate attributename="r" begin="0s" dur="1s" repeatcount="indefinite" from="15%" to="30%"/>
+                    </circle>
+                    <circle opacity="0.2" cx="157" cy="157" r="23%" stroke="#24DA8D" stroke-width="2">
+                        <animate attributename="r" begin="0s" dur="1s" repeatcount="indefinite" from="15%" to="23%"/>
+                    </circle>
+                </svg> -->
+                <button class="pulse-button">
+                    <span class="pulse-button__rings"></span>
+                    <span class="pulse-button__rings"></span>
+                    <span class="pulse-button__rings"></span>
+                </button>
+            </a>
             <a href="#feedback" class="button button_default js-popup-feedback-open">Обсудить задачу<em> →</em></a>
         </div>
     </div>

@@ -1206,19 +1206,30 @@ a.button {
 		span {
 			width: 50%;
 			margin-bottom: 25px;
+			transition: all .25s linear;
+			position: relative;
 
+			&::before {
+				margin-right: 20px;
+				position: absolute;
+				z-index: 0;
+				top: 17px;
+				left: 0px;
+				opacity: 0;
+				content: '';
+				transition: visibility 0s, opacity 0.25s linear;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: $color-blue;
+			}
 			&:hover {
 				color: $color-blue-light;
 				text-decoration: none;
+				padding-left:40px;
 
 				&::before {
-					content: "";
-					float: left;
-					width: 15px;
-					height: 15px;
-					background-color: $color-blue-light;
-					border-radius: 50%;
-					margin: 20px 23px 0 0;
+					opacity: 1;
 				}
 			}
 		}
@@ -1322,10 +1333,11 @@ a.button {
 		text-align: center;
 
 		&_plus {
-			display: block;
-			background: url($img-path + "icon-plus.svg") 0 0 no-repeat;
-			background-size: cover;
+			display: flex;
 			height: 369px;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.button {
@@ -1355,7 +1367,8 @@ a.button {
 			overflow: hidden;
 
 			img {
-				max-width: 100%;
+				width: 100%;
+				object-fit: cover;
 				min-height: 486px;
 				position: absolute;
 				top: 50%;
@@ -1394,16 +1407,19 @@ a.button {
 
 		&_head {
 			cursor: pointer;
+			transition: all .25s linear;
 
 			&::before {
 				content: "";
 				float: left;
-				width: 0;
-				height: 0;
+				width: 15px;
+				height: 15px;
 				background: $color-blue;
 				border-radius: 50%;
-				margin: 18px 0 0 0;
-				transition: width 0.7s, height 0.7s, margin-left 0.7s;
+				margin: 14px 0 0 0;
+				opacity: 0;
+				transition: visibility 0s, opacity 0.25s linear;
+				transition: all .25s linear;
 			}
 			&::after {
 				content: "";
@@ -1417,6 +1433,7 @@ a.button {
 				transition: transform 0.7s;
 				position: relative;
 				z-index: 100;
+				bottom: 16px;
 			}
 		}
 
@@ -1455,7 +1472,7 @@ a.button {
 						width: 15px;
 						height: 15px;
 						margin-right: 26px;
-						transition: width 0.7s, height 0.7s, margin-left 0.7s;
+						opacity: 1;
 					}
 
 					&::after {
@@ -2079,6 +2096,45 @@ a.button {
 					width: 100%;
 					height: 100%;
 				}
+			}
+		}
+
+		&_arrows {
+			width: 100%;
+			&-left {
+				position: absolute;
+				height: 56px;
+				width: 56px;
+				font-size: 24px;
+				text-align: center;
+				line-height: 56px;
+				left: 20px;
+				background: #fff;
+				border-radius: 50%;
+				color: inherit;
+				cursor: pointer;
+				z-index: 10000;
+				top: calc(50% - 28px);
+				display: flex;
+			}
+			&-right {
+				position: absolute;
+				height: 56px;
+				width: 56px;
+				font-size: 24px;
+				text-align: center;
+				line-height: 56px;
+				right: 20px;
+				background: #fff;
+				border-radius: 50%;
+				color: inherit;
+				cursor: pointer;
+				z-index: 10000;
+				top: calc(50% - 28px);
+				display: flex;
+			}
+			svg {
+				margin: 14px 18px 14px 23px;
 			}
 		}
 	}
@@ -2915,7 +2971,8 @@ a.button {
 		h2,
 		.h2,
 		h3,
-		.h3 {
+		.h3,
+		p {
 			color: $color-white;
 		}
 
@@ -3987,11 +4044,17 @@ a.button {
 		}
 
 		.feedback__button {
+			display: flex;
 			width: 30%;
 			min-height: 268px;
-			// background:url($img-path + "icon-plus2.svg") center top no-repeat;
-			background: url($img-path + "icon-plus2.svg") center center no-repeat;
-			background-size: contain;
+			// background: url($img-path + "icon-plus2.svg") center center no-repeat;
+			// background-size: contain;
+			.pulse-button{
+				margin: auto;
+				&:before{
+					font-size: 64px;
+				}
+			}
 		}
 	}
 
@@ -4010,7 +4073,17 @@ a.button {
 
 		&.feedback_compact {
 			.feedback__button {
-				background-image: url($img-path + "icon-plus3.svg");
+				// background-image: url($img-path + "icon-plus3.svg");
+				.pulse-button {
+					background-color: #fff;
+					&:before {
+						color: #2864D9;
+					}
+					&__rings {
+						// background-color: #fff;
+						border: 1px solid #fff;
+					}
+				}
 			}
 		}
 	}
@@ -4029,7 +4102,17 @@ a.button {
 
 		&.feedback_compact {
 			.feedback__button {
-				background-image: url($img-path + "icon-plus3.svg");
+				// background-image: url($img-path + "icon-plus3.svg");
+				.pulse-button {
+					background-color: #fff;
+					&:before {
+						color: #2864D9;
+					}
+					&__rings {
+						// background-color: #fff;
+						border: 1px solid #fff;
+					}
+				}
 			}
 		}
 	}
@@ -4415,6 +4498,32 @@ a.button {
 		span {
 			width: 33.3333%;
 			margin-bottom: 25px;
+			transition: all .25s linear;
+			position: relative;
+
+			&::before {
+				margin-right: 20px;
+				position: absolute;
+				z-index: 0;
+				top: 7px;
+				left: 0px;
+				opacity: 0;
+				content: '';
+				transition: visibility 0s, opacity 0.25s linear;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: $color-blue;
+			}
+			&:hover {
+				color: $color-blue-light;
+				text-decoration: none;
+				padding-left:25px;
+
+				&::before {
+					opacity: 1;
+				}
+			}
 		}
 	}
 
@@ -4810,9 +4919,14 @@ a.button {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-
+		.container {
+			h3 {
+				font-size: 46px;
+			}
+		}
 		h3 {
 			width: 100%;
+			font-size: 46px;
 		}
 
 		&_label {
@@ -5738,10 +5852,12 @@ a.button {
 	}
 
 	&__present {
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 		position: relative;
 		overflow: hidden;
-		min-height: 540px;
+		// min-height: 740px;
+		height: 100vh;
+		max-height: 740px;
 
 		&>img {
 			width: 100%;
@@ -5766,7 +5882,7 @@ a.button {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			top: -70px;
+			// top: -70px;
 			left: 0;
 			//display: none;
 		}
@@ -6201,6 +6317,126 @@ a.button {
 .display-none {
 	display: none;
 }
+
+// main page plus button styles
+
+.pulse-button {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	transform: scale(1.7);
+	border-radius: 40px;
+	padding: 10px;
+	border: none;
+	background: #24DA8D;
+	// box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+	position: relative;
+	// bottom: 50px;
+	// right: 50px;
+	cursor: pointer;
+	outline: none;
+	z-index: 1000;
+	&:before {
+		content: "+";
+		position: absolute;
+		color: #fff;
+		font-size: 72px;
+		font-family: auto;
+	}
+  }
+
+  .pulse-button__text {
+	display: block;
+	width: 100%;
+	height: 30px;
+	font: 12px 'Open Sans', sans-serif;
+	color: #fff;
+	text-align: center;
+	line-height: 1.2;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	transition: .3s;
+	margin-top: 1px;
+  }
+  
+  .pulse-button:hover .pulse-button__icon {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	transition: .3s;
+  }
+   
+  .pulse-button:hover .pulse-button__text {
+	transition: .3s;
+	opacity: 1;
+	visibility: visible;
+	position: relative;
+  }
+
+  .pulse-button__rings {
+	border: 1px solid #24DA8D;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: auto;
+	width: auto;
+	border-radius: 50%;
+	animation-duration: 2.0s;
+	animation-name: pulse_1;
+	animation-iteration-count: infinite;
+	z-index: -1;
+  }
+   
+  .pulse-button__rings:nth-child(2) {
+	animation-name: pulse_2;
+  }
+   
+  .pulse-button__rings:nth-child(3) {
+	animation-name: pulse_3;
+  }
+
+
+  @keyframes pulse_1 {
+	from {
+	  opacity: 1;
+	  transform: scale(0.9, 0.9);
+	}
+   
+	to {
+	  opacity: 0;
+	  transform: scale(1.3, 1.3);
+	}
+  }
+   
+  @keyframes pulse_2 {
+	from {
+	  opacity: 1;
+	  transform: scale(0.8, 0.8);
+	}
+   
+	to {
+	  opacity: 0;
+	  transform: scale(1.7, 1.7);
+	}
+  }
+   
+  @keyframes pulse_3 {
+	from {
+	  opacity: 1;
+	  transform: scale(0.8, 0.8);
+	}
+   
+	to {
+	  opacity: 0;
+	  transform: scale(2.1, 2.1);
+	}
+  }
 
 @keyframes rotating {
 	from {

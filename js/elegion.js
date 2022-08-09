@@ -489,6 +489,25 @@ docReady(function() {
             });
         }
     }
+    
+    let sliderCases = document.querySelectorAll(".js-cases-slider-groups");
+    let sliderCasesLeftArrow = document.querySelectorAll(".js-cases-groups-arrows-left");
+    let sliderCasesRightArrow = document.querySelectorAll(".js-cases-groups-arrows-right");
+    let sliderCasesSlider = new Array();
+    if (sliderCases.length > 0)
+    {
+        for (i=0; i<sliderCases.length; i++){
+            sliderCasesSlider[i] = tns({
+                container: sliderCases[i],  
+                items: 1,
+                nav: false,
+                prevButton: sliderCasesLeftArrow[i],
+                nextButton: sliderCasesRightArrow[i],
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
+    }
 
     // слайдер со статьями
     if (document.querySelectorAll(".js-project-article").length > 0)
