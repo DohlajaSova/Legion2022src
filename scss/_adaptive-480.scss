@@ -448,6 +448,30 @@
             }
         }
     }
+    .problems-slider-groups {
+        &__statics {
+            &_arrows {
+                &-sp {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 56px;
+                    top: calc(50% - 20px);
+                }
+                &-left {
+                    left: 20px;
+                    svg {
+                        margin: 14px 23px 14px 18px;
+                    }   
+                }
+                &-right {
+                    right: 20px;
+                    svg {
+                        margin: 14px 18px 14px 23px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {

@@ -2101,40 +2101,36 @@ a.button {
 
 		&_arrows {
 			width: 100%;
-			&-left {
+			&-sp {
 				position: absolute;
 				height: 56px;
 				width: 56px;
-				font-size: 24px;
 				text-align: center;
 				line-height: 56px;
-				left: 20px;
-				background: #fff;
+				background-color: rgba(255,255,255,.5);
 				border-radius: 50%;
 				color: inherit;
 				cursor: pointer;
 				z-index: 10000;
 				top: calc(50% - 28px);
 				display: flex;
+			}
+			&-left {
+				left: 20px;
+				svg {
+					margin: 14px 23px 14px 18px;
+				}
 			}
 			&-right {
-				position: absolute;
-				height: 56px;
-				width: 56px;
-				font-size: 24px;
-				text-align: center;
-				line-height: 56px;
 				right: 20px;
-				background: #fff;
-				border-radius: 50%;
-				color: inherit;
-				cursor: pointer;
-				z-index: 10000;
-				top: calc(50% - 28px);
-				display: flex;
+				svg {
+					margin: 14px 18px 14px 23px;
+				}
 			}
 			svg {
-				margin: 14px 18px 14px 23px;
+				path {
+					fill: rgba(0,0,0,.2);
+				}
 			}
 		}
 	}
@@ -3295,6 +3291,14 @@ a.button {
 			.problems__item_container {
 				padding: 38px 30px;
 				top: 0;
+			}
+			.problems-slider-groups__statics_arrows-sp{
+				// background-color: rgba(255,255,255,.5);
+				svg {
+					path {
+						// fill: rgba(0,0,0,.2);
+					}
+				}
 			}
 		}
 		&_bg11 {
