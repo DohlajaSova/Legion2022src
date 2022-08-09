@@ -3,14 +3,11 @@
         <a href="" class="js-popup-feedback-close"></a>
     </div>
     <div class="popup-feedback__container">
-        {# <div class="popup-feedback__head">
-            Расскажите нам о&nbsp;задаче
-        </div> #}
         <div class="popup-feedback__content">
             <div class="request">
                 <div class="container">
                     <div class="request__form">
-                        <h3>Представьтесь, пожалуйста</h3>
+                        <h1>Представьтесь, пожалуйста</h1>
                         <span class="request__form_warning">✕ Временно недоступно</span>
                         <div class="request__form_item">
                             <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
@@ -45,7 +42,7 @@
                             <option value="Другое">Другое</option>
                         </select>
                     </div>
-                    <h3>Есть ли описание проекта?</h3>
+                    <h3>О проекте</h3>
                     <div class="request__textarea request__file">
                         <textarea id="project_desc" placeholder="Краткая информация, которая поможет нам разобраться быстрее"></textarea>
                         <label class="button button_grey button_wide" for="request-file">Загрузите файл, не&nbsp;более 15&nbsp;Мб</label>

@@ -100,7 +100,7 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <a href="/case1.html" class="client__cases_block">
+          <a href="/case1.html" class="client__cases_block smooth-pointer-before">
             <div class="client__cases_block-name">Обратная связь</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">центр уведомлений</div>

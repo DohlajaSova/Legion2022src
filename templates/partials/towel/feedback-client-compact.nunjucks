@@ -1,6 +1,12 @@
 <div class="feedback feedback_compact feedback_client">
     <div class="container">
         <h2>Расскажите нам о&nbsp;задаче</h2>
-        <a href="" class="feedback__button js-popup-feedback-open"></a>
+        <a href="" class="feedback__button js-popup-feedback-open">
+            <button class="pulse-button">
+                <span class="pulse-button__rings"></span>
+                <span class="pulse-button__rings"></span>
+                <span class="pulse-button__rings"></span>
+            </button>
+        </a>
     </div>
 </div>

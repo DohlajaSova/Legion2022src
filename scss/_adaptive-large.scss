@@ -1458,11 +1458,12 @@
 					}
 					&::after{
 						background:url($img-path + "arrow2blue.svg") center center no-repeat;
-                        top: calc(50% - 17px);
+                        top: calc(50% - 20px);
 						// top:10px;
 						right:14px;
 						background-size:60%;
 						z-index:11;
+                        width: 46px;
 					}
 					&.select-arrow-active{
                         z-index:23;
@@ -1698,6 +1699,17 @@
             }
         }
     }
+    .same-as-selected{
+        position: relative;
+        &::before{
+            content: ' \25CF';
+            height:10px;
+            color: $color-blue;
+            margin-right: 12px;
+            width: 10px;
+            font-size: 20px;
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {
@@ -1855,6 +1867,13 @@
                 // bottom:0;
                 // right:0;
                 // margin: auto;
+                .pulse-button{
+                    width: 40px;
+                    height: 40px;
+                    &:before{
+                        font-size: 32px;
+                    }
+                }
             }
         }
     }
@@ -2005,6 +2024,14 @@
     }
 
     .request {
+		h3 {
+			font-size: 28px;
+		}
+		.container {
+			h3 {
+			    font-size: 28px;
+			}
+		}
         &__textarea{
             textarea{
                 font-size: 18px;
