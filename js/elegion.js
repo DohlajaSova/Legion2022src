@@ -37,14 +37,14 @@ function closeAllSelect(elmnt) {
   except the current select box: */
   let selectItems, selectSelected, i, xl, yl, arrNo = [];
   selectItems = document.getElementsByClassName("select-items");
-  selectSelected = document.getElementsByClassName("select-selected");
+  selectSelected = document.getElementsByClassName("select-");
   xl = selectItems.length;
   yl = selectSelected.length;
   for (i = 0; i < yl; i++) {
-    if (elmnt == selectSelected[i]) {
+    if (elmnt == select[i]) {
       arrNo.push(i)
     } else {
-        selectSelected[i].classList.remove("select-arrow-active");
+        select[i].classList.remove("select-arrow-active");
     }
   }
   for (i = 0; i < xl; i++) {
@@ -94,9 +94,9 @@ function ContactMap(container, switcherItems, selectControl)
         clickedIndex = Array.from(Array.prototype.slice.call(selectControl.children)[2].children).indexOf(target);
         let cityTabs = Array.prototype.slice.call(Array.prototype.slice.call(selectControl.children)[2].children);
         for (let item of cityTabs) {
-          item.classList.remove('same-as-selected');
+          item.classList.remove('same-as-');
         }
-        cityTabs[clickedIndex].classList.add('same-as-selected');
+        cityTabs[clickedIndex].classList.add('same-as-');
     }
     return clickedIndex;
   }
@@ -489,25 +489,6 @@ docReady(function() {
             });
         }
     }
-    
-    let sliderCases = document.querySelectorAll(".js-cases-slider-groups");
-    let sliderCasesLeftArrow = document.querySelectorAll(".js-cases-groups-arrows-left");
-    let sliderCasesRightArrow = document.querySelectorAll(".js-cases-groups-arrows-right");
-    let sliderCasesSlider = new Array();
-    if (sliderCases.length > 0)
-    {
-        for (i=0; i<sliderCases.length; i++){
-            sliderCasesSlider[i] = tns({
-                container: sliderCases[i],  
-                items: 1,
-                nav: false,
-                prevButton: sliderCasesLeftArrow[i],
-                nextButton: sliderCasesRightArrow[i],
-                mouseDrag: true,
-                slideBy: 'page'
-            });
-        }
-    }
 
     // слайдер со статьями
     if (document.querySelectorAll(".js-project-article").length > 0)
@@ -613,9 +594,9 @@ docReady(function() {
             portfolioTypes[i].addEventListener("click", function(e){
                 let options = e.target.parentNode.parentNode.childNodes[1];
                 e.preventDefault();
-                let selectedType = options?.selectedOptions[0]?.value;
+                let Type = options?.Options[0]?.value;
                 for (j=0; j<types.length; j++){
-                    if (!types[j].includes("'" + selectedType + "'")){
+                    if (!types[j].includes("'" + Type + "'")){
                         portfolioBlocks[0].children[j].classList.add("hide");
                     }
                     else{
@@ -644,15 +625,15 @@ docReady(function() {
 
             portfolioTags[i].addEventListener("click", function(e){
                 e.preventDefault();
-                let selectedTag;
+                let Tag;
                 if (e.target.getAttribute("href") != null){
-                    selectedTag = e.target.getAttribute("href").slice(1);
+                    Tag = e.target.getAttribute("href").slice(1);
                     for (j=0; j<portfolioTags[0].children.length; j++){
                         portfolioTags[0].children[j].classList.remove("active");
                     }
                     e.target.classList.add("active");
                     for (j=0; j<tags.length; j++){
-                        if (!tags[j].includes("'" + selectedTag + "'")){
+                        if (!tags[j].includes("'" + Tag + "'")){
                             portfolioBlocks[0].children[j].classList.add("hide");
                         }
                         else{
@@ -664,9 +645,9 @@ docReady(function() {
                     const el = portfolioTypes[0].parentNode.childNodes[1].querySelector('.select-items');
                     if(el){
                         for(let one = 0; one < el.childNodes.length; one++){
-                            el.childNodes[one].classList.remove('same-as-selected');
+                            el.childNodes[one].classList.remove('same-as-');
                         }
-                        el.childNodes[0].classList.add('same-as-selected');
+                        el.childNodes[0].classList.add('same-as-');
                     }
                     //--
                     portfolioRefresh(curLimit);
@@ -716,10 +697,10 @@ docReady(function() {
             vacanciesTypes[i].addEventListener("click", function(e){
             let options = e.target.parentNode.parentNode.childNodes[0];
                 e.preventDefault();
-                let selectedType = options.selectedOptions[0].value;
+                let Type = options.Options[0].value;
 
                 for (j=0; j<types.length; j++){
-                    if (!types[j].includes("'" + selectedType + "'")){
+                    if (!types[j].includes("'" + Type + "'")){
                         vacanciesBlocks[0].children[j].classList.add("hide");
                     }
                     else{
@@ -1112,14 +1093,15 @@ docReady(function() {
 
                 /* When an item is clicked, update the original select box,
                 and the selected item: */
-                let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl;
+                let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl, selectedName;
                 selectsByTagDiv3 = this.parentNode.parentNode.getElementsByTagName("select")[0];
                 const isMultiple = selectsByTagDiv3.id.startsWith('multiple')
                 sl = selectsByTagDiv3.length;
                 pvsSibling = this.parentNode.previousSibling;
                 for (i = 0; i < sl; i++) {
-                    if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
-                        selectsByTagDiv3.selectedIndex = i;
+                    selectedName = selectsByTagDiv3.options[i].innerHTML;
+                    if (selectedName == this.innerHTML) {
+                        // selectsByTagDiv3.selectedIndex = i;
                         if(!isMultiple){
                             pvsSibling.innerHTML = this.innerHTML
                         }
@@ -1127,7 +1109,7 @@ docReady(function() {
                         yl = optionSelected.length;
                         let removed = false;
                         let removedInd = false;
-                        selectsByTagDiv3.options[i].setAttribute('selected', 'selected');
+                        selectsByTagDiv3.options[i].setAttribute('selected', '');
                         if(isMultiple) {
                             for (k = 0; k < yl; k++) {
                                 if(optionSelected[k]?.innerHTML == this.innerHTML) {
@@ -1149,7 +1131,7 @@ docReady(function() {
                                 this.classList.add("same-as-selected");
                             }
                             const change = removed || this.innerHTML;
-                            updateSelect(removed, change, pvsSibling.innerHTML, selectsByTagDiv3.name);
+                            updateSelect(removed, change, pvsSibling.innerHTML, selectedName);
                         }
                         break;
                     }
