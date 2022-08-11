@@ -5,7 +5,7 @@
                 <a href="/client-tele2.html"  class="cases__case">
                     <div class="cases__case_number"></div>
                     <div class="cases__case_container">
-                        <div class="cases__case_contents cases__case_contents-active">
+                        <div class="cases__case_contents">
                             <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                             <span class="cases__case_name">Tele2</span>
                             <span class="cases__case_arrow"></span>
@@ -17,7 +17,7 @@
                         <span>5</span>
                     </div>
                     <div class="cases__case_container">
-                        <div class="cases__case_contents cases__case_contents-active">
+                        <div class="cases__case_contents">
                             <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Сбер"> </span>
                             <span class="cases__case_name">Альфа-Директ</span>
                             <span class="cases__case_arrow"></span>
@@ -27,7 +27,7 @@
                 <a href="/client.html" class="cases__case">
                     <div class="cases__case_number"></div>
                     <div class="cases__case_container">
-                        <div class="cases__case_contents cases__case_contents-active">
+                        <div class="cases__case_contents">
                             <span class="cases__case_logo">
                                 <img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                             <span class="cases__case_name">Пятёрочка</span>
@@ -48,7 +48,7 @@
                 <a href="/client-venn.html" class="cases__case">
                     <div class="cases__case_number"></div>
                     <div class="cases__case_container">
-                        <div class="cases__case_contents cases__case_contents-active">
+                        <div class="cases__case_contents">
                             <span class="cases__case_logo"><img src="/assets/css/img/case-venn.svg" alt="Venn"> </span>
                             <span class="cases__case_name">Venn</span>
                             <span class="cases__case_arrow"></span>
@@ -115,9 +115,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="cases-slider__statics_title">
+                        {# <div class="cases-slider__statics_title">
                             Рейтинг Рунета 2021
-                        </div>
+                        </div> #}
                     </div>
                 </div>
             </div>

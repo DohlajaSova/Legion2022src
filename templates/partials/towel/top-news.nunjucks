@@ -8,14 +8,11 @@
                         <div class="project-slider-article"><div class="js-project-article">
                             <div class="project-slider-article__item">
                                 <a href="https://vc.ru/flood/281180-ekspediciya-na-beloe-more" target="_blank" class="project__article project__article_large project-article">
-                                    <div class="project-article_top">
-                                      <div class="project-article_top-rubr1">Благотворительность</div>
-                                      <div class="project-article_top-rubr2">Социальные проекты</div>
-                                      <img class="project-article_top-img" src="/assets/css/img/temp-projects2.jpg" alt="Экспедиция на&nbsp;Белое море"/>
-                                    </div>
-                                    <div class="project-article_link">
-                                      <div class="project-article_link-title">Экспедиция на&nbsp;Белое море</div>
-                                      <div class="project-article_link-arrow">Смотреть статью →</div>
+                                    <div class="project-article_top project-article_top-nodesc">
+                                      <div class="project-article_top-rubr1 project-article_top-nodesc-rubr1">Социальные проекты</div>
+                                      <div class="project-article_top-rubr2 project-article_top-nodesc-rubr2">Экспедиция на&nbsp;Белое море</div>
+                                      <div class="project-article_link-arrow project-article_top-nodesc-arrow">Смотреть статью →</div>
+                                      <img class="project-article_top-img project-article_top-nodesc-img" src="/assets/css/img/temp-projects2.jpg" alt="Экспедиция на&nbsp;Белое море"/>
                                     </div>
                                 </a>
                             </div>
@@ -67,9 +64,9 @@
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
                     </ul></div>
-                    <div class="cases-slider__statics_title">
-                        Tagline Awards 2020-2021
-                    </div>
+                    {# <div class="cases-slider__statics_title">
+                        Tagline Awards 2020-2021zxc
+                    </div> #}
                 </div>
             </div>
             <div class="project">

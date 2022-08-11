@@ -60,7 +60,7 @@
                                                         <a href="/client.html" class="cases__case">
                                                             <div class="cases__case_number"></div>
                                                             <div class="cases__case_container">
-                                                                <div class="cases__case_contents cases__case_contents-active">
+                                                                <div class="cases__case_contents">
                                                                     <span class="cases__case_logo"><img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                                                     <span class="cases__case_name">Пятёрочка</span>
                                                                     <span class="cases__case_arrow"></span>
@@ -477,7 +477,7 @@
                                                     <a href="/client.html" class="cases__case">
                                                         <div class="cases__case_number"></div>
                                                         <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                            <div class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                                                 <span class="cases__case_name">Пятёрочка</span>
                                                                 <span class="cases__case_arrow"></span>
@@ -572,7 +572,7 @@
                                                     <a href="/client.html" class="cases__case">
                                                         <div class="cases__case_number"></div>
                                                         <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                            <div class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                                                 <span class="cases__case_name">Пятёрочка</span>
                                                                 <span class="cases__case_arrow"></span>

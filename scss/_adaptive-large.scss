@@ -72,6 +72,14 @@
             }
         }
     }
+    .device {
+        &_fit-height {
+            .device__screen {
+                height: calc(100% - 22px);
+                top: 10px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -131,6 +139,13 @@
                 &_top {
                     min-height: 300px!important;
                 }
+            }
+        }
+    }
+    .device {
+        &_fit-height {
+            .device__screen {
+                height: calc(100% - 20px);
             }
         }
     }
@@ -804,6 +819,14 @@
             }
         }
     }
+    .device {
+        &_fit-height {
+            .device__screen {
+                height: calc(100% - 16px);
+                top: 6px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1027,7 +1050,7 @@
             }
 		}
 	}
-    .circle{
+    .circle-case{
         height:344px;
         overflow:hidden;
         &-pic{
