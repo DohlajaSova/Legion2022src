@@ -596,11 +596,10 @@ a.button {
 
 		.device__screen {
 			width: auto;
-			height: calc(100% - 27px);
+			height: calc(100% - 26px);
 			left: 50%;
-			top: 14px;
+			top: 13px;
 			transform: translateX(-50%);
-			margin-left: -2px;
 		}
 
 		.device__shadow {
@@ -1659,12 +1658,12 @@ a.button {
 			top: 0;
 			transition: top ease 0.5s;
 
-			&-active {
-				animation-name: case-bounce;
-				animation-timing-function: cubic-bezier(0.281, 0.841, 0.421, 1);
-				animation-duration: 2s;
-				animation-iteration-count: 2;
-			}
+			// &-active {
+			// 	animation-name: case-bounce;
+			// 	animation-timing-function: cubic-bezier(0.281, 0.841, 0.421, 1);
+			// 	animation-duration: 2s;
+			// 	animation-iteration-count: 2;
+			// }
 
 			&-slider {
 				height: 100%;
@@ -2111,7 +2110,7 @@ a.button {
 				border-radius: 50%;
 				color: inherit;
 				cursor: pointer;
-				z-index: 10000;
+				z-index: 2000;
 				top: calc(50% - 28px);
 				display: flex;
 			}
@@ -3107,6 +3106,13 @@ a.button {
 					opacity: 0.5;
 				}
 			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-grey-light
+					}
+				}
+			}
 		}
 
 		&_bg2 {
@@ -3133,6 +3139,13 @@ a.button {
 					opacity: 1;
 				}
 			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-blue
+					}
+				}
+			}
 		}
 
 		&_bg3 {
@@ -3155,6 +3168,13 @@ a.button {
 
 				&::after {
 					background-image: url($img-path + "arrow3grey.svg");
+				}
+			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-blue-dark
+					}
 				}
 			}
 		}
@@ -3186,6 +3206,13 @@ a.button {
 					opacity: 1;
 				}
 			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: rgba(0,0,0,.5)
+					}
+				}
+			}
 		}
 
 		&_bg5 {
@@ -3196,6 +3223,13 @@ a.button {
 
 			h3 {
 				color: $color-white;
+			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-blue
+					}
+				}
 			}
 		}
 
@@ -3225,6 +3259,13 @@ a.button {
 				top: 0;
 				bottom: 0;
 			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: rgba(0,0,0,.5)
+					}
+				}
+			}
 		}
 
 		&_bg7 {
@@ -3248,6 +3289,13 @@ a.button {
 				&::after {
 					background-image: url($img-path + "arrow3grey.svg");
 					opacity: 0.5;
+				}
+			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-grey-light;
+					}
 				}
 			}
 		}
@@ -3276,11 +3324,25 @@ a.button {
 					background-color: $color-grey-dark;
 				}
 			}
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-green-light;
+					}
+				}
+			}
 		}
 
 		&_bg9 {
 			background: $color-grey-light;
 			overflow: hidden;
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-grey-light;
+					}
+				}
+			}
 		}
 
 		&_bg10 {
@@ -3293,10 +3355,9 @@ a.button {
 				top: 0;
 			}
 			.problems-slider-groups__statics_arrows-sp{
-				// background-color: rgba(255,255,255,.5);
 				svg {
 					path {
-						// fill: rgba(0,0,0,.2);
+						fill: $color-blue-dark;
 					}
 				}
 			}
@@ -3304,6 +3365,13 @@ a.button {
 		&_bg11 {
 			background: $color-green;
 			overflow: hidden;
+			.problems-slider-groups__statics_arrows-sp{
+				svg {
+					path {
+						fill: $color-green;
+					}
+				}
+			}
 		}
 		
 		&_plus {
@@ -3734,7 +3802,8 @@ a.button {
 				.project-article {
 					&_top {
 						padding: 40px 43px 0;
-						border-radius: $border-radius $border-radius 0 0;
+						border-radius: $border-radius;
+						overflow: hidden;
 						color: $color-white;
 						background-color: $color-blue-dark;
 						position: relative;
@@ -3761,6 +3830,23 @@ a.button {
 							width: calc(100% + 86px);
 							margin-left: -43px;
 							border-radius: $border-radius $border-radius 0 0;
+						}
+						&-nodesc {
+							border-radius: 42px!important;
+							&-rubr1{
+								flex-grow: 2;
+							}
+							&-rubr2{
+								flex-grow: 1;
+								
+							}
+							&-arrow{
+								flex-grow: 1;
+								text-align: left!important;
+							}
+							&-img{
+								flex-grow: 2;
+							}
 						}
 					}
 
@@ -6452,95 +6538,95 @@ a.button {
 	}
 }
 
-@-moz-keyframes case-bounce {
-	10% {
-		-moz-transform: scale(1.1, .9) translateY(0);
-	}
+// @-moz-keyframes case-bounce {
+// 	10% {
+// 		-moz-transform: scale(1.1, .9) translateY(0);
+// 	}
 
-	0% {
-		-moz-transform: scale(1, 1) translateY(0);
-	}
+// 	0% {
+// 		-moz-transform: scale(1, 1) translateY(0);
+// 	}
 
-	30% {
-		-moz-transform: scale(.9, 1.1) translateY(-40px);
-	}
+// 	30% {
+// 		-moz-transform: scale(.9, 1.1) translateY(-40px);
+// 	}
 
-	50% {
-		-moz-transform: scale(1.05, .95) translateY(0);
-	}
+// 	50% {
+// 		-moz-transform: scale(1.05, .95) translateY(0);
+// 	}
 
-	57% {
-		-moz-transform: scale(1, 1) translateY(-7px);
-	}
+// 	57% {
+// 		-moz-transform: scale(1, 1) translateY(-7px);
+// 	}
 
-	64% {
-		-moz-transform: scale(1, 1) translateY(0);
-	}
+// 	64% {
+// 		-moz-transform: scale(1, 1) translateY(0);
+// 	}
 
-	100% {
-		-moz-transform: scale(1, 1) translateY(0);
-	}
-}
+// 	100% {
+// 		-moz-transform: scale(1, 1) translateY(0);
+// 	}
+// }
 
-@-webkit-keyframes case-bounce {
-	10% {
-		transform: scale(1.1, .9) translateY(0);
-	}
+// @-webkit-keyframes case-bounce {
+// 	10% {
+// 		transform: scale(1.1, .9) translateY(0);
+// 	}
 
-	0% {
-		-webkit-transform: scale(1, 1) translateY(0);
-	}
+// 	0% {
+// 		-webkit-transform: scale(1, 1) translateY(0);
+// 	}
 
-	30% {
-		-webkit-transform: scale(.9, 1.1) translateY(-40px);
-	}
+// 	30% {
+// 		-webkit-transform: scale(.9, 1.1) translateY(-40px);
+// 	}
 
-	50% {
-		-webkit-transform: scale(1.05, .95) translateY(0);
-	}
+// 	50% {
+// 		-webkit-transform: scale(1.05, .95) translateY(0);
+// 	}
 
-	57% {
-		-webkit-transform: scale(1, 1) translateY(-7px);
-	}
+// 	57% {
+// 		-webkit-transform: scale(1, 1) translateY(-7px);
+// 	}
 
-	64% {
-		-webkit-transform: scale(1, 1) translateY(0);
-	}
+// 	64% {
+// 		-webkit-transform: scale(1, 1) translateY(0);
+// 	}
 
-	100% {
-		-webkit-transform: scale(1, 1) translateY(0);
-	}
-}
+// 	100% {
+// 		-webkit-transform: scale(1, 1) translateY(0);
+// 	}
+// }
 
-@keyframes case-bounce {
-	0% {
-		transform: scale(1, 1) translateY(0);
-	}
+// @keyframes case-bounce {
+// 	0% {
+// 		transform: scale(1, 1) translateY(0);
+// 	}
 
-	10% {
-		transform: scale(1.1, .9) translateY(0);
-	}
+// 	10% {
+// 		transform: scale(1.1, .9) translateY(0);
+// 	}
 
-	30% {
-		transform: scale(.9, 1.1) translateY(-40px);
-	}
+// 	30% {
+// 		transform: scale(.9, 1.1) translateY(-40px);
+// 	}
 
-	50% {
-		transform: scale(1.05, .95) translateY(0);
-	}
+// 	50% {
+// 		transform: scale(1.05, .95) translateY(0);
+// 	}
 
-	57% {
-		transform: scale(1, 1) translateY(-7px);
-	}
+// 	57% {
+// 		transform: scale(1, 1) translateY(-7px);
+// 	}
 
-	64% {
-		transform: scale(1, 1) translateY(0);
-	}
+// 	64% {
+// 		transform: scale(1, 1) translateY(0);
+// 	}
 
-	100% {
-		transform: scale(1, 1) translateY(0);
-	}
-}
+// 	100% {
+// 		transform: scale(1, 1) translateY(0);
+// 	}
+// }
 
 //------------------Адаптация---------------
 

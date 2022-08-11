@@ -10,7 +10,7 @@
                 <div class="circle-text__item_label">По опросам убрали из&nbsp;продажи 263&nbsp;товара</div>
             </div>
         </div>
-        <div class="about__animation circle">
+        <div class="about__animation circle circle-case">
             <div class="circle-pic"></div>
             <div class="about__animation_items circle-text">
                 <div class="circle-text__item">

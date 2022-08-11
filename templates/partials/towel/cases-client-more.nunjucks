@@ -16,7 +16,7 @@
                                         <span>6</span>
                                     </div>
                                     <div class="cases__case_container">
-                                        <div class="cases__case_contents cases__case_contents-active">
+                                        <div class="cases__case_contents">
                                             <span class="cases__case_logo">
                                                 <img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                             <span class="cases__case_name">Пятёрочка</span>
