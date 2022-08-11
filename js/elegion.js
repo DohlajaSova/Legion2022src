@@ -1112,14 +1112,15 @@ docReady(function() {
 
                 /* When an item is clicked, update the original select box,
                 and the selected item: */
-                let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl;
+                let optionSelected, i, k, selectsByTagDiv3, pvsSibling, sl, yl, selectedName;
                 selectsByTagDiv3 = this.parentNode.parentNode.getElementsByTagName("select")[0];
                 const isMultiple = selectsByTagDiv3.id.startsWith('multiple')
                 sl = selectsByTagDiv3.length;
                 pvsSibling = this.parentNode.previousSibling;
                 for (i = 0; i < sl; i++) {
-                    if (selectsByTagDiv3.options[i].innerHTML == this.innerHTML) {
-                        selectsByTagDiv3.selectedIndex = i;
+                    selectedName = selectsByTagDiv3.options[i].innerHTML;
+                    if (selectedName == this.innerHTML) {
+                        // selectsByTagDiv3.selectedIndex = i;
                         if(!isMultiple){
                             pvsSibling.innerHTML = this.innerHTML
                         }
@@ -1127,7 +1128,7 @@ docReady(function() {
                         yl = optionSelected.length;
                         let removed = false;
                         let removedInd = false;
-                        selectsByTagDiv3.options[i].setAttribute('selected', 'selected');
+                        selectsByTagDiv3.options[i].setAttribute('selected', '');
                         if(isMultiple) {
                             for (k = 0; k < yl; k++) {
                                 if(optionSelected[k]?.innerHTML == this.innerHTML) {
@@ -1149,7 +1150,7 @@ docReady(function() {
                                 this.classList.add("same-as-selected");
                             }
                             const change = removed || this.innerHTML;
-                            updateSelect(removed, change, pvsSibling.innerHTML, selectsByTagDiv3.name);
+                            updateSelect(removed, change, pvsSibling.innerHTML, selectedName);
                         }
                         break;
                     }
