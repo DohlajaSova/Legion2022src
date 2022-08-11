@@ -37,14 +37,14 @@ function closeAllSelect(elmnt) {
   except the current select box: */
   let selectItems, selectSelected, i, xl, yl, arrNo = [];
   selectItems = document.getElementsByClassName("select-items");
-  selectSelected = document.getElementsByClassName("select-");
+  selectSelected = document.getElementsByClassName("select-selected");
   xl = selectItems.length;
   yl = selectSelected.length;
   for (i = 0; i < yl; i++) {
-    if (elmnt == select[i]) {
+    if (elmnt == selectSelected[i]) {
       arrNo.push(i)
     } else {
-        select[i].classList.remove("select-arrow-active");
+        selectSelected[i].classList.remove("select-arrow-active");
     }
   }
   for (i = 0; i < xl; i++) {
@@ -94,9 +94,9 @@ function ContactMap(container, switcherItems, selectControl)
         clickedIndex = Array.from(Array.prototype.slice.call(selectControl.children)[2].children).indexOf(target);
         let cityTabs = Array.prototype.slice.call(Array.prototype.slice.call(selectControl.children)[2].children);
         for (let item of cityTabs) {
-          item.classList.remove('same-as-');
+          item.classList.remove('same-as-selected');
         }
-        cityTabs[clickedIndex].classList.add('same-as-');
+        cityTabs[clickedIndex].classList.add('same-as-selected');
     }
     return clickedIndex;
   }
@@ -489,6 +489,25 @@ docReady(function() {
             });
         }
     }
+    
+    let sliderCases = document.querySelectorAll(".js-cases-slider-groups");
+    let sliderCasesLeftArrow = document.querySelectorAll(".js-cases-groups-arrows-left");
+    let sliderCasesRightArrow = document.querySelectorAll(".js-cases-groups-arrows-right");
+    let sliderCasesSlider = new Array();
+    if (sliderCases.length > 0)
+    {
+        for (i=0; i<sliderCases.length; i++){
+            sliderCasesSlider[i] = tns({
+                container: sliderCases[i],  
+                items: 1,
+                nav: false,
+                prevButton: sliderCasesLeftArrow[i],
+                nextButton: sliderCasesRightArrow[i],
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
+    }
 
     // слайдер со статьями
     if (document.querySelectorAll(".js-project-article").length > 0)
@@ -594,9 +613,9 @@ docReady(function() {
             portfolioTypes[i].addEventListener("click", function(e){
                 let options = e.target.parentNode.parentNode.childNodes[1];
                 e.preventDefault();
-                let Type = options?.Options[0]?.value;
+                let selectedType = options?.selectedOptions[0]?.value;
                 for (j=0; j<types.length; j++){
-                    if (!types[j].includes("'" + Type + "'")){
+                    if (!types[j].includes("'" + selectedType + "'")){
                         portfolioBlocks[0].children[j].classList.add("hide");
                     }
                     else{
@@ -625,15 +644,15 @@ docReady(function() {
 
             portfolioTags[i].addEventListener("click", function(e){
                 e.preventDefault();
-                let Tag;
+                let selectedTag;
                 if (e.target.getAttribute("href") != null){
-                    Tag = e.target.getAttribute("href").slice(1);
+                    selectedTag = e.target.getAttribute("href").slice(1);
                     for (j=0; j<portfolioTags[0].children.length; j++){
                         portfolioTags[0].children[j].classList.remove("active");
                     }
                     e.target.classList.add("active");
                     for (j=0; j<tags.length; j++){
-                        if (!tags[j].includes("'" + Tag + "'")){
+                        if (!tags[j].includes("'" + selectedTag + "'")){
                             portfolioBlocks[0].children[j].classList.add("hide");
                         }
                         else{
@@ -645,9 +664,9 @@ docReady(function() {
                     const el = portfolioTypes[0].parentNode.childNodes[1].querySelector('.select-items');
                     if(el){
                         for(let one = 0; one < el.childNodes.length; one++){
-                            el.childNodes[one].classList.remove('same-as-');
+                            el.childNodes[one].classList.remove('same-as-selected');
                         }
-                        el.childNodes[0].classList.add('same-as-');
+                        el.childNodes[0].classList.add('same-as-selected');
                     }
                     //--
                     portfolioRefresh(curLimit);
@@ -697,10 +716,10 @@ docReady(function() {
             vacanciesTypes[i].addEventListener("click", function(e){
             let options = e.target.parentNode.parentNode.childNodes[0];
                 e.preventDefault();
-                let Type = options.Options[0].value;
+                let selectedType = options.selectedOptions[0].value;
 
                 for (j=0; j<types.length; j++){
-                    if (!types[j].includes("'" + Type + "'")){
+                    if (!types[j].includes("'" + selectedType + "'")){
                         vacanciesBlocks[0].children[j].classList.add("hide");
                     }
                     else{
