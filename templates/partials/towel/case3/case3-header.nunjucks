@@ -13,7 +13,6 @@
         <div class="top__image">
             <img class="top__image-desktop" src="/assets/css/img/temp-5ka-top.jpg" alt="Приложение «Пятёрочка». Обратная связь">
             <img class="top__image-tablet" src="/assets/css/img/temp-5ka-top768.jpg" alt="Приложение «Пятёрочка». Обратная связь">
-            {# <img class="top__image-mobile" src="/assets/css/img/temp-5ka-top480.jpg" alt="Приложение «Пятёрочка». Обратная связь"> #}
         </div>
     </div>
 </div>

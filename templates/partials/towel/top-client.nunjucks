@@ -100,21 +100,21 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <a href="/case1.html" class="client__cases_block smooth-pointer-before">
+          <a href="/case1.html" class="client__cases_block">
             <div class="client__cases_block-name">Обратная связь</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">центр уведомлений</div>
               <div class="client__cases_block-parts__feature">чат с оператором</div>
             </div>
           </a>
-          <a href="/case2.html"  class="client__cases_block inactive">
+          <a href="/case2.html"  class="client__cases_block">
             <div class="client__cases_block-name">Шпионский клуб</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">тайный покупатель</div>
               <div class="client__cases_block-parts__feature">контроль качества</div>
             </div>
           </a>
-          <a href="/case3.html"  class="client__cases_block inactive">
+          <a href="/case3.html"  class="client__cases_block">
             <div class="client__cases_block-name">Рейтинг товаров</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">система оценок</div>

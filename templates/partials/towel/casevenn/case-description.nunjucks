@@ -14,7 +14,6 @@
           и&nbsp;доступно для&nbsp;скачивания по&nbsp;всему миру — приложением
           пользуются в&nbsp;США и&nbsp;Европе.
         </p>
-        {#
         <div class="principles__content_buttons store">
           <a
             href="https://apps.apple.com/ru/app/Venn/id1174271758"
@@ -29,7 +28,6 @@
             ><span>Download on</span> <b>Google Play</b></a
           >
         </div>
-        #}
       </div>
     </div>
   </div>
@@ -127,7 +125,6 @@
           class="client__present-play venn"
           src="/assets/css/img/play.fill.svg"
         />
-        <!-- poster="/assets/css/img/client-venn-preview.jpg" -->
         <video
           class="client__present-video"
           preload="auto"
@@ -166,9 +163,7 @@
         <div class="problems__item_container">
           <div class="case-stages__layout_left">
             <div class="case-stages__layout_inner">
-              {#
               <h3>Что сделали</h3>
-              #}
               <ul class="case-stages__list">
                 <li>
                   Мы создали неавторизованную зону согласно стандартам Apple

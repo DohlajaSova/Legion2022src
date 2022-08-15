@@ -10,5 +10,4 @@
   {% include "partials/towel/cases-client-more.nunjucks" %}
 
   {% include "partials/popup-feedback.nunjucks" %}
-  {# {% include "partials/towel/cases-random.nunjucks" %} #}
 {% endblock %}

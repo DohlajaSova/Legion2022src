@@ -262,7 +262,6 @@
                                 <span class="news__item_logo">
                                     <img src="/assets/css/img/icon-lock.svg" alt="LinguaLeo">
                                 </span>
-                                {# <span class="news__item_name">LinguaLeo</span> #}
                                 <span class="news__item_arrow"></span>
                             </div>
                         </div>

@@ -1,9 +1,7 @@
 <div class="projects some-projects">
     <div class="container">
         <div class="some-projects__content">
-            <h2>Наши
-                <em>проекты</em>
-            </h2>
+            <h2>Наши <em>проекты</em></h2>
         </div>
         <div class="cases">
             <div class="cases-container">

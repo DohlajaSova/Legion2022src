@@ -3663,10 +3663,12 @@ a.button {
         &_tall{
             grid-row-end:span 2;
             height:100%;
-            padding-bottom:100%;
+			padding-bottom:100%;
+			&-5ka {
+				padding-bottom:115%;
+			}
 			&-client {
 				padding-bottom: calc(100% + 17px);
-				// grid-column-end: span 2;
 			}
 		}
 
@@ -3743,7 +3745,7 @@ a.button {
 
 			&_author {
 				&-img {
-					width: 45%;
+					width: 40%;
 					position: absolute;
 					right: 0;
 					bottom: 0;
@@ -4137,13 +4139,8 @@ a.button {
 			display: flex;
 			width: 30%;
 			min-height: 268px;
-			// background: url($img-path + "icon-plus2.svg") center center no-repeat;
-			// background-size: contain;
 			.pulse-button{
 				margin: auto;
-				&:before{
-					font-size: 64px;
-				}
 			}
 		}
 	}
@@ -4163,14 +4160,12 @@ a.button {
 
 		&.feedback_compact {
 			.feedback__button {
-				// background-image: url($img-path + "icon-plus3.svg");
 				.pulse-button {
 					background-color: #fff;
 					&:before {
-						color: #2864D9;
+						content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
 					}
 					&__rings {
-						// background-color: #fff;
 						border: 1px solid #fff;
 					}
 				}
@@ -4192,14 +4187,12 @@ a.button {
 
 		&.feedback_compact {
 			.feedback__button {
-				// background-image: url($img-path + "icon-plus3.svg");
 				.pulse-button {
 					background-color: #fff;
 					&:before {
-						color: #2864D9;
+						content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
 					}
 					&__rings {
-						// background-color: #fff;
 						border: 1px solid #fff;
 					}
 				}
@@ -5946,7 +5939,9 @@ a.button {
 		position: relative;
 		overflow: hidden;
 		// min-height: 740px;
-		height: 100vh;
+		&.venn {
+			height: 100vh;
+		}
 		max-height: 740px;
 
 		&>img {
@@ -6082,11 +6077,12 @@ a.button {
 			align-items: center;
 			color: $color-blue-dark !important;
 			text-decoration: none !important;
+			transition: all .25s linear;
 
-			&.inactive {
-				padding-left: 0px;
-				color: $color-grey-dark;
-			}
+			// &.inactive {
+			// 	padding-left: 0px;
+			// 	color: $color-grey-dark;
+			// }
 
 			&-name {
 				font-size: 46px;
@@ -6113,26 +6109,12 @@ a.button {
 			border-bottom: 1px solid $color-blue-dark;
 		}
 
-		&_block:first-child {
-			transition: all .25s linear;
-		}
 
-		&_block:first-child:hover {
-			cursor: url($img-path + "cursor-client.jpg"), auto;
+		&_block:not(.inactive):hover {
 			padding-left: 40px;
 		}
 
-		&_block-tele2:first-child:hover {
-			cursor: url($img-path + "case-tele2.png"), auto;
-			padding-left: 40px;
-		}
-
-		&_block-venn:first-child:hover {
-			cursor: url($img-path + "cursor-client-venn.png"), auto;
-			padding-left: 40px;
-		}
-
-		&_block:first-child:before {
+		&_block:not(.inactive):before {
 			margin-right: 20px;
 			position: absolute;
 			z-index: 0;
@@ -6147,7 +6129,7 @@ a.button {
 			background-color: $color-blue;
 		}
 
-		&_block:first-child:hover:before {
+		&_block:hover:before {
 			opacity: 1;
 		}
 	}
@@ -6430,11 +6412,12 @@ a.button {
 	outline: none;
 	z-index: 1000;
 	&:before {
-		content: "+";
+		content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
 		position: absolute;
-		color: #fff;
-		font-size: 72px;
-		font-family: auto;
+		// color: #fff;
+		// font-size: 72px;
+		top: 10px;
+		// font-family: auto, "Verdana", "Dopis";
 	}
   }
 
