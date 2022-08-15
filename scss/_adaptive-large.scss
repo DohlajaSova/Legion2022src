@@ -241,6 +241,9 @@
 				}
 				&_author{
 					padding:33px 43px 35px;
+                    &-img {
+                        width: 35%;
+                    }
 				}
 				&_rubr{
 					margin-bottom:25px;
@@ -279,6 +282,9 @@
 					}
 				}
 			}
+            &_tall-5ka {
+                padding-bottom: 120%;
+            }
 		}
         &_case{
             .project__review_body{
@@ -607,6 +613,18 @@
         }
         .project__review_author-position{
             max-width:100%;
+        }
+        .project{
+            &_tall-5ka {
+                padding-bottom: 130%;
+                .project__review_author-img {
+                    width: 25%;
+
+                }
+                .project__review_author-position{
+                    max-width:80%;
+                }
+            }
         }
     }
     .dummy{
@@ -965,6 +983,22 @@
     .case3 {
         .problems__item {
             padding-bottom: 120%!important;
+        }
+    }
+    .projects{
+        .project{
+            &_tall {
+                &-5ka{
+                    padding-bottom: 150%;
+                }
+                .project__review_author-img {
+                    width: 25%;
+
+                }
+                .project__review_author-position{
+                    max-width:80%;
+                }
+            }
         }
     }
 }
@@ -1645,29 +1679,18 @@
         padding:0;
     }
     .case2 .projects_case .projects__panels{
-            flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+    .projects {
+        .project_tall {
+            width: 100%!important;
         }
-        .projects {
-
-            .project_tall {
-                width: 100%!important;
-            }
-        }
-        .project{
-            &__review{
-                &_rubr{
-                }
-                &_body{
-                }
-                &_top{
-                }
-                &_author{
-                    &-name{
-                        font-size:18px;
-                    &-position{
-                    }
-                    &-img{
-                    }
+    }
+    .project{
+        &__review{
+            &_author{
+                &-name{
+                    font-size:18px;
                 }
             }
         }
@@ -1752,6 +1775,9 @@
             &_tall{
                 grid-row-end:unset;
                 height:0;
+                &-5ka{
+                    padding-bottom: 100%;
+                }
                 &-with-slider{
                     margin-bottom:54px;
                     .project__article_container{
@@ -1891,8 +1917,8 @@
                 // right:0;
                 // margin: auto;
                 .pulse-button{
-                    width: 40px;
-                    height: 40px;
+                    // width: 40px;
+                    // height: 40px;
                     &:before{
                         font-size: 32px;
                     }

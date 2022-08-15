@@ -47,7 +47,6 @@
               <div class="device device_wide">
                 <div
                   class="device__wrapper">
-                  <!-- {# <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.jpg" alt="Пятёрочка"> #} -->
                   <div class="device__shadow">
                     <img class="device__phone" src="/assets/css/img/phone-case3.png"/>
                   </div>

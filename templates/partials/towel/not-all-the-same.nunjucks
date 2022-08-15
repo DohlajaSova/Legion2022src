@@ -11,7 +11,6 @@
                     <p>Ищем новые решения на&nbsp;рынке, предлагаем возможности для улучшения проекта клиента. Если мы&nbsp;знаем, что можно сделать лучше, мы&nbsp;не&nbsp;молчим об&nbsp;этом. Развиваем отрасль вместе с&nbsp;коллегами, делимся знаниями на&nbsp;мероприятиях.</p>
                     <div class="projects">
                         <div class="project">
-                            {# https://habr.com/ru/company/e-legion/blog/421529/ #}
                             <a href="https://vk.com/elegion?w=wall-34196694_2048" target="_blank" class="project__article project__article_small project-article">
                             <div class="project-article_top">
                                 <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame1.jpg" alt="Netflix, Uber, Google на MBLT DEV 2018">
@@ -32,7 +31,6 @@
                     <p>Выстраиваем прозрачную коммуникацию с&nbsp;заказчиком, чёткие процессы внутри команды и управляем проектными рисками. Предоставляем клиенту полный доступ к&nbsp;документации и&nbsp;регулярно обновляем статус проекта.</p>
                     <div class="projects">
                         <div class="project">
-                            {# https://habr.com/ru/company/e-legion/blog/579848/ #}
                             <a href="https://teletype.in/@e-legion/sQXG-uT_-oy" target="_blank" class="project__article project__article_small project-article">
                             <div class="project-article_top">
                                 <img class="project-article_top-img" src="/assets/css/img/temp-news2.jpg" alt="Микросервисы. Не всё то золото, что хайп">

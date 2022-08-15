@@ -52,6 +52,11 @@
                 }
             }
         }
+        &_tall{
+            &-5ka{
+                padding-bottom: 120%;
+            }
+        }
     }
     .principles{
         &__video{
@@ -1688,6 +1693,12 @@
             &_tall{
                 height: auto;
                 padding-bottom: 0;
+                &-5ka{
+                    .project__review_top-client{
+                        padding-bottom: 60px!important;
+
+                    }
+                }
                 .project__review{
                     &_container{
                         position:relative;

@@ -8,10 +8,6 @@
                 <p>В&nbsp;приложении пользователь может сформировать инвестиционный портфель, покупать и&nbsp;продавать акции
                     и&nbsp;облигации российских и&nbsp;иностранных компаний, обменивать валюту по&nbsp;курсу биржи и&nbsp;управлять своим
                     доходом.</p>
-                {# <div class="principles__content_buttons store">
-                                    <a href="https://apps.apple.com/ru/app/Alfa/id1174271758" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
-                                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
-                                </div> #}
             </div>
         </div>
     </div>
