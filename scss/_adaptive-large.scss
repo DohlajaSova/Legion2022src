@@ -413,9 +413,9 @@
         font-size:20px;
         margin-top:20px;
     }
-    .case-stages .principles{
-        margin-bottom: 30px;
-    }
+    // .case-stages .principles{
+    //     margin-bottom: 30px;
+    // }
     .case2 {
         .project{
             &__review {
@@ -809,6 +809,17 @@
                     &-name {
                         font-size: 18px;
                         margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        &__kpiWrapper {
+            .circle{
+                &-text {
+                    &__item{
+                        &_label {
+                            font-size: 28px;
+                        }
                     }
                 }
             }

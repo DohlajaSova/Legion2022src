@@ -35,7 +35,7 @@
             </div>
             <div class="container js-cases-container-portfolio" data-limit="12">
                 <div class="container_portfolio-inner">
-                    <span
+                    <a href="/client-tele2.html"
                         class="cases__case"
                         data-types="['all','start','consult','telecom']"
                         data-tags="['all','telecom']"
@@ -45,13 +45,13 @@
                             <span>3</span>
                         </div>
                         <div class="cases__case_container">
-                            <div class="cases__case_contents">
+                            <div class="cases__case_contents cases__case_contents-active">
                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                                 <span class="cases__case_name">Tele2</span>
                                 <span class="cases__case_arrow"></span>
                             </div>
                         </div>
-                    </span>
+                    </a>
                     <a
                         href="/client.html"
                         class="cases__case"
@@ -63,10 +63,32 @@
                             <span>6</span>
                         </div>
                         <div class="cases__case_container">
-                            <div class="cases__case_contents">
+                            <div class="cases__case_contents cases__case_contents-active">
                                 <span class="cases__case_logo">
                                     <img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                 <span class="cases__case_name">Пятёрочка</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/client-alfa.html" class="cases__case" data-types="['all','start']" data-tags="['all','fintech']" data-priority="10">
+                        {# <div class="cases__case_number">
+                            <span>2</span>
+                        </div> #}
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents cases__case_contents-active">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"> </span>
+                                <span class="cases__case_name">Альфа-Инвестиции</span>
+                                <span class="cases__case_arrow"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/client-venn.html" class="cases__case" data-types="['all','scale']" data-tags="['all','socialnetwork']" data-priority="10">
+                        <div class="cases__case_number"></div>
+                        <div class="cases__case_container">
+                            <div class="cases__case_contents cases__case_contents-active">
+                                <span class="cases__case_logo"><img src="/assets/css/img/case-venn.svg" alt="Venn"> </span>
+                                <span class="cases__case_name">Venn</span>
                                 <span class="cases__case_arrow"></span>
                             </div>
                         </div>
@@ -81,18 +103,6 @@
                             <div class="cases__case_contents">
                                 <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"> </span>
                                 <span class="cases__case_name">Globus</span>
-                                <span class="cases__case_arrow"></span>
-                            </div>
-                        </div>
-                    </span>
-                    <span class="cases__case" data-types="['all','start']" data-tags="['all','fintech']" data-priority="10">
-                        <div class="cases__case_number">
-                            <span>2</span>
-                        </div>
-                        <div class="cases__case_container">
-                            <div class="cases__case_contents">
-                                <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"> </span>
-                                <span class="cases__case_name">Альфа-Инвестиции</span>
                                 <span class="cases__case_arrow"></span>
                             </div>
                         </div>
@@ -153,16 +163,6 @@
                             <div class="cases__case_contents">
                                 <span class="cases__case_logo"><img src="/assets/css/img/case-may24.svg" alt="May24"> </span>
                                 <span class="cases__case_name">May24</span>
-                                <span class="cases__case_arrow"></span>
-                            </div>
-                        </div>
-                    </span>
-                    <span class="cases__case" data-types="['all','scale']" data-tags="['all','socialnetwork']" data-priority="10">
-                        <div class="cases__case_number"></div>
-                        <div class="cases__case_container">
-                            <div class="cases__case_contents">
-                                <span class="cases__case_logo"><img src="/assets/css/img/case-venn.svg" alt="Venn"> </span>
-                                <span class="cases__case_name">Venn</span>
                                 <span class="cases__case_arrow"></span>
                             </div>
                         </div>

@@ -40,10 +40,10 @@
               Анализ, прототипирование, дизайн, разработка, контроль качества, поддержка
             </p>
           </div>
-          <div class="client__info_stats-state">
+          {# <div class="client__info_stats-state">
             <p class="client__info_stats-state__prop">Кейсы/Команда</p>
             <p class="client__info_stats-state__value">3</p>
-          </div>
+          </div> #}
         </div>
         <div class="client__info_text">
           <p>
@@ -101,7 +101,7 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <a href="/case-tele2-1.html" class="client__cases_block client__cases_block-tele2">
+          <a href="/case-tele2.html" class="client__cases_block client__cases_block-tele2">
             <div class="client__cases_block-name">Конструктор тарифов</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">сервисы</div>

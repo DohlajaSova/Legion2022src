@@ -1,27 +1,27 @@
-    <div class="container">
-        <div class="circle-about">
-            <div class="circle-text__item">
-                <div class="circle-text__item_label">Магазины участвующие в&nbsp;запуске проекта</div>
-            </div>
-            <div class="circle-text__item">
-                <div class="circle-text__item_label">Количество проверок покупателями в месяц</div>
-            </div>
-            <div class="circle-text__item">
-                <div class="circle-text__item_label">Рост показателей MAU за&nbsp;3&nbsp;месяца</div>
-            </div>
+<div class="container">
+    <div class="circle-about">
+        <div class="circle-text__item">
+            <div class="circle-text__item_label">Магазины участвующие в&nbsp;запуске проекта</div>
         </div>
-        <div class="about__animation circle">
-            <div class="circle-pic"></div>
-            <div class="about__animation_items circle-text">
-                <div class="circle-text__item">
-                    <div class="circle-text__item_number">10&nbsp;000</div>
-                </div>
-                <div class="circle-text__item">
-                    <div class="circle-text__item_number">4&nbsp;034</div>
-                </div>
-                <div class="circle-text__item">
-                    <div class="circle-text__item_number">+301%</div>
-                </div>
+        <div class="circle-text__item">
+            <div class="circle-text__item_label">Количество проверок покупателями в месяц</div>
+        </div>
+        <div class="circle-text__item">
+            <div class="circle-text__item_label">Рост показателей MAU за&nbsp;3&nbsp;месяца</div>
+        </div>
+    </div>
+    <div class="about__animation circle">
+        <div class="circle-pic"></div>
+        <div class="about__animation_items circle-text">
+            <div class="circle-text__item">
+                <div class="circle-text__item_number">10&nbsp;000</div>
+            </div>
+            <div class="circle-text__item">
+                <div class="circle-text__item_number">4&nbsp;034</div>
+            </div>
+            <div class="circle-text__item">
+                <div class="circle-text__item_number">+301%</div>
             </div>
         </div>
     </div>
+</div>
