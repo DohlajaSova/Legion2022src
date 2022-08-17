@@ -1,27 +1,27 @@
-    <div class="container">
-        <div class="circle-about">
-            <div class="circle-text__item">
-                <div class="circle-text__item_label">Благодаря оценкам 675&nbsp;позиций стали вкуснее</div>
-            </div>
-            <div class="circle-text__item">
-                <div class="circle-text__item_label">На основе отзывов 362&nbsp;товара стали дешевле</div>
-            </div>
-            <div class="circle-text__item">
-                <div class="circle-text__item_label">По опросам убрали из&nbsp;продажи 263&nbsp;товара</div>
-            </div>
+<div class="container">
+    <div class="circle-about">
+        <div class="circle-text__item">
+            <div class="circle-text__item_label">Благодаря оценкам 675&nbsp;позиций стали вкуснее</div>
         </div>
-        <div class="about__animation circle circle-case">
-            <div class="circle-pic"></div>
-            <div class="about__animation_items circle-text">
-                <div class="circle-text__item">
-                    <div class="circle-text__item_number">675</div>
-                </div>
-                <div class="circle-text__item">
-                    <div class="circle-text__item_number">362</div>
-                </div>
-                <div class="circle-text__item">
-                    <div class="circle-text__item_number">263</div>
-                </div>
+        <div class="circle-text__item">
+            <div class="circle-text__item_label">На основе отзывов 362&nbsp;товара стали дешевле</div>
+        </div>
+        <div class="circle-text__item">
+            <div class="circle-text__item_label">По опросам убрали из&nbsp;продажи 263&nbsp;товара</div>
+        </div>
+    </div>
+    <div class="about__animation circle circle-case">
+        <div class="circle-pic"></div>
+        <div class="about__animation_items circle-text">
+            <div class="circle-text__item">
+                <div class="circle-text__item_number">675</div>
+            </div>
+            <div class="circle-text__item">
+                <div class="circle-text__item_number">362</div>
+            </div>
+            <div class="circle-text__item">
+                <div class="circle-text__item_number">263</div>
             </div>
         </div>
     </div>
+</div>

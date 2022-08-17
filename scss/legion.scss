@@ -588,6 +588,8 @@ a.button {
 		width: auto;
 		height: calc(100% - 110px);
 		padding-top: 40px;
+		// height: calc(100%);
+		// padding: 40px 0;
 
 		.device__wrapper {
 			width: auto;
@@ -954,7 +956,7 @@ a.button {
 		&__item {
 			display: none;
 			width: 230px;
-			margin: 10px auto 0;
+			margin: 0 auto 0;
 			transition: opacity 1000ms;
 
 			&:first-child {
@@ -2253,7 +2255,7 @@ a.button {
 	}
 
 	.principles {
-		margin-bottom: 60px;
+		// margin-bottom: 60px;
 
 		>.container {
 			display: flex;
@@ -2623,7 +2625,7 @@ a.button {
                 transform: none!important;
                 &__item{
                     &_label {
-                        
+						font-size: 36px;
                     }
                 }
             }
@@ -2642,7 +2644,7 @@ a.button {
     }
     .principles {
         &__content{
-            margin-bottom: 0;
+            margin-bottom: 30px;
             &_buttons {
                 margin: 60px 0 0px;
                 width: 100%;
@@ -3337,6 +3339,7 @@ a.button {
 			background: $color-grey-light;
 			overflow: hidden;
 			.problems-slider-groups__statics_arrows-sp{
+				background-color: #FFFFFF;
 				svg {
 					path {
 						fill: $color-grey-light;
@@ -3355,6 +3358,7 @@ a.button {
 				top: 0;
 			}
 			.problems-slider-groups__statics_arrows-sp{
+				background-color: rgba($color: #fff, $alpha: .2);
 				svg {
 					path {
 						fill: $color-blue-dark;
@@ -3625,6 +3629,9 @@ a.button {
 				margin-top: 0 !important;
 			}
 		}
+	}
+	&_case {
+		margin-bottom: 20px;
 	}
 }
 
@@ -3980,14 +3987,11 @@ a.button {
 		}
 	}
 
-	&-client {
-		margin-bottom: 120px;
-	}
-
 	&_case {
 		.projects__panels {
 			display: flex;
 			justify-content: space-between;
+			margin-bottom: 0px;
 		}
 
 		.project_tall {
@@ -4034,7 +4038,6 @@ a.button {
 	}
 
 	h2 {
-		width: 50%;
 		color: $color-blue-light;
 		font-size: 46px;
 	}

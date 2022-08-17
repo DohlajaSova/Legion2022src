@@ -96,7 +96,7 @@
           Связанные <em>кейсы</em>
         </h2>
         <div class="client__cases_wrapper">
-          <a href="#" class="client__cases_block client__cases_block-alfa">
+          <a href="/case-alfa.html" class="client__cases_block client__cases_block-alfa">
             <div class="client__cases_block-name">Портфель</div>
             <div class="client__cases_block-parts">
               <div class="client__cases_block-parts__feature">брокерский счёт</div>
