@@ -80,6 +80,13 @@
             }
         }
     }
+    .problems {
+        &__item {
+            &_wide {
+                padding: 0 0 58.2%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -340,7 +347,12 @@
 				z-index:2;
 			}
 		}
-	}
+        &__item {
+            &_wide {
+                padding: 0 0 49.2%;
+            }
+        }
+    }
 	.vacancies{
 		&__list{
 			&_item{

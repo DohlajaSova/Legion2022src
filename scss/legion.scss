@@ -2191,15 +2191,16 @@ a.button {
 			min-height: 40px;
 			font-size: 24px;
 			margin-bottom: 25px;
-			padding-left: 65px;
-
+			display: flex;
+			align-items: center;
 			&::before {
 				content: "";
 				width: 40px;
 				height: 40px;
-				border-radius: 20px;
-				float: left;
-				margin-left: -65px;
+				border-radius: 50%;
+				flex: none;
+				align-self: baseline;
+				margin-right: 20px;
 				background: url($img-path + "icon-check.svg") center center no-repeat $color-green;
 			}
 
@@ -2443,7 +2444,7 @@ a.button {
 	&__content {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 60px;
+		// margin-bottom: 60px;
 		flex-wrap: wrap;
 
 		h2 {
@@ -2453,7 +2454,7 @@ a.button {
 		&_text {
 			width: 49%;
 			padding-right: 4%;
-			margin-bottom: 90px;
+			margin-bottom: 0px;
 			color: $color-blue-dark;
 
 			*:last-child {
@@ -2580,7 +2581,7 @@ a.button {
 			}
 
 			h3 {
-				margin: 80px 0 40px;
+				margin: 0px 0 40px;
 			}
 		}
 
@@ -2644,7 +2645,8 @@ a.button {
     }
     .principles {
         &__content{
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            margin-top: 40px;
             &_buttons {
                 margin: 60px 0 0px;
                 width: 100%;

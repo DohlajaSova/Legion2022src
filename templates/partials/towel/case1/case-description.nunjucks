@@ -96,7 +96,7 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Центр уведомлений</h2>
+                <h3>Центр уведомлений</h3>
             </div>
             <div class="principles__content_text">
                 <p>Центр уведомлений позволяет пользователю быть в&nbsp;курсе действующих промокодов, скидок, персональных предложений и&nbsp;получать оповещения от&nbsp;обратной связи.</p>
@@ -138,7 +138,7 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Обратная связь</h2>
+                <h3>Обратная связь</h3>
             </div>
             <div class="principles__content_text">
                 <p>Создаём возможности для&nbsp;пользователей поделиться мнением, чтобы бизнес смог повысить качество обслуживания в&nbsp;магазинах.</p>
