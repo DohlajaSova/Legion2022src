@@ -2444,7 +2444,7 @@ a.button {
 	&__content {
 		display: flex;
 		justify-content: space-between;
-		// margin-bottom: 60px;
+		margin-bottom: 60px;
 		flex-wrap: wrap;
 
 		h2 {
@@ -2454,7 +2454,7 @@ a.button {
 		&_text {
 			width: 49%;
 			padding-right: 4%;
-			margin-bottom: 0px;
+			margin-bottom: 90px;
 			color: $color-blue-dark;
 
 			*:last-child {
