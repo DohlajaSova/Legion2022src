@@ -75,7 +75,7 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Индивидуальный тариф</h2>
+                <h3>Индивидуальный тариф</h3>
             </div>
             <div class="principles__content_text">
                 <p>Пользователь может выбрать подходящий тариф и&nbsp;дополнить полезными опциями на&nbsp;свой вкус. А&nbsp;если ничего
@@ -123,7 +123,7 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Управление цифровыми сущностями</h2>
+                <h3>Управление цифровыми сущностями</h3>
             </div>
             <div class="principles__content_text">
                 <p>Конструктор тарифов Tele2 — это&nbsp;возможность выбрать не&nbsp;только опции мобильной связи,

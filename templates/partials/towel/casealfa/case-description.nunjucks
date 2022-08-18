@@ -70,7 +70,7 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Сбалансированный<br/>портфель</h2>
+                <h3>Сбалансированный<br/>портфель</h3>
             </div>
             <div class="principles__content_text">
                 <p>А&nbsp;также в&nbsp;online-режиме отслеживать котировки и&nbsp;получать уведомления об&nbsp;изменении цен.</p>
@@ -146,7 +146,7 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Управление доходами</h2>
+                <h3>Управление доходами</h3>
             </div>
             <div class="principles__content_text">
                 <p>В&nbsp;приложении «Альфа-Инвестиции» мы&nbsp;добавили спектр возможностей для&nbsp;онлайн-мониторинга изменений
