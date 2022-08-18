@@ -181,9 +181,6 @@
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-tele2.html" class="cases__case">
-                                                        {# <div class="cases__case_number">
-                                                            <span>3</span>
-                                                        </div> #}
                                                         <div class="cases__case_container">
                                                             <div class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
@@ -267,9 +264,6 @@
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-tele2.html" class="cases__case">
-                                                        {# <div class="cases__case_number">
-                                                            <span>3</span>
-                                                        </div> #}
                                                         <div class="cases__case_container">
                                                             <div class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
@@ -642,9 +636,6 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-alfa.html" class="cases__case">
-                                                        {# <div class="cases__case_number">
-                                                            <span>2</span>
-                                                        </div> #}
                                                         <div class="cases__case_container">
                                                             <div class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"> </span>

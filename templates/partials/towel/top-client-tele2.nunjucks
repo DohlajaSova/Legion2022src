@@ -40,10 +40,6 @@
               Анализ, прототипирование, дизайн, разработка, контроль качества, поддержка
             </p>
           </div>
-          {# <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Кейсы/Команда</p>
-            <p class="client__info_stats-state__value">3</p>
-          </div> #}
         </div>
         <div class="client__info_text">
           <p>
