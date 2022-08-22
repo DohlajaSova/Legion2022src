@@ -789,6 +789,7 @@ a.button {
 		width: 26px;
 		height: 26px;
 		display: none;
+		align-self: flex-start;
 
 		&>a {
 			display: block;
@@ -813,6 +814,7 @@ a.button {
 		text-align: right;
 		display: flex;
 		justify-content: flex-end;
+		align-self: flex-start;
 
 		&>a {
 			margin-right: 35px;
@@ -1713,8 +1715,8 @@ a.button {
 			>img {
 				display: inline-block;
 				min-width: 40%;
-				max-width: 55%;
-				max-height: 55%;
+				max-width: 40%;
+				max-height: 40%;
 				@include vertical-align();
 			}
 		}
@@ -2355,7 +2357,7 @@ a.button {
 			padding-top: 20px;
 
 			a {
-				color: $color-grey-dark;
+				color: $color-blue-light;
 				font-size: 18px;
 			}
 		}
@@ -4022,6 +4024,7 @@ a.button {
 	margin-bottom: 76px;
 	background-color: $color-blue-dark;
 	color: $color-white;
+	overflow: hidden;
 
 	&__container {
 		display: flex;

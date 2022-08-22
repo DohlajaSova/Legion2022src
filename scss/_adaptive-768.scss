@@ -586,6 +586,12 @@
             }
         }
     }
+    .news {
+        &__button {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -836,7 +842,7 @@
             margin-bottom:20px;
         }
         &__copyright{
-            align-items:flex-end;
+            // align-items:flex-end;
             &_about{
                 display:flex;
                 flex-direction:column;
@@ -969,6 +975,9 @@
         &__item{
             width:100%;
             padding:30px 30px calc(100%);
+            &-compact {
+                padding:30px 30px calc(60%);
+            }
             h3{
                 font-size:35px;
             }
@@ -1300,9 +1309,10 @@
         //     margin-bottom: 55px;
         // }
         &__text{
+            margin-top: -20px;
             column-count:1;
             p{
-                font-size:16px;
+                font-size:14px;
                 margin-bottom:16px;
             }
             &_link{
@@ -1312,6 +1322,9 @@
                     font-size:12px;
                 }
             }
+        }
+        &__animation {
+            margin-bottom: 0;
         }
     }
     .category{
@@ -1460,10 +1473,10 @@
                 max-width:100%;
             }
             h3{
-                font-size:27px;
+                font-size:28px;
             }
             p{
-                font-size:21px;
+                font-size:16px;
             }
             .problems-slider-groups{
                 &__item{

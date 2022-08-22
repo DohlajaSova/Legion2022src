@@ -26,7 +26,7 @@
                     <span class="pulse-button__rings"></span>
                 </button>
             </a>
-            <a href="#feedback" class="button button_default js-popup-feedback-open">Обсудить задачу<em> →</em></a>
+            <a href="#feedback" class="button button_default js-popup-feedback-open">Обсудить проект<em> →</em></a>
         </div>
     </div>
 </div>

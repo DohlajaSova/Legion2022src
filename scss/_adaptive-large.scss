@@ -480,8 +480,8 @@
             &_logo{
                 & > img{
                     min-width:37%;
-                    max-width:52%;
-                    max-height:52%;
+                    max-width:46%;
+                    max-height:46%;
                 }
             }
             &_info{
@@ -1094,7 +1094,7 @@
 		&__text{
 			width:100%;
 			padding-right:0;
-			column-count:2;
+			// column-count:2;
 			column-gap:4%;
 			p{
 				display:inline-block;
@@ -1193,6 +1193,14 @@
                 .button{
                     width:90%;
                     margin-top: 30px;
+                }
+            }
+            h2 {
+                margin-bottom: 40px;
+            }
+            &_text {
+                &-wrap {
+                    width: 100%;
                 }
             }
         }
