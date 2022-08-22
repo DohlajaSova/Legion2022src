@@ -2,7 +2,7 @@
     <div class="container">
         <div class="principles__content">
             <h2>Наш <br><em>подход</em></h2>
-            <div class="principles__content_text">
+            <div class="principles__content_text principles__content_text-wrap">
                 <p>Управляем проектами на&nbsp;основе данных, используем практики из&nbsp;процессного и&nbsp;продуктового подходов.</p>
                 <p>Анализируем рынок, проверяем гипотезы, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и&nbsp;задумываемся о&nbsp;смыслах.</p>
             </div>

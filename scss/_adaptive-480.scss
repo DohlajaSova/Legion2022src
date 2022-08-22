@@ -473,6 +473,9 @@
             }
         }
     }
+    .news .news-item__lead {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -482,6 +485,13 @@
     .case2 {
         .project_tall:last-child{
             padding-bottom: 140%!important;
+        }
+    }
+    .problems{
+        &__item{
+            &-compact {
+                padding-bottom:calc(85%);
+            }
         }
     }
 }

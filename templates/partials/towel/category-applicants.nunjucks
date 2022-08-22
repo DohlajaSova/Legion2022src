@@ -1,7 +1,7 @@
 <div class="category category_applicants"><a name="category"></a>
     <div class="category__tabs">
-        <span class="active">Соискателям</span>
         <a href="/#category">Бизнесу</a>
+        <span class="active">Соискателям</span>
     </div>
     <div class="category__content">
         Мы раз&shy;рабатываем решения для&nbsp;бизнеса <em>с&nbsp;заботой о&nbsp;конечном пользователе</em>

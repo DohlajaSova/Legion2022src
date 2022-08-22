@@ -18,7 +18,7 @@
                     </div>
                     <div class="cases__case_container">
                         <div class="cases__case_contents cases__case_contents-active">
-                            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Сбер"> </span>
+                            <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа"> </span>
                             <span class="cases__case_name">Альфа-Директ</span>
                             <span class="cases__case_arrow"></span>
                         </div>
@@ -70,7 +70,7 @@
                         <div class="cases-slider__item active">
                             <div class="cases-slider__item_nomination">
                                 <h3 class="h2">№1</h3>
-                                <p>номинация «Торговля и&nbsp;услуги»</p>
+                                <p>Рейтинг Рунета&nbsp;2021 «Торговля и&nbsp;услуги»</p>
                             </div>
                             <div class="cases-slider__item_project">
                                 <div class="cases-slider__item_project-photo">
@@ -81,7 +81,7 @@
                         <div class="cases-slider__item">
                             <div class="cases-slider__item_nomination">
                                 <h3 class="h2">№2</h3>
-                                <p>номинация «Приложение бренда»</p>
+                                <p>Рейтинг Рунета&nbsp;2021 «Приложение бренда»</p>
                             </div>
                             <div class="cases-slider__item_project">
                                 <div class="cases-slider__item_project-photo">
@@ -92,7 +92,7 @@
                         <div class="cases-slider__item">
                             <div class="cases-slider__item_nomination">
                                 <h3 class="h2">№3</h3>
-                                <p>номинация «Сервисы»</p>
+                                <p>Рейтинг Рунета&nbsp;2021 «Сервисы»</p>
                             </div>
                             <div class="cases-slider__item_project">
                                 <div class="cases-slider__item_project-photo">

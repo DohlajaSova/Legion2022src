@@ -1,33 +1,33 @@
 <div class="news">
     <div class="container">
-        <h2>Кое-что<br><em>на почитать</em></h2>
+        <h2>Кое-что <br class="mobile480-hide"><em>на почитать</em></h2>
         <div class="news__items">
-            <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="news-item">
+            <a href="https://vk.com/elegion?w=wall-34196694_2040" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news6.jpg" alt=""></div>
                 <div class="news-item__tag">Легионеры</div>
-                <div class="news-item__head">Я сам не смотрю,<br>но подписался </div>
+                <div class="news-item__head">Я сам не смотрю, <br class="mobile480-hide">но подписался </div>
                 <div class="news-item__lead">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</div>
             </a>
-            <a href="https://youtu.be/iqwrEaxkrj4" target="_blank" class="news-item txt">
-                <div class="news-item__tag">Опыт</div>
+            <a href="https://teletype.in/@e-legion/Z2Defe92WuB" target="_blank" class="news-item txt">
+                <div class="news-item__tag">Обучение</div>
                 <div class="news-item__head">Алгоритм успешного собеседования</div>
                 <div class="news-item__lead">Поделимся советами и проверенными личными лайфхаками о том, как подготовиться к успешному собеседованию.</div>
             </a>
-            <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="news-item">
+            <a href="https://habr.com/ru/company/e-legion/blog/588657/" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>
-                <div class="news-item__tag">Сообщество. Опыт</div>
-                <div class="news-item__head">Custom view<br>на Compose</div>
+                <div class="news-item__tag">Разработка</div>
+                <div class="news-item__head">Custom view <br class="mobile480-hide">на Compose</div>
                 <div class="news-item__lead">Статья от&nbsp;архитектора решений e-legion о&nbsp;том, почему микросервисы&nbsp;— не&nbsp;панацея. Разбираемся, чем монолиты отличаются от&nbsp;микросервисов, и&nbsp;какое решение лучше выбрать.</div>
             </a>
-            <a href="https://youtu.be/iqwrEaxkrj4" target="_blank" class="news-item">
+            <a href="https://vk.com/elegion?w=wall-34196694_2026" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news9.jpg" alt=""></div>
                 <div class="news-item__tag">Мероприятия. Сообщество</div>
-                <div class="news-item__head">Хакатон<br>e-legion Hack</div>
+                <div class="news-item__head">Хакатон <br class="mobile480-hide">e-legion Hack</div>
                 <div class="news-item__lead">Рассказываем, как прошёл наш хакатон, и показываем победителей.</div>
             </a>
         </div>
         <div class="news__button">
-            <a href="/inprocess.html" class="button button_default">Смотреть все новости</a>
+            <a href="/inprocess.html" class="button button_default">Смотреть все публикации</a>
         </div>
     </div>
 </div>

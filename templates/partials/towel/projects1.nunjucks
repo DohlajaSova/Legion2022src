@@ -70,7 +70,7 @@
                                     <div class="project-article_top project-article_top-nodesc">
                                       <div class="project-article_top-rubr1 project-article_top-nodesc-rubr1">Социальные проекты</div>
                                       <div class="project-article_top-rubr2 project-article_top-nodesc-rubr2">Экспедиция на&nbsp;Белое море</div>
-                                      <div class="project-article_link-arrow project-article_top-nodesc-arrow">Смотреть статью →</div>
+                                      <div class="project-article_link-arrow project-article_top-nodesc-arrow">Подробнее →</div>
                                       <img class="project-article_top-img project-article_top-nodesc-img" src="/assets/css/img/temp-projects2.jpg" alt="Экспедиция на&nbsp;Белое море"/>
                                     </div>
                                 </a>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="project-article_link">
                   <div class="project-article_link-title">Российская операционная система «Фантом»</div>
-                  <div class="project-article_link-arrow">Смотреть статью →</div>
+                  <div class="project-article_link-arrow">Подробнее →</div>
                 </div>
             	</a>
             </div>
