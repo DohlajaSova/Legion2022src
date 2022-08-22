@@ -3737,11 +3737,11 @@ a.button {
       background-color: #fff; }
 .body_career .top {
   background: url("img/career.jpg") top center no-repeat;
-  background-size: 100% auto;
-  min-height: 544px;
+  background-size: cover;
+  min-height: 580px;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 70px;
+  padding-bottom: 94px;
   margin-top: -152px; }
   .body_career .top > .container {
     width: 100%;
@@ -5825,6 +5825,32 @@ a.button {
   .mobile768-hide {
     display: none; }
 
+  .header,
+  .footer,
+  .pmenu,
+  .top,
+  .cases,
+  .principles,
+  .problems,
+  .vacancies,
+  .projects,
+  .feedback,
+  .service,
+  .news,
+  .who-we-are,
+  .not-all-the-same,
+  .team,
+  .to-work,
+  .some-projects,
+  .dummy__container,
+  .client__info,
+  .client__cases,
+  .client__breadcrumbs,
+  .service-descr__accordion,
+  .vacancypage {
+    padding-left: 30px;
+    padding-right: 30px; }
+
   .top .h1 {
     font-size: 74px; }
 
@@ -6259,32 +6285,6 @@ a.button {
     font-size: 140px;
     margin-top: 10px; } }
 @media only screen and (max-width: 650px) {
-  .header,
-  .footer,
-  .pmenu,
-  .top,
-  .cases,
-  .principles,
-  .problems,
-  .vacancies,
-  .projects,
-  .feedback,
-  .service,
-  .news,
-  .who-we-are,
-  .not-all-the-same,
-  .team,
-  .to-work,
-  .some-projects,
-  .dummy__container,
-  .client__info,
-  .client__cases,
-  .client__breadcrumbs,
-  .service-descr__accordion,
-  .vacancypage {
-    padding-left: 30px;
-    padding-right: 30px; }
-
   .contacts,
   .request {
     overflow-y: unset;

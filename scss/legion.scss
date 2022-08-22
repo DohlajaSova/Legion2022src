@@ -5409,11 +5409,11 @@ a.button {
 
 	.top {
 		background: url($img-path + "career.jpg") top center no-repeat;
-		background-size: 100% auto;
-		min-height: 544px;
+		background-size: cover;
+		min-height: 580px;
 		display: flex;
 		justify-content: flex-end;
-		padding-bottom: 70px;
+		padding-bottom: 94px;
 		margin-top: -152px;
 
 		&>.container {
