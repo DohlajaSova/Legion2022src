@@ -1436,7 +1436,7 @@ a.button {
 				transition: transform 0.7s;
 				position: relative;
 				z-index: 100;
-				bottom: 16px;
+				bottom: 2px;
 			}
 		}
 
@@ -4505,6 +4505,10 @@ a.button {
 			.vacancy__title {
 				background: $color-white;
 			}
+            
+            .vacancy__title_icon{
+                background-color:$color-grey-light;
+            }
 		}
 
 		&.not-shown {
@@ -4527,7 +4531,20 @@ a.button {
 		.cases__lead {
 			height: 37px;
 		}
-	}
+
+        .vacancies__container{
+            padding-bottom: 0;
+        }
+        
+        .vacancies__list{
+            width:101.3333%;
+            margin-right:-1.3333%;
+        }
+        
+        .cases__pagination-arrows:first-child{
+            display: none;
+        }
+    }
 }
 
 .footer {

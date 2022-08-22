@@ -18,7 +18,7 @@
                         <input name="phone" type="tel" class="feedback__form_input feedback__form_input-placeholder" placeholder="Телефон">
                     </div>
                     <div class="feedback__form_item">
-                        <textarea name="resume" type="text" class="feedback__form_textarea feedback__form_textarea-placeholder" placeholder="О себе/ссылка на портфолио"></textarea>
+                        <textarea name="resume" type="text" class="feedback__form_textarea feedback__form_textarea-placeholder" placeholder="О себе / ссылка на портфолио"></textarea>
                     </div>
                 </div>
                 <div class="feedback__comment">

@@ -1213,7 +1213,7 @@ a.button {
       transition: transform 0.7s;
       position: relative;
       z-index: 100;
-      bottom: 16px; }
+      bottom: 2px; }
   .accordion__item_body {
     width: 50%;
     margin: -50px 0 50px 50%;
@@ -3180,6 +3180,8 @@ a.button {
       cursor: pointer; }
       .vacancies .vacancy_send .vacancy__title {
         background: #fff; }
+      .vacancies .vacancy_send .vacancy__title_icon {
+        background-color: #F0F0F0; }
     .vacancies .vacancy.not-shown {
       display: none; }
   .vacancies.vacancies_page {
@@ -3191,6 +3193,13 @@ a.button {
       text-align: left; }
     .vacancies.vacancies_page .cases__lead {
       height: 37px; }
+    .vacancies.vacancies_page .vacancies__container {
+      padding-bottom: 0; }
+    .vacancies.vacancies_page .vacancies__list {
+      width: 101.3333%;
+      margin-right: -1.3333%; }
+    .vacancies.vacancies_page .cases__pagination-arrows:first-child {
+      display: none; }
 
 .footer {
   background-color: #1E2738;
@@ -4522,6 +4531,7 @@ a.button {
     padding-left: 60px;
     padding-right: 60px; }
 
+  .top .breadcrumbs,
   .to-work .projects,
   .some-projects .cases,
   .who-we-are .vacancies,
@@ -5607,7 +5617,17 @@ a.button {
       color: #2864D9;
       margin-right: 12px;
       width: 10px;
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .body_career .top {
+    margin-bottom: 23px; }
+  .body_career .principles h3, .body_career .principles .h3 {
+    font-size: 56px;
+    width: 100%;
+    margin-bottom: 34px; }
+  .body_career .principles__content_text {
+    width: 100%;
+    margin-bottom: 40px; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -6202,7 +6222,11 @@ a.button {
 
   .body_career .top {
     background: url(img/career768.jpg) top center no-repeat;
-    background-size: 100% auto; }
+    background-size: cover;
+    min-height: 1024px; }
+    .body_career .top > .container {
+      align-items: flex-start;
+      padding-top: 233px; }
 
   .top_case .top__image-desktop {
     display: none; }
@@ -6391,6 +6415,12 @@ a.button {
 
   .vacancies {
     margin-bottom: 40px; }
+    .vacancies.vacancies_page .cases__title {
+      border-top: 1px solid #1E2738;
+      padding-top: 40px;
+      margin-bottom: 40px; }
+    .vacancies.vacancies_page .cases__lead {
+      display: none; }
 
   .projects h2 {
     margin-bottom: 30px; }
@@ -7161,7 +7191,21 @@ a.button {
 
   .case2 .project__review_top {
     min-height: 210px !important;
-    padding-bottom: 42% !important; } }
+    padding-bottom: 42% !important; }
+
+  .body_career .top .h1 {
+    font-size: 56px; }
+  .body_career .principles__content h3, .body_career .principles__content .h3 {
+    font-size: 28px;
+    margin-bottom: 24px; }
+
+  .body_career .top {
+    background: url(img/career480.jpg) top center no-repeat;
+    background-size: cover;
+    min-height: 568px; }
+    .body_career .top > .container {
+      align-items: flex-start;
+      padding-top: 191px; } }
 @media only screen and (max-width: 480px) {
   .mobile480-show {
     display: block; }
@@ -7361,10 +7405,6 @@ a.button {
   .request__form_warning {
     font-size: 16px; }
 
-  .body_career .top {
-    background: url(img/career480.jpg) top center no-repeat;
-    background-size: auto; }
-
   .years__year {
     font-size: 46px;
     padding: 30px 0; }
@@ -7490,7 +7530,10 @@ a.button {
     padding-bottom: 140% !important; }
 
   .problems__item-compact {
-    padding-bottom: calc(85%); } }
+    padding-bottom: calc(85%); }
+
+  .body_career .top .h1 {
+    font-size: 42px; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }

@@ -523,7 +523,12 @@
     .body_career {
         .top {
             background: url(img/career768.jpg) top center no-repeat;
-            background-size:100% auto;
+            background-size:cover;
+            min-height: 1024px;
+            & > .container{
+                align-items: flex-start;
+                padding-top: 233px;
+            }
         }
     }
     .top_case{
@@ -800,6 +805,16 @@
     }
     .vacancies{
         margin-bottom:40px;
+        &.vacancies_page{
+            .cases__title{
+                border-top:1px solid $color-blue-dark;
+                padding-top:40px;
+                margin-bottom:40px;
+            }
+            .cases__lead{
+                display:none;
+            }
+        }
     }
     .projects{
         h2{
@@ -1984,6 +1999,31 @@
                     min-height: 210px!important;
                     padding-bottom: 42%!important;
                 }
+            }
+        }
+    }
+    .body_career{
+        .top{
+            .h1{
+                font-size: 56px;
+            }
+        }
+        .principles__content{
+            h3, .h3{
+                font-size: 28px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .body_career {
+        .top {
+            background: url(img/career480.jpg) top center no-repeat;
+            background-size: cover;
+            min-height: 568px;
+            & > .container{
+                align-items: flex-start;
+                padding-top: 191px;
             }
         }
     }
