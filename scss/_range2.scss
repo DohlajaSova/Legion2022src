@@ -21,13 +21,13 @@ $label-h: 50px; /* label widths */
 	width: $thumb-d;
 	height: $thumb-d;
 	border-radius: 50%;
-	box-shadow: 
+	/*box-shadow: 
 		0 1px .125em rgba($color-grey-dark, .5), 
-		0 1px .25em rgba($color-grey-dark, .5);
-	background: $color-grey-light;
+		0 1px .25em rgba($color-grey-dark, .5);*/
+	background: $color-blue;
 	transition: none;
 	pointer-events: auto;
-	cursor: pointer
+	cursor: ew-resize;
 }
 
 %mid {
