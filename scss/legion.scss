@@ -4837,8 +4837,6 @@ a.button {
 	}
 
 	.map {
-		&__select {}
-
 		&__addresses {
 			margin: 74px 0;
 
@@ -4856,6 +4854,10 @@ a.button {
 				width: 25%;
 				font-size: 24px;
 				color: $color-grey-dark;
+				line-height:2;
+				a {
+					color: $color-grey-dark;
+				}
 			}
 
 			&_email {
@@ -5114,7 +5116,7 @@ a.button {
 		font-size: 16px;
 		color: $color-grey-dark;
 		width: 40%;
-		padding: 12px 0 0 5%;
+		padding: 12px 0 0 20px;
 	}
 
 	&__button {
