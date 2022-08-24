@@ -7,7 +7,7 @@
                         <a name="feedback"></a>У&nbsp;нас всегда найдётся что&nbsp;почитать
                     </h2>
                     <p>Тут место для открытого заявления о&nbsp;регулярности рассылки и&nbsp;высоком качестве материалов</p>
-                    <span class="request__form_warning">✕ Временно недоступно</span>
+                    <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
                 </div>
                 <div class="feedback__form">
                     <div class="feedback__form_item">

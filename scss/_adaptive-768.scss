@@ -669,8 +669,8 @@
 @media only screen and (max-width: 650px) {
     .contacts,
     .request{
-        overflow-y: unset;
-        max-height: unset;
+        // overflow-y: unset;
+        // max-height: unset;
         .container{
             overflow: unset!important;
             padding:0 15px;

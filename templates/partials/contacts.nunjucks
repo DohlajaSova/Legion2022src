@@ -23,10 +23,10 @@
                         </span>
                         <div class="map__addresses_block">
                             <p class="map__addresses_title" itemprop="addressLocality">Санкт-Петербург</p>
-                            <p class="map__addresses_street">
+                            <div class="map__addresses_street">
                                 <span itemprop="postalCode">197374</span>, <span itemprop="streetAddress">ул.&nbsp;Оптиков&nbsp;4</span><br>
                                 <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
-                            </p>
+                            </div>
                             <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
                         </div>
                     </address>

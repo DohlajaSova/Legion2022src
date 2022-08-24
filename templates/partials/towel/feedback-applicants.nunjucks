@@ -5,7 +5,7 @@
                 <div class="feedback__container_headwrap">
                     <h2>
                         <a name="feedback"></a>Расскажите нам<br/>о себе или напишите<br/>на hr@e-legion.com</h2>
-                    <span class="request__form_warning">✕ Временно недоступно</span>
+                    <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
                 </div>
                 <div class="feedback__form">
                     <div class="feedback__form_item">
