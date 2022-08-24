@@ -31,9 +31,10 @@
     .client__breadcrumbs,
     .service-descr__accordion,
     .vacancypage{
-        padding-left:30px;
-        padding-right:30px;
+        padding-left:60px;
+        padding-right:60px;
     }
+    .top .breadcrumbs,
     .to-work .projects,
     .some-projects .cases,
     .who-we-are .vacancies,
@@ -658,7 +659,6 @@
 				}
 				&_street{
 					width:50%;
-					line-height:2;
 					margin-bottom:4px;
 				}
 				&_email{
@@ -1785,6 +1785,22 @@
             margin-right: 12px;
             width: 10px;
             font-size: 20px;
+        }
+    }
+    .body_career{
+        .top{
+            margin-bottom: 23px;
+        }
+        .principles{
+            h3, .h3{
+                font-size: 56px;
+                width:100%;
+                margin-bottom: 34px;
+            }
+            &__content_text{
+                width:100%;
+                margin-bottom: 40px;
+            }
         }
     }
 }

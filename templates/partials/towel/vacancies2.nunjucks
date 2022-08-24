@@ -75,10 +75,10 @@
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
-                            <div class="vacancy__title_name">Возможно, нам не&nbsp;хватает в&nbsp;команде именно тебя. Мы&nbsp;просто пока не&nbsp;знаем об&nbsp;этом.</div>
+                            <div class="vacancy__title_name">Возможно, нам не&nbsp;хватает в&nbsp;команде именно вас. Мы&nbsp;просто пока не&nbsp;знаем об&nbsp;этом.</div>
                         </h3>
                         <div class="vacancy__body">
-                            <div class="vacancy__body_item">Отправь резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;тобой в&nbsp;ближайшее время.</div>
+                            <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
                             <div class="vacancy__body_link">Отправить резюме →</div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                 </ul>
             </div>
             <div class="cases__pagination-button">
-                <button class="button button_grey button_wide js-vacancies-more">Показать еще</button>
+                <button class="button button_default button_wide js-vacancies-more">Показать еще</button>
             </div>
         </div>
     </div>

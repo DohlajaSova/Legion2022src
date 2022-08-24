@@ -7,7 +7,7 @@
             <div class="request">
                 <div class="container">
                     <div class="request__form">
-                        <h3>Представьтесь, пожалуйста</h3>
+                        <h1>Представьтесь, пожалуйста</h1>
                         <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
                         <div class="request__form_item">
                             <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">

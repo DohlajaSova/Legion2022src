@@ -1473,7 +1473,7 @@ a.button {
 				transition: transform 0.7s;
 				position: relative;
 				z-index: 100;
-				bottom: 16px;
+				bottom: 2px;
 			}
 		}
 
@@ -4542,6 +4542,10 @@ a.button {
 			.vacancy__title {
 				background: $color-white;
 			}
+            
+            .vacancy__title_icon{
+                background-color:$color-grey-light;
+            }
 		}
 
 		&.not-shown {
@@ -4564,7 +4568,20 @@ a.button {
 		.cases__lead {
 			height: 37px;
 		}
-	}
+
+        .vacancies__container{
+            padding-bottom: 0;
+        }
+        
+        .vacancies__list{
+            width:101.3333%;
+            margin-right:-1.3333%;
+        }
+        
+        .cases__pagination-arrows:first-child{
+            display: none;
+        }
+    }
 }
 
 .footer {
@@ -4857,8 +4874,6 @@ a.button {
 	}
 
 	.map {
-		&__select {}
-
 		&__addresses {
 			margin: 74px 0;
 
@@ -4876,6 +4891,10 @@ a.button {
 				width: 25%;
 				font-size: 24px;
 				color: $color-grey-dark;
+				line-height:2;
+				a {
+					color: $color-grey-dark;
+				}
 			}
 
 			&_email {
@@ -5134,7 +5153,7 @@ a.button {
 		font-size: 16px;
 		color: $color-grey-dark;
 		width: 40%;
-		padding: 12px 0 0 5%;
+		padding: 12px 0 0 20px;
 	}
 
 	&__button {
@@ -5446,14 +5465,15 @@ a.button {
 
 	.top {
 		background: url($img-path + "career.jpg") top center no-repeat;
-		background-size: 100% auto;
-		min-height: 544px;
+		background-size: cover;
+		min-height: 580px;
 		display: flex;
 		justify-content: flex-end;
-		padding-bottom: 70px;
+		padding-bottom: 94px;
 		margin-top: -152px;
 
 		&>.container {
+            width: 100%;
 			align-items: flex-end;
 		}
 

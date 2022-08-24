@@ -5,6 +5,32 @@
     .mobile768-hide{
         display:none;
     }
+    .header,
+    .footer,
+    .pmenu,
+    .top,
+    .cases,
+    .principles,
+    .problems,
+    .vacancies,
+    .projects,
+    .feedback,
+    .service,
+    .news,
+    .who-we-are,
+    .not-all-the-same,
+    .team,
+    .to-work,
+    .some-projects,
+    .dummy__container,
+    .client__info,
+    .client__cases,
+    .client__breadcrumbs,
+    .service-descr__accordion,
+    .vacancypage{
+        padding-left:30px;
+        padding-right:30px;
+    }
     .top{
         .h1{
             font-size:74px;
@@ -497,7 +523,12 @@
     .body_career {
         .top {
             background: url(img/career768.jpg) top center no-repeat;
-            background-size:100% auto;
+            background-size:cover;
+            min-height: 1024px;
+            & > .container{
+                align-items: flex-start;
+                padding-top: 233px;
+            }
         }
     }
     .top_case{
@@ -636,27 +667,10 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .header,
-    .footer,
-    .pmenu,
-    .top,
-    .cases,
-    .service,
-    .principles,
-    .problems,
-    .vacancies,
-    .projects,
-    .feedback,
-    .service-descr__accordion,
-    .news,
-    .vacancypage{
-        padding-left:15px;
-        padding-right:15px;
-    }
     .contacts,
     .request{
-        overflow-y: unset;
-        max-height: unset;
+        // overflow-y: unset;
+        // max-height: unset;
         .container{
             overflow: unset!important;
             padding:0 15px;
@@ -791,6 +805,16 @@
     }
     .vacancies{
         margin-bottom:40px;
+        &.vacancies_page{
+            .cases__title{
+                border-top:1px solid $color-blue-dark;
+                padding-top:40px;
+                margin-bottom:40px;
+            }
+            .cases__lead{
+                display:none;
+            }
+        }
     }
     .projects{
         h2{
@@ -1975,6 +1999,31 @@
                     min-height: 210px!important;
                     padding-bottom: 42%!important;
                 }
+            }
+        }
+    }
+    .body_career{
+        .top{
+            .h1{
+                font-size: 56px;
+            }
+        }
+        .principles__content{
+            h3, .h3{
+                font-size: 28px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .body_career {
+        .top {
+            background: url(img/career480.jpg) top center no-repeat;
+            background-size: cover;
+            min-height: 568px;
+            & > .container{
+                align-items: flex-start;
+                padding-top: 191px;
             }
         }
     }
