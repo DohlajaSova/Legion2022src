@@ -747,9 +747,8 @@ a.button {
 			}
 
 		}
-		&.platform {
-			.select-hide div,
-			.select-selected {
+		&.platform .select-hide {
+			div {
 				padding-left: 70px;
 				background-position: left 30px top 17px;
 				background-repeat: no-repeat;
@@ -768,8 +767,7 @@ a.button {
 				}
 			}
 
-			.select-hide .same-as-selected,
-			.select-selected {
+			.same-as-selected {
 				&:nth-of-type(1) {
 					background-image: url($img-path + "icon-ios-white.svg");
 				}
