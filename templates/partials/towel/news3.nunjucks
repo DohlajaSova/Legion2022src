@@ -1,6 +1,6 @@
 <div class="news">
     <div class="container">
-        <h2>Новости<br><em>легионеров</em></h2>
+        <h2>Кое-что <br><em>на почитать</em></h2>
         <div class="news__items">
             <a href="https://vk.com/wall-34196694_2040?w=wall-34196694_2040" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news6.jpg" alt=""></div>

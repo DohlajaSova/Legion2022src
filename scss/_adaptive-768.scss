@@ -530,6 +530,9 @@
                 padding-top: 233px;
             }
         }
+        .not-all-the-same_background{
+            margin-bottom: 80px;
+        }
     }
     .top_case{
         .top__image-desktop{
@@ -623,6 +626,21 @@
             width: 100%;
         }
     }
+    .body_career{
+        .feedback{
+            &__container{
+                padding-bottom:65px;
+            }
+            &__button{
+                width:100%;
+            }
+            &__comment{
+                width:100%;
+                padding:20px 0 0 0;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 700px) {

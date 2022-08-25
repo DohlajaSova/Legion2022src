@@ -1,6 +1,6 @@
 <div class="vacancies vacancies_page">
     <div class="container">
-        <h1 class="cases__title">Вакансии</h1>
+        <h1 class="h2 cases__title">Вакансии</h1>
         <div class="cases__lead"></div>
         <div class="cases__filter">
             <div class="select select-inline js-vacancies-types"><select>

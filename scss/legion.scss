@@ -1473,7 +1473,7 @@ a.button {
 				transition: transform 0.7s;
 				position: relative;
 				z-index: 100;
-				bottom: 2px;
+				bottom: 6px;
 			}
 		}
 
@@ -3005,6 +3005,7 @@ a.button {
 		background-color: $color-blue-dark;
 		color: $color-white;
 		padding: 120px 0 10px;
+        margin-bottom: 120px;
 
 		h2,
 		.h2,
@@ -5482,6 +5483,10 @@ a.button {
 			width: 100%;
 		}
 	}
+    
+    .feedback{
+        margin-bottom: 0;
+    }
 }
 
 .body_service {
