@@ -28,7 +28,7 @@
     <div class="header-dummy"></div>
     {% include "partials/towel/pmenu.nunjucks" %}
 	{% block content %} {% endblock %}
-	<div class="bottom-dummy"></div>
+	<!-- <div class="bottom-dummy"></div> -->
 </div>
 <footer class="footer cleared">
     {% include "partials/footer-back.nunjucks" %}

@@ -1467,13 +1467,13 @@ a.button {
 				width: 56px;
 				height: 56px;
 				border-radius: 50%;
-				background: url($img-path + "arrow2.svg") center center no-repeat $color-grey-light;
+				background: url($img-path + "arrow3.svg") center center no-repeat $color-grey-light;
 				background-size: 60%;
 				transform: rotate(0deg);
 				transition: transform 0.7s;
 				position: relative;
 				z-index: 100;
-				bottom: 6px;
+				top: 5px;
 			}
 		}
 
@@ -1530,14 +1530,11 @@ a.button {
 			}
 		}
 
-		&:last-child {
-			border-bottom: none;
-		}
 	}
 }
 
 .cases {
-	margin-bottom: 75px;
+	margin-bottom: 120px;
 
 	.cases-container {
 		&_inner {
@@ -2847,132 +2844,114 @@ a.button {
 	
 }
 .who-we-are {
-	&__content {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 60px;
-		flex-wrap: wrap;
+    &__content{
+		display:flex;
+        justify-content:space-between;
+        margin-bottom:60px;
+        flex-wrap:wrap;
+        h2{
+            color: $color-blue-dark;
+            width:48%;
+            em{
+                color:$color-blue-light;
+                font-style:normal;
+                white-space:nowrap;
+            }
+        }
+        &_text{
+            width:50%;
+            padding-right:4%;
+            margin-bottom:90px;
+            *:last-child{
+                margin-bottom:0;
+            }
+        }
+        p{
+            font:$text1;
+            margin-bottom:32px;
+        }
+    }
 
-		h2 {
-			color: $color-blue-dark;
-			width: 48%;
-
-			em {
-				color: $color-blue-light;
-				font-style: normal;
-				white-space: nowrap;
+    &__widget{
+        display:grid;
+		width:100%;
+        grid-gap: 17px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 89px;
+        &_item{
+            background-color:$color-grey-light;
+            border-radius:$border-radius;
+            position:relative;
+            &.double{
+                grid-row-end: span 2;
+                grid-column-end: span 2;
+                height: 0;
+                padding-bottom: 100%;
+            }
+        }
+		&_container{
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+		.vacancies{
+			height:100%;
+			background-color:transparent;
+			&__list{
+				height:100%;
+			}
+			.vacancy{
+				width:100%;
 			}
 		}
-
-		&_text {
-			width: 50%;
-			padding-right: 4%;
-			margin-bottom: 90px;
-
-			*:last-child {
-				margin-bottom: 0;
+		.problems__item{
+			width:100%;
+			padding:30px 30px calc(100% - 30px);
+			h3{
+				font-size:24px;
+				width:100%;
 			}
 		}
-
-		p {
-			font: $text1;
-			margin-bottom: 32px;
-		}
-	}
-
-	&__widget {
-		display: grid;
-		width: 100%;
-		grid-gap: 17px;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		margin-bottom: 89px;
-
-		&_item {
-			background-color: $color-grey-light;
-			border-radius: $border-radius;
-			position: relative;
-
-			&.double {
-				grid-row-end: span 2;
-				grid-column-end: span 2;
-				height: 0;
-				padding-bottom: 100%;
+		.problems__more{
+			left:30px;
+			bottom:40px;
+            line-height:80px;
+			&::before{
+				margin-top:2px;
+			}
+			&::after{
+				top:54px;
 			}
 		}
-
-		&_container {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
+		.cases__case{
+			width:100%;
+			padding-bottom:100%;
 		}
-
-		.vacancies {
-			height: 100%;
-			background-color: transparent;
-
-			&__list {
-				height: 100%;
-			}
-
-			.vacancy {
-				width: 100%;
-			}
-		}
-
-		.problems__item {
-			width: 100%;
-			padding: 30px 30px calc(100% - 30px);
-
-			h3 {
-				font-size: 24px;
-				width: 100%;
-			}
-		}
-
-		.problems__more {
-			left: 30px;
-			bottom: 40px;
-			line-height: 80px;
-
-			&::before {
-				margin-top: 2px;
-			}
-
-			&::after {
-				top: 53px;
-			}
-		}
-
-		.cases__case {
-			width: 100%;
-			padding-bottom: 100%;
-		}
-
-		.cases__block {
-			flex-wrap: wrap;
-			justify-content: center;
-			padding-top: 3%;
-
-			.cases__case {
-				width: 44%;
-				padding-bottom: 44%;
-				background-color: $color-white;
-				margin: 1.5%;
-
-				&_name {
-					height: 53px;
-				}
-
+        .cases__block{
+            flex-wrap:wrap;
+            justify-content:center;
+            padding-top:3%;
+            .cases__case{
+                width:44%;
+                padding-bottom:44%;
+                background-color:$color-white;
+                margin:1.5%;
+                &_name{
+                    height:53px;
+                }
 				&:hover {
 					.cases__case_contents {
-						top: -80px;
+						&-active {
+							cursor: pointer;
+							top: -80px;
+						}
 					}
 				}
-			}
-		}
-	}
+            }
+        }
+    }
 }
 
 .not-all-the-same {
@@ -3081,7 +3060,7 @@ a.button {
 
 		&::before {
 			content: "";
-			width: 78px;
+			width: 80px;
 			height: 80px;
 			opacity: 0.2;
 			position: relative;
@@ -3682,7 +3661,7 @@ a.button {
 
 	h2 {
 		width: 50%;
-		margin-bottom: 50px;
+		margin-bottom: 120px;
 
 		em {
 			color: $color-blue-light;
@@ -3695,7 +3674,8 @@ a.button {
 		display: grid;
 		grid-gap: 17px;
 		grid-template-columns: 1fr 1fr;
-		margin-bottom: 149px;
+		margin-bottom: 120px;
+		// margin-bottom: 149px;
 
 		&-client {
 			grid-template-columns: 2fr 1fr 1fr;
@@ -4179,6 +4159,7 @@ a.button {
 		h2 {
 			width: 50%;
 			margin-bottom: 0;
+			font-size: 74px;
 		}
 
 		.feedback__button {
@@ -4192,7 +4173,8 @@ a.button {
 	}
 
 	&.feedback_applicants {
-		background: url($img-path + "vacancy-bg2.svg") left -40% top -80px no-repeat $color-blue;
+		background: $color-blue;
+		// url($img-path + "vacancy-bg2.svg") left -40% top -80px no-repeat 
 		background-size: auto calc(100% + 200px);
 
 		h2 {
@@ -5343,7 +5325,7 @@ a.button {
 }
 
 .some-projects {
-	margin-bottom: 75px;
+	// margin-bottom: 75px;
 
 	&__list {
 		width: 100%;
@@ -5562,7 +5544,7 @@ a.button {
 		&::after {
 			content: "";
 			display: block;
-			height: 1px;
+			height: 3px;
 			background: radial-gradient(#2864D9 0%, transparent 70%);
 		}
 
@@ -5640,7 +5622,7 @@ a.button {
 		justify-content: space-between;
 		background: #F0F0F0;
 		border-radius: 42px;
-		margin: 60px 0px 140px;
+		margin: 60px 0px 120px;
 
 		&_img {
 			width: 50%;
@@ -5709,7 +5691,8 @@ a.button {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
-		padding: 40px 0 100px;
+		padding: 0px 0 100px;
+		margin-bottom: 60px;
 
 		&_info {
 			display: flex;
@@ -5758,6 +5741,7 @@ a.button {
 				color: $color-grey-dark !important;
 				width: 150px;
 				text-decoration: none !important;
+				margin-bottom: 18px;
 			}
 
 			&-icon {
@@ -5821,8 +5805,12 @@ a.button {
 				}
 			}
 		}
-
 		border-bottom: 1px solid #949191;
+		&:last-child{
+			border: none;
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
 	}
 
 	&>div:last-child {
@@ -6328,112 +6316,6 @@ a.button {
 	}
 }
 
-.who-we-are{
-    &__content{
-		display:flex;
-        justify-content:space-between;
-        margin-bottom:60px;
-        flex-wrap:wrap;
-        h2{
-            color: $color-blue-dark;
-            width:48%;
-            em{
-                color:$color-blue-light;
-                font-style:normal;
-                white-space:nowrap;
-            }
-        }
-        &_text{
-            width:50%;
-            padding-right:4%;
-            margin-bottom:90px;
-            *:last-child{
-                margin-bottom:0;
-            }
-        }
-        p{
-            font:$text1;
-            margin-bottom:32px;
-        }
-    }
-    &__widget{
-        display:grid;
-		width:100%;
-        grid-gap: 17px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-bottom: 89px;
-        &_item{
-            background-color:$color-grey-light;
-            border-radius:$border-radius;
-            position:relative;
-            &.double{
-                grid-row-end: span 2;
-                grid-column-end: span 2;
-                height: 0;
-                padding-bottom: 100%;
-            }
-        }
-		&_container{
-			position:absolute;
-			top:0;
-			bottom:0;
-			left:0;
-			right:0;
-		}
-		.vacancies{
-			height:100%;
-			background-color:transparent;
-			&__list{
-				height:100%;
-			}
-			.vacancy{
-				width:100%;
-			}
-		}
-		.problems__item{
-			width:100%;
-			padding:30px 30px calc(100% - 30px);
-			h3{
-				font-size:24px;
-				width:100%;
-			}
-		}
-		.problems__more{
-			left:30px;
-			bottom:40px;
-            line-height:80px;
-			&::before{
-				margin-top:2px;
-			}
-			&::after{
-				top:53px;
-			}
-		}
-		.cases__case{
-			width:100%;
-			padding-bottom:100%;
-		}
-        .cases__block{
-            flex-wrap:wrap;
-            justify-content:center;
-            padding-top:3%;
-            .cases__case{
-                width:44%;
-                padding-bottom:44%;
-                background-color:$color-white;
-                margin:1.5%;
-                &_name{
-                    height:53px;
-                }
-                &:hover{
-                    .cases__case_contents{
-                        top:-80px;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .client~.feedback {
 	margin-bottom: 120px;
@@ -6441,8 +6323,8 @@ a.button {
 
 .icon_plus,
 .icon_arrow {
-	width: 56px;
-	height: 56px;
+	width: 76px;
+	height: 76px;
 	border-radius: 50%;
 	background: url($img-path + "vacancy-plus.svg") center center no-repeat $color-green;
 	flex-shrink: 0;

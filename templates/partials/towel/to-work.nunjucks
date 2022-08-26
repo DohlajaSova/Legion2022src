@@ -5,7 +5,7 @@
             <div class="to-work__content_blocks">
                 <div class="projects">
                     <div class="project">
-                        <a href="/inprocess.html" class="project__article project__article_small project-article">
+                        <a href="/career.html" class="project__article project__article_small project-article">
                         <div class="project-article_top">
                             <img class="project-article_top-img" src="/assets/css/img/temp-projects4.jpg" alt="Открытые вакансии">
                         </div>
