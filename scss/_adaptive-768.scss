@@ -389,6 +389,7 @@
         &_compact{
             h2{
                 width:70%;
+                font-size: 46px;
             }
         }
     }
@@ -413,7 +414,7 @@
         &__section {
             flex-flow: column nowrap;
             height: auto;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             &_info {
                 overflow: unset;
                 width: 100%;
@@ -440,9 +441,10 @@
             }
         }
         &__feature {
-            padding: 40px 0 40px;
+            padding: 0px 0 40px;
+            margin-bottom: 40px;
             &_info {
-                margin-bottom: 50px;
+                margin-bottom: 60px;
             }
             &_inner {
                 flex-flow: column nowrap;
@@ -520,17 +522,16 @@
         margin-bottom: 60px;
     }
 
-    .body_career {
+    .body_career, .body_about {
         .top {
-            background: url(img/career768.jpg) top center no-repeat;
             background-size:cover;
-            min-height: 1024px;
+            min-height: 700px;
             & > .container{
-                align-items: flex-start;
                 padding-top: 233px;
             }
         }
     }
+
     .top_case{
         .top__image-desktop{
             display: none;
@@ -621,6 +622,32 @@
         &__button {
             margin-left: 0;
             width: 100%;
+        }
+    }
+    .who-we-are__content {
+        margin-bottom: 0;
+    }
+    .who-we-are__widget, .not-all-the-same{
+        margin-bottom: 60px;
+    }
+    .projects {
+        h2 {
+            margin-bottom: 60px;
+            
+        }
+        &__panels {
+            margin-bottom: 60px;
+        }
+    }
+    .feedback{
+        &_compact{
+            .feedback__button{
+                .pulse-button{
+                    &:before{
+                        transform: scale(.8);
+                    }
+                }
+            }
         }
     }
 }
@@ -946,8 +973,13 @@
             font-size:60px;
         }
     }
+    .body_about {
+        .cases {
+            margin-bottom: 0;
+        }
+    }
     .cases{
-        margin-bottom:75px;
+        margin-bottom:60px;
         &__block{
             flex-wrap:wrap;
         }
@@ -1220,6 +1252,17 @@
             }
         }
     }
+    .cases{
+        &__case{
+            &_info{
+                .cases__case_photo{
+                    img{
+                        width:49px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1394,7 +1437,7 @@
                 .cases__case_photo{
                     padding:0 12px 12px 0;
                     img{
-                        max-width:58px;
+                        width:90px;
                     }
                 }
                 &__statics_dots{
@@ -1794,7 +1837,7 @@
         }
 
         &.some-projects {
-            padding-top: 0;
+            // padding-top: 0;
         }
     }
     .news{

@@ -233,7 +233,7 @@
     .projects{
         h2{
             width:80%;
-            margin-bottom:40px;
+            margin-bottom:80px;
         }
         &__panels{
             margin-bottom:100px;
@@ -486,11 +486,11 @@
                 }
             }
             &_info{
-                .cases__case_photo{
-                    img{
-                        width:49px;
-                    }
-                }
+                // .cases__case_photo{
+                //     img{
+                //         width:49px;
+                //     }
+                // }
                 .cases__case_number{
                     font-size:32px;
                     margin-bottom:6px;
@@ -869,7 +869,16 @@
         }
     }
 }
-
+@media only screen and (max-width: 1080px) {
+    .who-we-are{
+        &__widget{
+            grid-template-columns: 1fr 1fr;
+            &_item{
+                padding-bottom:100%;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1024px) {
     .problems{
         margin-bottom:40px;
@@ -1036,6 +1045,12 @@
 	h2, .h2 {
 		font-size:46px;
 	}
+    .who-we-are__content {
+        h2, .h2 {
+            font-size:56px;
+        }
+
+    }
 	h3, .h3 {
 		font-size:29px;
 	}
@@ -1617,14 +1632,6 @@
             }
         }
     }
-    .who-we-are{
-        &__widget{
-            grid-template-columns: 1fr 1fr;
-            &_item{
-                padding-bottom:100%;
-            }
-        }
-    }
     .client {
         &__info {
             flex-flow: column nowrap;
@@ -1765,7 +1772,6 @@
             }
         }
     }
-    
     .case__alfa{
         &_problems{
             &-item{
@@ -1826,7 +1832,7 @@
                     padding-bottom: 100%;
                 }
                 &-with-slider{
-                    margin-bottom:54px;
+                    // margin-bottom:54px;
                     .project__article_container{
                         overflow:visible;
                     }

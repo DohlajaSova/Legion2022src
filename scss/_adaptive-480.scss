@@ -496,6 +496,45 @@
     .news .news-item__lead {
         font-size: 14px;
     }
+    .who-we-are__widget, .not-all-the-same, .cases{
+        margin-bottom: 40px;
+    }
+    .who-we-are__widget_item{
+        .cases{
+            &__case{
+                min-height:unset!important;
+                &_info {
+                    width: 100%!important;
+                }
+                &_name {
+                    font-size: 16px;
+                }
+            }
+        }
+        // .vacancy {
+        //     padding-bottom: 0;
+        //     max-height: 100%;
+        //     &__container {
+        //         max-height: 100%;
+        //     }
+        //     &__title {
+        //         height: 100%!important;
+        //     }
+        // }
+    }
+    .projects {
+        h2 {
+            margin-bottom: 40px;
+            
+        }
+        &__panels {
+            margin-bottom: 40px;
+        }
+    }
+    .icon_arrow {
+        width: 56px;
+        height: 56px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
