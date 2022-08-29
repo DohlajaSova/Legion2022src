@@ -6133,14 +6133,14 @@ a.button {
 			flex-flow: row nowrap;
 			justify-content: space-between;
 			align-items: center;
-			color: $color-blue-dark !important;
+			color: $color-blue-dark;
 			text-decoration: none !important;
 			transition: all .25s linear;
 
-			// &.inactive {
-			// 	padding-left: 0px;
-			// 	color: $color-grey-dark;
-			// }
+			&.inactive {
+				// padding-left: 0px;
+				color: $color-grey-dark;
+			}
 
 			&-name {
 				font-size: 46px;

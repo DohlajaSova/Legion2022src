@@ -1,8 +1,8 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
-        <li><span>Клиент: Tele2</span></li>
+        <li><a href="/portfolio.html">Портфолио</a></li>
+        <li><span>Tele2</span></li>
       </ul>
   </div>
   
@@ -172,7 +172,7 @@
         </div>
         <div class="project project_wide-client">
           <a
-            href="#"
+            href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
             target="_blank"
             class="project__article project__article_small project-article project__article_small-client"
           >
