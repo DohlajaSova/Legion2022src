@@ -251,7 +251,7 @@
 				&_author{
 					padding:33px 43px 35px;
                     &-img {
-                        width: 35%;
+                        width: 50%;
                     }
 				}
 				&_rubr{
@@ -493,7 +493,7 @@
                 //     }
                 // }
                 .cases__case_number{
-                    font-size:32px;
+                    font-size:74px;
                     margin-bottom:6px;
                 }
                 .cases__case_name{
@@ -632,7 +632,7 @@
             &_tall-5ka {
                 padding-bottom: 130%;
                 .project__review_author-img {
-                    width: 25%;
+                    width: 50%;
 
                 }
                 .project__review_author-position{
@@ -1025,7 +1025,7 @@
                     padding-bottom: 150%;
                 }
                 .project__review_author-img {
-                    width: 25%;
+                    width: 50%;
 
                 }
                 .project__review_author-position{
@@ -1905,7 +1905,7 @@
             &__review{
                 &_body{
                     font-size:24px;
-                    padding-right:30%;
+                    padding-right:30px;
                 }
                 &_author{
                     padding:43px 43px 55px;
