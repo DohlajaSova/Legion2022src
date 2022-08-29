@@ -1,8 +1,8 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
-        <li><span>Клиент: Альфа-Банк</span></li>
+        <li><a href="/portfolio.html">Портфолио</a></li>
+        <li><span>Альфа-Банк</span></li>
       </ul>
   </div>
   
@@ -32,7 +32,7 @@
           </div>
           <div class="client__info_stats-state">
             <p class="client__info_stats-state__prop">Сотрудничество</p>
-            <p class="client__info_stats-state__value">с 201 года</p>
+            <p class="client__info_stats-state__value">с 2016 года</p>
           </div>
           <div class="client__info_stats-state">
             <p class="client__info_stats-state__prop">Работы</p>
@@ -134,20 +134,20 @@
                   alt="Альфа-Банк"
                 />
                 <div class="project__review_rubr light">Отзыв</div>
-                <h3 class="project__review_author-name light">Виктор<br>Ефимов</h3>
+                <h3 class="project__review_author-name light">Виктор Ефимов</h3>
                 <div class="project__review_author-position light">
                   менеджер продукта<br>«Альфа-Инвестиции»
                 </div>
               </div>
               <div class="project__review_body project__review_body-client">
-                Горжусь нашей командой и результатами в развитии продукта. Мы достигли наших целей и перевыполнили план, привлекли новичков-инвесторов и продолжаем делать приложение доступным для каждого пользователя. Сила в людях. Сила в команде.
+                Горжусь нашей командой и результатами в развитии продукта. Мы достигли наших целей и перевыполнили план, привлекли новичков-инвесторов и продолжаем делать приложение доступным для каждого пользователя.<br/><br/>Сила в людях. Сила в команде.
               </div>
             </div>
           </div>
         </div>
         <div class="project client cases__case cases__case-client cases__case_info">
           <div class="cases__case_container">
-            <span class="cases__case_number">№1</span>
+            <span class="cases__case_number cases__case_number-large">№1</span>
             <span class="cases__case_name"
               >Золотое приложение 2020 номинация «Инвестиции и коммерция»</span
             >
@@ -171,7 +171,7 @@
         </div>
         <div class="project project_wide-client">
           <a
-            href="#"
+            href="https://lenta.ru/news/2021/04/22/alfainv/"
             target="_blank"
             class="project__article project__article_small project-article project__article_small-client"
           >

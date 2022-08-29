@@ -29,6 +29,7 @@
     .client__info,
     .client__cases,
     .client__breadcrumbs,
+    .client__header,
     .service-descr__accordion,
     .vacancypage{
         padding-left:60px;
@@ -2144,7 +2145,7 @@
     .client ~ .feedback_compact{
         padding: 110px 30px;
         h2 {
-            width: 50%;
+            width: 60%;
         }
         .feedback__button{
             min-height: 184px;

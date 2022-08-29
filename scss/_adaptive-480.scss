@@ -26,6 +26,7 @@
     .client__info,
     .client__cases,
     .client__breadcrumbs,
+    .client__header,
     .service-descr__accordion,
     .vacancypage{
         padding-left:20px;
@@ -47,7 +48,7 @@
                 width:43vw!important;
                 height: 180px;
                 .cases__case_number{
-                    font-size:32px;
+                    font-size:36px;
                     padding: 20px 20px 0;
                 }
                 .cases__case_name{
@@ -64,6 +65,11 @@
                 .cases__case_photo{
                     img{
                         max-width:36px;
+                    }
+                    &-large{
+                        img {
+                            max-width: 60px;
+                        }
                     }
                 }
             }
@@ -233,6 +239,9 @@
         }
     }
     .client {
+        &__header{
+            font-size: 36px;
+        }
         &__breadcrumbs {
             font-size: 9px;
             line-height: 130%;
@@ -250,10 +259,15 @@
                 top: 28vw;
             }
         }
-        &__info {
-            & > .cases__case {
-               // min-height: 580px;
-                margin-top: 30px;
+        .client {
+            &__info {
+                .cases-slider__item_nomination .h2{
+                    font-size: 36px!important;
+                }
+                & > .cases__case {
+                // min-height: 580px;
+                    margin-top: 30px;
+                }
             }
             .cases-slider{
                 &__item{
@@ -305,6 +319,7 @@
                 }
             }
         }
+    
         &__cases{
             &_block{
                 flex-direction: column;
@@ -312,6 +327,7 @@
                 padding: 20px 0;
                 &-name{
                     font-size: 24px;
+                    margin-right: 0;
                 }
                 &-parts {
                     flex-direction: row;
@@ -319,6 +335,9 @@
                         margin-bottom: 0;
                     }
                 }
+            }
+            &_header {
+                font-size: 28px;
             }
         }
     }
@@ -562,6 +581,21 @@
         width: 56px;
         height: 56px;
     }
+    .feedback{
+        &_compact{
+            .feedback__button{
+                .pulse-button {
+                    width: 49px;
+                    height: 49px;
+                    &:before {
+                        transform: scale(.6);
+                        top: 3px;
+                        right: 4px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -688,6 +722,19 @@
                 }
                 &-accent {
                     font-size: 42px;
+                }
+            }
+        }
+    }
+    .cases{
+        &__case{
+            &_info{
+                .cases__case_photo{
+                    &-large{
+                        img {
+                            max-width: 36px;
+                        }
+                    }
                 }
             }
         }

@@ -1,8 +1,8 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
-        <li><span>Портфолио: Tele2</span></li>
+        <li><a href="/portfolio.html">Портфолио</a></li>
+        <li><span>Tele2</span></li>
       </ul>
   </div>
   
@@ -148,12 +148,12 @@
         </div>
         <div class="project client cases__case cases__case-client cases__case_info">
           <div class="cases__case_container">
-            <span class="cases__case_number">№3</span>
+            <span class="cases__case_number cases__case_number-large">№3</span>
             <span class="cases__case_name"
               >Рейтинг Рунета 2021<br>номинация<br>«Сервисы»</span
             >
             <a href="#" class="cases__case_desc">Подробнее &rarr;</a>
-            <span class="cases__case_photo">
+            <span class="cases__case_photo cases__case_photo-large">
               <img
                 src="/assets/css/img/cases-premia.png"
                 alt="Конкурс «Рейтинг Рунета»"
@@ -172,7 +172,7 @@
         </div>
         <div class="project project_wide-client">
           <a
-            href="#"
+            href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
             target="_blank"
             class="project__article project__article_small project-article project__article_small-client"
           >
