@@ -1796,6 +1796,9 @@ a.button {
 				font-weight: 300;
 				padding: 20px 30px 14px 30px;
 				text-align: left;
+				&-large {
+					font-weight: 500;
+				}
 			}
 
 			.cases__case_name {
@@ -2015,7 +2018,7 @@ a.button {
 				border: 1px solid transparent;
 				border-radius: 50%;
 				display: inline-block;
-				background-color: $color-grey-dark;
+				background-color: $color-blue-dark;
 
 				&.active {
 					width: 10px;
@@ -3931,7 +3934,7 @@ a.button {
 
 					&_link {
 						width: 50%;
-						padding: 31px 27px;
+						padding: 30px;
 						position: relative;
 
 						&-title {
@@ -5989,7 +5992,8 @@ a.button {
 
 	&__header {
 		text-align: left;
-		margin: 0 0 40px 50px;
+		margin: 0 0 40px 0px;
+		font-size: 96px;
 	}
 
 	&__present {
@@ -6092,6 +6096,7 @@ a.button {
 
 		.cases-slider__item_nomination .h2 {
 			font-size: 74px !important;
+			font-weight: 400;
 		}
 
 		.cases-slider__item_nomination .h2 span {
@@ -6127,7 +6132,7 @@ a.button {
 
 		&_block {
 			position: relative;
-			border-top: 1px solid $color-blue-dark;
+			border-top: 1px solid $color-grey-dark;
 			padding: 40px 20px 40px 0px;
 			display: flex;
 			flex-flow: row nowrap;
@@ -6344,34 +6349,34 @@ a.button {
 
 // main page plus button styles
 
-.pulse-button {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	width: 60px;
-	height: 60px;
-	transform: scale(1.7);
-	border-radius: 40px;
-	padding: 10px;
-	border: none;
-	background: #24DA8D;
-	// box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
-	position: relative;
-	// bottom: 50px;
-	// right: 50px;
-	cursor: pointer;
-	outline: none;
-	z-index: 1000;
-	&:before {
-		content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
-		position: absolute;
-		// color: #fff;
-		// font-size: 72px;
-		top: 10px;
-		// font-family: auto, "Verdana", "Dopis";
+	.pulse-button {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		transform: scale(1.7);
+		border-radius: 40px;
+		padding: 10px;
+		border: none;
+		background: #24DA8D;
+		// box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+		position: relative;
+		// bottom: 50px;
+		// right: 50px;
+		cursor: pointer;
+		outline: none;
+		z-index: 1000;
+		&:before {
+			content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+			position: absolute;
+			// color: #fff;
+			// font-size: 72px;
+			top: 10px;
+			// font-family: auto, "Verdana", "Dopis";
+		}
 	}
-  }
 
   .pulse-button__text {
 	display: block;

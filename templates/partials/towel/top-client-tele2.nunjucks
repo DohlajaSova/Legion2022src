@@ -148,12 +148,12 @@
         </div>
         <div class="project client cases__case cases__case-client cases__case_info">
           <div class="cases__case_container">
-            <span class="cases__case_number">№3</span>
+            <span class="cases__case_number cases__case_number-large">№3</span>
             <span class="cases__case_name"
               >Рейтинг Рунета 2021<br>номинация<br>«Сервисы»</span
             >
             <a href="#" class="cases__case_desc">Подробнее &rarr;</a>
-            <span class="cases__case_photo">
+            <span class="cases__case_photo cases__case_photo-large">
               <img
                 src="/assets/css/img/cases-premia.png"
                 alt="Конкурс «Рейтинг Рунета»"

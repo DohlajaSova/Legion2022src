@@ -1,8 +1,8 @@
 ﻿<div class="client">
   <div class="container">
       <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/portfolio.html">Клиенты и кейсы</a></li>
-        <li><span>Клиент: Venn</span></li>
+        <li><a href="/portfolio.html">Портфолио</a></li>
+        <li><span>Venn</span></li>
       </ul>
   </div>
   

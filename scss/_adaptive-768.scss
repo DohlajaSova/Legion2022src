@@ -26,6 +26,7 @@
     .client__info,
     .client__cases,
     .client__breadcrumbs,
+    .client__header,
     .service-descr__accordion,
     .vacancypage{
         padding-left:30px;
@@ -470,6 +471,9 @@
         }
     }
     .client {
+        &__header{
+            font-size: 74px;
+        }
         &__present {
             &_desktop {
                 display: none;
@@ -482,6 +486,7 @@
             margin-bottom: 40px;
             &_header {
                 margin-bottom: 40px;
+                font-size: 56px;
             }
             &_block {
                 padding: 40px 0 20px;
@@ -490,26 +495,18 @@
                 justify-content: space-between;
                 &-name {
                     margin-bottom: 20px;
+                    margin-right: 60px;
                 }
                 &-parts {
                     flex-direction: column;
                     min-width: 180px;
                     &__feature {
                         margin-bottom: 16px;
-                        &::last-child {
+                        &:last-child {
                             margin-bottom: 0;
                         }
                     }
                 }
-            }
-            &_block:first-child:hover {
-                transition: none;
-                cursor: default;
-                padding-left: 0px;
-            }
-            &_block:first-child:hover:before {
-                transition: none;
-                display: none;
             }
         }
         &__info {
@@ -1122,7 +1119,7 @@
         }
     }
     .client {
-        &__breadcrumbs, &__cases, &__info {
+        &__breadcrumbs, &__cases, &__info, &__header {
             padding-left:15px;
             padding-right:15px;
         }
@@ -1445,6 +1442,9 @@
             &_info{
                 .cases__case_number{
                     font-size:46px;
+                    &-large{
+                        font-size:74px;
+                    }
                     padding:12px 12px 0;
                 }
                 .cases__case_name{
