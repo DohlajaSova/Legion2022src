@@ -1253,7 +1253,7 @@ docReady(function() {
                 gutter: 15,
                 responsive: {
                     320: {
-                        items: 1,
+                        items: 2,
                         nav: true
                     },
                     640: {

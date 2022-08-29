@@ -516,6 +516,12 @@
             &>.cases__case {
                 margin-top: 60px;
             }
+            &_stats-state {
+            width: 100%;
+                &__value {
+                    max-width: none;
+                }
+            }
         }
     }
     .client ~ .feedback {
@@ -1599,6 +1605,9 @@
                 }
                 &-position{
                     font-size:24px;
+                }
+                &-img{
+                    width: 50%;
                 }
             }
         }
