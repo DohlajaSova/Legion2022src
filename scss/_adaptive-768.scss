@@ -670,6 +670,24 @@
             }
         }
     }
+    .category{
+        &__content{
+            padding: 60px 30px 170px 30px;
+        }
+    }
+    .principles{
+        &__content{
+            &_text{
+                width: 100%;
+                .button{
+                    width: 50%;
+                }
+            }
+            &.column{
+                flex-flow: column nowrap;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1426,7 +1444,7 @@
             }
         }
         &__content{
-            font-size:40px;
+            font-size:36px;
             padding:40px 40px 97px 30px;
         }
     }
@@ -1576,7 +1594,7 @@
                 }
                 &__statics{
                     h4{
-                        font-size:12px;
+                        font-size:14px;
                     }
                 }
             }

@@ -262,7 +262,7 @@
             min-height: 270px;
             &.venn {
                 min-height: 360px;
-                margin-bottom: 0;
+                margin-bottom: 40px;
             }
             &-play {
                 width: 12vw!important;
@@ -270,15 +270,15 @@
                 top: 28vw;
             }
         }
-        .client {
-            &__info {
-                .cases-slider__item_nomination .h2{
-                    font-size: 36px!important;
-                }
-                & > .cases__case {
-                // min-height: 580px;
-                    margin-top: 30px;
-                }
+        &__info {
+            margin-bottom: 40px;
+            .cases-slider__item_nomination .h2{
+                font-size: 36px!important;
+            }
+            & > .cases__case {
+            // min-height: 580px;
+                margin-top: 30px;
+            }
             .cases-slider{
                 &__item{
                     &_nomination{
@@ -302,7 +302,7 @@
                     }
                 }
                 &__statics{
-                   height:50%;
+                    height:50%;
                     &_dots{
                         top:72px;
                         width:50%;
@@ -318,8 +318,12 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
                 margin-bottom: 30px;
-                .client__info_stats-state{
+                &-state{
                     width:100%;
+                    &__prop, &__value{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                 }
             }
             &_text > p {
@@ -329,8 +333,6 @@
                 }
             }
         }
-    }
-    
         &__cases{
             &_block{
                 flex-direction: column;
@@ -580,6 +582,7 @@
         // }
     }
     .projects {
+        padding-top: 40px;
         h2 {
             margin-bottom: 40px;
             
@@ -591,6 +594,23 @@
     .icon_arrow {
         width: 56px;
         height: 56px;
+    }
+    .category{
+        &__content{
+            padding: 60px 20px 120px 20px;
+        }
+    }
+    .principles{
+        &__content{
+            p{
+                font-size: 14px;
+            }
+            &_text{
+                .button{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
