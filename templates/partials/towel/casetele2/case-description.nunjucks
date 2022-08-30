@@ -2,12 +2,16 @@
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Настроить тариф <br>для себя</h2>
+                <h3>Настроить тариф <br>для себя</h3>
             </div>
             <div class="principles__content_text">
-                <p>Чтобы предоставить пользователям больше свободыдля&nbsp;конфигурации тарифного плана мы&nbsp;реализовали простой
+                <p>Чтобы предоставить пользователям больше свободы для&nbsp;конфигурации тарифного плана мы&nbsp;реализовали простой
                     и&nbsp;удобный конструктор тарифов.</p>
                 <p>С&nbsp;помощью него абоненты могут выбрать пакеты минут, гигабайтов и&nbsp;услуги под свои интересы.</p>
+                <div class="principles__content_buttons store">
+                    <a href="https://apps.apple.com/ru/app/moj-tele2/id1010648429" class="button button_grey store_ios" target="_blank"><span>Download on the</span> <b>App Store</b></a>
+                    <a href="https://play.google.com/store/apps/details?id=ru.tele2.mytele2&hl=ru" class="button button_grey store_android" target="_blank"><span>Download on</span> <b>Google Play</b></a>
+                </div>
             </div>
         </div>
     </div>
