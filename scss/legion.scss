@@ -1834,7 +1834,7 @@ a.button {
 				padding: 0 75px 20px 30px;
 				text-decoration: none;
 				text-transform: none;
-				color: $color-black;
+				color: $color-grey-dark;
 				font-size: 16px;
 				line-height: 130%;
 			}
@@ -6372,7 +6372,7 @@ a.button {
 		// right: 50px;
 		cursor: pointer;
 		outline: none;
-		z-index: 1000;
+		z-index: 100;
 		&:before {
 			content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
 			position: absolute;
