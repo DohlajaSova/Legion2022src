@@ -1,6 +1,6 @@
 <div class="principles">
     <div class="container">
-        <div class="principles__content">
+        <div class="principles__content column">
             <h2>Наша <em>команда</em></h2>
             <div class="principles__content_text">
                 <p>Мы работаем для&nbsp;людей. e-legion создаёт продукты, которые улучшают и&nbsp;упрощают жизнь человека.</p>

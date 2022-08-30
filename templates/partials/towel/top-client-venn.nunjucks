@@ -69,7 +69,7 @@
             <div class="cases-slider__item active">
               <div class="cases-slider__item_nomination">
                 <h3 class="h2">+ 11к</h3>
-                <p>прирост новых пользователей за 6 месяцев</p>
+                <p>активных пользователей в месяц от общего числа установок</p>
               </div>
               <div class="cases-slider__item_project"></div>
             </div>
@@ -168,7 +168,7 @@
             </div>
             <div class="project-article_link">
               <div class="project-article_link-title">
-                Connecting new friendships \& shared activities nearby
+                Connecting new friendships & shared activities nearby
               </div>
               <div class="project-article_link-arrow">Смотреть статью →</div>
             </div>
@@ -196,7 +196,7 @@
               <span class="cases__case_name"
                 >Масштабирование продукта</span
               >
-              <a href="#" class="cases__case_desc">Подробнее об услуге &rarr;</a>
+              <a href="/services.html" class="cases__case_desc">Подробнее об услуге &rarr;</a>
           </div>
         </div>
         <div class="project client" style="background: transparent">
