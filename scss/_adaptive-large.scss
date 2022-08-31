@@ -89,6 +89,10 @@
             }
         }
     }
+    .case-stages__layout_var1 {
+        padding: 0 0 49.2%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -324,6 +328,9 @@
                     padding-top:40px;
                     padding-bottom:40px;
                 }
+            }
+            .principles__content{
+                margin-bottom: 50px;
             }
         }
     }
@@ -597,6 +604,12 @@
     }
     .vacancies{
         margin-bottom:67px;
+        &__container{
+            padding-top: 40px;
+            h2{
+                margin-bottom: 48px;
+            }
+        }
         &__list{
             &_item{
                 &.final{
@@ -777,6 +790,9 @@
                     margin:40px 0 30px;
                 }
             }
+            .problems__item h3{
+                font-size: 46px;
+            }
         }
         .case-stages &{
             .principles__content{
@@ -796,12 +812,12 @@
         }
     }
     .case-stages__list li{
-        font-size:17px;
-        margin-bottom:17px;
+        font-size:24px;
+        margin-bottom:24px;
     }
     .case-stages__layout.problems__item p{
-        font-size:17px;
-        margin-top:17px;
+        font-size:24px;
+        margin-top:24px;
     }
     .case-stages .problems_case .problems__item{
         padding: 40px 40px calc(49.2% - 40px);
@@ -1712,6 +1728,7 @@
     }
     .case-stages .device_fit-height{
         margin-top:40px;
+        padding-bottom: 55px;
     }
     .case-stages__layout_var1.problems__item,
     .case-stages__layout_var2.problems__item{
@@ -2016,6 +2033,9 @@
         }
     }
     .case-stages{
+        &__layout_inner{
+            border-radius: 38px;
+        }
         &__layout_var1,
         &__layout_var2{
             .problems__item_container{
@@ -2029,7 +2049,7 @@
             .case-stages__layout_right{
                 order:1;
                 .case-stages__layout_inner{
-                    padding-left:40px;
+                    padding-left:0;
                     padding-bottom:0;
                 }
             }

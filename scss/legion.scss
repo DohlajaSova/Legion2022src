@@ -2611,18 +2611,27 @@ a.button {
 			h2,
 			.h2,
 			.principles__content_head {
-				width: 42%;
+				width: 44%;
 			}
 
 			.principles__content_head h2,
 			.principles__content_head .h2 {
 				width: 100%;
 			}
+            
 
 			h3 {
 				margin: 0px 0 40px;
 			}
 		}
+
+        .problems__item h3{
+            width:100%;
+        }
+        
+        .case-stages__layout_var1{
+            margin-bottom: 120px;
+        }
 
 		.case-stages__layout_var2 .problems__item_bg10 {
 			width: 100%;

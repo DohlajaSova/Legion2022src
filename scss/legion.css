@@ -622,7 +622,7 @@ a.button {
     position: relative;
     z-index: 3;
     top: 0;
-    margin: -20px 0;
+    margin: 0;
     width: calc(100% - 20px);
     border-radius: 40px; }
   .device__phone {
@@ -634,14 +634,14 @@ a.button {
     height: auto; }
   .device_fit-height {
     width: auto;
-    height: calc(100% - 110px);
-    padding-top: 40px; }
+    height: calc(100% - 55px);
+    padding-top: 55px; }
     .device_fit-height .device__wrapper {
       width: auto;
       height: 100%; }
     .device_fit-height .device__screen {
       width: auto;
-      height: calc(100% - 26px);
+      height: calc(100% - 25px);
       left: 50%;
       top: 13px;
       transform: translateX(-50%); }
@@ -1232,13 +1232,13 @@ a.button {
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: url("img/arrow2.svg") center center no-repeat #F0F0F0;
+      background: url("img/arrow3.svg") center center no-repeat #F0F0F0;
       background-size: 60%;
       transform: rotate(0deg);
       transition: transform 0.7s;
       position: relative;
       z-index: 100;
-      bottom: 6px; }
+      top: 5px; }
   .accordion__item_body {
     width: 50%;
     margin: -50px 0 50px 50%;
@@ -1272,11 +1272,9 @@ a.button {
     max-height: 1000px;
     padding-bottom: 70px;
     transition: max-height 0.7s, padding-bottom 0.7s; }
-  .accordion__item:last-child {
-    border-bottom: none; }
 
 .cases {
-  margin-bottom: 75px; }
+  margin-bottom: 120px; }
   .cases .cases-container_inner .tns-outer {
     width: 100%; }
   .cases .cases-container .container {
@@ -1445,6 +1443,8 @@ a.button {
       font-weight: 300;
       padding: 20px 30px 14px 30px;
       text-align: left; }
+      .cases__case_info .cases__case_number-large {
+        font-weight: 500; }
     .cases__case_info .cases__case_name {
       display: block;
       width: 100%;
@@ -1471,7 +1471,7 @@ a.button {
       padding: 0 75px 20px 30px;
       text-decoration: none;
       text-transform: none;
-      color: #000;
+      color: #949191;
       font-size: 16px;
       line-height: 130%; }
     .cases__case_info:hover .cases__case_contents {
@@ -1587,7 +1587,7 @@ a.button {
         border: 1px solid transparent;
         border-radius: 50%;
         display: inline-block;
-        background-color: #949191; }
+        background-color: #1E2738; }
         .cases-slider__statics_dots li.active {
           width: 10px;
           height: 10px;
@@ -1808,7 +1808,8 @@ a.button {
 .case-stages__layout.problems__item p {
   font-size: 24px; }
 .case-stages__layout_var1 .case-stages__layout_right .case-stages__layout_inner {
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
 .case-stages__layout_var2 .case-stages__layout_right .case-stages__layout_inner {
   background-color: #1E2738;
   padding: 0; }
@@ -1937,7 +1938,7 @@ a.button {
   .principles__content_text {
     width: 49%;
     padding-right: 4%;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     color: #1E2738; }
     .principles__content_text *:last-child {
       margin-bottom: 0; }
@@ -1945,7 +1946,7 @@ a.button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 90px; }
+    margin-bottom: 80px; }
   .principles__content p {
     font: 400 24px / 1.3 Dopis;
     margin-bottom: 32px; }
@@ -2006,15 +2007,21 @@ a.button {
         position: absolute;
         width: 100%;
         height: 100%; }
-.principles_case .principles__content h2,
-.principles_case .principles__content .h2,
-.principles_case .principles__content .principles__content_head {
-  width: 42%; }
-.principles_case .principles__content .principles__content_head h2,
-.principles_case .principles__content .principles__content_head .h2 {
+.principles_case .principles__content {
+  margin-bottom: 0; }
+  .principles_case .principles__content h2,
+  .principles_case .principles__content .h2,
+  .principles_case .principles__content .principles__content_head {
+    width: 44%; }
+  .principles_case .principles__content .principles__content_head h2,
+  .principles_case .principles__content .principles__content_head .h2 {
+    width: 100%; }
+  .principles_case .principles__content h3 {
+    margin: 0px 0 40px; }
+.principles_case .problems__item h3 {
   width: 100%; }
-.principles_case .principles__content h3 {
-  margin: 0px 0 40px; }
+.principles_case .case-stages__layout_var1 {
+  margin-bottom: 120px; }
 .principles_case .case-stages__layout_var2 .problems__item_bg10 {
   width: 100%;
   padding-bottom: 100%; }
@@ -2226,7 +2233,7 @@ a.button {
     .who-we-are__widget .problems__more::before {
       margin-top: 2px; }
     .who-we-are__widget .problems__more::after {
-      top: 53px; }
+      top: 54px; }
   .who-we-are__widget .cases__case {
     width: 100%;
     padding-bottom: 100%; }
@@ -2241,7 +2248,8 @@ a.button {
       margin: 1.5%; }
       .who-we-are__widget .cases__block .cases__case_name {
         height: 53px; }
-      .who-we-are__widget .cases__block .cases__case:hover .cases__case_contents {
+      .who-we-are__widget .cases__block .cases__case:hover .cases__case_contents-active {
+        cursor: pointer;
         top: -80px; }
 
 .not-all-the-same {
@@ -2310,7 +2318,7 @@ a.button {
     padding-top: 20px; }
     .problems__more::before {
       content: "";
-      width: 78px;
+      width: 80px;
       height: 80px;
       opacity: 0.2;
       position: relative;
@@ -2644,7 +2652,7 @@ a.button {
         max-height: 100%; }
     .problems__review_rubr {
       font-size: 24px;
-      margin: 40px 0 56px 0; }
+      margin: 0 0 56px 0; }
       .problems__review_rubr.light {
         color: #fff !important; }
     .problems__review_body {
@@ -2667,13 +2675,13 @@ a.button {
         max-width: 45%;
         margin-top: 0 !important; }
   .problems_case {
-    margin-bottom: 20px; }
+    margin-bottom: 110px; }
 
 .projects {
   overflow: hidden; }
   .projects h2 {
     width: 50%;
-    margin-bottom: 50px; }
+    margin-bottom: 120px; }
     .projects h2 em {
       color: #84AEFF;
       font-style: normal;
@@ -2682,7 +2690,7 @@ a.button {
     display: grid;
     grid-gap: 17px;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 149px; }
+    margin-bottom: 120px; }
     .projects__panels-client {
       grid-template-columns: 2fr 1fr 1fr;
       grid-template-rows: 1fr 1fr; }
@@ -2736,7 +2744,7 @@ a.button {
           background-color: #1E2738 !important; }
       .projects .project__review_rubr {
         font-size: 24px;
-        margin: 40px 0 56px 0; }
+        margin: 0 0 56px 0; }
         .projects .project__review_rubr.dark {
           color: #1E2738 !important; }
         .projects .project__review_rubr.light {
@@ -2745,14 +2753,14 @@ a.button {
         font-size: 24px;
         padding: 40px; }
       .projects .project__review_author-img {
-        width: 40%;
+        width: 50%;
         position: absolute;
         right: 0;
         bottom: 0;
         z-index: 1; }
       .projects .project__review_author-name {
         font-size: 46px;
-        margin: 40px 0;
+        margin: 0;
         z-index: 3; }
         .projects .project__review_author-name.dark {
           color: #1E2738 !important; }
@@ -2844,7 +2852,7 @@ a.button {
               height: 100%; }
         .projects .project__article_small .project-article_link {
           width: 50%;
-          padding: 31px 27px;
+          padding: 30px;
           position: relative; }
           .projects .project__article_small .project-article_link-title {
             color: #000;
@@ -2979,7 +2987,8 @@ a.button {
       align-items: center; }
     .feedback_compact h2 {
       width: 50%;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 74px; }
     .feedback_compact .feedback__button {
       display: flex;
       width: 30%;
@@ -2987,7 +2996,7 @@ a.button {
       .feedback_compact .feedback__button .pulse-button {
         margin: auto; }
   .feedback.feedback_applicants {
-    background: url("img/vacancy-bg2.svg") left -40% top -80px no-repeat #2864D9;
+    background: #2864D9;
     background-size: auto calc(100% + 200px); }
     .feedback.feedback_applicants h2 {
       color: #fff; }
@@ -3706,45 +3715,43 @@ a.button {
         font-style: normal;
         white-space: nowrap; }
 
-.some-projects {
+.some-projects__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative; }
+  .some-projects__list .cases__case {
+    padding-bottom: 10%;
+    background: transparent; }
+    .some-projects__list .cases__case_inner {
+      background-color: #F0F0F0;
+      border-radius: 42px;
+      width: calc(100% - 15px);
+      height: calc(100% - 15px);
+      position: absolute;
+      margin-top: 2px; }
+.some-projects__content h2 {
+  width: 50%;
+  color: #1E2738;
   margin-bottom: 75px; }
-  .some-projects__list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative; }
-    .some-projects__list .cases__case {
-      padding-bottom: 10%;
-      background: transparent; }
-      .some-projects__list .cases__case_inner {
-        background-color: #F0F0F0;
-        border-radius: 42px;
-        width: calc(100% - 15px);
-        height: calc(100% - 15px);
-        position: absolute;
-        margin-top: 2px; }
-  .some-projects__content h2 {
-    width: 50%;
-    color: #1E2738;
-    margin-bottom: 75px; }
-    .some-projects__content h2 em {
-      color: #84AEFF;
-      font-style: normal;
-      white-space: nowrap; }
-  .some-projects .tns-nav {
-    text-align: center;
-    padding-bottom: 31px; }
-    .some-projects .tns-nav button {
-      background-color: #84AEFF;
-      border: 1px solid transparent;
-      width: 11px;
-      height: 11px;
-      margin: 0 6px;
-      border-radius: 50%; }
-      .some-projects .tns-nav button.tns-nav-active {
-        border-color: #949191;
-        background-color: transparent; }
+  .some-projects__content h2 em {
+    color: #84AEFF;
+    font-style: normal;
+    white-space: nowrap; }
+.some-projects .tns-nav {
+  text-align: center;
+  padding-bottom: 31px; }
+  .some-projects .tns-nav button {
+    background-color: #84AEFF;
+    border: 1px solid transparent;
+    width: 11px;
+    height: 11px;
+    margin: 0 6px;
+    border-radius: 50%; }
+    .some-projects .tns-nav button.tns-nav-active {
+      border-color: #949191;
+      background-color: transparent; }
 
 .body_about .header {
   background-color: transparent; }
@@ -3839,7 +3846,7 @@ a.button {
     .years__year::before, .years__year::after {
       content: "";
       display: block;
-      height: 1px;
+      height: 3px;
       background: radial-gradient(#2864D9 0%, transparent 70%); }
     .years__year::before {
       margin-bottom: 20px; }
@@ -3893,7 +3900,7 @@ a.button {
     justify-content: space-between;
     background: #F0F0F0;
     border-radius: 42px;
-    margin: 60px 0px 140px; }
+    margin: 60px 0px 120px; }
     .service__section_img {
       width: 50%;
       border-radius: 42px;
@@ -3944,7 +3951,8 @@ a.button {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    padding: 40px 0 100px;
+    padding: 0px 0 100px;
+    margin-bottom: 60px;
     border-bottom: 1px solid #949191; }
     .service__feature_info {
       display: flex;
@@ -3977,7 +3985,8 @@ a.button {
         margin-left: auto;
         color: #949191 !important;
         width: 150px;
-        text-decoration: none !important; }
+        text-decoration: none !important;
+        margin-bottom: 18px; }
       .service__feature_inner-icon {
         margin-right: 20px; }
       .service__feature_inner-case {
@@ -4022,6 +4031,10 @@ a.button {
             color: #949191 !important;
             cursor: pointer;
             text-decoration: none !important; }
+    .service__feature:last-child {
+      border: none;
+      margin-bottom: 0px;
+      padding-bottom: 0px; }
   .service > div:last-child {
     border: none;
     padding-bottom: 0px;
@@ -4122,7 +4135,8 @@ a.button {
   display: flex; }
 .client__header {
   text-align: left;
-  margin: 0 0 40px 50px; }
+  margin: 0 0 40px 0px;
+  font-size: 96px; }
 .client__present {
   margin-bottom: 80px;
   position: relative;
@@ -4162,7 +4176,7 @@ a.button {
       flex-flow: column nowrap;
       font-size: 16px;
       line-height: 130%;
-      width: 50%;
+      width: 100%;
       padding-right: 10%; }
       .client__info_stats-state__prop {
         margin-bottom: 15px;
@@ -4188,7 +4202,8 @@ a.button {
     margin-top: 120px;
     width: 100%; }
   .client__info .cases-slider__item_nomination .h2 {
-    font-size: 74px !important; }
+    font-size: 74px !important;
+    font-weight: 400; }
   .client__info .cases-slider__item_nomination .h2 span {
     font-size: 0.6em; }
   .client__info .cases-slider__item_nomination p {
@@ -4208,15 +4223,17 @@ a.button {
     flex-flow: column nowrap; }
   .client__cases_block {
     position: relative;
-    border-top: 1px solid #1E2738;
+    border-top: 1px solid #949191;
     padding: 40px 20px 40px 0px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    color: #1E2738 !important;
+    color: #1E2738;
     text-decoration: none !important;
     transition: all .25s linear; }
+    .client__cases_block.inactive {
+      color: #949191; }
     .client__cases_block-name {
       font-size: 46px;
       line-height: 130%; }
@@ -4279,6 +4296,9 @@ a.button {
   .client .project__review_top-img {
     top: 0;
     transform: scale(1.05); }
+.client .cases__case_container {
+  position: static;
+  text-decoration: none; }
 
 .case3__content {
   display: grid;
@@ -4332,93 +4352,13 @@ a.button {
     width: 100%;
     padding: 0%; }
 
-.who-we-are__content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
-  flex-wrap: wrap; }
-  .who-we-are__content h2 {
-    color: #1E2738;
-    width: 48%; }
-    .who-we-are__content h2 em {
-      color: #84AEFF;
-      font-style: normal;
-      white-space: nowrap; }
-  .who-we-are__content_text {
-    width: 50%;
-    padding-right: 4%;
-    margin-bottom: 90px; }
-    .who-we-are__content_text *:last-child {
-      margin-bottom: 0; }
-  .who-we-are__content p {
-    font: 400 24px / 1.3 Dopis;
-    margin-bottom: 32px; }
-.who-we-are__widget {
-  display: grid;
-  width: 100%;
-  grid-gap: 17px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 89px; }
-  .who-we-are__widget_item {
-    background-color: #F0F0F0;
-    border-radius: 42px;
-    position: relative; }
-    .who-we-are__widget_item.double {
-      grid-row-end: span 2;
-      grid-column-end: span 2;
-      height: 0;
-      padding-bottom: 100%; }
-  .who-we-are__widget_container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
-  .who-we-are__widget .vacancies {
-    height: 100%;
-    background-color: transparent; }
-    .who-we-are__widget .vacancies__list {
-      height: 100%; }
-    .who-we-are__widget .vacancies .vacancy {
-      width: 100%; }
-  .who-we-are__widget .problems__item {
-    width: 100%;
-    padding: 30px 30px calc(100% - 30px); }
-    .who-we-are__widget .problems__item h3 {
-      font-size: 24px;
-      width: 100%; }
-  .who-we-are__widget .problems__more {
-    left: 30px;
-    bottom: 40px;
-    line-height: 80px; }
-    .who-we-are__widget .problems__more::before {
-      margin-top: 2px; }
-    .who-we-are__widget .problems__more::after {
-      top: 53px; }
-  .who-we-are__widget .cases__case {
-    width: 100%;
-    padding-bottom: 100%; }
-  .who-we-are__widget .cases__block {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 3%; }
-    .who-we-are__widget .cases__block .cases__case {
-      width: 44%;
-      padding-bottom: 44%;
-      background-color: #fff;
-      margin: 1.5%; }
-      .who-we-are__widget .cases__block .cases__case_name {
-        height: 53px; }
-      .who-we-are__widget .cases__block .cases__case:hover .cases__case_contents {
-        top: -80px; }
-
 .client ~ .feedback {
   margin-bottom: 120px; }
 
 .icon_plus,
 .icon_arrow {
-  width: 56px;
-  height: 56px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
   background: url("img/vacancy-plus.svg") center center no-repeat #24DA8D;
   flex-shrink: 0; }
@@ -4447,7 +4387,7 @@ a.button {
   position: relative;
   cursor: pointer;
   outline: none;
-  z-index: 1000; }
+  z-index: 100; }
   .pulse-button:before {
     content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
     position: absolute;
@@ -4557,6 +4497,7 @@ a.button {
   .client__info,
   .client__cases,
   .client__breadcrumbs,
+  .client__header,
   .service-descr__accordion,
   .vacancypage {
     padding-left: 60px;
@@ -4592,7 +4533,11 @@ a.button {
     top: 10px; }
 
   .problems__item_wide {
-    padding: 0 0 58.2%; } }
+    padding: 0 0 58.2%; }
+
+  .case-stages__layout_var1 {
+    padding: 0 0 49.2%;
+    height: auto; } }
 @media only screen and (max-width: 1350px) {
   .top .h1 {
     width: 70%; }
@@ -4683,7 +4628,7 @@ a.button {
 
   .projects h2 {
     width: 80%;
-    margin-bottom: 40px; }
+    margin-bottom: 80px; }
   .projects__panels {
     margin-bottom: 100px; }
   .projects .project__review_top {
@@ -4694,7 +4639,7 @@ a.button {
   .projects .project__review_author {
     padding: 33px 43px 35px; }
     .projects .project__review_author-img {
-      width: 35%; }
+      width: 50%; }
   .projects .project__review_rubr {
     margin-bottom: 25px; }
   .projects .project__review_body {
@@ -4732,6 +4677,8 @@ a.button {
   .principles_case .problems__item .case-stages__layout_inner {
     padding-top: 40px;
     padding-bottom: 40px; }
+  .principles_case .principles__content {
+    margin-bottom: 50px; }
 
   .problems__review_author {
     padding: 33px 43px 35px; }
@@ -4834,10 +4781,8 @@ a.button {
       min-width: 37%;
       max-width: 46%;
       max-height: 46%; }
-    .cases__case_info .cases__case_photo img {
-      width: 49px; }
     .cases__case_info .cases__case_number {
-      font-size: 32px;
+      font-size: 74px;
       margin-bottom: 6px; }
     .cases__case_info .cases__case_name {
       font-size: 24px;
@@ -4900,6 +4845,10 @@ a.button {
 
   .vacancies {
     margin-bottom: 67px; }
+    .vacancies__container {
+      padding-top: 40px; }
+      .vacancies__container h2 {
+        margin-bottom: 48px; }
     .vacancies__list_item.final p {
       font-size: 20px;
       margin-bottom: 20px; }
@@ -4919,7 +4868,7 @@ a.button {
   .projects .project_tall-5ka {
     padding-bottom: 130%; }
     .projects .project_tall-5ka .project__review_author-img {
-      width: 25%; }
+      width: 50%; }
     .projects .project_tall-5ka .project__review_author-position {
       max-width: 80%; }
 
@@ -5001,6 +4950,8 @@ a.button {
     margin-bottom: 10px; }
   .principles_case .principles__content h3 {
     margin: 40px 0 30px; }
+  .principles_case .problems__item h3 {
+    font-size: 46px; }
   .case-stages .principles .principles__content .principles__content_text {
     padding-left: 159px; }
 
@@ -5013,12 +4964,12 @@ a.button {
       margin-top: 27px; }
 
   .case-stages__list li {
-    font-size: 17px;
-    margin-bottom: 17px; }
+    font-size: 24px;
+    margin-bottom: 24px; }
 
   .case-stages__layout.problems__item p {
-    font-size: 17px;
-    margin-top: 17px; }
+    font-size: 24px;
+    margin-top: 24px; }
 
   .case-stages .problems_case .problems__item {
     padding: 40px 40px calc(49.2% - 40px); }
@@ -5052,6 +5003,11 @@ a.button {
   .device_fit-height .device__screen {
     height: calc(100% - 16px);
     top: 6px; } }
+@media only screen and (max-width: 1080px) {
+  .who-we-are__widget {
+    grid-template-columns: 1fr 1fr; }
+    .who-we-are__widget_item {
+      padding-bottom: 100%; } }
 @media only screen and (max-width: 1024px) {
   .problems {
     margin-bottom: 40px; }
@@ -5144,7 +5100,7 @@ a.button {
   .projects .project_tall-5ka {
     padding-bottom: 150%; }
   .projects .project_tall .project__review_author-img {
-    width: 25%; }
+    width: 50%; }
   .projects .project_tall .project__review_author-position {
     max-width: 80%; } }
 @media only screen and (max-width: 992px) {
@@ -5156,6 +5112,9 @@ a.button {
 
   h2, .h2 {
     font-size: 46px; }
+
+  .who-we-are__content h2, .who-we-are__content .h2 {
+    font-size: 56px; }
 
   h3, .h3 {
     font-size: 29px; }
@@ -5542,11 +5501,6 @@ a.button {
       max-height: 10000px;
       padding-top: 30px; }
 
-  .who-we-are__widget {
-    grid-template-columns: 1fr 1fr; }
-    .who-we-are__widget_item {
-      padding-bottom: 100%; }
-
   .client__info {
     flex-flow: column nowrap;
     margin-bottom: 60px; }
@@ -5598,7 +5552,8 @@ a.button {
     margin-top: -43px; }
 
   .case-stages .device_fit-height {
-    margin-top: 40px; }
+    margin-top: 40px;
+    padding-bottom: 55px; }
 
   .case-stages__layout_var1.problems__item,
   .case-stages__layout_var2.problems__item {
@@ -5672,18 +5627,16 @@ a.button {
     height: 0; }
     .projects .project_tall-5ka {
       padding-bottom: 100%; }
-    .projects .project_tall-with-slider {
-      margin-bottom: 54px; }
-      .projects .project_tall-with-slider .project__article_container {
-        overflow: visible; }
-      .projects .project_tall-with-slider .project-slider-article__statics_dots {
-        bottom: -54px;
-        background: transparent; }
-      .projects .project_tall-with-slider .project-slider-article__statics_dots li {
-        background-color: #949191; }
-        .projects .project_tall-with-slider .project-slider-article__statics_dots li.tns-nav-active {
-          border-color: #949191;
-          background-color: transparent; }
+    .projects .project_tall-with-slider .project__article_container {
+      overflow: visible; }
+    .projects .project_tall-with-slider .project-slider-article__statics_dots {
+      bottom: -54px;
+      background: transparent; }
+    .projects .project_tall-with-slider .project-slider-article__statics_dots li {
+      background-color: #949191; }
+      .projects .project_tall-with-slider .project-slider-article__statics_dots li.tns-nav-active {
+        border-color: #949191;
+        background-color: transparent; }
     .projects .project_tall-client {
       grid-column-end: span 2;
       padding-bottom: 0;
@@ -5714,7 +5667,7 @@ a.button {
       font-size: 24px; }
   .projects .project__review_body {
     font-size: 24px;
-    padding-right: 30%; }
+    padding-right: 30px; }
   .projects .project__review_author {
     padding: 43px 43px 55px; }
   .projects .project .cases-slider__item_project-link {
@@ -5772,6 +5725,8 @@ a.button {
   .cases-slider__item_project-link {
     bottom: 16px; }
 
+  .case-stages__layout_inner {
+    border-radius: 38px; }
   .case-stages__layout_var1 .problems__item_container, .case-stages__layout_var2 .problems__item_container {
     flex-wrap: wrap; }
   .case-stages__layout_var1 .case-stages__layout_left {
@@ -5779,7 +5734,7 @@ a.button {
   .case-stages__layout_var1 .case-stages__layout_right {
     order: 1; }
     .case-stages__layout_var1 .case-stages__layout_right .case-stages__layout_inner {
-      padding-left: 40px;
+      padding-left: 0;
       padding-bottom: 0; }
   .case-stages__layout_var2 .case-stages__layout_right .case-stages__layout_inner .device__wrapper {
     position: absolute;
@@ -5844,7 +5799,7 @@ a.button {
   .client ~ .feedback_compact {
     padding: 110px 30px; }
     .client ~ .feedback_compact h2 {
-      width: 50%; }
+      width: 60%; }
     .client ~ .feedback_compact .feedback__button {
       min-height: 184px;
       position: static; }
@@ -5896,6 +5851,7 @@ a.button {
   .client__info,
   .client__cases,
   .client__breadcrumbs,
+  .client__header,
   .service-descr__accordion,
   .vacancypage {
     padding-left: 30px;
@@ -5938,6 +5894,7 @@ a.button {
       width: 100%;
       margin-bottom: 38px; }
     .principles.principles_case .principles__content h3 {
+      font-size: 56px;
       margin: 30px 0 20px; }
     .principles.principles_case .principles__content_text, .principles.principles_case .principles__content_head {
       width: 100%;
@@ -6162,7 +6119,8 @@ a.button {
       display: block; }
 
   .feedback_compact h2 {
-    width: 70%; }
+    width: 70%;
+    font-size: 46px; }
 
   .popup-feedback .answer__container {
     padding-left: 15px;
@@ -6175,7 +6133,7 @@ a.button {
   .service__section {
     flex-flow: column nowrap;
     height: auto;
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
     .service__section_info {
       overflow: unset;
       width: 100%;
@@ -6195,9 +6153,10 @@ a.button {
       width: 100%;
       padding-bottom: 100%; }
   .service__feature {
-    padding: 40px 0 40px; }
+    padding: 0px 0 40px;
+    margin-bottom: 40px; }
     .service__feature_info {
-      margin-bottom: 50px; }
+      margin-bottom: 60px; }
     .service__feature_inner {
       flex-flow: column nowrap; }
       .service__feature_inner-case {
@@ -6215,6 +6174,8 @@ a.button {
   .service > div:last-child {
     margin-bottom: 60px; }
 
+  .client__header {
+    font-size: 74px; }
   .client__present_desktop {
     display: none; }
   .client__present_mobile {
@@ -6222,42 +6183,39 @@ a.button {
   .client__cases {
     margin-bottom: 40px; }
     .client__cases_header {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      font-size: 56px; }
     .client__cases_block {
       padding: 40px 0 20px;
       flex-flow: row nowrap;
       position: static;
       justify-content: space-between; }
       .client__cases_block-name {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        margin-right: 60px; }
       .client__cases_block-parts {
         flex-direction: column;
         min-width: 180px; }
         .client__cases_block-parts__feature {
           margin-bottom: 16px; }
-          .client__cases_block-parts__feature::last-child {
+          .client__cases_block-parts__feature:last-child {
             margin-bottom: 0; }
-    .client__cases_block:first-child:hover {
-      transition: none;
-      cursor: default;
-      padding-left: 0px; }
-    .client__cases_block:first-child:hover:before {
-      transition: none;
-      display: none; }
   .client__info > .cases__case {
     margin-top: 60px; }
+  .client__info_stats-state {
+    width: 100%; }
+    .client__info_stats-state__value {
+      max-width: none; }
 
   .client ~ .feedback {
     margin-bottom: 60px; }
 
-  .body_career .top {
-    background: url(img/career768.jpg) top center no-repeat;
+  .body_career .top, .body_about .top {
     background-size: cover;
-    min-height: 1024px; }
-    .body_career .top > .container {
-      align-items: flex-start;
+    min-height: 700px; }
+    .body_career .top > .container, .body_about .top > .container {
       padding-top: 233px; }
-  .body_career .not-all-the-same_background {
+  .body_career .not-all-the-same_background, .body_about .not-all-the-same_background {
     margin-bottom: 80px; }
 
   .top_case .top__image-desktop {
@@ -6316,13 +6274,37 @@ a.button {
     margin-left: 0;
     width: 100%; }
 
+  .who-we-are__content {
+    margin-bottom: 0; }
+
+  .who-we-are__widget, .not-all-the-same {
+    margin-bottom: 60px; }
+
+  .projects h2 {
+    margin-bottom: 60px; }
+  .projects__panels {
+    margin-bottom: 60px; }
+
+  .feedback_compact .feedback__button .pulse-button:before {
+    transform: scale(0.8); }
+
   .body_career .feedback__container {
     padding-bottom: 65px; }
   .body_career .feedback__button {
     width: 100%; }
   .body_career .feedback__comment {
     width: 100%;
-    padding: 20px 0 0 0; } }
+    padding: 20px 0 0 0; }
+
+  .category__content {
+    padding: 60px 30px 170px 30px; }
+
+  .principles__content_text {
+    width: 100%; }
+    .principles__content_text .button {
+      width: 50%; }
+  .principles__content.column {
+    flex-flow: column nowrap; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
@@ -6547,8 +6529,11 @@ a.button {
   .category__content {
     font-size: 60px; }
 
+  .body_about .cases {
+    margin-bottom: 0; }
+
   .cases {
-    margin-bottom: 75px; }
+    margin-bottom: 60px; }
     .cases__block {
       flex-wrap: wrap; }
     .cases__case {
@@ -6629,7 +6614,7 @@ a.button {
     .service__feature_info-description {
       width: 100%; }
 
-  .client__breadcrumbs, .client__cases, .client__info {
+  .client__breadcrumbs, .client__cases, .client__info, .client__header {
     padding-left: 15px;
     padding-right: 15px; }
   .client__info .cases-slider__item_nomination .h2 {
@@ -6726,7 +6711,10 @@ a.button {
     padding: 40px; }
     .case__alfa_problems-item__text {
       margin: 0 0 30px 0;
-      font-size: 5vw; } }
+      font-size: 5vw; }
+
+  .cases__case_info .cases__case_photo img {
+    width: 49px; } }
 @media only screen and (max-width: 550px) {
   body {
     font-size: 10px; }
@@ -6821,7 +6809,7 @@ a.button {
       border-radius: 30px 30px 0 0;
       padding-left: 30px; }
     .category__content {
-      font-size: 40px;
+      font-size: 36px;
       padding: 40px 40px 97px 30px; }
 
   .cases__pagination-button {
@@ -6833,13 +6821,15 @@ a.button {
     .cases__case_info .cases__case_number {
       font-size: 46px;
       padding: 12px 12px 0; }
+      .cases__case_info .cases__case_number-large {
+        font-size: 74px; }
     .cases__case_info .cases__case_name {
       font-size: 12px;
       padding: 0 12px; }
     .cases__case_info .cases__case_photo {
       padding: 0 12px 12px 0; }
       .cases__case_info .cases__case_photo img {
-        max-width: 58px; }
+        width: 90px; }
     .cases__case_info__statics_dots {
       height: 64px; }
     .cases__case_contents-slider {
@@ -6915,7 +6905,7 @@ a.button {
   .problems__item .problems-slider-groups__item h3 {
     font-size: 24px; }
   .problems__item .problems-slider-groups__statics h4 {
-    font-size: 12px; }
+    font-size: 14px; }
   .problems__review_top {
     padding-left: 23px;
     padding-right: 23px;
@@ -6934,6 +6924,8 @@ a.button {
       font-size: 46px; }
     .problems__review_author-position {
       font-size: 24px; }
+    .problems__review_author-img {
+      width: 50%; }
 
   .vacancies {
     border-radius: 30px 30px 0 0;
@@ -7096,8 +7088,6 @@ a.button {
             background: transparent; }
     .projects-client {
       margin-bottom: 40px; }
-    .projects.some-projects {
-      padding-top: 0; }
 
   .news {
     border-radius: 30px 30px 0 0;
@@ -7270,6 +7260,7 @@ a.button {
   .client__info,
   .client__cases,
   .client__breadcrumbs,
+  .client__header,
   .service-descr__accordion,
   .vacancypage {
     padding-left: 20px;
@@ -7283,9 +7274,10 @@ a.button {
     min-height: 180px !important; }
     .cases__case_info {
       grid-column-end: initial;
-      width: 44vw !important; }
+      width: 43vw !important;
+      height: 180px; }
       .cases__case_info .cases__case_number {
-        font-size: 32px;
+        font-size: 36px;
         padding: 20px 20px 0; }
       .cases__case_info .cases__case_name {
         font-size: 14px;
@@ -7297,6 +7289,11 @@ a.button {
         padding: 20px 0 20px 20px; }
       .cases__case_info .cases__case_photo img {
         max-width: 36px; }
+      .cases__case_info .cases__case_photo-large img {
+        max-width: 60px; }
+
+  .project.project_wide-client {
+    height: 180px; }
 
   .vacancies {
     margin-top: -42px; }
@@ -7355,6 +7352,8 @@ a.button {
       margin-right: 0; }
   .projects__panels {
     grid-template-rows: 1fr; }
+  .projects-client {
+    margin-bottom: 0; }
 
   .feedback {
     position: relative; }
@@ -7367,6 +7366,24 @@ a.button {
       padding: 10px 30px 25px 15px !important;
       border-radius: 30px 30px 0 0;
       height: 240px; }
+    .feedback::after {
+      content: "";
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 50px;
+      top: 210px;
+      left: 0;
+      border-radius: 30px 30px 0 0; }
+    .feedback.feedback_compact {
+      margin-bottom: 0 !important; }
+    .feedback .feedback__button .pulse-button {
+      width: 45px;
+      height: 45px; }
+      .feedback .feedback__button .pulse-button:before {
+        transform: scale(0.6);
+        top: 1px;
+        right: 3px; }
 
   .footer__social {
     width: 100%;
@@ -7384,6 +7401,8 @@ a.button {
       width: 100%;
       padding: 20px; }
 
+  .client__header {
+    font-size: 36px; }
   .client__breadcrumbs {
     font-size: 9px;
     line-height: 130%;
@@ -7392,49 +7411,66 @@ a.button {
     min-height: 270px; }
     .client__present.venn {
       min-height: 360px;
-      margin-bottom: 0; }
+      margin-bottom: 40px; }
     .client__present-play {
       width: 12vw !important;
       left: 44vw !important;
       top: 28vw; }
-  .client__info .cases-slider__item_nomination {
-    width: 100%;
-    flex-grow: 1;
-    padding: 18px 8px 16px 24px; }
+  .client__info {
+    margin-bottom: 40px; }
     .client__info .cases-slider__item_nomination .h2 {
-      font-size: 46px; }
-    .client__info .cases-slider__item_nomination p {
-      font-size: 16px; }
-  .client__info .cases-slider__item_project {
-    width: 100%;
-    height: 100%;
-    flex-grow: 1; }
-    .client__info .cases-slider__item_project-link {
-      font-size: 12px; }
-  .client__info .cases-slider__statics {
-    height: 50%; }
-    .client__info .cases-slider__statics_dots {
-      top: 72px;
-      width: 50%; }
-    .client__info .cases-slider__statics_title {
-      top: 40px;
+      font-size: 36px !important; }
+    .client__info > .cases__case {
+      margin-top: 30px; }
+    .client__info .cases-slider__item_nomination {
       width: 100%;
+      flex-grow: 1;
+      padding: 18px 8px 16px 24px; }
+      .client__info .cases-slider__item_nomination .h2 {
+        font-size: 46px; }
+      .client__info .cases-slider__item_nomination p {
+        font-size: 16px; }
+    .client__info .cases-slider__item_project {
+      width: 100%;
+      height: 100%;
+      flex-grow: 1; }
+      .client__info .cases-slider__item_project-link {
+        font-size: 12px; }
+    .client__info .cases-slider__statics {
+      height: 50%; }
+      .client__info .cases-slider__statics_dots {
+        top: 72px;
+        width: 50%; }
+      .client__info .cases-slider__statics_title {
+        top: 40px;
+        width: 100%;
+        font-size: 14px; }
+    .client__info_stats {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin-bottom: 30px; }
+      .client__info_stats-state {
+        width: 100%; }
+        .client__info_stats-state__prop, .client__info_stats-state__value {
+          font-size: 14px;
+          line-height: 20px; }
+    .client__info_text > p {
       font-size: 14px; }
-  .client__info_stats {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-    .client__info_stats .client__info_stats-state {
-      width: 100%; }
+      .client__info_text > p:first-child {
+        margin-bottom: 10px; }
   .client__cases_block {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 0; }
     .client__cases_block-name {
-      font-size: 24px; }
+      font-size: 24px;
+      margin-right: 0; }
     .client__cases_block-parts {
       flex-direction: row; }
       .client__cases_block-parts__feature {
         margin-bottom: 0; }
+  .client__cases_header {
+    font-size: 28px; }
 
   .request__lead {
     height: 24px; }
@@ -7557,7 +7593,36 @@ a.button {
       margin: 6px 10px 6px 15px; }
 
   .news .news-item__lead {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .who-we-are__widget, .not-all-the-same, .cases {
+    margin-bottom: 40px; }
+
+  .who-we-are__widget_item .cases__case {
+    min-height: unset !important; }
+    .who-we-are__widget_item .cases__case_info {
+      width: 100% !important; }
+    .who-we-are__widget_item .cases__case_name {
+      font-size: 16px; }
+
+  .projects {
+    padding-top: 40px; }
+    .projects h2 {
+      margin-bottom: 40px; }
+    .projects__panels {
+      margin-bottom: 40px; }
+
+  .icon_arrow {
+    width: 56px;
+    height: 56px; }
+
+  .category__content {
+    padding: 60px 20px 120px 20px; }
+
+  .principles__content p {
+    font-size: 14px; }
+  .principles__content_text .button {
+    width: 100%; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget_item.double {
     padding-bottom: 130%; }
@@ -7641,4 +7706,7 @@ a.button {
     .case3__content_card-main {
       font-size: 24px; }
     .case3__content_card-accent {
-      font-size: 42px; } }
+      font-size: 42px; }
+
+  .cases__case_info .cases__case_photo-large img {
+    max-width: 36px; } }
