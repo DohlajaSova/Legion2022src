@@ -612,6 +612,16 @@
             }
         }
     }
+    .accordion__item{
+        .active{
+            &_body{
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .service-descr__accordion{
+        margin-bottom: 60px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
