@@ -102,7 +102,7 @@
                 }
                 h3{
                     font-size: 56px;
-                    margin:30px 0 20px;
+                    margin:0 0 20px;
                 }
                 &_text,
                 &_head{
@@ -1324,6 +1324,19 @@
             width:100%;
             margin-bottom:85px;
         }
+        .breadcrumbs{
+            margin-bottom: 40px;
+        }
+        &_case{
+            .top__image{
+                height: auto;
+                min-height: 290px;
+            }
+            .top__tags{
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
+        }
     }
     .cases-slider-info,
     .project-slider-article,
@@ -1575,6 +1588,15 @@
                 margin-bottom:40px;
             }
         }
+        &.principles_case{
+            margin-top: -85px;
+            .case-stages__layout_var1{
+                margin-bottom: 40px;
+            }
+            .principles__content h3{
+                font-size: 28px;
+            }
+        }
     }
     .problems{
         &__item{
@@ -1633,10 +1655,13 @@
     }
     .vacancies{
         border-radius:30px 30px 0 0;
-        margin-top:-42px;
+        margin-top:-22px;
         margin-bottom:0;
         &__container{
             padding:60px 0;
+            h2{
+                margin-bottom: 38px;
+            }
         }
         &__list{
             &_item{

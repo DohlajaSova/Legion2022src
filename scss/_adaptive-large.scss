@@ -463,7 +463,7 @@
         }
     }
     .top{
-        margin-bottom:67px;
+        margin-bottom:60px;
         & > .container{
             flex-wrap:wrap;
         }
@@ -787,7 +787,8 @@
                     margin-bottom:10px;
                 }
                 h3{
-                    margin:40px 0 30px;
+                    font-size: 56px;
+                    margin:0;
                 }
             }
             .problems__item h3{

@@ -1202,7 +1202,8 @@ a.button {
     .top_case .top__image-mobile {
       display: none; }
   .top_case .top__tags {
-    margin: 13px 0 68px;
+    font-size: 16px;
+    margin: 13px 0 60px;
     color: #949191; }
     .top_case .top__tags span {
       margin-right: 45px; }
@@ -4760,7 +4761,7 @@ a.button {
       padding-bottom: 0; }
 
   .top {
-    margin-bottom: 67px; }
+    margin-bottom: 60px; }
     .top > .container {
       flex-wrap: wrap; }
     .top .h1 {
@@ -4949,7 +4950,8 @@ a.button {
     width: 72%;
     margin-bottom: 10px; }
   .principles_case .principles__content h3 {
-    margin: 40px 0 30px; }
+    font-size: 56px;
+    margin: 0; }
   .principles_case .problems__item h3 {
     font-size: 46px; }
   .case-stages .principles .principles__content .principles__content_text {
@@ -5895,7 +5897,7 @@ a.button {
       margin-bottom: 38px; }
     .principles.principles_case .principles__content h3 {
       font-size: 56px;
-      margin: 30px 0 20px; }
+      margin: 0 0 20px; }
     .principles.principles_case .principles__content_text, .principles.principles_case .principles__content_head {
       width: 100%;
       margin-bottom: 0; }
@@ -6734,6 +6736,14 @@ a.button {
       font-size: 36px;
       width: 100%;
       margin-bottom: 85px; }
+    .top .breadcrumbs {
+      margin-bottom: 40px; }
+    .top_case .top__image {
+      height: auto;
+      min-height: 290px; }
+    .top_case .top__tags {
+      font-size: 14px;
+      margin-bottom: 40px; }
 
   .cases-slider-info__statics_dots,
   .project-slider-article__statics_dots,
@@ -6895,6 +6905,12 @@ a.button {
       margin-bottom: 40px; }
       .principles__video_inline {
         margin-bottom: 40px; }
+    .principles.principles_case {
+      margin-top: -85px; }
+      .principles.principles_case .case-stages__layout_var1 {
+        margin-bottom: 40px; }
+      .principles.principles_case .principles__content h3 {
+        font-size: 28px; }
 
   .problems__item_arrow {
     max-width: 100%; }
@@ -6929,10 +6945,12 @@ a.button {
 
   .vacancies {
     border-radius: 30px 30px 0 0;
-    margin-top: -42px;
+    margin-top: -22px;
     margin-bottom: 0; }
     .vacancies__container {
       padding: 60px 0; }
+      .vacancies__container h2 {
+        margin-bottom: 38px; }
     .vacancies__list_item {
       width: 100%;
       padding-bottom: calc(100% - 60px); }
