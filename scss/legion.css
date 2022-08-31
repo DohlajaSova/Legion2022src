@@ -2038,6 +2038,9 @@ a.button {
     align-items: center;
     padding: 40px 62px 40px 40px; }
   .case2__kpiWrapper .circle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     overflow: visible !important;
     justify-content: center;
@@ -2536,7 +2539,8 @@ a.button {
       height: 100%;
       display: flex;
       justify-content: space-between;
-      left: 0; }
+      left: 0;
+      top: 0; }
     .problems__item_wide {
       width: 100%;
       padding: 0 0 49.2%;
@@ -4748,6 +4752,33 @@ a.button {
   .case2 .project__review_top {
     min-height: 250px !important; } }
 @media only screen and (max-width: 1180px) {
+  .header,
+  .footer,
+  .pmenu,
+  .top,
+  .cases,
+  .principles,
+  .problems,
+  .vacancies,
+  .projects,
+  .feedback,
+  .service,
+  .news,
+  .who-we-are,
+  .not-all-the-same,
+  .team,
+  .to-work,
+  .some-projects,
+  .dummy__container,
+  .client__info,
+  .client__cases,
+  .client__breadcrumbs,
+  .client__header,
+  .service-descr__accordion,
+  .vacancypage {
+    padding-left: 30px;
+    padding-right: 30px; }
+
   .button,
   a.button,
   a.button:visited {
@@ -5066,7 +5097,7 @@ a.button {
   .case-stages .device_wide {
     max-width: 75%; }
   .case-stages .device.device_fit-height .device__screen {
-    border-radius: 20px; }
+    border-radius: 30px; }
   .case-stages .case-stages__layout_inner.case-stages__layout_inner-centered {
     text-align: center;
     position: relative; }
@@ -5831,33 +5862,6 @@ a.button {
 
   .mobile768-hide {
     display: none; }
-
-  .header,
-  .footer,
-  .pmenu,
-  .top,
-  .cases,
-  .principles,
-  .problems,
-  .vacancies,
-  .projects,
-  .feedback,
-  .service,
-  .news,
-  .who-we-are,
-  .not-all-the-same,
-  .team,
-  .to-work,
-  .some-projects,
-  .dummy__container,
-  .client__info,
-  .client__cases,
-  .client__breadcrumbs,
-  .client__header,
-  .service-descr__accordion,
-  .vacancypage {
-    padding-left: 30px;
-    padding-right: 30px; }
 
   .top .h1 {
     font-size: 74px; }
@@ -7231,6 +7235,11 @@ a.button {
     font-size: 24px; }
   .case-stages .principles__content_text {
     padding-left: 0 !important;
+    margin-top: 15px; }
+  .case-stages .device_fit-height {
+    height: calc(100% - 35px);
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin-top: 15px; }
 
   .case2 .project__review_top {

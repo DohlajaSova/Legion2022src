@@ -2655,7 +2655,9 @@ a.button {
             padding: 40px 62px 40px 40px;
         }
         .circle{
-            // position: relative;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
             display: flex;
             overflow: visible!important;
             justify-content: center;
@@ -3462,6 +3464,7 @@ a.button {
 			display: flex;
 			justify-content: space-between;
 			left: 0; // !!! checkout
+            top: 0;
 		}
 
 		&_wide {

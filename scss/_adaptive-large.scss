@@ -449,6 +449,33 @@
 }
 
 @media only screen and (max-width: 1180px) {
+    .header,
+    .footer,
+    .pmenu,
+    .top,
+    .cases,
+    .principles,
+    .problems,
+    .vacancies,
+    .projects,
+    .feedback,
+    .service,
+    .news,
+    .who-we-are,
+    .not-all-the-same,
+    .team,
+    .to-work,
+    .some-projects,
+    .dummy__container,
+    .client__info,
+    .client__cases,
+    .client__breadcrumbs,
+    .client__header,
+    .service-descr__accordion,
+    .vacancypage{
+        padding-left:30px;
+        padding-right:30px;
+    }
     .button,
     a.button,
     a.button:visited{
@@ -979,7 +1006,7 @@
             }
             &.device_fit-height{
                 .device__screen{
-                    border-radius:20px;
+                    border-radius:30px;
                 }
             }
         }
