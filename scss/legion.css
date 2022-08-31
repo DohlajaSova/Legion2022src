@@ -2022,7 +2022,13 @@ a.button {
 .principles_case .problems__item h3 {
   width: 100%; }
 .principles_case .case-stages__layout_var1 {
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  padding: 0; }
+  .principles_case .case-stages__layout_var1 .problems__item_container {
+    position: static; }
+  .principles_case .case-stages__layout_var1 .case-stages__layout_right {
+    max-height: 650px;
+    overflow: hidden; }
 .principles_case .case-stages__layout_var2 .problems__item_bg10 {
   width: 100%;
   padding-bottom: 100%; }
@@ -4736,18 +4742,8 @@ a.button {
   .body_career .top {
     background-size: auto; }
 
-  .case-stages__list {
-    margin-top: 20px; }
-    .case-stages__list li {
-      font-size: 20px;
-      margin-bottom: 20px; }
-
   .case-stages__layout h3 {
     width: 100%; }
-
-  .case-stages__layout.problems__item p {
-    font-size: 20px;
-    margin-top: 20px; }
 
   .case2 .project__review_top {
     min-height: 250px !important; } }
@@ -4984,7 +4980,8 @@ a.button {
     font-size: 56px;
     margin: 0; }
   .principles_case .problems__item h3 {
-    font-size: 46px; }
+    font-size: 46px;
+    margin-bottom: 34px; }
   .case-stages .principles .principles__content .principles__content_text {
     padding-left: 159px; }
 
@@ -5763,9 +5760,9 @@ a.button {
   .case-stages__layout_var1 .problems__item_container, .case-stages__layout_var2 .problems__item_container {
     flex-wrap: wrap; }
   .case-stages__layout_var1 .case-stages__layout_left {
-    order: 2; }
-  .case-stages__layout_var1 .case-stages__layout_right {
     order: 1; }
+  .case-stages__layout_var1 .case-stages__layout_right {
+    order: 2; }
     .case-stages__layout_var1 .case-stages__layout_right .case-stages__layout_inner {
       padding-left: 0;
       padding-bottom: 0; }

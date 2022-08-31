@@ -2632,6 +2632,14 @@ a.button {
         
         .case-stages__layout_var1{
             margin-bottom: 120px;
+            padding: 0;
+            .problems__item_container{
+                position: static;
+            }
+            .case-stages__layout_right{
+                max-height: 650px;
+                overflow: hidden;
+            }
         }
 
 		.case-stages__layout_var2 .problems__item_bg10 {

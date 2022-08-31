@@ -420,23 +420,9 @@
             background-size:auto;
         }
     }   
-    .case-stages__list{
-        margin-top:20px;
-        li{
-            font-size:20px;
-            margin-bottom:20px;
-        }
-    }
     .case-stages__layout h3{
         width:100%;
     }
-    .case-stages__layout.problems__item p{
-        font-size:20px;
-        margin-top:20px;
-    }
-    // .case-stages .principles{
-    //     margin-bottom: 30px;
-    // }
     .case2 {
         .project{
             &__review {
@@ -820,6 +806,7 @@
             }
             .problems__item h3{
                 font-size: 46px;
+                margin-bottom: 34px;
             }
         }
         .case-stages &{
@@ -2072,10 +2059,10 @@
         }
         &__layout_var1{
             .case-stages__layout_left{
-                order:2;
+                order:1;
             }
             .case-stages__layout_right{
-                order:1;
+                order:2;
                 .case-stages__layout_inner{
                     padding-left:0;
                     padding-bottom:0;
