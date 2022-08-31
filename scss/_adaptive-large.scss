@@ -386,12 +386,12 @@
 		h2{
 			margin-bottom:58px;
 		}
-		.news-item{
-			&__head{
-				font-size:20px;
-				margin-bottom:7px;
-			}
-		}
+		// .news-item{
+		// 	&__head{
+		// 		font-size:20px;
+		// 		margin-bottom:7px;
+		// 	}
+		// }
 	}
 	.footer{
 		&__logo{
@@ -665,6 +665,7 @@
 				&_email{
 					width:50%;
 					margin-left:50%;
+                    line-height: 24px;
 				}
 			}
 		}

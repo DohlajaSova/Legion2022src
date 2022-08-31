@@ -17,7 +17,7 @@
                 <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>
                 <div class="news-item__tag">Разработка</div>
                 <div class="news-item__head">Custom view <br class="mobile480-hide">на Compose</div>
-                <div class="news-item__lead">Статья от&nbsp;архитектора решений e-legion о&nbsp;том, почему микросервисы&nbsp;— не&nbsp;панацея. Разбираемся, чем монолиты отличаются от&nbsp;микросервисов, и&nbsp;какое решение лучше выбрать.</div>
+                <div class="news-item__lead">Показываем, как реализовать рыночный график со&nbsp;скроллом на&nbsp;Compose.</div>
             </a>
             <a href="https://vk.com/elegion?w=wall-34196694_2026" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news9.jpg" alt=""></div>
