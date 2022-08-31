@@ -570,7 +570,7 @@ a.button {
 		position: relative;
 		z-index: 3;
 		top: 0;
-		margin: -20px 0;
+		margin: 0;
 		width: calc(100% - 20px);
 		border-radius: 40px;
 	}
@@ -586,10 +586,8 @@ a.button {
 
 	&_fit-height {
 		width: auto;
-		height: calc(100% - 110px);
-		padding-top: 40px;
-		// height: calc(100%);
-		// padding: 40px 0;
+		height: calc(100% - 55px);
+		padding-top: 55px;
 
 		.device__wrapper {
 			width: auto;
@@ -598,7 +596,7 @@ a.button {
 
 		.device__screen {
 			width: auto;
-			height: calc(100% - 26px);
+			height: calc(100% - 25px);
 			left: 50%;
 			top: 13px;
 			transform: translateX(-50%);
@@ -2280,6 +2278,7 @@ a.button {
 		&_var1 {
 			.case-stages__layout_right .case-stages__layout_inner {
 				padding-left: 0;
+				padding-right: 0;
 			}
 		}
 
@@ -2494,7 +2493,7 @@ a.button {
 		&_text {
 			width: 49%;
 			padding-right: 4%;
-			margin-bottom: 90px;
+			margin-bottom: 80px;
 			color: $color-blue-dark;
 
 			*:last-child {
@@ -2506,7 +2505,7 @@ a.button {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			margin-bottom: 90px;
+			margin-bottom: 80px;
 		}
 
 		p {
@@ -2608,6 +2607,7 @@ a.button {
 
 	&_case {
 		.principles__content {
+			margin-bottom:0;
 
 			h2,
 			.h2,
@@ -3656,7 +3656,7 @@ a.button {
 		}
 	}
 	&_case {
-		margin-bottom: 20px;
+		margin-bottom: 110px;
 	}
 }
 

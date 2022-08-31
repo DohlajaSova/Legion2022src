@@ -5,7 +5,7 @@
             <li><a href="/client-tele2.html"> Tele2</a></li>
             <li><span>Конструктор тарифов</span></li>
         </ul>
-        <h1>Приложение «Мой Tele2». <br>Конструктор тарифов</h1>
+        <h1 class="h2">Приложение «Мой Tele2». <br>Конструктор тарифов</h1>
         
         <div class="top__tags">
             <span>#комплекснаяразработка</span>
