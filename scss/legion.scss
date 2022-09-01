@@ -297,7 +297,7 @@ a:hover {
 }
 
 .bottom-dummy {
-	height: 76px;
+	height: 0;
 }
 
 .back {
@@ -1397,7 +1397,7 @@ a.button {
 		&>.container {
 			flex-direction: column;
 		}
-
+        
 		.top__image {
 			position: relative;
 			width: 100%;
@@ -2278,7 +2278,7 @@ a.button {
 		&_var1 {
 			.case-stages__layout_right .case-stages__layout_inner {
 				padding-left: 0;
-				padding-right: 0;
+				//padding-right: 0;
 			}
 		}
 
@@ -2633,10 +2633,16 @@ a.button {
         .case-stages__layout_var1{
             margin-bottom: 120px;
             padding: 0;
+            height: auto;
             .problems__item_container{
                 position: static;
+                align-items: flex-end;
+            }
+            .case-stages__layout_left{
+                height: 100%;
             }
             .case-stages__layout_right{
+                height: 100%;
                 max-height: 650px;
                 overflow: hidden;
             }
@@ -2758,7 +2764,7 @@ a.button {
                 flex-flow: column nowrap;
                 justify-content: space-between;
                 &-img {
-                    top: 0;
+                    top: 20px;
                     transform: scale(1.05);
                 }
             }
@@ -3113,7 +3119,7 @@ a.button {
 		border-radius: $border-radius;
 
 		h3 {
-			width: 70%;
+			width: 80%;
 		}
 
 		p {
@@ -3676,7 +3682,7 @@ a.button {
 		}
 	}
 	&_case {
-		margin-bottom: 110px;
+		margin-bottom: 60px;
 	}
 }
 
