@@ -81,7 +81,7 @@
     .vacancies{
         margin-top: -42px;
         &__container{
-            padding:60px 0 0 0;
+            padding:30px 0 0 0;
         }
         &__list{
             &_item{
@@ -99,8 +99,16 @@
                         margin-top:20px;
                     }
                 }
+                &[data-city] {
+                    .vacancy__title {
+                        &::before {
+                            font-size: 46px;
+                        }
+                    }
+                }
             }
         }
+        
     }
     .problems{
         &__review{
@@ -196,6 +204,7 @@
             top: 210px;
             left: 0;
             border-radius: 30px 30px 0 0;
+            display: none;
         }
         &.feedback_compact {
             margin-bottom: 0 !important;
@@ -630,7 +639,17 @@
             font-size:36px;
         }
     }
-    .who-we-are{
+    .news {
+        margin-bottom: 40px;
+    }
+    .not-all-the-same {
+        &_background {
+            margin-bottom: 0!important;
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+    }
+    .who-we-are, .news{
         margin-top: -60px;
         background: #fff;
         border-radius: 30px 30px 0 0;

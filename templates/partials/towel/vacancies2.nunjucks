@@ -26,7 +26,7 @@
                             <div class="vacancy__body_item">опыт работы от 1 года;</div>
                             <div class="vacancy__body_item">умение составлять структурированную документацию (BRD, FRD, ТЗ); </div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнее</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
                         </div>
                     </div>
                 </a>
@@ -40,7 +40,7 @@
                             <div class="vacancy__body_item">уверенное владение Swift;</div>
                             <div class="vacancy__body_item">знание iOS SDK;</div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнее</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
                         </div>
                     </div>
                 </a>
@@ -54,7 +54,7 @@
                             <div class="vacancy__body_item">знание Android SDK;</div>
                             <div class="vacancy__body_item">опыт разработки на&nbsp;Java/Kotlin;</div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнее</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
                         </div>
                     </div>
                 </a>
@@ -67,7 +67,7 @@
                         <div class="vacancy__body">
                             <div class="vacancy__body_item">глубокое знание SpringBoot, Kafka, FeignClient, REST API, PostgreSQL, JPA, Maven, Git;</div>
                             <div class="vacancy__body_item">...</div>
-                            <div class="vacancy__body_link">Подробнеее</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
                         </div>
                     </div>
                 </a>
@@ -79,7 +79,7 @@
                         </h3>
                         <div class="vacancy__body">
                             <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
-                            <div class="vacancy__body_link">Отправить резюме →</div>
+                            <button class="vacancy__body_link">Отправить резюме →</button>
                         </div>
                     </div>
                 </span>

@@ -625,6 +625,7 @@
         }
     }
     .news {
+        margin-bottom: 60px;
         &__button {
             margin-left: 0;
             width: 100%;
@@ -712,6 +713,12 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+    .not-all-the-same {
+        &_background {
+            padding-top: 60px;
+            padding-bottom: 20px;
         }
     }
 }
@@ -2143,6 +2150,16 @@
             & > .container{
                 align-items: flex-start;
                 padding-top: 191px;
+            }
+        }
+    }  
+    .accordion__item{
+        &_head{
+            font-size: 24px;
+        }
+        &.active{
+            .accordion__item_body{
+                padding-bottom: 40px;
             }
         }
     }

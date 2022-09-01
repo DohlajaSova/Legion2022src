@@ -748,9 +748,10 @@ docReady(function() {
                     let sendAdjust = 0;
                     if (this.classList.contains("vacancy_send"))
                         sendAdjust = 120;
-                    vacancyTitle.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
-                    vacancyBody.style.top = -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
-                    vacancyBody.style.height = sendAdjust + vacancyContainerHeight - vacanceNameHeight + 92 + "px";
+                        getup = -55;
+                        vacancyTitle.style.top = getup -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
+                        vacancyBody.style.top = getup -sendAdjust + vacanceNameHeight - vacancyContainerHeight + "px";
+                        vacancyBody.style.height = -getup +sendAdjust + vacancyContainerHeight - vacanceNameHeight + 92 + "px";
                 }, false);
                 vacancyBlocks[i].addEventListener("mouseout", function(e){
                     e.preventDefault();
