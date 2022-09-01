@@ -2494,6 +2494,7 @@ a.button {
 			width: 49%;
 			padding-right: 4%;
 			margin-bottom: 80px;
+            padding-top: 10px;
 			color: $color-blue-dark;
 
 			*:last-child {
@@ -2818,7 +2819,7 @@ a.button {
         &_card {
             display: flex;
             flex-flow: column nowrap;
-            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
+            background:url($img-path + "case3-content-background.png") center bottom no-repeat $color-blue-light;
             background-size: cover;
             color: #fff;
             padding-top: 40px;
@@ -5398,7 +5399,7 @@ a.button {
 		padding-bottom: 31px;
 
 		button {
-			background-color: $color-blue-light;
+			background-color: $color-grey-dark;
 			border: 1px solid transparent;
 			width: 11px;
 			height: 11px;

@@ -177,6 +177,9 @@
 	h3, .h3 {
 		font-size:38px;
 	}
+    .breadcrumbs li::after{
+        top:0;
+    }
     .top{
         & > .container{
             align-items:flex-start;
@@ -1258,6 +1261,9 @@
             }
         }
         &_case{
+            .case-stages__layout_var1{
+                margin-bottom: 40px;
+            }
             .principles__content_buttons{
                 width:100%;
                 display:flex;

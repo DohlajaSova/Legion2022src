@@ -1939,6 +1939,7 @@ a.button {
     width: 49%;
     padding-right: 4%;
     margin-bottom: 80px;
+    padding-top: 10px;
     color: #1E2738; }
     .principles__content_text *:last-child {
       margin-bottom: 0; }
@@ -2143,7 +2144,7 @@ a.button {
   .case3__content_card {
     display: flex;
     flex-flow: column nowrap;
-    background: url("img/case3-content-background.png") center center no-repeat #84AEFF;
+    background: url("img/case3-content-background.png") center bottom no-repeat #84AEFF;
     background-size: cover;
     color: #fff;
     padding-top: 40px;
@@ -3758,7 +3759,7 @@ a.button {
   text-align: center;
   padding-bottom: 31px; }
   .some-projects .tns-nav button {
-    background-color: #84AEFF;
+    background-color: #949191;
     border: 1px solid transparent;
     width: 11px;
     height: 11px;
@@ -4605,6 +4606,9 @@ a.button {
   h3, .h3 {
     font-size: 38px; }
 
+  .breadcrumbs li::after {
+    top: 0; }
+
   .top > .container {
     align-items: flex-start; }
   .top .h1 {
@@ -5274,6 +5278,8 @@ a.button {
     margin-bottom: 40px; }
   .principles__content_text-wrap {
     width: 100%; }
+  .principles_case .case-stages__layout_var1 {
+    margin-bottom: 40px; }
   .principles_case .principles__content_buttons {
     width: 100%;
     display: flex;
@@ -5926,7 +5932,7 @@ a.button {
 
   .problems__item {
     width: 100%;
-    padding: 30px 30px calc(100%); }
+    padding: 30px 30px calc(100% - 30px); }
     .problems__item-compact {
       padding: 30px 30px calc(60%); }
     .problems__item h3 {
@@ -6724,7 +6730,7 @@ a.button {
     padding: 40px; }
     .case__alfa_problems-item__text {
       margin: 0 0 30px 0;
-      font-size: 5vw; }
+      font-size: 28px; }
 
   .cases__case_info .cases__case_photo img {
     width: 49px; } }
@@ -6741,8 +6747,11 @@ a.button {
   h3, .h3 {
     font-size: 18px; }
 
+  .breadcrumbs li::after {
+    top: 1px; }
+
   .top {
-    margin-bottom: 38px; }
+    margin-bottom: 28px; }
     .top .h1 {
       font-size: 36px;
       width: 100%;
@@ -6895,6 +6904,9 @@ a.button {
 
   .case-stages {
     margin-bottom: 23px; }
+    .case-stages .principles_case > .container.container_flexible .problems__item {
+      height: auto;
+      margin-bottom: -20px; }
 
   .principles {
     background: #fff;
@@ -6922,7 +6934,8 @@ a.button {
       .principles__video_inline {
         margin-bottom: 40px; }
     .principles.principles_case {
-      margin-top: -85px; }
+      margin-top: -85px;
+      margin-bottom: 60px; }
       .principles.principles_case .case-stages__layout_var1 {
         margin-bottom: 40px; }
         .principles.principles_case .case-stages__layout_var1 .case-stages__layout_right {
@@ -6931,8 +6944,12 @@ a.button {
           margin: 0 auto; }
         .principles.principles_case .case-stages__layout_var1 .case-stages__layout_inner.case-stages__layout_inner-centered {
           padding-top: 0; }
-      .principles.principles_case .principles__content h3 {
-        font-size: 28px; }
+      .principles.principles_case .principles__content {
+        margin-top: 30px;
+        margin-bottom: 40px; }
+        .principles.principles_case .principles__content h3 {
+          font-size: 28px;
+          margin-bottom: 10px; }
       .principles.principles_case .problems__item h3 {
         font-size: 24px;
         margin-bottom: 18px; }
@@ -6980,6 +6997,8 @@ a.button {
       font-size: 24px; }
     .problems__review_author-img {
       width: 50%; }
+  .problems_case {
+    margin-bottom: 20px; }
 
   .vacancies {
     border-radius: 30px 30px 0 0;
@@ -7289,7 +7308,7 @@ a.button {
     margin-bottom: 24px; }
 
   .body_career .top {
-    background: url(img/career480.jpg) top center no-repeat;
+    background: url(img/career480480.jpg) top center no-repeat;
     background-size: cover;
     min-height: 568px; }
     .body_career .top > .container {

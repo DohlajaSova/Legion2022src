@@ -95,7 +95,7 @@
     .problems{
         &__item{
             width:100%;
-            padding:30px 30px calc(100%);
+            padding:30px 30px calc(100% - 30px);
             &-compact {
                 padding:30px 30px calc(60%);
             }
@@ -1249,7 +1249,7 @@
                 padding: 40px;
                 &__text{
                     margin: 0 0 30px 0;
-                    font-size: 5vw;
+                    font-size: 28px;
                 }
             }
         }
@@ -1280,8 +1280,11 @@
     h3, .h3 {
         font-size:18px;
     }
+    .breadcrumbs li::after{
+        top:1px;
+    }
     .top{
-        margin-bottom:38px;
+        margin-bottom:28px;
         .h1{
             font-size:36px;
             width:100%;
@@ -1523,6 +1526,10 @@
     }
     .case-stages{
         margin-bottom: 23px;
+        .principles_case > .container.container_flexible .problems__item{
+            height: auto;
+            margin-bottom: -20px;
+        }
     }
     .principles{
         background:$color-white;
@@ -1559,6 +1566,7 @@
         }
         &.principles_case{
             margin-top: -85px;
+            margin-bottom: 60px;
             .case-stages__layout_var1{
                 margin-bottom: 40px;
                 .case-stages__layout_right{
@@ -1570,8 +1578,13 @@
                     padding-top: 0;
                 }
             }
-            .principles__content h3{
-                font-size: 28px;
+            .principles__content{
+                margin-top: 30px;
+                margin-bottom: 40px;
+                h3{
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
             }
             .problems__item h3{
                 font-size: 24px;
@@ -1649,6 +1662,9 @@
                     width: 50%;
                 }
             }
+        }
+        &_case{
+            margin-bottom: 20px;
         }
     }
     .vacancies{
@@ -2138,7 +2154,7 @@
 
     .body_career {
         .top {
-            background: url(img/career480.jpg) top center no-repeat;
+            background: url(img/career480480.jpg) top center no-repeat;
             background-size: cover;
             min-height: 568px;
             & > .container{
