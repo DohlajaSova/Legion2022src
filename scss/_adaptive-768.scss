@@ -705,6 +705,15 @@
     .service-descr__accordion{
         margin-bottom: 60px;
     }
+    .cases{
+        &__case{
+            &_info{
+                .cases__case_name{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -766,6 +775,11 @@
     }
     .back{
         right:15px;
+    }
+    .top{
+        .h1{
+            font-size:56px;
+        }
     }
     .select{
         &-selected{
@@ -1333,7 +1347,7 @@
     .top{
         margin-bottom:38px;
         .h1{
-            font-size:36px;
+            font-size:46px;
             width:100%;
             margin-bottom:85px;
         }
@@ -1363,6 +1377,9 @@
     }
     .body_about .header.header_sticky{
         background:$color-blue-dark;
+    }
+    .body_about .top {
+        min-height: 568px;
     }
     .body_service{
         .header{
@@ -2032,11 +2049,12 @@
     }
     .years{
         &__item{
-            font-size: 16px !important; 
-            text-align: left;
+            font-size: 14px !important; 
+            text-align: center;
             height: auto;
             min-height: 125px;
             padding-bottom: 0;
+            padding: 30px 13px 0;
         }
         &__year{
             font-size:70px;
