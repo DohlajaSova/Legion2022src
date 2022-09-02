@@ -297,7 +297,7 @@ a:hover {
 }
 
 .bottom-dummy {
-	height: 76px;
+	height: 0;
 }
 
 .back {
@@ -1397,7 +1397,7 @@ a.button {
 		&>.container {
 			flex-direction: column;
 		}
-
+        
 		.top__image {
 			position: relative;
 			width: 100%;
@@ -1424,7 +1424,8 @@ a.button {
 		}
 
 		.top__tags {
-			margin: 13px 0 68px;
+            font-size: 16px;
+			margin: 13px 0 60px;
 			color: $color-grey-dark;
 
 			span {
@@ -2279,7 +2280,7 @@ a.button {
 		&_var1 {
 			.case-stages__layout_right .case-stages__layout_inner {
 				padding-left: 0;
-				padding-right: 0;
+				//padding-right: 0;
 			}
 		}
 
@@ -2495,6 +2496,7 @@ a.button {
 			width: 49%;
 			padding-right: 4%;
 			margin-bottom: 80px;
+            padding-top: 10px;
 			color: $color-blue-dark;
 
 			*:last-child {
@@ -2613,18 +2615,41 @@ a.button {
 			h2,
 			.h2,
 			.principles__content_head {
-				width: 42%;
+				width: 44%;
 			}
 
 			.principles__content_head h2,
 			.principles__content_head .h2 {
 				width: 100%;
 			}
+            
 
 			h3 {
 				margin: 0px 0 40px;
 			}
 		}
+
+        .problems__item h3{
+            width:100%;
+        }
+        
+        .case-stages__layout_var1{
+            margin-bottom: 120px;
+            padding: 0;
+            height: auto;
+            .problems__item_container{
+                position: static;
+                align-items: flex-end;
+            }
+            .case-stages__layout_left{
+                height: 100%;
+            }
+            .case-stages__layout_right{
+                height: 100%;
+                max-height: 650px;
+                overflow: hidden;
+            }
+        }
 
 		.case-stages__layout_var2 .problems__item_bg10 {
 			width: 100%;
@@ -2647,7 +2672,9 @@ a.button {
             padding: 40px 62px 40px 40px;
         }
         .circle{
-            // position: relative;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
             display: flex;
             overflow: visible!important;
             justify-content: center;
@@ -2740,7 +2767,7 @@ a.button {
                 flex-flow: column nowrap;
                 justify-content: space-between;
                 &-img {
-                    top: 0;
+                    top: 20px;
                     transform: scale(1.05);
                 }
             }
@@ -2794,7 +2821,7 @@ a.button {
         &_card {
             display: flex;
             flex-flow: column nowrap;
-            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
+            background:url($img-path + "case3-content-background.png") center bottom no-repeat $color-blue-light;
             background-size: cover;
             color: #fff;
             padding-top: 40px;
@@ -3098,7 +3125,7 @@ a.button {
 		border-radius: $border-radius;
 
 		h3 {
-			width: 70%;
+			width: 80%;
 		}
 
 		p {
@@ -3457,6 +3484,7 @@ a.button {
 			display: flex;
 			justify-content: space-between;
 			left: 0; // !!! checkout
+            top: 0;
 		}
 
 		&_wide {
@@ -3660,7 +3688,7 @@ a.button {
 		}
 	}
 	&_case {
-		margin-bottom: 110px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -5381,7 +5409,7 @@ a.button {
 		padding-bottom: 31px;
 
 		button {
-			background-color: $color-blue-light;
+			background-color: $color-grey-dark;
 			border: 1px solid transparent;
 			width: 11px;
 			height: 11px;

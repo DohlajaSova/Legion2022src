@@ -5,33 +5,6 @@
     .mobile768-hide{
         display:none;
     }
-    .header,
-    .footer,
-    .pmenu,
-    .top,
-    .cases,
-    .principles,
-    .problems,
-    .vacancies,
-    .projects,
-    .feedback,
-    .service,
-    .news,
-    .who-we-are,
-    .not-all-the-same,
-    .team,
-    .to-work,
-    .some-projects,
-    .dummy__container,
-    .client__info,
-    .client__cases,
-    .client__breadcrumbs,
-    .client__header,
-    .service-descr__accordion,
-    .vacancypage{
-        padding-left:30px;
-        padding-right:30px;
-    }
     .top{
         .h1{
             font-size:74px;
@@ -101,7 +74,8 @@
                     margin-bottom: 38px;
                 }
                 h3{
-                    margin:30px 0 20px
+                    font-size: 56px;
+                    margin:0 0 20px;
                 }
                 &_text,
                 &_head{
@@ -120,15 +94,28 @@
     }
     .problems{
         &__item{
+            width:100%;
+            padding:30px 30px calc(100% - 30px);
+            &-compact {
+                padding:30px 30px calc(60%);
+            }
             h3{
-                font-size:24px;
+                font-size:35px;
             }
             p{
-                font-size:16px;
-                margin-top:14px;
+                font-size:26px;
+                margin-top:20px;
+            }
+            &_bg6{
+                height:auto;
+                padding:30px 0;
+                .problems__review{
+                    position:static;
+                }
             }
         }
     }
+
     /*
     .cases{
         .cases-container{
@@ -1103,29 +1090,6 @@
             }
         }
     }
-    .problems{
-        &__item{
-            width:100%;
-            padding:30px 30px calc(100%);
-            &-compact {
-                padding:30px 30px calc(60%);
-            }
-            h3{
-                font-size:35px;
-            }
-            p{
-                font-size:26px;
-                margin-top:20px;
-            }
-            &_bg6{
-                height:auto;
-                padding:30px 0;
-                .problems__review{
-                    position:static;
-                }
-            }
-        }
-    }
     .request{
         &__file{
             margin-bottom:10px;
@@ -1320,7 +1284,7 @@
                 padding: 40px;
                 &__text{
                     margin: 0 0 30px 0;
-                    font-size: 5vw;
+                    font-size: 28px;
                 }
             }
         }
@@ -1351,12 +1315,31 @@
     h3, .h3 {
         font-size:18px;
     }
+    .breadcrumbs li::after{
+        top:1px;
+    }
     .top{
-        margin-bottom:38px;
+        margin-bottom:28px;
         .h1{
             font-size:46px;
             width:100%;
             margin-bottom:85px;
+        }
+        .breadcrumbs{
+            margin-bottom: 40px;
+        }
+        &_case{
+            .h2{
+                font-size: 36px;
+            }
+            .top__image{
+                height: auto;
+                min-height: 290px;
+            }
+            .top__tags{
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
         }
     }
     .cases-slider-info,
@@ -1579,6 +1562,13 @@
             padding-top:25px;
         }
     }
+    .case-stages{
+        margin-bottom: 23px;
+        .principles_case > .container.container_flexible .problems__item{
+            height: auto;
+            margin-bottom: -20px;
+        }
+    }
     .principles{
         background:$color-white;
         border-radius: 30px 30px 0 0;
@@ -1610,6 +1600,50 @@
             margin-bottom:40px;
             &_inline{
                 margin-bottom:40px;
+            }
+        }
+        &.principles_case{
+            margin-top: -85px;
+            margin-bottom: 60px;
+            .case-stages__layout_var1{
+                margin-bottom: 40px;
+                .case-stages__layout_right{
+                    max-height: 440px;
+                    max-width: 70%;
+                    margin: 0 auto;
+                }
+                .case-stages__layout_inner.case-stages__layout_inner-centered{
+                    padding-top: 0;
+                }
+            }
+            .principles__content{
+                margin-top: 30px;
+                margin-bottom: 40px;
+                h3{
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+            }
+            .problems__item h3{
+                font-size: 24px;
+                margin-bottom: 18px;
+            }
+            .case-stages__list li{
+                font-size: 14px;
+                margin-bottom: 14px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &::before{
+                    width:27px;
+                    height:27px;
+                    margin-right:12px;
+                    background-size: 14px auto;
+                }
+            }
+            .case-stages__layout.problems__item p{
+                font-size: 14px;
+                margin-top:14px;
             }
         }
     }
@@ -1667,13 +1701,22 @@
                 }
             }
         }
+        &_case{
+            margin-bottom: 20px;
+        }
     }
     .vacancies{
         border-radius:30px 30px 0 0;
-        margin-top:-42px;
+        margin-top:-22px;
         margin-bottom:0;
+        h2{
+            font-size: 28px;
+        }
         &__container{
             padding:60px 0;
+            h2{
+                margin-bottom: 38px;
+            }
         }
         &__list{
             &_item{
@@ -2117,6 +2160,12 @@
             padding-left:0 !important;
             margin-top:15px;
         }
+        .device_fit-height{
+            height: calc(100% - 35px);
+            padding-top: 35px;
+            padding-bottom: 35px;
+            margin-top: 15px;
+        }
     }
     .case2 {
         .project{
@@ -2144,7 +2193,7 @@
 
     .body_career {
         .top {
-            background: url(img/career480.jpg) top center no-repeat;
+            background: url(img/career480480.jpg) top center no-repeat;
             background-size: cover;
             min-height: 568px;
             & > .container{
