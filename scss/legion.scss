@@ -298,6 +298,12 @@ a:hover {
 
 .bottom-dummy {
 	height: 0;
+	.main &,
+	.body_career &,
+	.body_contacts &,
+	.body_request &{
+		height:74px;
+	}
 }
 
 .back {
