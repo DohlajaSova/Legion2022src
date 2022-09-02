@@ -4237,6 +4237,7 @@ a.button {
 }
 
 .news {
+	margin-bottom: 120px;
 	h2 {
 		width: 100%;
 		margin-bottom: 70px;
@@ -4536,7 +4537,7 @@ a.button {
 			.vacancy__title {
 				background: $color-white;
 			}
-            
+
             .vacancy__title_icon{
                 background-color:$color-grey-light;
             }
@@ -4566,12 +4567,12 @@ a.button {
         .vacancies__container{
             padding-bottom: 0;
         }
-        
+
         .vacancies__list{
             width:101.3333%;
             margin-right:-1.3333%;
         }
-        
+
         .cases__pagination-arrows:first-child{
             display: none;
         }
@@ -6000,8 +6001,9 @@ a.button {
 	}
 
 	&__header {
+		max-width: 1440px;
 		text-align: left;
-		margin: 0 0 40px 0px;
+		margin: 0 auto 40px;
 		font-size: 96px;
 	}
 
