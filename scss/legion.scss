@@ -2499,7 +2499,7 @@ a.button {
 		&_text {
 			width: 49%;
 			padding-right: 4%;
-			margin-bottom: 80px;
+			margin-bottom: 40px;
             padding-top: 10px;
 			color: $color-blue-dark;
 
@@ -2512,7 +2512,7 @@ a.button {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			margin-bottom: 80px;
+			margin-bottom: 40px;
 		}
 
 		p {
@@ -2725,13 +2725,50 @@ a.button {
                 display: flex;
                 .button{
                     width: auto;
-                    padding: 18px 60px 18px 88px;
+                    min-width: 230px;
+                    padding: 16px 38px;
                     margin-top: 0;
+                    margin-right: 30px;
+                    display: block;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                    & > div{
+                        display: inline-flex;
+                        flex-direction: column;
+                        padding-left: 34px;
+                        margin: 0 auto;
+                        position: relative;
+                        align-items: flex-start;
+                        &::before{
+                            content: "";
+                            width: 28px;
+                            height: 28px;
+                            position: absolute;
+                            left: 0;
+                            background-size: contain;
+                            background-position: left center;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    &.store_ios{
+                        & > div{
+                            &::before{
+                                background-image: url("img/icon-store-appstore.svg");
+                            }
+                        }
+                    }
                     &.store_android{
-                        padding-left: 81px;
-                        padding-right: 52.5px;
                         &::before{
                             left:50px;
+                        }
+                        & > div{
+                            &::before{
+                                background-image: url("img/icon-store-googleplay.svg");
+                            }
                         }
                     }
                 }

@@ -9,15 +9,16 @@
                 <p>В&nbsp;2020 году нами был&nbsp;реализован рейтинг товаров — система оценки совершенных покупок в&nbsp;МП.</p>
                 <div class="principles__content_buttons store">
                     <a href="https://apps.apple.com/ru/app/пятёрочка/id1174271758" class="button button_grey store_ios" target="_blank">
-                        <span>Download on the</span>
-                        <b>App Store</b>
+                        <div>
+                            <span>Download on the</span>
+                            <b>App Store</b>
+                        </div>
                     </a>
-                    <a
-                        href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US"
-                        class="button button_grey store_android"
-                        target="_blank">
-                        <span>Download on</span>
-                        <b>Google Play</b>
+                    <a href="https://play.google.com/store/apps/details?id=pyaterochka.app&hl=ru&gl=US" class="button button_grey store_android" target="_blank">
+                        <div>
+                            <span>Download on</span>
+                            <b>Google Play</b>
+                        </div>
                     </a>
                 </div>
             </div>

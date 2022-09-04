@@ -85,8 +85,11 @@
                 &_buttons{
                     width:100%;
                     margin-top:0;
+                    margin-bottom: 10px;
                     .button{
                         width:calc(50% - 10px);
+                        min-width: 0;
+                        padding: 16px 4px;
                     }
                 }
             }
@@ -610,6 +613,9 @@
                 }
             }
         }
+    }
+    .case__alfa_problems-item__text{
+        font-size: 6vw;
     }
     .news {
         margin-bottom: 60px;
@@ -1604,7 +1610,7 @@
         }
         &.principles_case{
             margin-top: -85px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             .case-stages__layout_var1{
                 margin-bottom: 40px;
                 .case-stages__layout_right{
@@ -1962,7 +1968,7 @@
         }
 
         &.some-projects {
-            // padding-top: 0;
+            position: relative;
         }
     }
     .news{

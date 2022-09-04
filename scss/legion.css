@@ -1941,7 +1941,7 @@ a.button {
   .principles__content_text {
     width: 49%;
     padding-right: 4%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     padding-top: 10px;
     color: #1E2738; }
     .principles__content_text *:last-child {
@@ -1950,7 +1950,7 @@ a.button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
   .principles__content p {
     font: 400 24px / 1.3 Dopis;
     margin-bottom: 32px; }
@@ -2089,13 +2089,37 @@ a.button {
     display: flex; }
     .case2 .principles__content_buttons .button {
       width: auto;
-      padding: 18px 60px 18px 88px;
-      margin-top: 0; }
-      .case2 .principles__content_buttons .button.store_android {
-        padding-left: 81px;
-        padding-right: 52.5px; }
-        .case2 .principles__content_buttons .button.store_android::before {
-          left: 50px; }
+      min-width: 230px;
+      padding: 16px 38px;
+      margin-top: 0;
+      margin-right: 30px;
+      display: block; }
+      .case2 .principles__content_buttons .button:last-child {
+        margin-right: 0; }
+      .case2 .principles__content_buttons .button::before {
+        display: none; }
+      .case2 .principles__content_buttons .button > div {
+        display: inline-flex;
+        flex-direction: column;
+        padding-left: 34px;
+        margin: 0 auto;
+        position: relative;
+        align-items: flex-start; }
+        .case2 .principles__content_buttons .button > div::before {
+          content: "";
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          left: 0;
+          background-size: contain;
+          background-position: left center;
+          background-repeat: no-repeat; }
+      .case2 .principles__content_buttons .button.store_ios > div::before {
+        background-image: url("img/icon-store-appstore.svg"); }
+      .case2 .principles__content_buttons .button.store_android::before {
+        left: 50px; }
+      .case2 .principles__content_buttons .button.store_android > div::before {
+        background-image: url("img/icon-store-googleplay.svg"); }
 .case2 .project__review_body {
   padding: 0 !important; }
   .case2 .project__review_body .project__review_author-name {
@@ -4826,7 +4850,7 @@ a.button {
       .top__buttons em {
         display: inline; }
     .top_case .h2 {
-      font-size: 64px; }
+      font-size: 74px; }
 
   .cases {
     margin-bottom: 45px; }
@@ -5952,9 +5976,12 @@ a.button {
       margin-bottom: 0; }
     .principles.principles_case .principles__content_buttons {
       width: 100%;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 10px; }
       .principles.principles_case .principles__content_buttons .button {
-        width: calc(50% - 10px); }
+        width: calc(50% - 10px);
+        min-width: 0;
+        padding: 16px 4px; }
 
   .problems__item {
     width: 100%;
@@ -6330,6 +6357,9 @@ a.button {
         font-size: 16px; }
       .case3__content_card-accent {
         font-size: 74px; }
+
+  .case__alfa_problems-item__text {
+    font-size: 6vw; }
 
   .news {
     margin-bottom: 60px; }
@@ -6984,7 +7014,7 @@ a.button {
         margin-bottom: 40px; }
     .principles.principles_case {
       margin-top: -85px;
-      margin-bottom: 60px; }
+      margin-bottom: 40px; }
       .principles.principles_case .case-stages__layout_var1 {
         margin-bottom: 40px; }
         .principles.principles_case .case-stages__layout_var1 .case-stages__layout_right {
@@ -7214,6 +7244,8 @@ a.button {
             background: transparent; }
     .projects-client {
       margin-bottom: 40px; }
+    .projects.some-projects {
+      position: relative; }
 
   .news {
     border-radius: 30px 30px 0 0;
@@ -7635,10 +7667,6 @@ a.button {
   .case2 .principles__content_buttons {
     margin: 40px 0 60px;
     justify-content: space-between; }
-    .case2 .principles__content_buttons .button {
-      padding: 16px 20px 16px 48px; }
-    .case2 .principles__content_buttons ::before {
-      left: 17px; }
 
   .vacancy {
     max-height: 168px;
