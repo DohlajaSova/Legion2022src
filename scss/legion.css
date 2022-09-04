@@ -442,7 +442,7 @@ a:hover {
   position: fixed;
   right: 20px;
   bottom: 30px;
-  z-index: 200; }
+  z-index: 2000; }
   .back.hide {
     display: none; }
 
@@ -1799,6 +1799,10 @@ a.button {
       background: url("img/icon-check.svg") center center no-repeat #24DA8D; }
     .case-stages__list li:last-child {
       margin-bottom: 0; }
+    .case-stages__list li.icon-sun::before {
+      background-image: url("img/icon-sun.svg"); }
+    .case-stages__list li.icon-moon::before {
+      background-image: url("img/icon-moon.svg"); }
   .case-stages__list_ver2 li::before {
     background: url("img/arrow3grey.svg") center center no-repeat #2864D9;
     background-size: 53%;
@@ -2125,7 +2129,8 @@ a.button {
   .case2 .project__review_body .project__review_author-name {
     color: #1E2738 !important; }
 .case2 .project__review_author {
-  padding: 44px 41px; }
+  padding: 34px 41px 14px;
+  flex-grow: 1; }
   .case2 .project__review_author-name {
     color: #fff !important;
     margin: 0 !important;
@@ -2143,7 +2148,6 @@ a.button {
     color: #fff !important; }
 .case2 .project__review_top {
   overflow: hidden;
-  min-height: 350px !important;
   background-color: #F0F0F0 !important;
   color: #1E2738 !important;
   display: flex;
@@ -2783,12 +2787,12 @@ a.button {
         color: #fff;
         position: relative;
         padding: 44px 41px;
-        min-height: 434px;
         flex-grow: 1; }
         .projects .project__review_top-img {
           position: absolute;
           bottom: 0;
-          right: 0; }
+          right: 0;
+          height: 100%; }
         .projects .project__review_top.light {
           background-color: #F0F0F0 !important; }
         .projects .project__review_top.dark {
@@ -2820,7 +2824,7 @@ a.button {
       .projects .project__review_author-position {
         font-size: 24px;
         color: #1E2738;
-        max-width: 55%;
+        max-width: 60%;
         left: 40px;
         z-index: 3; }
         .projects .project__review_author-position.dark {
@@ -4343,7 +4347,6 @@ a.button {
     color: #fff !important; }
 .client .project__review_top {
   overflow: hidden;
-  min-height: 350px !important;
   background-color: #F0F0F0 !important;
   color: #1E2738 !important;
   display: flex;
@@ -5082,8 +5085,8 @@ a.button {
 
   .device_fit-height .device__screen {
     height: calc(100% - 16px);
-    top: 6px;
-    border-radius: 42px; } }
+    top: 8px;
+    border-radius: 12px; } }
 @media only screen and (max-width: 1080px) {
   .who-we-are__widget {
     grid-template-columns: 1fr 1fr; }
@@ -5115,6 +5118,9 @@ a.button {
       padding-bottom: 40px;
       width: 100%;
       height: 100%; }
+  .case-stages .problems_case .case-stages__layout_var1_mirror {
+    padding-bottom: 0 !important;
+    overflow: hidden; }
   .case-stages .principles_case > .container.container_flexible {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5654,6 +5660,17 @@ a.button {
     order: 2; }
     .case-stages__layout_var1 .case-stages__layout_right .case-stages__layout_inner {
       padding-left: 0;
+      padding-bottom: 0; }
+  .case-stages__layout_var1.case-stages__layout_var1_mirror h3 {
+    font-size: 46px; }
+  .case-stages__layout_var1.case-stages__layout_var1_mirror .case-stages__layout_left {
+    order: 2; }
+    .case-stages__layout_var1.case-stages__layout_var1_mirror .case-stages__layout_left .case-stages__layout_inner {
+      padding: 0; }
+  .case-stages__layout_var1.case-stages__layout_var1_mirror .case-stages__layout_right {
+    order: 1; }
+    .case-stages__layout_var1.case-stages__layout_var1_mirror .case-stages__layout_right .case-stages__layout_inner {
+      padding-left: 40px;
       padding-bottom: 0; }
   .case-stages__layout_var2 .case-stages__layout_right .case-stages__layout_inner .device__wrapper {
     position: absolute;
@@ -6296,7 +6313,7 @@ a.button {
       max-width: none; }
 
   .client ~ .feedback {
-    margin-bottom: 60px; }
+    margin-bottom: 0; }
 
   .body_career .top, .body_about .top {
     background-size: cover;
@@ -6306,6 +6323,9 @@ a.button {
   .body_career .not-all-the-same_background, .body_about .not-all-the-same_background {
     margin-bottom: 80px; }
 
+  .top_case .top__image {
+    height: 0;
+    padding-bottom: 100%; }
   .top_case .top__image-desktop {
     display: none; }
   .top_case .top__image-tablet {
@@ -6412,6 +6432,9 @@ a.button {
 
   .cases__case_info .cases__case_name {
     font-size: 16px; }
+
+  .case-stages .device.device_fit-height .device__screen {
+    border-radius: 18px; }
 
   .not-all-the-same_background {
     padding-top: 60px;
@@ -6783,8 +6806,15 @@ a.button {
     min-height: 250px !important; }
   .case2 .project_tall {
     padding-bottom: 100% !important; }
+    .case2 .project_tall .project__review_top {
+      height: auto;
+      padding-bottom: 30px !important;
+      justify-content: space-between; }
+    .case2 .project_tall .project__review_author-desc {
+      font-size: 14px !important; }
   .case2 .project_tall:first-child {
-    padding-bottom: 140% !important; }
+    padding-bottom: 0 !important;
+    height: auto; }
 
   .case3__content {
     grid-template-rows: 520px 520px; }
@@ -6803,10 +6833,9 @@ a.button {
       font-size: 56px; }
 
   .case__alfa_problems-item {
-    padding: 40px; }
+    padding: 20px; }
     .case__alfa_problems-item__text {
-      margin: 0 0 30px 0;
-      font-size: 28px; }
+      margin: 0 0 15px 0; }
 
   .cases__case_info .cases__case_photo img {
     width: 49px; } }
@@ -6838,6 +6867,7 @@ a.button {
       font-size: 36px; }
     .top_case .top__image {
       height: auto;
+      padding-bottom: 0;
       min-height: 290px; }
     .top_case .top__tags {
       font-size: 14px;
@@ -7019,10 +7049,11 @@ a.button {
         margin-bottom: 40px; }
         .principles.principles_case .case-stages__layout_var1 .case-stages__layout_right {
           max-height: 440px;
-          max-width: 70%;
+          max-width: 80%;
           margin: 0 auto; }
         .principles.principles_case .case-stages__layout_var1 .case-stages__layout_inner.case-stages__layout_inner-centered {
-          padding-top: 0; }
+          padding-top: 0;
+          padding-right: 0; }
       .principles.principles_case .principles__content {
         margin-top: 30px;
         margin-bottom: 40px; }
@@ -7078,6 +7109,22 @@ a.button {
       width: 50%; }
   .problems_case {
     margin-bottom: 20px; }
+  .problems.problems_case .problems__item.case-stages__layout_var1_mirror h3 {
+    font-size: 24px;
+    margin-bottom: 18px; }
+  .problems.problems_case .case-stages__layout_var1_mirror .case-stages__list li {
+    font-size: 14px;
+    margin-bottom: 14px; }
+    .problems.problems_case .case-stages__layout_var1_mirror .case-stages__list li:last-child {
+      margin-bottom: 0; }
+    .problems.problems_case .case-stages__layout_var1_mirror .case-stages__list li::before {
+      width: 27px;
+      height: 27px;
+      margin-right: 12px;
+      background-size: 14px auto; }
+  .problems.problems_case .case-stages__layout_var1_mirror.case-stages__layout.problems__item p {
+    font-size: 14px;
+    margin-top: 14px; }
 
   .vacancies {
     border-radius: 30px 30px 0 0;
@@ -7468,7 +7515,7 @@ a.button {
     margin-top: -42px;
     margin-bottom: 50px; }
     .vacancies__container {
-      padding: 30px 0 0 0; }
+      padding: 10px 0 0 0; }
     .vacancies__list_item {
       width: 100%;
       padding-bottom: calc(100% - 60px); }
@@ -7663,7 +7710,8 @@ a.button {
   .case2 .project_tall {
     padding-bottom: 200% !important; }
   .case2 .project_tall:last-child {
-    padding-bottom: 120% !important; }
+    padding-bottom: 120% !important;
+    margin-bottom: 50px; }
   .case2 .principles__content_buttons {
     margin: 40px 0 60px;
     justify-content: space-between; }

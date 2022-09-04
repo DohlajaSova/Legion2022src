@@ -139,7 +139,7 @@
   <div class="problems problems_case">
     <div class="container container-double">
       <div
-        class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"
+        class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1 case-stages__layout_var1_mirror"
       >
         <div class="problems__item_container">
           <div class="case-stages__layout_left">

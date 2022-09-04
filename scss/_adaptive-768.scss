@@ -512,7 +512,7 @@
         }
     }
     .client ~ .feedback {
-        margin-bottom: 60px;
+        margin-bottom: 0; //было 60 пиксел!!!
     }
 
     .body_career, .body_about {
@@ -529,6 +529,10 @@
     }
 
     .top_case{
+        .top__image{
+            height: 0;
+            padding-bottom: 100%;
+        }
         .top__image-desktop{
             display: none;
         }
@@ -707,6 +711,9 @@
                 }
             }
         }
+    }
+    .case-stages .device.device_fit-height .device__screen{
+        border-radius: 18px;
     }
     .not-all-the-same {
         &_background {
@@ -1254,9 +1261,18 @@
         }
         .project_tall{
             padding-bottom: 100%!important;
+            .project__review_top{
+                height: auto;
+                padding-bottom: 30px !important;
+                justify-content: space-between;
+            }
+            .project__review_author-desc{
+                font-size: 14px !important;
+            }
         }
         .project_tall:first-child{
-            padding-bottom: 140%!important;
+            padding-bottom: 0 !important;
+            height: auto;
         }
     }
     .case3 {
@@ -1287,10 +1303,9 @@
     .case__alfa{
         &_problems{
             &-item{
-                padding: 40px;
+                padding: 20px;
                 &__text{
-                    margin: 0 0 30px 0;
-                    font-size: 28px;
+                    margin: 0 0 15px 0;
                 }
             }
         }
@@ -1340,6 +1355,7 @@
             }
             .top__image{
                 height: auto;
+                padding-bottom: 0;
                 min-height: 290px;
             }
             .top__tags{
@@ -1615,11 +1631,12 @@
                 margin-bottom: 40px;
                 .case-stages__layout_right{
                     max-height: 440px;
-                    max-width: 70%;
+                    max-width: 80%;
                     margin: 0 auto;
                 }
                 .case-stages__layout_inner.case-stages__layout_inner-centered{
                     padding-top: 0;
+                    padding-right: 0;
                 }
             }
             .principles__content{
@@ -1709,6 +1726,29 @@
         }
         &_case{
             margin-bottom: 20px;
+        }
+        &.problems_case{
+            .problems__item.case-stages__layout_var1_mirror h3{
+                font-size: 24px;
+                margin-bottom: 18px;
+            }
+            .case-stages__layout_var1_mirror .case-stages__list li{
+                font-size: 14px;
+                margin-bottom: 14px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &::before{
+                    width:27px;
+                    height:27px;
+                    margin-right:12px;
+                    background-size: 14px auto;
+                }
+            }
+            .case-stages__layout_var1_mirror.case-stages__layout.problems__item p{
+                font-size: 14px;
+                margin-top:14px;
+            }
         }
     }
     .vacancies{

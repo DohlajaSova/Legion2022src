@@ -316,7 +316,7 @@ a:hover {
 	right: 20px;
 	bottom: 30px;
 	// top:calc(50% - 29px);
-	z-index: 200;
+	z-index: 2000;
 
 	&.hide {
 		display: none;
@@ -2251,6 +2251,16 @@ a.button {
 			&:last-child {
 				margin-bottom: 0;
 			}
+            &.icon-sun{
+                &::before{
+                    background-image: url($img-path + "icon-sun.svg");
+                }
+            }
+            &.icon-moon{
+                &::before{
+                    background-image: url($img-path + "icon-moon.svg");
+                }
+            }
 		}
 
 		&_ver2 {
@@ -2784,7 +2794,8 @@ a.button {
                 }
             }
             &_author {
-                padding: 44px 41px;
+                padding: 34px 41px 14px;
+                flex-grow: 1;
                 &-name {
                     color: #fff!important;
                     margin: 0!important;
@@ -2809,7 +2820,6 @@ a.button {
             }
             &_top {
                 overflow: hidden;
-                min-height: 350px!important;
                 background-color: $color-grey-light!important;
                 color: $color-blue-dark!important;
                 display: flex;
@@ -3820,13 +3830,13 @@ a.button {
 				color: $color-white;
 				position: relative;
                 padding:44px 41px;
-                min-height:434px;
 				flex-grow: 1;
 
 				&-img {
 					position: absolute;
 					bottom: 0;
 					right: 0;
+                    height: 100%;
 				}
 
 				&.light {
@@ -3883,7 +3893,7 @@ a.button {
 				&-position {
 					font-size: 24px;
                     color:$color-blue-dark;
-					max-width: 55%;
+					max-width: 60%;
 					//position: absolute;
 					left: 40px;
 					z-index: 3;
@@ -6323,7 +6333,6 @@ a.button {
 	        }
 	        &_top {
 	            overflow: hidden;
-	            min-height: 350px!important;
 	            background-color: $color-grey-light!important;
 	            color: $color-blue-dark!important;
 	            display: flex;

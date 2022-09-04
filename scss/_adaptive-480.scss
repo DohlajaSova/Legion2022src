@@ -82,7 +82,7 @@
         margin-top: -42px;
         margin-bottom: 50px;
         &__container{
-            padding:30px 0 0 0;
+            padding:10px 0 0 0;
         }
         &__list{
             &_item{
@@ -397,6 +397,7 @@
         }
         .project_tall:last-child{
             padding-bottom: 120%!important;
+            margin-bottom: 50px;
         }
         .principles {
             &__content{
