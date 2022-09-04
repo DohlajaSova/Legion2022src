@@ -2227,6 +2227,17 @@
         }
     }
     .case2 {
+        .principles__content_text{
+            padding-right: 0;
+        }
+        .principles__content_buttons{
+            justify-content: space-between;
+            .button{
+                width:calc(50% - 15px);
+                margin-right: 0;
+                align-items:flex-start;
+            }
+        }
         .project_tall:first-child{
             padding-bottom: 80%!important;
         }
