@@ -4533,6 +4533,9 @@ a.button {
 				}
 			}
 		}
+        .tns-outer{
+            width:100%;
+        }
 	}
 
 	.vacancy {
@@ -5463,6 +5466,36 @@ a.button {
 		}
 	}
 
+	.tns-nav {
+		text-align: center;
+		padding-bottom: 31px;
+
+		button {
+			background-color: $color-grey-dark;
+			border: 1px solid transparent;
+			width: 11px;
+			height: 11px;
+			margin: 0 6px;
+			border-radius: 50%;
+
+			&.tns-nav-active {
+				border-color: $color-grey-dark;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.did__slider{
+    width:100%;
+    .did__list_item{
+        display: block;
+    }
+    .vacancy{
+        display: block;
+        width:100%;
+        padding-bottom:100%;
+    }
 	.tns-nav {
 		text-align: center;
 		padding-bottom: 31px;

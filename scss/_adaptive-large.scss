@@ -1960,6 +1960,11 @@
             }
         }
     }
+    .did__slider{
+        .vacancy{
+            padding-bottom:calc(100% - 60px);
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {
