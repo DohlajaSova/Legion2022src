@@ -3,7 +3,19 @@
         <div class="vacancies__container">
             <h2>Привет, <br/><em>будущий Легионер</em></h2>
             <div class="vacancies__list">
-                <a href="/vacancy.html" class="vacancies__list_item vacancy">
+                <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-popup-feedback-open" data-types="['all','spb','msk','kzn','klg','remote']">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Возможно, нам не&nbsp;хватает в&nbsp;команде именно вас. Мы&nbsp;просто пока не&nbsp;знаем об&nbsp;этом.</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
+                            <button class="vacancy__body_link">Отправить резюме →</button>
+                        </div>
+                    </div>
+                </span>
+                <!-- <a href="/vacancy.html" class="vacancies__list_item vacancy">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -64,7 +76,7 @@
                     <p class="hide">Предлагай, создавай, улучшай и будь собой, не зря же мы тут собрались!</p>
                     
                     <div><a href="/inprocess.html" class="button button_white">Смотреть все вакансии</a></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
