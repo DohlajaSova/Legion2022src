@@ -3662,6 +3662,36 @@ a.button {
       background: #1E2738;
       color: #fff; }
 
+.yaDiskUploader .dz-before-process {
+  display: block;
+  text-align: center; }
+.yaDiskUploader .dz-in-process {
+  display: none; }
+.yaDiskUploader.dz-started .dz-before-process {
+  display: none; }
+.yaDiskUploader.dz-started .dz-in-process {
+  display: block; }
+
+.dz-warning {
+  padding: 10px 10px 0px;
+  justify-content: flex-start; }
+  .dz-warning::before, .dz-warning::after {
+    display: none !important; }
+  .dz-warning hr,
+  .dz-warning center:last-child {
+    display: none; }
+  .dz-warning h1 {
+    font-size: 16px;
+    color: #DC000F;
+    text-align: center; }
+    .dz-warning h1::before {
+      content: "!";
+      display: block;
+      font-size: 44px;
+      font-weight: bold; }
+  .dz-warning span {
+    font-size: 44px !important; }
+
 .team {
   margin-bottom: 75px; }
   .team__content {

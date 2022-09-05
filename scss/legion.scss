@@ -5253,6 +5253,51 @@ a.button {
 	}
 }
 
+.yaDiskUploader{
+    .dz-before-process{
+        display: block;
+        text-align: center;
+    }
+    .dz-in-process{
+        display: none;
+    }
+    &.dz-started{
+        .dz-before-process{
+            display: none;
+        }
+        .dz-in-process{
+            display: block;
+        }
+    }
+}
+
+.dz-warning{
+    padding: 10px 10px 0px;
+    justify-content: flex-start;
+    &::before,
+    &::after{
+        display: none !important;
+    }
+    hr,
+    center:last-child{
+        display: none;
+    }
+    h1{
+        font-size: 16px;
+        color: #DC000F;
+        text-align: center;
+        &::before{
+            content: "!";
+            display: block;
+            font-size: 44px;
+            font-weight: bold;
+        }
+    }
+    span{
+        font-size: 44px !important;
+    }
+}
+
 .team {
 	margin-bottom: 75px;
 
