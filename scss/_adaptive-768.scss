@@ -1371,6 +1371,12 @@
             width:100%;
             margin-bottom:85px;
         }
+        &__buttons{
+            &_plus{
+                // display:none;
+                margin-top: -95px;
+            }
+        }
         .breadcrumbs{
             margin-bottom: 40px;
         }

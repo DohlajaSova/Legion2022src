@@ -1,7 +1,9 @@
 <div class="category"><a name="category"></a>
     <div class="category__tabs">
-        <span class="active">Бизнесу</span>
-        <a href="/index-applicants.html#category">Соискателям</a>
+        <span class="desktop active">Бизнесу</span>
+        <a class="desktop" href="/index-applicants.html#category">Соискателям</a>
+        <a class="mobile" href="/index-applicants.html#category">Соискателям</a>
+        <span class="active mobile">Бизнесу</span>
     </div>
     <div class="category__content">
         У вас задача&nbsp;— <em>у&nbsp;нас решение</em>

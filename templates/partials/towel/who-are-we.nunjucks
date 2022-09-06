@@ -159,6 +159,17 @@
         <div class="who-we-are__widget_item">
           <div class="who-we-are__widget_container">
             <div class="container js-cases-container">
+              <a href="/client.html" class="cases__case">
+                <div class="cases__case_number"><span>3</span></div>
+                <div class="cases__case_container">
+                  <div class="cases__case_contents cases__case_contents-active">
+                    <span class="cases__case_logo"
+                      ><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"
+                    /></span>
+                    <span class="cases__case_name">Пятёрочка</span>
+                    <span class="cases__case_arrow"></span>
+                  </div></div
+              ></a>
               <a href="/client-tele2.html" class="cases__case">
                 <div class="cases__case_number"></div>
                 <div class="cases__case_container">
@@ -178,17 +189,6 @@
                       ><img src="/assets/css/img/case-ad.svg" alt="Альфа"
                     /></span>
                     <span class="cases__case_name">Альфа-Директ</span>
-                    <span class="cases__case_arrow"></span>
-                  </div></div
-              ></a>
-              <a href="/client.html" class="cases__case">
-                <div class="cases__case_number"><span>3</span></div>
-                <div class="cases__case_container">
-                  <div class="cases__case_contents cases__case_contents-active">
-                    <span class="cases__case_logo"
-                      ><img src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"
-                    /></span>
-                    <span class="cases__case_name">Пятёрочка</span>
                     <span class="cases__case_arrow"></span>
                   </div></div
               ></a>

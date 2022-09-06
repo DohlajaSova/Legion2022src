@@ -1402,4 +1402,18 @@ docReady(function() {
         }
     }
 
+    const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form")
+    if( scrolltoapplicants.length > 0){
+        for (i=0; i<scrolltoapplicants.length; i++){
+        
+            scrolltoapplicants[i].addEventListener("click", function(e){
+                let feedback_applicants = document.getElementsByClassName('feedback_applicants');
+                if(feedback_applicants.length){
+                    feedback_applicants[0].scrollIntoView({
+                        behavior: "smooth"
+                    })
+                }
+            }, false);
+        }
+    }
 });
