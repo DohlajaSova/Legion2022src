@@ -16,18 +16,6 @@
             </div>
             <div class="container js-news-container-portfolio" data-limit="12">
                 <div class="container_portfolio-inner">
-                    <span
-                        class="news__item"
-                        data-tags="['all','telecom']"
-                        data-priority="10">
-                        <div class="news__item_container">
-                            <div class="news__item_contents">
-                                <span class="news__item_logo"><img src="/assets/css/img/item-tele2.svg" alt="Tele2"> </span>
-                                <span class="news__item_name">Tele2</span>
-                                <span class="news__item_arrow"></span>
-                            </div>
-                        </div>
-                    </span>
                     <a
                         href="/client.html"
                         class="news__item"
@@ -38,6 +26,18 @@
                                 <span class="news__item_logo">
                                     <img class="news__item_contents-img" src="/assets/css/img/item-5ka.svg" alt="Пятёрочка"> </span>
                                 <span class="news__item_name">Пятёрочка</span>
+                                <span class="news__item_arrow"></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/client-tele2.html"
+                        class="news__item"
+                        data-tags="['all','telecom']"
+                        data-priority="10">
+                        <div class="news__item_container">
+                            <div class="news__item_contents">
+                                <span class="news__item_logo"><img src="/assets/css/img/item-tele2.svg" alt="Tele2"> </span>
+                                <span class="news__item_name">Tele2</span>
                                 <span class="news__item_arrow"></span>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </span>
-                    <span class="news__item" data-tags="['all','fintech']" data-priority="10">
+                    <a href="/client-alfa.html" class="news__item" data-tags="['all','fintech']" data-priority="10">
                         <div class="news__item_container">
                             <div class="news__item_contents">
                                 <span class="news__item_logo"><img src="/assets/css/img/item-ad.svg" alt="Альфа-Инвестиции"> </span>
@@ -62,7 +62,7 @@
                                 <span class="news__item_arrow"></span>
                             </div>
                         </div>
-                    </span>
+                    </a>
                     <span class="news__item" data-tags="['all','food','delivery']" data-priority="10">
                         <div class="news__item_container">
                             <div class="news__item_contents">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </span>
-                    <span class="news__item" data-tags="['all','socialnetwork']" data-priority="10">
+                    <a href="/client-venn.html" class="news__item" data-tags="['all','socialnetwork']" data-priority="10">
                         <div class="news__item_container">
                             <div class="news__item_contents">
                                 <span class="news__item_logo"><img src="/assets/css/img/item-venn.svg" alt="Venn"> </span>
@@ -123,7 +123,7 @@
                                 <span class="news__item_arrow"></span>
                             </div>
                         </div>
-                    </span>
+                    </a>
                     <span class="news__item" data-tags="['all','retail']" data-priority="10">
                         <div class="news__item_container">
                             <div class="news__item_contents">

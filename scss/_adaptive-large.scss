@@ -493,7 +493,9 @@
             width:100%;
             margin-bottom:0;
             &_plus{
-                display:none;
+                // display:none;
+                margin-top: -40px;
+                height: 269px;
             }
             em{
                 display:inline;
@@ -1213,6 +1215,24 @@
 					z-index:3;
 				}
 			}
+            .mobile {
+                display: block;
+            }
+            a{
+                &.mobile{
+                    background-color: #84AEFF;
+                    z-index: 1;
+                }
+            }
+            span {
+                &.mobile{
+                    background-color: #2864D9;
+                    z-index: 2;
+                }
+            }
+            .desktop {
+                display: none;
+            }
 		}
         &__content{
             font-size:74px;
