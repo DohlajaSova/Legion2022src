@@ -3210,6 +3210,8 @@ a.button {
         content: "klg"; }
       .vacancies__list_item[data-city=kzn] .vacancy__title::before {
         content: "kzn"; }
+    .vacancies__list .tns-outer {
+      width: 100%; }
   .vacancies .vacancy {
     position: relative; }
     .vacancies .vacancy__container {
@@ -3660,6 +3662,36 @@ a.button {
       background: #1E2738;
       color: #fff; }
 
+.yaDiskUploader .dz-before-process {
+  display: block;
+  text-align: center; }
+.yaDiskUploader .dz-in-process {
+  display: none; }
+.yaDiskUploader.dz-started .dz-before-process {
+  display: none; }
+.yaDiskUploader.dz-started .dz-in-process {
+  display: block; }
+
+.dz-warning {
+  padding: 10px 10px 0px;
+  justify-content: flex-start; }
+  .dz-warning::before, .dz-warning::after {
+    display: none !important; }
+  .dz-warning hr,
+  .dz-warning center:last-child {
+    display: none; }
+  .dz-warning h1 {
+    font-size: 16px;
+    color: #DC000F;
+    text-align: center; }
+    .dz-warning h1::before {
+      content: "!";
+      display: block;
+      font-size: 44px;
+      font-weight: bold; }
+  .dz-warning span {
+    font-size: 44px !important; }
+
 .team {
   margin-bottom: 75px; }
   .team__content {
@@ -3811,6 +3843,28 @@ a.button {
     .some-projects .tns-nav button.tns-nav-active {
       border-color: #949191;
       background-color: transparent; }
+
+.did__slider {
+  width: 100%; }
+  .did__slider .did__list_item {
+    display: block; }
+  .did__slider .vacancy {
+    display: block;
+    width: 100%;
+    padding-bottom: 100%; }
+  .did__slider .tns-nav {
+    text-align: center;
+    padding-bottom: 31px; }
+    .did__slider .tns-nav button {
+      background-color: #949191;
+      border: 1px solid transparent;
+      width: 11px;
+      height: 11px;
+      margin: 0 6px;
+      border-radius: 50%; }
+      .did__slider .tns-nav button.tns-nav-active {
+        border-color: #949191;
+        background-color: transparent; }
 
 .body_about .header {
   background-color: transparent; }
@@ -5760,7 +5814,10 @@ a.button {
     margin-bottom: 34px; }
   .body_career .principles__content_text {
     width: 100%;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .did__slider .vacancy {
+    padding-bottom: calc(100% - 60px); } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -6702,6 +6759,27 @@ a.button {
           height: 10px;
           border-color: #949191;
           background-color: #fff; }
+
+  .vacancies__list .tns-nav {
+    text-align: center; }
+    .vacancies__list .tns-nav button {
+      width: 8px;
+      height: 8px;
+      margin: 0 3px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #949191;
+      position: relative;
+      top: 1px; }
+      .vacancies__list .tns-nav button.tns-nav-active {
+        width: 10px;
+        height: 10px;
+        border-color: #949191;
+        background-color: #fff; }
+
+  .did__slider .vacancy {
+    padding-bottom: calc(38% - 60px); }
 
   .request__file {
     margin-bottom: 10px; }

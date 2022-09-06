@@ -1103,6 +1103,31 @@
             }
         }
     }
+    .vacancies__list{
+        .tns-nav{
+            text-align: center;
+            button{
+                width:8px;
+                height:8px;
+                margin:0 3px;
+                border:1px solid transparent;
+                border-radius:50%;
+                display:inline-block;
+                background-color:$color-grey-dark;
+                position:relative;
+                top:1px;
+                &.tns-nav-active{
+                    width:10px;
+                    height:10px;
+                    border-color:$color-grey-dark;
+                    background-color:$color-white;
+                }
+            }
+        }
+    }
+    .did__slider .vacancy{
+        padding-bottom: calc(38% - 60px);
+    }
     .request{
         &__file{
             margin-bottom:10px;

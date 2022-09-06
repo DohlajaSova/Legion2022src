@@ -523,6 +523,53 @@ docReady(function() {
         });
     }
     
+    // слайдер "на этом проекте мы сделали"
+    if (document.querySelectorAll(".js-we-did").length > 0)
+    {
+        let container = document.querySelector(".js-we-did");
+
+        if (windowWidth > 650){
+            let sliderTeam = tns({
+                container: '.js-we-did',
+                items: 4,
+                gutter: 15,
+                responsive: {
+                    320: {
+                        items: 2
+                    },
+                    992: {
+                        items: 4
+                    }
+                },
+                axis: "horizontal",
+                controls: false,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
+        else{
+            let sliderTeam = tns({
+                container: '.js-we-did',
+                items: 4,
+                gutter: 15,
+                responsive: {
+                    320: {
+                        items: 2
+                    },
+                    992: {
+                        items: 4
+                    }
+                },
+                axis: "vertical",
+                controls: false,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
+    }
+    
     // блок с кейсами
     if (document.querySelectorAll(".js-cases-container").length > 0)
     {

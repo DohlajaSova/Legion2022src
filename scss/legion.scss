@@ -4533,6 +4533,9 @@ a.button {
 				}
 			}
 		}
+        .tns-outer{
+            width:100%;
+        }
 	}
 
 	.vacancy {
@@ -5251,6 +5254,51 @@ a.button {
 	}
 }
 
+.yaDiskUploader{
+    .dz-before-process{
+        display: block;
+        text-align: center;
+    }
+    .dz-in-process{
+        display: none;
+    }
+    &.dz-started{
+        .dz-before-process{
+            display: none;
+        }
+        .dz-in-process{
+            display: block;
+        }
+    }
+}
+
+.dz-warning{
+    padding: 10px 10px 0px;
+    justify-content: flex-start;
+    &::before,
+    &::after{
+        display: none !important;
+    }
+    hr,
+    center:last-child{
+        display: none;
+    }
+    h1{
+        font-size: 16px;
+        color: #DC000F;
+        text-align: center;
+        &::before{
+            content: "!";
+            display: block;
+            font-size: 44px;
+            font-weight: bold;
+        }
+    }
+    span{
+        font-size: 44px !important;
+    }
+}
+
 .team {
 	margin-bottom: 75px;
 
@@ -5464,6 +5512,36 @@ a.button {
 		}
 	}
 
+	.tns-nav {
+		text-align: center;
+		padding-bottom: 31px;
+
+		button {
+			background-color: $color-grey-dark;
+			border: 1px solid transparent;
+			width: 11px;
+			height: 11px;
+			margin: 0 6px;
+			border-radius: 50%;
+
+			&.tns-nav-active {
+				border-color: $color-grey-dark;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.did__slider{
+    width:100%;
+    .did__list_item{
+        display: block;
+    }
+    .vacancy{
+        display: block;
+        width:100%;
+        padding-bottom:100%;
+    }
 	.tns-nav {
 		text-align: center;
 		padding-bottom: 31px;
