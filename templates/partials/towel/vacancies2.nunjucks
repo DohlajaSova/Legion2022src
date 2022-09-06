@@ -1,8 +1,8 @@
 <div class="vacancies vacancies_page">
-    <!-- <div class="container">
+    <div class="container">
         <h1 class="h2 cases__title">Вакансии</h1>
         <div class="cases__lead"></div>
-        <div class="cases__filter">
+        <!-- <div class="cases__filter">
             <div class="select select-inline js-vacancies-types"><select>
                 <option value="all">Все офисы</option>
                 <option value="spb">Санкт-Петербург</option>
@@ -11,8 +11,8 @@
                 <option value="klg">Калиниград</option>
                 <option value="remote">Удаленная работа</option>
             </select></div>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
     <div class="container">
         <div class="vacancies__container">
             <div class="vacancies__list js-vacancies-container" data-limit="4" data-page="0">
@@ -80,7 +80,7 @@
                         </h3>
                         <div class="vacancy__body">
                             <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
-                            <button class="vacancy__body_link">Отправить резюме →</button>
+                            <button class="vacancy__body_link">Подробнее →</button>
                         </div>
                     </div>
                 </span>

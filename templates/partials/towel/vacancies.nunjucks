@@ -11,7 +11,7 @@
                         </h3>
                         <div class="vacancy__body">
                             <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
-                            <button class="vacancy__body_link">Отправить резюме →</button>
+                            <button class="vacancy__body_link">Подробнее →</button>
                         </div>
                     </div>
                 </span>
