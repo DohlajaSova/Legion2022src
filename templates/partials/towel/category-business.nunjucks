@@ -1,8 +1,8 @@
 <div class="category"><a name="category"></a>
-    <div class="category__tabs">
+    <div class="category__tabs js-switch-category">
         <span class="desktop active">Бизнесу</span>
-        <a class="desktop" href="/index-applicants.html#category">Соискателям</a>
-        <a class="mobile" href="/index-applicants.html#category">Соискателям</a>
+        <a class="desktop" href="">Соискателям</a>
+        <a class="mobile" href="">Соискателям</a>
         <span class="active mobile">Бизнесу</span>
     </div>
     <div class="category__content">

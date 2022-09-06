@@ -1,6 +1,6 @@
 <div class="category category_applicants"><a name="category"></a>
-    <div class="category__tabs">
-        <a href="/#category">Бизнесу</a>
+    <div class="category__tabs js-switch-category">
+        <a href="">Бизнесу</a>
         <span class="active">Соискателям</span>
     </div>
     <div class="category__content">

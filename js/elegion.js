@@ -320,7 +320,7 @@ function addListenerInput(el) {
         el.removeEventListener("input", input, false);
     })
 }
-
+        
 docReady(function() {
     // фиксим хедер при скролле
     const stickyHeader = document.getElementsByClassName('header')[0];
@@ -1402,7 +1402,7 @@ docReady(function() {
         }
     }
 
-    const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form")
+    const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form");
     if( scrolltoapplicants.length > 0){
         for (i=0; i<scrolltoapplicants.length; i++){
         
@@ -1413,6 +1413,20 @@ docReady(function() {
                         behavior: "smooth"
                     })
                 }
+            }, false);
+        }
+    }
+        
+    //переключение категорий на главной странице
+    if (document.querySelectorAll(".js-switch-category").length > 0){
+        const categorySwitchers = document.querySelectorAll(".js-switch-category a, .js-switch-category span");
+        const businessBlocks = document.querySelectorAll(".js-show-business");
+        const applicantsBlocks = document.querySelectorAll(".js-show-applicants");
+        for (i=0; i<categorySwitchers.length; i++){
+            categorySwitchers[i].addEventListener("click", function(e){
+                e.preventDefault();
+                for (j=0; j<businessBlocks.length; j++) businessBlocks[j].classList.toggle("hide");
+                for (j=0; j<applicantsBlocks.length; j++) applicantsBlocks[j].classList.toggle("hide");
             }, false);
         }
     }

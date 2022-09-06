@@ -1159,11 +1159,11 @@ a.button {
   margin-bottom: 87px; }
   .top > .container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start; }
   .top .h1 {
     width: 70%;
-    padding-right: 5%;
+    padding-right: 0%;
     margin-bottom: 0; }
   .top .breadcrumbs {
     margin: 0 0 60px; }
@@ -1908,6 +1908,8 @@ a.button {
         color: #fff;
         background-color: #2864D9;
         opacity: 1; }
+    .category__tabs .mobile {
+      display: none; }
   .category__content {
     font-size: 96px;
     line-height: 1.1;
@@ -2029,7 +2031,7 @@ a.button {
 .principles_case .problems__item h3 {
   width: 100%; }
 .principles_case .case-stages__layout_var1 {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   padding: 0;
   height: auto; }
   .principles_case .case-stages__layout_var1 .problems__item_container {
@@ -3258,6 +3260,7 @@ a.button {
       transition: top 0.5s step-end, height 0.5s step-end, background 0.5s step-end; }
       .vacancies .vacancy__body_link {
         cursor: pointer;
+        border: none;
         display: block;
         margin-top: auto;
         text-align: left;
@@ -4796,6 +4799,9 @@ a.button {
   .principles_case .principles__content {
     margin-bottom: 50px; }
 
+  .principles_case .principles__content_text {
+    margin-bottom: 20px; }
+
   .problems__review_author {
     padding: 33px 43px 35px; }
     .problems__review_author-name {
@@ -4903,7 +4909,8 @@ a.button {
       width: 100%;
       margin-bottom: 0; }
       .top__buttons_plus {
-        display: none; }
+        margin-top: -40px;
+        height: 269px; }
       .top__buttons em {
         display: inline; }
     .top_case .h2 {
@@ -5343,6 +5350,16 @@ a.button {
       .category__tabs span:nth-child(2) {
         background-color: #2864D9;
         z-index: 3; }
+    .category__tabs .mobile {
+      display: block; }
+    .category__tabs a.mobile {
+      background-color: #84AEFF;
+      z-index: 1; }
+    .category__tabs span.mobile {
+      background-color: #2864D9;
+      z-index: 2; }
+    .category__tabs .desktop {
+      display: none; }
   .category__content {
     font-size: 74px;
     padding: 60px 70px 237px 60px; }
@@ -6939,6 +6956,8 @@ a.button {
       font-size: 46px;
       width: 100%;
       margin-bottom: 85px; }
+    .top__buttons_plus {
+      margin-top: -95px; }
     .top .breadcrumbs {
       margin-bottom: 40px; }
     .top_case .h2 {
@@ -7094,6 +7113,10 @@ a.button {
     .case-stages .principles_case > .container.container_flexible .problems__item {
       height: auto;
       margin-bottom: -20px; }
+    .case-stages + .principles.principles_case {
+      margin-bottom: 60px; }
+      .case-stages + .principles.principles_case .principles__content {
+        margin-top: 0; }
 
   .principles {
     background: #fff;
@@ -7204,6 +7227,9 @@ a.button {
     font-size: 14px;
     margin-top: 14px; }
 
+  .problems__item.problems__item_bg10 + .problems__item.problems__item_bg9 {
+    margin-top: 23px; }
+
   .vacancies {
     border-radius: 30px 30px 0 0;
     margin-top: -22px;
@@ -7211,7 +7237,7 @@ a.button {
     .vacancies h2 {
       font-size: 28px; }
     .vacancies__container {
-      padding: 60px 0; }
+      padding: 50px 0; }
       .vacancies__container h2 {
         margin-bottom: 38px; }
     .vacancies__list_item {
@@ -7225,6 +7251,8 @@ a.button {
           margin-bottom: 16px; }
         .vacancies__list_item.final .button {
           margin-top: 20px; }
+    .vacancies.vacancies_page .vacancies__container {
+      padding-bottom: 30px; }
 
   .projects {
     border-radius: 30px 30px 0 0;

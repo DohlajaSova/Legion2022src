@@ -1,0 +1,38 @@
+<!-- index-business.nunjucks -->
+{% extends "layout-main.nunjucks" %}
+{% block title %} Бизнесу - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/top.nunjucks" %}
+  {% include "partials/towel/cases.nunjucks" %}
+  {% include "partials/towel/about.nunjucks" %}
+<div class="js-show-business">
+  {% include "partials/towel/category-business.nunjucks" %}
+  {% include "partials/towel/principles.nunjucks" %}
+  {% include "partials/towel/problems-business.nunjucks" %}
+ </div>
+<div class="js-show-applicants hide">
+  {% include "partials/towel/category-applicants.nunjucks" %}
+  {% include "partials/towel/team.nunjucks" %}
+  {% include "partials/towel/problems-applicants.nunjucks" %}
+  {% include "partials/towel/vacancies.nunjucks" %}
+</div>
+  {% include "partials/towel/projects1.nunjucks" %}
+<div class="js-show-business">
+  {% include "partials/towel/feedback-business-compact.nunjucks" %}
+</div>
+<div class="js-show-applicants hide">
+  {% include "partials/towel/feedback-applicants.nunjucks" %}
+</div>
+  {% include "partials/towel/news.nunjucks" %}
+
+<div class="js-show-business">
+  {% include "partials/popup-video-principles.nunjucks" %}
+</div>
+<div class="js-show-applicants hide">
+  {% include "partials/popup-video-team.nunjucks" %}
+</div>
+  {% include "partials/popup-feedback.nunjucks" %}
+
+{% endblock %}
