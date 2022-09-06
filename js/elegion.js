@@ -40,7 +40,7 @@ function closeAllSelect(elmnt) {
   selectSelected = document.getElementsByClassName("select-selected");
   xl = selectItems.length;
   yl = selectSelected.length;
-  for (i = 0; i < yl; i++) {
+        for (i = 0; i < yl; i++) {
     if (elmnt == selectSelected[i]) {
       arrNo.push(i)
     } else {
@@ -259,9 +259,9 @@ function vacanciesRefresh(limit){
                 vacanciesBlocks.children[i].classList.remove("not-shown");
         }
     }
-    if (shown <= limit)
+    if (shown <= limit && moreButton)
         moreButton.parentNode.classList.add("hide");
-    else
+    else if(moreButton)
         moreButton.parentNode.classList.remove("hide");
 }
 function vacanciesTransition(n, perpage) {
@@ -731,11 +731,13 @@ docReady(function() {
         let curLimit = document.querySelectorAll(".js-vacancies-container")[0].dataset.limit*1;
         let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
         const transitionButtons = document.querySelectorAll(".js-vacancies-page");
-        moreButton.addEventListener("click", function(e){
-            e.preventDefault();
-            curLimit += 4;
-            vacanciesRefresh(curLimit);
-        })
+        if(moreButton){
+            moreButton.addEventListener("click", function(e){
+                e.preventDefault();
+                curLimit += 4;
+                vacanciesRefresh(curLimit);
+            })
+        }
         if(windowWidth > 480) {
             vacanciesRefresh(curLimit);
         } else {
@@ -764,7 +766,6 @@ docReady(function() {
             let options = e.target.parentNode.parentNode.childNodes[0];
                 e.preventDefault();
                 let selectedType = options.selectedOptions[0].value;
-
                 for (j=0; j<types.length; j++){
                     if (!types[j].includes("'" + selectedType + "'")){
                         vacanciesBlocks[0].children[j].classList.add("hide");
@@ -966,9 +967,6 @@ docReady(function() {
         }, false);
     }
     
-    
-    // обработка форм
- 
     // выпадающая форма обратной связи
     let feedbackOpener = document.querySelectorAll(".js-popup-feedback-open");
     let feedbackCloser = document.querySelector(".js-popup-feedback-close");
@@ -1002,7 +1000,6 @@ docReady(function() {
             feedbackBodyContent.classList.remove("popup-feedback__content_success");
         }, 40000);
     }
-    
     */
     for (i=0; i<feedbackOpener.length; i++){
         let feedbackBody = document.querySelector(".popup-feedback");
@@ -1032,7 +1029,7 @@ docReady(function() {
             }, false);
             document.addEventListener('ajaxFormResponse', (e) => {
                 if (e.detail === true || e.details === false) {
-                    console.log('should be closed')
+                    // console.log('should be closed')
                     feedbackBody.classList.remove("active");
                     document.querySelector("body").classList.remove("popup-open");
                 }
@@ -1135,7 +1132,6 @@ docReady(function() {
             }
             
             div3Created.addEventListener("click", function(e) {
-
                 function updateSelect(removed, change, eHTML, placeh) {
                     selectSelected = document.getElementsByClassName("select-selected");
                     let sll = selectSelected.length
@@ -1168,20 +1164,22 @@ docReady(function() {
                 for (i = 0; i < sl; i++) {
                     selectedName = selectsByTagDiv3.options[i].innerHTML;
                     if (selectedName == this.innerHTML) {
-                        // selectsByTagDiv3.selectedIndex = i;
+                        if(!isMultiple){
+                            selectsByTagDiv3.selectedIndex = i;
+                        }
                         if(!isMultiple){
                             pvsSibling.innerHTML = this.innerHTML
                         }
                         optionSelected = this.parentNode.getElementsByClassName("same-as-selected");
                         yl = optionSelected.length;
                         let removed = false;
-                        let removedInd = false;
+                        // let removedInd = false;
                         selectsByTagDiv3.options[i].setAttribute('selected', '');
                         if(isMultiple) {
                             for (k = 0; k < yl; k++) {
                                 if(optionSelected[k]?.innerHTML == this.innerHTML) {
                                     removed = optionSelected[k]?.innerHTML; //  check why triggering error
-                                    removedInd = k; //  check why triggering error
+                                    // removedInd = k; //  check why triggering error
                                     optionSelected[k]?.classList.remove("same-as-selected");
                                     selectsByTagDiv3.options[i].removeAttribute('selected');
                                 }
@@ -1191,7 +1189,6 @@ docReady(function() {
                                 optionSelected[k].classList.remove("same-as-selected");
                             }
                             this.classList.add("same-as-selected");                         
-
                         }
                         if(isMultiple){
                             if (!removed) {
