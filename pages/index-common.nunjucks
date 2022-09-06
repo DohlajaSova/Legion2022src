@@ -11,7 +11,7 @@
   {% include "partials/towel/category-business.nunjucks" %}
   {% include "partials/towel/principles.nunjucks" %}
   {% include "partials/towel/problems-business.nunjucks" %}
- </div>
+</div>
 <div class="js-show-applicants hide">
   {% include "partials/towel/category-applicants.nunjucks" %}
   {% include "partials/towel/team.nunjucks" %}
