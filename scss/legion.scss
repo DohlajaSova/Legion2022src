@@ -5271,15 +5271,19 @@ a.button {
         display: block;
         text-align: center;
     }
+    .dz-addfiles{
+        display: none;
+        font-size: 0 !important;
+    }
     .dz-in-process{
         display: none;
     }
-    &.dz-started{
+    &.js-upload-started{
         .dz-before-process{
             display: none;
         }
-        .dz-in-process{
-            display: block;
+        .dz-addfiles{
+            display: flex;
         }
     }
 }

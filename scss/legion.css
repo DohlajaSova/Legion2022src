@@ -3675,12 +3675,15 @@ a.button {
 .yaDiskUploader .dz-before-process {
   display: block;
   text-align: center; }
+.yaDiskUploader .dz-addfiles {
+  display: none;
+  font-size: 0 !important; }
 .yaDiskUploader .dz-in-process {
   display: none; }
-.yaDiskUploader.dz-started .dz-before-process {
+.yaDiskUploader.js-upload-started .dz-before-process {
   display: none; }
-.yaDiskUploader.dz-started .dz-in-process {
-  display: block; }
+.yaDiskUploader.js-upload-started .dz-addfiles {
+  display: flex; }
 
 .dz-warning {
   padding: 10px 10px 0px;
