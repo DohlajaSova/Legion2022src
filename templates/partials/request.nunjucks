@@ -66,25 +66,27 @@
         <div class="request__form" id="request__form">
             <h3>Представьтесь, пожалуйста</h3>
             <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
-            <div class="request__form_item">
-                <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
-                <label for="name" class="request__form_label">Как вас зовут?</label>
-                <span class="request__form_error">Введите ваше имя</span>
-            </div>
-            <div class="request__form_item">
-                <input name="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
-                <label for="company" class="request__form_label">Из какой вы компании?</label>
-                <span class="request__form_error">Введите название компании</span>
-            </div>
-            <div class="request__form_item">
-                <input autocomplete="ofasdasdasdasdf" name="phone" id="phonefield" type="tel" placeholder="+7 ___ ___ ____" class="request__form_input phone">
-                <label for="phone" class="request__form_label">Номер для связи</label>
-                <span class="request__form_error">Введите номер для связи</span>
-            </div>
-            <div class="request__form_item">
-                <input name="email" type="email" class="request__form_input" placeholder="Почта">
-                <label for="email" class="request__form_label">Почта</label>
-                <span class="request__form_error">Введите почту для связи</span>
+            <div class="request__form_container">
+                <div class="request__form_item">
+                    <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
+                    <label for="name" class="request__form_label">Как вас зовут?</label>
+                    <span class="request__form_error">Введите ваше имя</span>
+                </div>
+                <div class="request__form_item">
+                    <input name="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
+                    <label for="company" class="request__form_label">Из какой вы компании?</label>
+                    <span class="request__form_error">Введите название компании</span>
+                </div>
+                <div class="request__form_item">
+                    <input autocomplete="ofasdasdasdasdf" name="phone" id="phonefield" type="tel" placeholder="+7 ___ ___ ____" class="request__form_input phone">
+                    <label for="phone" class="request__form_label">Номер для связи</label>
+                    <span class="request__form_error">Введите номер для связи</span>
+                </div>
+                <div class="request__form_item">
+                    <input name="email" type="email" class="request__form_input" placeholder="Почта">
+                    <label for="email" class="request__form_label">Почта</label>
+                    <span class="request__form_error">Введите почту для связи</span>
+                </div>
             </div>
         </div>
         <h3>И последнее: как вы узнали о нас?</h3>

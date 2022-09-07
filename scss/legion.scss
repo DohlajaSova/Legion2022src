@@ -5165,6 +5165,15 @@ a.button {
 			width: 100%;
 			font-size: 46px;
 		}
+        
+        &_container{
+            width: 100%;
+            padding-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
 
 		&_label {
 			font-size: 24px;

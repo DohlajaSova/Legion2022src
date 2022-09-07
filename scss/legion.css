@@ -3608,6 +3608,13 @@ a.button {
     .request__form h3 {
       width: 100%;
       font-size: 46px; }
+    .request__form_container {
+      width: 100%;
+      padding-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px; }
     .request__form_label {
       font-size: 24px;
       color: #000;
@@ -6281,7 +6288,8 @@ a.button {
   .request__lead {
     height: 40px; }
   .request__form_item {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 60px; }
   .request__comment {
     width: 100%;
     padding: 20px 30% 0 0;
