@@ -1430,4 +1430,17 @@ docReady(function() {
             }, false);
         }
     }
+        
+    //обработчик загрузки файлов в форме заявки
+    if (document.querySelectorAll(".yaDiskUploader").length > 0){
+        const uploadButtons = document.querySelectorAll(".yaDiskUploader");
+        let curButton;
+        for (i=0; i<uploadButtons.length; i++){
+            curButton = uploadButtons[i];
+            curButton.addEventListener("click", function(e){
+                e.preventDefault();
+                if (!(curButton.classList.contains("js-upload-started"))) curButton.classList.add("js-upload-started");
+            }, false);
+        }
+    }
 });
