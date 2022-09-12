@@ -1881,6 +1881,10 @@ a.button {
 				}
 			}
 		}
+		&_desc{
+			position: relative;
+			z-index: 2;
+		}
 	}
 
 	&_portfolio {
@@ -2954,7 +2958,7 @@ a.button {
         }
         &_text{
             width:50%;
-            padding-right:4%;
+            // padding-right:4%;
             margin-bottom:90px;
             *:last-child{
                 margin-bottom:0;
@@ -4604,6 +4608,7 @@ a.button {
 				margin-top: auto;
                 text-align: left;
 				color: $color-blue-light;
+				padding-left: 20px;
 			}
 			button{
 				text-align: center;

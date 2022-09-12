@@ -7,7 +7,7 @@
             <a href="" class="js-top-menu-inner"></a>
         </div>
         <div class="pmenu__mmenu">
-            <a href="https://old.e-legion.ru/" class="header__mmenu_lang">←&nbsp;старая&nbsp;версия</a>
+            <a href="https://old.e-legion.ru/" target="_blank" class="header__mmenu_lang">←&nbsp;старая&nbsp;версия</a>
         </div>
     </div>
     <div class="container">

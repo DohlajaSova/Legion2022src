@@ -8,7 +8,7 @@
                 <div class="news-item__head">7 кругов SRM</div>
                 <div class="news-item__lead">В новой статье  наш iOS-разработчик Андрей Глухих подробно описал, с&nbsp;какими проблемами вы&nbsp;можете столкнуться при работе с&nbsp;SPM, и&nbsp;стоит&nbsp;ли оно того</div>
             </a>
-            <a href="" class="news-item">
+            <a href="https://vk.com/elegion?w=wall-34196694_1934" target="_blank" class="news-item">
                 <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>
                 <div class="news-item__date">5 мая 2021</div>
                 <div class="news-item__head">Золото в номинации «Лучшее мобильное решение/активация»</div>
@@ -22,7 +22,7 @@
             </a>
         </div>
         <div class="news__button">
-            <a href="" class="button button_default">Смотреть все новости</a>
+            <a href="" class="button button_default">Смотреть все публикации</a>
         </div>
     </div>
 </div>

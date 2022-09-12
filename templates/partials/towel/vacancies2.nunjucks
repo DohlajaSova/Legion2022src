@@ -2,7 +2,7 @@
     <div class="container">
         <h1 class="h2 cases__title">Вакансии</h1>
         <div class="cases__lead"></div>
-        <!-- <div class="cases__filter">
+        <div class="cases__filter">
             <div class="select select-inline js-vacancies-types"><select>
                 <option value="all">Все офисы</option>
                 <option value="spb">Санкт-Петербург</option>
@@ -11,13 +11,13 @@
                 <option value="klg">Калиниград</option>
                 <option value="remote">Удаленная работа</option>
             </select></div>
-        </div> -->
+        </div>
     </div>
     <div class="container">
         <div class="vacancies__container">
             <div class="vacancies__list js-vacancies-container" data-limit="4" data-page="0">
                 <div class="vacancies__container_inner">
-                <!-- <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -71,7 +71,7 @@
                             <div class="vacancy__body_link">Подробнее →</div>
                         </div>
                     </div>
-                </a> -->
+                </a>
                 <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form" data-types="['all','spb','msk','kzn','klg','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
@@ -87,7 +87,7 @@
             </div></div>
     	</div>
     </div>
-    <!-- <div class="container">
+    <div class="container">
         <div class="cases__pagination">
             <div class="cases__pagination-arrows">
                 <a href="" class="js-vacancies-prev"></a>
@@ -103,5 +103,5 @@
                 <button class="button button_default button_wide js-vacancies-more">Показать еще</button>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>

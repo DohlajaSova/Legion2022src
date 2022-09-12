@@ -516,8 +516,8 @@
             &_logo{
                 & > img{
                     min-width:37%;
-                    max-width:46%;
-                    max-height:46%;
+                    max-width:54%;
+                    max-height:54%;
                 }
             }
             &_info{
@@ -1097,7 +1097,7 @@
 	h2, .h2 {
 		font-size:46px;
 	}
-    .who-we-are__content {
+    .who-we-are__content, .vacancies {
         h2, .h2 {
             font-size:56px;
         }
@@ -1126,18 +1126,18 @@
 			width:60%;
 		}
 	}
-    .select{
-        &-inline{
-            .select-hide{
-                display:grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                div{
-                    width:100%;
-                }
-            }
-        }
-    }
+    // .select{
+    //     &-inline{
+    //         .select-hide{
+    //             display:grid;
+    //             grid-template-columns: 1fr 1fr;
+    //             grid-template-rows: 1fr 1fr;
+    //             div{
+    //                 width:100%;
+    //             }
+    //         }
+    //     }
+    // }
     .map{
         &__select{
             .select-hide{
@@ -1598,6 +1598,17 @@
 		&-selected{
 			display:block;
 		}
+        .same-as-selected{
+            position: relative;
+            &::before{
+                content: ' \25CF';
+                height:10px;
+                color: $color-blue;
+                margin-right: 12px;
+                width: 10px;
+                font-size: 20px;
+            }
+        }
 		&-inline_wide{
 			.select{
 				position:relative;
@@ -1954,17 +1965,6 @@
                     margin:  0 0 25px 0;
                 }
             }
-        }
-    }
-    .same-as-selected{
-        position: relative;
-        &::before{
-            content: ' \25CF';
-            height:10px;
-            color: $color-blue;
-            margin-right: 12px;
-            width: 10px;
-            font-size: 20px;
         }
     }
     .body_career{

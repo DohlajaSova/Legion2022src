@@ -234,6 +234,11 @@
         //     }
         // }
     }
+    .feedback ~ .projects {
+        border-radius: 30px 30px 0 0 !important;
+        position: relative;
+        padding-top: 40px;
+    }
     .footer{
         &__social{
             width:100%;
@@ -247,6 +252,9 @@
         }
     }
     .service {
+        &__header{ 
+            font-size: 36px;
+        }
         &__feature {
             &_inner {
                 &-case {
@@ -358,6 +366,7 @@
                 &-parts {
                     flex-direction: row;
                     &__feature {
+                        font-size: 12px;
                         margin-bottom: 0;
                     }
                 }
@@ -577,6 +586,10 @@
                     font-size: 16px;
                 }
             }
+        }
+        .vacancy__title_name{
+            font-size: 16px;
+            padding-bottom: 20px;
         }
         // .vacancy {
         //     padding-bottom: 0;

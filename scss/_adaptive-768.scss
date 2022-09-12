@@ -378,12 +378,16 @@
         }
     }
     .feedback{
+        margin-bottom: 60px;
         &_compact{
             h2{
                 width:70%;
                 font-size: 46px;
             }
         }
+    }
+    .feedback ~ .projects{
+        padding-top: 60px;
     }
     .popup-feedback{
         .answer{
@@ -403,6 +407,9 @@
         }
     }
     .service {
+        &__header{
+            font-size: 74px;
+        }
         &__section {
             flex-flow: column nowrap;
             height: auto;
@@ -492,6 +499,7 @@
                     flex-direction: column;
                     min-width: 180px;
                     &__feature {
+                        font-size: 16px;
                         margin-bottom: 16px;
                         &:last-child {
                             margin-bottom: 0;
@@ -794,6 +802,17 @@
             display:block;
         }
         &-inline{
+            .same-as-selected{
+                position: relative;
+                &::before{
+                    content: ' \25CF';
+                    height:10px;
+                    color: $color-blue;
+                    margin-right: 12px;
+                    width: 10px;
+                    font-size: 20px;
+                }
+            }
             .select{
                 position:relative;
                 &-selected{

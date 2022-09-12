@@ -28,7 +28,7 @@
             </a>
         </div>
         <div class="news__button">
-            <a href="/inprocess.html" class="button button_default">Смотреть все новости</a>
+            <a href="/inprocess.html" class="button button_default">Смотреть все публикации</a>
         </div>
     </div>
 </div>
