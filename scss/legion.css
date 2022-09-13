@@ -1499,6 +1499,9 @@ a.button {
           border-radius: 0px; }
           .cases__case + .zero-case .cases__case_container .service__feature_inner-case__visual_wrapper {
             border-radius: 30px; }
+    .cases__case_desc {
+      position: relative;
+      z-index: 2; }
   .cases_portfolio {
     padding-top: 120px; }
     .cases_portfolio .container_portfolio-inner {
@@ -2239,7 +2242,6 @@ a.button {
       white-space: nowrap; }
   .who-we-are__content_text {
     width: 50%;
-    padding-right: 4%;
     margin-bottom: 90px; }
     .who-we-are__content_text *:last-child {
       margin-bottom: 0; }
@@ -3147,6 +3149,8 @@ a.button {
   margin-bottom: 76px;
   background-color: #1E2738;
   color: #fff; }
+  .vacancies-outer .vacancies {
+    margin-bottom: 0; }
   .vacancies__container {
     display: flex;
     justify-content: space-between;
@@ -3264,7 +3268,8 @@ a.button {
         display: block;
         margin-top: auto;
         text-align: left;
-        color: #84AEFF; }
+        color: #84AEFF;
+        padding-left: 20px; }
       .vacancies .vacancy__body button {
         text-align: center; }
     .vacancies .vacancy:hover .vacancy__title {
@@ -4445,10 +4450,18 @@ a.button {
       line-height: 130%; }
     .case3__content_card-tip {
       font-size: 24px;
-      margin-bottom: 70px; }
+      margin-bottom: 70px;
+      color: #fff; }
+      .case3__content_card-tip:hover {
+        color: #fff;
+        text-decoration: none; }
     .case3__content_card-main {
       font-size: 46px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      color: #fff; }
+      .case3__content_card-main:hover {
+        color: #fff;
+        text-decoration: none; }
     .case3__content_card-transition {
       font-size: 16px;
       color: #fff !important;
@@ -4930,8 +4943,8 @@ a.button {
     margin-bottom: 45px; }
     .cases__case_logo > img {
       min-width: 37%;
-      max-width: 46%;
-      max-height: 46%; }
+      max-width: 54%;
+      max-height: 54%; }
     .cases__case_info .cases__case_number {
       font-size: 74px;
       margin-bottom: 6px; }
@@ -5271,7 +5284,7 @@ a.button {
   h2, .h2 {
     font-size: 46px; }
 
-  .who-we-are__content h2, .who-we-are__content .h2 {
+  .who-we-are__content h2, .who-we-are__content .h2, .vacancies h2, .vacancies .h2 {
     font-size: 56px; }
 
   h3, .h3 {
@@ -5288,13 +5301,6 @@ a.button {
       margin-left: 0; }
   .pmenu__social {
     width: 60%; }
-
-  .select-inline .select-hide {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-    .select-inline .select-hide div {
-      width: 100%; }
 
   .map__select .select-hide {
     display: flex; }
@@ -5593,6 +5599,15 @@ a.button {
 
   .request__select.select-selected {
     display: block; }
+  .request__select.select .same-as-selected {
+    position: relative; }
+    .request__select.select .same-as-selected::before {
+      content: ' \25CF';
+      height: 10px;
+      color: #2864D9;
+      margin-right: 12px;
+      width: 10px;
+      font-size: 20px; }
   .request__select.select-inline_wide .select {
     position: relative; }
     .request__select.select-inline_wide .select-selected {
@@ -5822,16 +5837,6 @@ a.button {
     padding: 25px; }
     .case__alfa_problems-item__text {
       margin: 0 0 25px 0; }
-
-  .same-as-selected {
-    position: relative; }
-    .same-as-selected::before {
-      content: ' \25CF';
-      height: 10px;
-      color: #2864D9;
-      margin-right: 12px;
-      width: 10px;
-      font-size: 20px; }
 
   .body_career .top {
     margin-bottom: 23px; }
@@ -6308,9 +6313,14 @@ a.button {
     .request__range + .request__select {
       display: block; }
 
-  .feedback_compact h2 {
-    width: 70%;
-    font-size: 46px; }
+  .feedback {
+    margin-bottom: 60px; }
+    .feedback_compact h2 {
+      width: 70%;
+      font-size: 46px; }
+
+  .feedback ~ .projects {
+    padding-top: 60px; }
 
   .popup-feedback .answer__container {
     padding-left: 15px;
@@ -6320,6 +6330,8 @@ a.button {
     width: 100%;
     margin-bottom: 30px; }
 
+  .service__header {
+    font-size: 74px; }
   .service__section {
     flex-flow: column nowrap;
     height: auto;
@@ -6387,6 +6399,7 @@ a.button {
         flex-direction: column;
         min-width: 180px; }
         .client__cases_block-parts__feature {
+          font-size: 16px;
           margin-bottom: 16px; }
           .client__cases_block-parts__feature:last-child {
             margin-bottom: 0; }
@@ -6567,6 +6580,15 @@ a.button {
 
   .select-selected {
     display: block; }
+  .select-inline .same-as-selected {
+    position: relative; }
+    .select-inline .same-as-selected::before {
+      content: ' \25CF';
+      height: 10px;
+      color: #2864D9;
+      margin-right: 12px;
+      width: 10px;
+      font-size: 20px; }
   .select-inline .select {
     position: relative; }
     .select-inline .select-selected {
@@ -7628,6 +7650,9 @@ a.button {
   .project.project_wide-client {
     height: 180px; }
 
+  .case-stages + .vacancies {
+    margin-top: 40px !important; }
+
   .vacancies {
     margin-top: -42px;
     margin-bottom: 50px; }
@@ -7722,6 +7747,11 @@ a.button {
         top: 1px;
         right: 3px; }
 
+  .feedback ~ .projects {
+    border-radius: 30px 30px 0 0 !important;
+    position: relative;
+    padding-top: 40px; }
+
   .footer__social {
     width: 100%;
     margin: 24px 0 42px; }
@@ -7729,6 +7759,8 @@ a.button {
   .footer__menu span {
     width: 50%; }
 
+  .service__header {
+    font-size: 36px; }
   .service__feature_inner-case {
     grid-template-columns: auto;
     grid-template-rows: auto auto; }
@@ -7805,6 +7837,7 @@ a.button {
     .client__cases_block-parts {
       flex-direction: row; }
       .client__cases_block-parts__feature {
+        font-size: 12px;
         margin-bottom: 0; }
   .client__cases_header {
     font-size: 28px; }
@@ -7938,6 +7971,9 @@ a.button {
       width: 100% !important; }
     .who-we-are__widget_item .cases__case_name {
       font-size: 16px; }
+  .who-we-are__widget_item .vacancy__title_name {
+    font-size: 16px;
+    padding-bottom: 20px; }
 
   .projects {
     padding-top: 40px; }

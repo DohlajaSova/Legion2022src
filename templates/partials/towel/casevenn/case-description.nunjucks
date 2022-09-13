@@ -380,10 +380,10 @@
           <div class="casevenn__content">
             <div class="case3__content_card casevenn">
               <div class="case3__content_card-tip">Публикации</div>
-              <div class="case3__content_card-main">
+              <a href="https://www.findavenn.com/news/who-is-venn-for" target="_blank" class="case3__content_card-main">
                 Who is Venn for?
-              </div>
-              <div class="case3__content_card-transition">Подробнее&nbsp;→</div>
+              </a>
+              <a href="https://www.findavenn.com/news/who-is-venn-for" target="_blank" class="case3__content_card-transition">Подробнее&nbsp;→</a>
             </div>
           </div>
         </div>

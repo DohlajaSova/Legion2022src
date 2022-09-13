@@ -10,9 +10,11 @@
   {% include "partials/towel/category-applicants.nunjucks" %}
   {% include "partials/towel/team.nunjucks" %}
   {% include "partials/towel/problems-applicants.nunjucks" %}
+<div class="vacancies-outer">
   {% include "partials/towel/vacancies.nunjucks" %}
-  {% include "partials/towel/projects1.nunjucks" %}
+</div>
   {% include "partials/towel/feedback-applicants.nunjucks" %}
+  {% include "partials/towel/projects1.nunjucks" %}
   {% include "partials/towel/news.nunjucks" %}
 
   {% include "partials/popup-video-team.nunjucks" %}

@@ -5,7 +5,7 @@
             <li><a href="/client-venn.html"> Venn</a></li>
             <li><span>Профиль пользователя</span></li>
         </ul>
-        <h1>Приложение Venn. <br>Профиль пользователя</h1>
+        <h1 class="h2">Приложение Venn. <br>Профиль пользователя</h1>
         
         <div class="top__tags">
             <span>#масштабированиепродукта</span>

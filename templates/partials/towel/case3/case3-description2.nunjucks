@@ -63,10 +63,10 @@
       <div class="case3__content">
         <div class="case3__content_card">
           <div class="case3__content_card-tip">Публикации</div>
-          <div class="case3__content_card-main">
+          <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/" class="case3__content_card-main" target="_blank">
             Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
-          </div>
-          <div class="case3__content_card-transition">Подробнее&nbsp;→</div>
+          </a>
+          <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/" class="case3__content_card-transition" target="_blank">Подробнее&nbsp;→</a>
         </div>
         <div class="case3__content_card">
           <div class="case3__content_card-main">

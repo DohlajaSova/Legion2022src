@@ -4425,6 +4425,10 @@ a.button {
 	margin-bottom: 76px;
 	background-color: $color-blue-dark;
 	color: $color-white;
+    
+    .vacancies-outer &{
+        margin-bottom: 0;
+    }
 
 	&__container {
 		display: flex;
@@ -6474,10 +6478,20 @@ a.button {
             &-tip {
                 font-size: 24px;
                 margin-bottom: 70px;
+                color:$color-white;
+                &:hover{
+                    color:$color-white;
+                    text-decoration: none;
+                }
             }
             &-main {
                 font-size: 46px;
                 margin-bottom: 10px;
+                color:$color-white;
+                &:hover{
+                    color:$color-white;
+                    text-decoration: none;
+                }
             }
             &-transition {
                 font-size: 16px;
