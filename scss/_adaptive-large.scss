@@ -1330,6 +1330,11 @@
 						margin-top:0;
 					}
                 }
+                .problems-slider-groups{
+                    .device{
+                        margin-top: 0;
+                    }
+                }
             }
             .problems-slider-groups__item{
                 h3{
@@ -1890,6 +1895,12 @@
                 .problems__item_bg10{
                     padding-bottom: calc(100% - 40px);
                 }
+            }
+        }
+        .projects_case{
+            .project_tall{
+                height: auto;
+                padding-bottom: 0 !important;
             }
         }
         .device{

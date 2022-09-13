@@ -5436,6 +5436,8 @@ a.button {
       margin-top: 30px; }
       .problems__item_bg9 .device.device_fit-height2 {
         margin-top: 0; }
+    .problems__item_bg9 .problems-slider-groups .device {
+      margin-top: 0; }
     .problems__item .problems-slider-groups__item h3 {
       font-size: 46px; }
     .problems__item h3 {
@@ -5797,6 +5799,9 @@ a.button {
     grid-template-columns: 1fr; }
     .case-stages .principles_case > .container.container_flexible .problems__item_bg10 {
       padding-bottom: calc(100% - 40px); }
+  .case-stages .projects_case .project_tall {
+    height: auto;
+    padding-bottom: 0 !important; }
   .case-stages .device_fit-width {
     max-width: 441px; }
 
@@ -6940,9 +6945,6 @@ a.button {
       justify-content: space-between; }
     .case2 .project_tall .project__review_author-desc {
       font-size: 14px !important; }
-  .case2 .project_tall:first-child {
-    padding-bottom: 0 !important;
-    height: auto; }
 
   .case3__content {
     grid-template-rows: 520px 520px; }
@@ -7860,7 +7862,6 @@ a.button {
   .case2 .project_tall {
     padding-bottom: 200% !important; }
   .case2 .project_tall:last-child {
-    padding-bottom: 120% !important;
     margin-bottom: 50px; }
   .case2 .principles__content_buttons {
     margin: 40px 0 60px;
