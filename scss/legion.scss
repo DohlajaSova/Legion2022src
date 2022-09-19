@@ -2515,7 +2515,7 @@ a.button {
 
 		&_text {
 			width: 49%;
-			padding-right: 4%;
+			// padding-right: 4%;
 			margin-bottom: 40px;
             padding-top: 10px;
 			color: $color-blue-dark;
@@ -3881,6 +3881,9 @@ a.button {
 					right: 0;
 					bottom: 0;
 					z-index: 1;
+					&.dots {
+						width: 45%;
+					}
 				}
 
 				&-name {
@@ -5957,7 +5960,8 @@ a.button {
 				background: #F0F0F0;
 				border-radius: 42px;
 				display: grid;
-				grid-template-columns: auto auto;
+				grid-template-columns: max-content auto;
+				// grid-template-columns: auto auto;
 				grid-template-rows: auto;
 
 				&__visual {
@@ -5999,7 +6003,8 @@ a.button {
 					}
 
 					&-transition {
-						text-align: center;
+						text-align: left;
+						// text-align: center;
 						font-size: 16px;
 						line-height: 130%;
 						color: #949191 !important;

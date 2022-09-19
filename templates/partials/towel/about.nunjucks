@@ -5,7 +5,7 @@
             <div class="about__animation_items circle-text">
                 <div class="circle-text__item">
                     <div class="circle-text__item_number">&gt;80</div>
-                    <div class="circle-text__item_label">клиентов со всего мира</div>
+                    <div class="circle-text__item_label">клиентов<br/>со всего мира</div>
                 </div>
                 <div class="circle-text__item">
                     <div class="circle-text__item_number">2005</div>
@@ -13,7 +13,7 @@
                 </div>
                 <div class="circle-text__item">
                     <div class="circle-text__item_number">150+</div>
-                    <div class="circle-text__item_label">сотрудников<br>&nbsp;</div>
+                    <div class="circle-text__item_label">сотрудников<br/>&nbsp;</div>
                 </div>
             </div>
         </div>

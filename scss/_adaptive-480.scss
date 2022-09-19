@@ -140,7 +140,7 @@
             &__review{
                 &_top{
                     min-height:210px!important;
-                    padding: 20px 30px;
+                    padding: 20px;
                     justify-content:space-around;
                     &-img._5ka {
                         bottom: -17px;
@@ -164,7 +164,7 @@
                     }
                 }
                 &_body {
-                    padding:20px 10px 20px 30px;
+                    padding:30px 20px;
                     margin: 0;
                 }
             }
@@ -183,6 +183,15 @@
         }
         &-client {
             margin-bottom: 0;
+            .cases__case{
+                margin: 0;
+                &_name{
+                    padding: 0 0 20px 20px;
+                }
+                &_info{
+                    height: 210px;
+                }
+            }
         }
     }
     .feedback{
@@ -281,6 +290,7 @@
         }
         &__present {
             min-height: 270px;
+            margin-bottom: 40px;
             &.venn {
                 min-height: 360px;
                 margin-bottom: 40px;
@@ -669,6 +679,60 @@
 }
 
 @media only screen and (max-width: 450px) {
+    .who-we-are__widget{
+        grid-template-columns: 1fr;
+        grid-gap:30px;
+        &_item{
+            width: 100%;
+            &.double{
+                margin-bottom: 14px;
+                grid-row-end:unset;
+                grid-column-end:unset;
+                .who-we-are__widget_container{
+                    .problems__item h3{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .vacancies{
+            margin:0;
+        }
+    }
+    .who-we-are__widget{
+        .who-we-are__widget_container{
+            .cases__case_name, .vacancy__title_name, .problems__item h3{
+                font-size: 5vw;
+                padding-right: 20px;
+            }
+            .cases__case .cases__case_photo img {
+                width: 20vw;
+                max-width: 90px;
+            }
+            .problems__more::before{
+                width: 58px;
+                height: 58px;
+            }
+            .problems__item {
+                padding: 30px 30px calc(100% - 30px);
+                .problems__more{
+                    font-size: 14px;
+                    &::before{
+                        margin:-10px 17px 0px 0;
+                    }
+                    &::after{
+                        left: -28px;
+                        top: 19px;
+                        transform: scale(1.3);
+                    }
+                }
+            
+            }
+        }
+        .vacancies{
+            margin:0;
+        }
+    }
     .who-we-are__widget_item.double{
         padding-bottom: 130%;
     }
@@ -713,6 +777,11 @@
             }
         }
     }
+    .client {
+        &__present {
+            margin-bottom: 0px;
+        }
+    }
     .projects{
         .project{
 			&__review_rubr{
@@ -721,6 +790,9 @@
 			&__review_body-client{
 				margin-top:10px;
 				margin-bottom:15px;
+                &__tele2{
+                    margin: 0;
+                }
 			}
             &.project-with-slider{
                 padding-bottom:200%;

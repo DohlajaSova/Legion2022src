@@ -58,22 +58,6 @@
     .body_about .top {
         background-size:cover;
     }
-    .header{
-        &__hmenu{
-            display:block;
-            // &.pmenu__mmenu_close{
-            //     display:none;
-            // }
-        }
-        &__mmenu{
-            a{
-                display:none;
-            }
-            &_lang{
-                display:inline-block !important;
-            }
-        }
-    }
     .device {
         &_fit-height {
             .device__screen {
@@ -92,6 +76,9 @@
     .case-stages__layout_var1 {
         padding: 0 0 49.2%;
         height: auto;
+    }
+    .cases__case_name {
+        padding: 0 60px 0 30px;
     }
 }
 
@@ -213,6 +200,15 @@
             &-client {
                 width: 100%;
                 height: 100%;
+            }
+            &_photo {
+                &-large{
+                    &__tele2{
+                        img{
+                            width: 50px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -673,10 +669,13 @@
                 padding-bottom: 130%;
                 .project__review_author-img {
                     width: 50%;
+					&.dots {
+						width: 38%;
+					}
 
                 }
                 .project__review_author-position{
-                    max-width:80%;
+                    max-width:74%;
                 }
             }
         }
@@ -918,6 +917,19 @@
     }
 }
 @media only screen and (max-width: 1080px) {
+    .header{
+        &__hmenu{
+            display:block;
+        }
+        &__mmenu{
+            a{
+                display:none;
+            }
+            &_lang{
+                display:inline-block !important;
+            }
+        }
+    }
     .who-we-are{
         &__widget{
             grid-template-columns: 1fr 1fr;
@@ -2020,6 +2032,14 @@
                 height:0;
                 &-5ka{
                     padding-bottom: 100%;
+                    .project__review_author-img {
+                        &.dots {
+                            width: 35%;
+                        }
+                    }
+                    .project__review_author-position{
+                        max-width:70%;
+                    }
                 }
                 &-with-slider{
                     // margin-bottom:54px;
@@ -2084,7 +2104,7 @@
                 }
                 &_small{
                     .project-article_link{
-                        padding:46px 42px;
+                        padding:30px 50px;
                         &-title{
                             font-size:24px;
                         }

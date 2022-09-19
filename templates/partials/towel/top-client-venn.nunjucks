@@ -199,10 +199,10 @@
               <a href="/services.html" class="cases__case_desc">Подробнее об услуге &rarr;</a>
           </div>
         </div>
-        <div class="project client" style="background: transparent">
-				<a href="#feedback" class=" " style="padding: 0; height: 100%;">
-			</a>
-        </div>
+        <!-- <div class="project client" style="background: transparent">
+				  <a href="#feedback" class=" " style="padding: 0; height: 100%;">
+			    </a>
+        </div> -->
       </div>
     </div>
   </div>

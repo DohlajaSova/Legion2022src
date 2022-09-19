@@ -7,7 +7,7 @@
             <div class="project__review light">
               <div class="project__review_top project__review_top-client dark">
                 <img
-                  class="project__review_author-img dark"
+                  class="project__review_author-img dark dots"
                   src="/assets/css/img/temp-author_dots.png"
                   alt="Пятёрочка"
                 />
@@ -28,7 +28,10 @@
                     <div class="cases-slider__item active">
                         <div class="cases-slider__item_nomination">
                             <h3 class="h2">№1</h3>
-                            <p>Лучшее мобильное решение/активация</p>
+                            <!-- <p>Лучшее мобильное решение/активация</p> -->
+                            <p>
+                                Tagline Awards 2020-2021 «Мобильное решение»
+                            </p>
                         </div>
                         <div class="cases-slider__item_project">
                             <div class="cases-slider__item_project-photo"><a href="https://vk.com/elegion?w=wall-34196694_1934" target="_blank"><img src="/assets/css/img/cases-slider-bg_jetkid.svg" alt="Jet Kid"></a></div>
@@ -37,7 +40,10 @@
                     <div class="cases-slider__item">
                         <div class="cases-slider__item_nomination">
                             <h3 class="h2">№2</h3>
-                            <p>Лучшее ритейл-приложение</p>
+                            <p>
+                                Tagline Awards 2020-2021 «Ритейл-приложение»
+                            </p>
+                            <!-- <p>Лучшее ритейл-приложение</p> -->
                         </div>
                         <div class="cases-slider__item_project">
                             <div class="cases-slider__item_project-photo"><a href="/client.html"><img src="/assets/css/img/cases-slider-bg_5ka.svg" alt="Пятёрочка"></a></div>
@@ -46,7 +52,10 @@
                     <div class="cases-slider__item">
                         <div class="cases-slider__item_nomination">
                             <h3 class="h2">№3</h3>
-                            <p>Лучшее приложение для телеком/IT/интернет-компании</p>
+                            <p>
+                                Tagline Awards 2020-2021 «Приложение для телеком/IT»
+                            </p>
+                            <!-- <p>Лучшее приложение для телеком/IT/интернет-компании</p> -->
                         </div>
                         <div class="cases-slider__item_project">
                             <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/cases-slider-bg_tele2.svg" alt="Tele2"></a></div>

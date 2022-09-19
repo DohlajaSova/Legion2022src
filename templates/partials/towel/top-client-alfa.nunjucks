@@ -161,13 +161,11 @@
           </div>
         </div>
         <div class="project client cases__case cases__case-client cases__case_info cases__case-blue">
-          <div class="cases__case_container">                    
+          <a href="/services.html" class="cases__case_container">                    
             <span class="cases__case_number"></span>
-              <span class="cases__case_name"
-                >Комплексная<br>разработка<br>digital-продуктов</span
-              >
-              <a href="#" class="cases__case_desc">Подробнее об услуге &rarr;</a>
-          </div>
+            <span class="cases__case_name">Комплексная<br>разработка<br>digital-продуктов</span>
+            <span class="cases__case_desc">Подробнее об услуге &rarr;</span>
+          </a>
         </div>
         <div class="project project_wide-client">
           <a

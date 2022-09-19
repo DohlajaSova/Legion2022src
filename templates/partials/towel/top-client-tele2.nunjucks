@@ -125,10 +125,10 @@
   <div class="projects projects-client">
     <div class="container">
       <div class="projects__panels projects__panels-client">
-        <div class="project project_tall project_tall-client" >
+        <div class="project project_tall project_tall-client">
           <div class="project__review_container">
             <div class="project__review light">
-              <div class="project__review_top project__review_top-client dark">
+              <div class="project__review_top project__review_top-client dark project__review_top-client__tele2">
                 <img
                   class="project__review_author-img"
                   src="/assets/css/img/review-author_tele2.png"
@@ -140,7 +140,7 @@
                   руководитель направления<br>мобильных приложений Tele2
                 </div>
               </div>
-              <div class="project__review_body project__review_body-client">
+              <div class="project__review_body project__review_body-client project__review_body-client__tele2">
                 Совместно с e-legion на протяжении 7 лет мы активно работаем над мобильным приложением. Быть на передовой и задавать тренды в мобильной разработке — задача непростая, но мы стараемся быстро адаптироваться к реализации новых задач и предугадывать будущие тренды.
               </div>
             </div>
@@ -153,7 +153,7 @@
               >Рейтинг Рунета 2021<br>номинация<br>«Сервисы»</span
             >
             <a href="https://vk.com/elegion?w=wall-34196694_2030" target="_blank" class="cases__case_desc">Подробнее &rarr;</a>
-            <span class="cases__case_photo cases__case_photo-large">
+            <span class="cases__case_photo cases__case_photo-large cases__case_photo-large__tele2">
               <img
                 src="/assets/css/img/cases-premia.png"
                 alt="Конкурс «Рейтинг Рунета»"
@@ -162,12 +162,10 @@
           </div>
         </div>
         <div class="project client cases__case cases__case-client cases__case_info cases__case-blue">
-          <a href="#" class="cases__case_container">                    
+          <a href="/services.html" class="cases__case_container">                    
             <span class="cases__case_number"></span>
-              <span class="cases__case_name"
-                >Комплексная<br>разработка<br>digital-продуктов</span
-              >
-              <span class="cases__case_desc">Подробнее об услуге &rarr;</span>
+            <span class="cases__case_name">Комплексная<br>разработка<br>digital-продуктов</span>
+            <span class="cases__case_desc">Подробнее об услуге &rarr;</span>
           </a>
         </div>
         <div class="project project_wide-client">
