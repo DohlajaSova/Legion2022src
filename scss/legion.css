@@ -1949,7 +1949,6 @@ a.button {
     width: 32%; }
   .principles__content_text {
     width: 49%;
-    padding-right: 4%;
     margin-bottom: 40px;
     padding-top: 10px;
     color: #1E2738; }
@@ -2817,6 +2816,8 @@ a.button {
         right: 0;
         bottom: 0;
         z-index: 1; }
+        .projects .project__review_author-img.dots {
+          width: 45%; }
       .projects .project__review_author-name {
         font-size: 46px;
         margin: 0;
@@ -4125,7 +4126,7 @@ a.button {
         background: #F0F0F0;
         border-radius: 42px;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: max-content auto;
         grid-template-rows: auto; }
         .service__feature_inner-case__visual {
           display: grid;
@@ -4156,7 +4157,7 @@ a.button {
             font-size: 24px;
             line-height: 130%; }
           .service__feature_inner-case__brief-transition {
-            text-align: center;
+            text-align: left;
             font-size: 16px;
             line-height: 130%;
             color: #949191 !important;
@@ -4227,11 +4228,16 @@ a.button {
   .vacancypage__content_brief {
     width: 50%;
     padding-right: 10%; }
+    .vacancypage__content_brief-container {
+      display: flex;
+      width: 100%; }
     .vacancypage__content_brief h3 {
       margin-bottom: 40px; }
     .vacancypage__content_brief dl {
-      column-count: 2;
-      column-gap: 5%; }
+      padding-right: 30px;
+      flex-grow: 1; }
+      .vacancypage__content_brief dl:last-child {
+        padding-right: 0; }
     .vacancypage__content_brief dt {
       color: #949191;
       margin-bottom: 15px; }
@@ -4660,13 +4666,6 @@ a.button {
   .body_about .top {
     background-size: cover; }
 
-  .header__hmenu {
-    display: block; }
-  .header__mmenu a {
-    display: none; }
-  .header__mmenu_lang {
-    display: inline-block !important; }
-
   .device_fit-height .device__screen {
     height: calc(100% - 22px);
     top: 10px; }
@@ -4676,7 +4675,10 @@ a.button {
 
   .case-stages__layout_var1 {
     padding: 0 0 49.2%;
-    height: auto; } }
+    height: auto; }
+
+  .cases__case_name {
+    padding: 0 60px 0 30px; } }
 @media only screen and (max-width: 1350px) {
   .top .h1 {
     width: 70%; }
@@ -4754,6 +4756,8 @@ a.button {
     .cases__case-client {
       width: 100%;
       height: 100%; }
+    .cases__case_photo-large__tele2 img {
+      width: 50px; }
 
   .cases-slider__item_nomination {
     padding-left: 22px;
@@ -5033,8 +5037,10 @@ a.button {
     padding-bottom: 130%; }
     .projects .project_tall-5ka .project__review_author-img {
       width: 50%; }
+      .projects .project_tall-5ka .project__review_author-img.dots {
+        width: 38%; }
     .projects .project_tall-5ka .project__review_author-position {
-      max-width: 80%; }
+      max-width: 74%; }
 
   .dummy-inprocess__text {
     bottom: 35px; }
@@ -5172,6 +5178,13 @@ a.button {
     top: 8px;
     border-radius: 12px; } }
 @media only screen and (max-width: 1080px) {
+  .header__hmenu {
+    display: block; }
+  .header__mmenu a {
+    display: none; }
+  .header__mmenu_lang {
+    display: inline-block !important; }
+
   .who-we-are__widget {
     grid-template-columns: 1fr 1fr; }
     .who-we-are__widget_item {
@@ -5869,6 +5882,10 @@ a.button {
     height: 0; }
     .projects .project_tall-5ka {
       padding-bottom: 100%; }
+      .projects .project_tall-5ka .project__review_author-img.dots {
+        width: 35%; }
+      .projects .project_tall-5ka .project__review_author-position {
+        max-width: 70%; }
     .projects .project_tall-with-slider .project__article_container {
       overflow: visible; }
     .projects .project_tall-with-slider .project-slider-article__statics_dots {
@@ -5904,7 +5921,7 @@ a.button {
     .projects .project__article_large .project-article_link-link {
       font-size: 16px; }
   .projects .project__article_small .project-article_link {
-    padding: 46px 42px; }
+    padding: 30px 50px; }
     .projects .project__article_small .project-article_link-title {
       font-size: 24px; }
   .projects .project__review_body {
@@ -6383,10 +6400,12 @@ a.button {
 
   .client__header {
     font-size: 74px; }
-  .client__present_desktop {
-    display: none; }
-  .client__present_mobile {
-    display: block; }
+  .client__present {
+    margin-bottom: 60px; }
+    .client__present_desktop {
+      display: none; }
+    .client__present_mobile {
+      display: block; }
   .client__cases {
     margin-bottom: 40px; }
     .client__cases_header {
@@ -6495,6 +6514,11 @@ a.button {
 
   .who-we-are__widget, .not-all-the-same {
     margin-bottom: 60px; }
+
+  .who-we-are__widget_item {
+    border-radius: 30px; }
+  .who-we-are__widget .who-we-are__widget_container .problems__item {
+    border-radius: 30px; }
 
   .projects h2 {
     margin-bottom: 60px; }
@@ -7064,10 +7088,10 @@ a.button {
       column-count: 1; }
       .about__text p {
         font-size: 14px;
-        margin-bottom: 16px; }
+        margin-bottom: 0; }
       .about__text_link {
         width: 100%;
-        text-align: right; }
+        text-align: left; }
         .about__text_link a {
           font-size: 14px; }
     .about__animation {
@@ -7289,6 +7313,20 @@ a.button {
     .vacancies.vacancies_page .vacancies__container {
       padding-bottom: 30px; }
 
+  .who-we-are__widget .who-we-are__widget_container .problems__item {
+    padding: 20px 20px calc(100% - 20px); }
+    .who-we-are__widget .who-we-are__widget_container .problems__item .problems__more {
+      left: 20px;
+      font-size: 12px; }
+      .who-we-are__widget .who-we-are__widget_container .problems__item .problems__more::before {
+        margin-right: 5px; }
+    .who-we-are__widget .who-we-are__widget_container .problems__item h3 {
+      font-size: 16px; }
+  .who-we-are__widget .vacancies {
+    margin: 0; }
+  .who-we-are__widget .cases__case .cases__case_photo img {
+    width: 65px; }
+
   .projects {
     border-radius: 30px 30px 0 0;
     margin-top: -30px;
@@ -7406,6 +7444,9 @@ a.button {
           .projects .project_tall .project__review_top-client {
             height: auto;
             padding-bottom: 0; }
+            .projects .project_tall .project__review_top-client__tele2 {
+              min-height: 260px;
+              padding-bottom: 20px; }
         .projects .project_tall .project__review_author {
           padding-top: 33px;
           padding-bottom: 25px; }
@@ -7537,18 +7578,6 @@ a.button {
 
   .project__review_body-client {
     font-size: 14px !important; }
-
-  .who-we-are__widget {
-    grid-template-columns: 1fr;
-    grid-gap: 30px; }
-    .who-we-are__widget_item {
-      width: 100%; }
-      .who-we-are__widget_item.double {
-        margin-bottom: 14px;
-        grid-row-end: unset;
-        grid-column-end: unset; }
-    .who-we-are__widget .vacancies {
-      margin: 0; }
 
   .case-stages__digit {
     width: 60px;
@@ -7687,7 +7716,7 @@ a.button {
 
   .projects .project__review_top {
     min-height: 210px !important;
-    padding: 20px 30px;
+    padding: 20px;
     justify-content: space-around; }
     .projects .project__review_top-img._5ka {
       bottom: -17px; }
@@ -7705,7 +7734,7 @@ a.button {
       max-width: 60%;
       font-size: 12px; }
   .projects .project__review_body {
-    padding: 20px 10px 20px 30px;
+    padding: 30px 20px;
     margin: 0; }
   .projects .project__article_small {
     flex-direction: row;
@@ -7717,6 +7746,12 @@ a.button {
     grid-template-rows: 1fr; }
   .projects-client {
     margin-bottom: 0; }
+    .projects-client .cases__case {
+      margin: 0; }
+      .projects-client .cases__case_name {
+        padding: 0 0 20px 20px; }
+      .projects-client .cases__case_info {
+        height: 210px; }
 
   .feedback {
     position: relative; }
@@ -7779,7 +7814,8 @@ a.button {
     line-height: 130%;
     margin-bottom: 40px; }
   .client__present {
-    min-height: 270px; }
+    min-height: 270px;
+    margin-bottom: 40px; }
     .client__present.venn {
       min-height: 360px;
       margin-bottom: 40px; }
@@ -8021,6 +8057,42 @@ a.button {
     border-radius: 30px 30px 0 0;
     padding-top: 60px; } }
 @media only screen and (max-width: 450px) {
+  .who-we-are__widget {
+    grid-template-columns: 1fr;
+    grid-gap: 30px; }
+    .who-we-are__widget_item {
+      width: 100%; }
+      .who-we-are__widget_item.double {
+        margin-bottom: 14px;
+        grid-row-end: unset;
+        grid-column-end: unset; }
+        .who-we-are__widget_item.double .who-we-are__widget_container .problems__item h3 {
+          font-size: 16px; }
+    .who-we-are__widget .vacancies {
+      margin: 0; }
+
+  .who-we-are__widget .who-we-are__widget_container .cases__case_name, .who-we-are__widget .who-we-are__widget_container .vacancy__title_name, .who-we-are__widget .who-we-are__widget_container .problems__item h3 {
+    font-size: 5vw;
+    padding-right: 20px; }
+  .who-we-are__widget .who-we-are__widget_container .cases__case .cases__case_photo img {
+    width: 20vw;
+    max-width: 90px; }
+  .who-we-are__widget .who-we-are__widget_container .problems__more::before {
+    width: 58px;
+    height: 58px; }
+  .who-we-are__widget .who-we-are__widget_container .problems__item {
+    padding: 30px 30px calc(100% - 30px); }
+    .who-we-are__widget .who-we-are__widget_container .problems__item .problems__more {
+      font-size: 14px; }
+      .who-we-are__widget .who-we-are__widget_container .problems__item .problems__more::before {
+        margin: -10px 17px 0px 0; }
+      .who-we-are__widget .who-we-are__widget_container .problems__item .problems__more::after {
+        left: -28px;
+        top: 19px;
+        transform: scale(1.3); }
+  .who-we-are__widget .vacancies {
+    margin: 0; }
+
   .who-we-are__widget_item.double {
     padding-bottom: 130%; }
 
@@ -8046,11 +8118,16 @@ a.button {
   .problems__item p {
     font-size: 16px; }
 
+  .client__present {
+    margin-bottom: 0px; }
+
   .projects .project__review_rubr {
     margin-bottom: 0; }
   .projects .project__review_body-client {
     margin-top: 10px;
     margin-bottom: 15px; }
+    .projects .project__review_body-client__tele2 {
+      margin: 0; }
   .projects .project.project-with-slider {
     padding-bottom: 200%; }
     .projects .project.project-with-slider .cases-slider__item {

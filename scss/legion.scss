@@ -6135,15 +6135,23 @@ a.button {
 		&_brief {
 			width: 50%;
 			padding-right: 10%;
+            
+            &-container{
+                display:flex;
+                width:100%;
+            }
 
 			h3 {
 				margin-bottom: 40px;
 			}
-
-			dl {
-				column-count: 2;
-				column-gap: 5%;
-			}
+            
+            dl{
+                padding-right: 30px;
+                flex-grow: 1;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
 
 			dt {
 				color: $color-grey-dark;

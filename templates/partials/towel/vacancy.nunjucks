@@ -3,12 +3,16 @@
         <div class="vacancypage__content">
             <div class="vacancypage__content_brief">
                 <h3>Описание</h3>
-                <dl>
-                    <dt>Опыт</dt>
-                    <dd>1–3 года</dd>
-                    <dt>Город</dt>
-                    <dd>Санкт-Петербург</dd>
-                </dl>
+                <div class="vacancypage__content_brief vacancypage__content_brief-container">
+                    <dl>
+                        <dt>Опыт</dt>
+                        <dd>1–3 года</dd>
+                    </dl>
+                    <dl>
+                        <dt>Город</dt>
+                        <dd>Санкт-Петербург, Удаленная работа</dd>
+                    </dl>
+                </div>
             </div>
             <div class="vacancypage__content_text">
                 <p>Привет! Нам в команду нужен человек-Android, который умеет писать чистый и качественный код.</p>
