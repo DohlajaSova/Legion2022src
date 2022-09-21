@@ -80,6 +80,44 @@
     .cases__case_name {
         padding: 0 60px 0 30px;
     }
+
+    .case__alfa{
+        &_problems{
+            &-item{
+                &__text{
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+
+    .client {
+        &__grid{
+            &_card{
+                &-tall{
+                    &__preview{
+                        &_info{
+                            &-content {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }	
+                &-accent {
+                    font-size: 6vw;
+                }
+                &-heading{
+                    font-size: 2vw;
+                }
+                &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+                    font-size: 1.5vw;
+                }
+                &-link, &-wide__info-link{
+                    // font-size: 1vw;
+                }
+            }
+        }    
+    }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -914,6 +952,44 @@
                 border-radius: 12px;
             }
         }
+    }
+    .client {
+        &__grid{
+            &_card{
+                &-tall{
+                    &__preview{
+                        &_info{
+                            &-content {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                    &__info{
+                        font-size: 1.6vw;
+                    }
+                }	
+                &-heading{
+                    font-size: 2.2vw;
+                }
+                &-accent + &-content{
+                    width: 100%;
+                }
+                &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+                    font-size: 1.6vw;
+                }
+                &-link, &-wide__info-link{
+                    // font-size: 1.2vw;
+                }
+                &-wide__image{
+                    max-width: 50%;
+                }
+                &-image{
+                    &-side{
+                        max-width: 60px;
+                    }
+                }
+            }
+        }    
     }
 }
 @media only screen and (max-width: 1080px) {
@@ -1773,6 +1849,48 @@
                 }
             }
         }
+        
+        &__grid{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr 1fr;
+            &_card{
+                border-radius: 30px;
+                &-tall{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    &__preview{
+                            &_info{
+                                &-content {
+                                    font-size: 6vw;
+                                }
+                            }
+                        }
+                        &__info{
+                            font-size: 3vw;
+                    }
+                }
+                &-accent {
+                    font-size: 7vw;
+                }
+                &-heading{
+                    font-size: 4vw;
+                }
+                &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+                    font-size: 2.5vw;
+                }
+                &-wide{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: auto;
+                    grid-row-end: auto;
+                    // &__image{
+                    //     max-width: 50%;
+                    // }
+                }
+            }
+        }    
     }
     .who-we-are{
         &__widget{
