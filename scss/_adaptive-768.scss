@@ -520,6 +520,9 @@
                 }
             }
         }
+        &__grid{
+            margin-bottom: 60px;
+        }
     }
     .client ~ .feedback {
         margin-bottom: 0; //было 60 пиксел!!!
@@ -1373,6 +1376,57 @@
             }
         }
     }
+    .client{
+        &__grid{
+            $padd: 20px 20px 14px 20px;
+            &_card{
+                padding: $padd;
+                &-tall{
+                    padding: 0;
+                    &__preview{
+                        padding: 20px 0 0 20px;
+                        &_info{
+						    padding: 0 0px 20px 0;
+                        }
+                    }
+                    &__info{
+                        padding: 40px 20px;
+
+                    }
+                }
+                &-wide{
+                    padding: 0;
+                    &__info{
+                        padding: $padd;
+                    }
+                    &__image{
+                        max-width: 48%;
+                    }
+                }
+                &-accent {
+                    line-height: 130%;
+                }
+                &-accent + &-content{
+                    width: 100%;
+                }
+                &-heading, &-wide__info-heading{
+                    font-size: 4vw;
+                }
+                &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+                    font-size: 3vw;
+                }
+                &-link, &-wide__info-link{
+                    font-size: 12px;
+                }
+                &-image{
+                    &.abr{
+                        right: 14px;
+                        bottom: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1400,7 +1454,6 @@
         }
         &__buttons{
             &_plus{
-                // display:none;
                 margin-top: -95px;
             }
         }

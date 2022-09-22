@@ -1,11 +1,11 @@
 ﻿<div class="client">
   <div class="container">
-      <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/portfolio.html">Портфолио</a></li>
-        <li><span>Альфа-Банк</span></li>
-      </ul>
+    <ul class="client__breadcrumbs breadcrumbs">
+      <li><a href="/portfolio.html">Портфолио</a></li>
+      <li><span>Альфа-Банк</span></li>
+    </ul>
   </div>
-  
+
   <h1 class="client__header">Альфа-Банк</h1>
 
   <div class="client__present">
@@ -20,108 +20,117 @@
       alt="Альфа-Банк"
     />
   </div>
-    
-  <div class="container">    
-      <div class="client__info">
-        <div class="client__info_stats">
-          <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Услуга</p>
-            <p class="client__info_stats-state__value">
-              Комплексная разработка digital-продуктов
-            </p>
-          </div>
-          <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Сотрудничество</p>
-            <p class="client__info_stats-state__value">с 2016 года</p>
-          </div>
-          <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Работы</p>
-            <p class="client__info_stats-state__value">
-              Анализ, прототипирование, дизайн, разработка, контроль качества, поддержка
-            </p>
-          </div>
-        </div>
-        <div class="client__info_text">
-          <p>
-            Альфа-Инвестиции — это мобильный инструмент для трейдинга и инвестирования от Альфа-Банка. Scrum-команда e-legion работала над приложением на протяжении 6 лет с 2016 по 2021 год, внедряя новую функциональность и улучшая сервис на основе запросов пользователей.
-          </p>
-          <p>
-            С 2017 года мы подключились к созданию личного кабинета сайта Альфа-Инвестиции — альтернативной версией мобильного приложения — которое продолжаем развивать по сей день.
+
+  <div class="container">
+    <div class="client__info">
+      <div class="client__info_stats">
+        <div class="client__info_stats-state">
+          <p class="client__info_stats-state__prop">Услуга</p>
+          <p class="client__info_stats-state__value">
+            Комплексная разработка digital-продуктов
           </p>
         </div>
-        <div class="cases__case cases__case_double">
-          <div class="cases-slider bg_alfa">
-            <div class="cases-slider__item active">
-              <div class="cases-slider__item_nomination">
-                <h3 class="h2">+ 23%</h3>
-                <p>увеличение дохода приложения</p>
-              </div>
-              <div class="cases-slider__item_project"></div>
+        <div class="client__info_stats-state">
+          <p class="client__info_stats-state__prop">Сотрудничество</p>
+          <p class="client__info_stats-state__value">с 2016 года</p>
+        </div>
+        <div class="client__info_stats-state">
+          <p class="client__info_stats-state__prop">Работы</p>
+          <p class="client__info_stats-state__value">
+            Анализ, прототипирование, дизайн, разработка, контроль качества,
+            поддержка
+          </p>
+        </div>
+      </div>
+      <div class="client__info_text">
+        <p>
+          Альфа-Инвестиции — это мобильный инструмент для трейдинга и
+          инвестирования от Альфа-Банка. Scrum-команда e-legion работала над
+          приложением на протяжении 6 лет с 2016 по 2021 год, внедряя новую
+          функциональность и улучшая сервис на основе запросов пользователей.
+        </p>
+        <p>
+          С 2017 года мы подключились к созданию личного кабинета сайта
+          Альфа-Инвестиции — альтернативной версией мобильного приложения —
+          которое продолжаем развивать по сей день.
+        </p>
+      </div>
+      <div class="cases__case cases__case_double">
+        <div class="cases-slider bg_alfa">
+          <div class="cases-slider__item active">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2">+ 23%</h3>
+              <p>увеличение дохода приложения</p>
             </div>
-            <div class="cases-slider__item">
-              <div class="cases-slider__item_nomination">
-                <h3 class="h2">+ 65%</h3>
-                <p>
-                  прирост активных<br>пользователей<br>в 2020 году
-                </p>
-              </div>
-              <div class="cases-slider__item_project"></div>
-            </div>
-            <div class="cases-slider__item">  
-              <div class="cases-slider__item_nomination">
-                <h3 class="h2">× 2,5</h3>
-                <p>
-                  увеличение числа установок
-                </p>
-              </div>
-              <div class="cases-slider__item_project"></div>
-            </div>
+            <div class="cases-slider__item_project"></div>
           </div>
-          <div class="cases-slider__statics js-cases-dots">
-            <div class="cases-slider__statics_dots">
-              <ul>
-                <li class="active"><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2">+ 65%</h3>
+              <p>прирост активных<br />пользователей<br />в 2020 году</p>
             </div>
+            <div class="cases-slider__item_project"></div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2">× 2,5</h3>
+              <p>увеличение числа установок</p>
+            </div>
+            <div class="cases-slider__item_project"></div>
+          </div>
+        </div>
+        <div class="cases-slider__statics js-cases-dots">
+          <div class="cases-slider__statics_dots">
+            <ul>
+              <li class="active"><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
           </div>
         </div>
       </div>
-  </div>
-    
-  <div class="container">    
-      <div class="client__cases">
-        <h2 class="client__cases_header">
-          Связанные <em>кейсы</em>
-        </h2>
-        <div class="client__cases_wrapper">
-          <a href="/case-alfa.html" class="client__cases_block client__cases_block-alfa">
-            <div class="client__cases_block-name">Портфель</div>
-            <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">брокерский счёт</div>
-              <div class="client__cases_block-parts__feature">календарь выплат</div>
-            </div>
-          </a>
-          <div class="client__cases_block inactive">
-            <div class="client__cases_block-name">Рынки</div>
-            <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">операции с валютой</div>
-              <div class="client__cases_block-parts__feature">графики</div>
-            </div>
-          </div>
-          <div class="client__cases_block inactive">
-            <div class="client__cases_block-name">Забота о пользователе</div>
-            <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">обучение</div>
-              <div class="client__cases_block-parts__feature">коммуникации</div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
   </div>
 
-  <div class="projects projects-client">
+  <div class="container">
+    <div class="client__cases">
+      <h2 class="client__cases_header">Связанные <em>кейсы</em></h2>
+      <div class="client__cases_wrapper">
+        <a
+          href="/case-alfa.html"
+          class="client__cases_block client__cases_block-alfa"
+        >
+          <div class="client__cases_block-name">Портфель</div>
+          <div class="client__cases_block-parts">
+            <div class="client__cases_block-parts__feature">
+              брокерский счёт
+            </div>
+            <div class="client__cases_block-parts__feature">
+              календарь выплат
+            </div>
+          </div>
+        </a>
+        <div class="client__cases_block inactive">
+          <div class="client__cases_block-name">Рынки</div>
+          <div class="client__cases_block-parts">
+            <div class="client__cases_block-parts__feature">
+              операции с валютой
+            </div>
+            <div class="client__cases_block-parts__feature">графики</div>
+          </div>
+        </div>
+        <div class="client__cases_block inactive">
+          <div class="client__cases_block-name">Забота о пользователе</div>
+          <div class="client__cases_block-parts">
+            <div class="client__cases_block-parts__feature">обучение</div>
+            <div class="client__cases_block-parts__feature">коммуникации</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="projects projects-client">
     <div class="container">
       <div class="projects__panels projects__panels-client">
         <div class="project project_tall project_tall-client" >
@@ -187,6 +196,102 @@
               <div class="project-article_link-arrow">Смотреть статью →</div>
             </div>
           </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="projects projects-client">
+    <div class="container">
+      <div class="client__grid">
+        <div
+          class="client__grid_card client__grid_card-tall client__grid_card-tall-grey"
+        >
+          <div
+            class="client__grid_card-tall__preview client__grid_card-tall__preview-dark"
+          >
+            <div class="client__grid_card-tall__preview_info">
+              <div class="client__grid_card-tall__preview_info-heading">
+                Отзыв
+              </div>
+              <div class="client__grid_card-tall__preview_info-content">
+                Виктор Ефимов
+              </div>
+              <div class="client__grid_card-tall__preview_info-undertext">
+                менеджер продукта<br />«Альфа-Инвестиции»
+              </div>
+            </div>
+            <img
+              class="client__grid_card-tall__preview_image"
+              src="/assets/css/img/temp-author_dots.png"
+              alt="Альфа-Банк"
+            />
+          </div>
+          <div
+            class="client__grid_card-tall__info client__grid_card-tall__info-dark"
+          >
+            Горжусь нашей командой и результатами в развитии продукта. Мы
+            достигли наших целей и перевыполнили план, привлекли
+            новичков-инвесторов и продолжаем делать приложение доступным для
+            каждого пользователя.<br /><br />Сила в людях. Сила в команде.
+          </div>
+        </div>
+        <div
+          class="client__grid_card client__grid_card-flex client__grid_card-std"
+        >
+          <div class="client__grid_card-accent">№1</div>
+          <!-- <div class="client__grid_card-heading">
+      </div> -->
+          <div class="client__grid_card-content">
+            Золотое приложение 2020 номинация «Инвестиции и коммерция»
+          </div>
+          <a
+            href="https://vk.com/elegion?w=wall-34196694_1888"
+            target="_blank"
+            class="client__grid_card-link"
+          >
+            Подробнее &rarr;
+          </a>
+          <img
+            class="client__grid_card-image abr client__grid_card-image-side"
+            src="/assets/css/img/cases-premia-2.png"
+            alt=""
+          />
+          <!-- <div class="client__grid_card-image background">
+        <img
+          src="/assets/css/img/img/cases-bg-venn.png"
+          alt=""
+        />
+      </div> -->
+        </div>
+        <div
+          class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue"
+        >
+          <div class="client__grid_card-content">
+            Комплексная<br />разработка<br />digital-продуктов
+          </div>
+          <a href="/services.html" class="client__grid_card-link">
+            Подробнее об услуге &rarr;
+          </a>
+        </div>
+        <div class="client__grid_card client__grid_card-wide">
+          <img
+            class="client__grid_card-wide__image br"
+            src="/assets/css/img/case-alfa.png"
+            alt=""
+          />
+          <div class="client__grid_card-wide__info">
+            <div class="client__grid_card-wide__info-content">
+              Альфа-Банк запустил новое приложение для инвестиций
+            </div>
+            <a
+              href="https://lenta.ru/news/2021/04/22/alfainv/"
+              target="_blank"
+              class="client__grid_card-wide__info-link"
+            >
+              Смотреть статью &rarr;
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -124,7 +124,7 @@
 
   <div class="projects projects-client">
     <div class="container">
-      <div class="projects__panels projects__panels-client">
+      <!-- <div class="projects__panels projects__panels-client">
         <div class="project project_tall project_tall-client">
           <div class="project__review_container">
             <div class="project__review light">
@@ -149,9 +149,7 @@
         <div class="project client cases__case cases__case-client cases__case_info">
           <div class="cases__case_container">
             <span class="cases__case_number cases__case_number-large">№3</span>
-            <span class="cases__case_name"
-              >Рейтинг Рунета 2021<br>номинация<br>«Сервисы»</span
-            >
+            <span class="cases__case_name">Рейтинг Рунета 2021<br>номинация<br>«Сервисы»</span>
             <a href="https://vk.com/elegion?w=wall-34196694_2030" target="_blank" class="cases__case_desc">Подробнее &rarr;</a>
             <span class="cases__case_photo cases__case_photo-large cases__case_photo-large__tele2">
               <img
@@ -188,6 +186,78 @@
               <div class="project-article_link-arrow">Смотреть статью →</div>
             </div>
           </a>
+        </div>
+      </div> -->
+
+      <div class="client__grid">
+        <div class="client__grid_card client__grid_card-tall client__grid_card-tall-grey">
+          <div class="client__grid_card-tall__preview client__grid_card-tall__preview-dark">
+            <div class="client__grid_card-tall__preview_info">
+              <div class="client__grid_card-tall__preview_info-heading">
+                Отзыв
+              </div>
+              <div class="client__grid_card-tall__preview_info-content">
+                Александр Смердов
+              </div>
+              <div class="client__grid_card-tall__preview_info-undertext">
+                руководитель направления<br>мобильных приложений Tele2
+              </div>
+            </div>
+            <img
+            class="client__grid_card-tall__preview_image"
+            src="/assets/css/img/review-author_tele2.png"
+            alt="Tele2"
+            />
+          </div>
+          <div class="client__grid_card-tall__info  client__grid_card-tall__info-dark">
+            Совместно с e-legion на протяжении 7 лет мы активно работаем над мобильным приложением. Быть на передовой и задавать тренды в мобильной разработке — задача непростая, но мы стараемся быстро адаптироваться к реализации новых задач и предугадывать будущие тренды.
+          </div>
+        </div>
+        <div class="client__grid_card client__grid_card-flex client__grid_card-std">
+          <div class="client__grid_card-accent">№3</div>
+          <!-- <div class="client__grid_card-heading">
+          </div> -->
+          <div class="client__grid_card-content">
+            Рейтинг Рунета 2021<br>номинация<br>«Сервисы»
+          </div>
+          <a href="https://vk.com/elegion?w=wall-34196694_2030" target="_blank" class="client__grid_card-link">
+            Подробнее &rarr;
+          </a>
+            <img class="client__grid_card-image abr client__grid_card-image-side"
+              src="/assets/css/img/cases-premia.png"
+              alt="Конкурс «Рейтинг Рунета»"
+            />
+          <!-- <div class="client__grid_card-image background">
+            <img
+              src="/assets/css/img/img/cases-bg-venn.png"
+              alt=""
+            />
+          </div> -->
+        </div>
+        <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue">
+          <div class="client__grid_card-content">
+            Комплексная<br>разработка<br>digital-продуктов
+          </div>
+          <a href="/services.html" class="client__grid_card-link">
+            Подробнее об услуге &rarr;
+          </a>
+        </div>
+        <div class="client__grid_card client__grid_card-wide">
+          <img
+            class="client__grid_card-wide__image br"
+            src="/assets/css/img/cases-tele2-phone.png"
+            alt=""
+          />
+          <div class="client__grid_card-wide__info">
+            <div class="client__grid_card-wide__info-content">
+              Tele2 воплотили идеи клиентов на площадке для продажи услуг
+            </div>
+            <a href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
+              target="_blank"
+              class="client__grid_card-wide__info-link">
+              Смотреть статью &rarr;
+            </a>
+          </div>
         </div>
       </div>
     </div>

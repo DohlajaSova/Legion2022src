@@ -385,6 +385,9 @@
                 font-size: 28px;
             }
         }
+        &__grid{
+            margin-bottom: 40px;
+        }
     }
     .request {
         &__lead{
@@ -750,6 +753,38 @@
     }
     .body_career .top .h1{
         font-size: 42px;
+    }
+    .client{
+        &__grid{
+            grid-template-rows: auto 1fr 1fr auto;
+            gap: 15px;
+            &_card{
+                &-std {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    min-height: 190px;
+                }
+                &-tall{
+                    &__info{
+                        padding: 20px 20px;
+                    }   
+                }
+                &-wide{
+                    &__image{
+                        max-width: 48%;
+                    }
+                }
+                &-heading{
+                    font-size: 6vw;
+                }
+                &-tall__preview_info-undertext{
+                    font-size: 14px;
+                }
+                &-content, &-wide__info-content, &-tall__preview_info-heading{
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 
