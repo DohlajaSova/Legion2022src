@@ -37,8 +37,7 @@
     </div>
 </footer>
 {% block after_body %}{% endblock %}
-<script src="assets/js/tiny-slider.js"></script>
-<script src="assets/js/elegion.js"></script>
+<script src="assets/js/app.js"></script>
 {% block scripts %}
 {% endblock %}
 </body>
