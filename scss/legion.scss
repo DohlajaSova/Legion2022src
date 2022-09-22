@@ -1575,12 +1575,6 @@ a.button {
 				display: flex;
 				flex-wrap: wrap;
 			}
-
-			&.tns-vertical {
-				.cases__case {
-					//padding-bottom:calc(25% - 15px);
-				}
-			}
 		}
 	}
 
@@ -2859,23 +2853,6 @@ a.button {
             // justify-content: center;
             align-items: center;
             padding: 40px 62px 40px 40px;
-        }
-        .circle{
-            &-about {
-                &__animation {
-                }
-            }
-            &-text {
-                &__item{
-                    &_label {
-                        
-                    }
-                }
-            }
-            &-pic {
-            }
-        }
-        .circle-text__item_label {
         }
     }
     &__content {
