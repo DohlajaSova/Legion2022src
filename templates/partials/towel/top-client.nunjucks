@@ -125,7 +125,7 @@
       </div>
   </div>
 
-  <div class="projects projects-client">
+  <!-- <div class="projects projects-client">
     <div class="container">
       <div class="projects__panels projects__panels-client">
         <div class="project project_tall project_tall-client" >
@@ -198,5 +198,79 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <div class="projects projects-client">
+    <div class="container">
+      <div class="client__grid">
+        <div class="client__grid_card client__grid_card-tall">
+          <div class="client__grid_card-tall__preview">
+            <div class="client__grid_card-tall__preview_info">
+              <div class="client__grid_card-tall__preview_info-heading">
+                Отзыв
+              </div>
+              <div class="client__grid_card-tall__preview_info-content">
+                Павел Бабий
+              </div>
+              <div class="client__grid_card-tall__preview_info-undertext">
+                начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
+              </div>
+            </div>
+            <img
+            class="client__grid_card-tall__preview_image"
+            src="/assets/css/img/temp-author_dots.png"
+            alt="Пятёрочка"
+            />
+          </div>
+          <div class="client__grid_card-tall__info">
+            Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших инструментов для торговой сети. С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.
+          </div>
+        </div>
+        <div class="client__grid_card client__grid_card-wide">
+          <img
+            class="client__grid_card-wide__image br"
+            src="/assets/css/img/temp-projects-5ka-spy.jpg"
+            alt="«Шпионский клуб»: итоги первого года работы"
+          />
+          <div class="client__grid_card-wide__info">
+            <div class="client__grid_card-wide__info-content">
+              «Шпионский клуб»: итоги первого года работы
+            </div>
+            <a href="/case2.html" class="client__grid_card-wide__info-link">
+              Смотреть статью &rarr;
+            </a>
+          </div>
+        </div>
+        <div class="client__grid_card client__grid_card-flex client__grid_card-std">
+          <div class="client__grid_card-accent">№ 1</div>
+          <!-- <div class="client__grid_card-heading">
+          </div> -->
+          <div class="client__grid_card-content">
+            Рейтинг Рунета 2021<br>номинация «Торговля и услуги»
+          </div>
+          <div class="client__grid_card-link">
+            Подробнее &rarr;
+          </div>
+            <img class="client__grid_card-image abr client__grid_card-image-side"
+              src="/assets/css/img/cases-premia.png"
+              alt="Конкурс «Рейтинг Рунета»"
+            />
+          <!-- <div class="client__grid_card-image background">
+            <img
+              src="/assets/css/img/img/cases-bg-venn.png"
+              alt=""
+            />
+          </div> -->
+        </div>
+        <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue">
+          <div class="client__grid_card-content">
+            Комплексная<br>разработка<br>digital-продуктов
+          </div>
+          <a href="/services.html" class="client__grid_card-link">
+            Подробнее об услуге &rarr;
+          </a>
+        </div>
+      </div>
+  </div>
   </div>
 </div>

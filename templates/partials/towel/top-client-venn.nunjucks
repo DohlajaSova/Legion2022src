@@ -131,7 +131,7 @@
 
   <div class="projects projects-client">
     <div class="container">
-      <div class="projects__panels projects__panels-client">
+      <!-- <div class="projects__panels projects__panels-client">
         <div class="project project_tall project_tall-client" >
           <div class="project__review_container">
             <div class="project__review dark">
@@ -139,7 +139,7 @@
                 <img
                   class="project__review_author-img light"
                   src="/assets/css/img/review-author_venn.png"
-                  alt="Tele2"
+                  alt="Venn"
                 />
                 <div class="project__review_rubr dark">Отзыв</div>
                 <h3 class="project__review_author-name dark">Jesper Algaard</h3>
@@ -170,7 +170,7 @@
               <div class="project-article_link-title">
                 Connecting new friendships &amp; shared activities nearby
               </div>
-              <div class="project-article_link-arrow">Смотреть статью →</div>
+              <div class="project-article_link-arrow">Смотреть статью &rarr;</div>
             </div>
           </a>
         </div>
@@ -199,10 +199,76 @@
               <a href="/services.html" class="cases__case_desc">Подробнее об услуге &rarr;</a>
           </div>
         </div>
-        <!-- <div class="project client" style="background: transparent">
-				  <a href="#feedback" class=" " style="padding: 0; height: 100%;">
-			    </a>
-        </div> -->
+      </div> -->
+      <!-- <div class="project client" style="background: transparent">
+        <a href="#feedback" class=" " style="padding: 0; height: 100%;">
+        </a>
+      </div> -->
+      <div class="client__grid">
+        <div class="client__grid_card client__grid_card-tall">
+          <div class="client__grid_card-tall__preview">
+            <div class="client__grid_card-tall__preview_info">
+              <div class="client__grid_card-tall__preview_info-heading">
+                Отзыв
+              </div>
+              <div class="client__grid_card-tall__preview_info-content">
+                Jesper Algaard
+              </div>
+              <div class="client__grid_card-tall__preview_info-undertext">
+                CEO Friendr AS
+              </div>
+            </div>
+            <img
+            class="client__grid_card-tall__preview_image"
+            src="/assets/css/img/review-author_venn.png"
+            alt="Venn"
+            />
+          </div>
+          <div class="client__grid_card-tall__info">
+            In my opinion e-legion is a serious and professional development company, with focus on high quality and with an eye for details. Easy to communicate with, and not afraid to communicate their views, even when it means that we are wrong. I can only give e-legion my highest recommendations.
+          </div>
+        </div>
+        <div class="client__grid_card client__grid_card-wide">
+          <img
+            class="client__grid_card-wide__image br"
+            src="/assets/css/img/case-venn.jpg"
+            alt=""
+          />
+          <div class="client__grid_card-wide__info">
+            <div class="client__grid_card-wide__info-content">
+              Connecting new friendships & shared activities nearby
+            </div>
+            <a href="" class="client__grid_card-wide__info-link">
+              Смотреть статью &rarr;
+            </a>
+          </div>
+        </div>
+        <div class="client__grid_card client__grid_card-std client__grid_card-venn_background">
+          <div class="client__grid_card-heading">
+            Международные проекты
+          </div>
+          <div class="client__grid_card-content">
+            Норвежский стартап, которым пользуются во всём мире
+          </div>
+            <img class="client__grid_card-image abr client__grid_card-image-side"
+              src="/assets/css/img/cases-premia-flag.png"
+              alt=""
+            />
+          <!-- <div class="client__grid_card-image background">
+            <img
+              src="/assets/css/img/img/cases-bg-venn.png"
+              alt=""
+            />
+          </div> -->
+        </div>
+        <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light client__grid_card-light cases__case-blue">
+          <div class="client__grid_card-content">
+            Масштабирование продукта
+          </div>
+          <a href="/services.html" class="client__grid_card-link">
+            Подробнее об услуге &rarr;
+          </a>
+        </div>
       </div>
     </div>
   </div>

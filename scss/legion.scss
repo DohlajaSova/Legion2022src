@@ -1575,12 +1575,6 @@ a.button {
 				display: flex;
 				flex-wrap: wrap;
 			}
-
-			&.tns-vertical {
-				.cases__case {
-					//padding-bottom:calc(25% - 15px);
-				}
-			}
 		}
 	}
 
@@ -2859,23 +2853,6 @@ a.button {
             // justify-content: center;
             align-items: center;
             padding: 40px 62px 40px 40px;
-        }
-        .circle{
-            &-about {
-                &__animation {
-                }
-            }
-            &-text {
-                &__item{
-                    &_label {
-                        
-                    }
-                }
-            }
-            &-pic {
-            }
-        }
-        .circle-text__item_label {
         }
     }
     &__content {
@@ -6411,6 +6388,157 @@ a.button {
 			opacity: 1;
 		}
 	}
+
+	&__grid {
+		margin-bottom: 80px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 20px;
+		$padd: 30px 30px 24px 30px;
+		&_card{
+			border-radius: 42px;
+			padding: $padd;
+			background-color: $color-grey-light;
+			overflow: hidden;
+			position: relative;
+			&-flex, &-wide__info {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+			}
+			&-tall{
+				padding: 0;
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 3;
+				background-color: $color-blue-dark;
+				&-grey{
+					background-color: $color-grey-light;
+				}
+				&__preview{
+					height: fill-available;
+					height: -webkit-fill-available;
+					height: -moz-available;
+					padding: 40px 0 0 40px;
+					position: relative;
+					border-radius: inherit;
+					overflow: hidden;
+					z-index: 2;
+					max-height: 53%;
+					background-color: $color-grey-light;
+					color: $color-blue-dark;
+					&-dark{
+						background-color: $color-blue-dark;
+						color: #fff;
+					}
+					display: flex;
+					justify-content: space-between;
+					&_info{
+						display: flex;
+						flex-flow: column;
+						height: 100%;
+						padding: 0 0px 40px 0;
+						max-width: 51%;
+						&-content {
+							margin-top: auto;
+							font-size: 46px;
+							line-height: 130%;
+						}
+					}
+					&_image{
+						width: 49%;
+						object-fit: contain;
+						object-position: bottom right;
+						&.abr{
+							position: absolute;
+							right: 0;
+							bottom: 0;
+						}
+					}
+				}
+				&__info{
+					padding: 40px;
+					display: flex;
+					font-size: 24px;
+					line-height: 130%;
+					color: #FFFFFF;
+					&-dark{
+						color: $color-blue-dark;
+					}
+				}
+			}
+			&-wide{
+				grid-column-start: 3;
+				grid-column-end: 5;
+				// grid-row-start: 1;
+				// grid-row-end: 2;
+				padding: 0;
+				display: flex;
+				flex-flow: row nowrap;
+				&__image {
+					&.br {
+						border-radius: inherit;
+					}
+				}
+				&__info{
+					padding: $padd;
+				}
+			}
+			&-image{
+				&.abr{
+					position: absolute;
+					right: 24px;
+					bottom: 24px;
+				}
+				&-side{
+					max-width: 80px;
+				}
+			}
+			
+			// card main styles
+			color: #1E2738;
+			a{
+				color: $color-grey-dark;
+				text-decoration: none;
+			}
+			
+			&-accent {
+				font-size: 74px;
+				line-height: 110%;
+			}
+			&-accent + &-content{
+				margin-bottom: auto;
+			}
+			&-heading{
+				font-size: 30px;
+				line-height: 130%;
+				margin-bottom: 18px;
+			}
+			&-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+				font-size: 24px;
+				line-height: 130%;
+			}
+			&-link, &-wide__info-link{
+				font-size: 16px;
+				line-height: 130%;
+				cursor: pointer;
+				color: $color-grey-dark;
+			}
+			// card color/style modify
+			&-light{
+				color: #fff;
+				a {
+					color: #fff;
+				}
+			}
+			&-venn_background{
+				background: $color-grey-light url("img/cases-bg-venn.png") center/cover no-repeat;
+			}
+		}
+	}
+
 	.principles {
 	    &__content{
 	        margin-bottom: 0;
@@ -6425,6 +6553,7 @@ a.button {
 	        }
 	    }
 	}
+
 	.project{
 	    &__review {
 	        &_body {
@@ -6540,7 +6669,7 @@ a.button {
                 line-height: 130%;
 				margin:  0 0 40px 0;
 				// font-size: 46px;
-    			font-size: 3vw;
+    			font-size: 46px;
 			}
 			&__img {
 				width: 100%;
