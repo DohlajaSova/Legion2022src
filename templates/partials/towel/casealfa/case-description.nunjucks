@@ -22,9 +22,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-alfa-phone1.jpg" alt="Alfa">
+                                        <img class="device__screen" src="/assets/css/img/temp-alfa-phone1.webp" alt="Alfa">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -32,9 +32,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-alfa-phone2.jpg" alt="Alfa">
+                                        <img class="device__screen" src="/assets/css/img/temp-alfa-phone2.webp" alt="Alfa">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@
         <div class="problems__item problems__item_bg10 case__alfa_problems">
             <div class="case__alfa_problems-item">
                 <div class="case__alfa_problems-item__text">Прирост просмотров экранов и активных пользователей за 3 года</div>
-                <img class="case__alfa_problems-item__img" src="/assets/css/img//temp-alfa-pic1.png">
+                <img class="case__alfa_problems-item__img" src="/assets/css/img//temp-alfa-pic1.webp">
             </div>
         </div>
     </div>
@@ -92,9 +92,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-alfa-phone3.jpg" alt="Alfa">
+                                            <img class="device__screen" src="/assets/css/img/temp-alfa-phone3.webp" alt="Alfa">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>
@@ -102,9 +102,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-alfa-phone4.jpg" alt="Alfa">
+                                            <img class="device__screen" src="/assets/css/img/temp-alfa-phone4.webp" alt="Alfa">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>
@@ -176,9 +176,9 @@
                         <div class="case-stages__layout_inner case-stages__layout_inner-centered">
                             <div class="device device_wide">
                                 <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-alfa-phone5.jpg" alt="Alfa">
+                                    <img class="device__screen" src="/assets/css/img/temp-alfa-phone5.webp" alt="Alfa">
                                     <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                     </div>
                                 </div>
                             </div>

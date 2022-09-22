@@ -100,7 +100,7 @@
                         >
                         <a href="client-alfa.html" class="cases__case_photo"
                           ><img
-                            src="/assets/css/img/temp-premia1.png"
+                            src="/assets/css/img/temp-premia1.webp"
                             alt="Премия «Золотое приложение»"
                         /></a>
                       </span>
@@ -113,7 +113,7 @@
                         >
                         <a href="client.html" class="cases__case_photo"
                           ><img
-                            src="/assets/css/img/temp-premia2.png"
+                            src="/assets/css/img/temp-premia2.webp"
                             alt="Конкурс «Рейтинг Рунета»"
                         /></a>
                       </span>
@@ -126,7 +126,7 @@
                         >
                         <span class="cases__case_photo"
                           ><img
-                            src="/assets/css/img/temp-premia3.png"
+                            src="/assets/css/img/temp-premia3.webp"
                             alt="Конкурс Tagline Awards"
                         /></span>
                       </span>

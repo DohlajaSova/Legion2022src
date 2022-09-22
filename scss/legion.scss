@@ -974,7 +974,7 @@ a.button {
 	&-pic {
 		width: 313px;
 		height: 313px;
-		background: url($img-path + "icon-rotate3.png") 0 0 no-repeat;
+		background: url($img-path + "icon-rotate3.webp") 0 0 no-repeat;
 		background-size: auto 100%;
 		position: absolute;
 		left: calc(50% - 160px);
@@ -1664,7 +1664,7 @@ a.button {
 		text-align: center;
 
 		&-blue {
-			background: url($img-path + "cases-bg-blue.png") center/cover no-repeat;
+			background: url($img-path + "cases-bg-blue.webp") center/cover no-repeat;
 
 			.cases__case_name,
 			.cases__case_desc {
@@ -1683,7 +1683,7 @@ a.button {
 			width: 100%;
 			height: 100%;
 			&.bg_venn {
-				background: url($img-path + "cases-bg-venn.png") center/cover no-repeat;
+				background: url($img-path + "cases-bg-venn.webp") center/cover no-repeat;
 			}
 		}
 
@@ -2716,7 +2716,7 @@ a.button {
             &-pic {
                 width: 320px;
                 height: 320px;
-                background: url("img/icon-rotate4.png") 50% 50% no-repeat!important;
+                background: url("img/icon-rotate4.webp") 50% 50% no-repeat!important;
             }
         }
         .circle-text__item_label {
@@ -2864,7 +2864,7 @@ a.button {
         &_card {
             display: flex;
             flex-flow: column nowrap;
-            background:url($img-path + "case3-content-background.png") center bottom no-repeat $color-blue-light;
+            background:url($img-path + "case3-content-background.webp") center bottom no-repeat $color-blue-light;
             background-size: cover;
             color: #fff;
             padding-top: 40px;
@@ -2893,10 +2893,10 @@ a.button {
             }
         }
         &_card:first-child{
-            background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
+            background:url($img-path + "case3-content-foreground.webp") bottom left no-repeat $color-blue-dark;
             background-size: contain;
 			&.casevenn {
-				background:url($img-path + "case_venn-content-foreground.png") bottom left no-repeat $color-blue-dark;
+				background:url($img-path + "case_venn-content-foreground.webp") bottom left no-repeat $color-blue-dark;
 				background-size: contain;
 			}
         }
@@ -3594,7 +3594,7 @@ a.button {
 				width: 48.5%;
 				padding-bottom: 48.5%;
 				height: 0;
-				background: url($img-path + "temp-clients.png") 0 0 no-repeat $color-blue;
+				background: url($img-path + "temp-clients.webp") 0 0 no-repeat $color-blue;
 				background-size: cover;
 				border-radius: $border-radius;
 				color: $color-white !important;
@@ -4885,7 +4885,7 @@ a.button {
 		&__circle {
 			width: 539px;
 			height: 539px;
-			background: url("img/icon-rotate1.png") 0 0 no-repeat;
+			background: url("img/icon-rotate1.webp") 0 0 no-repeat;
 			position: absolute;
 			left: calc(50% - 270px);
 			top: calc(50% - 270px);
@@ -5587,7 +5587,7 @@ a.button {
 	}
 
 	.top {
-		background: url($img-path + "about.jpg") top center no-repeat;
+		background: url($img-path + "about.webp") top center no-repeat;
 		background-size: 100% auto;
 		min-height: 544px;
 		display: flex;
@@ -5631,7 +5631,7 @@ a.button {
 	}
 
 	.top {
-		background: url($img-path + "career.jpg") top center no-repeat;
+		background: url($img-path + "career.webp") top center no-repeat;
 		background-size: cover;
 		min-height: 580px;
 		display: flex;
@@ -5680,7 +5680,7 @@ a.button {
 	}
 
 	.top {
-		background: url($img-path + "service.jpg") top center no-repeat;
+		background: url($img-path + "service.webp") top center no-repeat;
 		background-size: cover;
 		min-height: 544px;
 		display: flex;
@@ -6534,7 +6534,7 @@ a.button {
 				}
 			}
 			&-venn_background{
-				background: $color-grey-light url("img/cases-bg-venn.png") center/cover no-repeat;
+				background: $color-grey-light url("img/cases-bg-venn.webp") center/cover no-repeat;
 			}
 		}
 	}
@@ -6608,7 +6608,7 @@ a.button {
         &_card {
             display: flex;
             flex-flow: column nowrap;
-            background:url($img-path + "case3-content-background.png") center center no-repeat $color-blue-light;
+            background:url($img-path + "case3-content-background.webp") center center no-repeat $color-blue-light;
             background-size: cover;
             color: #fff;
             padding-top: 40px;
@@ -6647,7 +6647,7 @@ a.button {
             }
         }
         &_card:first-child{
-            background:url($img-path + "case3-content-foreground.png") bottom left no-repeat $color-blue-dark;
+            background:url($img-path + "case3-content-foreground.webp") bottom left no-repeat $color-blue-dark;
             background-size: contain;
         }
     }

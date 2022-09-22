@@ -13,8 +13,8 @@
         </div>
 
         <div class="top__image">
-            <img class="top__image-desktop" src="/assets/css/img/temp-alfa-top.jpg" alt=">Приложение «Альфа-Инвестиции». Портфель">
-            <img class="top__image-tablet" src="/assets/css/img/temp-alfa-top768.jpg" alt=">Приложение «Альфа-Инвестиции». Портфель">
+            <img class="top__image-desktop" src="/assets/css/img/temp-alfa-top.webp" alt=">Приложение «Альфа-Инвестиции». Портфель">
+            <img class="top__image-tablet" src="/assets/css/img/temp-alfa-top768.webp" alt=">Приложение «Альфа-Инвестиции». Портфель">
         </div>
     </div>
 </div>

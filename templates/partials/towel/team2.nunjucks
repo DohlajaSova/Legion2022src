@@ -10,7 +10,7 @@
             <div class="team__list">
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Zherebcov_v2.jpg" alt="Никита Жеребцов"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Zherebcov_v2.webp" alt="Никита Жеребцов"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Никита Жеребцов</div>
                             <div class="teammate__body_position">руководитель отдела дизайна</div>
@@ -19,7 +19,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Volkov.jpg" alt="Виктор Волков"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Volkov.webp" alt="Виктор Волков"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Виктор Волков</div>
                             <div class="teammate__body_position">руководитель отдела iOS-разработки</div>
@@ -28,7 +28,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Trofimov.jpg" alt="Никита Трофимов"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Trofimov.webp" alt="Никита Трофимов"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Никита Трофимов</div>
                             <div class="teammate__body_position">руководитель клиентской службы</div>
@@ -37,7 +37,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Rizvanova.jpg" alt="Екатерина Ризванова"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Rizvanova.webp" alt="Екатерина Ризванова"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Катя Ризванова</div>
                             <div class="teammate__body_position">директор по персоналу</div>
@@ -46,7 +46,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Nikiforov.jpg" alt="Григорий Никифоров"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Nikiforov.webp" alt="Григорий Никифоров"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Гриша Никифоров</div>
                             <div class="teammate__body_position">руководитель проектного офиса</div>
@@ -55,7 +55,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Glazunov.jpg" alt="Алексей Глазунов"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Glazunov.webp" alt="Алексей Глазунов"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Алексей Глазунов</div>
                             <div class="teammate__body_position">руководитель отдела анализа</div>
@@ -64,7 +64,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Denisova.jpg" alt="Елена Денисова"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Denisova.webp" alt="Елена Денисова"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Елена Денисова</div>
                             <div class="teammate__body_position">заместитель исполнительного директора</div>
@@ -73,7 +73,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Barannikov.jpg" alt="Михаил Баранников"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Barannikov.webp" alt="Михаил Баранников"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Миша Баранников</div>
                             <div class="teammate__body_position">руководитель отдела мобильной разработки</div>
@@ -82,7 +82,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Usmanov.jpg" alt="Рамиль Усманов"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Usmanov.webp" alt="Рамиль Усманов"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Рамиль Усманов</div>
                             <div class="teammate__body_position">руководитель отдела качества</div>
@@ -91,7 +91,7 @@
                 </span>
                 <span class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Afonin.jpg" alt="Сергей Афонин"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Afonin.webp" alt="Сергей Афонин"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Сергей Афонин</div>
                             <div class="teammate__body_position">руководитель отдела заказной разработки</div>

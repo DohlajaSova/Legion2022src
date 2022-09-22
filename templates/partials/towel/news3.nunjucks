@@ -3,25 +3,25 @@
         <h2>Кое-что <br><em>на почитать</em></h2>
         <div class="news__items">
             <a href="https://vk.com/wall-34196694_2040?w=wall-34196694_2040" target="_blank" class="news-item">
-                <div class="news-item__img"><img src="/assets/css/img/temp-news6.jpg" alt=""></div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news6.webp" alt=""></div>
                 <div class="news-item__date">10 декабря 2021</div>
                 <div class="news-item__head">Я сам не&nbsp;смотрю, но&nbsp;подписался</div>
                 <div class="news-item__lead">Статья от&nbsp;архитектора решений e-legion о&nbsp;том, почему микросервисы&nbsp;— не&nbsp;панацея. Разбираемся, чем монолиты отличаются от&nbsp;микросервисов, и&nbsp;какое решение лучше выбрать.</div>
             </a>
             <a href="https://habr.com/ru/company/e-legion/blog/588657/" target="_blank" class="news-item">
-                <div class="news-item__img"><img src="/assets/css/img/temp-news2.jpg" alt=""></div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news2.webp" alt=""></div>
                 <div class="news-item__date">12 ноября 2021</div>
                 <div class="news-item__head">Custom view на&nbsp;Compose</div>
                 <div class="news-item__lead">Показываем, как реализовать рыночный график со&nbsp;скроллом и&nbsp;зумом на&nbsp;Compose.</div>
             </a>
             <a href="https://vk.com/elegion?w=wall-34196694_2026" target="_blank" class="news-item">
-                <div class="news-item__img"><img src="/assets/css/img/temp-news7.jpg" alt=""></div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news7.webp" alt=""></div>
                 <div class="news-item__date">5 октября 2021</div>
                 <div class="news-item__head">e-legion Hack</div>
                 <div class="news-item__lead">Рассказываем, как прошёл наш хакатон, и&nbsp;показываем победителей.</div>
             </a>
             <a href="https://teletype.in/@e-legion/Z2Defe92WuB" target="_blank" class="news-item">
-                <div class="news-item__img"><img src="/assets/css/img/temp-news8.jpg" alt=""></div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news8.Ыp" alt=""></div>
                 <div class="news-item__date">15 июля 2021</div>
                 <div class="news-item__head">Алгоритм успешного собеседования</div>
                 <div class="news-item__lead">Делимся советами и&nbsp;проверенными личными лайфхаками о&nbsp;том, как подготовиться к&nbsp;успешному собеседованию.</div>

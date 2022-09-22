@@ -7,7 +7,7 @@
                     <div class="project">
                         <a href="/career.html" class="project__article project__article_small project-article">
                         <div class="project-article_top">
-                            <img class="project-article_top-img" src="/assets/css/img/temp-projects4.jpg" alt="Открытые вакансии">
+                            <img class="project-article_top-img" src="/assets/css/img/temp-projects4.webp" alt="Открытые вакансии">
                         </div>
                         <div class="project-article_link">
                           <div class="project-article_link-title">Открытые вакансии</div>
@@ -18,7 +18,7 @@
                     <div class="project">
                         <a href="/request.html" class="project__article project__article_small project-article">
                         <div class="project-article_top">
-                            <img class="project-article_top-img" src="/assets/css/img/temp-projects5.jpg" alt="Обсудить проект">
+                            <img class="project-article_top-img" src="/assets/css/img/temp-projects5.webp" alt="Обсудить проект">
                         </div>
                         <div class="project-article_link">
                           <div class="project-article_link-title">Обсудить проект</div>

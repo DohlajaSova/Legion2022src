@@ -36,9 +36,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone1.jpg" alt="Tele-2">
+                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone1.webp" alt="Tele-2">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -46,9 +46,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone2.jpg" alt="Tele-2">
+                                        <img class="device__screen" src="/assets/css/img/temp-tele2-phone2.webp" alt="Tele-2">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -74,8 +74,8 @@
         </div>
         <div class="problems__item problems__item_bg9">
             <div class="client__present venn problems__item_videosection">
-                <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.jpg" alt="Venn"/>
-                <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.jpg" alt="Venn"/>
+                <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.webp" alt="Venn"/>
+                <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.webp" alt="Venn"/>
                 <img
                 class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
                 <video class="client__present-video" preload="auto" playsinline loop autoplay muted>
@@ -120,9 +120,9 @@
                         <div class="case-stages__layout_inner case-stages__layout_inner-centered">
                             <div class="device device_wide">
                                 <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-tele2-phone3.jpg" alt="Tele-2">
+                                    <img class="device__screen" src="/assets/css/img/temp-tele2-phone3.webp" alt="Tele-2">
                                     <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                     </div>
                                 </div>
                             </div>
@@ -158,9 +158,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone5.jpg" alt="Tele-2">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone5.webp" alt="Tele-2">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>
@@ -168,9 +168,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone6.jpg" alt="Tele-2">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone6.webp" alt="Tele-2">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>
@@ -178,9 +178,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone7.jpg" alt="Tele-2">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone7.webp" alt="Tele-2">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>
@@ -188,9 +188,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone8.jpg" alt="Tele-2">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone8.webp" alt="Tele-2">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>
@@ -198,9 +198,9 @@
                                 <span class="problems-slider-groups__item">
                                     <div class="device device_fit-height">
                                         <div class="device__wrapper">
-                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone9.jpg" alt="Tele-2">
+                                            <img class="device__screen" src="/assets/css/img/temp-tele2-phone9.webp" alt="Tele-2">
                                             <div class="device__shadow">
-                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                             </div>
                                         </div>
                                     </div>

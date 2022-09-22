@@ -37,9 +37,9 @@
                         <span class="problems-slider-groups__item">
                             <div class="device device_fit-height">
                                 <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone16.jpg" alt="Пятёрочка">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone16.webp" alt="Пятёрочка">
                                     <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                     </div>
                                 </div>
                             </div>
@@ -47,9 +47,9 @@
                         <span class="problems-slider-groups__item">
                             <div class="device device_fit-height">
                                 <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone15.jpg" alt="Пятёрочка">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone15.webp" alt="Пятёрочка">
                                     <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                     </div>
                                 </div>
                             </div>
@@ -57,9 +57,9 @@
                         <span class="problems-slider-groups__item">
                             <div class="device device_fit-height">
                                 <div class="device__wrapper">
-                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
+                                    <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.webp" alt="Пятёрочка">
                                     <div class="device__shadow">
-                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                        <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                     </div>
                                 </div>
                             </div>
@@ -84,8 +84,8 @@
         </div>
         <div class="problems__item problems__item_bg9">
             <div class="client__present venn problems__item_videosection">
-                <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.jpg" alt="Venn"/>
-                <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.jpg" alt="Venn"/>
+                <img class="client__present_desktop venn" src="/assets/css/img/client-venn-preview.webp" alt="Venn"/>
+                <img class="client__present_mobile venn" src="/assets/css/img/client-venn-preview_mobile.webp" alt="Venn"/>
                 <img class="client__present-play venn" src="/assets/css/img/play.fill.svg"/>
                 <video
                     class="client__present-video"
@@ -132,9 +132,9 @@
                 <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
                     <div class="device device_wide">
                         <div class="device__wrapper">
-                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.jpg" alt="Пятёрочка">
+                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.webp" alt="Пятёрочка">
                             <div class="device__shadow">
-                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                             </div>
                         </div>
                     </div>
@@ -167,9 +167,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.jpg" alt="Пятёрочка">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.webp" alt="Пятёрочка">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -177,9 +177,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone13.jpg" alt="Пятёрочка">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone13.webp" alt="Пятёрочка">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -187,9 +187,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone17.jpg" alt="Пятёрочка">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone17.webp" alt="Пятёрочка">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>

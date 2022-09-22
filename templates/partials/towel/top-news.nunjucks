@@ -12,7 +12,7 @@
                                       <div class="project-article_top-rubr1 project-article_top-nodesc-rubr1">Социальные проекты</div>
                                       <div class="project-article_top-rubr2 project-article_top-nodesc-rubr2">Экспедиция на&nbsp;Белое море</div>
                                       <div class="project-article_link-arrow project-article_top-nodesc-arrow">Подробнее →</div>
-                                      <img class="project-article_top-img project-article_top-nodesc-img" src="/assets/css/img/temp-projects2.jpg" alt="Экспедиция на&nbsp;Белое море"/>
+                                      <img class="project-article_top-img project-article_top-nodesc-img" src="/assets/css/img/temp-projects2.webp" alt="Экспедиция на&nbsp;Белое море"/>
                                     </div>
                                 </a>
                             </div>
@@ -33,7 +33,7 @@
                             <p>Tagline Awards 2020-2021 «Мобильное решение»</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-jetkid.png" alt="Jet Kid"></a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-jetkid.webp" alt="Jet Kid"></a></div>
                             <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                             <p>Tagline Awards 2020-2021 «Приложение для&nbsp;телеком/IT»</p>
                         </div>
                         <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-tele2.png" alt="Tele2"></a></div>
+                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-tele2.webp" alt="Tele2"></a></div>
                             <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
             <div class="project">
             	<a href="https://vc.ru/tech/352522-rossiyskuyu-operacionnuyu-sistemu-fantom-doveli-do-testirovaniya-posle-12-let-razrabotki-s-nulya" target="_blank" class="project__article project__article_small project-article">
               	<div class="project-article_top">
-	                <img class="project-article_top-img" src="/assets/css/img/temp-projects1.jpg" alt="Российская операционная система «Фантом»"/>
+	                <img class="project-article_top-img" src="/assets/css/img/temp-projects1.webp" alt="Российская операционная система «Фантом»"/>
                 </div>
                 <div class="project-article_link">
                   <div class="project-article_link-title">Российская операционная система «Фантом»</div>

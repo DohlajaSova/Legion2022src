@@ -30,13 +30,13 @@
                     <div class="device__wrapper">
                       <img
                         class="device__screen"
-                        src="/assets/css/img/temp-5ka-phone5.jpg"
+                        src="/assets/css/img/temp-5ka-phone5.webp"
                         alt="Пятёрочка"
                       />
                       <div class="device__shadow">
                         <img
                           class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.png"
+                          src="/assets/css/img/phone-iphone12pro.webp"
                         />
                       </div>
                     </div>
@@ -47,13 +47,13 @@
                     <div class="device__wrapper">
                       <img
                         class="device__screen"
-                        src="/assets/css/img/temp-5ka-phone6.jpg"
+                        src="/assets/css/img/temp-5ka-phone6.webp"
                         alt="Пятёрочка"
                       />
                       <div class="device__shadow">
                         <img
                           class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.png"
+                          src="/assets/css/img/phone-iphone12pro.webp"
                         />
                       </div>
                     </div>
@@ -150,13 +150,13 @@
                 <div class="device__wrapper">
                   <img
                     class="device__screen"
-                    src="/assets/css/img/temp-5ka-phone7.jpg"
+                    src="/assets/css/img/temp-5ka-phone7.webp"
                     alt="Пятёрочка"
                   />
                   <div class="device__shadow">
                     <img
                       class="device__phone"
-                      src="/assets/css/img/phone-iphone12pro.png"
+                      src="/assets/css/img/phone-iphone12pro.webp"
                     />
                   </div>
                 </div>
@@ -199,7 +199,7 @@
               <div class="project__review_top">
                 <img
                   class="project__review_top-img"
-                  src="/assets/css/img/temp-author4.png"
+                  src="/assets/css/img/temp-author4.webp"
                   alt="Марина Янцен"
                 />
                 <div class="project__review_rubr">Отзыв</div>

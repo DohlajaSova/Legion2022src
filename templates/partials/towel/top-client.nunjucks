@@ -11,12 +11,12 @@
   <div class="client__present">
     <img
       class="client__present_desktop"
-      src="/assets/css/img/client-5ka-preview.jpg"
+      src="/assets/css/img/client-5ka-preview.webp"
       alt="Пятёрочка"
     />
     <img
       class="client__present_mobile"
-      src="/assets/css/img/client-5ka-preview_mobile.jpg"
+      src="/assets/css/img/client-5ka-preview_mobile.webp"
       alt="Пятёрочка"
     />
   </div>
@@ -134,7 +134,7 @@
               <div class="project__review_top project__review_top-client light">
                 <img
                   class="project__review_author-img light"
-                  src="/assets/css/img/temp-author_dots.png"
+                  src="/assets/css/img/temp-author_dots.webp"
                   alt="Пятёрочка"
                 />
                 <div class="project__review_rubr dark">Отзыв</div>
@@ -158,7 +158,7 @@
             <div class="project-article_top">
               <img
                 class="project-article_top-img project-article_top-img-client"
-                src="/assets/css/img/temp-projects-5ka-spy.jpg"
+                src="/assets/css/img/temp-projects-5ka-spy.webp"
                 alt="«Шпионский клуб»: итоги первого года работы"
               />
             </div>
@@ -179,7 +179,7 @@
             <a href="#" class="cases__case_desc">Подробнее &rarr;</a>
             <span class="cases__case_photo cases__case_photo-large">
               <img
-                src="/assets/css/img/cases-premia.png"
+                src="/assets/css/img/cases-premia.webp"
                 alt="Конкурс «Рейтинг Рунета»"
               />
             </span>
@@ -218,7 +218,7 @@
             </div>
             <img
             class="client__grid_card-tall__preview_image"
-            src="/assets/css/img/temp-author_dots.png"
+            src="/assets/css/img/temp-author_dots.webp"
             alt="Пятёрочка"
             />
           </div>
@@ -229,7 +229,7 @@
         <div class="client__grid_card client__grid_card-wide">
           <img
             class="client__grid_card-wide__image br"
-            src="/assets/css/img/temp-projects-5ka-spy.jpg"
+            src="/assets/css/img/temp-projects-5ka-spy.webp"
             alt="«Шпионский клуб»: итоги первого года работы"
           />
           <div class="client__grid_card-wide__info">
@@ -252,12 +252,12 @@
             Подробнее &rarr;
           </div>
             <img class="client__grid_card-image abr client__grid_card-image-side"
-              src="/assets/css/img/cases-premia.png"
+              src="/assets/css/img/cases-premia.webp"
               alt="Конкурс «Рейтинг Рунета»"
             />
           <!-- <div class="client__grid_card-image background">
             <img
-              src="/assets/css/img/img/cases-bg-venn.png"
+              src="/assets/css/img/img/cases-bg-venn.webp"
               alt=""
             />
           </div> -->

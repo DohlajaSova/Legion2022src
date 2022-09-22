@@ -24,9 +24,9 @@
                 <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
                     <div class="device device_wide">
                         <div class="device__wrapper">
-                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.jpg" alt="Пятёрочка">
+                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.webp" alt="Пятёрочка">
                             <div class="device__shadow">
-                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                             </div>
                         </div>
                     </div>
@@ -52,9 +52,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.jpg" alt="Пятёрочка">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone11.webp" alt="Пятёрочка">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -62,9 +62,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.jpg" alt="Пятёрочка">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone12.webp" alt="Пятёрочка">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -72,9 +72,9 @@
                             <span class="problems-slider-groups__item">
                                 <div class="device device_fit-height">
                                     <div class="device__wrapper">
-                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone13.jpg" alt="Пятёрочка">
+                                        <img class="device__screen" src="/assets/css/img/temp-5ka-phone13.webp" alt="Пятёрочка">
                                         <div class="device__shadow">
-                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.png">
+                                            <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
                     <div class="project__review_container">
                         <div class="project__review">
                             <div class="project__review_top">
-                                <img class="project__review_top-img" src="/assets/css/img/temp-author4.png" alt="Марина Янцен"/>
+                                <img class="project__review_top-img" src="/assets/css/img/temp-author4.webp" alt="Марина Янцен"/>
                                 <div class="project__review_rubr">Отзыв</div>
                                 <div class="project__review_body">
                                     Ценной особенностью «Шпионского клуба» был близкий контакт с&nbsp;нашими пользователями&nbsp;— агентами клуба. С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая массу отзывов и&nbsp;идей развития продукта. Многое удалось воплотить!

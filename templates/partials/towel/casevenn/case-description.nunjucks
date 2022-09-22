@@ -44,13 +44,13 @@
                   <div class="device__wrapper">
                     <img
                       class="device__screen"
-                      src="/assets/css/img/temp-venn-phone1.jpg"
+                      src="/assets/css/img/temp-venn-phone1.webp"
                       alt="Venn"
                     />
                     <div class="device__shadow">
                       <img
                         class="device__phone"
-                        src="/assets/css/img/phone-iphone12pro.png"
+                        src="/assets/css/img/phone-iphone12pro.webp"
                       />
                     </div>
                   </div>
@@ -61,13 +61,13 @@
                   <div class="device__wrapper">
                     <img
                       class="device__screen"
-                      src="/assets/css/img/temp-venn-phone2.jpg"
+                      src="/assets/css/img/temp-venn-phone2.webp"
                       alt="Venn"
                     />
                     <div class="device__shadow">
                       <img
                         class="device__phone"
-                        src="/assets/css/img/phone-iphone12pro.png"
+                        src="/assets/css/img/phone-iphone12pro.webp"
                       />
                     </div>
                   </div>
@@ -78,13 +78,13 @@
                   <div class="device__wrapper">
                     <img
                       class="device__screen"
-                      src="/assets/css/img/temp-venn-phone3.jpg"
+                      src="/assets/css/img/temp-venn-phone3.webp"
                       alt="Venn"
                     />
                     <div class="device__shadow">
                       <img
                         class="device__phone"
-                        src="/assets/css/img/phone-iphone12pro.png"
+                        src="/assets/css/img/phone-iphone12pro.webp"
                       />
                     </div>
                   </div>
@@ -113,12 +113,12 @@
       <div class="client__present venn problems__item_videosection">
         <img
           class="client__present_desktop venn"
-          src="/assets/css/img/client-venn-preview.jpg"
+          src="/assets/css/img/client-venn-preview.webp"
           alt="Venn"
         />
         <img
           class="client__present_mobile venn"
-          src="/assets/css/img/client-venn-preview_mobile.jpg"
+          src="/assets/css/img/client-venn-preview_mobile.webp"
           alt="Venn"
         />
         <img
@@ -189,13 +189,13 @@
                 <div class="device__wrapper">
                   <img
                     class="device__screen"
-                    src="/assets/css/img/temp-venn-phone4.jpg"
+                    src="/assets/css/img/temp-venn-phone4.webp"
                     alt="Venn"
                   />
                   <div class="device__shadow">
                     <img
                       class="device__phone"
-                      src="/assets/css/img/phone-iphone12pro.png"
+                      src="/assets/css/img/phone-iphone12pro.webp"
                     />
                   </div>
                 </div>
@@ -236,13 +236,13 @@
                     <div class="device__wrapper">
                       <img
                         class="device__screen"
-                        src="/assets/css/img/temp-venn-phone5.jpg"
+                        src="/assets/css/img/temp-venn-phone5.webp"
                         alt="Venn"
                       />
                       <div class="device__shadow">
                         <img
                           class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.png"
+                          src="/assets/css/img/phone-iphone12pro.webp"
                         />
                       </div>
                     </div>
@@ -253,13 +253,13 @@
                     <div class="device__wrapper">
                       <img
                         class="device__screen"
-                        src="/assets/css/img/temp-venn-phone6.jpg"
+                        src="/assets/css/img/temp-venn-phone6.webp"
                         alt="Venn"
                       />
                       <div class="device__shadow">
                         <img
                           class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.png"
+                          src="/assets/css/img/phone-iphone12pro.webp"
                         />
                       </div>
                     </div>
@@ -270,13 +270,13 @@
                     <div class="device__wrapper">
                       <img
                         class="device__screen"
-                        src="/assets/css/img/temp-venn-phone7.jpg"
+                        src="/assets/css/img/temp-venn-phone7.webp"
                         alt="Venn"
                       />
                       <div class="device__shadow">
                         <img
                           class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.png"
+                          src="/assets/css/img/phone-iphone12pro.webp"
                         />
                       </div>
                     </div>
@@ -287,13 +287,13 @@
                     <div class="device__wrapper">
                       <img
                         class="device__screen"
-                        src="/assets/css/img/temp-venn-phone8.jpg"
+                        src="/assets/css/img/temp-venn-phone8.webp"
                         alt="Venn"
                       />
                       <div class="device__shadow">
                         <img
                           class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.png"
+                          src="/assets/css/img/phone-iphone12pro.webp"
                         />
                       </div>
                     </div>
@@ -393,7 +393,7 @@
               <div class="project__review_top">
                 <img
                   class="project__review_top-img"
-                  src="/assets/css/img/temp-author5.png"
+                  src="/assets/css/img/temp-author5.webp"
                   alt="Марина Янцен"
                 />
                 <div class="project__review_rubr">Отзыв</div>

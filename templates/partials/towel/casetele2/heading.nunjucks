@@ -13,8 +13,8 @@
         </div>
 
         <div class="top__image">
-            <img class="top__image-desktop" src="/assets/css/img/temp-tele2-top.jpg" alt="Приложение «Мой Tele2». Конструктор тарифов">
-            <img class="top__image-tablet" src="/assets/css/img/temp-tele2-top768.jpg" alt="Приложение «Мой Tele2». Конструктор тарифов">
+            <img class="top__image-desktop" src="/assets/css/img/temp-tele2-top.webp" alt="Приложение «Мой Tele2». Конструктор тарифов">
+            <img class="top__image-tablet" src="/assets/css/img/temp-tele2-top768.webp" alt="Приложение «Мой Tele2». Конструктор тарифов">
         </div>
     </div>
 </div>

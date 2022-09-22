@@ -1029,7 +1029,7 @@
         &-inprocess{
             padding-bottom:30px;
             &__circle{
-                background-image:url($img-path + "icon-rotate2.png");
+                background-image:url($img-path + "icon-rotate2.webp");
                 width:249px;
                 height:249px;
                 left:calc(50% - 124px);
@@ -2374,7 +2374,7 @@
 
     .body_career {
         .top {
-            background: url(img/career480480.jpg) top center no-repeat;
+            background: url(img/career480480.webp) top center no-repeat;
             background-size: cover;
             min-height: 568px;
             & > .container{

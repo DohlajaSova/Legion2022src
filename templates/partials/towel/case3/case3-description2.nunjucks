@@ -48,7 +48,7 @@
                 <div
                   class="device__wrapper">
                   <div class="device__shadow">
-                    <img class="device__phone" src="/assets/css/img/phone-case3.png"/>
+                    <img class="device__phone" src="/assets/css/img/phone-case3.webp"/>
                   </div>
                 </div>
               </div>

@@ -13,8 +13,8 @@
         </div>
 
         <div class="top__image">
-            <img class="top__image-desktop" src="/assets/css/img/temp-venn-top.jpg" alt="Приложение Venn. Профиль пользователя">
-            <img class="top__image-tablet" src="/assets/css/img/temp-venn-top768.jpg" alt="Приложение Venn. Профиль пользователя">
+            <img class="top__image-desktop" src="/assets/css/img/temp-venn-top.webp" alt="Приложение Venn. Профиль пользователя">
+            <img class="top__image-tablet" src="/assets/css/img/temp-venn-top768.webp" alt="Приложение Venn. Профиль пользователя">
         </div>
     </div>
 </div>

@@ -11,12 +11,12 @@
   <div class="client__present">
     <img
       class="client__present_desktop"
-      src="/assets/css/img/client-alfa-preview.jpg"
+      src="/assets/css/img/client-alfa-preview.webp"
       alt="Альфа-Банк"
     />
     <img
       class="client__present_mobile"
-      src="/assets/css/img/client-alfa-preview_mobile.jpg"
+      src="/assets/css/img/client-alfa-preview_mobile.webp"
       alt="Альфа-Банк"
     />
   </div>
@@ -139,7 +139,7 @@
               <div class="project__review_top project__review_top-client dark">
                 <img
                   class="project__review_author-img"
-                  src="/assets/css/img/temp-author_dots.png"
+                  src="/assets/css/img/temp-author_dots.webp"
                   alt="Альфа-Банк"
                 />
                 <div class="project__review_rubr light">Отзыв</div>
@@ -163,7 +163,7 @@
             <a href="https://vk.com/elegion?w=wall-34196694_1888" target="_blank" class="cases__case_desc">Подробнее &rarr;</a>
             <span class="cases__case_photo">
               <img
-                src="/assets/css/img/cases-premia-2.png"
+                src="/assets/css/img/cases-premia-2.webp"
                 alt=""
               />
             </span>
@@ -185,7 +185,7 @@
             <div class="project-article_top">
               <img
                 class="project-article_top-img project-article_top-img-client"
-                src="/assets/css/img/case-alfa.png"
+                src="/assets/css/img/case-alfa.webp"
                 alt=""
               />
             </div>
@@ -223,7 +223,7 @@
             </div>
             <img
               class="client__grid_card-tall__preview_image"
-              src="/assets/css/img/temp-author_dots.png"
+              src="/assets/css/img/temp-author_dots.webp"
               alt="Альфа-Банк"
             />
           </div>
@@ -254,12 +254,12 @@
           </a>
           <img
             class="client__grid_card-image abr client__grid_card-image-side"
-            src="/assets/css/img/cases-premia-2.png"
+            src="/assets/css/img/cases-premia-2.webp"
             alt=""
           />
           <!-- <div class="client__grid_card-image background">
         <img
-          src="/assets/css/img/img/cases-bg-venn.png"
+          src="/assets/css/img/img/cases-bg-venn.webp"
           alt=""
         />
       </div> -->
@@ -277,7 +277,7 @@
         <div class="client__grid_card client__grid_card-wide">
           <img
             class="client__grid_card-wide__image br"
-            src="/assets/css/img/case-alfa.png"
+            src="/assets/css/img/case-alfa.webp"
             alt=""
           />
           <div class="client__grid_card-wide__info">

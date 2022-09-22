@@ -13,7 +13,7 @@
                         <div class="project">
                             <a href="https://habr.com/ru/company/e-legion/blog/421529/" target="_blank" class="project__article project__article_small project-article">
                             <div class="project-article_top">
-                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame1.jpg" alt="Netflix, Uber, Google на MBLT DEV 2018">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame1.webp" alt="Netflix, Uber, Google на MBLT DEV 2018">
                             </div>
                             <div class="project-article_link">
                               <div class="project-article_link-title">Netflix, Uber, Google на&nbsp;MBLT&nbsp;DEV&nbsp;2018</div>
@@ -33,7 +33,7 @@
                         <div class="project">
                             <a href="https://habr.com/ru/company/e-legion/blog/579848/" target="_blank" class="project__article project__article_small project-article">
                             <div class="project-article_top">
-                                <img class="project-article_top-img" src="/assets/css/img/temp-news2.jpg" alt="Микросервисы. Не всё то золото, что хайп">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-news2.webp" alt="Микросервисы. Не всё то золото, что хайп">
                             </div>
                             <div class="project-article_link">
                               <div class="project-article_link-title">Микросервисы. Не&nbsp;всё&nbsp;то&nbsp;золото, что&nbsp;хайп</div>
@@ -53,7 +53,7 @@
                         <div class="project">
                             <a href="https://vk.com/elegion?w=wall-34196694_1934" target="_blank" class="project__article project__article_small project-article">
                             <div class="project-article_top">
-                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame2.jpg" alt="JetKid номинация «Лучшее мобильное решение/активация»">
+                                <img class="project-article_top-img" src="/assets/css/img/temp-notallthesame2.webp" alt="JetKid номинация «Лучшее мобильное решение/активация»">
                             </div>
                             <div class="project-article_link">
                               <div class="project-article_link-title">JetKid <br>номинация «Лучшее мобильное решение/активация»</div>
