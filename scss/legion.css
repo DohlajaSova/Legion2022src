@@ -890,7 +890,7 @@ a.button {
   .circle-pic {
     width: 313px;
     height: 313px;
-    background: url("img/icon-rotate3.png") 0 0 no-repeat;
+    background: url("img/icon-rotate3.webp") 0 0 no-repeat;
     background-size: auto 100%;
     position: absolute;
     left: calc(50% - 160px);
@@ -1364,7 +1364,7 @@ a.button {
     border-radius: 42px;
     text-align: center; }
     .cases__case-blue {
-      background: url("img/cases-bg-blue.png") center/cover no-repeat; }
+      background: url("img/cases-bg-blue.webp") center/cover no-repeat; }
       .cases__case-blue .cases__case_name,
       .cases__case-blue .cases__case_desc {
         color: #FFF !important; }
@@ -1377,7 +1377,7 @@ a.button {
       width: 100%;
       height: 100%; }
       .cases__case_container.bg_venn {
-        background: url("img/cases-bg-venn.png") center/cover no-repeat; }
+        background: url("img/cases-bg-venn.webp") center/cover no-repeat; }
     .cases__case_contents {
       position: absolute;
       width: 100%;
@@ -2082,7 +2082,7 @@ a.button {
     .case2__kpiWrapper .circle-pic {
       width: 320px;
       height: 320px;
-      background: url("img/icon-rotate4.png") 50% 50% no-repeat !important; }
+      background: url("img/icon-rotate4.webp") 50% 50% no-repeat !important; }
   .case2__kpiWrapper .circle-text__item_label {
     position: absolute;
     left: 0;
@@ -2185,7 +2185,7 @@ a.button {
   .case3__content_card {
     display: flex;
     flex-flow: column nowrap;
-    background: url("img/case3-content-background.png") center bottom no-repeat #84AEFF;
+    background: url("img/case3-content-background.webp") center bottom no-repeat #84AEFF;
     background-size: cover;
     color: #fff;
     padding-top: 40px;
@@ -2208,10 +2208,10 @@ a.button {
     .case3__content_card-accent {
       font-size: 74px; }
   .case3__content_card:first-child {
-    background: url("img/case3-content-foreground.png") bottom left no-repeat #1E2738;
+    background: url("img/case3-content-foreground.webp") bottom left no-repeat #1E2738;
     background-size: contain; }
     .case3__content_card:first-child.casevenn {
-      background: url("img/case_venn-content-foreground.png") bottom left no-repeat #1E2738;
+      background: url("img/case_venn-content-foreground.webp") bottom left no-repeat #1E2738;
       background-size: contain; }
 
 .casevenn__content {
@@ -2638,7 +2638,7 @@ a.button {
         width: 48.5%;
         padding-bottom: 48.5%;
         height: 0;
-        background: url("img/temp-clients.png") 0 0 no-repeat #2864D9;
+        background: url("img/temp-clients.webp") 0 0 no-repeat #2864D9;
         background-size: cover;
         border-radius: 42px;
         color: #fff !important;
@@ -3461,7 +3461,7 @@ a.button {
     .dummy-inprocess__circle {
       width: 539px;
       height: 539px;
-      background: url("img/icon-rotate1.png") 0 0 no-repeat;
+      background: url("img/icon-rotate1.webp") 0 0 no-repeat;
       position: absolute;
       left: calc(50% - 270px);
       top: calc(50% - 270px);
@@ -3888,7 +3888,7 @@ a.button {
 .body_about .header {
   background-color: transparent; }
 .body_about .top {
-  background: url("img/about.jpg") top center no-repeat;
+  background: url("img/about.webp") top center no-repeat;
   background-size: 100% auto;
   min-height: 544px;
   display: flex;
@@ -3913,7 +3913,7 @@ a.button {
       color: #1E2738;
       background-color: #fff; }
 .body_career .top {
-  background: url("img/career.jpg") top center no-repeat;
+  background: url("img/career.webp") top center no-repeat;
   background-size: cover;
   min-height: 580px;
   display: flex;
@@ -3941,7 +3941,7 @@ a.button {
       color: #1E2738;
       background-color: #fff; }
 .body_service .top {
-  background: url("img/service.jpg") top center no-repeat;
+  background: url("img/service.webp") top center no-repeat;
   background-size: cover;
   min-height: 544px;
   display: flex;
@@ -4446,7 +4446,7 @@ a.button {
   .case3__content_card {
     display: flex;
     flex-flow: column nowrap;
-    background: url("img/case3-content-background.png") center center no-repeat #84AEFF;
+    background: url("img/case3-content-background.webp") center center no-repeat #84AEFF;
     background-size: cover;
     color: #fff;
     padding-top: 40px;
@@ -4477,7 +4477,7 @@ a.button {
     .case3__content_card-accent {
       font-size: 74px; }
   .case3__content_card:first-child {
-    background: url("img/case3-content-foreground.png") bottom left no-repeat #1E2738;
+    background: url("img/case3-content-foreground.webp") bottom left no-repeat #1E2738;
     background-size: contain; }
 
 .case__alfa_problems-item {
@@ -6763,7 +6763,7 @@ a.button {
   .dummy-inprocess {
     padding-bottom: 30px; }
     .dummy-inprocess__circle {
-      background-image: url("img/icon-rotate2.png");
+      background-image: url("img/icon-rotate2.webp");
       width: 249px;
       height: 249px;
       left: calc(50% - 124px);
@@ -7607,7 +7607,7 @@ a.button {
     margin-bottom: 24px; }
 
   .body_career .top {
-    background: url(img/career480480.jpg) top center no-repeat;
+    background: url(img/career480480.webp) top center no-repeat;
     background-size: cover;
     min-height: 568px; }
     .body_career .top > .container {
