@@ -410,8 +410,7 @@ body {
   overflow: initial;
   padding: 0; }
 
-a,
-a:visited {
+a {
   color: #2864D9;
   text-decoration: none; }
 
@@ -506,11 +505,22 @@ a.button {
   font-weight: 700;
   font-size: 15px; }
 .custom-format h2 {
-  font-size: 46px; }
+  font-size: 46px;
+  margin: 40px 0 20px; }
 .custom-format h3 {
-  font-size: 36px; }
+  font-size: 36px;
+  margin: 30px 0 10px; }
 .custom-format p {
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 20px; }
+.custom-format blockquote {
+  font-size: 36px;
+  padding: 40px 0 20px;
+  border-top: 1px solid #1E2738;
+  border-bottom: 1px solid #1E2738;
+  margin-bottom: 20px; }
+  .custom-format blockquote p {
+    font-size: 36px; }
 .custom-format ul,
 .custom-format ol {
   padding: 0; }

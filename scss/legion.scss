@@ -399,14 +399,28 @@ a.button {
 
 	h2 {
 		font-size: 46px;
+        margin: 40px 0 20px;
 	}
 
 	h3 {
 		font-size: 36px;
+        margin: 30px 0 10px;
 	}
     
     p{
         font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    blockquote{
+        font-size: 36px;
+        padding: 40px 0 20px;
+        border-top: 1px solid $color-blue-dark;
+        border-bottom: 1px solid $color-blue-dark;
+        margin-bottom: 20px;
+        p{
+            font-size: 36px;
+        }
     }
 
 	ul,
