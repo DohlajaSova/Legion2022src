@@ -27,12 +27,6 @@
 </div>
   {% include "partials/towel/news.nunjucks" %}
 
-<div class="js-show-business">
-  {% include "partials/popup-video-principles.nunjucks" %}
-</div>
-<div class="js-show-applicants hide">
-  {% include "partials/popup-video-team.nunjucks" %}
-</div>
   {% include "partials/popup-feedback.nunjucks" %}
 
 {% endblock %}
