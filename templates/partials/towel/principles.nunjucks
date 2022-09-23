@@ -7,7 +7,7 @@
                 <p>Анализируем рынок, проверяем гипотезы, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и&nbsp;задумываемся о&nbsp;смыслах.</p>
             </div>
             <div class="principles__video_inline">
-                <iframe style="width:100%" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/0TRVnkOo71s?origin=https://e-legion.ru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="width:100%" width="560" height="315" loading="lazy" data-src="https://www.youtube.com/embed/0TRVnkOo71s?origin=https://e-legion.ru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>

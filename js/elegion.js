@@ -321,6 +321,15 @@ function addListenerInput(el) {
     })
 }
         
+function initVideo(){
+    var vidDefer = document.getElementsByTagName('iframe');
+    for (var i=0; i<vidDefer.length; i++) {
+        if(vidDefer[i].getAttribute('data-src')) {
+            vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+        }
+    }
+}
+        
 docReady(function() {
     // фиксим хедер при скролле
     const stickyHeader = document.getElementsByClassName('header')[0];
@@ -1442,5 +1451,9 @@ docReady(function() {
                 if (!(curButton.classList.contains("js-upload-started"))) curButton.classList.add("js-upload-started");
             }, false);
         }
+    }
+
+    if (document.querySelectorAll("iframe").length > 0){
+        initVideo();
     }
 });
