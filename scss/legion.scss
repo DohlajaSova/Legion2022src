@@ -6419,9 +6419,9 @@ a.button {
 				}
 				&__preview{
 					height: stretch;
-					height: fill-available;
-					height: -webkit-fill-available;
-					height: -moz-available;
+					//height: fill-available;
+					//height: -webkit-fill-available;
+					//height: -moz-available;
 					padding: 40px 0 0 40px;
 					position: relative;
 					border-radius: inherit;
