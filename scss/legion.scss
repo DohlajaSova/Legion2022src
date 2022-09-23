@@ -6418,6 +6418,7 @@ a.button {
 					background-color: $color-grey-light;
 				}
 				&__preview{
+					height: stretch;
 					height: fill-available;
 					height: -webkit-fill-available;
 					height: -moz-available;
