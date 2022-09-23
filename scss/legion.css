@@ -428,7 +428,7 @@ a:hover {
 
 .bottom-dummy {
   height: 0; }
-  .body_contacts .bottom-dummy, .body_request .bottom-dummy {
+  .body_contacts .bottom-dummy, .body_request .bottom-dummy, .body_news .bottom-dummy {
     height: 74px; }
 
 .back {
@@ -501,17 +501,16 @@ a.button {
 .custom-format b,
 .custom-format strong {
   font-weight: 700; }
-.custom-format h1,
 .custom-format h2,
 .custom-format h3 {
   font-weight: 700;
   font-size: 15px; }
-.custom-format h1 {
-  padding: 5px; }
 .custom-format h2 {
-  font-size: 14px; }
+  font-size: 46px; }
 .custom-format h3 {
-  font-size: 12px; }
+  font-size: 36px; }
+.custom-format p {
+  font-size: 24px; }
 .custom-format ul,
 .custom-format ol {
   padding: 0; }
