@@ -6424,6 +6424,11 @@ a.button {
 			background-color: $color-grey-light;
 			overflow: hidden;
 			position: relative;
+			color: #1E2738;
+			a{
+				color: $color-grey-dark;
+				text-decoration: none;
+			}
 			&-flex, &-wide__info {
 				display: flex;
 				flex-flow: column nowrap;
@@ -6491,6 +6496,37 @@ a.button {
 						color: $color-blue-dark;
 					}
 				}
+				&__whole{
+					display: flex;
+					flex-flow: column nowrap;
+					height: 100%;
+					color: #fff;
+					border-radius: inherit;
+					gap: 40px;
+					&_info{
+						padding: 40px 40px 0 40px;
+						display: flex;
+						flex-flow: column nowrap;
+						height: 50%;
+						&-content{
+							font-size: 46px;
+							line-height: 130%;
+							margin: auto 0 10px 0;
+						}
+						a{
+							color: #fff;
+						}
+					}
+					&_image{
+						width: 100%;
+						max-height: 50%;
+						border-radius: inherit;
+						height: calc(50% - 10px);
+						&.object-cover{
+							object-fit: cover;
+						}
+					}
+				}
 			}
 			&-wide{
 				grid-column-start: 3;
@@ -6501,12 +6537,24 @@ a.button {
 				display: flex;
 				flex-flow: row nowrap;
 				&__image {
+					max-height: 100%;
+					max-width: calc(50% - 10px);
+					width: 100%;
 					&.br {
 						border-radius: inherit;
 					}
 				}
 				&__info{
 					padding: $padd;
+				}
+				.cases-slider{
+					border-radius: inherit;
+					&__item{
+						border-radius: inherit;
+						&_nomination{
+							border-radius: inherit;
+						}
+					}
 				}
 			}
 			&-image{
@@ -6521,12 +6569,6 @@ a.button {
 			}
 			
 			// card main styles
-			color: #1E2738;
-			a{
-				color: $color-grey-dark;
-				text-decoration: none;
-			}
-			
 			&-accent {
 				font-size: 74px;
 				line-height: 110%;
@@ -6539,11 +6581,17 @@ a.button {
 				line-height: 130%;
 				margin-bottom: 18px;
 			}
-			&-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+			&-content,
+			&-wide__info-content,
+			&-tall__preview_info-heading,
+			&-tall__preview_info-undertext,
+			&__whole_heading{
 				font-size: 24px;
 				line-height: 130%;
 			}
-			&-link, &-wide__info-link{
+			&-link,
+			&-wide__info-link,
+			&__whole_link{
 				font-size: 16px;
 				line-height: 130%;
 				cursor: pointer;
@@ -6558,6 +6606,25 @@ a.button {
 			}
 			&-venn_background{
 				background: $color-grey-light url("img/cases-bg-venn.webp") center/cover no-repeat;
+			}
+		}
+		&-projects {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			.client__grid_card-tall{
+				grid-column: auto / span 2;
+				// grid-column-end: 3;
+				grid-row: auto / span 2;
+				// grid-row-end: 3;
+			}
+			.client__grid_card-wide{
+				grid-column: auto / span 2;
+				// grid-column-end: 3;
+				grid-row: auto / span 1;
+				// grid-row-end: 3;
+			}
+			img{
+				max-height: 315px;
 			}
 		}
 	}
