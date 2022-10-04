@@ -1,0 +1,9 @@
+<!-- editorial.nunjucks -->
+{% extends "editorial.nunjucks" %}
+{% block title %}Блог. Новости - {% endblock %}
+{% block links %} 
+<base href="/" />
+{% endblock %}
+{% block content %}
+  {% include "partials/editorial.nunjucks" %}
+{% endblock %}

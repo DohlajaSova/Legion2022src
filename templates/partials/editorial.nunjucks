@@ -1,0 +1,198 @@
+<p>Customer Journey Map&rsquo;ом уже давно никого не удивишь: в больших продуктовых компаниях открывают целые отделы по исследованию клиентского опыта, а консалтинговые организации регулярно используют этот инструмент для анализа продукта клиента. Так зачем мы решили написать этот материал?</p>
+<table style="border-collapse: collapse; width: 99.80525803310614%;" border="1">
+<tbody>
+<tr>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 24.682926829268293%;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Любая новая технология имеет свой жизненный цикл: она стремится к пику популярности, неизбежно выходит на плато и затем становится повсеместно применимой. Визуально этот процесс описывает кривая Гартнера.</p>
+<h2>второй заголовок</h2>
+<h3>третий заголовок</h3>
+<h4>четвертый заголовок</h4>
+<p>Эмоции отходят на второй план, остаётся польза в сухом остатке. Так же произошло и с CJM, и теперь по прошествии времени мы можем поделиться своими выводами. На последнее мнение не претендуем, лишь делимся своими наблюдениями.</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/3lMYh0-8TyI" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><img src="https://e-legion.ru/assets/blog/CJM_1.png" alt="" width="687" height="338" /></p>
+<div class="picture-title">Кривая Гартнера</div>
+<ul>
+<li>Некий ненумерованный список - пункт 1</li>
+<li>Пункт 2
+<ol>
+<li>А внутри второго пункта есть нумерованный список</li>
+<li>И не один пункт</li>
+</ol>
+</li>
+<li>И третий</li>
+</ul>
+<h2>Обязательный абзац или что такое CJM</h2>
+<p>Для начала, если вы только разбираетесь, что это за инструмент, вот статьи на эту тему:</p>
+<p><a href="https://vc.ru/marketing/96029-instrukciya-po-sostavleniyu-customer-journey-map-cjm" target="_blank" rel="nofollow noreferrer noopener">Инструкция по составлению Customer Journey Map (CJM)</a></p>
+<p><a href="https://ux-journal.ru/kak-stroit-customer-journey-map.html" target="_blank" rel="nofollow noreferrer noopener">Что такое Customer Journey Map (CJM) и как построить ее правильно</a></p>
+<hr />
+<p>Если кратко, Customer Journey Map &mdash; это карта пути клиента. Грубо говоря, как он из точки А приходит в точку Б. Или не приходит.</p>
+<p>Визуализация пути клиента со всеми разделами (действия, мысли, эмоции, каналы связи) помогает одновременно увидеть картинку целиком и разобрать отдельный участок.</p>
+<ol>
+<li>Один<br />
+<ul>
+<li>один/один</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>один
+<ul>
+<li>один/один</li>
+</ul>
+</li>
+</ul>
+<p>А теперь вернёмся к граблям.</p>
+<blockquote>
+<p>Цитирование очень важная и ценная вещь для нашего сайта</p>
+<p>И допустим автор цитаты</p>
+</blockquote>
+<h2>Стремление к унификации</h2>
+<p>Если загуглить карту пользовательского пути и открыть картинки, можно найти огромную &laquo;киллер-таблицу&raquo;, которую чаще всего представляют как шаблон для CJM. Вариантов вообще много: табличный, сценарный, канальный и так далее. Казалось бы, всё просто! Скачиваем понравившийся шаблон и начинаем его заполнять. Но есть нюанс.</p>
+<pre class="language-javascript"><code>function ContactMap(container, switcherItems, selectControl)
+{
+  function init() {
+    let map = new google.maps.Map(container);
+    initMap(map);
+    initSwitcher(map);
+    putMarkers(map);
+    drawRoutes(map);
+  }
+
+  function initMap(map) {
+    let opts = {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: true,
+      panControl: true,
+      panControlOptions: {
+        position: google.maps.ControlPosition.LEFT_CENTER
+      },
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.LEFT_CENTER
+      },
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: true,
+      overviewMapControl: true,
+      overviewMapControlOptions: {
+        opened: true
+      }
+    };
+    map.setOptions(opts);
+  }
+
+  function toggleActiveTab(target) {
+    let clickedIndex = 0;
+    if (target.parentNode){
+        clickedIndex = Array.from(Array.prototype.slice.call(selectControl.children)[2].children).indexOf(target);
+        let cityTabs = Array.prototype.slice.call(Array.prototype.slice.call(selectControl.children)[2].children);
+        for (let item of cityTabs) {
+          item.classList.remove('same-as-selected');
+        }
+        cityTabs[clickedIndex].classList.add('same-as-selected');
+    }
+    return clickedIndex;
+  }
+
+  function toggleActiveText(index) {
+    for (let item of switcherItems) {
+      item.classList.remove('active');
+    }
+    switcherItems[index].classList.add('active');
+  }
+
+  function centerMap(map, lat, lng, zoom) {
+    let center = new google.maps.LatLng(lat, lng);
+    map.panTo(center);
+    map.setZoom(parseInt(zoom));
+  }
+
+  function initSwitcher(map) {
+    let onClick = function() {
+      let clickedIndex = toggleActiveTab(this);
+      let data = switcherItems[clickedIndex].dataset;// номер кликнутого
+      toggleActiveText(clickedIndex);
+      let lat = data.centerLat || data.markerLat;
+      let lng = data.centerLng || data.markerLng;
+      centerMap(map, lat, lng, data.zoom);
+    };
+    for (let item of Array.prototype.slice.call(selectControl.children)[2].children) {
+      item.addEventListener('click', onClick);
+    }
+    onClick.apply(selectControl[0]);
+  }
+
+  function putMarkers(map) {
+    let icon = {
+      url: container.dataset.markerImage,
+      size: new google.maps.Size(48, 48),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(24, 48)
+    };
+    for (let item of switcherItems) {
+      let data = item.dataset;
+      let position = new google.maps.LatLng(data.markerLat, data.markerLng);
+      new google.maps.Marker({ map, position, icon });
+    }
+  }
+
+  function drawRoutes(map) {
+    for (let item of switcherItems) {
+      let data = item.dataset;
+      if (!data.routePoints) {
+        continue;
+      }
+      let points = data.routePoints.split('; ').map((x) =&gt; x.split(',').map(parseFloat));
+      let path = points.map((pt) =&gt; new google.maps.LatLng(pt[0], pt[1]));
+      new google.maps.Polyline({
+        map: map,
+        path: path,
+        geodesic: true,
+        strokeColor: 'rgb(35, 168, 224)',
+        strokeOpacity: 1.0,
+        strokeWeight: 3
+      });
+    }
+  }
+
+  function load() {
+    window.map_initialized = function() { init(); };
+    let getUrl = function() {
+      let base = 'https://maps.googleapis.com/maps/api/js';
+      let options = {
+        key: container.dataset.apiKey,
+        language: container.dataset.language,
+        callback: 'map_initialized'
+      };
+      let args = objToQuery(options);
+      return [base, args].join('?');
+    };
+    let script = document.createElement("script");
+    script.src = getUrl();
+    document.body.appendChild(script);
+  }
+
+  if (container) {
+    load();
+  }
+}</code></pre>

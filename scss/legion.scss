@@ -385,6 +385,7 @@ a.button {
 }
 
 .custom-format {
+    display: block !important;
 
 	b,
 	strong {
@@ -398,56 +399,93 @@ a.button {
 	h2,
 	h3,
     h4{
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 15px;
 	}
 
 	h2 {
 		font-size: 46px;
-        margin: 40px 0 20px;
+        margin: 50px 0 30px;
 	}
 
 	h3 {
 		font-size: 36px;
-        margin: 30px 0 10px;
+        margin: 50px 0 30px;
 	}
     
 	h4 {
-		font-size: 30px;
-        margin: 30px 0 10px;
+		font-size: 24px;
+        font-weight: 700;
+        margin: 50px 0 30px;
 	}
     
     p{
         font-size: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+    }
+    
+    hr{
+        border: none;
+        border-bottom:1px solid $color-blue-dark;
+        margin-bottom: 50px;
+        *{
+            display: none;
+        }
     }
     
     blockquote{
         font-size: 36px;
-        padding: 40px 0 20px;
+        padding: 50px 0 30px;
         border-top: 1px solid $color-blue-dark;
         border-bottom: 1px solid $color-blue-dark;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
         p{
             font-size: 36px;
+            &:last-child{
+                margin-bottom: 20px;
+            }
         }
     }
 
     table {
-        margin: 5px 0 20px;
-        border-left: 1px solid $color-black;
-        border-bottom: 1px solid $color-black;
+        margin: 5px 0 50px;
+        width:100%;
+        background: $color-grey-light;
+        border: none;
+        border-radius:42px;
 
         td,
         th {
             padding: 10px 15px;
-            border-right: 1px solid $color-black;
-            border-top: 1px solid $color-black;
+            border:none;
+            border-bottom: 1px solid $color-grey-dark;
         }
 
         th {
             text-align: center;
             font-weight: 700;
+        }
+        
+        tr:last-child{
+            td,
+            th{
+                border-bottom: none;
+            }
+        }
+        &.table_two-columns{
+            background: transparent;
+            border-radius: 0;
+            td,
+            th{
+                width:48%;
+                padding: 0;
+                &:first-child{
+                    padding-right: 2%;
+                }
+                &:last-child{
+                    padding-left: 2%;
+                }
+            }
         }
     }
     
@@ -460,6 +498,7 @@ a.button {
 	ul,
 	ol {
 		padding: 0;
+        margin-bottom: 50px;
 	}
 
 	ul li,
