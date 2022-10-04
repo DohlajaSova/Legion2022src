@@ -109,7 +109,11 @@
                 &-heading{
                     font-size: 2vw;
                 }
-                &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+                &-content,
+                &-wide__info-content,
+                &-tall__preview_info-heading,
+                &-tall__preview_info-undertext,
+                &-tall__whole_info-heading{
                     font-size: 1.5vw;
                 }
             }
@@ -974,9 +978,10 @@
                 &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
                     font-size: 1.6vw;
                 }
-                &-wide__image{
-                    max-width: 50%;
-                }
+                // &-wide__image{
+                //     max-width: calc(50% - 10px);
+                //     width: 100%;
+                // }
                 &-image{
                     &-side{
                         max-width: 60px;
@@ -1855,14 +1860,14 @@
                     grid-row-start: 1;
                     grid-row-end: 2;
                     &__preview{
-                            &_info{
-                                &-content {
-                                    font-size: 6vw;
-                                }
+                        &_info{
+                            &-content {
+                                font-size: 6vw;
                             }
                         }
-                        &__info{
-                            font-size: 3vw;
+                    }
+                    &__info{
+                        font-size: 3vw;
                     }
                 }
                 &-accent {
@@ -1879,6 +1884,38 @@
                     grid-column-end: 3;
                     grid-row-start: auto;
                     grid-row-end: auto;
+                }
+            }
+            &-projects {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto 1fr auto auto 1fr;
+                .client__grid_card-tall{
+                    grid-column: auto / span 2;
+                    grid-row: auto / span 2;
+                    &__info{
+                        padding-bottom: 0;
+                    }
+                    // &__whole{
+                    //     &_info{
+                    //         max-height: 30%;
+                    //     }
+                    // }
+                }
+                .client__grid_card-wide{
+                    grid-column: auto / span 2;
+                    grid-row: auto / span 1;
+                    .cases-slider{
+                        .accent{
+                            font-size: 8vw;
+                            ~ p{
+                                font-size: 4vw;
+                            }
+                        }
+                    }
+                }
+                img{
+                    // max-height: 355px;
+                    max-height: calc(50vw - 10px);;
                 }
             }
         }    

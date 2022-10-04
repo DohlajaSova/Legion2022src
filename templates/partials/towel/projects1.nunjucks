@@ -1,109 +1,156 @@
 <div class="projects projects-noborder">
-    <div class="container">
-        <h2>Наши <em>проекты</em></h2>
-        <div class="projects__panels">
-            <div class="project project_tall project_tall-5ka">
-                <div class="project__review_container">
-            <div class="project__review light">
-              <div class="project__review_top project__review_top-client dark">
-                <img
-                  class="project__review_author-img dark dots"
-                  src="/assets/css/img/temp-author_dots.webp"
-                  alt="Пятёрочка"
-                />
-                <div class="project__review_rubr light">Отзыв</div>
-                <h3 class="project__review_author-name light">Павел Бабий</h3>
-                <div class="project__review_author-position light">
-                  начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
-                </div>
-              </div>
-              <div class="project__review_body project__review_body-client dark">
-                Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших инструментов для торговой сети. С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.
+  <div class="container">
+    <h2>Наши <em>проекты</em></h2>
+    <div class="client__grid client__grid-projects">
+      <div
+        class="client__grid_card client__grid_card-tall client__grid_card-tall-grey"
+      >
+        <div
+          class="client__grid_card-tall__preview client__grid_card-tall__preview-dark"
+        >
+          <div class="client__grid_card-tall__preview_info">
+            <div class="client__grid_card-tall__preview_info-heading">
+              Отзыв
+            </div>
+            <div class="client__grid_card-tall__preview_info-content">
+              Павел Бабий
+            </div>
+            <div class="client__grid_card-tall__preview_info-undertext">
+              начальник управления цифровых платформ федеральной торговой сети
+              «Пятёрочка»
+            </div>
+          </div>
+          <img
+            class="client__grid_card-tall__preview_image"
+            src="/assets/css/img/temp-author_dots.webp"
+            alt="Пятёрочка"
+          />
+        </div>
+        <div
+          class="client__grid_card-tall__info client__grid_card-tall__info-dark"
+        >
+          Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших
+          инструментов для торговой сети.
+          <br /><br />С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion
+          работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией
+          новых сложных задач.
+        </div>
+      </div>
+      <div class="client__grid_card client__grid_card-wide">
+        <div class="cases-slider">
+          <div class="cases-slider__item active">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№1</h3>
+              <!-- <p>Лучшее мобильное решение/активация</p> -->
+              <p>Tagline Awards 2020-2021 «Мобильное решение»</p>
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a
+                  href="https://vk.com/elegion?w=wall-34196694_1934"
+                  target="_blank"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_jetkid.webp"
+                    alt="Jet Kid"
+                /></a>
               </div>
             </div>
           </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№2</h3>
+              <p>Tagline Awards 2020-2021 «Ритейл-приложение»</p>
+              <!-- <p>Лучшее ритейл-приложение</p> -->
             </div>
-            <div class="project project-with-slider">
-                <div class="cases-slider">
-                    <div class="cases-slider__item active">
-                        <div class="cases-slider__item_nomination">
-                            <h3 class="h2">№1</h3>
-                            <!-- <p>Лучшее мобильное решение/активация</p> -->
-                            <p>
-                                Tagline Awards 2020-2021 «Мобильное решение»
-                            </p>
-                        </div>
-                        <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="https://vk.com/elegion?w=wall-34196694_1934" target="_blank"><img src="/assets/css/img/cases-slider-bg_jetkid.webp" alt="Jet Kid"></a></div>
-                        </div>
-                    </div>
-                    <div class="cases-slider__item">
-                        <div class="cases-slider__item_nomination">
-                            <h3 class="h2">№2</h3>
-                            <p>
-                                Tagline Awards 2020-2021 «Ритейл-приложение»
-                            </p>
-                            <!-- <p>Лучшее ритейл-приложение</p> -->
-                        </div>
-                        <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/client.html"><img src="/assets/css/img/cases-slider-bg_5ka.svg" alt="Пятёрочка"></a></div>
-                        </div>
-                    </div>
-                    <div class="cases-slider__item">
-                        <div class="cases-slider__item_nomination">
-                            <h3 class="h2">№3</h3>
-                            <p>
-                                Tagline Awards 2020-2021 «Приложение для телеком/IT»
-                            </p>
-                            <!-- <p>Лучшее приложение для телеком/IT/интернет-компании</p> -->
-                        </div>
-                        <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/cases-slider-bg_tele2.webp" alt="Tele2"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cases-slider__statics js-cases-dots">
-                    <div class="cases-slider__statics_dots"><ul>
-                        <li class="active"><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul></div>
-                </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a href="/client.html"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_5ka.svg"
+                    alt="Пятёрочка"
+                /></a>
+              </div>
             </div>
-            <div class="project project_tall project_tall-with-slider">
-                <div class="project__article_container">
-                    <div class="project__article_contents project__article_contents-slider project__article_contents-static">
-                        <div class="project-slider-article"><div class="js-project-article">
-                            <div class="project-slider-article__item">
-                                <a href="https://vc.ru/flood/281180-ekspediciya-na-beloe-more" target="_blank" class="project__article project__article_large project-article">
-                                    <div class="project-article_top project-article_top-nodesc">
-                                      <div class="project-article_top-rubr1 project-article_top-nodesc-rubr1">Социальные проекты</div>
-                                      <div class="project-article_top-rubr2 project-article_top-nodesc-rubr2">Экспедиция на&nbsp;Белое море</div>
-                                      <div class="project-article_link-arrow project-article_top-nodesc-arrow">Подробнее →</div>
-                                      <img class="project-article_top-img project-article_top-nodesc-img" src="/assets/css/img/temp-projects2a.webp" alt="Экспедиция на Белое море"/>
-                                    </div>
-                                </a>
-                            </div>
-                        </div></div>
-                    </div>
-                    <div class="project-slider-article__statics">
-                        <div class="project-slider-article__statics_dots"><ul class="js-project-article-dots">
-                            <li></li>
-                        </ul></div>
-                    </div>
-                </div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№3</h3>
+              <p>Tagline Awards 2020-2021 «Приложение для телеком/IT»</p>
+              <!-- <p>Лучшее приложение для телеком/IT/интернет-компании</p> -->
             </div>
-            <div class="project">
-            	<a href="https://vc.ru/tech/352522-rossiyskuyu-operacionnuyu-sistemu-fantom-doveli-do-testirovaniya-posle-12-let-razrabotki-s-nulya" target="_blank" class="project__article project__article_small project-article">
-              	<div class="project-article_top">
-	                <img class="project-article_top-img" src="/assets/css/img/temp-projects1.webp" alt="Российская операционная система «Фантом»"/>
-                </div>
-                <div class="project-article_link">
-                  <div class="project-article_link-title">Российская операционная система «Фантом»</div>
-                  <div class="project-article_link-arrow">Подробнее →</div>
-                </div>
-            	</a>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a href="/inprocess.html"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_tele2.webp"
+                    alt="Tele2"
+                /></a>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="cases-slider__statics js-cases-dots">
+          <div class="cases-slider__statics_dots">
+            <ul>
+              <li class="active"><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="client__grid_card client__grid_card-tall">
+        <!-- <div class="client__grid_card-tall__preview">
+                <div class="client__grid_card-tall__preview_info">
+                    <div class="client__grid_card-tall__preview_info-heading">
+                        Отзыв
+                    </div>
+                    <div class="client__grid_card-tall__preview_info-content">
+                        Павел Бабий
+                    </div>
+                    <div class="client__grid_card-tall__preview_info-undertext">
+                        начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
+                    </div>
+                </div>
+            </div> -->
+        <div class="client__grid_card-tall__whole">
+          <div class="client__grid_card-tall__whole_info">
+            <div class="client__grid_card-tall__whole_info-heading">
+              Социальные проекты
+            </div>
+            <div class="client__grid_card-tall__whole_info-content">
+              Экспедиция на&nbsp;Белое&nbsp;море
+            </div>
+            <a
+              href="https://vc.ru/flood/281180-ekspediciya-na-beloe-more"
+              target="_blank"
+              class="client__grid_card-tall__whole_info-link"
+            >
+              Подробнее →
+            </a>
+          </div>
+          <img
+            class="client__grid_card-tall__whole_image object-cover"
+            src="/assets/css/img/temp-projects2a.webp"
+            alt="Экспедиция на Белое море"
+          />
+        </div>
+      </div>
+      <div class="client__grid_card client__grid_card-wide">
+        <img
+          class="client__grid_card-wide__image br"
+          src="/assets/css/img/temp-projects1.webp"
+          alt="Российская операционная система «Фантом»"
+        />
+        <div class="client__grid_card-wide__info">
+          <div class="client__grid_card-wide__info-content">
+            Российская операционная система «Фантом»
+          </div>
+          <a href="/case2.html" class="client__grid_card-wide__info-link">
+            Смотреть статью &rarr;
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

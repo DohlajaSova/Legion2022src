@@ -387,6 +387,11 @@
         }
         &__grid{
             margin-bottom: 40px;
+            &-projects {
+                img{
+                    max-height: 210px;
+                }
+            }
         }
     }
     .request {
@@ -782,6 +787,22 @@
                 }
                 &-content, &-wide__info-content, &-tall__preview_info-heading{
                     font-size: 14px;
+                }
+            }
+            &-projects{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr auto auto 1fr;
+                .client__grid_card-tall{
+                    &__whole{
+                        &_info{
+                            padding: 30px 15px 0 15px;
+                        }
+                    }
+                }
+                .client__grid_card-wide{
+                    .cases-slider__item_nomination{
+                        padding: 15px;
+                    }
                 }
             }
         }

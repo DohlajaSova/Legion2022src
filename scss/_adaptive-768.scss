@@ -1387,6 +1387,9 @@
                         padding: 20px 0 0 20px;
                         &_info{
 						    padding: 0 0px 20px 0;
+                            &-content{
+                                margin: 10px 0;
+                            }
                         }
                     }
                     &__info{
@@ -1409,19 +1412,50 @@
                 &-accent + &-content{
                     width: 100%;
                 }
-                &-heading, &-wide__info-heading{
+                &-heading,
+                &-wide__info-heading{
                     font-size: 4vw;
                 }
-                &-content, &-wide__info-content, &-tall__preview_info-heading, &-tall__preview_info-undertext{
+                &-tall__whole_info-content{
+                    font-size: 6vw;
+                }
+                &-content,
+                &-wide__info-content,
+                &-tall__preview_info-heading,
+                &-tall__preview_info-undertext,
+                &-tall__whole_info-heading{
                     font-size: 3vw;
                 }
-                &-link, &-wide__info-link{
+                &-link, &-wide__info-link,
+                &-tall__whole_info-link{
                     font-size: 12px;
                 }
                 &-image{
                     &.abr{
                         right: 14px;
                         bottom: 14px;
+                    }
+                }
+            }
+            &-projects{
+                .client__grid_card-tall{
+                    &__whole{
+                        &_info{
+                            padding: 30px 20px 0 20px;
+                        }
+                    }
+                }
+                .client__grid_card-wide{
+                    .cases-slider__item_nomination{
+                        padding: 20px;
+                    }
+                    .cases-slider{
+                        .accent{
+                            font-size: 5vw;
+                            ~ p{
+                                font-size: 3vw;
+                            }
+                        }
                     }
                 }
             }
