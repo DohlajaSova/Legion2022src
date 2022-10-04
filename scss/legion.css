@@ -500,12 +500,11 @@ a.button {
 .custom-format b,
 .custom-format strong {
   font-weight: 700; }
-.custom-format .emph {
+.custom-format em {
   font-weight: 500; }
 .custom-format h2,
 .custom-format h3,
-.custom-format h4,
-.custom-format h5 {
+.custom-format h4 {
   font-weight: 700;
   font-size: 15px; }
 .custom-format h2 {
@@ -516,9 +515,6 @@ a.button {
   margin: 30px 0 10px; }
 .custom-format h4 {
   font-size: 30px;
-  margin: 30px 0 10px; }
-.custom-format h5 {
-  font-size: 24px;
   margin: 30px 0 10px; }
 .custom-format p {
   font-size: 24px;
