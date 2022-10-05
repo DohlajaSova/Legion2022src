@@ -100,19 +100,6 @@
         </div>
       </div>
       <div class="client__grid_card client__grid_card-tall">
-        <!-- <div class="client__grid_card-tall__preview">
-                <div class="client__grid_card-tall__preview_info">
-                    <div class="client__grid_card-tall__preview_info-heading">
-                        Отзыв
-                    </div>
-                    <div class="client__grid_card-tall__preview_info-content">
-                        Павел Бабий
-                    </div>
-                    <div class="client__grid_card-tall__preview_info-undertext">
-                        начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»
-                    </div>
-                </div>
-            </div> -->
         <div class="client__grid_card-tall__whole">
           <div class="client__grid_card-tall__whole_info">
             <div class="client__grid_card-tall__whole_info-heading">
