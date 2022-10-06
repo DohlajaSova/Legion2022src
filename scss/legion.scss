@@ -487,6 +487,29 @@ a.button {
                 }
             }
         }
+        &.table_bg{
+            display: flex;
+            tbody{
+                display: flex;
+                flex-direction: column;
+                width:100%;
+                padding: 20px 40px;
+                tr{
+                    display: flex;
+                    flex-direction: row;
+                }
+                th,
+                td{
+                    padding-left: 0;
+                    padding-right: 0;
+                    flex-grow: 1;
+                    font-size: 24px;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
     }
     
     img{
@@ -495,35 +518,72 @@ a.button {
         border-radius: 42px;
     }
     
+    .picture-title{
+        font-size: 16px;
+        color:$color-grey-dark;
+        margin: -30px 0 50px;
+    }
+    
+    .accent{
+        &_dark{
+            background-color: $color-blue-dark;
+            color: $color-white;
+            padding: 5px 10px;
+            border-radius: 42px;
+        }
+        &_grey{
+            background-color: $color-grey-light;
+            padding: 5px 10px;
+            border-radius: 42px;
+        }
+        &_blue{
+            background-color: $color-blue;
+            color: $color-white;
+            padding: 5px 10px;
+            border-radius: 42px;
+        }
+    }
+    
 	ul,
 	ol {
 		padding: 0;
         margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 1.3;
 	}
 
 	ul li,
 	ol li {
-		padding-left: 25px;
+		padding-left: 38px;
 		list-style: none;
-		line-height: 20px;
-		margin-bottom: 8px;
+		margin-bottom: 15px;
 	}
+    
+    ul,
+    ol{
+        ul,
+        ol{
+            margin: 15px 0 20px;
+        }
+    }
 
 	ul li:before,
 	ol li:before {
-		content: '—';
+		content: '•';
 		float: left;
-		margin-left: -25px;
+		margin-left: -33px;
 		padding-right: 7px;
 		width: 18px;
 		text-align: right;
 	}
+    
+    
 
 	ol {
 		counter-reset: item;
 	}
 
-	ol li:before {
+	ol > li:before {
 		content: counter(item) '.';
 		counter-increment: item;
 	}
@@ -531,20 +591,30 @@ a.button {
 	ol ol {
 		counter-reset: item2;
 	}
+    
+    ol ol > li{
+        padding-left: 53px;
+    }
 
-	ol ol li:before {
-		content: counter(item) '.'counter(item2);
+	ol ol > li:before {
+		content: counter(item) '.'counter(item2) '.';
 		counter-increment: item2;
+        margin-left: -53px;
 	}
 
 	ol ol ol {
 		counter-reset: item3;
 	}
+    
+    ol ol ol > li{
+        padding-left: 73px;
+    }
 
-	ol ol ol li:before {
-		content: counter(item) '.'counter(item2) '.'counter(item3);
+	ol ol ol > li:before {
+		content: counter(item) '.'counter(item2) '.'counter(item3) '.';
 		counter-increment: item3;
 		padding-right: 18px;
+        margin-left: -73px;
 	}
 }
 
