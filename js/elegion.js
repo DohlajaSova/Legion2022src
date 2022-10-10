@@ -1031,15 +1031,21 @@ docReady(function() {
                     }, false);
                 }
             }, false);
-            feedbackCloser.addEventListener("click", function(e){
-                e.preventDefault();
-                feedbackBody.classList.remove("active");
-                document.querySelector("body").classList.remove("popup-open");
-            }, false);
+            if (feedbackCloser != null){
+                feedbackCloser.addEventListener("click", function(e){
+                    e.preventDefault();
+                    if (feedbackBody != null){
+                        feedbackBody.classList.remove("active");
+                    }
+                    document.querySelector("body").classList.remove("popup-open");
+                }, false);
+            }
             document.addEventListener('ajaxFormResponse', (e) => {
                 if (e.detail === true || e.details === false) {
                     // console.log('should be closed')
-                    feedbackBody.classList.remove("active");
+                    if (feedbackBody != null){
+                        feedbackBody.classList.remove("active");
+                    }
                     document.querySelector("body").classList.remove("popup-open");
                 }
             }, false);
