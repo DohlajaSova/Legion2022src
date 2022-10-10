@@ -254,12 +254,6 @@
               src="/assets/css/img/cases-premia-flag.webp"
               alt=""
             />
-          <!-- <div class="client__grid_card-image background">
-            <img
-              src="/assets/css/img/img/cases-bg-venn.webp"
-              alt=""
-            />
-          </div> -->
         </div>
         <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light client__grid_card-light cases__case-blue">
           <div class="client__grid_card-content">

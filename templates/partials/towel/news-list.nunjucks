@@ -1,20 +1,21 @@
 <div class="news news_portfolio">
-    <div class="news-container">
-        <div class="news-container_inner">
-            <div class="container">
-                <div class="news__filter">
-                    <div class="news__tags js-news-tags">
-                        <a href="#all" class="active">Всё</a>
-                        <a href="#cases">Кейсы</a>
-                        <a href="#events">Мероприятия</a>
-                        <a href="#contests">Конкурсы</a>
-                        <a href="#experience">Опыт</a>
-                        <a href="#community">Сообщество</a>
-                        <a href="#legionners">Легионеры</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container js-news-container-portfolio" data-limit="12">
+  <div class="container">
+    <div class="container">
+      <div class="cases__filter">
+        <div class="select select-inline js-cases-types">
+          <select>
+            <option value="all">Всё</option>
+            <option value="cases">Кейсы</option>
+            <option value="parties">Мероприятия</option>
+            <option value="lotteries">Конкурсы</option>
+            <option value="experience">Опыт</option>
+            <option value="unity">Сообщество</option>
+            <option value="people">Легионеры</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container js-news-container-portfolio" data-limit="12">
                 <div class="container_portfolio-inner">
                     <a
                         href="/client.html"
@@ -278,7 +279,33 @@
                         <button class="button button_default button_wide js-news-more">Показать еще</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
+    <div class="news__grid">
+      <div class="news__grid_card">
+        <div class="news__grid_card-image"></div>
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          Я сам не смотрю,<br />но&nbsp;подписался
         </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card news__grid_card-complex">
+        <div class="news__grid_card-complex__innerCard">
+          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            Я сам не смотрю,<br />но&nbsp;подписался
+          </div>
+        </div>
+        <div class="news__grid_card-complex__innerCard">
+          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            Заголовок&nbsp;одной&nbsp;строкой
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

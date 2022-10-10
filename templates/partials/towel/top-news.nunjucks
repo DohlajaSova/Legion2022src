@@ -1,82 +1,113 @@
 <div class="projects">
-    <div class="container">
-        <h2>Кое-что <br class="mobile480-hide"><em>на почитать</em></h2>
-        <div class="projects__panels">
-            <div class="project project_tall project_tall-with-slider">
-                <div class="project__article_container">
-                    <div class="project__article_contents project__article_contents-slider project__article_contents-static">
-                        <div class="project-slider-article"><div class="js-project-article">
-                            <div class="project-slider-article__item">
-                                <a href="https://vc.ru/flood/281180-ekspediciya-na-beloe-more" target="_blank" class="project__article project__article_large project-article">
-                                    <div class="project-article_top project-article_top-nodesc">
-                                      <div class="project-article_top-rubr1 project-article_top-nodesc-rubr1">Социальные проекты</div>
-                                      <div class="project-article_top-rubr2 project-article_top-nodesc-rubr2">Экспедиция на&nbsp;Белое море</div>
-                                      <div class="project-article_link-arrow project-article_top-nodesc-arrow">Подробнее →</div>
-                                      <img class="project-article_top-img project-article_top-nodesc-img" src="/assets/css/img/temp-projects2.webp" alt="Экспедиция на&nbsp;Белое море"/>
-                                    </div>
-                                </a>
-                            </div>
-                        </div></div>
-                    </div>
-                    <div class="project-slider-article__statics">
-                        <div class="project-slider-article__statics_dots"><ul class="js-project-article-dots">
-                            <li></li>
-                        </ul></div>
-                    </div>
-                </div>
+  <div class="container">
+    <h2>Кое-что <br class="mobile480-hide" /><em>на почитать</em></h2>
+    <div class="client__grid client__grid-news">
+      <div class="client__grid_card client__grid_card-tall">
+        <div class="client__grid_card-tall__whole">
+          <div class="client__grid_card-tall__whole_info">
+            <div class="client__grid_card-tall__whole_info-heading">
+              Публикации
             </div>
-            <div class="project project-with-slider">
-                <div class="cases-slider">
-                    <div class="cases-slider__item active">
-                        <div class="cases-slider__item_nomination">
-                            <h3 class="h2">№1</h3>
-                            <p>Tagline Awards 2020-2021 «Мобильное решение»</p>
-                        </div>
-                        <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-jetkid.webp" alt="Jet Kid"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
-                        </div>
-                    </div>
-                    <div class="cases-slider__item">
-                        <div class="cases-slider__item_nomination">
-                            <h3 class="h2">№2</h3>
-                            <p>Tagline Awards 2020-2021 «Ритейл-приложение»</p>
-                        </div>
-                        <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/client.html"><img src="/assets/css/img/case-5ka2.svg" alt="Пятёрочка"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/client.html">Подробнее о проекте →</a></div>
-                        </div>
-                    </div>
-                    <div class="cases-slider__item">
-                        <div class="cases-slider__item_nomination">
-                            <h3 class="h2">№3</h3>
-                            <p>Tagline Awards 2020-2021 «Приложение для&nbsp;телеком/IT»</p>
-                        </div>
-                        <div class="cases-slider__item_project">
-                            <div class="cases-slider__item_project-photo"><a href="/inprocess.html"><img src="/assets/css/img/case-tele2.webp" alt="Tele2"></a></div>
-                            <div class="cases-slider__item_project-link"><a href="/inprocess.html">Подробнее о проекте →</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cases-slider__statics js-cases-dots">
-                    <div class="cases-slider__statics_dots"><ul>
-                        <li class="active"><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul></div>
-                </div>
+            <div class="client__grid_card-tall__whole_info-content">
+              Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
             </div>
-            <div class="project">
-            	<a href="https://vc.ru/tech/352522-rossiyskuyu-operacionnuyu-sistemu-fantom-doveli-do-testirovaniya-posle-12-let-razrabotki-s-nulya" target="_blank" class="project__article project__article_small project-article">
-              	<div class="project-article_top">
-	                <img class="project-article_top-img" src="/assets/css/img/temp-projects1.webp" alt="Российская операционная система «Фантом»"/>
-                </div>
-                <div class="project-article_link">
-                  <div class="project-article_link-title">Российская операционная система «Фантом»</div>
-                  <div class="project-article_link-arrow">Подробнее →</div>
-                </div>
-            	</a>
-            </div>
+            <a
+              href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/"
+              target="_blank"
+              class="client__grid_card-tall__whole_info-link"
+            >
+              Подробнее →
+            </a>
+          </div>
+          <img
+            class="client__grid_card-tall__whole_image object-cover"
+            src="/assets/css/img/case3-content-foreground.webp"
+            alt="Рейтинг товаров"
+          />
         </div>
+      </div>
+      <div class="client__grid_card client__grid_card-wide">
+        <div class="cases-slider cases-slider-reverse">
+          <div class="cases-slider__item active">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№1</h3>
+              <!-- <p>Лучшее мобильное решение/активация</p> -->
+              <p>Tagline Awards 2020-2021 «Мобильное решение»</p>
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a
+                  href="https://vk.com/elegion?w=wall-34196694_1934"
+                  target="_blank"
+                  ><img
+                    src="/assets/css/img/news-slider-1.webp"
+                    alt="Jet Kid"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№2</h3>
+              <p>Tagline Awards 2020-2021 «Ритейл-приложение»</p>
+              <!-- <p>Лучшее ритейл-приложение</p> -->
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a href="/client.html"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_5ka.svg"
+                    alt="Пятёрочка"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№3</h3>
+              <p>Tagline Awards 2020-2021 «Приложение для телеком/IT»</p>
+              <!-- <p>Лучшее приложение для телеком/IT/интернет-компании</p> -->
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a href="/inprocess.html"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_tele2.webp"
+                    alt="Tele2"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cases-slider__statics js-cases-dots">
+          <div class="cases-slider__statics_dots">
+            <ul>
+              <li class="active"><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="client__grid_card client__grid_card-wide">
+        <img
+          class="client__grid_card-wide__image br"
+          src="/assets/css/img/news-widget-1.webp"
+          alt=""
+        />
+        <div class="client__grid_card-wide__info">
+          <div class="client__grid_card-wide__info-content">
+            Tele2 воплотили идеи клиентов на площадке для продажи услуг
+          </div>
+          <a
+            href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
+            target="_blank"
+            class="client__grid_card-wide__info-link"
+          >
+            Смотреть статью &rarr;
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

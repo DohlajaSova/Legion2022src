@@ -2081,6 +2081,14 @@ a.button {
 	&.bg_venn {
 		background: url($img-path + "cases-slider-bg_venn.svg") center/cover no-repeat;
 	}
+	&-reverse{
+		.cases-slider__item {
+			flex-direction: row-reverse;
+			*{
+				border-radius: inherit;
+			}
+		}
+	}
 }
 
 .cases-slider-info,
@@ -4428,6 +4436,71 @@ a.button {
 			font-size: 16px;
 		}
 	}
+
+	&__grid{
+		display: grid;
+		// grid-template-rows: repeat(auto-fill, auto);
+		grid-template-columns: repeat(4, 1fr);
+		border-radius: 42px;
+		gap: 60px 20px;
+		&_card{
+			grid-column: auto / span 1;
+			grid-row: auto / span 1;
+			border-radius: inherit;
+			color: #1E2738;
+			&-image{
+				height: calc(25vw);
+				max-height: 315px;
+				background-color: #ececec;
+				border-radius: inherit;
+				margin-bottom: 20px;
+			}
+			&-tags{
+				margin-bottom: 10px;
+				font-size: 16px;
+				color: #949191;
+				line-height: 130%;
+			}
+			&-heading{
+				margin-bottom: 10px;
+				font-size: 24px;
+				line-height: 130%;
+			}
+			&-content{
+				font-size: 16px;
+				line-height: 130%;
+			}
+			&-complex{
+				display: grid;
+				grid-column: 3 / span 2;
+				grid-row: 1 / 2;
+				border-radius: inherit;
+				grid-template-rows: repeat(auto-fill, 50%);
+				grid-template-columns: 1fr;
+				gap: 20px;
+				&__innerCard{
+					grid-column: auto / span 2;
+					grid-row: auto / span 1;
+					border-radius: inherit;
+					background-color: #ececec;
+					padding: 30px;
+					&_tags{
+						margin-bottom: 20px;
+						font-size: 16px;
+						line-height: 130%;
+					}
+					&_heading{
+						font-size: 46px;
+						line-height: 130%;
+					}
+				}
+				&__innerCard:first-child{
+					background-color: #84AEFF;
+					color: #fff;
+				}
+			}
+		}
+	}
 }
 
 .vacancies {
@@ -6632,6 +6705,15 @@ a.button {
 			}
 			img{
 				max-height: 315px;
+			}
+		}
+		&-news{
+			.client__grid_card-tall{
+				&__whole{
+					&_image{
+						max-height: 315px;
+					}
+				}
 			}
 		}
 	}
