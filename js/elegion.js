@@ -788,6 +788,68 @@ docReady(function() {
         }
     }
     
+    // фильтр новостей
+    let newsBlocks = document.querySelectorAll(".js-news-grid-container");
+    let newsTypes = document.querySelectorAll(".js-news-types");
+    if (newsBlocks.length >0)
+    {
+        for(let one = 0; one < newsBlocks.length; one++){
+            try{
+                console.log({newsBlocks})
+                // let curLimit = document.querySelectorAll(".js-news-grid-container")[0].dataset.limit*1;
+                // let moreButton = document.querySelectorAll(".js-cases-more")[0];
+                // moreButton?.addEventListener("click", function(e){
+                //     e.preventDefault();
+                //     curLimit += 4;
+                //     portfolioRefresh(curLimit);
+                // })
+
+                // portfolioRefresh(curLimit);
+
+                for (i=0; i<newsTypes.length; i++){
+                    let types = new Array();
+                    for (j=0; j<newsBlocks[one].children.length; j++){
+                        let typeString = newsBlocks[one].children[j].dataset.tags.slice(1,newsBlocks[one].children[j].dataset.tags.length-1);
+                        types[j] = typeString.split(",");
+                    }
+
+                    newsTypes[i].addEventListener("click", function(e){
+                        console.log({newsTypes})
+                        console.log({newsBlocks})
+                        let options = e.target.parentNode.parentNode.childNodes[1];
+                        console.log({options})
+                        e.preventDefault();
+                        let selectedType = options?.selectedOptions[0]?.value;
+                        console.log({selectedType})
+                        let hiddenChilds = 0;
+                        for (j=0; j<types.length; j++){
+                            if (!types[j].includes("'" + selectedType + "'") && !types[j].includes("'every'")){
+                                newsBlocks[one]?.children[j]?.classList.add("hide");
+                                hiddenChilds++;
+                            }
+                            else{
+                                newsBlocks[one]?.children[j]?.classList.remove("hide");
+                            }
+                        }
+                        // Проверить нужно ли скрыть блок в котором происходит фильтрация
+                        if(newsBlocks[one]?.children?.length === hiddenChilds){
+                            newsBlocks[one].classList.add("hide")
+                        } else {
+                            newsBlocks[one].classList.remove("hide")
+                        }
+                        //--
+                        // for (j=0; j<types.length; j++){
+                        //     newsBlocks[one].children[j].classList.add("hide");
+                        // }
+                        // portfolioRefresh(curLimit);
+                    })
+                }
+            } catch(err){
+                console.error({err})
+            }
+        }
+    }
+
 
     // блок вакансий
     let vacancyBlocks = document.querySelectorAll(".vacancy");
