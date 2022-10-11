@@ -31,24 +31,24 @@
               <li><span>Название статьи</span></li>
           </ul>
       </div>
-        <div class="container news-page">
+        <div class="container news-top">
             <h1>
                 Название статьи
             </h1>
-            <div class="news-page__tech">
-                <div class="news-page__tech_date">00 месяц 2022</div>
-                <div class="news-page__tech_tags">#опыт</div>
-                <div class="news-page__tech_views">123</div>
+            <div class="news-top__tech">
+                <div class="news-top__tech_date">00 месяц 2022</div>
+                <div class="news-top__tech_tags">#опыт</div>
+                <div class="news-top__tech_views">123</div>
             </div>
-            <div class="news-page__image"><img src="https://e-legion.ru/assets/blog/CJM%20Cover.png" alt=""></div>
-            <div class="news-page__leadblock">
-                <div class="news-page__leadblock_author">
-                    <div class="news-page__leadblock_author_avatar"><img scr="https://e-legion.ru/assets/css/img/Team_Nikiforov.webp" alt=""></div>
-                    <div class="news-page__leadblock_author_name">Дискавери фаза</div>
-                    <div class="news-page__leadblock_author_position">Инструменты. Публикация №1</div>
+            <div class="news-top__image"><img src="https://e-legion.ru/assets/blog/CJM%20Cover.png" alt=""></div>
+            <div class="news-top__leadblock">
+                <div class="news-top__leadblock_author">
+                    <div class="news-top__leadblock_author-avatar"><img src="https://e-legion.ru/assets/css/img/Team_Nikiforov.webp" alt=""></div>
+                    <div class="news-top__leadblock_author-name">Дискавери фаза</div>
+                    <div class="news-top__leadblock_author-position">Инструменты. Публикация №1</div>
                 </div>
-                <div class="news-page__leadblock_lead">
-                    Customer Journey Map’ом уже давно никого не удивишь: в больших продуктовых компаниях открывают целые отделы по исследованию клиентского опыта, а консалтинговые организации регулярно используют этот инструмент для анализа продукта клиента.<br>
+                <div class="news-top__leadblock_lead">
+                    Customer Journey Map’ом уже давно никого не удивишь: в больших продуктовых компаниях открывают целые отделы по исследованию клиентского опыта, а консалтинговые организации регулярно используют этот инструмент для анализа продукта клиента.<br><br>
                     Так зачем мы решили написать этот материал? 
                 </div>
             </div>

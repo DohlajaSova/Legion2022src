@@ -557,17 +557,23 @@ a.button {
       border-bottom: none; }
     .custom-format table.table_two-columns {
       background: transparent;
-      border-radius: 0; }
+      border-radius: 0;
+      font-size: 24px; }
       .custom-format table.table_two-columns td,
       .custom-format table.table_two-columns th {
         width: 48%;
-        padding: 0; }
+        padding: 0;
+        vertical-align: top; }
         .custom-format table.table_two-columns td:first-child,
         .custom-format table.table_two-columns th:first-child {
           padding-right: 2%; }
         .custom-format table.table_two-columns td:last-child,
         .custom-format table.table_two-columns th:last-child {
           padding-left: 2%; }
+      .custom-format table.table_two-columns.table_with-arrow th:first-child,
+      .custom-format table.table_two-columns.table_with-arrow td:first-child {
+        padding-bottom: 23px;
+        background: url("img/arrow-news.svg") bottom right no-repeat; }
     .custom-format table.table_bg {
       display: flex; }
       .custom-format table.table_bg tbody {
@@ -1687,6 +1693,10 @@ a.button {
     background: url("img/cases-slider-bg_alfa.svg") center/cover no-repeat; }
   .cases-slider.bg_venn {
     background: url("img/cases-slider-bg_venn.svg") center/cover no-repeat; }
+  .cases-slider-reverse .cases-slider__item {
+    flex-direction: row-reverse; }
+    .cases-slider-reverse .cases-slider__item * {
+      border-radius: inherit; }
 
 .cases-slider-info,
 .project-slider-article,
@@ -3219,6 +3229,101 @@ a.button {
     .news .news-item__lead {
       color: #1E2738;
       font-size: 16px; }
+  .news__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 42px;
+    gap: 60px 20px; }
+    .news__grid_card {
+      grid-column: auto / span 1;
+      grid-row: auto / span 1;
+      border-radius: inherit;
+      color: #1E2738; }
+      .news__grid_card-image {
+        height: calc(25vw);
+        max-height: 315px;
+        background-color: #ececec;
+        border-radius: inherit;
+        margin-bottom: 20px; }
+      .news__grid_card-tags {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #949191;
+        line-height: 130%; }
+      .news__grid_card-heading {
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 130%; }
+      .news__grid_card-content {
+        font-size: 16px;
+        line-height: 130%; }
+      .news__grid_card-complex {
+        display: grid;
+        grid-column: 3 / span 2;
+        grid-row: 1 / 2;
+        border-radius: inherit;
+        grid-template-rows: repeat(auto-fill, 50%);
+        grid-template-columns: 1fr;
+        gap: 20px; }
+        .news__grid_card-complex__innerCard {
+          grid-column: auto / span 2;
+          grid-row: auto / span 1;
+          border-radius: inherit;
+          background-color: #ececec;
+          padding: 30px; }
+          .news__grid_card-complex__innerCard_tags {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 130%; }
+          .news__grid_card-complex__innerCard_heading {
+            font-size: 46px;
+            line-height: 130%; }
+        .news__grid_card-complex__innerCard:first-child {
+          background-color: #84AEFF;
+          color: #fff; }
+  .news-top__tech {
+    width: 100%;
+    display: flex;
+    color: #949191;
+    margin-bottom: 60px;
+    align-items: first baseline; }
+    .news-top__tech_date {
+      margin-right: 45px; }
+    .news-top__tech_views {
+      margin-left: auto;
+      background: url("img/icon-eye.svg") center left 12px no-repeat #F0F0F0;
+      padding: 10px 12px 10px 42px;
+      border-radius: 42px;
+      color: #1E2738;
+      line-height: 20px; }
+  .news-top__image {
+    margin-bottom: 60px; }
+  .news-top__leadblock {
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between; }
+    .news-top__leadblock_author {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .news-top__leadblock_author-avatar {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px; }
+        .news-top__leadblock_author-avatar img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+      .news-top__leadblock_author-name {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #1E2738; }
+      .news-top__leadblock_author-position {
+        font-size: 16px;
+        color: #949191; }
+    .news-top__leadblock_lead {
+      width: 48%;
+      font-size: 24px; }
 
 .vacancies {
   margin-bottom: 76px;
@@ -4632,6 +4737,8 @@ a.button {
       grid-row: auto / span 1; }
     .client__grid-projects img {
       max-height: 315px; }
+  .client__grid-news .client__grid_card-tall__whole_image {
+    max-height: 315px; }
 .client .principles__content {
   margin-bottom: 0; }
   .client .principles__content_buttons {
@@ -4919,7 +5026,16 @@ a.button {
   .client__grid_card-heading {
     font-size: 2vw; }
   .client__grid_card-content, .client__grid_card-wide__info-content, .client__grid_card-tall__preview_info-heading, .client__grid_card-tall__preview_info-undertext, .client__grid_card-tall__whole_info-heading {
-    font-size: 1.5vw; } }
+    font-size: 1.5vw; }
+
+  .news__grid {
+    gap: 20px; }
+    .news__grid_card-tags, .news__grid_card-content, .news__grid_card-complex__innerCard_tags {
+      font-size: 1.2vw; }
+    .news__grid_card-heading {
+      font-size: 1.8vw; }
+    .news__grid_card-complex__innerCard_heading {
+      font-size: 3.1vw; } }
 @media only screen and (max-width: 1350px) {
   .top .h1 {
     width: 70%; }
@@ -6163,7 +6279,24 @@ a.button {
     margin-bottom: 40px; }
 
   .did__slider .vacancy {
-    padding-bottom: calc(100% - 60px); } }
+    padding-bottom: calc(100% - 60px); }
+
+  .news__grid {
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 38px; }
+    .news__grid_card-image {
+      height: calc(50vw - 40px);
+      max-height: 50vw; }
+    .news__grid_card-complex {
+      grid-column: 1 / span 2;
+      grid-row: 1 / 2;
+      grid-template-rows: repeat(2, minmax(254px, 50%)); }
+    .news__grid_card-tags, .news__grid_card-content, .news__grid_card-complex__innerCard_tags {
+      font-size: 1.2vw; }
+    .news__grid_card-heading {
+      font-size: 1.8vw; }
+    .news__grid_card-complex__innerCard_heading {
+      font-size: 3.1vw; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
