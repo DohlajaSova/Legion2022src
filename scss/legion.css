@@ -4985,7 +4985,8 @@ a.button {
   .client__breadcrumbs,
   .client__header,
   .service-descr__accordion,
-  .vacancypage {
+  .vacancypage,
+  .custom-format {
     padding-left: 60px;
     padding-right: 60px; }
 
@@ -5270,7 +5271,8 @@ a.button {
   .client__breadcrumbs,
   .client__header,
   .service-descr__accordion,
-  .vacancypage {
+  .vacancypage,
+  .custom-format {
     padding-left: 30px;
     padding-right: 30px; }
 
@@ -6301,7 +6303,49 @@ a.button {
     .news__grid_card-heading {
       font-size: 1.8vw; }
     .news__grid_card-complex__innerCard_heading {
-      font-size: 3.1vw; } }
+      font-size: 3.1vw; }
+  .news-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #1E2738;
+    margin-bottom: 40px; }
+    .news-top__leadblock {
+      flex-direction: column; }
+      .news-top__leadblock_author {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px; }
+        .news-top__leadblock_author-avatar {
+          float: left;
+          margin-right: 20px; }
+        .news-top__leadblock_author-name {
+          margin: 8px 0 4px; }
+      .news-top__leadblock_lead {
+        width: 100%; }
+
+  .custom-format h2 {
+    font-size: 56px;
+    margin: 40px 0 20px; }
+  .custom-format h3 {
+    margin: 40px 0 20px; }
+  .custom-format h4 {
+    margin: 40px 0 20px; }
+  .custom-format p {
+    margin-bottom: 30px; }
+  .custom-format hr {
+    margin-bottom: 30px; }
+  .custom-format ol,
+  .custom-format ul {
+    margin-bottom: 30px; }
+  .custom-format table {
+    margin-bottom: 35px; }
+  .custom-format blockquote {
+    font-size: 30px;
+    padding: 30px 0 10px; }
+    .custom-format blockquote p {
+      font-size: 30px;
+      margin-bottom: 30px; }
+  .custom-format .picture-title {
+    margin: -15px 0 30px; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -6944,6 +6988,8 @@ a.button {
     .news__button {
       margin-left: 0;
       width: 100%; }
+    .news-top__tech {
+      margin-bottom: 40px; }
 
   .who-we-are__content {
     margin-bottom: 0; }
@@ -7001,7 +7047,31 @@ a.button {
 
   .not-all-the-same_background {
     padding-top: 60px;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+
+  .custom-format table.table_bg tbody {
+    padding: 10px 25px; }
+    .custom-format table.table_bg tbody th,
+    .custom-format table.table_bg tbody td {
+      font-size: 20px; }
+  .custom-format table.table_two-columns {
+    display: block;
+    margin: 40px 0 55px; }
+    .custom-format table.table_two-columns tbody {
+      display: block; }
+    .custom-format table.table_two-columns tr {
+      display: flex;
+      flex-direction: column; }
+    .custom-format table.table_two-columns td {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0; }
+      .custom-format table.table_two-columns td:first-child {
+        margin-bottom: 20px; }
+      .custom-format table.table_two-columns td:last-child {
+        padding: 0; }
+    .custom-format table.table_two-columns.table_with-arrow td:first-child {
+      background: none; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
@@ -7971,6 +8041,32 @@ a.button {
       .news .news-item__img img {
         height: 250px;
         object-fit: cover; }
+    .news-top {
+      padding-bottom: 25px;
+      margin-bottom: 35px; }
+      .news-top__tech {
+        font-size: 14px;
+        margin-bottom: 30px; }
+        .news-top__tech_views {
+          padding: 5px 12px 5px 42px; }
+      .news-top__image {
+        margin-bottom: 20px; }
+      .news-top__leadblock_author {
+        margin-bottom: 40px; }
+        .news-top__leadblock_author-avatar {
+          width: 60px;
+          height: 60px;
+          margin-right: 12px;
+          margin-bottom: 0; }
+        .news-top__leadblock_author-name {
+          font-size: 14px;
+          margin-top: 10px; }
+        .news-top__leadblock_author-position {
+          font-size: 12px; }
+      .news-top__leadblock_lead {
+        font-size: 14px; }
+        .news-top__leadblock_lead p {
+          font-size: 14px; }
 
   .feedback {
     border-radius: 30px 30px 0 0;
@@ -8095,7 +8191,73 @@ a.button {
   .accordion__item_head {
     font-size: 24px; }
   .accordion__item.active .accordion__item_body {
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  .custom-format {
+    font-size: 14px; }
+    .custom-format img {
+      border-radius: 30px; }
+    .custom-format h2 {
+      font-size: 28px;
+      margin: 20px 0 15px; }
+    .custom-format h3 {
+      font-size: 22px;
+      margin: 20px 0 15px; }
+    .custom-format h4 {
+      font-size: 16px;
+      margin: 20px 0 15px; }
+    .custom-format p {
+      font-size: 14px;
+      margin-bottom: 20px; }
+    .custom-format hr {
+      margin-bottom: 20px; }
+    .custom-format blockquote {
+      font-size: 24px;
+      padding: 20px 0 0px; }
+      .custom-format blockquote p {
+        font-size: 24px;
+        margin-bottom: 20px; }
+    .custom-format ol,
+    .custom-format ul {
+      font-size: 14px;
+      margin-bottom: 20px; }
+      .custom-format ol li,
+      .custom-format ul li {
+        margin-bottom: 5px;
+        padding-left: 21px; }
+        .custom-format ol li::before,
+        .custom-format ul li::before {
+          width: 25px; }
+      .custom-format ol ol,
+      .custom-format ol ul,
+      .custom-format ul ol,
+      .custom-format ul ul {
+        margin: 5px 0 7px; }
+    .custom-format ol ol > li {
+      padding-left: 32px; }
+      .custom-format ol ol > li::before {
+        margin-left: -32px; }
+    .custom-format ol ol ol > li {
+      padding-left: 42px; }
+      .custom-format ol ol ol > li::before {
+        margin-left: -42px; }
+    .custom-format .accent_blue, .custom-format .accent_grey, .custom-format .accent_dark {
+      padding: 3px 6px; }
+    .custom-format .picture-title {
+      font-size: 12px;
+      margin: -8px 0 20px; }
+    .custom-format table {
+      margin-bottom: 25px;
+      border-radius: 30px; }
+      .custom-format table.table_bg tbody th,
+      .custom-format table.table_bg tbody td {
+        font-size: 13px; }
+      .custom-format table.table_two-columns {
+        font-size: 14px;
+        margin: 20px 0 25px; }
+        .custom-format table.table_two-columns td:first-child {
+          margin-bottom: 5px;
+          padding-right: 0; } }
 @media only screen and (max-width: 480px) {
   .mobile480-show {
     display: block; }
@@ -8126,7 +8288,8 @@ a.button {
   .client__breadcrumbs,
   .client__header,
   .service-descr__accordion,
-  .vacancypage {
+  .vacancypage,
+  .custom-format {
     padding-left: 20px;
     padding-right: 20px; }
 
@@ -8537,7 +8700,10 @@ a.button {
     margin-top: -60px;
     background: #fff;
     border-radius: 30px 30px 0 0;
-    padding-top: 60px; } }
+    padding-top: 60px; }
+
+  .breadcrumbs li::after {
+    top: -1px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;

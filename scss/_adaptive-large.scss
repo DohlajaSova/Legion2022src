@@ -31,7 +31,8 @@
     .client__breadcrumbs,
     .client__header,
     .service-descr__accordion,
-    .vacancypage{
+    .vacancypage,
+    .custom-format{
         padding-left:60px;
         padding-right:60px;
     }
@@ -520,7 +521,8 @@
     .client__breadcrumbs,
     .client__header,
     .service-descr__accordion,
-    .vacancypage{
+    .vacancypage,
+    .custom-format{
         padding-left:30px;
         padding-right:30px;
     }
@@ -2204,6 +2206,65 @@
                     font-size: $major;
                 } 
             }
+        }
+        &-top{
+            padding-bottom: 40px;
+            border-bottom: 1px solid $color-blue-dark;
+            margin-bottom: 40px;
+            &__leadblock{
+                flex-direction: column;
+                &_author{
+                    display: block;
+                    width:100%;
+                    margin-bottom: 40px;
+                    &-avatar{
+                        float:left;
+                        margin-right: 20px;
+                    }
+                    &-name{
+                        margin: 8px 0 4px;
+                    }
+                }
+                &_lead{
+                    width:100%;
+                }
+            }
+        }
+    }
+    .custom-format{
+        h2{
+            font-size: 56px;
+            margin: 40px 0 20px;
+        }
+        h3{
+            margin: 40px 0 20px;
+        }
+        h4{
+            margin: 40px 0 20px;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        hr{
+            margin-bottom: 30px;
+        }
+        ol,
+        ul{
+            margin-bottom: 30px;
+        }
+        table{
+            margin-bottom: 35px;
+        }
+        blockquote{
+            font-size: 30px;
+            padding: 30px 0 10px;
+            p{
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .picture-title{
+            margin: -15px 0 30px;
         }
     }
 }
