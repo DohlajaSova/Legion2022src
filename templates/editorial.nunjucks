@@ -25,12 +25,12 @@
     <div class="header-dummy"></div>
     {% include "partials/towel/pmenu.nunjucks" %}
     <div class="top top_news">
-      <div class="container">
-          <ul class="client__breadcrumbs breadcrumbs">
-              <li><a title="" href="">Название статьи</a></li>
-              <li><span>Название статьи</span></li>
-          </ul>
-      </div>
+        <div class="container">
+              <ul class="client__breadcrumbs breadcrumbs">
+                  <li><a title="" href="">Название статьи</a></li>
+                  <li><span>Название статьи</span></li>
+              </ul>
+        </div>
         <div class="container news-top">
             <h1>
                 Название статьи

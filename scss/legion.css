@@ -362,7 +362,7 @@ input[type="tel"],
 
 .hide,
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .nowrap {
   white-space: nowrap; }
@@ -637,7 +637,8 @@ a.button {
     margin-left: -33px;
     padding-right: 7px;
     width: 18px;
-    text-align: right; }
+    text-align: right;
+    white-space: nowrap; }
   .custom-format ol {
     counter-reset: item; }
   .custom-format ol > li:before {
@@ -810,6 +811,8 @@ a.button {
     .select-inline.platform .select-hide div:nth-of-type(3) {
       background-image: url("img/icon-web-grey.svg"); }
     .select-inline.platform .select-hide div:nth-of-type(4) {
+      background-image: url("img/icon-aurora-grey.svg"); }
+    .select-inline.platform .select-hide div:nth-of-type(5) {
       background-image: url("img/icon-other-grey.svg"); }
   .select-inline.platform .select-hide .same-as-selected:nth-of-type(1) {
     background-image: url("img/icon-ios-white.svg"); }
@@ -818,6 +821,8 @@ a.button {
   .select-inline.platform .select-hide .same-as-selected:nth-of-type(3) {
     background-image: url("img/icon-web-white.svg"); }
   .select-inline.platform .select-hide .same-as-selected:nth-of-type(4) {
+    background-image: url("img/icon-aurora-white.svg"); }
+  .select-inline.platform .select-hide .same-as-selected:nth-of-type(5) {
     background-image: url("img/icon-other-white.svg"); }
 
 .button.yaDiskUploader {

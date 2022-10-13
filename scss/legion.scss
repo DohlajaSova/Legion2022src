@@ -586,6 +586,7 @@ a.button {
 		padding-right: 7px;
 		width: 18px;
 		text-align: right;
+        white-space: nowrap;
 	}
     
     
@@ -846,6 +847,9 @@ a.button {
 					background-image: url($img-path + "icon-web-grey.svg");
 				}
 				&:nth-of-type(4) {
+					background-image: url($img-path + "icon-aurora-grey.svg");
+				}
+				&:nth-of-type(5) {
 					background-image: url($img-path + "icon-other-grey.svg");
 				}
 			}
@@ -861,6 +865,9 @@ a.button {
 					background-image: url($img-path + "icon-web-white.svg");
 				}
 				&:nth-of-type(4) {
+					background-image: url($img-path + "icon-aurora-white.svg");
+				}
+				&:nth-of-type(5) {
 					background-image: url($img-path + "icon-other-white.svg");
 				}
 			}
