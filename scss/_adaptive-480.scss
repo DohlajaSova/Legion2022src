@@ -440,17 +440,18 @@
     }
     .vacancy{
         // pointer-events: none;
-        max-height: 168px;  
-        padding-bottom: 108px;
+        max-height: 188px;
+        padding-bottom: 128px;
         transition: all 0.25s;
         &__container{
             background:url($img-path + "vacancy-bg.svg") top right no-repeat $color-grey-light;
-            max-height: 168px;
+            max-height: 188px;
             transition: all 0.25s;
         }
         &__title {
             background:transparent!important;
             height: auto!important;
+			padding:35px 25px !important;
             &_icon {
                 transition: transform .25s;
                 margin-bottom: 20px;
@@ -481,7 +482,14 @@
                 margin-bottom:0px!important;
             }
         }
-        &_send {        
+        &_send {
+			.vacancy__title_name{
+				p{
+					&:first-child{
+						margin-bottom:10px;
+					}
+				}
+			}
             .vacancy__body_item{
                 display: none;
             }
@@ -601,7 +609,8 @@
                     width: 100%!important;
                 }
                 &_name {
-                    font-size: 16px;
+                    font-size: 10px;
+					padding: 0 5px;
                 }
             }
         }
@@ -679,11 +688,13 @@
             padding-bottom: 80px;
         }
     }
-    .who-we-are, .news{
+    .who-we-are,
+	.news{
         margin-top: -60px;
         background: #fff;
         border-radius: 30px 30px 0 0;
         padding-top: 60px;
+		position:relative;
     }
     .breadcrumbs{
         li{

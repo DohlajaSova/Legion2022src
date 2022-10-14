@@ -76,7 +76,10 @@
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
-                            <div class="vacancy__title_name">Возможно, нам не&nbsp;хватает в&nbsp;команде именно вас. Мы&nbsp;просто пока не&nbsp;знаем об&nbsp;этом.</div>
+                            <div class="vacancy__title_name">
+                                <p>Возможно, нам не&nbsp;хватает в&nbsp;команде именно вас.</p>
+                                <p>Мы&nbsp;просто пока не&nbsp;знаем об&nbsp;этом.</p>
+                            </div>
                         </h3>
                         <div class="vacancy__body">
                             <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>

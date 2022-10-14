@@ -896,13 +896,13 @@ docReady(function() {
                     let vacancyTitle = vacancyName.parentNode;
                     const icon = vacancyTitle.children[0];
                     if(this.style.height === "336px") {
-                        this.style.height = "168px";
+                        this.style.height = "188px";
                         vacancyContainer.style.height = "100%";
-                        this.style.maxHeight = "168px";
+                        this.style.maxHeight = "188px";
                         vacancyContainer.style.maxHeight = "100%";
                         icon.style.transform="rotate(0deg)";
                         if(this.id === 'vac_send'){
-                            this.style['padding-bottom'] = "108px";
+                            this.style['padding-bottom'] = "128px";
                         }
                     } else {
                         this.style.height = "336px";

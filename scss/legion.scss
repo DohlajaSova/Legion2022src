@@ -2130,7 +2130,7 @@ a.button {
 				border: 1px solid transparent;
 				border-radius: 50%;
 				display: inline-block;
-				background-color: $color-blue-dark;
+				background-color: $color-grey-dark;
 
 				&.active {
 					width: 10px;
@@ -2143,6 +2143,7 @@ a.button {
 
 				a {
 					display: block;
+					background:transparent;
 					width: 100%;
 					height: 100%;
 				}
@@ -5020,6 +5021,10 @@ a.button {
 		margin-top: 24px;
 		color: $color-grey-dark;
 		font-size: 12px;
+		
+		&_copy{
+			white-space:nowrap;
+		}
 
 		span {
 			margin-left: 93px;
