@@ -171,11 +171,19 @@
             }
             &__article_small {
                 flex-direction:row;
-                max-height:210px;
+				.project-article_link{
+					padding:16px;
+				}
                 .project-article_link-title {
                     width:100%;
+					min-height:0;
                     margin-right:0;
                 }
+				.project-article_link-arrow{
+					left:16px;
+					bottom:16px;
+					max-width:calc(100% - 32px);
+				}
             }
         }
 
@@ -608,12 +616,14 @@
                 &_info {
                     width: 100%!important;
                 }
-                &_name {
-                    font-size: 10px;
-					padding: 0 5px;
-                }
             }
         }
+		.tns-outer{
+			.cases__case_name{
+				font-size: 10px !important;
+				padding: 0 5px !important;
+			}
+		}
         .vacancy__title_name{
             font-size: 16px;
             padding-bottom: 20px;
