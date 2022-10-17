@@ -4539,9 +4539,8 @@ a.button {
 			border-radius: inherit;
 			color: #1E2738;
 			&-image{
-				height: calc(25vw);
-				max-height: 315px;
-				background-color: #ececec;
+                width:100%;
+				height:auto;
 				border-radius: inherit;
 				margin-bottom: 20px;
 			}
