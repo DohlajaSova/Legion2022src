@@ -4591,11 +4591,6 @@ a.button {
 					color: #fff;
 				}
 			}
-			&-complex[data-limit="2"]{
-				&>:first-child{
-					background-color: red;
-				}
-			}
 		}
 	}
     &-top{
