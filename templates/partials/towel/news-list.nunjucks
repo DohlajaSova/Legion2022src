@@ -281,34 +281,26 @@
                 </div>
             </div> -->
     <div class="news__grid js-news-grid-container" data-limit="12">
-        <div class="news__grid_card"
-          data-tags="['all','cases']"
-          data-priority="10">
-          <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
-          <div class="news__grid_card-tags">Разработка. Сообщество</div>
-          <a href="" class="news__grid_card-heading">
-            Я сам не смотрю,<br />но&nbsp;подписался
-          </a>
-          <div class="news__grid_card-content">
-            Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
-          </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          Я сам не смотрю,<br />но&nbsp;подписался
         </div>
-        <div class="news__grid_card"
-          data-tags="['every']"
-          data-priority="10">
-          <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
-          <div class="news__grid_card-tags">Разработка. Сообщество</div>
-          <a href="" class="news__grid_card-heading">
-            Я сам не смотрю,<br />но&nbsp;подписался
-          </a>
-          <div class="news__grid_card-content">
-            Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
-          </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
         </div>
       </div>
       <div class="news__grid_card" data-tags="['every']" data-priority="10">
-        <div class="news__grid_card-image"></div>
         <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
         <div class="news__grid_card-tags">Разработка. Сообщество</div>
         <div class="news__grid_card-heading">
           Я сам не смотрю,<br />но&nbsp;подписался
@@ -329,7 +321,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+            Я сам не смотрю,<br />но&nbsp;подписался
           </div>
         </div>
         <div
@@ -365,7 +357,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
+            Заголовок&nbsp;одной&nbsp;строкой
           </div>
         </div>
       </div>

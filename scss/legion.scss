@@ -4538,6 +4538,9 @@ a.button {
 			grid-row: auto / span 1;
 			border-radius: inherit;
 			color: #1E2738;
+			a{
+				border-radius: inherit;
+			}
 			&-image{
                 width:100%;
 				height:auto;

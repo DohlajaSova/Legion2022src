@@ -329,7 +329,15 @@ function initVideo(){
         }
     }
 }
-        
+
+function removeOverBlocks(container, limit, stable){
+    for (let one = 0; one < container.children.length; one++){
+        if(limit && stable && one >= limit){
+            container?.children[one]?.classList.add("hide");
+        }
+    }
+}
+
 docReady(function() {
     // фиксим хедер при скролле
     const stickyHeader = document.getElementsByClassName('header')[0];
@@ -812,6 +820,11 @@ docReady(function() {
                         let typeString = newsBlocks[one].children[j].dataset.tags.slice(1,newsBlocks[one].children[j].dataset.tags.length-1);
                         types[j] = typeString.split(",");
                     }
+                    const limit = newsBlocks[one].dataset.limit;
+                    const limitstable = newsBlocks[one].dataset.limitStable;
+                    if(limit && limitstable){
+                        removeOverBlocks(newsBlocks[one], limit, limitstable);
+                    }
 
                     newsTypes[i].addEventListener("click", function(e){
                         console.log({newsTypes})
@@ -822,6 +835,9 @@ docReady(function() {
                         let selectedType = options?.selectedOptions[0]?.value;
                         console.log({selectedType})
                         let hiddenChilds = 0;
+                        let visibleChilds = 0;
+                        console.log(newsBlocks[one].dataset)
+                        console.log({limitstable})
                         for (j=0; j<types.length; j++){
                             if (!types[j].includes("'" + selectedType + "'") && !types[j].includes("'every'")){
                                 newsBlocks[one]?.children[j]?.classList.add("hide");
@@ -829,6 +845,13 @@ docReady(function() {
                             }
                             else{
                                 newsBlocks[one]?.children[j]?.classList.remove("hide");
+                                visibleChilds++;
+                            }
+                            // если установлен лимит скрываем овер блоки
+                            console.log({visibleChilds})
+                            if(limit && limitstable && visibleChilds > limit){
+                                console.log('here')
+                                newsBlocks[one]?.children[j]?.classList.add("hide");
                             }
                         }
                         // Проверить нужно ли скрыть блок в котором происходит фильтрация
