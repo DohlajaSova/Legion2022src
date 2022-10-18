@@ -28,7 +28,8 @@
     .client__breadcrumbs,
     .client__header,
     .service-descr__accordion,
-    .vacancypage{
+    .vacancypage,
+    .custom-format{
         padding-left:20px;
         padding-right:20px;
     }
@@ -170,11 +171,19 @@
             }
             &__article_small {
                 flex-direction:row;
-                max-height:210px;
+				.project-article_link{
+					padding:16px;
+				}
                 .project-article_link-title {
                     width:100%;
+					min-height:0;
                     margin-right:0;
                 }
+				.project-article_link-arrow{
+					left:16px;
+					bottom:16px;
+					max-width:calc(100% - 32px);
+				}
             }
         }
 
@@ -439,17 +448,18 @@
     }
     .vacancy{
         // pointer-events: none;
-        max-height: 168px;  
-        padding-bottom: 108px;
+        max-height: 188px;
+        padding-bottom: 128px;
         transition: all 0.25s;
         &__container{
             background:url($img-path + "vacancy-bg.svg") top right no-repeat $color-grey-light;
-            max-height: 168px;
+            max-height: 188px;
             transition: all 0.25s;
         }
         &__title {
             background:transparent!important;
             height: auto!important;
+			padding:35px 25px !important;
             &_icon {
                 transition: transform .25s;
                 margin-bottom: 20px;
@@ -480,7 +490,14 @@
                 margin-bottom:0px!important;
             }
         }
-        &_send {        
+        &_send {
+			.vacancy__title_name{
+				p{
+					&:first-child{
+						margin-bottom:10px;
+					}
+				}
+			}
             .vacancy__body_item{
                 display: none;
             }
@@ -599,11 +616,14 @@
                 &_info {
                     width: 100%!important;
                 }
-                &_name {
-                    font-size: 16px;
-                }
             }
         }
+		.tns-outer{
+			.cases__case_name{
+				font-size: 10px !important;
+				padding: 0 5px !important;
+			}
+		}
         .vacancy__title_name{
             font-size: 16px;
             padding-bottom: 20px;
@@ -678,11 +698,20 @@
             padding-bottom: 80px;
         }
     }
-    .who-we-are, .news{
+    .who-we-are,
+	.news{
         margin-top: -60px;
         background: #fff;
         border-radius: 30px 30px 0 0;
         padding-top: 60px;
+		position:relative;
+    }
+    .breadcrumbs{
+        li{
+            &::after{
+                top:-1px;
+            }
+        }
     }
 }
 

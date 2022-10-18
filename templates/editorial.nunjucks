@@ -9,6 +9,7 @@
 	<title>{% block title %}{% endblock %}e-legion</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/prism.css">
 	<link rel="stylesheet" href="assets/css/elegion.css">
     <link rel="apple-touch-icon" type="image/webp" sizes="180x180" href="/assets/css/img/apple-touch-icon.webp">
     <link rel="icon" type="image/webp" sizes="32x32" href="/assets/css/img/favicon-32x32.webp">
@@ -25,12 +26,12 @@
     <div class="header-dummy"></div>
     {% include "partials/towel/pmenu.nunjucks" %}
     <div class="top top_news">
-      <div class="container">
-          <ul class="client__breadcrumbs breadcrumbs">
-              <li><a title="" href="">Название статьи</a></li>
-              <li><span>Название статьи</span></li>
-          </ul>
-      </div>
+        <div class="container">
+              <ul class="client__breadcrumbs breadcrumbs">
+                  <li><a title="" href="">Название статьи</a></li>
+                  <li><span>Название статьи</span></li>
+              </ul>
+        </div>
         <div class="container news-top">
             <h1>
                 Название статьи

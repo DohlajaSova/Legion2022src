@@ -1,7 +1,7 @@
 <h1 class="header__logo" title="e-legion">
     <a href="/"></a>
 </h1>
-<div class="header__hmenu hide">
+<div class="header__hmenu">
     <a href="#" class="js-top-menu"></a>
 </div>
 <div class="header__mmenu">

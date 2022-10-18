@@ -640,6 +640,11 @@
             margin-left: 0;
             width: 100%;
         }
+        &-top{
+            &__tech{
+                margin-bottom: 40px;
+            }
+        }
     }
     .who-we-are__content {
         margin-bottom: 0;
@@ -742,6 +747,48 @@
         &_background {
             padding-top: 60px;
             padding-bottom: 20px;
+        }
+    }
+    .custom-format{
+        table{
+            &.table_bg{
+                tbody{
+                    padding: 10px 25px;
+                    th,
+                    td{
+                        font-size: 20px;
+                    }
+                }
+            }
+            &.table_two-columns{
+                display: block;
+                margin: 40px 0 55px;
+                tbody{
+                    display: block;
+                }
+                tr{
+                    display: flex;
+                    flex-direction: column;
+                }
+                td{
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+                &.table_with-arrow{
+                    td{
+                        &:first-child{
+                            background: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -2220,6 +2267,44 @@
                 }
             }
         }
+        &-top{
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            &__tech{
+                font-size: 14px;
+                margin-bottom: 30px;
+                &_views{
+                    padding: 5px 12px 5px 42px;
+                }
+            }
+            &__image{
+                margin-bottom: 20px;
+            }
+            &__leadblock{
+                &_author{
+                    margin-bottom: 40px;
+                    &-avatar{
+                        width:60px;
+                        height: 60px;
+                        margin-right: 12px;
+                        margin-bottom: 0;
+                    }
+                    &-name{
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                    &-position{
+                        font-size:12px;
+                    }
+                }
+                &_lead{
+                    font-size: 14px;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
     .feedback{
         border-radius:30px 30px 0 0;
@@ -2265,6 +2350,8 @@
     }
     .footer{
         border-radius:30px 30px 0 0;
+		margin-top:-30px;
+		position:relative;
         &__container{
             &_top{
                 flex-direction:column;
@@ -2408,7 +2495,7 @@
 
     .body_career {
         .top {
-            background: url(img/career480480.webp) top center no-repeat;
+            background: url(img/career480.webp) top center no-repeat;
             background-size: cover;
             min-height: 568px;
             & > .container{
@@ -2424,6 +2511,100 @@
         &.active{
             .accordion__item_body{
                 padding-bottom: 40px;
+            }
+        }
+    }
+    .custom-format{
+        font-size: 14px;
+        img{
+            border-radius: 30px;
+        }
+        h2{
+            font-size: 28px;
+            margin: 20px 0 15px;
+        }
+        h3{
+            font-size: 22px;
+            margin: 20px 0 15px;
+        }
+        h4{
+            font-size: 16px;
+            margin: 20px 0 15px;
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        hr{
+            margin-bottom: 20px;
+        }
+        blockquote{
+            font-size: 24px;
+            padding: 20px 0 0px;
+            p{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+        ol,
+        ul{
+            font-size: 14px;
+            margin-bottom: 20px;
+            li{
+                margin-bottom: 5px;
+                padding-left:21px;
+                &::before{
+                    width:25px;
+                }
+            }
+            ol,
+            ul{
+                margin: 5px 0 7px;
+            }
+        }
+        ol ol > li{
+            padding-left: 32px;
+            &::before{
+                margin-left: -32px;
+            }
+        }
+        ol ol ol > li{
+            padding-left: 42px;
+            &::before{
+                margin-left: -42px;
+            }
+        }
+        .accent{
+            &_blue,
+            &_grey,
+            &_dark{
+                padding: 3px 6px;
+            }
+        }
+        .picture-title{
+            font-size: 12px;
+            margin: -8px 0 20px;
+        }
+        table{
+            margin-bottom: 25px;
+            border-radius: 30px;
+            &.table_bg{
+                tbody{
+                    th,
+                    td{
+                        font-size: 13px;
+                    }
+                }
+            }
+            &.table_two-columns{
+                font-size: 14px;
+                margin: 20px 0 25px;
+                td{
+                    &:first-child{
+                        margin-bottom: 5px;
+                        padding-right: 0;
+                    }
+                }
             }
         }
     }
