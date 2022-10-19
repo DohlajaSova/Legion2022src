@@ -4585,10 +4585,10 @@ a.button {
 						font-size: 46px;
 						line-height: 130%;
 					}
-				}
-				&__innerCard:first-child{
-					background-color: #84AEFF;
-					color: #fff;
+					&.first {
+						background-color: #84AEFF;
+						color: #fff;
+					}
 				}
 			}
 		}
@@ -6754,6 +6754,7 @@ a.button {
 						width: 100%;
 						// max-height: 50%;
 						border-radius: inherit;
+						margin-top: auto;
 						max-height: calc(50% - 10px);
 						&.object-cover{
 							object-fit: cover;
@@ -6864,9 +6865,15 @@ a.button {
 			.client__grid_card-tall{
 				&__whole{
 					&_image{
-						max-height: 315px;
+						height: 315px;
+						margin-top: auto;
+						flex-shrink: 0;
 					}
 				}
+			}
+			.client__grid_card-wide .cases-slider__item_project-photo img{
+				width: 100%;
+				object-fit: cover;
 			}
 		}
 	}

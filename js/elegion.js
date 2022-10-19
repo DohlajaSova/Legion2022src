@@ -330,11 +330,26 @@ function initVideo(){
     }
 }
 
-function removeOverBlocks(container, limit, stable){
-    for (let one = 0; one < container.children.length; one++){
-        if(limit && stable && one >= limit){
-            container?.children[one]?.classList.add("hide");
+function removeOverBlocks(container, limit, stable, data){
+    if(limit && stable){
+        let colored = false;
+        for (let one = 0; one < container.children.length; one++){
+            let block = container?.children[one];
+            if(one >= limit){
+                block.classList.add("hide");
+            } else if(data.coloredBlock && !~block.classList.value.indexOf("hide")) {
+                setBackground(block, colored);
+                colored = true;
+            }
         }
+    }
+}
+
+function setBackground(block, colored){
+    if(!colored){
+        block.classList.add("first");
+    } else {
+        block.classList.remove("first");
     }
 }
 
@@ -803,7 +818,6 @@ docReady(function() {
     {
         for(let one = 0; one < newsBlocks.length; one++){
             try{
-                console.log({newsBlocks})
                 // let curLimit = document.querySelectorAll(".js-news-grid-container")[0].dataset.limit*1;
                 // let moreButton = document.querySelectorAll(".js-cases-more")[0];
                 // moreButton?.addEventListener("click", function(e){
@@ -820,24 +834,14 @@ docReady(function() {
                         let typeString = newsBlocks[one].children[j].dataset.tags.slice(1,newsBlocks[one].children[j].dataset.tags.length-1);
                         types[j] = typeString.split(",");
                     }
-                    const limit = newsBlocks[one].dataset.limit;
-                    const limitstable = newsBlocks[one].dataset.limitStable;
-                    if(limit && limitstable){
-                        removeOverBlocks(newsBlocks[one], limit, limitstable);
-                    }
+                    const data = newsBlocks[one].dataset;
+                    removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data);
 
                     newsTypes[i].addEventListener("click", function(e){
-                        console.log({newsTypes})
-                        console.log({newsBlocks})
                         let options = e.target.parentNode.parentNode.childNodes[1];
-                        console.log({options})
                         e.preventDefault();
                         let selectedType = options?.selectedOptions[0]?.value;
-                        console.log({selectedType})
                         let hiddenChilds = 0;
-                        let visibleChilds = 0;
-                        console.log(newsBlocks[one].dataset)
-                        console.log({limitstable})
                         for (j=0; j<types.length; j++){
                             if (!types[j].includes("'" + selectedType + "'") && !types[j].includes("'every'")){
                                 newsBlocks[one]?.children[j]?.classList.add("hide");
@@ -845,14 +849,9 @@ docReady(function() {
                             }
                             else{
                                 newsBlocks[one]?.children[j]?.classList.remove("hide");
-                                visibleChilds++;
                             }
                             // если установлен лимит скрываем овер блоки
-                            console.log({visibleChilds})
-                            if(limit && limitstable && visibleChilds > limit){
-                                console.log('here')
-                                newsBlocks[one]?.children[j]?.classList.add("hide");
-                            }
+                            removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data);
                         }
                         // Проверить нужно ли скрыть блок в котором происходит фильтрация
                         if(newsBlocks[one]?.children?.length === hiddenChilds){
