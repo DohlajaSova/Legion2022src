@@ -411,6 +411,10 @@
             &_warning{
                 font-size: 16px;
             }
+            &_tip{
+                font-size: 16px;
+                margin-bottom: 0;
+            }
         }
     }
     .years{
@@ -690,6 +694,12 @@
     }
     .news {
         margin-bottom: 40px;
+    }
+    .main,
+    .cases_portfolio{
+        .cases__case_name{
+            font-size: 14px;
+        }
     }
     .not-all-the-same {
         &_background {

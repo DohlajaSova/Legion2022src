@@ -4337,6 +4337,9 @@ a.button {
 				line-height: 130%;
 			}
 		}
+        &_textarea {
+            min-height: 40px;
+        }
 	}
 
 	&__comment {
@@ -5442,6 +5445,13 @@ a.button {
 			color: $color-grey-dark;
 		}
 
+		&_tip {
+			display: block;
+			margin: 10px 0;
+			color: $color-blue-dark;
+            font-size: 24px;
+		}
+        
 		&_input[type="text"],
 		&_input[type="email"],
 		&_input[type="tel"],
@@ -7022,6 +7032,12 @@ a.button {
 	}
 }
 
+.main,
+.cases_portfolio{
+    .cases__case_name{
+        font-size: 24px;
+    }
+}
 
 .client~.feedback {
 	margin-bottom: 120px;

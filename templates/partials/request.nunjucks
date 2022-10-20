@@ -66,6 +66,7 @@
         <div class="request__form" id="request__form">
             <h3>Представьтесь, пожалуйста</h3>
             <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
+            <span class="request__form_tip">Пожалуйста, заполните все поля в&nbsp;этом разделе, чтобы мы&nbsp;смогли связаться с&nbsp;вами.</span>
             <div class="request__form_container">
                 <div class="request__form_item">
                     <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
