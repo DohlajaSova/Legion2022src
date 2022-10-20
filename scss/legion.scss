@@ -6863,17 +6863,21 @@ a.button {
 		}
 		&-news{
 			.client__grid_card-tall{
+				aspect-ratio: 1;
 				&__whole{
 					&_image{
-						height: 315px;
+						// height: 315px;
+						height: calc(50%);
 						margin-top: auto;
 						flex-shrink: 0;
 					}
 				}
 			}
-			.client__grid_card-wide .cases-slider__item_project-photo img{
-				width: 100%;
-				object-fit: cover;
+			.client__grid_card-wide {
+				.cases-slider__item_project-photo img{
+					width: 100%;
+					object-fit: cover;
+				}
 			}
 		}
 	}

@@ -1506,6 +1506,16 @@
                     }
                 }
             }
+            &-news{
+			.client__grid_card-tall{
+                &__whole{
+
+                    &_info{
+                        padding: 20px 20px 0 20px;
+                    }
+                }
+            }
+            }
         }
     }
 }

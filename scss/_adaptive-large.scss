@@ -101,15 +101,10 @@
     .client {
         &__grid{
             &_card{
-                &-tall{
-                    &__preview{
-                        &_info{
-                            &-content {
-                                font-size: 3vw;
-                            }
-                        }
-                    }
-                }	
+                &-tall__preview_info-content,
+                &-tall__whole_info-content{
+                    font-size: 3vw;
+                }
                 &-accent {
                     font-size: 6vw;
                 }
@@ -1887,14 +1882,11 @@
                     grid-column-end: 3;
                     grid-row-start: 1;
                     grid-row-end: 2;
-                    &__preview{
-                        &_info{
-                            &-content {
-                                font-size: 6vw;
-                            }
-                        }
+                    &__preview_info-content,
+                    &__whole_info-content{
+                        font-size: 6vw;
                     }
-                    &__info{
+                    &__info, &__whole_info-heading{
                         font-size: 3vw;
                     }
                 }
@@ -1946,7 +1938,12 @@
                     max-height: calc(50vw - 10px);;
                 }
             }
-        }    
+            &-news{
+                .client__grid_card-wide {
+                    aspect-ratio: 2;
+                }
+            }
+        }
     }
     .who-we-are{
         &__widget{
