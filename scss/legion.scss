@@ -6684,6 +6684,7 @@ a.button {
 				grid-row-start: 1;
 				grid-row-end: 3;
 				background-color: $color-blue-dark;
+				// aspect-ratio: 1;
 				&-grey{
 					background-color: $color-grey-light;
 				}
@@ -6854,22 +6855,24 @@ a.button {
 		}
 		&-projects {
 			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr auto;
 			.client__grid_card-tall{
+				aspect-ratio: 1;
 				grid-column: auto / span 2;
 				// grid-column-end: 3;
 				grid-row: auto / span 2;
 				// grid-row-end: 3;
 			}
 			.client__grid_card-wide{
+				// aspect-ratio: 2;
 				grid-column: auto / span 2;
 				// grid-column-end: 3;
 				grid-row: auto / span 1;
 				// grid-row-end: 3;
 			}
-			img{
-				max-height: 345px;
-			}
+			// img{
+			// 	max-height: 345px;
+			// }
 		}
 		&-news{
 			.client__grid_card-tall{
@@ -7062,6 +7065,10 @@ a.button {
 
 .display-none {
 	display: none;
+}
+
+.object-fit-cover{
+	object-fit: cover;
 }
 
 // main page plus button styles

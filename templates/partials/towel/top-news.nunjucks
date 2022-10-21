@@ -91,7 +91,7 @@
       </div>
       <div class="client__grid_card client__grid_card-wide">
         <img
-          class="client__grid_card-wide__image br"
+          class="client__grid_card-wide__image br object-fit-cover"
           src="/assets/css/img/news-widget-1.webp"
           alt=""
         />
