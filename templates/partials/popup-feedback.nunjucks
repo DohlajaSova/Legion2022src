@@ -9,6 +9,7 @@
                     <div class="request__form">
                         <h1>Представьтесь, пожалуйста</h1>
                         <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
+                        <span class="request__form_tip">Пожалуйста, заполните все поля в&nbsp;этом разделе, чтобы мы&nbsp;смогли связаться с&nbsp;вами.</span>
                         <div class="request__form_item">
                             <input name="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
                             <label for="name" class="request__form_label">Как вас зовут?</label>

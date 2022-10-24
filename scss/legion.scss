@@ -4532,7 +4532,6 @@ a.button {
 
 	&__grid{
 		display: grid;
-		// grid-template-rows: repeat(auto-fill, auto);
 		grid-template-columns: repeat(4, 1fr);
 		border-radius: 42px;
 		gap: 60px 20px;
@@ -4540,9 +4539,13 @@ a.button {
 			grid-column: auto / span 1;
 			grid-row: auto / span 1;
 			border-radius: inherit;
-			color: #1E2738;
+			color: $color-blue-dark;
 			a{
 				border-radius: inherit;
+                color: $color-blue-dark;
+                &:hover{
+                    text-decoration: none;
+                }
 			}
 			&-image{
                 width:100%;
@@ -4577,7 +4580,7 @@ a.button {
 					grid-column: auto / span 2;
 					grid-row: auto / span 1;
 					border-radius: inherit;
-					background-color: #ececec;
+					background-color: $color-grey-light;
 					padding: 30px;
 					&_tags{
 						margin-bottom: 20px;
@@ -4589,8 +4592,11 @@ a.button {
 						line-height: 130%;
 					}
 					&.first {
-						background-color: #84AEFF;
-						color: #fff;
+						background-color: $color-blue-light;
+						color: $color-white;
+                        a{
+                            color: $color-white;
+                        }
 					}
 				}
 			}
@@ -5450,6 +5456,9 @@ a.button {
 			margin: 10px 0;
 			color: $color-blue-dark;
             font-size: 24px;
+            .popup-feedback &{
+                margin-bottom: 40px;
+            }
 		}
         
 		&_input[type="text"],
