@@ -337,7 +337,8 @@ function removeOverBlocks(container, limit, stable, data){
             let block = container?.children[one];
             if(one >= limit){
                 block.classList.add("hide");
-            } else if(data.coloredBlock && !~block.classList.value.indexOf("hide")) {
+            } else if(~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
+                // if data.coloredBlock
                 setBackground(block, colored);
                 colored = true;
             }
