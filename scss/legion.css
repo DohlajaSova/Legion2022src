@@ -3316,7 +3316,8 @@ a.button {
   .news-top__leadblock {
     margin-bottom: 13px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
     .news-top__leadblock_author {
       display: flex;
       flex-direction: column;
