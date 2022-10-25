@@ -331,6 +331,8 @@ function initVideo(){
 }
 
 function removeOverBlocks(container, limit, stable, data){
+    // const isComplex = ~container.classList.value.indexOf("news__grid_card-complex");
+    // const lm = limit || isComplex && 2;
     if(limit && stable){
         let colored = false;
         for (let one = 0; one < container.children.length; one++){

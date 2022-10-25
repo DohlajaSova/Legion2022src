@@ -4573,7 +4573,7 @@ a.button {
 				grid-column: 3 / span 2;
 				grid-row: 1 / 2;
 				border-radius: inherit;
-				grid-template-rows: repeat(auto-fill, 50%);
+				grid-template-rows: repeat(auto-fill,calc(50% - 10px));
 				grid-template-columns: 1fr;
 				gap: 20px;
 				&__innerCard{
