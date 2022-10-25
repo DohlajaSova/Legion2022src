@@ -3248,7 +3248,10 @@ a.button {
       border-radius: inherit;
       color: #1E2738; }
       .news__grid_card a {
-        border-radius: inherit; }
+        border-radius: inherit;
+        color: #1E2738; }
+        .news__grid_card a:hover {
+          text-decoration: none; }
       .news__grid_card-image {
         width: 100%;
         height: auto;
@@ -3278,7 +3281,7 @@ a.button {
           grid-column: auto / span 2;
           grid-row: auto / span 1;
           border-radius: inherit;
-          background-color: #ececec;
+          background-color: #F0F0F0;
           padding: 30px; }
           .news__grid_card-complex__innerCard_tags {
             margin-bottom: 20px;
@@ -3290,6 +3293,8 @@ a.button {
           .news__grid_card-complex__innerCard.first {
             background-color: #84AEFF;
             color: #fff; }
+            .news__grid_card-complex__innerCard.first a {
+              color: #fff; }
   .news-top__tech {
     width: 100%;
     display: flex;
@@ -3306,23 +3311,22 @@ a.button {
       color: #1E2738;
       line-height: 20px; }
   .news-top__image {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    width: 100%; }
   .news-top__leadblock {
     margin-bottom: 13px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
     .news-top__leadblock_author {
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
-      .news-top__leadblock_author-avatar {
+      .news-top__leadblock_author-avatar img {
         width: 80px;
         height: 80px;
+        border-radius: 50%;
         margin-bottom: 20px; }
-        .news-top__leadblock_author-avatar img {
-          width: 100%;
-          height: 100%;
-          border-radius: 50%; }
       .news-top__leadblock_author-name {
         font-size: 24px;
         margin-bottom: 10px;
@@ -3833,6 +3837,8 @@ a.button {
       margin: 10px 0;
       color: #1E2738;
       font-size: 24px; }
+      .popup-feedback .request__form_tip {
+        margin-bottom: 40px; }
     .request__form_input[type="text"], .request__form_input[type="email"], .request__form_input[type="tel"], .request__form_textarea {
       background-color: transparent;
       outline: none;
@@ -4744,21 +4750,22 @@ a.button {
       background: #F0F0F0 url("img/cases-bg-venn.webp") center/cover no-repeat; }
   .client__grid-projects {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-rows: 1fr 1fr auto; }
     .client__grid-projects .client__grid_card-tall {
+      aspect-ratio: 1;
       grid-column: auto / span 2;
       grid-row: auto / span 2; }
     .client__grid-projects .client__grid_card-wide {
       grid-column: auto / span 2;
       grid-row: auto / span 1; }
-    .client__grid-projects img {
-      max-height: 345px; }
   .client__grid-news .client__grid_card-tall {
     aspect-ratio: 1; }
     .client__grid-news .client__grid_card-tall__whole_image {
       height: calc(50%);
       margin-top: auto;
       flex-shrink: 0; }
+  .client__grid-news .client__grid_card-wide > img {
+    max-width: 50%; }
   .client__grid-news .client__grid_card-wide .cases-slider__item_project-photo img {
     width: 100%;
     object-fit: cover; }
@@ -4879,6 +4886,9 @@ a.button {
 
 .display-none {
   display: none; }
+
+.object-fit-cover {
+  object-fit: cover; }
 
 .pulse-button {
   display: flex;
@@ -5108,7 +5118,10 @@ a.button {
     min-height: 300px !important; }
 
   .device_fit-height .device__screen {
-    height: calc(100% - 20px); } }
+    height: calc(100% - 20px); }
+
+  .client__grid_card-tall__info {
+    font-size: 1.7vw; } }
 @media only screen and (max-width: 1280px) {
   body {
     font-size: 15px; }

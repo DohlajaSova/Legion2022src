@@ -25,10 +25,10 @@
         <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
         <div class="news__grid_card-tags">Разработка. Сообщество</div>
         <div class="news__grid_card-heading">
-          Я сам не смотрю,<br />но&nbsp;подписался
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
         </div>
         <div class="news__grid_card-content">
-          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
         </div>
       </div>
       <div class="news__grid_card" data-tags="['every']" data-priority="10">
@@ -38,7 +38,7 @@
         </a>
         <div class="news__grid_card-tags">Разработка. Сообщество</div>
         <div class="news__grid_card-heading">
-          Я сам не смотрю,<br />но&nbsp;подписался
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
         </div>
         <div class="news__grid_card-content">
           Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
@@ -59,7 +59,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            Я сам не смотрю,<br />но&nbsp;подписался
+            <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
           </div>
         </div>
         <div
@@ -68,7 +68,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            Заголовок&nbsp;одной&nbsp;строкой
+            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
         <div
@@ -77,7 +77,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            Заголовок&nbsp;одной&nbsp;строкой
+            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
         <div
@@ -86,7 +86,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            Заголовок&nbsp;одной&nbsp;строкой
+            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
         <div
@@ -95,7 +95,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            Заголовок&nbsp;одной&nbsp;строкой
+            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
       </div>
