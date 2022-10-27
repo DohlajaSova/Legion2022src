@@ -338,12 +338,12 @@ function removeOverBlocks(container, limit, stable){
         let visible = +limit;
         for (let one = 0; one < container.children.length; one++){
             let block = container?.children[one];
-            if(visible &&!~block.classList.value.indexOf("hide")){
+            if(visible && !~block.classList.value.indexOf("hide")){
                 visible--
             } else {
                 block.classList.add("hide");
             }
-            if(!colored && ~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
+            if(~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
                 // if data.coloredBlock
                 setBackground(block, colored);
                 colored = true;
@@ -856,6 +856,7 @@ docReady(function() {
                             }
                             else{
                                 newsBlocks[one]?.children[j]?.classList.remove("hide");
+                                console.log('removed')
                             }
                             // если установлен лимит скрываем овер блоки
                             removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data);

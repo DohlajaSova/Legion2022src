@@ -64,7 +64,7 @@
         </div>
         <div
           class="news__grid_card-complex__innerCard"
-          data-tags="['all','cases','parties']"
+          data-tags="['all','parties']"
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка, Мероприятия</div>
           <div class="news__grid_card-complex__innerCard_heading">
@@ -73,7 +73,7 @@
         </div>
         <div
           class="news__grid_card-complex__innerCard"
-          data-tags="['all','cases','lotteries']"
+          data-tags="['all','lotteries']"
         >
           <div class="news__grid_card-complex__innerCard_tags">Кейсы</div>
           <div class="news__grid_card-complex__innerCard_heading">
@@ -82,20 +82,23 @@
         </div>
         <div
           class="news__grid_card-complex__innerCard"
-          data-tags="['all','cases']"
+          data-tags="['all']"
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
             <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
-        <div
-          class="news__grid_card-complex__innerCard"
-          data-tags="['all','cases']"
-        >
-          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+        <div class="news__grid_card-complex__innerCard hide" data-tags="['all','lotteries','cases']">
+          <div class="news__grid_card-complex__innerCard_tags">Конкурсы, Кейсы</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
+            <a href="/news/nagrady-rating-runeta">Награды на Рейтинге Рунета</a>
+          </div>
+        </div>
+        <div class="news__grid_card-complex__innerCard hide" data-tags="['all','cases','unity','experience']">
+          <div class="news__grid_card-complex__innerCard_tags">Кейсы, Сообщество, Опыт</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="/news/podcast-e-legion-talk">Подкаст e-legion talk</a>
           </div>
         </div>
       </div>
