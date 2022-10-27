@@ -64,20 +64,20 @@
         </div>
         <div
           class="news__grid_card-complex__innerCard"
-          data-tags="['all','cases']"
+          data-tags="['all','cases','parties']"
         >
-          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+          <div class="news__grid_card-complex__innerCard_tags">Разработка, Мероприятия</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
+            <a href="">Мероприятия&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
         <div
           class="news__grid_card-complex__innerCard"
-          data-tags="['all','cases']"
+          data-tags="['all','cases','lotteries']"
         >
-          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+          <div class="news__grid_card-complex__innerCard_tags">Кейсы</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
+            <a href="">Кейсы&nbsp;одной&nbsp;строкой</a>
           </div>
         </div>
         <div

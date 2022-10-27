@@ -330,16 +330,20 @@ function initVideo(){
     }
 }
 
-function removeOverBlocks(container, limit, stable, data){
+function removeOverBlocks(container, limit, stable){
     // const isComplex = ~container.classList.value.indexOf("news__grid_card-complex");
     // const lm = limit || isComplex && 2;
     if(limit && stable){
         let colored = false;
+        let visible = +limit;
         for (let one = 0; one < container.children.length; one++){
             let block = container?.children[one];
-            if(one >= limit){
+            if(visible &&!~block.classList.value.indexOf("hide")){
+                visible--
+            } else {
                 block.classList.add("hide");
-            } else if(~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
+            }
+            if(!colored && ~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
                 // if data.coloredBlock
                 setBackground(block, colored);
                 colored = true;
