@@ -68,7 +68,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка, Мероприятия</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Мероприятия&nbsp;одной&nbsp;строкой</a>
+            <a href="">Мероприятия одной строкой</a>
           </div>
         </div>
         <div
@@ -77,7 +77,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Кейсы</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Кейсы&nbsp;одной&nbsp;строкой</a>
+            <a href="">Кейсы одной строкой</a>
           </div>
         </div>
         <div
@@ -86,7 +86,7 @@
         >
           <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
           <div class="news__grid_card-complex__innerCard_heading">
-            <a href="">Заголовок&nbsp;одной&nbsp;строкой</a>
+            <a href="">Заголовок одной строкой</a>
           </div>
         </div>
         <div class="news__grid_card-complex__innerCard hide" data-tags="['all','lotteries','cases']">
