@@ -320,7 +320,7 @@ function addListenerInput(el) {
         el.removeEventListener("input", input, false);
     })
 }
-        
+     
 function initVideo(){
     var vidDefer = document.getElementsByTagName('iframe');
     for (var i=0; i<vidDefer.length; i++) {
@@ -330,23 +330,54 @@ function initVideo(){
     }
 }
 
-function removeOverBlocks(container, limit, stable){
+function containerRefresh(limit, container, moreButton){
+    // let blocks = document.querySelectorAll(".js-cases-container-portfolio .container_portfolio-inner")[0];
+    let shown = 0;
+    // for (let i=0; i<container.children.length; i++){
+    //     container.children[i].classList.add("not-shown");
+    // }
+    for (let i=0; i<container.children.length; i++){
+        if (!container.children[i].classList.contains("hide")){
+            shown++;
+            if (shown <= limit)
+                container.children[i].classList.remove("not-shown");
+        }
+    }
+    if (shown <= limit)
+        moreButton.parentNode.classList.add("hide");
+}
+
+function removeOverBlocks(container, limit, stable, data, moreButton){
     // const isComplex = ~container.classList.value.indexOf("news__grid_card-complex");
     // const lm = limit || isComplex && 2;
-    if(limit && stable){
+    if(limit){
         let colored = false;
         let visible = +limit;
-        for (let one = 0; one < container.children.length; one++){
+        const childs = container.children;
+        for (let one = 0; one < childs.length; one++){
             let block = container?.children[one];
             if(visible && !~block.classList.value.indexOf("hide")){
-                visible--
+                visible--;
+                block.classList.remove("over-limit");
             } else {
-                block.classList.add("hide");
+                block.classList.add("over-limit");
             }
-            if(~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
+            // stable - только как признак того, что нужно перекрасить 1й блок
+            if(stable && ~container.classList.value.indexOf("news__grid_card-complex") && !~block.classList.value.indexOf("hide")) {
                 // if data.coloredBlock
                 setBackground(block, colored);
                 colored = true;
+            }
+        }
+        if(moreButton && !stable){
+            let ar = Array.prototype.slice.call(childs);
+            const hidden = ar.filter(one => ~one.classList.value.indexOf("hide")).length
+            if(childs.length <= limit){
+                moreButton.classList.add("hide");
+            } else if(childs.length - hidden <= limit){
+                moreButton.classList.add("hide");
+            } else {
+                moreButton.classList.remove("hide");
             }
         }
     }
@@ -817,7 +848,7 @@ docReady(function() {
             })
         }
     }
-    
+
     // фильтр новостей
     let newsBlocks = document.querySelectorAll(".js-news-grid-container");
     let newsTypes = document.querySelectorAll(".js-news-types");
@@ -825,15 +856,17 @@ docReady(function() {
     {
         for(let one = 0; one < newsBlocks.length; one++){
             try{
-                // let curLimit = document.querySelectorAll(".js-news-grid-container")[0].dataset.limit*1;
-                // let moreButton = document.querySelectorAll(".js-cases-more")[0];
-                // moreButton?.addEventListener("click", function(e){
-                //     e.preventDefault();
-                //     curLimit += 4;
-                //     portfolioRefresh(curLimit);
-                // })
-
-                // portfolioRefresh(curLimit);
+                let curLimit = newsBlocks[one].dataset.limit*1;
+                let moreButton = document.querySelectorAll(".js-more")[0];
+                const data = newsBlocks[one].dataset;
+                if(!data.limitStable){
+                    moreButton?.addEventListener("click", function(e){
+                        e.preventDefault();
+                        curLimit += +data.perpage;
+                        // containerRefresh(curLimit, newsBlocks, moreButton);
+                        removeOverBlocks(newsBlocks[one], curLimit, data.limitStable, data, moreButton);
+                    })
+                }
 
                 for (i=0; i<newsTypes.length; i++){
                     let types = new Array();
@@ -841,10 +874,10 @@ docReady(function() {
                         let typeString = newsBlocks[one].children[j].dataset.tags.slice(1,newsBlocks[one].children[j].dataset.tags.length-1);
                         types[j] = typeString.split(",");
                     }
-                    const data = newsBlocks[one].dataset;
-                    removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data);
+                    removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data, moreButton);
 
                     newsTypes[i].addEventListener("click", function(e){
+                        curLimit = newsBlocks[one].dataset.limit*1;
                         let options = e.target.parentNode.parentNode.childNodes[1];
                         e.preventDefault();
                         let selectedType = options?.selectedOptions[0]?.value;
@@ -856,10 +889,9 @@ docReady(function() {
                             }
                             else{
                                 newsBlocks[one]?.children[j]?.classList.remove("hide");
-                                console.log('removed')
                             }
                             // если установлен лимит скрываем овер блоки
-                            removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data);
+                            removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data, moreButton);
                         }
                         // Проверить нужно ли скрыть блок в котором происходит фильтрация
                         if(newsBlocks[one]?.children?.length === hiddenChilds){
