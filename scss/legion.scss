@@ -3866,7 +3866,8 @@ a.button {
 .projects {
 	overflow: hidden;
 
-	h2 {
+	h2,
+    .h2{
 		width: 50%;
 		margin-bottom: 120px;
 

@@ -663,7 +663,8 @@
         }
     }
     .projects {
-        h2 {
+        h2,
+        .h2{
             margin-bottom: 60px;
             
         }
@@ -1001,7 +1002,8 @@
         }
     }
     .projects{
-        h2{
+        h2,
+        .h2{
             margin-bottom:30px;
         }
         .project{

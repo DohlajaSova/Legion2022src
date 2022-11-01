@@ -361,7 +361,8 @@ input[type="tel"],
   clear: both; }
 
 .hide,
-.hidden {
+.hidden,
+.over-limit {
   display: none !important; }
 
 .nowrap {
@@ -2827,10 +2828,12 @@ a.button {
 
 .projects {
   overflow: hidden; }
-  .projects h2 {
+  .projects h2,
+  .projects .h2 {
     width: 50%;
     margin-bottom: 120px; }
-    .projects h2 em {
+    .projects h2 em,
+    .projects .h2 em {
       color: #84AEFF;
       font-style: normal;
       white-space: nowrap; }
@@ -3274,7 +3277,7 @@ a.button {
         grid-column: 3 / span 2;
         grid-row: 1 / 2;
         border-radius: inherit;
-        grid-template-rows: repeat(auto-fill, 50%);
+        grid-template-rows: repeat(auto-fill, calc(50% - 10px));
         grid-template-columns: 1fr;
         gap: 20px; }
         .news__grid_card-complex__innerCard {
@@ -4765,7 +4768,8 @@ a.button {
       margin-top: auto;
       flex-shrink: 0; }
   .client__grid-news .client__grid_card-wide > img {
-    max-width: 50%; }
+    max-width: 50%;
+    width: unset; }
   .client__grid-news .client__grid_card-wide .cases-slider__item_project-photo img {
     width: 100%;
     object-fit: cover; }
@@ -5176,7 +5180,8 @@ a.button {
   .category {
     margin-bottom: 76px; }
 
-  .projects h2 {
+  .projects h2,
+  .projects .h2 {
     width: 80%;
     margin-bottom: 80px; }
   .projects__panels {
@@ -7049,7 +7054,8 @@ a.button {
   .who-we-are__widget .who-we-are__widget_container .problems__item {
     border-radius: 30px; }
 
-  .projects h2 {
+  .projects h2,
+  .projects .h2 {
     margin-bottom: 60px; }
   .projects__panels {
     margin-bottom: 60px; }
@@ -7266,7 +7272,8 @@ a.button {
     .vacancies.vacancies_page .cases__lead {
       display: none; }
 
-  .projects h2 {
+  .projects h2,
+  .projects .h2 {
     margin-bottom: 30px; }
   .projects .project__review_body {
     font-size: 22px;
@@ -8116,6 +8123,29 @@ a.button {
         font-size: 14px; }
         .news-top__leadblock_lead p {
           font-size: 14px; }
+    .news__grid {
+      grid-template-columns: 1fr;
+      border-radius: 30px;
+      gap: 40px; }
+      .news__grid_card {
+        grid-column: 1 / span 2;
+        grid-row: auto; }
+        .news__grid_card-image {
+          height: calc(50vw - 40px);
+          max-height: 50vw; }
+        .news__grid_card-complex {
+          gap: 40px;
+          grid-column: 1 / span 2;
+          grid-row: auto;
+          grid-template-rows: repeat(2, minmax(168px, 50%)); }
+          .news__grid_card-complex__innerCard {
+            padding: 20px; }
+        .news__grid_card-tags, .news__grid_card-content, .news__grid_card-complex__innerCard_tags {
+          font-size: 3.2vw; }
+        .news__grid_card-heading {
+          font-size: 4.8vw; }
+        .news__grid_card-complex__innerCard_heading {
+          font-size: 6.1vw; }
 
   .feedback {
     border-radius: 30px 30px 0 0;
@@ -8723,7 +8753,8 @@ a.button {
 
   .projects {
     padding-top: 40px; }
-    .projects h2 {
+    .projects h2,
+    .projects .h2 {
       margin-bottom: 40px; }
     .projects__panels {
       margin-bottom: 40px; }
@@ -8771,6 +8802,14 @@ a.button {
     border-radius: 30px 30px 0 0;
     padding-top: 60px;
     position: relative; }
+    .who-we-are_portfolio,
+    .news_portfolio {
+      position: static;
+      margin-top: 0px;
+      padding-top: 0; }
+      .who-we-are_portfolio .cases__filter .select,
+      .news_portfolio .cases__filter .select {
+        margin-bottom: 40px; }
 
   .breadcrumbs li::after {
     top: -1px; } }
