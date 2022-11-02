@@ -72,18 +72,16 @@
                         </div>
                     </div>
                 </a>
-                <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form" data-types="['all','spb','msk','kzn','klg','remote']">
+                <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty" data-types="['all','spb','msk','kzn','klg','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
                             <div class="vacancy__title_name">
-                                <p>Возможно, нам не&nbsp;хватает в&nbsp;команде именно вас.</p>
-                                <p>Мы&nbsp;просто пока не&nbsp;знаем об&nbsp;этом.</p>
+                                <p>Сейчас мы&nbsp;полностью укомплектованы и&nbsp;не&nbsp;ищем новых людей в&nbsp;команду.</p>
                             </div>
                         </h3>
                         <div class="vacancy__body">
-                            <div class="vacancy__body_item">Отправьте резюме к&nbsp;нам на&nbsp;почту, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
-                            <button class="vacancy__body_link">Подробнее →</button>
+                            <div class="vacancy__body_item">Мы&nbsp;добавим информацию о&nbsp;новых вакансиях на&nbsp;сайте, как только ситуация изменится.</div>
                         </div>
                     </div>
                 </span>

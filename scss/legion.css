@@ -3481,6 +3481,8 @@ a.button {
         background: #fff; }
       .vacancies .vacancy_send .vacancy__title_icon {
         background-color: #F0F0F0; }
+      .vacancies .vacancy_send.empty {
+        cursor: auto; }
     .vacancies .vacancy.not-shown {
       display: none; }
   .vacancies.vacancies_page {
