@@ -182,7 +182,7 @@
                         </div>
                     </div>
                 </a>
-                <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty" data-types="['all','spb','msk','kzn','klg','remote']">
+                <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide" data-types="[]">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>

@@ -4771,6 +4771,13 @@ a.button {
       height: calc(50%);
       margin-top: auto;
       flex-shrink: 0; }
+  .client__grid-news .client__grid_card-wide .cases-slider__item_nomination {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 30px 30px 24px 30px; }
+    .client__grid-news .client__grid_card-wide .cases-slider__item_nomination h3.h2 {
+      margin-bottom: 0; }
   .client__grid-news .client__grid_card-wide > img {
     max-width: 50%;
     width: unset; }
@@ -6346,13 +6353,16 @@ a.button {
 
   .news__grid {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
     border-radius: 38px; }
     .news__grid_card-image {
       height: calc(50vw - 40px);
       max-height: 50vw; }
     .news__grid_card-complex {
+      gap: 40px;
       grid-column: 1 / span 2;
-      grid-row: 1 / 2;
+      grid-row: auto;
       grid-template-rows: repeat(2, minmax(254px, 50%)); }
     .news__grid_card-tags, .news__grid_card-content, .news__grid_card-complex__innerCard_tags {
       font-size: 1.2vw; }
@@ -7046,6 +7056,12 @@ a.button {
       width: 100%; }
     .news-top__tech {
       margin-bottom: 40px; }
+    .news__grid_card-tags, .news__grid_card-content, .news__grid_card-complex__innerCard_tags {
+      font-size: 2.2vw; }
+    .news__grid_card-heading {
+      font-size: 3.8vw; }
+    .news__grid_card-complex__innerCard_heading {
+      font-size: 5.1vw; }
 
   .who-we-are__content {
     margin-bottom: 0; }
@@ -8129,14 +8145,14 @@ a.button {
           font-size: 14px; }
     .news__grid {
       grid-template-columns: 1fr;
-      border-radius: 30px;
-      gap: 40px; }
+      border-radius: 30px; }
       .news__grid_card {
         grid-column: 1 / span 2;
         grid-row: auto; }
         .news__grid_card-image {
           height: calc(50vw - 40px);
-          max-height: 50vw; }
+          max-height: 50vw;
+          object-fit: cover; }
         .news__grid_card-complex {
           gap: 40px;
           grid-column: 1 / span 2;
