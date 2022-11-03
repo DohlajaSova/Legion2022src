@@ -645,6 +645,22 @@
                 margin-bottom: 40px;
             }
         }
+        &__grid {
+            $minor: 2.2vw;
+            $mid: 3.8vw;
+            $major: 5.1vw;
+            &_card{
+                &-tags, &-content, &-complex__innerCard_tags{
+                    font-size: $minor;
+                }
+                &-heading{
+                    font-size: $mid;
+                }
+                &-complex__innerCard_heading{
+                    font-size: $major;
+                } 
+            }
+        }
     }
     .who-we-are__content {
         margin-bottom: 0;
@@ -2321,7 +2337,6 @@
         &__grid {
             grid-template-columns: 1fr;
 		    border-radius: 30px;
-            gap: 40px;
             $minor: 3.2vw;
             $mid: 4.8vw;
             $major: 6.1vw;
@@ -2331,6 +2346,7 @@
                 &-image{
                     height: calc(50vw - 40px);
                     max-height: 50vw;
+                    object-fit: cover;
                 }    
                 &-complex{
                     gap: 40px;
