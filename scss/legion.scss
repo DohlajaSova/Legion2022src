@@ -4626,6 +4626,9 @@ a.button {
         &__image{
             margin-bottom: 60px;
             width:100%;
+            &:empty{
+                margin-bottom: 0;
+            }
         }
         &__leadblock{
             margin-bottom: 13px;
@@ -4639,7 +4642,7 @@ a.button {
                 align-items:flex-start;
                 &-avatar{
                     img{
-                        width:80px;
+                        width:80px !important;
                         height: 80px;
                         border-radius: 50%;
                         margin-bottom: 20px;

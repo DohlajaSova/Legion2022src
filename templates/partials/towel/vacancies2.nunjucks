@@ -72,6 +72,116 @@
                         </div>
                     </div>
                 </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Системный аналитик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">опыт работы от 1 года;</div>
+                            <div class="vacancy__body_item">умение составлять структурированную документацию (BRD, FRD, ТЗ); </div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','spb','remote']" data-city="spb">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">iOS-разработчик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">уверенное владение Swift;</div>
+                            <div class="vacancy__body_item">знание iOS SDK;</div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','msk','remote']" data-city="msk">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Android-разработчик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">знание Android SDK;</div>
+                            <div class="vacancy__body_item">опыт разработки на&nbsp;Java/Kotlin;</div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','klg','remote']" data-city="klg">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Java-разработчик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">глубокое знание SpringBoot, Kafka, FeignClient, REST API, PostgreSQL, JPA, Maven, Git;</div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Системный аналитик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">опыт работы от 1 года;</div>
+                            <div class="vacancy__body_item">умение составлять структурированную документацию (BRD, FRD, ТЗ); </div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','spb','remote']" data-city="spb">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">iOS-разработчик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">уверенное владение Swift;</div>
+                            <div class="vacancy__body_item">знание iOS SDK;</div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','msk','remote']" data-city="msk">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Android-разработчик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">знание Android SDK;</div>
+                            <div class="vacancy__body_item">опыт разработки на&nbsp;Java/Kotlin;</div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','klg','remote']" data-city="klg">
+                    <div class="vacancy__container">
+                        <h3 class="vacancy__title">
+                            <div class="vacancy__title_icon"></div>
+                            <div class="vacancy__title_name">Java-разработчик</div>
+                        </h3>
+                        <div class="vacancy__body">
+                            <div class="vacancy__body_item">глубокое знание SpringBoot, Kafka, FeignClient, REST API, PostgreSQL, JPA, Maven, Git;</div>
+                            <div class="vacancy__body_item">...</div>
+                            <div class="vacancy__body_link">Подробнее →</div>
+                        </div>
+                    </div>
+                </a>
                 <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty" data-types="['all','spb','msk','kzn','klg','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">

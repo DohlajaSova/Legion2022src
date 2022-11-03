@@ -3316,6 +3316,8 @@ a.button {
   .news-top__image {
     margin-bottom: 60px;
     width: 100%; }
+    .news-top__image:empty {
+      margin-bottom: 0; }
   .news-top__leadblock {
     margin-bottom: 13px;
     display: flex;
@@ -3326,7 +3328,7 @@ a.button {
       flex-direction: column;
       align-items: flex-start; }
       .news-top__leadblock_author-avatar img {
-        width: 80px;
+        width: 80px !important;
         height: 80px;
         border-radius: 50%;
         margin-bottom: 20px; }
@@ -8112,7 +8114,7 @@ a.button {
       .news-top__leadblock_author {
         margin-bottom: 40px; }
         .news-top__leadblock_author-avatar {
-          width: 60px;
+          width: 60px !important;
           height: 60px;
           margin-right: 12px;
           margin-bottom: 0; }
