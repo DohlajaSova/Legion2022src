@@ -8,7 +8,7 @@
                 <option value="spb">Санкт-Петербург</option>
                 <option value="msk">Москва</option>
                 <option value="kzn">Казань</option>
-                <option value="klg">Калиниград</option>
+                <option value="klg">Калининград</option>
                 <option value="remote">Удаленная работа</option>
             </select></div>
         </div>
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','spb','remote']" data-city="spb">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']" data-city="spb">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','spb','remote']" data-city="spb">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']" data-city="spb">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','spb','remote']" data-city="spb">
+                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']" data-city="spb">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
