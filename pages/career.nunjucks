@@ -1,4 +1,4 @@
-<!-- index-applicants.nunjucks -->
+<!-- career.nunjucks -->
 {% extends "layout-career.nunjucks" %}
 {% block title %} Карьера - {% endblock %}
 {% block links %} {% endblock %}
@@ -7,7 +7,6 @@
   {% include "partials/towel/top-career.nunjucks" %}
   {% include "partials/towel/team3.nunjucks" %}
   {% include "partials/towel/vacancies2.nunjucks" %}
-  {% include "partials/towel/feedback-applicants.nunjucks" %}
   {% include "partials/towel/values.nunjucks" %}
   {% include "partials/towel/news.nunjucks" %}
   <!-- {% include "partials/towel/news3.nunjucks" %} -->

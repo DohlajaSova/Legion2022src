@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="assets/css/elegion.css">
     <link rel="apple-touch-icon" type="image/webp" sizes="180x180" href="/assets/css/img/apple-touch-icon.webp">
     <link rel="icon" type="image/webp" sizes="32x32" href="/assets/css/img/favicon-32x32.webp">
-    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/css/img/favicon-16x16Sp">
+    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/css/img/favicon-16x16.webp">
 	{% block links %}{% endblock %}
 </head>
 <body class="body_career">

@@ -826,7 +826,41 @@ docReady(function() {
         }
 
         for (i=0; i<vacanciesTypes.length; i++){
-            let types = new Array();
+            // создаем строку городов для пустой вакансии
+            let types = new Array(),
+                cities = new Array(),
+                emptyVacancyCities = new Array()
+                emptyVacancyData = "";
+
+            for (j=0; j<vacanciesBlocks[0].children.length; j++){
+                let typeString = vacanciesBlocks[0].children[j].dataset.types.slice(1,vacanciesBlocks[0].children[j].dataset.types.length-1);
+                types[j] = typeString.split(",");
+            }
+                
+            for (j=0; j<vacanciesTypes[0].children[0].children.length; j++){
+                cities.push(vacanciesTypes[0].children[0].children[j].value);
+            }
+            emptyVacancyCities = cities;
+                
+            for (j=0; j<cities.length; j++){
+                let foundCity = false;
+                for (k=0; k<types.length; k++){
+                    if (types[k].includes("'" + cities[j] + "'")){
+                        foundCity = true;
+                    }
+                }
+                if (foundCity){
+                    emptyVacancyCities.splice(j, 1);
+                    j--;
+                }
+            }
+            
+            for (j=0; j<emptyVacancyCities.length; j++){
+                emptyVacancyData += ",'"+emptyVacancyCities[j]+"'";
+            }
+            emptyVacancyData = "[" + emptyVacancyData.substring(1) + "]";
+            document.getElementById("vac_send").dataset.types = emptyVacancyData;
+
             for (j=0; j<vacanciesBlocks[0].children.length; j++){
                 let typeString = vacanciesBlocks[0].children[j].dataset.types.slice(1,vacanciesBlocks[0].children[j].dataset.types.length-1);
                 types[j] = typeString.split(",");
