@@ -831,9 +831,17 @@
             &__visual {
                 grid-template-columns: 100px 100px;
                 grid-template-rows: 100px 100px;
+                border-radius: 38px;
+                &_full{
+					grid-template-columns: repeat(1, minmax(100%, 248px));
+					grid-template-rows: repeat(1, minmax(auto, 238px));
+                }
             }
             &__brief {
                 padding: 20px;
+                &-title{
+                    font-size: 2.4vw;
+                }
             }
         }
     }
@@ -2536,6 +2544,15 @@
             &__visual {
                 grid-template-columns: 90px 90px;
                 grid-template-rows: 90px 90px;
+                &_full{
+					grid-template-columns: repeat(1, minmax(100%, 228px));
+					grid-template-rows: repeat(1, minmax(auto, 218px));
+                }
+            }
+            &__brief {
+                &-title{
+                    font-size: 2.1vw;
+                }
             }
         }
     }

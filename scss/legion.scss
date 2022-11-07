@@ -3342,6 +3342,9 @@ a.button {
 					}
 				}
 			}
+			&.aurora {
+				background: url($img-path + "problems-aurora.svg") bottom right no-repeat $color-grey-light;
+			}
 		}
 
 		&_bg2 {
@@ -6216,13 +6219,14 @@ a.button {
 				grid-template-columns: max-content auto;
 				// grid-template-columns: auto auto;
 				grid-template-rows: auto;
+				margin-left: auto;
 
 				&__visual {
 					display: grid;
 					grid-template-columns: repeat(2, minmax(calc(50% - 6px), 137px));
 					grid-template-rows: repeat(2, minmax(auto, 137px));
 					background-color: $color-blue-dark;
-					border-radius: 38px;
+					border-radius: 42px;
 					row-gap: 12px;
 					column-gap: 12px;
 					padding: 13px 18px;
@@ -6230,16 +6234,31 @@ a.button {
 					width: fit-content;
 
 					&_wrapper {
-						border-radius: 38px;
 						background-color: #fff;
 						display: flex;
 						justify-content: center;
+                        border-radius: inherit;
 					}
 
 					img {
 						height: 100%;
 						width: 100%;
 						padding: 17px;
+					}
+
+					&_full{
+						display: grid;
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr;
+						padding: 0;
+						&-wrapper{
+							width: 100%;
+							border-radius: inherit;
+						}
+						img {
+							padding: 0;
+							border-radius: inherit;
+						}
 					}
 				}
 

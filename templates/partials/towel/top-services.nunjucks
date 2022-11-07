@@ -148,5 +148,33 @@
             </div>
         </div>
     </div>
+
+    <div class="service__feature">
+        <div class="service__feature_info">
+            <div class="service__feature_info-title">
+                Операционная система «Аврора»
+            </div>
+            <div class="service__feature_info-description">
+                Разрабатываем решения на базе ОС «Аврора», помогаем защитить чувствительные данные компании.
+            </div>
+        </div>
+        <div class="service__feature_inner">
+            <div class="service__feature_inner-case">
+                <div class="service__feature_inner-case__visual service__feature_inner-case__visual_full">
+                    <div class="service__feature_inner-case__visual_full-wrapper">
+                        <img src="/assets/css/img/case-aurora.webp" alt="Теле2">
+                    </div>
+                </div>
+                <div class="service__feature_inner-case__brief">
+                    <div class="service__feature_inner-case__brief-title">
+                        Обзор российской <br/>ОС «Аврора»
+                    </div>
+                    <a href="/news/obzor-rossiiskoi-os-avrora" class="service__feature_inner-case__brief-transition">
+                        Подробнее → 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>

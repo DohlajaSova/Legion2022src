@@ -15,12 +15,17 @@
             <p>Тестируем, ищем баги, проводим аудит</p>
             <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
-        <a href="#feedback" class="problems__item problems__item_bg4 js-popup-feedback-open">
+        <a href="/services.html" class="problems__item problems__item-compact problems__item_bg1 aurora">
+            <h3>Операционная система<br class="mobile480-hide"/>«Аврора»</h3>
+            <p>Создаём решения для безопасной корпоративной системы</p>
+            <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
+        </a>
+        <!-- <a href="#feedback" class="problems__item problems__item_bg4 js-popup-feedback-open">
             <div class="problems__item_container">
                 <div class="problems__item_plus"></div>
                 <div class="problems__item_button">Индивидуальное решение <br>ваших задач →</div>
             </div>
-        </a>
+        </a> -->
         <div class="problems__all hide">
             <a href="" class="button button_default">Еще услуги</a>
         </div>
