@@ -17,7 +17,7 @@
         </div></div>
     </div>
 
-    <div class="service__feature">
+    <div class="service__feature" id="discovery">
         <div class="service__feature_info">
             <div class="service__feature_info-title">
                 Дискавери фаза
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-    <div class="service__feature">
+    <div class="service__feature" id="complex">
         <div class="service__feature_info">
             <div class="service__feature_info-title">
                 Комплексная разработка digital-продуктов
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-    <div class="service__feature">
+    <div class="service__feature" id="quality">
         <div class="service__feature_info">
             <div class="service__feature_info-title">
                 Контроль качества
@@ -149,7 +149,7 @@
         </div>
     </div>
 
-    <div class="service__feature">
+    <div class="service__feature" id="aurora">
         <div class="service__feature_info">
             <div class="service__feature_info-title">
                 Операционная система «Аврора»

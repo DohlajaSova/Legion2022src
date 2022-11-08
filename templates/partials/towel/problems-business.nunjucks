@@ -1,21 +1,21 @@
 <div class="problems">
     <div class="container">
-        <a href="/services.html" class="problems__item problems__item-compact problems__item_bg1">
+        <a href="/services.html?scrollinto=discovery" class="problems__item problems__item-compact problems__item_bg1">
             <h3>Дискавери <br class="mobile480-hide"/>фаза</h3>
             <p>Подготовим поэтапный план того, как должен строиться конкурентоспособный продукт</p>
             <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
-        <a href="/services.html" class="problems__item problems__item-compact problems__item_bg2">
+        <a href="/services.html?scrollinto=complex" class="problems__item problems__item-compact problems__item_bg2">
             <h3>Комплексная разработка <span class="nowrap">digital-продуктов</span></h3>
             <p>Реализуем проекты «под ключ»</p>
             <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
-        <a href="/services.html" class="problems__item problems__item-compact problems__item_bg3">
+        <a href="/services.html?scrollinto=quality" class="problems__item problems__item-compact problems__item_bg3">
             <h3>Контроль <br class="mobile480-hide"/>качества</h3>
             <p>Тестируем, ищем баги, проводим аудит</p>
             <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>
         </a>
-        <a href="/services.html" class="problems__item problems__item-compact problems__item_bg1 aurora">
+        <a href="/services.html?scrollinto=aurora" class="problems__item problems__item-compact problems__item_bg1 aurora">
             <h3>Операционная система<br class="mobile480-hide"/>«Аврора»</h3>
             <p>Создаём решения для безопасной корпоративной системы</p>
             <div class="problems__more">Подробнее об&nbsp;услуге <br/>и&nbsp;этапах работы</div>

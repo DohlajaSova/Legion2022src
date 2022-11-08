@@ -390,8 +390,37 @@ function setBackground(block, colored){
         block.classList.remove("first");
     }
 }
+function smoothScrollOnLinkHash(selector){
+    const el = document.getElementById(selector)
+    if(el){
+        el.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+}
+
+function getParamsByUrl(url = null){
+    let queryUrl = url ? url : location.search
+    let queryString = queryUrl.substring(1)
+    let res = new URLSearchParams(queryString)
+    let urlParams = {}
+
+    res.forEach((value, key) => {
+        if(value === 'null') value = null
+        if(value === 'undefined') value = null
+        if(value === '') value = null
+        urlParams[key] = value
+    })
+
+    return urlParams
+}
 
 docReady(function() {
+    const params = getParamsByUrl();
+    const scrollIV = params?.scrollinto;
+    if(scrollIV){
+        smoothScrollOnLinkHash(scrollIV);
+    }
     // фиксим хедер при скролле
     const stickyHeader = document.getElementsByClassName('header')[0];
     //let headerOffset = findOffset(stickyHeader);
