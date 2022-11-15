@@ -2128,12 +2128,12 @@
         }
     }
     .case2 {
-        .project_venn{
-            padding-bottom: 65%!important;
-        }
         .project_tall:first-child{
             padding-bottom: 10%!important;
             // padding-bottom: 65%!important;
+            &.project_venn{
+                padding-bottom: 65%!important;
+            }
         }
         &__kpiWrapper {
             padding-bottom: 64.2%!important;
@@ -2617,11 +2617,10 @@
                 align-items:flex-start;
             }
         }
-        // .project_tall:first-child{
-        //     padding-bottom: 80%!important;
-        // }
-        .project_venn{
-            padding-bottom: 80%!important;
+        .project_tall:first-child{
+            .project_venn{
+                padding-bottom: 80%!important;
+            }
         }
     }
     .case3 {
