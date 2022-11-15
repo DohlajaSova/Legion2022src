@@ -414,6 +414,9 @@
         &__title{
             margin: 40px 0;
         }
+        .container{
+            padding:0 15px;
+        }
         // &__lead{
         //     height:24px;
         // }
@@ -438,7 +441,11 @@
     }
     .case2 {
         .circle{
-            transform: scale(.5);
+            transform: scale(.7);
+            top: 20%;
+            &-text__item_label{
+                font-size: 21px;
+            }
         }
         &__kpiWrapper {
             .circle-about{
@@ -870,6 +877,13 @@
             }
         }
     }
+    .case-stages{
+        .projects_case{
+            .case2__kpiWrapper{
+                padding-bottom: 120% !important;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -998,6 +1012,11 @@
                     }
                 }
             }
+        }
+    }
+    .case2 {
+        .circle{
+            transform: scale(.5);
         }
     }
 }

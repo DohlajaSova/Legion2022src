@@ -376,7 +376,7 @@
   <div class="projects projects_case">
     <div class="container">
       <div class="projects__panels">
-        <div class="project project_tall">
+        <div class="project project_tall project_venn">
           <div class="casevenn__content">
             <div class="case3__content_card casevenn">
               <div class="case3__content_card-tip">Публикации</div>
@@ -387,7 +387,7 @@
             </div>
           </div>
         </div>
-        <div class="project project_tall case2">
+        <div class="project project_tall case2 project_venn">
           <div class="project__review_container">
             <div class="project__review">
               <div class="project__review_top">

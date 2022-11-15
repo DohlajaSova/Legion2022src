@@ -50,7 +50,7 @@
     .contacts,
 	.request{
         .container{
-            padding:0 60px;
+            padding:0 30px;
         }
     }
 }
@@ -2097,6 +2097,9 @@
                 height: auto;
                 padding-bottom: 0 !important;
             }
+            .case2__kpiWrapper{
+                padding-bottom: 70% !important;
+            }
         }
         .device{
             &_fit-width{
@@ -2125,8 +2128,12 @@
         }
     }
     .case2 {
-        .project_tall:first-child{
+        .project_venn{
             padding-bottom: 65%!important;
+        }
+        .project_tall:first-child{
+            padding-bottom: 10%!important;
+            // padding-bottom: 65%!important;
         }
         &__kpiWrapper {
             padding-bottom: 64.2%!important;
@@ -2610,7 +2617,10 @@
                 align-items:flex-start;
             }
         }
-        .project_tall:first-child{
+        // .project_tall:first-child{
+        //     padding-bottom: 80%!important;
+        // }
+        .project_venn{
             padding-bottom: 80%!important;
         }
     }

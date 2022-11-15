@@ -2175,13 +2175,13 @@ a.button {
 		background: url($img-path + "cases-slider-bg_5ka.svg") center/cover no-repeat;
 	}
 	&.bg_tele2 {
-		background: url($img-path + "cases-slider-bg_tele2.svg") center/cover no-repeat;
+		background: url($img-path + "cases-slider-bg_tele2.webp") center/cover no-repeat;
 	}
 	&.bg_alfa {
-		background: url($img-path + "cases-slider-bg_alfa.svg") center/cover no-repeat;
+		background: url($img-path + "cases-slider-bg_alfa.webp") center/cover no-repeat;
 	}
 	&.bg_venn {
-		background: url($img-path + "cases-slider-bg_venn.svg") center/cover no-repeat;
+		background: url($img-path + "cases-slider-bg_venn.webp") center/cover no-repeat;
 	}
 	&-reverse{
 		.cases-slider__item {
@@ -5292,9 +5292,6 @@ a.button {
 	margin-bottom: 120px;
 	&__title{
 		margin: 120px 0;
-	}
-	.container {
-		padding: 0 30px;
 	}
 
 	overflow-y: auto;

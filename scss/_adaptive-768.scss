@@ -885,7 +885,7 @@
         // max-height: unset;
         .container{
             overflow: unset!important;
-            padding:0 15px;
+            // padding:0 15px;
         }
         &__textarea{
             textarea{
@@ -1560,6 +1560,13 @@
                     }
                 }
             }
+            }
+        }
+    }
+    .case-stages{
+        .projects_case{
+            .case2__kpiWrapper{
+                padding-bottom: 120% !important;
             }
         }
     }
