@@ -6,6 +6,11 @@
 
 //------------------Свайпер------------------
 
+// blocks bottom margin
+.contacts {
+	margin-bottom: 80px;
+}
+
 .tns-outer {
 	padding: 0 !important
 }
@@ -1119,7 +1124,9 @@ a.button {
 	background-color: rgba($color-black, 0.81);
 	display: none;
 	padding: 33px 0 25px;
-
+	.request{
+		margin-bottom: 0;
+	}
 	&.active {
 		display: block;
 	}
@@ -1657,6 +1664,10 @@ a.button {
 				width: 100%;
 			}
 		}
+		
+		.cases__title{
+			margin: 135px 0;
+		}
 
 		.container {
 			display: flex;
@@ -1698,12 +1709,12 @@ a.button {
 
 	&__title {
 		width: 100%;
-		text-align: center;
+		// text-align: center;
 	}
 
 	&__lead {
 		width: 100%;
-		height: 87px;
+		// height: 87px;
 		border-bottom: 1px solid $color-blue-dark;
 		margin-bottom: 70px;
 	}
@@ -1993,7 +2004,7 @@ a.button {
 	}
 
 	&_portfolio {
-		padding-top: 120px;
+		// padding-top: 120px;
 
 		.container_portfolio-inner {
 			display: flex;
@@ -4914,9 +4925,9 @@ a.button {
 			text-align: left;
 		}
 
-		.cases__lead {
-			height: 37px;
-		}
+		// .cases__lead {
+		// 	height: 37px;
+		// }
 
         .vacancies__container{
             padding-bottom: 0;
@@ -5199,8 +5210,7 @@ a.button {
 
 .contacts {
 	&__title {
-		text-align: center;
-		margin-bottom: 170px;
+		margin: 180px 0;
 	}
 
 	&__lead {
@@ -5279,6 +5289,10 @@ a.button {
 }
 
 .request {
+	margin-bottom: 120px;
+	&__title{
+		margin: 120px 0;
+	}
 	.container {
 		padding: 0 30px;
 	}
@@ -5287,7 +5301,7 @@ a.button {
 	max-height: 100%;
 
 	&__lead {
-		height: 87px;
+		// height: 87px;
 		border-bottom: 1px solid $color-blue-dark;
 		margin-bottom: 70px;
 	}

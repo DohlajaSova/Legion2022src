@@ -1,4 +1,8 @@
 @media only screen and (max-width: $screen-xs) {
+    // blocks bottom margin
+    .contacts {
+        margin-bottom: 40px;
+    }
 	.mobile480-show{
 		display:block;
 	}
@@ -406,9 +410,13 @@
         }
     }
     .request {
-        &__lead{
-            height:24px;
+        margin-bottom: 60px;
+        &__title{
+            margin: 40px 0;
         }
+        // &__lead{
+        //     height:24px;
+        // }
         &__form{
             &_warning{
                 font-size: 16px;
@@ -732,6 +740,11 @@
             &::after{
                 top:-1px;
             }
+        }
+    }
+    .contacts {
+        &__title {
+		    margin: 60px 0;
         }
     }
 }

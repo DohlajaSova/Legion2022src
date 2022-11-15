@@ -1,4 +1,9 @@
 @media only screen and (max-width: $screen-sm) {
+    // blocks bottom margin
+    .contacts {
+        margin-bottom: 60px;
+    }
+
     .mobile768-show{
         display:block;
     }
@@ -247,6 +252,9 @@
         }
     }
     .contacts{
+        &__title {
+		    margin: 120px 0;
+        }
         &__container{
             &_outer{
                 position:relative;
@@ -348,9 +356,13 @@
         }
     }
     .request{
-        &__lead{
-            height:40px;
+        margin-bottom: 80px;
+        &__title{
+            margin: 120px 0 60px 0;
         }
+        // &__lead{
+        //     height:40px;
+        // }
         &__form{
             &_item{
                 width:100%;
@@ -764,6 +776,11 @@
                 .cases__case_name{
                     font-size: 16px;
                 }
+            }
+        }
+        .cases-container {
+            .cases__title{
+                margin: 115px 0 60px 0;
             }
         }
     }
@@ -1807,11 +1824,12 @@
             }
         }
         &__lead{
-            height:10px;
             margin-bottom:35px;
         }
-        &_portfolio{
-            padding-top:25px;
+        .cases-container {
+            .cases__title{
+                margin: 60px 0 40px 0;
+            }
         }
     }
     .case-stages{
