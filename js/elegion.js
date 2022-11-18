@@ -924,7 +924,7 @@ docReady(function() {
                 const data = newsBlocks[one].dataset;
                 if(!data.limitStable){
                     moreButton?.addEventListener("click", function(e){
-                        e.preventDefault();
+                        //e.preventDefault();
                         curLimit += +data.perpage;
                         // containerRefresh(curLimit, newsBlocks, moreButton);
                         removeOverBlocks(newsBlocks[one], curLimit, data.limitStable, data, moreButton);
