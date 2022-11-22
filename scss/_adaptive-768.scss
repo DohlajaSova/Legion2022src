@@ -592,7 +592,10 @@
     }
     .case2 {
         .project_tall:first-child{
-            padding-bottom:100%!important;
+            // padding-bottom:100%!important;
+            &.project_venn{
+                padding-bottom: 100%!important;
+            }
         }
         .circle{
             &-about {
