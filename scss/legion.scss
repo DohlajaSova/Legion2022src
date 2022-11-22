@@ -1509,10 +1509,10 @@ a.button {
     &_news{
         & > .container{
             flex-direction: column;
-            img{
-                width: 100%;
-            }
         }
+		img{
+			width: 100%;
+		}
     }
 
 	&_case {
@@ -4657,7 +4657,7 @@ a.button {
                 align-items:flex-start;
                 &-avatar{
                     img{
-                        width:80px !important;
+                        width:80px;
                         height: 80px;
                         border-radius: 50%;
                         margin-bottom: 20px;
