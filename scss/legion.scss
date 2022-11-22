@@ -6928,6 +6928,7 @@ a.button {
 			// }
 		}
 		&-news{
+			grid-template-rows: repeat(2, calc(50% - 10px));
 			.client__grid_card-tall{
 				aspect-ratio: 1;
 				&__whole{
