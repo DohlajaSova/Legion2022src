@@ -1,11 +1,11 @@
 ﻿<div class="client">
   <div class="container">
-      <ul class="client__breadcrumbs breadcrumbs">
-        <li><a href="/portfolio.html">Портфолио</a></li>
-        <li><span>Tele2</span></li>
-      </ul>
+    <ul class="client__breadcrumbs breadcrumbs">
+      <li><a href="/portfolio.html">Портфолио</a></li>
+      <li><span>Tele2</span></li>
+    </ul>
   </div>
-  
+
   <h1 class="client__header">Tele2</h1>
 
   <div class="client__present">
@@ -20,106 +20,112 @@
       alt="Пятёрочка"
     />
   </div>
-    
-  <div class="container">    
-      <div class="client__info">
-        <div class="client__info_stats">
-          <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Услуга</p>
-            <p class="client__info_stats-state__value">
-              Комплексная мобильная разработка
-            </p>
-          </div>
-          <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Сотрудничество</p>
-            <p class="client__info_stats-state__value">с 2015 года</p>
-          </div>
-          <div class="client__info_stats-state">
-            <p class="client__info_stats-state__prop">Работы</p>
-            <p class="client__info_stats-state__value">
-              Анализ, прототипирование, дизайн, разработка, контроль качества, поддержка
-            </p>
-          </div>
-        </div>
-        <div class="client__info_text">
-          <p>
-            «Мой Tele2» — один из основных каналов коммуникации с абонентами мобильного оператора.
-            С помощью приложения пользователи могут управлять счётом, услугами и тарифами online.
-          </p>
-          <p>
-            В 2015 году мы выпустили первую версию приложения «Мой Tele2». Сегодня мы продолжаем наращивать функциональность приложения с сохранением его управляемости, быстродействия, удобства и доступности для пользователей.
+
+  <div class="container">
+    <div class="client__info">
+      <div class="client__info_stats">
+        <div class="client__info_stats-state">
+          <p class="client__info_stats-state__prop">Услуга</p>
+          <p class="client__info_stats-state__value">
+            Комплексная мобильная разработка
           </p>
         </div>
-        <div class="cases__case cases__case_double">
-          <div class="cases-slider bg_tele2">
-            <div class="cases-slider__item active">
-              <div class="cases-slider__item_nomination">
-                <h3 class="h2">15,5 <span>млн</span></h3>
-                <p>количество<br>пользователей обеих<br>платформ</p>
-              </div>
-              <div class="cases-slider__item_project"></div>
+        <div class="client__info_stats-state">
+          <p class="client__info_stats-state__prop">Сотрудничество</p>
+          <p class="client__info_stats-state__value">с 2015 года</p>
+        </div>
+        <div class="client__info_stats-state">
+          <p class="client__info_stats-state__prop">Работы</p>
+          <p class="client__info_stats-state__value">
+            Анализ, прототипирование, дизайн, разработка, контроль качества,
+            поддержка
+          </p>
+        </div>
+      </div>
+      <div class="client__info_text">
+        <p>
+          «Мой Tele2» — один из основных каналов коммуникации с абонентами
+          мобильного оператора. С помощью приложения пользователи могут
+          управлять счётом, услугами и тарифами online.
+        </p>
+        <p>
+          В 2015 году мы выпустили первую версию приложения «Мой Tele2». Сегодня
+          мы продолжаем наращивать функциональность приложения с сохранением его
+          управляемости, быстродействия, удобства и доступности для
+          пользователей.
+        </p>
+      </div>
+      <div class="cases__case cases__case_double">
+        <div class="cases-slider bg_tele2">
+          <div class="cases-slider__item active">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2">15,5 <span>млн</span></h3>
+              <p>количество<br />пользователей обеих<br />платформ</p>
             </div>
-            <div class="cases-slider__item">
-              <div class="cases-slider__item_nomination">
-                <h3 class="h2">3 <span>млн</span></h3>
-                <p>
-                  активных<br>пользователей<br>в день
-                </p>
-              </div>
-              <div class="cases-slider__item_project"></div>
-            </div>
-            <div class="cases-slider__item">  
-              <div class="cases-slider__item_nomination">
-                <h3 class="h2">+18%</h3>
-                <p>
-                  прирост новых<br>пользователей<br>за 2021 год
-                </p>
-              </div>
-              <div class="cases-slider__item_project"></div>
-            </div>
+            <div class="cases-slider__item_project"></div>
           </div>
-          <div class="cases-slider__statics js-cases-dots">
-            <div class="cases-slider__statics_dots">
-              <ul>
-                <li class="active"><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2">3 <span>млн</span></h3>
+              <p>активных<br />пользователей<br />в день</p>
             </div>
+            <div class="cases-slider__item_project"></div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2">+18%</h3>
+              <p>прирост новых<br />пользователей<br />за 2021 год</p>
+            </div>
+            <div class="cases-slider__item_project"></div>
+          </div>
+        </div>
+        <div class="cases-slider__statics js-cases-dots">
+          <div class="cases-slider__statics_dots">
+            <ul>
+              <li class="active"><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
   </div>
-    
-  <div class="container">    
-      <div class="client__cases">
-        <h2 class="client__cases_header">
-          Связанные <em>кейсы</em>
-        </h2>
-        <div class="client__cases_wrapper">
-          <a href="/case-tele2.html" class="client__cases_block client__cases_block-tele2">
-            <div class="client__cases_block-name">Конструктор тарифов</div>
-            <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">сервисы</div>
-              <div class="client__cases_block-parts__feature">экосистема</div>
-            </div>
-          </a>
-          <div class="client__cases_block inactive">
-            <div class="client__cases_block-name">Управление связью</div>
-            <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">сервис Миа</div>
-              <div class="client__cases_block-parts__feature">интеграции</div>
-            </div>
+
+  <div class="container">
+    <div class="client__cases">
+      <h2 class="client__cases_header">Связанные <em>кейсы</em></h2>
+      <div class="client__cases_wrapper">
+        <a
+          href="/case-tele2.html"
+          class="client__cases_block client__cases_block-tele2"
+        >
+          <div class="client__cases_block-name">Конструктор тарифов</div>
+          <div class="client__cases_block-parts">
+            <div class="client__cases_block-parts__feature">сервисы</div>
+            <div class="client__cases_block-parts__feature">экосистема</div>
           </div>
-          <div class="client__cases_block inactive">
-            <div class="client__cases_block-name">Управление остатками ГБ, минут, SMS</div>
-            <div class="client__cases_block-parts">
-              <div class="client__cases_block-parts__feature">маркет Tele2</div>
-              <div class="client__cases_block-parts__feature">центр управления</div>
+        </a>
+        <div class="client__cases_block inactive">
+          <div class="client__cases_block-name">Управление связью</div>
+          <div class="client__cases_block-parts">
+            <div class="client__cases_block-parts__feature">сервис Миа</div>
+            <div class="client__cases_block-parts__feature">интеграции</div>
+          </div>
+        </div>
+        <div class="client__cases_block inactive">
+          <div class="client__cases_block-name">
+            Управление остатками ГБ, минут, SMS
+          </div>
+          <div class="client__cases_block-parts">
+            <div class="client__cases_block-parts__feature">маркет Tele2</div>
+            <div class="client__cases_block-parts__feature">
+              центр управления
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
 
   <div class="projects projects-client">
@@ -190,8 +196,12 @@
       </div> -->
 
       <div class="client__grid">
-        <div class="client__grid_card client__grid_card-tall client__grid_card-tall-grey">
-          <div class="client__grid_card-tall__preview client__grid_card-tall__preview-dark">
+        <div
+          class="client__grid_card client__grid_card-tall client__grid_card-tall-grey"
+        >
+          <div
+            class="client__grid_card-tall__preview client__grid_card-tall__preview-dark"
+          >
             <div class="client__grid_card-tall__preview_info">
               <div class="client__grid_card-tall__preview_info-heading">
                 Отзыв
@@ -200,64 +210,76 @@
                 Александр Смердов
               </div>
               <div class="client__grid_card-tall__preview_info-undertext">
-                руководитель направления<br>мобильных приложений Tele2
+                руководитель направления<br />мобильных приложений Tele2
               </div>
             </div>
             <img
-            class="client__grid_card-tall__preview_image"
-            src="/assets/css/img/review-author_tele2.webp"
-            alt="Tele2"
+              class="client__grid_card-tall__preview_image"
+              src="/assets/css/img/review-author_tele2.webp"
+              alt="Tele2"
             />
           </div>
-          <div class="client__grid_card-tall__info client__grid_card-tall__info-dark">
-            Совместно с e-legion на протяжении 7 лет мы активно работаем над мобильным приложением. Быть на передовой и задавать тренды в мобильной разработке — задача непростая, но мы стараемся быстро адаптироваться к реализации новых задач и предугадывать будущие тренды.
+          <div
+            class="client__grid_card-tall__info client__grid_card-tall__info-dark"
+          >
+            Совместно с e-legion на протяжении 7 лет мы активно работаем над
+            мобильным приложением. Быть на передовой и задавать тренды в
+            мобильной разработке — задача непростая, но мы стараемся быстро
+            адаптироваться к реализации новых задач и предугадывать будущие
+            тренды.
           </div>
         </div>
-        <div class="client__grid_card client__grid_card-flex client__grid_card-std">
+        <a
+          href="https://vk.com/elegion?w=wall-34196694_2030"
+          target="_blank"
+          class="client__grid_card client__grid_card-flex client__grid_card-std"
+        >
           <div class="client__grid_card-accent">№3</div>
           <!-- <div class="client__grid_card-heading">
           </div> -->
           <div class="client__grid_card-content">
-            Рейтинг Рунета 2021<br>номинация<br>«Сервисы»
+            Рейтинг Рунета 2021<br />номинация<br />«Сервисы»
           </div>
-          <a href="https://vk.com/elegion?w=wall-34196694_2030" target="_blank" class="client__grid_card-link">
-            Подробнее &rarr;
-          </a>
-            <img class="client__grid_card-image abr client__grid_card-image-side"
-              src="/assets/css/img/cases-premia.webp"
-              alt="Конкурс «Рейтинг Рунета»"
-            />
+          <div class="client__grid_card-link">Подробнее &rarr;</div>
+          <img
+            class="client__grid_card-image abr client__grid_card-image-side"
+            src="/assets/css/img/cases-premia.webp"
+            alt="Конкурс «Рейтинг Рунета»"
+          />
           <!-- <div class="client__grid_card-image background">
             <img
               src="/assets/css/img/img/cases-bg-venn.webp"
               alt=""
             />
           </div> -->
-        </div>
-        <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue">
+        </a>
+        <a
+          href="/services.html"
+          class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue"
+        >
           <div class="client__grid_card-content">
-            Комплексная<br>разработка<br>digital-продуктов
+            Комплексная<br />разработка<br />digital-продуктов
           </div>
-          <a href="/services.html" class="client__grid_card-link">
-            Подробнее об услуге &rarr;
-          </a>
-        </div>
+          <div class="client__grid_card-link">Подробнее об услуге &rarr;</div>
+        </a>
         <div class="client__grid_card client__grid_card-wide">
           <img
             class="client__grid_card-wide__image br"
             src="/assets/css/img/cases-tele2-phone.webp"
             alt=""
           />
-          <div class="client__grid_card-wide__info">
+          <a
+            href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
+            target="_blank"
+            class="client__grid_card-wide__info"
+          >
             <div class="client__grid_card-wide__info-content">
               Tele2 воплотили идеи клиентов на площадке для продажи услуг
             </div>
-            <a href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
-              target="_blank"
-              class="client__grid_card-wide__info-link">
+            <div class="client__grid_card-wide__info-link">
               Смотреть статью &rarr;
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

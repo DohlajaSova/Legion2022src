@@ -4551,6 +4551,9 @@ a.button {
 		grid-template-columns: repeat(4, 1fr);
 		border-radius: 42px;
 		gap: 60px 20px;
+		a:hover {
+			text-decoration: none;
+		}
 		&_card{
 			grid-column: auto / span 1;
 			grid-row: auto / span 1;
@@ -6708,6 +6711,9 @@ a.button {
 		grid-template-rows: 1fr 1fr;
 		gap: 20px;
 		$padd: 30px 30px 24px 30px;
+		a:hover {
+			text-decoration: none;
+		}
 		&_card{
 			border-radius: 42px;
 			padding: $padd;

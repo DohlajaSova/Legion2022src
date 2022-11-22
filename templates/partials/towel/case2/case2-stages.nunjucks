@@ -230,39 +230,4 @@
       </div>
     </div>
   </div>
-
-  
-  <!-- <div class="client__grid">
-    <div class="client__grid_card client__grid_card-tall">
-      <div class="client__grid_card-tall__preview">
-        <div class="client__grid_card-tall__preview_info">
-          <div class="client__grid_card-tall__preview_info-heading">
-            Отзыв
-          </div>
-          <div class="client__grid_card-tall__preview_info-content">
-            Марина Янцен
-          </div>
-          <div class="client__grid_card-tall__preview_info-undertext">
-            аналитик проекта
-          </div>
-        </div>
-        <img
-        class="client__grid_card-tall__preview_image"
-        src="/assets/css/img/temp-author4.webp"
-        alt="Марина Янцен"
-        />
-      </div>
-      <div class="client__grid_card-tall__info">
-        Ценной особенностью «Шпионского клуба» был близкий контакт
-        с&nbsp;нашими пользователями&nbsp;— агентами клуба.
-        С&nbsp;самыми активными мы&nbsp;общались в&nbsp;чате, получая
-        массу отзывов и&nbsp;идей развития продукта.
-      </div>
-    </div>
-    <div class="client__grid_card client__grid_card-tall">
-      <div class="project project_tall case2__kpiWrapper">
-        {% include "partials/towel/case2/case2-kpi.nunjucks" %}
-      </div>
-    </div>
-  </div> -->
-</div>
+  </div>
