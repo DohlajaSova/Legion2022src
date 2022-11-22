@@ -228,7 +228,7 @@
             In my opinion e-legion is a serious and professional development company, with focus on high quality and with an eye for details. Easy to communicate with, and not afraid to communicate their views, even when it means that we are wrong. I can only give e-legion my highest recommendations.
           </div>
         </div>
-        <div class="client__grid_card client__grid_card-wide">
+        <a href="" class="client__grid_card client__grid_card-wide">
           <img
             class="client__grid_card-wide__image br"
             src="/assets/css/img/case-venn.webp"
@@ -238,11 +238,11 @@
             <div class="client__grid_card-wide__info-content">
               Connecting new friendships &amp; shared activities nearby
             </div>
-            <a href="" class="client__grid_card-wide__info-link">
+            <div class="client__grid_card-wide__info-link">
               Смотреть статью &rarr;
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="client__grid_card client__grid_card-std client__grid_card-venn_background">
           <div class="client__grid_card-heading">
             Международные проекты
@@ -255,14 +255,14 @@
               alt=""
             />
         </div>
-        <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light client__grid_card-light cases__case-blue">
+        <a href="/services.html" class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light client__grid_card-light cases__case-blue">
           <div class="client__grid_card-content">
             Масштабирование продукта
           </div>
-          <a href="/services.html" class="client__grid_card-link">
+          <div class="client__grid_card-link">
             Подробнее об услуге &rarr;
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>

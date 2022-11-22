@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-      <div class="client__grid_card client__grid_card-tall">
+      <a href="https://vc.ru/flood/281180-ekspediciya-na-beloe-more" target="_blank" class="client__grid_card client__grid_card-tall">
         <div class="client__grid_card-tall__whole">
           <div class="client__grid_card-tall__whole_info">
             <div class="client__grid_card-tall__whole_info-heading">
@@ -108,13 +108,11 @@
             <div class="client__grid_card-tall__whole_info-content">
               Экспедиция на&nbsp;Белое&nbsp;море
             </div>
-            <a
-              href="https://vc.ru/flood/281180-ekspediciya-na-beloe-more"
-              target="_blank"
+            <div
               class="client__grid_card-tall__whole_info-link"
             >
               Подробнее →
-            </a>
+          </div>
           </div>
           <img
             class="client__grid_card-tall__whole_image object-cover"
@@ -122,8 +120,8 @@
             alt="Экспедиция на Белое море"
           />
         </div>
-      </div>
-      <div class="client__grid_card client__grid_card-wide">
+      </a>
+      <a href="/case2.html" class="client__grid_card client__grid_card-wide">
         <img
           class="client__grid_card-wide__image br"
           src="/assets/css/img/temp-projects1.webp"
@@ -133,11 +131,11 @@
           <div class="client__grid_card-wide__info-content">
             Российская операционная система «Фантом»
           </div>
-          <a href="/case2.html" class="client__grid_card-wide__info-link">
+          <div class="client__grid_card-wide__info-link">
             Смотреть статью &rarr;
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>

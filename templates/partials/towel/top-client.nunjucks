@@ -150,7 +150,7 @@
             Мобильное приложение «Пятёрочка»&nbsp;– один из&nbsp;важнейших инструментов для торговой сети. С&nbsp;2019&nbsp;года наша команда и&nbsp;e-legion работают над&nbsp;улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.
           </div>
         </div>
-        <div class="client__grid_card client__grid_card-wide">
+        <a href="/case2.html" class="client__grid_card client__grid_card-wide">
           <img
             class="client__grid_card-wide__image br"
             src="/assets/css/img/temp-projects-5ka-spy.webp"
@@ -160,11 +160,11 @@
             <div class="client__grid_card-wide__info-content">
               «Шпионский клуб»: итоги первого года работы
             </div>
-            <a href="/case2.html" class="client__grid_card-wide__info-link">
+            <div class="client__grid_card-wide__info-link">
               Смотреть статью &rarr;
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="client__grid_card client__grid_card-flex client__grid_card-std">
           <div class="client__grid_card-accent">№ 1</div>
           <div class="client__grid_card-content">
@@ -178,14 +178,14 @@
               alt="Конкурс «Рейтинг Рунета»"
             />
         </div>
-        <div class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue">
+        <a href="/services.html" class="client__grid_card client__grid_card-std client__grid_card-flex client__grid_card-light cases__case-blue">
           <div class="client__grid_card-content">
             Комплексная<br>разработка<br>digital-продуктов
           </div>
-          <a href="/services.html" class="client__grid_card-link">
+          <div class="client__grid_card-link">
             Подробнее об услуге &rarr;
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
