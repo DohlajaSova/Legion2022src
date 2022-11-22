@@ -26,6 +26,7 @@
             <div><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></div>
         </div>
         <div class="pmenu__social social">
+            <a href="/news.html" class="social_blog">блог</a>
             <a href="https://vk.com/elegion" target="_blank" class="social_vk"></a>
             <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt"></a>
             <a href="https://habr.com/ru/company/e-legion/blog/" target="_blank" class="social_h"></a>
