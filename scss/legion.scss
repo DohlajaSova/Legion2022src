@@ -6771,6 +6771,9 @@ a.button {
 				color: $color-grey-dark;
 				text-decoration: none;
 			}
+            p a {
+                color: $color-blue-dark;
+            }
 			&-flex, &-wide__info {
 				display: flex;
 				flex-flow: column nowrap;
