@@ -375,7 +375,7 @@
 <div class="case2 case-stages">
   <div class="projects projects_case">
     <div class="container">
-      <div class="projects__panels">
+      <!-- <div class="projects__panels">
         <div class="project project_tall project_venn">
           <div class="casevenn__content">
             <div class="case3__content_card casevenn">
@@ -394,7 +394,7 @@
                 <img
                   class="project__review_top-img"
                   src="/assets/css/img/temp-author5.webp"
-                  alt="Марина Янцен"
+                  alt="Игорь Иевков"
                 />
                 <div class="project__review_rubr">Отзыв</div>
                 <div class="project__review_body">
@@ -415,6 +415,54 @@
                 </h3>
               </span>
             </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="client__grid">
+        <a href="https://www.findavenn.com/news/who-is-venn-for" target="_blank" class="client__grid_card client__grid_card-tall">
+          <div class="client__grid_card-tall__whole">
+            <div class="client__grid_card-tall__whole_info">
+              <div class="client__grid_card-tall__whole_info-heading">
+                Публикации
+              </div>
+              <div class="client__grid_card-tall__whole_info-content">
+                Who is Venn for?
+              </div>
+              <div class="client__grid_card-tall__whole_info-link">
+                Подробнее&nbsp;→
+            </div>
+            </div>
+            <img class="client__grid_card-tall__whole_image object-cover"
+              src="/assets/css/img/case_venn-content-foreground.webp"
+              alt="Who is Venn for?"/>
+          </div>
+        </a>
+        <div
+          class="client__grid_card client__grid_card-tall client__grid_card-tall-noplace client__grid_card-tall-grey">
+          <div
+            class="client__grid_card-tall__preview client__grid_card-tall__preview-dark">
+            <div class="client__grid_card-tall__preview_info">
+              <div class="client__grid_card-tall__preview_info-heading">
+                Отзыв
+              </div>
+              <div class="client__grid_card-tall__preview_info-content">
+                Игорь Иевков
+              </div>
+              <div class="client__grid_card-tall__preview_info-undertext">
+                аккаунт-менеджер
+              </div>
+            </div>
+            <img class="client__grid_card-tall__preview_image"
+              src="/assets/css/img/temp-author5.webp"
+              alt="Игорь Иевков"/>
+          </div>
+          <div class="client__grid_card-tall__info client__grid_card-tall__info-dark">
+            Было&nbsp;классно принимать участие в&nbsp;иностранном
+            стартапе. Ведь отличительные черты стартапов — профессионализм
+            и&nbsp;большая гибкость всех участников, оперативность
+            принятия решений и&nbsp;творческих подход.
+            А&nbsp;ещё&nbsp;было интересно наблюдать, как&nbsp;социальная
+            сеть наполняется участниками из&nbsp;разных точек планеты.
           </div>
         </div>
       </div>

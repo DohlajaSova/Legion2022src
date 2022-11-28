@@ -40,7 +40,7 @@
         <div class="cases-slider">
           <div class="cases-slider__item active">
             <div class="cases-slider__item_nomination">
-              <h3 class="h2 accent">№1</h3>
+              <h3 class="accent">№1</h3>
               <!-- <p>Лучшее мобильное решение/активация</p> -->
               <p>Tagline Awards 2020-2021 «Мобильное решение»</p>
             </div>
@@ -58,7 +58,7 @@
           </div>
           <div class="cases-slider__item">
             <div class="cases-slider__item_nomination">
-              <h3 class="h2 accent">№2</h3>
+              <h3 class="accent">№2</h3>
               <p>Tagline Awards 2020-2021 «Ритейл-приложение»</p>
               <!-- <p>Лучшее ритейл-приложение</p> -->
             </div>
@@ -74,7 +74,7 @@
           </div>
           <div class="cases-slider__item">
             <div class="cases-slider__item_nomination">
-              <h3 class="h2 accent">№3</h3>
+              <h3 class="accent">№3</h3>
               <p>Tagline Awards 2020-2021 «Приложение для телеком/IT»</p>
               <!-- <p>Лучшее приложение для телеком/IT/интернет-компании</p> -->
             </div>

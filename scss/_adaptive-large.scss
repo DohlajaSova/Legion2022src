@@ -53,6 +53,11 @@
             padding:0 30px;
         }
     }
+    .cases{
+        &__grid {
+		    padding: 0;
+        }
+    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -117,6 +122,25 @@
                 &-tall__preview_info-undertext,
                 &-tall__whole_info-heading{
                     font-size: 1.5vw;
+                }
+            }
+            &-projects {
+                .client__grid_card-wide{
+                    // aspect-ratio: 2;
+                    grid-column: auto / span 2;
+                    // grid-column-end: 3;
+                    grid-row: auto / span 1;
+                    // grid-row-end: 3;
+                    .cases-slider__item_nomination {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        .accent{
+                            font-size: 5vw;
+                            ~ p{
+                            	font-size: 1.7vw;
+                            }
+                        }
+                    }
                 }
             }
         }    
@@ -211,7 +235,7 @@
         }
     }
     .client__grid_card-tall__info{
-        font-size: 1.7vw;
+        font-size: 1.6vw;
     }
 }
 
@@ -271,6 +295,18 @@
                         img{
                             width: 50px;
                         }
+                    }
+                }
+            }
+        }
+        &__grid{
+            &_card{
+                &-heading{
+                    font-size: 3.6vw;
+                }
+                &-list{
+                    li {
+                        font-size: 1.8vw;
                     }
                 }
             }
@@ -499,6 +535,9 @@
                 }
             }
         }
+    }
+    .client__grid_card-tall__info{
+        font-size: 1.55vw;
     }
 }
 
@@ -1898,6 +1937,10 @@
                     grid-column-end: 3;
                     grid-row-start: 1;
                     grid-row-end: 2;
+                    &-noplace{
+                        grid-column:auto/span 2;
+                        grid-row: auto/span 2;
+                    }
                     &__preview_info-content,
                     &__whole_info-content{
                         font-size: 6vw;
@@ -2498,6 +2541,25 @@
     .cases{
         &__tags{
             font-size:16px;
+        }
+        &__grid{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 0;
+            row-gap: 20px;
+            &_card{
+                &-heading{
+                    font-size: 6vw;
+                }
+                &-list{
+                    li {
+                        font-size: 3.1vw;
+                    }
+                }
+                &-medium-aspect-1{
+                    aspect-ratio: 1;
+                }
+            }
         }
     }
     .cases-slider{

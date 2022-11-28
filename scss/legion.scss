@@ -2071,6 +2071,99 @@ a.button {
 			// margin-right:1.3333%;
 		}
 	}
+
+	&__grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		column-gap: 20px;
+		padding: 0 60px;
+		&_card{
+			border-radius: 42px;
+			position: relative;
+			&-heading{
+				font-size: 46px;
+			}
+			&-list{
+				margin-top: 40px;
+				display: flex;
+				flex-flow: column nowrap;
+				
+				li {
+					// min-height: 40px;
+					font-size: 24px;
+					margin-bottom: 25px;
+					display: flex;
+					align-items: center;
+					&::before {
+						content: "";
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						flex: none;
+						align-self: baseline;
+						margin-right: 20px;
+						background: url($img-path + "icon-check.svg") center center no-repeat $color-green;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+					&.icon-sun{
+						&::before{
+							background-image: url($img-path + "icon-sun.svg");
+						}
+					}
+					&.icon-moon{
+						&::before{
+							background-image: url($img-path + "icon-moon.svg");
+						}
+					}
+				}
+
+				// &_ver2 {
+				// 	li {
+				// 		&::before {
+				// 			background: url($img-path + "arrow3grey.svg") center center no-repeat $color-blue;
+				// 			background-size: 53%;
+				// 			margin-top: -6px;
+				// 		}
+				// 	}
+				// }
+			}
+			&_bg9{
+				padding: 60px 40px 40px 40px;
+				background: $color-grey-light;
+				overflow: hidden;
+				.problems-slider-groups__statics_arrows-sp{
+					background-color: #FFFFFF;
+					svg {
+						path {
+							fill: $color-grey-light;
+						}
+					}
+				}
+			}
+			&_bg10{
+				background: $color-blue-dark;
+				overflow: hidden;
+	
+				.problems__item_container {
+					padding: 38px 30px;
+					top: 0;
+				}
+				.problems-slider-groups__statics_arrows-sp{
+					background-color: rgba($color: #fff, $alpha: .2);
+					svg {
+						path {
+							fill: $color-blue-dark;
+						}
+					}
+				}
+				
+			}
+		}
+	}
 }
 
 .cases-slider {
@@ -6784,6 +6877,10 @@ a.button {
 				grid-row-end: 3;
 				background-color: $color-blue-dark;
 				// aspect-ratio: 1;
+				&-noplace{
+					grid-column:auto/span 2;
+					grid-row: auto/span 2;
+				}
 				&-grey{
 					background-color: $color-grey-light;
 				}
@@ -6968,6 +7065,17 @@ a.button {
 				// grid-column-end: 3;
 				grid-row: auto / span 1;
 				// grid-row-end: 3;
+				.cases-slider__item_nomination {
+					padding: 30px 30px 60px 30px;
+					display: flex;
+					flex-flow: column nowrap;
+					.accent{
+						font-size: 74px;
+						// ~ p{
+						// 	font-size: 4vw;
+						// }
+					}
+				}
 			}
 			// img{
 			// 	max-height: 345px;

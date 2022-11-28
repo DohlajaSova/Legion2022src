@@ -1489,7 +1489,9 @@
                     }
                     &__info{
                         padding: 40px 20px;
-
+                    }
+                    &__whole_info{
+                        padding: 20px 20px 0 20px
                     }
                 }
                 &-wide{
@@ -1841,6 +1843,11 @@
                 margin: 60px 0 40px 0;
             }
         }
+        &__grid{
+            &_card{
+                border-radius: 30px;
+            }
+        }    
     }
     .case-stages{
         margin-bottom: 23px;
