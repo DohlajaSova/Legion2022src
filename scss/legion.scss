@@ -2078,6 +2078,10 @@ a.button {
 		grid-template-rows: 1fr;
 		column-gap: 20px;
 		padding: 0 60px;
+		margin-bottom: 60px;
+		&-venn{
+			margin-bottom: 20px;
+		}
 		&_card{
 			border-radius: 42px;
 			position: relative;

@@ -225,149 +225,129 @@
 </div>
 <div class="case-stages">
   <div class="principles principles_case">
-    <div class="container container_flexible">
-      <div class="problems__item problems__item_bg10">
-        <div class="problems__item_container">
+    <div class="cases__grid cases__grid-venn">
+      <div class="cases__grid_card cases__grid_card_bg10 cases__grid_card-medium-aspect-1">
+      <div class="problems__item_container">
           <div class="problems__item_contents problems__item_contents-slider">
-            <div class="problems-slider-groups">
+          <div class="problems-slider-groups">
               <div class="js-cases-slider-groups">
-                <span class="problems-slider-groups__item">
-                  <div class="device device_fit-height">
-                    <div class="device__wrapper">
-                      <img
-                        class="device__screen"
-                        src="/assets/css/img/temp-venn-phone5.webp"
-                        alt="Venn"
-                      />
-                      <div class="device__shadow">
-                        <img
-                          class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.webp"
-                        />
+                  <span class="problems-slider-groups__item">
+                      <div class="device device_fit-height">
+                      <div class="device__wrapper">
+                          <img class="device__screen"
+                          src="/assets/css/img/temp-venn-phone5.webp"
+                          alt="Venn"/>
+                          <div class="device__shadow">
+                          <img class="device__phone"
+                              src="/assets/css/img/phone-iphone12pro.webp"/>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-                </span>
-                <span class="problems-slider-groups__item">
-                  <div class="device device_fit-height">
-                    <div class="device__wrapper">
-                      <img
-                        class="device__screen"
-                        src="/assets/css/img/temp-venn-phone6.webp"
-                        alt="Venn"
-                      />
-                      <div class="device__shadow">
-                        <img
-                          class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.webp"
-                        />
                       </div>
-                    </div>
-                  </div>
-                </span>
-                <span class="problems-slider-groups__item">
-                  <div class="device device_fit-height">
-                    <div class="device__wrapper">
-                      <img
-                        class="device__screen"
-                        src="/assets/css/img/temp-venn-phone7.webp"
-                        alt="Venn"
-                      />
-                      <div class="device__shadow">
-                        <img
-                          class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.webp"
-                        />
+                  </span>
+                  <span class="problems-slider-groups__item">
+                      <div class="device device_fit-height">
+                      <div class="device__wrapper">
+                          <img class="device__screen"
+                          src="/assets/css/img/temp-venn-phone6.webp"
+                          alt="Venn"/>
+                          <div class="device__shadow">
+                          <img class="device__phone"
+                              src="/assets/css/img/phone-iphone12pro.webp"/>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-                </span>
-                <span class="problems-slider-groups__item">
-                  <div class="device device_fit-height">
-                    <div class="device__wrapper">
-                      <img
-                        class="device__screen"
-                        src="/assets/css/img/temp-venn-phone8.webp"
-                        alt="Venn"
-                      />
-                      <div class="device__shadow">
-                        <img
-                          class="device__phone"
-                          src="/assets/css/img/phone-iphone12pro.webp"
-                        />
                       </div>
-                    </div>
-                  </div>
-                </span>
+                  </span>
+                  <span class="problems-slider-groups__item">
+                      <div class="device device_fit-height">
+                      <div class="device__wrapper">
+                          <img class="device__screen"
+                          src="/assets/css/img/temp-venn-phone7.webp"
+                          alt="Venn"/>
+                          <div class="device__shadow">
+                          <img class="device__phone"
+                              src="/assets/css/img/phone-iphone12pro.webp"/>
+                          </div>
+                      </div>
+                      </div>
+                  </span>
+                  <span class="problems-slider-groups__item">
+                      <div class="device device_fit-height">
+                      <div class="device__wrapper">
+                          <img class="device__screen"
+                          src="/assets/css/img/temp-venn-phone8.webp"
+                          alt="Venn"/>
+                          <div class="device__shadow">
+                          <img class="device__phone"
+                              src="/assets/css/img/phone-iphone12pro.webp"/>
+                          </div>
+                      </div>
+                      </div>
+                  </span>
               </div>
-            </div>
           </div>
-        </div>
-        <div class="problems-slider-groups__statics">
-          <div
-            class="problems-slider-groups__statics_arrows js-cases-groups-arrows"
-          >
-            <div
-              class="problems-slider-groups__statics_arrows-sp problems-slider-groups__statics_arrows-left js-cases-groups-arrows-left"
-            >
-              <svg
-                width="20"
-                height="32"
-                viewbox="0 0 20 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.8636 24.2727L10.8402 25.3693L11.8636 24.2727ZM3 16L1.97652 17.0966L0.801615 16L1.97652 14.9034L3 16ZM10.5
-                                                        9L11.5235 10.0966L11.5235 10.0966L10.5 9ZM16.9765 0.903418C17.5821 0.338166 18.5313 0.370896 19.0966 0.976522C19.6618
-                                                        1.58215 19.6291 2.53133 19.0235 3.09658L16.9765 0.903418ZM19.0235 28.9034C19.6291 29.4687 19.6618 30.4179 19.0966
-                                                        31.0235C18.5313 31.6291 17.5822 31.6618 16.9765 31.0966L19.0235 28.9034ZM10.8402 25.3693L1.97652 17.0966L4.02348
-                                                        14.9034L12.8871 23.1762L10.8402 25.3693ZM1.97652 14.9034L9.47652 7.90342L11.5235 10.0966L4.02348 17.0966L1.97652
-                                                        14.9034ZM9.47652 7.90342L16.9765 0.903418L19.0235 3.09658L11.5235 10.0966L9.47652 7.90342ZM16.9765 31.0966L10.8402
-                                                        25.3693L12.8871 23.1762L19.0235 28.9034L16.9765 31.0966Z"
-                  fill="rgba(0,0,0,.1)"
-                />
-              </svg>
-            </div>
-            <div
-              class="problems-slider-groups__statics_arrows-sp problems-slider-groups__statics_arrows-right js-cases-groups-arrows-right"
-            >
-              <svg
-                width="20"
-                height="32"
-                viewbox="0 0 20 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.13636 7.72727L9.15984 6.63068L8.13636 7.72727ZM17 16L18.0235 14.9034L19.1984 16L18.0235 17.0966L17 16ZM9.5
-                                                        23L8.47652 21.9034L8.47652 21.9034L9.5 23ZM3.02349 31.0966C2.41786 31.6618 1.46868 31.6291 0.903426 31.0235C0.338175
-                                                        30.4179 0.370905 29.4687 0.97653 28.9034L3.02349 31.0966ZM0.976518 3.09658C0.370892 2.53133 0.338161 1.58214 0.903412
-                                                        0.976517C1.46866 0.370892 2.41785 0.338159 3.02347 0.903412L0.976518 3.09658ZM9.15984 6.63068L18.0235 14.9034L15.9765
-                                                        17.0966L7.11288 8.82385L9.15984 6.63068ZM18.0235 17.0966L10.5235 24.0966L8.47652 21.9034L15.9765 14.9034L18.0235
-                                                        17.0966ZM10.5235 24.0966L3.02349 31.0966L0.97653 28.9034L8.47652 21.9034L10.5235 24.0966ZM3.02347 0.903412L9.15984
-                                                        6.63068L7.11288 8.82385L0.976518 3.09658L3.02347 0.903412Z"
-                  fill="rgba(0,0,0,.1)"
-                />
-              </svg>
-            </div>
           </div>
-        </div>
       </div>
-      <div class="problems__item problems__item_bg9">
-        <h3>В приложении можно</h3>
-        <ul class="case-stages__list">
-          <li>Подредактировать фотографии перед загрузкой в&nbsp;галерею</li>
-          <li>Добавить текущую или&nbsp;выбранную геопозицию</li>
-          <li>
-            Указать не&nbsp;только свои интересы,
-            но&nbsp;ещё&nbsp;и&nbsp;ценности
-          </li>
-          <li>
-            Настроить push-уведомления, чтобы не&nbsp;пропустить сообщение
-            от&nbsp;нового друга
-          </li>
-        </ul>
+      <div class="problems-slider-groups__statics">
+          <div class="problems-slider-groups__statics_arrows js-cases-groups-arrows">
+          <div class="problems-slider-groups__statics_arrows-sp problems-slider-groups__statics_arrows-left js-cases-groups-arrows-left">
+              <svg
+              width="20"
+              height="32"
+              viewbox="0 0 20 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              >
+              <path
+                  d="M11.8636 24.2727L10.8402 25.3693L11.8636 24.2727ZM3 16L1.97652 17.0966L0.801615 16L1.97652 14.9034L3 16ZM10.5
+                                                      9L11.5235 10.0966L11.5235 10.0966L10.5 9ZM16.9765 0.903418C17.5821 0.338166 18.5313 0.370896 19.0966 0.976522C19.6618
+                                                      1.58215 19.6291 2.53133 19.0235 3.09658L16.9765 0.903418ZM19.0235 28.9034C19.6291 29.4687 19.6618 30.4179 19.0966
+                                                      31.0235C18.5313 31.6291 17.5822 31.6618 16.9765 31.0966L19.0235 28.9034ZM10.8402 25.3693L1.97652 17.0966L4.02348
+                                                      14.9034L12.8871 23.1762L10.8402 25.3693ZM1.97652 14.9034L9.47652 7.90342L11.5235 10.0966L4.02348 17.0966L1.97652
+                                                      14.9034ZM9.47652 7.90342L16.9765 0.903418L19.0235 3.09658L11.5235 10.0966L9.47652 7.90342ZM16.9765 31.0966L10.8402
+                                                      25.3693L12.8871 23.1762L19.0235 28.9034L16.9765 31.0966Z"
+                  fill="rgba(0,0,0,.1)"
+              />
+              </svg>
+          </div>
+          <div class="problems-slider-groups__statics_arrows-sp problems-slider-groups__statics_arrows-right js-cases-groups-arrows-right">
+              <svg
+              width="20"
+              height="32"
+              viewbox="0 0 20 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              >
+              <path
+                  d="M8.13636 7.72727L9.15984 6.63068L8.13636 7.72727ZM17 16L18.0235 14.9034L19.1984 16L18.0235 17.0966L17 16ZM9.5
+                                                      23L8.47652 21.9034L8.47652 21.9034L9.5 23ZM3.02349 31.0966C2.41786 31.6618 1.46868 31.6291 0.903426 31.0235C0.338175
+                                                      30.4179 0.370905 29.4687 0.97653 28.9034L3.02349 31.0966ZM0.976518 3.09658C0.370892 2.53133 0.338161 1.58214 0.903412
+                                                      0.976517C1.46866 0.370892 2.41785 0.338159 3.02347 0.903412L0.976518 3.09658ZM9.15984 6.63068L18.0235 14.9034L15.9765
+                                                      17.0966L7.11288 8.82385L9.15984 6.63068ZM18.0235 17.0966L10.5235 24.0966L8.47652 21.9034L15.9765 14.9034L18.0235
+                                                      17.0966ZM10.5235 24.0966L3.02349 31.0966L0.97653 28.9034L8.47652 21.9034L10.5235 24.0966ZM3.02347 0.903412L9.15984
+                                                      6.63068L7.11288 8.82385L0.976518 3.09658L3.02347 0.903412Z"
+                  fill="rgba(0,0,0,.1)"
+              />
+              </svg>
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class="cases__grid_card cases__grid_card_bg9">
+      <div class="cases__grid_card-heading">
+          В приложении можно
+      </div>
+      <ul class="cases__grid_card-list">
+        <li>Подредактировать фотографии перед загрузкой в&nbsp;галерею</li>
+        <li>Добавить текущую или&nbsp;выбранную геопозицию</li>
+        <li>
+          Указать не&nbsp;только свои интересы,
+          но&nbsp;ещё&nbsp;и&nbsp;ценности
+        </li>
+        <li>
+          Настроить push-уведомления, чтобы не&nbsp;пропустить сообщение
+          от&nbsp;нового друга
+        </li>
+      </ul>
       </div>
     </div>
   </div>
@@ -375,49 +355,6 @@
 <div class="case2 case-stages">
   <div class="projects projects_case">
     <div class="container">
-      <!-- <div class="projects__panels">
-        <div class="project project_tall project_venn">
-          <div class="casevenn__content">
-            <div class="case3__content_card casevenn">
-              <div class="case3__content_card-tip">Публикации</div>
-              <a href="https://www.findavenn.com/news/who-is-venn-for" target="_blank" class="case3__content_card-main">
-                Who is Venn for?
-              </a>
-              <a href="https://www.findavenn.com/news/who-is-venn-for" target="_blank" class="case3__content_card-transition">Подробнее&nbsp;→</a>
-            </div>
-          </div>
-        </div>
-        <div class="project project_tall case2 project_venn">
-          <div class="project__review_container">
-            <div class="project__review">
-              <div class="project__review_top">
-                <img
-                  class="project__review_top-img"
-                  src="/assets/css/img/temp-author5.webp"
-                  alt="Игорь Иевков"
-                />
-                <div class="project__review_rubr">Отзыв</div>
-                <div class="project__review_body">
-                  <h3 class="project__review_author-name">Игорь Иевков</h3>
-                  <p class="project__review_author-position">
-                    аккаунт-менеджер
-                  </p>
-                </div>
-              </div>
-              <span class="project__review_author">
-                <h3 class="project__review_author-desc">
-                  Было&nbsp;классно принимать участие в&nbsp;иностранном
-                  стартапе. Ведь отличительные черты стартапов — профессионализм
-                  и&nbsp;большая гибкость всех участников, оперативность
-                  принятия решений и&nbsp;творческих подход.
-                  А&nbsp;ещё&nbsp;было интересно наблюдать, как&nbsp;социальная
-                  сеть наполняется участниками из&nbsp;разных точек планеты.
-                </h3>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="client__grid">
         <a href="https://www.findavenn.com/news/who-is-venn-for" target="_blank" class="client__grid_card client__grid_card-tall">
           <div class="client__grid_card-tall__whole">

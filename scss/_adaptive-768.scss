@@ -1844,6 +1844,10 @@
             }
         }
         &__grid{
+            margin-bottom: 40px;
+            &-venn{
+                margin-bottom: 20px;
+            }
             &_card{
                 border-radius: 30px;
             }
