@@ -184,6 +184,140 @@ function ContactMap(container, switcherItems, selectControl)
   }
 }
 
+function ContactMapYandex(container, switcherItems, selectControl)
+{
+  function init() {
+	ymaps.ready(function () {
+		let map = new ymaps.Map(container, {
+            center: [55.7, 37.6],
+            zoom: 10
+        });
+		//initMap(map);
+		initSwitcher(map);
+		putMarkers(map);
+		drawRoutes(map);
+	});
+  }
+
+  function initMap(map) {
+    let opts = {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: true,
+      panControl: true,
+      panControlOptions: {
+        position: google.maps.ControlPosition.LEFT_CENTER
+      },
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.LEFT_CENTER
+      },
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: true,
+      overviewMapControl: true,
+      overviewMapControlOptions: {
+        opened: true
+      }
+    };
+    map.setOptions(opts);
+  }
+
+  function toggleActiveTab(target) {
+    let clickedIndex = 0;
+    if (target.parentNode){
+        clickedIndex = Array.from(Array.prototype.slice.call(selectControl.children)[2].children).indexOf(target);
+        let cityTabs = Array.prototype.slice.call(Array.prototype.slice.call(selectControl.children)[2].children);
+        for (let item of cityTabs) {
+          item.classList.remove('same-as-selected');
+        }
+        cityTabs[clickedIndex].classList.add('same-as-selected');
+    }
+    return clickedIndex;
+  }
+
+  function toggleActiveText(index) {
+    for (let item of switcherItems) {
+      item.classList.remove('active');
+    }
+    switcherItems[index].classList.add('active');
+  }
+
+  function centerMap(map, lat, lng, zoom) {
+	map.setCenter([lat, lng], zoom, {
+		checkZoomRange: true
+	});
+  }
+
+  function initSwitcher(map) {
+    let onClick = function() {
+      let clickedIndex = toggleActiveTab(this);
+      let data = switcherItems[clickedIndex].dataset;// номер кликнутого
+      toggleActiveText(clickedIndex);
+      let lat = data.centerLat || data.markerLat;
+      let lng = data.centerLng || data.markerLng;
+      centerMap(map, lat, lng, data.zoom);
+    };
+    for (let item of Array.prototype.slice.call(selectControl.children)[2].children) {
+      item.addEventListener('click', onClick);
+    }
+    onClick.apply(selectControl[0]);
+  }
+
+  function putMarkers(map) {
+    let icon = {
+      url: container.dataset.markerImage,
+      size: new google.maps.Size(48, 48),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(24, 48)
+    };
+    for (let item of switcherItems) {
+      let data = item.dataset;
+      let position = new google.maps.LatLng(data.markerLat, data.markerLng);
+      new google.maps.Marker({ map, position, icon });
+    }
+  }
+
+  function drawRoutes(map) {
+    for (let item of switcherItems) {
+      let data = item.dataset;
+      if (!data.routePoints) {
+        continue;
+      }
+      let points = data.routePoints.split('; ').map((x) => x.split(',').map(parseFloat));
+      let path = points.map((pt) => new google.maps.LatLng(pt[0], pt[1]));
+      new google.maps.Polyline({
+        map: map,
+        path: path,
+        geodesic: true,
+        strokeColor: 'rgb(35, 168, 224)',
+        strokeOpacity: 1.0,
+        strokeWeight: 3
+      });
+    }
+  }
+
+  function load() {
+    let getUrl = function() {
+      let base = 'https://api-maps.yandex.ru/2.1';
+      let options = {
+        apikey: container.dataset.apiKeyYandex,
+        lang: container.dataset.lang
+      };
+      let args = objToQuery(options);
+      return [base, args].join('?');
+    };
+    let script = document.createElement("script");
+    script.src = getUrl();
+    document.body.appendChild(script);
+	script.onload = init;
+  }
+
+  if (container) {
+    load();
+  }
+}
+
 function TextareaOnInput() {
     this.style.height = "auto";
     this.style.height = (this.scrollHeight) + "px";
@@ -1288,7 +1422,7 @@ docReady(function() {
     
     if (document.querySelector('.js-map-container'))
     {
-        new ContactMap(document.querySelector('.js-map-container'),
+        new ContactMapYandex(document.querySelector('.js-map-container'),
             document.querySelectorAll('.js-map-address'),
             document.querySelector('.js-map-select'));
     }

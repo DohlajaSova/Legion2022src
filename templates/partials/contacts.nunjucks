@@ -81,7 +81,7 @@
                 </li>
             </ul>
             <div class="contacts__container_outer"><div class="contacts__container_inner">
-                <div class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-language="ru" data-marker-image="/assets/css/img/map-point-active.svg"></div>
+                <div id="map" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
             </div></div>
         </div>
     </div>
