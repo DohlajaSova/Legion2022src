@@ -189,7 +189,7 @@ function ContactMapYandex(container, switcherItems, selectControl)
   function init() {
 	ymaps.ready(function () {
 		let map = new ymaps.Map(container, {
-            center: [55.7, 37.6],
+            center: [59.99512, 30.25057],
             zoom: 10
         });
 		//initMap(map);
@@ -265,16 +265,23 @@ function ContactMapYandex(container, switcherItems, selectControl)
   }
 
   function putMarkers(map) {
-    let icon = {
-      url: container.dataset.markerImage,
-      size: new google.maps.Size(48, 48),
-      origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(24, 48)
-    };
+      officePlacemark = new ymaps.Placemark(map.getCenter(), {}, {
+        iconLayout: 'default#image',
+        iconImageHref: container.dataset.markerImage,
+        iconImageSize: [48, 48],
+        iconImageOffset: [-24, -48]
+      });
+      map.geoObjects.add(officePlacemark)
+      
     for (let item of switcherItems) {
       let data = item.dataset;
-      let position = new google.maps.LatLng(data.markerLat, data.markerLng);
-      new google.maps.Marker({ map, position, icon });
+      officePlacemark = new ymaps.Placemark([data.markerLat, data.markerLng], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: container.dataset.markerImage,
+        iconImageSize: [48, 48],
+        iconImageOffset: [-24, -48]
+      });
+      map.geoObjects.add(officePlacemark)
     }
   }
 
@@ -285,15 +292,22 @@ function ContactMapYandex(container, switcherItems, selectControl)
         continue;
       }
       let points = data.routePoints.split('; ').map((x) => x.split(',').map(parseFloat));
-      let path = points.map((pt) => new google.maps.LatLng(pt[0], pt[1]));
-      new google.maps.Polyline({
-        map: map,
-        path: path,
-        geodesic: true,
+      let path = [];
+      for (let point of points) {
+        path.push(point);
+      }
+      let officePath = new ymaps.GeoObject({
+          geometry: {
+              type: 'LineString',
+              coordinates: path
+          }
+      },
+      {
         strokeColor: 'rgb(35, 168, 224)',
-        strokeOpacity: 1.0,
-        strokeWeight: 3
+        strokeWidth: 3
       });
+      
+      map.geoObjects.add(officePath);
     }
   }
 
