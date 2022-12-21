@@ -6631,6 +6631,9 @@ a.button {
 			}
 		}
 	}
+    & + .feedback_applicants{
+        margin-bottom: 0;
+    }
 }
 
 .client {
