@@ -2022,6 +2022,8 @@ a.button {
     margin-bottom: 0; }
 .case-stages .projects_case .project_tall {
   height: 0; }
+.case-stages .cases__grid {
+  padding: 0; }
 
 .project-slider-article__item.active {
   height: 0;

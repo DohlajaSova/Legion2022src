@@ -82,6 +82,7 @@
     </div>
 </div>
 <div class="case-stages">
+    <div class="container">
     <div class="principles principles_case">
         <div class="cases__grid">
             <div class="cases__grid_card cases__grid_card_bg10 cases__grid_card-medium-aspect-1">
@@ -182,6 +183,7 @@
             </ul>
             </div>
         </div>
+    </div>
     </div>
 </div>
 <div class="principles principles_case">
