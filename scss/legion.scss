@@ -2136,14 +2136,14 @@ a.button {
 				// }
 			}
 			&_bg9{
-				padding: 60px 40px 40px 40px;
+				padding: 50px 40px 60px;
 				background: $color-grey-light;
 				overflow: hidden;
 				.problems-slider-groups__statics_arrows-sp{
-					background-color: #FFFFFF;
+					background-color: #fff;
 					svg {
 						path {
-							fill: $color-grey-light;
+							fill: $color-grey-dark;
 						}
 					}
 				}
@@ -3725,10 +3725,10 @@ a.button {
 			background: $color-grey-light;
 			overflow: hidden;
 			.problems-slider-groups__statics_arrows-sp{
-				background-color: #FFFFFF;
+				background-color: #fff;
 				svg {
 					path {
-						fill: $color-grey-light;
+						fill: $color-grey-dark;
 					}
 				}
 			}
