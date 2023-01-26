@@ -1,0 +1,110 @@
+<div class="projects">
+  <div class="container">
+    <h2>Кое-что <br class="mobile480-hide" /><em>на почитать</em></h2>
+    <div class="client__grid client__grid-news">
+      <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/"
+      target="_blank"
+       class="client__grid_card client__grid_card-tall">
+        <div class="client__grid_card-tall__whole">
+          <div class="client__grid_card-tall__whole_info">
+            <div class="client__grid_card-tall__whole_info-heading">
+              Публикации
+            </div>
+            <div class="client__grid_card-tall__whole_info-content">
+              Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
+            </div>
+            <div
+              class="client__grid_card-tall__whole_info-link"
+            >
+              Подробнее →
+          </div>
+          </div>
+          <img
+            class="client__grid_card-tall__whole_image object-cover"
+            src="/assets/css/img/case3-content-foreground.webp"
+            alt="Рейтинг товаров"
+          />
+        </div>
+      </a>
+      <div class="client__grid_card client__grid_card-wide">
+        <div class="cases-slider cases-slider-reverse">
+          <div class="cases-slider__item active">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№1</h3>
+              <!-- <p>Лучшее мобильное решение/активация</p> -->
+              <p>Tagline Awards 2020-2021 «Мобильное решение»</p>
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a
+                  href="https://vk.com/elegion?w=wall-34196694_1934"
+                  target="_blank"
+                  ><img
+                    src="/assets/css/img/news-slider-1.webp"
+                    alt="Jet Kid"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№2</h3>
+              <p>Tagline Awards 2020-2021 «Ритейл-приложение»</p>
+              <!-- <p>Лучшее ритейл-приложение</p> -->
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a href="/client.html"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_5ka.svg"
+                    alt="Пятёрочка"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cases-slider__item">
+            <div class="cases-slider__item_nomination">
+              <h3 class="h2 accent">№3</h3>
+              <p>Tagline Awards 2020-2021 «Приложение для телеком/IT»</p>
+              <!-- <p>Лучшее приложение для телеком/IT/интернет-компании</p> -->
+            </div>
+            <div class="cases-slider__item_project">
+              <div class="cases-slider__item_project-photo">
+                <a href="/inprocess.html"
+                  ><img
+                    src="/assets/css/img/cases-slider-bg_tele2.webp"
+                    alt="Tele2"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cases-slider__statics js-cases-dots">
+          <div class="cases-slider__statics_dots">
+            <ul>
+              <li class="active"><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="https://vc.ru/tele2/423244-kak-tele2-transformiroval-ideyu-klientov-v-ploshchadku-dlya-prodazhi-uslug"
+        target="_blank" class="client__grid_card client__grid_card-wide">
+        <img
+          class="client__grid_card-wide__image br object-fit-cover"
+          src="/assets/css/img/news-widget-1.webp"
+          alt=""
+        />
+        <div class="client__grid_card-wide__info">
+          <div class="client__grid_card-wide__info-content">
+            Tele2 воплотили идеи клиентов на площадке для продажи услуг
+          </div>
+          <div class="client__grid_card-wide__info-link">
+            Смотреть статью &rarr;
+        </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

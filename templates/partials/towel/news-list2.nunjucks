@@ -1,0 +1,991 @@
+<div class="news news_portfolio">
+  <div class="container">
+    <div class="container">
+      <div class="cases__filter">
+        <div class="select select-inline js-news-types">
+          <select>
+            <option value="all">Всё</option>
+            <option value="cases">Кейсы</option>
+            <option value="parties">Мероприятия</option>
+            <option value="lotteries">Конкурсы</option>
+            <option value="experience">Опыт</option>
+            <option value="unity">Сообщество</option>
+            <option value="people">Легионеры</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="news__grid js-news-grid-container" data-limit="7" data-perpage="4">
+      <div
+        class="news__grid_card news__grid_card-complex js-news-grid-container"
+        data-tags="['every']"
+        data-limit="2"
+        data-limit-stable="true"
+        data-colored-block="1"
+        data-block-background="#84aeff"
+        data-std-background="#ececec"
+      >
+        <div
+          class="news__grid_card-complex__innerCard"
+          data-tags="['all','parties','people']"
+        >
+          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+          </div>
+        </div>
+        <div
+          class="news__grid_card-complex__innerCard"
+          data-tags="['all','parties']"
+        >
+          <div class="news__grid_card-complex__innerCard_tags">Разработка, Мероприятия</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="">Мероприятия одной строкой</a>
+          </div>
+        </div>
+        <div
+          class="news__grid_card-complex__innerCard"
+          data-tags="['all','lotteries']"
+        >
+          <div class="news__grid_card-complex__innerCard_tags">Кейсы</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="">Кейсы одной строкой</a>
+          </div>
+        </div>
+        <div
+          class="news__grid_card-complex__innerCard"
+          data-tags="['all']"
+        >
+          <div class="news__grid_card-complex__innerCard_tags">Разработка</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="">Заголовок одной строкой</a>
+          </div>
+        </div>
+        <div class="news__grid_card-complex__innerCard hide" data-tags="['all','lotteries','cases']">
+          <div class="news__grid_card-complex__innerCard_tags">Конкурсы, Кейсы</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="/news/nagrady-rating-runeta">Награды на Рейтинге Рунета</a>
+          </div>
+        </div>
+        <div class="news__grid_card-complex__innerCard hide" data-tags="['all','cases','unity','experience']">
+          <div class="news__grid_card-complex__innerCard_tags">Кейсы, Сообщество, Опыт</div>
+          <div class="news__grid_card-complex__innerCard_heading">
+            <a href="/news/podcast-e-legion-talk">Подкаст e-legion talk</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['every']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div
+        class="news__grid_card"
+        data-tags="['all','cases','people']"
+        data-priority="10"
+      >
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href=""><img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg"></a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','lotteries','cases']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+      <div class="news__grid_card" data-tags="['all','cases','unity','experience']" data-priority="10">
+        <!-- <img src="" class="news__grid_card-image" alt="Обложка новости"> -->
+        <a href="">
+            <img class="news__grid_card-image" alt="Я сам не смотрю, но подписался" src="https://e-legion.ru/assets/blog/28uk7tbDRng.jpg">
+        </a>
+        <div class="news__grid_card-tags">Разработка. Сообщество</div>
+        <div class="news__grid_card-heading">
+          <a href="">Я сам не смотрю,<br />но&nbsp;подписался</a>
+        </div>
+        <div class="news__grid_card-content">
+          Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.
+        </div>
+      </div>
+    </div>
+    <button class="button button_default news__button js-more">Показать еще</button>
+  </div>
+</div>
