@@ -1351,6 +1351,9 @@ docReady(function() {
         if (feedbackOpener[i]!= null) {
             feedbackOpener[i].addEventListener("click", function(e){
                 e.preventDefault();
+				if (typeof ym === "function"){
+					ym(23767978,'reachGoal','CLICKrequest');
+				}
                 if(windowWidth < 481 && e.target.className.startsWith('vacanc') && e.target.className !== 'vacancy__body_link') {
                     return;
                 }
@@ -1749,6 +1752,9 @@ docReady(function() {
                     fields[one].classList.add("error");
                 }
             }
+			if (typeof ym === "function"){
+				ym(23767978,'reachGoal','CLICKsend');
+			}
         }
     }
 
