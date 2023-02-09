@@ -4,7 +4,6 @@
 {% block links %} {% endblock %}
 {% block content %}
 
-  {% include "partials/towel/top-news2.nunjucks" %}
   {% include "partials/towel/news-list2.nunjucks" %}
   {% include "partials/towel/feedback-news.nunjucks" %}
 

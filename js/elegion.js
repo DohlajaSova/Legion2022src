@@ -699,26 +699,6 @@ docReady(function() {
         }, false);
     }
     
-    // слайдер с принципами
-    //let sliderProblemsDots = document.querySelectorAll(".js-problems-groups-dots");
-    //for (i=0; i<sliderProblemsDots.length; i++){
-        /*sliderProblemsDots[i].addEventListener("click", function(e){
-            e.preventDefault();
-            let slider = this.parentNode.previousElementSibling; // контейнер со слайдами
-            let sliderControlsContainer = this; // кликнутая точка
-            if (e.target.tagName == "A")
-            {
-                let sliderControls = Array.prototype.slice.call(e.target.parentNode.parentNode.children); // контейнер с точками
-                let clickedItemNumber = sliderControls.indexOf(e.target.parentNode); // номер кликнутого элемента
-                for (i=0; i<slider.children[0].children[0].children.length; i++){
-                    slider.children[0].children[0].children[i].classList.remove("active");
-                    sliderControls[i].classList.remove("active");
-                }
-                slider.children[0].children[0].children[clickedItemNumber].classList.add("active");
-                sliderControls[clickedItemNumber].classList.add("active");
-            }
-        }, false);*/
-    //}
     let sliderProblems = document.querySelectorAll(".js-problems-slider-groups");
     let sliderProblemsDots = document.querySelectorAll(".js-problems-groups-dots");
     let sliderProblemsSlider = new Array();
@@ -765,6 +745,20 @@ docReady(function() {
             controls: false,
             navPosition: 'bottom',
             navContainer: '.js-project-article-dots',
+            mouseDrag: true,
+            slideBy: 'page'
+        });
+    }
+    
+    // слайдер featured на странице блог
+    if (document.querySelectorAll(".js-featured-news").length > 0)
+    {
+        let sliderProjects = tns({
+            container: '.js-featured-news .news__list',
+            items: 3,
+            gutter: 32,
+            nav: false,
+            controls: false,
             mouseDrag: true,
             slideBy: 'page'
         });

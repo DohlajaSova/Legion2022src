@@ -389,6 +389,11 @@ a.button {
 		border-color: $color-grey-light;
 		color: $color-blue-dark;
 	}
+
+	&.button_border {
+		border-color: $color-grey-dark;
+		color: $color-grey-dark;
+	}
 }
 
 .custom-format {
@@ -2168,6 +2173,26 @@ a.button {
 			}
 		}
 	}
+    &__news-filter{
+        .select-inline .select-hide{
+            div{
+                padding:0;
+                margin-right: 45px;
+                color: $color-grey-dark;
+                text-transform: lowercase;
+                &::before{
+                    content:"#";
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .same-as-selected{
+                background: transparent;
+                color:$color-blue;
+            }
+        }
+    }
 }
 
 .cases-slider {
@@ -4824,6 +4849,29 @@ a.button {
             &_lead{
                 width:48%;
                 font-size: 24px;
+            }
+        }
+    }
+    &_featured{
+        background: $color-grey-light;
+        padding: 60px;
+    }
+    .featured{
+        &_content{
+            .featured_content__image{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 100%;
+                &-container{
+                    display: flex;
+                    max-width: 100%;
+                    overflow: hidden;
+                    text-align: center;
+                    object-position: center;
+                    position: relative;
+                    padding-bottom: 73.03%;
+                }
             }
         }
     }
