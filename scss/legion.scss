@@ -4871,8 +4871,37 @@ a.button {
                     object-position: center;
                     position: relative;
                     padding-bottom: 73.03%;
+					border-radius: 42px;
                 }
             }
+			.featured_content__tags{
+				margin-top:20px;
+				display:flex;
+				&.longread{
+					&::before{
+						content:"";
+						display:inline-block;
+						width:25px;
+						height:20px;
+						background: url($img-path + "icon-book-grey.svg") left center no-repeat;
+						margin-right:10px;
+					}
+				}
+			}
+			.featured_content__heading{
+				margin-top:10px;
+				font-size:34px;
+				color:$color-blue-dark;
+				a{
+					color:$color-blue-dark;
+				}
+			}
+			.featured_content__lead{
+				margin-top:10px;
+				a{
+					color:$color-blue-dark;
+				}
+			}
         }
     }
 }

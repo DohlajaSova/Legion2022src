@@ -117,7 +117,7 @@
         <div class="news_top__pages">
             <a href="" class="button button_border active">Всё сразу</a>
             <a href="" class="button button_border">Новости</a>
-            <a href="" class="button button_border long">Лонгриды</a>
+            <a href="" class="button button_border longread">Лонгриды</a>
         </div>
         <div class="cases__filter cases__news-filter">
             <div class="select select-inline js-news-types">
@@ -143,7 +143,7 @@
                         <div class="featured_content__heading">
                             <a href="">Заголовок одна строка</a>
                         </div>
-                        <div class="featured_content__content">
+                        <div class="featured_content__lead">
                             <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
                         </div>
                     </div>
@@ -151,11 +151,11 @@
                 <div class="news_slider__item">
                     <div class="featured_content">
                         <a href="" class="featured_content__image-container"><img class="featured_content__image" alt="Заголовок одна строка" src="/assets/css/img/temp-news1.jpg"></a>
-                        <div class="featured_content__tags long">Разработка. Сообщество</div>
+                        <div class="featured_content__tags longread">Разработка. Сообщество</div>
                         <div class="featured_content__heading">
                             <a href="">Короткий заголовок обычно на две строки</a>
                         </div>
-                        <div class="featured_content__content">
+                        <div class="featured_content__lead">
                             <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
                         </div>
                     </div>
@@ -163,11 +163,11 @@
                 <div class="news_slider__item">
                     <div class="featured_content">
                         <a href="" class="featured_content__image-container"><img class="featured_content__image" alt="Заголовок одна строка" src="/assets/css/img/temp-news1.jpg"></a>
-                        <div class="featured_content__tags long">Разработка. Сообщество</div>
+                        <div class="featured_content__tags longread">Разработка. Сообщество</div>
                         <div class="featured_content__heading">
                             <a href="">Привлечение новых пациентов увеличивает издержки, а не прибыль?</a>
                         </div>
-                        <div class="featured_content__content">
+                        <div class="featured_content__lead">
                             <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
                         </div>
                     </div>
@@ -175,11 +175,11 @@
                 <div class="news_slider__item">
                     <div class="featured_content">
                         <a href="" class="featured_content__image-container"><img class="featured_content__image" alt="Заголовок одна строка" src="/assets/css/img/temp-news1.jpg"></a>
-                        <div class="featured_content__tags long">Разработка. Сообщество</div>
+                        <div class="featured_content__tags longread">Разработка. Сообщество</div>
                         <div class="featured_content__heading">
                             <a href="">Короткий заголовок обычно на две строки</a>
                         </div>
-                        <div class="featured_content__content">
+                        <div class="featured_content__lead">
                             <a href="">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</a>
                         </div>
                     </div>
