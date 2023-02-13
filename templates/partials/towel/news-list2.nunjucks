@@ -115,9 +115,9 @@
 <div class="news news_top">
     <div class="container">
         <div class="news_top__pages">
-            <a href="" class="button button_border active">Всё сразу</a>
-            <a href="" class="button button_border">Новости</a>
-            <a href="" class="button button_border longread">Лонгриды</a>
+            <a href="" class="button active">Всё сразу</a>
+            <a href="" class="button">Новости</a>
+            <a href="" class="button longread">Лонгриды</a>
         </div>
         <div class="cases__filter cases__news-filter">
             <div class="select select-inline js-news-types">

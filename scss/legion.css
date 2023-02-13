@@ -3401,19 +3401,42 @@ a.button {
           grid-row: auto / span 1;
           border-radius: inherit;
           background-color: #F0F0F0;
-          padding: 30px; }
+          padding: 30px;
+          min-height: 220px; }
           .news__grid_card-complex__innerCard_tags {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             font-size: 16px;
             line-height: 130%; }
           .news__grid_card-complex__innerCard_heading {
-            font-size: 46px;
+            font-size: 34px;
             line-height: 130%; }
           .news__grid_card-complex__innerCard.first {
             background-color: #84AEFF;
             color: #fff; }
             .news__grid_card-complex__innerCard.first a {
               color: #fff; }
+  .news_top__pages {
+    margin-bottom: 30px; }
+    .news_top__pages .button {
+      border-color: #949191;
+      color: #949191;
+      padding: 12px 24px;
+      margin-right: 14px; }
+      .news_top__pages .button.longread::before {
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 20px;
+        background: url("img/icon-book-grey.svg") center left no-repeat;
+        position: relative;
+        top: -5px;
+        margin: 0 10px -10px 0; }
+      .news_top__pages .button.active {
+        background-color: #2864D9;
+        color: #fff;
+        border-color: #2864D9; }
+        .news_top__pages .button.active::before {
+          background-image: url("img/icon-book-white.svg"); }
   .news-top__tech {
     width: 100%;
     display: flex;
@@ -3473,7 +3496,32 @@ a.button {
       text-align: center;
       object-position: center;
       position: relative;
-      padding-bottom: 73.03%; }
+      padding-bottom: 73.03%;
+      border-radius: 42px; }
+  .news .featured_content .featured_content__tags {
+    margin-top: 20px;
+    display: flex;
+    color: #949191; }
+    .news .featured_content .featured_content__tags.longread::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 20px;
+      background: url("img/icon-book-grey.svg") left center no-repeat;
+      margin-right: 10px;
+      position: relative;
+      top: -1px; }
+  .news .featured_content .featured_content__heading {
+    margin-top: 10px;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #1E2738; }
+    .news .featured_content .featured_content__heading a {
+      color: #1E2738; }
+  .news .featured_content .featured_content__lead {
+    margin-top: 10px; }
+    .news .featured_content .featured_content__lead a {
+      color: #1E2738; }
 
 .vacancies {
   margin-bottom: 76px;

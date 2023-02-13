@@ -4771,13 +4771,14 @@ a.button {
 					border-radius: inherit;
 					background-color: $color-grey-light;
 					padding: 30px;
+                    min-height: 220px;
 					&_tags{
-						margin-bottom: 20px;
+						margin-bottom: 12px;
 						font-size: 16px;
 						line-height: 130%;
 					}
 					&_heading{
-						font-size: 46px;
+						font-size: 34px;
 						line-height: 130%;
 					}
 					&.first {
@@ -4791,6 +4792,38 @@ a.button {
 			}
 		}
 	}
+    
+    &_top{
+        &__pages{
+            margin-bottom: 30px;
+            .button{
+                border-color: $color-grey-dark;
+                color: $color-grey-dark;
+                padding: 12px 24px;
+                margin-right: 14px;
+                &.longread{
+                    &::before{
+                        content:"";
+                        display: inline-block;
+                        width:25px;
+                        height:20px;
+                        background: url($img-path + "icon-book-grey.svg") center left no-repeat;
+                        position: relative;
+                        top:-5px;
+                        margin: 0 10px -10px 0;
+                    }
+                }
+                &.active{
+                    background-color: $color-blue;
+                    color: $color-white;
+                    border-color: $color-blue;
+                    &::before{
+                        background-image: url($img-path + "icon-book-white.svg");
+                    }
+                }
+            }
+        }
+    }
 
     &-top{
         &__tech{
@@ -4877,6 +4910,7 @@ a.button {
 			.featured_content__tags{
 				margin-top:20px;
 				display:flex;
+                color:$color-grey-dark;
 				&.longread{
 					&::before{
 						content:"";
@@ -4885,12 +4919,15 @@ a.button {
 						height:20px;
 						background: url($img-path + "icon-book-grey.svg") left center no-repeat;
 						margin-right:10px;
+                        position: relative;
+                        top:-1px;
 					}
 				}
 			}
 			.featured_content__heading{
 				margin-top:10px;
 				font-size:34px;
+                line-height: 1.2;
 				color:$color-blue-dark;
 				a{
 					color:$color-blue-dark;
