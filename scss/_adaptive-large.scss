@@ -36,6 +36,10 @@
         padding-left:60px;
         padding-right:60px;
     }
+    .news.news_featured{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .top .breadcrumbs,
     .to-work .projects,
     .some-projects .cases,
@@ -151,7 +155,7 @@
         $mid: 1.8vw;
         $major: 3.1vw;
         &__grid{
-            gap: 20px;
+            gap: 40px 20px;
             &_card{
                 &-tags, &-content, &-complex__innerCard_tags{
                     font-size: $minor;
@@ -335,6 +339,8 @@
 		margin-bottom:76px;
 	}
     .projects{
+        h1,
+        .h1,
         h2,
         .h2{
             width:80%;
@@ -1291,18 +1297,6 @@
 			width:60%;
 		}
 	}
-    // .select{
-    //     &-inline{
-    //         .select-hide{
-    //             display:grid;
-    //             grid-template-columns: 1fr 1fr;
-    //             grid-template-rows: 1fr 1fr;
-    //             div{
-    //                 width:100%;
-    //             }
-    //         }
-    //     }
-    // }
     .map{
         &__select{
             .select-hide{
@@ -2258,7 +2252,7 @@
         &__grid {
             grid-template-columns: repeat(2, 1fr);
             row-gap: 40px;
-            column-gap: 20px;
+            column-gap: 32px;
 		    border-radius: 38px;
             $minor: 1.2vw;
             $mid: 1.8vw;
@@ -2269,7 +2263,7 @@
                     max-height: 50vw;
                 }    
                 &-complex{
-                    gap: 40px;
+                    gap: 32px;
                     // grid-column: 1 / span 2;
                     // grid-row: 1 / 2;
                     grid-column: 1 / span 2;

@@ -4050,7 +4050,9 @@ a.button {
 .projects {
 	overflow: hidden;
 
-	h2,
+	h1,
+    .h1,
+    h2,
     .h2{
 		width: 50%;
 		margin-bottom: 120px;
@@ -4597,6 +4599,41 @@ a.button {
 			}
 		}
 	}
+    
+    &.feedback_subscribe {
+        background: url($img-path + "subscribe-bg.svg") left top no-repeat $color-blue-dark;
+        margin-bottom: 0;
+        .select-inline .select-hide{
+            div{
+                border:1px solid $color-white;
+                color:$color-white;
+                height: 41px;
+                margin: 0 15px 20px 0;
+            }
+            .same-as-selected{
+                background:$color-white;
+                color:$color-blue-dark;
+            }
+        }
+        .feedback__container_headwrap{
+            h2{
+                color:$color-white;
+                line-height: 1.3;
+            }
+            p{
+                font-size: 24px;
+                width:70%;
+                margin-top: 30px;
+            }
+        }
+        .feedback__form{
+            h3{
+                color: $color-white;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 
 	&.feedback_client {
 		background: $color-blue-dark;
@@ -4720,7 +4757,7 @@ a.button {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		border-radius: 42px;
-		gap: 60px 20px;
+		gap: 60px 32px;
 		a:hover {
 			text-decoration: none;
 		}
@@ -4764,7 +4801,7 @@ a.button {
 				border-radius: inherit;
 				grid-template-rows: repeat(auto-fill,calc(50% - 10px));
 				grid-template-columns: 1fr;
-				gap: 20px;
+				gap: 32px;
 				&__innerCard{
 					grid-column: auto / span 2;
 					grid-row: auto / span 1;
@@ -4795,11 +4832,11 @@ a.button {
     
     &_top{
         &__pages{
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             .button{
                 border-color: $color-grey-dark;
                 color: $color-grey-dark;
-                padding: 12px 24px;
+                padding: 13px 24px 11px;
                 margin-right: 14px;
                 &.longread{
                     &::before{
@@ -4821,6 +4858,12 @@ a.button {
                         background-image: url($img-path + "icon-book-white.svg");
                     }
                 }
+            }
+        }
+        .select-inline{
+            margin-bottom: 20px;
+            .select-hide div{
+                height: 21px;
             }
         }
     }
@@ -4888,6 +4931,7 @@ a.button {
     &_featured{
         background: $color-grey-light;
         padding: 60px;
+        margin-bottom: 60px;
     }
     .featured{
         &_content{
@@ -4940,6 +4984,49 @@ a.button {
 				}
 			}
         }
+    }
+    .body_blog &{
+        &_top{
+            margin-bottom: 0;
+        }
+    }
+	.tns-nav {
+		text-align: center;
+        margin-top: 30px;
+
+		button {
+			width: 8px;
+			height: 8px;
+			margin: 0 3px;
+			border: 1px solid transparent;
+			background-color: $color-grey-dark;
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+
+			&.tns-nav-active {
+				width: 10px;
+				height: 10px;
+				border-color: $color-grey-dark;
+				background-color: transparent;
+				position: relative;
+			}
+
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+.body_blog{
+    .projects .h1,
+    .projects h1,
+    .projects .h2,
+    .projects h2{
+        width: 100%;
+        margin-bottom: 50px;
     }
 }
 .vacancies {
@@ -5343,6 +5430,63 @@ a.button {
 		}
 	}
 
+	.body_blog & {
+        background: $color-grey-light;
+        a{
+            color:$color-blue-dark;
+        }
+        .social{
+            a{
+                background-color: $color-blue-dark;
+                &.social_blog{
+                    background-color:transparent;
+                    color: $color-blue-light;
+                    &:hover{
+                        background-color: $color-blue-light;
+                        color:$color-white;
+                    }
+                }
+            }
+            &_fb {
+                background-image: url($img-path + "icon-social-f-w.svg");
+            }
+
+            &_vk {
+                background-image: url($img-path + "icon-social-vk-w.svg");
+            }
+
+            &_tw {
+                background-image: url($img-path + "icon-social-tw-w.svg");
+            }
+
+            &_yt {
+                background-image: url($img-path + "icon-social-yt-w-d.svg");
+            }
+
+            &_in {
+                background-image: url($img-path + "icon-social-ig-w.svg");
+            }
+
+            &_h {
+                background-image: url($img-path + "icon-social-h-w.svg");
+            }
+
+            &_vc {
+                background-image: url($img-path + "icon-social-vc-w.svg");
+            }
+        }
+        .footer{
+            &__logo{
+                background-image: url($img-path + "logo.svg");
+            }
+            &__menu{
+                a{
+                    color:$color-blue-dark;
+                }
+            }
+        }
+    }
+    
 	.dummy & {
 		height: auto;
 		margin-top: auto;

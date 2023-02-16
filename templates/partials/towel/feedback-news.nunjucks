@@ -1,4 +1,4 @@
-<div class="feedback feedback_applicants">
+<div class="feedback feedback_subscribe">
     <div class="container">
         <form onsubmit="return false">
             <div class="feedback__container">
@@ -20,11 +20,11 @@
                         <h3>Что вам интересно?</h3>
                         <select id="multiple-3" name="Выберите вариант" multiple>
                             <option value="Всё" selected="selected">Всё</option>
-                            <option value="Кейсы">Кейсы</option>
-                            <option value="Мероприятия">Мероприятия</option>
-                            <option value="Конкурсы">Конкурсы</option>
+                            <option value="Разработка">Разработка</option>
+                            <option value="Бизнес">Бизнес</option>
                             <option value="Опыт">Опыт</option>
-                            <option value="Сообщества">Сообщества</option>
+                            <option value="Сообщество">Сообщество</option>
+                            <option value="Инструменты">Инструменты</option>
                             <option value="Легионеры">Легионеры</option>
                         </select>
                     </div>

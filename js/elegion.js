@@ -755,9 +755,24 @@ docReady(function() {
     {
         let sliderProjects = tns({
             container: '.js-featured-news .news__list',
-            items: 3,
+            items: 1.3,
             gutter: 32,
-            nav: false,
+            edgePadding: 32,
+            responsive: {
+                768: {
+                    items: 1.7
+                },
+                1200: {
+                    items: 2.8
+                },
+                1440: {
+                    edgePadding: 0,
+                    items: 3,
+                    nav: false
+                }
+            },
+            nav: true,
+            navPosition: 'bottom',
             controls: false,
             mouseDrag: true,
             slideBy: 'page'
