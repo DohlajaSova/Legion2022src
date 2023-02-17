@@ -762,7 +762,7 @@ docReady(function() {
                 768: {
                     items: 1.7
                 },
-                1200: {
+                1100: {
                     items: 2.8
                 },
                 1440: {

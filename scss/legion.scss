@@ -2177,7 +2177,7 @@ a.button {
         .select-inline .select-hide{
             div{
                 padding:0;
-                margin-right: 45px;
+                margin-right: 40px;
                 color: $color-grey-dark;
                 text-transform: lowercase;
                 &::before{
@@ -4619,6 +4619,7 @@ a.button {
             h2{
                 color:$color-white;
                 line-height: 1.3;
+				padding-right:6%;
             }
             p{
                 font-size: 24px;
@@ -4935,6 +4936,7 @@ a.button {
     }
     .featured{
         &_content{
+			font-size:16px;
             .featured_content__image{
                 position: absolute;
                 left: 50%;
