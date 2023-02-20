@@ -16,7 +16,7 @@
                     <div class="feedback__form_item">
                         <input name="mail" type="email" class="feedback__form_input feedback__form_input-placeholder" placeholder="Почта">
                     </div>
-                    <div class="request__select select select-inline">
+                    <div class="request__select select select-inline select-not-collapsible">
                         <h3>Что вам интересно?</h3>
                         <select id="multiple-3" name="Выберите вариант" multiple>
                             <option value="Всё" selected="selected">Всё</option>

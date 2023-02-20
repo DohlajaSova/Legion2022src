@@ -1860,6 +1860,9 @@
 			}
 		}
 	}
+    .feedback .request__select.select .same-as-selected::before{
+        display: none;
+    }
     .accordion{
         &__item{
             padding:30px 0 20px;
@@ -2303,6 +2306,23 @@
             }
         }
     }
+    .body_blog{
+        .news{
+            &__grid{
+                &_card-heading{
+                    font-size: 24px;
+                }
+                &_card-complex__innerCard_heading{
+                    font-size: 34px;
+                }
+                &_card-complex__innerCard_tags,
+                &_card-content,
+                &_card-tags{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
     .custom-format{
         h2{
             font-size: 56px;
@@ -2518,6 +2538,11 @@
                         font-size: 32px;
                     }
                 }
+            }
+        }
+        &.feedback_subscribe{
+            .feedback__container_headwrap p{
+                width: 100%;
             }
         }
     }
