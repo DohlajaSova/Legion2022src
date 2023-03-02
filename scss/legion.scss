@@ -4827,6 +4827,9 @@ a.button {
                         }
 					}
 				}
+                &:empty{
+                    display: none;
+                }
 			}
 		}
 	}
@@ -5030,6 +5033,11 @@ a.button {
     .projects h2{
         width: 100%;
         margin-bottom: 50px;
+    }
+    .news_portfolio{
+        .cases__filter{
+            display: none;
+        }
     }
 }
 .vacancies {

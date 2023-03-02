@@ -3442,6 +3442,8 @@ a.button {
             color: #fff; }
             .news__grid_card-complex__innerCard.first a {
               color: #fff; }
+        .news__grid_card-complex:empty {
+          display: none; }
   .news_top__pages {
     margin-bottom: 40px; }
     .news_top__pages .button {
@@ -3588,6 +3590,8 @@ a.button {
 .body_blog .projects h2 {
   width: 100%;
   margin-bottom: 50px; }
+.body_blog .news_portfolio .cases__filter {
+  display: none; }
 
 .vacancies {
   margin-bottom: 76px;
