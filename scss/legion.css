@@ -3408,6 +3408,15 @@ a.button {
         font-size: 16px;
         color: #949191;
         line-height: 130%; }
+        .news__grid_card-tags.longread::before {
+          content: "";
+          display: inline-block;
+          width: 25px;
+          height: 20px;
+          background: url("img/icon-book-grey.svg") center left no-repeat;
+          position: relative;
+          top: -5px;
+          margin: 0 10px -10px 0; }
       .news__grid_card-heading {
         margin-bottom: 10px;
         font-size: 24px;
