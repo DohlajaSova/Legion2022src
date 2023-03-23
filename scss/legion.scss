@@ -4848,12 +4848,12 @@ a.button {
     
     &_top{
         &__pages{
-            margin-bottom: 40px;
+            margin-bottom: 25px;
             .button{
                 border-color: $color-grey-dark;
                 color: $color-grey-dark;
                 padding: 13px 24px 11px;
-                margin-right: 14px;
+                margin: 0 14px 15px 0;
                 &.longread{
                     &::before{
                         content:"";

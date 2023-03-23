@@ -3454,12 +3454,12 @@ a.button {
         .news__grid_card-complex:empty {
           display: none; }
   .news_top__pages {
-    margin-bottom: 40px; }
+    margin-bottom: 25px; }
     .news_top__pages .button {
       border-color: #949191;
       color: #949191;
       padding: 13px 24px 11px;
-      margin-right: 14px; }
+      margin: 0 14px 15px 0; }
       .news_top__pages .button.longread::before {
         content: "";
         display: inline-block;
@@ -9313,7 +9313,11 @@ a.button {
     top: -1px; }
 
   .contacts__title {
-    margin: 60px 0; } }
+    margin: 60px 0; }
+
+  .body_blog .news_top {
+    margin-top: 0;
+    padding-top: 40px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
