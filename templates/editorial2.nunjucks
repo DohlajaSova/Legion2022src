@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if IE 9 ]><html class="ie9 ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock %}e-legion</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/prism.css">
+	<link rel="stylesheet" href="assets/css/elegion.css">
+    <link rel="apple-touch-icon" type="image/webp" sizes="180x180" href="/assets/css/img/apple-touch-icon.webp">
+    <link rel="icon" type="image/webp" sizes="32x32" href="/assets/css/img/favicon-32x32.webp">
+    <link rel="icon" type="image/webp" sizes="16x16" href="/assets/css/img/favicon-16x16.webp">
+	{% block links %}{% endblock %}
+</head>
+<body class="body_news body_news-ver2">
+<div class="content-wrapper">
+	<header class="header">
+		<div class="container">
+			{% include "partials/header.nunjucks" %}
+		</div>
+	</header>
+    <div class="header-dummy"></div>
+    {% include "partials/towel/pmenu.nunjucks" %}
+    <div class="top top_news">
+        <div class="container">
+              <ul class="client__breadcrumbs breadcrumbs">
+                  <li><a title="" href="">Название статьи</a></li>
+                  <li><span>Название статьи</span></li>
+              </ul>
+        </div>
+        <div class="container news-top">
+            <h1>
+                Название статьи
+            </h1>
+            <div class="news-top__tech">
+                <div class="news-top__tech_date">00 месяц 2022</div>
+                <div class="news-top__tech_tags">#опыт</div>
+                <div class="news-top__tech_views">123</div>
+            </div>
+            <div class="news-top__image"><img src="https://e-legion.ru/assets/blog/CJM%20Cover.png" alt=""></div>
+            <div class="news-top__leadblock">
+                <div class="news-top__leadblock_author">
+                    <div class="news-top__leadblock_author-avatar"><img src="https://e-legion.ru/assets/css/img/Team_Nikiforov.webp" alt=""></div>
+                    <div class="news-top__leadblock_author-name">Дискавери фаза</div>
+                    <div class="news-top__leadblock_author-position">Инструменты. Публикация №1</div>
+                </div>
+                <div class="news-top__leadblock_lead">
+                    Customer Journey Map’ом уже давно никого не удивишь: в больших продуктовых компаниях открывают целые отделы по исследованию клиентского опыта, а консалтинговые организации регулярно используют этот инструмент для анализа продукта клиента.<br><br>
+                    Так зачем мы решили написать этот материал? 
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="container custom-format">
+	    {% block content %} {% endblock %}
+	</div>
+	<div class="bottom-dummy"></div>
+</div>
+<footer class="footer cleared">
+    {% include "partials/footer-back.nunjucks" %}
+    <div class="container cleared">
+        {% include "partials/footer.nunjucks" %}
+    </div>
+</footer>
+{% block after_body %}{% endblock %}
+<script src="assets/js/app.js"></script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>
