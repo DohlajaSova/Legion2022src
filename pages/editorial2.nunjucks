@@ -1,5 +1,5 @@
 <!-- editorial2.nunjucks -->
-{% extends "editorial.nunjucks" %}
+{% extends "editorial2.nunjucks" %}
 {% block title %}Блог. Новости - {% endblock %}
 {% block links %} 
 <base href="/" />

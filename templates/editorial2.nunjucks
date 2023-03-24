@@ -28,20 +28,21 @@
     <div class="top top_news">
         <div class="container">
               <ul class="client__breadcrumbs breadcrumbs">
-                  <li><a title="" href="">Название статьи</a></li>
+                  <li><a title="" href="">На почитать</a></li>
+                  <li><a title="" href="">Лонгриды</a></li>
                   <li><span>Название статьи</span></li>
               </ul>
         </div>
-        <div class="container news-top">
-            <h1>
-                Название статьи
-            </h1>
+        <div class="container news-top" style="background-color:#24DA8D;">
             <div class="news-top__tech">
                 <div class="news-top__tech_date">00 месяц 2022</div>
                 <div class="news-top__tech_tags">#опыт</div>
                 <div class="news-top__tech_views">123</div>
             </div>
-            <div class="news-top__image"><img src="https://e-legion.ru/assets/blog/CJM%20Cover.png" alt=""></div>
+            <h1>
+                Название статьи
+            </h1>
+            <div class="news-top__image"><img src="/assets/css/img/temp-news10.jpg" alt=""></div>
             <div class="news-top__leadblock">
                 <div class="news-top__leadblock_author">
                     <div class="news-top__leadblock_author-avatar"><img src="https://e-legion.ru/assets/css/img/Team_Nikiforov.webp" alt=""></div>
