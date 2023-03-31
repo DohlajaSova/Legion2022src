@@ -563,6 +563,26 @@ function getParamsByUrl(url = null){
     return urlParams
 }
 
+function generateEditorialTOC(editorial){
+    let toc='';
+    const headings = editorial.querySelectorAll('h2');
+    if (headings.length) {
+        headings.forEach(function(heading, index){
+            let headName = heading.innerHTML;
+            heading.innerHTML = '<a name="head'+index+'"></a>' + headName;
+            toc += '<h3><a href="#head'+index+'">' + headName + '</a></h3>';
+        });
+    }
+    
+    if (toc != "") toc = '<aside class="editorial-container__toc js-toc">' + toc + '<a href="#top" class="back js-top"></a></aside>';
+    
+    let div = document.createElement('div');
+    div.className = 'container editorial-container';
+    if (editorial != '') div.innerHTML = toc+'<div class="custom-format editorial-container__body js-editorial">'+editorial.innerHTML+'</div>';
+    editorial.before(div);
+    document.querySelectorAll('.js-editorial')[1].remove();
+}
+
 docReady(function() {
     const params = getParamsByUrl();
     const scrollIV = params?.scrollinto;
@@ -977,7 +997,15 @@ docReady(function() {
             })
         }
     }
-    
+
+    // генерация оглавления
+    let editorial = document.querySelectorAll(".js-editorial");
+
+    if (editorial.length >0)
+    {
+        generateEditorialTOC(editorial[0]);
+    }
+
     // фильтр на странице вакансий
     let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner");
     let vacanciesTypes = document.querySelectorAll(".js-vacancies-types");

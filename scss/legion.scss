@@ -7669,6 +7669,24 @@ a.button {
 	animation-name: pulse_3;
   }
 
+.editorial-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &__toc{
+        width:23.2%;
+        position: relative;
+        align-self: flex-start;
+        padding-bottom: 90px;
+        .back{
+            position: absolute;
+        }
+    }
+    &__body{
+        width:74.4%;
+    }
+}
+
 
   @keyframes pulse_1 {
 	from {
