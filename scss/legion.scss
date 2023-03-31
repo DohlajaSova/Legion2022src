@@ -417,7 +417,7 @@ a.button {
 
 	h2 {
 		font-size: 46px;
-        margin: 50px 0 30px;
+        margin: 80px 0 30px;
 	}
 
 	h3 {
@@ -453,6 +453,7 @@ a.button {
         margin: 0 0 20px;
         p{
             font-size: 36px;
+			margin-bottom:30px;
             &:last-child{
                 margin-bottom: 20px;
             }
@@ -542,7 +543,7 @@ a.button {
     }
     
     .picture-title{
-        font-size: 16px;
+        font-size: 24px;
         color:$color-grey-dark;
         margin: -30px 0 50px;
     }
@@ -7677,9 +7678,24 @@ a.button {
         width:23.2%;
         position: relative;
         align-self: flex-start;
-        padding-bottom: 90px;
+		border: 1px solid $color-grey-dark;
+		padding: 20px 20px 10px;
+		border-radius: 42px;
+		h3{
+			font-size:20px;
+			a{
+				color:$color-grey-dark;
+			}
+			&.active{
+				a{
+					color:$color-blue-dark;
+				}
+			}
+		}
         .back{
             position: absolute;
+			bottom:-80px;
+			right:0;
         }
     }
     &__body{
