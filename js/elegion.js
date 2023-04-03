@@ -567,20 +567,40 @@ function generateEditorialTOC(editorial){
     let toc='';
     const headings = editorial.querySelectorAll('h2');
     if (headings.length) {
+        // формируем оглавление
         headings.forEach(function(heading, index){
             let headName = heading.innerHTML;
-            heading.innerHTML = '<a name="head'+index+'"></a>' + headName;
-            toc += '<h3><a href="#head'+index+'">' + headName + '</a></h3>';
+            heading.innerHTML = '<a name="head'+index+'" id="#head'+index+'"></a>' + headName;
+            toc += '<h3><a href="#head'+index+'" class="js-scrollto">' + headName + '</a></h3>';
         });
+        
+        // разбиваем статью на блоки <section> по вхождению заголовков <h2>
+        let sectioned = editorial.innerHTML.replace(/(([\s\S]*?)<h2>([\s\S]*?)<\/h2>)+?/gm,'<section>$2</section><h2>$3</h2>');
+        sectioned = sectioned.replace(/<h2>([\s\S]*)<\/h2>([\s\S]+)/gm,'<h2>$1</h2><section>$2</section>');
+        editorial.innerHTML = sectioned;
     }
     
     if (toc != "") toc = '<aside class="editorial-container__toc js-toc">' + toc + '<a href="#top" class="back js-top"></a></aside>';
+
+
     
     let div = document.createElement('div');
     div.className = 'container editorial-container';
     if (editorial != '') div.innerHTML = toc+'<div class="custom-format editorial-container__body js-editorial">'+editorial.innerHTML+'</div>';
     editorial.before(div);
     document.querySelectorAll('.js-editorial')[1].remove();
+
+    const sidebarElements = Array.from(document.getElementsByClassName('js-scrollto'));
+    if (sidebarElements.length) {
+        sidebarElements.forEach(function(sidebarElement, index){
+            sidebarElements[index].addEventListener('click', function(event){
+                event.preventDefault();
+                let element = document.getElementById(event.target.getAttribute('href'));
+                const y = element.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({ behavior: "smooth", top: y });
+            })
+        })
+    }
 }
 
 docReady(function() {
