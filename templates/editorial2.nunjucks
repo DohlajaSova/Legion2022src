@@ -33,7 +33,7 @@
                   <li><span>Название статьи</span></li>
               </ul>
         </div>
-        <div class="container news-top" style="background-color:#24DA8D;">
+        <div class="news-top" style="background-color:#24DA8D;"><div class="container news-top__container">
             <div class="news-top__tech">
                 <div class="news-top__tech_date">00 месяц 2022</div>
                 <div class="news-top__tech_tags">#опыт</div>
@@ -54,7 +54,7 @@
                     Так зачем мы решили написать этот материал? 
                 </div>
             </div>
-        </div>
+        </div></div>
     </div>
 	<div class="container custom-format js-editorial">
 	    {% block content %} {% endblock %}
