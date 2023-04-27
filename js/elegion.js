@@ -601,6 +601,43 @@ function generateEditorialTOC(editorial){
             })
         })
     }
+
+    // фиксим оглавление статьи при скролле
+    const stickyTOC = document.getElementsByClassName('js-toc')[0];
+    const editorialBody = document.getElementsByClassName('js-editorial')[0];
+    let editorialTop =  editorialBody.offsetTop;
+    let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    // 0. подсвечиваем активный заголовок
+    // 1. массив заголовков, их топ-координаты относительно скролла
+    // 2. если какой-то заголовок попадает в область (видимость или выше), помечаем его активным
+    // 3. в правом блоке подсвечиваем последний из активных, все остальные убираем
+    const allHeadings = editorialBody.getElementsByTagName('h2');
+    const allTOCHeadings = stickyTOC.getElementsByTagName('h3');
+    let allHeadingsTops = new Array();
+    if (allHeadings.length) {
+        Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
+            allHeadingsTops[index] = allHeadings[index].offsetTop;
+        });
+    }
+    
+    window.onscroll = function() {
+        bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        stickyTOC.style.top = Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20 + "px";
+        
+        if (allHeadings.length) {
+            Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
+                if (bodyScrollTop > (allHeadings[index].offsetTop-wHeight)){
+                    allTOCHeadings[index].classList.add('active');
+                }
+                else{
+                    
+                }
+            });
+            
+        }
+    }
 }
 
 docReady(function() {
@@ -657,7 +694,7 @@ docReady(function() {
             else backButton.classList.remove("hide");
         }
     }
-
+    
     // обработка свайпа
     const sliders = document.querySelectorAll('.cases-slider');
     if (sliders.length) {
