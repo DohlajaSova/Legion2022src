@@ -583,8 +583,6 @@ function generateEditorialTOC(editorial){
     
     if (toc != "") toc = '<aside class="editorial-container__toc js-toc">' + toc + '<a href="#top" class="back js-top"></a></aside>';
 
-
-    
     let div = document.createElement('div');
     div.className = 'container editorial-container';
     if (editorial != '') div.innerHTML = toc+'<div class="custom-format editorial-container__body js-editorial">'+editorial.innerHTML+'</div>';
@@ -602,6 +600,11 @@ function generateEditorialTOC(editorial){
             })
         })
     }
+	
+	window.onscroll = function(){
+		stickTOC();
+		highlightTOC();
+	}
 
     // фиксим оглавление статьи при скролле
     const stickyTOC = document.getElementsByClassName('js-toc')[0];
@@ -623,7 +626,8 @@ function generateEditorialTOC(editorial){
         });
     }
     
-    window.onscroll = function() {
+	function placeEditorialTOC()
+	{
         bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         stickyTOC.style.top = Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20 + "px";
         
@@ -644,7 +648,9 @@ function generateEditorialTOC(editorial){
             });
             
         }
-    }
+	}
+	placeEditorialTOC();
+    window.onscroll = placeEditorialTOC;
 }
 
 docReady(function() {
