@@ -443,6 +443,7 @@ function checkFieldValid(element) {
     // }
     if(element.type === 'email'){
         var pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+		//"
         if(!element.value.match(pattern)){
             addListenerInput(element);
             return false;
@@ -627,13 +628,19 @@ function generateEditorialTOC(editorial){
         stickyTOC.style.top = Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20 + "px";
         
         if (allHeadings.length) {
+			let activeHeading = -1;
+            for (i=0; i<allHeadings.length; i++){
+				if (bodyScrollTop > (allHeadings[i].offsetTop-wHeight)){
+					activeHeading = i;
+				}
+			}
             Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
-                if (bodyScrollTop > (allHeadings[index].offsetTop-wHeight)){
+				if (index == activeHeading){
                     allTOCHeadings[index].classList.add('active');
                 }
-                else{
-                    
-                }
+				else{
+					 allTOCHeadings[index].classList.remove('active');
+				}
             });
             
         }
