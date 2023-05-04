@@ -581,7 +581,7 @@ function generateEditorialTOC(editorial){
         editorial.innerHTML = sectioned;
     }
     
-    if (toc != "") toc = '<aside class="editorial-container__toc js-toc">' + toc + '<a href="#top" class="back js-top"></a></aside>';
+    if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '</div><a href="#top" class="back js-top"></a></aside>';
 
     let div = document.createElement('div');
     div.className = 'container editorial-container';
@@ -601,17 +601,17 @@ function generateEditorialTOC(editorial){
         })
     }
 	
-	window.onscroll = function(){
-		stickTOC();
-		highlightTOC();
-	}
-
     // фиксим оглавление статьи при скролле
     const stickyTOC = document.getElementsByClassName('js-toc')[0];
     const editorialBody = document.getElementsByClassName('js-editorial')[0];
-    let editorialTop =  editorialBody.offsetTop;
+    //let editorialTop = editorialBody.offsetTop; bug in mobile
+    let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height+document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
     let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const wWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    let topAdjust = 0;
+    if (wWidth <= 650) topAdjust = 102;
+    if (wWidth > 1024) document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
 
     // 0. подсвечиваем активный заголовок
     // 1. массив заголовков, их топ-координаты относительно скролла
@@ -629,7 +629,7 @@ function generateEditorialTOC(editorial){
 	function placeEditorialTOC()
 	{
         bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        stickyTOC.style.top = Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20 + "px";
+        stickyTOC.style.top = Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust + "px";
         
         if (allHeadings.length) {
 			let activeHeading = -1;
@@ -646,11 +646,17 @@ function generateEditorialTOC(editorial){
 					 allTOCHeadings[index].classList.remove('active');
 				}
             });
-            
+        }
+        else{
+            Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
+                allTOCHeadings[index].classList.remove('active');
+            });
         }
 	}
 	placeEditorialTOC();
-    window.onscroll = placeEditorialTOC;
+    window.addEventListener('scroll', placeEditorialTOC, true);
+    window.addEventListener('resize', placeEditorialTOC, true);
+    //window.onscroll = placeEditorialTOC;
 }
 
 docReady(function() {
@@ -1328,6 +1334,39 @@ docReady(function() {
         }
     }, false);
 
+    // выпадающее оглавление в новостях
+    let tocToggler = document.querySelector(".js-sidetoc");
+    let tocBody = document.querySelector(".editorial-container__toc-inner");
+    if (tocToggler != null) {
+        tocToggler.addEventListener("click", function(e){
+            e.preventDefault();
+
+            let frames = 3;
+
+            if (tocBody.classList.contains("hide"))
+            {
+                tocBody.classList.remove("hide");
+                let frame = 1;
+                let animation = setInterval(function() { 
+                    if (frame > frames) { clearInterval(animation); return; }
+                    tocToggler.style.backgroundImage = 'url(/assets/css/img/icon-editorial'+frame+'.svg)';
+                    frame++;
+                }, 60);
+            }
+            else
+            {
+                tocBody.classList.add("hide");
+                let frame = 3;
+                let animation = setInterval(function() { 
+                    if (frame < 1) { clearInterval(animation); return; }
+                    tocToggler.style.backgroundImage = 'url(/assets/css/img/icon-editorial'+frame+'.svg)';
+                    frame--;
+                }, 60);
+            }
+        }, false);
+    }
+
+                
     // видео: пропорции
     let players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
     let fitVideos = document.querySelectorAll(players.join(","));

@@ -312,7 +312,8 @@ a:hover {
 	}
 }
 
-.back {
+.back,
+.sidetoc-menu{
 	display: block;
 	width: 58px;
 	height: 58px;
@@ -329,6 +330,9 @@ a:hover {
 	&.hide {
 		display: none;
 	}
+}
+.sidetoc-menu{
+    transform:none;
 }
 
 h1,
@@ -1659,14 +1663,15 @@ a.button {
 
 			h4 {
 				font-size: 24px;
-				font-weight: 300;
-				margin-bottom: 56px;
+				font-weight: 400;
+				margin-bottom: 40px;
 				color: $color-black;
 				padding-right: 150px;
 			}
 
 			p {
-				margin-bottom: 56px;
+                font-size: 16px;
+				margin-bottom: 76px;
 				padding-right: 150px;
 			}
 		}
@@ -4329,7 +4334,7 @@ a.button {
 
 					&_link {
 						width: 50%;
-						padding: 30px;
+						padding: 27px;
 						position: relative;
 
 						&-title {
@@ -5069,7 +5074,7 @@ a.button {
                 width:100%;
                 height:100%;
                 position:absolute;
-                background: rgba(255,255,255,0.6);
+                background: rgba(240,240,240,0.6);
                 z-index: 1;
                 top:0;
             }
@@ -5083,6 +5088,7 @@ a.button {
                 height: 100%;
                 .h1, h1{
                     font-size: 74px;
+                    z-index: 1;
                 }
             }
             &__image{
@@ -5092,16 +5098,29 @@ a.button {
                 right: 0;
                 top: 0;
                 margin-bottom: 0;
+                &::before{
+                    content:"";
+                    display: block;
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    background: rgba(240,240,240,0.6);
+                    z-index: 0;
+                    top:0;
+                }
                 img{
                     height: 440px;
                     width: auto;
+                    display: block;
                 }
             }
             &__tech{
                 color: $color-blue-dark;
                 margin-bottom: 40px;
+                z-index: 1;
             }
             &__leadblock{
+                z-index: 1;
                 &_author{
                     display: grid;
                     grid-column-gap: 20px;
@@ -7754,12 +7773,17 @@ a.button {
     flex-direction: row-reverse;
     justify-content: space-between;
     &__toc{
+        display: flex;
+        flex-direction:column;
         width:23.2%;
         position: relative;
-        align-self: flex-start;
-		border: 1px solid $color-grey-dark;
-		padding: 30px 20px 20px;
-		border-radius: 42px;
+        align-items: flex-end;
+        z-index: 1;
+        &-inner{
+            border: 1px solid $color-grey-dark;
+            padding: 30px 20px 20px;
+            border-radius: 42px;
+        }
 		h3{
 			font-size:20px;
 			a{
@@ -7772,9 +7796,16 @@ a.button {
 			}
 		}
         .back{
-            position: absolute;
-			bottom:-80px;
+            position: relative;
+			bottom:-10px;
 			right:0;
+        }
+        .sidetoc-menu{
+            background: url($img-path + "icon-editorial1.svg") center center no-repeat $color-blue-dark;
+            position: relative;
+            right: 0;
+            top: -10px;
+            display: none;
         }
     }
     &__body{

@@ -36,9 +36,22 @@
         padding-left:60px;
         padding-right:60px;
     }
-    .news.news_featured{
+    .news.news_featured,
+    .body_news-ver2 .top{
         padding-left: 0;
         padding-right: 0;
+    }
+    .body_news-ver2{
+        .top .container{
+            padding-left:60px;
+            padding-right:60px;
+        }
+        .editorial-container{
+            padding: 0 60px;
+            &__body{
+                padding: 0;
+            }
+        }
     }
     .top .breadcrumbs,
     .to-work .projects,
@@ -575,6 +588,15 @@
     .custom-format{
         padding-left:30px;
         padding-right:30px;
+    }
+    .body_news-ver2{
+        .top .container{
+            padding-left:30px;
+            padding-right:30px;
+        }
+        .editorial-container{
+            padding: 0 30px;
+        }
     }
     .button,
     a.button,
@@ -1252,6 +1274,27 @@
                 }
                 .project__review_author-position{
                     max-width:80%;
+                }
+            }
+        }
+    }
+    .body_news-ver2{
+        .editorial-container{
+            position: relative;
+            &__body{
+                width:100%;
+            }
+            &__toc{
+                position: absolute;
+                width:auto;
+                max-width:440px;
+                &-inner{
+                    background: linear-gradient(0deg, rgb(240, 240, 240), rgb(240, 240, 240)), rgb(255, 255, 255);
+                    border: none;
+                    box-shadow: rgba(30, 39, 56, 0.3) 0px 0px 40px;
+                }
+                .sidetoc-menu{
+                    display: block;
                 }
             }
         }
@@ -2306,6 +2349,36 @@
             }
         }
     }
+    .body_news.body_news-ver2{
+        .news-top{
+            border-bottom: none;
+            padding-bottom: 0;
+            &::before{
+                background-color: rgba(7,7,7,0.6);
+            }
+            &__image{
+                &::before{
+                    background-color: rgba(7,7,7,0.6);
+                }
+            }
+            &__tech,
+            h1,
+            .h1{
+                color: $color-white;
+            }
+            &__leadblock{
+                margin-bottom: 0;
+                &_author{
+                    margin-bottom: 0;
+                    color: $color-white;
+                    &-name,
+                    &-position{
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
     .body_blog{
         .news{
             &__grid{
@@ -2357,6 +2430,46 @@
         }
         .picture-title{
             margin: -15px 0 30px;
+        }
+    }
+    .select-inline .select-hide div{
+        font-size: 24px;
+    }
+    .not-all-the-same{
+        &.not-all-the-same_background{
+            h2,
+            .h2{
+                font-size: 56px;
+                width: 68%;
+            }
+            h3,
+            .h3{
+                font-size: 46px;
+                margin-bottom: 0;
+            }
+            .accordion__item{
+                padding-bottom: 0;
+                &_body{
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                }
+            }
+            .accordion__item_head::before{
+                margin-top:18px;
+            }
+            .accordion__item_body p{
+                margin-bottom: 60px;
+            }
+            .projects .project__article_small{
+                .project-article_link{
+                    &-title{
+                        font-size: 24px;
+                    }
+                    &-arrow{
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
@@ -2728,5 +2841,13 @@
             }
         }
     }
+    .not-all-the-same{
+        &.not-all-the-same_background{
+            .projects .project__article_small{
+                .project-article_link{
+                    padding: 27px;
+                }
+            }
+        }
+    }
 }
-
