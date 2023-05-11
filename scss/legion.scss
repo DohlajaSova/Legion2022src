@@ -1001,7 +1001,17 @@ a.button {
 		padding-bottom: 40px;
 
 		&__logo {
-			background-image: url($img-path + "logo-white.svg")
+			background-image: url($img-path + "logo-white.svg");
+			width:calc(50% - 46px);
+		}
+		&__mmenu{
+			width:calc(50% - 46px);
+			& > a{
+				display:none;
+				&:last-child{
+					display:block;
+				}
+			}
 		}
 	}
 
@@ -5520,6 +5530,9 @@ a.button {
 		margin-bottom: 20px;
         display: flex;
         justify-content: flex-end;
+		.dummy &{
+			justify-content: flex-start;
+		}
 	}
 
 	&__copyright {
