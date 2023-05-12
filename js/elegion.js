@@ -582,6 +582,7 @@ function generateEditorialTOC(editorial){
     }
     
     if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '</div><a href="#top" class="back js-top"></a></aside>';
+	else toc = '<aside class="editorial-container__toc"></aside>'
 
     let div = document.createElement('div');
     div.className = 'container editorial-container';
@@ -603,60 +604,64 @@ function generateEditorialTOC(editorial){
 	
     // фиксим оглавление статьи при скролле
     const stickyTOC = document.getElementsByClassName('js-toc')[0];
-    const editorialBody = document.getElementsByClassName('js-editorial')[0];
-    //let editorialTop = editorialBody.offsetTop; bug in mobile
-    let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height+document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
-    let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const wWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    let topAdjust = 0;
-    if (wWidth <= 650) topAdjust = 102;
-    if (wWidth > 1024) document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
-
-    // 0. подсвечиваем активный заголовок
-    // 1. массив заголовков, их топ-координаты относительно скролла
-    // 2. если какой-то заголовок попадает в область (видимость или выше), помечаем его активным
-    // 3. в правом блоке подсвечиваем последний из активных, все остальные убираем
-    const allHeadings = editorialBody.getElementsByTagName('h2');
-    const allTOCHeadings = stickyTOC.getElementsByTagName('h3');
-    let allHeadingsTops = new Array();
-    if (allHeadings.length) {
-        Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
-            allHeadingsTops[index] = allHeadings[index].offsetTop;
-        });
-    }
-    
-	function placeEditorialTOC()
-	{
-        bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        stickyTOC.style.top = Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust + "px";
-        
-        if (allHeadings.length) {
-			let activeHeading = -1;
-            for (i=0; i<allHeadings.length; i++){
-				if (bodyScrollTop > (allHeadings[i].offsetTop-wHeight)){
-					activeHeading = i;
+	if (stickyTOC != undefined){
+		const editorialBody = document.getElementsByClassName('js-editorial')[0];
+		//let editorialTop = editorialBody.offsetTop; bug in mobile
+		let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height+document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
+		let editorialHeight = document.getElementsByClassName('editorial-container')[0].getBoundingClientRect().height+167;
+		let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		const wWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		let topAdjust = 0;
+		if (wWidth <= 650) topAdjust = 102;
+		if (wWidth > 1024 && document.getElementsByClassName('editorial-container__toc-inner')[0] != undefined) document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
+	
+		// 0. подсвечиваем активный заголовок
+		// 1. массив заголовков, их топ-координаты относительно скролла
+		// 2. если какой-то заголовок попадает в область (видимость или выше), помечаем его активным
+		// 3. в правом блоке подсвечиваем последний из активных, все остальные убираем
+		const allHeadings = editorialBody.getElementsByTagName('h2');
+		const allTOCHeadings = stickyTOC.getElementsByTagName('h3');
+		let allHeadingsTops = new Array();
+		if (allHeadings.length) {
+			Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
+				allHeadingsTops[index] = allHeadings[index].offsetTop;
+			});
+		}
+		
+		function placeEditorialTOC()
+		{
+			bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			let TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
+			stickyTOC.style.height = TOCHeight+68 + "px";
+			stickyTOC.style.top = Math.min(Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust, editorialHeight-TOCHeight) + "px";
+			
+			if (allHeadings.length) {
+				let activeHeading = -1;
+				for (i=0; i<allHeadings.length; i++){
+					if (bodyScrollTop > (allHeadings[i].offsetTop-wHeight)){
+						activeHeading = i;
+					}
 				}
+				Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
+					if (index == activeHeading){
+						allTOCHeadings[index].classList.add('active');
+					}
+					else{
+						 allTOCHeadings[index].classList.remove('active');
+					}
+				});
 			}
-            Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
-				if (index == activeHeading){
-                    allTOCHeadings[index].classList.add('active');
-                }
-				else{
-					 allTOCHeadings[index].classList.remove('active');
-				}
-            });
-        }
-        else{
-            Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
-                allTOCHeadings[index].classList.remove('active');
-            });
-        }
+			else{
+				Array.prototype.slice.call( allHeadings ).forEach(function(heading, index){
+					allTOCHeadings[index].classList.remove('active');
+				});
+			}
+		}
+		placeEditorialTOC();
+		window.addEventListener('scroll', placeEditorialTOC, true);
+		window.addEventListener('resize', placeEditorialTOC, true);
 	}
-	placeEditorialTOC();
-    window.addEventListener('scroll', placeEditorialTOC, true);
-    window.addEventListener('resize', placeEditorialTOC, true);
-    //window.onscroll = placeEditorialTOC;
 }
 
 docReady(function() {
