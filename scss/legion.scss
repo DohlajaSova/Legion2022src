@@ -5075,6 +5075,11 @@ a.button {
                 margin-bottom:20px;
             }
         }
+		.footer{
+			.back{
+				display:none;
+			}
+		}
         .news-top{
             position: relative;
             height: 440px;
@@ -7785,6 +7790,9 @@ a.button {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+	border-bottom: 1px solid $color-blue-dark;
+	padding-bottom: 40px;
+	margin-bottom: 80px;
     &__toc{
         display: flex;
         flex-direction:column;
@@ -7792,10 +7800,12 @@ a.button {
         position: relative;
         align-items: flex-end;
         z-index: 1;
+		max-height: 450px;
         &-inner{
             border: 1px solid $color-grey-dark;
             padding: 30px 20px 20px;
             border-radius: 42px;
+			background-color:$color-white;
         }
 		h3{
 			font-size:20px;
