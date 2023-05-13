@@ -919,7 +919,14 @@ a.button {
     background-color: transparent;
     padding-bottom: 40px; }
     .dummy .header__logo {
-      background-image: url("img/logo-white.svg"); }
+      background-image: url("img/logo-white.svg");
+      width: calc(50% - 46px); }
+    .dummy .header__mmenu {
+      width: calc(50% - 46px); }
+      .dummy .header__mmenu > a {
+        display: none; }
+        .dummy .header__mmenu > a:last-child {
+          display: block; }
   .about .header {
     background-color: transparent; }
     .about .header__logo {
@@ -3919,6 +3926,8 @@ a.button {
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-end; }
+    .dummy .footer__social {
+      justify-content: flex-start; }
   .footer__copyright {
     display: flex;
     width: 100%;
