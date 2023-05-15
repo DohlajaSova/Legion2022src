@@ -45,6 +45,20 @@
         .editorial-container{
             padding: 0 20px;
         }
+		&.body_news{
+			.news-top{
+				height:318px;
+				&__image img{
+					height:318px;
+				}
+			}
+			.news-top__container{
+				.h1,
+				h1{
+					font-size:36px;
+				}
+			}
+		}
     }
     .pmenu{
         &__menu{
@@ -902,6 +916,17 @@
             }
         }
     }
+	.not-all-the-same.not-all-the-same_background .projects .project__article_small{
+		.project-article_link{
+			padding:20px 15px;
+			&-title{
+				font-size:13px;
+			}
+			&-arrow{
+				left:15px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 375px) {

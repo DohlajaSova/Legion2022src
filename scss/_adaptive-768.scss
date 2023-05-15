@@ -550,7 +550,8 @@
         margin-bottom: 0; //было 60 пиксел!!!
     }
 
-    .body_career, .body_about {
+    .body_career,
+	.body_about {
         .top {
             background-size:cover;
             min-height: 700px;

@@ -1279,6 +1279,14 @@
         }
     }
     .body_news-ver2{
+		&.body_news{
+			.news-top__container{
+				.h1,
+				h1{
+					font-size:60px;
+				}
+			}
+		}
         .editorial-container{
             position: relative;
             &__body{
@@ -1295,7 +1303,11 @@
                 }
                 .sidetoc-menu{
                     display: block;
+					flex-shrink:0;
                 }
+				.back{
+					flex-shrink:0;
+				}
             }
         }
     }
