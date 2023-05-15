@@ -4743,8 +4743,20 @@ a.button {
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 130%;
-			color: #949191;
-		}
+			color: $color-grey-dark;
+            &.longread{
+                &::before{
+                    content:"";
+                    display: inline-block;
+                    width:25px;
+                    height:20px;
+                    background: url($img-path + "icon-book-grey.svg") center left no-repeat;
+                    position: relative;
+                    top:-5px;
+                    margin: 0 10px -10px 0;
+                }
+            }
+        }
 
 		&__date {
 			background: $color-white;
