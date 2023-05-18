@@ -310,6 +310,9 @@ a:hover {
 	.body_news &{
 		height:74px;
 	}
+    .body_news.body_news-ver2 &{
+        height: 0;
+    }
 }
 
 .back,
@@ -5065,6 +5068,23 @@ a.button {
 			}
 		}
 	}
+    &_more{
+        .news-item{
+            &.txt{
+                background:transparent;
+                padding:0;
+                & > div{
+                    height: 100%;
+                    background: $color-blue-light;
+                    border-radius: 42px;
+                    padding: 100px 30px 0;
+                    *{
+                        color:$color-white;
+                    }
+                }
+            }
+        }
+    }
 }
 .body_blog{
     .projects .h1,

@@ -433,6 +433,8 @@ a:hover {
   height: 0; }
   .body_contacts .bottom-dummy, .body_request .bottom-dummy, .body_about .bottom-dummy, .body_news .bottom-dummy {
     height: 74px; }
+  .body_news.body_news-ver2 .bottom-dummy {
+    height: 0; }
 
 .back,
 .sidetoc-menu {
@@ -3615,6 +3617,16 @@ a.button {
         display: block;
         width: 100%;
         height: 100%; }
+  .news_more .news-item.txt {
+    background: transparent;
+    padding: 0; }
+    .news_more .news-item.txt > div {
+      height: 100%;
+      background: #84AEFF;
+      border-radius: 42px;
+      padding: 100px 30px 0; }
+      .news_more .news-item.txt > div * {
+        color: #fff; }
 
 .body_blog .projects .h1,
 .body_blog .projects h1,
@@ -5830,7 +5842,7 @@ a.button {
     padding-left: 30px;
     padding-right: 30px; }
   .body_news-ver2 .editorial-container {
-    padding: 0 30px; }
+    padding: 0 30px 40px; }
 
   .button,
   a.button,
@@ -6246,7 +6258,12 @@ a.button {
         display: block;
         flex-shrink: 0; }
       .body_news-ver2 .editorial-container__toc .back {
-        flex-shrink: 0; } }
+        flex-shrink: 0; }
+
+  .news .news-item.txt {
+    border-radius: 38px; }
+  .news .news-item__img {
+    border-radius: 38px; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
@@ -8861,6 +8878,12 @@ a.button {
       border-radius: 0;
       padding-top: 60px;
       margin-top: 0; }
+    .body_news.body_news-ver2 .news.news_more {
+      padding: 0; }
+      .body_news.body_news-ver2 .news.news_more h2 {
+        padding: 0 20px; }
+    .body_news.body_news-ver2 .news .news-item.txt {
+      padding: 0 32px 0 0 !important; }
 
   .feedback {
     border-radius: 30px 30px 0 0;
@@ -9114,7 +9137,7 @@ a.button {
     padding-left: 20px;
     padding-right: 20px; }
   .body_news-ver2 .editorial-container {
-    padding: 0 20px; }
+    padding: 0 20px 40px; }
     .body_news-ver2 .editorial-container__toc {
       max-width: none;
       width: calc(100% - 40px);
@@ -9549,6 +9572,13 @@ a.button {
 
   .news {
     margin-bottom: 40px; }
+    .news .news-item.txt {
+      border-radius: 30px; }
+    .news .news-item__img {
+      border-radius: 30px; }
+    .news.news_more {
+      margin-top: -30px;
+      margin-bottom: 92px; }
 
   .main .cases__case_name,
   .cases_portfolio .cases__case_name {

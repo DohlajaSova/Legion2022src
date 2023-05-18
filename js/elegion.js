@@ -880,6 +880,35 @@ docReady(function() {
         });
     }
     
+    // слайдер "еще почитать"
+    if (document.querySelectorAll(".js-more-news").length > 0)
+    {
+        let sliderProjects = tns({
+            container: '.js-more-news .news__items',
+            items: 1.3,
+            gutter: 32,
+            edgePadding: 20,
+            responsive: {
+                550: {
+                    edgePadding: 0,
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1440: {
+                    items: 4,
+                    nav: false
+                }
+            },
+            nav: true,
+            navPosition: 'bottom',
+            controls: false,
+            mouseDrag: true,
+            slideBy: 'page'
+        });
+    }
+    
     // слайдер "на этом проекте мы сделали"
     if (document.querySelectorAll(".js-we-did").length > 0)
     {

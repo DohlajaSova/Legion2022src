@@ -59,6 +59,7 @@
 	<div class="container custom-format js-editorial">
 	    {% block content %} {% endblock %}
 	</div>
+	{% include "partials/towel/news-more.nunjucks" %}
 	<div class="bottom-dummy"></div>
 </div>
 <footer class="footer cleared">
