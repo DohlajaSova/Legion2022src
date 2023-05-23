@@ -55,9 +55,9 @@
         }
 		&.body_news{
 			.news-top{
-				height:318px;
+				min-height:318px;
 				&__image img{
-					height:318px;
+					min-height:318px;
 				}
 			}
 			.news-top__container{
@@ -929,8 +929,10 @@
 			padding:20px 15px;
 			&-title{
 				font-size:13px;
+                padding-bottom: 0;
 			}
 			&-arrow{
+                display: none;
 				left:15px;
 			}
 		}

@@ -1713,7 +1713,7 @@ a.button {
 				}
 
 				&_body {
-					max-height: 1300px;
+					max-height: 2300px;
 					padding-bottom: 70px;
 					transition: max-height 0.7s, padding-bottom 0.7s;
 				}
@@ -5114,7 +5114,8 @@ a.button {
 		}
         .news-top{
             position: relative;
-            height: 440px;
+            min-height: 440px;
+            height: auto;
             &::before{
                 content:"";
                 display: block;
@@ -5144,6 +5145,7 @@ a.button {
                 position: absolute;
                 right: 0;
                 top: 0;
+                bottom: 0;
                 margin-bottom: 0;
                 &::before{
                     content:"";
@@ -5156,7 +5158,8 @@ a.button {
                     top:0;
                 }
                 img{
-                    height: 440px;
+                    min-height: 440px;
+                    height: 100%;
                     width: auto;
                     display: block;
                 }

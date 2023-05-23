@@ -614,7 +614,8 @@ function generateEditorialTOC(editorial){
 		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		let topAdjust = 0;
 		if (wWidth <= 650) topAdjust = 102;
-		if (wWidth > 1024 && document.getElementsByClassName('editorial-container__toc-inner')[0] != undefined) document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
+		if (wWidth > 1024 && document.getElementsByClassName('editorial-container__toc-inner')[0] != undefined)
+            document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
 	
 		// 0. подсвечиваем активный заголовок
 		// 1. массив заголовков, их топ-координаты относительно скролла

@@ -839,6 +839,11 @@
             }
         }
     }
+    .body_news.body_news-ver2{
+        .news-top__tech{
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2442,11 +2447,16 @@
             &__leadblock{
                 &_author{
                     margin-bottom: 40px;
+                    grid-template-columns: 60px 1fr !important;
                     &-avatar{
                         width:60px !important;
                         height: 60px;
                         margin-right: 12px;
                         margin-bottom: 0;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                        }
                     }
                     &-name{
                         font-size: 14px;
