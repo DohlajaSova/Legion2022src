@@ -7828,6 +7828,8 @@ a.button {
 	border-bottom: 1px solid $color-blue-dark;
 	padding-bottom: 40px;
 	margin-bottom: 80px;
+    position: relative;
+    justify-content: flex-end;
     &__toc{
         display: flex;
         flex-direction:column;
@@ -7841,6 +7843,9 @@ a.button {
             padding: 30px 20px 20px;
             border-radius: 42px;
 			background-color:$color-white;
+            position: fixed;
+            top:20px;
+            width:16%;
         }
 		h3{
 			font-size:20px;
@@ -7854,8 +7859,8 @@ a.button {
 			}
 		}
         .back{
-            position: relative;
-			bottom:-10px;
+            position: absolute;
+			bottom:-80px;
 			right:0;
         }
         .sidetoc-menu{

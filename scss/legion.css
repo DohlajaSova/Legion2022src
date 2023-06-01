@@ -5409,7 +5409,9 @@ a.button {
   justify-content: space-between;
   border-bottom: 1px solid #1E2738;
   padding-bottom: 40px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  position: relative;
+  justify-content: flex-end; }
   .editorial-container__toc {
     display: flex;
     flex-direction: column;
@@ -5422,7 +5424,10 @@ a.button {
       border: 1px solid #949191;
       padding: 30px 20px 20px;
       border-radius: 42px;
-      background-color: #fff; }
+      background-color: #fff;
+      position: fixed;
+      top: 20px;
+      width: 16%; }
     .editorial-container__toc h3 {
       font-size: 20px; }
       .editorial-container__toc h3 a {
@@ -5430,8 +5435,8 @@ a.button {
       .editorial-container__toc h3.active a {
         color: #1E2738; }
     .editorial-container__toc .back {
-      position: relative;
-      bottom: -10px;
+      position: absolute;
+      bottom: -80px;
       right: 0; }
     .editorial-container__toc .sidetoc-menu {
       background: url("img/icon-editorial1.svg") center center no-repeat #1E2738;

@@ -581,7 +581,7 @@ function generateEditorialTOC(editorial){
         editorial.innerHTML = sectioned;
     }
     
-    if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '</div><a href="#top" class="back js-top"></a></aside>';
+    if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '<a href="#top" class="back js-top"></a></div></aside>';
 	else toc = '<aside class="editorial-container__toc"></aside>'
 
     let div = document.createElement('div');
