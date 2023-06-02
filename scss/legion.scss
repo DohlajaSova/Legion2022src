@@ -8009,6 +8009,25 @@ a.button {
         width:74.4%;
     }
 }
+.body_news-ver2{
+	.editorial-container__body{
+		margin-right:2.6%;
+	}
+	.editorial-container__toc-inner{
+		position:static;
+		width:91.2%;
+		.back{
+			bottom:-10px;
+		}
+		&.fixed{
+			position:fixed;
+			width:16.35%;
+			.back{
+				bottom:-79px;
+			}
+		}
+	}
+}
 
 
   @keyframes pulse_1 {

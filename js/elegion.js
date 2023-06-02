@@ -635,7 +635,11 @@ function generateEditorialTOC(editorial){
 			bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 			let TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
 			stickyTOC.style.height = TOCHeight+68 + "px";
-			stickyTOC.style.top = Math.min(Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust, editorialHeight-TOCHeight) + "px";
+			//stickyTOC.style.top = Math.min(Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust, editorialHeight-TOCHeight) + "px";
+			if (bodyScrollTop>editorialTop+67)
+				document.getElementsByClassName('editorial-container__toc-inner')[0].classList.add('fixed');
+			else
+				document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('fixed');
 			
 			if (allHeadings.length) {
 				let activeHeading = -1;
