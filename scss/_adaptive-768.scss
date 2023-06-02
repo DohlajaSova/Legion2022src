@@ -839,6 +839,11 @@
             }
         }
     }
+    .body_aurora {
+        .service__feature_inner-case__visual_full-wrapper{
+            border-radius: 41px;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2833,6 +2838,42 @@
                         margin-bottom: 5px;
                         padding-right: 0;
                     }
+                }
+            }
+        }
+    }
+    .body_aurora {
+        .accordion__item_body {
+            p, li {
+                font-size: 16px;
+            }
+            &-column {
+                img {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+        .service__feature_inner-case {
+            &__brief{
+                &-transition {
+                    font-size: 12px;
+                }
+                &-title {
+                    font-size: 16px;
+                }
+            }
+            &__visual {
+                &_full-wrapper{
+                    height: 100%;
+                }
+                height: 100%;
+            }
+        }
+        .problems__item {
+            .problems-slider-groups__item {
+                h3 {
+                    font-size: 18px!important;
                 }
             }
         }

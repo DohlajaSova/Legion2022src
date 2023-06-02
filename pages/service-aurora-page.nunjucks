@@ -1,0 +1,12 @@
+﻿<!-- aurora.nunjucks -->
+{% extends "layout-service-aurora.nunjucks" %}
+{% block title %} Разработка на ОС Аврора {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+{% include "partials/towel/top-aurora.nunjucks" %}
+{% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+{% include "partials/towel/projects-aurora.nunjucks" %}
+{% include "partials/popup-feedback.nunjucks" %}
+
+{% endblock %}

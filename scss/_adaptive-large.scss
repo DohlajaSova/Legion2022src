@@ -1649,6 +1649,22 @@
             }
         }
     }
+    .body_aurora {
+        .accordion__item.active {
+            .accordion__item_body {
+                margin-bottom: 0;
+            }
+        }
+        .problems{
+            &__item{
+                .problems-slider-groups__item{
+                    h3{
+                        font-size:24px;
+                    }
+                }
+            }
+        }
+    }
     .vacancies{
         h2{
             font-size: 56px;

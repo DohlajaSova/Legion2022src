@@ -1,0 +1,57 @@
+
+<div class="projects some-projects">
+    <div class="container">
+        <div class="some-projects__content">
+            <h2>Eщё
+                <em> ОС Аврора</em>
+            </h2>
+        </div>
+        <div class="cases">
+            <div class="cases-container">
+                <div class="cases-container_inner">
+                    <div class="js-aurora-cases">
+                        <div class="some-projects__list">
+                            <div class="service__feature_inner">
+                                <div class="service__feature_inner-case">
+                                    <div
+                                        class="service__feature_inner-case__visual service__feature_inner-case__visual_full">
+                                        <div class="service__feature_inner-case__visual_full-wrapper">
+                                            <img src="/assets/css/img/case-aurora.webp">
+                                        </div>
+                                    </div>
+                                    <div class="service__feature_inner-case__brief">
+                                        <div class="service__feature_inner-case__brief-title">
+                                            Обзор российской <br />ОС «Аврора»
+                                        </div>
+                                        <a href="/[[~56]]" class="service__feature_inner-case__brief-transition">
+                                            Подробнее →
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service__feature_inner">
+                                <div class="service__feature_inner-case">
+                                    <div
+                                        class="service__feature_inner-case__visual service__feature_inner-case__visual_full">
+                                        <div class="service__feature_inner-case__visual_full-wrapper">
+                                            <img src="/assets/css/img/news-slider-1.webp">
+                                        </div>
+                                    </div>
+                                    <div class="service__feature_inner-case__brief">
+                                        <div class="service__feature_inner-case__brief-title">
+                                            Заметки Про — приложение на&nbsp;ОС Аврора
+                                        </div>
+                                        <a href="/[[~56]]" class="service__feature_inner-case__brief-transition">
+                                            Подробнее →
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

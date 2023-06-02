@@ -3,5 +3,5 @@
 {% block title %} Заявка - {% endblock %}
 {% block links %} {% endblock %}
 {% block content %}
-    {% include "partials/request.nunjucks" %}
+{% include "partials/request.nunjucks" %}
 {% endblock %}

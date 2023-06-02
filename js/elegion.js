@@ -1822,6 +1822,33 @@ docReady(function() {
             });
         }
     }
+    
+    if (document.querySelectorAll(".js-aurora-cases").length > 0)
+    {
+        if(document.querySelector('.some-projects__list')){
+            let container = document.querySelector(".js-aurora-cases");
+
+            console.log({container})
+            let cases = Array.prototype.slice.call(container.children[0].children);
+            console.log({cases})
+            let sliderCases = tns({
+                container: '.js-aurora-cases .some-projects__list',
+                items: 1,
+                gutter: 15,
+                responsive: {
+                    768: {
+                        items: 2,
+                        nav: false
+                    }
+                },
+                controls: false,
+                nav: true,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
+    }
 
     // аккордеон
     if (document.querySelectorAll(".js-accordion").length > 0)

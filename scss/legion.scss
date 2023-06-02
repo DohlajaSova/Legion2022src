@@ -6971,6 +6971,127 @@ a.button {
 	}
 }
 
+.body_aurora .service__feature_inner-case {
+	margin-left: 0;
+	width:100%;
+}
+.body_aurora {
+	.service__feature_inner-case {
+		margin-left: 0;
+		width:100%;
+	}
+	.service__feature_inner-case__visual_full {
+		border-radius: inherit;
+	}
+	.service__feature_inner-case {
+		border-radius: 44px;
+	}
+	.service__feature_inner-case__visual_full-wrapper{
+		border-radius: 38px;
+	}
+	.service__feature_inner-case__visual {
+		background-color: transparent;
+	}
+
+	.problems__item_bg5 {
+		background: #84AEFF;
+		width: 100%;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		// padding-bottom: 33%;
+		height: 180px;
+		overflow: hidden;
+		.problems-slider-groups__item_image {
+			z-index: -1;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translate(0, -50%);
+			&.wm_2, &.wm_3 {
+				bottom: 0;
+				top: unset;
+				transform: unset;
+			}
+		}
+	}
+	.problems__item_bg5.problems__item_aurora {
+		background: url("img/problems-bg4.svg") bottom right no-repeat #84AEFF;
+	}
+	.accordion__item_body {
+		p {
+			margin-bottom: 0;
+			padding-right: 0;
+		}
+		transition: max-height 0.7s, padding-bottom 0.7s, padding-top .7s;
+	}
+	.accordion__item.active .accordion__item_body {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+	.accordion__item_body-column {
+		gap: 20px;
+		display: flex;
+		flex-flow: column nowrap;
+		div {
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;
+		}
+	}
+	.accordion__item_body p ~ .list-decimal {
+		margin-top:20px;
+	}
+	.accordion__item.active.wm{
+		.accordion__item_body_image.wm_4 {
+			opacity: 1;
+		}
+	}
+	.accordion__item.wm{
+		position: relative;
+		overflow: hidden;
+		.accordion__item_body_image.wm_4 {
+			z-index: -1;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			transition: opacity .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+		}
+	}
+	.list-decimal {
+		font-size: 24px;
+		li {
+			list-style: decimal-leading-zero;
+			list-style-position: inside;
+			text-indent: -1.7em;
+			margin-left: 1.7em;
+			margin-bottom: 20px;
+		}
+		li:last-child {
+			margin-bottom: 0;
+		}
+	}
+        .problems{
+			&-slider-groups__statics_dots {
+				ul {
+					bottom: 15px;
+				}
+			}
+            &__item{
+                .problems-slider-groups__item{
+                    h3{
+						text-align: left;
+						left: 10px;
+						top: 47%;
+						span {
+    						line-height: 1.9;
+						}
+                    }
+                }
+            }
+        }
+}
+
 .vacancypage {
 	&__content {
 		border-top: 1px solid $color-grey-dark;
