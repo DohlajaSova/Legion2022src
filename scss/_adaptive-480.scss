@@ -43,7 +43,7 @@
             padding-right:20px;
         }
         .editorial-container{
-            padding: 0 20px;
+            padding: 0 20px 40px;
             &__toc{
                 max-width: none;
                 width:calc(100% - 40px);
@@ -55,9 +55,9 @@
         }
 		&.body_news{
 			.news-top{
-				height:318px;
+				min-height:318px;
 				&__image img{
-					height:318px;
+					min-height:318px;
 				}
 			}
 			.news-top__container{
@@ -736,6 +736,16 @@
     }
     .news {
         margin-bottom: 40px;
+        .news-item.txt{
+            border-radius: 30px;
+        }
+        .news-item__img{
+            border-radius: 30px;
+        }
+        &.news_more{
+            margin-top: -30px;
+            margin-bottom: 92px;
+        }
     }
     .main,
     .cases_portfolio{
@@ -919,8 +929,10 @@
 			padding:20px 15px;
 			&-title{
 				font-size:13px;
+                padding-bottom: 0;
 			}
 			&-arrow{
+                display: none;
 				left:15px;
 			}
 		}

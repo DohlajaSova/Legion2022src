@@ -595,7 +595,7 @@
             padding-right:30px;
         }
         .editorial-container{
-            padding: 0 30px;
+            padding: 0 30px 40px;
         }
     }
     .button,
@@ -1309,6 +1309,14 @@
 					flex-shrink:0;
 				}
             }
+        }
+    }
+    .news{
+        .news-item.txt{
+            border-radius: 38px;
+        }
+        .news-item__img{
+            border-radius: 38px;
         }
     }
 }

@@ -581,7 +581,7 @@ function generateEditorialTOC(editorial){
         editorial.innerHTML = sectioned;
     }
     
-    if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '</div><a href="#top" class="back js-top"></a></aside>';
+    if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '<a href="#top" class="back js-top"></a></div></aside>';
 	else toc = '<aside class="editorial-container__toc"></aside>'
 
     let div = document.createElement('div');
@@ -614,7 +614,8 @@ function generateEditorialTOC(editorial){
 		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		let topAdjust = 0;
 		if (wWidth <= 650) topAdjust = 102;
-		if (wWidth > 1024 && document.getElementsByClassName('editorial-container__toc-inner')[0] != undefined) document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
+		if (wWidth > 1024 && document.getElementsByClassName('editorial-container__toc-inner')[0] != undefined)
+            document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('hide');
 	
 		// 0. подсвечиваем активный заголовок
 		// 1. массив заголовков, их топ-координаты относительно скролла
@@ -869,6 +870,35 @@ docReady(function() {
                 1440: {
                     edgePadding: 0,
                     items: 3,
+                    nav: false
+                }
+            },
+            nav: true,
+            navPosition: 'bottom',
+            controls: false,
+            mouseDrag: true,
+            slideBy: 'page'
+        });
+    }
+    
+    // слайдер "еще почитать"
+    if (document.querySelectorAll(".js-more-news").length > 0)
+    {
+        let sliderProjects = tns({
+            container: '.js-more-news .news__items',
+            items: 1.3,
+            gutter: 32,
+            edgePadding: 20,
+            responsive: {
+                550: {
+                    edgePadding: 0,
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1440: {
+                    items: 4,
                     nav: false
                 }
             },

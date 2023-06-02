@@ -40,7 +40,7 @@
                 <div class="news-top__tech_views">123</div>
             </div>
             <h1>
-                Название статьи
+                Работа над ошибками: CJM (Customer Journey Map)
             </h1>
             <div class="news-top__image"><img src="/assets/css/img/temp-news10.jpg" alt=""></div>
             <div class="news-top__leadblock">
@@ -59,6 +59,7 @@
 	<div class="container custom-format js-editorial">
 	    {% block content %} {% endblock %}
 	</div>
+	{% include "partials/towel/news-more.nunjucks" %}
 	<div class="bottom-dummy"></div>
 </div>
 <footer class="footer cleared">

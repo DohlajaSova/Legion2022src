@@ -1,0 +1,30 @@
+<div class="news news_more">
+    <div class="container js-more-news">
+        <h2>Кое-что <br class="mobile480-hide"><em>на почитать</em></h2>
+        <div class="news__items">
+            <a href="https://vk.com/elegion?w=wall-34196694_2040" target="_blank" class="news-item"><div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news6.webp" alt=""></div>
+                <div class="news-item__tag">Легионеры</div>
+                <div class="news-item__head">Я сам не смотрю, <br class="mobile480-hide">но подписался </div>
+                <div class="news-item__lead">Делимся клёвыми телеграм-каналами, которые читают дизайнеры e-legion.</div>
+            </div></a>
+            <a href="https://teletype.in/@e-legion/Z2Defe92WuB" target="_blank" class="news-item txt"><div>
+                <div class="news-item__tag">Обучение</div>
+                <div class="news-item__head">Алгоритм успешного собеседования</div>
+                <div class="news-item__lead">Поделимся советами и проверенными личными лайфхаками о том, как подготовиться к успешному собеседованию.</div>
+            </div></a>
+            <a href="https://habr.com/ru/company/e-legion/blog/588657/" target="_blank" class="news-item"><div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news2.webp" alt=""></div>
+                <div class="news-item__tag">Разработка</div>
+                <div class="news-item__head">Custom view <br class="mobile480-hide">на Compose</div>
+                <div class="news-item__lead">Показываем, как реализовать рыночный график со&nbsp;скроллом на&nbsp;Compose.</div>
+            </div></a>
+            <a href="https://vk.com/elegion?w=wall-34196694_2026" target="_blank" class="news-item"><div>
+                <div class="news-item__img"><img src="/assets/css/img/temp-news9.webp" alt=""></div>
+                <div class="news-item__tag">Мероприятия. Сообщество</div>
+                <div class="news-item__head">Хакатон <br class="mobile480-hide">e-legion Hack</div>
+                <div class="news-item__lead">Рассказываем, как прошёл наш хакатон, и показываем победителей.</div>
+            </div></a>
+        </div>
+    </div>
+</div>
