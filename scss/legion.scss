@@ -6999,6 +6999,19 @@ a.button {
 	width:100%;
 }
 .body_aurora {
+	.top {
+		background: url("img/services_aurora_main.webp") top center no-repeat;
+		background-size: cover;
+		min-height: 544px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		padding-bottom: 70px;
+		margin-top: -152px;
+	}
 	.service__feature_inner-case {
 		margin-left: 0;
 		width:100%;
