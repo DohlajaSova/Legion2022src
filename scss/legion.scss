@@ -1647,7 +1647,7 @@ a.button {
 				margin: 14px 0 0 0;
 				opacity: 0;
 				transition: visibility 0s, opacity 0.25s linear;
-				transition: all .25s linear;
+				transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
 			}
 			&::after {
 				content: "";
@@ -7011,6 +7011,12 @@ a.button {
 		justify-content: flex-end;
 		padding-bottom: 70px;
 		margin-top: -152px;
+		.container {
+			margin: 0;
+			// .h1 {
+			// 	text-align: left;
+			// }
+		}
 	}
 	.service__feature_inner-case {
 		margin-left: 0;
@@ -7051,7 +7057,7 @@ a.button {
 		}
 	}
 	.problems__item_bg5.problems__item_aurora {
-		background: url("img/problems-bg4.svg") bottom right no-repeat #84AEFF;
+		background: url("img/aurora_feature_maskgroup.png") bottom right no-repeat #84AEFF;
 	}
 	.accordion__item_body {
 		p {
@@ -7076,6 +7082,12 @@ a.button {
 	}
 	.accordion__item_body p ~ .list-decimal {
 		margin-top:20px;
+	}
+	.accordion__item_head::before{
+		position: absolute;
+	}
+	.accordion__item.active .accordion__item_head::before{
+		position: relative;
 	}
 	.accordion__item.active.wm{
 		.accordion__item_body_image.wm_4 {
