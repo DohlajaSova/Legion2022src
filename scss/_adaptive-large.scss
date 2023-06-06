@@ -558,6 +558,12 @@
     .client__grid_card-tall__info{
         font-size: 1.55vw;
     }
+    .body_aurora {
+        .service__feature_inner-case__visual_full {
+            grid-template-columns: repeat(1,minmax(100%,300px));
+            grid-template-rows: repeat(1,minmax(auto,300px));   
+        }
+    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -1092,6 +1098,12 @@
             }
         }    
     }
+    .body_aurora {
+        .service__feature_inner-case__visual_full {
+            grid-template-columns: repeat(1,minmax(100%,260px));
+            grid-template-rows: repeat(1,minmax(auto,260px));   
+        }
+    }
 }
 @media only screen and (max-width: 1080px) {
     .header{
@@ -1317,6 +1329,12 @@
         }
         .news-item__img{
             border-radius: 38px;
+        }
+    }
+    .body_aurora {
+        .service__feature_inner-case__visual_full {
+            grid-template-columns: repeat(1,minmax(100%,220px));
+            grid-template-rows: repeat(1,minmax(auto,220px));   
         }
     }
 }
@@ -1671,6 +1689,10 @@
                     }
                 }
             }
+        }
+        .service__feature_inner-case__visual_full {
+            grid-template-columns: repeat(1,minmax(100%,180px));
+            grid-template-rows: repeat(1,minmax(auto,200px));   
         }
     }
     .vacancies{
