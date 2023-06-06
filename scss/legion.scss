@@ -7006,9 +7006,9 @@ a.button {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: end;
-		-ms-flex-pack: end;
-		justify-content: flex-end;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
 		padding-bottom: 70px;
 		margin-top: -152px;
 		.container {
