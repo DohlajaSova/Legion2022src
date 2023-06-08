@@ -6994,10 +6994,6 @@ a.button {
 	}
 }
 
-.body_aurora .service__feature_inner-case {
-	margin-left: 0;
-	width:100%;
-}
 .body_aurora {
 	.top {
 		background: url("img/services_aurora_main.webp") top center no-repeat;
@@ -7012,11 +7008,18 @@ a.button {
 		padding-bottom: 70px;
 		margin-top: -152px;
 		.container {
-			margin: 0;
+			margin: 0 auto;
+			max-width: 1440px;
+			width: 100%;
 			// .h1 {
 			// 	text-align: left;
 			// }
 		}
+	}
+	.service__feature_inner {
+		text-decoration: none;
+		text-decoration-color: none;
+		color: #1E2738;
 	}
 	.service__feature_inner-case {
 		margin-left: 0;

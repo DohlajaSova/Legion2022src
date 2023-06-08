@@ -11,7 +11,7 @@
                 <div class="cases-container_inner">
                     <div class="js-aurora-cases">
                         <div class="some-projects__list">
-                            <div class="service__feature_inner">
+                            <a href="/[[~56]]" class="service__feature_inner">
                                 <div class="service__feature_inner-case">
                                     <div
                                         class="service__feature_inner-case__visual service__feature_inner-case__visual_full">
@@ -23,14 +23,14 @@
                                         <div class="service__feature_inner-case__brief-title">
                                             Обзор российской <br />ОС «Аврора»
                                         </div>
-                                        <a href="/[[~56]]" class="service__feature_inner-case__brief-transition">
+                                        <span class="service__feature_inner-case__brief-transition">
                                             Подробнее →
-                                        </a>
+                                        </span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="service__feature_inner">
+                            <a href="/[[~56]]" class="service__feature_inner">
                                 <div class="service__feature_inner-case">
                                     <div
                                         class="service__feature_inner-case__visual service__feature_inner-case__visual_full">
@@ -42,12 +42,12 @@
                                         <div class="service__feature_inner-case__brief-title">
                                             Заметки&nbsp;Про&nbsp;— приложение на&nbsp;ОС Аврора
                                         </div>
-                                        <a href="/[[~56]]" class="service__feature_inner-case__brief-transition">
+                                        <span class="service__feature_inner-case__brief-transition">
                                             Подробнее →
-                                        </a>
+                                        </span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
