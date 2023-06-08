@@ -4838,10 +4838,6 @@ a.button {
   .service + .feedback.feedback_applicants {
     background-image: none; }
 
-.body_aurora .service__feature_inner-case {
-  margin-left: 0;
-  width: 100%; }
-
 .body_aurora .top {
   background: url("img/services_aurora_main.webp") top center no-repeat;
   background-size: cover;
@@ -4855,7 +4851,13 @@ a.button {
   padding-bottom: 70px;
   margin-top: -152px; }
   .body_aurora .top .container {
-    margin: 0; }
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%; }
+.body_aurora .service__feature_inner {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: #1E2738; }
 .body_aurora .service__feature_inner-case {
   margin-left: 0;
   width: 100%; }
@@ -9286,7 +9288,10 @@ a.button {
     font-size: 18px !important; }
 
   .body_news-ver2 .editorial-container__toc-inner.fixed {
-    max-width: calc(100% - 40px); } }
+    max-width: calc(100% - 40px); }
+
+  .body_aurora .accordion__item_body_image.wm_4 {
+    width: 140px; } }
 @media only screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 40px; }
@@ -9816,7 +9821,9 @@ a.button {
       font-size: 22px; }
     .body_aurora .service__feature_inner-case__brief-transition {
       font-size: 14px;
-      margin-top: 0px; } }
+      margin-top: 0px; }
+  .body_aurora .top h1 {
+    font-size: 48px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
