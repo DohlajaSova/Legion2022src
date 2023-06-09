@@ -582,7 +582,7 @@ function generateEditorialTOC(editorial){
     }
     
     if (toc != ""){
-        toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '<a href="#top" class="back js-top"></a></div><a href="#top" class="back back-mobile js-top"></a></aside>';
+        toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '<a href="javascript:;" onclick="document.location.hash=\'top\';" class="back js-top"></a></div><a href="javascript:;" onclick="document.location.hash=\'top\';" class="back back-mobile js-top"></a></aside>';
     }
 	else toc = '<aside class="editorial-container__toc"></aside>'
 
@@ -650,7 +650,7 @@ function generateEditorialTOC(editorial){
 			if (allHeadings.length) {
 				let activeHeading = -1;
 				for (i=0; i<allHeadings.length; i++){
-					if (bodyScrollTop > (allHeadings[i].offsetTop-wHeight)){
+					if (bodyScrollTop > (allHeadings[i].getBoundingClientRect().top + window.scrollY-wHeight)){
 						activeHeading = i;
 					}
 				}
