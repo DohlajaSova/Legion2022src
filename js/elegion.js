@@ -581,7 +581,9 @@ function generateEditorialTOC(editorial){
         editorial.innerHTML = sectioned;
     }
     
-    if (toc != "") toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '<a href="#top" class="back js-top"></a></div></aside>';
+    if (toc != ""){
+        toc = '<aside class="editorial-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="editorial-container__toc-inner hide">' + toc + '<a href="#top" class="back js-top"></a></div><a href="#top" class="back back-mobile js-top"></a></aside>';
+    }
 	else toc = '<aside class="editorial-container__toc"></aside>'
 
     let div = document.createElement('div');
@@ -636,10 +638,14 @@ function generateEditorialTOC(editorial){
 			let TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
 			stickyTOC.style.height = TOCHeight+68 + "px";
 			//stickyTOC.style.top = Math.min(Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust, editorialHeight-TOCHeight) + "px";
-			if (bodyScrollTop>editorialTop+67)
+			if (bodyScrollTop>editorialTop+67){
 				document.getElementsByClassName('editorial-container__toc-inner')[0].classList.add('fixed');
-			else
+                stickyTOC.classList.add('fixed');
+            }
+			else{
 				document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('fixed');
+                stickyTOC.classList.remove('fixed');
+            }
 			
 			if (allHeadings.length) {
 				let activeHeading = -1;
@@ -664,6 +670,7 @@ function generateEditorialTOC(editorial){
 			}
 		}
 		placeEditorialTOC();
+        window.addEventListener('touch', placeEditorialTOC, true);
 		window.addEventListener('scroll', placeEditorialTOC, true);
 		window.addEventListener('resize', placeEditorialTOC, true);
 	}
@@ -1376,6 +1383,7 @@ docReady(function() {
     // выпадающее оглавление в новостях
     let tocToggler = document.querySelector(".js-sidetoc");
     let tocBody = document.querySelector(".editorial-container__toc-inner");
+    let tocContainer = document.querySelector(".js-toc");
     if (tocToggler != null) {
         tocToggler.addEventListener("click", function(e){
             e.preventDefault();
@@ -1384,7 +1392,11 @@ docReady(function() {
 
             if (tocBody.classList.contains("hide"))
             {
+                //tocBody.classList.add("fixed");
+                //tocContainer.classList.add("fixed");
                 tocBody.classList.remove("hide");
+                let TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
+                document.getElementsByClassName('js-toc')[0].style.height = TOCHeight+68 + "px";
                 let frame = 1;
                 let animation = setInterval(function() { 
                     if (frame > frames) { clearInterval(animation); return; }
@@ -1395,6 +1407,9 @@ docReady(function() {
             else
             {
                 tocBody.classList.add("hide");
+                tocBody.classList.remove("fixed");
+                //tocContainer.classList.remove("fixed");
+                document.getElementsByClassName('js-toc')[0].style.height = 68 + "px";
                 let frame = 3;
                 let animation = setInterval(function() { 
                     if (frame < 1) { clearInterval(animation); return; }

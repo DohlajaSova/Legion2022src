@@ -48,8 +48,9 @@
                 max-width: none;
                 width:calc(100% - 40px);
                 max-height: none;
+                right:20px;
                 &-inner{
-                    width:100%;
+                    //max-width: calc(100% - 40px);
                 }
             }
         }
