@@ -7037,7 +7037,18 @@ a.button {
 	.service__feature_inner-case__visual {
 		background-color: transparent;
 	}
-
+	.problems__item .problems-slider-groups__item h3 {
+		// z-index: 1;
+		cursor: grab;
+	}
+	.problems-slider-groups__statics_dots{
+		padding-top: 0;
+		height: 20px;
+	}
+	// .problems-slider-groups__statics_dots ul {
+		// z-index: 2;
+		// position: relative;
+	// }
 	.problems__item_bg5 {
 		background: #84AEFF;
 		width: 100%;

@@ -159,6 +159,13 @@
             </div>
         </div>
         <div class="service__feature_inner">
+            <a href="/services/service-aurora-page" class="service__feature_inner-wrapper">
+                <div class="icon_arrow service__feature_inner-icon">
+                </div>
+                <div class="service__feature_inner-description">
+                    Подробнее об услуге и этапах работы
+                </div>
+            </a>
             <div class="service__feature_inner-case">
                 <div class="service__feature_inner-case__visual service__feature_inner-case__visual_full">
                     <div class="service__feature_inner-case__visual_full-wrapper">
