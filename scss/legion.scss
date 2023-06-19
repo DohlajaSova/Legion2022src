@@ -8036,12 +8036,16 @@ a.button {
     }
 }
 .body_news-ver2{
+    .back.back-mobile{
+        display: none;
+    }
 	.editorial-container__body{
 		margin-right:2.6%;
 	}
 	.editorial-container__toc-inner{
 		position:static;
 		width:91.2%;
+        min-width: 304px;
 		.back{
 			bottom:-10px;
 		}
