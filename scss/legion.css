@@ -3685,7 +3685,8 @@ a.button {
       min-height: 440px;
       height: 100%;
       width: auto;
-      display: block; }
+      display: block;
+      margin-left: auto; }
   .body_news.body_news-ver2 .news-top__tech {
     color: #1E2738;
     margin-bottom: 40px;
