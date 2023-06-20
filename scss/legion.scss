@@ -5116,6 +5116,8 @@ a.button {
             position: relative;
             min-height: 440px;
             height: auto;
+            display: flex;
+            flex-direction: column;
             &::before{
                 content:"";
                 display: block;
@@ -5127,8 +5129,7 @@ a.button {
                 top:0;
             }
             &__container{
-                //position: relative;
-                z-index: 2;
+                flex-grow: 1;
                 padding: 26px 0 36px;
                 display: flex;
                 flex-direction: column;
