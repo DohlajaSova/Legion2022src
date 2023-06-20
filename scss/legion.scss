@@ -7003,18 +7003,13 @@ a.button {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: start;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
 		padding-bottom: 70px;
 		margin-top: -152px;
+		flex-flow: column nowrap;
 		.container {
 			margin: 0 auto;
 			max-width: 1440px;
 			width: 100%;
-			// .h1 {
-			// 	text-align: left;
-			// }
 		}
 	}
 	.service__feature_inner {

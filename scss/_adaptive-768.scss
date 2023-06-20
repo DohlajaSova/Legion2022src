@@ -843,6 +843,25 @@
         .service__feature_inner-case__visual_full-wrapper{
             border-radius: 41px;
         }
+        .accordion__item .accordion__item_head::after {
+            position: absolute;
+            right: 0;
+        }
+        .accordion__item .accordion__item_head {
+            position: relative;
+            padding-right: 65px;
+        }
+        .accordion__item.active .accordion__item_body {
+            // padding-bottom: 20px;
+            padding-top: 0;
+        }
+        .accordion__item .accordion__item_body p:first-child,
+        .accordion__item .accordion__item_body ol:first-child,
+        .accordion__item .accordion__item_body.accordion__item_body-column div:first-child
+        // .accordion__item_body-pad-top
+        {
+            padding-top: 50px;
+        }
     }
     .body_news.body_news-ver2{
         .news-top__tech{
