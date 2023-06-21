@@ -5102,6 +5102,9 @@ a.button {
             display: none;
         }
     }
+    .paging{
+        display: none;
+    }
 }
 .body_news{
     &.body_news-ver2{
@@ -5204,6 +5207,55 @@ a.button {
                 &_lead{
                     display: none;
                 }
+            }
+        }
+        .footer{
+            background-color: $color-grey-light;
+            a{
+                color:$color-blue-dark;
+            }
+            .social{
+                a{
+                    background-color: $color-blue-dark;
+                    &.social_blog{
+                        background-color:transparent;
+                        color: $color-blue-light;
+                        &:hover{
+                            background-color: $color-blue-light;
+                            color:$color-white;
+                        }
+                    }
+                }
+                &_fb {
+                    background-image: url($img-path + "icon-social-f-w.svg");
+                }
+
+                &_vk {
+                    background-image: url($img-path + "icon-social-vk-w.svg");
+                }
+
+                &_tw {
+                    background-image: url($img-path + "icon-social-tw-w.svg");
+                }
+
+                &_yt {
+                    background-image: url($img-path + "icon-social-yt-w-d.svg");
+                }
+
+                &_in {
+                    background-image: url($img-path + "icon-social-ig-w.svg");
+                }
+
+                &_h {
+                    background-image: url($img-path + "icon-social-h-w.svg");
+                }
+
+                &_vc {
+                    background-image: url($img-path + "icon-social-vc-w.svg");
+                }
+            }
+            &__logo{
+                background-image: url($img-path + "logo.svg");
             }
         }
     }
