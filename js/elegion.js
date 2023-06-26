@@ -588,7 +588,7 @@ function generateEditorialTOC(editorial){
 
     let div = document.createElement('div');
     div.className = 'container editorial-container';
-    if (editorial != '') div.innerHTML = toc+'<div class="custom-format editorial-container__body js-editorial">'+editorial.innerHTML+'</div>';
+    if (editorial != '') div.innerHTML = toc+'<article class="custom-format editorial-container__body js-editorial" itemprop="articleBody">'+editorial.innerHTML+'</article>';
     editorial.before(div);
     document.querySelectorAll('.js-editorial')[1].remove();
 
