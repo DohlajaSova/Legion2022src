@@ -637,10 +637,15 @@ function generateEditorialTOC(editorial){
 			bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 			let TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
 			stickyTOC.style.height = TOCHeight+68 + "px";
-			//stickyTOC.style.top = Math.min(Math.max(bodyScrollTop,editorialTop-20)-editorialTop+20+topAdjust, editorialHeight-TOCHeight) + "px";
 			if (bodyScrollTop>editorialTop+67){
 				document.getElementsByClassName('editorial-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
+                if (wWidth > 1024 && document.getElementsByClassName('editorial-container')[0] != undefined){
+                    if (bodyScrollTop > editorialTop+document.getElementsByClassName('editorial-container')[0].getBoundingClientRect().height-document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height-79)
+                        document.getElementsByClassName('editorial-container')[0].classList.add('floored');
+                    else
+                        document.getElementsByClassName('editorial-container')[0].classList.remove('floored');
+                }
             }
 			else{
 				document.getElementsByClassName('editorial-container__toc-inner')[0].classList.remove('fixed');

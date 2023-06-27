@@ -5142,6 +5142,17 @@ a.button {
 }
 .body_news{
     &.body_news-ver2{
+        .editorial-container{
+            &.floored{
+                align-items: flex-end;
+                .editorial-container__toc-inner{
+                    &.fixed{
+                        position: relative;
+                        top: -20px;
+                    }
+                }
+            }
+        }
         .top{
             .breadcrumbs{
                 margin-bottom:20px;
