@@ -7040,16 +7040,11 @@ a.button {
 		padding-top: 0;
 		height: 20px;
 	}
-	// .problems-slider-groups__statics_dots ul {
-		// z-index: 2;
-		// position: relative;
-	// }
 	.problems__item_bg5 {
 		background: #84AEFF;
 		width: 100%;
 		margin-bottom: 0;
 		padding-bottom: 0;
-		// padding-bottom: 33%;
 		height: 180px;
 		overflow: hidden;
 		.problems-slider-groups__item_image {
@@ -7076,6 +7071,7 @@ a.button {
 		transition: max-height 0.7s, padding-bottom 0.7s, padding-top .7s;
 	}
 	.accordion__item.active .accordion__item_body {
+		clear: both;
 		padding-top: 20px;
 		padding-bottom: 0;
 	}
@@ -7149,6 +7145,17 @@ a.button {
         }
 }
 
+.body_service .top_breadcrumbs {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column nowrap;
+	.container {
+		margin: 0 auto;
+		max-width: 1440px;
+		width: 100%;
+	}
+}
 .vacancypage {
 	&__content {
 		border-top: 1px solid $color-grey-dark;
