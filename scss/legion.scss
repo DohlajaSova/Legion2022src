@@ -4735,9 +4735,24 @@ a.button {
 		&__img {
 			border-radius: $border-radius;
 			overflow: hidden;
+            width:100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+            & > div{
+                position: absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
 			img {
 				display: block;
-				width: 100%;
+				width: auto;
+                height: 100%;
 			}
 		}
 
@@ -4806,10 +4821,29 @@ a.button {
                 }
 			}
 			&-image{
-                width:100%;
-				height:auto;
+                width:auto;
+				height:100%;
 				border-radius: inherit;
 				margin-bottom: 20px;
+                &-container{
+                    display: block;
+                    height: 0;
+                    width: 100%;
+                    padding-bottom: 100%;
+                    margin-bottom: 26px;
+                    position: relative;
+                    overflow: hidden;
+                    & > div{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                }
 			}
 			&-tags{
 				margin-bottom: 10px;
@@ -4953,6 +4987,9 @@ a.button {
                 flex-direction: column;
                 align-items:flex-start;
                 &-avatar{
+                    &:empty{
+                        display: none;
+                    }
                     img{
                         width:80px;
                         height: 80px;
@@ -5099,9 +5136,23 @@ a.button {
             display: none;
         }
     }
+    .paging{
+        display: none;
+    }
 }
 .body_news{
     &.body_news-ver2{
+        .editorial-container{
+            &.floored{
+                align-items: flex-end;
+                .editorial-container__toc-inner{
+                    &.fixed{
+                        position: relative;
+                        top: -20px;
+                    }
+                }
+            }
+        }
         .top{
             .breadcrumbs{
                 margin-bottom:20px;
@@ -5116,6 +5167,8 @@ a.button {
             position: relative;
             min-height: 440px;
             height: auto;
+            display: flex;
+            flex-direction: column;
             &::before{
                 content:"";
                 display: block;
@@ -5127,13 +5180,13 @@ a.button {
                 top:0;
             }
             &__container{
-                //position: relative;
-                z-index: 2;
+                flex-grow: 1;
                 padding: 26px 0 36px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 height: 100%;
+                width:100%;
                 .h1, h1{
                     font-size: 74px;
                     z-index: 1;
@@ -5149,7 +5202,7 @@ a.button {
                 margin-bottom: 0;
                 &::before{
                     content:"";
-                    display: block;
+                    display: none;
                     width:100%;
                     height:100%;
                     position:absolute;
@@ -5159,9 +5212,11 @@ a.button {
                 }
                 img{
                     min-height: 440px;
+                    max-width: 602px;
                     height: 100%;
                     width: auto;
                     display: block;
+                    margin-left: auto;
                 }
             }
             &__tech{
@@ -5197,6 +5252,55 @@ a.button {
                 &_lead{
                     display: none;
                 }
+            }
+        }
+        .footer{
+            background-color: $color-grey-light;
+            a{
+                color:$color-blue-dark;
+            }
+            .social{
+                a{
+                    background-color: $color-blue-dark;
+                    &.social_blog{
+                        background-color:transparent;
+                        color: $color-blue-light;
+                        &:hover{
+                            background-color: $color-blue-light;
+                            color:$color-white;
+                        }
+                    }
+                }
+                &_fb {
+                    background-image: url($img-path + "icon-social-f-w.svg");
+                }
+
+                &_vk {
+                    background-image: url($img-path + "icon-social-vk-w.svg");
+                }
+
+                &_tw {
+                    background-image: url($img-path + "icon-social-tw-w.svg");
+                }
+
+                &_yt {
+                    background-image: url($img-path + "icon-social-yt-w-d.svg");
+                }
+
+                &_in {
+                    background-image: url($img-path + "icon-social-ig-w.svg");
+                }
+
+                &_h {
+                    background-image: url($img-path + "icon-social-h-w.svg");
+                }
+
+                &_vc {
+                    background-image: url($img-path + "icon-social-vc-w.svg");
+                }
+            }
+            &__logo{
+                background-image: url($img-path + "logo.svg");
             }
         }
     }

@@ -2480,6 +2480,10 @@
                 &_card-tags{
                     font-size: 16px;
                 }
+				&_card-image{
+					height:100%;
+					max-height:none;
+				}
             }
         }
     }

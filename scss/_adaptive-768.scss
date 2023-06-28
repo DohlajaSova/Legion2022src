@@ -2918,6 +2918,9 @@
             }
         }
     }
+	.body_news-ver2 .news .news-item__img img{
+		height:100%;
+	}
     .body_news-ver2 .editorial-container__toc-inner.fixed{
         max-width: calc(100% - 60px);
     }
