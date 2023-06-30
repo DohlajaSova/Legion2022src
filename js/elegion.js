@@ -564,6 +564,13 @@ function getParamsByUrl(url = null){
     return urlParams
 }
 
+function copyURI(evt) {
+    evt.preventDefault();
+    navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+      console.log('copied'+evt.target.getAttribute('href'))
+    });
+}
+
 function generateEditorialTOC(editorial){
     let toc='';
     const headings = editorial.querySelectorAll('h2');
@@ -586,9 +593,14 @@ function generateEditorialTOC(editorial){
     }
 	else toc = '<aside class="editorial-container__toc"></aside>'
 
+	// добавляем шаринг к футер статьи
+	let shareblock =  document.createElement('div');
+	shareblock.className = 'editorial-container__body-share';
+	shareblock.innerHTML = '<a href="'+window.location.href+'" onclick="copyURI(event)">Скопировать ссылку</a>';
+	
     let div = document.createElement('div');
     div.className = 'container editorial-container';
-    if (editorial != '') div.innerHTML = toc+'<article class="custom-format editorial-container__body js-editorial" itemprop="articleBody">'+editorial.innerHTML+'</article>';
+    if (editorial != '') div.innerHTML = toc+'<article class="custom-format editorial-container__body js-editorial" itemprop="articleBody">'+editorial.innerHTML+shareblock.innerHTML+'</article>';
     editorial.before(div);
     document.querySelectorAll('.js-editorial')[1].remove();
 
