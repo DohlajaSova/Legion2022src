@@ -2774,6 +2774,14 @@
         .projects h1{
             margin-bottom: 0;
         }
+		.news__grid_card-image{
+			width:100%;
+			height:auto;
+			margin-bottom:0;
+		}
+		.news__grid_card-image-container{
+			padding-bottom:50%;
+		}
         .news__grid_card-complex{
             grid-row: 3 / 4;
         }
