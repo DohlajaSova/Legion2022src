@@ -567,8 +567,17 @@ function getParamsByUrl(url = null){
 function copyURI(evt) {
     evt.preventDefault();
     navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
-      console.log('copied'+evt.target.getAttribute('href'))
     });
+}
+
+function telegramForwardButton($url, $text = '') {
+  let share_url = 'https://t.me/share/url?url='+encodeURIComponent($url)+'&text='+encodeURIComponent($text);
+  return share_url;
+}
+
+function vkForwardButton($url) {
+  let share_url = encodeURIComponent($url);
+  return share_url;
 }
 
 function generateEditorialTOC(editorial){
@@ -594,13 +603,15 @@ function generateEditorialTOC(editorial){
 	else toc = '<aside class="editorial-container__toc"></aside>'
 
 	// добавляем шаринг к футер статьи
-	let shareblock =  document.createElement('div');
-	shareblock.className = 'editorial-container__body-share';
-	shareblock.innerHTML = '<a href="'+window.location.href+'" onclick="copyURI(event)">Скопировать ссылку</a>';
+    let shareblock = '<div class="social social-editorial">';
+	shareblock += '<a href="https://vk.com/share.php?url='+vkForwardButton(window.location.href)+'" class="button button_grey button_small social_vk" target="_blank"></a>';
+    shareblock += '<a href="'+telegramForwardButton(window.location.href)+'" class="button button_grey button_small social_t" target="_blank"></a>';
+	shareblock += '<a href="'+window.location.href+'" onclick="copyURI(event)" class="button button_grey button_small social_text">Скопировать ссылку</a>';
+    shareblock += '</div>';
 	
     let div = document.createElement('div');
     div.className = 'container editorial-container';
-    if (editorial != '') div.innerHTML = toc+'<article class="custom-format editorial-container__body js-editorial" itemprop="articleBody">'+editorial.innerHTML+shareblock.innerHTML+'</article>';
+    if (editorial != '') div.innerHTML = toc+'<article class="custom-format editorial-container__body js-editorial" itemprop="articleBody">'+editorial.innerHTML+shareblock+'</article>';
     editorial.before(div);
     document.querySelectorAll('.js-editorial')[1].remove();
 

@@ -392,7 +392,7 @@ a.button {
 	}
 
 	&.button_grey {
-		background: $color-grey-light;
+		background-color: $color-grey-light;
 		border-color: $color-grey-light;
 		color: $color-blue-dark;
 	}
@@ -401,6 +401,9 @@ a.button {
 		border-color: $color-grey-dark;
 		color: $color-grey-dark;
 	}
+    &.button_small{
+        padding:10px 12px;
+    }
 }
 
 .custom-format {
@@ -1124,6 +1127,26 @@ a.button {
             background-image: url($img-path + "icon-social-vc-w.svg");
         }
 	}
+	&_t {
+		background-image: url($img-path + "icon-social-t.svg");
+        &:hover{
+            background-image: url($img-path + "icon-social-t-w.svg");
+        }
+	}
+    &-editorial{
+        display: flex;
+        margin-top:60px;
+        a:hover{
+            background-color:$color-blue-dark;
+            border-color:$color-blue-dark;
+            color:$color-white;
+        }
+        a.social_text{
+            width: auto;
+            border-radius: 40px;
+            line-height: 19px;
+        }
+    }
 }
 
 .circle {

@@ -1113,7 +1113,8 @@
             grid-template-rows: repeat(1,minmax(auto,260px));   
         }
     }
-    .body_news.body_news-ver2{
+    .body_news.body_news-ver2
+    .body_blog{
 		.feedback_subscribe{
 			.button,
 			a.button,
@@ -2498,6 +2499,9 @@
 				}
             }
         }
+		.select-inline .select-hide div{
+			font-size:16px;
+		}
     }
     .custom-format{
         h2{
