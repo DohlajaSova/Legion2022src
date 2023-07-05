@@ -2642,6 +2642,15 @@
                 background-size:auto 45%;
             }
         }
+        &-editorial{
+            a{
+                width:40px;
+                height:40px;
+                &.social_text{
+                    width: auto;
+                }
+            }
+        }
     }
     .service {
         &__section {

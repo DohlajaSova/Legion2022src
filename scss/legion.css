@@ -9256,6 +9256,11 @@ a.button {
     margin-bottom: 13px; }
     .social a.social_tw, .social a.social_in {
       background-size: auto 45%; }
+  .social-editorial a {
+    width: 40px;
+    height: 40px; }
+    .social-editorial a.social_text {
+      width: auto; }
 
   .service__section {
     margin: 0 0 40px; }
