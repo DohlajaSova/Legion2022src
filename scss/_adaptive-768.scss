@@ -1905,12 +1905,13 @@
                 height:100%;
                 width:calc(200% + 20px);
                 .cases-slider{
+                    border-radius: 30px;
                     &__item{
                         flex-direction:row;
                         &_nomination{
                             width:50%;
-                            padding-left:23px;
-                            padding-right:23px;
+                            padding: 20px 16px 20px 20px;
+                            border-radius: 30px;
                             .h2{
                                 font-size:46px;
                             }
@@ -1928,7 +1929,7 @@
                     &__statics{
                         height:100%;
                         &_dots{
-                            top:calc(100% - 47px);
+                            top:calc(100% - 30px);
                             width:50%;
                         }
                         &_title{
@@ -2449,8 +2450,10 @@
                 padding: 30px 30px 0!important;
             }
             &__img{
+                padding-bottom: 50%;
                 img {
                     height: 250px;
+                    width:100%;
                     object-fit: cover;
                 }
             }
