@@ -1113,6 +1113,16 @@
             grid-template-rows: repeat(1,minmax(auto,260px));   
         }
     }
+    .body_news.body_news-ver2
+    .body_blog{
+		.feedback_subscribe{
+			.button,
+			a.button,
+			a.button:visited{
+				font-size:16px;
+			}
+		}
+    }
 }
 @media only screen and (max-width: 1080px) {
     .header{
@@ -2465,6 +2475,9 @@
                 }
             }
         }
+		.select-inline .select-hide div{
+			font-size:16px;
+		}
     }
     .body_blog{
         .news{
@@ -2486,6 +2499,9 @@
 				}
             }
         }
+		.select-inline .select-hide div{
+			font-size:16px;
+		}
     }
     .custom-format{
         h2{

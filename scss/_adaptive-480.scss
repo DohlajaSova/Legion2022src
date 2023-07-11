@@ -112,6 +112,13 @@
             }
         }
     }
+    .main{
+        .cases{
+            &__case{
+                min-height: 0 !important;
+            }
+        }
+    }
     .project.project_wide-client {
         height: 180px;
     }
@@ -969,6 +976,22 @@
 			}
 		}
 	}
+    .cases{
+        &__case{
+            &_double{
+                .cases-slider__item_nomination{
+                    padding:15px 11px 15px 15px;
+                    .h2{
+                        font-size: 42px;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1104,4 +1127,17 @@
             transform: scale(.5);
         }
     }
+    .main{
+        .cases{
+            &__case{
+                min-height: 150px !important;
+                &_double{
+                    .cases-slider__item_nomination{
+                        padding: 15px 10px;
+                    }
+                }
+            }
+        }
+    }
+
 }
