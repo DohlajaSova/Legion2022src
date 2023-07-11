@@ -795,7 +795,7 @@
             padding-top: 40px;
         }
     }
-    .body_aurora {
+    .body_aurora, .body_astralinux {
         .service__feature_inner-case__brief {
             padding: 20px 20px 30px 25px;
             height: 190px;
@@ -810,6 +810,13 @@
                 margin-top: 0px;
             }
         }
+        .top {
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+    .body_astralinux {
         .top {
             h1 {
                 font-size: 48px;

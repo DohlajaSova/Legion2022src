@@ -7098,7 +7098,7 @@ a.button {
 	}
 }
 
-.body_aurora {
+.body_aurora, .body_astralinux {
 	.top {
 		background: url("img/services_aurora_main.webp") top center no-repeat;
 		background-size: cover;
@@ -7258,6 +7258,12 @@ a.button {
 		margin: 0 auto;
 		max-width: 1440px;
 		width: 100%;
+	}
+}
+
+.body_astralinux {
+	.top {
+		background: url("img/services_aurora_astralinux.webp") top center no-repeat;
 	}
 }
 .vacancypage {
