@@ -1370,6 +1370,12 @@
             border-radius: 38px;
         }
     }
+	.service{
+		&__section_img,
+		&__section_info{
+			padding-bottom: 50%;
+		}
+	}
     .body_aurora {
         .service__feature_inner-case__visual_full {
             grid-template-columns: repeat(1,minmax(100%,220px));
