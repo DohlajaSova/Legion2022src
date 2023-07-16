@@ -1,0 +1,110 @@
+<div class="top top-aurora">
+    <div class="container">
+        <h1 class="h1">
+            Разработка<br/>под Astra Linux
+        </h1>
+    </div>
+</div>
+
+<div class="service-descr">
+    <div class="container">
+        <div class="principles">
+            <div class="container">
+                <div class="principles__content">
+                    <p>
+                        Мы создаём программное обеспечение, адаптированное под&nbsp;Astra Linux — мощную операционную систему, 
+                        разработанную специально для&nbsp;обеспечения надёжности и&nbsp;безопасности.
+                    </p>
+                    <p>
+                        Astra Linux предоставляет уникальные возможности для&nbsp;разработчиков, 
+                        и&nbsp;мы можем помочь вам извлечь максимум из&nbsp;этой платформы. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="astralinux-tezis">
+            <div class="content-card">
+                <img class="content-card-image" src="/assets/css/img/astralinux-card1.svg" alt="">
+                <h4 class="content-card-title">Полный цикл</h4>
+                <p class="content-card-text">Берём на&nbsp;себя ответственность за&nbsp;весь жизненный цикл разработки под&nbsp;Astra Linux,
+                    начиная с&nbsp;анализа требований и&nbsp;заканчивая тестированием и&nbsp;поддержкой после внедрения.
+                </p>
+            </div>
+            <div class="content-card">
+                <img class="content-card-image" src="/assets/css/img/astralinux-card2.svg" alt="">
+                <h4 class="content-card-title">Гарантия результата</h4>
+                <p class="content-card-text">стараемся полностью закрыть потребности наших клиентов и&nbsp;гарантируем высокое качество 
+                    и&nbsp;результативность работы.
+                </p>
+            </div>
+        </div>
+
+        <a href="" class="button button_default js-popup-feedback-open">Обсудить проект</a>
+        
+        <hr class="line-breaker"/>
+        
+        <div class="astralinux-benefits">
+            <h3 class="h3">Преимущества системы Astra Linux</h3>
+            <div class="astralinux-benefits-content-wrapper">
+                <div class="content-card">
+                    <h4 class="content-card-title">Надежность</h4>
+                    <div class="content-card-text">
+                        <p>
+                            Astra Linux известна своей высокой степенью надёжности и&nbsp;стабильности. 
+                            Она разработана с&nbsp;учётом потребностей критически важных систем, где&nbsp;отказы и&nbsp;сбои неприемлемы.
+                        </p>
+                        <p>
+                            Ваше программное обеспечение будет работать стабильно и&nbsp;надёжно под&nbsp;управлением Astra Linux.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h4 class="content-card-title">Совместимость</h4>
+                    <div class="content-card-text">
+                        <p>
+                            Astra Linux полностью совместима с&nbsp;открытыми стандартами, что&nbsp;обеспечивает гладкую интеграцию
+                            с&nbsp;существующими программными продуктами и&nbsp;системами. 
+                        </p>
+                        <p>
+                            Вы сможете свободно использовать широкий спектр инструментов и&nbsp;ресурсов, доступных в&nbsp;сообществе разработчиков,
+                            что&nbsp;значительно упрощает процесс разработки и&nbsp;поддержки.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <br class="line-breaker"/>
+            
+            <img class="content-card-image" src="/assets/css/img/service-astralinux-feature1.svg" alt="">
+            <img src="/service-astralinux-feature1" alt="">
+            <div class="astralinux-benefits-content-wrapper">
+                <div class="content-card">
+                    <h4 class="content-card-title">Безопасность</h4>
+                    <div class="content-card-text">
+                        <p>
+                            Astra Linux является одной из&nbsp;самых безопасных операционных систем. Она предоставляет мощные механизмы защиты данных и&nbsp;приложений, что&nbsp;делает её&nbsp;идеальным выбором для&nbsp;проектов, требующих высокий уровень безопасности. 
+                        </p>
+                        <p>
+                            ОС Астра Линукс соответствует требованиям российских законодательных актов o&nbsp;защите информации, что&nbsp;дополнительно подчёркивает её&nbsp;надёжность.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h4 class="content-card-title">Поддержка криптографии</h4>
+                    <div class="content-card-text">
+                        <p>
+                            OS Astra Linux предоставляет встроенную поддержку криптографии, что&nbsp;делает её&nbsp;идеальным выбором для&nbsp;разработки систем, требующих шифрования данных и&nbsp;обеспечения конфиденциальности. 
+                        </p>
+                        <p>
+                            Вы сможете эффективно использовать криптографические алгоритмы и&nbsp;протоколы для&nbsp;защиты информации и&nbsp;гарантии безопасности вашего программного обеспечения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="line-breaker"/>
+
+
+    </div>
+</div>
