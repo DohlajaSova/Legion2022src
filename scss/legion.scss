@@ -2296,6 +2296,7 @@ a.button {
 				img {
 					height: 100%;
 					float: right;
+					border-radius:70px 42px 42px 70px;
 				}
 			}
 
@@ -3576,7 +3577,7 @@ a.button {
 		}
 
 		&_bg2 {
-			background: url($img-path + "problems-bg2.svg") bottom right no-repeat $color-blue;
+			background: url($img-path + "problems-bg2.svg") bottom right -10px no-repeat $color-blue;
 
 			h3 {
 				color: $color-white;
@@ -6715,7 +6716,7 @@ a.button {
 	flex-direction: column;
 	background-color: $color-blue-dark;
 	height: 100%;
-	border-radius: 42px;
+	border-radius: 70px 70px 42px 42px;
 
 	&__history {
 		display: inline-block;
@@ -6825,7 +6826,7 @@ a.button {
 			overflow: hidden;
 			position: relative;
 			height: 0;
-			padding-bottom: 50%;
+			padding-bottom: 40%;
 
 			img {
 				display: block;
@@ -6844,7 +6845,7 @@ a.button {
 			overflow: hidden;
 			width: 50%;
 			height: 0;
-			padding-bottom: 50%;
+			padding-bottom: 40%;
 			position: relative;
 
 			&-inner {
@@ -6983,6 +6984,7 @@ a.button {
 						grid-template-columns: 1fr;
 						grid-template-rows: 1fr;
 						padding: 0;
+						background-color:transparent;
 						&-wrapper{
 							width: 100%;
 							border-radius: inherit;

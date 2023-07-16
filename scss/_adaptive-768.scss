@@ -1362,6 +1362,9 @@
         padding-bottom:100px;
     }
     .service {
+		&__header{
+			font-size:55px;
+		}
         &__section {
             &_info {
                 &-icon {
@@ -1754,12 +1757,20 @@
             }
         }
     }
-    .body_about .header.header_sticky{
-        background:$color-blue-dark;
-    }
-    .body_about .top {
-        min-height: 568px;
-    }
+    .body_about{
+		.header.header_sticky{
+			background:$color-blue-dark;
+		}
+		.top {
+			min-height: 568px;
+		}
+		.to-work{
+			margin-bottom:0;
+		}
+		.projects.some-projects{
+			margin-bottom:40px;
+		}
+	}
     .body_service{
         .header{
             &.header_scrolled{
@@ -1866,9 +1877,14 @@
         }
         &-slider{
             &__item{
-                &_nomination{
-                    border-radius:30px;
-                }
+				&.active{
+					.cases-slider__item_nomination{
+						border-radius:30px;
+					}
+				}
+				&_project-photo img{
+					border-radius:70px 30px 30px 70px;
+				}
             }
         }
         &__case{
@@ -1911,7 +1927,6 @@
                         &_nomination{
                             width:50%;
                             padding: 20px 16px 20px 20px;
-                            border-radius: 30px;
                             .h2{
                                 font-size:46px;
                             }
@@ -2695,6 +2710,7 @@
         margin-top: 130px;
     }
     .years{
+		border-radius:70px 70px 30px 30px;
         &__item{
             font-size: 14px !important; 
             text-align: center;
@@ -2703,6 +2719,9 @@
             padding-bottom: 0;
             padding: 30px 13px 0;
         }
+		&__container{
+			border-radius:30px;
+		}
         &__year{
             font-size:70px;
             padding:30px 0;
