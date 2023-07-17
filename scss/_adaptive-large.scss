@@ -1487,6 +1487,22 @@
             }
         }
     }
+    
+    .feedback {
+        
+	&.feedback_astralinux {
+		.content-container {
+			.info {
+				width: 70%;
+			}
+		}
+		&.feedback_compact {
+			.feedback__button {
+				width: 30%;
+			}
+		}
+	}
+    }
 }
 
 @media only screen and (max-width: $screen-md) {

@@ -4733,8 +4733,8 @@ a.button {
 			.info {
 				display: flex;
 				flex-flow: column nowrap;
-				max-width: 60%;
 				gap: 40px;
+				width: 50%;
 			}
 			p {
 				font-size: 24px;
@@ -4747,6 +4747,7 @@ a.button {
 
 		&.feedback_compact {
 			.feedback__button {
+				width: 50%;
 				.pulse-button {
 					background-color: #1A60FF;
 					&:before {
@@ -7367,6 +7368,12 @@ a.button {
 		font-size: 46px;
 	}
 	.some-projects {
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-top: 0!important;
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 20px;
 		.container {
 			display: flex;
 			flex-flow: row nowrap;
