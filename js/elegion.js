@@ -1687,7 +1687,7 @@ docReady(function() {
           divCreated = document.createElement("DIV");
           divCreated.setAttribute("class", "select-selected");
           divCreated.innerHTML = selectsByTag?.options[selectsByTag.selectedIndex]?.innerHTML;
-          
+
           //divCreated.innerHTML = Array.prototype.slice.call(selectsByTag.selectedOptions);
           selectsByClass[i].appendChild(divCreated);
           /* For each element, create a new DIV that will contain the option list: */
@@ -1830,7 +1830,7 @@ docReady(function() {
         }
 
     }
-    
+
     // блок с фото сотрудников
     if (document.querySelectorAll(".js-team-container").length > 0)
     {
@@ -1899,7 +1899,7 @@ docReady(function() {
             });
         }
     }
-    
+
     if (document.querySelectorAll(".js-aurora-cases").length > 0)
     {
         if(document.querySelector('.some-projects__list')){

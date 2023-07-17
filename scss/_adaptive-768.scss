@@ -1071,6 +1071,9 @@
                 margin-bottom: 0;
             }
         }
+
+        
+
     }
     .pmenu{
         &__menu{
@@ -1686,6 +1689,35 @@
             }
         }
     }
+    
+    .feedback {
+        &.feedback_astralinux {
+            .content-container {
+                flex-flow: column nowrap;
+                .info {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    max-width: unset;
+                    gap: 40px;
+                    h2 {
+                        font-size: 36px;
+                        width: 100%!important;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &.feedback_compact {
+                height: unset;
+                .feedback__button {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1703,6 +1735,9 @@
     }
     .breadcrumbs li::after{
         top:1px;
+    }
+    .line-breaker {
+        margin: 40px 0;
     }
     .top{
         margin-bottom:28px;
@@ -2968,4 +3003,98 @@
             width: 140px;
         }
     }
+    .body_astralinux {
+        .container {
+            margin-bottom: 40px;
+        }
+        .content-card {
+            &-title {
+                font-size: 18px;
+            }
+            &-text {
+                font-size: 16px;
+            }
+        }
+        h3 {
+            font-size: 28px;
+        }
+    }
+    
+    .astralinux {
+        $border-radius-card: 20px;
+        $padding-card: 20px;
+        
+        &-tezis {
+            .content-card {
+                gap: 10px;
+                padding: $padding-card;
+                border-radius: $border-radius-card;
+                min-height: 187px;
+            }
+        }
+        &-benefits {
+            h3 {
+                margin-bottom: 40px;
+            }
+            &-content {
+                &-wrapper {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 40px;
+                }
+            }
+            .content-card-image {
+                width: 100%;
+                margin: 40px 0;
+            }
+        }
+
+        &-container {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 40px;
+            p {
+                font-size: 16px;
+            }
+            .content-container {
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 20px;
+                .content-card {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 10px;
+                    padding: $padding-card;
+                    min-height: 235px;
+                    width: 100%;
+                }
+                &.grid-2-2 {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 40px;
+                    .content-card {
+                        gap: 20px;
+                    }
+                }
+            }
+            &-interactive {
+                .content-container {
+                    .content-card {
+                        border-radius: $border-radius-card;
+                    }
+                }
+            }
+        }
+        &-client {
+            gap: 40px;
+            .content-container {
+                gap: 20px;
+                .content-card {
+                    padding: $padding-card;
+                    border-radius: $border-radius-card;
+                }
+            }
+        }
+    }
+
 }
