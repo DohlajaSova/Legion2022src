@@ -1406,7 +1406,7 @@
                     margin-bottom: 0;
                 }
                 p {
-                    font-size: 24px;
+                    font-size: 20px;
                 }
             }
         }
@@ -1489,19 +1489,18 @@
     }
     
     .feedback {
-        
-	&.feedback_astralinux {
-		.content-container {
-			.info {
-				width: 70%;
-			}
-		}
-		&.feedback_compact {
-			.feedback__button {
-				width: 30%;
-			}
-		}
-	}
+        &.feedback_astralinux {
+            .content-container {
+                .info {
+                    width: 70%;
+                }
+            }
+            &.feedback_compact {
+                .feedback__button {
+                    width: 30%;
+                }
+            }
+        }
     }
 }
 
