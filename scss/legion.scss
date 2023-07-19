@@ -7525,6 +7525,32 @@ a.button {
 							transition: fill .25s linear;
 						}
 					}
+					&-title {
+						position: relative;
+						&-primary {
+							position: absolute;
+							transition: opacity .6s;
+						}
+						&-secondary {
+							position: absolute;
+							opacity: 0;
+							transition: opacity .6s;
+						}
+					}
+					&-text {
+						position: relative;
+						&-primary {
+							position: absolute;
+							transition: opacity .6s;
+							top: 2em;
+						}
+						&-secondary {
+							position: absolute;
+							opacity: 0;
+							transition: opacity .6s;
+							top: 2em;
+						}
+					}
 					&:hover {
 						color: $color-white;
 						background-color: $color-blue-light;
@@ -7532,6 +7558,22 @@ a.button {
 						svg {
 							path {
 								fill: #fff;
+							}
+						}
+						.content-card-title {
+							&-primary {
+								opacity: 0;
+							}
+							&-secondary {
+								opacity: 1;
+							}
+						}
+						.content-card-text {
+							&-primary {
+								opacity: 0;
+							}
+							&-secondary {
+								opacity: 1;
 							}
 						}
 					}
