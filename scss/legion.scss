@@ -7529,25 +7529,25 @@ a.button {
 						position: relative;
 						&-primary {
 							position: absolute;
-							transition: opacity .6s;
+							transition: opacity .25s;
 						}
 						&-secondary {
 							position: absolute;
 							opacity: 0;
-							transition: opacity .6s;
+							transition: opacity .25s;
 						}
 					}
 					&-text {
 						position: relative;
 						&-primary {
 							position: absolute;
-							transition: opacity .6s;
+							transition: opacity .25s;
 							top: 2em;
 						}
 						&-secondary {
 							position: absolute;
 							opacity: 0;
-							transition: opacity .6s;
+							transition: opacity .25s;
 							top: 2em;
 						}
 					}
