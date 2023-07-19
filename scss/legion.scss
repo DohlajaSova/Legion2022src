@@ -7342,6 +7342,42 @@ a.button {
 }
 
 .body_astralinux {
+
+
+	
+	.header {
+		background-color: transparent;
+
+		&__logo {
+			background: url($img-path + "logo.svg") 0 0 no-repeat;
+			background-size: contain;
+		}
+		
+		&__hmenu {
+			background: url($img-path + "icon-menu1.svg") 0 0 no-repeat;
+			background-size: contain;
+		}
+		&__mmenu {
+			&>a {
+				color: $color-blue-dark;
+
+				&.header__mmenu_lang {
+					color: $color-blue-dark;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.top {
+		.h1 {
+			color: $color-blue-dark;
+			width: 100%;
+		}
+	}
+
+
+
 	.top {
 		background: url("img/services_astralinux_main.png") top center no-repeat;
 		background-size: cover;
@@ -7408,6 +7444,23 @@ a.button {
 			border-radius: 30px;
 			color: #fff;
 			justify-content: flex-end;
+			position: relative;
+			&-image {
+				position: absolute;
+				top: 20px;
+				right: 28px;
+			}
+			&:first-child {
+				.content-card-image {
+					top: 0px;
+					right: 37px;
+				}
+			}
+			// &:last-child {
+			// 	.content-card-image {
+			// 		// transform: rotate(-13.05deg);	
+			// 	}
+			// }
 		}
 	}
 	&-benefits {

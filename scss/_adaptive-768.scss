@@ -3056,6 +3056,19 @@
                 padding: $padding-card;
                 border-radius: $border-radius-card;
                 min-height: 187px;
+                &-image {
+                    transform: scale(.63);
+                }
+                &:first-child {
+                    .content-card-image {
+                        top: -34px;
+                    }
+                }
+                &:last-child {
+                    .content-card-image {
+                        top: -24px;
+                    }
+                }
             }
         }
         &-benefits {
