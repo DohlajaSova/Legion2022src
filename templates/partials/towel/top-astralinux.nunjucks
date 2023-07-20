@@ -278,52 +278,52 @@
 
     <div class="astralinux-client">
         <h3 class="h3">Взаимодействие с клиентом</h3>
-        <p>
+        <p class="content-card-text">
             Мы&nbsp;выступаем за&nbsp;открытое и&nbsp;прозрачное взаимодействие с&nbsp;клиентом.
             Регулярное общение, обратная связь и&nbsp;совместное принятие решений помогут обеспечить успех проекта.
             Взаимодействие между нами и&nbsp;клиентом всегда индивидуально, но&nbsp;есть общие этапы.
         </p>
         <div class="content-container">
             <div class="content-card">
-                <h4 class="content-title">
+                <h4 class="content-card-title">
                     01&nbsp;&nbsp;Сбор требований и анализ
                 </h4>
-                <p class="content-text">
+                <p class="content-card-text">
                     Вместе определяем требования к&nbsp;проекту. Клиент ставит перед нами бизнес-задачу,
                     мы&nbsp;анализируем её&nbsp;и&nbsp;предлагаем лучшее решение.
                 </p>
             </div>
             <div class="content-card transition-2">
-                <h4 class="content-title">
+                <h4 class="content-card-title">
                     02&nbsp;&nbsp;Планирование и согласование
                 </h4>
-                <p class="content-text">
+                <p class="content-card-text">
                     Составляем план работ на&nbsp;основе требований и&nbsp;согласовываем его&nbsp;с&nbsp;клиентом.
                     Закрепляем ожидаемый результат, сроки, бюджет и&nbsp;другие детали проекта.
                 </p>
             </div>
             <div class="content-card transition-3">
-                <h4 class="content-title">
+                <h4 class="content-card-title">
                     03&nbsp;&nbsp;Разработка и&nbsp;тестирование
                 </h4>
-                <p class="content-text">
+                <p class="content-card-text">
                     Приступаем к&nbsp;созданию программного продукта в&nbsp;соответствии с&nbsp;утверждённым планом.
                     Клиент включён в&nbsp;процесс через регулярные встречи и&nbsp;отчёты о&nbsp;ходе разработки.&nbsp;
                 </p>
             </div>
             <div class="content-card transition-4">
-                <h4 class="content-title">
+                <h4 class="content-card-title">
                     04&nbsp;&nbsp;Обратная связь и&nbsp;корректировки
                 </h4>
-                <p class="content-text">
+                <p class="content-card-text">
                     Клиент оценивает результаты работы и&nbsp;предоставляет нам&nbsp;обратную связь.
                 </p>
             </div>
             <div class="content-card transition-5">
-                <h4 class="content-title">
+                <h4 class="content-card-title">
                     05&nbsp;&nbsp;Деплой и&nbsp;поддержка
                 </h4>
-                <p class="content-text">
+                <p class="content-card-text">
                     После завершения разработки на&nbsp;OS&nbsp;Astra&nbsp;Linux и&nbsp;тестирования мы&nbsp;помогаем клиенту
                         с&nbsp;деплоем и&nbsp;обеспечиваем поддержку для&nbsp;устранения возникающих проблем и&nbsp;внесения обновлений.
                 </p>

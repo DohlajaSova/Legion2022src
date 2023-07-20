@@ -3131,6 +3131,19 @@
                 .content-card {
                     padding: $padding-card;
                     border-radius: $border-radius-card;
+                    width: calc(340 / 440 * 100%);
+                    &.transition-2 {
+                        transform: translate(calc(25 / 440 * 100%), 0);
+                    }
+                    &.transition-3 {
+                        transform: translate(calc(25 / 440 * 200%), 0);
+                    }
+                    &.transition-4 {
+                        transform: translate(calc(25 / 440 * 300%), 0);
+                    }
+                    &.transition-5 {
+                        align-self: flex-end;
+                    }
                 }
             }
         }

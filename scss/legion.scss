@@ -7345,6 +7345,13 @@ a.button {
 
 	.team {
 		// padding: 0!important;
+		// background-color: red;
+		.content-card-text {
+			margin-bottom: 20px;
+		}
+		.teammate__photo img {
+			border: none;
+		}
 	}
 	
 	.header {
@@ -7445,7 +7452,7 @@ a.button {
 			background-color: #84AEFF;
 			border-radius: 30px;
 			color: #fff;
-			justify-content: flex-end;
+			justify-content: flex-start;
 			position: relative;
 			&-image {
 				position: absolute;

@@ -993,6 +993,36 @@
 
         }
     }
+    
+    .astralinux {
+        &-client {
+            .content-container {
+                .content-card {
+                    width: 100%;
+                    &.transition-2 {
+                        align-self: flex-start;
+                        transform: unset;
+                        // transform: translate(5%, 0);
+                    }
+                    &.transition-3 {
+                        align-self: flex-start;
+                        transform: unset;
+                        // transform: translate(20%, 0);
+                    }
+                    &.transition-4 {
+                        align-self: flex-start;
+                        transform: unset;
+                        // transform: translate(35%, 0);
+                    }
+                    &.transition-5 {
+                        align-self: flex-start;
+                        transform: unset;
+                        // align-self: flex-end;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
