@@ -333,6 +333,7 @@
 
     <hr class="line-breaker"/>
     <!-- experts slider  -->
+    {% include "./team-astra.nunjucks" %}
     
     <div class="astralinux-container">
         <h3 class="h3">Отрасли применения Astra&nbsp;Linux</h3>

@@ -192,6 +192,9 @@
 			gap:60px 32px;
 		}
     }
+    .astralinux-container .content-container .content-card {
+        min-height: 20em;
+    }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -266,6 +269,9 @@
     }
     .body_news-ver2 .editorial-container__toc-inner{
         min-width: 0;
+    }
+    .astralinux-container .content-container .content-card {
+        min-height: 25em;
     }
 }
 
