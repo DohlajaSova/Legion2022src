@@ -7344,13 +7344,19 @@ a.button {
 .body_astralinux {
 
 	.team {
-		// padding: 0!important;
-		// background-color: red;
+		background-color: $color-grey-light;
+		padding-top: 80px;
+		padding-bottom: 60px;
 		.content-card-text {
 			margin-bottom: 20px;
 		}
 		.teammate__photo img {
 			border: none;
+		}
+		.astralinux-container, .team__slider {
+			max-width: 1440px;
+			margin: auto;
+
 		}
 	}
 	
