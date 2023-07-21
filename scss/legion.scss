@@ -7352,6 +7352,9 @@ a.button {
 		.teammate__photo img {
 			border: none;
 		}
+		.team__list_item {
+			cursor: pointer;
+		}
 		.astralinux-container, .team__slider {
 			max-width: 1440px;
 			margin: auto;
@@ -7438,6 +7441,11 @@ a.button {
 			p {
 				font-size: 24px;
 			}
+		}
+	}
+	.feedback {	
+		.container {
+			margin-bottom: 0px;
 		}
 	}
 }

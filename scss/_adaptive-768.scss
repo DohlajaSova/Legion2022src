@@ -3033,6 +3033,11 @@
         .container {
             margin-bottom: 40px;
         }
+        .feedback {	
+            .container {
+                margin-bottom: 0px;
+            }
+        }
         .content-card {
             &-title {
                 font-size: 18px;
