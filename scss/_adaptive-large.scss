@@ -1394,7 +1394,7 @@
         }
     }
     .body_astralinux {
-        .container {
+        .container-margin {
             margin-bottom: 60px;
         }
         h3 {
@@ -1419,11 +1419,6 @@
         .team {
             background-color: $color-grey-light;
             padding-top: 60px;
-        }
-        .feedback {	
-            .container {
-                margin-bottom: 0px;
-            }
         }
     }
     

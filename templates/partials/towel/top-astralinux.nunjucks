@@ -1,12 +1,12 @@
 <div class="top top-aurora">
-    <div class="container">
+    <div class="container container-margin">
         <h1 class="h1">
             Разработка<br/>под Astra Linux
         </h1>
     </div>
 </div>
 
-<div class="container">
+<div class="container container-margin">
     <div class="principles__content">
         <p>
             Мы создаём программное обеспечение, адаптированное под&nbsp;Astra Linux — мощную операционную систему, 
@@ -335,7 +335,7 @@
     <!-- experts slider  -->
 </div>
     {% include "./team-astra.nunjucks" %}
-<div class="container">
+<div class="container container-margin">
     
     <div class="astralinux-container">
         <h3 class="h3">Отрасли применения Astra&nbsp;Linux</h3>
