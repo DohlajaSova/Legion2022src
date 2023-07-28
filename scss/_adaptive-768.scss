@@ -880,6 +880,12 @@
             &__content {
                 width: unset;
             }
+            .service__feature_inner {
+                width: 100%;
+            }
+            .service__feature_inner-case__brief-title {
+                font-size: 3.6vw;
+            }
             .service__feature_inner-case__visual.service__feature_inner-case__visual_full {
                 height: 100%;
                 .service__feature_inner-case__visual_full-wrapper {
@@ -1738,7 +1744,8 @@
 
             &.feedback_compact {
                 height: unset;
-                padding: 0;
+                padding: 0!important;
+                border-radius: unset;
                 .feedback__button {
                     margin: auto;
                 }
@@ -3047,8 +3054,12 @@
             font-size: 28px;
         }
         .some-projects {
+            padding: 0 30px;
             padding-top: 60px!important;
-
+        }
+        .feedback ~ .container {
+            margin-bottom: 40px;
+            padding: 0;
         }
     }
     

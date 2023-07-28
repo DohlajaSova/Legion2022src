@@ -7443,6 +7443,13 @@ a.button {
 			}
 		}
 	}
+	
+	.cases {
+		margin-bottom: 0;
+	}
+	.feedback ~ .container {
+		margin-bottom: 80px;
+	}
 }
 
 .astralinux {

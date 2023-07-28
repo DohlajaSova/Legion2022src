@@ -1430,6 +1430,9 @@
             background-color: $color-grey-light;
             padding-top: 60px;
         }
+        .feedback ~ .container {
+            margin-bottom: 60px;
+        }
     }
     
     .astralinux {

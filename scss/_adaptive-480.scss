@@ -830,6 +830,28 @@
                 font-size: 48px;
             }
         }
+        .service__feature_inner {
+            width: 100%;
+            &-case {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                &__visual_full-wrapper {
+                    height: unset!important;
+                }
+                &__brief-transition {
+                    margin-top: unset;
+                }
+            }
+        }
+        .some-projects {
+            .service__feature_inner-case__brief-title {
+                font-size: 21px;
+            }
+            .service__feature_inner-case__brief-transition {
+                margin-top: 20px;
+                font-size: 13px;
+            }
+        }
     }
 	.body_news-ver2 .editorial-container__toc-inner.fixed{
 		max-width:calc(100% - 40px);
@@ -1167,6 +1189,13 @@
                         padding: 15px 10px;
                     }
                 }
+            }
+        }
+    }
+    .body_astralinux {
+        .service__feature_inner {
+            &-case {
+                grid-template-columns: 1fr;
             }
         }
     }
