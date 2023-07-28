@@ -825,6 +825,9 @@
         }
     }
     .body_astralinux {
+        .feedback.feedback_astralinux .content-container .info {
+            width: 100%;
+        }
         .top {
             h1 {
                 font-size: 48px;
