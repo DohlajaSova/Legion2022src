@@ -76,10 +76,20 @@
 		    padding: 0;
         }
     }
-    .body_news-ver2 .editorial-container__toc-inner{
-        width:100%;
-        &.fixed{
-            width:21.3%;
+    .body_news-ver2 .editorial-container{
+        &__toc-inner{
+            width:100%;
+            &.fixed{
+                width:21.3%;
+            }
+        }
+        &.floored {
+            .editorial-container__toc-inner{
+                &.fixed{
+                    width:100%;
+                }
+            }
+
         }
     }
 }

@@ -1728,6 +1728,7 @@
                     h2 {
                         font-size: 36px;
                         width: 100%!important;
+                        padding-right: 0;
                     }
                     p {
                         font-size: 16px;
@@ -1737,6 +1738,7 @@
 
             &.feedback_compact {
                 height: unset;
+                padding: 0;
                 .feedback__button {
                     margin: auto;
                 }
