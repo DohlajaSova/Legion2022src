@@ -305,6 +305,8 @@
         &__social{
             width:100%;
             margin: 24px 0 42px;
+            flex-flow: row wrap;
+            justify-content: start;
         }
         &__menu{
             a,
