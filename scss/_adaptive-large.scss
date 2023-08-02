@@ -1169,6 +1169,34 @@
         }
     }
 }
+@media(min-width: 1025px) {
+    .astralinux-container-interactive .content-container .content-card:hover{
+        color: $color-white;
+        background-color: $color-blue-light;
+        border-color: #fff;
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+        .content-card-title {
+            &-primary {
+                opacity: 0;
+            }
+            &-secondary {
+                opacity: 1;
+            }
+        }
+        .content-card-text {
+            &-primary {
+                opacity: 0;
+            }
+            &-secondary {
+                opacity: 1;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1024px) {
     .line-breaker {
         margin: 60px 0;

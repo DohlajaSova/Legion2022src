@@ -7575,7 +7575,7 @@ a.button {
 							top: 2em;
 						}
 					}
-					&:hover {
+					&-active {
 						color: $color-white;
 						background-color: $color-blue-light;
 						border-color: #fff;
@@ -7600,6 +7600,7 @@ a.button {
 								opacity: 1;
 							}
 						}
+
 					}
 				}
 			}

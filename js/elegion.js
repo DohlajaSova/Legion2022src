@@ -2055,6 +2055,22 @@ docReady(function() {
         }
     }
 
+    if(windowWidth < 1025) { 
+        const astralinuxCardsClick = document.querySelectorAll(".astralinux-container-interactive .content-container .content-card");
+        console.log(astralinuxCardsClick)
+        if( astralinuxCardsClick.length > 0){
+            for (i=0; i<astralinuxCardsClick.length; i++){
+                const card = astralinuxCardsClick[i];
+                console.log({card})
+                card.addEventListener("click", function(){
+                    card.classList.contains("content-card-active") ?
+                    card.classList.remove("content-card-active") :
+                    card.classList.add("content-card-active")
+                }, false);
+            }
+        }
+    }
+
     if (document.querySelectorAll("iframe").length > 0){
         initVideo();
     }
