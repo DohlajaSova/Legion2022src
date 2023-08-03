@@ -1453,29 +1453,29 @@ a.button {
 			transition: all .25s linear;
 			position: relative;
 
-			&::before {
-				margin-right: 20px;
-				position: absolute;
-				z-index: 0;
-				top: 17px;
-				left: 0px;
-				opacity: 0;
-				content: '';
-				transition: visibility 0s, opacity 0.25s linear;
-				width: 15px;
-				height: 15px;
-				border-radius: 50%;
-				background-color: $color-blue;
-			}
-			&:hover {
-				color: $color-blue-light;
-				text-decoration: none;
-				padding-left:40px;
+			// &::before {
+			// 	margin-right: 20px;
+			// 	position: absolute;
+			// 	z-index: 0;
+			// 	top: 17px;
+			// 	left: 0px;
+			// 	opacity: 0;
+			// 	content: '';
+			// 	transition: visibility 0s, opacity 0.25s linear;
+			// 	width: 15px;
+			// 	height: 15px;
+			// 	border-radius: 50%;
+			// 	background-color: $color-blue;
+			// }
+			// &:hover {
+			// 	color: $color-blue-light;
+			// 	text-decoration: none;
+			// 	padding-left:40px;
 
-				&::before {
-					opacity: 1;
-				}
-			}
+			// 	&::before {
+			// 		opacity: 1;
+			// 	}
+			// }
 		}
 	}
 
@@ -5711,29 +5711,29 @@ a.button {
 			transition: all .25s linear;
 			position: relative;
 
-			&::before {
-				margin-right: 20px;
-				position: absolute;
-				z-index: 0;
-				top: 7px;
-				left: 0px;
-				opacity: 0;
-				content: '';
-				transition: visibility 0s, opacity 0.25s linear;
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-				background-color: $color-blue;
-			}
-			&:hover {
-				color: $color-blue-light;
-				text-decoration: none;
-				padding-left:25px;
+			// &::before {
+			// 	margin-right: 20px;
+			// 	position: absolute;
+			// 	z-index: 0;
+			// 	top: 7px;
+			// 	left: 0px;
+			// 	opacity: 0;
+			// 	content: '';
+			// 	transition: visibility 0s, opacity 0.25s linear;
+			// 	width: 10px;
+			// 	height: 10px;
+			// 	border-radius: 50%;
+			// 	background-color: $color-blue;
+			// }
+			// &:hover {
+			// 	color: $color-blue-light;
+			// 	text-decoration: none;
+			// 	padding-left:25px;
 
-				&::before {
-					opacity: 1;
-				}
-			}
+			// 	&::before {
+			// 		opacity: 1;
+			// 	}
+			// }
 		}
 	}
 
