@@ -1829,21 +1829,20 @@ docReady(function () {
 
     // блок с фото сотрудников
     if (document.querySelectorAll(".js-astra-team-container").length > 0) {
-        let container = document.querySelector(".js-astra-team-container");
-        console.log({container})
-        let sliderTeam = tns({
+        const container = document.querySelector(".js-astra-team-container");
+        const sliderTeam = tns({
             container: '.js-astra-team-container .team__list',
-            items: 4,
+            items: 4.4,
             gutter: 15,
             responsive: {
                 320: {
-                    items: 1.5
+                    items: 1.4
                 },
                 640: {
-                    items: 2.5
+                    items: 2.4
                 },
                 992: {
-                    items: 4.5
+                    items: 4.4
                 }
             },
             axis: "horizontal",
