@@ -7622,7 +7622,11 @@ a.button {
 				transition: color .15s, background-color .5s, box-shadow .25s linear;
 				border-radius: $border-radius-card;
 				cursor: pointer;
-				&:hover {
+				// &:hover {
+				// 	color: $color-blue-dark;
+				// 	box-shadow: 0px 0px 40px 0px #84AEFF99;
+				// }
+				&-closest-active {
 					color: $color-blue-dark;
 					box-shadow: 0px 0px 40px 0px #84AEFF99;
 				}

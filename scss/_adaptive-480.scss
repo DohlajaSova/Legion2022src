@@ -1026,25 +1026,25 @@
             .content-container {
                 .content-card {
                     width: 100%;
+                    &:hover {
+				        color: $color-blue-light;
+                        box-shadow: unset;
+                    }
                     &.transition-2 {
                         align-self: flex-start;
                         transform: unset;
-                        // transform: translate(5%, 0);
                     }
                     &.transition-3 {
                         align-self: flex-start;
                         transform: unset;
-                        // transform: translate(20%, 0);
                     }
                     &.transition-4 {
                         align-self: flex-start;
                         transform: unset;
-                        // transform: translate(35%, 0);
                     }
                     &.transition-5 {
                         align-self: flex-start;
                         transform: unset;
-                        // align-self: flex-end;
                     }
                 }
             }

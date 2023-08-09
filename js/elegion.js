@@ -2040,6 +2040,50 @@ docReady(function () {
         }
     }
 
+    //  astralinux highlighting cards by scroll
+    if (windowWidth > 480) {
+        const activeContainer = document.querySelectorAll(".js-active-contents-by-scroll");
+        const cards = activeContainer[0].querySelectorAll(".content-card")
+        const coords = [];
+        const heights = [];
+        for (let one = 0; one < cards.length; one++) {
+            coords.push(cards[one].offsetTop)
+            heights.push(cards[one].clientHeight)
+        }
+        if (activeContainer.length > 0) {
+            let centerOfScreen = 0;
+            let ticking = false;
+            const heightConstant = 150;
+            document.addEventListener("scroll", (event) => {
+                centerOfScreen = window.scrollY + (window.innerHeight / 2) - heightConstant;
+                if (centerOfScreen > activeContainer[0].offsetTop && centerOfScreen < activeContainer[0].nextElementSibling.offsetTop) {
+                    const closestCardOffsetY = coords.reduce(function (prev, curr) {
+                        return (Math.abs(curr - centerOfScreen) < Math.abs(prev - centerOfScreen) ? curr : prev);
+                    });
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            ticking = false;
+                            const closestCardIndex = coords.findIndex(one => one === closestCardOffsetY);
+                            // reset styles
+                            for (let one = 0; one < cards.length; one++) {
+                                if (one !== closestCardIndex) {
+                                    cards[one].classList.contains("content-card-closest-active") ?
+                                        cards[one].classList.remove("content-card-closest-active") :
+                                        ""
+                                } else {
+                                    cards[closestCardIndex].classList.contains("content-card-closest-active") ? "" :
+                                        cards[closestCardIndex].classList.add("content-card-closest-active")
+                                }
+                            }
+                        });
+                        ticking = true;
+                    }
+                }
+            });
+        }
+    }
+
+
     //обработчик загрузки файлов в форме заявки
     if (document.querySelectorAll(".yaDiskUploader").length > 0) {
         const uploadButtons = document.querySelectorAll(".yaDiskUploader");

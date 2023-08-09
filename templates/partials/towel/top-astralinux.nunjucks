@@ -276,7 +276,7 @@
 
     <hr class="line-breaker"/>
 
-    <div class="astralinux-client">
+    <div class="astralinux-client js-active-contents-by-scroll">
         <h3 class="h3">Взаимодействие с клиентом</h3>
         <p class="content-card-text">
             Мы&nbsp;выступаем за&nbsp;открытое и&nbsp;прозрачное взаимодействие с&nbsp;клиентом.
