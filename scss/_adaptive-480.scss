@@ -861,6 +861,11 @@
 	.body_news-ver2 .editorial-container__toc-inner.fixed{
 		max-width:calc(100% - 40px);
 	}
+    .astralinux {
+        &-benefits {
+            border-radius: 20px;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
