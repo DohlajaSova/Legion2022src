@@ -7180,6 +7180,18 @@ a.button {
 }
 
 .body_aurora, .body_astralinux {
+    .principles__content,
+    .content-card,
+    .astralinux-container,
+    .content-card-text{
+        color: $color-blue-dark;
+    }
+    .astralinux-tezis .content-card-text{
+        color:$color-white;
+    }
+    .astralinux-container-interactive .content-container .content-card:hover .content-card-text{
+        color:$color-white;
+    }
 	.top {
 		background: url("img/services_aurora_main.webp") top center no-repeat;
 		background-size: cover;
