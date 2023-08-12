@@ -7,10 +7,13 @@
     </div>
     <div class="team__slider js-astra-team-container">
         <div class="team__list">
-            <span class="team__list_item">
+            <span
+                class="team__list_item">
                 {# teammate #}
                 <div class="teammate__contents">
-                    <div class="teammate__photo"><img src="/assets/css/img/team-astra-1.png">
+                    <div class="teammate__photo">
+                        <img src="/assets/css/img/team-astra-1.png">
+                        <div class="teammate__photo-foreground"></div>
                     </div>
                     <div class="teammate__body">
                         <div class="teammate__body_name">Вячеслав Сиомичев</div>
@@ -21,6 +24,7 @@
             <span class="team__list_item">
                 <div class="teammate__contents">
                     <div class="teammate__photo"><img src="/assets/css/img/team-astra-2.png">
+                        <div class="teammate__photo-foreground"></div>
                     </div>
                     <div class="teammate__body">
                         <div class="teammate__body_name">Григорий Никифоров</div>
@@ -31,6 +35,7 @@
             <span class="team__list_item">
                 <div class="teammate__contents">
                     <div class="teammate__photo"><img src="/assets/css/img/team-astra-3.png">
+                        <div class="teammate__photo-foreground"></div>
                     </div>
                     <div class="teammate__body">
                         <div class="teammate__body_name">Алексей Дмитриев</div>
@@ -41,6 +46,7 @@
             <span class="team__list_item">
                 <div class="teammate__contents">
                     <div class="teammate__photo"><img src="/assets/css/img/team-astra-4.png">
+                        <div class="teammate__photo-foreground"></div>
                     </div>
                     <div class="teammate__body">
                         <div class="teammate__body_name">Николай Широбоков</div>
@@ -51,10 +57,11 @@
             <span class="team__list_item">
                 <div class="teammate__contents">
                     <div class="teammate__photo"><img src="/assets/css/img/team-astra-5.png">
+                        <div class="teammate__photo-foreground"></div>
                     </div>
                     <div class="teammate__body">
                         <div class="teammate__body_name">Виктор Волков</div>
-                        <div class="teammate__body_position">руководитель отдела iOS-разработки</div>
+                        <div class="teammate__body_position">руководитель iOS-разработки</div>
                     </div>
                 </div>
             </span>

@@ -1832,7 +1832,7 @@ docReady(function () {
         const container = document.querySelector(".js-astra-team-container");
         const sliderTeam = tns({
             container: '.js-astra-team-container .team__list',
-            items: 4.4,
+            items: 4.5,
             gutter: 15,
             responsive: {
                 320: {
@@ -1842,7 +1842,13 @@ docReady(function () {
                     items: 2.4
                 },
                 992: {
-                    items: 4.4
+                    items: 3.5
+                },
+                1315: {
+                    items: 4
+                },
+                1420: {
+                    items: 4.5
                 }
             },
             axis: "horizontal",

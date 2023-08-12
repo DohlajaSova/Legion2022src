@@ -81,7 +81,8 @@
         </div>
         
         
-        <img class="content-card-image" src="/assets/css/img/service-astralinux-feature1.png" alt="">
+        <img class="content-card-image visible-tablet-desktop" src="/assets/css/img/service-astralinux-feature1.webp" alt="">
+        <img class="content-card-image visible-mobile" src="/assets/css/img/service-astralinux-feature1-mobile.webp" alt="">
         <div class="astralinux-benefits-content-wrapper">
             <div class="content-card">
                 <h4 class="content-card-title">Безопасность</h4>
