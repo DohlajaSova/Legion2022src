@@ -1057,10 +1057,11 @@
 		.team__slider {
 			.teammate__body {
 				&_name {
-					top: calc(100% - 214px - 20px);
+                    font-size: 5vw;
+					top: calc(100% - 214px - 15px);
 				}
 				&_position {
-					top: calc(100% - 214px + 7px);
+					top: calc(100% - 214px + 12px);
 					line-height: 16px;
 				}
 			}
