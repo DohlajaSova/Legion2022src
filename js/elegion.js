@@ -6,6 +6,16 @@ function docReady(fn) {
     }
 }
 
+function debounce(f, ms) {
+    let isCooldown = false;
+    return function() {
+      if (isCooldown) return;
+      f.apply(this, arguments);
+      isCooldown = true;
+      setTimeout(() => isCooldown = false, ms);
+    };
+}
+
 function findOffset(element) {
     let top = 0, left = 0;
 
@@ -2047,47 +2057,58 @@ docReady(function () {
     }
 
     //  astralinux highlighting cards by scroll
-    if (windowWidth > 480) {
+    // if (windowWidth > 480) {
         const activeContainer = document.querySelectorAll(".js-active-contents-by-scroll");
-        const cards = activeContainer[0].querySelectorAll(".content-card")
-        const coords = [];
-        const heights = [];
-        for (let one = 0; one < cards.length; one++) {
-            coords.push(cards[one].offsetTop)
-            heights.push(cards[one].clientHeight)
-        }
-        if (activeContainer.length > 0) {
-            let centerOfScreen = 0;
-            let ticking = false;
-            const heightConstant = 150;
-            document.addEventListener("scroll", (event) => {
-                centerOfScreen = window.scrollY + (window.innerHeight / 2) - heightConstant;
-                if (centerOfScreen > activeContainer[0].offsetTop && centerOfScreen < activeContainer[0].nextElementSibling.offsetTop) {
-                    const closestCardOffsetY = coords.reduce(function (prev, curr) {
-                        return (Math.abs(curr - centerOfScreen) < Math.abs(prev - centerOfScreen) ? curr : prev);
-                    });
-                    if (!ticking) {
-                        window.requestAnimationFrame(() => {
-                            ticking = false;
-                            const closestCardIndex = coords.findIndex(one => one === closestCardOffsetY);
-                            // reset styles
-                            for (let one = 0; one < cards.length; one++) {
-                                if (one !== closestCardIndex) {
-                                    cards[one].classList.contains("content-card-closest-active") ?
-                                        cards[one].classList.remove("content-card-closest-active") :
-                                        ""
-                                } else {
-                                    cards[closestCardIndex].classList.contains("content-card-closest-active") ? "" :
-                                        cards[closestCardIndex].classList.add("content-card-closest-active")
-                                }
-                            }
+        if(activeContainer?.length) {
+            const cards = activeContainer[0].querySelectorAll(".content-card")
+            const coords = [];
+            const heights = [];
+            for (let one = 0; one < cards.length; one++) {
+                coords.push(cards[one].offsetTop)
+                heights.push(cards[one].clientHeight)
+            }
+            if (activeContainer.length > 0) {
+                let centerOfScreen = 0;
+                let ticking = false;
+                let cleared = true;
+                const heightConstant = 150;
+                document.addEventListener("scroll", debounce((event) => {
+                    centerOfScreen = window.scrollY + (window.innerHeight / 2) - heightConstant;
+                    if (centerOfScreen > activeContainer[0].offsetTop && centerOfScreen < activeContainer[0].nextElementSibling.offsetTop) {
+                        const closestCardOffsetY = coords.reduce(function (prev, curr) {
+                            return (Math.abs(curr - centerOfScreen) < Math.abs(prev - centerOfScreen) ? curr : prev);
                         });
-                        ticking = true;
+                        if (!ticking) {
+                            window.requestAnimationFrame(() => {
+                                ticking = false;
+                                const closestCardIndex = coords.findIndex(one => one === closestCardOffsetY);
+                                // reset styles
+                                for (let one = 0; one < cards.length; one++) {
+                                    if (one !== closestCardIndex) {
+                                        cards[one].classList.contains("content-card-closest-active") ?
+                                            cards[one].classList.remove("content-card-closest-active") :
+                                            null
+                                    } else {
+                                        cards[closestCardIndex].classList.contains("content-card-closest-active") ? null :
+                                            cards[closestCardIndex].classList.add("content-card-closest-active")
+                                    }
+                                }
+                                cleared = false;
+                            });
+                            ticking = true;
+                        }
+                    } else if(!cleared){
+                        for (let one = 0; one < cards.length; one++) {
+                                cards[one].classList.contains("content-card-closest-active") ?
+                                    cards[one].classList.remove("content-card-closest-active") :
+                                    null
+                        }
+                        cleared = true;
                     }
-                }
-            });
+                }, 100));
+            }
         }
-    }
+    // }
 
 
     //обработчик загрузки файлов в форме заявки
