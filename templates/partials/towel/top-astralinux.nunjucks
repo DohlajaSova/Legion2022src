@@ -47,14 +47,14 @@
     </div>
 
     <a href="" class="button button_default js-popup-feedback-open">Обсудить проект</a>
-    
+
     <hr class="line-breaker"/>
-    
+
     <div class="astralinux-benefits">
         <h3 class="h3">Преимущества системы Astra Linux</h3>
         <div class="astralinux-benefits-content-wrapper">
             <div class="content-card">
-                <h4 class="content-card-title">Надежность</h4>
+                <h4 class="content-card-title">Надёжность</h4>
                 <div class="content-card-text">
                     <p>
                         Astra Linux известна своей высокой степенью надёжности и&nbsp;стабильности. 

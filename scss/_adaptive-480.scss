@@ -50,9 +50,6 @@
                 width:calc(100% - 40px);
                 max-height: none;
                 right:20px;
-                &-inner{
-                    //max-width: calc(100% - 40px);
-                }
             }
         }
 		&.body_news{
@@ -1055,6 +1052,21 @@
             }
         }
     }
+    .body_astralinux {
+	.team {
+		.team__slider {
+			.teammate__body {
+				&_name {
+					top: calc(100% - 214px - 20px);
+				}
+				&_position {
+					top: calc(100% - 214px + 7px);
+					line-height: 16px;
+				}
+			}
+        }
+    }
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1210,4 +1222,15 @@
         }
     }
 
+    .body_astralinux {
+		.team__slider {
+            // .team__list_item:nth-child(2) {
+                .teammate__body {
+                    &_name {
+                        top: calc(100% - 214px - 45px);
+                    }
+                }
+            // }
+        }
+    }
 }

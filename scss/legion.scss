@@ -7416,7 +7416,7 @@ a.button {
 					transition: opacity .25s;
 					font-size: 20px;
 					font-weight: 700;
-					line-height: 130%; /* 26px */
+					line-height: 130%;
 				}
 				&_position {
 					position: absolute;
@@ -7551,11 +7551,6 @@ a.button {
 					right: 37px;
 				}
 			}
-			// &:last-child {
-			// 	.content-card-image {
-			// 		// transform: rotate(-13.05deg);	
-			// 	}
-			// }
 		}
 	}
 	&-benefits {
@@ -7625,11 +7620,13 @@ a.button {
 						&-primary {
 							position: absolute;
 							transition: opacity .25s;
+							color: $color-blue-dark;
 						}
 						&-secondary {
 							position: absolute;
 							opacity: 0;
 							transition: opacity .25s;
+							color: #fff;
 						}
 					}
 					&-text {
@@ -7638,12 +7635,14 @@ a.button {
 							position: absolute;
 							transition: opacity .25s;
 							top: 2em;
+							color: $color-blue-dark;
 						}
 						&-secondary {
 							position: absolute;
 							opacity: 0;
 							transition: opacity .25s;
 							top: 2em;
+							color: #fff;
 						}
 					}
 					&-active {
@@ -7693,10 +7692,6 @@ a.button {
 				transition: color .15s, background-color .5s, box-shadow .25s linear;
 				border-radius: $border-radius-card;
 				cursor: pointer;
-				// &:hover {
-				// 	color: $color-blue-dark;
-				// 	box-shadow: 0px 0px 40px 0px #84AEFF99;
-				// }
 				&-closest-active {
 					color: $color-blue-dark;
 					box-shadow: 0px 0px 40px 0px #84AEFF99;
