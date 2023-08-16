@@ -123,99 +123,6 @@
             }
         }
     }
-
-    /*
-    .cases{
-        .cases-container{
-            width:100%;
-            height:0;
-            padding-bottom:100%;
-            position:relative;
-            &_inner{
-                position:absolute;
-                width:100%;
-                height:100%;
-                overflow-x:scroll;
-                padding-top:2px;
-            }
-            .container{
-                max-width:none;
-                display:grid;
-                grid-auto-flow:column dense;
-                grid-template-rows:1fr 1fr;
-                grid-auto-columns:1fr;
-                grid-gap:20px;
-                width:200%;
-            }
-        }
-        &__case{
-            width:100%;
-            height:0;
-            padding-bottom:100%;
-            margin-bottom: 0;
-            &:nth-child(2n){
-                grid-row:1;
-            }
-            &_double{
-                height:calc(200% + 20px);
-                align-self:first baseline;
-                .cases-slider{
-                    &__item{
-                        flex-direction:column;
-                        &_nomination{
-                            width:100%;
-                            flex-grow:1;
-                            padding-left:23px;
-                            padding-right:23px;
-                            .h2{
-                                font-size:46px;
-                            }
-                            p{
-                                font-size:16px;
-                            }
-                        }
-                        &_project{
-                            width:100%;
-                            height:100%;
-                            flex-grow:1;
-                            &-link{
-                                font-size:12px;
-                            }
-                        }
-                    }
-                    &__statics{
-                       height:50%;
-                        &_dots{
-                            top:-30px;
-                            width:100%;
-                        }
-                        &_title{
-                            top:40px;
-                            width:100%;
-                            font-size:14px;
-                        }
-                    }
-                }
-            }
-            &_before-double{
-                grid-row:unset !important;
-            }
-            &_info{
-                .cases__case_number{
-                    font-size:60px;
-                    margin-bottom:0;
-                }
-                .cases__case_name{
-                    font-size: 15px;
-                }
-                .cases__case_photo img{
-                    width:auto;
-                    max-width:80px;
-                }
-            }
-        }
-    }
-    */
     .cases_portfolio{
         .container_portfolio-inner {
             width: calc(100% + 40px);
@@ -360,9 +267,6 @@
         &__title{
             margin: 120px 0 60px 0;
         }
-        // &__lead{
-        //     height:40px;
-        // }
         &__form{
             &_item{
                 width:100%;
@@ -593,7 +497,6 @@
     }
     .case2 {
         .project_tall:first-child{
-            // padding-bottom:100%!important;
             &.project_venn{
                 padding-bottom: 100%!important;
             }
@@ -852,13 +755,11 @@
             padding-right: 65px;
         }
         .accordion__item.active .accordion__item_body {
-            // padding-bottom: 20px;
             padding-top: 0;
         }
         .accordion__item .accordion__item_body p:first-child,
         .accordion__item .accordion__item_body ol:first-child,
         .accordion__item .accordion__item_body.accordion__item_body-column div:first-child
-        // .accordion__item_body-pad-top
         {
             padding-top: 50px;
         }
@@ -887,7 +788,6 @@
                 font-size: 3.6vw;
             }
             .service__feature_inner-case__visual.service__feature_inner-case__visual_full {
-                // height: 100%;
                 .service__feature_inner-case__visual_full-wrapper {
                     height: 100%;
                 }
@@ -897,6 +797,9 @@
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
+        }
+        .cases {
+            width: 100%;
         }
     }
 
@@ -946,11 +849,8 @@
 @media only screen and (max-width: 650px) {
     .contacts,
     .request{
-        // overflow-y: unset;
-        // max-height: unset;
         .container{
             overflow: unset!important;
-            // padding:0 15px;
         }
         &__textarea{
             textarea{
@@ -1210,7 +1110,6 @@
             margin-bottom:20px;
         }
         &__copyright{
-            // align-items:flex-end;
             &_about{
                 display:flex;
                 flex-direction:column;
@@ -1419,11 +1318,6 @@
                     width: 100%;
                 }
             }
-            // &_inner {
-            //     &-case {
-            //         height: 290px;
-            //     }
-            // }
         }
     }
     .client {
@@ -1465,7 +1359,6 @@
         &.header_transparent{
             transition:transform .5s ease-in;
             opacity: 0.75;
-            // opacity: 0.8;
             background-color: rgba(30, 39, 56, 0.4);;
             backdrop-filter: brightness(0.5);
             .js-top-menu {
@@ -1844,13 +1737,6 @@
     .body_service{
         .header{
             &.header_scrolled{
-                // background-color:$color-white;
-                // .header__logo{
-                //     background-image: url($img-path + "logo.svg");
-                // }
-                // .header__hmenu{
-                //     background-image: url($img-path + "icon-menu1.svg");
-                // }
                 .breadcrumbs{
                     display:none;
                 }
@@ -1901,9 +1787,6 @@
     }
     .about{
         border-radius:30px 30px 0 0;
-        // &__animation{
-        //     margin-bottom: 55px;
-        // }
         &__text{
             margin-top: -20px;
             column-count:1;
@@ -2064,7 +1947,6 @@
         background:$color-white;
         border-radius: 30px 30px 0 0;
         margin-top: -65px;
-        // margin-top: -42px;
         padding-top: 60px;
         &__content{
             flex-direction:column;
@@ -2673,7 +2555,6 @@
             width:100%;
         }
         &_compact{
-            // padding:60px 30px 50px;
             &.feedback_applicants{
                 background-image:none;
             }
@@ -3165,5 +3046,15 @@
             }
         }
     }
-
+    .body_astralinux{
+        .service__feature_inner-case {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .service__feature_inner-case__visual_full {
+            width: 240px;
+            height: 240px;
+            flex-shrink: 0;
+        }
+    }
 }

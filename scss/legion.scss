@@ -327,7 +327,6 @@ a:hover {
 	position: fixed;
 	right: 20px;
 	bottom: 30px;
-	// top:calc(50% - 29px);
 	z-index: 2000;
 
 	&.hide {
@@ -986,7 +985,6 @@ a.button {
 			background: $color-grey-light;
 			display: inline-block;
 			text-align: center;
-			// width:30px;
 			height: 30px;
 			border-radius: 30px;
 			flex-shrink: 0;
@@ -1180,7 +1178,6 @@ a.button {
 		left: 50%;
 		top: 50%;
 
-		// opacity: 0;
 		&__item {
 			display: none;
 			width: 230px;
@@ -1289,8 +1286,6 @@ a.button {
 
 .popup-feedback {
 	&__container {
-		// max-height:100%;
-		// overflow-y:auto;
 		height: calc(95vh - 100px);
 		overflow: hidden;
 		display: grid;
@@ -1319,11 +1314,9 @@ a.button {
 
 	&__content {
 		height: inherit;
-		// height: 100%;
 		max-width: 1440px;
 		background: $color-white;
 		border-radius: 38px;
-		// padding: 0;
 		padding: 50px 0 50px 20px;
 		text-align: left;
 
@@ -1411,10 +1404,6 @@ a.button {
 			border-radius: 100%;
 			margin-right: 0 !important;
 		}
-
-		// &_close{
-		//     display: none;
-		// }
 		.header__mmenu_lang {
 			color: $color-black !important;
             margin-right: 0 !important;
@@ -1452,30 +1441,6 @@ a.button {
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
-
-			// &::before {
-			// 	margin-right: 20px;
-			// 	position: absolute;
-			// 	z-index: 0;
-			// 	top: 17px;
-			// 	left: 0px;
-			// 	opacity: 0;
-			// 	content: '';
-			// 	transition: visibility 0s, opacity 0.25s linear;
-			// 	width: 15px;
-			// 	height: 15px;
-			// 	border-radius: 50%;
-			// 	background-color: $color-blue;
-			// }
-			// &:hover {
-			// 	color: $color-blue-light;
-			// 	text-decoration: none;
-			// 	padding-left:40px;
-
-			// 	&::before {
-			// 		opacity: 1;
-			// 	}
-			// }
 		}
 	}
 
@@ -1805,12 +1770,10 @@ a.button {
 
 	&__title {
 		width: 100%;
-		// text-align: center;
 	}
 
 	&__lead {
 		width: 100%;
-		// height: 87px;
 		border-bottom: 1px solid $color-blue-dark;
 		margin-bottom: 70px;
 	}
@@ -1875,7 +1838,6 @@ a.button {
 		display: block;
 		width: 24%;
 		padding-bottom: 24%;
-		//margin-bottom:15px;
 		position: relative;
 		background-color: $color-grey-light;
 		border-radius: $border-radius;
@@ -1911,13 +1873,6 @@ a.button {
 			height: calc(100% + 107px);
 			top: 0;
 			transition: top ease 0.5s;
-
-			// &-active {
-			// 	animation-name: case-bounce;
-			// 	animation-timing-function: cubic-bezier(0.281, 0.841, 0.421, 1);
-			// 	animation-duration: 2s;
-			// 	animation-iteration-count: 2;
-			// }
 
 			&-slider {
 				height: 100%;
@@ -2022,7 +1977,6 @@ a.button {
 				width: 100%;
 				color: $color-black;
 				font-size: 24px;
-				// font-size: 24px;
 				padding: 0 60px 0 30px;
 				text-align: left;
 				p {
@@ -2036,7 +1990,6 @@ a.button {
 				left: 0;
 				bottom: 0;
 				right: 0;
-				//display: none;
 				text-align: right;
 				padding: 0 20px 20px 0;
 				font-size: 0;
@@ -2046,7 +1999,6 @@ a.button {
 				position: absolute;
 				left: 0;
 				bottom: 0;
-				//display:none;
 				text-align: left;
 				padding: 0 75px 20px 30px;
 				text-decoration: none;
@@ -2070,7 +2022,6 @@ a.button {
 		}
 
 		+.zero-case {
-			// display: none!important;
 			visibility: hidden;
 
 			.cases__case_container {
@@ -2100,8 +2051,6 @@ a.button {
 	}
 
 	&_portfolio {
-		// padding-top: 120px;
-
 		.container_portfolio-inner {
 			display: flex;
 			width: calc(100% + 20px);
@@ -2118,9 +2067,7 @@ a.button {
 
 		.cases__case {
 			width: calc(25% - 20px);
-			// width:23.6673%;
 			margin-bottom: 15px;
-			// margin-right:1.3333%;
 		}
 	}
 
@@ -2146,7 +2093,6 @@ a.button {
 				flex-flow: column nowrap;
 				
 				li {
-					// min-height: 40px;
 					font-size: 24px;
 					margin-bottom: 25px;
 					display: flex;
@@ -2176,16 +2122,6 @@ a.button {
 						}
 					}
 				}
-
-				// &_ver2 {
-				// 	li {
-				// 		&::before {
-				// 			background: url($img-path + "arrow3grey.svg") center center no-repeat $color-blue;
-				// 			background-size: 53%;
-				// 			margin-top: -6px;
-				// 		}
-				// 	}
-				// }
 			}
 			&_bg9{
 				padding: 50px 40px 60px;
@@ -2297,7 +2233,6 @@ a.button {
 					height: 100%;
 					float: right;
 					border-radius:70px 20px 20px 70px;
-					// border-radius:70px 42px 42px 70px;
 				}
 			}
 
@@ -2638,7 +2573,6 @@ a.button {
 		&_var1 {
 			.case-stages__layout_right .case-stages__layout_inner {
 				padding-left: 0;
-				//padding-right: 0;
 			}
 		}
 
@@ -2655,8 +2589,6 @@ a.button {
 	}
 
 	.principles {
-		// margin-bottom: 60px;
-
 		>.container {
 			display: flex;
 			justify-content: space-between;
@@ -2787,7 +2719,6 @@ a.button {
 			height: 98px;
 			width: 50%;
 			text-align: center;
-			// opacity:0.7;
 			border-radius: $border-radius $border-radius 0 0;
 			text-decoration: none;
 
@@ -2859,7 +2790,6 @@ a.button {
 
 		&_text {
 			width: 49%;
-			// padding-right: 4%;
 			margin-bottom: 40px;
             padding-top: 10px;
 			color: $color-blue-dark;
@@ -3040,7 +2970,6 @@ a.button {
             width: 100%;
             display: flex;
             flex-flow: column nowrap;
-            // justify-content: center;
             align-items: center;
             padding: 40px 62px 40px 40px;
         }
@@ -3061,7 +2990,6 @@ a.button {
                 }
             }
             &-text {
-                // top: 75%;
                 align-self: center;
                 position: static;
                 transform: none!important;
@@ -3208,7 +3136,6 @@ a.button {
             width: 100%;
             display: flex;
             flex-flow: column nowrap;
-            // justify-content: center;
             align-items: center;
             padding: 40px 62px 40px 40px;
         }
@@ -3293,7 +3220,6 @@ a.button {
         }
         &_text{
             width:50%;
-            // padding-right:4%;
             margin-bottom:90px;
             *:last-child{
                 margin-bottom:0;
@@ -3862,7 +3788,6 @@ a.button {
 			display: block;
 			background: url($img-path + "icon-arrow.svg") center top no-repeat;
 			background-size: contain;
-			// height:369px;
 			height: 90%;
 			max-height: 265.47px;
 			max-width: 265.47px;
@@ -4130,7 +4055,6 @@ a.button {
 		grid-gap: 17px;
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 120px;
-		// margin-bottom: 149px;
 
 		&-client {
 			grid-template-columns: 2fr 1fr 1fr;
@@ -4257,7 +4181,6 @@ a.button {
 					font-size: 24px;
                     color:$color-blue-dark;
 					max-width: 60%;
-					//position: absolute;
 					left: 40px;
 					z-index: 3;
 
@@ -4503,7 +4426,6 @@ a.button {
 	overflow: hidden;
 	&__container {
 		display: flex;
-		// justify-content:space-between;
 		flex-flow: row wrap;
 		padding: 100px 0;
 
@@ -4524,7 +4446,6 @@ a.button {
 
 	&__form {
 		width: 50%;
-		// margin-left:50%;
 		padding-bottom: 20px;
 
 		&_label {
@@ -5401,8 +5322,6 @@ a.button {
 		padding: 80px 0 60px;
 
 		&_inner {
-			// width:101.3333%;
-			// margin-right:-1.3333%;
 			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
@@ -5433,7 +5352,6 @@ a.button {
 			height: 0;
 			padding-bottom: 23.6673%;
 			margin-bottom: 20px;
-			// margin-right:1.3333%;
 			border-radius: $border-radius;
 
 			&.final {
@@ -5564,11 +5482,6 @@ a.button {
 			display: flex;
 			flex-direction: column;
 			transition: top 0.5s step-end, height 0.5s step-end, background 0.5s step-end;
-
-			// &_item {
-			// 	margin-bottom: 10px;
-			// }
-
 			&_link {
 				cursor: pointer;
 				border: none;
@@ -5629,10 +5542,6 @@ a.button {
 		.cases__title {
 			text-align: left;
 		}
-
-		// .cases__lead {
-		// 	height: 37px;
-		// }
 
         .vacancies__container{
             padding-bottom: 0;
@@ -5710,30 +5619,6 @@ a.button {
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
-
-			// &::before {
-			// 	margin-right: 20px;
-			// 	position: absolute;
-			// 	z-index: 0;
-			// 	top: 7px;
-			// 	left: 0px;
-			// 	opacity: 0;
-			// 	content: '';
-			// 	transition: visibility 0s, opacity 0.25s linear;
-			// 	width: 10px;
-			// 	height: 10px;
-			// 	border-radius: 50%;
-			// 	background-color: $color-blue;
-			// }
-			// &:hover {
-			// 	color: $color-blue-light;
-			// 	text-decoration: none;
-			// 	padding-left:25px;
-
-			// 	&::before {
-			// 		opacity: 1;
-			// 	}
-			// }
 		}
 	}
 
@@ -6065,7 +5950,6 @@ a.button {
 	max-height: 100%;
 
 	&__lead {
-		// height: 87px;
 		border-bottom: 1px solid $color-blue-dark;
 		margin-bottom: 70px;
 	}
@@ -6542,8 +6426,6 @@ a.button {
 }
 
 .some-projects {
-	// margin-bottom: 75px;
-
 	&__list {
 		width: 100%;
 		display: flex;
@@ -6633,20 +6515,6 @@ a.button {
 .body_about {
 	.header {
 		background-color: transparent;
-		// &__logo{
-		//     background-image:url($img-path + "logo-white.svg");
-		// }
-		// &__hmenu{
-		//     background-image:url($img-path + "icon-menu2.svg");
-		// }
-		// &__mmenu{
-		//     & > a{
-		//         color:$color-white;
-		//         &.header__mmenu_lang{
-		//             color:$color-blue-dark;
-		//         }
-		//     }
-		// }
 	}
 
 	.top {
@@ -6945,9 +6813,6 @@ a.button {
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-between;
-			// display: grid;
-			// grid-template-columns: auto auto;
-			// column-gap: 40px;
 			margin-bottom: 90px;
 			color: $color-blue-dark;
 
@@ -6969,10 +6834,6 @@ a.button {
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-between;
-
-			// display: grid;
-			// grid-template-columns: auto auto;
-			// column-gap: 40px;
 			&-wrapper {
 				display: flex;
 				flex-flow: row nowrap;
@@ -7001,7 +6862,6 @@ a.button {
 				border-radius: 42px;
 				display: grid;
 				grid-template-columns: max-content auto;
-				// grid-template-columns: auto auto;
 				grid-template-rows: auto;
 				margin-left: auto;
 
@@ -7052,16 +6912,12 @@ a.button {
 					flex-flow: column nowrap;
 					justify-content: space-between;
 					padding: 30px;
-
-					// width: inherit;
 					&-title {
 						font-size: 24px;
 						line-height: 130%;
 					}
-
 					&-transition {
 						text-align: left;
-						// text-align: center;
 						font-size: 16px;
 						line-height: 130%;
 						color: #949191 !important;
@@ -7230,7 +7086,6 @@ a.button {
 		background-color: transparent;
 	}
 	.problems__item .problems-slider-groups__item h3 {
-		// z-index: 1;
 		cursor: grab;
 	}
 	.problems-slider-groups__statics_dots{
@@ -7404,8 +7259,6 @@ a.button {
 				}
 			}
 			.teammate__body {
-				// position: relative;
-				// height: 100%;
 				&_name {
 					position: absolute;
 					top: calc(100% - 214px - 10px);
@@ -7462,11 +7315,6 @@ a.button {
 			color: $color-blue-dark;
 			width: 100%;
 		}
-	}
-
-
-
-	.top {
 		background: url("img/services_astralinux_main.png") top center no-repeat;
 		background-size: cover;
 	}
@@ -7492,9 +7340,8 @@ a.button {
 		font-size: 46px;
 	}
 	.some-projects {
-		padding-left: 60px;
-		padding-right: 60px;
-		padding-top: 0!important;
+		padding-left: 0;
+		padding-right: 0;
 		display: flex;
 		flex-flow: row nowrap;
 		gap: 20px;
@@ -7515,12 +7362,23 @@ a.button {
 			}
 		}
 	}
-	
+
 	.cases {
 		margin-bottom: 0;
+		width: 60%;
+	}
+	.feedback.feedback_compact.feedback_applicants {
+		padding-left: 0;
+		padding-right: 0;
+		h2 {
+			width: 80%;
+		}
 	}
 	.feedback ~ .container {
 		margin-bottom: 80px;
+	}
+	.service__feature_inner {
+		width: 100%;
 	}
 }
 
@@ -7809,7 +7667,6 @@ a.button {
 		margin-bottom: 80px;
 		position: relative;
 		overflow: hidden;
-		// min-height: 740px;
 		&.venn {
 			height: 100vh;
 		}
@@ -7838,9 +7695,7 @@ a.button {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			// top: -70px;
 			left: 0;
-			//display: none;
 		}
 	}
 
@@ -7952,7 +7807,6 @@ a.button {
 			transition: all .25s linear;
 
 			&.inactive {
-				// padding-left: 0px;
 				color: $color-grey-dark;
 			}
 
@@ -8042,7 +7896,6 @@ a.button {
 				grid-row-start: 1;
 				grid-row-end: 3;
 				background-color: $color-blue-dark;
-				// aspect-ratio: 1;
 				&-noplace{
 					grid-column:auto/span 2;
 					grid-row: auto/span 2;
@@ -8052,9 +7905,6 @@ a.button {
 				}
 				&__preview{
 					height: stretch;
-					//height: fill-available;
-					//height: -webkit-fill-available;
-					//height: -moz-available;
 					padding: 40px 0 0 40px;
 					position: relative;
 					border-radius: inherit;
@@ -8125,7 +7975,6 @@ a.button {
 					}
 					&_image{
 						width: 100%;
-						// max-height: 50%;
 						border-radius: inherit;
 						margin-top: auto;
 						max-height: calc(50% - 10px);
@@ -8138,8 +7987,6 @@ a.button {
 			&-wide{
 				grid-column-start: 3;
 				grid-column-end: 5;
-				// grid-row-start: 1;
-				// grid-row-end: 2;
 				padding: 0;
 				display: flex;
 				flex-flow: row nowrap;
@@ -8221,40 +8068,27 @@ a.button {
 			.client__grid_card-tall{
 				aspect-ratio: 1;
 				grid-column: auto / span 2;
-				// grid-column-end: 3;
 				grid-row: auto / span 2;
-				// grid-row-end: 3;
 			}
 			.client__grid_card-wide{
-				// aspect-ratio: 2;
 				grid-column: auto / span 2;
-				// grid-column-end: 3;
 				grid-row: auto / span 1;
-				// grid-row-end: 3;
 				.cases-slider__item_nomination {
 					padding: 30px 30px 60px 30px;
 					display: flex;
 					flex-flow: column nowrap;
 					.accent{
 						font-size: 74px;
-						// ~ p{
-						// 	font-size: 4vw;
-						// }
 					}
 				}
 			}
-			// img{
-			// 	max-height: 345px;
-			// }
 		}
 		&-news{
 			grid-template-rows: repeat(2,minmax(100px, 0.5fr));
-			// grid-template-rows: repeat(2, calc(50% - 10px));
 			.client__grid_card-tall{
 				aspect-ratio: 1;
 				&__whole{
 					&_image{
-						// height: 315px;
 						height: calc(50%);
 						margin-top: auto;
 						flex-shrink: 0;
@@ -8409,10 +8243,8 @@ a.button {
 			top: 0;
 			&__text{
 				color: #fff;
-				// padding: 0 40px;
                 line-height: 130%;
 				margin:  0 0 40px 0;
-				// font-size: 46px;
     			font-size: 46px;
 			}
 			&__img {
@@ -8473,10 +8305,7 @@ a.button {
     padding: 10px;
     border: none;
     background: #24DA8D;
-    // box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
     position: relative;
-    // bottom: 50px;
-    // right: 50px;
     cursor: pointer;
     outline: none;
     z-index: 100;
