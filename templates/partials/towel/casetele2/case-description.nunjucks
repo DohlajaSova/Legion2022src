@@ -148,7 +148,7 @@
     </div>
 </div>
 <div class="case-stages">
-    <div class="principles principles_case">
+    <div class="principles principles_case"><div class="container">
         <div class="cases__grid">
             <div class="cases__grid_card cases__grid_card_bg10 cases__grid_card-medium-aspect-1">
                 <div class="problems__item_container">
@@ -282,5 +282,5 @@
             </ul>
             </div>
         </div>
-    </div>
+    </div></div>
 </div>
