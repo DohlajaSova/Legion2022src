@@ -2789,7 +2789,7 @@ a.button {
 		}
 
 		&_text {
-			width: 49%;
+			width: 49.2%;
 			margin-bottom: 40px;
             padding-top: 10px;
 			color: $color-blue-dark;
@@ -2918,7 +2918,7 @@ a.button {
 			h2,
 			.h2,
 			.principles__content_head {
-				width: 44%;
+				width: 49.2%;
 			}
 
 			.principles__content_head h2,
@@ -3146,6 +3146,7 @@ a.button {
         column-gap: 20px;
         grid-template-columns: repeat(2, calc(50% - 10px));
         grid-template-rows: 650px;
+		margin-bottom:60px;
         &_card {
             display: flex;
             flex-flow: column nowrap;
@@ -4394,7 +4395,7 @@ a.button {
 		.projects__panels {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 0px;
+			margin-bottom: 60px;
 		}
 
 		.project_tall {
