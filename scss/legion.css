@@ -2161,7 +2161,7 @@ a.button {
   .principles__content h2 {
     width: 32%; }
   .principles__content_text {
-    width: 49%;
+    width: 49.2%;
     margin-bottom: 40px;
     padding-top: 10px;
     color: #1E2738; }
@@ -2244,7 +2244,7 @@ a.button {
   .principles_case .principles__content h2,
   .principles_case .principles__content .h2,
   .principles_case .principles__content .principles__content_head {
-    width: 44%; }
+    width: 49.2%; }
   .principles_case .principles__content .principles__content_head h2,
   .principles_case .principles__content .principles__content_head .h2 {
     width: 100%; }
@@ -2401,7 +2401,8 @@ a.button {
   row-gap: 20px;
   column-gap: 20px;
   grid-template-columns: repeat(2, calc(50% - 10px));
-  grid-template-rows: 650px; }
+  grid-template-rows: 650px;
+  margin-bottom: 60px; }
   .case3__content_card {
     display: flex;
     flex-flow: column nowrap;
@@ -2424,7 +2425,7 @@ a.button {
       color: #fff !important;
       text-decoration: none !important;
       cursor: pointer;
-      margin-bottom: 40px; }
+      margin-bottom: 36px; }
     .case3__content_card-accent {
       font-size: 74px; }
   .case3__content_card:first-child {
@@ -2433,6 +2434,62 @@ a.button {
     .case3__content_card:first-child.casevenn {
       background: url("img/case_venn-content-foreground.webp") bottom left no-repeat #1E2738;
       background-size: contain; }
+
+.case-common__kpiWrapper {
+  background-color: #84AEFF !important; }
+  .case-common__kpiWrapper .container {
+    position: absolute;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 40px 62px 40px 40px; }
+.case-common__content {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-template-rows: 650px;
+  margin-bottom: 60px; }
+  .case-common__content_card {
+    display: flex;
+    flex-flow: column nowrap;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #1E2738;
+    background-size: cover;
+    color: #fff;
+    padding-top: 40px;
+    border-radius: 45px; }
+    .case-common__content_card:hover {
+      color: #fff;
+      text-decoration: none; }
+    .case-common__content_card > * {
+      padding: 0 40px;
+      line-height: 130%; }
+    .case-common__content_card-tip {
+      font-size: 24px;
+      margin-bottom: auto; }
+    .case-common__content_card-main {
+      font-size: 46px;
+      margin-bottom: 10px; }
+    .case-common__content_card-transition {
+      font-size: 16px;
+      color: #fff !important;
+      text-decoration: none !important;
+      cursor: pointer;
+      margin-bottom: 36px; }
+    .case-common__content_card-accent {
+      font-size: 74px; }
+    .case-common__content_card-image {
+      margin-top: 0;
+      padding: 0;
+      border-radius: 45px; }
+  .case-common__content_publication {
+    border-radius: 45px 45px 60px 60px; }
 
 .casevenn__content {
   display: grid;
@@ -3192,7 +3249,7 @@ a.button {
   .projects_case .projects__panels {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0px; }
+    margin-bottom: 60px; }
   .projects_case .project_tall {
     width: 49.2%;
     padding-bottom: 49.2%; }

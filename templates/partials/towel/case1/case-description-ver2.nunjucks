@@ -506,21 +506,22 @@
 
 <div class="case-stages">
     <div class="principles principles_case">
-        <div class="container case3__container_rate">
-            <div class="case3__content">
-                <div class="case3__content_card">
-                    <div class="case3__content_card-tip">Публикации</div>
-                    <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/" class="case3__content_card-main" target="_blank">
-                    Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
-                    </a>
-                    <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/" class="case3__content_card-transition" target="_blank">Подробнее&nbsp;→</a>
-                </div>
-                <div class="case3__content_card">
-                    <div class="case3__content_card-main">
-                    Оценки за&nbsp;декабрь 2021 во&nbsp;всех магазинах сети
+        <div class="container case-common__container_rate">
+            <div class="case-common__content">
+                <a href="" class="case-common__content_card case-common__content_publication" target="_blank">
+                    <div class="case-common__content_card-tip">Публикации</div>
+                    <div class="case-common__content_card-main" target="_blank">
+                        Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
                     </div>
-                    <div class="case3__content_card-accent">
-                    19&nbsp;231&nbsp;639
+                    <div class="case-common__content_card-transition">Подробнее&nbsp;→</div>
+                    <img class="case-common__content_card-image" src="/assets/css/img/case3-content-foreground.webp" alt="Рейтинг товаров на ценниках в магазине"/>
+                </a>
+                <div class="case-common__content_card" style="background-image:url('/assets/css/img/case3-content-background.webp')">
+                    <div class="case-common__content_card-main">
+                        Оценки за&nbsp;декабрь 2021 во&nbsp;всех магазинах сети
+                    </div>
+                    <div class="case-common__content_card-accent">
+                        19&nbsp;231&nbsp;639
                     </div>
                 </div>
             </div>
@@ -530,23 +531,24 @@
 
 <div class="case-stages">
     <div class="principles principles_case">
-        <div class="container case3__container_rate">
-            <div class="case3__content">
-                <div class="case3__content_card">
-                    <div class="case3__content_card-main">
-                    Оценки за&nbsp;декабрь 2021 во&nbsp;всех магазинах сети
+        <div class="container case-common__container_rate">
+            <div class="case-common__content">
+                <div class="case-common__content_card" style="background-image:url('/assets/css/img/case3-content-background.webp')">
+                    <div class="case-common__content_card-main">
+                        Оценки за&nbsp;декабрь 2021 во&nbsp;всех магазинах сети
                     </div>
-                    <div class="case3__content_card-accent">
-                    19&nbsp;231&nbsp;639
+                    <div class="case-common__content_card-accent">
+                        19&nbsp;231&nbsp;639
                     </div>
                 </div>
-                <div class="case3__content_card">
-                    <div class="case3__content_card-tip">Публикации</div>
-                    <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/" class="case3__content_card-main" target="_blank">
-                    Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
-                    </a>
-                    <a href="https://retail-loyalty.org/news/pyaterochka-perenesla-reyting-tovarov-iz-prilozheniya-na-tsenniki-v-magazinakh-seti-v-kazani/" class="case3__content_card-transition" target="_blank">Подробнее&nbsp;→</a>
-                </div>
+                <a href="" class="case-common__content_card case-common__content_publication" target="_blank">
+                    <div class="case-common__content_card-tip">Публикации</div>
+                    <div class="case-common__content_card-main" target="_blank">
+                        Рейтинг товаров на&nbsp;ценниках в&nbsp;магазине
+                    </div>
+                    <div class="case-common__content_card-transition">Подробнее&nbsp;→</div>
+                    <img class="case-common__content_card-image" src="/assets/css/img/case3-content-foreground.webp" alt="Рейтинг товаров на ценниках в магазине"/>
+                </a>
             </div>
         </div>
     </div>

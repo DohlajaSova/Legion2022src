@@ -3172,7 +3172,7 @@ a.button {
                 color: #fff!important;
                 text-decoration: none!important;
                 cursor: pointer;
-                margin-bottom: 40px;
+                margin-bottom: 36px;
             }
             &-accent {
                 font-size: 74px;
@@ -3185,6 +3185,75 @@ a.button {
 				background:url($img-path + "case_venn-content-foreground.webp") bottom left no-repeat $color-blue-dark;
 				background-size: contain;
 			}
+        }
+    }
+}
+.case-common{
+    &__kpiWrapper {
+        background-color: $color-blue-light!important;
+        .container {
+            position: absolute;
+            height: 100%;
+			left: 0%;
+			top: 0;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding: 40px 62px 40px 40px;
+        }
+    }
+    &__content {
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, calc(50% - 10px));
+        grid-template-rows: 650px;
+		margin-bottom:60px;
+        &_card {
+            display: flex;
+            flex-flow: column nowrap;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-color: $color-blue-dark;
+            background-size: cover;
+            color: #fff;
+            padding-top: 40px;
+            border-radius: 45px;
+            &:hover{
+                color:$color-white;
+                text-decoration: none;
+            }
+            >* {
+                padding: 0 40px;
+                line-height: 130%;
+            }
+            &-tip {
+                font-size: 24px;
+                margin-bottom: auto;
+            }
+            &-main {
+                font-size: 46px;
+                margin-bottom: 10px;
+            }
+            &-transition {
+                font-size: 16px;
+                color: #fff!important;
+                text-decoration: none!important;
+                cursor: pointer;
+                margin-bottom: 36px;
+            }
+            &-accent {
+                font-size: 74px;
+            }
+            &-image{
+                margin-top: 0;
+                padding: 0;
+                border-radius: 45px;
+            }
+        }
+        &_publication{
+            border-radius: 45px 45px 60px 60px;
         }
     }
 }
