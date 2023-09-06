@@ -554,9 +554,9 @@
     </div>
 </div>
 
-<div class="case-stages case3">
+<div class="case-stages">
     <div class="principles principles_case">
-        <div class="container container_flexible">
+        <div class="container">
             <div class="problems__item project project_tall case2__kpiWrapper case3__kpiWrapper">
                 <div class="container">
                     <div class="circle-about">
@@ -678,9 +678,9 @@
     </div>
 </div>
 
-<div class="case-stages case3">
+<div class="case-stages">
     <div class="principles principles_case">
-        <div class="container container_flexible">
+        <div class="container">
             <div class="problems__item problems__item_bg9">
                 <div class="problems__item_container">
                     <div class="problems__item_contents problems__item_contents-slider">

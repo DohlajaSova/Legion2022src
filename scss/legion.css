@@ -2453,7 +2453,8 @@ a.button {
   column-gap: 20px;
   grid-template-columns: repeat(2, calc(50% - 10px));
   grid-template-rows: 650px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  width: 100%; }
   .case-common__content_card {
     display: flex;
     flex-flow: column nowrap;

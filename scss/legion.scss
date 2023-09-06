@@ -3210,6 +3210,7 @@ a.button {
         grid-template-columns: repeat(2, calc(50% - 10px));
         grid-template-rows: 650px;
 		margin-bottom:60px;
+        width: 100%;
         &_card {
             display: flex;
             flex-flow: column nowrap;
