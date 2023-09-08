@@ -1983,6 +1983,8 @@ a.button {
 .cases-slider-info__item.active {
   height: 100%; }
 
+.case-stages.withmargin {
+  margin-bottom: 80px; }
 .case-stages__digit {
   width: 84px;
   height: 84px;
@@ -2447,12 +2449,25 @@ a.button {
     flex-flow: column nowrap;
     align-items: center;
     padding: 40px 62px 40px 40px; }
+.case-common__container_rate .problems__item {
+  width: 100%;
+  padding-bottom: calc(100% - 60px); }
+.case-common__container_rate .slider-container {
+  display: block;
+  width: 100%;
+  height: 0;
+  margin-bottom: 23px;
+  position: relative;
+  padding: 60px 40px calc(100% - 60px);
+  background-color: #F0F0F0;
+  overflow: hidden;
+  border-radius: 42px; }
 .case-common__content {
   display: grid;
   row-gap: 20px;
   column-gap: 20px;
   grid-template-columns: repeat(2, calc(50% - 10px));
-  grid-template-rows: 650px;
+  grid-template-rows: 1fr;
   margin-bottom: 60px;
   width: 100%; }
   .case-common__content_card {
@@ -2490,7 +2505,29 @@ a.button {
       padding: 0;
       border-radius: 45px; }
   .case-common__content_publication {
-    border-radius: 45px 45px 60px 60px; }
+    border-radius: 45px 45px 60px 60px;
+    height: 0;
+    padding-bottom: calc(100% - 40px);
+    position: relative; }
+    .case-common__content_publication-container {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      justify-content: space-between;
+      padding: 0; }
+      .case-common__content_publication-container > * {
+        padding: 0 40px;
+        line-height: 130%; }
+      .case-common__content_publication-container .case-common__content_card-tip {
+        padding-top: 40px; }
+      .case-common__content_publication-container .case-common__content_card-image {
+        padding: 0; }
+  .case-common__content .projects .project_tall {
+    height: 0; }
 
 .casevenn__content {
   display: grid;

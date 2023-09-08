@@ -2494,6 +2494,9 @@ a.button {
 }
 
 .case-stages {
+    &.withmargin{
+        margin-bottom: 80px;
+    }
 	&__digit {
 		width: 84px;
 		height: 84px;
@@ -3203,12 +3206,31 @@ a.button {
             padding: 40px 62px 40px 40px;
         }
     }
+    &__container{
+        &_rate{
+            .problems__item{
+                width: 100%;
+                padding-bottom: calc(100% - 60px);
+            }
+            .slider-container{
+                display: block;
+                width: 100%;
+                height: 0;
+                margin-bottom: 23px;
+                position: relative;
+                padding: 60px 40px calc(100% - 60px);
+                background-color: $color-grey-light;
+                overflow: hidden;
+                border-radius: 42px;
+            }
+        }
+    }
     &__content {
         display: grid;
         row-gap: 20px;
         column-gap: 20px;
         grid-template-columns: repeat(2, calc(50% - 10px));
-        grid-template-rows: 650px;
+        grid-template-rows: 1fr;
 		margin-bottom:60px;
         width: 100%;
         &_card {
@@ -3255,6 +3277,33 @@ a.button {
         }
         &_publication{
             border-radius: 45px 45px 60px 60px;
+            height: 0;
+            padding-bottom: calc(100% - 40px);
+            position: relative;
+            &-container{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-content: space-between;
+                padding: 0;
+                & > *{
+                    padding: 0 40px;
+                    line-height: 130%;
+                }
+                .case-common__content_card-tip{
+                    padding-top: 40px;
+                }
+                .case-common__content_card-image{
+                    padding: 0;
+                }
+            }
+        }
+        .projects .project_tall{
+            height: 0;
         }
     }
 }
