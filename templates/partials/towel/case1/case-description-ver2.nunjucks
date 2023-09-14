@@ -927,3 +927,22 @@
         </div>
     </div>
 </div>
+
+<div class="js-timeline">
+    <div class="js-timeline-grid">
+        <div data-name="Сентябрь" data-start="0"></div>
+        <div data-name="Октябрь" data-start="0.23"></div>
+        <div data-name="Ноябрь" data-start="0.81"></div>
+    </div>
+    <div class="js-timeline-events">
+        <div data-name="Интервью" data-fullname="Серия встреч для выявления барьеров" data-text="" data-start="0"></div>
+        <div data-name="Mindmap AS IS" data-fullname="Карта связей в текущей инфраструктуре" data-text="" data-start="0.1"></div>
+        <div data-name="Mindmap TO BE" data-fullname="Карта связей при оптимизации процессов" data-text="" data-start="0.3"></div>
+        <div data-name="BPMN" data-fullname="Моделирование основного бизнес-процесса" data-text="" data-start="0.4"></div>
+        <div data-name="Схемы архитектуры" data-fullname="Две схемы в сравнении: AS IS и TO BE" data-text="" data-start="0.5"></div>
+        <div data-name="Анализ конкурентов" data-fullname="Сравнение с конкурентами по функциональностям" data-text="" data-start="0.7"></div>
+        <div data-name="Roadmap" data-fullname="Визуализация плана запуска и результатов проекта" data-text="" data-start="0.8"></div>
+        <div data-name="Оценка MVP" data-fullname="Детализация этапов запуска MVP" data-text="" data-start="0.85"></div>
+        <div data-name="Презентация" data-fullname="Презентация отчёта по результатам работы" data-text="" data-start="0.9"></div>
+    </div>
+</div>

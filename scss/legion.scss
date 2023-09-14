@@ -8567,6 +8567,78 @@ a.button {
 	}
 }
 
+.timeline{
+    margin-bottom: 80px;
+    background-color: $color-grey-light;
+    position: relative;
+    width:100%;
+    overflow: hidden;
+    &_container{
+        position: relative;
+        padding: 0 60px;
+    }
+    &_event{
+        display: flex;
+        background-color: $color-blue-dark;
+        padding: 6px 6px 6px 14px;
+        height: 42px;
+        border-radius: 22px;
+        color:$color-white;
+        font-size: 16px;
+        line-height: 32px;
+        position: absolute;
+        white-space: nowrap;
+        &:hover{
+            color: $color-white;
+            text-decoration: none;
+        }
+        &.level1{
+            top:60px;
+        }
+        &.level2{
+            top:122px;
+            background-color: $color-blue-electric;
+        }
+        &.level3{
+            top:184px;
+        }
+        &.level4{
+            top:246px;
+            background-color: $color-blue-electric;
+        }
+        &.level5{
+            top:308px;
+        }
+        &.level6{
+            top:370px;
+            background-color: $color-blue-electric;
+        }
+        &.level7{
+            top:432px;
+        }
+        &.level8{
+            top:494px;
+            background-color: $color-blue-electric;
+        }
+        & > i{
+            width: 30px;
+            height: 30px;
+            background: url($img-path + "icon-timeline.svg") center center no-repeat;
+            margin-left: 8px;
+            transition: transform 0.3s;
+        }
+        &.open{
+            & > i{
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    &.loading{
+        position:absolute;
+        left:-10000px;
+    }
+}
+
 .mobile480-show {
 	display: none;
 }
