@@ -5,16 +5,21 @@
 {% block content %}
 
   {% include "partials/towel/top.nunjucks" %}
-  {% include "partials/towel/cases.nunjucks" %}
-  {% include "partials/towel/about.nunjucks" %}
-  {% include "partials/towel/category-business.nunjucks" %}
-  {% include "partials/towel/principles.nunjucks" %}
-  {% include "partials/towel/problems-business.nunjucks" %}
-  {% include "partials/towel/projects1.nunjucks" %}
-  {% include "partials/towel/feedback-business-compact.nunjucks" %}
-  {% include "partials/towel/news.nunjucks" %}
+  {% include "partials/towel/redesign/subheader.nunjucks" %}
+  {% include "partials/towel/redesign/expert-block.nunjucks" %}
+  {% include "partials/towel/redesign/service-block.nunjucks" %}
+  {% include "partials/towel/redesign/features.nunjucks" %}
+  {% include "partials/towel/redesign/projects.nunjucks" %}
+  {# {% include "partials/towel/cases.nunjucks" %} #}
+  {# {% include "partials/towel/about.nunjucks" %} #}
+  {# {% include "partials/towel/category-business.nunjucks" %} #}
+  {# {% include "partials/towel/principles.nunjucks" %} #}
+  {# {% include "partials/towel/problems-business.nunjucks" %} #}
+  {# {% include "partials/towel/projects1.nunjucks" %} #}
+  {# {% include "partials/towel/feedback-business-compact.nunjucks" %} #}
+  {# {% include "partials/towel/news.nunjucks" %} #}
 
-  {% include "partials/popup-video-principles.nunjucks" %}
-  {% include "partials/popup-feedback.nunjucks" %}
+  {# {% include "partials/popup-video-principles.nunjucks" %} #}
+  {# {% include "partials/popup-feedback.nunjucks" %} #}
 
 {% endblock %}

@@ -37,6 +37,20 @@
         padding-left:60px;
         padding-right:60px;
     }
+
+    // redesign container padding
+    .redesign-features,
+    .redesign-graphics,
+    .subheader,
+    .expert,
+    .preservice {
+        .container {
+            padding-left:60px;
+            padding-right:60px;
+        }
+    }
+    // --redesign container padding 
+
     .news.news_featured,
     .body_news-ver2 .top{
         padding-left: 0;
@@ -586,6 +600,9 @@
             grid-template-columns: repeat(1,minmax(100%,300px));
             grid-template-rows: repeat(1,minmax(auto,300px));   
         }
+    }
+    .subheader-info-card-text {
+        font-size: 1.5vw;
     }
 }
 

@@ -2124,6 +2124,63 @@ docReady(function () {
         }
     }
 
+    // redesign
+    if (document.querySelectorAll(".js-expert-slider").length > 0) {
+        if (document.querySelector('.slider-container')) {
+            const container = document.querySelector(".js-expert-slider");
+            const sliderCases = tns({
+                container: '.js-expert-slider .slider-container',
+                gutter: 0,
+                controls: false,
+                nav: true,
+                navPosition: 'bottom',
+                navContainer: '.js-expert-dots',
+                mouseDrag: true,
+                slideBy: 'page',
+                mode: "gallery",
+            });
+            // desired do call any slider from any place at 
+            // switching slides by click into block
+            if (document.querySelectorAll(".js-switch").length > 0) {
+                const sw = document.querySelectorAll(".js-switch")[0];
+                // const data = sw.dataset;
+                // && data.switchClass
+                if(sw.children?.length) {
+                    for(let one = 0; one < sw.children.length; one ++) {
+                        const child = sw.children[one];
+                        child.addEventListener('click', function() {
+                            // const tn = document.querySelectorAll(".js-expert-slider")[0]
+                            // console.log({tn})
+                            // tn.goTo(one)
+                            sliderCases.goTo(one);
+                            // clear selection
+                            for(let two = 0; two < sw.children.length; two ++) {
+                                sw.children[two].classList.remove("active")
+                            }
+                            child.classList.add("active");
+                        }) 
+                    }
+                }
+            }
+        }
+    }
+
+    if (document.querySelectorAll(".js-children-click-set-active").length > 0) {
+        const wrappers = document.querySelectorAll(".js-children-click-set-active");
+        wrappers.forEach(wrap => {
+            Array.from(wrap.children).forEach(child => {
+                child.addEventListener('click', (e) => {
+                    if(!child.classList.contains("active")) {
+                        Array.from(wrap.children).forEach(child => {
+                            child.classList.remove("active");
+                        })
+                        child.classList.add("active");
+                    }
+                })
+            })
+        });
+    }
+    //--redesign
     if (document.querySelectorAll("iframe").length > 0) {
         initVideo();
     }

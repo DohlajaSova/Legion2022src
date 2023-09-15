@@ -1,0 +1,28 @@
+<div class="redesign-features">
+  <div class="container">
+    <div class="redesign-features-preview">
+      <h2 class="header">От мобильных приложений до стратегий отраслевого лидерства</h2>
+      <button class="button-redesign">Компетенции и услуги</button>
+    </div>
+    <div class="redesign-features-list-wrapper">
+      <div class="redesign-features-list">
+        <div class="vertical-border"></div>
+        <span class="text">Аудит кода</span>
+        <span class="text">Анализ конкурентов</span>
+        <span class="text">Локализация</span>
+        <span class="text">Нативная разработка</span>
+        <span class="text">Flutter</span>
+        <span class="text">React Native</span>
+      </div>
+      <div class="redesign-features-list">
+        <div class="vertical-border"></div>
+        <span class="text">Аутстаффинг</span>
+        <span class="text">UX/UI дизайн</span>
+        <span class="text">Frontend/Backend</span>
+        <span class="text">Перевод в инхаус</span>
+        <span class="text">Контроль качества</span>
+        <span class="text">Импортозамещение</span>
+      </div>
+    </div>
+  </div>
+</div>

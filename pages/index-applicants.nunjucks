@@ -5,7 +5,7 @@
 {% block content %}
 
   {% include "partials/towel/top.nunjucks" %}
-  {% include "partials/towel/cases.nunjucks" %}
+  {# {% include "partials/towel/cases.nunjucks" %} #}
   {% include "partials/towel/about.nunjucks" %}
   {% include "partials/towel/category-applicants.nunjucks" %}
   {% include "partials/towel/team.nunjucks" %}
