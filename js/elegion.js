@@ -1612,41 +1612,46 @@ docReady(function () {
 
 
     // круг с цифрами
-    let circleText = document.querySelector(".circle-text");
-    let circlePic = document.querySelector(".circle-pic");
-    let circleAbout = document.querySelector(".circle-about") || document.querySelector(".about__animation_items");
+    let circleContainer = document.querySelectorAll(".case2__kpiWrapper");
 
-    if (circlePic != null) {
-        circlePic.classList.add("rotating");
-        let num = 3;
-        setInterval(function () {
-            for (i = 0; i < circleText.children.length; i++) {
-                circleText.children[i % circleText.children.length].style.opacity = "0";
-            }
-            for (i = 0; i < circleAbout.children.length; i++) {
-                circleAbout.children[i % circleAbout.children.length].style.opacity = "0";
-            }
-            setTimeout(() => {
-                for (i = 0; i < circleText.children.length; i++) {
-                    circleText.children[i % circleText.children.length].style.display = "none";
-                }
-                for (i = 0; i < circleAbout.children.length; i++) {
-                    circleAbout.children[i % circleAbout.children.length].style.display = "none";
-                }
-            }, 1000);
-            setTimeout(() => {
-                circleText.children[num % circleText.children.length].style.opacity = "0";
-                circleText.children[num % circleText.children.length].style.display = "block";
-                circleAbout.children[num % circleAbout.children.length].style.opacity = "0";
-                circleAbout.children[num % circleAbout.children.length].style.display = "block";
-                setTimeout(() => {
-                    circleText.children[num % circleText.children.length].style.opacity = "1";
-                    circleAbout.children[num % circleAbout.children.length].style.opacity = "1";
-                }, 250);
-            }, 1000);
-            num++;
-        }, 5000);
-    }
+    for (j = 0; j < circleContainer.length; j++) {
+
+		let circleText = circleContainer[j].querySelector(".circle-text");
+		let circlePic = circleContainer[j].querySelector(".circle-pic");
+		let circleAbout = circleContainer[j].querySelector(".circle-about") || document.querySelector(".about__animation_items");
+	
+		if (circlePic != null) {
+			circlePic.classList.add("rotating");
+			let num = 3;
+			setInterval(function () {
+				for (i = 0; i < circleText.children.length; i++) {
+					circleText.children[i % circleText.children.length].style.opacity = "0";
+				}
+				for (i = 0; i < circleAbout.children.length; i++) {
+					circleAbout.children[i % circleAbout.children.length].style.opacity = "0";
+				}
+				setTimeout(() => {
+					for (i = 0; i < circleText.children.length; i++) {
+						circleText.children[i % circleText.children.length].style.display = "none";
+					}
+					for (i = 0; i < circleAbout.children.length; i++) {
+						circleAbout.children[i % circleAbout.children.length].style.display = "none";
+					}
+				}, 1000);
+				setTimeout(() => {
+					circleText.children[num % circleText.children.length].style.opacity = "0";
+					circleText.children[num % circleText.children.length].style.display = "block";
+					circleAbout.children[num % circleAbout.children.length].style.opacity = "0";
+					circleAbout.children[num % circleAbout.children.length].style.display = "block";
+					setTimeout(() => {
+						circleText.children[num % circleText.children.length].style.opacity = "1";
+						circleAbout.children[num % circleAbout.children.length].style.opacity = "1";
+					}, 250);
+				}, 1000);
+				num++;
+			}, 5000);
+		}
+	}
 
     if (document.querySelector('.js-map-container')) {
         new ContactMapYandex(document.querySelector('.js-map-container'),
@@ -2183,5 +2188,83 @@ docReady(function () {
     //--redesign
     if (document.querySelectorAll("iframe").length > 0) {
         initVideo();
+    }
+
+    //генератор таймлайна на странице кейса
+    let timeline = document.querySelector(".js-timeline");
+    let timelineGrid = document.querySelector(".js-timeline-grid");
+    let timelineEvents = document.querySelector(".js-timeline-events");
+    if (timeline != null && timelineGrid != null && timelineEvents != null) {
+        let events = timelineEvents.querySelectorAll("div");
+        let eventList = "";
+        let tlContainer = document.createElement('div');
+        tlContainer.className = 'timeline loading';
+        for (i = 0; i < events.length; i++){
+            let curNode = document.createElement('a');
+            curNode.classList.add("timeline_event");
+            curNode.classList.add("js-timeline_event");
+            curNode.setAttribute("data-fullname", events[i].dataset.fullname);
+            curNode.setAttribute("data-start", events[i].dataset.start);
+            curNode.innerHTML = events[i].dataset.name+'<i></i>';
+            eventList += curNode.outerHTML;
+        }
+        tlContainer.innerHTML = '<div class="timeline_container">'+eventList+'</div>';
+        timeline.before(tlContainer);
+
+        let nodes = tlContainer.querySelectorAll(".js-timeline_event");
+        for (i = 0; i < nodes.length; i++){
+            nodes[i].setAttribute("data-width", nodes[i].getBoundingClientRect().width);
+            nodes[i].addEventListener("click", function (e) {
+                e.preventDefault();
+                e.target.classList.contains("open") ?
+                    e.target.classList.remove("open") :
+                    e.target.classList.add("open");
+            }, false);
+            nodes[i].querySelector("i").addEventListener("click", function (e) {
+                e.preventDefault();
+                e.target.parentElement.classList.contains("open") ?
+                    e.target.parentElement.classList.remove("open") :
+                    e.target.parentElement.classList.add("open");
+            }, false);
+        }
+        timeline.remove();
+        
+        let prevNode = null;
+        const nodeGap = 12;
+        let paddingVert = 60;
+        let paddingLeft = getComputedStyle(document.querySelector(".timeline_container")).paddingLeft.substring(0,getComputedStyle(document.querySelector(".timeline_container")).paddingLeft.length-2)*1;
+        //let containerWidth = document.querySelector(".timeline_container").getBoundingClientRect().width - nodes[nodes.length-1].dataset.width*1;
+        let containerWidth = (paddingLeft + nodes[nodes.length-1].dataset.width*1) / (1 - nodes[nodes.length-1].dataset.start);
+        console.log(containerWidth);
+        console.log(paddingLeft,nodes[nodes.length-1].dataset.width*1,nodes[nodes.length-1].dataset.start);
+        let nodeLevels = new Array(8);
+        let maxLevelUsed;
+        nodeLevels.fill(0);
+        for (i = 0; i < nodes.length; i++){
+            if (i == 0){
+                nodes[0].setAttribute("data-level", 1);
+                nodes[0].style.left = paddingLeft + "px";
+                nodes[0].classList.add("level1");
+                nodeLevels[1] = paddingLeft + nodes[0].dataset.width*1 + nodeGap;
+                maxLevelUsed = 1;
+            }
+            else{
+                let curLeft = paddingLeft + nodes[i].dataset.start * containerWidth;
+                nodes[i].style.left = curLeft+"px";
+                
+                for (lev = 1; lev < nodeLevels.length + 1; lev++){
+                    if (nodeLevels[lev]*1 < curLeft){
+                        nodes[i].setAttribute("data-level", lev);
+                        nodeLevels[lev] = paddingLeft + curLeft + nodes[i].dataset.width*1 + nodeGap;
+                        nodes[i].classList.add("level"+lev);
+                        if (lev>maxLevelUsed) maxLevelUsed = lev;
+                        break;
+                    }
+                }
+            }
+        }
+        document.querySelector(".timeline_container").style.height = 2*paddingVert + maxLevelUsed*62 + "px";
+
+        tlContainer.classList.remove("loading");
     }
 });
