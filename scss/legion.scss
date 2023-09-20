@@ -8582,6 +8582,21 @@ a.button {
     &_container{
         position: relative;
         padding: 0 60px;
+        z-index: 2;
+    }
+    &_milestone{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
+        color: $color-grey-dark;
+        &:nth-child(2n+1){
+            background: rgba(255,255,255,0.5);
+        }
     }
     &_event{
         display: flex;
@@ -8594,6 +8609,7 @@ a.button {
         line-height: 32px;
         position: absolute;
         white-space: nowrap;
+        filter:none;
         &:hover{
             color: $color-white;
             text-decoration: none;
@@ -8625,6 +8641,9 @@ a.button {
         &.level8{
             top:494px;
             background-color: $color-blue-electric;
+        }
+        .open &{
+            filter: blur(2px);
         }
         & > i{
             width: 30px;
