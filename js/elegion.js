@@ -2215,6 +2215,20 @@ docReady(function () {
                    
         // события: обработка клика
         let nodes = tlContainer.querySelectorAll(".js-timeline_event");
+		function openEventNode(e){
+			let openNode = document.createElement('div');
+			openNode.classList.add("timeline_event");
+			openNode.classList.add("timeline_event-open");
+			openNode.style.left = e.style.left;
+			for (i = 1; i<9; i++){
+				if (e.classList.contains("level"+i)){
+					openNode.classList.add("level"+i);
+					break;
+				}
+			}
+			openNode.innerHTML = "aaa";
+			document.querySelector(".timeline_container").appendChild(openNode);
+		}
         for (i = 0; i < nodes.length; i++){
             nodes[i].setAttribute("data-width", nodes[i].getBoundingClientRect().width);
             nodes[i].addEventListener("click", function (e) {
@@ -2228,6 +2242,7 @@ docReady(function () {
                 {
                     e.target.classList.add("open");
                     e.target.parentElement.classList.add("open");
+					openEventNode(e.target);
                 }
             }, false);
             nodes[i].querySelector("i").addEventListener("click", function (e) {
@@ -2241,6 +2256,7 @@ docReady(function () {
                 {
                     e.target.parentElement.classList.add("open");
                     e.target.parentElement.parentElement.classList.add("open");
+					openEventNode(e.target.parentElement);
                 }
             }, false);
         }

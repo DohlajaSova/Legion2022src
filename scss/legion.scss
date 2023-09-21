@@ -8647,6 +8647,16 @@ a.button {
         }
         .open &{
             filter: blur(2px);
+			&.timeline_event-open{
+				position:absolute;
+				filter: none;
+				width:300px;
+				border-radius:42px;
+				background-color:#1A60FF;
+			}
+			&.open{
+				display:none;
+			}
         }
         & > i{
             width: 30px;
