@@ -2224,6 +2224,7 @@ docReady(function () {
                     e.target.classList.remove("open");
                     e.target.parentElement.classList.remove("open");
                 }
+				else
                 {
                     e.target.classList.add("open");
                     e.target.parentElement.classList.add("open");
@@ -2236,6 +2237,7 @@ docReady(function () {
                     e.target.parentElement.classList.remove("open");
                     e.target.parentElement.parentElement.classList.remove("open");
                 }
+				else
                 {
                     e.target.parentElement.classList.add("open");
                     e.target.parentElement.parentElement.classList.add("open");
@@ -2297,7 +2299,10 @@ docReady(function () {
             curMilestone.innerHTML = milestones[i].dataset.name;
             milestoneList += curMilestone.outerHTML;
         }
-        tlContainer.innerHTML += '<div class="timeline_container-milestones">' + milestoneList + '</div>';
+		let milestoneContainer = document.createElement('div');
+		milestoneContainer.classList.add("timeline_container-milestones");
+		milestoneContainer.innerHTML = milestoneList;
+        tlContainer.appendChild(milestoneContainer);
 
         tlContainer.classList.remove("loading");
     }

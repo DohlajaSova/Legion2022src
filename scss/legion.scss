@@ -8597,6 +8597,9 @@ a.button {
         &:nth-child(2n+1){
             background: rgba(255,255,255,0.5);
         }
+		.open + .timeline_container-milestones &{
+			filter: blur(2px);
+		}
     }
     &_event{
         display: flex;
@@ -8654,7 +8657,7 @@ a.button {
         }
         &.open{
             & > i{
-                transform: rotate(-90deg);
+                transform: rotate(180deg);
             }
         }
     }
