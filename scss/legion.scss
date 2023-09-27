@@ -8998,8 +8998,8 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			flex-flow: row nowrap;
 			gap: 14px;
-
 			position: absolute;
+			z-index: 2;
 
 			.triangle {
 				fill: transparent;
