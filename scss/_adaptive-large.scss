@@ -41,6 +41,7 @@
     // redesign container padding
     .redesign-features,
     .redesign-graphics,
+    .redesign-projects,
     .subheader,
     .expert,
     .preservice {
@@ -601,9 +602,157 @@
             grid-template-rows: repeat(1,minmax(auto,300px));   
         }
     }
+    // redesign
     .subheader-info-card-text {
         font-size: 1.5vw;
     }
+    .top,
+    .redesign-features,
+    .redesign-graphics,
+    .redesign-projects,
+    .subheader,
+    .preservice {
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .subheader {
+        &-grid {
+            $brad: 16px;
+            $catbrad: 16px;
+    
+            display: grid;
+            grid-template-rows: repeat(2, 180px);
+            grid-template-columns: auto repeat(3, 180px);
+            &-card {
+                border-radius: $brad;
+                &-category {
+                    border-radius: $catbrad;
+                }
+                svg {
+                    width: 120px;
+                }
+                &-text {
+                    font-size: 18px;
+                }
+                &-header {
+                    font-size: 46px;
+                }
+                &-sub {
+                    .asterisk {
+                        height: 24px;
+                        font-size: 40px;
+                    }
+                }    
+            }
+        }
+    }
+    // .expert {
+    //     .container {
+    //         max-width: 1070px;
+    //         margin: auto;
+    //         padding-left: 30px;
+    //         padding-right: 30px;
+    //     }
+    // }
+    .expert {
+        // .container {
+        //     padding-left: calc(100vw - 960px);
+        //     padding-right: 50px;
+        // }
+        &-header {
+            font-size: 40px;
+        }
+        &-content {
+            &-switch {
+                font-size: 16px;
+                svg {
+                    width: 160px;
+                    height: 46px;
+                }
+                div {
+                    height: 46px;
+                    padding: 14px 30px;
+                    line-height: 110%;
+                    &:nth-child(2) {
+                        // !!! rework
+                        margin-left: -5px;
+                        padding: 14px 30px;
+                    }
+                    &:nth-child(3) {
+                        padding: 14px 20px;
+                    }
+                }
+            }
+            .slide {
+                justify-content: unset;
+                &-left-part {
+                    width: 57%;
+                    gap: 40px;
+                }
+                .tezis {
+                    &-header {
+                        font-size: 40px;
+
+                    }
+                    &-text {
+                        font-size: 16px;
+                    }
+                }
+                .description {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .slide-right-part-image .img {
+                width: 35vw;
+                // height: 35vw;
+                aspect-ratio: 1;
+            }
+        }
+    }
+    .redesign{
+        &-features {
+            margin-bottom: 80px;
+        }
+        &-projects {
+            padding-bottom: 100px;
+            h1 {
+                margin-bottom: 40px;
+            }
+            &-wrapper {
+                margin-bottom: 20px;
+            }
+            &-undertext {
+                max-width: 65%;
+                font-size: 18px;
+                margin-bottom: 100px;
+            }
+            svg {
+                max-width: 69%;
+                height: auto;
+            }
+        }
+    }
+    .preservice{
+        &-blocks {
+            gap: 80px;
+            .card {
+                gap: 50px;
+                &-icons {
+                    svg {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+    // --redesign
 }
 
 @media only screen and (max-width: 1180px) {
@@ -1148,6 +1297,24 @@
 			}
 		}
     }
+    // redesign
+    .top{ 
+        padding: 0;
+    }
+    .expert {
+        &-content {
+            &-switch { 
+                scale: .9;
+                transform-origin:  0 0;
+            }
+            .slide {
+                &-left-part {
+                    padding-top: 70px;
+                }
+            }
+        }
+    }
+    // --
 }
 @media only screen and (max-width: 1080px) {
     .header{
@@ -1178,6 +1345,37 @@
     .body_astralinux {
         .cases {
             width:70%;
+        }
+    }
+    .redesign {
+        &-features {
+            .container {
+                flex-flow: column nowrap;
+                padding-bottom: 0;
+            }
+            &-preview {
+                flex-basis: unset;
+                margin-bottom: 40px;
+            }
+            &-list {
+                border-left: 1px solid #141414;
+                padding-bottom: 40px;
+                gap: 10px;
+                letter-spacing: 1.6px;
+                &-wrapper {
+                    display: none;
+                    .vertical-border {
+                        display: none;
+                    }
+                    &.mobile {
+                        display: flex;
+                        justify-content: space-between;
+                        overflow: hidden;
+                        flex-flow: row wrap;
+                        height: 142px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1579,6 +1777,78 @@
             }
         }
     }
+    // redesign
+    .preservice-blocks {
+        .card {
+            flex-flow: column nowrap;
+            &-head {
+                font-size: 42px;
+            }
+            &-image {
+                order: 2;
+                width: 100%;
+                height: unset;
+                max-width: 574px;
+				aspect-ratio: 1.65;
+                margin: auto;
+            }
+            &-icons {
+                svg {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+    .expert {
+        padding-top: 60px;
+        &-header {
+            font-size: 42px;
+        }
+        &-content {
+            &-switch {
+                scale: 1;
+                position: static;
+                font-size: 18px;
+                flex-flow: row wrap;
+                svg {
+                    scale: 1;
+                    width: 180px;
+                    height: 52px;
+                }
+                div {
+                    height: 52px;
+                    padding: 14px 40px;
+                    line-height: 110%;
+                    &:nth-child(2) {
+                        // !!! rework
+                        margin-left: 0;
+                        padding: 14px 40px;
+                    }
+                    &:nth-child(3) {
+                        padding: 14px 22px;
+                    }
+                }
+            }
+            .slide {
+                flex-flow: column nowrap;
+                gap: 40px;
+                &-left-part {
+                    padding-top: 0;
+                    width: unset;
+                }
+                &-right-part {
+                    width: 100%;
+                    .img {
+                        margin: auto;
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+    // --
 }
 
 @media only screen and (max-width: $screen-md) {
@@ -2759,6 +3029,23 @@
                     &-arrow{
                         font-size: 16px;
                     }
+                }
+            }
+        }
+    }
+    .subheader-grid {
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(3, 180px);
+        grid-auto-flow: column;
+        &-card {
+            &-double {
+                grid-column: 2/4;
+                grid-row: 3/3;
+            }
+            &-sub {
+                grid-column: 1/end;
+                &:first-child {
+                    grid-row: 1/auto;
                 }
             }
         }

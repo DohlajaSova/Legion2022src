@@ -66,11 +66,11 @@
           </div>
           <a class="card-link" href="">подробнее >>></a>
         </div>
-        <div class="card-image" style="width:44%; height:328px"></div>
+        <div class="card-image"></div>
         <!-- <img class="card-image" src="" alt="" width="574px" height="328px"> -->
       </div>
       <div class="card">
-        <div class="card-image" style="width:44%; height:328px"></div>
+        <div class="card-image"></div>
         <div class="card-info">
           <h4 class="card-head">
             Рынок Китая
@@ -132,11 +132,11 @@
             </svg>
           </div>
         </div>
-        <div class="card-image" style="width:44%; height:328px"></div>
+        <div class="card-image"></div>
         <!-- <img class="card-image" src="" alt="" width="574px" height="328px"> -->
       </div>
       <div class="card">
-        <div class="card-image" style="width:44%; height:328px"></div>
+        <div class="card-image"></div>
         <div class="card-info">
           <h4 class="card-head">
             Комплексная разработка digital-продуктов

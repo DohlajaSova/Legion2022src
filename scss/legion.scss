@@ -8695,14 +8695,7 @@ a.button {
 		transform: rotate(360deg);
 	}
 }
-
-//------------------Адаптация---------------
-
-@import "_adaptive-large.scss";
-@import "_adaptive-768.scss";
-@import "_adaptive-480.scss";
-
-  // --redesign
+// --redesign
 
 //simple hidebox
 
@@ -9028,6 +9021,9 @@ svg.svg-hover-filter-clear {
 					font-size: 22px;
 					font-weight: 400;
 					line-height: 130%; /* 28.6px */
+					display: flex;
+					flex-flow: column nowrap;
+					gap: 20px;
 					// margin-bottom: 30px;
 				}
 				.tezis {
@@ -9047,19 +9043,19 @@ svg.svg-hover-filter-clear {
 						line-height: 130%; /* 23.4px */
 					}
 				}
-				
 			}
 			&-right-part {
 				flex-shrink: 0;
 				&-image {
 					.img {
-						width: 40vw!important;
-						height: 40vw!important;
+						max-width: 600px;
+						max-height: 600px;
+						width: 40vw;
+						height: auto;
 						aspect-ratio: 1;
 						border: 2px dashed $color-black;
 						border-radius: 30px;
 						flex-shrink: 0;
-						aspect-ratio: 574/328;
 					}
 				}
 			}
@@ -9123,6 +9119,13 @@ svg.svg-hover-filter-clear {
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 20px;
+		h1 {
+			font-size: 66px;
+			margin-bottom: 0px;
+		}
+		span {
+			font-size: 22px;
+		}
 	}
 	&-blocks {
 		display: flex;
@@ -9171,7 +9174,9 @@ svg.svg-hover-filter-clear {
 				border: 2px dashed $color-grey-light;
 				border-radius: 30px;
 				flex-shrink: 0;
-				aspect-ratio: 574/328;
+				width:44%;
+				height:328px;
+				aspect-ratio: 1.75;
 			}
 		}
 	}
@@ -9193,6 +9198,7 @@ svg.svg-hover-filter-clear {
 	}
 }
 #svghover {
+    height: auto;
 	cursor: pointer;
 	path#svg-path-move-right{
 		transition: fill .8s, transform .8s;
@@ -9207,7 +9213,11 @@ svg.svg-hover-filter-clear {
 		fill:  transparent;
 	}
 }
-
+.main-redesign {
+	.content-wrapper {
+		overflow: hidden;
+	}
+}
 .redesign {
 	&-features {
 		border-top: 1px solid #141414;
@@ -9251,6 +9261,9 @@ svg.svg-hover-filter-clear {
 			&-wrapper {
 				display: flex;
 				gap: 45px;
+				&.mobile {
+					display: none;
+				}
 			}
 			display: flex;
 			flex-flow: column nowrap;
@@ -9278,6 +9291,7 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			gap:10px;
 			margin-bottom: 40px;
+			overflow: auto;
 		}
 		&-slide {
 			flex: 0;
@@ -9302,6 +9316,7 @@ svg.svg-hover-filter-clear {
 			margin-bottom: 130px;
 		}
 		svg {
+    		max-width: 100%;
 			cursor: pointer;
 			display: flex;
 			margin: auto;
@@ -9309,3 +9324,10 @@ svg.svg-hover-filter-clear {
 	}
 }
 // --redesign
+
+
+//------------------Адаптация---------------
+
+@import "_adaptive-large.scss";
+@import "_adaptive-768.scss";
+@import "_adaptive-480.scss";
