@@ -2195,6 +2195,7 @@ docReady(function () {
     let timelineGrid = document.querySelector(".js-timeline-grid");
     let timelineEvents = document.querySelector(".js-timeline-events");
     if (timeline != null && timelineGrid != null && timelineEvents != null) {
+        // события: заполняем контейнер событий
         let events = timelineEvents.querySelectorAll("div");
         let eventList = "";
         let tlContainer = document.createElement('div');
@@ -2205,38 +2206,73 @@ docReady(function () {
             curNode.classList.add("js-timeline_event");
             curNode.setAttribute("data-fullname", events[i].dataset.fullname);
             curNode.setAttribute("data-start", events[i].dataset.start);
+            curNode.setAttribute("data-text", events[i].dataset.text);
             curNode.innerHTML = events[i].dataset.name+'<i></i>';
             eventList += curNode.outerHTML;
         }
         tlContainer.innerHTML = '<div class="timeline_container">'+eventList+'</div>';
         timeline.before(tlContainer);
-
+                   
+        // события: обработка клика
         let nodes = tlContainer.querySelectorAll(".js-timeline_event");
+		function openEventNode(e){
+			let openNode = document.createElement('div');
+			openNode.classList.add("timeline_event");
+			openNode.classList.add("timeline_event-open");
+			openNode.style.left = e.style.left;
+			for (i = 1; i<9; i++){
+				if (e.classList.contains("level"+i)){
+					openNode.classList.add("level"+i);
+					break;
+				}
+			}
+			openNode.innerHTML = "aaa";
+			document.querySelector(".timeline_container").appendChild(openNode);
+		}
         for (i = 0; i < nodes.length; i++){
             nodes[i].setAttribute("data-width", nodes[i].getBoundingClientRect().width);
             nodes[i].addEventListener("click", function (e) {
                 e.preventDefault();
-                e.target.classList.contains("open") ?
-                    e.target.classList.remove("open") :
+                if (e.target.classList.contains("open"))
+                {
+                    e.target.classList.remove("open");
+                    e.target.parentElement.classList.remove("open");
+                }
+				else
+                {
                     e.target.classList.add("open");
+                    e.target.parentElement.classList.add("open");
+					openEventNode(e.target);
+                }
             }, false);
             nodes[i].querySelector("i").addEventListener("click", function (e) {
                 e.preventDefault();
-                e.target.parentElement.classList.contains("open") ?
-                    e.target.parentElement.classList.remove("open") :
+                if (e.target.parentElement.classList.contains("open"))
+                {
+                    e.target.parentElement.classList.remove("open");
+                    e.target.parentElement.parentElement.classList.remove("open");
+                }
+				else
+                {
                     e.target.parentElement.classList.add("open");
+                    e.target.parentElement.parentElement.classList.add("open");
+					openEventNode(e.target.parentElement);
+                }
             }, false);
         }
         timeline.remove();
         
-        let prevNode = null;
+        // события: расставляем по контейнеру и по уровням
         const nodeGap = 12;
         let paddingVert = 60;
         let paddingLeft = getComputedStyle(document.querySelector(".timeline_container")).paddingLeft.substring(0,getComputedStyle(document.querySelector(".timeline_container")).paddingLeft.length-2)*1;
-        //let containerWidth = document.querySelector(".timeline_container").getBoundingClientRect().width - nodes[nodes.length-1].dataset.width*1;
-        let containerWidth = (paddingLeft + nodes[nodes.length-1].dataset.width*1) / (1 - nodes[nodes.length-1].dataset.start);
-        console.log(containerWidth);
-        console.log(paddingLeft,nodes[nodes.length-1].dataset.width*1,nodes[nodes.length-1].dataset.start);
+        let containerWidth = document.querySelector(".timeline_container").getBoundingClientRect().width - 2*paddingLeft;
+        let tempWidth = containerWidth;
+        for (i = 0; i < nodes.length; i++){
+            if (nodes[i].dataset.start > 0 && ((containerWidth - nodes[i].dataset.width*1) / nodes[i].dataset.start < tempWidth))
+                tempWidth = (containerWidth - nodes[i].dataset.width*1) / nodes[i].dataset.start;
+        }
+        containerWidth = tempWidth * timeline.dataset.width;
         let nodeLevels = new Array(8);
         let maxLevelUsed;
         nodeLevels.fill(0);
@@ -2255,7 +2291,7 @@ docReady(function () {
                 for (lev = 1; lev < nodeLevels.length + 1; lev++){
                     if (nodeLevels[lev]*1 < curLeft){
                         nodes[i].setAttribute("data-level", lev);
-                        nodeLevels[lev] = paddingLeft + curLeft + nodes[i].dataset.width*1 + nodeGap;
+                        nodeLevels[lev] = curLeft + nodes[i].dataset.width*1 + nodeGap;
                         nodes[i].classList.add("level"+lev);
                         if (lev>maxLevelUsed) maxLevelUsed = lev;
                         break;
@@ -2264,6 +2300,25 @@ docReady(function () {
             }
         }
         document.querySelector(".timeline_container").style.height = 2*paddingVert + maxLevelUsed*62 + "px";
+            
+        // сетка
+        let milestones = timelineGrid.querySelectorAll("div");
+        let milestoneList = "";
+        for (i = 0; i < milestones.length; i++){
+            let curMilestone = document.createElement('div');
+            curMilestone.classList.add("timeline_milestone");
+            let curLeft = paddingLeft + milestones[i].dataset.start * containerWidth;
+            let nextLeft = (i != milestones.length-1) ? milestones[i+1].dataset.start : 1;
+            let curWidth = (nextLeft - milestones[i].dataset.start) * containerWidth;
+            curMilestone.style.left = curLeft+"px";
+            (i != milestones.length-1) ? curMilestone.style.width = curWidth+"px" : curMilestone.style.right = "0";
+            curMilestone.innerHTML = milestones[i].dataset.name;
+            milestoneList += curMilestone.outerHTML;
+        }
+		let milestoneContainer = document.createElement('div');
+		milestoneContainer.classList.add("timeline_container-milestones");
+		milestoneContainer.innerHTML = milestoneList;
+        tlContainer.appendChild(milestoneContainer);
 
         tlContainer.classList.remove("loading");
     }

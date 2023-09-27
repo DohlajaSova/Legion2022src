@@ -928,7 +928,7 @@
     </div>
 </div>
 
-<div class="js-timeline">
+<div class="js-timeline" data-width="1">
     <div class="js-timeline-grid">
         <div data-name="Сентябрь" data-start="0"></div>
         <div data-name="Октябрь" data-start="0.23"></div>

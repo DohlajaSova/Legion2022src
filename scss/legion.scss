@@ -8582,6 +8582,24 @@ a.button {
     &_container{
         position: relative;
         padding: 0 60px;
+        z-index: 2;
+    }
+    &_milestone{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
+        color: $color-grey-dark;
+        &:nth-child(2n+1){
+            background: rgba(255,255,255,0.5);
+        }
+		.open + .timeline_container-milestones &{
+			filter: blur(2px);
+		}
     }
     &_event{
         display: flex;
@@ -8594,6 +8612,7 @@ a.button {
         line-height: 32px;
         position: absolute;
         white-space: nowrap;
+        filter:none;
         &:hover{
             color: $color-white;
             text-decoration: none;
@@ -8626,6 +8645,19 @@ a.button {
             top:494px;
             background-color: $color-blue-electric;
         }
+        .open &{
+            filter: blur(2px);
+			&.timeline_event-open{
+				position:absolute;
+				filter: none;
+				width:300px;
+				border-radius:42px;
+				background-color:#1A60FF;
+			}
+			&.open{
+				display:none;
+			}
+        }
         & > i{
             width: 30px;
             height: 30px;
@@ -8635,7 +8667,7 @@ a.button {
         }
         &.open{
             & > i{
-                transform: rotate(-90deg);
+                transform: rotate(180deg);
             }
         }
     }

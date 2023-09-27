@@ -3,20 +3,20 @@
     <h1 class="redesign-projects-header">Проекты</h1>
     <div class="redesign-projects-wrapper js-children-click-set-active">
       <div class="redesign-projects-slide active">
-        <img src="" alt="" width="100px" height="460px">
+        <img src="#" alt="" width="100px" height="460px">
       </div>
       <div class="redesign-projects-slide">
-        <img src="" alt="" width="100px" height="460px">
+        <img src="#" alt="" width="100px" height="460px">
       </div>
       <div class="redesign-projects-slide">
-        <img src="" alt="" width="100px" height="460px">
+        <img src="#" alt="" width="100px" height="460px">
       </div>
       <div class="redesign-projects-slide">
-        <img src="" alt="" width="100px" height="460px">
+        <img src="#" alt="" width="100px" height="460px">
       </div>
     </div>
     <p class="redesign-projects-undertext">Разобрали пользовательские сценарии корпоративного приложения застройщика из Москвы, чтобы повысить вовлечённость сотрудников и конверсию использования МП.</p>
-    <svg width="653" height="200" viewBox="0 0 653 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="653" height="200" viewbox="0 0 653 200" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0.5 100C0.5 45.0477 45.0477 0.5 100 0.5H553C607.952 0.5 652.5 45.0477 652.5 100C652.5 154.952 607.952 199.5 553 199.5H100C45.0477 199.5 0.5 154.952 0.5 100Z" fill="white" stroke="#141414"/>
       <path d="M18.5 99.8572C18.5 47.6663 60.8091 5.35718 113 5.35718H539.857C592.048 5.35718 634.357 47.6663 634.357 99.8572C634.357 152.048 592.048 194.357 539.857 194.357H113C60.8091 194.357 18.5 152.048 18.5 99.8572Z" fill="white" stroke="#141414"/>
       <path d="M36.5 99.7144C36.5 50.2849 76.5705 10.2144 126 10.2144H526.714C576.144 10.2144 616.214 50.2849 616.214 99.7144C616.214 149.144 576.144 189.214 526.714 189.214H126C76.5705 189.214 36.5 149.144 36.5 99.7144Z" fill="white" stroke="#141414"/>

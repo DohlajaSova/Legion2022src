@@ -6,7 +6,7 @@
     <div class="expert-wrapper">
       <div class="expert-content">
         <div class="expert-content-switch js-switch" data-switch-class="js-slider-simple">
-          <svg class="triangle active" width="181" height="54" viewBox="0 0 181 54" fill="none"
+          <svg class="triangle active" width="181" height="54" viewbox="0 0 181 54" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M1 8.09837C1 4.17809 4.17801 1.00006 8.09829 1.00006L152.336 1C154.233 1 156.051 1.75922 157.384 3.10827L178.534 24.505C179.9 25.8876 179.9 28.1124 178.534 29.495L157.384 50.8917C156.051 52.2407 154.233 52.9999 152.336 52.9999L8.0983 53C4.17802 53 1 49.822 1 45.9017L1 8.09837Z"
