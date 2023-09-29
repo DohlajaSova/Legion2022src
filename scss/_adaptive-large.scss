@@ -752,6 +752,9 @@
             }
         }
     }
+    .subheader{
+        margin-bottom: 60px;
+    }
     // --redesign
 }
 
@@ -1847,6 +1850,9 @@
                 }
             }
         }
+    }
+    .subheader{
+        margin-bottom: 80px;
     }
     // --
 }
@@ -3034,16 +3040,20 @@
         }
     }
     .subheader-grid {
-        grid-template-columns: repeat(3, 180px);
-        grid-template-rows: repeat(3, 180px);
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4,auto);
         grid-auto-flow: column;
         &-card {
+            aspect-ratio: 1;
             &-double {
+                aspect-ratio: 2;
                 grid-column: 2/4;
-                grid-row: 3/3;
+                grid-row: 4/4;
             }
             &-sub {
-                grid-column: 1/end;
+            aspect-ratio: unset;
+            grid-column: 1/4;
+            max-width: 66%;
                 &:first-child {
                     grid-row: 1/auto;
                 }

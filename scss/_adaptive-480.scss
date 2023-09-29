@@ -913,6 +913,9 @@
             }
         }
     }
+    .subheader{
+        margin-bottom: 40px;
+    }
     //--
 }
 
@@ -1130,6 +1133,16 @@
             height: unset;
         }
     }
+    .subheader{
+        &-grid {
+
+            &-card {
+                svg {
+                    width: 110px;
+                }
+            }
+        }
+    }
 }
 
 // redesign only
@@ -1152,6 +1165,18 @@
         &-top {
             &-wrapper {
                 margin-bottom: 40px;
+            }
+        }
+    }
+    .subheader-grid {
+        &-card {
+                aspect-ratio: unset;
+            &-double {
+                aspect-ratio: 2;
+
+            }
+            svg {
+                width: 110px;
             }
         }
     }
