@@ -2198,6 +2198,8 @@ docReady(function () {
         // события: заполняем контейнер событий
         let events = timelineEvents.querySelectorAll("div");
         let eventList = "";
+        let tlOuter = document.createElement('div');
+        tlOuter.className = 'timeline_outer';
         let tlContainer = document.createElement('div');
         tlContainer.className = 'timeline loading';
         for (i = 0; i < events.length; i++){
@@ -2211,52 +2213,64 @@ docReady(function () {
             eventList += curNode.outerHTML;
         }
         tlContainer.innerHTML = '<div class="timeline_container">'+eventList+'</div>';
-        timeline.before(tlContainer);
+        timeline.before(tlOuter);
+        tlOuter.append(tlContainer);
                    
         // события: обработка клика
         let nodes = tlContainer.querySelectorAll(".js-timeline_event");
+        let openNodes;
 		function openEventNode(e){
+            openNodes = document.querySelectorAll(".timeline_event-open");
+            for (i = 0; i < openNodes.length; i++){
+                openNodes[i].remove();
+            }
+            let openMainNodes = document.querySelectorAll(".js-timeline_event");
+            for (i = 0; i < openMainNodes.length; i++){
+                if (openMainNodes[i].classList.contains("open") && openMainNodes[i] != e)
+                   openMainNodes[i].classList.remove("open");
+            }
 			let openNode = document.createElement('div');
 			openNode.classList.add("timeline_event");
 			openNode.classList.add("timeline_event-open");
-			openNode.style.left = e.style.left;
+			// для правых элементов открываем описание налево
+            let contWidth = parseInt(document.querySelector(".timeline").style.width);
+            if (parseInt(e.style.left)+300 > contWidth)
+                openNode.style.right = contWidth - (parseInt(e.style.left)+parseInt(e.dataset.width))+"px";
+            else
+                openNode.style.left = e.style.left;
 			for (i = 1; i<9; i++){
 				if (e.classList.contains("level"+i)){
 					openNode.classList.add("level"+i);
 					break;
 				}
 			}
-			openNode.innerHTML = "aaa";
+			openNode.innerHTML = "<h4 class=\"timeline_event-fullname\"><i></i>"+e.dataset.fullname+"</h4><p class=\"timeline_event-fulltext\">"+e.dataset.text+"</p>";
 			document.querySelector(".timeline_container").appendChild(openNode);
+            document.querySelector(".timeline_event-fullname i").addEventListener("click", function (evt) {
+               evt.stopPropagation();
+               evt.target.parentNode.parentNode.remove();
+               document.querySelector(".timeline_container").classList.remove("open");
+               openNodes = document.querySelectorAll(".timeline_event");
+               for (i = 0; i < openNodes.length; i++){
+                   openNodes[i].classList.remove("open");
+               }
+
+            });
 		}
         for (i = 0; i < nodes.length; i++){
             nodes[i].setAttribute("data-width", nodes[i].getBoundingClientRect().width);
             nodes[i].addEventListener("click", function (e) {
                 e.preventDefault();
-                if (e.target.classList.contains("open"))
+                if (this.classList.contains("open"))
                 {
-                    e.target.classList.remove("open");
-                    e.target.parentElement.classList.remove("open");
+                    this.classList.remove("open");
+                    this.parentElement.classList.remove("open");
                 }
 				else
                 {
-                    e.target.classList.add("open");
-                    e.target.parentElement.classList.add("open");
-					openEventNode(e.target);
-                }
-            }, false);
-            nodes[i].querySelector("i").addEventListener("click", function (e) {
-                e.preventDefault();
-                if (e.target.parentElement.classList.contains("open"))
-                {
-                    e.target.parentElement.classList.remove("open");
-                    e.target.parentElement.parentElement.classList.remove("open");
-                }
-				else
-                {
-                    e.target.parentElement.classList.add("open");
-                    e.target.parentElement.parentElement.classList.add("open");
-					openEventNode(e.target.parentElement);
+                    this.parentElement.classList.add("open");
+                    this.classList.add("open");
+					openEventNode(this);
                 }
             }, false);
         }
@@ -2265,7 +2279,7 @@ docReady(function () {
         // события: расставляем по контейнеру и по уровням
         const nodeGap = 12;
         let paddingVert = 60;
-        let paddingLeft = getComputedStyle(document.querySelector(".timeline_container")).paddingLeft.substring(0,getComputedStyle(document.querySelector(".timeline_container")).paddingLeft.length-2)*1;
+        let paddingLeft = parseInt(getComputedStyle(document.querySelector(".timeline_container")).paddingLeft);
         let containerWidth = document.querySelector(".timeline_container").getBoundingClientRect().width - 2*paddingLeft;
         let tempWidth = containerWidth;
         for (i = 0; i < nodes.length; i++){
@@ -2299,7 +2313,10 @@ docReady(function () {
                 }
             }
         }
-        document.querySelector(".timeline_container").style.height = 2*paddingVert + maxLevelUsed*62 + "px";
+        let timelineHeight = 2*paddingVert + maxLevelUsed*62 + "px"
+        document.querySelector(".timeline_container").style.height = timelineHeight;
+        document.querySelector(".timeline_outer").style.height = timelineHeight;
+        document.querySelector(".timeline").style.width = (document.querySelector(".timeline_container").getBoundingClientRect().width)*timeline.dataset.width+"px";
             
         // сетка
         let milestones = timelineGrid.querySelectorAll("div");
@@ -2321,5 +2338,71 @@ docReady(function () {
         tlContainer.appendChild(milestoneContainer);
 
         tlContainer.classList.remove("loading");
+            
+        // drag
+        let parent = document.querySelector('.timeline_outer');
+        let parentRect = parent.getBoundingClientRect();
+
+        let draggable = document.querySelector('.timeline');
+        let draggableRect = draggable.getBoundingClientRect();
+
+        let dragging = false;
+
+        let startingPoint = 0;
+        let currentPoint = 0;
+
+        function moveStart(e)
+        {
+            e.preventDefault();
+            dragging = true;
+            startingPoint = e.clientX - draggableRect.left - currentPoint;
+        }
+
+        function moveEnd(e)
+        {
+            e.preventDefault();
+            dragging = false;
+            currentPoint = draggable.style.left.substr(0,draggable.style.left.length-2);
+        }
+
+        function moving(e)
+        {
+            e.preventDefault();
+            if (dragging)
+            {
+                if( //(e.clientX >= parentRect.left && (e.clientX+draggableRect.width <= parentRect.right)) &&
+                    //(e.clientY >= parentRect.top && (e.clientY+draggableRect.height <= parentRect.bottom))  
+                    true
+                  ){
+            //add draggableRect.width draggableRect.height accoints for
+                    
+                    draggable.style.left = `${e.clientX-startingPoint}px`;
+                    //draggable.style.top = `${e.clientY}px`;
+                }
+          else{
+            //if mouse went out of bounds in Horizontal dir.
+            if(e.clientX+draggableRect.width >= parentRect.right){
+               draggable.style.left = `${parentRect.right-draggableRect.width}px`;
+            }
+            //if mouse went out of bounds in Vertical dir.
+            if(e.clientY+draggableRect.height >= parentRect.bottom){
+               draggable.style.top = `${parentRect.bottom-draggableRect.height}px`;
+            }
+          }
+
+            }			
+
+        }
+
+
+        document.querySelector(".timeline_outer").addEventListener("mousedown", moveStart);
+        document.querySelector(".timeline_outer").addEventListener("mousemove", moving);
+        document.querySelector(".timeline_outer").addEventListener("mouseup", moveEnd);
+            
+            
+            
+            
+            
+            
     }
 });

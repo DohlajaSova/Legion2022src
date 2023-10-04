@@ -6031,9 +6031,12 @@ a.button {
 .timeline {
   margin-bottom: 80px;
   background-color: #F0F0F0;
-  position: relative;
-  width: 100%;
-  overflow: hidden; }
+  position: absolute;
+  width: 100%; }
+  .timeline_outer {
+    position: relative;
+    overflow: hidden;
+    background-color: #F0F0F0; }
   .timeline_container {
     position: relative;
     padding: 0 60px;
@@ -6050,6 +6053,8 @@ a.button {
     color: #949191; }
     .timeline_milestone:nth-child(2n+1) {
       background: rgba(255, 255, 255, 0.5); }
+    .open + .timeline_container-milestones .timeline_milestone {
+      filter: blur(2px); }
   .timeline_event {
     display: flex;
     background-color: #1E2738;
@@ -6085,16 +6090,42 @@ a.button {
     .timeline_event.level8 {
       top: 494px;
       background-color: #0040D0; }
+    .timeline_event.open {
+      display: none; }
     .open .timeline_event {
       filter: blur(2px); }
-    .timeline_event > i {
+      .open .timeline_event.timeline_event-open {
+        position: absolute;
+        filter: none;
+        width: 300px;
+        height: auto;
+        border-radius: 22px;
+        background-color: #1A60FF;
+        flex-direction: column;
+        white-space: normal;
+        padding: 16px; }
+      .open .timeline_event .timeline_event-fullname {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 14px; }
+        .open .timeline_event .timeline_event-fullname i {
+          float: right;
+          transform: rotate(180deg);
+          position: relative;
+          z-index: 30;
+          cursor: pointer; }
+      .open .timeline_event .timeline_event-fulltext {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.3;
+        clear: both; }
+    .timeline_event i {
       width: 30px;
       height: 30px;
       background: url("img/icon-timeline.svg") center center no-repeat;
       margin-left: 8px;
       transition: transform 0.3s; }
-    .timeline_event.open > i {
-      transform: rotate(-90deg); }
   .timeline.loading {
     position: absolute;
     left: -10000px; }
