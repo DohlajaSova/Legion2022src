@@ -850,6 +850,73 @@
             border-radius: 20px;
         }
     }
+    // redesign
+    
+    .top,
+    .redesign-features,
+    .redesign-graphics,
+    .redesign-projects,
+    .subheader,
+    .expert,
+    .preservice {
+        .container {
+            max-width: 100%;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .top {
+        padding: 0;
+    }
+    .redesign {
+        &-projects {
+            &-slide {
+                &.active {
+                    min-width: 80vw;
+                }
+            }
+        }
+    }
+    
+    .preservice {
+        &-blocks {
+            .card {
+                &-head {
+                    font-size: 28px;
+                }
+                &-text {
+                    font-size: 16px;
+                }
+                &-tags-tag {
+                    font-size: 14px;
+                }
+                &-link {
+                    font-size: 16px;
+                }
+                &-image {
+                    aspect-ratio: 1.75;
+                }
+            }
+        }
+        &-header {
+            &-wrapper {
+                h1 {
+                    font-size: 36px;
+                }
+            }
+        }
+        &-top {
+            &-wrapper {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .subheader{
+        margin-bottom: 40px;
+    }
+    //--
 }
 
 @media only screen and (max-width: 450px) {
@@ -1066,7 +1133,55 @@
             height: unset;
         }
     }
+    .subheader{
+        &-grid {
+
+            &-card {
+                svg {
+                    width: 110px;
+                }
+            }
+        }
+    }
 }
+
+// redesign only
+@media only screen and (max-width: 390px) {
+    .preservice {
+        &-blocks {
+            .card {
+                &-head {
+                    font-size: 26px;
+                }
+            }
+        }
+        &-header {
+            &-wrapper {
+                h1 {
+                    font-size: 32px;
+                }
+            }
+        }
+        &-top {
+            &-wrapper {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .subheader-grid {
+        &-card {
+                aspect-ratio: unset;
+            &-double {
+                aspect-ratio: 2;
+
+            }
+            svg {
+                width: 110px;
+            }
+        }
+    }
+}
+// --
 
 @media only screen and (max-width: 375px) {
     .top{

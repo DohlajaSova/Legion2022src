@@ -30,7 +30,6 @@
                       С 2008 года оцифровываем российские и зарубежные компании из финтеха, телекома, ретейла, медицины
                       и другие отрасли.
                     </p>
-                    <br />
                     <p>
                       Анализируем рынок, проверяем гипотезы, проектируем архитектуру, разрабатываем интерфейсы, пишем
                       код, тестируем и задумываемся о смыслах.
@@ -57,7 +56,7 @@
                 </div>
                 <div class="slide-right-part">
                   <div class="slide-right-part-image">
-                    <div class="img" style="width:600px; height:600px"></div>
+                    <div class="img"></div>
                     <!-- <img src="assets/css/img/cases-bg-blue.webp" alt="empty" height="600px" width="600px" /> -->
                   </div>
                 </div>
@@ -71,7 +70,6 @@
                       Обеспечиваем полный цикл разработки всего продукта или его отдельных блоков. Знаем, как
                       стандартизировать и автоматизировать процессы команд для эффективной работы.
                     </p>
-                    <br />
                     <p>
                       Формируем выделенную команду под ваш проект или усиливаем одно из направлении: анализ, дизайн,
                       разработка, тестирование или управление проектом.
@@ -97,7 +95,7 @@
                 </div>
                 <div class="slide-right-part">
                   <div class="slide-right-part-image">
-                    <div class="img" style="width:600px; height:600px"></div>
+                    <div class="img"></div>
                     <!-- <img src="assets/css/img/cases-bg-blue.webp" alt="empty" height="600px" width="600px" /> -->
                   </div>
                 </div>
@@ -112,7 +110,6 @@
                       Анализ рынка и конкурентов, проверка технической реализации продукта, UI и UX-исследование
                       пользовательских сценариев, создание дизайн-концепта.
                     </p>
-                    <br />
                     <p><strong>Комплексная разработка digital-продуктов</strong></p>
                     <p>
                       Проектирование архитектуры, отказоустойчивые решения, интеграции систем и контроль качества.
@@ -139,7 +136,7 @@
                 </div>
                 <div class="slide-right-part">
                   <div class="slide-right-part-image">
-                    <div class="img" style="width:600px; height:600px"></div>
+                    <div class="img"></div>
                     <!-- <img src="assets/css/img/cases-bg-blue.webp" alt="empty" height="600px" width="600px" /> -->
                   </div>
                 </div>
@@ -154,7 +151,6 @@
                       инициативы, помогаем отстраиваться от конкурентов, подтверждаем
                       или опровергаем гипотезы.
                     </p>
-                    <br />
                     <p>
                       Всегда ставим в приоритет задачи бизнеса, но не забываем и о
                       пользователях наших клиентов: если видим возможность сделать лучше —
@@ -182,7 +178,7 @@
                 </div>
                 <div class="slide-right-part">
                   <div class="slide-right-part-image">
-                    <div class="img" style="width:600px; height:600px"></div>
+                    <div class="img"></div>
                     <!-- <img src="assets/css/img/cases-bg-blue.webp" alt="empty" height="600px" width="600px" /> -->
                   </div>
                 </div>
