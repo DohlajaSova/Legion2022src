@@ -8574,7 +8574,6 @@ a.button {
 }
 
 .timeline{
-    margin-bottom: 80px;
     background-color: $color-grey-light;
     position: absolute;
     width:100%;
@@ -8582,6 +8581,7 @@ a.button {
         position: relative;
         overflow: hidden;
         background-color: $color-grey-light;
+        margin-bottom: 80px;
     }
     &_container{
         position: relative;
