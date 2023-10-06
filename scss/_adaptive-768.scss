@@ -808,6 +808,24 @@
             &-undertext {
                 max-width: unset;
             }
+            &-slide {
+                .wrapper {
+                    // width: 80%;
+                    // gap: 10px;
+                    // bottom: 18px;
+                    left: 18px;
+                    .head {
+                        max-width: 210px;
+                        font-size: 18px;
+                    }
+                    .tags {
+                        font-size: 24px;
+                        .tag {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
         }
     }
     .preservice {
@@ -1722,7 +1740,21 @@
         .img {
             height: 360px;
         }
+        .wrapper {
+            width: 80%;
+            left: 18px;
+            .head {
+                font-size: 18px;
+            }
+            .tags {
+                font-size: 24px;
+                .tag {
+                    font-size: 12px;
+                }
+            }
+        }
     }
+    
 }
 
 @media only screen and (max-width: 550px) {

@@ -4,15 +4,70 @@
     <div class="redesign-projects-wrapper js-children-click-set-active">
       <div class="redesign-projects-slide active">
         <div class="img"></div>
+        <div class="wrapper">
+            <div class="head">
+              Дизайн-концепт приложения ГК Основа
+            </div>
+            <div class="tags">
+              <div class="tag">
+                Дискавери фаза
+              </div>
+              <div class="tag">
+                Дизайн-концепт
+              </div>
+              <div class="tag">
+                Разбор пользовательских сценариев
+              </div>
+            </div>
+        </div>
       </div>
       <div class="redesign-projects-slide">
         <div class="img"></div>
+        <div class="wrapper">
+            <div class="head">
+              Мобильное приложение «Пятёрочка: доставка продуктов»
+            </div>
+            <div class="tags">
+              <div class="tag">
+                Разработка
+              </div>
+              <div class="tag">
+                Автоматизация процессов
+              </div>
+            </div>
+        </div>
       </div>
       <div class="redesign-projects-slide">
         <div class="img"></div>
+        <div class="wrapper">
+            <div class="head">
+              Анализ конкурентов Tele2
+            </div>
+            <div class="tags">
+              <div class="tag">
+                Дискавери фаза
+              </div>
+              <div class="tag">
+                Анализ конкурентов
+              </div>
+            </div>
+        </div>
       </div>
       <div class="redesign-projects-slide">
         <div class="img"></div>
+        <div class="wrapper">
+            <div class="head">
+              Анализ конкурентов
+            </div>
+            <div class="tags">
+              <div class="tag">
+                Импортозамещение
+              </div>
+              <div class="tag">
+                ОС Аврора
+              </div>
+            </div>
+        </div>
       </div>
     </div>
     <p class="redesign-projects-undertext">Разобрали пользовательские сценарии корпоративного приложения застройщика из Москвы, чтобы повысить вовлечённость сотрудников и конверсию использования МП.</p>

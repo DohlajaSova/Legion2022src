@@ -9367,12 +9367,17 @@ svg.svg-hover-filter-clear {
 		&-slide {
 			flex: 0;
 			transition: flex .25s;
+			position: relative;
 			&.active {
 				transition: flex .25s;
 				flex: 1;
 				.img {
 					width: 100%;
 					max-width: 100%;
+				}
+				.wrapper {
+					opacity: 1;
+					transition: .25s opacity;
 				}
 			}
 			img {
@@ -9387,6 +9392,44 @@ svg.svg-hover-filter-clear {
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
+			}
+			.wrapper {
+				display: flex;
+				flex-flow: column nowrap;
+				width: 80%;
+				overflow: hidden;
+				opacity: 0;
+				gap: 10px;
+				position: absolute;
+				bottom: 18px;
+				left: 15px;
+				.head {
+					color: #FFF;
+					font-size: 24px;
+					line-height: 130%;
+				}
+				.tags {
+					color: #FFF;
+					font-size: 24px;
+					line-height: 130%;
+					display: flex;
+					flex-flow: row wrap;
+					gap: 4px;
+					.tag {
+						font-size: 16px;
+						line-height: 30px; /* 187.5% */
+
+						border-radius: 20px;
+						border: 1px solid #FFF;
+						background: rgba(196, 196, 196, 0.40);
+						color: #fff;
+						padding: 0 14px;
+						&:first-child {
+							border: 1px solid #141414;
+							background-color: #141414;
+						}
+					}
+				}
 			}
 			&:first-child {
 				.img {

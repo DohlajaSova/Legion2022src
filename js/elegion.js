@@ -2180,6 +2180,11 @@ docReady(function () {
                             child.classList.remove("active");
                         })
                         child.classList.add("active");
+                        if(windowWidth <= 480) {
+                            wrap.scrollTo({ behavior: "smooth", left: child.offsetLeft - 20 });
+                        } else if(windowWidth <= 650) {
+                            wrap.scrollTo({ behavior: "smooth", left: child.offsetLeft - 30 });
+                        }
                     }
                 })
             })
