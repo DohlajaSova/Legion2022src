@@ -935,9 +935,9 @@
         <div data-name="Ноябрь" data-start="0.81"></div>
     </div>
     <div class="js-timeline-events">
-        <div data-name="Интервью" data-fullname="Серия встреч для выявления барьеров" data-text="" data-start="0"></div>
-        <div data-name="Mindmap AS IS" data-fullname="Карта связей в текущей инфраструктуре" data-text="" data-start="0.1"></div>
-        <div data-name="Mindmap TO BE" data-fullname="Карта связей при оптимизации процессов" data-text="" data-start="0.3"></div>
+        <div data-name="Интервью" data-fullname="Серия встреч для выявления барьеров" data-text="Длинный абзац текста про серию встреч для выявления барьеров" data-start="0"></div>
+        <div data-name="Mindmap AS IS" data-fullname="Карта связей в текущей инфраструктуре" data-text="Длинный абзац текста про карту связей в текущей инфраструктуре" data-start="0.1"></div>
+        <div data-name="Mindmap TO BE" data-fullname="Карта связей при оптимизации процессов" data-text="Длинный абзац текста про карту связей при оптимизации процессов" data-start="0.3"></div>
         <div data-name="BPMN" data-fullname="Моделирование основного бизнес-процесса" data-text="" data-start="0.4"></div>
         <div data-name="Схемы архитектуры" data-fullname="Две схемы в сравнении: AS IS и TO BE" data-text="" data-start="0.5"></div>
         <div data-name="Анализ конкурентов" data-fullname="Сравнение с конкурентами по функциональностям" data-text="" data-start="0.7"></div>
