@@ -8806,6 +8806,13 @@ a.button {
 				grid-column: 3 /5;
 				grid-row: 2 / 2;
 				// aspect-ratio: 2;
+				padding: 0;
+				position: relative;
+				.subheader-grid-card-category {
+					position: absolute;
+					bottom: 18px;
+					left: 18px;
+				}
 			}
 			&-sub {
 				display: block;
@@ -8824,6 +8831,10 @@ a.button {
 					line-height: 130%; /* 96.2px */
 					margin-bottom: 20px;
 				}
+			}
+			&-image {
+				width: 100%;
+				height: 100%;
 			}
 			&:hover {
 				background-color: #F8F8F8;
@@ -9085,9 +9096,12 @@ svg.svg-hover-filter-clear {
 						width: 40vw;
 						height: auto;
 						aspect-ratio: 1;
-						border: 2px dashed $color-black;
+						// border: 2px dashed $color-black;
 						border-radius: 30px;
 						flex-shrink: 0;
+						img {
+							max-width: 100%;
+						}
 					}
 				}
 			}
@@ -9203,11 +9217,12 @@ svg.svg-hover-filter-clear {
 				line-height: 30px;
 			}
 			&-image {
-				border: 2px dashed $color-grey-light;
+				// border: 2px dashed $color-grey-light;
 				border-radius: 30px;
 				flex-shrink: 0;
 				width:44%;
-				height:328px;
+				max-width: 574px;
+				// height:328px;
 				aspect-ratio: 1.75;
 			}
 		}
@@ -9230,7 +9245,8 @@ svg.svg-hover-filter-clear {
 	}
 }
 #svghover {
-    height: auto;
+	min-height: 170px;
+	height: auto;
 	cursor: pointer;
 	path#svg-path-move-right{
 		transition: fill .8s, transform .8s;
@@ -9332,13 +9348,43 @@ svg.svg-hover-filter-clear {
 			&.active {
 				transition: flex .25s;
 				flex: 1;
-				img {
+				.img {
 					width: 100%;
+					max-width: 100%;
 				}
 			}
 			img {
-				border: 2px dashed #141414;
 				border-radius: 16px;
+				display: none;
+			}
+			.img {
+				cursor: pointer;
+				border-radius: 16px;
+				width: 100px;
+				height: 460px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			&:first-child {
+				.img {
+					background-image: url("/assets/css/img/redesign/projects-back-1.png");
+				}
+			}
+			&:nth-child(2) {
+				.img {
+					background-image: url("/assets/css/img/redesign/projects-back-2.png");
+				}
+			}
+			&:nth-child(3) {
+				.img {
+					background-image: url("/assets/css/img/redesign/projects-back-3.png");
+				}
+			}
+			&:nth-child(4) {
+				.img {
+					background-image: url("/assets/css/img/redesign/projects-back-4.png");
+				}
 			}
 		}
 		&-undertext {

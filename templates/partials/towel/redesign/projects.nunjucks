@@ -3,16 +3,16 @@
     <h1 class="redesign-projects-header">Проекты</h1>
     <div class="redesign-projects-wrapper js-children-click-set-active">
       <div class="redesign-projects-slide active">
-        <img src="#" alt="" width="100px" height="460px">
+        <div class="img"></div>
       </div>
       <div class="redesign-projects-slide">
-        <img src="#" alt="" width="100px" height="460px">
+        <div class="img"></div>
       </div>
       <div class="redesign-projects-slide">
-        <img src="#" alt="" width="100px" height="460px">
+        <div class="img"></div>
       </div>
       <div class="redesign-projects-slide">
-        <img src="#" alt="" width="100px" height="460px">
+        <div class="img"></div>
       </div>
     </div>
     <p class="redesign-projects-undertext">Разобрали пользовательские сценарии корпоративного приложения застройщика из Москвы, чтобы повысить вовлечённость сотрудников и конверсию использования МП.</p>

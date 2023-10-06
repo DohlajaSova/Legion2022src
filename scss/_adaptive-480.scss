@@ -878,6 +878,11 @@
                 }
             }
         }
+        &-features {
+            &-list {
+			    letter-spacing: 1.2px;
+            }
+        }
     }
     
     .preservice {
@@ -894,9 +899,6 @@
                 }
                 &-link {
                     font-size: 16px;
-                }
-                &-image {
-                    aspect-ratio: 1.75;
                 }
             }
         }
@@ -917,6 +919,18 @@
         margin-bottom: 40px;
     }
     //--
+    .expert {
+        &-content {
+            .slide-left-part {
+                .tezis {
+                    gap: 10px;
+                    &-header {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1334,6 +1348,19 @@
             .teammate__body {
                 &_name {
                     top: calc(100% - 214px - 45px);
+                }
+            }
+        }
+    }
+    //redesign 
+    
+    .expert {
+        &-content {
+            .slide-left-part {
+                .tezis {
+                    &-header {
+                        font-size: 28px;
+                    }
                 }
             }
         }

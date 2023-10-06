@@ -736,6 +736,14 @@
                 max-width: 69%;
                 height: auto;
             }
+            &-list {
+			    letter-spacing: 1.4px;
+            }
+            &-slide {
+                .img {
+                    width: 80px;
+                }
+            }
         }
     }
     .preservice{
@@ -755,6 +763,17 @@
     .subheader{
         margin-bottom: 60px;
     }
+    .top .h1 {
+        font-size: 66px;
+        width: 78%; 
+    }
+    .top__buttons{
+        &_plus{
+            min-height: unset;
+            height: 220px
+        }
+    }
+
     // --redesign
 }
 
