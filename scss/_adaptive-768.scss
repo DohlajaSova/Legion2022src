@@ -1687,6 +1687,7 @@
             }
         }
     }
+    // redesign
     .subheader-grid {
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(5,auto);
@@ -1710,6 +1711,16 @@
                     left: 10px;
                 }
             }
+        }
+    }
+    .redesign-projects-slide{
+        &.active {
+            .img {
+                width: calc(100vw - 30px - 16vw);
+            }
+        }
+        .img {
+            height: 360px;
         }
     }
 }
@@ -3153,6 +3164,11 @@
             padding-bottom: 40px;
             &-undertext {
                 margin-bottom: 40px;
+            }
+            &-slide {
+                .img {
+                    height: 268px;
+                }
             }
         }
     }
