@@ -39,17 +39,17 @@
     }
 
     // redesign container padding
-    .redesign-features,
-    .redesign-graphics,
-    .redesign-projects,
-    .subheader,
-    .expert,
-    .preservice {
-        .container {
-            padding-left:60px;
-            padding-right:60px;
-        }
-    }
+    // .redesign-features,
+    // .redesign-graphics,
+    // .redesign-projects,
+    // .subheader,
+    // .expert,
+    // .preservice {
+    //     .container {
+    //         padding-left:60px;
+    //         padding-right:60px;
+    //     }
+    // }
     // --redesign container padding 
 
     .news.news_featured,
@@ -294,6 +294,23 @@
     }
     .astralinux-container .content-container .content-card {
         min-height: 25em;
+    }
+}
+
+@media(min-width: 1280px) {
+    .top,
+    .redesign-features,
+    .redesign-graphics,
+    .redesign-projects,
+    .subheader,
+    .expert,
+    .preservice {
+        .container {
+            max-width: 100%;
+            padding-left:160px;
+            padding-right:160px;
+            box-sizing: content-box;
+        }
     }
 }
 
