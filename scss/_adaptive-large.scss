@@ -107,6 +107,11 @@
 
         }
     }
+    //redesign
+    .top.redesign {
+        padding: 0
+    }
+    //
 }
 
 @media only screen and (max-width: 1440px) {
@@ -224,6 +229,11 @@
         .h1{
             width:70%;
         }
+        &.redesign {
+            .h1{
+                width:auto;
+            }
+        }
     }
     .who-we-are{
         &__widget{
@@ -298,7 +308,7 @@
 }
 
 @media(min-width: 1280px) {
-    .top,
+    .top.redesign,
     .redesign-features,
     .redesign-graphics,
     .redesign-projects,
@@ -306,7 +316,7 @@
     .expert,
     .preservice {
         .container {
-            max-width: 100%;
+            max-width: 1087px;
             padding-left:160px;
             padding-right:160px;
             box-sizing: content-box;
@@ -623,10 +633,11 @@
     .subheader-info-card-text {
         font-size: 1.5vw;
     }
-    .top,
+    .top.redesign,
     .redesign-features,
     .redesign-graphics,
     .redesign-projects,
+    .expert,
     .subheader,
     .preservice {
         .container {
@@ -636,6 +647,12 @@
             padding-right: 30px;
         }
     }
+    .expert{
+        .container {
+            padding-right: 0;
+        }
+    }
+ 
     .subheader {
         &-grid {
             $brad: 16px;
@@ -780,17 +797,16 @@
     .subheader{
         margin-bottom: 60px;
     }
-    .top .h1 {
-        font-size: 66px;
-        width: 78%; 
-    }
-    .top__buttons{
-        &_plus{
+    .top.redesign{
+        .h1 {
+            font-size: 66px;
+            width: 78%; 
+        }
+        .top__buttons_plus{
             min-height: unset;
             height: 220px
         }
     }
-
     // --redesign
 }
 
@@ -1337,7 +1353,7 @@
 		}
     }
     // redesign
-    .top{ 
+    .top.redesign{ 
         padding: 0;
     }
     .expert {
@@ -1900,6 +1916,11 @@
 	h1, .h1 {
 		font-size:62px;
 	}
+    .top .redesign {
+        .h1 {
+            font-size:62px;
+        }
+    }
 	h2, .h2 {
 		font-size:46px;
 	}
