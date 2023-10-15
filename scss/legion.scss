@@ -8822,32 +8822,18 @@ a.button {
 .subheader {
 	margin-bottom: 100px;
 	color: #141414;
-	// .container {
-	// 	display: flex;
-	// 	flex-flow: row nowrap;
-	// 	gap: 40px;
-	// }
-	// &-info {
-	// 	display: flex;
-	// 	flex-flow: column nowrap;
-	// 	&-card {
-	// 		&-text {
-	// 			color: var(--black, #000);
-	// 			font-size: 22px;
-	// 		}
-	// 		&-header {
-	// 			color: #1A60FF;
-	// 			font-size: 74px;
-	// 		}
-	// 	}
-	// }
 	&-grid {
 		$brad: 30px;
 		$catbrad: 30px;
 
 		display: grid;
-		grid-template-rows: repeat(2, 280px);
-		grid-template-columns: auto repeat(3, 280px);
+
+		grid-template-rows: repeat(2, 210px);
+		grid-template-columns: auto repeat(3, 210px);
+		// old
+		// grid-template-rows: repeat(2, 280px);
+		// grid-template-columns: auto repeat(3, 280px);
+		
 		grid-auto-flow: column;
 		gap: 1vw;
 		&-card {
@@ -8870,11 +8856,14 @@ a.button {
 				line-height: 130%; /* 96.2px */
 			}
 			&-text {
-				font-size: 22px;
+				font-size: 20px;
+				// old
+				// font-size: 22px;
 				line-height: 130%; /* 28.6px */
 			}
 			svg {
-				// filter: blur(2px) grayscale(1);
+				width: 140px;
+
 				transition: filter .25s;
 				align-self: end;
 				margin-right: auto;
@@ -9149,13 +9138,15 @@ svg.svg-hover-filter-clear {
 				padding-top: 100px;
 
 				.description {
-					font-size: 22px;
+					font-size: 20px;
+					// old
+					// font-size: 22px;
 					font-weight: 400;
 					line-height: 130%; /* 28.6px */
 					display: flex;
 					flex-flow: column nowrap;
 					gap: 20px;
-					// margin-bottom: 30px;
+					
 				}
 				.tezis {
 					display: flex;
@@ -9166,7 +9157,9 @@ svg.svg-hover-filter-clear {
 						flex-flow: column nowrap;
 					}
 					&-header {
-						font-size: 56px;
+						font-size: 46px;
+						// old
+						// font-size: 56px;
 						line-height: 130%; /* 72.8px */
 					}
 					&-text {
@@ -9531,6 +9524,18 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			margin: auto;
 		}
+	}
+}
+.top.redesign {
+	padding: 0;
+	.h1 {
+		width: auto;
+		font-size: 80px;
+		// old
+		// font-size: 22px;
+	}
+	.top__buttons {
+		min-width: 154px;
 	}
 }
 // --redesign
