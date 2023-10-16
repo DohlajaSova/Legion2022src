@@ -1356,13 +1356,63 @@ a.button {
 
 .topcase {
   padding-top: 60px; }
+  .topcase__outer {
+    display: grid;
+    grid-template-columns: 0.312fr auto;
+    grid-gap: 40px;
+    width: 100%; }
   .topcase__brief {
-    width: 31.2%; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%; }
+    .topcase__brief_descr {
+      font-size: 22px;
+      margin-bottom: 40px; }
+    .topcase__brief_subhead {
+      margin-bottom: 40px; }
+      .topcase__brief_subhead > div {
+        font-size: 16px;
+        color: #949191;
+        margin-bottom: 10px; }
+      .topcase__brief_subhead > p {
+        font-size: 18px; }
+    .topcase__brief_medals {
+      margin-bottom: auto; }
+      .topcase__brief_medals.medals .medals__title {
+        color: #949191;
+        margin-bottom: 10px; }
+    .topcase__brief_stores.store {
+      height: 50px; }
+      .topcase__brief_stores.store a {
+        display: inline-block;
+        width: 45%;
+        height: 50px;
+        background-size: auto 65%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid #000;
+        border-radius: 25px; }
+        .topcase__brief_stores.store a:hover {
+          background-color: #F0F0F0; }
+      .topcase__brief_stores.store .store_android {
+        background-image: url("img/icon-store-googleplay2.svg"); }
+      .topcase__brief_stores.store .store_ios {
+        background-image: url("img/icon-store-appstore2.svg"); }
   .topcase__photo {
     position: relative;
-    width: 65.8%;
+    width: 100%;
     height: 0;
-    padding-bottom: 43.51%; }
+    padding-bottom: 66.13%; }
+    .topcase__photo::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 30px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) -11.48%, rgba(0, 0, 0, 0.066) 46%, rgba(0, 0, 0, 0.6) 100%); }
     .topcase__photo_img {
       position: absolute;
       top: 0;
@@ -1402,12 +1452,9 @@ a.button {
           .topcase__photo_tags .tags .tag:first-child {
             border: 1px solid #141414;
             background-color: #141414; }
-  .topcase > .container {
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .topcase > .container h1 {
-      width: 100%;
-      margin-bottom: 77px; }
+  .topcase > .container h1 {
+    width: 100%;
+    margin-bottom: 77px; }
 
 .accordion__item {
   border-bottom: 1px solid #949191;
@@ -6219,8 +6266,8 @@ a.button {
   color: #141414; }
   .subheader-grid {
     display: grid;
-    grid-template-rows: repeat(2, 280px);
-    grid-template-columns: auto repeat(3, 280px);
+    grid-template-rows: repeat(2, 210px);
+    grid-template-columns: auto repeat(3, 210px);
     grid-auto-flow: column;
     gap: 1vw; }
     .subheader-grid-card {
@@ -6241,10 +6288,11 @@ a.button {
         line-height: 130%;
         /* 96.2px */ }
       .subheader-grid-card-text {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 130%;
         /* 28.6px */ }
       .subheader-grid-card svg {
+        width: 140px;
         transition: filter .25s;
         align-self: end;
         margin-right: auto;
@@ -6434,7 +6482,7 @@ svg.svg-hover-filter-clear:hover {
         width: 50%;
         padding-top: 100px; }
         .expert-content .slide-left-part .description {
-          font-size: 22px;
+          font-size: 20px;
           font-weight: 400;
           line-height: 130%;
           /* 28.6px */
@@ -6449,7 +6497,7 @@ svg.svg-hover-filter-clear:hover {
             display: flex;
             flex-flow: column nowrap; }
           .expert-content .slide-left-part .tezis-header {
-            font-size: 56px;
+            font-size: 46px;
             line-height: 130%;
             /* 72.8px */ }
           .expert-content .slide-left-part .tezis-text {
@@ -6731,6 +6779,14 @@ svg.svg-hover-filter-clear:hover {
     display: flex;
     margin: auto; }
 
+.top.redesign {
+  padding: 0; }
+  .top.redesign .h1 {
+    width: auto;
+    font-size: 80px; }
+  .top.redesign .top__buttons {
+    min-width: 154px; }
+
 @media only screen and (max-width: 1500px) {
   .desktop-show {
     display: block; }
@@ -6770,15 +6826,6 @@ svg.svg-hover-filter-clear:hover {
     padding-left: 60px;
     padding-right: 60px; }
 
-  .redesign-features .container,
-  .redesign-graphics .container,
-  .redesign-projects .container,
-  .subheader .container,
-  .expert .container,
-  .preservice .container {
-    padding-left: 60px;
-    padding-right: 60px; }
-
   .news.news_featured,
   .body_news-ver2 .top {
     padding-left: 0;
@@ -6815,7 +6862,10 @@ svg.svg-hover-filter-clear:hover {
     .body_news-ver2 .editorial-container__toc-inner.fixed {
       width: 21.3%; }
   .body_news-ver2 .editorial-container.floored .editorial-container__toc-inner.fixed {
-    width: 100%; } }
+    width: 100%; }
+
+  .top.redesign {
+    padding: 0; } }
 @media only screen and (max-width: 1440px) {
   .body_about .top {
     background-size: cover; }
@@ -6878,6 +6928,8 @@ svg.svg-hover-filter-clear:hover {
 @media only screen and (max-width: 1350px) {
   .top .h1 {
     width: 70%; }
+  .top.redesign .h1 {
+    width: auto; }
 
   .who-we-are__widget .vacancies .vacancy__body_item {
     font-size: 12px;
@@ -6923,6 +6975,18 @@ svg.svg-hover-filter-clear:hover {
 
   .astralinux-container .content-container .content-card {
     min-height: 25em; } }
+@media (min-width: 1280px) {
+  .top.redesign .container,
+  .redesign-features .container,
+  .redesign-graphics .container,
+  .redesign-projects .container,
+  .subheader .container,
+  .expert .container,
+  .preservice .container {
+    max-width: 1087px;
+    padding-left: 160px;
+    padding-right: 160px;
+    box-sizing: content-box; } }
 @media only screen and (max-width: 1280px) {
   body {
     font-size: 15px; }
@@ -7109,16 +7173,20 @@ svg.svg-hover-filter-clear:hover {
   .subheader-info-card-text {
     font-size: 1.5vw; }
 
-  .top .container,
+  .top.redesign .container,
   .redesign-features .container,
   .redesign-graphics .container,
   .redesign-projects .container,
+  .expert .container,
   .subheader .container,
   .preservice .container {
     max-width: 960px;
     margin: auto;
     padding-left: 30px;
     padding-right: 30px; }
+
+  .expert .container {
+    padding-right: 0; }
 
   .subheader-grid {
     display: grid;
@@ -7200,11 +7268,10 @@ svg.svg-hover-filter-clear:hover {
   .subheader {
     margin-bottom: 60px; }
 
-  .top .h1 {
+  .top.redesign .h1 {
     font-size: 66px;
     width: 78%; }
-
-  .top__buttons_plus {
+  .top.redesign .top__buttons_plus {
     min-height: unset;
     height: 220px; } }
 @media only screen and (max-width: 1180px) {
@@ -7542,7 +7609,7 @@ svg.svg-hover-filter-clear:hover {
   .body_blog .feedback_subscribe a.button:visited {
     font-size: 16px; }
 
-  .top {
+  .top.redesign {
     padding: 0; }
 
   .expert-content-switch {
@@ -7895,6 +7962,9 @@ svg.svg-hover-filter-clear:hover {
     font-size: 14px; }
 
   h1, .h1 {
+    font-size: 62px; }
+
+  .top .redesign .h1 {
     font-size: 62px; }
 
   h2, .h2 {
@@ -8896,6 +8966,9 @@ svg.svg-hover-filter-clear:hover {
   .top .h1 {
     font-size: 74px; }
 
+  .top .redesign .h1 {
+    font-size: 74px; }
+
   .pmenu {
     overflow-y: scroll; }
     .pmenu__menu {
@@ -9462,6 +9535,9 @@ svg.svg-hover-filter-clear:hover {
   .back {
     right: 15px; }
 
+  .top .redesign .h1 {
+    font-size: 56px; }
+
   .top .h1 {
     font-size: 56px; }
 
@@ -10024,6 +10100,9 @@ svg.svg-hover-filter-clear:hover {
 
   .line-breaker {
     margin: 40px 0; }
+
+  .top .redesign .h1 {
+    font-size: 46px; }
 
   .top {
     margin-bottom: 28px; }
@@ -11531,7 +11610,7 @@ svg.svg-hover-filter-clear:hover {
   .astralinux-benefits .content-card-image {
     border-radius: 20px; }
 
-  .top .container,
+  .top.redesign .container,
   .redesign-features .container,
   .redesign-graphics .container,
   .redesign-projects .container,
@@ -11543,7 +11622,7 @@ svg.svg-hover-filter-clear:hover {
     padding-left: 20px;
     padding-right: 20px; }
 
-  .top {
+  .top.redesign {
     padding: 0; }
 
   .redesign-features-list {
