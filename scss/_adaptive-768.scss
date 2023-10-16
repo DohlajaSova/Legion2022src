@@ -15,7 +15,7 @@
             font-size:74px;
         }
     }
-    .top .redesign {
+    .top.redesign {
         .h1 {
             font-size:74px;
         }
@@ -927,7 +927,7 @@
     .back{
         right:15px;
     }
-    .top .redesign {
+    .top.redesign {
         .h1 {
             font-size:56px;
         }
@@ -1764,7 +1764,6 @@
             }
         }
     }
-    
 }
 
 @media only screen and (max-width: 550px) {
@@ -1786,7 +1785,7 @@
     .line-breaker {
         margin: 40px 0;
     }
-    .top .redesign {
+    .top.redesign {
         .h1 {
             font-size:46px;
         }
