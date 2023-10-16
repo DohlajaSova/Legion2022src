@@ -871,13 +871,13 @@
         padding: 0;
     }
     .redesign {
-        &-projects {
-            &-slide {
-                &.active {
-                    // min-width: 80vw;
-                }
-            }
-        }
+        // &-projects {
+        //     &-slide {
+        //         &.active {
+        //             // min-width: 80vw;
+        //         }
+        //     }
+        // }
         &-features {
             &-list {
 			    letter-spacing: 1.2px;
@@ -1209,6 +1209,11 @@
     .top{
         &__buttons{
             min-width:0;
+        }
+    }
+    .top.redesign {
+        .h1 {
+            font-size:11vw;
         }
     }
     .footer{
