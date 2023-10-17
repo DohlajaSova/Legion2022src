@@ -8757,8 +8757,8 @@ a.button {
 	margin-bottom: 100px;
 	color: #141414;
 	&-grid {
-		$brad: 30px;
-		$catbrad: 30px;
+		$brad: 18px;
+		$catbrad: 18px;
 
 		display: grid;
 
@@ -8767,9 +8767,9 @@ a.button {
 		// old
 		// grid-template-rows: repeat(2, 280px);
 		// grid-template-columns: auto repeat(3, 280px);
-		
 		grid-auto-flow: column;
-		gap: 1vw;
+		gap: 10px;
+		// gap: 1vw;
 		&-card {
 			$parent: &;
 			border-radius: $brad;
