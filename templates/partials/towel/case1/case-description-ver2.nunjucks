@@ -1,3 +1,33 @@
+<div class="broadwise broadwise_bg">
+    <div class="container">
+        <div class="broadwise__item">
+            <div class="broadwise__item_title">+2 млн</div>
+            <div class="broadwise__item_text">прирост активных пользователей приложения за&nbsp;2021&nbsp;год</div>
+        </div>
+        <div class="broadwise__item">
+            <div class="broadwise__item_title">36 млн</div>
+            <div class="broadwise__item_text">оценок на&nbsp;товары от&nbsp;покупателей каждый месяц </div>
+        </div>
+        <div class="broadwise__item">
+            <div class="broadwise__item_title">3 и 5 место</div>
+            <div class="broadwise__item_text">в&nbsp;рейтингах Google Play и&nbsp;App Store в&nbsp;категории «Еда и&nbsp;напитки»</div>
+        </div>
+    </div>
+</div>
+
+<div class="case-column">
+    <div class="container">
+        <p>Мобильное приложение «Пятёрочка» — это удобный виртуальный сервис для совершения покупок, а также программа лояльности для постоянных покупателей.</p>
+        <p>В приложении доступны виртуальная карта, личный кабинет пользователя, каталог товаров, доставка, обратная связь и уникальная функциональность на рынке ретейла — «Шпионский клуб».</p>
+        <blockquote>
+            <p class="author">Бизнес-задача</p>
+            <p>Сформировать лояльность потребителей к торговой сети и разработать инструменты для стимулирования спроса.</p>
+        </blockquote>
+        <p>В 2019 году команда e-legion приступила к работе над развитием приложения, которое к тому моменту уже было в сторах с большим количеством пользователей.</p>
+        <p>Нам было важно поддерживать работу приложения, параллельно создавая новую архитектуру и функциональность. Тут можно вкорячить текст из целей и задач. Создание инструментов для стимулирования спроса и персонализации покупательского опыта.</p>
+    </div>
+</div>
+
 <div class="principles principles_case case2">
     <div class="container">
         <div class="principles__content">
@@ -28,6 +58,17 @@
     </div>
 </div>
 
+<div class="case-column">
+    <div class="container">
+        <h3>Цели и задачи</h3>
+        <p>Формирование лояльности потребителей к торговой сети «Пятёрочка».</p>
+        <p>Создание инструментов для стимулирования спроса и персонализации покупательского опыта.</p>
+        <p>Создание инструментов для стимулирования спроса и персонализации покупательского опыта.</p>
+        <h3>Функциональность</h3>
+        <p>В 2020 году ретейлер запустил пилотную версию приложения для доставки продуктов «Пятёрочка доставка». В 2021 году было принято решение развивать отдельную функциональность доставки — с библиотеками SDK — для дальнейшего масштабирования и интеграции в основное приложение торговой сети.</p>
+    </div>
+</div>
+
 <div class="problems problems_case">
     <div class="container">
         <div class="problems__item problems__item_bg11">
@@ -101,6 +142,14 @@
     </div>
 </div>
 
+<div class="broadwise broadwise_nopadding">
+    <div class="client__present case-video">
+        <video class="client__present-video" poster="/assets/css/img/client-venn-preview.webp" preload="auto" autoplay="" playsinline="" loop="" muted="">
+            <source src="/assets/css/img/venn.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
 <div class="problems problems_case">
     <div class="container">
         <div class="problems__item problems__item_bg9">
@@ -174,6 +223,15 @@
     </div>
 </div>
 
+<div class="broadwise broadwise_nopadding">
+    <div class="client__present case-image">
+        <picture>
+            <source srcset="/assets/css/img/client-venn-preview.webp" media="" />
+            <img src="/assets/css/img/client-venn-preview.webp" alt="" />
+        </picture>
+    </div>
+</div>
+
 <div class="principles principles_case">
     <div class="container">
         <div class="principles__content">
@@ -184,6 +242,68 @@
                 <p>Центр уведомлений позволяет пользователю быть в&nbsp;курсе действующих промокодов, скидок, персональных предложений и&nbsp;получать оповещения от&nbsp;обратной связи.</p>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="case-column">
+    <div class="container">
+        <h4>Новая программа лояльности (ПЛ)</h4>
+        <ol>
+            <li>В 2021 году торговая сеть «Пятёрочка» перезапустила программу лояльности. Новая ПЛ адаптирована под покупательскую активность и персонализирована на основании предпочтений гостя. Запуск был выполнен в три этапа с постепенной раскаткой функциональности по городам РФ.</li>
+            <li>Пользователям приложения и сайта доступен выбор до 5 категорий повышенного кешбэка в соответствии с уровнем в ПЛ, обновляемом ежемесячно. В рамках проекта также реализованы онбординг, in-app уведомления и возможность отслеживать прогресс достижения уровня на следующий месяц.</li>
+            <li>У пользователей появилась возможность добавления карт лояльности в кошелёк Google Pay.</li>
+            <li>Выполнен рефакторинг акций с обменом баллов (МТС, ВК, ОК).</li>
+            <li>
+                <ol>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>
+                        <ol>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <ul>
+            <li>В 2021 году торговая сеть «Пятёрочка» перезапустила программу лояльности. Новая ПЛ адаптирована под покупательскую активность и персонализирована на основании предпочтений гостя. Запуск был выполнен в три этапа с постепенной раскаткой функциональности по городам РФ.</li>
+            <li>Пользователям приложения и сайта доступен выбор до 5 категорий повышенного кешбэка в соответствии с уровнем в ПЛ, обновляемом ежемесячно. В рамках проекта также реализованы онбординг, in-app уведомления и возможность отслеживать прогресс достижения уровня на следующий месяц.</li>
+            <li>У пользователей появилась возможность добавления карт лояльности в кошелёк Google Pay.</li>
+            <li>Выполнен рефакторинг акций с обменом баллов (МТС, ВК, ОК).</li>
+            <li>
+                <ul>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>Еще пункт</li>
+                    <li>
+                        <ul>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                            <li>Еще пункт</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <blockquote>
+            <p class="author">малый заголовок</p>
+            <p>Масштабирование сервиса доставки продуктов с полной заменой функциональности и сохранением бесперебойной работы.</p>
+        </blockquote>
     </div>
 </div>
 
@@ -229,6 +349,27 @@
     </div>
 </div>
 
+<div class="broadwise broadwise_border">
+    <div class="container">
+        <div class="broadwise__item">
+            <div class="broadwise__item_title">AOV ↑</div>
+            <div class="broadwise__item_text">разработка каталога способствовала увеличению среднего чека</div>
+        </div>
+        <div class="broadwise__item">
+            <div class="broadwise__item_title">MRR ↑</div>
+            <div class="broadwise__item_text">механизмы выгрузки каталога способствовали увеличению выручки</div>
+        </div>
+    </div>
+</div>
+
+<div class="case-column">
+    <div class="container">
+        <h4>Ранжирование товаров</h4>
+        <p>Разработано ранжирование товаров на&nbsp;полках в&nbsp;соответствии с&nbsp;оценками в&nbsp;МП. Товары с&nbsp;высокими оценками (4,9&nbsp; и&nbsp;выше) выделяются на&nbsp;полке специальными ценниками.</p>
+        <p>Если оценка ниже 4,30, состав продукта обсуждается с&nbsp;производителем или пересматривается цена, если иных вариантов нет&nbsp;— товар заменяется другим.</p>
+    </div>
+</div>
+
 <div class="case-stages">
     <div class="principles principles_case">
         <div class="container">
@@ -255,6 +396,16 @@
             </div></div>
         </div>
     </div>
+</div>
+
+<div class="broadwise broadwise_nopadding">
+    <div class="client__present case-image">
+        <picture style="">
+            <source srcset="/assets/css/img/client-venn-preview.webp" media="">
+            <img src="/assets/css/img/client-venn-preview.webp" alt="">
+        </picture>
+    </div>
+    <p>Необходимо заложить возможность добавить текст на изображение. Вот я вижу куст растёт в саду, воробьи играют в чехарду. На этом месте может быть цитата от команды проекта.</p>
 </div>
 
 <div class="principles principles_case">
@@ -266,6 +417,86 @@
             <div class="principles__content_text">
                 <p>Создаём возможности для&nbsp;пользователей поделиться мнением, чтобы бизнес смог повысить качество обслуживания в&nbsp;магазинах.</p>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-column case-column_feedback">
+    <div class="container">
+        <p>«Мобильное приложение «Пятёрочка»&nbsp;— один из&nbsp;стратегических шагов в&nbsp;будущее торговой сети. Это масштабный цифровой канал и&nbsp;поддержка покупательских сервисов в&nbsp;единой экосистеме.</p>
+        <p>С 2019 года объединённая команда «Пятёрочка» и&nbsp;e-legion работают над развитием мобильного продукта&nbsp;— мы стремимся сделать приложение более технологичным и&nbsp;удобным для пользователя.</p>
+        <p>В 2022 продолжаем совместную работу над улучшением пользовательского пути и&nbsp;реализацией новых сложных задач.»</p>
+        
+        <p class="case-column__author">Павел Бабий</p>
+        <p class="case-column__author-position">начальник управления цифровых платформ федеральной торговой сети «Пятёрочка»</p>
+    </div>
+</div>
+
+<div class="case-column">
+    <div class="container">
+        <h3>Награды и конкурсы</h3>
+        <p>Место для вводного текста об истории участия в конкурсах. Сколько наград всего получило приложение или особые знаки отличия.</p>
+
+        <div class="case-awards">
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Золото 2022</div>
+            <div class="case-awards__award">Tagline Awards</div>
+            <div class="case-awards__title">Лучший мобильный сервис</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Золото 2022</div>
+            <div class="case-awards__award">Tagline Awards</div>
+            <div class="case-awards__title">Лучший mobile-/AR-/VR-/IoT-проект</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Бронза 2022</div>
+            <div class="case-awards__award">Рейтинг Рунета</div>
+            <div class="case-awards__title">Торговля и услуги</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Золото 2021</div>
+            <div class="case-awards__award">Рейтинг Рунета</div>
+            <div class="case-awards__title">Торговля и услуги</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Серебро 2021</div>
+            <div class="case-awards__award">Рейтинг Рунета</div>
+            <div class="case-awards__title">Приложение бренда</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Золото 2021</div>
+            <div class="case-awards__award">Золотое приложение</div>
+            <div class="case-awards__title">Еда и напитки</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Серебро 2020-21</div>
+            <div class="case-awards__award">Tagline Awards</div>
+            <div class="case-awards__title">Лучшее ретейл-приложение</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Серебро 2020</div>
+            <div class="case-awards__award">Золотое приложение</div>
+            <div class="case-awards__title">Еда и напитки</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Золото 2019</div>
+            <div class="case-awards__award">Золотое приложение</div>
+            <div class="case-awards__title">Лучшее приложение для потребителя (b2c)</div>
+            <div class="case-awards__line"></div>
+
+            <img class="case-awards__emblem" src="/assets/css/img/cases-premia-2.webp" alt=""/>
+            <div class="case-awards__grade">Золото 2019</div>
+            <div class="case-awards__award">Золотое приложение</div>
+            <div class="case-awards__title">Еда и напитки</div>
+            <div class="case-awards__line"></div>
         </div>
     </div>
 </div>
@@ -947,14 +1178,14 @@
     </div>
 </div>
 
-<!--1. топ-блок
-2. достижения - на сером фоне на всю ширину
-3. просто хтмл-текст: абзацы, цитаты, списки, заголовки и т.п.
-4. видео или фото на всю ширину
-5. текст на фоне картинки на всю ширину
-6. достижения в бордерах на всю ширину
-7. отзыв на всю ширину
-8. награды
+<!--+1. топ-блок
++2. достижения - на сером фоне на всю ширину
++3. просто хтмл-текст: абзацы, цитаты, списки, заголовки и т.п.
++4. видео или фото на всю ширину
++5. текст на фоне картинки на всю ширину
++6. достижения в бордерах на всю ширину
++7. отзыв на всю ширину
++8. награды
 9. объем работ
 10. скачать файл - ссылка на фоне картинки
 11. аккордеон, внутри которого может быть что угодно-->
