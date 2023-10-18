@@ -912,6 +912,11 @@
         &-top {
             &-wrapper {
                 margin-bottom: 50px;
+                flex-flow: column nowrap;
+                gap: 40px;
+                svg {
+                    width: auto;
+                }
             }
         }
     }
