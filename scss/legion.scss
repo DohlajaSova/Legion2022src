@@ -1788,6 +1788,8 @@ a.button {
     }
     &__item{
         padding-right: 40px;
+        flex-basis: 0;
+        flex-grow: 1;
         &:last-child{
             padding-right: 0;
         }
