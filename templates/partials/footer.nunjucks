@@ -1,34 +1,65 @@
-<div class="footer__container footer__container_top">
+<div class="footer__container footer__container_top footer__redesign">
     <div class="footer__logo" title="e-legion">
         <a href="/"></a>
     </div>
     <div class="footer__menu">
-        <a href="/about.html">о компании</a>
-        <a href="/portfolio.html">портфолио</a>
-        <a href="/services.html">услуги</a>
-        <a href="/career.html">карьера</a>
-        <a href="/contacts.html">контакты</a>
-        <a href="/request.html">обсудить проект</a>
+
+    <div class="footer__menu-list-wrapper">
+      <div class="footer__menu-list vertical-border-wrapper">
+        <div class="vertical-border"></div>
+        <span class="text">
+            <a href="/[[~7]]">о компании</a>
+        </span>
+        <span class="text">
+            <a href="/[[~10]]">портфолио</a>
+        </span>
+        <span class="text">
+            <a href="/[[~12]]">услуги</a>
+        </span>
+      </div>
+      <div class="footer__menu-list vertical-border-wrapper">
+        <div class="vertical-border"></div>
+        <span class="text">
+            <a href="/[[~8]]">карьера</a>
+        </span>
+        <span class="text">
+            <a href="/[[~9]]">контакты</a>
+        </span>
+        <span class="text">
+            <a href="/[[~11]]">обсудить проект</a>
+        </span>
+      </div>
+    </div>
     </div>
 </div>
 <div class="footer__container footer__container_bottom">
     <div class="footer__contacts">
-        <div><a href="tel:+78122009509" itemprop="telephone"><em>+7 812 200&nbsp;95&nbsp;09</em></a></div>
+        <div><a href="tel:+78122009509" itemprop="telephone">+7 812 200&nbsp;95&nbsp;09</a></div>
         <div><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></div>
     </div>
     <div class="footer__social social">
-        <a href="/news.html" class="social_blog">блог</a>
+        <div class="circletext blue-clean">блог</div>
         <a href="https://vk.com/elegion" target="_blank" class="social_vk"></a>
         <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt"></a>
-        <a href="https://habr.com/ru/company/e-legion/blog/" target="_blank" class="social_h"></a>
         <a href="https://vc.ru/u/414482-e-legion" target="_blank" class="social_vc"></a>
+        <div class="circletext">старая версия</div>
     </div>
 </div>
 <div class="footer__container">
     <div class="footer__copyright">
-        <span class="footer__copyright_copy">&copy; e-legion</span>
+        <div class="footer__info_wrapper">
+            <span class="footer__info_copy">&copy; e-legion</span>
+            <span class="footer__info_copy">IT-холдинг <a href="https://dzsystems.com/"><u>DZ SYSTEMS</u></a></span>
+        </div>
         <span class="footer__copyright_about">
-            <span>Аккредитация <a href="https://www.gosuslugi.ru/itorgs" target="_blank">Минцифры № 2623</a> от 01 ноября 2013 года. ИНН 7814329421</span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M6.83736 3.24169H8.16976L8.66805 2.41154C8.8766 2.0641 8.76353 1.62146 8.41091 1.40488L7.51244 0.853027L6.60842 1.40829C6.25806 1.62348 6.14383 2.06221 6.34783 2.40916L6.83736 3.24169Z" fill="#949191"/>
+                  <path d="M6.17737 9.69651V8.51424H8.87591V9.69651C8.87591 10.0901 8.6764 10.4594 8.34055 10.6874L7.52664 11.2399L6.71273 10.6874C6.37688 10.4594 6.17737 10.0901 6.17737 9.69651Z" fill="#949191"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25216 7.66709V8.47915C5.15544 8.67409 4.94761 8.8089 4.70682 8.8089C4.32281 8.8089 4.03658 8.47061 4.11704 8.11187L4.30766 7.26193L0.452603 3.3024C-0.13137 3.82992 -0.153134 4.71117 0.404147 5.26442L1.8597 6.70943L0.124922 6.24902C-0.0628965 7.03661 0.485341 7.81183 1.32021 7.93919L2.07173 8.05383L0.336951 8.45899C0.649311 9.23082 1.54334 9.62978 2.3633 9.36326L2.76564 9.23248L1.33927 10.3559L1.65635 10.7283C2.03456 11.1724 2.62592 11.3986 3.22044 11.3265L5.76197 11.0184C5.76975 11.0257 5.77762 11.0329 5.78556 11.04L4.50042 11.9029L4.53559 12.2993C4.57212 12.7112 4.32797 13.099 3.93004 13.2611L3.3355 13.5034L2.044 11.6693C1.96675 11.5596 1.81104 11.5305 1.69622 11.6043C1.58139 11.6781 1.55094 11.8269 1.62819 11.9366L3.61788 14.7621L4.03369 14.4948L3.67948 13.9918L4.67948 13.766C5.25317 13.6364 5.58274 13.0603 5.38708 12.529L6.48577 12.308L6.63575 12.6597C6.79926 13.0432 6.68633 13.4836 6.35582 13.7514L5.38708 14.5364C5.46698 15.0075 5.57821 15.2388 5.86897 15.6045L7.16041 14.739L6.37012 16.157C6.77179 16.5095 7.04254 16.6486 7.54592 16.8492L7.55555 16.853L7.56519 16.8492C8.06857 16.6486 8.33932 16.5095 8.74099 16.157L7.9507 14.739L9.24214 15.6045C9.5329 15.2388 9.64413 15.0075 9.72403 14.5364L8.75529 13.7514C8.42478 13.4836 8.31185 13.0432 8.47536 12.6597L8.62533 12.308L9.72403 12.529C9.52837 13.0603 9.85793 13.6364 10.4316 13.766L11.1269 13.923C11.3096 14.0864 11.5551 14.1865 11.825 14.1865C12.3892 14.1865 12.8466 13.7495 12.8466 13.2104C12.8466 12.6713 12.3892 12.2343 11.825 12.2343C11.3308 12.2343 10.9186 12.5697 10.8239 13.0152C10.6462 12.8233 10.5518 12.5664 10.5755 12.2993L10.6107 11.9029L9.29215 11.0176C9.29408 11.0158 9.29601 11.014 9.29792 11.0122L11.8907 11.3265C12.4852 11.3986 13.0766 11.1724 13.4548 10.7283L13.7718 10.3559L12.3455 9.23248L12.7478 9.36326C13.5678 9.62978 14.4618 9.23082 14.7742 8.45899L13.0394 8.05383L13.7909 7.93919C14.6258 7.81183 15.174 7.03661 14.9862 6.24902L13.2514 6.70943L14.707 5.26442C15.2642 4.71117 15.2425 3.82992 14.6585 3.3024L10.8034 7.26193L10.9941 8.11187C11.0745 8.47061 10.7883 8.8089 10.4043 8.8089C10.0712 8.8089 9.80113 8.55089 9.80113 8.23261V7.66709H8.93482V5.71814C8.93482 5.33164 9.26275 5.01831 9.66728 5.01831H10.7931C10.7931 4.24355 10.1357 3.61548 9.32482 3.61548H8.20069L8.50716 4.20113C8.0311 4.4224 7.67465 4.842 7.55555 5.34745C7.43646 4.842 7.08001 4.4224 6.60395 4.20113L6.91042 3.61548H5.78629C4.97539 3.61548 4.31803 4.24355 4.31803 5.01831H5.44383C5.84836 5.01831 6.17629 5.33164 6.17629 5.71814L6.17629 7.66709H5.25216ZM9.37707 8.03541H5.67621V9.69651C5.67621 10.2452 5.95431 10.7599 6.42247 11.0777L7.52664 11.8272L8.63081 11.0777C9.09897 10.7599 9.37707 10.2452 9.37707 9.69651V8.03541Z" fill="#949191"/>
+                </svg>
+                Аккредитация <a href="https://www.gosuslugi.ru/itorgs" target="_blank">Минцифры № 2623</a>
+            </span>
         </span>
     </div>
 </div>

@@ -910,7 +910,8 @@ a.button {
 .header {
 	background-color: $color-white;
 	padding: 33px 0 83px;
-	height: 36px;
+	height: 150px;
+	// height: 36px;
 	position: relative;
 	width: 100%;
 
@@ -5685,13 +5686,19 @@ a.button {
 }
 
 .footer {
-	background-color: $color-blue-dark;
+	$top-padding: 60px;
+	overflow: hidden; // experimental
+	// background-color: $color-blue-dark;
+	// color: $color-white;
+	background-color: $color-grey-light;
+	color: $color-black-main;
+
 	height: $footer-height;
-	color: $color-white;
-	padding: 50px 0 25px;
+	padding: $top-padding 0 25px;
 
 	a {
-		color: $color-white;
+		color: $color-black-main;
+		// color: $color-white;
 	}
 
 	>.container {
@@ -5716,7 +5723,8 @@ a.button {
 	}
 
 	&__logo {
-		background: url($img-path + "logo-white.svg") 0 0 no-repeat;
+		background: url("img/logo.svg") 0 0 no-repeat;
+		// background: url($img-path + "logo-white.svg") 0 0 no-repeat;
 		background-size: contain;
 		width: 40%;
 		min-width: 148px;
@@ -5738,14 +5746,26 @@ a.button {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 55px;
-
+		justify-content: flex-end;
 		a,
 		span {
-			width: 33.3333%;
+			// width: 33.3333%;
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
 		}
+		
+		&-list {
+			&-wrapper {
+				display: flex;
+				gap: 20px;
+			}
+			display: flex;
+			flex-flow: column nowrap;
+			flex-shrink: 0;
+		}
+
+
 	}
 
 	&__contacts {
@@ -5757,10 +5777,14 @@ a.button {
 			font-style: normal;
 			white-space: nowrap;
 		}
+
+		a {
+			color: $color-black-main;
+		}
 	}
 
 	&__social {
-		font-size: 0;
+		font-size: 16px;
 		width: 60%;
 		margin-bottom: 20px;
         display: flex;
@@ -5776,7 +5800,8 @@ a.button {
 		margin-top: 24px;
 		color: $color-grey-dark;
 		font-size: 12px;
-		
+		justify-content: space-between;
+
 		&_copy{
 			white-space:nowrap;
 		}
@@ -5884,6 +5909,19 @@ a.button {
 					width: 100%;
 				}
 			}
+		}
+	}
+	.text {
+		a{
+			color: $color-black-main;
+		}
+	}
+
+	&__info_wrapper {
+		display: flex;
+		flex-flow: column nowrap;
+		.footer__info_copy {
+			margin-left: 0;
 		}
 	}
 }
@@ -8424,10 +8462,10 @@ a.button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     transform: scale(1.7);
-    border-radius: 40px;
+    border-radius: 60px;
     padding: 10px;
     border: none;
     background: #24DA8D;
@@ -8436,9 +8474,10 @@ a.button {
     outline: none;
     z-index: 100;
     &:before {
-        content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 49C24 49.5523 24.4477 50 25 50C25.5523 50 26 49.5523 26 49L26 26H49C49.5523 26 50 25.5523 50 25C50 24.4477 49.5523 24 49 24H26L26 1C26 0.447716 25.5523 0 25 0C24.4477 0 24 0.447716 24 1L24 24H1C0.447716 24 0 24.4477 0 25C0 25.5523 0.447716 26 1 26H24L24 49Z' fill='white'/%3E%3C/svg%3E");
+		// content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
         position: absolute;
-        top: 10px;
+        top: 15px;
     }
 }
 
@@ -8749,6 +8788,8 @@ a.button {
 		transform: rotate(360deg);
 	}
 }
+
+
 // --redesign
 
 //simple hidebox
@@ -8773,7 +8814,7 @@ a.button {
 		&-card {
 			$parent: &;
 			border-radius: $brad;
-			background-color: var(--light-grey, #F0F0F0);
+			background-color: $color-grey-light;
 			display: grid;
 			flex-flow: column nowrap;
 			align-items: center;
@@ -9025,7 +9066,14 @@ svg.svg-hover-filter-clear {
 
 			.triangle {
 				fill: transparent;
+				cursor: pointer;
 				&.active {
+					fill: #141414;
+					#path-text {
+						fill: #fff;
+					}
+				}
+				&:hover {
 					fill: #141414;
 					#path-text {
 						fill: #fff;
@@ -9054,6 +9102,10 @@ svg.svg-hover-filter-clear {
 					color: #fff;
 					background-color: #141414;
 				}
+				&:hover {
+					color: #fff;
+					background-color: #141414;
+				}
 			}
 		}
 		.slide {
@@ -9069,7 +9121,7 @@ svg.svg-hover-filter-clear {
 				flex-shrink: 0;
 				width: 50%;
 
-				padding-top: 100px;
+				padding-top: 112px;
 
 				.description {
 					font-size: 20px;
@@ -9181,11 +9233,11 @@ svg.svg-hover-filter-clear {
 		flex-flow: column nowrap;
 		gap: 20px;
 		h1 {
-			font-size: 66px;
+			font-size: 80px;
 			margin-bottom: 0px;
 		}
 		span {
-			font-size: 22px;
+			font-size: 24px;
 		}
 	}
 	&-blocks {
@@ -9207,7 +9259,7 @@ svg.svg-hover-filter-clear {
 				line-height: 130%;
 			}
 			&-text {
-				font-size: 22px;
+				font-size: 20px;
 				line-height: 130%;
 			}
 			&-tags {
@@ -9219,7 +9271,7 @@ svg.svg-hover-filter-clear {
 					background-color: $color-grey-light;
 					padding: 10px 20px;
 					color: $color-grey-dark;
-					font-size: 18px;
+					font-size: 16px;
 					line-height: 110%;
 				}
 			}
@@ -9333,14 +9385,11 @@ svg.svg-hover-filter-clear {
 			flex-flow: column nowrap;
 			flex-shrink: 0;
 			gap: 20px;
-			position: relative;
-			padding-left: 30px;
+
+			@include vertical-border-wrapper;
+
 			.vertical-border {
-				position: absolute;
-				border-left: 1px solid #141414;
-				top: -50%;
-				bottom: 100%;
-				left: 0px;
+				@include vertical-border;
 			}
 		}
 	}
@@ -9425,10 +9474,10 @@ svg.svg-hover-filter-clear {
 		}
 		&-undertext {
 			color: #141414;
-			font-size: 22px;
+			font-size: 20px;
 			line-height: 130%; /* 28.6px */
 			max-width: 50%;
-			margin-bottom: 130px;
+			margin-bottom: 120px;
 		}
 		svg {
     		max-width: 100%;
@@ -9440,6 +9489,11 @@ svg.svg-hover-filter-clear {
 }
 .top.redesign {
 	padding: 0;
+	margin-bottom: 100px;
+	.container {
+		display: flex;
+		align-items: center;
+	}
 	.h1 {
 		width: auto;
 		font-size: 80px;
@@ -9448,9 +9502,24 @@ svg.svg-hover-filter-clear {
 	}
 	.top__buttons {
 		min-width: 154px;
+		margin-bottom: 0;
+		&_plus {
+			height: unset;
+		}
 	}
 }
 
+
+.circletext {
+	color: $color-black-main;
+	border: 1px solid $color-black-main;
+	padding: 16px 8px;
+	border-radius:30px;
+	&.blue-clean {
+		color: $color-blue-clean;
+		border: 1px solid $color-blue-clean;
+	}
+}
 
 .component-tags {
 	&.tags {
@@ -9463,7 +9532,6 @@ svg.svg-hover-filter-clear {
 		.tag {
 			font-size: 16px;
 			line-height: 30px; /* 187.5% */
-	
 			border-radius: 20px;
 			border: 1px solid #FFF;
 			background: rgba(196, 196, 196, 0.40);

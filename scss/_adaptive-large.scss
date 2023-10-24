@@ -643,8 +643,8 @@
         .container {
             max-width: 960px;
             margin: auto;
-            padding-left: 30px;
-            padding-right: 30px;
+            // padding-left: 30px;
+            // padding-right: 30px;
         }
     }
     .expert{
@@ -793,7 +793,16 @@
                 }
             }
         }
+        &-header-wrapper  {
+            h1 {
+                font-size: 66px;
+            }
+            span {
+                font-size: 22px;
+            }
+        }
     }
+    
     .subheader{
         margin-bottom: 60px;
     }
@@ -807,6 +816,15 @@
             height: 220px
         }
     }
+    .redesign {
+        &-features {
+            &-preview {
+                .header {
+                    font-size: 40px;
+                }
+            }
+        }
+    }    
     // --redesign
 }
 
@@ -1463,6 +1481,18 @@
     }
 }
 @media only screen and (max-width: 1024px) {
+    .top.redesign,
+    .redesign-features,
+    .redesign-graphics,
+    .redesign-projects,
+    .expert,
+    .subheader,
+    .preservice {
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
     .line-breaker {
         margin: 60px 0;
     }
@@ -2367,8 +2397,8 @@
         &__menu{
             width:56%;
             font-size:16px;
-            a,
-            span{
+            // span,
+            a{
                 width:50%;
             }
         }

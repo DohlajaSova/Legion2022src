@@ -27,6 +27,12 @@
 	{% block content %} {% endblock %}
 	<!-- <div class="bottom-dummy"></div> -->
 </div>
+{# <footer class="footer cleared">
+    {% include "partials/footer-back.nunjucks" %}
+    <div class="container cleared">
+        {% include "partials/footer.nunjucks" %}
+    </div>
+</footer> #}
 <footer class="footer cleared">
     {% include "partials/footer-back.nunjucks" %}
     <div class="container cleared">
