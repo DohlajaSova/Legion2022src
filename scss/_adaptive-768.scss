@@ -1767,6 +1767,15 @@
     }
 }
 
+@media only screen and (min-width: 551px) {
+    $top-padding: 60px;
+    .footer__menu-list {
+        @include vertical-border-wrapper;
+        .vertical-border {
+            @include vertical-border($top: -$top-padding);
+        }
+    }
+}
 @media only screen and (max-width: 550px) {
     body{
         font-size:10px;
@@ -2722,6 +2731,7 @@
         &__menu{
             font-size:24px;
             width:100%;
+            justify-content: flex-start;
         }
     }
     .social{

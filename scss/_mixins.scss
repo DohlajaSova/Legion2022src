@@ -19,3 +19,16 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+@mixin vertical-border-wrapper($pleft: 30px) {
+  position: relative;
+  padding-left: $pleft;
+}
+
+@mixin vertical-border($border: 1px solid #141414,$top: -50%, $bottom: 100%, $left: 0px) {
+  position: absolute;
+  border-left: $border;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+}
