@@ -28,11 +28,14 @@
     </div>
 </div>
 
+<h6>Старт аккордеона</h6>
+<h6>Аккордеон. Заголовок 1</h6>
+
 <div class="principles principles_case case2">
     <div class="container">
         <div class="principles__content">
             <div class="principles__content_head">
-                <h2>Приложение <br>для покупателей</h2>
+                <div class="h2">Приложение <br>для покупателей</div>
             </div>
             <div class="principles__content_text">
                 <p>Главная задача для проекта «Пятёрочка» на&nbsp;2021&nbsp;год&nbsp;— увеличение вовлеченности пользователей и&nbsp;расширение онлайн-возможностей потребителей.</p>
@@ -223,6 +226,8 @@
     </div>
 </div>
 
+<h6>Аккордеон. Заголовок 2</h6>
+
 <div class="broadwise broadwise_nopadding">
     <div class="client__present case-image">
         <picture>
@@ -231,6 +236,8 @@
         </picture>
     </div>
 </div>
+
+<h6>Аккордеон. Заголовок 3</h6>
 
 <div class="principles principles_case">
     <div class="container">
@@ -306,6 +313,8 @@
         </blockquote>
     </div>
 </div>
+
+<h6>Финиш аккордеона</h6>
 
 <div class="principles principles_case">
     <div class="container">
@@ -400,7 +409,7 @@
 
 <div class="broadwise broadwise_nopadding">
     <div class="client__present case-image">
-        <picture style="">
+        <picture>
             <source srcset="/assets/css/img/client-venn-preview.webp" media="">
             <img src="/assets/css/img/client-venn-preview.webp" alt="">
         </picture>
@@ -497,6 +506,20 @@
             <div class="case-awards__award">Золотое приложение</div>
             <div class="case-awards__title">Еда и напитки</div>
             <div class="case-awards__line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="case-column">
+    <div class="container">
+        <h3>Объём работ</h3>
+        <div class="component-tags tags tags_default">
+            <div class="tag tag_selected">Разработка</div>
+            <div class="tag">Анализ</div>
+            <div class="tag tag_selected">Прототипирование</div>
+            <div class="tag">Контроль качества</div>
+            <div class="tag tag_selected">Контроль качества</div>
+            <div class="tag tag_selected">Поддержка</div>
         </div>
     </div>
 </div>
@@ -1178,14 +1201,12 @@
     </div>
 </div>
 
-<!--+1. топ-блок
-+2. достижения - на сером фоне на всю ширину
-+3. просто хтмл-текст: абзацы, цитаты, списки, заголовки и т.п.
-+4. видео или фото на всю ширину
-+5. текст на фоне картинки на всю ширину
-+6. достижения в бордерах на всю ширину
-+7. отзыв на всю ширину
-+8. награды
-9. объем работ
-10. скачать файл - ссылка на фоне картинки
-11. аккордеон, внутри которого может быть что угодно-->
+<div class="broadwise broadwise_download">
+    <div class="client__present case-image">
+        <picture>
+            <source srcset="/assets/css/img/client-venn-preview.webp" media="">
+            <img src="/assets/css/img/client-venn-preview.webp" alt="">
+        </picture>
+    </div>
+    <a href="" class="button button_border-dark">История проекта.pdf</a>
+</div>

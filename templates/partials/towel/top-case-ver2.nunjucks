@@ -47,15 +47,12 @@
                 <div class="topcase__photo_img">
                     <img src="/assets/css/img/client-5ka-top2.jpg" alt="">
                 </div>
-                <div class="topcase__photo_tags">
-                    <div class="tags">
-                        <div class="tag">Разработка</div>
-                        <div class="tag">Автоматизация процессов</div>
-                        <div class="tag">Ретейл</div>
-                    </div>
+                <div class="topcase__photo_tags component-tags tags tags_onbg tags-first-child-selected">
+                    <div class="tag">Разработка</div>
+                    <div class="tag">Автоматизация процессов</div>
+                    <div class="tag">Ретейл</div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

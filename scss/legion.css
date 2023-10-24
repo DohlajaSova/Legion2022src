@@ -518,6 +518,11 @@ a.button {
   a.button.button_border {
     border-color: #949191;
     color: #949191; }
+  .button.button_border-dark,
+  a.button.button_border-dark {
+    background: #fff;
+    border-color: #000;
+    color: #000; }
   .button.button_small,
   a.button.button_small {
     padding: 10px 12px; }
@@ -1442,25 +1447,6 @@ a.button {
       bottom: 30px;
       left: 30px;
       z-index: 2; }
-      .topcase__photo_tags .tags {
-        color: #fff;
-        font-size: 24px;
-        line-height: 130%;
-        display: flex;
-        flex-flow: row wrap;
-        gap: 4px; }
-        .topcase__photo_tags .tags .tag {
-          font-size: 16px;
-          line-height: 30px;
-          /* 187.5% */
-          border-radius: 20px;
-          border: 1px solid #fff;
-          background: rgba(196, 196, 196, 0.4);
-          color: #fff;
-          padding: 0 14px; }
-          .topcase__photo_tags .tags .tag:first-child {
-            border: 1px solid #141414;
-            background-color: #141414; }
   .topcase > .container h1 {
     width: 100%;
     margin-bottom: 77px; }
@@ -1476,6 +1462,13 @@ a.button {
     border-bottom: 1px solid #000; }
   .broadwise.broadwise_nopadding {
     padding: 0; }
+  .broadwise.broadwise_download {
+    padding: 0; }
+    .broadwise.broadwise_download .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   .broadwise .container {
     padding: 0 170px;
     display: flex;
@@ -6951,7 +6944,7 @@ svg.svg-hover-filter-clear:hover {
     min-width: 154px; }
 
 .component-tags.tags {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   line-height: 130%;
   display: flex;
@@ -6962,13 +6955,25 @@ svg.svg-hover-filter-clear:hover {
     line-height: 30px;
     /* 187.5% */
     border-radius: 20px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     background: rgba(196, 196, 196, 0.4);
     color: #fff;
     padding: 0 14px; }
   .component-tags.tags.tags-first-child-selected .tag:first-child {
     border: 1px solid #141414;
     background-color: #141414; }
+  .component-tags.tags.tags_default .tag {
+    background-color: #fff;
+    border: 1px solid #141414;
+    color: #141414; }
+    .component-tags.tags.tags_default .tag.tag_selected {
+      border: 1px solid #141414;
+      background-color: #141414;
+      color: #fff; }
+  .component-tags.tags.tags_onbg .tag {
+    border: 1px solid #fff;
+    background: rgba(196, 196, 196, 0.4);
+    color: #fff; }
 
 @media only screen and (max-width: 1500px) {
   .desktop-show {
