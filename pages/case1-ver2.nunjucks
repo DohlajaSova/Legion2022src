@@ -4,7 +4,7 @@
 {% block links %} {% endblock %}
 {% block content %}
 
-  {% include "partials/towel/top-case.nunjucks" %}
+  {% include "partials/towel/top-case-ver2.nunjucks" %}
   {% include "partials/towel/case1/case-description-ver2.nunjucks" %}
   {% include "partials/towel/case-works.nunjucks" %}
   {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
