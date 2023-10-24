@@ -533,7 +533,7 @@
                 padding: 14px 0px;
                 background: $color-blue-dark;
                 border-radius: 100px;
-                color: #fff!important;
+                color: $color-white !important;
             }
             &_item{
                 margin-bottom:0px!important;
@@ -551,7 +551,7 @@
                 display: none;
             }
             .vacancy__container {
-                background: #fff;
+                background: $color-white;
             }
             .vacancy__body {
                 height: 46px;
@@ -754,7 +754,7 @@
     .who-we-are,
 	.news{
         margin-top: -60px;
-        background: #fff;
+        background: $color-white;
         border-radius: 30px 30px 0 0;
         padding-top: 60px;
 		position:relative;

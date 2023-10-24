@@ -1431,7 +1431,7 @@
                 margin-bottom: 40px;
             }
             &-list {
-                border-left: 1px solid #141414;
+                border-left: 1px solid $color-black;
                 padding-bottom: 40px;
                 gap: 10px;
                 letter-spacing: 1.6px;
@@ -1456,10 +1456,10 @@
     .astralinux-container-interactive .content-container .content-card:hover{
         color: $color-white;
         background-color: $color-blue-light;
-        border-color: #fff;
+        border-color: $color-white;
         svg {
             path {
-                fill: #fff;
+                fill: $color-white;
             }
         }
         .content-card-title {
@@ -2067,13 +2067,13 @@
             }
             a{
                 &.mobile{
-                    background-color: #84AEFF;
+                    background-color: $color-blue-light;
                     z-index: 1;
                 }
             }
             span {
                 &.mobile{
-                    background-color: #2864D9;
+                    background-color: $color-blue;
                     z-index: 2;
                 }
             }

@@ -859,8 +859,8 @@ a.button {
 				}
 
 				.same-as-selected {
-					background: #2864D9;
-					color: #fff;
+					background: $color-blue;
+					color: $color-white;
 				}
 
 			}
@@ -916,7 +916,7 @@ a.button {
 }
 
 .line-breaker {
-	border: 1px solid #949191;
+	border: 1px solid $color-grey-dark;
 	margin: 80px 0;
 }
 
@@ -1421,7 +1421,7 @@ a.button {
 		.header__mmenu_lang {
 			color: $color-black !important;
             margin-right: 0 !important;
-			background-color: #fff;
+			background-color: $color-white;
 		}
 	}
 
@@ -2220,7 +2220,7 @@ a.button {
 
 			.cases__case_name,
 			.cases__case_desc {
-				color: #FFF !important;
+				color: $color-white !important;
 			}
 		}
 
@@ -2500,7 +2500,7 @@ a.button {
 				background: $color-grey-light;
 				overflow: hidden;
 				.problems-slider-groups__statics_arrows-sp{
-					background-color: #fff;
+					background-color: $color-white;
 					svg {
 						path {
 							fill: $color-grey-dark;
@@ -2517,7 +2517,7 @@ a.button {
 					top: 0;
 				}
 				.problems-slider-groups__statics_arrows-sp{
-					background-color: rgba($color: #fff, $alpha: .2);
+					background-color: rgba($color: $color-white, $alpha: .2);
 					svg {
 						path {
 							fill: $color-blue-dark;
@@ -3089,7 +3089,7 @@ a.button {
 		span {
 			font: $text1;
 			line-height: 98px;
-			color: #fff;
+			color: $color-white;
 			display: block;
 			height: 98px;
 			width: 50%;
@@ -3124,7 +3124,7 @@ a.button {
 
 	&.category_applicants {
 		.category__tabs {
-			background-color: #2864D9;
+			background-color: $color-blue;
 
 			a,
 			span {
@@ -3384,7 +3384,7 @@ a.button {
             position: absolute;
             left: 0;
             width: 100%;
-            color: #fff;
+            color: $color-white;
         }
     }
     .principles {
@@ -3459,17 +3459,17 @@ a.button {
                 padding: 34px 41px 14px;
                 flex-grow: 1;
                 &-name {
-                    color: #fff!important;
-                    margin: 0!important;
-                    padding: 0!important;
+                    color: $color-white !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
                 }
                 &-desc {
-                    color: #fff!important;
-                    font-size: 24px!important;
+                    color: $color-white !important;
+                    font-size: 24px !important;
                 }
                 &-position {
                     color: $color-blue-dark!important;
-                    position: static!important;
+                    position: static !important;
                 }
             }
             &_rubr {
@@ -3482,7 +3482,7 @@ a.button {
             }
             &_top {
                 overflow: hidden;
-                background-color: $color-grey-light!important;
+                background-color: $color-grey-light !important;
                 color: $color-blue-dark!important;
                 display: flex;
                 flex-flow: column nowrap;
@@ -3527,7 +3527,7 @@ a.button {
             flex-flow: column nowrap;
             background:url($img-path + "case3-content-background.webp") center bottom no-repeat $color-blue-light;
             background-size: cover;
-            color: #fff;
+            color: $color-white;
             padding-top: 40px;
             border-radius: 45px;
            >* {
@@ -3544,8 +3544,8 @@ a.button {
             }
             &-transition {
                 font-size: 16px;
-                color: #fff!important;
-                text-decoration: none!important;
+                color: $color-white !important;
+                text-decoration: none !important;
                 cursor: pointer;
                 margin-bottom: 36px;
             }
@@ -3612,7 +3612,7 @@ a.button {
             background-repeat: no-repeat;
             background-color: $color-blue-dark;
             background-size: cover;
-            color: #fff;
+            color: $color-white;
             padding-top: 40px;
             border-radius: 45px;
             &:hover{
@@ -3633,8 +3633,8 @@ a.button {
             }
             &-transition {
                 font-size: 16px;
-                color: #fff!important;
-                text-decoration: none!important;
+                color: $color-white !important;
+                text-decoration: none !important;
                 cursor: pointer;
                 margin-bottom: 36px;
             }
@@ -4229,7 +4229,7 @@ a.button {
 			background: $color-grey-light;
 			overflow: hidden;
 			.problems-slider-groups__statics_arrows-sp{
-				background-color: #fff;
+				background-color: $color-white;
 				svg {
 					path {
 						fill: $color-grey-dark;
@@ -4248,7 +4248,7 @@ a.button {
 				top: 0;
 			}
 			.problems-slider-groups__statics_arrows-sp{
-				background-color: rgba($color: #fff, $alpha: .2);
+				background-color: rgba($color: $color-white, $alpha: .2);
 				svg {
 					path {
 						fill: $color-blue-dark;
@@ -4926,7 +4926,7 @@ a.button {
 			margin-bottom: 30px;
 
 			.request__form_warning {
-				color: #fff;
+				color: $color-white;
 			}
 		}
 	}
@@ -4994,7 +4994,7 @@ a.button {
 		&_input,
 		&_textarea {
 			&-placeholder::placeholder {
-				color: #fff;
+				color: $color-white;
 				font-size: 24px;
 				line-height: 130%;
 			}
@@ -5062,12 +5062,12 @@ a.button {
 		&.feedback_compact {
 			.feedback__button {
 				.pulse-button {
-					background-color: #fff;
+					background-color: $color-white;
 					&:before {
 						content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
 					}
 					&__rings {
-						border: 1px solid #fff;
+						border: 1px solid $color-white;
 					}
 				}
 			}
@@ -5125,12 +5125,12 @@ a.button {
 		&.feedback_compact {
 			.feedback__button {
 				.pulse-button {
-					background-color: #fff;
+					background-color: $color-white;
 					&:before {
 						content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='%232864D9' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
 					}
 					&__rings {
-						border: 1px solid #fff;
+						border: 1px solid $color-white;
 					}
 				}
 			}
@@ -5341,7 +5341,7 @@ a.button {
 			&-tags{
 				margin-bottom: 10px;
 				font-size: 16px;
-				color: #949191;
+				color: $color-grey-dark;
 				line-height: 130%;
                 &.longread{
                     &::before{
@@ -6056,14 +6056,13 @@ a.button {
 	// background-color: $color-blue-dark;
 	// color: $color-white;
 	background-color: $color-grey-light;
-	color: $color-black-main;
+	color: $color-black;
 
 	height: $footer-height;
 	padding: $top-padding 0 25px;
 
 	a {
-		color: $color-black-main;
-		// color: $color-white;
+		color: $color-black;
 	}
 
 	>.container {
@@ -6144,7 +6143,7 @@ a.button {
 		}
 
 		a {
-			color: $color-black-main;
+			color: $color-black;
 		}
 	}
 
@@ -6278,7 +6277,7 @@ a.button {
 	}
 	.text {
 		a{
-			color: $color-black-main;
+			color: $color-black;
 		}
 	}
 
@@ -7084,7 +7083,7 @@ a.button {
 
 				&.header__mmenu_lang {
 					color: $color-blue-dark;
-					background-color: #fff;
+					background-color: $color-white;
 				}
 			}
 		}
@@ -7133,7 +7132,7 @@ a.button {
 
 				&.header__mmenu_lang {
 					color: $color-blue-dark;
-					background-color: #fff;
+					background-color: $color-white;
 				}
 			}
 		}
@@ -7189,7 +7188,7 @@ a.button {
 			content: "";
 			display: block;
 			height: 3px;
-			background: radial-gradient(#2864D9 0%, transparent 70%);
+			background: radial-gradient($color-blue 0%, transparent 70%);
 		}
 
 		&::before {
@@ -7264,7 +7263,7 @@ a.button {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		background: #F0F0F0;
+		background: $color-grey-light;
 		border-radius: 42px;
 		margin: 60px 0px 120px;
 
@@ -7387,7 +7386,7 @@ a.button {
 
 			&-case {
 				width: 50%;
-				background: #F0F0F0;
+				background: $color-grey-light;
 				border-radius: 42px;
 				display: grid;
 				grid-template-columns: max-content auto;
@@ -7407,7 +7406,7 @@ a.button {
 					width: fit-content;
 
 					&_wrapper {
-						background-color: #fff;
+						background-color: $color-white;
 						display: flex;
 						justify-content: center;
                         border-radius: inherit;
@@ -7449,14 +7448,14 @@ a.button {
 						text-align: left;
 						font-size: 16px;
 						line-height: 130%;
-						color: #949191 !important;
+						color: $color-grey-dark !important;
 						cursor: pointer;
 						text-decoration: none !important;
 					}
 				}
 			}
 		}
-		border-bottom: 1px solid #949191;
+		border-bottom: 1px solid $color-grey-dark;
 		&:last-child{
 			border: none;
 			margin-bottom: 0px;
@@ -7596,7 +7595,7 @@ a.button {
 	.service__feature_inner {
 		text-decoration: none;
 		text-decoration-color: none;
-		color: #1E2738;
+		color: $color-blue-dark;
 	}
 	.service__feature_inner-case {
 		margin-left: 0;
@@ -7622,7 +7621,7 @@ a.button {
 		height: 20px;
 	}
 	.problems__item_bg5 {
-		background: #84AEFF;
+		background: $color-blue-light;
 		width: 100%;
 		margin-bottom: 0;
 		padding-bottom: 0;
@@ -7642,7 +7641,7 @@ a.button {
 		}
 	}
 	.problems__item_bg5.problems__item_aurora {
-		background: url("img/aurora_feature_maskgroup.png") bottom right no-repeat #84AEFF;
+		background: url("img/aurora_feature_maskgroup.png") bottom right no-repeat $color-blue-light;
 	}
 	.accordion__item_body {
 		p {
@@ -7767,9 +7766,7 @@ a.button {
 					top: 0;
 					left: 0;
 					border-radius: 42px;
-					-moz-box-shadow: inset 0 -60px 60px -60px #000000;
-					-webkit-box-shadow: inset 0 -60px 60px -60px #000000;
-					box-shadow: inset 0 -90px 90px -90px #000000;
+					box-shadow: inset 0 -90px 90px -90px $color-black;
 					z-index: 1;
 					opacity: 0;
 					transition: opacity .25s;
@@ -7792,7 +7789,7 @@ a.button {
 					position: absolute;
 					top: calc(100% - 214px - 10px);
 					left: 20px;
-					color: #fff;
+					color: $color-white;
 					z-index: 2;
 					opacity: 0;
 					transition: opacity .25s;
@@ -7804,7 +7801,7 @@ a.button {
 					position: absolute;
 					top: calc(100% - 214px + 15px);
 					left: 20px;
-					color: #fff;
+					color: $color-white;
 					z-index: 2;
 					opacity: 0;
 					transition: opacity .25s;
@@ -7833,7 +7830,7 @@ a.button {
 
 				&.header__mmenu_lang {
 					color: $color-blue-dark;
-					background-color: #fff;
+					background-color: $color-white;
 				}
 			}
 		}
@@ -7922,9 +7919,9 @@ a.button {
 		.content-card {
 			gap: 20px;
 			padding: 100px 30px 30px 30px;
-			background-color: #84AEFF;
+			background-color: $color-blue-light;
 			border-radius: 30px;
-			color: #fff;
+			color: $color-white;
 			justify-content: flex-start;
 			position: relative;
 			&-image {
@@ -8013,7 +8010,7 @@ a.button {
 							position: absolute;
 							opacity: 0;
 							transition: opacity .25s;
-							color: #fff;
+							color: $color-white;
 						}
 					}
 					&-text {
@@ -8029,16 +8026,16 @@ a.button {
 							opacity: 0;
 							transition: opacity .25s;
 							top: 2em;
-							color: #fff;
+							color: $color-white;
 						}
 					}
 					&-active {
 						color: $color-white;
 						background-color: $color-blue-light;
-						border-color: #fff;
+						border-color: $color-white;
 						svg {
 							path {
-								fill: #fff;
+								fill: $color-white;
 							}
 						}
 						.content-card-title {
@@ -8081,7 +8078,7 @@ a.button {
 				cursor: pointer;
 				&-closest-active {
 					color: $color-blue-dark;
-					box-shadow: 0px 0px 40px 0px #84AEFF99;
+					box-shadow: 0px 0px 40px 0px rgba($color-blue-light, 0.6);
 				}
 				&.transition-2 {
 					transform: translate(25%, 0);
@@ -8423,7 +8420,7 @@ a.button {
 			background-color: $color-grey-light;
 			overflow: hidden;
 			position: relative;
-			color: #1E2738;
+			color: $color-blue-dark;
 			a{
 				color: $color-grey-dark;
 				text-decoration: none;
@@ -8462,7 +8459,7 @@ a.button {
 					color: $color-blue-dark;
 					&-dark{
 						background-color: $color-blue-dark;
-						color: #fff;
+						color: $color-white;
 					}
 					display: flex;
 					justify-content: space-between;
@@ -8494,7 +8491,7 @@ a.button {
 					display: flex;
 					font-size: 24px;
 					line-height: 130%;
-					color: #FFFFFF;
+					color: $color-white;
 					&-dark{
 						color: $color-blue-dark;
 					}
@@ -8503,7 +8500,7 @@ a.button {
 					display: flex;
 					flex-flow: column nowrap;
 					height: 100%;
-					color: #fff;
+					color: $color-white;
 					border-radius: inherit;
 					gap: 40px;
 					&_info{
@@ -8517,7 +8514,7 @@ a.button {
 							margin: auto 0 10px 0;
 						}
 						a{
-							color: #fff;
+							color: $color-white;
 						}
 					}
 					&_image{
@@ -8600,9 +8597,9 @@ a.button {
 			}
 			// card color/style modify
 			&-light{
-				color: #fff;
+				color: $color-white;
 				a {
-					color: #fff;
+					color: $color-white;
 				}
 			}
 			&-venn_background{
@@ -8688,7 +8685,7 @@ a.button {
 	        }
 	        &_author {
 	            &-name {
-	                color: #fff;
+	                color: $color-white;
 	            }
 	            &-position {
 	                color: $color-blue-dark;
@@ -8735,7 +8732,7 @@ a.button {
             flex-flow: column nowrap;
             background:url($img-path + "case3-content-background.webp") center center no-repeat $color-blue-light;
             background-size: cover;
-            color: #fff;
+            color: $color-white;
             padding-top: 40px;
             border-radius: 45px;
             > * {
@@ -8762,8 +8759,8 @@ a.button {
             }
             &-transition {
                 font-size: 16px;
-                color: #fff!important;
-                text-decoration: none!important;
+                color: $color-white !important;
+                text-decoration: none !important;
                 cursor: pointer;
                 margin-bottom: 40px;
             }
@@ -8789,7 +8786,7 @@ a.button {
 			left:0;
 			top: 0;
 			&__text{
-				color: #fff;
+				color: $color-white;
                 line-height: 130%;
 				margin:  0 0 40px 0;
     			font-size: 46px;
@@ -8851,14 +8848,13 @@ a.button {
     border-radius: 60px;
     padding: 10px;
     border: none;
-    background: #24DA8D;
+    background: $color-green;
     position: relative;
     cursor: pointer;
     outline: none;
     z-index: 100;
     &:before {
 		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 49C24 49.5523 24.4477 50 25 50C25.5523 50 26 49.5523 26 49L26 26H49C49.5523 26 50 25.5523 50 25C50 24.4477 49.5523 24 49 24H26L26 1C26 0.447716 25.5523 0 25 0C24.4477 0 24 0.447716 24 1L24 24H1C0.447716 24 0 24.4477 0 25C0 25.5523 0.447716 26 1 26H24L24 49Z' fill='white'/%3E%3C/svg%3E");
-		// content: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0068 2.5332V37.7909' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M37.6386 19.7714L2.38088 19.7714' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
         position: absolute;
         top: 15px;
     }
@@ -8869,7 +8865,7 @@ a.button {
 	width: 100%;
 	height: 30px;
 	font: 12px 'Open Sans', sans-serif;
-	color: #fff;
+	color: $color-white;
 	text-align: center;
 	line-height: 1.2;
 	opacity: 0;
@@ -8894,7 +8890,7 @@ a.button {
   }
 
   .pulse-button__rings {
-	border: 1px solid #24DA8D;
+	border: 1px solid $color-green;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -9179,7 +9175,7 @@ a.button {
 
 .subheader {
 	margin-bottom: 100px;
-	color: #141414;
+	color: $color-black;
 	&-grid {
 		$brad: 18px;
 		$catbrad: 18px;
@@ -9209,7 +9205,7 @@ a.button {
 			cursor: pointer;
 			transition: background-color .25s;
 			&-header {
-				color: #1960FF;
+				color: $color-blue-clean;
 				font-size: 74px;
 				line-height: 130%; /* 96.2px */
 			}
@@ -9229,7 +9225,7 @@ a.button {
 			}
 			&-category {
 				border-radius: $catbrad;
-				background-color: #fff;
+				background-color: $color-white;
 				padding: 0 14px;
 				display: flex;
 				align-self: end;
@@ -9261,7 +9257,7 @@ a.button {
 				.asterisk {
 					height: 45px;
 					display: block;
-					color: #1960FF;
+					color: $color-blue-clean;
 					font-size: 74px;
 					line-height: 130%; /* 96.2px */
 					margin-bottom: 20px;
@@ -9272,7 +9268,7 @@ a.button {
 				height: 100%;
 			}
 			&:hover {
-				background-color: #F8F8F8;
+				background-color: $color-grey-mid;
 				.subheader-grid-card-category {
 					opacity: 1;
 				}
@@ -9290,9 +9286,6 @@ svg.svg-added-filter {
 	* {
 		transition: fill .25s;
 	}
-	// *[fill="black"],*[fill="#000"],*[fill="#000000"],*[fill="#141414"] {
-		// filter: invert(.4);
-	// }
 	*[fill="black"],*[fill="#000"],*[fill="#000000"],*[fill="#141414"],*[fill="#009EE1"], *[fill="#1F5EC7"], *[fill="#0079C0"], *[fill="#EB2316"], *[fill="#EF3124"] {
 		fill: #696868;
 	}
@@ -9418,11 +9411,11 @@ svg.svg-hover-filter-clear {
 
 
 .expert {
-	background-color: #F0F0F0;
-	color: #141414;
+	background-color: $color-grey-light;
+	color: $color-black;
 	padding-top: 80px;
 	padding-bottom: 40px;
-	color: #141414;
+	color: $color-black;
 	&-header {
 		font-size: 46px;
 		line-height: 110%; /* 50.6px */
@@ -9451,22 +9444,22 @@ svg.svg-hover-filter-clear {
 				fill: transparent;
 				cursor: pointer;
 				&.active {
-					fill: #141414;
+					fill: $color-black;
 					#path-text {
-						fill: #fff;
+						fill: $color-white;
 					}
 				}
 				&:hover {
-					fill: #141414;
+					fill: $color-black;
 					#path-text {
-						fill: #fff;
+						fill: $color-white;
 					}
 				}
 			}
 			div {
 				$brad: 30px;
 				
-				border: 1.5px solid #141414;
+				border: 1.5px solid $color-black;
 				padding: 16px 40px;
 				border-radius: 0;
 				transition: color .25s, background-color .25s;
@@ -9482,12 +9475,12 @@ svg.svg-hover-filter-clear {
 					border-bottom-left-radius: 0;
 				}
 				&.active {
-					color: #fff;
-					background-color: #141414;
+					color: $color-white;
+					background-color: $color-black;
 				}
 				&:hover {
-					color: #fff;
-					background-color: #141414;
+					color: $color-white;
+					background-color: $color-black;
 				}
 			}
 		}
@@ -9600,7 +9593,7 @@ svg.svg-hover-filter-clear {
 }
 
 .preservice {
-	color: #141414;
+	color: $color-black;
 	.container {
 		padding-top: 100px;
 		padding-bottom: 100px;
@@ -9659,7 +9652,7 @@ svg.svg-hover-filter-clear {
 				}
 			}
 			&-link {
-				color: #1960FF;
+				color: $color-blue-clean;
 				font-family: Dopis;
 				font-size: 18px;
 				font-style: normal;
@@ -9680,7 +9673,7 @@ svg.svg-hover-filter-clear {
 }
 #svghover:hover  {
 	path#svg-path-move-right{
-		fill: #fff;
+		fill: $color-white;
 		transform: translate(340px);
 	}
 	rect#svg-rect-move-right {
@@ -9703,8 +9696,8 @@ svg.svg-hover-filter-clear {
 	}
 	rect#svg-rect-move-right {
 		transition: fill .8s, stroke .8s, transform .8s;
-		fill:  #fff;
-		stroke:  #000;
+		fill: $color-white;
+		stroke: $color-black;
 	}
 	path#svg-path-fill {
 		transition: fill .5s;
@@ -9718,8 +9711,8 @@ svg.svg-hover-filter-clear {
 }
 .redesign {
 	&-features {
-		border-top: 1px solid #141414;
-		border-bottom: 1px solid #141414;
+		border-top: 1px solid $color-black;
+		border-bottom: 1px solid $color-black;
 		margin-bottom: 90px;
 		overflow: hidden;
 		.container {
@@ -9735,7 +9728,7 @@ svg.svg-hover-filter-clear {
 			flex-basis: 650px;
 			.header {
 				display: contents;
-				color: #141414;
+				color: $color-black;
 				font-size: 46px;
 				line-height: 120%;
 			}
@@ -9744,14 +9737,14 @@ svg.svg-hover-filter-clear {
 				height: 59px;
 				padding: 20px 60px;
 				border-radius: 100px;
-				border: 1px solid #1960FF;
-				background-color: #FFF;
-				color: #1960FF;
+				border: 1px solid $color-blue-clean;
+				background-color: $color-white;
+				color: $color-blue-clean;
 				font-size: 18px;
 				line-height: 130%;
 				&:hover {
-					color: #fff;
-					background-color: #1960FF;
+					color: $color-white;
+					background-color: $color-blue-clean;
 				}
 			}
 		}
@@ -9779,7 +9772,7 @@ svg.svg-hover-filter-clear {
 	&-projects {
 		padding-bottom: 130px;
 		margin-bottom: 80px;
-		border-bottom: 1px solid #141414;
+		border-bottom: 1px solid $color-black;
 		h1 {
 			margin-bottom: 60px;
 		}
@@ -9829,7 +9822,7 @@ svg.svg-hover-filter-clear {
 				bottom: 18px;
 				left: 15px;
 				.head {
-					color: #FFF;
+					color: $color-white;
 					font-size: 24px;
 					line-height: 130%;
 				}
@@ -9856,7 +9849,7 @@ svg.svg-hover-filter-clear {
 			}
 		}
 		&-undertext {
-			color: #141414;
+			color: $color-black;
 			font-size: 20px;
 			line-height: 130%; /* 28.6px */
 			max-width: 50%;
@@ -9894,8 +9887,8 @@ svg.svg-hover-filter-clear {
 
 
 .circletext {
-	color: $color-black-main;
-	border: 1px solid $color-black-main;
+	color: $color-black;
+	border: 1px solid $color-black;
 	padding: 16px 8px;
 	border-radius:30px;
 	&.blue-clean {
@@ -9924,19 +9917,19 @@ svg.svg-hover-filter-clear {
 		&.tags-first-child-selected {
 			.tag {
 				&:first-child {
-					border: 1px solid #141414;
-					background-color: #141414;
+					border: 1px solid $color-black;
+					background-color: $color-black;
 				}
 			}
 		}
         &.tags_default{
             .tag{
                 background-color: $color-white;
-                border: 1px solid #141414;
-                color: #141414;
+                border: 1px solid $color-black;
+                color: $color-black;
                 &.tag_selected{
-					border: 1px solid #141414;
-					background-color: #141414;
+					border: 1px solid $color-black;
+					background-color: $color-black;
                     color: $color-white;
                 }
             }
