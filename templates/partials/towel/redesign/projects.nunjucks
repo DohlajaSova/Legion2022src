@@ -8,7 +8,7 @@
             <div class="head">
               Дизайн-концепт приложения ГК Основа
             </div>
-            <div class="component-tags tags tags-first-child-selected">
+            <div class="component-tags tags tags_first-child-selected">
               <div class="tag">
                 Дискавери фаза
               </div>
@@ -27,7 +27,7 @@
             <div class="head">
               Мобильное приложение «Пятёрочка: доставка продуктов»
             </div>
-            <div class="component-tags tags tags-first-child-selected">
+            <div class="component-tags tags tags_first-child-selected">
               <div class="tag">
                 Разработка
               </div>
@@ -43,7 +43,7 @@
             <div class="head">
               Анализ конкурентов Tele2
             </div>
-            <div class="component-tags tags tags-first-child-selected">
+            <div class="component-tags tags">
               <div class="tag">
                 Дискавери фаза
               </div>
@@ -59,7 +59,7 @@
             <div class="head">
               Приложение на ОС Аврора«Заметки ПРО»
             </div>
-            <div class="component-tags tags tags-first-child-selected">
+            <div class="component-tags tags tags_first-child-selected">
               <div class="tag">
                 Импортозамещение
               </div>

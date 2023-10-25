@@ -9174,7 +9174,7 @@ a.button {
 //simple hidebox
 
 .subheader {
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 	color: $color-black;
 	&-grid {
 		$brad: 18px;
@@ -9413,7 +9413,7 @@ svg.svg-hover-filter-clear {
 .expert {
 	background-color: $color-grey-light;
 	color: $color-black;
-	padding-top: 80px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 	color: $color-black;
 	&-header {
@@ -9914,7 +9914,7 @@ svg.svg-hover-filter-clear {
 			color: $color-white;
 			padding: 0 14px;
 		}
-		&.tags-first-child-selected {
+		&.tags_first-child-selected {
 			.tag {
 				&:first-child {
 					border: 1px solid $color-black;
