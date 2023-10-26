@@ -922,7 +922,7 @@ a.button {
 
 .header {
 	background-color: $color-white;
-	padding: 33px 0 83px;
+	padding: 26px 0 83px;
 	height: 150px;
 	// height: 36px;
 	position: relative;
@@ -983,12 +983,14 @@ a.button {
 		display: flex;
 		justify-content: flex-end;
 		align-self: flex-start;
-
+		gap: 35px;
 		&>a {
-			margin-right: 35px;
-			font-size: 14px;
+			// margin-right: 35px;
+			font-size: 18px;
 			line-height: 30px;
 			color: $color-blue-dark;
+			display: flex;
+			align-items: center;
 
 			&:last-child {
 				margin-right: 0;
@@ -6122,7 +6124,7 @@ a.button {
 		&-list {
 			&-wrapper {
 				display: flex;
-				gap: 20px;
+				gap: 120px;
 			}
 			display: flex;
 			flex-flow: column nowrap;
@@ -9634,6 +9636,7 @@ svg.svg-hover-filter-clear {
 			&-head {
 				font-size: 46px;
 				line-height: 130%;
+				font-weight: 400;
 			}
 			&-text {
 				font-size: 20px;
@@ -9742,7 +9745,9 @@ svg.svg-hover-filter-clear {
 				background-color: $color-white;
 				color: $color-blue-clean;
 				font-size: 18px;
-				line-height: 130%;
+				display: flex;
+				align-items: center;
+				// line-height: 130%;
 				&:hover {
 					color: $color-white;
 					background-color: $color-blue-clean;

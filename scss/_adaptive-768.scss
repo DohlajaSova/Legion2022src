@@ -2735,11 +2735,12 @@
         }
     }
     .social{
+        justify-content: flex-start;
         a{
             width:58px;
             height:58px;
             background-size:auto 33%;
-            margin-bottom:13px;
+            // margin-bottom:13px;
             &.social_tw,
             &.social_in{
                 background-size:auto 45%;
