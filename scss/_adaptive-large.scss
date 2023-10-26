@@ -232,6 +232,7 @@
         &.redesign {
             .h1{
                 width:auto;
+                font-size: 74px;
             }
         }
     }
@@ -889,6 +890,11 @@
             font-size:74px;
             width:80%;
             margin-bottom:40px;
+        }
+        &.redesign {
+            .h1 {
+                width:100%;
+            }
         }
         &__buttons{
             width:100%;
@@ -1948,7 +1954,7 @@
 	}
     .top.redesign {
         .h1 {
-            font-size:62px;
+            font-size:9vw;
         }
     }
 	h2, .h2 {
@@ -2053,7 +2059,7 @@
 					background-color:$color-blue-light;
 					z-index:1;
 				}
-/*				&:nth-child(2){
+                /* &:nth-child(2){
 					background-color:$color-blue-light;
 					z-index:2;
 				}*/
