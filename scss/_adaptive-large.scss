@@ -1901,7 +1901,7 @@
                 scale: 1;
                 position: static;
                 font-size: 18px;
-                flex-flow: row wrap;
+                flex-flow: row nowrap;
                 svg {
                     scale: 1;
                     width: 180px;
@@ -2419,11 +2419,11 @@
                 margin-top:auto;
             }
         }
-        &__copyright{
-            span{
-                margin-left:32px;
-            }
-        }
+        // &__copyright{
+        //     span{
+        //         margin-left:32px;
+        //     }
+        // }
         &__social{
             margin-bottom:9px;
         }
