@@ -936,6 +936,14 @@
             }
         }
     }
+    .footer__menu-list-wrapper{
+        gap: 30px;
+    }
+    .expert {
+        &-header {
+            font-size: 32px;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1368,6 +1376,9 @@
     //redesign 
     
     .expert {
+        &-header {
+            font-size: 26px;
+        }
         &-content {
             .slide-left-part {
                 .tezis {

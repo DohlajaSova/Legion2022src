@@ -866,6 +866,22 @@
             }
         }
     }
+    .footer__menu-list-wrapper{
+        gap: 60px;
+    }
+    .expert {
+        .expert-content {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .expert-content-switch {
+            overflow: scroll;
+            svg {
+                flex-shrink: 0;
+
+            }
+        }
+    }
     // --
 
 }
