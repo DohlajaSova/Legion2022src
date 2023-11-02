@@ -882,8 +882,13 @@
             }
         }
     }
-    // --
+    .footer__container_bottom{
+        .circletext {
+            text-wrap: nowrap;
+        }
+    }
 
+    // --
 }
 
 @media only screen and (max-width: 700px) {
@@ -923,6 +928,41 @@
         &__year{
             font-size:140px;
             margin-top:10px;
+        }
+    }
+    
+    .footer{
+        height:auto;
+        &__container{
+            &_bottom{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        &__menu{
+            margin-bottom:15px;
+        }
+        &__contacts{
+            width:100%;
+            order:2;
+        }
+        &__social{
+            width:100%;
+            text-align:left;
+            order:1;
+            margin-bottom:20px;
+        }
+        &__copyright{
+            &_about{
+                display:flex;
+                flex-direction:column;
+                span{
+                    margin:0;
+                    &:first-child{
+                        margin-bottom:10px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1172,40 +1212,6 @@
     .news{
         h2{
             margin-bottom:30px;
-        }
-    }
-    .footer{
-        height:auto;
-        &__container{
-            &_bottom{
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-        &__menu{
-            margin-bottom:15px;
-        }
-        &__contacts{
-            width:100%;
-            order:2;
-        }
-        &__social{
-            width:100%;
-            text-align:left;
-            order:1;
-            margin-bottom:20px;
-        }
-        &__copyright{
-            &_about{
-                display:flex;
-                flex-direction:column;
-                span{
-                    margin:0;
-                    &:first-child{
-                        margin-bottom:10px;
-                    }
-                }
-            }
         }
     }
     .dummy{
@@ -1780,6 +1786,9 @@
                 }
             }
         }
+    }
+    .footer .text a {
+        text-wrap: nowrap;
     }
 }
 
@@ -2753,9 +2762,9 @@
     .social{
         justify-content: flex-start;
         a{
-            width:58px;
-            height:58px;
             background-size:auto 33%;
+            // width:58px;
+            // height:58px;
             // margin-bottom:13px;
             &.social_tw,
             &.social_in{
@@ -3241,7 +3250,7 @@
             }
             &-slide {
                 .img {
-                    height: 268px;
+                    height: 350px;
                 }
             }
         }
