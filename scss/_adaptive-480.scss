@@ -939,9 +939,24 @@
     .footer__menu-list-wrapper{
         gap: 30px;
     }
+    .footer .text a {
+        font-size: 18px;
+    }
     .expert {
         &-header {
             font-size: 32px;
+        }
+    }
+    .expert {
+        &-content {
+            .slide {
+                &-left-part {
+                    .tezis {
+                        flex-flow: column nowrap;
+                        gap: 20px;
+                    }
+                }
+            }
         }
     }
 }

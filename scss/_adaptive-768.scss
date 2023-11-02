@@ -1781,6 +1781,9 @@
             }
         }
     }
+    .footer .text a {
+        text-wrap: nowrap;
+    }
 }
 
 @media only screen and (min-width: 551px) {
@@ -2753,9 +2756,9 @@
     .social{
         justify-content: flex-start;
         a{
-            width:58px;
-            height:58px;
             background-size:auto 33%;
+            // width:58px;
+            // height:58px;
             // margin-bottom:13px;
             &.social_tw,
             &.social_in{
@@ -3241,7 +3244,7 @@
             }
             &-slide {
                 .img {
-                    height: 268px;
+                    height: 350px;
                 }
             }
         }
