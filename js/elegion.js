@@ -711,6 +711,157 @@ function generateEditorialTOC(editorial) {
     }
 }
 
+function generateCaseTOC(caseOuter) {
+    caseOuter.innerHTML = caseOuter.innerHTML.replace(/<h6 class="js-case-accordion-begin"><\/h6>([\s\S]+)<h6 class="js-case-accordion-end"><\/h6>/gm, '<div class="js-case">$1</div>');
+
+    let case1 = document.querySelectorAll(".js-case")[0];
+
+    let toc = '';
+    // разбиваем блок аккордеона на блоки <section> по вхождению заголовков <h6>
+    let sectioned = case1.innerHTML.replace(/(([\s\S]*?)<h6>([\s\S]*?)<\/h6>)+?/gm, '<section>$2<a href="" class="close">закрыть/свернуть</a></section><h6 class="container h3">$3</h3>');
+    //console.log(sectioned);
+    sectioned = sectioned.replace(/<h6 class="container h3">([\s\S]*)<\/h3>([\s\S]+)/gm, '<h6 class="container h3">$1</h3><section>$2<a href="" class="close">закрыть/свернуть</a></section>');
+    case1.innerHTML = sectioned;
+
+    const headings = caseOuter.querySelectorAll('h3, h6');
+    if (headings.length) {
+        // формируем оглавление
+        headings.forEach(function (heading, index) {
+            let headName = heading.innerHTML;
+            heading.innerHTML = '<a name="head' + index + '" id="#head' + index + '"></a>' + headName;
+            if (heading.tagName == 'H3')
+                toc += '<div class="case-container__toc-lev1"><a href="#head' + index + '" class="js-scrollto">' + headName + '</a></div>';
+            else
+                toc += '<div class="case-container__toc-lev2"><a href="#head' + index + '" class="js-scrollto">' + headName + '</a></div>';
+        });
+        toc = '<div class="case-container__toc-lev1"><a href="#project" class="js-scrollto">Проект</a></div>' + toc;
+
+    }
+
+    if (toc != "") {
+        toc = '<aside class="case-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="case-container__toc-inner hide">' + toc + '</div></aside>';
+    }
+    else toc = '<aside class="case-container__toc"></aside>'
+
+    let div = document.createElement('div');
+    div.className = 'case-accordion js-case-accordion';
+    if (case1 != '') div.innerHTML = case1.innerHTML;
+    case1.before(div);
+    document.querySelectorAll('.js-case')[0].remove();
+    
+    document.addEventListener('click', function(e){
+        if (e.target.parentElement.classList.contains('js-case-accordion')){
+            if (e.target.classList.contains('active'))
+                e.target.classList.remove('active');
+            else
+                e.target.classList.add('active');
+        }
+    }, true);
+    
+    document.addEventListener('click', function(e){
+        e.preventDefault();
+        if (e.target.parentElement.parentElement.classList.contains('js-case-accordion') && e.target.classList.contains('close')){
+            e.target.parentElement.previousElementSibling.classList.remove('active');
+            window.scrollTo({ behavior: "smooth", top: e.target.parentElement.previousElementSibling.getBoundingClientRect().top + window.pageYOffset });
+        }
+    }, true);
+    
+    div = document.createElement('div');
+    div.className = 'js-case-outer';
+    div.innerHTML = toc + '<article class="case-container__body" itemprop="articleBody">' + caseOuter.innerHTML + '</article>';
+    caseOuter.before(div);
+    document.querySelectorAll('.js-case-outer')[1].remove();
+
+    const sidebarElements = Array.from(document.getElementsByClassName('js-scrollto'));
+    if (sidebarElements.length) {
+        sidebarElements.forEach(function (sidebarElement, index) {
+            sidebarElements[index].addEventListener('click', function (event) {
+                event.preventDefault();
+                let element = document.getElementById(event.target.getAttribute('href'));
+                const y = element.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({ behavior: "smooth", top: y });
+            })
+        })
+    }
+
+    // фиксим оглавление кейса при скролле
+    const stickyTOC = document.getElementsByClassName('js-toc')[0];
+    if (stickyTOC != undefined) {
+        const caseBody = document.getElementsByClassName('js-case-outer')[0];
+        //let caseTop = caseBody.offsetTop; bug in mobile
+        let caseTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height;
+        let caseHeight = document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height + 167;
+        let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        let topAdjust = 0;
+        if (wWidth <= 650) topAdjust = 102;
+        if (wWidth > 1024 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined)
+            document.getElementsByClassName('case-container__toc-inner')[0].classList.remove('hide');
+
+        // 0. подсвечиваем активный заголовок
+        // 1. массив заголовков, их топ-координаты относительно скролла
+        // 2. если какой-то заголовок попадает в область (видимость или выше), помечаем его активным
+        // 3. в правом блоке подсвечиваем последний из активных, все остальные убираем
+        const allHeadings = caseBody.querySelectorAll('h3, h6');
+        const allTOCHeadings = stickyTOC.getElementsByTagName('div');
+        let allHeadingsTops = new Array();
+        if (allHeadings.length) {
+            Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
+                allHeadingsTops[index] = allHeadings[index].offsetTop;
+            });
+        }
+        allHeadingsTops.splice(0, 0, caseBody.getBoundingClientRect().top + window.pageYOffset + 60);
+
+        function placeCaseTOC() {
+            bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            console.log(bodyScrollTop);
+            let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height;
+            stickyTOC.style.height = TOCHeight + 68 + "px";
+            if (bodyScrollTop > caseTop + 67) {
+                document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
+                stickyTOC.classList.add('fixed');
+                if (wWidth > 1024 && document.getElementsByClassName('case-container')[0] != undefined) {
+                    if (bodyScrollTop > caseTop + document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height - document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height - 79)
+                        document.getElementsByClassName('js-case-outer')[0].classList.add('floored');
+                    else
+                        document.getElementsByClassName('js-case-outer')[0].classList.remove('floored');
+                }
+            }
+            else {
+                document.getElementsByClassName('case-container__toc-inner')[0].classList.remove('fixed');
+                stickyTOC.classList.remove('fixed');
+            }
+
+            if (allHeadings.length) {
+                let activeHeading = -1;
+                for (i = 0; i < allHeadingsTops.length; i++) {
+                    if (bodyScrollTop > (allHeadingsTops[i] - wHeight)) {
+                        activeHeading = i;
+                    }
+                }
+                Array.prototype.slice.call(allHeadingsTops).forEach(function (heading, index) {
+                    if (index == activeHeading) {
+                        allTOCHeadings[index+1].classList.add('active');
+                    }
+                    else {
+                        allTOCHeadings[index+1].classList.remove('active');
+                    }
+                });
+            }
+            else {
+                Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
+                    allTOCHeadings[index].classList.remove('active');
+                });
+            }
+        }
+        placeCaseTOC();
+        window.addEventListener('touch', placeCaseTOC, true);
+        window.addEventListener('scroll', placeCaseTOC, true);
+        window.addEventListener('resize', placeCaseTOC, true);
+    }
+}
+
 docReady(function () {
     const params = getParamsByUrl();
     const scrollIV = params?.scrollinto;
@@ -1140,12 +1291,17 @@ docReady(function () {
         }
     }
 
-    // генерация оглавления
+    // генерация оглавления в блоге
     let editorial = document.querySelectorAll(".js-editorial");
 
     if (editorial.length > 0) {
         generateEditorialTOC(editorial[0]);
     }
+
+    // генерация оглавления в кейсе
+    let caseOuter = document.querySelector(".js-case-outer");
+    if (caseOuter != undefined)
+        generateCaseTOC(caseOuter);
 
     // фильтр на странице вакансий
     let vacanciesBlocks = document.querySelectorAll(".js-vacancies-container .vacancies__container_inner");
