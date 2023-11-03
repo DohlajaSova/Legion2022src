@@ -718,9 +718,9 @@ function generateCaseTOC(caseOuter) {
 
     let toc = '';
     // разбиваем блок аккордеона на блоки <section> по вхождению заголовков <h6>
-    let sectioned = case1.innerHTML.replace(/(([\s\S]*?)<h6>([\s\S]*?)<\/h6>)+?/gm, '<section>$2<a href="" class="close">закрыть/свернуть</a></section><h6 class="container h3">$3</h3>');
+    let sectioned = case1.innerHTML.replace(/(([\s\S]*?)<h6>([\s\S]*?)<\/h6>)+?/gm, '<section>$2<a href="" class="close">закрыть/свернуть</a></section><h6 class="container h3">$3</h6>');
     //console.log(sectioned);
-    sectioned = sectioned.replace(/<h6 class="container h3">([\s\S]*)<\/h3>([\s\S]+)/gm, '<h6 class="container h3">$1</h3><section>$2<a href="" class="close">закрыть/свернуть</a></section>');
+    sectioned = sectioned.replace(/<h6 class="container h3">([\s\S]*)<\/h6>([\s\S]+)/gm, '<h6 class="container h3">$1</h6><section>$2<a href="" class="close">закрыть/свернуть</a></section>');
     case1.innerHTML = sectioned;
 
     const headings = caseOuter.querySelectorAll('h3, h6');

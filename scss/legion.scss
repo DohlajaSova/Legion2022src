@@ -8964,6 +8964,7 @@ a.button {
             &.active{
                 a{
                     font-weight: 700;
+					color: $color-black;
                 }
             }
             &:last-child{
