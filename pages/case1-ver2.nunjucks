@@ -4,13 +4,13 @@
 {% block links %} {% endblock %}
 {% block content %}
 
-<div class="js-case">
+<div class="js-case-outer"><a name="project" id="#project"></a>
   {% include "partials/towel/top-case-ver2.nunjucks" %}
   {% include "partials/towel/case1/case-description-ver2.nunjucks" %}
+</div>
   {% include "partials/towel/case-works.nunjucks" %}
   {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
   {% include "partials/towel/cases-random.nunjucks" %}
-</div>
 
   {% include "partials/popup-feedback.nunjucks" %}
 {% endblock %}
