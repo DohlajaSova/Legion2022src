@@ -8947,13 +8947,13 @@ a.button {
         align-items: flex-start;
         z-index: 3000;
 		max-height: 450px;
-        font-size:16px;
+        font-size: 16px;
         &-inner{
-            padding: 30px 20px 20px;
+            padding: 100px 30px 20px 60px;
 			background-color: rgba($color-white, 0.9);
-            position: fixed;
+			position: static;
             top: 20px;
-            width: 16%;
+			width: 300px;
         }
         &-lev1,
         &-lev2{
@@ -8975,12 +8975,33 @@ a.button {
             padding-left: 20px;
         }
         .sidetoc-menu{
-            background: url($img-path + "icon-editorial1.svg") center center no-repeat $color-blue-dark;
-            position: relative;
-            right: 0;
-            top: -10px;
-            display: none;
+			position: relative;
+			top: 80px;
+            left: 60px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $color-black;
+            border-radius: 8px;
+            background: url($img-path + "icon-accordion.svg") center center no-repeat $color-white;
+			z-index: 20000;
+			flex-shrink: 0;
+			&.closed{
+				transform: rotate(180deg);
+				& + .case-container__toc-inner{
+					display:none;
+				}
+			}
         }
+		&.fixed{
+			//top: 1120px;
+			.sidetoc-menu{
+				position: fixed;
+				top: 60px;
+			}
+			.case-container__toc-inner{
+				position: fixed;
+			}
+		}
     }
 }
 
@@ -9139,6 +9160,7 @@ a.button {
                 font-weight: 700;
                 line-height: 1.3;
                 margin-bottom: 14px;
+				color: $color-white;
                 i {
                     float:right;
                     transform: rotate(180deg);
