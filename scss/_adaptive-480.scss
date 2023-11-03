@@ -871,13 +871,6 @@
         padding: 0;
     }
     .redesign {
-        // &-projects {
-        //     &-slide {
-        //         &.active {
-        //             // min-width: 80vw;
-        //         }
-        //     }
-        // }
         &-features {
             &-list {
 			    letter-spacing: 1.2px;
@@ -958,6 +951,9 @@
                 }
             }
         }
+    }
+    .top.redesign {
+        margin-bottom: 60px;
     }
 }
 
@@ -1229,6 +1225,9 @@
                 width: 110px;
             }
         }
+    }
+    .top.redesign {
+        margin-bottom: 20px;
     }
 }
 // --
