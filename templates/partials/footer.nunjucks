@@ -42,7 +42,7 @@
         <a href="https://vk.com/elegion" target="_blank" class="social_vk"></a>
         <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt"></a>
         <a href="https://vc.ru/u/414482-e-legion" target="_blank" class="social_vc"></a>
-        <div class="circletext">старая версия</div>
+        <div class="circletext hover-blue">старая версия</div>
     </div>
 </div>
 <div class="footer__container">

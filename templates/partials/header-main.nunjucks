@@ -8,9 +8,5 @@
     <a href="/about.html">о компании</a>
     <a href="/services.html">услуги</a>
     <a href="/portfolio.html">портфолио</a>
-    {# <a href="/career.html">карьера</a> #}
-    {# <a href="/news.html">блог</a> #}
-    {# <a href="/contacts.html">контакты</a> #}
-    <a class="circletext" href="/request.html">обсудить проект</a>
-    {# <a href="https://old.e-legion.ru/" target="_blank" class="header__mmenu_lang">←&nbsp;старая&nbsp;версия</a> #}
+    <a class="circletext hover-blue" href="/request.html">обсудить проект</a>
 </div>

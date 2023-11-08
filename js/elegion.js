@@ -876,7 +876,7 @@ docReady(function () {
     let lastScrollTop = 0;
     const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     let i, j;
-    const backButton = document.querySelector(".js-top");
+    // const backButton = document.querySelector(".js-top");
     const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
     if (windowWidth <= 650) {
         window.onscroll = function () {
@@ -905,18 +905,18 @@ docReady(function () {
             lastScrollTop = bodyScrollTop <= 0 ? 0 : bodyScrollTop;
 
 
-            if (bodyScrollTop < 500) backButton.classList.add("hide");
-            else backButton.classList.remove("hide");
+            // if (bodyScrollTop < 500) backButton?.classList.add("hide");
+            // else backButton?.classList.remove("hide");
         };
     }
-    else {
-        window.onscroll = function () {
-            let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    // else {
+    //     window.onscroll = function () {
+    //         let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-            if (bodyScrollTop < 500) backButton.classList.add("hide");
-            else backButton.classList.remove("hide");
-        }
-    }
+    //         if (bodyScrollTop < 500) backButton.classList.add("hide");
+    //         else backButton.classList.remove("hide");
+    //     }
+    // }
 
     // обработка свайпа
     const sliders = document.querySelectorAll('.cases-slider');
@@ -2291,7 +2291,7 @@ docReady(function () {
     if (document.querySelectorAll(".js-expert-slider").length > 0) {
         if (document.querySelector('.slider-container')) {
             const container = document.querySelector(".js-expert-slider");
-            const sliderCases = tns({
+            const sliderExpert = tns({
                 container: '.js-expert-slider .slider-container',
                 gutter: 0,
                 controls: false,
@@ -2309,13 +2309,14 @@ docReady(function () {
                 // const data = sw.dataset;
                 // && data.switchClass
                 if(sw.children?.length) {
+
                     for(let one = 0; one < sw.children.length; one ++) {
                         const child = sw.children[one];
                         child.addEventListener('click', function() {
                             // const tn = document.querySelectorAll(".js-expert-slider")[0]
                             // console.log({tn})
                             // tn.goTo(one)
-                            sliderCases.goTo(one);
+                            sliderExpert.goTo(one);
                             // clear selection
                             for(let two = 0; two < sw.children.length; two ++) {
                                 sw.children[two].classList.remove("active")
@@ -2323,7 +2324,17 @@ docReady(function () {
                             child.classList.add("active");
                         }) 
                     }
+
+                    function onExpertChangeSlide(e) {
+                        for(let two = 0; two < sw.children.length; two ++) {
+                            sw.children[two].classList.remove("active")
+                        }
+                        sw.children[e.displayIndex - 1].classList.add("active");
+                    }
+                    sliderExpert.events.on('indexChanged', onExpertChangeSlide);
+
                 }
+                
             }
         }
     }

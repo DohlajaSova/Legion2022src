@@ -1095,7 +1095,7 @@ a.button {
             }
         }
         &:hover{
-            background-color: $color-blue-light;
+            background-color: $color-black;
         }
     }
 
@@ -9953,9 +9953,6 @@ svg.svg-hover-filter-clear {
 	.h1 {
 		width: auto;
 		font-size: 80px;
-		// font-size: 80px;
-		// old
-		// font-size: 22px;
 	}
 	.top__buttons {
 		min-width: 154px;
@@ -9974,9 +9971,19 @@ svg.svg-hover-filter-clear {
 	border: 1.5px solid $color-black;
 	padding: 8px 16px;
 	border-radius:30px;
+	transition: border-color .25s, background-color .25s, color .25s;
+	&:hover {
+		text-decoration: unset;
+		cursor: pointer;
+	}
 	&.blue-clean {
 		color: $color-blue-clean;
 		border: 1.5px solid $color-blue-clean;
+	}
+	&.hover-blue:hover {
+		color: #fff;
+		border-color: $color-blue-clean;
+		background-color: $color-blue-clean;
 	}
 }
 
