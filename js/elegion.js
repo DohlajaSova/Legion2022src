@@ -2311,7 +2311,6 @@ docReady(function () {
                     for(let one = 0; one < sw.children.length; one ++) {
                         const child = sw.children[one];
                         child.addEventListener('click', function() {
-                            console.log({child})
                             // const tn = document.querySelectorAll(".js-expert-slider")[0]
                             // console.log({tn})
                             // tn.goTo(one)
