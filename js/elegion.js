@@ -789,7 +789,9 @@ function generateCaseTOC(caseOuter) {
     if (stickyTOC != undefined) {
         const caseBody = document.getElementsByClassName('js-case-outer')[0];
         //let caseTop = caseBody.offsetTop; bug in mobile
-        let caseTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height;
+        //let caseTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height;
+        let caseTop = document.getElementsByClassName('case-column')[0].getBoundingClientRect().top + window.pageYOffset - document.getElementsByClassName('header')[0].getBoundingClientRect().height + 40;
+        stickyTOC.style.top = caseTop + 110 + 'px';
         let caseHeight = document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height + 167;
         let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -811,11 +813,11 @@ function generateCaseTOC(caseOuter) {
                 allHeadingsTops[index] = allHeadings[index].offsetTop;
             });
         }
-        allHeadingsTops.splice(0, 0, caseBody.getBoundingClientRect().top + window.pageYOffset + 60);
+        allHeadingsTops.splice(0, 0, caseBody.getBoundingClientRect().top + window.pageYOffset + 60); // добавили начало кейса
+        console.log(allHeadingsTops);
 
         function placeCaseTOC() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            console.log(bodyScrollTop);
             let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height;
             stickyTOC.style.height = TOCHeight + 68 + "px";
             if (bodyScrollTop > caseTop + 67) {

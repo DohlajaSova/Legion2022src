@@ -1645,7 +1645,6 @@ a.button {
 }
 
 .topcase{
-    padding-top: 60px;
     &__outer{
         display: grid;
         grid-template-columns: 0.312fr auto;
@@ -8149,6 +8148,9 @@ a.button {
         &.case-image{
             height: auto;
             max-height:none;
+            picture{
+                display: block;
+            }
             img{
                 width:100%;
             }
@@ -8163,7 +8165,7 @@ a.button {
         }
 		max-height: 740px;
 
-		&>img {
+		& > img {
 			width: 100%;
 			&.venn {
 				display: none;
@@ -8942,17 +8944,17 @@ a.button {
     &__toc{
         display: flex;
         flex-direction: column;
-        width: 23.2%;
         position: absolute;
+        top: 0;
         align-items: flex-start;
         z-index: 3000;
 		max-height: 450px;
         font-size: 16px;
         &-inner{
-            padding: 100px 30px 20px 60px;
+            padding: 80px 30px 20px 60px;
 			background-color: rgba($color-white, 0.9);
-			position: static;
-            top: 20px;
+			position: absolute;
+            top: 0;
 			width: 300px;
         }
         &-lev1,
@@ -8963,7 +8965,6 @@ a.button {
             }
             &.active{
                 a{
-                    font-weight: 700;
 					color: $color-black;
                 }
             }
@@ -8976,7 +8977,7 @@ a.button {
         }
         .sidetoc-menu{
 			position: relative;
-			top: 80px;
+			top: 20px;
             left: 60px;
             width: 40px;
             height: 40px;
@@ -8985,8 +8986,9 @@ a.button {
             background: url($img-path + "icon-accordion.svg") center center no-repeat $color-white;
 			z-index: 20000;
 			flex-shrink: 0;
+            transform: rotate(180deg);
 			&.closed{
-				transform: rotate(180deg);
+				transform: rotate(0deg);
 				& + .case-container__toc-inner{
 					display:none;
 				}
@@ -8996,7 +8998,7 @@ a.button {
 			//top: 1120px;
 			.sidetoc-menu{
 				position: fixed;
-				top: 60px;
+				top: 20px;
 			}
 			.case-container__toc-inner{
 				position: fixed;

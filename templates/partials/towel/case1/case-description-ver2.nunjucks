@@ -230,10 +230,7 @@
 
 <div class="broadwise broadwise_nopadding">
     <div class="client__present case-image">
-        <picture>
-            <source srcset="/assets/css/img/client-venn-preview.webp" media="" />
-            <img src="/assets/css/img/client-venn-preview.webp" alt="" />
-        </picture>
+        <img src="/assets/css/img/client-venn-preview.webp" alt="" />
     </div>
 </div>
 
@@ -382,10 +379,7 @@
 
 <div class="broadwise broadwise_nopadding">
     <div class="client__present case-image">
-        <picture>
-            <source srcset="/assets/css/img/client-venn-preview.webp" media="">
-            <img src="/assets/css/img/client-venn-preview.webp" alt="">
-        </picture>
+        <img src="/assets/css/img/client-venn-preview.webp" alt="">
     </div>
     <p>Необходимо заложить возможность добавить текст на изображение. Вот я вижу куст растёт в саду, воробьи играют в чехарду. На этом месте может быть цитата от команды проекта.</p>
 </div>
@@ -1176,10 +1170,7 @@
 
 <div class="broadwise broadwise_download">
     <div class="client__present case-image">
-        <picture>
-            <source srcset="/assets/css/img/client-venn-preview.webp" media="">
-            <img src="/assets/css/img/client-venn-preview.webp" alt="">
-        </picture>
+        <img src="/assets/css/img/client-venn-preview.webp" alt="">
     </div>
     <a href="" class="button button_border-dark">История проекта.pdf</a>
 </div>
