@@ -2347,6 +2347,17 @@ docReady(function () {
                             child.classList.remove("active");
                         })
                         child.classList.add("active");
+                        const isSync = child.dataset.clickSync;
+                        if(isSync) {
+                            const nodes = [...document.querySelectorAll(".js-click-sync")];
+                            const elem = nodes?.find(node => node.dataset?.clickSync === isSync);
+                            if(elem) {
+                                nodes.forEach(one => {
+                                    one?.classList.add("hide")
+                                })
+                                elem.classList.remove("hide")
+                            }
+                        }
                         if(windowWidth <= 480) {
                             wrap.scrollTo({ behavior: "smooth", left: child.offsetLeft - 20 });
                         } else if(windowWidth <= 650) {

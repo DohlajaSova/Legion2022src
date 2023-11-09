@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="redesign-projects-header">Проекты</h1>
     <div class="redesign-projects-wrapper js-children-click-set-active">
-      <div class="redesign-projects-slide active">
+      <div class="redesign-projects-slide active" data-click-sync="1">
         <div class="img"></div>
         <div class="wrapper">
             <div class="head">
@@ -21,7 +21,7 @@
             </div>
         </div>
       </div>
-      <div class="redesign-projects-slide">
+      <div class="redesign-projects-slide" data-click-sync="2">
         <div class="img"></div>
         <div class="wrapper">
             <div class="head">
@@ -37,7 +37,7 @@
             </div>
         </div>
       </div>
-      <div class="redesign-projects-slide">
+      <div class="redesign-projects-slide" data-click-sync="3">
         <div class="img"></div>
         <div class="wrapper">
             <div class="head">
@@ -53,7 +53,7 @@
             </div>
         </div>
       </div>
-      <div class="redesign-projects-slide">
+      <div class="redesign-projects-slide" data-click-sync="4">
         <div class="img"></div>
         <div class="wrapper">
             <div class="head">
@@ -70,7 +70,10 @@
         </div>
       </div>
     </div>
-    <p class="redesign-projects-undertext">Разобрали пользовательские сценарии корпоративного приложения застройщика из Москвы, чтобы повысить вовлечённость сотрудников и конверсию использования МП.</p>
+    <p class="redesign-projects-undertext js-click-sync" data-click-sync="1">Разобрали пользовательские сценарии корпоративного приложения застройщика из&nbsp;Москвы, чтобы повысить вовлечённость сотрудников и&nbsp;конверсию использования МП.</p>
+    <p class="redesign-projects-undertext js-click-sync hide" data-click-sync="2">Разработали часть Core в&nbsp;приложении, чтобы стандартизировать и&nbsp;автоматизировать рабочие процессы команд через внедрение различных практик, инструментов и&nbsp;решений.</p>
+    <p class="redesign-projects-undertext js-click-sync hide" data-click-sync="3">Провели исследование функциональных возможностей приложений конкурентов, чтобы выявить новые лучшие практики на&nbsp;рынке и&nbsp;сформировать точки роста для&nbsp;нашего клиента.</p>
+    <p class="redesign-projects-undertext js-click-sync hide" data-click-sync="4">Создали приложение для управления заметками и&nbsp;списком дел для&nbsp;устройств на&nbsp;мобильной ОС&nbsp;Аврора. Загрузили его&nbsp;в&nbsp;официальный каталог приложений на&nbsp;отечественной операционной системе.</p>
     <svg width="653" height="200" viewbox="0 0 653 200" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0.5 100C0.5 45.0477 45.0477 0.5 100 0.5H553C607.952 0.5 652.5 45.0477 652.5 100C652.5 154.952 607.952 199.5 553 199.5H100C45.0477 199.5 0.5 154.952 0.5 100Z" fill="white" stroke="#141414"/>
       <path d="M18.5 99.8572C18.5 47.6663 60.8091 5.35718 113 5.35718H539.857C592.048 5.35718 634.357 47.6663 634.357 99.8572C634.357 152.048 592.048 194.357 539.857 194.357H113C60.8091 194.357 18.5 152.048 18.5 99.8572Z" fill="white" stroke="#141414"/>
