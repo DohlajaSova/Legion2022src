@@ -2844,7 +2844,7 @@ a.button {
 				flex: none;
 				align-self: baseline;
 				margin-right: 20px;
-				background: url($img-path + "icon-check.svg") center center no-repeat $color-green;
+				background: url($img-path + "icon-check.svg") center center no-repeat $color-blue-clean;
 			}
 
 			&:last-child {
@@ -8160,7 +8160,14 @@ a.button {
                 left:60px;
                 z-index: 20;
                 max-width: 25%;
-                text-shadow: 0 0 18px $color-white;
+                background: rgba($color-white, 0.6);
+                padding: 20px;
+            }
+            &_black{
+                & + p{
+                    background: rgba($color-black, 0.6);
+                    color: $color-white;
+                }
             }
         }
 		max-height: 740px;
