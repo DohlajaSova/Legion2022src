@@ -1,0 +1,54 @@
+<div class="redesign-blog">
+    <div class="container">
+        <h2>Блог</h2>
+        <div class="redesign-blog__items">
+            <div class="wrapper">
+                <a href="https://vk.com/wall-34196694_2040?w=wall-34196694_2040" target="_blank" class="card">
+                    <div class="card__img">
+                        <img src="/assets/css/img/temp-blog6.webp" alt="">
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="caption">Опыт. Кейсы</div>
+                        <div class="heading">Как внедрить инновации в&nbsp;процессы клиники</div>
+                        <div class="description">В&nbsp;формате воркшопа рассказываем простыми словами о&nbsp;CJM, Revenue Breakdown,
+                            дизайн-мышлении и&nbsp;определении границ MVP.</div>
+                    </div>
+                </a>
+                <a href="https://habr.com/ru/company/e-legion/blog/588657/" target="_blank" class="card card_backfull">
+                    <div class="info-wrapper">
+                        <div class="caption">Опыт. Сообщество</div>
+                        <div class="heading">Интервью для Британской школы дизайна</div>
+                        <div class="description">Как стать востребованным digital-дизайнером и&nbsp;дорасти до&nbsp;тимлида
+                            и&nbsp;арт-директора...</div>
+                    </div>
+                </a>
+                <a href="https://vk.com/elegion?w=wall-34196694_2026" target="_blank" class="card">
+                    <div class="card__img">
+                        <img src="/assets/css/img/temp-blog7.webp" alt="">
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="caption">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewbox="0 0 25 20" fill="none">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M25 2C25 0.895431 24.1046 0 23 0H16C14.494 0 13.1824 0.832288 12.5 2.062C11.8176 0.832288 10.506 0 9 0H2C0.89543 0 0
+                                        0.895431 0 2V18C0 19.1046 0.89543 20 2 20H23C24.1046 20 25 19.1046 25 18V2ZM15.7244 17.2756C14.7094 17.2756 13.7695
+                                        17.5959 13 18.14V4C13 2.34315 14.3431 1 16 1H23C23.5523 1 24 1.44772 24 2V16.5423C24 16.9473 23.6717 17.2756 23.2667
+                                        17.2756H15.7244ZM12 18.14V4C12 2.34315 10.6569 1 9 1H2C1.44772 1 1 1.44772 1 2V16.5423C1 16.9473 1.32833 17.2756 1.73333
+                                        17.2756H9.27559C10.2906 17.2756 11.2305 17.5959 12 18.14Z"
+                                    fill="#949191"/>
+                            </svg>
+                            Разработка. Сообщество</div>
+                        <div class="heading">Работа над&nbsp;ошибками: CJM</div>
+                        <div class="description">CJM’ом уже&nbsp;давно никого не&nbsp;удивишь. Так&nbsp;зачем мы&nbsp;решили написать
+                            этот&nbsp;материал?</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="redesign-blog__button">
+            <a href="/inprocess.html" class="button-redesign">Смотреть все публикации</a>
+        </div>
+    </div>
+</div>

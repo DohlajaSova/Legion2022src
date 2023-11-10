@@ -10,6 +10,7 @@
   {% include "partials/towel/redesign/service-block.nunjucks" %}
   {% include "partials/towel/redesign/features.nunjucks" %}
   {% include "partials/towel/redesign/projects.nunjucks" %}
+  {% include "partials/towel/redesign/blog.nunjucks" %}
   {# {% include "partials/towel/cases.nunjucks" %} #}
   {# {% include "partials/towel/about.nunjucks" %} #}
   {# {% include "partials/towel/category-business.nunjucks" %} #}

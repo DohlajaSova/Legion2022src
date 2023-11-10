@@ -42,6 +42,7 @@
     // .redesign-features,
     // .redesign-graphics,
     // .redesign-projects,
+    // .redesign-blog,
     // .subheader,
     // .expert,
     // .preservice {
@@ -313,6 +314,7 @@
     .redesign-features,
     .redesign-graphics,
     .redesign-projects,
+    .redesign-blog,
     .subheader,
     .expert,
     .preservice {
@@ -638,6 +640,7 @@
     .redesign-features,
     .redesign-graphics,
     .redesign-projects,
+    .redesign-blog,
     .expert,
     .subheader,
     .preservice {
@@ -1495,6 +1498,7 @@
     .redesign-features,
     .redesign-graphics,
     .redesign-projects,
+    .redesign-blog,
     .expert,
     .subheader,
     .preservice {
@@ -1948,6 +1952,30 @@
     }
     .top.redesign {
         margin-bottom: 40px;
+    }
+    .redesign {
+        &-blog {
+            &__items {
+                overflow-x: scroll;
+                padding-bottom: 20px;
+                .wrapper {
+                    min-width: 900px;
+                }
+                .card {
+                    .info-wrapper {
+                        .caption {
+                            font-size: 16px;
+                        }
+                        .heading {
+                            font-size: 22px;
+                        }
+                        .description {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
     }
     // --
 }
