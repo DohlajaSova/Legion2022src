@@ -992,7 +992,7 @@ a.button {
         color: #fff;
         text-decoration: none; }
     .social a:hover {
-      background-color: #84AEFF; }
+      background-color: #141414; }
   .social_fb {
     background-image: url("img/icon-social-f.svg"); }
     .social_fb:hover {
@@ -2245,7 +2245,7 @@ a.button {
       flex: none;
       align-self: baseline;
       margin-right: 20px;
-      background: url("img/icon-check.svg") center center no-repeat #24DA8D; }
+      background: url("img/icon-check.svg") center center no-repeat #1960FF; }
     .case-stages__list li:last-child {
       margin-bottom: 0; }
     .case-stages__list li.icon-sun::before {
@@ -5731,7 +5731,11 @@ a.button {
       left: 60px;
       z-index: 20;
       max-width: 25%;
-      text-shadow: 0 0 18px #fff; }
+      background: rgba(255, 255, 255, 0.6);
+      padding: 20px; }
+    .client__present.case-image_black + p {
+      background: rgba(20, 20, 20, 0.6);
+      color: #fff; }
   .client__present > img {
     width: 100%; }
     .client__present > img.venn {
@@ -7045,10 +7049,18 @@ svg.svg-hover-filter-clear:hover {
   color: #141414;
   border: 1.5px solid #141414;
   padding: 8px 16px;
-  border-radius: 30px; }
+  border-radius: 30px;
+  transition: border-color .25s, background-color .25s, color .25s; }
+  .circletext:hover {
+    text-decoration: unset;
+    cursor: pointer; }
   .circletext.blue-clean {
     color: #1960FF;
     border: 1.5px solid #1960FF; }
+  .circletext.hover-blue:hover {
+    color: #fff;
+    border-color: #1960FF;
+    background-color: #1960FF; }
 
 .component-tags.tags {
   color: #fff;

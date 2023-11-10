@@ -750,6 +750,16 @@ function generateCaseTOC(caseOuter) {
     document.querySelectorAll('.js-case')[0].remove();
     
     document.addEventListener('click', function(e){
+        e.preventDefault();
+        if (e.target.classList.contains('js-sidetoc')){
+            if (e.target.classList.contains('closed'))
+                e.target.classList.remove('closed');
+            else
+                e.target.classList.add('closed');
+        }
+    }, true);
+    
+    document.addEventListener('click', function(e){
         if (e.target.parentElement.classList.contains('js-case-accordion')){
             if (e.target.classList.contains('active'))
                 e.target.classList.remove('active');
@@ -814,7 +824,6 @@ function generateCaseTOC(caseOuter) {
             });
         }
         allHeadingsTops.splice(0, 0, caseBody.getBoundingClientRect().top + window.pageYOffset + 60); // добавили начало кейса
-        console.log(allHeadingsTops);
 
         function placeCaseTOC() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -1556,7 +1565,7 @@ docReady(function () {
     let tocToggler = document.querySelector(".js-sidetoc");
     let tocBody = document.querySelector(".editorial-container__toc-inner");
     let tocContainer = document.querySelector(".js-toc");
-    if (tocToggler != null) {
+    if (tocToggler != null && tocBody != null) {
         tocToggler.addEventListener("click", function (e) {
             e.preventDefault();
 
@@ -1566,7 +1575,9 @@ docReady(function () {
                 //tocBody.classList.add("fixed");
                 //tocContainer.classList.add("fixed");
                 tocBody.classList.remove("hide");
-                let TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
+                let TOCHeight = 0;
+                if (document.getElementsByClassName('editorial-container__toc-inner')[0] != undefined)
+                    TOCHeight = document.getElementsByClassName('editorial-container__toc-inner')[0].getBoundingClientRect().height;
                 document.getElementsByClassName('js-toc')[0].style.height = TOCHeight + 68 + "px";
                 let frame = 1;
                 let animation = setInterval(function () {
