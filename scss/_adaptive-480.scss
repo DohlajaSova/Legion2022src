@@ -956,6 +956,11 @@
     .top.redesign {
         margin-bottom: 60px;
     }
+    .redesign {
+        &-blog {
+            padding-top: 40px;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
