@@ -924,7 +924,6 @@ a.button {
 	background-color: $color-white;
 	padding: 26px 0 83px;
 	height: 150px;
-	// height: 36px;
 	position: relative;
 	width: 100%;
 
@@ -985,7 +984,6 @@ a.button {
 		align-self: flex-start;
 		gap: 35px;
 		&>a {
-			// margin-right: 35px;
 			font-size: 18px;
 			line-height: 30px;
 			color: $color-blue-dark;
@@ -1065,12 +1063,11 @@ a.button {
 
 	a {
 		display: inline-block;
-		// margin-right: 13px;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
 		background-color: transparent;
-		border: 1.5px solid #141414;
+		border: 1.5px solid $color-black;
 		background-position: center center;
 		background-repeat: no-repeat;
 
@@ -6058,7 +6055,6 @@ a.button {
 		justify-content: flex-end;
 		a,
 		span {
-			// width: 33.3333%;
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
@@ -8800,7 +8796,6 @@ a.button {
     justify-content: center;
     width: 80px;
     height: 80px;
-    // transform: scale(1.7);
     border-radius: 60px;
     padding: 10px;
     border: none;
@@ -9293,8 +9288,6 @@ a.button {
 			}
 			&-text {
 				font-size: 20px;
-				// old
-				// font-size: 22px;
 				line-height: 130%; /* 28.6px */
 			}
 			svg {
@@ -9318,7 +9311,6 @@ a.button {
 			&-double {
 				grid-column: 3 /5;
 				grid-row: 2 / 2;
-				// aspect-ratio: 2;
 				padding: 0;
 				position: relative;
 				.subheader-grid-card-category {
@@ -9330,10 +9322,8 @@ a.button {
 			&-sub {
 				display: block;
 				background-color: transparent;
-				// grid-column: auto / span 2;
 				grid-column: 1 / 2;
 				grid-row: auto / auto;
-				// grid-row: auto / span 1;
 				cursor: auto;
 				padding-left: 0;
 				padding-top: 0;
@@ -9585,8 +9575,6 @@ svg.svg-hover-filter-clear {
 
 				.description {
 					font-size: 20px;
-					// old
-					// font-size: 22px;
 					font-weight: 400;
 					line-height: 130%; /* 28.6px */
 					display: flex;
@@ -9604,8 +9592,6 @@ svg.svg-hover-filter-clear {
 					}
 					&-header {
 						font-size: 46px;
-						// old
-						// font-size: 56px;
 						line-height: 130%; /* 72.8px */
 					}
 					&-text {
@@ -9623,7 +9609,6 @@ svg.svg-hover-filter-clear {
 						width: 40vw;
 						height: auto;
 						aspect-ratio: 1;
-						// border: 2px dashed $color-black;
 						border-radius: 30px;
 						flex-shrink: 0;
 						img {
@@ -9745,12 +9730,10 @@ svg.svg-hover-filter-clear {
 				line-height: 30px;
 			}
 			&-image {
-				// border: 2px dashed $color-grey-light;
 				border-radius: 30px;
 				flex-shrink: 0;
 				width:44%;
 				max-width: 574px;
-				// height:328px;
 				aspect-ratio: 1.75;
 			}
 		}
@@ -9950,7 +9933,6 @@ svg.svg-hover-filter-clear {
 				flex-flow: row nowrap;
 				gap: 20px;
 			}
-			// min-width: 1086px;
 			.card {
 				display: flex;
 				flex-flow: column nowrap;
@@ -9960,7 +9942,7 @@ svg.svg-hover-filter-clear {
 				&__img {
 					width: 100%;
 					height: 200px;
-					background-color: #1960FF;
+					background-color: $color-blue-clean;
 					border-radius: $brad;
 				}
 				.info-wrapper {
@@ -9980,7 +9962,7 @@ svg.svg-hover-filter-clear {
 						}
 					}
 					.heading {
-						color: #141414;
+						color: $color-black;
 						font-size: 24px;
 						line-height: 120%;
 					}
@@ -10015,8 +9997,12 @@ svg.svg-hover-filter-clear {
 		&__button {
 			display: flex;
 			.button-redesign {
+				border-color: $color-black;
 				text-wrap: nowrap;
 				width: unset;
+				&:hover {
+					border-color: $color-blue-clean;
+				}
  			}
 		}
 		a {
@@ -10057,7 +10043,9 @@ svg.svg-hover-filter-clear {
 	font-size: 18px;
 	display: flex;
 	align-items: center;
+	transition: color .25s, border-color .25s, border .25s, background-color .25s;
 	&:hover {
+		cursor: pointer;
 		color: $color-white;
 		background-color: $color-blue-clean;
 	}
@@ -10086,6 +10074,10 @@ svg.svg-hover-filter-clear {
 	&.blue-clean {
 		color: $color-blue-clean;
 		border: 1.5px solid $color-blue-clean;
+	}
+	&.blue-clean:hover {
+		color: #fff;
+		background-color: $color-blue-clean;
 	}
 	&.hover-blue:hover {
 		color: #fff;
