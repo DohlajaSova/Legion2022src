@@ -9825,6 +9825,10 @@ svg.svg-hover-filter-clear {
 	&-projects {
 		padding-bottom: 130px;
 		border-bottom: 1px solid $color-black;
+		.container {
+			display: flex;
+			flex-flow: column nowrap;
+		}
 		h1 {
 			margin-bottom: 60px;
 		}
