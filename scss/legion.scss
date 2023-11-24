@@ -1070,6 +1070,7 @@ a.button {
 		border: 1.5px solid $color-black;
 		background-position: center center;
 		background-repeat: no-repeat;
+		margin-right: 10px;
 
 		&:last-child {
 			margin-right: 0;
@@ -6088,6 +6089,7 @@ a.button {
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
+			width:50%;
 		}
 		
 		&-list {
@@ -6127,6 +6129,9 @@ a.button {
 		gap: 13px;
 		.dummy &{
 			justify-content: flex-start;
+		}
+		a{
+			margin-right:0;
 		}
 	}
 
