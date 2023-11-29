@@ -1802,7 +1802,7 @@ docReady(function () {
 
 
     // круг с цифрами
-    let circleContainer = document.querySelectorAll(".case2__kpiWrapper");
+    let circleContainer = document.querySelectorAll(".circle");
 
     for (j = 0; j < circleContainer.length; j++) {
 

@@ -328,6 +328,35 @@
     </div>
 </div>
 
+<div class="case-stages">
+    <div class="principles principles_case">
+        <div class="container">
+            <div class="problems__item problems__item_wide problems__item_bg9 case-stages__layout case-stages__layout_var1"><div class="problems__item_container">
+                <div class="case-stages__layout_left"><div class="case-stages__layout_inner">
+                    <div class="h3">Что сделали</div>
+                    <ol class="case-stages__list case-stages__list_ordered">
+                        <li>Выполнили сложную интеграцию с&nbsp;системой, отвечающей за&nbsp;рассылки уведомлений по&nbsp;всем каналам в&nbsp;компании</li>
+                        <li>Добавили персонификацию уведомлений для разных продуктов</li>
+                        <li>Разработали функции управления списком уведомлений&nbsp;— фильтры по&nbsp;категориям и&nbsp;возможность удалять уведомления</li>
+                    </ol>
+                    <p>С помощью «Центра уведомлений» заказчик увеличил конверсию и&nbsp;количество уникальных пользователей всех продуктов «Пятёрочки».</p>
+                </div>
+            </div>
+                <div class="case-stages__layout_right"><div class="case-stages__layout_inner case-stages__layout_inner-centered">
+                    <div class="device device_wide">
+                        <div class="device__wrapper">
+                            <img class="device__screen" src="/assets/css/img/temp-5ka-phone14.webp" alt="Пятёрочка">
+                            <div class="device__shadow">
+                                <img class="device__phone" src="/assets/css/img/phone-iphone12pro.webp">
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+            </div></div>
+        </div>
+    </div>
+</div>
+
 <div class="broadwise broadwise_border">
     <div class="container">
         <div class="broadwise__item">

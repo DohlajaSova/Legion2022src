@@ -15,25 +15,10 @@
                 <div class="topcase__brief_medals medals">
                     <div class="medals__title">награды приложения</div>
                     <div class="medals__icons card-icons">
-                        <svg class="svg-added-filter svg-hover-filter-clear" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 80 80" fill="none">
-                            <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" fill="white"></rect>
-                            <path d="M66.2581 32.8469L48.5626 29.8164L41.8711 15.5816L40.1283 12L31.694 29.7244L14 32.7551L26.6515 46.5307L23.8098 66L40.1283 57L56.4483 66L53.5144 46.5307L63.7822 35.3266L66.2581 32.8469ZM51.3136 45.7041L53.6973 61.9592L40.0376 54.5203L26.4686 61.9592L28.8523 45.7041L18.3094 34.2244L33.0694 31.6531L40.0376 16.9592L47.0042 31.6531L61.7658 34.2244L51.3136 45.7041Z" fill="#0079C0"></path>
-                            <path d="M30.2597 48.7821L35.1488 55.5232L37.2313 54.3227L29.1729 37.3316L39.7676 52.9375L40.1289 52.7529L43.8416 54.7844L35.6922 36.5005L49.5457 58.0164L51.4476 59.0323L51.1759 57.0007L42.2114 35.6693L49.9085 48.1356L49.4562 45.273L51.8104 42.6874L48.7306 34.7459L52.7151 41.6716L58.4192 35.2999L45.9241 33.176L40.1289 20.7097L34.3337 33.176L21.8386 35.2999L30.8031 45.273L30.2597 48.7821Z" fill="#0079C0"></path>
-                            <path d="M29.8407 52.0645L28.8052 59.0322L32.289 57.0968L29.8407 52.0645Z" fill="#0079C0"></path>
-                            <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" stroke="#141414"></rect>
-                        </svg>
-                        <svg class="svg-added-filter svg-hover-filter-clear" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 80 80" fill="none">
-                            <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" fill="white"></rect>
-                            <path d="M60.1162 47.3213H58.614C58.4775 47.3213 58.373 47.2169 58.373 47.0803C58.373 47.0402 58.3811 47 58.4052 46.9598L58.9273 46.0522C59.0719 45.8032 59.0719 45.506 58.9273 45.257L56.6701 41.3374L53.216 47.3133H52.0673C51.9307 47.3133 51.8263 47.2088 51.8263 47.0723C51.8263 47.0321 51.8343 46.992 51.8584 46.9518L55.6579 40.3815C55.8025 40.1325 55.8025 39.8353 55.6579 39.5863L53.3927 35.6747L40.267 58.3815L39.6726 57.3534C39.5601 57.1526 39.5601 56.9116 39.6726 56.7108L52.3805 34.7269C52.5251 34.4779 52.5251 34.1807 52.3805 33.9317L50.1233 30.012L36.9896 52.7108L36.3952 51.6827C36.2827 51.4819 36.2827 51.241 36.3952 51.0402L49.1112 29.0482C49.2558 28.7992 49.2558 28.502 49.1112 28.253L46.854 24.3333L33.5596 47.3213H32.4109C32.2744 47.3213 32.1699 47.2169 32.1699 47.0803C32.1699 47.0402 32.178 47 32.2021 46.9598L45.8418 23.3855C45.9864 23.1365 45.9864 22.8394 45.8418 22.5904L43.5846 18.6707L27.0128 47.3213H25.8641C25.7276 47.3213 25.6232 47.2169 25.6232 47.0803C25.6232 47.0402 25.6312 47 25.6553 46.9598L42.5644 17.7149C42.709 17.4659 42.709 17.1687 42.5644 16.9197L40.3072 13L18 51.6345H31.3827L40.267 67L49.1513 51.6345H62.6063L60.1162 47.3213Z" fill="url(#paint0_linear_2_1998)"></path>
-                            <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" stroke="#141414"></rect>
-                            <defs>
-                                <lineargradient id="paint0_linear_2_1998" x1="56" y1="40" x2="26.5" y2="58" gradientunits="userSpaceOnUse">
-                                <stop stop-color="#6600C6"></stop>
-                                <stop offset="0.457559" stop-color="#C9155C"></stop>
-                                <stop offset="1" stop-color="#F45E00"></stop>
-                                </lineargradient>
-                            </defs>
-                        </svg>
+                        <img src="/assets/css/img/icon-runet-silver.svg" alt="">
+                        <img src="/assets/css/img/icon-runet-gold.svg" alt="">
+                        <img src="/assets/css/img/icon-goldenapp-bronze.svg" alt="">
+                        <img src="/assets/css/img/icon-tagline-silver.svg" alt="">
                     </div>
                 </div>
 
@@ -47,10 +32,12 @@
                 <div class="topcase__photo_img">
                     <img src="/assets/css/img/client-5ka-top2.jpg" alt="">
                 </div>
-                <div class="topcase__photo_tags component-tags tags tags_onbg tags_first-child-selected">
-                    <div class="tag">Разработка</div>
-                    <div class="tag">Автоматизация процессов</div>
-                    <div class="tag">Ретейл</div>
+                <div class="topcase__photo_tags">
+                    <div class="component-tags tags tags_onbg">
+                        <div class="tag">Разработка</div>
+                        <div class="tag">Автоматизация процессов</div>
+                        <div class="tag">Ретейл</div>
+                    </div>
                 </div>
             </div>
         </div>

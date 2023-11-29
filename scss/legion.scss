@@ -1070,6 +1070,7 @@ a.button {
 		border: 1.5px solid $color-black;
 		background-position: center center;
 		background-repeat: no-repeat;
+		margin-right: 10px;
 
 		&:last-child {
 			margin-right: 0;
@@ -1680,27 +1681,28 @@ a.button {
         }
         &_stores{
             &.store{
-                height: 50px;
+                height: 40px;
+				font-size: 0;
                 a{
                     display: inline-block;
-                    width:45%;
-                    height: 50px;
-                    background-size: auto 65%;
+                    width: 136px;
+                    height: 40px;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                    background-position: center center;
-                    border: 1px solid $color-black;
-                    border-radius: 25px;
-                    filter:grayscale(95%);
-                    &:hover{
-                        background-color: $color-grey-mid;
-                        filter:none;
-                    }
+                    background-position: 0 0;
                 }
                 .store_android{
-                    background-image: url($img-path + "icon-store-googleplay2.svg");
+                    background-image: url($img-path + "icon-store-googleplay3.svg");
+					margin-right: 10px;
+					&:hover{
+						background-image: url($img-path + "icon-store-googleplay3hover.svg");
+					}
                 }
                 .store_ios{
-                    background-image: url($img-path + "icon-store-appstore2.svg");
+                    background-image: url($img-path + "icon-store-appstore3.svg");
+					&:hover{
+						background-image: url($img-path + "icon-store-appstore3hover.svg");
+					}
                 }
             }
         }
@@ -1921,7 +1923,6 @@ a.button {
     &__emblem{
         width: 42px;
         height: 42px;
-        border-radius: 50%;
         margin: 8px 0 0;
     }
     &__grade,
@@ -2865,6 +2866,35 @@ a.button {
 					background: url($img-path + "arrow3grey.svg") center center no-repeat $color-blue;
 					background-size: 53%;
 					margin-top: -6px;
+				}
+			}
+		}
+
+		&_plus {
+			li {
+				&::before {
+					background-image: url($img-path + "icon-plus5.svg");
+					background-size: 50%;
+				}
+			}
+		}
+
+		&_ordered {
+			counter-reset: item;
+			li {
+				&::before {
+					background: transparent;
+					border: 1px solid $color-black;
+					content: counter(item);
+					counter-increment: item;
+					text-align: center;
+					line-height: 44px;
+				}
+				&:nth-child(-n+9){
+					&::before{
+						content: '0' counter(item);
+						counter-increment: item;
+					}
 				}
 			}
 		}
@@ -6058,6 +6088,7 @@ a.button {
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
+			width:50%;
 		}
 		
 		&-list {
@@ -6097,6 +6128,9 @@ a.button {
 		gap: 13px;
 		.dummy &{
 			justify-content: flex-start;
+		}
+		a{
+			margin-right:0;
 		}
 	}
 
