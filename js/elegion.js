@@ -70,7 +70,6 @@ function closeAllSelect(elmnt) {
 }
 
 function toggleClass(elem, className, toggle = null) {
-    console.log({toggle})
     if(toggle === null) {
         if(elem.classList.contains(className)) {
             elem.classList.remove(className);
@@ -2360,7 +2359,6 @@ docReady(function () {
                 document.addEventListener("click", function (e) {
                     e.preventDefault(); 
                     tagCategoriesListener = true;
-                    console.log(e);
                     if(!hasCommonElements([...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)], classToClick)) {
                         toggleClass(elemToToggle, classToToggle, true);
                     }
@@ -2469,9 +2467,6 @@ docReady(function () {
                     for(let one = 0; one < sw.children.length; one ++) {
                         const child = sw.children[one];
                         child.addEventListener('click', function() {
-                            // const tn = document.querySelectorAll(".js-expert-slider")[0]
-                            // console.log({tn})
-                            // tn.goTo(one)
                             sliderExpert.goTo(one);
                             // clear selection
                             for(let two = 0; two < sw.children.length; two ++) {
