@@ -4,9 +4,471 @@
 {% block links %} {% endblock %}
 {% block content %}
 
-  {% include "partials/towel/cases2.nunjucks" %}
-  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
-  {% include "partials/towel/projects1.nunjucks" %}
 
-  {% include "partials/popup-feedback.nunjucks" %}
+
+
+
+
+<div class="redesign-portfolio">
+  <div class="container">
+    <h1 class="header">Проекты и кейсы</h1>
+  </div>
+
+  <div class="tags">
+    <div class="container">
+      <div class="tags-categories js-tag-categories-container">
+        <div class="tags-category active" data-tags="all">
+          кейсы
+        </div>
+        <div class="tags-category" data-tags="development">
+          разработка
+        </div>
+        <div class="tags-category" data-tags="consulting">
+          консалтинг
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tags-selected">
+        <div class="tag-active hidden" data-filter-tag="edtech">
+          edtech
+        </div>
+        <div class="tag-active hidden" data-filter-tag="fintech">
+          fintech
+        </div>
+        <div class="tag-active hidden" data-filter-tag="IT">
+          IT
+        </div>
+        <div class="tag-active hidden" data-filter-tag="landing">
+          landing
+        </div>
+        <div class="tag-active hidden" data-filter-tag="medtech">
+          medtech
+        </div>
+        <div class="tag-active hidden" data-filter-tag="real_estate">
+          real estate
+        </div>
+        <div class="tag-active hidden" data-filter-tag="retail">
+          retail
+        </div>
+        <div class="tag-active hidden" data-filter-tag="sports">
+          sports
+        </div>
+        <div class="tag-active hidden" data-filter-tag="telecom">
+          telecom
+        </div>
+        <div class="tag-active hidden" data-filter-tag="wearable">
+          wearable
+        </div>
+      </div>
+      <div id="tags-filters" class="tags-filters opacity-0 js-tag-filters-container">
+        <div class="container">
+          <div class="filters-wrapper">
+            <div class="filter-tag" data-filter-tag="edtech">
+              edtech
+            </div>
+            <div class="filter-tag" data-filter-tag="fintech">
+              fintech
+            </div>
+            <div class="filter-tag" data-filter-tag="IT">
+              IT
+            </div>
+            <div class="filter-tag" data-filter-tag="landing">
+              landing
+            </div>
+          </div>
+          <div class="filters-wrapper">
+            <div class="filter-tag" data-filter-tag="medtech">
+              medtech
+            </div>
+            <div class="filter-tag" data-filter-tag="real_estate">
+              real estate
+            </div>
+            <div class="filter-tag" data-filter-tag="retail">
+              retail
+            </div>
+            <div class="filter-tag" data-filter-tag="sports">
+              sports
+            </div>
+          </div>
+          <div class="filters-wrapper">
+            <div class="filter-tag" data-filter-tag="telecom">
+              telecom
+            </div>
+            <div class="filter-tag" data-filter-tag="wearable">
+              wearable
+            </div>
+            <div class="filter-tag filter-clear" data-filter-tag="clear">
+              сброс
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="redesign-portfolio__list js-tag-publications">
+      <div class="card" data-tag="sports">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-1.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Дизайн-концепт приложения ГК Основа
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Дизайн-концепт
+            </div>
+            <div class="tag">
+              Разбор пользовательских сценариев
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="retail">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-2.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Мобильное приложение «Пятёрочка: доставка продуктов»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Разработка
+            </div>
+            <div class="tag">
+              Автоматизация процессов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="retail">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-3.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Анализ конкурентов Tele2
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Анализ конкурентов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="telecom">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Приложение на ОС Аврора«Заметки ПРО»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Импортозамещение
+            </div>
+            <div class="tag">
+              ОС Аврора
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="fintech">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-1.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Дизайн-концепт приложения ГК Основа
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Дизайн-концепт
+            </div>
+            <div class="tag">
+              Разбор пользовательских сценариев
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="landing">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-2.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Мобильное приложение «Пятёрочка: доставка продуктов»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Разработка
+            </div>
+            <div class="tag">
+              Автоматизация процессов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="landing">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-3.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Анализ конкурентов Tele2
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Анализ конкурентов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="fintech">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Приложение на ОС Аврора«Заметки ПРО»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Импортозамещение
+            </div>
+            <div class="tag">
+              ОС Аврора
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="telecom">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-1.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Дизайн-концепт приложения ГК Основа
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Дизайн-концепт
+            </div>
+            <div class="tag">
+              Разбор пользовательских сценариев
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="wearable">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-2.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Мобильное приложение «Пятёрочка: доставка продуктов»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Разработка
+            </div>
+            <div class="tag">
+              Автоматизация процессов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="edtech">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-3.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Анализ конкурентов Tele2
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Анализ конкурентов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="retail">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Приложение на ОС Аврора«Заметки ПРО»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Импортозамещение
+            </div>
+            <div class="tag">
+              ОС Аврора
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="sports">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-1.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Дизайн-концепт приложения ГК Основа
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Дизайн-концепт
+            </div>
+            <div class="tag">
+              Разбор пользовательских сценариев
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="IT">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-2.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Мобильное приложение «Пятёрочка: доставка продуктов»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Разработка
+            </div>
+            <div class="tag">
+              Автоматизация процессов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="medtech">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-3.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Анализ конкурентов Tele2
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Дискавери фаза
+            </div>
+            <div class="tag">
+              Анализ конкурентов
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="real_estate">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="head">
+            Приложение на ОС Аврора«Заметки ПРО»
+          </div>
+          <div class="component-tags tags">
+            <div class="tag">
+              Импортозамещение
+            </div>
+            <div class="tag">
+              ОС Аврора
+            </div>
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+    </div>
+    <div>
+
+      <svg width="653" height="200" viewbox="0 0 653 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.5 100C0.5 45.0477 45.0477 0.5 100 0.5H553C607.952 0.5 652.5 45.0477 652.5 100C652.5 154.952 607.952 199.5 553 199.5H100C45.0477 199.5 0.5 154.952 0.5 100Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M18.5 99.8572C18.5 47.6663 60.8091 5.35718 113 5.35718H539.857C592.048 5.35718 634.357 47.6663 634.357 99.8572C634.357 152.048 592.048 194.357 539.857 194.357H113C60.8091 194.357 18.5 152.048 18.5 99.8572Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M36.5 99.7144C36.5 50.2849 76.5705 10.2144 126 10.2144H526.714C576.144 10.2144 616.214 50.2849 616.214 99.7144C616.214 149.144 576.144 189.214 526.714 189.214H126C76.5705 189.214 36.5 149.144 36.5 99.7144Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M54.5 99.5715C54.5 52.9035 92.3319 15.0715 139 15.0715H513.571C560.24 15.0715 598.071 52.9035 598.071 99.5715C598.071 146.24 560.24 184.072 513.571 184.072H139C92.3319 184.072 54.5 146.24 54.5 99.5715Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M72.5 99.4285C72.5 55.5218 108.093 19.9285 152 19.9285H500.429C544.335 19.9285 579.929 55.5218 579.929 99.4285C579.929 143.335 544.335 178.928 500.429 178.928H152C108.093 178.928 72.5 143.335 72.5 99.4285Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M90.5 99.2856C90.5 58.1404 123.855 24.7856 165 24.7856H487.286C528.431 24.7856 561.786 58.1404 561.786 99.2856C561.786 140.431 528.431 173.786 487.286 173.786H165C123.855 173.786 90.5 140.431 90.5 99.2856Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M108.5 99.1428C108.5 60.759 139.616 29.6428 178 29.6428H474.143C512.527 29.6428 543.643 60.759 543.643 99.1428C543.643 137.527 512.527 168.643 474.143 168.643H178C139.616 168.643 108.5 137.527 108.5 99.1428Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M127.5 99C127.5 63.3776 156.378 34.5 192 34.5H462C497.622 34.5 526.5 63.3776 526.5 99C526.5 134.622 497.622 163.5 462 163.5H192C156.378 163.5 127.5 134.622 127.5 99Z"
+          fill="white" stroke="#141414" />
+        <path
+          d="M193.04 82.2167C202.04 82.2167 206.72 88.6567 206.72 96.5767C206.72 104.497 202.04 110.937 193.04 110.937C184.08 110.937 179.4 104.497 179.4 96.5767C179.4 88.6567 184.08 82.2167 193.04 82.2167ZM193.04 85.5767C186.36 85.5767 183.4 90.4967 183.4 96.5767C183.4 102.657 186.36 107.577 193.04 107.577C199.76 107.577 202.72 102.657 202.72 96.5767C202.72 90.4967 199.76 85.5767 193.04 85.5767ZM216.66 92.8567H216.9C218.38 91.1367 220.74 90.0167 223.42 89.9767C229.66 89.9367 233.66 94.2567 233.66 100.457C233.66 106.257 230.06 110.937 223.5 110.937C216.1 110.937 213.1 105.537 213.1 98.6167C213.1 94.0567 213.78 88.7367 217.5 85.8967C219.9 84.0567 223.62 83.2167 227.38 83.2167C228.1 83.2167 229.06 83.1767 229.06 82.2167H232.54C232.58 85.5767 230.02 86.6967 227.1 86.6967C225.38 86.6967 223.74 86.7767 222.1 87.2567C219.82 87.9767 217.26 89.4567 216.66 92.8567ZM223.5 92.8167C219.06 92.8167 216.86 96.2567 216.86 100.457C216.86 104.697 219.06 108.057 223.5 108.057C227.98 108.057 229.98 104.697 229.98 100.457C229.98 96.2567 227.98 92.8167 223.5 92.8167ZM255.31 103.297L258.51 104.177C257.43 108.137 254.03 110.937 249.39 110.937C243.03 110.937 239.27 106.257 239.27 100.417C239.27 94.6567 243.03 89.9367 249.39 89.9367C253.59 89.9367 256.63 92.2567 258.07 95.6167L254.95 96.8567C254.03 94.4567 252.23 92.8167 249.39 92.8167C245.15 92.8167 242.95 96.2567 242.95 100.417C242.95 104.657 245.15 108.057 249.39 108.057C252.51 108.057 254.51 106.137 255.31 103.297ZM271.331 105.977L277.171 90.2967H280.811L272.051 113.697C270.891 116.777 269.811 119.057 266.051 119.057C265.331 119.057 264.651 118.937 263.931 118.777L263.651 115.697C264.211 115.937 264.811 116.097 265.651 116.097C266.771 116.097 267.771 115.497 268.251 114.217L269.651 110.497L260.931 90.2967H264.691L269.891 102.457L271.131 105.977H271.331ZM281.203 107.737H283.403C284.043 106.937 284.643 105.777 285.163 104.337C286.523 100.697 287.203 95.5767 287.203 90.2967H301.083V107.737H303.443V115.297H300.603V110.577H284.043V115.297H281.203V107.737ZM288.123 105.457C287.803 106.297 287.443 107.057 287.083 107.737H297.563V93.1367H290.283C290.083 97.7767 289.363 102.137 288.123 105.457ZM326.459 90.2967V110.577H322.939V100.497L323.179 97.0967H322.939L312.179 107.857V110.577H308.659V90.2967H312.179V100.457L311.939 103.857H312.179L322.939 93.1367V90.2967H326.459ZM348.058 90.2967V93.1367H341.218V110.577H337.698V93.1367H330.858V90.2967H348.058ZM355.965 90.2967V98.3367H362.085C366.005 98.3367 368.565 101.097 368.565 104.457C368.565 107.817 365.885 110.577 361.925 110.577H352.445V90.2967H355.965ZM361.245 101.177H355.965V107.737H361.125C363.725 107.737 364.885 106.257 364.885 104.457C364.885 102.657 363.725 101.177 361.245 101.177Z"
+          fill="#141414" />
+        <rect x="409.5" y="46.5" width="105" height="105" rx="52.5" fill="#1960FF" stroke="#1960FF" />
+        <path d="M462.027 73.2329L462.027 98.3258L462.027 123.419" stroke="white" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M487.12 98.3259L436.934 98.3259" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+{# {% include "partials/towel/cases2.nunjucks" %}
+{% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+
+{% include "partials/popup-feedback.nunjucks" %} #}
 {% endblock %}

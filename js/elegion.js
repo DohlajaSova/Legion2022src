@@ -16,6 +16,11 @@ function debounce(f, ms) {
     };
 }
 
+function hasCommonElements(a, b) {
+    b = new Set(b);
+    return a.some(x => b.has(x));
+}
+
 function findOffset(element) {
     let top = 0, left = 0;
 
@@ -61,6 +66,19 @@ function closeAllSelect(elmnt) {
         if (arrNo.indexOf(i)) {
             selectItems[i].classList.add("select-hide");
         }
+    }
+}
+
+function toggleClass(elem, className, toggle = null) {
+    console.log({toggle})
+    if(toggle === null) {
+        if(elem.classList.contains(className)) {
+            elem.classList.remove(className);
+        } else {
+            elem.classList.add(className);
+        }
+    } else {
+        toggle ? elem.classList.add(className) : elem.classList.remove(className);
     }
 }
 
@@ -874,6 +892,9 @@ function generateCaseTOC(caseOuter) {
 }
 
 docReady(function () {
+    // global
+        // listeners 
+        let tagCategoriesListener = false; 
     const params = getParamsByUrl();
     const scrollIV = params?.scrollinto;
     if (scrollIV) {
@@ -2246,7 +2267,7 @@ docReady(function () {
                 let ticking = false;
                 let cleared = true;
                 const heightConstant = 150;
-                document.addEventListener("scroll", debounce((event) => {
+                document.addEventListener("scroll", debounce(() => {
                     centerOfScreen = window.scrollY + (window.innerHeight / 2) - heightConstant;
                     if (centerOfScreen > activeContainer[0].offsetTop && centerOfScreen < activeContainer[0].nextElementSibling.offsetTop) {
                         const closestCardOffsetY = coords.reduce(function (prev, curr) {
@@ -2283,6 +2304,130 @@ docReady(function () {
             }
         }
     // }
+
+    // redesign
+    if (document.querySelectorAll(".js-tag-categories-container").length > 0) {
+        const tagFilters = document.querySelectorAll(".tags-filters .container .filters-wrapper .filter-tag");
+        let activeType = "all";
+        const tagsGroups = {
+            consulting: [
+                "edtech",
+                "retail",
+                "real_estate",
+                "sports",
+                "clear"
+            ],
+            development: [
+                "social_networks",
+                "retail",
+                "fintech",
+                "medtech",
+                "wearable",
+                "telecom",
+                "lending",
+                "IT",
+                "real_estate",
+                "clear"
+            ]
+        }
+        const classToClick = [
+            "tags-category",
+            "tags-categories",
+            "tags-filters",
+            "filter-tag",
+            "filters-wrapper",
+        ]
+        const activeFilters = new Map();
+        const idToToggle = "tags-filters";
+        const elemToToggle = document.getElementById(idToToggle);
+        const classToToggle = "opacity-0";
+        // const classToToggle = "hidden";
+        const tagCatsContainer = document.querySelectorAll(".js-tag-categories-container")[0];
+        const tagActives = document.querySelectorAll(".tags-selected .tag-active");
+        const publications = document.querySelectorAll(".js-tag-publications .card");
+
+        Array.from(tagCatsContainer.children).forEach((one, index) => one.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleClass(elemToToggle, classToToggle, false);
+
+            // clear after switching category
+            Array.from(publications).forEach(pub => pub.classList.remove("hidden"));
+            Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
+
+            // add listener -- outer click
+            if(!tagCategoriesListener) {
+                document.addEventListener("click", function (e) {
+                    e.preventDefault(); 
+                    tagCategoriesListener = true;
+                    console.log(e);
+                    if(!hasCommonElements([...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)], classToClick)) {
+                        toggleClass(elemToToggle, classToToggle, true);
+                    }
+                    // !!remove
+                    // document.removeEventListener("click", this)
+                })
+            }
+
+            // cats highlight
+            one.classList.add("active")
+            Array.from(tagCatsContainer.children).forEach((cat, index2) => index !== index2 ? cat.classList.remove("active") : "");
+            // table tags show|hide
+            if(e?.target?.dataset?.tags) {
+                activeType = e.target.dataset.tags;
+                Array.from(tagFilters).forEach(filt => {
+                    filt.classList.remove("active");
+                    filt.classList.remove("hidden");
+                    if(activeType !== "all") {
+                        if(!tagsGroups[activeType].includes(filt.dataset.filterTag)) {
+                            filt.classList.add("hidden");
+                        }
+                    }
+                })
+            }
+        }));
+        Array.from(tagFilters).forEach((filt, findex) => {
+            filt.addEventListener('click', (event) => {
+                event.preventDefault();
+                // const activeFilters = Array.from(tagFilters).filter(filt => filt.classList.contains("active"));
+                if(filt.dataset.filterTag === "clear") {
+                    Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
+                    Array.from(publications).forEach(pub => pub.classList.remove("hidden"));
+                    Array.from(tagFilters).forEach(filt => filt.classList.remove("active"));
+                } else {
+                    // active tags
+                    const tagToToggle = Array.from(tagActives).find(tag => tag.dataset.filterTag === filt.dataset.filterTag);
+                    if(tagToToggle) {
+                        tagToToggle.classList.contains("hidden") ? tagToToggle.classList.remove("hidden") : tagToToggle.classList.add("hidden");
+                    }
+                    if(filt.classList.contains("active")) {
+                        filt.classList.remove("active");
+                        activeFilters.delete(findex);
+                    } else {
+                        filt.classList.add("active");
+                        activeFilters.set(findex, filt.dataset.filterTag);
+                    }
+                    // publcations show|hide
+                    if(!activeFilters.size) {
+                        // no filters
+                        Array.from(publications).forEach(pub => {
+                            pub.classList.remove("hidden");
+                        })
+                    } else {
+                        // with filters
+                        Array.from(publications).forEach(pub => {
+                            pub.classList.remove("hidden");
+                            if(!hasCommonElements(Array.from(activeFilters.values()), [pub.dataset.tag])) {
+                                pub.classList.add("hidden");
+                            }
+                        })
+                    }
+
+                }
+            })
+        })
+    }
+    //tags single filters
 
 
     //обработчик загрузки файлов в форме заявки
