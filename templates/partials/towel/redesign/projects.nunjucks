@@ -20,6 +20,7 @@
               </div>
             </div>
         </div>
+        <div class="card-foreground"></div>
       </div>
       <div class="redesign-projects-slide" data-click-sync="2">
         <div class="img"></div>
