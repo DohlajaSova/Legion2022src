@@ -114,19 +114,22 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Дизайн-концепт приложения ГК Основа
+            Дизайн-концепт<br/> приложения ГК Основа
           </div>
-          <div class="component-tags tags">
+          <div class="desc">
+            Дизайн-концепт приложения ГК Основа.<br/>Описание на пару строк и не более.
+          </div>
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
-              Дизайн-концепт
+              Дизайн-концепт<br/>
             </div>
             <div class="tag">
               Разбор пользовательских сценариев
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -136,16 +139,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Мобильное приложение «Пятёрочка: доставка продуктов»
+            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Разработка
             </div>
             <div class="tag">
               Автоматизация процессов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -155,16 +158,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Анализ конкурентов Tele2
+            Анализ конкурентов <br/>Tele2
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
               Анализ конкурентов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -174,16 +177,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Приложение на ОС Аврора«Заметки ПРО»
+            Приложение на ОС Аврора<br/>«Заметки ПРО»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Импортозамещение
             </div>
             <div class="tag">
               ОС Аврора
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -193,19 +196,19 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Дизайн-концепт приложения ГК Основа
+            Дизайн-концепт<br/> приложения ГК Основа
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
-              Дизайн-концепт
+              Дизайн-концепт<br/>
             </div>
             <div class="tag">
               Разбор пользовательских сценариев
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -215,16 +218,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Мобильное приложение «Пятёрочка: доставка продуктов»
+            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Разработка
             </div>
             <div class="tag">
               Автоматизация процессов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -234,16 +237,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Анализ конкурентов Tele2
+            Анализ конкурентов <br/>Tele2
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
               Анализ конкурентов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -253,16 +256,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Приложение на ОС Аврора«Заметки ПРО»
+            Приложение на ОС Аврора<br/>«Заметки ПРО»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Импортозамещение
             </div>
             <div class="tag">
               ОС Аврора
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -272,19 +275,19 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Дизайн-концепт приложения ГК Основа
+            Дизайн-концепт<br/> приложения ГК Основа
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
-              Дизайн-концепт
+              Дизайн-концепт<br/>
             </div>
             <div class="tag">
               Разбор пользовательских сценариев
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -294,16 +297,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Мобильное приложение «Пятёрочка: доставка продуктов»
+            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Разработка
             </div>
             <div class="tag">
               Автоматизация процессов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -313,16 +316,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Анализ конкурентов Tele2
+            Анализ конкурентов <br/>Tele2
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
               Анализ конкурентов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -332,16 +335,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Приложение на ОС Аврора«Заметки ПРО»
+            Приложение на ОС Аврора<br/>«Заметки ПРО»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Импортозамещение
             </div>
             <div class="tag">
               ОС Аврора
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -351,19 +354,19 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Дизайн-концепт приложения ГК Основа
+            Дизайн-концепт<br/> приложения ГК Основа
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
-              Дизайн-концепт
+              Дизайн-концепт<br/>
             </div>
             <div class="tag">
               Разбор пользовательских сценариев
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -373,16 +376,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Мобильное приложение «Пятёрочка: доставка продуктов»
+            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Разработка
             </div>
             <div class="tag">
               Автоматизация процессов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -392,16 +395,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Анализ конкурентов Tele2
+            Анализ конкурентов <br/>Tele2
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Дискавери фаза
             </div>
             <div class="tag">
               Анализ конкурентов
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -411,16 +414,16 @@
         </div>
         <div class="card__wrapper">
           <div class="head">
-            Приложение на ОС Аврора«Заметки ПРО»
+            Приложение на ОС Аврора<br/>«Заметки ПРО»
           </div>
-          <div class="component-tags tags">
+          <!-- <div class="component-tags tags">
             <div class="tag">
               Импортозамещение
             </div>
             <div class="tag">
               ОС Аврора
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>

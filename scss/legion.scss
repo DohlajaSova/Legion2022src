@@ -10091,10 +10091,18 @@ svg.svg-hover-filter-clear {
 					flex-flow: column nowrap;
 					.head {
 						color: #fff;
+						font-size: 24px;
+						line-height: 120%; /* 28.8px */
 					}
-						.tags {
-						margin-bottom: 0;
+					.desc {
+						color: var(--White, #FFF);
+						/* Desktop 1440/Text T2 */
+						font-size: 18px;
+						line-height: 130%; /* 23.4px */
 					}
+					// .tags {
+					// 	margin-bottom: 0;
+					// }
 				}
 				&-foreground {
 					position: absolute;
