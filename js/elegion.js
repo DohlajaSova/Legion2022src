@@ -1062,7 +1062,7 @@ docReady(function () {
 
     // слайдер со статьями
     if (document.querySelectorAll(".js-project-article").length > 0) {
-        let sliderProjects = tns({
+        tns({
             container: '.js-project-article',
             items: 1,
             controls: false,
@@ -1075,7 +1075,7 @@ docReady(function () {
 
     // слайдер featured на странице блог
     if (document.querySelectorAll(".js-featured-news").length > 0) {
-        let sliderProjects = tns({
+        tns({
             container: '.js-featured-news .news__list',
             items: 1.3,
             gutter: 32,
@@ -1103,7 +1103,7 @@ docReady(function () {
 
     // слайдер "еще почитать"
     if (document.querySelectorAll(".js-more-news").length > 0) {
-        let sliderProjects = tns({
+        tns({
             container: '.js-more-news .news__items',
             items: 1.3,
             gutter: 32,
@@ -1134,7 +1134,7 @@ docReady(function () {
         let container = document.querySelector(".js-we-did");
 
         if (windowWidth > 650) {
-            let sliderTeam = tns({
+            tns({
                 container: '.js-we-did',
                 items: 4,
                 gutter: 15,
@@ -1154,7 +1154,7 @@ docReady(function () {
             });
         }
         else {
-            let sliderTeam = tns({
+            tns({
                 container: '.js-we-did',
                 items: 4,
                 gutter: 15,
@@ -1210,7 +1210,7 @@ docReady(function () {
             }
         }
         if (windowWidth <= 650) {
-            let sliderCases = tns({
+            tns({
                 container: '.js-cases-container-inner',
                 items: 1,
                 gutter: 15,
@@ -1222,7 +1222,7 @@ docReady(function () {
             });
         }
         else {
-            let sliderCases = tns({
+            tns({
                 container: '.js-cases-container-inner',
                 items: 2,
                 gutter: 15,
@@ -2007,8 +2007,8 @@ docReady(function () {
 
     // блок с фото сотрудников
     if (document.querySelectorAll(".js-team-container").length > 0) {
-        let container = document.querySelector(".js-team-container");
-        let sliderTeam = tns({
+        // let container = document.querySelector(".js-team-container");
+        tns({
             container: '.js-team-container .team__list',
             items: 4,
             gutter: 15,
@@ -2033,8 +2033,8 @@ docReady(function () {
 
     // блок с фото сотрудников
     if (document.querySelectorAll(".js-astra-team-container").length > 0) {
-        const container = document.querySelector(".js-astra-team-container");
-        const sliderTeam = tns({
+        // const container = document.querySelector(".js-astra-team-container");
+        tns({
             container: '.js-astra-team-container .team__list',
             items: 4.5,
             gutter: 15,
@@ -2074,8 +2074,8 @@ docReady(function () {
                 if (child)
                     child.remove();
             }
-            let cases = Array.prototype.slice.call(container.children[0].children);
-            let sliderCases = tns({
+            // let cases = Array.prototype.slice.call(container.children[0].children);
+            tns({
                 container: '.js-randomcases-container .some-projects__list',
                 items: 4,
                 gutter: 15,
@@ -2104,9 +2104,9 @@ docReady(function () {
 
     if (document.querySelectorAll(".js-aurora-cases").length > 0) {
         if (document.querySelector('.some-projects__list')) {
-            let container = document.querySelector(".js-aurora-cases");
-            let cases = Array.prototype.slice.call(container.children[0].children);
-            let sliderCases = tns({
+            // let container = document.querySelector(".js-aurora-cases");
+            // let cases = Array.prototype.slice.call(container.children[0].children);
+            tns({
                 container: '.js-aurora-cases .some-projects__list',
                 items: 1,
                 gutter: 15,
@@ -2142,11 +2142,11 @@ docReady(function () {
 
     // блок с годами
     if (document.querySelectorAll(".js-years").length > 0) {
-        let container = document.querySelector(".js-years");
+        // let container = document.querySelector(".js-years");
 
-        let cases = Array.prototype.slice.call(container.children[0].children);
+        // let cases = Array.prototype.slice.call(container.children[0].children);
 
-        let sliderYears = tns({
+        tns({
             container: '.js-years',
             items: 1,
             controls: false,
@@ -2444,14 +2444,14 @@ docReady(function () {
     // redesign
     if (document.querySelectorAll(".js-expert-slider").length > 0) {
         if (document.querySelector('.slider-container')) {
-            const container = document.querySelector(".js-expert-slider");
+            // const container = document.querySelector(".js-expert-slider");
             const sliderExpert = tns({
                 container: '.js-expert-slider .slider-container',
                 gutter: 0,
                 controls: false,
                 nav: true,
                 navPosition: 'bottom',
-                navContainer: '.js-expert-dots',
+                navContainer: 'js-archive-slider .js-expert-dots',
                 mouseDrag: true,
                 slideBy: 'page',
                 mode: "gallery",
@@ -2520,6 +2520,22 @@ docReady(function () {
                 })
             })
         });
+    }
+
+    if (document.querySelectorAll(".js-archive-slider").length > 0) {
+        Array.from(document.querySelectorAll(".js-archive-slider")).forEach(slider => {
+            tns({
+                container: slider.querySelector(".slider-container"),
+                navContainer: slider.querySelector(".js-archive-dots"),
+                items: 1,
+                gutter: 10,
+                controls: false,
+                nav: true,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        })
     }
     //--redesign
     if (document.querySelectorAll("iframe").length > 0) {
