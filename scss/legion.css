@@ -973,7 +973,8 @@ a.button {
     background-color: transparent;
     border: 1.5px solid #141414;
     background-position: center center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-right: 10px; }
     .social a:last-child {
       margin-right: 0; }
     .social a.social_blog {
@@ -1396,24 +1397,24 @@ a.button {
       color: #949191;
       margin-bottom: 10px; }
   .topcase__brief_stores.store {
-    height: 50px; }
+    height: 40px;
+    font-size: 0; }
     .topcase__brief_stores.store a {
       display: inline-block;
-      width: 45%;
-      height: 50px;
-      background-size: auto 65%;
+      width: 136px;
+      height: 40px;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
-      border: 1px solid #141414;
-      border-radius: 25px;
-      filter: grayscale(95%); }
-      .topcase__brief_stores.store a:hover {
-        background-color: #F8F8F8;
-        filter: none; }
+      background-position: 0 0; }
     .topcase__brief_stores.store .store_android {
-      background-image: url("img/icon-store-googleplay2.svg"); }
+      background-image: url("img/icon-store-googleplay3.svg");
+      margin-right: 10px; }
+      .topcase__brief_stores.store .store_android:hover {
+        background-image: url("img/icon-store-googleplay3hover.svg"); }
     .topcase__brief_stores.store .store_ios {
-      background-image: url("img/icon-store-appstore2.svg"); }
+      background-image: url("img/icon-store-appstore3.svg"); }
+      .topcase__brief_stores.store .store_ios:hover {
+        background-image: url("img/icon-store-appstore3hover.svg"); }
 .topcase__photo {
   position: relative;
   width: 100%;
@@ -1575,7 +1576,6 @@ a.button {
   .case-awards__emblem {
     width: 42px;
     height: 42px;
-    border-radius: 50%;
     margin: 8px 0 0; }
   .case-awards__grade, .case-awards__award, .case-awards__title {
     margin: 8px 0 0; }
@@ -2256,6 +2256,21 @@ a.button {
     background: url("img/arrow3grey.svg") center center no-repeat #2864D9;
     background-size: 53%;
     margin-top: -6px; }
+  .case-stages__list_plus li::before {
+    background-image: url("img/icon-plus5.svg");
+    background-size: 50%; }
+  .case-stages__list_ordered {
+    counter-reset: item; }
+    .case-stages__list_ordered li::before {
+      background: transparent;
+      border: 1px solid #141414;
+      content: counter(item);
+      counter-increment: item;
+      text-align: center;
+      line-height: 44px; }
+    .case-stages__list_ordered li:nth-child(-n+9)::before {
+      content: "0" counter(item);
+      counter-increment: item; }
 .case-stages__layout_left, .case-stages__layout_right {
   width: 49.2%; }
 .case-stages__layout_inner {
@@ -4351,7 +4366,8 @@ a.button {
     .footer__menu span {
       margin-bottom: 25px;
       transition: all .25s linear;
-      position: relative; }
+      position: relative;
+      width: 50%; }
     .footer__menu-list {
       display: flex;
       flex-flow: column nowrap;
@@ -4377,6 +4393,8 @@ a.button {
     gap: 13px; }
     .dummy .footer__social {
       justify-content: flex-start; }
+    .footer__social a {
+      margin-right: 0; }
   .footer__copyright {
     display: flex;
     width: 100%;
@@ -6925,20 +6943,6 @@ svg.svg-hover-filter-clear:hover {
       color: #141414;
       font-size: 46px;
       line-height: 120%; }
-    .redesign-features-preview .button-redesign {
-      width: 320px;
-      height: 59px;
-      padding: 20px 60px;
-      border-radius: 100px;
-      border: 1px solid #1960FF;
-      background-color: #fff;
-      color: #1960FF;
-      font-size: 18px;
-      display: flex;
-      align-items: center; }
-      .redesign-features-preview .button-redesign:hover {
-        color: #fff;
-        background-color: #1960FF; }
   .redesign-features-list {
     letter-spacing: 1.8px;
     display: flex;
@@ -6960,8 +6964,10 @@ svg.svg-hover-filter-clear:hover {
       left: 0px; }
 .redesign-projects {
   padding-bottom: 130px;
-  margin-bottom: 80px;
   border-bottom: 1px solid #141414; }
+  .redesign-projects .container {
+    display: flex;
+    flex-flow: column nowrap; }
   .redesign-projects h1 {
     margin-bottom: 60px; }
   .redesign-projects-wrapper {
@@ -7027,6 +7033,79 @@ svg.svg-hover-filter-clear:hover {
     cursor: pointer;
     display: flex;
     margin: auto; }
+.redesign-blog {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  .redesign-blog .container {
+    display: flex;
+    flex-flow: column nowrap; }
+  .redesign-blog h2 {
+    margin-bottom: 20px; }
+  .redesign-blog__items {
+    margin-bottom: 60px; }
+    .redesign-blog__items .wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 20px; }
+    .redesign-blog__items .card {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 20px;
+      border-radius: 18px;
+      flex: 1; }
+      .redesign-blog__items .card__img {
+        width: 100%;
+        border-radius: 18px; }
+        .redesign-blog__items .card__img img {
+          width: 100%;
+          height: 100%;
+          border-radius: 18px; }
+      .redesign-blog__items .card .info-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px; }
+        .redesign-blog__items .card .info-wrapper .caption {
+          color: #949191;
+          font-size: 18px;
+          line-height: 18px;
+          align-items: center;
+          display: flex;
+          gap: 10px; }
+          .redesign-blog__items .card .info-wrapper .caption svg {
+            width: 25px;
+            height: 20px; }
+        .redesign-blog__items .card .info-wrapper .heading {
+          color: #141414;
+          font-size: 24px;
+          line-height: 120%; }
+        .redesign-blog__items .card .info-wrapper .description {
+          color: #949191;
+          font-size: 18px;
+          line-height: 24px;
+          max-height: 72px;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+      .redesign-blog__items .card_backfull {
+        background-color: #84AEFF;
+        padding: 20px 28px;
+        justify-content: center; }
+        .redesign-blog__items .card_backfull .info-wrapper .caption {
+          color: #fff; }
+        .redesign-blog__items .card_backfull .info-wrapper .heading {
+          color: #fff; }
+        .redesign-blog__items .card_backfull .info-wrapper .description {
+          color: #fff; }
+  .redesign-blog__button {
+    display: flex; }
+    .redesign-blog__button .button-redesign {
+      border-color: #141414;
+      text-wrap: nowrap;
+      width: unset; }
+      .redesign-blog__button .button-redesign:hover {
+        border-color: #1960FF; }
+  .redesign-blog a {
+    color: #141414;
+    text-decoration: unset; }
 
 .top.redesign {
   padding: 0;
@@ -7043,6 +7122,29 @@ svg.svg-hover-filter-clear:hover {
     .top.redesign .top__buttons_plus {
       height: unset; }
 
+.button-redesign {
+  width: 320px;
+  max-width: 100%;
+  height: 59px;
+  padding: 20px 60px;
+  border-radius: 100px;
+  border: 1px solid #1960FF;
+  background-color: #fff;
+  color: #1960FF;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: color .25s, border-color .25s, border .25s, background-color .25s; }
+  .button-redesign:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #1960FF; }
+
+.news-redesign .news-item__date {
+  text-align: unset; }
+.news-redesign .button-redesign {
+  text-wrap: nowrap; }
+
 .circletext {
   display: flex;
   align-items: center;
@@ -7057,6 +7159,9 @@ svg.svg-hover-filter-clear:hover {
   .circletext.blue-clean {
     color: #1960FF;
     border: 1.5px solid #1960FF; }
+  .circletext.blue-clean:hover {
+    color: #fff;
+    background-color: #1960FF; }
   .circletext.hover-blue:hover {
     color: #fff;
     border-color: #1960FF;
@@ -7288,6 +7393,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-features .container,
   .redesign-graphics .container,
   .redesign-projects .container,
+  .redesign-blog .container,
   .subheader .container,
   .expert .container,
   .preservice .container {
@@ -7485,6 +7591,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-features .container,
   .redesign-graphics .container,
   .redesign-projects .container,
+  .redesign-blog .container,
   .expert .container,
   .subheader .container,
   .preservice .container {
@@ -7997,6 +8104,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-features .container,
   .redesign-graphics .container,
   .redesign-projects .container,
+  .redesign-blog .container,
   .expert .container,
   .subheader .container,
   .preservice .container {
@@ -8119,7 +8227,7 @@ svg.svg-hover-filter-clear:hover {
       right: 30px; }
       .body_news-ver2 .editorial-container__toc.fixed {
         position: fixed;
-        top: 20px; }
+        bottom: 150px; }
       .body_news-ver2 .editorial-container__toc-inner {
         background: linear-gradient(0deg, #f0f0f0, #f0f0f0), white;
         border: none;
@@ -8128,7 +8236,8 @@ svg.svg-hover-filter-clear:hover {
         .body_news-ver2 .editorial-container__toc-inner.fixed {
           width: 100%;
           max-width: 440px;
-          top: 90px;
+          bottom: 150px;
+          top: auto;
           margin-top: 0; }
         .body_news-ver2 .editorial-container__toc-inner .back {
           bottom: -60px;
@@ -8288,7 +8397,19 @@ svg.svg-hover-filter-clear:hover {
     margin-bottom: 80px; }
 
   .top.redesign {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .redesign-blog__items {
+    overflow-x: scroll;
+    padding-bottom: 20px; }
+    .redesign-blog__items .wrapper {
+      min-width: 900px; }
+    .redesign-blog__items .card .info-wrapper .caption {
+      font-size: 16px; }
+    .redesign-blog__items .card .info-wrapper .heading {
+      font-size: 22px; }
+    .redesign-blog__items .card .info-wrapper .description {
+      font-size: 16px; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
@@ -11975,6 +12096,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-features .container,
   .redesign-graphics .container,
   .redesign-projects .container,
+  .redesign-blog .container,
   .subheader .container,
   .expert .container,
   .preservice .container {
@@ -12028,7 +12150,10 @@ svg.svg-hover-filter-clear:hover {
     gap: 20px; }
 
   .top.redesign {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+
+  .redesign-blog {
+    padding-top: 40px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
