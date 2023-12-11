@@ -9,417 +9,325 @@
   <div class="container">
     <h1 class="header">Проекты и кейсы</h1>
   </div>
-
-  <div class="tags">
-    <div class="container">
-      <div class="tags-categories js-tag-categories-container">
-        <div class="tags-category active" data-tags="all">
-          кейсы
-        </div>
-        <div class="tags-category" data-tags="development">
-          разработка
-        </div>
-        <div class="tags-category" data-tags="consulting">
-          консалтинг
+  <div class="filter-tags-component__wrapper">
+    <div class="tags">
+      <div class="tags__container container">
+        <div class="tags__categories js-tag-categories-container">
+          <div class="tags-category active" data-cats="all">
+            кейсы
+          </div>
+          <div class="tags-category" data-cats="development">
+            разработка
+          </div>
+          <div class="tags-category" data-cats="consulting">
+            консалтинг
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="tags-selected">
-        <div class="tag-active hidden" data-filter-tag="edtech">
-          edtech
-        </div>
-        <div class="tag-active hidden" data-filter-tag="fintech">
-          fintech
-        </div>
-        <div class="tag-active hidden" data-filter-tag="IT">
-          IT
-        </div>
-        <div class="tag-active hidden" data-filter-tag="landing">
-          landing
-        </div>
-        <div class="tag-active hidden" data-filter-tag="medtech">
-          medtech
-        </div>
-        <div class="tag-active hidden" data-filter-tag="real_estate">
-          real estate
-        </div>
-        <div class="tag-active hidden" data-filter-tag="retail">
-          retail
-        </div>
-        <div class="tag-active hidden" data-filter-tag="sports">
-          sports
-        </div>
-        <div class="tag-active hidden" data-filter-tag="telecom">
-          telecom
-        </div>
-        <div class="tag-active hidden" data-filter-tag="wearable">
-          wearable
-        </div>
-      </div>
-      <div id="tags-filters" class="tags-filters opacity-0 js-tag-filters-container">
-        <div class="container">
-          <div class="filters-wrapper">
-            <div class="filter-tag" data-filter-tag="edtech">
-              edtech
-            </div>
-            <div class="filter-tag" data-filter-tag="fintech">
-              fintech
-            </div>
-            <div class="filter-tag" data-filter-tag="IT">
-              IT
-            </div>
-            <div class="filter-tag" data-filter-tag="landing">
-              landing
-            </div>
+      <div class="tags__container container">
+        <div class="tags__selected">
+          <div class="tag-active hidden" data-filter-tag="edtech">
+            edtech
           </div>
-          <div class="filters-wrapper">
-            <div class="filter-tag" data-filter-tag="medtech">
-              medtech
-            </div>
-            <div class="filter-tag" data-filter-tag="real_estate">
-              real estate
-            </div>
-            <div class="filter-tag" data-filter-tag="retail">
-              retail
-            </div>
-            <div class="filter-tag" data-filter-tag="sports">
-              sports
-            </div>
+          <div class="tag-active hidden" data-filter-tag="fintech">
+            fintech
           </div>
-          <div class="filters-wrapper">
-            <div class="filter-tag" data-filter-tag="telecom">
-              telecom
-            </div>
-            <div class="filter-tag" data-filter-tag="wearable">
-              wearable
-            </div>
-            <div class="filter-tag filter-clear" data-filter-tag="clear">
-              сброс
+          <div class="tag-active hidden" data-filter-tag="IT">
+            IT
+          </div>
+          <div class="tag-active hidden" data-filter-tag="landing">
+            landing
+          </div>
+          <div class="tag-active hidden" data-filter-tag="medtech">
+            medtech
+          </div>
+          <div class="tag-active hidden" data-filter-tag="real_estate">
+            real estate
+          </div>
+          <div class="tag-active hidden" data-filter-tag="retail">
+            retail
+          </div>
+          <div class="tag-active hidden" data-filter-tag="sports">
+            sports
+          </div>
+          <div class="tag-active hidden" data-filter-tag="telecom" data-cat="development">
+            telecom
+          </div>
+          <div class="tag-active hidden" data-filter-tag="wearable">
+            wearable
+          </div>
+        </div>
+        <div id="tags-filters" class="tags-filters opacity-0 js-tag-filters-container">
+          <div class="tags-filters__container ">
+            <div class="filters-wrapper">
+              <div class="filter-tag" data-filter-tag="edtech">
+                edtech
+              </div>
+              <div class="filter-tag" data-filter-tag="fintech">
+                fintech
+              </div>
+              <div class="filter-tag" data-filter-tag="IT">
+                IT
+              </div>
+              <div class="filter-tag" data-filter-tag="landing">
+                landing
+              </div>
+              <div class="filter-tag" data-filter-tag="medtech">
+                medtech
+              </div>
+              <div class="filter-tag" data-filter-tag="real_estate">
+                real estate
+              </div>
+              <div class="filter-tag" data-filter-tag="retail">
+                retail
+              </div>
+              <div class="filter-tag" data-filter-tag="sports">
+                sports
+              </div>
+              <div class="filter-tag" data-filter-tag="telecom">
+                telecom
+              </div>
+              <div class="filter-tag" data-filter-tag="wearable">
+                wearable
+              </div>
+              <div class="filter-tag filter-clear" data-filter-tag="clear">
+                сброс
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
+  </div><div class="container">
     <div class="redesign-portfolio__list js-tag-publications">
-      <div class="card" data-tag="sports">
+      <div class="card" data-tag="sports" data-cat="consulting">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-1.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">consulting retail</div>
           <div class="head">
-            Дизайн-концепт<br/> приложения ГК Основа
+            Дизайн-концепт<br /> приложения ГК Основа
           </div>
           <div class="desc">
-            Дизайн-концепт приложения ГК Основа.<br/>Описание на пару строк и не более.
+            Дизайн-концепт приложения ГК Основа.<br />Описание на пару строк и не более.
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Дизайн-концепт<br/>
-            </div>
-            <div class="tag">
-              Разбор пользовательских сценариев
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="retail">
+      <div class="card" data-tag="retail" data-cat="consulting">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-2.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">consulting retail</div>
           <div class="head">
-            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
+            Мобильное приложение <br />«Пятёрочка: доставка продуктов»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Разработка
-            </div>
-            <div class="tag">
-              Автоматизация процессов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="retail">
+      <div class="card" data-tag="retail" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-3.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development retail</div>
           <div class="head">
-            Анализ конкурентов <br/>Tele2
+            Анализ конкурентов <br />Tele2
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Анализ конкурентов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="telecom">
+      <div class="card" data-tag="telecom" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-4.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development telecom</div>
           <div class="head">
-            Приложение на ОС Аврора<br/>«Заметки ПРО»
+            Приложение на ОС Аврора<br />«Заметки ПРО»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Импортозамещение
-            </div>
-            <div class="tag">
-              ОС Аврора
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="fintech">
+      <div class="card" data-tag="fintech" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-1.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development fintech</div>
           <div class="head">
-            Дизайн-концепт<br/> приложения ГК Основа
+            Дизайн-концепт<br /> приложения ГК Основа
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Дизайн-концепт<br/>
-            </div>
-            <div class="tag">
-              Разбор пользовательских сценариев
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="landing">
+      <div class="card" data-tag="landing" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-2.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development landing</div>
           <div class="head">
-            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
+            Мобильное приложение <br />«Пятёрочка: доставка продуктов»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Разработка
-            </div>
-            <div class="tag">
-              Автоматизация процессов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="landing">
+      <div class="card" data-tag="landing" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-3.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development landing</div>
           <div class="head">
-            Анализ конкурентов <br/>Tele2
+            Анализ конкурентов <br />Tele2
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Анализ конкурентов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="fintech">
+      <div class="card" data-tag="fintech" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-4.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development fintech</div>
           <div class="head">
-            Приложение на ОС Аврора<br/>«Заметки ПРО»
+            Приложение на ОС Аврора<br />«Заметки ПРО»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Импортозамещение
-            </div>
-            <div class="tag">
-              ОС Аврора
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="telecom">
+      <div class="card" data-tag="telecom" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-1.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development telecom</div>
           <div class="head">
-            Дизайн-концепт<br/> приложения ГК Основа
+            Дизайн-концепт<br /> приложения ГК Основа
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Дизайн-концепт<br/>
-            </div>
-            <div class="tag">
-              Разбор пользовательских сценариев
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="wearable">
+      <div class="card" data-tag="wearable" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-2.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development wearable</div>
           <div class="head">
-            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
+            Мобильное приложение <br />«Пятёрочка: доставка продуктов»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Разработка
-            </div>
-            <div class="tag">
-              Автоматизация процессов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="edtech">
+      <div class="card" data-tag="edtech" data-cat="consulting">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-3.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">consulting edtech</div>
           <div class="head">
-            Анализ конкурентов <br/>Tele2
+            Анализ конкурентов <br />Tele2
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Анализ конкурентов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="retail">
+      <div class="card" data-tag="retail" data-cat="consulting">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-4.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">consulting retail</div>
           <div class="head">
-            Приложение на ОС Аврора<br/>«Заметки ПРО»
+            Приложение на ОС Аврора<br />«Заметки ПРО»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Импортозамещение
-            </div>
-            <div class="tag">
-              ОС Аврора
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="sports">
+      <div class="card" data-tag="sports" data-cat="consulting">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-1.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">consulting sports</div>
           <div class="head">
-            Дизайн-концепт<br/> приложения ГК Основа
+            Дизайн-концепт<br /> приложения ГК Основа
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Дизайн-концепт<br/>
-            </div>
-            <div class="tag">
-              Разбор пользовательских сценариев
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="IT">
+      <div class="card" data-tag="IT" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-2.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development IT</div>
           <div class="head">
-            Мобильное приложение <br/>«Пятёрочка: доставка продуктов»
+            Мобильное приложение <br />«Пятёрочка: доставка продуктов»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Разработка
-            </div>
-            <div class="tag">
-              Автоматизация процессов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="medtech">
+      <div class="card" data-tag="medtech" data-cat="development">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-3.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">development medtech</div>
           <div class="head">
-            Анализ конкурентов <br/>Tele2
+            Анализ конкурентов <br />Tele2
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Дискавери фаза
-            </div>
-            <div class="tag">
-              Анализ конкурентов
-            </div>
-          </div> -->
         </div>
         <div class="card-foreground"></div>
       </div>
-      <div class="card" data-tag="real_estate">
+      <div class="card" data-tag="real_estate" data-cat="consulting">
         <div class="card__image">
           <img src="/assets/css/img/redesign/projects-back-4.png">
         </div>
         <div class="card__wrapper">
+          <div class="checktag">consulting real_estate</div>
           <div class="head">
-            Приложение на ОС Аврора<br/>«Заметки ПРО»
+            Приложение на ОС Аврора<br />«Заметки ПРО»
           </div>
-          <!-- <div class="component-tags tags">
-            <div class="tag">
-              Импортозамещение
-            </div>
-            <div class="tag">
-              ОС Аврора
-            </div>
-          </div> -->
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="real_estate" data-cat="development">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="checktag">development real_estate</div>
+          <div class="head">
+            Приложение на ОС Аврора<br />«Заметки ПРО»
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="real_estate" data-cat="development">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="checktag">development real_estate</div>
+          <div class="head">
+            Второй уникальный Приложение на ОС Аврора<br />«Заметки ПРО»
+          </div>
+        </div>
+        <div class="card-foreground"></div>
+      </div>
+      <div class="card" data-tag="social_networks" data-cat="development">
+        <div class="card__image">
+          <img src="/assets/css/img/redesign/projects-back-4.png">
+        </div>
+        <div class="card__wrapper">
+          <div class="checktag">development real_estate</div>
+          <div class="head">
+            Второй уникальный Приложение на ОС Аврора<br />«Заметки ПРО»
+          </div>
         </div>
         <div class="card-foreground"></div>
       </div>
@@ -430,7 +338,6 @@
       </button>
     </div>
   </div>
-</div>
 </div>
 
 <div class="redesign-experty">
@@ -740,7 +647,7 @@
             Добавили цифровое кодирование, 
             удобную навигацию и&nbsp;сохранили стиль театра.
           </div>
-          
+
           <div class="card__bottomline">
             <div class="component-tags card__tags tags">
               <div class="card__tag tag">
@@ -835,7 +742,7 @@
             Добавили цифровое кодирование, 
             удобную навигацию и&nbsp;сохранили стиль театра.
           </div>
-          
+
           <div class="card__bottomline">
             <div class="component-tags card__tags tags">
               <div class="card__tag tag">

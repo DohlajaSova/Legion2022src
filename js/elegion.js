@@ -1285,7 +1285,7 @@ docReady(function () {
         for (i = 0; i < portfolioTags.length; i++) {
             let tags = new Array();
             for (j = 0; j < portfolioBlocks[0].children.length; j++) {
-                let tagString = portfolioBlocks[0].children[j].dataset.tags.slice(1, portfolioBlocks[0].children[j].dataset.tags.length - 1);
+                let tagString = portfolioBlocks[0].children[j].dataset.cats.slice(1, portfolioBlocks[0].children[j].dataset.cats.length - 1);
                 tags[j] = tagString.split(",");
             }
 
@@ -1445,7 +1445,7 @@ docReady(function () {
                 for (i = 0; i < newsTypes.length; i++) {
                     let types = new Array();
                     for (j = 0; j < newsBlocks[one].children.length; j++) {
-                        let typeString = newsBlocks[one].children[j].dataset.tags.slice(1, newsBlocks[one].children[j].dataset.tags.length - 1);
+                        let typeString = newsBlocks[one].children[j].dataset.cats.slice(1, newsBlocks[one].children[j].dataset.cats.length - 1);
                         types[j] = typeString.split(",");
                     }
                     removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data, moreButton);
@@ -2252,62 +2252,64 @@ docReady(function () {
 
     //  astralinux highlighting cards by scroll
     // if (windowWidth > 480) {
-        const activeContainer = document.querySelectorAll(".js-active-contents-by-scroll");
-        if(activeContainer?.length) {
-            const cards = activeContainer[0].querySelectorAll(".content-card")
-            const coords = [];
-            const heights = [];
-            for (let one = 0; one < cards.length; one++) {
-                coords.push(cards[one].offsetTop)
-                heights.push(cards[one].clientHeight)
-            }
-            if (activeContainer.length > 0) {
-                let centerOfScreen = 0;
-                let ticking = false;
-                let cleared = true;
-                const heightConstant = 150;
-                document.addEventListener("scroll", debounce(() => {
-                    centerOfScreen = window.scrollY + (window.innerHeight / 2) - heightConstant;
-                    if (centerOfScreen > activeContainer[0].offsetTop && centerOfScreen < activeContainer[0].nextElementSibling.offsetTop) {
-                        const closestCardOffsetY = coords.reduce(function (prev, curr) {
-                            return (Math.abs(curr - centerOfScreen) < Math.abs(prev - centerOfScreen) ? curr : prev);
-                        });
-                        if (!ticking) {
-                            window.requestAnimationFrame(() => {
-                                ticking = false;
-                                const closestCardIndex = coords.findIndex(one => one === closestCardOffsetY);
-                                // reset styles
-                                for (let one = 0; one < cards.length; one++) {
-                                    if (one !== closestCardIndex) {
-                                        cards[one].classList.contains("content-card-closest-active") ?
-                                            cards[one].classList.remove("content-card-closest-active") :
-                                            null
-                                    } else {
-                                        cards[closestCardIndex].classList.contains("content-card-closest-active") ? null :
-                                            cards[closestCardIndex].classList.add("content-card-closest-active")
-                                    }
-                                }
-                                cleared = false;
-                            });
-                            ticking = true;
-                        }
-                    } else if(!cleared){
-                        for (let one = 0; one < cards.length; one++) {
-                                cards[one].classList.contains("content-card-closest-active") ?
-                                    cards[one].classList.remove("content-card-closest-active") :
-                                    null
-                        }
-                        cleared = true;
-                    }
-                }, 100));
-            }
+    const activeContainer = document.querySelectorAll(".js-active-contents-by-scroll");
+    if(activeContainer?.length) {
+        const cards = activeContainer[0].querySelectorAll(".content-card")
+        const coords = [];
+        const heights = [];
+        for (let one = 0; one < cards.length; one++) {
+            coords.push(cards[one].offsetTop)
+            heights.push(cards[one].clientHeight)
         }
+        if (activeContainer.length > 0) {
+            let centerOfScreen = 0;
+            let ticking = false;
+            let cleared = true;
+            const heightConstant = 150;
+            document.addEventListener("scroll", debounce(() => {
+                centerOfScreen = window.scrollY + (window.innerHeight / 2) - heightConstant;
+                if (centerOfScreen > activeContainer[0].offsetTop && centerOfScreen < activeContainer[0].nextElementSibling.offsetTop) {
+                    const closestCardOffsetY = coords.reduce(function (prev, curr) {
+                        return (Math.abs(curr - centerOfScreen) < Math.abs(prev - centerOfScreen) ? curr : prev);
+                    });
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            ticking = false;
+                            const closestCardIndex = coords.findIndex(one => one === closestCardOffsetY);
+                            // reset styles
+                            for (let one = 0; one < cards.length; one++) {
+                                if (one !== closestCardIndex) {
+                                    cards[one].classList.contains("content-card-closest-active") ?
+                                        cards[one].classList.remove("content-card-closest-active") :
+                                        null
+                                } else {
+                                    cards[closestCardIndex].classList.contains("content-card-closest-active") ? null :
+                                        cards[closestCardIndex].classList.add("content-card-closest-active")
+                                }
+                            }
+                            cleared = false;
+                        });
+                        ticking = true;
+                    }
+                } else if(!cleared){
+                    for (let one = 0; one < cards.length; one++) {
+                            cards[one].classList.contains("content-card-closest-active") ?
+                                cards[one].classList.remove("content-card-closest-active") :
+                                null
+                    }
+                    cleared = true;
+                }
+            }, 100));
+        }
+    }
     // }
 
     // redesign
     if (document.querySelectorAll(".js-tag-categories-container").length > 0) {
-        const tagFilters = document.querySelectorAll(".tags-filters .container .filters-wrapper .filter-tag");
+        const tagFilters = document.querySelectorAll(".tags-filters .tags-filters__container .filters-wrapper .filter-tag");
+        console.log({tagFilters})
         let activeType = "all";
+        // let limit = 4;
         const tagsGroups = {
             consulting: [
                 "edtech",
@@ -2323,7 +2325,7 @@ docReady(function () {
                 "medtech",
                 "wearable",
                 "telecom",
-                "lending",
+                "landing",
                 "IT",
                 "real_estate",
                 "clear"
@@ -2331,7 +2333,7 @@ docReady(function () {
         }
         const classToClick = [
             "tags-category",
-            "tags-categories",
+            "tags__categories",
             "tags-filters",
             "filter-tag",
             "filters-wrapper",
@@ -2342,38 +2344,47 @@ docReady(function () {
         const classToToggle = "opacity-0";
         // const classToToggle = "hidden";
         const tagCatsContainer = document.querySelectorAll(".js-tag-categories-container")[0];
-        const tagActives = document.querySelectorAll(".tags-selected .tag-active");
+        const tagActives = document.querySelectorAll(".tags__selected .tag-active");
         const publications = document.querySelectorAll(".js-tag-publications .card");
 
         Array.from(tagCatsContainer.children).forEach((one, index) => one.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
             toggleClass(elemToToggle, classToToggle, false);
-
-            // clear after switching category
-            Array.from(publications).forEach(pub => pub.classList.remove("hidden"));
-            Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
-
             // add listener -- outer click
             if(!tagCategoriesListener) {
                 document.addEventListener("click", function (e) {
                     e.preventDefault(); 
                     tagCategoriesListener = true;
-                    if(!hasCommonElements([...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)], classToClick)) {
+                    if(!hasCommonElements(
+                        [...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)],
+                        classToClick)
+                    ) {
                         toggleClass(elemToToggle, classToToggle, true);
                     }
                     // !!remove
                     // document.removeEventListener("click", this)
                 })
             }
+            if(activeType === e.target?.dataset?.cats) return;
+
+            // filter after switching category
+            Array.from(publications).forEach(pub =>
+                e.target.dataset.cats === "all" || pub.dataset.cat === e.target.dataset.cats ?
+                pub.classList.remove("hidden") :
+                pub.classList.add("hidden")
+            );
+            // clear after switching category
+            Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
+            Array.from(tagFilters).forEach(tag => tag.classList.remove("active"));
 
             // cats highlight
             one.classList.add("active")
             Array.from(tagCatsContainer.children).forEach((cat, index2) => index !== index2 ? cat.classList.remove("active") : "");
             // table tags show|hide
-            if(e?.target?.dataset?.tags) {
-                activeType = e.target.dataset.tags;
-                Array.from(tagFilters).forEach(filt => {
+            if(e?.target?.dataset?.cats) {
+                activeType = e.target.dataset.cats;
+                    Array.from(tagFilters).forEach(filt => {
                     filt.classList.remove("active");
                     filt.classList.remove("hidden");
                     if(activeType !== "all") {
@@ -2420,7 +2431,6 @@ docReady(function () {
                             }
                         })
                     }
-
                 }
             })
         })
@@ -2485,7 +2495,6 @@ docReady(function () {
                     sliderExpert.events.on('indexChanged', onExpertChangeSlide);
 
                 }
-                
             }
         }
     }
