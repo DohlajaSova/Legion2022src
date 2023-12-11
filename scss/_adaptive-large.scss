@@ -1670,24 +1670,24 @@
 			.news-top__container{
 				.h1,
 				h1{
-					font-size:60px;
+					font-size: 60px;
 				}
 			}
 		}
         .editorial-container{
             position: relative;
             &__body{
-                width:100%;
+                width: 100%;
                 margin-right: 0;
             }
             &__toc{
                 position: absolute;
-                width:100%;
-                max-width:440px;
+                width: 100%;
+                max-width: 440px;
                 right:30px;
                 &.fixed{
                     position: fixed;
-                    top:20px;
+                    bottom: 150px;
                 }
                 &-inner{
                     background: linear-gradient(0deg, rgb(240, 240, 240), rgb(240, 240, 240)), rgb(255, 255, 255);
@@ -1695,13 +1695,14 @@
                     box-shadow: rgba(30, 39, 56, 0.3) 0px 0px 40px;
                     margin-top: 10px;
                     &.fixed{
-                        width:100%;
-                        max-width:440px;
-                        top:90px;
+                        width: 100%;
+                        max-width: 440px;
+                        bottom: 150px;
+                        top: auto;
                         margin-top: 0;
                     }
                     .back{
-                        bottom:-60px;
+                        bottom: -60px;
                         display: none;
                     }
                     + .back-mobile{
@@ -1710,10 +1711,10 @@
                 }
                 .sidetoc-menu{
                     display: block;
-					flex-shrink:0;
+					flex-shrink: 0;
                 }
 				.back{
-					flex-shrink:0;
+					flex-shrink: 0;
 				}
             }
         }
