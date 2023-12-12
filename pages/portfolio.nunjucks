@@ -807,8 +807,8 @@
   </div>
 </div>
 
-<!-- {# {% include "partials/towel/cases2.nunjucks" %}
+{# {% include "partials/towel/cases2.nunjucks" %}
 {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
 
 {% include "partials/popup-feedback.nunjucks" %} #}
-{% endblock %} -->
+{% endblock %}

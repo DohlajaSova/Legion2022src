@@ -10425,6 +10425,10 @@ svg.svg-hover-filter-clear {
 				.card__logo {
 					height: 60px;
 					width: 60px;
+					svg{
+						max-width: 100%;
+						max-height: 100%;
+					}
 				}
 			}
 				&__tag {
