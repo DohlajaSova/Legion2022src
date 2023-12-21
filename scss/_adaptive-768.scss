@@ -1798,6 +1798,7 @@
 @media only screen and (min-width: 551px) {
     $top-padding: 60px;
     .footer__menu-list {
+        width: 50%;
         @include vertical-border-wrapper;
         .vertical-border {
             @include vertical-border($top: -$top-padding);

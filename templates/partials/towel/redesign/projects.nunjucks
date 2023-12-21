@@ -37,6 +37,7 @@
               </div>
             </div>
         </div>
+        <div class="card-foreground"></div>
       </div>
       <div class="redesign-projects-slide" data-click-sync="3">
         <div class="img"></div>
@@ -53,6 +54,7 @@
               </div>
             </div>
         </div>
+        <div class="card-foreground"></div>
       </div>
       <div class="redesign-projects-slide" data-click-sync="4">
         <div class="img"></div>
@@ -69,6 +71,7 @@
               </div>
             </div>
         </div>
+        <div class="card-foreground"></div>
       </div>
     </div>
     <p class="redesign-projects-undertext js-click-sync" data-click-sync="1">Разобрали пользовательские сценарии корпоративного приложения застройщика из&nbsp;Москвы, чтобы повысить вовлечённость сотрудников и&nbsp;конверсию использования МП.</p>

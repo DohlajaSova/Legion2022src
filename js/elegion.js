@@ -2461,10 +2461,10 @@ docReady(function () {
                 controls: false,
                 nav: true,
                 navPosition: 'bottom',
-                navContainer: 'js-archive-slider .js-expert-dots',
+                navContainer: '.js-expert-slider .js-expert-dots',
                 mouseDrag: true,
                 slideBy: 'page',
-                mode: "gallery",
+                mode: 'gallery',
             });
             // desired do call any slider from any place at 
             // switching slides by click into block

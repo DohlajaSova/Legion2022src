@@ -4357,7 +4357,7 @@ a.button {
       right: 0; }
   .footer__menu {
     width: 60%;
-    font-size: 24px;
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 55px;
@@ -4367,14 +4367,15 @@ a.button {
       margin-bottom: 25px;
       transition: all .25s linear;
       position: relative;
-      width: 50%; }
+      width: 100%; }
     .footer__menu-list {
       display: flex;
       flex-flow: column nowrap;
       flex-shrink: 0; }
       .footer__menu-list-wrapper {
         display: flex;
-        gap: 120px; }
+        gap: 20px;
+        width: 50%; }
   .footer__contacts {
     font-size: 46px;
     width: 40%; }
@@ -7112,7 +7113,11 @@ svg.svg-hover-filter-clear:hover {
         max-width: 100%; }
       .redesign-projects-slide.active .wrapper {
         opacity: 1;
-        transition: .25s opacity; }
+        transition: .25s opacity;
+        overflow: auto;
+        width: 80%; }
+      .redesign-projects-slide.active .card-foreground {
+        cursor: auto; }
     .redesign-projects-slide img {
       border-radius: 16px;
       display: none;
@@ -7125,7 +7130,8 @@ svg.svg-hover-filter-clear:hover {
       left: 0;
       border-radius: 16px;
       z-index: 0;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) -11.48%, rgba(0, 0, 0, 0.07) 46%, rgba(0, 0, 0, 0.6) 99.89%); }
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) -11.48%, rgba(0, 0, 0, 0.07) 46%, rgba(0, 0, 0, 0.6) 99.89%);
+      cursor: pointer; }
     .redesign-projects-slide .img {
       cursor: pointer;
       border-radius: 16px;
@@ -7144,7 +7150,9 @@ svg.svg-hover-filter-clear:hover {
       position: absolute;
       bottom: 18px;
       left: 15px;
-      z-index: 1; }
+      z-index: 1;
+      width: 0;
+      overflow: hidden; }
       .redesign-projects-slide .wrapper .head {
         color: #fff;
         font-size: 24px;
@@ -10896,6 +10904,7 @@ svg.svg-hover-filter-clear:hover {
     text-wrap: nowrap; } }
 @media only screen and (min-width: 551px) {
   .footer__menu-list {
+    width: 50%;
     position: relative;
     padding-left: 30px; }
     .footer__menu-list .vertical-border {

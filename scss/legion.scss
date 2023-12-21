@@ -6078,7 +6078,7 @@ a.button {
 
 	&__menu {
 		width: 60%;
-		font-size: 24px;
+		font-size: 18px;
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 55px;
@@ -6088,13 +6088,14 @@ a.button {
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
-			width:50%;
+			width: 100%;
 		}
 		
 		&-list {
 			&-wrapper {
 				display: flex;
-				gap: 120px;
+				gap: 20px;
+                width: 50%;
 			}
 			display: flex;
 			flex-flow: column nowrap;
@@ -10052,7 +10053,12 @@ svg.svg-hover-filter-clear {
 				.wrapper {
 					opacity: 1;
 					transition: .25s opacity;
+                    overflow: auto;
+                    width: 80%;
 				}
+                .card-foreground{
+                    cursor: auto;
+                }
 			}
 			img {
 				border-radius: $brad;
@@ -10068,6 +10074,7 @@ svg.svg-hover-filter-clear {
 				border-radius: $brad;
 				z-index: 0;
 				background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -11.48%, rgba(0, 0, 0, 0.07) 46%, rgba(0, 0, 0, 0.60) 99.89%);
+                cursor: pointer;
 			}
 			.img {
 				cursor: pointer;
@@ -10089,6 +10096,8 @@ svg.svg-hover-filter-clear {
 				bottom: 18px;
 				left: 15px;
 				z-index: 1;
+                width: 0;
+                overflow: hidden;
 				.head {
 					color: $color-white;
 					font-size: 24px;
