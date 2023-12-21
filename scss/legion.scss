@@ -9928,7 +9928,10 @@ svg.svg-hover-filter-clear {
 				flex-shrink: 0;
 				width:44%;
 				max-width: 574px;
-				aspect-ratio: 1.75;
+                text-align: center;
+                img{
+                    max-width: 100%;
+                }
 			}
 		}
 	}

@@ -5,7 +5,7 @@
             <div class="wrapper">
                 <a href="https://vk.com/wall-34196694_2040?w=wall-34196694_2040" target="_blank" class="card">
                     <div class="card__img">
-                        <img src="/assets/css/blog/News1_cover_prev.jpg" alt="">
+                        <img src="/assets/blog/News1_cover_prev.jpg" alt="">
                     </div>
                     <div class="info-wrapper">
                         <div class="caption">Опыт. Кейсы</div>
@@ -24,7 +24,7 @@
                 </a>
                 <a href="https://vk.com/elegion?w=wall-34196694_2026" target="_blank" class="card">
                     <div class="card__img">
-                        <img src="/assets/css/blog/News3.1_cover_prev.jpg" alt="">
+                        <img src="/assets/blog/News3.1_cover_prev.jpg" alt="">
                     </div>
                     <div class="info-wrapper">
                         <div class="caption">

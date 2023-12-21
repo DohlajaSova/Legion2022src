@@ -66,11 +66,10 @@
           </div>
           <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
         </div>
-        <div class="card-image"></div>
-        <!-- <img class="card-image" src="" alt="" width="574px" height="328px"> -->
+        <div class="card-image"><img src="assets/css/img/redesign/service-pic-1.svg" alt=""></div>
       </div>
       <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image"><img src="assets/css/img/redesign/service-pic-2.svg" alt=""></div>
         <div class="card-info">
           <h4 class="card-head">
             Рынок Китая
@@ -91,7 +90,6 @@
           </div>
           <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
         </div>
-        <!-- <img class="card-image" src="" alt="" width="574px" height="328px"> -->
       </div>
       <div class="card">
         <div class="card-info">
@@ -132,11 +130,10 @@
             </svg>
           </div>
         </div>
-        <div class="card-image"></div>
-        <!-- <img class="card-image" src="" alt="" width="574px" height="328px"> -->
+        <div class="card-image"><img src="assets/css/img/redesign/service-pic-3.svg" alt=""></div>
       </div>
       <div class="card">
-        <div class="card-image"></div>
+        <div class="card-image"><img src="assets/css/img/redesign/service-pic-4.svg" alt=""></div>
         <div class="card-info">
           <h4 class="card-head">
             Комплексная разработка digital-продуктов
@@ -230,7 +227,6 @@
             </svg>
           </div>
         </div>
-        <!-- <img class="card-image" src="" alt="" width="574px" height="328px"> -->
       </div>
     </div>
   </div>
