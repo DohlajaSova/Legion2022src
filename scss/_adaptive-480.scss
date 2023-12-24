@@ -862,6 +862,7 @@
     .redesign-portfolio,
     .redesign-common,
     .redesign-experty,
+    .redesign-archive,
     .preservice {
         .container {
             max-width: 100%;
@@ -873,13 +874,6 @@
 
     .top.redesign {
         padding: 0;
-    }
-    .redesign {
-        &-features {
-            &-list {
-			    letter-spacing: 1.2px;
-            }
-        }
     }
     
     .preservice {
@@ -959,9 +953,46 @@
     .top.redesign {
         margin-bottom: 60px;
     }
+    
     .redesign {
+        &-features {
+            &-list {
+			    letter-spacing: 1.2px;
+            }
+        }
+        &-feedback {
+            &-text {
+                font-size: 16px;
+            }
+        }
         &-blog {
             padding-top: 40px;
+        }
+        &-archive {
+            &__header {
+                font-size: 60px;
+            }
+            .card {
+                &__head {
+                    font-size: 36px;
+                }
+                &__desc {
+                    font-size: 16px;
+                }
+                // .component-tags.tags {
+                //     .tag {
+                //         font-size: 14px;
+                //     }
+                // }
+            }
+        }
+        &-acrhive,
+        &-feedback
+        {
+            .container {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
         }
     }
 }
@@ -1237,6 +1268,22 @@
     }
     .top.redesign {
         margin-bottom: 20px;
+    }
+    .redesign {
+        &-portfolio {
+            &__list {
+                .card {
+                    &__wrapper {
+                        .head {
+                            font-size: 5.5vw;
+                        }
+                        .desc {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // --

@@ -10322,7 +10322,7 @@ svg.svg-hover-filter-clear {
 				line-height: 120%; /* 55.2px */
 			}
 			.desc {
-				max-width: 50%;
+				width: 50%;
 				color: var(--Black, #000);
 				font-size: 18px;
 				line-height: 130%; /* 23.4px */
@@ -10333,8 +10333,13 @@ svg.svg-hover-filter-clear {
 			flex-flow: row nowrap;
 			justify-content: space-around;
 			align-items: center;
+			gap: 50px;
 			.svg-hover-filter-clear {
 				cursor: pointer;
+			}
+			.svg-added-filter {
+				width: 110px;
+				height: 70px;
 			}
 		}
 	}
@@ -10347,6 +10352,9 @@ svg.svg-hover-filter-clear {
 			gap: 60px;
 			padding-top: 80px;
 			padding-bottom: 80px;
+			svg {
+				max-width: 100%;
+			}
 		}
 		&-text {
 			color: $color-black;
@@ -10431,9 +10439,11 @@ svg.svg-hover-filter-clear {
 			}
 			&__bottomline {
 				display: flex;
-				flex-flow: row nowrap;
+				flex-flow: row wrap;
 				align-items: flex-end;
 				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
 				.card__logo {
 					height: 60px;
 					width: 60px;
@@ -10491,7 +10501,7 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			justify-content: flex-start;
 			flex-flow: row wrap;
-			gap: 30px;
+			gap: 50px;
 			max-width: 1087px;
 			margin: auto;
 			width: 100%;

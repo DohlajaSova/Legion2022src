@@ -320,6 +320,7 @@
     .redesign-portfolio,
     .redesign-common,
     .redesign-experty,
+    .redesign-archive,
     .preservice {
         .container {
             max-width: 1087px;
@@ -649,12 +650,30 @@
     .redesign-portfolio,
     .redesign-common,
     .redesign-experty,
+    .redesign-archive,
     .preservice {
         .container {
             max-width: 960px;
             margin: auto;
             // padding-left: 30px;
             // padding-right: 30px;
+        }
+    }
+    .redesign-portfolio {
+        
+        .filter-tags-component__wrapper  {
+            .tags__container:first-child {
+                width: 100%;
+                
+            }
+            // .tags-filters__container
+            .tags__container{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .tags__categories, .tags-filters__container , .tags__selected {
+                max-width: 960px;
+            }
         }
     }
     .expert{
@@ -834,9 +853,53 @@
                 }
             }
         }
+        &-portfolio {
+            &__list {
+                gap: 10px;
+                .card {
+                    &__wrapper {
+                        .head {
+                        }
+                        .desc {
+                        }
+                    }
+                }
+            }
+        }
+        &-feedback-text {
+            font-size: 22px;
+        }
+        &-experty {
+            .info {
+                .head {
+                    font-size: 40px;
+                }
+                .desc {
+                    width: 70%;
+                }
+            }
+        }
+        &-archive{
+            &__header {
+                font-size: 66px;
+            }
+            .card {
+                flex-direction: column;
+                &__slider {
+                    width: 100%;
+                    order: 2;
+                }
+                &__tezis {
+                    display: none;
+                }
+            }
+        }
     }
     .footer__menu-list-wrapper{
         gap: 90px;
+    }
+    .filter-tags-component__wrapper .tags-filters__container .filters-wrapper .filter-clear:before {
+        top: 1px;
     }
     // --redesign
 }
@@ -1510,12 +1573,14 @@
     .redesign-portfolio,
     .redesign-common,
     .redesign-experty,
+    .redesign-archive,
     .preservice {
         .container {
             padding-left: 30px;
             padding-right: 30px;
         }
     }
+
     .line-breaker {
         margin: 60px 0;
     }
@@ -1985,6 +2050,74 @@
                     }
                 }
             }
+        }
+        &-experty {
+            &-projects {
+                flex-wrap: wrap;
+            }
+            .info {
+                .desc {
+                    width: 80%;
+                    // margin-bottom: 40px;
+                }
+            }
+        }
+        &-portfolio {
+            &__list {
+                .card {
+                    &__wrapper {
+                        padding: 14px;
+                        .head {
+                            font-size: 20px;
+                        }
+                        .desc {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        &-feedback {
+            .container {
+                gap: 40px;
+                svg {
+                    height: auto;
+                }
+            }
+            &-text {
+                font-size: 20px;
+            }
+        }
+        &-archive {
+            &__header {
+                margin-bottom: 40px;
+            }
+            .card {
+                &__head {
+                    font-size: 42px;
+                }
+            }
+        }
+        &-archive,
+        &-feedback
+        {
+            .container {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
+        &-experty {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    
+    .display-tablet-lower {
+        display: none;
+    }
+    .filter-tags-component__wrapper {
+        .tags {
+            margin-bottom: 40px;
         }
     }
     // --
@@ -3197,6 +3330,9 @@
                 }
             }
         }
+    }
+    .filter-tags-component__wrapper .tags__selected div:after {
+        top: 0;
     }
 }
 

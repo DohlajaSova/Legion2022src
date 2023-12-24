@@ -7,7 +7,7 @@
 
 <div class="redesign-portfolio">
   <div class="container">
-    <h1 class="header">Проекты и кейсы</h1>
+    <h1 class="portfolio-header">Проекты и кейсы</h1>
   </div>
   <div class="filter-tags-component__wrapper">
     <div class="tags">
@@ -327,7 +327,7 @@
         <div class="card__wrapper">
           <div class="checktag">development real_estate</div>
           <div class="head">
-            Второй уникальный Приложение на ОС Аврора<br />«Заметки ПРО»
+            Третий уникальный Приложение на ОС Аврора<br />«Заметки ПРО»
           </div>
         </div>
         <div class="card-foreground"></div>
@@ -569,7 +569,7 @@
 <div class="redesign-common redesign-feedback">
   <div class="container">
     <div class="redesign-feedback-text centered-text">
-      На&nbsp;протяжении 18-ти&nbsp;лет цифровизируем ведущие российские<br />и&nbsp;зарубежные компании из финтеха,
+      На&nbsp;протяжении 18-ти&nbsp;лет цифровизируем ведущие российские <br class="display-tablet-lower"/>и&nbsp;зарубежные компании из&nbsp;финтеха,
       телекома, ритейла и&nbsp;других отраслей.
     </div>
     <svg class="margin-auto" width="653" height="200" viewbox="0 0 653 200" fill="none"
@@ -611,7 +611,7 @@
 
 <div class="redesign-archive">
   <div class="container">
-    <div class="redesign-archive__header">Архив проектов</div>
+    <div class="redesign-archive__header">Архив</div>
     <div class="projects__list">
       <div class="card">
         <div class="card__slider js-archive-slider">

@@ -832,6 +832,21 @@
                 }
             }
         }
+        &-feedback-text {
+            font-size: 18px;
+        }
+        &-experty {
+            &-projects {
+                gap: 40px;
+                padding: 0 30px;
+                justify-content: space-between;
+            }
+            .info {
+                .desc {
+                    width: 100%;
+                }
+            }
+        }
     }
     .preservice {
         &-blocks {
@@ -1792,6 +1807,16 @@
     }
     .footer .text a {
         text-wrap: nowrap;
+    }
+    .redesign { 
+        &-portfolio {
+            &__list {
+                grid-template-columns: 100%;
+            }
+            .card {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -3290,6 +3315,19 @@
                 margin: 0;
             }
         }
+    }
+
+    .filter-tags-component__wrapper {
+        .tags-filters__container .filters-wrapper {
+            grid-template-columns: repeat(3, 20vw);
+        } 
+        .tags__selected div:after {
+            top: -2px;
+        }
+        .tags-filters__container .filters-wrapper .filter-clear:before {
+            top: -1px;
+        }
+
     }
     // --
 }
