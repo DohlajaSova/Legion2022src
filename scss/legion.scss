@@ -10457,6 +10457,28 @@ svg.svg-hover-filter-clear {
 					color: #949191;
 				}
 		}
+		&__pagination {
+			display: flex;
+			flex-flow: row nowrap;
+			gap: 8px;
+			margin-top: 40px;
+			.page-wrapper {
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				width: 10px;
+				&.active {
+					color: var(--Black, #141414);
+
+				}
+				color: var(--Grey-Dark, #949191);
+				padding: 0 12px;
+				font-size: 16px;
+				line-height: 30px; /* 187.5% */
+				border-radius: 20px;
+				border: 1px solid var(--Black, #141414);
+			}
+		}
 	}
 }
 

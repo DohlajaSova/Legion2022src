@@ -2307,7 +2307,6 @@ docReady(function () {
     // redesign
     if (document.querySelectorAll(".js-tag-categories-container").length > 0) {
         const tagFilters = document.querySelectorAll(".tags-filters .tags-filters__container .filters-wrapper .filter-tag");
-        console.log({tagFilters})
         let activeType = "all";
         // let limit = 4;
         const tagsGroups = {
@@ -2437,7 +2436,21 @@ docReady(function () {
     }
     //tags single filters
 
-
+    if (document.querySelectorAll(".js-page-switcher").length > 0) {
+        const pagination = document.querySelectorAll(".js-page-switcher")
+        const pages = document.querySelectorAll(".js-archive-projects-page")
+        Array.from(pagination).forEach((one) => one.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const selected = e?.target?.dataset?.pageSwitch;
+            Array.from(pagination).forEach((two) => two.classList.remove("active"))
+            one.classList.add("active")
+            if(!selected && selected !== 0) return;
+            Array.from(pages).forEach((page) => {
+                page.dataset.filterPage === selected ? page.classList.remove("hidden") : page.classList.add("hidden")
+            })
+        }))
+    }
     //обработчик загрузки файлов в форме заявки
     if (document.querySelectorAll(".yaDiskUploader").length > 0) {
         const uploadButtons = document.querySelectorAll(".yaDiskUploader");
