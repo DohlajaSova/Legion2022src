@@ -2076,6 +2076,11 @@
                     }
                 }
             }
+            .filter-tags-component__wrapper .tags-filters__container{
+                max-width: none;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
         }
         &-feedback {
             .container {
