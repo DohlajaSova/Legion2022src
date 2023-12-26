@@ -2437,18 +2437,24 @@ docReady(function () {
     //tags single filters
 
     if (document.querySelectorAll(".js-page-switcher").length > 0) {
-        const pagination = document.querySelectorAll(".js-page-switcher")
-        const pages = document.querySelectorAll(".js-archive-projects-page")
+        const pagination = document.querySelectorAll(".js-page-switcher");
+        const pages = document.querySelectorAll(".js-archive-projects-page");
+        const anchor = document.getElementById("redesign-archive__header")
         Array.from(pagination).forEach((one) => one.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
             const selected = e?.target?.dataset?.pageSwitch;
-            Array.from(pagination).forEach((two) => two.classList.remove("active"))
-            one.classList.add("active")
+            Array.from(pagination).forEach((two) => two.classList.remove("active"));
+            one.classList.add("active");
             if(!selected && selected !== 0) return;
             Array.from(pages).forEach((page) => {
-                page.dataset.filterPage === selected ? page.classList.remove("hidden") : page.classList.add("hidden")
+                page.dataset.filterPage === selected ? page.classList.remove("hidden") : page.classList.add("hidden");
             })
+            if(anchor) {
+                anchor.scrollIntoView({
+                    behavior: "smooth"
+                })
+            }
         }))
     }
     //обработчик загрузки файлов в форме заявки

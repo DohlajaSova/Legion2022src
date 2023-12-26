@@ -968,6 +968,12 @@
         &-blog {
             padding-top: 40px;
         }
+        
+        &-experty {
+            &-projects {
+                justify-content: space-around;
+            }
+        }
         &-archive {
             &__header {
                 font-size: 60px;
