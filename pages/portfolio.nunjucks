@@ -816,13 +816,6 @@
               <img src="/assets/css/img/redesign/projects-back-2.png">
             </div>
           </div>
-          <div class="slider__dots">
-            <ul class="js-archive-dots">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
         </div>
         <div class="card__content">
           <div class="card__tezis">
@@ -910,13 +903,6 @@
             <div class="slide img">
               <img src="/assets/css/img/redesign/projects-back-2.png">
             </div>
-          </div>
-          <div class="slider__dots">
-            <ul class="js-archive-dots">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
           </div>
         </div>
         <div class="card__content">

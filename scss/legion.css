@@ -6640,7 +6640,7 @@ a.button {
     border-radius: 20px;
     border: 1px solid #fff;
     background: rgba(196, 196, 196, 0.4);
-    color: #fff;
+    color: #949191;
     padding: 0 14px; }
   .component-tags.tags.tags_first-child-selected .tag:first-child {
     border: 1px solid #141414;
@@ -7318,7 +7318,7 @@ svg.svg-hover-filter-clear:hover {
       line-height: 120%;
       /* 55.2px */ }
     .redesign-experty .info .desc {
-      max-width: 50%;
+      width: 50%;
       color: var(--Black, #000);
       font-size: 18px;
       line-height: 130%;
@@ -7327,9 +7327,13 @@ svg.svg-hover-filter-clear:hover {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    gap: 50px; }
     .redesign-experty-projects .svg-hover-filter-clear {
       cursor: pointer; }
+    .redesign-experty-projects .svg-added-filter {
+      width: 110px;
+      height: 70px; }
 .redesign-feedback {
   border-bottom: 1px solid var(--Black, #141414); }
   .redesign-feedback .container {
@@ -7339,6 +7343,8 @@ svg.svg-hover-filter-clear:hover {
     gap: 60px;
     padding-top: 80px;
     padding-bottom: 80px; }
+    .redesign-feedback .container svg {
+      max-width: 100%; }
   .redesign-feedback-text {
     color: #141414;
     text-align: center;
@@ -7387,6 +7393,28 @@ svg.svg-hover-filter-clear:hover {
             height: 280px;
             object-fit: cover;
             border-radius: 16px; }
+      .redesign-archive .card__slider .tns-nav {
+        width: 100%;
+        list-style: none;
+        position: relative; }
+        .redesign-archive .card__slider .tns-nav button {
+          width: 10px;
+          height: 10px;
+          margin: 0 3px 0 9px;
+          border: 1px solid #949191;
+          background-color: transparent;
+          border-radius: 50%;
+          display: inline-block;
+          cursor: pointer; }
+          .redesign-archive .card__slider .tns-nav button.active, .redesign-archive .card__slider .tns-nav button.tns-nav-active {
+            width: 12px;
+            height: 12px;
+            border: 1px solid transparent;
+            background-color: #949191;
+            position: relative;
+            top: 0; }
+          .redesign-archive .card__slider .tns-nav button:first-child {
+            margin-left: 0; }
     .redesign-archive .card__tezis {
       color: var(--Grey-Dark, #949191);
       font-size: 16px;
@@ -7405,9 +7433,11 @@ svg.svg-hover-filter-clear:hover {
       margin-bottom: 20px; }
     .redesign-archive .card__bottomline {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       align-items: flex-end;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px; }
       .redesign-archive .card__bottomline .card__logo {
         height: 60px;
         width: 60px; }
@@ -7449,7 +7479,7 @@ svg.svg-hover-filter-clear:hover {
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
-    gap: 30px;
+    gap: 50px;
     max-width: 1087px;
     margin: auto;
     width: 100%; }
@@ -7739,6 +7769,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-portfolio .container,
   .redesign-common .container,
   .redesign-experty .container,
+  .redesign-archive .container,
   .preservice .container {
     max-width: 1087px;
     padding-left: 160px;
@@ -7940,9 +7971,18 @@ svg.svg-hover-filter-clear:hover {
   .redesign-portfolio .container,
   .redesign-common .container,
   .redesign-experty .container,
+  .redesign-archive .container,
   .preservice .container {
     max-width: 960px;
     margin: auto; }
+
+  .redesign-portfolio .filter-tags-component__wrapper .tags__container:first-child {
+    width: 100%; }
+  .redesign-portfolio .filter-tags-component__wrapper .tags__container {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .redesign-portfolio .filter-tags-component__wrapper .tags__categories, .redesign-portfolio .filter-tags-component__wrapper .tags-filters__container, .redesign-portfolio .filter-tags-component__wrapper .tags__selected {
+    max-width: 960px; }
 
   .expert .container {
     padding-right: 0; }
@@ -8040,9 +8080,29 @@ svg.svg-hover-filter-clear:hover {
 
   .redesign-features-preview .header {
     font-size: 40px; }
+  .redesign-portfolio__list {
+    gap: 10px; }
+  .redesign-feedback-text {
+    font-size: 22px; }
+  .redesign-experty .info .head {
+    font-size: 40px; }
+  .redesign-experty .info .desc {
+    width: 70%; }
+  .redesign-archive__header {
+    font-size: 66px; }
+  .redesign-archive .card {
+    flex-direction: column; }
+    .redesign-archive .card__slider {
+      width: 100%;
+      order: 2; }
+    .redesign-archive .card__tezis {
+      display: none; }
 
   .footer__menu-list-wrapper {
-    gap: 90px; } }
+    gap: 90px; }
+
+  .filter-tags-component__wrapper .tags-filters__container .filters-wrapper .filter-clear:before {
+    top: 1px; } }
 @media only screen and (max-width: 1180px) {
   .header,
   .footer,
@@ -8456,6 +8516,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-portfolio .container,
   .redesign-common .container,
   .redesign-experty .container,
+  .redesign-archive .container,
   .preservice .container {
     padding-left: 30px;
     padding-right: 30px; }
@@ -8758,7 +8819,39 @@ svg.svg-hover-filter-clear:hover {
     .redesign-blog__items .card .info-wrapper .heading {
       font-size: 22px; }
     .redesign-blog__items .card .info-wrapper .description {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .redesign-experty-projects {
+    flex-wrap: wrap; }
+  .redesign-experty .info .desc {
+    width: 80%; }
+  .redesign-portfolio__list .card__wrapper {
+    padding: 14px; }
+    .redesign-portfolio__list .card__wrapper .head {
+      font-size: 20px; }
+    .redesign-portfolio__list .card__wrapper .desc {
+      font-size: 18px; }
+  .redesign-feedback .container {
+    gap: 40px; }
+    .redesign-feedback .container svg {
+      height: auto; }
+  .redesign-feedback-text {
+    font-size: 20px; }
+  .redesign-archive__header {
+    margin-bottom: 40px; }
+  .redesign-archive .card__head {
+    font-size: 42px; }
+  .redesign-archive .container, .redesign-feedback .container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .redesign-experty {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+
+  .display-tablet-lower {
+    display: none; }
+
+  .filter-tags-component__wrapper .tags {
+    margin-bottom: 40px; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
@@ -9542,7 +9635,10 @@ svg.svg-hover-filter-clear:hover {
         grid-column: 1/4;
         max-width: 66%; }
         .subheader-grid-card-sub:first-child {
-          grid-row: 1/auto; } }
+          grid-row: 1/auto; }
+
+  .filter-tags-component__wrapper .tags__selected div:after {
+    top: 0; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -10282,6 +10378,14 @@ svg.svg-hover-filter-clear:hover {
       font-size: 24px; }
       .redesign-projects-slide .wrapper .tags .tag {
         font-size: 12px; }
+  .redesign-feedback-text {
+    font-size: 18px; }
+  .redesign-experty-projects {
+    gap: 40px;
+    padding: 0 30px;
+    justify-content: space-between; }
+  .redesign-experty .info .desc {
+    width: 100%; }
 
   .preservice-blocks .card-head {
     font-size: 28px; }
@@ -10901,7 +11005,12 @@ svg.svg-hover-filter-clear:hover {
         font-size: 12px; }
 
   .footer .text a {
-    text-wrap: nowrap; } }
+    text-wrap: nowrap; }
+
+  .redesign-portfolio__list {
+    grid-template-columns: 100%; }
+  .redesign-portfolio .card {
+    width: 100%; } }
 @media only screen and (min-width: 551px) {
   .footer__menu-list {
     width: 50%;
@@ -11875,7 +11984,14 @@ svg.svg-hover-filter-clear:hover {
   .footer__copyright {
     flex-flow: column nowrap; }
     .footer__copyright span {
-      margin: 0; } }
+      margin: 0; }
+
+  .filter-tags-component__wrapper .tags-filters__container .filters-wrapper {
+    grid-template-columns: repeat(3, 20vw); }
+  .filter-tags-component__wrapper .tags__selected div:after {
+    top: -2px; }
+  .filter-tags-component__wrapper .tags-filters__container .filters-wrapper .filter-clear:before {
+    top: -1px; } }
 @media only screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 40px; }
@@ -12452,6 +12568,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-portfolio .container,
   .redesign-common .container,
   .redesign-experty .container,
+  .redesign-archive .container,
   .preservice .container {
     max-width: 100%;
     margin: 0;
@@ -12460,9 +12577,6 @@ svg.svg-hover-filter-clear:hover {
 
   .top.redesign {
     padding: 0; }
-
-  .redesign-features-list {
-    letter-spacing: 1.2px; }
 
   .preservice-blocks .card-head {
     font-size: 28px; }
@@ -12505,8 +12619,21 @@ svg.svg-hover-filter-clear:hover {
   .top.redesign {
     margin-bottom: 60px; }
 
+  .redesign-features-list {
+    letter-spacing: 1.2px; }
+  .redesign-feedback-text {
+    font-size: 16px; }
   .redesign-blog {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+  .redesign-archive__header {
+    font-size: 60px; }
+  .redesign-archive .card__head {
+    font-size: 36px; }
+  .redesign-archive .card__desc {
+    font-size: 16px; }
+  .redesign-acrhive .container, .redesign-feedback .container {
+    padding-top: 40px;
+    padding-bottom: 40px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
@@ -12655,7 +12782,12 @@ svg.svg-hover-filter-clear:hover {
       width: 110px; }
 
   .top.redesign {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .redesign-portfolio__list .card__wrapper .head {
+    font-size: 5.5vw; }
+  .redesign-portfolio__list .card__wrapper .desc {
+    font-size: 4vw; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }
