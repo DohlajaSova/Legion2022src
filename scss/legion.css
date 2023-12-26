@@ -7446,6 +7446,25 @@ svg.svg-hover-filter-clear:hover {
           max-height: 100%; }
     .redesign-archive .card__tag {
       color: #949191; }
+  .redesign-archive__pagination {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    margin-top: 40px; }
+    .redesign-archive__pagination .page-wrapper {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 10px;
+      color: var(--Grey-Dark, #949191);
+      padding: 0 12px;
+      font-size: 16px;
+      line-height: 30px;
+      /* 187.5% */
+      border-radius: 20px;
+      border: 1px solid var(--Black, #141414); }
+      .redesign-archive__pagination .page-wrapper.active {
+        color: var(--Black, #141414); }
 
 .filter-tags-component__wrapper .tags {
   display: flex;
@@ -8830,6 +8849,10 @@ svg.svg-hover-filter-clear:hover {
       font-size: 20px; }
     .redesign-portfolio__list .card__wrapper .desc {
       font-size: 18px; }
+  .redesign-portfolio .filter-tags-component__wrapper .tags-filters__container {
+    max-width: none;
+    padding-left: 30px;
+    padding-right: 30px; }
   .redesign-feedback .container {
     gap: 40px; }
     .redesign-feedback .container svg {
@@ -10383,7 +10406,7 @@ svg.svg-hover-filter-clear:hover {
   .redesign-experty-projects {
     gap: 40px;
     padding: 0 30px;
-    justify-content: space-between; }
+    justify-content: center; }
   .redesign-experty .info .desc {
     width: 100%; }
 
@@ -12625,6 +12648,8 @@ svg.svg-hover-filter-clear:hover {
     font-size: 16px; }
   .redesign-blog {
     padding-top: 40px; }
+  .redesign-experty-projects {
+    justify-content: space-around; }
   .redesign-archive__header {
     font-size: 60px; }
   .redesign-archive .card__head {
