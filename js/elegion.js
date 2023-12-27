@@ -2353,7 +2353,7 @@ docReady(function () {
             // add listener -- outer click
             if(!tagCategoriesListener) {
                 document.addEventListener("click", function (e) {
-                    e.preventDefault(); 
+                    // e.preventDefault();
                     tagCategoriesListener = true;
                     if(!hasCommonElements(
                         [...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)],
@@ -2588,6 +2588,16 @@ docReady(function () {
                 mouseDrag: true,
                 slideBy: 'page'
             });
+        })
+    }
+
+    if (document.querySelectorAll(".js-window-location").length > 0) {
+        Array.from(document.querySelectorAll(".js-window-location")).forEach(link => {
+            link.addEventListener("click", () => {
+                if(link.dataset.href) {
+                    window.location = link.dataset.href;
+                }
+            })
         })
     }
     //--redesign
