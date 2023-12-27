@@ -9,7 +9,7 @@
           Консалтинг. Разработка. Цифровое преимущество.
         </span>
       </div>
-      <svg id="svghover" width="828" height="268" viewbox="0 0 828 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="svghover" width="828" height="268" viewbox="0 0 828 268" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="158.5" y="50.5" width="511" height="167" rx="83.5" stroke="black" />
         <rect x="0.5" y="0.5" width="827" height="267" rx="133.5" stroke="black" />
         <rect x="135.5" y="44.5" width="557" height="179" rx="89.5" stroke="black" />
@@ -24,7 +24,7 @@
             <!-- <animate attributename="fill" values="#fff; #fff; black" dur="1s" repeatcount="0" begin="svghover.mouseenter" end="svghover.mouseleave" fill="freeze"></animate> -->
           </path>
           <!-- end="svghover.mouseleave"  -->
-          <rect id="svg-rect-move-right" x="174.5" y="66.5" width="135" height="135" rx="67.5" stroke="black" >
+          <rect class="svg-rect-move-right" x="174.5" y="66.5" width="135" height="135" rx="67.5" stroke="black" >
             <!-- <animate attributename="x" values="174.5; 518" dur="1s" repeatcount="0" begin="svghover.mouseenter"  fill="freeze"></animate> -->
             <!-- <animate attributename="fill" values="#fff; #1A60FF" dur="1s" repeatcount="0" begin="svghover.mouseenter" fill="freeze"></animate> -->
             <!-- <animate attributename="stroke" values="black; #1A60FF" dur="1s" repeatcount="0" begin="svghover.mouseenter" fill="freeze"></animate> -->

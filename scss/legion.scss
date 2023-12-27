@@ -6164,6 +6164,11 @@ a.button {
 				text-decoration: none;
 			}
 		}
+		&_about {
+			svg {
+				margin-bottom: -3px;
+			}
+		}
 	}
 
 	.body_blog & {
@@ -9559,10 +9564,25 @@ svg.svg-added-filter {
 	* {
 		transition: fill .25s;
 	}
-	*[fill="black"],*[fill="#000"],*[fill="#000000"],*[fill="#141414"],*[fill="#009EE1"], *[fill="#1F5EC7"], *[fill="#0079C0"], *[fill="#EB2316"], *[fill="#EF3124"] {
+	*[fill="black"],
+	*[fill="#000"],
+	*[fill="#000000"],
+	*[fill="#141414"],
+	*[fill="#009EE1"],
+	*[fill="#1F5EC7"],
+	*[fill="#0079C0"],
+	*[fill="#EB2316"],
+	*[fill="#21A038"],
+	*[fill="#FC3F1D"],
+	*[fill="#E83A89"],
+	*[fill="#EF3124"]
+	{
 		fill: #696868;
 	}
-	*[fill="#D0AF2C"], *[fill="#6EE9D5"]{
+	*[fill="#D0AF2C"],
+	*[fill="#FF8732"],
+	*[fill="#D62300"],
+	*[fill="#6EE9D5"]{
 		fill: #AAA;
 	}
 	*[fill="#18C0EB"]{
@@ -9573,6 +9593,11 @@ svg.svg-added-filter {
 	}
 	*[fill="#008F32"]{
 		fill: #949191;
+	}
+	*[fill="#F2E913"],
+	*[fill="#F5EBDC"]
+	{
+		fill: #ECECEC;
 	}
 
 	stop {
@@ -9619,6 +9644,33 @@ svg.svg-added-filter {
 			*[fill="#EF3124"]{
 				fill: #EF3124;
 			}
+			*[fill="#0291EB"]{
+				fill: #0291EB;
+			}	
+			*[fill="#21A038"]{
+				fill: #21A038;
+			}
+			*[fill="#FC3F1D"]{
+				fill: #FC3F1D;
+			}
+			*[fill="#E83A89"]{
+				fill: #E83A89;
+			}
+			*[fill="#D0AF2C"]{
+				fill: #D0AF2C;
+			}
+			*[fill="#FF8732"]{
+				fill: #FF8732;
+			}
+			*[fill="#D62300"]{
+				fill: #D62300;
+			}
+			*[fill="#F2E913"]{
+				fill: #F2E913;
+			}
+			*[fill="#F5EBDC"]{
+				fill: #F5EBDC;
+			}
 			stop[stop-color="#6600C6"]{
 				stop-color: #6600C6;
 			}
@@ -9628,56 +9680,193 @@ svg.svg-added-filter {
 			stop[stop-color="#F45E00"]{
 				stop-color: #F45E00;
 			}
+			// sber svg
+			
+			stop[stop-color="#F2E913"]{
+				stop-color: #F2E913;
+			}
+			stop[stop-color="#E7E518"] {
+				stop-color: #E7E518;
+			}
+			stop[stop-color="#CADB26"] {
+				stop-color: #CADB26;
+			}
+			stop[stop-color="#A3CD39"] {
+				stop-color: #A3CD39;
+			}
+			stop[stop-color="#0FA8E0"] {
+				stop-color: #0FA8E0;
+			}
+			stop[stop-color="#0099F9"] {
+				stop-color: #0099F9;
+			}
+			stop[stop-color="#0291EB"] {
+				stop-color: #0291EB;
+			}
+			stop[stop-color="#A3CD39"] {
+				stop-color: #A3CD39;
+			}
+			stop[stop-color="#86C339"] {
+				stop-color: #86C339;
+			}
+			stop[stop-color="#21A038"] {
+				stop-color: #21A038;
+			}
+			stop[stop-color="#0C8ACB"] {
+				stop-color: #0C8ACB;
+			}
+			stop[stop-color="#F2E913"] {
+				stop-color: #F2E913;
+			}
+			stop[stop-color="#EBE716"] {
+				stop-color: #EBE716;
+			}
+			stop[stop-color="#D9E01F"] {
+				stop-color: #D9E01F;
+			}
+			stop[stop-color="#BBD62D"] {
+				stop-color: #BBD62D;
+			}
+			stop[stop-color="#81C55F"] {
+				stop-color: #81C55F;
+			}
+			stop[stop-color="#0FA8E0"] {
+				stop-color: #0FA8E0;
+			}
+			//-- sber svg
 		}
 	}
 }
 svg.svg-hover-filter-clear {
 	&:hover {
-		cursor: pointer;
-		*[fill="black"],*[fill="#000"],*[fill="#000000"] {
-			fill: #000;
-		}
-		*[fill="#141414"]{
-			fill: #141414;
-		}
-		*[fill="#009EE1"]{
-			fill: #009EE1;
-		}
-		*[fill="#D0AF2C"]{
-			fill: #D0AF2C;
-		}
-		*[fill="#1F5EC7"]{
-			fill: #1F5EC7;
-		}
-		*[fill="#18C0EB"]{
-			fill: #18C0EB;
-		}
-		*[fill="#6EE9D5"]{
-			fill: #6EE9D5;
-		}
-		*[fill="#FFDD2D"]{
-			fill: #FFDD2D;
-		}
-		*[fill="#0079C0"]{
-			fill: #0079C0;
-		}
-		*[fill="#008F32"]{
-			fill: #008F32;
-		}
-		*[fill="#EB2316"]{
-			fill: #EB2316;
-		}
-		*[fill="#EF3124"]{
-			fill: #EF3124;
-		}
-		stop[stop-color="#6600C6"]{
-			stop-color: #6600C6;
-		}
-		stop[stop-color="#C9155C"]{
-			stop-color: #C9155C;
-		}
-		stop[stop-color="#F45E00"]{
-			stop-color: #F45E00;
+		svg {
+			*[fill="black"],*[fill="#000"],*[fill="#000000"] {
+				fill: #000;
+			}
+			*[fill="#141414"]{
+				fill: #141414;
+			}
+			*[fill="#009EE1"]{
+				fill: #009EE1;
+			}
+			*[fill="#D0AF2C"]{
+				fill: #D0AF2C;
+			}
+			*[fill="#1F5EC7"]{
+				fill: #1F5EC7;
+			}
+			*[fill="#18C0EB"]{
+				fill: #18C0EB;
+			}
+			*[fill="#6EE9D5"]{
+				fill: #6EE9D5;
+			}
+			*[fill="#FFDD2D"]{
+				fill: #FFDD2D;
+			}
+			*[fill="#0079C0"]{
+				fill: #0079C0;
+			}
+			*[fill="#008F32"]{
+				fill: #008F32;
+			}
+			*[fill="#EB2316"]{
+				fill: #EB2316;
+			}
+			*[fill="#EF3124"]{
+				fill: #EF3124;
+			}
+			*[fill="#0291EB"]{
+				fill: #0291EB;
+			}
+			*[fill="#21A038"]{
+				fill: #21A038;
+			}
+			*[fill="#FC3F1D"]{
+				fill: #FC3F1D;
+			}
+			*[fill="#E83A89"]{
+				fill: #E83A89;
+			}
+			*[fill="#D0AF2C"]{
+				fill: #D0AF2C;
+			}
+			*[fill="#FF8732"]{
+				fill: #FF8732;
+			}
+			*[fill="#D62300"]{
+				fill: #D62300;
+			}
+			*[fill="#F2E913"]{
+				fill: #F2E913;
+			}
+			*[fill="#F5EBDC"]{
+				fill: #F5EBDC;
+			}
+			stop[stop-color="#6600C6"]{
+				stop-color: #6600C6;
+			}
+			stop[stop-color="#C9155C"]{
+				stop-color: #C9155C;
+			}
+			stop[stop-color="#F45E00"]{
+				stop-color: #F45E00;
+			}
+			// sber svg
+			
+			stop[stop-color="#F2E913"]{
+				stop-color: #F2E913;
+			}
+			stop[stop-color="#E7E518"] {
+				stop-color: #E7E518;
+			}
+			stop[stop-color="#CADB26"] {
+				stop-color: #CADB26;
+			}
+			stop[stop-color="#A3CD39"] {
+				stop-color: #A3CD39;
+			}
+			stop[stop-color="#0FA8E0"] {
+				stop-color: #0FA8E0;
+			}
+			stop[stop-color="#0099F9"] {
+				stop-color: #0099F9;
+			}
+			stop[stop-color="#0291EB"] {
+				stop-color: #0291EB;
+			}
+			stop[stop-color="#A3CD39"] {
+				stop-color: #A3CD39;
+			}
+			stop[stop-color="#86C339"] {
+				stop-color: #86C339;
+			}
+			stop[stop-color="#21A038"] {
+				stop-color: #21A038;
+			}
+			stop[stop-color="#0C8ACB"] {
+				stop-color: #0C8ACB;
+			}
+			stop[stop-color="#F2E913"] {
+				stop-color: #F2E913;
+			}
+			stop[stop-color="#EBE716"] {
+				stop-color: #EBE716;
+			}
+			stop[stop-color="#D9E01F"] {
+				stop-color: #D9E01F;
+			}
+			stop[stop-color="#BBD62D"] {
+				stop-color: #BBD62D;
+			}
+			stop[stop-color="#81C55F"] {
+				stop-color: #81C55F;
+			}
+			stop[stop-color="#0FA8E0"] {
+				stop-color: #0FA8E0;
+			}
+			//-- sber svg
+
 		}
 	}
 }
@@ -9942,36 +10131,36 @@ svg.svg-hover-filter-clear {
 		}
 	}
 }
-#svghover:hover  {
-	path#svg-path-move-right{
+.svghover:hover  {
+	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3{
 		fill: $color-white;
 		transform: translate(340px);
 	}
-	rect#svg-rect-move-right {
+	rect#svg-rect-move-right, rect#svg-rect-move-right-2, rect#svg-rect-move-right-3 {
 		transform: translate(340px);
 		fill:  #1A60FF;
 		stroke:  #1A60FF;
 	}
-	path#svg-path-fill {
+	path#svg-path-fill, path#svg-path-fill-2, path#svg-path-fill-3 {
 		fill: black;
 		transition: fill .8s;
 		transition-delay: .2s;
 	}
 }
-#svghover {
+.svghover {
 	min-height: 170px;
 	height: auto;
 	cursor: pointer;
-    max-width: 650px;
-	path#svg-path-move-right{
+    max-width: 650px!important;
+	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3 {
 		transition: fill .8s, transform .8s;
 	}
-	rect#svg-rect-move-right {
+	rect#svg-rect-move-right, rect#svg-rect-move-right-2, rect#svg-rect-move-right-3 {
 		transition: fill .8s, stroke .8s, transform .8s;
 		fill: $color-white;
 		stroke: $color-black;
 	}
-	path#svg-path-fill {
+	path#svg-path-fill, path#svg-path-fill-2, path#svg-path-fill-3 {
 		transition: fill .5s;
 		fill:  transparent;
 	}
