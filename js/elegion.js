@@ -2406,7 +2406,34 @@ docReady(function () {
                     // active tags
                     const tagToToggle = Array.from(tagActives).find(tag => tag.dataset.filterTag === filt.dataset.filterTag);
                     if(tagToToggle) {
-                        tagToToggle.classList.contains("hidden") ? tagToToggle.classList.remove("hidden") : tagToToggle.classList.add("hidden");
+                        if(tagToToggle.classList.contains("hidden")) {
+                            tagToToggle.classList.remove("hidden");
+                            //click on active filter
+                            tagToToggle.addEventListener("click", () => {
+                                filt.classList.remove("active");
+                                tagToToggle.classList.add("hidden");
+                                activeFilters.delete(findex);
+                                // publcations show|hide
+                                if(!activeFilters.size) {
+                                    // no filters
+                                    Array.from(publications).forEach(pub => {
+                                        pub.classList.remove("hidden");
+                                    })
+                                } else {
+                                    // with filters
+                                    Array.from(publications).forEach(pub => {
+                                        pub.classList.remove("hidden");
+                                        if(!hasCommonElements(Array.from(activeFilters.values()), [pub.dataset.tag])) {
+                                            pub.classList.add("hidden");
+                                        }
+                                    })
+                                }
+                                console.log({tagActives})
+                                console.log("click")
+                            })
+                        } else {
+                            tagToToggle.classList.add("hidden");
+                        }
                     }
                     if(filt.classList.contains("active")) {
                         filt.classList.remove("active");
