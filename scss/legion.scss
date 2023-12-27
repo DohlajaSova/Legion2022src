@@ -9962,6 +9962,7 @@ svg.svg-hover-filter-clear {
 	min-height: 170px;
 	height: auto;
 	cursor: pointer;
+    max-width: 650px;
 	path#svg-path-move-right{
 		transition: fill .8s, transform .8s;
 	}
@@ -10135,7 +10136,7 @@ svg.svg-hover-filter-clear {
 			font-size: 20px;
 			line-height: 130%; /* 28.6px */
 			max-width: 50%;
-			margin-bottom: 120px;
+			margin-bottom: 100px;
 		}
 		svg {
     		max-width: 100%;
