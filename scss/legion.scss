@@ -6265,6 +6265,11 @@ a.button {
 			margin-left: 0;
 		}
 	}
+	.footer__redesign {
+		.footer__menu-list-wrapper {
+			width: unset;
+		}	
+	}
 }
 
 .dummy {
