@@ -2428,8 +2428,6 @@ docReady(function () {
                                         }
                                     })
                                 }
-                                console.log({tagActives})
-                                console.log("click")
                             })
                         } else {
                             tagToToggle.classList.add("hidden");
