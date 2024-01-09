@@ -2460,6 +2460,44 @@ docReady(function () {
         })
     }
     //tags single filters
+               
+    //Архив портфолио, пейджинг. Размер страницы - 4 элемента
+    let archiveList = document.querySelector(".js-portfolio-archive");
+    const pageSize = 4;
+    if (archiveList){
+        let archiveCards = archiveList.querySelectorAll('.card');
+        console.log(archiveCards);
+        if (archiveCards.length > pageSize){
+            let curPageNumber = 1;
+            let pagesNumber = Math.ceil(archiveCards.length / pageSize);
+            archiveList.innerHTML = '';
+
+            for (i=1; i<pagesNumber+1; i++){
+                let nextPageContainer = document.createElement('div');
+                nextPageContainer.className = 'projects__list js-archive-projects-page';
+                if (i > 1) nextPageContainer.className += ' hidden';
+                nextPageContainer.dataset.filterPage = i;
+                for (j=(i-1)*pageSize; j<i*pageSize; j++){
+                    if (j<archiveCards.length){
+                        nextPageContainer.innerHTML += archiveCards[j].outerHTML;
+                    }
+                }
+                archiveList.innerHTML += nextPageContainer.outerHTML;
+            }
+
+            let paginatorContainer = document.createElement('div');
+            paginatorContainer.className = 'redesign-archive__pagination';
+            for (i=1; i<pagesNumber+1; i++){
+                let nextPaginatorElement = document.createElement('div');
+                nextPaginatorElement.className = 'page-wrapper js-page-switcher';
+                if (i == 1) nextPaginatorElement.className += ' active';
+                nextPaginatorElement.dataset.pageSwitch = i;
+                nextPaginatorElement.innerHTML = '<div class="page" data-page-switch="'+i+'">'+i+'</div>';
+                paginatorContainer.innerHTML += nextPaginatorElement.outerHTML;
+            }
+            archiveList.innerHTML += paginatorContainer.outerHTML;
+        }
+    }
 
     if (document.querySelectorAll(".js-page-switcher").length > 0) {
         const pagination = document.querySelectorAll(".js-page-switcher");

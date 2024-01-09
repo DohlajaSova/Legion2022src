@@ -1074,22 +1074,25 @@ a.button {
 
 		&:last-child {
 			margin-right: 0;
+            width: auto;
+            border-radius: 30px;
 		}
         &.social_blog{
             font-size: 18px;
             line-height: 1;
             width: fit-content;
             background-color: transparent;
-            border: 2px solid $color-blue-light;
+            border: 1.5px solid $color-blue-clean;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 9px 14px;
             border-radius: 30px;
-            color: $color-blue-light;
+            color: $color-blue-clean;
             &:hover{
                 color: $color-white;
                 text-decoration: none;
+                background: $color-blue-clean;
             }
         }
         &:hover{
@@ -6184,11 +6187,15 @@ a.button {
                 background-color: $color-blue-dark;
                 &.social_blog{
                     background-color:transparent;
-                    color: $color-blue-light;
+                    color: $color-blue-clean;
+                    border: 1.5px solid $color-blue-clean;
                     &:hover{
-                        background-color: $color-blue-light;
-                        color:$color-white;
+                        background-color: $color-blue-clean;
+                        color: $color-white;
                     }
+                }
+                &:last-child{
+                    background-color: transparent;
                 }
             }
             &_fb {
@@ -9379,6 +9386,7 @@ a.button {
 	padding: 8px 16px;
 	border-radius:30px;
 	transition: border-color .25s, background-color .25s, color .25s;
+    width: auto;
 	&:hover {
 		text-decoration: unset;
 		cursor: pointer;
@@ -9388,13 +9396,13 @@ a.button {
 		border: 1.5px solid $color-blue-clean;
 	}
 	&.blue-clean:hover {
-		color: #fff;
+		color: $color-white;
 		background-color: $color-blue-clean;
 	}
 	&.hover-blue:hover {
-		color: #fff;
-		border-color: $color-blue-clean;
-		background-color: $color-blue-clean;
+		color: $color-white !important;
+		border-color: $color-blue-clean !important;
+		background-color: $color-blue-clean !important;
 	}
 }
 
