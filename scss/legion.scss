@@ -1096,6 +1096,9 @@ a.button {
             background-color: $color-black;
         }
     }
+	div.circletext {
+		width: auto;
+	}
 
 	&_fb {
 		background-image: url($img-path + "icon-social-f.svg");
