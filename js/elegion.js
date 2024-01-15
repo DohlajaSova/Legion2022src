@@ -1445,7 +1445,7 @@ docReady(function () {
                 for (i = 0; i < newsTypes.length; i++) {
                     let types = new Array();
                     for (j = 0; j < newsBlocks[one].children.length; j++) {
-                        let typeString = newsBlocks[one].children[j].dataset.cats.slice(1, newsBlocks[one].children[j].dataset.cats.length - 1);
+                        let typeString = newsBlocks[one].children[j].dataset.tags.slice(1, newsBlocks[one].children[j].dataset.tags.length - 1);
                         types[j] = typeString.split(",");
                     }
                     removeOverBlocks(newsBlocks[one], data.limit, data.limitStable, data, moreButton);
