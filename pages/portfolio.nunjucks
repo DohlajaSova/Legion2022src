@@ -7,7 +7,7 @@
 
 <div class="redesign-portfolio">
   <div class="container">
-    <h1 class="portfolio-header">Проекты и кейсы</h1>
+    <h1 class="redesign-portfolio__header">Проекты и кейсы</h1>
   </div>
   <div class="filter-tags-component__wrapper">
     <div class="tags">

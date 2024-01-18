@@ -10,7 +10,7 @@
                 <span class="subheader-grid-card-header">№1</span>
                 <p class="subheader-grid-card-text">Рейтинг Рунета 2023 «Разработка МП полного цикла»</p>
             </div>
-            <div class="subheader-grid-card svg-hover-filter-clear">
+            <div class="subheader-grid-card svg-hover-filter-clear js-window-location" data-href="/[[~10]]">
                 <!-- <img class="subheader-grid-card-image" src="/assets/css/img/redesign/logo_zenit.webp" height="120px" alt="Zenit"> -->
                 <svg class="svg-added-filter" xmlns="http://www.w3.org/2000/svg" width="183" height="120"
                     viewbox="0 0 183 120" fill="none">
@@ -43,7 +43,7 @@
                 </svg>
                 <div class="subheader-grid-card-category">sports</div>
             </div>
-            <div class="subheader-grid-card svg-hover-filter-clear">
+            <div class="subheader-grid-card svg-hover-filter-clear js-window-location" data-href="/[[~10]]">
                 <!-- <img class="subheader-grid-card-image" src="/assets/css/img/redesign/logo_tele2.webp" height="60px" alt="Tele2"> -->
                 <svg class="svg-added-filter" xmlns="http://www.w3.org/2000/svg" width="160" height="61"
                     viewbox="0 0 160 61" fill="none">
@@ -69,7 +69,7 @@
                 </svg>
                 <div class="subheader-grid-card-category">telecom</div>
             </div>
-            <div class="subheader-grid-card svg-hover-filter-clear">
+            <div class="subheader-grid-card svg-hover-filter-clear js-window-location" data-href="/[[~10]]">
                 <!-- <img class="subheader-grid-card-image" src="/assets/css/img/redesign/logo_medlinx.webp" height="64px" alt="Medlinx"> -->
                 <svg class="svg-added-filter" xmlns="http://www.w3.org/2000/svg" width="196" height="64"
                     viewbox="0 0 196 64" fill="none">
@@ -104,7 +104,7 @@
                 </svg>
                 <div class="subheader-grid-card-category">medtech</div>
             </div>
-            <div class="subheader-grid-card svg-hover-filter-clear">
+            <div class="subheader-grid-card svg-hover-filter-clear js-window-location" data-href="/[[~10]]">
                 <svg class="svg-added-filter" xmlns="http://www.w3.org/2000/svg" width="166" height="120"
                     viewbox="0 0 166 120" fill="none">
                     <g clip-path="url(#clip0_2_1901)">
@@ -226,7 +226,7 @@
                 <!-- <img class="subheader-grid-card-image" src="/assets/css/img/redesign/logo_tinkoff.webp" height="120px" alt="Tinkoff"> -->
                 <div class="subheader-grid-card-category">fintech</div>
             </div>
-            <div class="subheader-grid-card subheader-grid-card-double">
+            <div class="subheader-grid-card subheader-grid-card-double js-window-location" data-href="/[[~10]]">
                 <img class="subheader-grid-card-image" src="/assets/css/img/redesign/background_subheader-card.png" height="120px" alt="">
                 <div class="subheader-grid-card-category">real estate</div>
             </div>

@@ -1817,6 +1817,13 @@
                 width: 100%;
             }
         }
+        &-feedback {
+            .container {
+                svg {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
 
