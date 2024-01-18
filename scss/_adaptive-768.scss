@@ -1843,6 +1843,11 @@
     h3, .h3 {
         font-size:18px;
     }
+    .header{
+        &__logo{
+            height: 25px;
+        }
+    }
     .breadcrumbs li::after{
         top:1px;
     }
@@ -3329,5 +3334,69 @@
         }
 
     }
-    // --
+    
+    .topcase{
+        &__outer{
+            grid-gap: 17px;
+        }
+        &.top.redesign{
+            padding-top: 0;
+            margin-top: -11px;
+            margin-bottom: 40px;
+        }
+        & > .container h1{
+            margin-bottom: 38px;
+        }
+        &__brief{
+            &_subhead{
+                margin-bottom: 19px;
+                & > div{
+                    margin-bottom: 2px;
+                }
+                .h3{
+                    margin-bottom: 3px;
+                }
+            }
+            & > div{
+                font-size: 12px;
+            }
+            & > p{
+                font-size: 14px;
+            }
+            .h3{
+                font-size: 26px;
+            }
+            &_medals{
+                margin-bottom: 15px;
+                &.medals .medals__title{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+            }
+            &_stores.store{
+                height: 40px;
+                a{
+                    width: 135px;
+                    height: 40px;
+                }
+            }
+        }
+        &__photo{
+            padding-bottom: 100%;
+            &::after{
+                border-radius: 16px;
+            }
+            &_img{
+                border-radius: 16px;
+            }
+            &_tags{
+                left: 14px;
+                bottom: 22px;
+                .component-tags.tags .tag{
+                    font-size: 12px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
 }

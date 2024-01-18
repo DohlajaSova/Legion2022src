@@ -1,12 +1,11 @@
-<div class="top top_case topcase">
+<div class="top top_case topcase redesign">
     <div class="container">
         <h1>Пятёрочка</h1>
         
         <div class="topcase__outer">
-        
-            <div class="topcase__brief">
+            <div class="topcase__descr">Мобильное приложение<br>«Пятёрочка: доставка продуктов»</div>
 
-                <div class="topcase__brief_descr">Мобильное приложение<br>«Пятёрочка: доставка продуктов»</div>
+            <div class="topcase__brief">
                 <div class="topcase__brief_subhead">
                     <div>заказчик</div>
                     <h2 class="h3">X5 Retail Group</h2>
@@ -23,8 +22,8 @@
                 </div>
 
                 <div class="topcase__brief_stores store">
-                    <a href="" class="store_android"></a>
                     <a href="" class="store_ios"></a>
+                    <a href="" class="store_android"></a>
                 </div>
             </div>
 
