@@ -307,6 +307,14 @@
     .astralinux-container .content-container .content-card {
         min-height: 25em;
     }
+    .topcase{
+        &__brief{
+            &_descr,
+            &_subhead{
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 @media(min-width: 1280px) {
@@ -321,7 +329,8 @@
     .redesign-common,
     .redesign-experty,
     .redesign-archive,
-    .preservice {
+    .preservice,
+    .broadwise {
         .container {
             max-width: 1087px;
             padding-left:160px;
@@ -336,14 +345,18 @@
 		font-size:15px;
 	}
 	h1, .h1 {
-		font-size:80px;
+		font-size: 66px;
 	}
 	h2, .h2 {
-		font-size:60px;
+		font-size: 56px;
 	}
 	h3, .h3 {
-		font-size:38px;
+		font-size: 40px;
 	}
+    .header{
+        height: 130px;
+        padding-bottom: 63px;
+    }
     .breadcrumbs li::after{
         top:0;
     }
@@ -651,7 +664,8 @@
     .redesign-common,
     .redesign-experty,
     .redesign-archive,
-    .preservice {
+    .preservice,
+    .broadwise{
         .container {
             max-width: 960px;
             margin: auto;
@@ -713,19 +727,7 @@
             }
         }
     }
-    // .expert {
-    //     .container {
-    //         max-width: 1070px;
-    //         margin: auto;
-    //         padding-left: 30px;
-    //         padding-right: 30px;
-    //     }
-    // }
     .expert {
-        // .container {
-        //     padding-left: calc(100vw - 960px);
-        //     padding-right: 50px;
-        // }
         &-header {
             font-size: 40px;
         }
@@ -902,6 +904,42 @@
         top: 1px;
     }
     // --redesign
+    .topcase{
+        &__descr{
+            font-size: 18px;
+        }
+        &__brief{
+            &_subhead{
+                & > div{
+                    font-size: 14px;
+                }
+                & > p{
+                    font-size: 16px;
+                }
+            }
+            &_medals{
+                &.medals{
+                    .medals__title{
+                        font-size: 14px;
+                    }
+                    img{
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .broadwise{
+        padding: 40px 0;
+        &__item{
+            &_title{
+                font-size: 40px;
+            }
+            &_text{
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -3338,6 +3376,47 @@
     }
     .filter-tags-component__wrapper .tags__selected div:after {
         top: 0;
+    }
+    .topcase{
+        &.top.redesign{
+            padding-top: 30px;
+            margin-bottom: 60px;
+        }
+        &__outer{
+            grid-template-columns: 1fr;
+        }
+        &__descr{
+            font-size: 22px;
+        }
+        &__brief{
+            grid-row: 3/4;
+            &_subhead{
+                margin-bottom: 40px;
+                & > div{
+                    font-size: 16px;
+                }
+                & > p{
+                    font-size: 18px;
+                }
+            }
+            &_medals{
+                margin-bottom: 40px;
+            }
+            &_stores.store{
+                height: 50px;
+                a{
+                    width: 169px;
+                    height: 50px;
+                }
+            }
+            .h3{
+                font-size: 40px;
+            }
+        }
+        &__photo{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
     }
 }
 
