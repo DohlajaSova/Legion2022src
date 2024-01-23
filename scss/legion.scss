@@ -1487,6 +1487,39 @@ a.button {
 		width: 40%;
         display: flex;
         justify-content: flex-end;
+			.social {
+				
+				&_fb {
+						background-image: url($img-path + "icon-social-f-w.svg");
+				}
+
+				&_vk {
+						background-image: url($img-path + "icon-social-vk-w.svg");
+				}
+
+				&_tw {
+						background-image: url($img-path + "icon-social-tw-w.svg");
+				}
+
+				&_yt {
+						background-image: url($img-path + "icon-social-yt-w.svg");
+				}
+
+				&_in {
+						background-image: url($img-path + "icon-social-ig-w.svg");
+				}
+
+				&_h {
+						background-image: url($img-path + "icon-social-h-w.svg");
+				}
+
+				&_vc {
+						background-image: url($img-path + "icon-social-vc-w.svg");
+				}
+				&_t {
+						background-image: url($img-path + "icon-social-t-w.svg");
+				}
+		}
 	}
 
 }
