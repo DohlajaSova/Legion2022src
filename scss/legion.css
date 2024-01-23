@@ -397,8 +397,6 @@ body {
   color: #141414;
   margin: 0 auto;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background: #fff; }
   body.dummy {
@@ -411,7 +409,6 @@ body {
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
   padding: 0; }
 
 a {
@@ -1280,6 +1277,22 @@ a.button {
     width: 40%;
     display: flex;
     justify-content: flex-end; }
+    .pmenu__social .social_fb {
+      background-image: url("img/icon-social-f-w.svg"); }
+    .pmenu__social .social_vk {
+      background-image: url("img/icon-social-vk-w.svg"); }
+    .pmenu__social .social_tw {
+      background-image: url("img/icon-social-tw-w.svg"); }
+    .pmenu__social .social_yt {
+      background-image: url("img/icon-social-yt-w.svg"); }
+    .pmenu__social .social_in {
+      background-image: url("img/icon-social-ig-w.svg"); }
+    .pmenu__social .social_h {
+      background-image: url("img/icon-social-h-w.svg"); }
+    .pmenu__social .social_vc {
+      background-image: url("img/icon-social-vc-w.svg"); }
+    .pmenu__social .social_t {
+      background-image: url("img/icon-social-t-w.svg"); }
 
 .breadcrumbs {
   margin-top: 53px; }

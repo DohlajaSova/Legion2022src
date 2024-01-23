@@ -730,16 +730,19 @@ function generateEditorialTOC(editorial) {
 
 function generateCaseTOC(caseOuter) {
     caseOuter.innerHTML = caseOuter.innerHTML.replace(/<h6 class="js-case-accordion-begin"><\/h6>([\s\S]+)<h6 class="js-case-accordion-end"><\/h6>/gm, '<div class="js-case">$1</div>');
+    
+    let case1;
+    if (document.querySelectorAll(".js-case")[0] != undefined){
+        case1 = document.querySelectorAll(".js-case")[0];
 
-    let case1 = document.querySelectorAll(".js-case")[0];
+        // разбиваем блок аккордеона на блоки <section> по вхождению заголовков <h6>
+        let sectioned = case1.innerHTML.replace(/(([\s\S]*?)<h6>([\s\S]*?)<\/h6>)+?/gm, '<section>$2<a href="" class="close">закрыть/свернуть</a></section><h6 class="container h3">$3</h6>');
+        //console.log(sectioned);
+        sectioned = sectioned.replace(/<h6 class="container h3">([\s\S]*)<\/h6>([\s\S]+)/gm, '<h6 class="container h3">$1</h6><section>$2<a href="" class="close">закрыть/свернуть</a></section>');
+        case1.innerHTML = sectioned;
+    }
 
     let toc = '';
-    // разбиваем блок аккордеона на блоки <section> по вхождению заголовков <h6>
-    let sectioned = case1.innerHTML.replace(/(([\s\S]*?)<h6>([\s\S]*?)<\/h6>)+?/gm, '<section>$2<a href="" class="close">закрыть/свернуть</a></section><h6 class="container h3">$3</h6>');
-    //console.log(sectioned);
-    sectioned = sectioned.replace(/<h6 class="container h3">([\s\S]*)<\/h6>([\s\S]+)/gm, '<h6 class="container h3">$1</h6><section>$2<a href="" class="close">закрыть/свернуть</a></section>');
-    case1.innerHTML = sectioned;
-
     const headings = caseOuter.querySelectorAll('h3, h6');
     if (headings.length) {
         // формируем оглавление
@@ -760,11 +763,13 @@ function generateCaseTOC(caseOuter) {
     }
     else toc = '<aside class="case-container__toc"></aside>'
 
-    let div = document.createElement('div');
-    div.className = 'case-accordion js-case-accordion';
-    if (case1 != '') div.innerHTML = case1.innerHTML;
-    case1.before(div);
-    document.querySelectorAll('.js-case')[0].remove();
+    if (document.querySelectorAll(".js-case")[0] != undefined){
+        let div = document.createElement('div');
+        div.className = 'case-accordion js-case-accordion';
+        if (case1 != undefined) div.innerHTML = case1.innerHTML;
+        case1.before(div);
+        document.querySelectorAll('.js-case')[0].remove();
+    }
     
     document.addEventListener('click', function(e){
         e.preventDefault();
