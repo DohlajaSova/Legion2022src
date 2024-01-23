@@ -40,7 +40,7 @@
                         <div class="map__addresses_block">
                             <p class="map__addresses_title">Москва</p>
                             <p class="map__addresses_street">
-                                <span itemprop="postalCode">117246</span>, <span itemprop="streetAddress">Научный проезд&nbsp;8&nbsp;стр.&thinsp;1, офис&nbsp;431</span><br>
+                                <span itemprop="postalCode">117246</span>, <span itemprop="streetAddress">Научный проезд&nbsp;8&nbsp;стр.&nbsp;1, офис&nbsp;431</span><br>
                                 <a href="tel:+74996537156" itemprop="telephone">+7&nbsp;499&nbsp;653&nbsp;71&nbsp;56</a>
                             </p>
                             <p class="map__addresses_email"><a href="mailto:sales@dz.ru" itemprop="email">sales@dz.ru</a></p>

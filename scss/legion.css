@@ -7444,6 +7444,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         left: 0;
         border-radius: 16px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) -11.48%, rgba(0, 0, 0, 0.07) 46%, rgba(0, 0, 0, 0.6) 99.89%); }
+  .redesign-portfolio__header {
+    margin-bottom: 60px; }
 .redesign-experty {
   opacity: 0.8;
   background: var(--Grey-Light, #F0F0F0);
@@ -11232,7 +11234,9 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   .redesign-portfolio__list {
     grid-template-columns: 100%; }
   .redesign-portfolio .card {
-    width: 100%; } }
+    width: 100%; }
+  .redesign-feedback .container svg {
+    max-width: 100%; } }
 @media only screen and (min-width: 551px) {
   .footer__menu-list {
     width: fit-content;
