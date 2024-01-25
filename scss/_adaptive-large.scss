@@ -1617,6 +1617,12 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+        &.topcase + .broadwise.broadwise_bg{
+            .container{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
     }
 
     .line-breaker {
@@ -3786,6 +3792,26 @@
     .body_astralinux {
         .cases {
             width:100%;
+        }
+    }
+    .broadwise{
+        .top.redesign.topcase + &.broadwise_bg{
+            padding-bottom: 0;
+            .container{
+                flex-flow: wrap;
+                .broadwise__item{
+                    min-width: 50%;
+                    max-width: 50%;
+                    padding-right: 40px;
+                    margin-bottom: 40px;
+                    &_title{
+                        font-size: 46px;
+                    }
+                    &_text{
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }
