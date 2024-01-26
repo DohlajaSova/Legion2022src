@@ -260,6 +260,8 @@ body {
 	color: $color-text;
 	margin: 0 auto;
 	position: relative;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	background: $bg-body;
 
@@ -275,6 +277,7 @@ body {
 html,
 body {
 	height: 100%;
+	overflow-x: hidden;
 	padding: 0;
 }
 
@@ -10915,6 +10918,76 @@ svg.svg-hover-filter-clear {
 	}
 }
 
+#button-container {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	&:disabled {
+		svg#hoversvgrequest {
+			rect#rectanimate1 {
+				transform: translate(-258px, 0);
+				width: 329px;
+			}
+			#pathanimate1 {
+				fill: #fff;
+			}
+			#pathanimate2 {
+				transform: rotate(-45deg) translate(100px, -30px);
+				animation: arrowmove 1.5s ease-in-out infinite;	
+			}
+		}
+	}
+}
+
+svg#hoversvgrequest {
+	rect {
+	  transition: all .3s ease-in-out;
+	}
+	#rectanimate1, #pathanimate1 {
+		transition: transform .5s, width .5s, fill .5s;
+	}
+	#pathanimate2{
+		transition: transform .5s;
+		transform-origin: 88% 50%;
+	}
+	&:hover {
+		rect#rectanimate1 {
+			transform: translate(-258px, 0);
+			width: 329px;
+		}
+		#pathanimate1 {
+			fill: #fff;
+		}
+		#pathanimate2 {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+@keyframes arrowmove {
+	0% {
+		transform: rotate(-45deg) translate(0, 0)
+	}
+	48% {
+		transform: rotate(-45deg) translate(100px, 0px);
+		transition: none;
+	}
+	49% {
+		fill: transparent;
+	}
+	50% {
+		transform: rotate(-45deg) translate(-100px, 0px);
+	}
+	51% {
+		fill: #fff;
+		transform: rotate(-45deg) translate(-100px, 0px);
+		transition: transform .5s;
+	}
+	100% {
+		transform: rotate(-45deg) translate(0, 0)
+	}
+}
 // --redesign
 
 
