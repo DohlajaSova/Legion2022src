@@ -333,8 +333,8 @@
     .broadwise {
         .container {
             max-width: 1087px;
-            padding-left:160px;
-            padding-right:160px;
+            padding-left: 160px;
+            padding-right: 160px;
             box-sizing: content-box;
         }
     }
@@ -669,10 +669,13 @@
         .container {
             max-width: 960px;
             margin: auto;
-            // padding-left: 30px;
-            // padding-right: 30px;
         }
     }
+    .broadwise {
+        .container {
+			padding: 0 30px;
+		}
+	}
     .redesign-portfolio {
         
         .filter-tags-component__wrapper  {
@@ -968,14 +971,23 @@
     .service-descr__accordion,
     .vacancypage,
     .custom-format,
-    .body_astralinux .container{
-        padding-left:30px;
-        padding-right:30px;
+    .body_astralinux .container,
+	.case-column > .container,
+	.case-accordion{
+        padding-left: 30px;
+        padding-right: 30px;
     }
+	.case-column > .container,
+	.case-accordion{
+		max-width: none;
+		& > .h3{
+			max-width: none;
+		}
+	}
     .body_news-ver2{
         .top .container{
-            padding-left:30px;
-            padding-right:30px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
         .editorial-container{
             padding: 0 30px 40px;
