@@ -932,6 +932,10 @@
             }
         }
     }
+    .component-tags.tags .tag{
+        font-size: 14px;
+        line-height: 28px;
+    }
     .broadwise{
         padding: 40px 0;
         &__item{
@@ -942,6 +946,23 @@
                 font-size: 16px;
             }
         }
+    }
+    .case-column{
+        p{
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+        blockquote{
+            p{
+                font-size: 40px;
+                &.author{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .case-awards{
+        font-size: 16px;
     }
 }
 
@@ -1483,7 +1504,15 @@
                     }
                 }
             }
-        }    
+        }
+        &__present {
+            &.case-image{
+                & + p{
+                    top: 30px;
+                    left: 30px;
+                }
+            }
+        }
     }
     .body_aurora {
         .service__feature_inner-case__visual_full {
@@ -3395,6 +3424,9 @@
     .filter-tags-component__wrapper .tags__selected div:after {
         top: 0;
     }
+    .top.redesign .container{
+        max-width: none;
+    }
     .topcase{
         &.top.redesign{
             padding-top: 30px;
@@ -3436,6 +3468,38 @@
             grid-row: 2/3;
         }
     }
+    .component-tags.tags .tag{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .broadwise{
+        &__item{
+            &_title{
+                font-size: 46px;
+            }
+            &_text{
+                font-size: 18px;
+            }
+        }
+    }
+    .case-column{
+        p{
+            font-size: 22px;
+            margin-bottom: 22px;
+        }
+        blockquote{
+            p{
+                font-size: 46px;
+                &.author{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .case-awards{
+        font-size: 18px;
+    }
+
 }
 
 @media only screen and (max-width: 860px) {
