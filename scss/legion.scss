@@ -260,8 +260,6 @@ body {
 	color: $color-text;
 	margin: 0 auto;
 	position: relative;
-	overflow-x: hidden;
-	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	background: $bg-body;
 
@@ -277,7 +275,6 @@ body {
 html,
 body {
 	height: 100%;
-	overflow-x: hidden;
 	padding: 0;
 }
 
@@ -10918,19 +10915,24 @@ svg.svg-hover-filter-clear {
 	}
 }
 
-#button-container {
+.button-svg-animate-container {
 	border: none;
 	outline: none;
 	margin: 0;
 	padding: 0;
 	&:disabled {
-		svg#hoversvgrequest {
+		.hoversvgrequest {
 			rect#rectanimate1 {
 				transform: translate(-258px, 0);
 				width: 329px;
 			}
 			#pathanimate1 {
 				fill: #fff;
+				transform: translate(-400px, 0);
+			}
+			#pathanimate3 {
+				fill: #fff;
+				transform: translate(0, 0);
 			}
 			#pathanimate2 {
 				transform: rotate(-45deg) translate(100px, -30px);
@@ -10940,16 +10942,23 @@ svg.svg-hover-filter-clear {
 	}
 }
 
-svg#hoversvgrequest {
+svg.hoversvgrequest {
+	overflow: hidden;
 	rect {
 	  transition: all .3s ease-in-out;
 	}
-	#rectanimate1, #pathanimate1 {
+	#rectanimate1, #pathanimate1, #pathanimate3 {
 		transition: transform .5s, width .5s, fill .5s;
 	}
 	#pathanimate2{
 		transition: transform .5s;
 		transform-origin: 88% 50%;
+	}
+	#pathanimate3{
+		transition: transform .5s;
+		transform: translate(-400px, 0);
+		fill: transparent;
+			// transform-origin: 88% 50%;
 	}
 	&:hover {
 		rect#rectanimate1 {
