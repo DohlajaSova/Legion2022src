@@ -1,6 +1,6 @@
 <div class="request">
     <div class="container" style="overflow:hidden; background: #fff;">
-        <button class="button-svg-animate-container" onclick="document.getElementsByClassName('button-svg-animate-container')[0].setAttribute('disabled', true)">
+        <button class="button-svg-animate-container">
             <svg class="hoversvgrequest" width="337" height="78" viewBox="0 0 337 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="336" height="77" rx="38.5" fill="white"/>
                 <rect x="0.5" y="0.5" width="336" height="77" rx="38.5" stroke="#141414"/>
