@@ -1235,6 +1235,25 @@
             font-size: 3vw;
         } 
     }
+    .broadwise .container,
+    .case-accordion,
+    .case-column > .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .case-awards{
+        grid-template-columns: 60px minmax(130px,1fr) auto;
+        &__award,
+        &__title{
+            grid-column: 3/4;
+        }
+        &__title{
+            margin-top: -8px;
+        }
+        &__line{
+            grid-column: 1/4;
+        }
+    }
 }
 
 // redesign only

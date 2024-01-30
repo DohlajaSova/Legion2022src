@@ -983,6 +983,10 @@
             }
         }
     }
+    .case-awards{
+        font-size: 16px;
+        grid-template-columns: 42px minmax(140px,1fr) minmax(170px,1fr) auto;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1825,6 +1829,17 @@
             }
         }
     }
+    .case-awards{
+        margin: 0 -30px;
+        grid-template-columns: 72px minmax(140px,1fr) minmax(170px,1fr) auto;
+        &__emblem{
+            width: 72px;
+            padding-left: 30px;
+        }
+        &__title{
+            padding-right: 30px;
+        }
+    }
 }
 
 @media only screen and (min-width: 551px) {
@@ -2208,28 +2223,29 @@
                     margin-bottom: 0;
                 }
                 &::before{
-                    width:27px;
-                    height:27px;
+                    width: 27px;
+                    height: 27px;
+                    line-height: 27px;
                     margin-right:12px;
                     background-size: 14px auto;
                 }
             }
             .case-stages__layout.problems__item p{
                 font-size: 14px;
-                margin-top:14px;
+                margin-top: 14px;
             }
         }
     }
     .problems{
         &__item{
             &_arrow{
-                max-width:100%;
+                max-width: 100%;
             }
             h3{
-                font-size:28px;
+                font-size: 28px;
             }
             p{
-                font-size:16px;
+                font-size: 16px;
             }
             .problems-slider-groups{
                 &__item{
@@ -3423,6 +3439,53 @@
                     }
                 }
             }
+        }
+    }
+    .case-accordion{
+        .h3{
+            font-size: 26px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            &::before{
+                margin-top: -5px;
+            }
+        }
+    }
+    .case-column{
+        margin-bottom: 40px;
+        &_feedback{
+            padding: 30px 0;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        blockquote{
+            padding: 20px 0;
+            margin: 20px 0 27px;
+            p{
+                font-size: 26px;
+                &.author{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .case-awards{
+        font-size: 14px;
+        grid-template-columns: 60px minmax(120px,1fr) minmax(120px,1fr) auto;
+        grid-gap: 6px 10px;
+        padding-top: 3px;
+        &__emblem{
+            width: 60px;
+            height: 30px;
+            padding-left: 30px;
+        }
+        &__emblem,
+        &__grade,
+        &__award,
+        &__title{
+            margin-top: 6px;
         }
     }
 }
