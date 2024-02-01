@@ -1178,6 +1178,7 @@
     </div>
 </div>
 
+<h3 class="height-zero">Хронология</h3>
 <div class="js-timeline" data-width="1">
     <div class="js-timeline-grid">
         <div data-name="Сентябрь" data-start="0"></div>
@@ -1193,10 +1194,11 @@
         <div data-name="Анализ конкурентов" data-fullname="Сравнение с конкурентами по функциональностям" data-text="" data-start="0.7"></div>
         <div data-name="Roadmap" data-fullname="Визуализация плана запуска и результатов проекта" data-text="" data-start="0.8"></div>
         <div data-name="Оценка MVP" data-fullname="Детализация этапов запуска MVP" data-text="" data-start="0.85"></div>
-        <div data-name="Презентация" data-fullname="Презентация отчёта по результатам работы" data-text="" data-start="0.9"></div>
+        <div data-name="Презентация" data-fullname="Презентация отчёта по результатам работы Презентация отчёта по результатам работы Презентация отчёта по результатам работы Презентация отчёта по результатам работы" data-text="" data-start="0.9"></div>
     </div>
 </div>
 
+<h3 class="height-zero">История проекта</h3>
 <div class="broadwise broadwise_download">
     <div class="client__present case-image">
         <img src="/assets/css/img/client-venn-preview.webp" alt="">

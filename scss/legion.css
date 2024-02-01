@@ -368,6 +368,10 @@ input[type="tel"],
 .over-limit {
   display: none !important; }
 
+.height-zero {
+  height: 0;
+  overflow: hidden; }
+
 .nowrap {
   white-space: nowrap; }
 
@@ -1390,6 +1394,7 @@ a.button {
 .topcase__outer {
   display: grid;
   grid-template-columns: 0.38983fr auto;
+  grid-template-rows: minmax(0, min-content) minmax(max-content, auto);
   grid-gap: 25px;
   width: 100%; }
 .topcase__descr {
@@ -6447,7 +6452,6 @@ a.button {
   width: 100%; }
   .timeline_outer {
     position: relative;
-    overflow: hidden;
     background-color: #F0F0F0;
     margin-bottom: 80px; }
   .timeline_container {
@@ -9956,7 +9960,8 @@ svg.hoversvgrequest {
     padding-top: 30px;
     margin-bottom: 60px; }
   .topcase__outer {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
   .topcase__descr {
     font-size: 22px; }
   .topcase__brief {
