@@ -297,6 +297,7 @@
                 display: block;
             }
         }
+        
     }
     .feedback{
         margin-bottom: 60px;
@@ -997,6 +998,9 @@
                 min-height: 24px;
             }
         }
+    }
+    .select-checkmark .select-hide div {
+        width: 100%;
     }
     .back{
         right:15px;
