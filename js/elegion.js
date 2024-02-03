@@ -772,8 +772,8 @@ function generateCaseTOC(caseOuter) {
     }
     
     document.addEventListener('click', function(e){
-        e.preventDefault();
         if (e.target.classList.contains('js-sidetoc')){
+            e.preventDefault();
             if (e.target.classList.contains('closed'))
                 e.target.classList.remove('closed');
             else
@@ -791,8 +791,8 @@ function generateCaseTOC(caseOuter) {
     }, true);
     
     document.addEventListener('click', function(e){
-        e.preventDefault();
         if (e.target.parentElement.parentElement.classList.contains('js-case-accordion') && e.target.classList.contains('close')){
+            e.preventDefault();
             e.target.parentElement.previousElementSibling.classList.remove('active');
             window.scrollTo({ behavior: "smooth", top: e.target.parentElement.previousElementSibling.getBoundingClientRect().top + window.pageYOffset });
         }
@@ -889,6 +889,24 @@ function generateCaseTOC(caseOuter) {
             }
         }
         placeCaseTOC();
+        // переинициализируем слайдер
+        let sliderCases = document.querySelectorAll(".js-cases-slider-groups");
+        let sliderCasesLeftArrow = document.querySelectorAll(".js-cases-groups-arrows-left");
+        let sliderCasesRightArrow = document.querySelectorAll(".js-cases-groups-arrows-right");
+        let sliderCasesSlider = new Array();
+        if (sliderCases.length > 0) {
+            for (i = 0; i < sliderCases.length; i++) {
+                sliderCasesSlider[i] = tns({
+                    container: sliderCases[i],
+                    items: 1,
+                    nav: false,
+                    prevButton: sliderCasesLeftArrow[i],
+                    nextButton: sliderCasesRightArrow[i],
+                    mouseDrag: true,
+                    slideBy: 'page'
+                });
+            }
+        }
         window.addEventListener('touch', placeCaseTOC, true);
         window.addEventListener('scroll', placeCaseTOC, true);
         window.addEventListener('resize', placeCaseTOC, true);

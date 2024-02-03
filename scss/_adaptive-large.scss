@@ -315,6 +315,15 @@
             }
         }
     }
+	.case-container__toc{
+		&-inner{
+			padding-left: 40px;
+			width: 240px;
+		}
+		.sidetoc-menu{
+			left: 40px;
+		}
+	}
 }
 
 @media(min-width: 1280px) {
@@ -3447,6 +3456,7 @@
         }
         &__outer{
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
         }
         &__descr{
             font-size: 22px;
