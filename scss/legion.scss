@@ -1805,7 +1805,7 @@ a.button {
     &__photo{
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 0;
         padding-bottom: 71.2963%;
         grid-column: 2/3;
         grid-row: 1/3;
@@ -1897,6 +1897,7 @@ a.button {
 
 .case-column{
     margin-bottom: 80px;
+    overflow-x: hidden;
     &_feedback{
         background-color: $color-grey-light;
         padding: 60px 0;
@@ -4398,9 +4399,13 @@ a.button {
 
 		&_videosection {
 			margin-bottom: 0;
-			position: static!important;
+			position: static !important;
 			.client__present-video {
-				top: 0;
+                position: absolute;
+                height: 100%;
+                object-fit: cover;
+                left: 0;
+                top: 0;
 			}
 		}
 	}
@@ -8285,7 +8290,9 @@ a.button {
 			height: 100vh;
 		}
         &.case-video{
-            height: 740px;
+            //height: 740px;
+            overflow: auto;
+            max-height: none;
         }
         &.case-image{
             height: auto;
@@ -8334,11 +8341,12 @@ a.button {
 		}
 
 		&-video {
-			position: absolute;
+			//position: absolute;
+			//height: 100%;
+			//object-fit: cover;
+			//left: 0;
+            display: block;
 			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			left: 0;
 		}
 	}
 
@@ -9525,6 +9533,7 @@ a.button {
 			background: rgba(196, 196, 196, 0.40);
 			color: $color-grey-dark;
 			padding: 0 14px;
+            margin-bottom: 4px;
 		}
 		&.tags_first-child-selected {
 			.tag {

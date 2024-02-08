@@ -318,7 +318,8 @@
 	.case-container__toc{
 		&-inner{
 			padding-left: 40px;
-			width: 240px;
+            padding-right: 20px;
+			width: 270px;
 		}
 		.sidetoc-menu{
 			left: 40px;
@@ -547,6 +548,9 @@
             }
             .principles__content{
                 margin-bottom: 50px;
+            }
+            .case-stages__layout_var1{
+                margin-bottom: 60px;
             }
         }
     }
@@ -972,6 +976,25 @@
     }
     .case-awards{
         font-size: 16px;
+    }
+    .case-stages{
+        &__list{
+            li{
+                font-size: 18px;
+                margin-bottom: 19px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &::before{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 12px;
+                }
+            }
+        }
+        &__layout.problems__item p{
+            font-size: 18px;
+        }
     }
 }
 
@@ -1558,6 +1581,63 @@
         }
     }
     // --
+    .case-accordion{
+        & > section {
+            margin: 0 -30px;
+            .close{
+                max-width: none;
+                padding-right: 30px;
+            }
+        }
+    }
+    .case-column{
+        p{
+            font-size: 22px;
+            margin-bottom: 22px;
+        }
+        blockquote{
+            p{
+                font-size: 42px;
+                &.author{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .case-stages{
+        &__list{
+            li{
+                font-size: 22px;
+                margin-bottom: 22px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            &_ordered{
+                li{
+                    &::before{
+                        font-size: 18px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
+        &__layout.problems__item{
+            p{
+                font-size: 22px;
+                margin-bottom: 22px;
+            }
+        }
+        .problems__item{
+            .h3, h3{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .case-container__toc .sidetoc-menu{
+        left: 30px;
+    }
 }
 @media only screen and (max-width: 1080px) {
     .header{
@@ -2418,7 +2498,7 @@
         }
         &_case{
             .case-stages__layout_var1{
-                margin-bottom: 40px;
+                margin-bottom: 60px;
             }
             .principles__content_buttons{
                 width:100%;
@@ -3506,9 +3586,18 @@
         }
     }
     .case-column{
+        h3, .h3{
+            font-size: 42px;
+        }
+        h4{
+            font-size: 22px;
+        }
         p{
             font-size: 22px;
             margin-bottom: 22px;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
         blockquote{
             p{
@@ -3522,7 +3611,16 @@
     .case-awards{
         font-size: 18px;
     }
-
+    .case-accordion > .h3{
+        font-size: 42px;
+    }
+    .case-stages{
+        .problems__item {
+            .h3, h3{
+                font-size: 42px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {

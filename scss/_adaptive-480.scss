@@ -1001,6 +1001,30 @@
             }
         }
     }
+    .broadwise .container,
+    .case-accordion,
+    .case-column > .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .broadwise{
+        .top.redesign.topcase + &.broadwise_bg{
+            .container{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+    .case-container__toc .sidetoc-menu{
+        left: 20px;
+    }
+    .client__present.case-image{
+        min-height: 0;
+    }
+    .client__present.case-image + p{
+        left: 20px;
+        top: 20px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1235,12 +1259,6 @@
             font-size: 3vw;
         } 
     }
-    .broadwise .container,
-    .case-accordion,
-    .case-column > .container{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     .case-awards{
         grid-template-columns: 60px minmax(130px,1fr) auto;
         &__award,
@@ -1253,6 +1271,11 @@
         &__line{
             grid-column: 1/4;
         }
+    }
+    .client__present.case-image + p{
+        min-width: 280px;
+        max-width: calc(100% - 40px);
+        width: 100%;
     }
 }
 

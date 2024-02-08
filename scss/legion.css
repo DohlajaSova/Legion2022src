@@ -856,6 +856,30 @@ a.button {
     background-image: url("img/icon-aurora-white.svg"); }
   .select-inline.platform .select-hide .same-as-selected:nth-of-type(5) {
     background-image: url("img/icon-other-white.svg"); }
+  .select-checkmark .select-selected {
+    display: none; }
+  .select-checkmark .select-hide {
+    display: flex;
+    flex-wrap: wrap; }
+    .select-checkmark .select-hide div {
+      color: #949191;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 32px;
+      width: 50%;
+      cursor: pointer; }
+      .select-checkmark .select-hide div:before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        margin-bottom: 4px;
+        border: 1.5px solid black;
+        border-radius: 50%;
+        margin-right: 10px; }
+    .select-checkmark .select-hide .same-as-selected:before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.9158 11.9997C18.9158 11.6056 18.5963 11.2862 18.2022 11.2862L12.7124 11.2862L12.7124 5.79635C12.7124 5.40227 12.3929 5.0828 11.9988 5.0828C11.6048 5.0828 11.2853 5.40227 11.2853 5.79635L11.2853 11.2862L5.79547 11.2862C5.40139 11.2862 5.08192 11.6056 5.08192 11.9997C5.08192 12.3938 5.40139 12.7133 5.79547 12.7133L11.2853 12.7133V18.2031C11.2853 18.5972 11.6048 18.9166 11.9988 18.9166C12.3929 18.9166 12.7124 18.5972 12.7124 18.2031V12.7133L18.2022 12.7133C18.5963 12.7133 18.9158 12.3938 18.9158 11.9997Z' fill='white'/%3E%3C/svg%3E");
+      background-color: #000; }
 
 .button.yaDiskUploader {
   border-radius: 100px;
@@ -1451,7 +1475,7 @@ a.button {
 .topcase__photo {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 0;
   padding-bottom: 71.2963%;
   grid-column: 2/3;
   grid-row: 1/3; }
@@ -1521,7 +1545,8 @@ a.button {
       font-size: 18px; }
 
 .case-column {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  overflow-x: hidden; }
   .case-column_feedback {
     background-color: #F0F0F0;
     padding: 60px 0; }
@@ -3209,6 +3234,10 @@ a.button {
       margin-bottom: 0;
       position: static !important; }
       .problems__item_videosection .client__present-video {
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
         top: 0; }
   .problems-complex {
     overflow: hidden; }
@@ -5777,7 +5806,8 @@ a.button {
   .client__present.venn {
     height: 100vh; }
   .client__present.case-video {
-    height: 740px; }
+    overflow: auto;
+    max-height: none; }
   .client__present.case-image {
     height: auto;
     max-height: none; }
@@ -5809,11 +5839,8 @@ a.button {
     width: 6vw !important;
     left: 47vw !important; }
   .client__present-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    left: 0; }
+    display: block;
+    width: 100%; }
 .client__info {
   margin-bottom: 140px;
   display: flex;
@@ -6683,7 +6710,8 @@ a.button {
     border: 1px solid #fff;
     background: rgba(196, 196, 196, 0.4);
     color: #949191;
-    padding: 0 14px; }
+    padding: 0 14px;
+    margin-bottom: 4px; }
   .component-tags.tags.tags_first-child-selected .tag:first-child {
     border: 1px solid #141414;
     background-color: #141414; }
@@ -7998,7 +8026,14 @@ svg.hoversvgrequest {
     min-height: 25em; }
 
   .topcase__brief_descr, .topcase__brief_subhead {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .case-container__toc-inner {
+    padding-left: 40px;
+    padding-right: 20px;
+    width: 270px; }
+  .case-container__toc .sidetoc-menu {
+    left: 40px; } }
 @media (min-width: 1280px) {
   .top.redesign .container,
   .redesign-features .container,
@@ -8135,6 +8170,8 @@ svg.hoversvgrequest {
     padding-bottom: 40px; }
   .principles_case .principles__content {
     margin-bottom: 50px; }
+  .principles_case .case-stages__layout_var1 {
+    margin-bottom: 60px; }
 
   .principles_case .principles__content_text {
     margin-bottom: 20px; }
@@ -8385,7 +8422,19 @@ svg.hoversvgrequest {
       font-size: 16px; }
 
   .case-awards {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .case-stages__list li {
+    font-size: 18px;
+    margin-bottom: 19px; }
+    .case-stages__list li:last-child {
+      margin-bottom: 0; }
+    .case-stages__list li::before {
+      width: 30px;
+      height: 30px;
+      margin-right: 12px; }
+  .case-stages__layout.problems__item p {
+    font-size: 18px; } }
 @media only screen and (max-width: 1180px) {
   .header,
   .footer,
@@ -8743,7 +8792,39 @@ svg.hoversvgrequest {
     scale: .9;
     transform-origin: 0 0; }
   .expert-content .slide-left-part {
-    padding-top: 70px; } }
+    padding-top: 70px; }
+
+  .case-accordion > section {
+    margin: 0 -30px; }
+    .case-accordion > section .close {
+      max-width: none;
+      padding-right: 30px; }
+
+  .case-column p {
+    font-size: 22px;
+    margin-bottom: 22px; }
+  .case-column blockquote p {
+    font-size: 42px; }
+    .case-column blockquote p.author {
+      font-size: 16px; }
+
+  .case-stages__list li {
+    font-size: 22px;
+    margin-bottom: 22px; }
+    .case-stages__list li:last-child {
+      margin-bottom: 0; }
+  .case-stages__list_ordered li::before {
+    font-size: 18px;
+    line-height: 34px; }
+  .case-stages__layout.problems__item p {
+    font-size: 22px;
+    margin-bottom: 22px; }
+  .case-stages .problems__item .h3, .case-stages .problems__item h3 {
+    font-size: 40px;
+    margin-bottom: 20px; }
+
+  .case-container__toc .sidetoc-menu {
+    left: 30px; } }
 @media only screen and (max-width: 1080px) {
   .header__logo {
     width: calc(50% - 46px); }
@@ -9306,7 +9387,7 @@ svg.hoversvgrequest {
   .principles__content_text-wrap {
     width: 100%; }
   .principles_case .case-stages__layout_var1 {
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
   .principles_case .principles__content_buttons {
     width: 100%;
     display: flex;
@@ -9575,6 +9656,15 @@ svg.hoversvgrequest {
         .request__select.select-inline_wide .select-items div:hover {
           background-color: #2864D9;
           color: #fff; }
+  .request__select.select-checkmark .same-as-selected {
+    position: static; }
+    .request__select.select-checkmark .same-as-selected::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.9158 11.9997C18.9158 11.6056 18.5963 11.2862 18.2022 11.2862L12.7124 11.2862L12.7124 5.79635C12.7124 5.40227 12.3929 5.0828 11.9988 5.0828C11.6048 5.0828 11.2853 5.40227 11.2853 5.79635L11.2853 11.2862L5.79547 11.2862C5.40139 11.2862 5.08192 11.6056 5.08192 11.9997C5.08192 12.3938 5.40139 12.7133 5.79547 12.7133L11.2853 12.7133V18.2031C11.2853 18.5972 11.6048 18.9166 11.9988 18.9166C12.3929 18.9166 12.7124 18.5972 12.7124 18.2031V12.7133L18.2022 12.7133C18.5963 12.7133 18.9158 12.3938 18.9158 11.9997Z' fill='white'/%3E%3C/svg%3E");
+      height: 24px;
+      width: 24px;
+      color: transparent;
+      margin-right: 10px;
+      font-size: inherit; }
 
   .feedback .request__select.select .same-as-selected::before {
     display: none; }
@@ -9994,16 +10084,28 @@ svg.hoversvgrequest {
   .broadwise__item_text {
     font-size: 18px; }
 
+  .case-column h3, .case-column .h3 {
+    font-size: 42px; }
+  .case-column h4 {
+    font-size: 22px; }
   .case-column p {
     font-size: 22px;
     margin-bottom: 22px; }
+    .case-column p:last-child {
+      margin-bottom: 0; }
   .case-column blockquote p {
     font-size: 46px; }
     .case-column blockquote p.author {
       font-size: 18px; }
 
   .case-awards {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .case-accordion > .h3 {
+    font-size: 42px; }
+
+  .case-stages .problems__item .h3, .case-stages .problems__item h3 {
+    font-size: 42px; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -10796,7 +10898,22 @@ svg.hoversvgrequest {
     text-wrap: nowrap; }
 
   .top.redesign {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .case-column {
+    margin-bottom: 50px; }
+    .case-column h3 {
+      font-size: 42px; }
+    .case-column blockquote {
+      padding: 34px 0;
+      margin: 34px 0; }
+      .case-column blockquote p {
+        font-size: 42px; }
+        .case-column blockquote p.author {
+          font-size: 16px; }
+
+  .case-accordion > .h3 {
+    font-size: 42px; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
@@ -10857,6 +10974,9 @@ svg.hoversvgrequest {
   .request__textarea textarea {
     font-size: 14px;
     min-height: 24px; }
+
+  .select-checkmark .select-hide div {
+    width: 100%; }
 
   .back {
     right: 15px; }
@@ -11660,23 +11780,26 @@ svg.hoversvgrequest {
         .principles.principles_case .principles__content h3 {
           font-size: 28px;
           margin-bottom: 10px; }
+      .principles.principles_case .problems__item .case-stages__layout_inner {
+        padding-bottom: 0; }
       .principles.principles_case .problems__item h3 {
         font-size: 24px;
         margin-bottom: 18px; }
       .principles.principles_case .case-stages__list li {
-        font-size: 14px;
-        margin-bottom: 14px; }
+        font-size: 16px;
+        margin-bottom: 16px; }
         .principles.principles_case .case-stages__list li:last-child {
           margin-bottom: 0; }
         .principles.principles_case .case-stages__list li::before {
           width: 27px;
           height: 27px;
+          font-size: 15px;
           line-height: 27px;
           margin-right: 12px;
           background-size: 14px auto; }
       .principles.principles_case .case-stages__layout.problems__item p {
-        font-size: 14px;
-        margin-top: 14px; }
+        font-size: 16px;
+        margin-top: 16px; }
 
   .problems__item_arrow {
     max-width: 100%; }
@@ -12435,10 +12558,10 @@ svg.hoversvgrequest {
         line-height: 28px; }
 
   .broadwise {
-    padding-top: 20px; }
-    .top.redesign.topcase + .broadwise.broadwise_bg .container {
-      padding-left: 20px;
-      padding-right: 20px; }
+    padding-top: 20px;
+    padding-bottom: 5px; }
+    .top.redesign.topcase + .broadwise.broadwise_bg {
+      padding-bottom: 5px; }
       .top.redesign.topcase + .broadwise.broadwise_bg .container .broadwise__item {
         padding-right: 10px;
         margin-bottom: 20px; }
@@ -12446,6 +12569,13 @@ svg.hoversvgrequest {
           font-size: 30px; }
         .top.redesign.topcase + .broadwise.broadwise_bg .container .broadwise__item_text {
           font-size: 14px; }
+    .broadwise__item {
+      padding-right: 10px;
+      margin-bottom: 20px; }
+      .broadwise__item_title {
+        font-size: 30px; }
+      .broadwise__item_text {
+        font-size: 14px; }
 
   .case-accordion .h3 {
     font-size: 26px;
@@ -12458,9 +12588,25 @@ svg.hoversvgrequest {
     margin-bottom: 40px; }
     .case-column_feedback {
       padding: 30px 0; }
+    .case-column h3, .case-column .h3 {
+      font-size: 32px;
+      margin-bottom: 16px; }
+    .case-column h4, .case-column .h4 {
+      font-size: 18px;
+      margin-bottom: 18px; }
     .case-column p {
       font-size: 16px;
       margin-bottom: 16px; }
+      .case-column p + h3 {
+        margin-top: 30px; }
+    .case-column ol, .case-column ul {
+      font-size: 16px;
+      margin-bottom: 16px; }
+      .case-column ol li, .case-column ul li {
+        margin-bottom: 10px;
+        padding-left: 30px; }
+        .case-column ol li::before, .case-column ul li::before {
+          margin-left: -30px; }
     .case-column blockquote {
       padding: 20px 0;
       margin: 20px 0 27px; }
@@ -12468,6 +12614,9 @@ svg.hoversvgrequest {
         font-size: 26px; }
         .case-column blockquote p.author {
           font-size: 12px; }
+
+  .case-stages .problems__item .h3, .case-stages .problems__item h3 {
+    font-size: 32px; }
 
   .case-awards {
     font-size: 14px;
@@ -12479,7 +12628,10 @@ svg.hoversvgrequest {
       height: 30px;
       padding-left: 30px; }
     .case-awards__emblem, .case-awards__grade, .case-awards__award, .case-awards__title {
-      margin-top: 6px; } }
+      margin-top: 6px; }
+
+  .client__present.case-image + p {
+    font-size: 14px; } }
 @media only screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 40px; }
@@ -13123,7 +13275,27 @@ svg.hoversvgrequest {
     font-size: 16px; }
   .redesign-acrhive .container, .redesign-feedback .container {
     padding-top: 40px;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  .broadwise .container,
+  .case-accordion,
+  .case-column > .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .top.redesign.topcase + .broadwise.broadwise_bg .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .case-container__toc .sidetoc-menu {
+    left: 20px; }
+
+  .client__present.case-image {
+    min-height: 0; }
+
+  .client__present.case-image + p {
+    left: 20px;
+    top: 20px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
@@ -13257,12 +13429,6 @@ svg.hoversvgrequest {
     .redesign-projects-slide .wrapper .tags .tag {
       font-size: 3vw; }
 
-  .broadwise .container,
-  .case-accordion,
-  .case-column > .container {
-    padding-left: 20px;
-    padding-right: 20px; }
-
   .case-awards {
     grid-template-columns: 60px minmax(130px, 1fr) auto; }
     .case-awards__award, .case-awards__title {
@@ -13270,7 +13436,12 @@ svg.hoversvgrequest {
     .case-awards__title {
       margin-top: -8px; }
     .case-awards__line {
-      grid-column: 1/4; } }
+      grid-column: 1/4; }
+
+  .client__present.case-image + p {
+    min-width: 280px;
+    max-width: calc(100% - 40px);
+    width: 100%; } }
 @media only screen and (max-width: 390px) {
   .preservice-blocks .card-head {
     font-size: 26px; }
