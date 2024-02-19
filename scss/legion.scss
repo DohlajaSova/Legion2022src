@@ -6698,6 +6698,7 @@ a.button {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		gap: 50px;
 		.container {
 			h3 {
 				font-size: 46px;
@@ -10966,6 +10967,7 @@ svg.svg-hover-filter-clear {
 	outline: none;
 	margin: 0;
 	padding: 0;
+	cursor: pointer;
 	&:disabled {
 		.hoversvgrequest {
 			rect#rectanimate1 {
