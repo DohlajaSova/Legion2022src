@@ -908,6 +908,27 @@
         margin-bottom: 30px;
     }
     // --
+    .case-column{
+        margin-bottom: 50px;
+        h3{
+            font-size: 42px;
+        }
+        blockquote{
+            padding: 34px 0;
+            margin: 34px 0;
+            p{
+                font-size: 42px;
+                &.author{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .case-accordion{
+        & > .h3{
+            font-size: 42px;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2216,27 +2237,33 @@
                     margin-bottom: 10px;
                 }
             }
+            .problems__item .case-stages__layout_inner{
+                padding-bottom: 0;
+            }
             .problems__item h3{
                 font-size: 24px;
                 margin-bottom: 18px;
             }
-            .case-stages__list li{
-                font-size: 14px;
-                margin-bottom: 14px;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-                &::before{
-                    width: 27px;
-                    height: 27px;
-                    line-height: 27px;
-                    margin-right:12px;
-                    background-size: 14px auto;
+            .case-stages__list{
+                li{
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &::before{
+                        width: 27px;
+                        height: 27px;
+                        font-size: 15px;
+                        line-height: 27px;
+                        margin-right:12px;
+                        background-size: 14px auto;
+                    }
                 }
             }
             .case-stages__layout.problems__item p{
-                font-size: 14px;
-                margin-top: 14px;
+                font-size: 16px;
+                margin-top: 16px;
             }
         }
     }
@@ -3428,10 +3455,10 @@
     }
     .broadwise{
         padding-top: 20px;
+        padding-bottom: 5px;
         .top.redesign.topcase + &.broadwise_bg{
+            padding-bottom: 5px;
             .container{
-                padding-left: 20px;
-                padding-right: 20px;
                 .broadwise__item{
                     padding-right: 10px;
                     margin-bottom: 20px;
@@ -3442,6 +3469,16 @@
                         font-size: 14px;
                     }
                 }
+            }
+        }
+        &__item{
+            padding-right: 10px;
+            margin-bottom: 20px;
+            &_title{
+                font-size: 30px;
+            }
+            &_text{
+                font-size: 14px;
             }
         }
     }
@@ -3460,9 +3497,31 @@
         &_feedback{
             padding: 30px 0;
         }
+        h3, .h3{
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        h4, .h4{
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
         p{
             font-size: 16px;
             margin-bottom: 16px;
+            & + h3{
+                margin-top: 30px;
+            }
+        }
+        ol, ul{
+            font-size: 16px;
+            margin-bottom: 16px;
+            li{
+                margin-bottom: 10px;
+                padding-left: 30px;
+                &::before{
+                    margin-left: -30px;
+                }
+            }
         }
         blockquote{
             padding: 20px 0;
@@ -3472,6 +3531,13 @@
                 &.author{
                     font-size: 12px;
                 }
+            }
+        }
+    }
+    .case-stages{
+        .problems__item{
+            .h3,  h3{
+                font-size: 32px;
             }
         }
     }
@@ -3491,5 +3557,8 @@
         &__title{
             margin-top: 6px;
         }
+    }
+    .client__present.case-image + p{
+        font-size: 14px;
     }
 }
