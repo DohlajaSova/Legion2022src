@@ -3546,6 +3546,7 @@
         grid-template-columns: 60px minmax(120px,1fr) minmax(120px,1fr) auto;
         grid-gap: 6px 10px;
         padding-top: 3px;
+        overflow-x: hidden;
         &__emblem{
             width: 60px;
             height: 30px;

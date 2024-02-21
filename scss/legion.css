@@ -8432,7 +8432,8 @@ svg.hoversvgrequest {
     .case-stages__list li::before {
       width: 30px;
       height: 30px;
-      margin-right: 12px; }
+      margin-right: 12px;
+      line-height: 32px; }
   .case-stages__layout.problems__item p {
     font-size: 18px; } }
 @media only screen and (max-width: 1180px) {
@@ -12622,7 +12623,8 @@ svg.hoversvgrequest {
     font-size: 14px;
     grid-template-columns: 60px minmax(120px, 1fr) minmax(120px, 1fr) auto;
     grid-gap: 6px 10px;
-    padding-top: 3px; }
+    padding-top: 3px;
+    overflow-x: hidden; }
     .case-awards__emblem {
       width: 60px;
       height: 30px;
