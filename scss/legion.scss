@@ -10241,16 +10241,16 @@ svg.svg-hover-filter-clear {
 	}
 }
 .svghover:hover  {
-	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3{
+	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3, path#svg-path-move-right-4, path#svg-path-move-right-5 {
 		fill: $color-white;
 		transform: translate(340px);
 	}
-	rect#svg-rect-move-right, rect#svg-rect-move-right-2, rect#svg-rect-move-right-3 {
+	rect#svg-rect-move-right, rect#svg-rect-move-right-2, rect#svg-rect-move-right-3, rect#svg-rect-move-right-4, rect#svg-rect-move-right-5 {
 		transform: translate(340px);
 		fill:  #1A60FF;
 		stroke:  #1A60FF;
 	}
-	path#svg-path-fill, path#svg-path-fill-2, path#svg-path-fill-3 {
+	path#svg-path-fill, path#svg-path-fill-2, path#svg-path-fill-3, path#svg-path-fill-4, path#svg-path-fill-5 {
 		fill: black;
 		transition: fill .8s;
 		transition-delay: .2s;
@@ -10261,15 +10261,15 @@ svg.svg-hover-filter-clear {
 	height: auto;
 	cursor: pointer;
     max-width: 650px!important;
-	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3 {
+	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3, path#svg-path-move-right-4, path#svg-path-move-right-5 {
 		transition: fill .8s, transform .8s;
 	}
-	rect#svg-rect-move-right, rect#svg-rect-move-right-2, rect#svg-rect-move-right-3 {
+	rect#svg-rect-move-right, rect#svg-rect-move-right-2, rect#svg-rect-move-right-3, rect#svg-rect-move-right-4, rect#svg-rect-move-right-5 {
 		transition: fill .8s, stroke .8s, transform .8s;
 		fill: $color-white;
 		stroke: $color-black;
 	}
-	path#svg-path-fill, path#svg-path-fill-2, path#svg-path-fill-3 {
+	path#svg-path-fill, path#svg-path-fill-2, path#svg-path-fill-3, path#svg-path-fill-4, path#svg-path-fill-5 {
 		transition: fill .5s;
 		fill:  transparent;
 	}
