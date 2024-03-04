@@ -11127,8 +11127,12 @@ svg.svg-hover-filter-clear {
 				width: 329px;
 			}
 			#pathanimate1 {
-				fill: #fff;
+				fill: transparent;
 				transform: translate(-400px, 0);
+			}
+			#pathanimate-disabled-text {
+				transform: translate(-400px, 0);
+				fill: #fff;
 			}
 			#pathanimate3 {
 				fill: #fff;
@@ -11149,6 +11153,10 @@ svg.hoversvgrequest {
 	}
 	#rectanimate1, #pathanimate1, #pathanimate3 {
 		transition: transform .5s, width .5s, fill .5s;
+	}
+	#pathanimate-disabled-text {
+		fill: transparent;
+		transition: fill .5s;
 	}
 	#pathanimate2{
 		transition: transform .5s;
