@@ -929,6 +929,25 @@
             font-size: 42px;
         }
     }
+    .importhead {
+        &__text {
+            font-size: 22px;
+            line-height: 29px;
+        }
+        &__blocks {
+            &_card {
+                .heading {
+                    font-size: 42px;
+                    line-height: 50px;
+                    margin-bottom: 10px;
+                }
+                .text {
+                    font-size: 22px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1863,6 +1882,12 @@
         }
         &__title{
             padding-right: 30px;
+        }
+    }
+    .importhead {
+        &__blocks {
+            display: flex;
+            flex-flow: column;
         }
     }
 }

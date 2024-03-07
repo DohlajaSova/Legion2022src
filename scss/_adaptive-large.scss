@@ -997,6 +997,25 @@
             font-size: 18px;
         }
     }
+    .importhead {
+        &__text {
+            font-size: 18px;
+            line-height: 23.4px;
+            margin-bottom: 60px;
+        }
+        &__blocks {
+            &_card {
+                .heading {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+                .text {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1180px) {
