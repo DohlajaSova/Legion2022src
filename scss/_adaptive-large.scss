@@ -919,6 +919,41 @@
     .filter-tags-component__wrapper .tags-filters__container .filters-wrapper .filter-clear:before {
         top: 1px;
     }
+    .worksteps {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        &__caption {
+            font-size: 22px;
+            line-height: 29px;
+            // padding-top: 60px;
+            // padding-bottom: 60px;
+        }
+        &__list {
+            &_card {
+                padding: 0 30px 0 15vw;
+                .wrapper {
+				    padding: 20px 0 40px 0;
+                }
+                .number {
+                    font-size: 160px;
+                    line-height: 176px;
+                    bottom: -60px;
+                    // left: -120px;
+                }
+                .heading {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+                .text {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+
     // --redesign
     .topcase{
         &__descr{
