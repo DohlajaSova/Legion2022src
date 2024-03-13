@@ -10897,8 +10897,8 @@ svg.svg-hover-filter-clear {
 	background-color: #F0F0F0;
 	.container {
 		max-width: 1087px;
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 	&__header {
 		font-size: 80px;
@@ -10924,7 +10924,7 @@ svg.svg-hover-filter-clear {
 			padding-right: 160px;
 			.wrapper{
 				position: relative;
-				padding: 45px 0;
+				padding: 40px 0;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -10946,6 +10946,7 @@ svg.svg-hover-filter-clear {
 				color: #141414;
 				// margin-right: auto;
 				width: 53%;
+				align-self: flex-end;
 			}
 			.text {
 				width: 35%;
@@ -11128,8 +11129,12 @@ svg.svg-hover-filter-clear {
 				width: 329px;
 			}
 			#pathanimate1 {
-				fill: #fff;
+				fill: transparent;
 				transform: translate(-400px, 0);
+			}
+			#pathanimate-disabled-text {
+				transform: translate(-400px, 0);
+				fill: #fff;
 			}
 			#pathanimate3 {
 				fill: #fff;
@@ -11150,6 +11155,10 @@ svg.hoversvgrequest {
 	}
 	#rectanimate1, #pathanimate1, #pathanimate3 {
 		transition: transform .5s, width .5s, fill .5s;
+	}
+	#pathanimate-disabled-text {
+		fill: transparent;
+		transition: fill .5s;
 	}
 	#pathanimate2{
 		transition: transform .5s;

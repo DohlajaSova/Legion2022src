@@ -916,6 +916,41 @@
     .filter-tags-component__wrapper .tags-filters__container .filters-wrapper .filter-clear:before {
         top: 1px;
     }
+    .worksteps {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        &__caption {
+            font-size: 22px;
+            line-height: 29px;
+            // padding-top: 60px;
+            // padding-bottom: 60px;
+        }
+        &__list {
+            &_card {
+                padding: 0 30px 0 15vw;
+                .wrapper {
+				    padding: 20px 0 40px 0;
+                }
+                .number {
+                    font-size: 160px;
+                    line-height: 176px;
+                    bottom: -60px;
+                    // left: -120px;
+                }
+                .heading {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+                .text {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+
     // --redesign
     .topcase{
         &__descr{
@@ -994,6 +1029,7 @@
             font-size: 18px;
         }
     }
+
     .case-container{
         &__toc{
             width: 100px;
@@ -1007,6 +1043,26 @@
                     position: relative;
                     top: -20px;
                     left: 0;
+                }
+            }
+        }
+    }
+
+    .importhead {
+        &__text {
+            font-size: 18px;
+            line-height: 23.4px;
+            margin-bottom: 60px;
+        }
+        &__blocks {
+            &_card {
+                .heading {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+                .text {
+                    font-size: 18px;
+                    line-height: 23px;
                 }
             }
         }
@@ -2775,7 +2831,6 @@
         &__menu{
             width:56%;
             font-size:16px;
-            // span,
             a{
                 width:50%;
             }
@@ -2791,11 +2846,6 @@
                 margin-top:auto;
             }
         }
-        // &__copyright{
-        //     span{
-        //         margin-left:32px;
-        //     }
-        // }
         &__social{
             margin-bottom:9px;
         }

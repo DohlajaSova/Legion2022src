@@ -7722,8 +7722,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   background-color: #F0F0F0; }
   .worksteps .container {
     max-width: 1087px;
-    padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-top: 80px;
+    padding-bottom: 80px; }
   .worksteps__header {
     font-size: 80px;
     line-height: 88px;
@@ -7743,7 +7743,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       padding-right: 160px; }
       .worksteps__list_card .wrapper {
         position: relative;
-        padding: 45px 0;
+        padding: 40px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -7759,7 +7759,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         font-size: 46px;
         line-height: 55px;
         color: #141414;
-        width: 53%; }
+        width: 53%;
+        align-self: flex-end; }
       .worksteps__list_card .text {
         width: 35%;
         font-size: 20px;
@@ -7897,8 +7898,11 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     transform: translate(-258px, 0);
     width: 329px; }
   .button-svg-animate-container:disabled .hoversvgrequest #pathanimate1 {
-    fill: #fff;
+    fill: transparent;
     transform: translate(-400px, 0); }
+  .button-svg-animate-container:disabled .hoversvgrequest #pathanimate-disabled-text {
+    transform: translate(-400px, 0);
+    fill: #fff; }
   .button-svg-animate-container:disabled .hoversvgrequest #pathanimate3 {
     fill: #fff;
     transform: translate(0, 0); }
@@ -7912,6 +7916,9 @@ svg.hoversvgrequest {
     transition: all .3s ease-in-out; }
   svg.hoversvgrequest #rectanimate1, svg.hoversvgrequest #pathanimate1, svg.hoversvgrequest #pathanimate3 {
     transition: transform .5s, width .5s, fill .5s; }
+  svg.hoversvgrequest #pathanimate-disabled-text {
+    fill: transparent;
+    transition: fill .5s; }
   svg.hoversvgrequest #pathanimate2 {
     transition: transform .5s;
     transform-origin: 88% 50%; }
@@ -8497,6 +8504,27 @@ svg.hoversvgrequest {
   .filter-tags-component__wrapper .tags-filters__container .filters-wrapper .filter-clear:before {
     top: 1px; }
 
+  .worksteps .container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .worksteps__caption {
+    font-size: 22px;
+    line-height: 29px; }
+  .worksteps__list_card {
+    padding: 0 30px 0 15vw; }
+    .worksteps__list_card .wrapper {
+      padding: 20px 0 40px 0; }
+    .worksteps__list_card .number {
+      font-size: 160px;
+      line-height: 176px;
+      bottom: -60px; }
+    .worksteps__list_card .heading {
+      font-size: 40px;
+      line-height: 44px; }
+    .worksteps__list_card .text {
+      font-size: 18px;
+      line-height: 23px; }
+
   .topcase__descr {
     font-size: 18px; }
   .topcase__brief_subhead > div {
@@ -8552,7 +8580,18 @@ svg.hoversvgrequest {
     .case-container__toc.fixed .sidetoc-menu {
       position: relative;
       top: -20px;
-      left: 0; } }
+      left: 0; }
+
+  .importhead__text {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin-bottom: 60px; }
+  .importhead__blocks_card .heading {
+    font-size: 40px;
+    line-height: 48px; }
+  .importhead__blocks_card .text {
+    font-size: 18px;
+    line-height: 23px; } }
 @media only screen and (max-width: 1180px) {
   .header,
   .footer,
@@ -11031,7 +11070,36 @@ svg.hoversvgrequest {
           font-size: 16px; }
 
   .case-accordion > .h3 {
-    font-size: 42px; } }
+    font-size: 42px; }
+
+  .importhead__text {
+    font-size: 22px;
+    line-height: 29px; }
+  .importhead__blocks_card .heading {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 10px; }
+  .importhead__blocks_card .text {
+    font-size: 22px;
+    line-height: 29px; }
+
+  .worksteps .container {
+    padding-top: 80px;
+    padding-bottom: 40px; }
+  .worksteps__list_card .wrapper {
+    flex-flow: column nowrap;
+    padding: 30px 0;
+    align-items: flex-start;
+    gap: 20px; }
+  .worksteps__list_card .number {
+    bottom: 0px; }
+  .worksteps__list_card .heading {
+    font-size: 40px;
+    line-height: 44px;
+    align-self: flex-start;
+    width: 100%; }
+  .worksteps__list_card .text {
+    width: 100%; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
@@ -11642,7 +11710,11 @@ svg.hoversvgrequest {
       width: 72px;
       padding-left: 30px; }
     .case-awards__title {
-      padding-right: 30px; } }
+      padding-right: 30px; }
+
+  .importhead__blocks {
+    display: flex;
+    flex-flow: column; } }
 @media only screen and (min-width: 551px) {
   .footer__menu-list {
     width: fit-content;
@@ -13414,7 +13486,18 @@ svg.hoversvgrequest {
 
   .client__present.case-image + p {
     left: 20px;
-    top: 20px; } }
+    top: 20px; }
+
+  .importhead__text {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 40px; }
+  .importhead__blocks_card .heading {
+    font-size: 28px;
+    line-height: 34px; }
+  .importhead__blocks_card .text {
+    font-size: 16px;
+    line-height: 21px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
