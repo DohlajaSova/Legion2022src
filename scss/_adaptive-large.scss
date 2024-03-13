@@ -321,9 +321,6 @@
             padding-right: 20px;
 			width: 270px;
 		}
-		.sidetoc-menu{
-			left: 40px;
-		}
 	}
 }
 
@@ -995,6 +992,23 @@
         }
         &__layout.problems__item p{
             font-size: 18px;
+        }
+    }
+    .case-container{
+        &__toc{
+            width: 100px;
+            &.fixed{
+                .case-container__toc-inner{
+                    top: auto;
+                    bottom: 0;
+                    padding-top: 50px;
+                }
+                .sidetoc-menu{
+                    position: relative;
+                    top: -20px;
+                    left: 0;
+                }
+            }
         }
     }
 }

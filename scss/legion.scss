@@ -9135,8 +9135,8 @@ a.button {
         }
         .sidetoc-menu{
 			position: relative;
-			top: 20px;
-            left: 60px;
+			top: -20px;
+            left: 0;
             width: 40px;
             height: 40px;
             border: 1px solid $color-black;
@@ -9156,6 +9156,7 @@ a.button {
 			//top: 1120px;
 			.sidetoc-menu{
 				position: fixed;
+                left: 60px;
 				top: 20px;
 			}
 			.case-container__toc-inner{

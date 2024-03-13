@@ -759,7 +759,7 @@ function generateCaseTOC(caseOuter) {
     }
 
     if (toc != "") {
-        toc = '<aside class="case-container__toc js-toc"><a href="#" class="sidetoc-menu js-sidetoc"></a><div class="case-container__toc-inner hide">' + toc + '</div></aside>';
+        toc = '<aside class="case-container__toc js-toc"><div class="case-container__toc-inner hide"><a href="#" class="sidetoc-menu js-sidetoc"></a>' + toc + '</div></aside>';
     }
     else toc = '<aside class="case-container__toc"></aside>'
 

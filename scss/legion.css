@@ -4730,7 +4730,8 @@ a.button {
     padding-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    gap: 50px; }
     .request__form .container h3 {
       font-size: 46px; }
     .request__form h3 {
@@ -6408,8 +6409,8 @@ a.button {
     padding-left: 20px; }
   .case-container__toc .sidetoc-menu {
     position: relative;
-    top: 20px;
-    left: 60px;
+    top: -20px;
+    left: 0;
     width: 40px;
     height: 40px;
     border: 1px solid #141414;
@@ -6424,6 +6425,7 @@ a.button {
         display: none; }
   .case-container__toc.fixed .sidetoc-menu {
     position: fixed;
+    left: 60px;
     top: 20px; }
   .case-container__toc.fixed .case-container__toc-inner {
     position: fixed; }
@@ -7208,14 +7210,14 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         .preservice-blocks .card-image img {
           max-width: 100%; }
 
-.svghover:hover path#svg-path-move-right, .svghover:hover path#svg-path-move-right-2, .svghover:hover path#svg-path-move-right-3 {
+.svghover:hover path#svg-path-move-right, .svghover:hover path#svg-path-move-right-2, .svghover:hover path#svg-path-move-right-3, .svghover:hover path#svg-path-move-right-4, .svghover:hover path#svg-path-move-right-5 {
   fill: #fff;
   transform: translate(340px); }
-.svghover:hover rect#svg-rect-move-right, .svghover:hover rect#svg-rect-move-right-2, .svghover:hover rect#svg-rect-move-right-3 {
+.svghover:hover rect#svg-rect-move-right, .svghover:hover rect#svg-rect-move-right-2, .svghover:hover rect#svg-rect-move-right-3, .svghover:hover rect#svg-rect-move-right-4, .svghover:hover rect#svg-rect-move-right-5 {
   transform: translate(340px);
   fill: #1A60FF;
   stroke: #1A60FF; }
-.svghover:hover path#svg-path-fill, .svghover:hover path#svg-path-fill-2, .svghover:hover path#svg-path-fill-3 {
+.svghover:hover path#svg-path-fill, .svghover:hover path#svg-path-fill-2, .svghover:hover path#svg-path-fill-3, .svghover:hover path#svg-path-fill-4, .svghover:hover path#svg-path-fill-5 {
   fill: black;
   transition: fill .8s;
   transition-delay: .2s; }
@@ -7225,13 +7227,13 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   height: auto;
   cursor: pointer;
   max-width: 650px !important; }
-  .svghover path#svg-path-move-right, .svghover path#svg-path-move-right-2, .svghover path#svg-path-move-right-3 {
+  .svghover path#svg-path-move-right, .svghover path#svg-path-move-right-2, .svghover path#svg-path-move-right-3, .svghover path#svg-path-move-right-4, .svghover path#svg-path-move-right-5 {
     transition: fill .8s, transform .8s; }
-  .svghover rect#svg-rect-move-right, .svghover rect#svg-rect-move-right-2, .svghover rect#svg-rect-move-right-3 {
+  .svghover rect#svg-rect-move-right, .svghover rect#svg-rect-move-right-2, .svghover rect#svg-rect-move-right-3, .svghover rect#svg-rect-move-right-4, .svghover rect#svg-rect-move-right-5 {
     transition: fill .8s, stroke .8s, transform .8s;
     fill: #fff;
     stroke: #141414; }
-  .svghover path#svg-path-fill, .svghover path#svg-path-fill-2, .svghover path#svg-path-fill-3 {
+  .svghover path#svg-path-fill, .svghover path#svg-path-fill-2, .svghover path#svg-path-fill-3, .svghover path#svg-path-fill-4, .svghover path#svg-path-fill-5 {
     transition: fill .5s;
     fill: transparent; }
 
@@ -7295,6 +7297,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     flex: 0;
     transition: flex .25s;
     position: relative; }
+    .redesign-projects-slide.border-radius-none {
+      border-radius: 0; }
     .redesign-projects-slide.active {
       transition: flex .25s;
       flex: 1; }
@@ -7322,6 +7326,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       z-index: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) -11.48%, rgba(0, 0, 0, 0.07) 46%, rgba(0, 0, 0, 0.6) 99.89%);
       cursor: pointer; }
+      .redesign-projects-slide .card-foreground.border-radius-none {
+        border-radius: 0; }
     .redesign-projects-slide .img {
       cursor: pointer;
       border-radius: 16px;
@@ -7658,6 +7664,107 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         border: 1px solid var(--Black, #141414);
         border-radius: 20px; }
 
+.importhead .container {
+  max-width: 1087px;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+.importhead__banner {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  height: 480px;
+  padding: 40px 60px;
+  background-image: url("img/import-substitution-banner.png"); }
+  .importhead__banner svg {
+    margin-bottom: 20px; }
+  .importhead__banner_caption {
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    width: 40%; }
+.importhead__text {
+  font-size: 20px;
+  line-height: 26px;
+  color: #141414;
+  margin-bottom: 80px; }
+.importhead__blocks {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 60px;
+  column-gap: 5vw; }
+  .importhead__blocks_card .heading {
+    font-size: 46px;
+    line-height: 55px;
+    margin-bottom: 20px; }
+
+.souvereign {
+  border-top: 1px solid #141414;
+  border-bottom: 1px solid #141414; }
+  .souvereign .container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .souvereign-top-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+    margin-bottom: 80px; }
+  .souvereign-header-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px; }
+    .souvereign-header-wrapper h3 {
+      margin-bottom: 0px; }
+    .souvereign-header-wrapper span {
+      font-size: 24px; }
+
+.worksteps {
+  background-color: #F0F0F0; }
+  .worksteps .container {
+    max-width: 1087px;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .worksteps__header {
+    font-size: 80px;
+    line-height: 88px;
+    margin-bottom: 20px; }
+  .worksteps__caption {
+    font-size: 24px;
+    line-height: 29px;
+    color: #141414;
+    width: 80%; }
+  .worksteps__list {
+    display: flex;
+    flex-flow: column nowrap; }
+    .worksteps__list_card {
+      overflow: hidden;
+      border-bottom: 1px solid #141414;
+      padding-left: 160px;
+      padding-right: 160px; }
+      .worksteps__list_card .wrapper {
+        position: relative;
+        padding: 45px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px; }
+      .worksteps__list_card .number {
+        color: #949191;
+        font-size: 200px;
+        line-height: 220px;
+        position: absolute;
+        bottom: -80px;
+        left: -120px; }
+      .worksteps__list_card .heading {
+        font-size: 46px;
+        line-height: 55px;
+        color: #141414;
+        width: 53%; }
+      .worksteps__list_card .text {
+        width: 35%;
+        font-size: 20px;
+        line-height: 26px; }
+
 .filter-tags-component__wrapper .tags {
   display: flex;
   flex-flow: column nowrap;
@@ -7784,7 +7891,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   border: none;
   outline: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
   .button-svg-animate-container:disabled .hoversvgrequest rect#rectanimate1 {
     transform: translate(-258px, 0);
     width: 329px; }
@@ -8031,9 +8139,7 @@ svg.hoversvgrequest {
   .case-container__toc-inner {
     padding-left: 40px;
     padding-right: 20px;
-    width: 270px; }
-  .case-container__toc .sidetoc-menu {
-    left: 40px; } }
+    width: 270px; } }
 @media (min-width: 1280px) {
   .top.redesign .container,
   .redesign-features .container,
@@ -8435,7 +8541,18 @@ svg.hoversvgrequest {
       margin-right: 12px;
       line-height: 32px; }
   .case-stages__layout.problems__item p {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .case-container__toc {
+    width: 100px; }
+    .case-container__toc.fixed .case-container__toc-inner {
+      top: auto;
+      bottom: 0;
+      padding-top: 50px; }
+    .case-container__toc.fixed .sidetoc-menu {
+      position: relative;
+      top: -20px;
+      left: 0; } }
 @media only screen and (max-width: 1180px) {
   .header,
   .footer,
