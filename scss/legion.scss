@@ -9114,6 +9114,10 @@ a.button {
 			position: absolute;
             top: 0;
 			width: 300px;
+            
+            &.closed{
+                width: 130px;
+            }
         }
         &-lev1,
         &-lev2{
@@ -9147,8 +9151,11 @@ a.button {
             transform: rotate(180deg);
 			&.closed{
 				transform: rotate(0deg);
-				& + .case-container__toc-inner{
-					display:none;
+				& ~ .case-container__toc{
+                    &-lev1,
+                    &-lev2{
+					    display:none;
+                    }
 				}
 			}
         }

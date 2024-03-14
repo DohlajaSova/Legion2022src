@@ -774,10 +774,14 @@ function generateCaseTOC(caseOuter) {
     document.addEventListener('click', function(e){
         if (e.target.classList.contains('js-sidetoc')){
             e.preventDefault();
-            if (e.target.classList.contains('closed'))
+            if (e.target.classList.contains('closed')){
                 e.target.classList.remove('closed');
-            else
+                e.target.parentElement.classList.remove('closed');
+            }
+            else{
                 e.target.classList.add('closed');
+                e.target.parentElement.classList.add('closed');
+            }
         }
     }, true);
     

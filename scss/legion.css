@@ -6397,6 +6397,8 @@ a.button {
     position: absolute;
     top: 0;
     width: 300px; }
+    .case-container__toc-inner.closed {
+      width: 130px; }
   .case-container__toc-lev1, .case-container__toc-lev2 {
     margin-bottom: 12px; }
     .case-container__toc-lev1 a, .case-container__toc-lev2 a {
@@ -6421,7 +6423,7 @@ a.button {
     transform: rotate(180deg); }
     .case-container__toc .sidetoc-menu.closed {
       transform: rotate(0deg); }
-      .case-container__toc .sidetoc-menu.closed + .case-container__toc-inner {
+      .case-container__toc .sidetoc-menu.closed ~ .case-container__toc-lev1, .case-container__toc .sidetoc-menu.closed ~ .case-container__toc-lev2 {
         display: none; }
   .case-container__toc.fixed .sidetoc-menu {
     position: fixed;
