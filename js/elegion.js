@@ -827,7 +827,7 @@ function generateCaseTOC(caseOuter) {
         //let caseTop = caseBody.offsetTop; bug in mobile
         //let caseTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height;
         let caseTop = document.getElementsByClassName('case-column')[0].getBoundingClientRect().top + window.pageYOffset - document.getElementsByClassName('header')[0].getBoundingClientRect().height + 40;
-        stickyTOC.style.top = caseTop + 110 + 'px';
+        stickyTOC.style.top = caseTop + 93 + 'px';
         let caseHeight = document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height + 167;
         let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -855,7 +855,7 @@ function generateCaseTOC(caseOuter) {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height;
             stickyTOC.style.height = TOCHeight + 68 + "px";
-            if (bodyScrollTop > caseTop + 67) {
+            if (bodyScrollTop > caseTop + 50) {
                 document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
                 if (wWidth > 1024 && document.getElementsByClassName('case-container')[0] != undefined) {

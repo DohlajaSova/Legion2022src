@@ -1033,6 +1033,9 @@
     .case-container{
         &__toc{
             width: 100px;
+			&_inner{
+				padding-top: 60px;
+			}
             &.fixed{
                 .case-container__toc-inner{
                     top: auto;

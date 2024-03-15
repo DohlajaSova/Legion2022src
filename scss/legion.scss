@@ -9109,14 +9109,14 @@ a.button {
 		max-height: 450px;
         font-size: 16px;
         &-inner{
-            padding: 80px 30px 20px 60px;
+            padding: 80px 30px 20px 40px;
 			background-color: rgba($color-white, 0.9);
 			position: absolute;
             top: 0;
 			width: 300px;
             
             &.closed{
-                width: 130px;
+                width: 105px;
             }
         }
         &-lev1,
@@ -9163,7 +9163,7 @@ a.button {
 			//top: 1120px;
 			.sidetoc-menu{
 				position: fixed;
-                left: 60px;
+                left: 40px;
 				top: 20px;
 			}
 			.case-container__toc-inner{
