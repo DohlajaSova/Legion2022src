@@ -1033,8 +1033,8 @@
     .case-container{
         &__toc{
             width: 100px;
-			&_inner{
-				padding-top: 60px;
+			&-inner{
+				padding-top: 50px;
 			}
             &.fixed{
                 .case-container__toc-inner{
@@ -1709,8 +1709,24 @@
             }
         }
     }
-    .case-container__toc .sidetoc-menu{
-        left: 30px;
+    .case-container{
+        &__toc{
+            &-inner{
+                &.fixed{
+                    &.closed{
+                        padding-top: 20px;
+                        padding-left: 30px;
+                        width: 90px;
+                        .case-container__toc-inner{
+                            padding-top: 20px;
+                        }
+                        .sidetoc-menu{
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 1080px) {

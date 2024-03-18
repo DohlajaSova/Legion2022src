@@ -6392,13 +6392,14 @@ a.button {
   max-height: 450px;
   font-size: 16px; }
   .case-container__toc-inner {
-    padding: 80px 30px 20px 60px;
+    padding: 80px 30px 20px 40px;
     background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
     position: absolute;
     top: 0;
     width: 300px; }
     .case-container__toc-inner.closed {
-      width: 130px; }
+      width: 105px; }
   .case-container__toc-lev1, .case-container__toc-lev2 {
     margin-bottom: 12px; }
     .case-container__toc-lev1 a, .case-container__toc-lev2 a {
@@ -6427,7 +6428,7 @@ a.button {
         display: none; }
   .case-container__toc.fixed .sidetoc-menu {
     position: fixed;
-    left: 60px;
+    left: 40px;
     top: 20px; }
   .case-container__toc.fixed .case-container__toc-inner {
     position: fixed; }
@@ -8575,6 +8576,8 @@ svg.hoversvgrequest {
 
   .case-container__toc {
     width: 100px; }
+    .case-container__toc-inner {
+      padding-top: 50px; }
     .case-container__toc.fixed .case-container__toc-inner {
       top: auto;
       bottom: 0;
@@ -8982,8 +8985,14 @@ svg.hoversvgrequest {
     font-size: 40px;
     margin-bottom: 20px; }
 
-  .case-container__toc .sidetoc-menu {
-    left: 30px; } }
+  .case-container__toc-inner.fixed.closed {
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 90px; }
+    .case-container__toc-inner.fixed.closed .case-container__toc-inner {
+      padding-top: 20px; }
+    .case-container__toc-inner.fixed.closed .sidetoc-menu {
+      top: 0; } }
 @media only screen and (max-width: 1080px) {
   .header__logo {
     width: calc(50% - 46px); }
@@ -11101,7 +11110,12 @@ svg.hoversvgrequest {
     align-self: flex-start;
     width: 100%; }
   .worksteps__list_card .text {
-    width: 100%; } }
+    width: 100%; }
+
+  .case-container__toc-inner.fixed {
+    width: 100%; }
+    .case-container__toc-inner.fixed.closed {
+      width: 90px; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
