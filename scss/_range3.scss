@@ -1,0 +1,216 @@
+$c0: $color-grey-light; /* background */
+$c1: $color-grey-dark; /* text */
+
+$track-h: 10px; /* track height */
+$thumb-d: 24px; /* thumb width */
+$label-h: 65px; /* label widths */
+
+@mixin track() {
+	border: none;
+	padding: 0;
+	width: 100%;
+	height: $track-h;
+	background: none;
+	color: transparent
+}
+
+@mixin thumb($m: 0) {
+	box-sizing: border-box;
+	margin-top: $m;
+	border: none;
+	width: $thumb-d;
+	height: $thumb-d;
+	border-radius: 50%;
+	/*box-shadow: 
+		0 1px .125em rgba($color-grey-dark, .5), 
+		0 1px .25em rgba($color-grey-dark, .5);*/
+	background: $color-black;
+	transition: none;
+	pointer-events: auto;
+	cursor: ew-resize;
+}
+
+%mid {
+	grid-column: 2;
+	grid-row: 2;
+	place-self: center;
+	width: var(--track-w);
+	pointer-events: none
+}
+
+.range{
+	--i: var(--wide, 1);
+	--j: var(--narr, 0);
+	--notj: calc(1 - var(--j));
+	--hl: 0;
+	--nothl: calc(1 - var(--hl));
+	
+	@media (max-width: 570px) { --wide: 0 }
+    @media (max-width: 440px) { --narr: 1 }
+	
+	display:grid;
+
+	&__wrap {
+		--label-w: calc(var(--i)*#{$label-h});
+		--n-cols: calc(var(--max) + 1);
+		--u: calc((var(--wd)*1px - 2*var(--label-w))/var(--n-cols));
+		--middl-w: calc(var(--n-cols)*var(--u));
+		--track-w: calc(var(--middl-w) - var(--u) + #{$thumb-d});
+		--m: calc(.5*(var(--a) + var(--b)));
+
+		display: grid;
+		grid-auto-flow: row dense;
+		grid-template-rows: 49px max-content $label-h;
+		grid-template-columns: var(--label-w) var(--middl-w) var(--label-w);
+		justify-content: center;
+		//filter: brightness(.8);
+		
+		&::before, &::after {
+			@extend %mid;
+			z-index: -1;
+			height: $track-h;
+			border-radius: $track-h;
+			content: ''
+		}
+		
+		&::before {
+			background: $color-grey-light
+		}
+		
+		&::after {
+			background: $color-black;
+			--mask: 
+				linear-gradient(90deg, 
+						red calc(#{.5*$thumb-d} + var(--a)*var(--u)), 
+						transparent 0), 
+				linear-gradient(90deg, 
+						red calc(#{.5*$thumb-d} + var(--b)*var(--u)), 
+						transparent 0);
+			mask: var(--mask);
+			mask-composite: exclude
+		}
+		
+		&:focus-within { filter: none }
+	}
+	
+	.sr-only {
+		position: absolute;
+		clip-path: inset(50%);
+	}
+	
+	input[type='range'] {
+		&, &::-webkit-slider-thumb, 
+		&::-webkit-slider-runnable-track {
+			-webkit-appearance: none
+		}
+		
+		@extend %mid;
+		min-height: $thumb-d;
+		height: $track-h;
+		background: none;
+		
+		&::-webkit-slider-runnable-track { @include track() }
+		&::-moz-range-track { @include track() }
+		
+		&::-webkit-slider-thumb { @include thumb(calc(.5*(#{$track-h} - #{$thumb-d}))) }
+		&::-moz-range-thumb { @include thumb() }
+		
+		& + [for] {
+			display: grid;
+			justify-self: start;
+			margin-left: calc(.5*var(--u));
+			padding-bottom: .75rem;
+			transform: translate(calc(var(--c)*var(--u) - 30%));
+			
+			&::after {
+				display: block;
+				padding: .25em .75em;
+				transform-origin: 50% 100%;
+				//transform: scale(var(--hl));
+				//opacity: var(--hl);
+				transition: .3s ease-out;
+				transition-property: transform, opacity
+			}
+            
+            & ~ input[type='range'] + [for]{
+                transform: translate(calc(var(--c)*var(--u) - 75%));
+            }
+		}
+		
+		&, & + [for] { grid-column: 2 }
+		
+		&:focus {
+			outline: solid 0 transparent;
+			
+			&, & + [for] { --hl: 1 }
+		}
+	}
+	
+	output[for] {
+		grid-row: 1;
+		font-size: 24px;
+		counter-reset: lbl var(--lbl);
+		
+		&:after {
+			content: counter(lbl) ' млн';
+			white-space:nowrap;
+		}
+		
+		& + output[for] {
+			--k: var(--parity, 1);
+			--notk: calc(1 - var(--k));
+			--sgnk: calc(1 - 2*var(--k));
+			grid-column: calc(2*var(--notk) + 1);
+			align-self: center;
+			justify-self: var(--parity, end);
+			width:var(--label-w);
+            width:0;
+			overflow: hidden;
+			grid-row-end: span 3;
+			opacity: calc(4*var(--sgnk)*(var(--c) - var(--m)) + 1);
+			color: rgba($c1, calc(var(--i)))
+		}
+		
+		&:nth-of-type(3n) {
+			--parity: 0;
+		}
+	}
+	
+	output[for='a'] { --c: var(--a); --lbl: var(--lbl-a) }
+	output[for='b'] { --c: var(--b); --lbl: var(--lbl-b) }
+	
+	datalist {
+		display: grid;
+		grid-auto-flow: column;
+		grid-row: 3;
+		place-self: start stretch;
+		width: var(--middl-w);
+		z-index:-1;
+	}
+	
+	option {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: var(--u);
+		font-size: var(--notj);
+		text-align: center;
+        color:transparent;
+        position: relative;
+		top: 6px;
+		
+		&::before {
+			align-self: center;
+			width: 1px;
+			height: 40px;
+			//background: $color-grey-dark;
+			content: '';
+			margin-top:-70px;
+		}
+		
+		&:not(:nth-child(3n + 1)) {
+            color: rgba($c1, var(--notj));
+            color: transparent;
+        }
+	}
+}

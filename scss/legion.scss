@@ -2,7 +2,7 @@
 @import "_vars";
 @import "_fonts";
 @import "_mixins";
-@import "_range2";
+@import "_range3";
 
 //------------------Свайпер------------------
 
@@ -6690,7 +6690,9 @@ a.button {
 	}
 
 	&__range {
-		margin: 40px -107px 50px;
+		margin: 40px -140px 50px;
+        position: relative;
+        z-index: 1;
 
 		&+.request__select {
 			display: none;
