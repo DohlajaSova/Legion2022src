@@ -1,7 +1,7 @@
 <div class="request">
     <div class="container" style="overflow:hidden; background: #fff;">
 
-        <h1 class="request__title">Расскажите нам о&nbsp;задаче</h1>
+        <h1 class="request__title">Расскажите <br>нам о&nbsp;задаче</h1>
         <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
         <div class="request__lead"></div>
         <h3>Что нужно сделать?</h3>

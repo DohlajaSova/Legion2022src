@@ -6563,20 +6563,37 @@ a.button {
 
 .request {
 	margin-bottom: 120px;
-	&__title{
-		margin: 120px 0;
-	}
-
 	overflow-y: auto;
 	max-height: 100%;
+
+	&__title{
+		margin: 0 0 99px;
+	}
+	
+	h3{
+		margin-bottom: 26px;
+	}
 
 	&__lead {
 		border-bottom: 1px solid $color-blue-dark;
 		margin-bottom: 70px;
+		display: none;
 	}
 
 	&__select {
-		margin: 40px 0 50px;
+		margin: 20px 0 40px;
+		&.select-checkmark{
+			.select-hide div{
+				color: $color-black;
+				font-size: 20px;
+			}
+			&.platform,
+			&.source{
+				.select-hide div{
+					width: 33.3333%;
+				}
+			}
+		}
 	}
 
 	&__textarea {
@@ -6591,7 +6608,7 @@ a.button {
 			border: none;
 			border-bottom: 1px solid $color-grey-dark;
 			color: $color-black;
-			font-size: 24px;
+			font-size: 18px;
 			resize: none;
 			height: 1.5em;
 			transition: height 0.25s;
@@ -6599,6 +6616,11 @@ a.button {
 
 		.button {
 			margin: 50px 0 70px;
+			&.yaDiskUploader{
+				border-style: solid;
+				border-width: 1px;
+				max-width: 250px;
+			}
 		}
 	}
 
@@ -6615,6 +6637,15 @@ a.button {
 
 		input[type="file"] {
 			display: none;
+		}
+
+		.request__comment-container{
+			align-items: first baseline;
+		}
+		
+		.request__comment,
+		.request__textarea .button{
+			padding-top: 40px;
 		}
 	}
 
@@ -6690,7 +6721,7 @@ a.button {
 	}
 
 	&__range {
-		margin: 40px -140px 50px;
+		margin: 11px -140px 30px;
         position: relative;
         z-index: 1;
 
@@ -6714,6 +6745,7 @@ a.button {
 		h3 {
 			width: 100%;
 			font-size: 46px;
+			margin-bottom: 0;
 		}
         
         &_container{
@@ -6722,7 +6754,7 @@ a.button {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-top: 50px;
+            margin-top: 0;
         }
 
 		&_label {
@@ -6770,7 +6802,7 @@ a.button {
 			border: none;
 			border-bottom: 1px solid rgba($color-black, 0.3);
 			color: $color-black;
-			font-size: 24px;
+			font-size: 18px;
 
 			&:focus {
 				border-bottom-color: rgba($color-black, 0.3);
@@ -6806,6 +6838,18 @@ a.button {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: flex-end;
+		&.centered{
+			flex-direction: column-reverse;
+			align-items: center;
+			.request__comment{
+				padding-top: 40px;
+				padding-left: 0;
+				text-align: center;
+			}
+			.request__button{
+				text-align: center;
+			}
+		}
 	}
 
 	&__comment {
