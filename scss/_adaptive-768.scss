@@ -930,11 +930,16 @@
         }
     }
     .importhead {
+        .container {
+            padding-top: 50px;
+        }
         &__text {
             font-size: 22px;
             line-height: 29px;
         }
         &__blocks {
+            display: flex;
+            flex-flow: column;
             &_card {
                 .heading {
                     font-size: 42px;
@@ -1910,12 +1915,6 @@
         }
         &__title{
             padding-right: 30px;
-        }
-    }
-    .importhead {
-        &__blocks {
-            display: flex;
-            flex-flow: column;
         }
     }
 }

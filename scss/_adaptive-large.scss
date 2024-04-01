@@ -1049,6 +1049,10 @@
     }
 
     .importhead {
+        .container {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
         &__text {
             font-size: 18px;
             line-height: 23.4px;
