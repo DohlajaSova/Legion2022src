@@ -759,7 +759,7 @@ function generateCaseTOC(caseOuter) {
     }
 
     if (toc != "") {
-        toc = '<aside class="case-container__toc js-toc"><div class="case-container__toc-inner hide"><a href="#" class="sidetoc-menu js-sidetoc"></a>' + toc + '</div></aside>';
+        toc = '<aside class="case-container__toc js-toc"><div class="case-container__toc-inner"><a href="#" class="sidetoc-menu js-sidetoc"></a>' + toc + '</div></aside>';
     }
     else toc = '<aside class="case-container__toc"></aside>'
 
@@ -774,10 +774,14 @@ function generateCaseTOC(caseOuter) {
     document.addEventListener('click', function(e){
         if (e.target.classList.contains('js-sidetoc')){
             e.preventDefault();
-            if (e.target.classList.contains('closed'))
+            if (e.target.classList.contains('closed')){
                 e.target.classList.remove('closed');
-            else
+                e.target.parentElement.classList.remove('closed');
+            }
+            else{
                 e.target.classList.add('closed');
+                e.target.parentElement.classList.add('closed');
+            }
         }
     }, true);
     
@@ -823,15 +827,23 @@ function generateCaseTOC(caseOuter) {
         //let caseTop = caseBody.offsetTop; bug in mobile
         //let caseTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height;
         let caseTop = document.getElementsByClassName('case-column')[0].getBoundingClientRect().top + window.pageYOffset - document.getElementsByClassName('header')[0].getBoundingClientRect().height + 40;
-        stickyTOC.style.top = caseTop + 110 + 'px';
         let caseHeight = document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height + 167;
         let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         let topAdjust = 0;
-        if (wWidth <= 650) topAdjust = 102;
-        if (wWidth > 1024 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined)
-            document.getElementsByClassName('case-container__toc-inner')[0].classList.remove('hide');
+        if (wWidth > 1180) topAdjust = 27;
+        stickyTOC.style.top = caseTop + 66 + topAdjust + 'px';
+        if (wWidth <= 1024 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined){
+            document.getElementsByClassName('case-container__toc-inner')[0].classList.add('closed');
+            document.getElementsByClassName('js-sidetoc')[0].classList.add('closed');
+        }
+        if (wWidth <= 1180 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined){
+            document.getElementsByClassName('js-toc')[0].classList.add('fixed');
+            document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
+            document.getElementsByClassName('case-container__toc-inner')[0].classList.add('closed');
+            document.getElementsByClassName('js-sidetoc')[0].classList.add('closed');
+        }
 
         // 0. подсвечиваем активный заголовок
         // 1. массив заголовков, их топ-координаты относительно скролла
@@ -851,7 +863,7 @@ function generateCaseTOC(caseOuter) {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height;
             stickyTOC.style.height = TOCHeight + 68 + "px";
-            if (bodyScrollTop > caseTop + 67) {
+            if (bodyScrollTop > caseTop + 50) {
                 document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
                 if (wWidth > 1024 && document.getElementsByClassName('case-container')[0] != undefined) {

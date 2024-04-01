@@ -1,7 +1,7 @@
 <div class="request">
     <div class="container" style="overflow:hidden; background: #fff;">
 
-        <h1 class="request__title">Расскажите нам о&nbsp;задаче</h1>
+        <h1 class="request__title">Расскажите <br>нам о&nbsp;задаче</h1>
         <!-- <span class="request__form_warning">✕ Временно недоступно</span> -->
         <div class="request__lead"></div>
         <h3>Что нужно сделать?</h3>
@@ -25,27 +25,28 @@
         </div> -->
         <h3>Какой бюджет?</h3>
         <div class="request__range range">
-            <div class="range__wrap" role="group" aria-label="multi thumb slider with ruler" style="--a: 3; --b: 5; --min: 0; --max: 8; --lbl-a: 15; --lbl-b: 21">
+            <div class="range__wrap" role="group" aria-label="multi thumb slider with ruler" style="--a: 3; --b: 5; --min: 0; --max: 9; --lbl-a: 15; --lbl-b: 21">
                 <label class="sr-only" for="a">От:</label>
-                <input id="a" type="range" min="0" max="8" step="1" value="3" aria-valuetext="15" list="l" name="range-from">
+                <input id="a" type="range" min="0" max="9" step="1" value="3" aria-valuetext="15" list="l" name="range-from">
                 <output for="a" aria-hidden="true"></output>
                 <output for="a" aria-hidden="true"></output>
                 <output for="a" aria-hidden="true"></output>
                 <label class="sr-only" for="b">До:</label>
-                <input id="b" type="range" min="0" max="8" step="1" value="5" aria-valuetext="21" list="l" name="range-to">
+                <input id="b" type="range" min="0" max="9" step="1" value="5" aria-valuetext="21" list="l" name="range-to">
                 <output for="b" aria-hidden="true"></output>
                 <output for="b" aria-hidden="true"></output>
                 <output for="b" aria-hidden="true"></output>
                 <datalist id="l">
-                    <option value="0" label="6"></option>
-                    <option value="1" label="9"></option>
-                    <option value="2" label="12"></option>
-                    <option value="3" label="15"></option>
-                    <option value="4" label="18"></option>
-                    <option value="5" label="21"></option>
-                    <option value="6" label="24"></option>
-                    <option value="7" label="27"></option>
-                    <option value="8" label="30"></option>
+                    <option value="0" label="3"></option>
+                    <option value="1" label="6"></option>
+                    <option value="2" label="9"></option>
+                    <option value="3" label="12"></option>
+                    <option value="4" label="15"></option>
+                    <option value="5" label="18"></option>
+                    <option value="6" label="21"></option>
+                    <option value="7" label="24"></option>
+                    <option value="8" label="27"></option>
+                    <option value="9" label="30"></option>
                 </datalist>
             </div>
         </div>
