@@ -45,7 +45,7 @@
     --m: calc(.5*(var(--a) + var(--b)));
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-rows: 65px max-content 65px;
+    grid-template-rows: 49px max-content 65px;
     grid-template-columns: var(--label-w) var(--middl-w) var(--label-w);
     justify-content: center; }
     .range__wrap::before, .range__wrap::after {
@@ -124,13 +124,15 @@
       justify-self: start;
       margin-left: calc(.5*var(--u));
       padding-bottom: .75rem;
-      transform: translate(calc(var(--c)*var(--u) - 50%)); }
+      transform: translate(calc(var(--c)*var(--u) - 30%)); }
       .range input[type='range'] + [for]::after {
         display: block;
         padding: .25em .75em;
         transform-origin: 50% 100%;
         transition: .3s ease-out;
         transition-property: transform, opacity; }
+      .range input[type='range'] + [for] ~ input[type='range'] + [for] {
+        transform: translate(calc(var(--c)*var(--u) - 75%)); }
     .range input[type='range'], .range input[type='range'] + [for] {
       grid-column: 2; }
     .range input[type='range']:focus {
@@ -1038,7 +1040,7 @@ a.button {
   .social_yt {
     background-image: url("img/icon-social-yt.svg"); }
     .social_yt:hover {
-      background-image: url("img/icon-social-yt-w.svg"); }
+      background-image: url("img/icon-social-yt-w-d.svg"); }
   .social_in {
     background-image: url("img/icon-social-ig.svg"); }
     .social_in:hover {
@@ -4656,12 +4658,20 @@ a.button {
   overflow-y: auto;
   max-height: 100%; }
   .request__title {
-    margin: 120px 0; }
+    margin: 0 0 99px; }
+  .request h3 {
+    margin-bottom: 26px; }
   .request__lead {
     border-bottom: 1px solid #1E2738;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    display: none; }
   .request__select {
-    margin: 40px 0 50px; }
+    margin: 20px 0 40px; }
+    .request__select.select-checkmark .select-hide div {
+      color: #141414;
+      font-size: 20px; }
+    .request__select.select-checkmark.platform .select-hide div, .request__select.select-checkmark.source .select-hide div {
+      width: 33.3333%; }
   .request__textarea {
     margin-top: 34px; }
     .request__textarea textarea {
@@ -4673,12 +4683,16 @@ a.button {
       border: none;
       border-bottom: 1px solid #949191;
       color: #141414;
-      font-size: 24px;
+      font-size: 18px;
       resize: none;
       height: 1.5em;
       transition: height 0.25s; }
     .request__textarea .button {
       margin: 50px 0 70px; }
+      .request__textarea .button.yaDiskUploader {
+        border-style: solid;
+        border-width: 1px;
+        max-width: 250px; }
   .request__file {
     margin-bottom: 80px; }
     .request__file p {
@@ -4689,6 +4703,11 @@ a.button {
       margin-bottom: 30px; }
     .request__file input[type="file"] {
       display: none; }
+    .request__file .request__comment-container {
+      align-items: first baseline; }
+    .request__file .request__comment,
+    .request__file .request__textarea .button {
+      padding-top: 40px; }
   .request .select-inline .select-hide {
     font-size: 24px; }
     .request .select-inline .select-hide .iconed {
@@ -4721,7 +4740,7 @@ a.button {
     .request .select-inline .select-hide .same-as-selected.iconed_other::before {
       background-image: url("img/icon-other-white.svg"); }
   .request__range {
-    margin: 40px -107px 50px;
+    margin: 11px -130px 30px;
     position: relative;
     z-index: 1; }
     .request__range + .request__select {
@@ -4737,14 +4756,15 @@ a.button {
       font-size: 46px; }
     .request__form h3 {
       width: 100%;
-      font-size: 46px; }
+      font-size: 46px;
+      margin-bottom: 0; }
     .request__form_container {
       width: 100%;
       padding-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-top: 50px; }
+      margin-top: 0; }
     .request__form_label {
       font-size: 24px;
       color: #141414;
@@ -4778,7 +4798,7 @@ a.button {
       border: none;
       border-bottom: 1px solid rgba(20, 20, 20, 0.3);
       color: #141414;
-      font-size: 24px; }
+      font-size: 18px; }
       .request__form_input[type="text"]:focus, .request__form_input[type="email"]:focus, .request__form_input[type="tel"]:focus, .request__form_textarea:focus {
         border-bottom-color: rgba(20, 20, 20, 0.3); }
     .request__form_item {
@@ -4797,6 +4817,15 @@ a.button {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end; }
+    .request__comment-container.centered {
+      flex-direction: column-reverse;
+      align-items: center; }
+      .request__comment-container.centered .request__comment {
+        padding-top: 40px;
+        padding-left: 0;
+        text-align: center; }
+      .request__comment-container.centered .request__button {
+        text-align: center; }
   .request__comment {
     font-size: 16px;
     color: #949191;
@@ -7670,8 +7699,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
 
 .importhead .container {
   max-width: 1087px;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 10px;
+  padding-bottom: 80px; }
 .importhead__banner {
   width: 100%;
   height: auto;
@@ -8588,6 +8617,9 @@ svg.hoversvgrequest {
       top: -20px;
       left: 0; }
 
+  .importhead .container {
+    padding-top: 30px;
+    padding-bottom: 60px; }
   .importhead__text {
     font-size: 18px;
     line-height: 23.4px;
@@ -11084,16 +11116,21 @@ svg.hoversvgrequest {
   .case-accordion > .h3 {
     font-size: 42px; }
 
+  .importhead .container {
+    padding-top: 50px; }
   .importhead__text {
     font-size: 22px;
     line-height: 29px; }
-  .importhead__blocks_card .heading {
-    font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 10px; }
-  .importhead__blocks_card .text {
-    font-size: 22px;
-    line-height: 29px; }
+  .importhead__blocks {
+    display: flex;
+    flex-flow: column; }
+    .importhead__blocks_card .heading {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 10px; }
+    .importhead__blocks_card .text {
+      font-size: 22px;
+      line-height: 29px; }
 
   .worksteps .container {
     padding-top: 80px;
@@ -11727,11 +11764,7 @@ svg.hoversvgrequest {
       width: 72px;
       padding-left: 30px; }
     .case-awards__title {
-      padding-right: 30px; }
-
-  .importhead__blocks {
-    display: flex;
-    flex-flow: column; } }
+      padding-right: 30px; } }
 @media only screen and (min-width: 551px) {
   .footer__menu-list {
     width: fit-content;
@@ -13505,6 +13538,9 @@ svg.hoversvgrequest {
     left: 20px;
     top: 20px; }
 
+  .importhead .container {
+    padding-top: 20px;
+    padding-bottom: 40px; }
   .importhead__text {
     font-size: 16px;
     line-height: 21px;
