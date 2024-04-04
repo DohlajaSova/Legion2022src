@@ -1,0 +1,17 @@
+﻿<!-- aurora.nunjucks -->
+{% extends "layout-service-astralinux.nunjucks" %}
+{% block title %} Импортозамещение {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+{% include "partials/towel/redesign/services/services-heading.nunjucks" %}
+{% include "partials/towel/redesign/services/services-souvereign.nunjucks" %}
+
+{% include "partials/towel/redesign/services/services-systems.nunjucks" %}
+{% include "partials/towel/redesign/services/services-worksteps.nunjucks" %}
+{% include "partials/towel/redesign/services/services-underscore.nunjucks" %}
+
+
+{% include "partials/towel/redesign/blog.nunjucks" %}
+
+{% endblock %}
