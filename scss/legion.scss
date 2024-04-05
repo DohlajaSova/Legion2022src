@@ -5084,6 +5084,13 @@ a.button {
 		color: $color-grey-dark;
 		width: 50%;
 		padding: 12px 10% 0 0;
+		a{
+			color: $color-grey-dark;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
 	}
 
 	&__button {

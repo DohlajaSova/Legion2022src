@@ -2181,7 +2181,7 @@ docReady(function () {
 
         // let cases = Array.prototype.slice.call(container.children[0].children);
 
-        tns({
+        let sliderYears = tns({
             container: '.js-years',
             items: 1,
             controls: false,
