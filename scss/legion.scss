@@ -5830,7 +5830,7 @@ a.button {
         }
         .footer{
             background-color: $color-grey-light;
-            a{
+            /*a{
                 color:$color-blue-dark;
             }
             .social{
@@ -5872,7 +5872,7 @@ a.button {
                 &_vc {
                     background-image: url($img-path + "icon-social-vc-w.svg");
                 }
-            }
+            }*/
             &__logo{
                 background-image: url($img-path + "logo.svg");
             }
@@ -6282,7 +6282,7 @@ a.button {
 
 	.body_blog & {
         background: $color-grey-light;
-        a{
+        /*a{
             color:$color-blue-dark;
         }
         .social{
@@ -6328,7 +6328,7 @@ a.button {
             &_vc {
                 background-image: url($img-path + "icon-social-vc-w.svg");
             }
-        }
+        }*/
         .footer{
             &__logo{
                 background-image: url($img-path + "logo.svg");
