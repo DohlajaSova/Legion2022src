@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="feedback__comment">
-                    Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
+                    Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей <a href="">политикой обработки персональных данных</a>
                 </div>
                 <div class="feedback__button">
                     <button class="button button_white js-popup-feedback-send-subscribe">Хочу получать письма</button>
