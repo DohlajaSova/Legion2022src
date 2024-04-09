@@ -6740,7 +6740,7 @@ a.button {
 			display: none;
 		}
 	}
-
+    
 	&__form {
 		width: 100%;
 		padding-bottom: 20px;
@@ -6879,6 +6879,14 @@ a.button {
 			color: $color-white;
 		}
 	}
+}
+
+/*Safari hack for range*/
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    .request__range{
+        margin-left: -120px;
+        margin-right: -120px;
+    }
 }
 
 .yaDiskUploader{

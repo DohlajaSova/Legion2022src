@@ -4887,6 +4887,11 @@ a.button {
       background: #1E2738;
       color: #fff; }
 
+/*Safari hack for range*/
+_::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
+  margin-left: -120px;
+  margin-right: -120px; }
+
 .yaDiskUploader .dz-before-process {
   display: block;
   text-align: center; }
