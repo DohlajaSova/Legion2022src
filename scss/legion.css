@@ -3713,6 +3713,11 @@ a.button {
     .feedback.feedback_applicants .feedback__form_error,
     .feedback.feedback_applicants .feedback__comment {
       color: #F0F0F0; }
+      .feedback.feedback_applicants .feedback__form_error a,
+      .feedback.feedback_applicants .feedback__form_error a:hover,
+      .feedback.feedback_applicants .feedback__comment a,
+      .feedback.feedback_applicants .feedback__comment a:hover {
+        color: #F0F0F0; }
     .feedback.feedback_applicants.feedback_compact .feedback__button .pulse-button {
       background-color: #fff; }
       .feedback.feedback_applicants.feedback_compact .feedback__button .pulse-button:before {

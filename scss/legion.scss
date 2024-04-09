@@ -5138,6 +5138,10 @@ a.button {
 		.feedback__form_error,
 		.feedback__comment {
 			color: $color-grey-light;
+            a,
+            a:hover{
+                color: $color-grey-light;
+            }
 		}
 
 		&.feedback_compact {
