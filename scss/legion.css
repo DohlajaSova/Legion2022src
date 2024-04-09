@@ -3679,6 +3679,11 @@ a.button {
     color: #949191;
     width: 50%;
     padding: 12px 10% 0 0; }
+    .feedback__comment a {
+      color: #949191;
+      text-decoration: underline; }
+      .feedback__comment a:hover {
+        text-decoration: none; }
   .feedback__button {
     width: 50%; }
     .feedback__button .button {
@@ -4199,31 +4204,50 @@ a.button {
     .body_news.body_news-ver2 .news-top__leadblock_lead {
       display: none; }
 .body_news.body_news-ver2 .footer {
-  background-color: #F0F0F0; }
-  .body_news.body_news-ver2 .footer a {
-    color: #1E2738; }
-  .body_news.body_news-ver2 .footer .social a {
-    background-color: #1E2738; }
-    .body_news.body_news-ver2 .footer .social a.social_blog {
-      background-color: transparent;
-      color: #84AEFF; }
-      .body_news.body_news-ver2 .footer .social a.social_blog:hover {
-        background-color: #84AEFF;
-        color: #fff; }
-  .body_news.body_news-ver2 .footer .social_fb {
-    background-image: url("img/icon-social-f-w.svg"); }
-  .body_news.body_news-ver2 .footer .social_vk {
-    background-image: url("img/icon-social-vk-w.svg"); }
-  .body_news.body_news-ver2 .footer .social_tw {
-    background-image: url("img/icon-social-tw-w.svg"); }
-  .body_news.body_news-ver2 .footer .social_yt {
-    background-image: url("img/icon-social-yt-w-d.svg"); }
-  .body_news.body_news-ver2 .footer .social_in {
-    background-image: url("img/icon-social-ig-w.svg"); }
-  .body_news.body_news-ver2 .footer .social_h {
-    background-image: url("img/icon-social-h-w.svg"); }
-  .body_news.body_news-ver2 .footer .social_vc {
-    background-image: url("img/icon-social-vc-w.svg"); }
+  background-color: #F0F0F0;
+            /*a{
+                color:$color-blue-dark;
+            }
+            .social{
+                a{
+                    background-color: $color-blue-dark;
+                    &.social_blog{
+                        background-color:transparent;
+                        color: $color-blue-light;
+                        &:hover{
+                            background-color: $color-blue-light;
+                            color:$color-white;
+                        }
+                    }
+                }
+                &_fb {
+                    background-image: url($img-path + "icon-social-f-w.svg");
+                }
+
+                &_vk {
+                    background-image: url($img-path + "icon-social-vk-w.svg");
+                }
+
+                &_tw {
+                    background-image: url($img-path + "icon-social-tw-w.svg");
+                }
+
+                &_yt {
+                    background-image: url($img-path + "icon-social-yt-w-d.svg");
+                }
+
+                &_in {
+                    background-image: url($img-path + "icon-social-ig-w.svg");
+                }
+
+                &_h {
+                    background-image: url($img-path + "icon-social-h-w.svg");
+                }
+
+                &_vc {
+                    background-image: url($img-path + "icon-social-vc-w.svg");
+                }
+            }*/ }
   .body_news.body_news-ver2 .footer__logo {
     background-image: url("img/logo.svg"); }
 
@@ -4482,34 +4506,54 @@ a.button {
     .footer__copyright_about svg {
       margin-bottom: -3px; }
   .body_blog .footer {
-    background: #F0F0F0; }
-    .body_blog .footer a {
-      color: #1E2738; }
-    .body_blog .footer .social a {
-      background-color: #1E2738; }
-      .body_blog .footer .social a.social_blog {
-        background-color: transparent;
-        color: #1960FF;
-        border: 1.5px solid #1960FF; }
-        .body_blog .footer .social a.social_blog:hover {
-          background-color: #1960FF;
-          color: #fff; }
-      .body_blog .footer .social a:last-child {
-        background-color: transparent; }
-    .body_blog .footer .social_fb {
-      background-image: url("img/icon-social-f-w.svg"); }
-    .body_blog .footer .social_vk {
-      background-image: url("img/icon-social-vk-w.svg"); }
-    .body_blog .footer .social_tw {
-      background-image: url("img/icon-social-tw-w.svg"); }
-    .body_blog .footer .social_yt {
-      background-image: url("img/icon-social-yt-w-d.svg"); }
-    .body_blog .footer .social_in {
-      background-image: url("img/icon-social-ig-w.svg"); }
-    .body_blog .footer .social_h {
-      background-image: url("img/icon-social-h-w.svg"); }
-    .body_blog .footer .social_vc {
-      background-image: url("img/icon-social-vc-w.svg"); }
+    background: #F0F0F0;
+        /*a{
+            color:$color-blue-dark;
+        }
+        .social{
+            a{
+                background-color: $color-blue-dark;
+                &.social_blog{
+                    background-color:transparent;
+                    color: $color-blue-clean;
+                    border: 1.5px solid $color-blue-clean;
+                    &:hover{
+                        background-color: $color-blue-clean;
+                        color: $color-white;
+                    }
+                }
+                &:last-child{
+                    background-color: transparent;
+                }
+            }
+            &_fb {
+                background-image: url($img-path + "icon-social-f-w.svg");
+            }
+
+            &_vk {
+                background-image: url($img-path + "icon-social-vk-w.svg");
+            }
+
+            &_tw {
+                background-image: url($img-path + "icon-social-tw-w.svg");
+            }
+
+            &_yt {
+                background-image: url($img-path + "icon-social-yt-w-d.svg");
+            }
+
+            &_in {
+                background-image: url($img-path + "icon-social-ig-w.svg");
+            }
+
+            &_h {
+                background-image: url($img-path + "icon-social-h-w.svg");
+            }
+
+            &_vc {
+                background-image: url($img-path + "icon-social-vc-w.svg");
+            }
+        }*/ }
     .body_blog .footer .footer__logo {
       background-image: url("img/logo.svg"); }
     .body_blog .footer .footer__menu a {
@@ -11153,7 +11197,10 @@ svg.hoversvgrequest {
   .case-container__toc-inner.fixed {
     width: 100%; }
     .case-container__toc-inner.fixed.closed {
-      width: 90px; } }
+      width: 90px; }
+
+  .redesign-feedback .container svg {
+    max-width: 100% !important; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
