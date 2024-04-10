@@ -1074,6 +1074,63 @@
             }
         }
     }
+    .request{
+        h3,
+        .h3{
+            font-size: 40px;
+        }
+        &__select.select-checkmark{
+            .select-hide div{
+                font-size: 18px;
+            }
+        }
+        &__textarea{
+            textarea{
+                font-size: 16px;
+            }
+        }
+        &__form{
+            &_item{
+                margin-bottom: 55px;
+            }
+            &_input[type="text"],
+            &_input[type="email"],
+            &_input[type="tel"],
+            &_textarea {
+                font-size: 16px;
+            }
+        }
+        &__button{
+            width: auto;
+        }
+        &__comment{
+            font-size: 14px;
+        }
+        &__comment-container {
+            &.centered{
+                .request__comment{
+                    padding-top: 14px;
+                }
+            }
+        }
+        &__range{
+            margin-left: -108px;
+            margin-right: -108px;
+        }
+    }
+    .range{
+        output[for]{
+            font-size: 22px;
+        }
+    }
+
+    /*Safari hack for range*/
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        .request__range{
+            margin-left: -98px;
+            margin-right: -98px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -2394,6 +2451,21 @@
         }
     }
     // --
+    
+    .request{
+        &__range{
+            margin-left: -100px;
+            margin-right: -100px;
+        }
+    }
+
+    /*Safari hack for range*/
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        .request__range{
+            margin-left: -90px;
+            margin-right: -90px;
+        }
+    }
 }
 
 @media only screen and (max-width: $screen-md) {

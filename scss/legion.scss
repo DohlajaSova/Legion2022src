@@ -6597,6 +6597,7 @@ a.button {
 			.select-hide div{
 				color: $color-black;
 				font-size: 20px;
+                padding-right: 30px;
 			}
 			&.platform,
 			&.source{
@@ -6631,6 +6632,8 @@ a.button {
 				border-style: solid;
 				border-width: 1px;
 				max-width: 250px;
+                font-size: 18px;
+                white-space: nowrap;
 			}
 		}
 	}
@@ -6662,7 +6665,7 @@ a.button {
 
 	.select-inline .select-hide {
 		font-size: 24px;
-
+        
 		.iconed {
 			padding-top: 15px;
 
@@ -6853,7 +6856,7 @@ a.button {
 			flex-direction: column-reverse;
 			align-items: center;
 			.request__comment{
-				padding-top: 40px;
+				padding-top: 26px;
 				padding-left: 0;
 				text-align: center;
 			}
@@ -6866,7 +6869,8 @@ a.button {
 	&__comment {
 		font-size: 16px;
 		color: $color-grey-dark;
-		width: 40%;
+		width: 31%;
+        min-width: 445px;
 		padding: 12px 0 0 20px;
 	}
 

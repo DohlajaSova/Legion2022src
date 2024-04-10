@@ -1715,7 +1715,9 @@ docReady(function () {
                 _o = _p.querySelector(`option[value='${val}']`),
                 lbl = +_o.label;
             let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-            let wdd = wwidth > 1330 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60)
+            //let wdd = wwidth > 1500 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60);
+            //let wdd = wwidth > 650 ? _p.clientWidth : wwidth - 60;
+            let wdd = wwidth > 650 ? _p.clientWidth : _p.clientWidth - 60;
             _t.setAttribute('aria-valuetext', lbl);
             _p.style.setProperty(`--${_t.id}`, val);
             _p.style.setProperty(`--lbl-${_t.id}`, lbl + "");
