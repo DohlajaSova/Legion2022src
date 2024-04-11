@@ -1514,16 +1514,24 @@
     }
     .request{
         &__file{
-            margin-bottom:10px;
+            margin-bottom: 10px;
         }
         &__select.select-inline_wide .select-selected{
-            font-size:16px;
+            font-size: 16px;
             line-height: 24px;
+        }
+        &__select.select-checkmark{
+            &.platform,
+            &.source{
+                .select-hide div{
+                    width: 100%;
+                }
+            }
         }
     }
     .popup-video__container,
     .popup-feedback__container{
-        padding:0 15px;
+        padding: 0 15px;
         height: 95vh;
     }
     .popup-feedback{
@@ -1536,12 +1544,12 @@
         }
     }
     .popup-feedback .answer__container{
-        padding-right:15%;
-        padding-bottom:100px;
+        padding-right: 15%;
+        padding-bottom: 100px;
     }
     .service {
 		&__header{
-			font-size:55px;
+			font-size: 55px;
 		}
         &__section {
             &_info {

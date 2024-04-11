@@ -113,6 +113,10 @@
         padding: 0
     }
     //
+    .request__range{
+        margin-left: -130px;
+        margin-right: -130px;
+    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1114,8 +1118,8 @@
             }
         }
         &__range{
-            margin-left: -108px;
-            margin-right: -108px;
+            margin-left: -118px;
+            margin-right: -118px;
         }
     }
     .range{
@@ -1127,13 +1131,20 @@
     /*Safari hack for range*/
     _::-webkit-full-page-media, _:future, :root .safari_only {
         .request__range{
-            margin-left: -98px;
-            margin-right: -98px;
+            margin-left: -108px;
+            margin-right: -108px;
         }
     }
 }
 
 @media only screen and (max-width: 1180px) {
+    .mobile1180-show{
+        display: block !important;
+    }
+    .mobile1180-hide{
+        display: none !important;
+    }
+
     .header,
     .footer,
     .pmenu,

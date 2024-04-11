@@ -120,7 +120,11 @@ $label-h: 65px; /* label widths */
 			justify-self: start;
 			margin-left: calc(.5*var(--u));
 			padding-bottom: .75rem;
-			transform: translate(calc(var(--c)*var(--u) - 30%));
+			transform: translate(calc(var(--c)*var(--u) - 25%));
+            
+            @media (max-width: 1180px) { 
+                transform: translate(calc(var(--c)*var(--u) - 50%));
+            }
 			
 			&::after {
 				display: block;
@@ -133,7 +137,11 @@ $label-h: 65px; /* label widths */
 			}
             
             & ~ input[type='range'] + [for]{
-                transform: translate(calc(var(--c)*var(--u) - 75%));
+                transform: translate(calc(var(--c)*var(--u) - 78%));
+
+                @media (max-width: 1180px) { 
+                    transform: translate(calc(var(--c)*var(--u) - 50%));
+                }
             }
 		}
 		
@@ -152,8 +160,12 @@ $label-h: 65px; /* label widths */
 		counter-reset: lbl var(--lbl);
 		
 		&:after {
-			content: counter(lbl) ' млн';
+			content: counter(lbl) ' млн ₽';
 			white-space:nowrap;
+            
+            @media (max-width: 1180px) { 
+                content: counter(lbl);
+            }
 		}
 		
 		& + output[for] {

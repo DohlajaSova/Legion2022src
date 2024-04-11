@@ -23,7 +23,7 @@
                 <option value="Другое">Другое</option>
             </select>
         </div> -->
-        <h3>Какой бюджет?</h3>
+        <h3><span class="mobile1180-hide">Какой бюджет?</span><span class="hide mobile1180-show">Бюджет, млн ₽</span></h3>
         <div class="request__range range">
             <div class="range__wrap" role="group" aria-label="multi thumb slider with ruler" style="--a: 3; --b: 5; --min: 0; --max: 9; --lbl-a: 15; --lbl-b: 21">
                 <label class="sr-only" for="a">От:</label>

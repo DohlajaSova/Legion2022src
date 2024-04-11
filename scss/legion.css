@@ -124,7 +124,10 @@
       justify-self: start;
       margin-left: calc(.5*var(--u));
       padding-bottom: .75rem;
-      transform: translate(calc(var(--c)*var(--u) - 30%)); }
+      transform: translate(calc(var(--c)*var(--u) - 25%)); }
+      @media (max-width: 1180px) {
+        .range input[type='range'] + [for] {
+          transform: translate(calc(var(--c)*var(--u) - 50%)); } }
       .range input[type='range'] + [for]::after {
         display: block;
         padding: .25em .75em;
@@ -132,7 +135,10 @@
         transition: .3s ease-out;
         transition-property: transform, opacity; }
       .range input[type='range'] + [for] ~ input[type='range'] + [for] {
-        transform: translate(calc(var(--c)*var(--u) - 75%)); }
+        transform: translate(calc(var(--c)*var(--u) - 78%)); }
+        @media (max-width: 1180px) {
+          .range input[type='range'] + [for] ~ input[type='range'] + [for] {
+            transform: translate(calc(var(--c)*var(--u) - 50%)); } }
     .range input[type='range'], .range input[type='range'] + [for] {
       grid-column: 2; }
     .range input[type='range']:focus {
@@ -144,8 +150,11 @@
     font-size: 24px;
     counter-reset: lbl var(--lbl); }
     .range output[for]:after {
-      content: counter(lbl) " млн";
+      content: counter(lbl) " млн ₽";
       white-space: nowrap; }
+      @media (max-width: 1180px) {
+        .range output[for]:after {
+          content: counter(lbl); } }
     .range output[for] + output[for] {
       --k: var(--parity, 1);
       --notk: calc(1 - var(--k));
@@ -8119,7 +8128,11 @@ svg.hoversvgrequest {
     width: 100%; }
 
   .top.redesign {
-    padding: 0; } }
+    padding: 0; }
+
+  .request__range {
+    margin-left: -130px;
+    margin-right: -130px; } }
 @media only screen and (max-width: 1440px) {
   .body_about .top {
     background-size: cover; }
@@ -8707,17 +8720,23 @@ svg.hoversvgrequest {
   .request__comment-container.centered .request__comment {
     padding-top: 14px; }
   .request__range {
-    margin-left: -108px;
-    margin-right: -108px; }
+    margin-left: -118px;
+    margin-right: -118px; }
 
   .range output[for] {
     font-size: 22px; }
 
   /*Safari hack for range*/
   _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
-    margin-left: -98px;
-    margin-right: -98px; } }
+    margin-left: -108px;
+    margin-right: -108px; } }
 @media only screen and (max-width: 1180px) {
+  .mobile1180-show {
+    display: block !important; }
+
+  .mobile1180-hide {
+    display: none !important; }
+
   .header,
   .footer,
   .pmenu,
@@ -11608,6 +11627,8 @@ svg.hoversvgrequest {
   .request__select.select-inline_wide .select-selected {
     font-size: 16px;
     line-height: 24px; }
+  .request__select.select-checkmark.platform .select-hide div, .request__select.select-checkmark.source .select-hide div {
+    width: 100%; }
 
   .popup-video__container,
   .popup-feedback__container {
