@@ -6595,6 +6595,7 @@ a.button {
 		margin: 20px 0 40px;
 		&.select-checkmark{
 			.select-hide div{
+				align-items: flex-start;
 				color: $color-black;
 				font-size: 20px;
                 padding-right: 30px;

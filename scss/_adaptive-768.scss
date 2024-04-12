@@ -310,6 +310,7 @@
         &__comment{
             width: 100%;
             max-width: 520px;
+			min-width: 280px;
             font-size: 16px;
             &-container{
                 flex-wrap: wrap;
