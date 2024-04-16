@@ -1715,7 +1715,26 @@ docReady(function () {
                 _o = _p.querySelector(`option[value='${val}']`),
                 lbl = +_o.label;
             let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-            let wdd = wwidth > 1330 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60)
+			// margins for container
+			let _rangeContainer = _p.parentNode;
+			console.log(_rangeContainer);
+			let containerMargin;
+			if (wwidth <= 1500){
+				if (wwidth > 650) containerMargin = 0.055*wwidth + 48.5;
+				else if (wwidth > 570) containerMargin = 0.1013*wwidth + 50.155;
+				else containerMargin = 0.0435*wwidth + 19.5;
+				if (containerMargin != undefined){
+					console.log(_rangeContainer.style);
+					_rangeContainer.style.marginLeft = -containerMargin + 'px';
+					_rangeContainer.style.marginRight = -containerMargin + 'px';
+					console.log(_rangeContainer.style);
+				}
+			}
+
+            //let wdd = wwidth > 1500 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60);
+            //let wdd = wwidth > 650 ? _p.clientWidth : wwidth - 60;
+            let wdd = wwidth > 650 ? _p.clientWidth : _p.clientWidth - 60;
+			
             _t.setAttribute('aria-valuetext', lbl);
             _p.style.setProperty(`--${_t.id}`, val);
             _p.style.setProperty(`--lbl-${_t.id}`, lbl + "");

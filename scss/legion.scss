@@ -1278,6 +1278,20 @@ a.button {
 	padding: 33px 0 25px;
 	.request{
 		margin-bottom: 0;
+        &__button{
+            width: auto;
+        }
+        &__form_item{
+            margin-bottom: 20px;
+        }
+        &__file{
+            margin-bottom: 40px;
+        }
+        &__textarea{
+            .button{
+                margin-bottom: 0;
+            }
+        }
 	}
 	&.active {
 		display: block;
@@ -1356,6 +1370,14 @@ a.button {
 		padding: 0px 60px;
 	}
 
+	&__close {
+		top: 40px;
+		right: 40px;
+		background-image: url($img-path + "icon-menu5.svg");
+		width: 42px;
+		height: 42px;
+	}
+    
 	.answer {
 		display: none;
 
@@ -1377,10 +1399,10 @@ a.button {
 
 	&__content {
 		height: inherit;
-		max-width: 1440px;
+		max-width: 1246px;
 		background: $color-white;
-		border-radius: 38px;
-		padding: 50px 0 50px 20px;
+		border-radius: 18px;
+		padding: 80px 0 60px 80px;
 		text-align: left;
 
 		&_success {
@@ -5138,6 +5160,10 @@ a.button {
 		.feedback__form_error,
 		.feedback__comment {
 			color: $color-grey-light;
+            a,
+            a:hover{
+                color: $color-grey-light;
+            }
 		}
 
 		&.feedback_compact {
@@ -6591,8 +6617,10 @@ a.button {
 		margin: 20px 0 40px;
 		&.select-checkmark{
 			.select-hide div{
+				align-items: flex-start;
 				color: $color-black;
 				font-size: 20px;
+                padding-right: 30px;
 			}
 			&.platform,
 			&.source{
@@ -6627,6 +6655,8 @@ a.button {
 				border-style: solid;
 				border-width: 1px;
 				max-width: 250px;
+                font-size: 18px;
+                white-space: nowrap;
 			}
 		}
 	}
@@ -6658,7 +6688,7 @@ a.button {
 
 	.select-inline .select-hide {
 		font-size: 24px;
-
+        
 		.iconed {
 			padding-top: 15px;
 
@@ -6736,7 +6766,7 @@ a.button {
 			display: none;
 		}
 	}
-
+    
 	&__form {
 		width: 100%;
 		padding-bottom: 20px;
@@ -6788,7 +6818,7 @@ a.button {
 		}
 
 		&_tip {
-			display: block;
+			display: none;
 			margin: 10px 0;
 			color: $color-blue-dark;
             font-size: 24px;
@@ -6849,7 +6879,7 @@ a.button {
 			flex-direction: column-reverse;
 			align-items: center;
 			.request__comment{
-				padding-top: 40px;
+				padding-top: 26px;
 				padding-left: 0;
 				text-align: center;
 			}
@@ -6862,7 +6892,8 @@ a.button {
 	&__comment {
 		font-size: 16px;
 		color: $color-grey-dark;
-		width: 40%;
+		width: 31%;
+        min-width: 445px;
 		padding: 12px 0 0 20px;
 	}
 
@@ -6875,6 +6906,14 @@ a.button {
 			color: $color-white;
 		}
 	}
+}
+
+/*Safari hack for range*/
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    .request__range{
+        margin-left: -120px;
+        margin-right: -120px;
+    }
 }
 
 .yaDiskUploader{

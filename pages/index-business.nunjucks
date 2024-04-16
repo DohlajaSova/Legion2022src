@@ -21,6 +21,6 @@
   {# {% include "partials/towel/news.nunjucks" %} #}
 
   {# {% include "partials/popup-video-principles.nunjucks" %} #}
-  {# {% include "partials/popup-feedback.nunjucks" %} #}
+  {% include "partials/popup-feedback.nunjucks" %}
 
 {% endblock %}

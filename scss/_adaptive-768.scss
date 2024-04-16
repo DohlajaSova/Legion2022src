@@ -269,41 +269,80 @@
     }
     .request{
         margin-bottom: 80px;
+        h3,
+        .h3{
+            font-size: 44px;
+        }
         &__title{
-            margin: 120px 0 60px 0;
+            margin: 40px 0 60px 0;
+        }
+        &__select.select-checkmark{
+            .select-hide div{
+                font-size: 20px;
+            }
+            &.platform,
+            &.source{
+                .select-hide div{
+                    width: 50%;
+                }
+            }
+        }
+        &__textarea{
+            textarea{
+                font-size: 18px;
+            }
         }
         &__form{
+            &_input[type="text"],
+            &_input[type="email"],
+            &_input[type="tel"],
+            &_textarea {
+                font-size: 18px;
+            }
+        }
+
+        &__form{
             &_item{
-                width:100%;
+                width: 100%;
                 margin-bottom: 60px;
             }
         }
         &__comment{
-            width:100%;
-            padding:20px 30% 0 0;
-            font-size:14px;
-            order:2;
+            width: 100%;
+            max-width: 520px;
+			min-width: 280px;
+            font-size: 16px;
             &-container{
-                flex-wrap:wrap;
+                flex-wrap: wrap;
             }
         }
         &__button{
-            width:100%;
-            order:1;
+            width: 100%;
+            order: 1;
         }
         &__range {
-            display:none;
+            //display: none;
+            margin-left: -90px;
+            margin-right: -90px;
+
             & + .request__select{
                 display: block;
             }
         }
-        
+    }
+
+    /*Safari hack for range*/
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        .request__range{
+            margin-left: -80px;
+            margin-right: -80px;
+        }
     }
     .feedback{
         margin-bottom: 60px;
         &_compact{
             h2{
-                width:70%;
+                width: 70%;
                 font-size: 46px;
             }
         }
@@ -314,8 +353,8 @@
     .popup-feedback{
         .answer{
             &__container{
-                padding-left:15px;
-                background-size:110px;
+                padding-left: 15px;
+                background-size: 110px;
             }
         }
     }
@@ -987,6 +1026,28 @@
             width: 90px;
         }
     }
+    .redesign-feedback .container svg{
+        max-width: 100% !important;
+    }
+    .request{
+        &__button{
+            .svghover{
+                max-width: 100% !important;
+            }
+        }
+        &__textarea{
+            .button{
+                margin: 30px 0 0;
+            }
+        }
+        &__file{
+            margin-bottom: 60px;
+            .request__comment,
+            .request__textarea .button{
+                padding-top: 20px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1070,10 +1131,9 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .contacts,
-    .request{
+    .contacts{
         .container{
-            overflow: unset!important;
+            overflow: unset !important;
         }
         &__textarea{
             textarea{
@@ -1467,16 +1527,24 @@
     }
     .request{
         &__file{
-            margin-bottom:10px;
+            margin-bottom: 10px;
         }
         &__select.select-inline_wide .select-selected{
-            font-size:16px;
+            font-size: 16px;
             line-height: 24px;
+        }
+        &__select.select-checkmark{
+            &.platform,
+            &.source{
+                .select-hide div{
+                    width: 100%;
+                }
+            }
         }
     }
     .popup-video__container,
     .popup-feedback__container{
-        padding:0 15px;
+        padding: 0 15px;
         height: 95vh;
     }
     .popup-feedback{
@@ -1489,12 +1557,12 @@
         }
     }
     .popup-feedback .answer__container{
-        padding-right:15%;
-        padding-bottom:100px;
+        padding-right: 15%;
+        padding-bottom: 100px;
     }
     .service {
 		&__header{
-			font-size:55px;
+			font-size: 55px;
 		}
         &__section {
             &_info {
@@ -1921,6 +1989,20 @@
         }
         &__title{
             padding-right: 30px;
+        }
+    }
+    .request{
+        &__range{
+            margin-left: -110px;
+            margin-right: -110px;
+        }
+    }
+
+    /*Safari hack for range*/
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        .request__range{
+            margin-left: -100px;
+            margin-right: -100px;
         }
     }
 }
@@ -3619,5 +3701,22 @@
     }
     .client__present.case-image + p{
         font-size: 14px;
+    }
+    
+    .request{
+        &__title{
+            margin: 0 0 50px;
+            font-size: 40px;
+        }
+        &__comment{
+            font-size: 14px;
+        }
+        &__select.select-checkmark{
+            .select-hide div{
+                font-size: 16px;
+                line-height: 1.7;
+                margin-bottom: 26px;
+            }
+        }
     }
 }
