@@ -1127,6 +1127,9 @@ a.button {
   .popup-video .request,
   .popup-feedback .request {
     margin-bottom: 0; }
+    .popup-video .request__button,
+    .popup-feedback .request__button {
+      width: auto; }
   .popup-video.active,
   .popup-feedback.active {
     display: block; }

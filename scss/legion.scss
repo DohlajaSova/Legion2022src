@@ -1278,6 +1278,9 @@ a.button {
 	padding: 33px 0 25px;
 	.request{
 		margin-bottom: 0;
+        &__button{
+            width: auto;
+        }
 	}
 	&.active {
 		display: block;
