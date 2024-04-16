@@ -2673,6 +2673,30 @@ docReady(function () {
             })
         })
     }
+    // services redesign accordion 
+    if (document.querySelectorAll(".js-accordion-redesign").length > 0) {
+        const accordions = document.querySelectorAll(".js-accordion-redesign");
+        Array.from(accordions).forEach(acc => {
+            const tabs = acc.querySelectorAll(".js-accordion-tab");
+            Array.from(tabs).forEach(tab => {
+                const tabroll = tab.querySelector(".tab__roll");
+                tabroll?.addEventListener("click", () => {
+                    tab.classList.contains("active") ? tab.classList.remove("active") : tab.classList.add("active")
+                })
+            })
+
+            const navlinks = acc.querySelectorAll(".js-accordion-link");
+
+            Array.from(navlinks).forEach((nav, index) => {
+                nav?.addEventListener("click", () => {
+                    tabs[index].classList.contains("active") ? tabs[index].classList.remove("active") : tabs[index].classList.add("active")
+                    nav.classList.contains("active") ? nav.classList.remove("active") : nav.classList.add("active")
+                })
+            })
+        })
+    }
+
+
     //--redesign
     if (document.querySelectorAll("iframe").length > 0) {
         initVideo();

@@ -10335,6 +10335,9 @@ svg.svg-hover-filter-clear {
 		transition: fill .5s;
 		fill:  transparent;
 	}
+	&.margin-auto {
+		margin: auto;
+	}
 }
 .main-redesign {
 	.content-wrapper {
@@ -10881,6 +10884,20 @@ svg.svg-hover-filter-clear {
 			}
 		}
 	}
+	
+	&-tags-default {
+		display: flex;
+		flex-flow: row wrap	;
+		gap: 10px;
+		&-tag {
+			border-radius: 60px;
+			background-color: $color-grey-light;
+			padding: 10px 20px;
+			color: $color-grey-dark;
+			font-size: 16px;
+			line-height: 110%;
+		}
+	}
 }
 // parallel-import
 .importhead {
@@ -11176,6 +11193,203 @@ svg.svg-hover-filter-clear {
 		}
 	}
 }
+
+// versionate redesign
+.services-v2 {
+	.container {
+		max-width: 1087px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		// &.justify-center {
+		// 	display: flex;
+		// 	justify-content: center;
+		// }
+	}
+	&__container-fullwidth {
+		background-color: #F0F0F0;
+		// margin-left: 0;
+		// margin-right: 0;
+		// width: 100%!important;
+		// padding-left: 0!important;
+		// padding-right: 0!important;
+		// padding-top: 80px;
+		// padding-bottom: 80px;
+		max-width: 100%!important;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		// max-width: 1087px;
+		margin: 0 auto;
+		&.bg2 {
+			background-color: #F0F0F0;
+		}
+		&.bg3 {
+			background-color: #141414;
+		}
+	}
+	&__heading_wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 60px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid #000;
+		gap: 50px;
+	}
+	&__heading {
+		color: #141414;
+		align-self: flex-start;
+		font-size: 80px;
+		line-height: 88px;
+
+		&-caption {
+			align-self: flex-end;
+			padding-top: 46px;
+			font-size: 20px;
+			line-height: 26px;
+			color: #141414;
+			width: 100%;
+			text-align: right;
+		}
+	}
+	&__accordion {
+		&_wrapper {
+			display: flex;
+			gap: 40px;
+		}
+		&_tabs {
+			display: flex;
+			flex-flow: column nowrap;
+			gap: 30px;
+			.tab {
+				display: flex;
+				flex-flow: column nowrap;
+				gap: 20px;
+				height: 75px;
+				border-bottom: 1px solid #141414;
+				padding-bottom: 30px;
+				overflow: hidden;
+				transition: height .25s;
+				&:last-child {
+					border-bottom: none;
+				}
+				&.active {
+					height: auto;
+					.tab__roll {
+						svg {
+    						transform: rotate(90deg);
+						}
+					}
+				}
+				&__head {
+					display: flex;
+					justify-content: space-between;
+				}
+				&__roll {
+					display: flex;
+					height: fit-content;
+					padding: 14px 10px;
+					border: 1px solid #141414;
+					border-radius: 8px;
+					cursor: pointer;
+					svg {
+						transition: transform .25s;
+					}
+				}
+				&__name {
+					font-size: 46px;
+					line-height: 55.2px;
+					color: #141414;
+				}
+				&__cases {
+					display: flex;
+					gap: 40px;
+					&_card {
+						width: 50%;
+						display: flex;
+						flex-flow: column nowrap;
+						gap: 20px;
+						.caption {
+							font-size: 18px;
+							line-height: 23.4px;
+							color: #949191;
+						}
+						.name {
+							font-size: 24px;
+							line-height: 28.8px;
+						}
+						img {
+							max-width: 100%;
+						}
+					}
+				}
+				&__list {
+					font-size: 20px;
+					line-height: 26px;
+					gap: 10px;
+					display: flex;
+					flex-flow: column nowrap;
+				}
+			}
+		}
+		&_navigation {
+			&_link {
+				font-size: 24px;
+				line-height: 28.8px;
+				color: #949191;
+				cursor: pointer;
+				&.active {
+					color: #141414;
+				}
+			}
+		}
+	}
+	&__heading-2 {
+		font-size: 46px;
+		line-height: 55.2px;
+		margin-bottom: 40px;
+		color: #fff;
+	}
+	&__block{
+		display: flex;
+		gap: 60px;
+		&_wrapper {
+			display: flex;
+			flex-flow: column nowrap;
+			gap: 60px;
+			margin-bottom: 60px;
+		}
+		.card {
+			flex-flow: column nowrap;
+			display: flex;
+			gap: 10px;
+			color: #fff;
+			width: 50%;
+		}
+	}
+	&__button {
+		outline: none;
+		border: none;
+		padding: 20px 40px;
+		border-radius: 100px;
+		background-color: #fff;
+		color: #141414;
+		font-size: 18px;
+		line-height: 23.4px;
+	}
+
+	.request {
+		margin-bottom: 0;
+		border-bottom: 1px solid #141414;
+		height: 530px;
+		&__form_item {
+			margin-bottom: 60px;
+		}
+		&.clicked {
+			height: unset;
+		}
+	}
+}
+// --versionate redesign
 
 .button-svg-animate-container {
 	border: none;

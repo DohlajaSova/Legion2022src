@@ -1,0 +1,203 @@
+<div class="services-v2">
+    <div class="container">
+        <div class="services-v2__heading_wrapper">
+            <h1 class="services-v2__heading">
+                Консалтинг
+            </h1>
+            <div class="services-v2__heading-caption">
+                Разберёмся, что и как создавать, выявим возможные риски и разработаем план на будущее
+            </div>
+        </div>
+        <div class="services-v2__accordion_wrapper js-accordion-redesign">
+            <div class="services-v2__accordion_navigation">
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
+                    Android
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="2">
+                    iOS
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="3">
+                    Backend
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="4">
+                    Frontend
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="5">
+                    QA
+                </div>
+            </div>
+            <div class="services-v2__accordion_tabs">
+                <div class="tab js-accordion-tab" data-accordion-tab="1">
+                    <div class="tab__head">
+                        <div class="tab__name">
+                            Android
+                        </div>
+                    </div>
+                    <ul class="tab__list">
+                        <li>
+                            Kotlin
+                        </li>
+                        <li>
+                            Clean Architecture с MVVM, MVI presentation слоем
+                        </li>
+                        <li>
+                            Google Navigation Component, Decompose, Cicerone, Кастомная
+                        </li>
+                        <li>
+                            Сoroutines (предпочтительно) или RxJava, RxKotlin
+                        </li>
+                        <li>
+                            Room, SQLDelight
+                        </li>
+                        <li>
+                            Koin, Dagger2
+                        </li>
+                        <li>
+                            Retrofit + okHttp, Ktor
+                        </li>
+                        <li>
+                            View / Compose
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="2">
+                    <div class="tab__head">
+                        <div class="tab__name">
+                            iOS
+                        </div>
+                    </div>
+                    <ol class="tab__list">
+                        <li>
+                            Swift
+                        </li>
+                        <li>
+                            UIKit, SwiftUI
+                        </li>
+                        <li>
+                            Clean Swift, Modularization
+                        </li>
+                        <li>
+                            GCD, async/await
+                        </li>
+                        <li>
+                            Combine
+                        </li>
+                        <li>
+                            Core Data
+                        </li>
+                        <li>
+                            Alamofire
+                        </li>
+                        <li>
+                            Swift Package Manager, Cocoapods
+                        </li>
+                        <li>
+                            Gitlab CI, fastlane
+                        </li>
+                    </ol>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="3">
+                    <div class="tab__head">
+                        <div class="tab__name">
+                            Backend
+                        </div>
+                    </div>
+                    <div class="tab__list">
+                        <li>
+                            Java, SpringBoot, Lombok, MapStruct, FeignClient, KeyCloak, Camunda
+                        </li>
+                        <li>
+                            ASP.NET, ASP.NET Core, C#
+                        </li>
+                        <li>
+                            Python, Django, Celery, FastApi
+                        </li>
+                        <li>
+                            PHP, Laravel, Yii2
+                        </li>
+                        <li>
+                            Node.js
+                        </li>
+                        <li>
+                            PostgreSQL, MySQL, MS SQL, Liquibase, Redis, Mongo
+                        </li>
+                        <li>
+                            RabbitMQ, Kafka
+                        </li>
+                        <li>
+                            Docker, Gitlab CI, Jenkins, TeamCity, ELK, AWS
+                        </li>
+                        <li>
+                            Jest, NUnit, Selenium, Mocha
+                        </li>
+                        <li>
+                            Swagger
+                        </li>
+                    </div>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="4">
+                    <div class="tab__head">
+                        <div class="tab__name">
+                            Frontend
+                        </div>
+                    </div>
+                    <div class="tab__list">
+                        <li>
+                            HTML, CSS, SCSS, Stylus, Less, PostCSS, Bootstrap, BEM, Jade, Nunjucks, FreeMarker
+                        </li>
+                        <li>
+                            JavaScript, jQuery, Typescript, Handlebars, Backbone
+                        </li>
+                        <li>
+                            Socket.io, Express.js, NPM
+                        </li>
+                        <li>
+                            VueJS, Nuxt, React, Redux, Angular, Next
+                        </li>
+                        <li>
+                            Bitrix, MODX, Wordpress, Joomla
+                        </li>
+                        <li>
+                            Webpack, Gulp
+                        </li>
+                    </div>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="5">
+                    <div class="tab__head">
+                        <div class="tab__name">
+                            QA
+                        </div>
+                    </div>
+                    <div class="tab__list">
+                        <li>
+                            Bitbucket, Gitlab, Jenkins
+                        </li>
+                        <li>
+                            Zeplin, Figma, Sketch
+                        </li>
+                        <li>
+                            iOS Simulator, Android Emulator, Stetho, ADB, физические устройства
+                        </li>
+                        <li>
+                            Qase.io, Allure TestOps, TestRail
+                        </li>
+                        <li>
+                            Charles, Fiddler, Proxyman, Postman, Chrome DevTools
+                        </li>
+                        <li>
+                            Pytest, Selenium, HP UFT/ALM, Appium, Espresso, XCUITest
+                        </li>
+                        <li>
+                            Slack, Mattermost
+                        </li>
+                        <li>
+                            Jira, Redmine, Trello, Confluence, Notion, Trac, IBM Jazz
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  

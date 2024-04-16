@@ -1,0 +1,52 @@
+<div class="services-v2">
+  <div class="services-v2__container-fullwidth bg3">
+    <div class="container">
+      <div class="services-v2__heading-2">
+        Подбор IT-специалиста
+      </div>
+      <div class="services-v2__block_wrapper">
+        <div class="services-v2__block">
+          <div class="card">
+            <div class="head">
+              Снижение затрат
+            </div>
+            <div class="text">
+              Мы забираем на себя предоставление оборудования и ресурсов для специалиста, вы оплачиваете только
+              фактически
+              отработанное время на решение задачи.
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              Контроль производительности
+            </div>
+            <div class="text">
+              Увеличивайте или уменьшайте количество специалистов на проекте в зависимости от текущей загрузки и бизнес-стратегии.
+            </div>
+          </div>
+        </div>
+        <div class="services-v2__block">
+          <div class="card">
+            <div class="head">
+              Прозрачность
+            </div>
+            <div class="text">
+              Специалист помечает время на выполнение ваших работ по часам, каждую неделю вы получаете отчёты о статусе задачи и текущем прогрессе.
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              Обширный технологический стек
+            </div>
+            <div class="text">
+              Не тратьте время на поиск подходящего специалиста, ознакомьтесь с резюме наших специалистов, чтобы сразу начать работу.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services-v2__button_wrapper">
+        <button class="services-v2__button">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+</div>
