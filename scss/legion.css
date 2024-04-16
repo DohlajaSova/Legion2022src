@@ -1130,6 +1130,15 @@ a.button {
     .popup-video .request__button,
     .popup-feedback .request__button {
       width: auto; }
+    .popup-video .request__form_item,
+    .popup-feedback .request__form_item {
+      margin-bottom: 20px; }
+    .popup-video .request__file,
+    .popup-feedback .request__file {
+      margin-bottom: 40px; }
+    .popup-video .request__textarea .button,
+    .popup-feedback .request__textarea .button {
+      margin-bottom: 0; }
   .popup-video.active,
   .popup-feedback.active {
     display: block; }
@@ -1197,6 +1206,12 @@ a.button {
   display: grid;
   grid-template-rows: 100px calc(100% - 100px);
   padding: 0px 60px; }
+.popup-feedback__close {
+  top: 40px;
+  right: 40px;
+  background-image: url("img/icon-menu5.svg");
+  width: 42px;
+  height: 42px; }
 .popup-feedback .answer {
   display: none; }
   .popup-feedback .answer__container {
@@ -1210,10 +1225,10 @@ a.button {
     font-size: 46px; }
 .popup-feedback__content {
   height: inherit;
-  max-width: 1440px;
+  max-width: 1246px;
   background: #fff;
-  border-radius: 38px;
-  padding: 50px 0 50px 20px;
+  border-radius: 18px;
+  padding: 80px 0 60px 80px;
   text-align: left; }
   .popup-feedback__content_success {
     height: fit-content;
