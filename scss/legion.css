@@ -4726,6 +4726,7 @@ a.button {
   .request__select {
     margin: 20px 0 40px; }
     .request__select.select-checkmark .select-hide div {
+      align-items: flex-start;
       color: #141414;
       font-size: 20px;
       padding-right: 30px; }
@@ -4844,7 +4845,7 @@ a.button {
       margin-bottom: 70px;
       color: #949191; }
     .request__form_tip {
-      display: block;
+      display: none;
       margin: 10px 0;
       color: #1E2738;
       font-size: 24px; }
@@ -10844,6 +10845,7 @@ svg.hoversvgrequest {
     .request__comment {
       width: 100%;
       max-width: 520px;
+      min-width: 280px;
       font-size: 16px; }
       .request__comment-container {
         flex-wrap: wrap; }
@@ -11290,7 +11292,14 @@ svg.hoversvgrequest {
     max-width: 100% !important; }
 
   .request__button .svghover {
-    max-width: 100% !important; } }
+    max-width: 100% !important; }
+  .request__textarea .button {
+    margin: 30px 0 0; }
+  .request__file {
+    margin-bottom: 60px; }
+    .request__file .request__comment,
+    .request__file .request__textarea .button {
+      padding-top: 20px; } }
 @media only screen and (max-width: 700px) {
   .contacts__title {
     margin-bottom: 20px; }
@@ -13018,7 +13027,17 @@ svg.hoversvgrequest {
       margin-top: 6px; }
 
   .client__present.case-image + p {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .request__title {
+    margin: 0 0 50px;
+    font-size: 40px; }
+  .request__comment {
+    font-size: 14px; }
+  .request__select.select-checkmark .select-hide div {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 26px; } }
 @media only screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 40px; }
@@ -13320,7 +13339,7 @@ svg.hoversvgrequest {
   .request {
     margin-bottom: 60px; }
     .request__title {
-      margin: 40px 0; }
+      margin: 0 0 40px; }
     .request .container {
       padding: 0 15px; }
     .request__form_warning {
@@ -13696,7 +13715,10 @@ svg.hoversvgrequest {
     line-height: 34px; }
   .importhead__blocks_card .text {
     font-size: 16px;
-    line-height: 21px; } }
+    line-height: 21px; }
+
+  .range__wrap {
+    grid-template-rows: 49px max-content 45px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;

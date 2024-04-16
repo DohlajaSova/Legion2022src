@@ -1035,6 +1035,18 @@
                 max-width: 100% !important;
             }
         }
+        &__textarea{
+            .button{
+                margin: 30px 0 0;
+            }
+        }
+        &__file{
+            margin-bottom: 60px;
+            .request__comment,
+            .request__textarea .button{
+                padding-top: 20px;
+            }
+        }
     }
 }
 
@@ -3689,5 +3701,22 @@
     }
     .client__present.case-image + p{
         font-size: 14px;
+    }
+    
+    .request{
+        &__title{
+            margin: 0 0 50px;
+            font-size: 40px;
+        }
+        &__comment{
+            font-size: 14px;
+        }
+        &__select.select-checkmark{
+            .select-hide div{
+                font-size: 16px;
+                line-height: 1.7;
+                margin-bottom: 26px;
+            }
+        }
     }
 }
