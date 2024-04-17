@@ -27,7 +27,7 @@
               Дискавери фаза
             </div>
             <div class="tab__roll">
-              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -54,7 +54,7 @@
               Выход на рынок Китая
             </div>
             <div class="tab__roll">
-              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -80,7 +80,7 @@
               Технический аудит
             </div>
             <div class="tab__roll">
-              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -140,7 +140,7 @@
                 Импортозамещение
               </div>
               <div class="tab__roll">
-                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -166,7 +166,7 @@
                 Комплексная разработка Mobile
               </div>
               <div class="tab__roll">
-                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -193,7 +193,7 @@
                 Web-решения
               </div>
               <div class="tab__roll">
-                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -220,7 +220,7 @@
                 Техническая поддержка
               </div>
               <div class="tab__roll">
-                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -341,7 +341,7 @@
               Личный кабинет
             </div>
             <!-- <div class="tab__roll">
-            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
@@ -379,7 +379,7 @@
               Неавторизованная зона
             </div>
             <!-- <div class="tab__roll">
-            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M-8.74228e-08 7L19 7L19 5L0 5L-8.74228e-08 7Z" fill="#141414" />
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M14.316 12L19.714 6.68281C20.0968 6.3057 20.0968 5.6943 19.714 5.31719L14.316 6.05993e-08L12.9297 1.36561L17.6344 6L12.9297 10.6344L14.316 12Z"
