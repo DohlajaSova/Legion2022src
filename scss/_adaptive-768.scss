@@ -357,6 +357,13 @@
                 background-size: 110px;
             }
         }
+        .select-checkmark .select-hide div{
+            width: 55%;
+            &:nth-child(2n){
+                width: 45%;
+                padding-right: 0;
+            }
+        }
     }
     .who-we-are{
         &__content{
@@ -1549,11 +1556,33 @@
     }
     .popup-feedback{
         &__container{
-            padding:0 15px;
-            height: calc(95vh - 100px);
+            padding: 0;
+            height: calc(100vh - 90px);
+            position: fixed;
+            top: auto;
+            bottom: 0;
+            transform: none;
+        }
+        &__content{
+            border-radius: 18px 18px 0 0;
         }
         &__close{
             right: 20px;
+        }
+        .request{
+            padding-bottom: 170px;
+        }
+        .request__comment-container{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $color-white;
+            padding: 0 30px 20px;
+        }
+        .select-checkmark .select-hide div{
+            width: 100%;
+            padding-right: 0;
         }
     }
     .popup-feedback .answer__container{
