@@ -10651,7 +10651,6 @@ svg.svg-hover-filter-clear {
 			text-decoration: unset;
 		}
 	}
-
 	&-portfolio {
 		$brad: 16px;
 		$fbasis: 125px;
@@ -10787,7 +10786,6 @@ svg.svg-hover-filter-clear {
 			max-width: 1087px;
 		}
 	}
-
 	&-archive {
 		display: flex;
 		.container {
@@ -10923,7 +10921,6 @@ svg.svg-hover-filter-clear {
 			}
 		}
 	}
-	
 	&-tags-default {
 		display: flex;
 		flex-flow: row wrap	;
@@ -11415,11 +11412,10 @@ svg.svg-hover-filter-clear {
 		font-size: 18px;
 		line-height: 23.4px;
 	}
-
 	.request {
 		margin-bottom: 0;
 		border-bottom: 1px solid #141414;
-		height: 530px;
+		height: 400px;
 		&__form_item {
 			margin-bottom: 60px;
 		}
