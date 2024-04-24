@@ -6,9 +6,6 @@
         <div class="pmenu__mmenu_close header__hmenu active">
             <a href="" class="js-top-menu-inner"></a>
         </div>
-        <div class="pmenu__mmenu">
-            <a href="https://old.e-legion.ru/" target="_blank" class="header__mmenu_lang">←&nbsp;старая&nbsp;версия</a>
-        </div>
     </div>
     <div class="container">
         <div class="pmenu__menu">
@@ -22,15 +19,15 @@
     </div>
     <div class="container">
         <div class="pmenu__contacts">
-            <div><a href="tel:+78122009509" itemprop="telephone"><em>+7 812 200&nbsp;95&nbsp;09</em></a></div>
+            <div><a href="tel:+78122009509" itemprop="telephone">+7 812 200&nbsp;95&nbsp;09</a></div>
             <div><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></div>
         </div>
         <div class="pmenu__social social">
-            <a href="/news.html" class="social_blog">блог</a>
+            <a href="/[[~31]]" class="social_blog blue-clean">блог</a>
             <a href="https://vk.com/elegion" target="_blank" class="social_vk"></a>
             <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt"></a>
-            <a href="https://habr.com/ru/company/e-legion/blog/" target="_blank" class="social_h"></a>
             <a href="https://vc.ru/u/414482-e-legion" target="_blank" class="social_vc"></a>
+            <a href="https://old.e-legion.ru/" class="circletext hover-blue" target="_blank">старая версия</a>
         </div>
     </div>
 </div>

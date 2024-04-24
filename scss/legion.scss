@@ -1009,7 +1009,7 @@ a.button {
 
 		&.active {
 			z-index: 2001;
-			background-image: url($img-path + "icon-menu3.svg");
+			background-image: url($img-path + "icon-menu6.svg");
 		}
 
 		.dummy & {
@@ -1036,6 +1036,10 @@ a.button {
 			&:last-child {
 				margin-right: 0;
 			}
+            
+            &.circletext{
+                padding: 4px 23px;
+            }
 		}
 
 		&_lang {
@@ -1446,23 +1450,26 @@ a.button {
 	width: 100%;
 	height: 100%;
 	z-index: 1000;
-	background-color: $color-blue-dark;
-	display: none;
-	color: $color-white;
+    background: rgba($color-white, .7);
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    display: none;
+	color: $color-black;
 	padding: 33px 0 25px;
 
 	&.active {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		z-index: 2002;
+        overflow-x: hidden;
 	}
 
 	a {
-		color: $color-white;
+		color: $color-black;
 
 		&:hover {
-			color: $color-blue-light;
+			text-decoration: underline;
 		}
 	}
 
@@ -1476,6 +1483,12 @@ a.button {
 		&:first-child {
 			justify-content: space-between;
 		}
+        &:nth-child(2){
+            height: 100%;
+        }
+        &:nth-child(3){
+            flex-direction: column;
+        }
 	}
 
 	&__mmenu {
@@ -1508,7 +1521,7 @@ a.button {
 	}
 
 	&__logo {
-		background: url($img-path + "logo-white.svg") 0 0 no-repeat;
+		background: url($img-path + "logo.svg") 0 0 no-repeat;
 		background-size: contain;
 		width: calc(50% - 46px);
 		min-width: 148px;
@@ -1533,18 +1546,29 @@ a.button {
 
 		a,
 		span {
-			width: 50%;
+			width: 100%;
 			margin-bottom: 25px;
 			transition: all .25s linear;
 			position: relative;
+            &:last-child{
+                width: auto;
+                border: 1px solid $color-black;
+                border-radius: 30px;
+                padding: 8px 23px;
+                font-size: 89%;
+            }
 		}
 	}
 
 	&__contacts {
 		display: flex;
 		justify-content: flex-start;
-		font-size: 24px;
-		width: 60%;
+		font-size: 46px;
+		width: calc(100% + 60px);
+        margin: 0 -30px 40px;
+        padding: 35px 30px 30px;
+        border-top: 1px solid $color-black;
+        border-bottom: 1px solid $color-black;
 
 		em {
 			color: $color-blue-light;
@@ -1559,44 +1583,78 @@ a.button {
 
 	&__social {
 		font-size: 0;
-		width: 40%;
         display: flex;
-        justify-content: flex-end;
-			.social {
-				
-				&_fb {
-						background-image: url($img-path + "icon-social-f-w.svg");
-				}
+        justify-content: flex-start;
+        flex-wrap: wrap;
 
-				&_vk {
-						background-image: url($img-path + "icon-social-vk-w.svg");
-				}
+        .social {
+            &_fb {
+                background-image: url($img-path + "icon-social-f.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-f-w.svg");
+                }
+            }
 
-				&_tw {
-						background-image: url($img-path + "icon-social-tw-w.svg");
-				}
+            &_vk {
+                background-image: url($img-path + "icon-social-vk.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-vk-w.svg");
+                }
+            }
 
-				&_yt {
-						background-image: url($img-path + "icon-social-yt-w.svg");
-				}
+            &_tw {
+                background-image: url($img-path + "icon-social-tw.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-tw-w.svg");
+                }
+            }
 
-				&_in {
-						background-image: url($img-path + "icon-social-ig-w.svg");
-				}
+            &_yt {
+                background-image: url($img-path + "icon-social-yt.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-yt-w.svg");
+                }
+            }
 
-				&_h {
-						background-image: url($img-path + "icon-social-h-w.svg");
-				}
+            &_in {
+                background-image: url($img-path + "icon-social-ig.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-ig-w.svg");
+                }
+            }
 
-				&_vc {
-						background-image: url($img-path + "icon-social-vc-w.svg");
-				}
-				&_t {
-						background-image: url($img-path + "icon-social-t-w.svg");
-				}
-		}
+            &_h {
+                background-image: url($img-path + "icon-social-h.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-h-w.svg");
+                }
+            }
+
+            &_vc {
+                background-image: url($img-path + "icon-social-vc.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-vc-w.svg");
+                }
+            }
+            &_t {
+                background-image: url($img-path + "icon-social-t.svg");
+                &:hover{
+                    background-image: url($img-path + "icon-social-t-w.svg");
+                }
+            }
+        }
+
+        a{
+            margin-bottom: 13px;
+            flex-shrink: 0;
+            &:last-child{
+                font-size: 16px;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
 	}
-
 }
 
 .breadcrumbs {
@@ -9569,6 +9627,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		cursor: pointer;
 		color: $color-white;
 		background-color: $color-blue-clean;
+        text-decoration: none;
 	}
 	&-wunset {
 		width: unset;
@@ -11154,7 +11213,7 @@ svg.svg-hover-filter-clear {
 			top: 0px;
 			left: 0;
 			border-bottom: 1px solid $color-black;
-			background: rgba(255,255,255, .7);
+			background: rgba($color-white, .7);
 			opacity: 1;
 			backdrop-filter: blur(10px);
 			transition: opacity .25s;
