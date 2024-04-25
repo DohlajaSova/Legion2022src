@@ -47,22 +47,22 @@
             padding: 0 20px 40px;
             &__toc{
                 max-width: none;
-                width:calc(100% - 40px);
+                width: calc(100% - 40px);
                 max-height: none;
-                right:20px;
+                right: 20px;
             }
         }
 		&.body_news{
 			.news-top{
-				min-height:318px;
+				min-height: 318px;
 				&__image img{
-					min-height:318px;
+					min-height: 318px;
 				}
 			}
 			.news-top__container{
 				.h1,
 				h1{
-					font-size:36px;
+					font-size: 36px;
 				}
 			}
 		}
@@ -71,35 +71,35 @@
         &__menu{
             a,
             span{
-                width:100%;
+                width: 100%;
             }
         }
     }
     .cases{
         &__case{
-            min-height:180px!important;
+            min-height: 180px !important;
             &_info{
-                grid-column-end:initial;
-                width:43vw!important;
+                grid-column-end: initial;
+                width: 43vw !important;
                 height: 180px;
                 .cases__case_number{
-                    font-size:36px;
+                    font-size: 36px;
                     padding: 20px 20px 0;
                 }
                 .cases__case_name{
-                    font-size:14px;
+                    font-size: 14px;
                     padding: 10px 0 20px 20px;
                     p {
                         font-size: 18px;
                     }
                 }
                 .cases__case_desc{
-                    font-size:12px;
-                    padding:20px 0 20px 20px;
+                    font-size: 12px;
+                    padding: 20px 0 20px 20px;
                 }
                 .cases__case_photo{
                     img{
-                        max-width:36px;
+                        max-width: 36px;
                     }
                     &-large{
                         img {
