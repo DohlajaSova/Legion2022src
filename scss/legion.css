@@ -910,7 +910,8 @@ a.button {
   .header > .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 0 !important; }
   .header__logo {
     background: url("img/logo.svg") 0 0 no-repeat;
     background-size: contain;
