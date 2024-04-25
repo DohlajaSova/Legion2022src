@@ -927,7 +927,7 @@
         &-header {
             &-wrapper {
                 h1 {
-                    font-size: 50px;
+                    font-size: 46px;
                 }
             }
         }
@@ -1007,31 +1007,30 @@
                 }
             }
         }
+        &__banner {
+            margin-bottom: 60px;
+            padding: 40px 20px;
+            height: 400px;
+        }
+        &__header {
+            font-size: 46px;
+        }
     }
     .worksteps {
         .container {
             padding-top: 80px;
             padding-bottom: 40px;
         }
+        &__header {
+            font-size: 46px;
+        }
         &__list {
             &_card {
-                .wrapper {
-                    flex-flow: column nowrap;
-				    padding: 30px 0;
-                    align-items: flex-start;
-                    gap: 20px;
-                }
-                .number {
-                    bottom: 0px;
-                }
                 .heading {
-                    font-size: 40px;
-                    line-height: 44px;
-                    align-self: flex-start;
-                    width: 100%;
+                    font-size: 32px;
                 }
-                .text {
-                    width: 100%;
+                .wrapper {
+                    gap: 10px;
                 }
             }
         }
@@ -2040,6 +2039,15 @@
             .container {
                 svg {
                     max-width: 100%;
+                }
+            }
+        }
+        &-projects {
+            &-slide {
+                &.border-radius-none {
+                    .img {
+                        width: 100%;
+                    }
                 }
             }
         }

@@ -1047,6 +1047,39 @@
                 }
             }
         }
+        &__banner {
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            height: 250px;
+        }
+        &__header {
+            font-size: 36px;
+        }
+    }
+    .worksteps {
+        &__header {
+            font-size: 36px;
+            line-height: 39.6px;
+        }
+        &__list {
+            &_card {
+                padding: 0 20px 0 25vw;
+                .heading {
+                    font-size: 28px;
+                    line-height: 33.6px;
+                }
+                .text {
+                    font-size: 16px;
+                    line-height: 20.8px;
+                }
+                .number {
+                    left: -105px;
+                }
+            }
+            .wrapper {
+                gap: 10px;
+            }
+        }
     }
     .range__wrap{
         grid-template-rows: 49px max-content 45px;
@@ -1303,6 +1336,9 @@
         max-width: calc(100% - 40px);
         width: 100%;
     }
+    .importhead__header {
+        font-size: 32px;
+    }
 }
 
 // redesign only
@@ -1359,6 +1395,30 @@
             }
         }
     }
+    // import-sub
+    .importhead {
+        &__header {
+            font-size: 32px;
+        }
+    }
+    .worksteps {
+        &__header {
+            font-size: 32px;
+            line-height: 35.2px;
+        }
+        &__list {
+            &_card {
+                .heading {
+                    font-size: 26px;
+                    line-height: 31.2px;
+                }
+            }
+        }
+    }
+    .importhead__header {
+        font-size: 28px;
+    }
+    //--- import-sub
 }
 // --
 
