@@ -1464,6 +1464,9 @@ a.button {
 		justify-content: flex-start;
 		z-index: 2002;
         overflow-x: hidden;
+        .pmenu__mmenu{
+            display: none;
+        }
 	}
 
 	a {

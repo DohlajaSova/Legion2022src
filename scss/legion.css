@@ -1273,6 +1273,8 @@ a.button {
     justify-content: flex-start;
     z-index: 2002;
     overflow-x: hidden; }
+    .pmenu.active .pmenu__mmenu {
+      display: none; }
   .pmenu a {
     color: #141414; }
     .pmenu a:hover {
