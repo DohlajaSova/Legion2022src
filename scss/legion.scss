@@ -10464,6 +10464,10 @@ svg.svg-hover-filter-clear {
 			$brad: 16px;
 			&.border-radius-none {
 				border-radius: 0;
+				.img {
+					border-radius: 0;
+					width: 100%;
+				}
 			}
 			&.active {
 				transition: flex .25s;
@@ -10953,6 +10957,9 @@ svg.svg-hover-filter-clear {
 		padding-top: 10px;
 		padding-bottom: 80px;
 	}
+	&__header {
+		font-size: 80px;
+	}
 	&__banner {
 		width: 100%;
 		height: auto;
@@ -10960,7 +10967,7 @@ svg.svg-hover-filter-clear {
 		height: 480px;
 		padding: 40px 60px;
 		background-image: url($img-path + "import-substitution-banner.png");
-		// margin-bottom: 60px;
+		margin-bottom: 60px;
 		svg {
 			margin-bottom: 20px;
 		}
@@ -11468,6 +11475,40 @@ svg.svg-hover-filter-clear {
 		}
 	}
 }
+
+
+.button-svg-animate-container {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	&:disabled {
+		.hoversvgrequest {
+			rect#v2-rectanimate1 {
+				transform: translate(-358px, 0);
+				width: 429px;
+			}
+			#v2-pathanimate1 {
+				fill: transparent;
+				transform: translate(-400px, 0);
+			}
+			#v2-pathanimate-disabled-text {
+				transform: translate(-400px, 0);
+				fill: #fff;
+			}
+			#v2-pathanimate3 {
+				fill: #fff;
+				transform: translate(0, 0);
+			}
+			#v2-pathanimate2 {
+				transform: rotate(-45deg) translate(100px, -30px);
+				animation: arrowmove 1.5s ease-in-out infinite;	
+			}
+		}
+	}
+}
+
 
 svg.hoversvgrequest {
 	overflow: hidden;

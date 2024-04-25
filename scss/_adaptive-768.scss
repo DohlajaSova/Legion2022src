@@ -998,6 +998,11 @@
                 }
             }
         }
+        &__banner {
+            margin-bottom: 60px;
+            padding: 40px 30px;
+            height: 400px;
+        }
     }
     .worksteps {
         .container {
@@ -1006,6 +1011,7 @@
         }
         &__list {
             &_card {
+                padding: 0 30px 0 20vw;
                 .wrapper {
                     flex-flow: column nowrap;
 				    padding: 30px 0;
@@ -2005,6 +2011,15 @@
             .container {
                 svg {
                     max-width: 100%;
+                }
+            }
+        }
+        &-projects {
+            &-slide {
+                &.border-radius-none {
+                    .img {
+                        width: 100%;
+                    }
                 }
             }
         }

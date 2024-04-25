@@ -975,6 +975,10 @@
                 }
             }
         }
+        &__header {
+            font-size: 66px;
+            line-height: 72px;
+        }
     }
 
     // --redesign
@@ -1098,6 +1102,15 @@
                     line-height: 23px;
                 }
             }
+        }
+        &__banner {
+            margin-bottom: 35px;
+            padding: 40px 40px;
+            height: 427px;
+            background-position: 50%;
+        }
+        &__header {
+            font-size: 66px;
         }
     }
     .request{
