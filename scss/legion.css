@@ -7474,6 +7474,9 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     position: relative; }
     .redesign-projects-slide.border-radius-none {
       border-radius: 0; }
+      .redesign-projects-slide.border-radius-none .img {
+        border-radius: 0;
+        width: 100%; }
     .redesign-projects-slide.active {
       transition: flex .25s;
       flex: 1; }
@@ -7854,13 +7857,16 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   max-width: 1087px;
   padding-top: 10px;
   padding-bottom: 80px; }
+.importhead__header {
+  font-size: 80px; }
 .importhead__banner {
   width: 100%;
   height: auto;
   background-size: cover;
   height: 480px;
   padding: 40px 60px;
-  background-image: url("img/import-substitution-banner.png"); }
+  background-image: url("img/import-substitution-banner.png");
+  margin-bottom: 60px; }
   .importhead__banner svg {
     margin-bottom: 20px; }
   .importhead__banner_caption {
@@ -7948,7 +7954,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         width: 53%;
         align-self: flex-end; }
       .worksteps__list_card .text {
-        width: 35%;
+        width: 34vw;
         font-size: 20px;
         line-height: 26px; }
 
@@ -8208,7 +8214,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
 .services-v2 .request {
   margin-bottom: 0;
   border-bottom: 1px solid #141414;
-  height: 530px; }
+  height: 400px; }
   .services-v2 .request__form_item {
     margin-bottom: 60px; }
   .services-v2 .request.clicked {
@@ -8233,6 +8239,28 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     fill: #fff;
     transform: translate(0, 0); }
   .button-svg-animate-container:disabled .hoversvgrequest #pathanimate2 {
+    transform: rotate(-45deg) translate(100px, -30px);
+    animation: arrowmove 1.5s ease-in-out infinite; }
+
+.button-svg-animate-container {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer; }
+  .button-svg-animate-container:disabled .hoversvgrequest rect#v2-rectanimate1 {
+    transform: translate(-358px, 0);
+    width: 429px; }
+  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate1 {
+    fill: transparent;
+    transform: translate(-400px, 0); }
+  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate-disabled-text {
+    transform: translate(-400px, 0);
+    fill: #fff; }
+  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate3 {
+    fill: #fff;
+    transform: translate(0, 0); }
+  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate2 {
     transform: rotate(-45deg) translate(100px, -30px);
     animation: arrowmove 1.5s ease-in-out infinite; }
 
@@ -8365,7 +8393,11 @@ svg.hoversvgrequest {
 
   .request__range {
     margin-left: -130px;
-    margin-right: -130px; } }
+    margin-right: -130px; }
+
+  .services-v2 .request {
+    height: 350px;
+    padding-top: 60px; } }
 @media only screen and (max-width: 1440px) {
   .body_about .top {
     background-size: cover; }
@@ -8424,7 +8456,10 @@ svg.hoversvgrequest {
     gap: 60px 32px; }
 
   .astralinux-container .content-container .content-card {
-    min-height: 20em; } }
+    min-height: 20em; }
+
+  .services-v2 .request {
+    height: 350px; } }
 @media only screen and (max-width: 1350px) {
   .top .h1 {
     width: 70%; }
@@ -8797,7 +8832,7 @@ svg.hoversvgrequest {
       font-size: 18px;
       margin-bottom: 100px; }
     .redesign-projects svg {
-      max-width: 69%;
+      max-width: 69% !important;
       height: auto; }
     .redesign-projects-list {
       letter-spacing: 1.4px; }
@@ -8872,6 +8907,9 @@ svg.hoversvgrequest {
     .worksteps__list_card .text {
       font-size: 18px;
       line-height: 23px; }
+  .worksteps__header {
+    font-size: 66px;
+    line-height: 72px; }
 
   .topcase__descr {
     font-size: 18px; }
@@ -8945,6 +8983,13 @@ svg.hoversvgrequest {
   .importhead__blocks_card .text {
     font-size: 18px;
     line-height: 23px; }
+  .importhead__banner {
+    margin-bottom: 35px;
+    padding: 40px 40px;
+    height: 427px;
+    background-position: 50%; }
+  .importhead__header {
+    font-size: 66px; }
 
   .request h3,
   .request .h3 {
@@ -10667,7 +10712,26 @@ svg.hoversvgrequest {
     font-size: 42px; }
 
   .case-stages .problems__item .h3, .case-stages .problems__item h3 {
-    font-size: 42px; } }
+    font-size: 42px; }
+
+  .worksteps__list_card {
+    padding: 0 30px 0 20vw; }
+    .worksteps__list_card .wrapper {
+      flex-flow: column nowrap;
+      padding: 30px 0;
+      align-items: flex-start;
+      gap: 20px; }
+    .worksteps__list_card .text {
+      width: unset; }
+    .worksteps__list_card .number {
+      bottom: 0px; }
+    .worksteps__list_card .heading {
+      font-size: 40px;
+      line-height: 44px;
+      align-self: flex-start;
+      width: 100%; }
+    .worksteps__list_card .text {
+      width: 100%; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -11471,7 +11535,7 @@ svg.hoversvgrequest {
   .preservice-blocks .card-image {
     aspect-ratio: 1.75; }
   .preservice-header-wrapper h1 {
-    font-size: 50px; }
+    font-size: 46px; }
   .preservice-top-wrapper {
     margin-bottom: 50px; }
 
@@ -11522,24 +11586,22 @@ svg.hoversvgrequest {
     .importhead__blocks_card .text {
       font-size: 22px;
       line-height: 29px; }
+  .importhead__banner {
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    height: 400px; }
+  .importhead__header {
+    font-size: 46px; }
 
   .worksteps .container {
     padding-top: 80px;
     padding-bottom: 40px; }
-  .worksteps__list_card .wrapper {
-    flex-flow: column nowrap;
-    padding: 30px 0;
-    align-items: flex-start;
-    gap: 20px; }
-  .worksteps__list_card .number {
-    bottom: 0px; }
+  .worksteps__header {
+    font-size: 46px; }
   .worksteps__list_card .heading {
-    font-size: 40px;
-    line-height: 44px;
-    align-self: flex-start;
-    width: 100%; }
-  .worksteps__list_card .text {
-    width: 100%; }
+    font-size: 32px; }
+  .worksteps__list_card .wrapper {
+    gap: 10px; }
 
   .case-container__toc-inner.fixed {
     width: 100%; }
@@ -12197,6 +12259,8 @@ svg.hoversvgrequest {
     width: 100%; }
   .redesign-feedback .container svg {
     max-width: 100%; }
+  .redesign-projects-slide.border-radius-none .img {
+    width: 100%; }
 
   .case-awards {
     margin: 0 -30px;
@@ -14011,6 +14075,28 @@ svg.hoversvgrequest {
   .importhead__blocks_card .text {
     font-size: 16px;
     line-height: 21px; }
+  .importhead__banner {
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    height: 250px; }
+  .importhead__header {
+    font-size: 36px; }
+
+  .worksteps__header {
+    font-size: 36px;
+    line-height: 39.6px; }
+  .worksteps__list_card {
+    padding: 0 20px 0 25vw; }
+    .worksteps__list_card .heading {
+      font-size: 28px;
+      line-height: 33.6px; }
+    .worksteps__list_card .text {
+      font-size: 16px;
+      line-height: 20.8px; }
+    .worksteps__list_card .number {
+      left: -105px; }
+  .worksteps__list .wrapper {
+    gap: 10px; }
 
   .range__wrap {
     grid-template-rows: 49px max-content 45px; } }
@@ -14159,7 +14245,10 @@ svg.hoversvgrequest {
   .client__present.case-image + p {
     min-width: 280px;
     max-width: calc(100% - 40px);
-    width: 100%; } }
+    width: 100%; }
+
+  .importhead__header {
+    font-size: 32px; } }
 @media only screen and (max-width: 390px) {
   .preservice-blocks .card-head {
     font-size: 26px; }
@@ -14181,7 +14270,20 @@ svg.hoversvgrequest {
   .redesign-portfolio__list .card__wrapper .head {
     font-size: 5.5vw; }
   .redesign-portfolio__list .card__wrapper .desc {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+
+  .importhead__header {
+    font-size: 32px; }
+
+  .worksteps__header {
+    font-size: 32px;
+    line-height: 35.2px; }
+  .worksteps__list_card .heading {
+    font-size: 26px;
+    line-height: 31.2px; }
+
+  .importhead__header {
+    font-size: 28px; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }
