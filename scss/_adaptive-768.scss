@@ -330,12 +330,11 @@
             order: 1;
         }
         &__range {
-            //display: none;
             margin-left: -90px;
             margin-right: -90px;
 
             & + .request__select{
-                display: block;
+                display: none;
             }
         }
     }

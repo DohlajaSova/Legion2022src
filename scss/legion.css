@@ -11175,7 +11175,7 @@ svg.hoversvgrequest {
       margin-left: -90px;
       margin-right: -90px; }
       .request__range + .request__select {
-        display: block; }
+        display: none; }
 
   /*Safari hack for range*/
   _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
