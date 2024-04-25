@@ -927,7 +927,7 @@
         &-header {
             &-wrapper {
                 h1 {
-                    font-size: 50px;
+                    font-size: 46px;
                 }
             }
         }
@@ -1012,28 +1012,17 @@
             padding: 40px 30px;
             height: 400px;
         }
+        &__header {
+            font-size: 46px;
+        }
     }
     .worksteps {
         .container {
             padding-top: 80px;
             padding-bottom: 40px;
         }
-        &__list {
-            &_card {
-                padding: 0 30px 0 20vw;
-                .number {
-                    bottom: 0px;
-                }
-                .heading {
-                    font-size: 40px;
-                    line-height: 44px;
-                    align-self: flex-start;
-                    width: 100%;
-                }
-                .text {
-                    width: 100%;
-                }
-            }
+        &__header {
+            font-size: 46px;
         }
     }
     .case-container__toc-inner.fixed{
