@@ -1009,7 +1009,7 @@
         }
         &__banner {
             margin-bottom: 60px;
-            padding: 40px 30px;
+            padding: 40px 20px;
             height: 400px;
         }
         &__header {
@@ -1023,6 +1023,16 @@
         }
         &__header {
             font-size: 46px;
+        }
+        &__list {
+            &_card {
+                .heading {
+                    font-size: 32px;
+                }
+                .wrapper {
+                    gap: 10px;
+                }
+            }
         }
     }
     .case-container__toc-inner.fixed{

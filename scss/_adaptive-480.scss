@@ -1073,7 +1073,7 @@
                     line-height: 20.8px;
                 }
                 .number {
-                    left: -90px;
+                    left: -105px;
                 }
             }
             .wrapper {
@@ -1336,6 +1336,9 @@
         max-width: calc(100% - 40px);
         width: 100%;
     }
+    .importhead__header {
+        font-size: 32px;
+    }
 }
 
 // redesign only
@@ -1411,6 +1414,9 @@
                 }
             }
         }
+    }
+    .importhead__header {
+        font-size: 28px;
     }
     //--- import-sub
 }
