@@ -3248,7 +3248,7 @@ a.button {
 	&__tabs {
 		display: flex;
 		border-radius: $border-radius $border-radius 0 0;
-		background-color: #84AEFF;
+		background-color: $color-blue-light;
 
 		a,
 		span {
@@ -10669,7 +10669,7 @@ svg.svg-hover-filter-clear {
 					flex-flow: column nowrap;
 					gap: 10px;
 					.caption {
-						color: #949191;
+						color: $color-grey-dark;
 						font-size: 18px;
 						line-height: 18px;
 						align-items: center;
@@ -10686,7 +10686,7 @@ svg.svg-hover-filter-clear {
 						line-height: 120%;
 					}
 					.description {
-						color: #949191;
+						color: $color-grey-dark;
 						font-size: 18px;
 						line-height: 24px;
 						max-height: 72px;
@@ -10701,13 +10701,13 @@ svg.svg-hover-filter-clear {
 					justify-content: center;
 					.info-wrapper {
 						.caption {
-							color: #fff;
+							color: $color-white;
 						}		
 						.heading {
-							color: #fff;
+							color: $color-white;
 						}
 						.description {
-							color: #fff;
+							color: $color-white;
 						}
 					}
 				}
@@ -10767,7 +10767,7 @@ svg.svg-hover-filter-clear {
 					display: flex;
 					flex-flow: column nowrap;
 					.head {
-						color: #fff;
+						color: $color-white;
 						font-size: 24px;
 						line-height: 120%; /* 28.8px */
 					}
@@ -10973,7 +10973,7 @@ svg.svg-hover-filter-clear {
 				}
 			}
 				&__tag {
-					color: #949191;
+					color: $color-grey-dark;
 				}
 		}
 		&__pagination {
@@ -11038,14 +11038,14 @@ svg.svg-hover-filter-clear {
 			//styleName: Desktop 1440/Text T1;
 			font-size: 20px;
 			line-height: 26px;
-			color: #fff;
+			color: $color-white;
 			width: 40%;
 		}
 	}
 	&__text {
 		font-size: 20px;
 		line-height: 26px;
-		color: #141414;
+		color: $color-black;
 		margin-bottom: 80px;
 	}
 	&__blocks {
@@ -11064,8 +11064,8 @@ svg.svg-hover-filter-clear {
 	}
 }
 .souvereign {
-	border-top: 1px solid #141414;
-	border-bottom: 1px solid #141414;
+	border-top: 1px solid $color-black;
+	border-bottom: 1px solid $color-black;
 	.container {
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -11090,7 +11090,7 @@ svg.svg-hover-filter-clear {
 	}
 }
 .worksteps {
-	background-color: #F0F0F0;
+	background-color: $color-grey-light;
 	.container {
 		max-width: 1087px;
 		padding-top: 80px;
@@ -11104,7 +11104,7 @@ svg.svg-hover-filter-clear {
 	&__caption {
 		font-size: 24px;
 		line-height: 29px;
-		color: #141414;
+		color: $color-black;
 		// margin-bottom: 80px;
 		width: 80%;
 	}
@@ -11114,7 +11114,7 @@ svg.svg-hover-filter-clear {
 		&_card {
 			overflow: hidden;
 			// height: 158px;
-			border-bottom: 1px solid #141414;
+			border-bottom: 1px solid $color-black;
 			// max-width: 1087px;
 			padding-left: 160px;
 			padding-right: 160px;
@@ -11128,7 +11128,7 @@ svg.svg-hover-filter-clear {
 			}
 			.number{
 				// margin-right: 11px;
-				color: #949191;
+				color: $color-grey-dark;
 				font-size: 200px;
 				line-height: 220px;
 				position: absolute;
@@ -11139,7 +11139,7 @@ svg.svg-hover-filter-clear {
 				//styleName: Desktop 1440/Header H2;
 				font-size: 46px;
 				line-height: 55px;
-				color: #141414;
+				color: $color-black;
 				// margin-right: auto;
 				width: 53%;
 				align-self: flex-end;
@@ -11324,7 +11324,7 @@ svg.svg-hover-filter-clear {
 		// }
 	}
 	&__container-fullwidth {
-		background-color: #F0F0F0;
+		background-color: $color-grey-light;
 		// margin-left: 0;
 		// margin-right: 0;
 		// width: 100%!important;
@@ -11339,10 +11339,10 @@ svg.svg-hover-filter-clear {
 		// max-width: 1087px;
 		margin: 0 auto;
 		&.bg2 {
-			background-color: #F0F0F0;
+			background-color: $color-grey-light;
 		}
 		&.bg3 {
-			background-color: #141414;
+			background-color: $color-black;
 		}
 	}
 	&__heading_wrapper {
@@ -11354,7 +11354,7 @@ svg.svg-hover-filter-clear {
 		gap: 50px;
 	}
 	&__heading {
-		color: #141414;
+		color: $color-black;
 		align-self: flex-start;
 		font-size: 80px;
 		line-height: 88px;
@@ -11364,7 +11364,7 @@ svg.svg-hover-filter-clear {
 			padding-top: 46px;
 			font-size: 20px;
 			line-height: 26px;
-			color: #141414;
+			color: $color-black;
 			width: 100%;
 			text-align: right;
 		}
@@ -11383,7 +11383,7 @@ svg.svg-hover-filter-clear {
 				flex-flow: column nowrap;
 				gap: 20px;
 				height: 75px;
-				border-bottom: 1px solid #141414;
+				border-bottom: 1px solid $color-black;
 				padding-bottom: 30px;
 				overflow: hidden;
 				transition: height .25s;
@@ -11406,7 +11406,7 @@ svg.svg-hover-filter-clear {
 					display: flex;
 					height: fit-content;
 					padding: 14px 10px;
-					border: 1px solid #141414;
+					border: 1px solid $color-black;
 					border-radius: 8px;
 					cursor: pointer;
 					svg {
@@ -11416,7 +11416,7 @@ svg.svg-hover-filter-clear {
 				&__name {
 					font-size: 46px;
 					line-height: 55.2px;
-					color: #141414;
+					color: $color-black;
 				}
 				&__cases {
 					display: flex;
@@ -11429,7 +11429,7 @@ svg.svg-hover-filter-clear {
 						.caption {
 							font-size: 18px;
 							line-height: 23.4px;
-							color: #949191;
+							color: $color-grey-dark;
 						}
 						.name {
 							font-size: 24px;
@@ -11453,10 +11453,10 @@ svg.svg-hover-filter-clear {
 			&_link {
 				font-size: 24px;
 				line-height: 28.8px;
-				color: #949191;
+				color: $color-grey-dark;
 				cursor: pointer;
 				&.active {
-					color: #141414;
+					color: $color-black;
 				}
 			}
 		}
@@ -11465,7 +11465,7 @@ svg.svg-hover-filter-clear {
 		font-size: 46px;
 		line-height: 55.2px;
 		margin-bottom: 40px;
-		color: #fff;
+		color: $color-white;
 	}
 	&__block{
 		display: flex;
@@ -11480,7 +11480,7 @@ svg.svg-hover-filter-clear {
 			flex-flow: column nowrap;
 			display: flex;
 			gap: 10px;
-			color: #fff;
+			color: $color-white;
 			width: 50%;
 		}
 	}
@@ -11489,14 +11489,14 @@ svg.svg-hover-filter-clear {
 		border: none;
 		padding: 20px 40px;
 		border-radius: 100px;
-		background-color: #fff;
-		color: #141414;
+		background-color: $color-white;
+		color: $color-black;
 		font-size: 18px;
 		line-height: 23.4px;
 	}
 	.request {
 		margin-bottom: 0;
-		border-bottom: 1px solid #141414;
+		border-bottom: 1px solid $color-black;
 		height: 400px;
 		&__form_item {
 			margin-bottom: 60px;
