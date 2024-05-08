@@ -7897,7 +7897,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   border-bottom: 1px solid #141414; }
   .souvereign .container {
     padding-top: 60px;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    max-width: 1087px; }
   .souvereign-top-wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -11175,7 +11176,7 @@ svg.hoversvgrequest {
       margin-left: -90px;
       margin-right: -90px; }
       .request__range + .request__select {
-        display: block; }
+        display: none; }
 
   /*Safari hack for range*/
   _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
