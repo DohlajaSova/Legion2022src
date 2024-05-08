@@ -6469,6 +6469,11 @@ a.button {
 			}
 		}
 	}
+    .dummy-v2 &{
+        .footer__container_top{
+            display: none;
+        }
+    }
 	.text {
 		a{
 			color: $color-black;
@@ -6585,6 +6590,35 @@ a.button {
 	.bottom-dummy {
 		height: 0;
 	}
+    &-v2{
+        .dummy{
+            &__container{
+                background: url("img/404-bg-animation.svg") center center no-repeat;
+                background-size: contain;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1179px;
+                min-height: 594px;
+                align-items: center;
+                justify-content: center;
+            }
+            &-404,
+            &-inprocess{
+                &__title{
+                    font-size: 24px;
+                    margin: 0;
+                    padding-bottom: 15px;
+                    color: $color-blue-clean;
+                }
+                &__text{
+                    width: 100%;
+                    position: static;
+                    font-size: 36px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 .contacts {

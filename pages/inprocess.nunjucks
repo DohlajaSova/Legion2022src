@@ -4,14 +4,12 @@
 {% block links %} {% endblock %}
 {% block content %}
 <div class="container dummy__container dummy__container_inprocess">
-    <div class="dummy-inprocess">
-        <div class="dummy-inprocess__circle rotating"></div>
-        <div class="dummy-inprocess__title">
-            Страница находится <em>в&nbsp;разработке</em>
-        </div>
-        <div class="dummy-inprocess__text">
-            <p>Не&nbsp;пропустите запуск нашего нового сайта! Самые интересные новости и&nbsp;события легионеров в&nbsp;мире&nbsp;IT</p>
-        </div>
+    <div class="dummy-inprocess__title">
+        {in process}
+    </div>
+    <div class="dummy-inprocess__text">
+        Страница <span class="js-dummy-source-page-name"></span><br>
+        в разработке
     </div>
 </div>
 {% endblock %}

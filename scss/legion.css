@@ -4661,6 +4661,8 @@ a.button {
       .dummy .footer .footer__button_link {
         padding: 21px 50px;
         width: 100%; }
+  .dummy-v2 .footer .footer__container_top {
+    display: none; }
   .footer .text a {
     color: #141414; }
   .footer__info_wrapper {
@@ -4739,6 +4741,25 @@ a.button {
     align-content: space-between; }
   .dummy .bottom-dummy {
     height: 0; }
+  .dummy-v2 .dummy__container {
+    background: url("img/404-bg-animation.svg") center center no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1179px;
+    min-height: 594px;
+    align-items: center;
+    justify-content: center; }
+  .dummy-v2 .dummy-404__title, .dummy-v2 .dummy-inprocess__title {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 15px;
+    color: #1960FF; }
+  .dummy-v2 .dummy-404__text, .dummy-v2 .dummy-inprocess__text {
+    width: 100%;
+    position: static;
+    font-size: 36px;
+    text-align: center; }
 
 .contacts__title {
   margin: 180px 0; }
@@ -8251,19 +8272,12 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   margin: 0;
   padding: 0;
   cursor: pointer; }
-  .button-svg-animate-container:disabled .hoversvgrequest rect#v2-rectanimate1 {
-    transform: translate(-358px, 0);
-    width: 429px; }
-  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate1 {
-    fill: transparent;
-    transform: translate(-400px, 0); }
   .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate-disabled-text {
-    transform: translate(-400px, 0);
-    fill: #fff; }
+    fill: #141414; }
   .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate3 {
     fill: #fff;
     transform: translate(0, 0); }
-  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate2 {
+  .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate2, .button-svg-animate-container:disabled .hoversvgrequest #v2-pathanimate1 {
     transform: rotate(-45deg) translate(100px, -30px);
     animation: arrowmove 1.5s ease-in-out infinite; }
 
@@ -8271,9 +8285,9 @@ svg.hoversvgrequest {
   overflow: hidden; }
   svg.hoversvgrequest rect {
     transition: all .3s ease-in-out; }
-  svg.hoversvgrequest #rectanimate1, svg.hoversvgrequest #pathanimate1, svg.hoversvgrequest #pathanimate3 {
+  svg.hoversvgrequest #rectanimate1, svg.hoversvgrequest #pathanimate1, svg.hoversvgrequest #pathanimate3, svg.hoversvgrequest #v2-pathanimate3 {
     transition: transform .5s, width .5s, fill .5s; }
-  svg.hoversvgrequest #pathanimate-disabled-text {
+  svg.hoversvgrequest #pathanimate-disabled-text, svg.hoversvgrequest #v2-pathanimate-disabled-text {
     fill: transparent;
     transition: fill .5s; }
   svg.hoversvgrequest #pathanimate2 {
@@ -8283,12 +8297,17 @@ svg.hoversvgrequest {
     transition: transform .5s;
     transform: translate(-400px, 0);
     fill: transparent; }
+  svg.hoversvgrequest #v2-pathanimate2, svg.hoversvgrequest #v2-pathanimate1 {
+    transition: transform .5s;
+    transform-origin: 75% 49%; }
   svg.hoversvgrequest:hover rect#rectanimate1 {
     transform: translate(-258px, 0);
     width: 329px; }
   svg.hoversvgrequest:hover #pathanimate1 {
     fill: #fff; }
   svg.hoversvgrequest:hover #pathanimate2 {
+    transform: rotate(-45deg); }
+  svg.hoversvgrequest:hover #v2-pathanimate2, svg.hoversvgrequest:hover #v2-pathanimate1 {
     transform: rotate(-45deg); }
 
 @keyframes arrowmove {
@@ -10180,6 +10199,12 @@ svg.hoversvgrequest {
       justify-content: center; }
     .dummy-inprocess__text {
       width: calc(50% - 30px); }
+  .dummy-v2 .dummy__container {
+    background-image: url("img/404-bg-animation-mid.svg");
+    min-width: 569px;
+    margin-bottom: 30px; }
+  .dummy-v2 .dummy-inprocess__title {
+    height: auto; }
 
   .contacts__lead {
     line-height: 31px; }
@@ -11593,6 +11618,8 @@ svg.hoversvgrequest {
     margin-bottom: 60px;
     padding: 40px 20px;
     height: 400px; }
+    .importhead__banner_caption {
+      width: 70%; }
   .importhead__header {
     font-size: 46px; }
 
@@ -11911,6 +11938,8 @@ svg.hoversvgrequest {
     width: 100%;
     order: 1;
     margin-bottom: 44px; }
+  .dummy-v2 .dummy-inprocess__text {
+    margin-top: 0; }
 
   .category__content {
     font-size: 60px; }
@@ -12065,7 +12094,7 @@ svg.hoversvgrequest {
     .header.header_shift {
       transform: translateY(0px); }
     .header + .header-dummy {
-      height: 119px; }
+      height: 102px; }
     .header__mmenu {
       display: none; }
 
@@ -12282,6 +12311,16 @@ svg.hoversvgrequest {
   _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
     margin-left: -100px;
     margin-right: -100px; } }
+@media only screen and (max-width: 600px) {
+  .dummy-v2 .dummy__container {
+    background-image: url("img/404-bg-animation-small.svg");
+    min-width: 0;
+    min-height: 500px;
+    margin-bottom: 30px; }
+  .dummy-v2 .dummy-404__title, .dummy-v2 .dummy-inprocess__title {
+    font-size: 18px; }
+  .dummy-v2 .dummy-404__text, .dummy-v2 .dummy-inprocess__text {
+    font-size: 26px; } }
 @media only screen and (min-width: 551px) {
   .footer__menu-list {
     width: fit-content;
@@ -12924,7 +12963,6 @@ svg.hoversvgrequest {
 
   .footer {
     border-radius: 0;
-    margin-top: -30px;
     position: relative; }
     .footer__container_top {
       flex-direction: column; }

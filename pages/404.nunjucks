@@ -4,9 +4,12 @@
 {% block links %} {% endblock %}
 {% block content %}
 <div class="container dummy__container dummy__container_404">
-    <div class="dummy-404__bg"><img src="/assets/css/img/404-bg.svg" alt="404"></div>
     <div class="dummy-404__title">
-        Страница не найдена
+        {404}
+    </div>
+    <div class="dummy-404__text">
+        Страница не найдена. <br>
+        Усиленно ищем.
     </div>
 </div>
 {% endblock %}

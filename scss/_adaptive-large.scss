@@ -3030,6 +3030,18 @@
                 width:calc(50% - 30px);
             }
         }
+        .dummy-v2 &{
+            &__container{
+                background-image: url("img/404-bg-animation-mid.svg");
+                min-width: 569px;
+                margin-bottom: 30px;
+            }
+            &-inprocess{
+                &__title{
+                    height: auto;
+                }
+            }
+        }
     }
 	.contacts{
 		&__lead{
