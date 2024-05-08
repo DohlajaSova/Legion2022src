@@ -11549,23 +11549,14 @@ svg.svg-hover-filter-clear {
 	cursor: pointer;
 	&:disabled {
 		.hoversvgrequest {
-			rect#v2-rectanimate1 {
-				transform: translate(-358px, 0);
-				width: 429px;
-			}
-			#v2-pathanimate1 {
-				fill: transparent;
-				transform: translate(-400px, 0);
-			}
 			#v2-pathanimate-disabled-text {
-				transform: translate(-400px, 0);
-				fill: #fff;
+				fill: #141414;
 			}
 			#v2-pathanimate3 {
 				fill: #fff;
 				transform: translate(0, 0);
 			}
-			#v2-pathanimate2 {
+			#v2-pathanimate2, #v2-pathanimate1 {
 				transform: rotate(-45deg) translate(100px, -30px);
 				animation: arrowmove 1.5s ease-in-out infinite;	
 			}
@@ -11579,10 +11570,10 @@ svg.hoversvgrequest {
 	rect {
 	  transition: all .3s ease-in-out;
 	}
-	#rectanimate1, #pathanimate1, #pathanimate3 {
+	#rectanimate1, #pathanimate1, #pathanimate3, #v2-pathanimate3 {
 		transition: transform .5s, width .5s, fill .5s;
 	}
-	#pathanimate-disabled-text {
+	#pathanimate-disabled-text, #v2-pathanimate-disabled-text {
 		fill: transparent;
 		transition: fill .5s;
 	}
@@ -11596,6 +11587,10 @@ svg.hoversvgrequest {
 		fill: transparent;
 			// transform-origin: 88% 50%;
 	}
+	#v2-pathanimate2, #v2-pathanimate1 {
+		transition: transform .5s;
+		transform-origin: 75% 49%;
+	}
 	&:hover {
 		rect#rectanimate1 {
 			transform: translate(-258px, 0);
@@ -11605,6 +11600,9 @@ svg.hoversvgrequest {
 			fill: #fff;
 		}
 		#pathanimate2 {
+			transform: rotate(-45deg);
+		}
+		#v2-pathanimate2,#v2-pathanimate1 {
 			transform: rotate(-45deg);
 		}
 	}

@@ -1010,6 +1010,9 @@
             margin-bottom: 60px;
             padding: 40px 20px;
             height: 400px;
+            &_caption {
+                width: 70%;
+            }
         }
         &__header {
             font-size: 46px;

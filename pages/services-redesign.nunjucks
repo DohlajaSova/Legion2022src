@@ -9,7 +9,7 @@
 
 {% include "partials/towel/redesign/services/services-selection.nunjucks" %}
 {% include "partials/towel/redesign/services/services-pickup.nunjucks" %}
-{% include "partials/towel/redesign/services/services-consulting.nunjucks" %}
+{% include "partials/towel/redesign/services/services-stack.nunjucks" %}
 
 {% include "partials/towel/redesign/services/services-feedback.nunjucks" %}
 

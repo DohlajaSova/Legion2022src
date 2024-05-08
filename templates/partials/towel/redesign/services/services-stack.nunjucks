@@ -2,11 +2,8 @@
     <div class="container">
         <div class="services-v2__heading_wrapper">
             <h1 class="services-v2__heading">
-                Консалтинг
+                Стек технологий
             </h1>
-            <div class="services-v2__heading-caption">
-                Разберёмся, что и как создавать, выявим возможные риски и разработаем план на будущее
-            </div>
         </div>
         <div class="services-v2__accordion_wrapper js-accordion-redesign">
             <div class="services-v2__accordion_navigation">
