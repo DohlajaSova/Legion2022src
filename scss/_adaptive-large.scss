@@ -1463,6 +1463,13 @@
                 bottom:35px;
             }
         }
+        &-v2{
+            .dummy{
+                &__container{
+                    top: -47px;
+                }
+            }
+        }
     }
 	.contacts{
 		.map{
@@ -3035,6 +3042,7 @@
                 background-image: url("img/404-bg-animation-mid.svg");
                 min-width: 569px;
                 margin-bottom: 30px;
+                top: -25px;
             }
             &-inprocess{
                 &__title{

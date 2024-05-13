@@ -6591,6 +6591,14 @@ a.button {
 		height: 0;
 	}
     &-v2{
+        .content-wrapper{
+            display: flex;
+            flex-direction: column;
+            .header{
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
         .dummy{
             &__container{
                 background: url("img/404-bg-animation.svg") center center no-repeat;
@@ -6601,6 +6609,26 @@ a.button {
                 min-height: 594px;
                 align-items: center;
                 justify-content: center;
+                flex-grow: 1;
+                top: -71px;
+            }
+            &__buttons{
+                margin-top: 30px;
+            }
+            &__button{
+                margin: 0 5px;
+                padding: 0 33px;
+                height: 50px;
+                font-size: 16px;
+                line-height: 48px;
+                color: $color-black !important;
+                border-color: $color-black !important;
+                &_back{
+                    width: 50px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    background: url("img/arrow4.svg") center center no-repeat;
+                }
             }
             &-404,
             &-inprocess{

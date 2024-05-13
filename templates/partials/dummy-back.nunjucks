@@ -1,0 +1,4 @@
+<div class="dummy__buttons">
+    <a href="" class="button button_border dummy__button dummy__button_back js-history-back">&nbsp;</a>
+    <a href="" class="button button_border dummy__button">наши услуги</a>
+</div>

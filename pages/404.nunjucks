@@ -11,5 +11,6 @@
         Страница не найдена. <br>
         Усиленно ищем.
     </div>
+    {% include "partials/dummy-back.nunjucks" %}
 </div>
 {% endblock %}

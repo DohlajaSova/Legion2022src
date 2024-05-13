@@ -11,5 +11,6 @@
         Страница <span class="js-dummy-source-page-name"></span><br>
         в разработке
     </div>
+    {% include "partials/dummy-back.nunjucks" %}
 </div>
 {% endblock %}

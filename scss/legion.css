@@ -4741,6 +4741,12 @@ a.button {
     align-content: space-between; }
   .dummy .bottom-dummy {
     height: 0; }
+  .dummy-v2 .content-wrapper {
+    display: flex;
+    flex-direction: column; }
+    .dummy-v2 .content-wrapper .header {
+      flex-grow: 0;
+      flex-shrink: 0; }
   .dummy-v2 .dummy__container {
     background: url("img/404-bg-animation.svg") center center no-repeat;
     background-size: contain;
@@ -4749,7 +4755,24 @@ a.button {
     max-width: 1179px;
     min-height: 594px;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    flex-grow: 1;
+    top: -71px; }
+  .dummy-v2 .dummy__buttons {
+    margin-top: 30px; }
+  .dummy-v2 .dummy__button {
+    margin: 0 5px;
+    padding: 0 33px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #141414 !important;
+    border-color: #141414 !important; }
+    .dummy-v2 .dummy__button_back {
+      width: 50px;
+      padding-left: 0;
+      padding-right: 0;
+      background: url("img/arrow4.svg") center center no-repeat; }
   .dummy-v2 .dummy-404__title, .dummy-v2 .dummy-inprocess__title {
     font-size: 24px;
     margin: 0;
@@ -9227,6 +9250,8 @@ svg.hoversvgrequest {
 
   .dummy-inprocess__text {
     bottom: 35px; }
+  .dummy-v2 .dummy__container {
+    top: -47px; }
 
   .contacts .map__addresses_block {
     flex-wrap: wrap; }
@@ -10202,7 +10227,8 @@ svg.hoversvgrequest {
   .dummy-v2 .dummy__container {
     background-image: url("img/404-bg-animation-mid.svg");
     min-width: 569px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    top: -25px; }
   .dummy-v2 .dummy-inprocess__title {
     height: auto; }
 
@@ -12316,7 +12342,16 @@ svg.hoversvgrequest {
     background-image: url("img/404-bg-animation-small.svg");
     min-width: 0;
     min-height: 500px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    top: -18px; }
+  .dummy-v2 .dummy__buttons {
+    margin-top: 20px; }
+  .dummy-v2 .dummy__button {
+    height: 44px;
+    font-size: 16px;
+    line-height: 42px; }
+    .dummy-v2 .dummy__button_back {
+      width: 44px; }
   .dummy-v2 .dummy-404__title, .dummy-v2 .dummy-inprocess__title {
     font-size: 18px; }
   .dummy-v2 .dummy-404__text, .dummy-v2 .dummy-inprocess__text {
