@@ -4757,6 +4757,7 @@ a.button {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    position: relative;
     top: -71px; }
   .dummy-v2 .dummy__buttons {
     margin-top: 30px; }
