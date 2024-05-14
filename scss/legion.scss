@@ -11494,6 +11494,24 @@ svg.svg-hover-filter-clear {
 		font-size: 18px;
 		line-height: 23.4px;
 	}
+	&__timeline {
+		width: 100%;
+		&-wrapper {
+			padding: 40px 0 50px 0;
+			.container {
+				padding: 0;
+			}
+		}
+		&-caption {
+			//styleName: Desktop 1440/Text T1;
+			font-size: 20px;
+			line-height: 26px;
+			text-align: left;
+			width: 30%;
+			max-width: 380px;
+			margin-bottom: 32px;
+		}
+	}
 	.request {
 		margin-bottom: 0;
 		border-bottom: 1px solid $color-black;

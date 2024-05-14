@@ -5,6 +5,7 @@
 {% block content %}
 
 {% include "partials/towel/redesign/services/services-heading.nunjucks" %}
+{% include "partials/towel/redesign/services/services-timeline.nunjucks" %}
 {% include "partials/towel/redesign/services/services-systems.nunjucks" %}
 
 {% include "partials/towel/redesign/services/services-selection.nunjucks" %}
