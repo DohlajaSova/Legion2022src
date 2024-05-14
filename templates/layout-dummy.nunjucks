@@ -15,7 +15,7 @@
     <link rel="icon" type="image/webp" sizes="16x16" href="/assets/css/img/favicon-16x16.webp">
     {% block links %}{% endblock %}
 </head>
-<body class="dummy">
+<body class="dummy-v2">
 <div class="content-wrapper">
 	<header class="header">
 		<div class="container">
@@ -29,11 +29,11 @@
 </div>
 <footer class="footer footer_dummy cleared">
     <div class="container cleared">
-        {% include "partials/footer-dummy.nunjucks" %}
+        {% include "partials/footer.nunjucks" %}
     </div>
 </footer>
 {% block after_body %}{% endblock %}
-<script src="assets/js/elegion.js"></script>
+<script src="assets/js/app.js"></script>
 {% block scripts %}
 {% endblock %}
 </body>

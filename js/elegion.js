@@ -2692,6 +2692,18 @@ docReady(function () {
             })
         })
     }
+
+    // Обработка клика на страницах dummy
+    if (document.querySelector('.js-history-back') != null){
+        document.querySelector('.js-history-back').addEventListener("click", (e) => {
+            console.log(e.target);
+            if (e.target.classList.contains('js-history-back')){
+                e.preventDefault();
+                window.history.back();
+            }
+        })
+    }
+
     // services redesign accordion 
     if (document.querySelectorAll(".js-accordion-redesign").length > 0) {
         const accordions = document.querySelectorAll(".js-accordion-redesign");
