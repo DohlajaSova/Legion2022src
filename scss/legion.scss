@@ -6820,6 +6820,28 @@ a.button {
 		.request__textarea .button{
 			padding-top: 40px;
 		}
+        
+        .yaDiskUploader{
+            &.js-upload-started{
+                border: none;
+                max-width: none;
+                padding: 0;
+                /*.dz-before-process{
+                    display: inline-block;
+                    border-style: solid;
+                    border-width: 1px;
+                    max-width: 250px;
+                    font-size: 18px;
+                    white-space: nowrap;
+                    padding: 20px 60px;
+                    margin: 50px 0 70px;
+                    border-radius: 100px;
+                }*/
+                .dz-addfiles{
+                    display: none;
+                }
+            }
+        }
 	}
 
 	.select-inline .select-hide {
