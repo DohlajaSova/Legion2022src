@@ -4888,22 +4888,33 @@ a.button {
     .request__file .request__comment,
     .request__file .request__textarea .button {
       padding-top: 40px; }
+    .request__file .yaDiskUploader.dz-clickable .dz-before-process {
+      cursor: pointer; }
     .request__file .yaDiskUploader.js-upload-started {
       border: none;
       max-width: none;
-      padding: 0;
-      /*.dz-before-process{
-          display: inline-block;
-          border-style: solid;
-          border-width: 1px;
-          max-width: 250px;
-          font-size: 18px;
-          white-space: nowrap;
-          padding: 20px 60px;
-          margin: 50px 0 70px;
-          border-radius: 100px;
-      }*/ }
+      padding: 0; }
+      .request__file .yaDiskUploader.js-upload-started .dz-before-process {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0;
+        border-style: solid;
+        border-width: 1px;
+        max-width: 250px;
+        font-size: 18px;
+        white-space: nowrap;
+        border-radius: 100px;
+        padding: 20px 60px;
+        background: #fff;
+        border-color: #141414;
+        color: #141414; }
       .request__file .yaDiskUploader.js-upload-started .dz-addfiles {
+        display: none; }
+      .request__file .yaDiskUploader.js-upload-started.dz-started .dz-before-process {
+        display: none; }
+      .request__file .yaDiskUploader.js-upload-started.dz-started .dz-addfiles {
+        display: block; }
+      .request__file .yaDiskUploader.js-upload-started.dz-started + .request__comment {
         display: none; }
   .request .select-inline .select-hide {
     font-size: 24px; }
@@ -5012,8 +5023,8 @@ a.button {
       border-bottom-color: #dc000f; }
   .request__comment-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end; }
+    flex-direction: row;
+    justify-content: flex-start; }
     .request__comment-container.centered {
       flex-direction: column-reverse;
       align-items: center; }
@@ -5073,6 +5084,60 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       font-weight: bold; }
   .dz-warning span {
     font-size: 44px !important; }
+  .dz-warning.dz-addfiles {
+    width: auto;
+    height: auto;
+    padding: 0 0 0 34px;
+    border: none;
+    font-size: 16px !important;
+    line-height: 24px;
+    min-height: 24px;
+    background: url("img/icon-clip-red.svg") left center no-repeat;
+    background-size: 24px;
+    color: rgba(235, 49, 49, 0.8); }
+    .dz-warning.dz-addfiles span {
+      display: none; }
+
+.yaDiskUploader .dz-preview {
+  margin: 0 !important;
+  min-height: 0; }
+  .yaDiskUploader .dz-preview.dz-processing, .yaDiskUploader .dz-preview.dz-success.dz-complete {
+    display: flex;
+    min-height: 0;
+    margin: 0 !important; }
+    .yaDiskUploader .dz-preview.dz-processing .dz-image, .yaDiskUploader .dz-preview.dz-success.dz-complete .dz-image {
+      display: none; }
+    .yaDiskUploader .dz-preview.dz-processing .dz-remove, .yaDiskUploader .dz-preview.dz-success.dz-complete .dz-remove {
+      font-size: 0 !important;
+      transform: none;
+      width: 16px;
+      height: 16px;
+      background: url("img/icon-menu7.svg") center center no-repeat;
+      background-size: auto;
+      background-size: 7px;
+      opacity: 1;
+      border-radius: 50%;
+      border: 1px solid #141414;
+      position: relative;
+      margin-left: 0;
+      flex-shrink: 0; }
+    .yaDiskUploader .dz-preview.dz-processing .dz-details, .yaDiskUploader .dz-preview.dz-success.dz-complete .dz-details {
+      position: relative;
+      padding: 0;
+      font-size: 20px; }
+      .yaDiskUploader .dz-preview.dz-processing .dz-details .dz-size, .yaDiskUploader .dz-preview.dz-success.dz-complete .dz-details .dz-size {
+        display: none; }
+      .yaDiskUploader .dz-preview.dz-processing .dz-details .dz-filename, .yaDiskUploader .dz-preview.dz-success.dz-complete .dz-details .dz-filename {
+        text-align: left; }
+        .yaDiskUploader .dz-preview.dz-processing .dz-details .dz-filename span, .yaDiskUploader .dz-preview.dz-success.dz-complete .dz-details .dz-filename span {
+          padding: 0 0 0 34px;
+          border: none;
+          min-height: 24px;
+          background: url("img/icon-clip.svg") left center no-repeat;
+          background-size: 24px; }
+  .yaDiskUploader .dz-preview.dz-processing .dz-progress {
+    opacity: 0.7;
+    margin-top: -11px; }
 
 .team {
   margin-bottom: 75px; }

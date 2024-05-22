@@ -6822,23 +6822,43 @@ a.button {
 		}
         
         .yaDiskUploader{
+            &.dz-clickable{
+                .dz-before-process{
+                    cursor: pointer;
+                }
+            }
             &.js-upload-started{
                 border: none;
                 max-width: none;
                 padding: 0;
-                /*.dz-before-process{
+                .dz-before-process{
                     display: inline-block;
+                    cursor: pointer;
+                    margin: 0;
                     border-style: solid;
                     border-width: 1px;
                     max-width: 250px;
                     font-size: 18px;
                     white-space: nowrap;
-                    padding: 20px 60px;
-                    margin: 50px 0 70px;
                     border-radius: 100px;
-                }*/
+                    padding: 20px 60px;
+                    background: $color-white;
+                    border-color: $color-black;
+                    color: $color-black;
+                }
                 .dz-addfiles{
                     display: none;
+                }
+                &.dz-started{
+                    .dz-before-process{
+                        display: none;
+                    }
+                    .dz-addfiles{
+                        display: block;
+                    }
+                    + .request__comment{
+                        display: none;
+                    }
                 }
             }
         }
@@ -7031,8 +7051,8 @@ a.button {
 
 	&__comment-container {
 		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
+		flex-direction: row;
+		justify-content: flex-start;
 		&.centered{
 			flex-direction: column-reverse;
 			align-items: center;
@@ -7120,6 +7140,74 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     }
     span{
         font-size: 44px !important;
+    }
+    &.dz-addfiles{
+        width: auto;
+        height: auto;
+        padding: 0 0 0 34px;
+        border: none;
+        font-size: 16px !important;
+        line-height: 24px;
+        min-height: 24px;
+        background: url($img-path + "icon-clip-red.svg") left center no-repeat;
+        background-size: 24px;
+        color: rgba(235, 49, 49, 0.8);
+        span{
+            display: none;
+        }
+    }
+}
+
+.yaDiskUploader .dz-preview{
+    margin: 0 !important;
+    min-height: 0;
+    &.dz-processing,
+    &.dz-success.dz-complete{
+        display: flex;
+        min-height: 0;
+        margin: 0 !important;
+        .dz-image{
+            display: none;
+        }
+        .dz-remove{
+            font-size: 0 !important;
+            transform: none;
+            width: 16px;
+            height: 16px;
+            background: url($img-path + "icon-menu7.svg") center center no-repeat;
+            background-size: auto;
+            background-size: 7px;
+            opacity: 1;
+            border-radius: 50%;
+            border: 1px solid #141414;
+            position: relative;
+            margin-left: 0;
+            flex-shrink: 0;
+        }
+        .dz-details{
+            position: relative;
+            padding: 0;
+            font-size: 20px;
+            .dz-size{
+                display: none;
+            }
+            .dz-filename{
+                text-align: left;
+                span{
+                    padding: 0 0 0 34px;
+                    border: none;
+                    min-height: 24px;
+                    background: url($img-path + "icon-clip.svg") left center no-repeat;
+                    background-size: 24px;
+                }
+            }
+        }
+    }
+    &.dz-processing{
+        .dz-progress{
+            opacity: 0.7;
+            margin-top: -11px;
+        }
     }
 }
 
