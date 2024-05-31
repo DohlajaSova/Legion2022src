@@ -10131,6 +10131,17 @@ svg.svg-added-filter {
 			*[fill="#F5EBDC"]{
 				fill: #F5EBDC;
 			}
+			//Medlinx
+			*[fill="#2B2B2B"]{
+				fill: #1F5EC7;
+			}
+			*[fill="#767676"]{
+				fill: #18C0EB;
+			}
+			*[fill="#A2A2A2"]{
+				fill: #6EE9D5;
+			}
+			//--Medlinx
 			stop[stop-color="#6600C6"]{
 				stop-color: #6600C6;
 			}
@@ -10998,7 +11009,7 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-around;
-			align-items: center;
+			//align-items: center;
 			gap: 50px;
 			.svg-hover-filter-clear {
 				cursor: pointer;
