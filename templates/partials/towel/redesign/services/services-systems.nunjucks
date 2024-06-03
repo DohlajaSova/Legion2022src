@@ -1,7 +1,7 @@
 <div class="services-v2">
-  <div class="container">
+  <div class="container js-scrollsection-1">
     <div class="services-v2__heading_wrapper">
-      <h1 class="services-v2__heading">
+      <h1 class="services-v2__heading" >
         Консалтинг
       </h1>
       <div class="services-v2__heading-caption">
@@ -109,7 +109,7 @@
 
 <div class="services-v2">
   <div class="services-v2__container-fullwidth bg2">
-    <div class="container">
+    <div class="container js-scrollsection-2">
       <div class="services-v2__heading_wrapper">
         <h1 class="services-v2__heading">
           Разработка
@@ -280,7 +280,7 @@
 
 
 <div class="services-v2">
-  <div class="container">
+  <div class="container js-scrollsection-3">
     <div class="services-v2__heading_wrapper">
       <h1 class="services-v2__heading">
         Решения

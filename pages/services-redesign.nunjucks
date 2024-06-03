@@ -12,6 +12,7 @@
 {% include "partials/towel/redesign/services/services-pickup.nunjucks" %}
 {% include "partials/towel/redesign/services/services-stack.nunjucks" %}
 
+{% include "partials/towel/redesign/services/services-menu.nunjucks" %}
 {% include "partials/towel/redesign/services/services-feedback.nunjucks" %}
 
 {# {% include "partials/towel/redesign/blog.nunjucks" %} #}

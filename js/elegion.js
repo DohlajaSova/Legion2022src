@@ -8,11 +8,11 @@ function docReady(fn) {
 
 function debounce(f, ms) {
     let isCooldown = false;
-    return function() {
-      if (isCooldown) return;
-      f.apply(this, arguments);
-      isCooldown = true;
-      setTimeout(() => isCooldown = false, ms);
+    return function () {
+        if (isCooldown) return;
+        f.apply(this, arguments);
+        isCooldown = true;
+        setTimeout(() => isCooldown = false, ms);
     };
 }
 
@@ -70,8 +70,8 @@ function closeAllSelect(elmnt) {
 }
 
 function toggleClass(elem, className, toggle = null) {
-    if(toggle === null) {
-        if(elem.classList.contains(className)) {
+    if (toggle === null) {
+        if (elem.classList.contains(className)) {
             elem.classList.remove(className);
         } else {
             elem.classList.add(className);
@@ -730,9 +730,9 @@ function generateEditorialTOC(editorial) {
 
 function generateCaseTOC(caseOuter) {
     caseOuter.innerHTML = caseOuter.innerHTML.replace(/<h6 class="js-case-accordion-begin"><\/h6>([\s\S]+)<h6 class="js-case-accordion-end"><\/h6>/gm, '<div class="js-case">$1</div>');
-    
+
     let case1;
-    if (document.querySelectorAll(".js-case")[0] != undefined){
+    if (document.querySelectorAll(".js-case")[0] != undefined) {
         case1 = document.querySelectorAll(".js-case")[0];
 
         // разбиваем блок аккордеона на блоки <section> по вхождению заголовков <h6>
@@ -763,45 +763,45 @@ function generateCaseTOC(caseOuter) {
     }
     else toc = '<aside class="case-container__toc"></aside>'
 
-    if (document.querySelectorAll(".js-case")[0] != undefined){
+    if (document.querySelectorAll(".js-case")[0] != undefined) {
         let div = document.createElement('div');
         div.className = 'case-accordion js-case-accordion';
         if (case1 != undefined) div.innerHTML = case1.innerHTML;
         case1.before(div);
         document.querySelectorAll('.js-case')[0].remove();
     }
-    
-    document.addEventListener('click', function(e){
-        if (e.target.classList.contains('js-sidetoc')){
+
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('js-sidetoc')) {
             e.preventDefault();
-            if (e.target.classList.contains('closed')){
+            if (e.target.classList.contains('closed')) {
                 e.target.classList.remove('closed');
                 e.target.parentElement.classList.remove('closed');
             }
-            else{
+            else {
                 e.target.classList.add('closed');
                 e.target.parentElement.classList.add('closed');
             }
         }
     }, true);
-    
-    document.addEventListener('click', function(e){
-        if (e.target.parentElement.classList.contains('js-case-accordion')){
+
+    document.addEventListener('click', function (e) {
+        if (e.target.parentElement.classList.contains('js-case-accordion')) {
             if (e.target.classList.contains('active'))
                 e.target.classList.remove('active');
             else
                 e.target.classList.add('active');
         }
     }, true);
-    
-    document.addEventListener('click', function(e){
-        if (e.target.parentElement.parentElement.classList.contains('js-case-accordion') && e.target.classList.contains('close')){
+
+    document.addEventListener('click', function (e) {
+        if (e.target.parentElement.parentElement.classList.contains('js-case-accordion') && e.target.classList.contains('close')) {
             e.preventDefault();
             e.target.parentElement.previousElementSibling.classList.remove('active');
             window.scrollTo({ behavior: "smooth", top: e.target.parentElement.previousElementSibling.getBoundingClientRect().top + window.pageYOffset });
         }
     }, true);
-    
+
     div = document.createElement('div');
     div.className = 'js-case-outer';
     div.innerHTML = toc + '<article class="case-container__body" itemprop="articleBody">' + caseOuter.innerHTML + '</article>';
@@ -834,11 +834,11 @@ function generateCaseTOC(caseOuter) {
         let topAdjust = 0;
         if (wWidth > 1180) topAdjust = 27;
         stickyTOC.style.top = caseTop + 66 + topAdjust + 'px';
-        if (wWidth <= 1024 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined){
+        if (wWidth <= 1024 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined) {
             document.getElementsByClassName('case-container__toc-inner')[0].classList.add('closed');
             document.getElementsByClassName('js-sidetoc')[0].classList.add('closed');
         }
-        if (wWidth <= 1180 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined){
+        if (wWidth <= 1180 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined) {
             document.getElementsByClassName('js-toc')[0].classList.add('fixed');
             document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
             document.getElementsByClassName('case-container__toc-inner')[0].classList.add('closed');
@@ -887,10 +887,10 @@ function generateCaseTOC(caseOuter) {
                 }
                 Array.prototype.slice.call(allHeadingsTops).forEach(function (heading, index) {
                     if (index == activeHeading) {
-                        allTOCHeadings[index+1].classList.add('active');
+                        allTOCHeadings[index + 1].classList.add('active');
                     }
                     else {
-                        allTOCHeadings[index+1].classList.remove('active');
+                        allTOCHeadings[index + 1].classList.remove('active');
                     }
                 });
             }
@@ -927,8 +927,8 @@ function generateCaseTOC(caseOuter) {
 
 docReady(function () {
     // global
-        // listeners 
-        let tagCategoriesListener = false; 
+    // listeners 
+    let tagCategoriesListener = false;
     const params = getParamsByUrl();
     const scrollIV = params?.scrollinto;
     if (scrollIV) {
@@ -1656,6 +1656,109 @@ docReady(function () {
         }, false);
     }
 
+    // упрощенный ток - скролл по ссылкам
+
+    let scrollNavigationContainer = document.querySelector(".js-scroll-navigation");
+    if (scrollNavigationContainer) {
+        const stickyTOC = document.getElementsByClassName('case-container__toc-inner')[0];
+        const editorialTop = document.getElementsByClassName('js-scrollsection-1')[0].getBoundingClientRect().height;
+        const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+        // let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height + document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
+        function simplifiedToc() {
+            bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0].getBoundingClientRect().height;
+            stickyTOC.style.height = 350 + "px";
+            console.log({ bodyScrollTop })
+            console.log({ editorialTop })
+            if (bodyScrollTop > editorialTop + 67) {
+                console.log('over')
+                // document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
+                stickyTOC.classList.add('fixed');
+                if (wWidth > 1024 && document.getElementsByClassName('js-scrollsection-1')[0] != undefined) {
+                    if (bodyScrollTop > editorialTop + document.getElementsByClassName('js-scrollsection-1')[0].getBoundingClientRect().height)
+                        document.getElementsByClassName('js-scrollsection-1')[0].classList.add('floored');
+                    else
+                        document.getElementsByClassName('js-scrollsection-1')[0].classList.remove('floored');
+                }
+            }
+            else {
+                document.getElementsByClassName('case-container__toc-inner')[0].classList.remove('fixed');
+                stickyTOC.classList.remove('fixed');
+            }
+
+            // if (allHeadings.length) {
+            //     let activeHeading = -1;
+            //     for (i = 0; i < allHeadings.length; i++) {
+            //         if (bodyScrollTop > (allHeadings[i].getBoundingClientRect().top + window.scrollY - wHeight)) {
+            //             activeHeading = i;
+            //         }
+            //     }
+            //     Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
+            //         if (index == activeHeading) {
+            //             allTOCHeadings[index].classList.add('active');
+            //         }
+            //         else {
+            //             allTOCHeadings[index].classList.remove('active');
+            //         }
+            //     });
+            // }
+            // else {
+            //     Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
+            //         allTOCHeadings[index].classList.remove('active');
+            //     });
+            // }
+        }
+        simplifiedToc();
+        window.addEventListener('touch', simplifiedToc, true);
+        window.addEventListener('scroll', simplifiedToc, true);
+        window.addEventListener('resize', simplifiedToc, true);
+
+        const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
+        Array.from(lev1Sel).forEach((one, indexLv1) => one.addEventListener("click", (e) => {
+            if (one.classList.contains("active")) {
+                return;
+            } else {
+                Array.from(lev1Sel).forEach((one) => one.classList.remove("active"));
+                one.classList.add("active");
+                console.log(one.dataset)
+                scrollsel = document.querySelectorAll(".js-scrollsection-" + (one.dataset.scrollTab));
+                if (scrollsel && scrollsel[0]) {
+                    scrollsel[0].scrollIntoView({
+                        behavior: "smooth"
+                    })
+                }
+                console.log(".js-scrollsection-" + (one.dataset.scrollTab));
+            }
+        }))
+        Array.from(lev1Sel).forEach((one, indexLv1) => {
+            const lev2Sel = one.querySelectorAll(".case-container__toc-lev2 .js-scrollto");
+            const scrollsel = document.querySelectorAll(".js-scrollsection-" + (one.dataset.scrollTab));
+            Array.from(lev2Sel).forEach((two, indexLv2) => two.addEventListener("click", (e) => {
+                e.stopPropagation()
+                const links = scrollsel[0].querySelectorAll(".js-accordion-link");
+                if (links) {
+                    const linkto = Array.from(links).find(one => one.dataset.accordionLink === "" + (indexLv2 + 1));
+                    if (linkto) {
+                        linkto.scrollIntoView({
+                            behavior: "smooth"
+                        })
+                        if (!linkto.classList.contains('active')) {
+                            Array.from(links).forEach(link => {
+                                link.classList.remove('active')
+                            });
+                            linkto.click()
+                        }
+                    }
+                    console.log({ linkto })
+                }
+            }))
+        })
+        // "case-container__toc-lev1 active";
+        // "js-scrollsection-1";
+    }
+
 
     // видео: пропорции
     let players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
@@ -1715,26 +1818,26 @@ docReady(function () {
                 _o = _p.querySelector(`option[value='${val}']`),
                 lbl = +_o.label;
             let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-			// margins for container
-			let _rangeContainer = _p.parentNode;
-			console.log(_rangeContainer);
-			let containerMargin;
-			if (wwidth <= 1500){
-				if (wwidth > 650) containerMargin = 0.055*wwidth + 48.5;
-				else if (wwidth > 570) containerMargin = 0.1013*wwidth + 50.155;
-				else containerMargin = 0.0435*wwidth + 19.5;
-				if (containerMargin != undefined){
-					console.log(_rangeContainer.style);
-					_rangeContainer.style.marginLeft = -containerMargin + 'px';
-					_rangeContainer.style.marginRight = -containerMargin + 'px';
-					console.log(_rangeContainer.style);
-				}
-			}
+            // margins for container
+            let _rangeContainer = _p.parentNode;
+            console.log(_rangeContainer);
+            let containerMargin;
+            if (wwidth <= 1500) {
+                if (wwidth > 650) containerMargin = 0.055 * wwidth + 48.5;
+                else if (wwidth > 570) containerMargin = 0.1013 * wwidth + 50.155;
+                else containerMargin = 0.0435 * wwidth + 19.5;
+                if (containerMargin != undefined) {
+                    console.log(_rangeContainer.style);
+                    _rangeContainer.style.marginLeft = -containerMargin + 'px';
+                    _rangeContainer.style.marginRight = -containerMargin + 'px';
+                    console.log(_rangeContainer.style);
+                }
+            }
 
             //let wdd = wwidth > 1500 ? _p.clientWidth : (wwidth > 650 ? wwidth : wwidth - 60);
             //let wdd = wwidth > 650 ? _p.clientWidth : wwidth - 60;
             let wdd = wwidth > 650 ? _p.clientWidth : _p.clientWidth - 60;
-			
+
             _t.setAttribute('aria-valuetext', lbl);
             _p.style.setProperty(`--${_t.id}`, val);
             _p.style.setProperty(`--lbl-${_t.id}`, lbl + "");
@@ -1859,42 +1962,42 @@ docReady(function () {
 
     for (j = 0; j < circleContainer.length; j++) {
 
-		let circleText = circleContainer[j].querySelector(".circle-text");
-		let circlePic = circleContainer[j].querySelector(".circle-pic");
-		let circleAbout = circleContainer[j].querySelector(".circle-about") || document.querySelector(".about__animation_items");
-	
-		if (circlePic != null) {
-			circlePic.classList.add("rotating");
-			let num = 3;
-			setInterval(function () {
-				for (i = 0; i < circleText.children.length; i++) {
-					circleText.children[i % circleText.children.length].style.opacity = "0";
-				}
-				for (i = 0; i < circleAbout.children.length; i++) {
-					circleAbout.children[i % circleAbout.children.length].style.opacity = "0";
-				}
-				setTimeout(() => {
-					for (i = 0; i < circleText.children.length; i++) {
-						circleText.children[i % circleText.children.length].style.display = "none";
-					}
-					for (i = 0; i < circleAbout.children.length; i++) {
-						circleAbout.children[i % circleAbout.children.length].style.display = "none";
-					}
-				}, 1000);
-				setTimeout(() => {
-					circleText.children[num % circleText.children.length].style.opacity = "0";
-					circleText.children[num % circleText.children.length].style.display = "block";
-					circleAbout.children[num % circleAbout.children.length].style.opacity = "0";
-					circleAbout.children[num % circleAbout.children.length].style.display = "block";
-					setTimeout(() => {
-						circleText.children[num % circleText.children.length].style.opacity = "1";
-						circleAbout.children[num % circleAbout.children.length].style.opacity = "1";
-					}, 250);
-				}, 1000);
-				num++;
-			}, 5000);
-		}
-	}
+        let circleText = circleContainer[j].querySelector(".circle-text");
+        let circlePic = circleContainer[j].querySelector(".circle-pic");
+        let circleAbout = circleContainer[j].querySelector(".circle-about") || document.querySelector(".about__animation_items");
+
+        if (circlePic != null) {
+            circlePic.classList.add("rotating");
+            let num = 3;
+            setInterval(function () {
+                for (i = 0; i < circleText.children.length; i++) {
+                    circleText.children[i % circleText.children.length].style.opacity = "0";
+                }
+                for (i = 0; i < circleAbout.children.length; i++) {
+                    circleAbout.children[i % circleAbout.children.length].style.opacity = "0";
+                }
+                setTimeout(() => {
+                    for (i = 0; i < circleText.children.length; i++) {
+                        circleText.children[i % circleText.children.length].style.display = "none";
+                    }
+                    for (i = 0; i < circleAbout.children.length; i++) {
+                        circleAbout.children[i % circleAbout.children.length].style.display = "none";
+                    }
+                }, 1000);
+                setTimeout(() => {
+                    circleText.children[num % circleText.children.length].style.opacity = "0";
+                    circleText.children[num % circleText.children.length].style.display = "block";
+                    circleAbout.children[num % circleAbout.children.length].style.opacity = "0";
+                    circleAbout.children[num % circleAbout.children.length].style.display = "block";
+                    setTimeout(() => {
+                        circleText.children[num % circleText.children.length].style.opacity = "1";
+                        circleAbout.children[num % circleAbout.children.length].style.opacity = "1";
+                    }, 250);
+                }, 1000);
+                num++;
+            }, 5000);
+        }
+    }
 
     if (document.querySelector('.js-map-container')) {
         new ContactMapYandex(document.querySelector('.js-map-container'),
@@ -2307,7 +2410,7 @@ docReady(function () {
     //  astralinux highlighting cards by scroll
     // if (windowWidth > 480) {
     const activeContainer = document.querySelectorAll(".js-active-contents-by-scroll");
-    if(activeContainer?.length) {
+    if (activeContainer?.length) {
         const cards = activeContainer[0].querySelectorAll(".content-card")
         const coords = [];
         const heights = [];
@@ -2345,11 +2448,11 @@ docReady(function () {
                         });
                         ticking = true;
                     }
-                } else if(!cleared){
+                } else if (!cleared) {
                     for (let one = 0; one < cards.length; one++) {
-                            cards[one].classList.contains("content-card-closest-active") ?
-                                cards[one].classList.remove("content-card-closest-active") :
-                                null
+                        cards[one].classList.contains("content-card-closest-active") ?
+                            cards[one].classList.remove("content-card-closest-active") :
+                            null
                     }
                     cleared = true;
                 }
@@ -2405,11 +2508,11 @@ docReady(function () {
             e.stopPropagation();
             toggleClass(elemToToggle, classToToggle, false);
             // add listener -- outer click
-            if(!tagCategoriesListener) {
+            if (!tagCategoriesListener) {
                 document.addEventListener("click", function (e) {
                     // e.preventDefault();
                     tagCategoriesListener = true;
-                    if(!hasCommonElements(
+                    if (!hasCommonElements(
                         [...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)],
                         classToClick)
                     ) {
@@ -2419,13 +2522,13 @@ docReady(function () {
                     // document.removeEventListener("click", this)
                 })
             }
-            if(activeType === e.target?.dataset?.cats) return;
+            if (activeType === e.target?.dataset?.cats) return;
 
             // filter after switching category
             Array.from(publications).forEach(pub =>
                 e.target.dataset.cats === "all" || pub.dataset.cat === e.target.dataset.cats ?
-                pub.classList.remove("hidden") :
-                pub.classList.add("hidden")
+                    pub.classList.remove("hidden") :
+                    pub.classList.add("hidden")
             );
             // clear after switching category
             Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
@@ -2435,13 +2538,13 @@ docReady(function () {
             one.classList.add("active")
             Array.from(tagCatsContainer.children).forEach((cat, index2) => index !== index2 ? cat.classList.remove("active") : "");
             // table tags show|hide
-            if(e?.target?.dataset?.cats) {
+            if (e?.target?.dataset?.cats) {
                 activeType = e.target.dataset.cats;
-                    Array.from(tagFilters).forEach(filt => {
+                Array.from(tagFilters).forEach(filt => {
                     filt.classList.remove("active");
                     filt.classList.remove("hidden");
-                    if(activeType !== "all") {
-                        if(!tagsGroups[activeType].includes(filt.dataset.filterTag)) {
+                    if (activeType !== "all") {
+                        if (!tagsGroups[activeType].includes(filt.dataset.filterTag)) {
                             filt.classList.add("hidden");
                         }
                     }
@@ -2452,15 +2555,15 @@ docReady(function () {
             filt.addEventListener('click', (event) => {
                 event.preventDefault();
                 // const activeFilters = Array.from(tagFilters).filter(filt => filt.classList.contains("active"));
-                if(filt.dataset.filterTag === "clear") {
+                if (filt.dataset.filterTag === "clear") {
                     Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
                     Array.from(publications).forEach(pub => pub.classList.remove("hidden"));
                     Array.from(tagFilters).forEach(filt => filt.classList.remove("active"));
                 } else {
                     // active tags
                     const tagToToggle = Array.from(tagActives).find(tag => tag.dataset.filterTag === filt.dataset.filterTag);
-                    if(tagToToggle) {
-                        if(tagToToggle.classList.contains("hidden")) {
+                    if (tagToToggle) {
+                        if (tagToToggle.classList.contains("hidden")) {
                             tagToToggle.classList.remove("hidden");
                             //click on active filter
                             tagToToggle.addEventListener("click", () => {
@@ -2468,7 +2571,7 @@ docReady(function () {
                                 tagToToggle.classList.add("hidden");
                                 activeFilters.delete(findex);
                                 // publcations show|hide
-                                if(!activeFilters.size) {
+                                if (!activeFilters.size) {
                                     // no filters
                                     Array.from(publications).forEach(pub => {
                                         pub.classList.remove("hidden");
@@ -2477,7 +2580,7 @@ docReady(function () {
                                     // with filters
                                     Array.from(publications).forEach(pub => {
                                         pub.classList.remove("hidden");
-                                        if(!hasCommonElements(Array.from(activeFilters.values()), [pub.dataset.tag])) {
+                                        if (!hasCommonElements(Array.from(activeFilters.values()), [pub.dataset.tag])) {
                                             pub.classList.add("hidden");
                                         }
                                     })
@@ -2487,7 +2590,7 @@ docReady(function () {
                             tagToToggle.classList.add("hidden");
                         }
                     }
-                    if(filt.classList.contains("active")) {
+                    if (filt.classList.contains("active")) {
                         filt.classList.remove("active");
                         activeFilters.delete(findex);
                     } else {
@@ -2495,7 +2598,7 @@ docReady(function () {
                         activeFilters.set(findex, filt.dataset.filterTag);
                     }
                     // publcations show|hide
-                    if(!activeFilters.size) {
+                    if (!activeFilters.size) {
                         // no filters
                         Array.from(publications).forEach(pub => {
                             pub.classList.remove("hidden");
@@ -2504,7 +2607,7 @@ docReady(function () {
                         // with filters
                         Array.from(publications).forEach(pub => {
                             pub.classList.remove("hidden");
-                            if(!hasCommonElements(Array.from(activeFilters.values()), [pub.dataset.tag])) {
+                            if (!hasCommonElements(Array.from(activeFilters.values()), [pub.dataset.tag])) {
                                 pub.classList.add("hidden");
                             }
                         })
@@ -2514,25 +2617,25 @@ docReady(function () {
         })
     }
     //tags single filters
-               
+
     //Архив портфолио, пейджинг. Размер страницы - 4 элемента
     let archiveList = document.querySelector(".js-portfolio-archive");
     const pageSize = 4;
-    if (archiveList){
+    if (archiveList) {
         let archiveCards = archiveList.querySelectorAll('.card');
         console.log(archiveCards);
-        if (archiveCards.length > pageSize){
+        if (archiveCards.length > pageSize) {
             let curPageNumber = 1;
             let pagesNumber = Math.ceil(archiveCards.length / pageSize);
             archiveList.innerHTML = '';
 
-            for (i=1; i<pagesNumber+1; i++){
+            for (i = 1; i < pagesNumber + 1; i++) {
                 let nextPageContainer = document.createElement('div');
                 nextPageContainer.className = 'projects__list js-archive-projects-page';
                 if (i > 1) nextPageContainer.className += ' hidden';
                 nextPageContainer.dataset.filterPage = i;
-                for (j=(i-1)*pageSize; j<i*pageSize; j++){
-                    if (j<archiveCards.length){
+                for (j = (i - 1) * pageSize; j < i * pageSize; j++) {
+                    if (j < archiveCards.length) {
                         nextPageContainer.innerHTML += archiveCards[j].outerHTML;
                     }
                 }
@@ -2541,12 +2644,12 @@ docReady(function () {
 
             let paginatorContainer = document.createElement('div');
             paginatorContainer.className = 'redesign-archive__pagination';
-            for (i=1; i<pagesNumber+1; i++){
+            for (i = 1; i < pagesNumber + 1; i++) {
                 let nextPaginatorElement = document.createElement('div');
                 nextPaginatorElement.className = 'page-wrapper js-page-switcher';
                 if (i == 1) nextPaginatorElement.className += ' active';
                 nextPaginatorElement.dataset.pageSwitch = i;
-                nextPaginatorElement.innerHTML = '<div class="page" data-page-switch="'+i+'">'+i+'</div>';
+                nextPaginatorElement.innerHTML = '<div class="page" data-page-switch="' + i + '">' + i + '</div>';
                 paginatorContainer.innerHTML += nextPaginatorElement.outerHTML;
             }
             archiveList.innerHTML += paginatorContainer.outerHTML;
@@ -2563,11 +2666,11 @@ docReady(function () {
             const selected = e?.target?.dataset?.pageSwitch;
             Array.from(pagination).forEach((two) => two.classList.remove("active"));
             one.classList.add("active");
-            if(!selected && selected !== 0) return;
+            if (!selected && selected !== 0) return;
             Array.from(pages).forEach((page) => {
                 page.dataset.filterPage === selected ? page.classList.remove("hidden") : page.classList.add("hidden");
             })
-            if(anchor) {
+            if (anchor) {
                 anchor.scrollIntoView({
                     behavior: "smooth"
                 })
@@ -2608,22 +2711,22 @@ docReady(function () {
                 const sw = document.querySelectorAll(".js-switch")[0];
                 // const data = sw.dataset;
                 // && data.switchClass
-                if(sw.children?.length) {
+                if (sw.children?.length) {
 
-                    for(let one = 0; one < sw.children.length; one ++) {
+                    for (let one = 0; one < sw.children.length; one++) {
                         const child = sw.children[one];
-                        child.addEventListener('click', function() {
+                        child.addEventListener('click', function () {
                             sliderExpert.goTo(one);
                             // clear selection
-                            for(let two = 0; two < sw.children.length; two ++) {
+                            for (let two = 0; two < sw.children.length; two++) {
                                 sw.children[two].classList.remove("active")
                             }
                             child.classList.add("active");
-                        }) 
+                        })
                     }
 
                     function onExpertChangeSlide(e) {
-                        for(let two = 0; two < sw.children.length; two ++) {
+                        for (let two = 0; two < sw.children.length; two++) {
                             sw.children[two].classList.remove("active")
                         }
                         sw.children[e.displayIndex - 1].classList.add("active");
@@ -2640,25 +2743,25 @@ docReady(function () {
         wrappers.forEach(wrap => {
             Array.from(wrap.children).forEach(child => {
                 child.addEventListener('click', (e) => {
-                    if(!child.classList.contains("active")) {
+                    if (!child.classList.contains("active")) {
                         Array.from(wrap.children).forEach(child => {
                             child.classList.remove("active");
                         })
                         child.classList.add("active");
                         const isSync = child.dataset.clickSync;
-                        if(isSync) {
+                        if (isSync) {
                             const nodes = [...document.querySelectorAll(".js-click-sync")];
                             const elem = nodes?.find(node => node.dataset?.clickSync === isSync);
-                            if(elem) {
+                            if (elem) {
                                 nodes.forEach(one => {
                                     one?.classList.add("hide")
                                 })
                                 elem.classList.remove("hide")
                             }
                         }
-                        if(windowWidth <= 480) {
+                        if (windowWidth <= 480) {
                             wrap.scrollTo({ behavior: "smooth", left: child.offsetLeft - 20 });
-                        } else if(windowWidth <= 650) {
+                        } else if (windowWidth <= 650) {
                             wrap.scrollTo({ behavior: "smooth", left: child.offsetLeft - 30 });
                         }
                     }
@@ -2686,7 +2789,7 @@ docReady(function () {
     if (document.querySelectorAll(".js-window-location").length > 0) {
         Array.from(document.querySelectorAll(".js-window-location")).forEach(link => {
             link.addEventListener("click", () => {
-                if(link.dataset.href) {
+                if (link.dataset.href) {
                     window.location = link.dataset.href;
                 }
             })
@@ -2694,10 +2797,10 @@ docReady(function () {
     }
 
     // Обработка клика на страницах dummy
-    if (document.querySelector('.js-history-back') != null){
+    if (document.querySelector('.js-history-back') != null) {
         document.querySelector('.js-history-back').addEventListener("click", (e) => {
             console.log(e.target);
-            if (e.target.classList.contains('js-history-back')){
+            if (e.target.classList.contains('js-history-back')) {
                 e.preventDefault();
                 window.history.back();
             }
@@ -2719,9 +2822,23 @@ docReady(function () {
             const navlinks = acc.querySelectorAll(".js-accordion-link");
 
             Array.from(navlinks).forEach((nav, index) => {
-                nav?.addEventListener("click", () => {
-                    tabs[index].classList.contains("active") ? tabs[index].classList.remove("active") : tabs[index].classList.add("active")
-                    nav.classList.contains("active") ? nav.classList.remove("active") : nav.classList.add("active")
+                nav?.addEventListener("click", (e) => {
+                    // e.stopPropagation()
+                    if (!tabs[index].classList.contains("active")) {
+                        Array.from(tabs).forEach(tab => {
+                            tab.classList.remove("active")
+                        })
+                        tabs[index].classList.add("active")
+                        // })
+                    }
+                    if (!nav.classList.contains("active")) {
+                        Array.from(navlinks).forEach((nav2) => {
+                            nav2.classList.remove("active");
+                        })
+                        nav.classList.add("active")
+                    }
+                    // tabs[index].classList.contains("active") ? tabs[index].classList.remove("active") : tabs[index].classList.add("active")
+                    // nav.classList.contains("active") ? nav.classList.remove("active") : nav.classList.add("active")
                 })
             })
         })
@@ -2745,143 +2862,141 @@ docReady(function () {
         tlOuter.className = 'timeline_outer';
         let tlContainer = document.createElement('div');
         tlContainer.className = 'timeline loading';
-        for (i = 0; i < events.length; i++){
+        for (i = 0; i < events.length; i++) {
             let curNode = document.createElement('a');
             curNode.classList.add("timeline_event");
             curNode.classList.add("js-timeline_event");
             curNode.setAttribute("data-fullname", events[i].dataset.fullname);
             curNode.setAttribute("data-start", events[i].dataset.start);
             curNode.setAttribute("data-text", events[i].dataset.text);
-            curNode.innerHTML = events[i].dataset.name+'<i></i>';
+            curNode.innerHTML = events[i].dataset.name + '<i></i>';
             eventList += curNode.outerHTML;
         }
-        tlContainer.innerHTML = '<div class="timeline_container">'+eventList+'</div>';
+        tlContainer.innerHTML = '<div class="timeline_container">' + eventList + '</div>';
         timeline.before(tlOuter);
         tlOuter.append(tlContainer);
-                   
+
         // события: обработка клика
         let nodes = tlContainer.querySelectorAll(".js-timeline_event");
         let openNodes;
-		function openEventNode(e){
+        function openEventNode(e) {
             openNodes = document.querySelectorAll(".timeline_event-open");
-            for (i = 0; i < openNodes.length; i++){
+            for (i = 0; i < openNodes.length; i++) {
                 openNodes[i].remove();
             }
             let openMainNodes = document.querySelectorAll(".js-timeline_event");
-            for (i = 0; i < openMainNodes.length; i++){
+            for (i = 0; i < openMainNodes.length; i++) {
                 if (openMainNodes[i].classList.contains("open") && openMainNodes[i] != e)
-                   openMainNodes[i].classList.remove("open");
+                    openMainNodes[i].classList.remove("open");
             }
-			let openNode = document.createElement('div');
-			openNode.classList.add("timeline_event");
-			openNode.classList.add("timeline_event-open");
-			// для правых элементов открываем описание налево
+            let openNode = document.createElement('div');
+            openNode.classList.add("timeline_event");
+            openNode.classList.add("timeline_event-open");
+            // для правых элементов открываем описание налево
             let contWidth = parseInt(document.querySelector(".timeline").style.width);
-            if (parseInt(e.style.left)+300 > contWidth)
-                openNode.style.right = contWidth - (parseInt(e.style.left)+parseInt(e.dataset.width))+"px";
+            if (parseInt(e.style.left) + 300 > contWidth)
+                openNode.style.right = contWidth - (parseInt(e.style.left) + parseInt(e.dataset.width)) + "px";
             else
                 openNode.style.left = e.style.left;
-			for (i = 1; i<9; i++){
-				if (e.classList.contains("level"+i)){
-					openNode.classList.add("level"+i);
-					break;
-				}
-			}
-			openNode.innerHTML = "<h4 class=\"timeline_event-fullname\"><i></i>"+e.dataset.fullname+"</h4><p class=\"timeline_event-fulltext\">"+e.dataset.text+"</p>";
-			document.querySelector(".timeline_container").appendChild(openNode);
+            for (i = 1; i < 9; i++) {
+                if (e.classList.contains("level" + i)) {
+                    openNode.classList.add("level" + i);
+                    break;
+                }
+            }
+            openNode.innerHTML = "<h4 class=\"timeline_event-fullname\"><i></i>" + e.dataset.fullname + "</h4><p class=\"timeline_event-fulltext\">" + e.dataset.text + "</p>";
+            document.querySelector(".timeline_container").appendChild(openNode);
             document.querySelector(".timeline_event-fullname i").addEventListener("click", function (evt) {
-               evt.stopPropagation();
-               evt.target.parentNode.parentNode.remove();
-               document.querySelector(".timeline_container").classList.remove("open");
-               openNodes = document.querySelectorAll(".timeline_event");
-               for (i = 0; i < openNodes.length; i++){
-                   openNodes[i].classList.remove("open");
-               }
+                evt.stopPropagation();
+                evt.target.parentNode.parentNode.remove();
+                document.querySelector(".timeline_container").classList.remove("open");
+                openNodes = document.querySelectorAll(".timeline_event");
+                for (i = 0; i < openNodes.length; i++) {
+                    openNodes[i].classList.remove("open");
+                }
 
             });
-		}
-        for (i = 0; i < nodes.length; i++){
+        }
+        for (i = 0; i < nodes.length; i++) {
             nodes[i].setAttribute("data-width", nodes[i].getBoundingClientRect().width);
             nodes[i].addEventListener("click", function (e) {
                 e.preventDefault();
-                if (this.classList.contains("open"))
-                {
+                if (this.classList.contains("open")) {
                     this.classList.remove("open");
                     this.parentElement.classList.remove("open");
                 }
-				else
-                {
+                else {
                     this.parentElement.classList.add("open");
                     this.classList.add("open");
-					openEventNode(this);
+                    openEventNode(this);
                 }
             }, false);
         }
         timeline.remove();
-        
+
         // события: расставляем по контейнеру и по уровням
         const nodeGap = 12;
         let paddingVert = 60;
         let paddingLeft = parseInt(getComputedStyle(document.querySelector(".timeline_container")).paddingLeft);
-        let containerWidth = document.querySelector(".timeline_container").getBoundingClientRect().width - 2*paddingLeft;
+        let containerWidth = document.querySelector(".timeline_container").getBoundingClientRect().width - 2 * paddingLeft;
         let tempWidth = containerWidth;
-        for (i = 0; i < nodes.length; i++){
-            if (nodes[i].dataset.start > 0 && ((containerWidth - nodes[i].dataset.width*1) / nodes[i].dataset.start < tempWidth))
-                tempWidth = (containerWidth - nodes[i].dataset.width*1) / nodes[i].dataset.start;
+        for (i = 0; i < nodes.length; i++) {
+            if (nodes[i].dataset.start > 0 && ((containerWidth - nodes[i].dataset.width * 1) / nodes[i].dataset.start < tempWidth))
+                tempWidth = (containerWidth - nodes[i].dataset.width * 1) / nodes[i].dataset.start;
         }
         containerWidth = tempWidth * timeline.dataset.width;
         let nodeLevels = new Array(8);
         let maxLevelUsed;
         nodeLevels.fill(0);
-        for (i = 0; i < nodes.length; i++){
-            if (i == 0){
+        for (i = 0; i < nodes.length; i++) {
+            if (i == 0) {
                 nodes[0].setAttribute("data-level", 1);
                 nodes[0].style.left = paddingLeft + "px";
                 nodes[0].classList.add("level1");
-                nodeLevels[1] = paddingLeft + nodes[0].dataset.width*1 + nodeGap;
+                nodeLevels[1] = paddingLeft + nodes[0].dataset.width * 1 + nodeGap;
                 maxLevelUsed = 1;
             }
-            else{
+            else {
                 let curLeft = paddingLeft + nodes[i].dataset.start * containerWidth;
-                nodes[i].style.left = curLeft+"px";
-                
-                for (lev = 1; lev < nodeLevels.length + 1; lev++){
-                    if (nodeLevels[lev]*1 < curLeft){
+                nodes[i].style.left = curLeft + "px";
+
+                for (lev = 1; lev < nodeLevels.length + 1; lev++) {
+                    if (nodeLevels[lev] * 1 < curLeft) {
                         nodes[i].setAttribute("data-level", lev);
-                        nodeLevels[lev] = curLeft + nodes[i].dataset.width*1 + nodeGap;
-                        nodes[i].classList.add("level"+lev);
-                        if (lev>maxLevelUsed) maxLevelUsed = lev;
+                        nodeLevels[lev] = curLeft + nodes[i].dataset.width * 1 + nodeGap;
+                        nodes[i].classList.add("level" + lev);
+                        if (lev > maxLevelUsed) maxLevelUsed = lev;
                         break;
                     }
                 }
             }
         }
-        let timelineHeight = 2*paddingVert + maxLevelUsed*62 + "px"
+        let timelineHeight = 2 * paddingVert + maxLevelUsed * 62 + "px"
         document.querySelector(".timeline_container").style.height = timelineHeight;
         document.querySelector(".timeline_outer").style.height = timelineHeight;
-        document.querySelector(".timeline").style.width = (document.querySelector(".timeline_container").getBoundingClientRect().width)*timeline.dataset.width+"px";
-            
+        document.querySelector(".timeline").style.width = (document.querySelector(".timeline_container").getBoundingClientRect().width) * timeline.dataset.width + "px";
+
         // сетка
         let milestones = timelineGrid.querySelectorAll("div");
         let milestoneList = "";
-        for (i = 0; i < milestones.length; i++){
+        for (i = 0; i < milestones.length; i++) {
             let curMilestone = document.createElement('div');
             curMilestone.classList.add("timeline_milestone");
             let curLeft = paddingLeft + milestones[i].dataset.start * containerWidth;
-            let nextLeft = (i != milestones.length-1) ? milestones[i+1].dataset.start : 1;
+            let nextLeft = (i != milestones.length - 1) ? milestones[i + 1].dataset.start : 1;
             let curWidth = (nextLeft - milestones[i].dataset.start) * containerWidth;
-            curMilestone.style.left = curLeft+"px";
-            (i != milestones.length-1) ? curMilestone.style.width = curWidth+"px" : curMilestone.style.right = "0";
+            curMilestone.style.left = curLeft + "px";
+            (i != milestones.length - 1) ? curMilestone.style.width = curWidth + "px" : curMilestone.style.right = "0";
             curMilestone.innerHTML = milestones[i].dataset.name;
             milestoneList += curMilestone.outerHTML;
         }
-		let milestoneContainer = document.createElement('div');
-		milestoneContainer.classList.add("timeline_container-milestones");
-		milestoneContainer.innerHTML = milestoneList;
+        let milestoneContainer = document.createElement('div');
+        milestoneContainer.classList.add("timeline_container-milestones");
+        milestoneContainer.innerHTML = milestoneList;
         tlContainer.appendChild(milestoneContainer);
 
         tlContainer.classList.remove("loading");
-            
+
         // drag
         let parent = document.querySelector('.timeline_outer');
         let parentRect = parent.getBoundingClientRect();
@@ -2894,46 +3009,42 @@ docReady(function () {
         let startingPoint = 0;
         let currentPoint = 0;
 
-        function moveStart(e)
-        {
+        function moveStart(e) {
             e.preventDefault();
             dragging = true;
             startingPoint = e.clientX - draggableRect.left - currentPoint;
         }
 
-        function moveEnd(e)
-        {
+        function moveEnd(e) {
             e.preventDefault();
             dragging = false;
-            currentPoint = draggable.style.left.substr(0,draggable.style.left.length-2);
+            currentPoint = draggable.style.left.substr(0, draggable.style.left.length - 2);
         }
 
-        function moving(e)
-        {
+        function moving(e) {
             e.preventDefault();
-            if (dragging)
-            {
-                if( //(e.clientX >= parentRect.left && (e.clientX+draggableRect.width <= parentRect.right)) &&
+            if (dragging) {
+                if ( //(e.clientX >= parentRect.left && (e.clientX+draggableRect.width <= parentRect.right)) &&
                     //(e.clientY >= parentRect.top && (e.clientY+draggableRect.height <= parentRect.bottom))  
                     true
-                  ){
-            //add draggableRect.width draggableRect.height accoints for
-                    
-                    draggable.style.left = `${e.clientX-startingPoint}px`;
+                ) {
+                    //add draggableRect.width draggableRect.height accoints for
+
+                    draggable.style.left = `${e.clientX - startingPoint}px`;
                     //draggable.style.top = `${e.clientY}px`;
                 }
-          else{
-            //if mouse went out of bounds in Horizontal dir.
-            if(e.clientX+draggableRect.width >= parentRect.right){
-               draggable.style.left = `${parentRect.right-draggableRect.width}px`;
-            }
-            //if mouse went out of bounds in Vertical dir.
-            if(e.clientY+draggableRect.height >= parentRect.bottom){
-               draggable.style.top = `${parentRect.bottom-draggableRect.height}px`;
-            }
-          }
+                else {
+                    //if mouse went out of bounds in Horizontal dir.
+                    if (e.clientX + draggableRect.width >= parentRect.right) {
+                        draggable.style.left = `${parentRect.right - draggableRect.width}px`;
+                    }
+                    //if mouse went out of bounds in Vertical dir.
+                    if (e.clientY + draggableRect.height >= parentRect.bottom) {
+                        draggable.style.top = `${parentRect.bottom - draggableRect.height}px`;
+                    }
+                }
 
-            }			
+            }
 
         }
 
@@ -2941,11 +3052,11 @@ docReady(function () {
         document.querySelector(".timeline_outer").addEventListener("mousedown", moveStart);
         document.querySelector(".timeline_outer").addEventListener("mousemove", moving);
         document.querySelector(".timeline_outer").addEventListener("mouseup", moveEnd);
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
     }
 });

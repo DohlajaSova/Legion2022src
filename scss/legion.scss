@@ -9365,6 +9365,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
         }
         &-lev2{
             padding-left: 20px;
+			display: flex;
+			flex-flow: column;
         }
         .sidetoc-menu{
 			position: relative;
@@ -11377,6 +11379,7 @@ svg.svg-hover-filter-clear {
 
 // versionate redesign
 .services-v2 {
+
 	.container {
 		max-width: 1087px;
 		padding-top: 80px;
@@ -11516,10 +11519,13 @@ svg.svg-hover-filter-clear {
 			&_link {
 				font-size: 24px;
 				line-height: 28.8px;
-				color: $color-grey-dark;
+				color: transparent;
+				// color: $color-grey-dark;
 				cursor: pointer;
+				pointer-events: none;
 				&.active {
-					color: $color-black;
+					color: transparent;
+					// color: $color-black;
 				}
 			}
 		}
@@ -11583,6 +11589,19 @@ svg.svg-hover-filter-clear {
 			margin-bottom: 60px;
 		}
 		&.clicked {
+			height: unset;
+		}
+	}
+	.case-container__toc-inner {
+		&.fixed {
+			position: fixed;
+		}
+	}
+	.case-container__toc-lev1 {
+		height: 20px;
+		overflow: hidden;
+		transition: all .25s;
+		&.active {
 			height: unset;
 		}
 	}

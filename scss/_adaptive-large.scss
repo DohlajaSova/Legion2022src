@@ -2535,6 +2535,19 @@
             margin-right: -90px;
         }
     }
+    .services-v2 {
+        &__accordion {
+            &_navigation {
+                width: 0;
+            }
+        }
+        .case-container__toc-inner  {
+            &.fixed {
+                bottom: 0;
+                top: unset;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: $screen-md) {

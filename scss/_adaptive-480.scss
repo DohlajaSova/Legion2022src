@@ -1084,6 +1084,11 @@
     .range__wrap{
         grid-template-rows: 49px max-content 45px;
     }
+    .services-v2 {
+        .js-scroll-navigation  {
+            display: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {

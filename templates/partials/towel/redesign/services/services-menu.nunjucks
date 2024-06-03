@@ -1,0 +1,43 @@
+<div class="js-scroll-navigation services-v2">
+
+  <aside class="case-container__toc js-toc" style="top: 1249.58px; height: 329.958px;">
+    <div class="case-container__toc-inner">
+      <a href="#" class="sidetoc-menu js-sidetoc"></a>
+      <div class="case-container__toc-lev1 active" data-scroll-tab="1">
+        <a href="#project" class="js-scrollto">Консалтинг</a>
+        <div class="case-container__toc-lev2">
+          <a href="#project" class="js-scrollto active">Дискавери фаза</a>
+          <a href="#project" class="js-scrollto">Выход на рынок Китая</a>
+          <a href="#project" class="js-scrollto">Технический аудит</a>
+        </div>
+      </div>
+      <div class="case-container__toc-lev1" data-scroll-tab="2">
+        <a href="#project" class="js-scrollto">Разработка</a>
+        <div class="case-container__toc-lev2">
+          <a href="#project" class="js-scrollto active">Импортозамещение</a>
+          <a href="#project" class="js-scrollto">Комплексная разработка Mobile</a>
+          <a href="#project" class="js-scrollto">Техническая поддержка</a>
+        </div>
+      </div>
+      <div class="case-container__toc-lev1" data-scroll-tab="3">
+        <a href="#project" class="js-scrollto">Решения</a>
+        <div class="case-container__toc-lev2">
+          <a href="#project" class="js-scrollto active">Система лояльности</a>
+          <a href="#project" class="js-scrollto">Личный кабинет</a>
+          <a href="#project" class="js-scrollto">Неавторизованная зона</a>
+          <a href="#project" class="js-scrollto">Маркетплейс</a>
+        </div>
+      </div>
+      <div class="case-container__toc-lev1" data-scroll-tab="4">
+        <a href="#project" class="js-scrollto">Стек технологий</a>
+        <div class="case-container__toc-lev2">
+          <a href="#project" class="js-scrollto active">Android</a>
+          <a href="#project" class="js-scrollto">iOS</a>
+          <a href="#project" class="js-scrollto">Backend</a>
+          <a href="#project" class="js-scrollto">Frontend</a>
+          <a href="#project" class="js-scrollto">QA</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
