@@ -6,7 +6,7 @@
           Предпроектные исследования и аудит, дизайн, разработка, контроль качестваи поддержка
         </div>
       </div>
-    <svg class="services-v2__timeline" width="1439" height="302" viewBox="0 0 1439 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="services-v2__timeline" width="1439" height="302" viewbox="0 0 1439 302" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- M0 151L1439 151 -->
       <path d="M-500 151L2800 151" stroke="#141414"/>
       <circle cx="720" cy="151" r="11" fill="#141414"/>
