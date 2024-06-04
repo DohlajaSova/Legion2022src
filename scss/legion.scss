@@ -11500,7 +11500,12 @@ svg.svg-hover-filter-clear {
 
 // versionate redesign
 .services-v2 {
+	&__header {
+		svg {
 
+			vertical-align: middle;
+		}
+	}
 	.container {
 		max-width: 1087px;
 		padding-top: 80px;

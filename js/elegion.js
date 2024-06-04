@@ -840,8 +840,8 @@ function generateCaseTOC(caseOuter) {
         }
         if (wWidth <= 1180 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined) {
             document.getElementsByClassName('js-toc')[0].classList.add('fixed');
-            document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
-            document.getElementsByClassName('case-container__toc-inner')[0].classList.add('closed');
+            document.getElementsByClassName('case-container__toc-inner')[0]?.classList.add('fixed');
+            document.getElementsByClassName('case-container__toc-inner')[0]?.classList.add('closed');
             document.getElementsByClassName('js-sidetoc')[0].classList.add('closed');
         }
 
@@ -861,10 +861,10 @@ function generateCaseTOC(caseOuter) {
 
         function placeCaseTOC() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height;
+            let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0]?.getBoundingClientRect().height;
             stickyTOC.style.height = TOCHeight + 68 + "px";
             if (bodyScrollTop > caseTop + 50) {
-                document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
+                document.getElementsByClassName('case-container__toc-inner')[0]?.classList.add('fixed');
                 stickyTOC.classList.add('fixed');
                 if (wWidth > 1024 && document.getElementsByClassName('case-container')[0] != undefined) {
                     if (bodyScrollTop > caseTop + document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height - document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height - 79)
@@ -874,7 +874,7 @@ function generateCaseTOC(caseOuter) {
                 }
             }
             else {
-                document.getElementsByClassName('case-container__toc-inner')[0].classList.remove('fixed');
+                document.getElementsByClassName('case-container__toc-inner')[0]?.classList.remove('fixed');
                 stickyTOC.classList.remove('fixed');
             }
 
@@ -1661,30 +1661,27 @@ docReady(function () {
     let scrollNavigationContainer = document.querySelector(".js-scroll-navigation");
     if (scrollNavigationContainer) {
         const stickyTOC = document.getElementsByClassName('case-container__toc-inner')[0];
-        const editorialTop = document.getElementsByClassName('js-scrollsection-1')[0].getBoundingClientRect().height;
+        const editorialTop = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        // const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
         // let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height + document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
         function simplifiedToc() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0].getBoundingClientRect().height;
+            // let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
             stickyTOC.style.height = 350 + "px";
-            console.log({ bodyScrollTop })
-            console.log({ editorialTop })
             if (bodyScrollTop > editorialTop + 67) {
-                console.log('over')
                 // document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
                 if (wWidth > 1024 && document.getElementsByClassName('js-scrollsection-1')[0] != undefined) {
                     if (bodyScrollTop > editorialTop + document.getElementsByClassName('js-scrollsection-1')[0].getBoundingClientRect().height)
-                        document.getElementsByClassName('js-scrollsection-1')[0].classList.add('floored');
+                        document.getElementsByClassName('js-scrollsection-1')[0]?.classList.add('floored');
                     else
-                        document.getElementsByClassName('js-scrollsection-1')[0].classList.remove('floored');
+                        document.getElementsByClassName('js-scrollsection-1')[0]?.classList.remove('floored');
                 }
             }
             else {
-                document.getElementsByClassName('case-container__toc-inner')[0].classList.remove('fixed');
+                document.getElementsByClassName('case-container__toc-inner')[0]?.classList.remove('fixed');
                 stickyTOC.classList.remove('fixed');
             }
 
