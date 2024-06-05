@@ -1729,6 +1729,7 @@ docReady(function () {
                 console.log(".js-scrollsection-" + (one.dataset.scrollTab));
             }
         }))
+
         Array.from(lev1Sel).forEach((one, indexLv1) => {
             const lev2Sel = one.querySelectorAll(".case-container__toc-lev2 .js-scrollto");
             const scrollsel = document.querySelectorAll(".js-scrollsection-" + (one.dataset.scrollTab));
@@ -1752,6 +1753,36 @@ docReady(function () {
                 }
             }))
         })
+        // Array.from(lev1Sel).forEach((one, indexLv1) => {
+        //     const lev2Sel = one.querySelectorAll(".case-container__toc-lev2 .js-scrollto");
+        //     const scrollsel = document.querySelectorAll(".js-scrollsection-" + (one.dataset.scrollTab));
+        //     Array.from(lev2Sel).forEach((two, indexLv2) => two.addEventListener("click", (e) => {
+        //         e.stopPropagation()
+        //         const links = scrollsel[0].querySelectorAll(".js-accordion-tab");
+        //         console.log({links})
+        //         if (links) {
+        //             const linkto = Array.from(links).find(one => 
+        //                 {
+        //                     console.log(one.dataset.accordionTab)
+        //                     console.log("" + (indexLv2 + 1))
+        //                     return one.dataset.accordionTab === "" + (indexLv2 + 1)
+        //                 });
+        //             if (linkto) {
+        //                 linkto.scrollIntoView({
+        //                     behavior: "smooth"
+        //                 })
+        //                 if (!linkto.classList.contains('active')) {
+        //                     Array.from(links).forEach(link => {
+        //                         link.classList.remove('active')
+        //                     });
+        //                     linkto.classList.add("active")
+        //                     // linkto.click()
+        //                 }
+        //             }
+        //             console.log({ linkto })
+        //         }
+        //     }))
+        // })
         // "case-container__toc-lev1 active";
         // "js-scrollsection-1";
     }
@@ -2810,8 +2841,9 @@ docReady(function () {
         Array.from(accordions).forEach(acc => {
             const tabs = acc.querySelectorAll(".js-accordion-tab");
             Array.from(tabs).forEach(tab => {
-                const tabroll = tab.querySelector(".tab__roll");
-                tabroll?.addEventListener("click", () => {
+                const tabhead = tab.querySelector(".tab__head");
+                // const tabroll = tab.querySelector(".tab__roll");
+                tabhead?.addEventListener("click", () => {
                     tab.classList.contains("active") ? tab.classList.remove("active") : tab.classList.add("active")
                 })
             })

@@ -1,5 +1,5 @@
 <div class="services-v2">
-    <div class="container">
+    <div class="container js-scrollsection-4">
         <div class="services-v2__heading_wrapper">
             <h1 class="services-v2__heading">
                 Стек технологий
@@ -23,7 +23,7 @@
                     QA
                 </div>
             </div>
-            <div class="services-v2__accordion_tabs js-scrollsection-4">
+            <div class="services-v2__accordion_tabs">
                 <div class="tab js-accordion-tab" data-accordion-tab="1">
                     <div class="tab__head">
                         <div class="tab__name">
