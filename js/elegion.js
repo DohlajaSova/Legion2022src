@@ -1669,7 +1669,7 @@ docReady(function () {
         function simplifiedToc() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             // let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
-            stickyTOC.style.height = 350 + "px";
+            stickyTOC.style.height = 400 + "px";
             if (bodyScrollTop > editorialTop + 67) {
                 // document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
