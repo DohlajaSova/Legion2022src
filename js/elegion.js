@@ -737,7 +737,6 @@ function generateCaseTOC(caseOuter) {
 
         // разбиваем блок аккордеона на блоки <section> по вхождению заголовков <h6>
         let sectioned = case1.innerHTML.replace(/(([\s\S]*?)<h6>([\s\S]*?)<\/h6>)+?/gm, '<section>$2<a href="" class="close">закрыть/свернуть</a></section><h6 class="container h3">$3</h6>');
-        //console.log(sectioned);
         sectioned = sectioned.replace(/<h6 class="container h3">([\s\S]*)<\/h6>([\s\S]+)/gm, '<h6 class="container h3">$1</h6><section>$2<a href="" class="close">закрыть/свернуть</a></section>');
         case1.innerHTML = sectioned;
     }
@@ -1719,14 +1718,17 @@ docReady(function () {
             } else {
                 Array.from(lev1Sel).forEach((one) => one.classList.remove("active"));
                 one.classList.add("active");
-                console.log(one.dataset)
                 scrollsel = document.querySelectorAll(".js-scrollsection-" + (one.dataset.scrollTab));
                 if (scrollsel && scrollsel[0]) {
                     scrollsel[0].scrollIntoView({
                         behavior: "smooth"
                     })
                 }
-                console.log(".js-scrollsection-" + (one.dataset.scrollTab));
+                const lev2Sel = one.querySelectorAll(".case-container__toc-lev2 .js-scrollto");
+                Array.from(lev2Sel).forEach(three => {
+                    three.classList.remove("active")
+                })
+                Array.from(lev2Sel)[0].classList.add("active")
             }
         }))
 
@@ -1749,8 +1751,11 @@ docReady(function () {
                             linkto.click()
                         }
                     }
-                    console.log({ linkto })
                 }
+                Array.from(lev2Sel).forEach(three => {
+                    three.classList.remove("active")
+                })
+                two.classList.add("active")
             }))
         })
         // Array.from(lev1Sel).forEach((one, indexLv1) => {
@@ -1848,17 +1853,14 @@ docReady(function () {
             let wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
             // margins for container
             let _rangeContainer = _p.parentNode;
-            console.log(_rangeContainer);
             let containerMargin;
             if (wwidth <= 1500) {
                 if (wwidth > 650) containerMargin = 0.055 * wwidth + 48.5;
                 else if (wwidth > 570) containerMargin = 0.1013 * wwidth + 50.155;
                 else containerMargin = 0.0435 * wwidth + 19.5;
                 if (containerMargin != undefined) {
-                    console.log(_rangeContainer.style);
                     _rangeContainer.style.marginLeft = -containerMargin + 'px';
                     _rangeContainer.style.marginRight = -containerMargin + 'px';
-                    console.log(_rangeContainer.style);
                 }
             }
 
@@ -2651,7 +2653,6 @@ docReady(function () {
     const pageSize = 4;
     if (archiveList) {
         let archiveCards = archiveList.querySelectorAll('.card');
-        console.log(archiveCards);
         if (archiveCards.length > pageSize) {
             let curPageNumber = 1;
             let pagesNumber = Math.ceil(archiveCards.length / pageSize);
@@ -2827,7 +2828,6 @@ docReady(function () {
     // Обработка клика на страницах dummy
     if (document.querySelector('.js-history-back') != null) {
         document.querySelector('.js-history-back').addEventListener("click", (e) => {
-            console.log(e.target);
             if (e.target.classList.contains('js-history-back')) {
                 e.preventDefault();
                 window.history.back();

@@ -29,6 +29,7 @@
                         <div class="tab__name">
                             Android
                         </div>
+                        <div class="tab__roll"></div>
                     </div>
                     <ul class="tab__list">
                         <li>
@@ -62,6 +63,7 @@
                         <div class="tab__name">
                             iOS
                         </div>
+                        <div class="tab__roll"></div>
                     </div>
                     <ol class="tab__list">
                         <li>
@@ -98,6 +100,7 @@
                         <div class="tab__name">
                             Backend
                         </div>
+                        <div class="tab__roll"></div>
                     </div>
                     <div class="tab__list">
                         <li>
@@ -137,6 +140,7 @@
                         <div class="tab__name">
                             Frontend
                         </div>
+                        <div class="tab__roll"></div>
                     </div>
                     <div class="tab__list">
                         <li>
@@ -164,6 +168,7 @@
                         <div class="tab__name">
                             QA
                         </div>
+                        <div class="tab__roll"></div>
                     </div>
                     <div class="tab__list">
                         <li>
@@ -196,5 +201,3 @@
         </div>
     </div>
 </div>
-  
-  

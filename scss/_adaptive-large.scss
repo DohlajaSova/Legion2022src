@@ -130,7 +130,7 @@
     }
     .services-v2 {
         .request {
-            height: 350px;
+            // height: 350px;
             padding-top: 60px;
         }
     }
@@ -244,11 +244,11 @@
     .astralinux-container .content-container .content-card {
         min-height: 20em;
     }
-    .services-v2 {
-        .request {
-            height: 350px;
-        }
-    }
+    // .services-v2 {
+    //     .request {
+    //         height: 350px;
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -1921,6 +1921,17 @@
             }
         }
     }
+    .services-v2 {
+        &__timeline {
+            transform: scale(1.35);
+            &-wrapper {
+                padding-bottom: 40px;
+            }
+        }
+        &__timeline-caption {
+            width: 50%;
+        }
+    }
 }
 @media(min-width: 1025px) {
     .astralinux-container-interactive .content-container .content-card:hover{
@@ -2536,9 +2547,30 @@
         }
     }
     .services-v2 {
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &__header {
+            margin-bottom: 0;
+            margin-top: 40px;
+            svg {
+                width: 120px;
+            }
+        }
         &__accordion {
+            &_tabs{
+                .tab__name {
+                    line-height: 66px;
+                }
+            }
             &_navigation {
                 width: 0;
+                height: 0;
+            }
+            &_wrapper {
+                width: 100%;
+                display: block;
             }
         }
         .case-container__toc-inner  {
@@ -2546,6 +2578,29 @@
                 bottom: 0;
                 top: unset;
             }
+        }
+
+        &__heading{
+            margin-bottom: 0;
+            &_wrapper {
+                flex-flow: column nowrap;
+                gap: 10px;
+                padding-bottom: 40px;
+            }
+            &-caption {
+                padding-top: 0;
+                text-align: left;
+                max-width: 60vw;
+                align-self: flex-start;
+            }
+        }
+        &.js-scroll-navigation {
+            display: none;
+        }
+        .svghover  {
+            max-width: 500px!important;
+            margin-top: 60px;
+            margin-bottom: 20px;
         }
     }
 }

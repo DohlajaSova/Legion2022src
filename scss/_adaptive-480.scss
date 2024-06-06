@@ -1088,6 +1088,14 @@
         .js-scroll-navigation  {
             display: none;
         }
+        &__heading{
+            font-size: 60px;
+            line-height: 66px;
+            &-2 {
+                font-size: 36px;
+                line-height: 43.2px;
+            }
+        }
     }
 }
 

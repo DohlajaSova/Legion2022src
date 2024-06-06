@@ -1,6 +1,6 @@
 <div class="services-v2">
     <div class="services-v2__container-fullwidth bg2">
-        <div class="request js-activate-request" style="overflow:hidden;">
+        <div class="request js-activate-request">
             <div class="container">
                 <div class="request__form" id="request__form">
                     <h3>Представьтесь, пожалуйста</h3>
@@ -31,11 +31,11 @@
                 <h3>Что нужно сделать?</h3>
                 <div class="request__select select select-checkmark">
                     <select id="multiple-1" name="todo" multiple>
-                        <option value="Разработать приложение с нуля" selected>Разработать приложение с нуля</option>
-                        <option value="Провести аудит МП">Провести аудит&nbsp;МП</option>
-                        <option value="Проанализировать конкурентов">Проанализировать конкурентов</option>
-                        <option value="Проработать дизайн-решение">Проработать дизайн-решение</option>
-                        <option value="Запустить продукт на рынок">Запустить продукт на рынок</option>
+                        <option value="Разработать/доработать приложение" selected>Разработать/доработать приложение</option>
+                        <option value="Провести аудит системы">Провести аудит системы</option>
+                        <option value="Подобрать IT-специалистов">Подобрать IT-специалистов</option>
+                        <!-- <option value="Проработать дизайн-решение">Проработать дизайн-решение</option>
+                        <option value="Запустить продукт на рынок">Запустить продукт на рынок</option> -->
                         <option value="Другое">Другое</option>
                     </select>
                 </div>
@@ -45,9 +45,6 @@
                     [[!YandexDiskUploader? &inputId=`af_files`]]
                 </div>
                 <div class="request__comment-container">
-                    <div class="request__comment">
-                        Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
-                    </div>
                     <div class="request__button">
                         <button class="button-svg-animate-container">
                             <svg class="hoversvgrequest" width="337" height="78" viewbox="0 0 337 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,6 +58,9 @@
                             </svg>
                         </button>
                     </div>
+                </div>
+                <div class="request__comment">
+                    Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
                 </div>
                 <input id="af_files" name="files" type="hidden" />
             </div>

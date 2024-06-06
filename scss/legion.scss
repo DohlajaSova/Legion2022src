@@ -9462,13 +9462,15 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
         &-lev2{
             margin-bottom: 12px;
             a{
+				text-decoration: none;
                 color: $color-grey-dark;
 				line-height: 26px;
+				&.active{
+					color: $color-black;
+				}
             }
             &.active{
-                a{
-					color: $color-black;
-                }
+				color: $color-black;
             }
             &:last-child{
                 margin-bottom: 0;
@@ -9479,6 +9481,13 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			display: flex;
 			flex-flow: column;
         }
+		&-lev1 {
+            &.active{
+				>a {
+					color: $color-black;
+				}
+			}
+		}
         .sidetoc-menu{
 			position: relative;
 			top: -20px;
@@ -11544,6 +11553,9 @@ svg.svg-hover-filter-clear {
 		}
 		&.bg4 {
 			background-image: url($img-path + "redesign/service-v2-background.png");
+			background-repeat: no-repeat;
+			background-color: transparent;
+			background-size: cover;
 		}
 	}
 	&__heading_wrapper {
@@ -11607,6 +11619,7 @@ svg.svg-hover-filter-clear {
 					display: flex;
 					justify-content: space-between;
 					cursor: pointer;
+    				align-items: center;
 				}
 				&__roll {
 					display: flex;
@@ -11754,7 +11767,7 @@ svg.svg-hover-filter-clear {
 	.request {
 		margin-bottom: 0;
 		border-bottom: 1px solid $color-black;
-		height: 400px;
+		// height: 400px;
 		&__form_item {
 			margin-bottom: 60px;
 		}
