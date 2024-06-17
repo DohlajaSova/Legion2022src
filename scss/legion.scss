@@ -2038,6 +2038,9 @@ a.button {
                 margin-bottom: 0;
             }
         }
+        & + h3{
+            margin-top: 40px;
+        }
     }
 
 	ul,
@@ -2128,6 +2131,9 @@ a.button {
     &__line{
         border-top: 1px solid $color-black;
         grid-column: 1 / 5;
+    }
+    & + h3{
+        margin-top: 40px;
     }
 }
 

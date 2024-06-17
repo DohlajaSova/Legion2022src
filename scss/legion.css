@@ -1663,6 +1663,8 @@ a.button {
       margin-bottom: 20px; }
       .case-column ul li:last-child, .case-column ol li:last-child {
         margin-bottom: 0; }
+    .case-column ul + h3, .case-column ol + h3 {
+      margin-top: 40px; }
   .case-column ul,
   .case-column ol {
     padding: 0;
@@ -1726,6 +1728,8 @@ a.button {
   .case-awards__line {
     border-top: 1px solid #141414;
     grid-column: 1 / 5; }
+  .case-awards + h3 {
+    margin-top: 40px; }
 
 .accordion__item {
   border-bottom: 1px solid #949191;
