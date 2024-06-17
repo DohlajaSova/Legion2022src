@@ -1000,6 +1000,51 @@
                 padding-bottom: 40px;
             }
         }
+        &-projects {
+            .container{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            &-header,
+            &-undertext{
+                padding-left: 20px;
+            }
+            &-slide {
+                &:first-child{
+                    margin-left: 20px;
+                }
+                &:last-child{
+                    margin-right: 20px;
+                }
+            }
+        }
+        &-blog {
+            .container{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            h2{
+                padding-left: 20px;
+            }
+            &__items{
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
+            &__button{
+                padding-left: 20px;
+            }
+            .card {
+                &:first-child{
+                    margin-left: 20px;
+                }
+                &:last-child{
+                    margin-right: 20px;
+                }
+            }
+        }
     }
     .broadwise .container,
     .case-accordion,

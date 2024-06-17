@@ -3808,7 +3808,8 @@ a.button {
         border: 1px solid #fff; }
   .feedback.feedback_subscribe {
     background: url("img/subscribe-bg.svg") left top no-repeat #1E2738;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: none; }
     .feedback.feedback_subscribe .select-inline .select-hide div {
       border: 1px solid #fff;
       color: #fff;
@@ -10906,6 +10907,23 @@ svg.hoversvgrequest {
       width: 100%; }
     .worksteps__list_card .text {
       width: 100%; } }
+@media only screen and (max-width: 960px) {
+  .redesign-blog .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .redesign-blog h2 {
+    padding-left: 30px; }
+  .redesign-blog__items {
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
+    .redesign-blog__items::-webkit-scrollbar {
+      display: none; }
+  .redesign-blog__button {
+    padding-left: 30px; }
+  .redesign-blog .card:first-child {
+    margin-left: 30px; }
+  .redesign-blog .card:last-child {
+    margin-right: 30px; } }
 @media only screen and (max-width: 860px) {
   .projects__panels {
     grid-template-columns: 1fr;
@@ -12437,8 +12455,22 @@ svg.hoversvgrequest {
     width: 100%; }
   .redesign-feedback .container svg {
     max-width: 100%; }
+  .redesign-projects .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .redesign-projects-header, .redesign-projects-undertext {
+    padding-left: 30px; }
+  .redesign-projects-wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
+    .redesign-projects-wrapper::-webkit-scrollbar {
+      display: none; }
   .redesign-projects-slide.border-radius-none .img {
     width: 100%; }
+  .redesign-projects-slide:first-child {
+    margin-left: 30px; }
+  .redesign-projects-slide:last-child {
+    margin-right: 30px; }
 
   .case-awards {
     margin: 0 -30px;
@@ -14237,6 +14269,31 @@ svg.hoversvgrequest {
   .redesign-acrhive .container, .redesign-feedback .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+  .redesign-projects .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .redesign-projects-header, .redesign-projects-undertext {
+    padding-left: 20px; }
+  .redesign-projects-slide:first-child {
+    margin-left: 20px; }
+  .redesign-projects-slide:last-child {
+    margin-right: 20px; }
+  .redesign-blog .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .redesign-blog h2 {
+    padding-left: 20px; }
+  .redesign-blog__items {
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
+    .redesign-blog__items::-webkit-scrollbar {
+      display: none; }
+  .redesign-blog__button {
+    padding-left: 20px; }
+  .redesign-blog .card:first-child {
+    margin-left: 20px; }
+  .redesign-blog .card:last-child {
+    margin-right: 20px; }
 
   .broadwise .container,
   .case-accordion,

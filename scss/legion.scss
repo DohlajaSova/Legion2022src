@@ -5257,6 +5257,7 @@ a.button {
     &.feedback_subscribe {
         background: url($img-path + "subscribe-bg.svg") left top no-repeat $color-blue-dark;
         margin-bottom: 0;
+        display: none;
         .select-inline .select-hide{
             div{
                 border:1px solid $color-white;
