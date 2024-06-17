@@ -1506,7 +1506,7 @@ a.button {
   width: 100%; }
 .topcase__descr {
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   grid-column: 1/2;
   grid-row: 1/2; }
 .topcase__brief {
@@ -1518,7 +1518,7 @@ a.button {
   grid-column: 1/2;
   grid-row: 2/3; }
   .topcase__brief_subhead {
-    margin-bottom: 41px; }
+    margin-bottom: 31px; }
     .topcase__brief_subhead > div {
       font-size: 16px;
       color: #949191;
@@ -1538,7 +1538,8 @@ a.button {
         margin-right: 0; }
   .topcase__brief_stores.store {
     height: 40px;
-    font-size: 0; }
+    font-size: 0;
+    margin-top: 10px; }
     .topcase__brief_stores.store a {
       display: inline-block;
       width: 135px;
