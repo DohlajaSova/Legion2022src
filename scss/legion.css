@@ -1522,9 +1522,10 @@ a.button {
     .topcase__brief_subhead > div {
       font-size: 16px;
       color: #949191;
-      margin-bottom: 8px; }
+      margin-bottom: 4px; }
     .topcase__brief_subhead .h3 {
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      line-height: 1.1; }
     .topcase__brief_subhead > p {
       font-size: 18px; }
   .topcase__brief_medals {
