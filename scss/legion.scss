@@ -1822,7 +1822,7 @@ a.button {
     &__outer{
         display: grid;
         grid-template-columns: 0.38983fr auto;
-        grid-template-rows: minmax(0,min-content) minmax(max-content,auto);
+        grid-template-rows: minmax(0,min-content) minmax(0,auto);
         grid-gap: 25px;
         width:100%;
     }
