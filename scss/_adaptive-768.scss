@@ -2107,11 +2107,32 @@
             }
         }
         &-projects {
+            .container{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            &-header,
+            &-undertext{
+                padding-left: 30px;
+            }
+            &-wrapper{
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
             &-slide {
                 &.border-radius-none {
                     .img {
                         width: 100%;
                     }
+                }
+                &:first-child{
+                    margin-left: 30px;
+                }
+                &:last-child{
+                    margin-right: 30px;
                 }
             }
         }

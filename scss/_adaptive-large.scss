@@ -3967,6 +3967,38 @@
     }
 }
 
+@media only screen and (max-width: 960px) {
+    .redesign { 
+        &-blog {
+            .container{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            h2{
+                padding-left: 30px;
+            }
+            &__items{
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
+            &__button{
+                padding-left: 30px;
+            }
+            .card {
+                &:first-child{
+                    margin-left: 30px;
+                }
+                &:last-child{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 860px) {
     .projects{
         &__panels{
