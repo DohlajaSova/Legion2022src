@@ -1,5 +1,5 @@
 <div class="services-v2">
-  <div class="services-v2__container-fullwidth bg3">
+  <div class="services-v2__container-fullwidth bg3 services-v2-relative">
     <div class="container">
       <div class="services-v2__heading-2">
         Подбор IT-специалиста
@@ -48,5 +48,6 @@
         <button class="services-v2__button">Оставить заявку</button>
       </div>
     </div>
+    <img class="services-v2-img-absolute" src="/assets/css/img/redesign/service-pic-5.png" alt="">
   </div>
 </div>

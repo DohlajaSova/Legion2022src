@@ -1352,6 +1352,12 @@
     .importhead__header {
         font-size: 32px;
     }
+    .services-v2 {
+        &-img-absolute {
+            max-width: 280px;
+            // height: 130px;
+        }
+    }
 }
 
 // redesign only

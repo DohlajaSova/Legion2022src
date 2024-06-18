@@ -1,5 +1,5 @@
 ﻿<!-- aurora.nunjucks -->
-{% extends "layout-service-astralinux.nunjucks" %}
+{% extends "layout-service-v2.nunjucks" %}
 {% block title %} Импортозамещение {% endblock %}
 {% block links %} {% endblock %}
 {% block content %}

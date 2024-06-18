@@ -2560,6 +2560,7 @@
         }
         &__accordion {
             &_tabs{
+                padding-left: 0;
                 .tab__name {
                     line-height: 66px;
                 }
@@ -2601,6 +2602,10 @@
             max-width: 500px!important;
             margin-top: 60px;
             margin-bottom: 20px;
+        }
+        &-img-absolute {
+            max-width: 80vw;
+            height: 170px;
         }
     }
 }

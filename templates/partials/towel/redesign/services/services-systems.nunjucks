@@ -47,6 +47,7 @@
             <div class="redesign-tags-default-tag">проверка гипотез</div>
             <div class="redesign-tags-default-tag">выделение MVP</div>
           </div>
+          <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
         </div>
         <div class="tab js-accordion-tab" data-accordion-tab="2">
           <div class="tab__head">
@@ -159,7 +160,8 @@
               <div class="redesign-tags-default-tag">Аврора</div>
               <div class="redesign-tags-default-tag">Astra Linux</div>
             </div>
-          </div>
+          <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
+        </div>
           <div class="tab js-accordion-tab" data-accordion-tab="2">
             <div class="tab__head">
               <div class="tab__name">
@@ -315,24 +317,24 @@
             Система привлечения и удержания клиентов с помощью поощрений в виде скидок или бонусов.
           </div>
           <div class="tab__cases">
-            <div class="tab__cases_card">
+            <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-retail-pyaterochka">
               <img src="/assets/css/img/redesign/service-sub-1-1.png" alt="">
               <span class="caption">
-                Кейсы
+                X5 Retail Group
               </span>
               <p class="name">
-                Пятёрочка
+                Приложение для федеральной торговой сети
               </p>
-            </div>
-            <div class="tab__cases_card">
+            </a>
+            <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-sdainakoronavirus">
               <img src="/assets/css/img/redesign/service-sub-1-2.png" alt="">
               <span class="caption">
-                Кейсы
+                Сдайнакоронавирус
               </span>
               <p class="name">
-                Сдайнакоронавирус
+                Сдайнакоронавирус.рф
               </p>
-            </div>
+            </a>
           </div>
         </div>
         <div class="tab js-accordion-tab" data-accordion-tab="2">
@@ -354,24 +356,24 @@
             Персональная страница пользователей приложения/сайта для работы с сервисом.
           </div>
           <div class="tab__cases">
-            <div class="tab__cases_card">
+            <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-petersburgskaya-nedviginost">
               <img src="/assets/css/img/redesign/service-sub-2-1.png" alt="">
               <span class="caption">
-                Кейсы
+                Петербургская Недвижимость
               </span>
               <p class="name">
-                Петербургская Недвижимость
+                Приложение для деввелопера
               </p>
-            </div>
-            <div class="tab__cases_card">
+            </a>
+            <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-alfa-investitsii">
               <img src="/assets/css/img/redesign/service-sub-2-2.png" alt="">
               <span class="caption">
-                Кейсы
+                Альфа-Банк
               </span>
               <p class="name">
-                Альфа-Инвестиции
+                Мобильное приложение для трейдинга
               </p>
-            </div>
+            </a>
           </div>
         </div>
         <div class="tab js-accordion-tab" data-accordion-tab="3">
@@ -393,22 +395,22 @@
             Этап взаимодействия с сервисом, на котором пользователь находится до регистрации.
           </div>
           <div class="tab__cases">
-            <div class="tab__cases_card">
+            <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-tele2">
               <img src="/assets/css/img/redesign/service-sub-3-1.png" alt="">
               <span class="caption">
-                Кейсы
+                Tele2
               </span>
               <p class="name">
-                Tele2
+                Приложение для федерального оператора
               </p>
-            </div>
+            </a>
             <div class="tab__cases_card">
               <img src="/assets/css/img/redesign/service-sub-3-2.png" alt="">
               <span class="caption">
-                Кейсы
+                Venn
               </span>
               <p class="name">
-                Venn
+                Приложение для знакомств Venn
               </p>
             </div>
           </div>
@@ -427,19 +429,19 @@
             <div class="tab__cases_card">
               <img src="/assets/css/img/redesign/service-sub-4-1.png" alt="">
               <span class="caption">
-                Кейсы
+                Globus
               </span>
               <p class="name">
-                Globus
+                Приложение для сети гипермаркетов
               </p>
             </div>
             <div class="tab__cases_card">
               <img src="/assets/css/img/redesign/service-sub-4-2.png" alt="">
               <span class="caption">
-                Кейсы
+                MAY24
               </span>
               <p class="name">
-                MAY24
+                Оптовый маркетплейс для бизнеса
               </p>
             </div>
           </div>

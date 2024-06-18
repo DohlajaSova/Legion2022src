@@ -8340,6 +8340,48 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	}
 }
 
+//white-footer
+.body_services-v2 {
+	.footer {
+		background-color: #141414;
+		a {
+			color: #fff;
+		}
+		.footer__menu-list {
+	
+			span.text {
+				color: #fff;
+				
+			}
+		}
+		.social_vk {
+			background-image: url(img/icon-social-vk-w.svg);
+			border: 1.5px solid #fff;
+		}
+		.social_yt {
+			background-image: url(img/icon-social-yt-w.svg);
+			border: 1.5px solid #fff;
+		}
+		.social_vc {
+			background-image: url(img/icon-social-vc-w.svg);
+			border: 1.5px solid #fff;
+		}
+		.social_blog {
+			color:#1960ff;
+		}
+		.footer__copyright_about, .footer__info_copy {
+			color: #949191;
+			a {
+			color: #949191;
+
+			}
+		}
+		.footer__logo {
+			background-image: url($img-path + "logo-white.svg");
+		}
+	}
+}
+
 .astralinux {
 	$border-radius-card: 30px;
 	$padding-card: 30px;
@@ -11573,7 +11615,7 @@ svg.svg-hover-filter-clear {
 		line-height: 88px;
 
 		&-caption {
-			align-self: flex-end;
+			// align-self: flex-end;
 			padding-top: 46px;
 			font-size: 20px;
 			line-height: 26px;
@@ -11584,13 +11626,14 @@ svg.svg-hover-filter-clear {
 	}
 	&__accordion {
 		&_wrapper {
-			display: flex;
-			gap: 40px;
+			// display: flex;
+			// gap: 40px;
 		}
 		&_tabs {
 			display: flex;
 			flex-flow: column nowrap;
 			gap: 30px;
+			padding-left: 15vw;
 			.tab {
 				display: flex;
 				flex-flow: column nowrap;
@@ -11620,6 +11663,9 @@ svg.svg-hover-filter-clear {
 					justify-content: space-between;
 					cursor: pointer;
     				align-items: center;
+				}
+				&__img {
+					width: 100%;
 				}
 				&__roll {
 					display: flex;
@@ -11654,6 +11700,13 @@ svg.svg-hover-filter-clear {
 				&__cases {
 					display: flex;
 					gap: 40px;
+					a.tab__cases_card {
+						cursor: pointer;
+						.name {
+							color: #141414;
+						}
+						text-decoration: none;
+					}
 					&_card {
 						width: 50%;
 						display: flex;
@@ -11693,6 +11746,9 @@ svg.svg-hover-filter-clear {
 			}
 		}
 		&_navigation {
+			width: 0;
+			height: 0;
+			// width: 20%;
 			&_link {
 				font-size: 24px;
 				line-height: 28.8px;
@@ -11744,6 +11800,8 @@ svg.svg-hover-filter-clear {
 		color: $color-black;
 		font-size: 18px;
 		line-height: 23.4px;
+		position: relative;
+		z-index: 2;
 	}
 	&__timeline {
 		width: 100%;
@@ -11787,6 +11845,19 @@ svg.svg-hover-filter-clear {
 		&.active {
 			height: unset;
 		}
+	}
+	&-relative {
+		position: relative;
+	}
+	&-img-absolute {
+		position: absolute;
+		max-width: 40vw;
+		height: 210px;
+		bottom: 0;
+		right: 0;
+	}
+	.request__file {
+		margin-bottom: 0;
 	}
 }
 // --versionate redesign
