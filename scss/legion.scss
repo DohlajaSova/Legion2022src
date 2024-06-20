@@ -8358,23 +8358,24 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			color: #fff;
 		}
 		.footer__menu-list {
-	
 			span.text {
 				color: #fff;
-				
 			}
 		}
 		.social_vk {
 			background-image: url(img/icon-social-vk-w.svg);
 			border: 1.5px solid #fff;
+			flex-shrink: 0;
 		}
 		.social_yt {
 			background-image: url(img/icon-social-yt-w.svg);
 			border: 1.5px solid #fff;
+			flex-shrink: 0;
 		}
 		.social_vc {
 			background-image: url(img/icon-social-vc-w.svg);
 			border: 1.5px solid #fff;
+			flex-shrink: 0;
 		}
 		.social_blog {
 			color:#1960ff;
@@ -8388,6 +8389,10 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		}
 		.footer__logo {
 			background-image: url($img-path + "logo-white.svg");
+		}
+		.circletext  {
+			border: 1.5px solid #fff;
+
 		}
 	}
 }
