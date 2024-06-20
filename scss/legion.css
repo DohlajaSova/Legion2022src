@@ -5047,11 +5047,29 @@ a.button {
     min-width: 445px;
     padding: 12px 0 0 20px; }
   .request__button {
-    width: 50%; }
+    width: 100%;
+    height: 120px; }
+    .request__button_label {
+      font-size: 24px;
+      padding-right: 18px; }
+    .request__button_arrow {
+      display: inline-block;
+      position: relative;
+      width: 38px;
+      height: 36px;
+      background: url("img/arrow5.svg") center left no-repeat;
+      background-size: 47%;
+      margin-top: -12px;
+      top: 11px;
+      transition: background-size 0.2s; }
     .request__button .button {
       width: 100%;
-      background: #1E2738;
-      color: #fff; }
+      background: #1960FF;
+      color: #fff;
+      border-radius: 18px;
+      position: relative; }
+    .request__button:hover .request__button_arrow {
+      background-size: 100%; }
 
 /*Safari hack for range*/
 _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
@@ -5922,13 +5940,16 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     color: #fff; }
   .body_services-v2 .footer .social_vk {
     background-image: url(img/icon-social-vk-w.svg);
-    border: 1.5px solid #fff; }
+    border: 1.5px solid #fff;
+    flex-shrink: 0; }
   .body_services-v2 .footer .social_yt {
     background-image: url(img/icon-social-yt-w.svg);
-    border: 1.5px solid #fff; }
+    border: 1.5px solid #fff;
+    flex-shrink: 0; }
   .body_services-v2 .footer .social_vc {
     background-image: url(img/icon-social-vc-w.svg);
-    border: 1.5px solid #fff; }
+    border: 1.5px solid #fff;
+    flex-shrink: 0; }
   .body_services-v2 .footer .social_blog {
     color: #1960ff; }
   .body_services-v2 .footer .footer__copyright_about, .body_services-v2 .footer .footer__info_copy {
@@ -5937,6 +5958,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       color: #949191; }
   .body_services-v2 .footer .footer__logo {
     background-image: url("img/logo-white.svg"); }
+  .body_services-v2 .footer .circletext {
+    border: 1.5px solid #fff; }
 
 .astralinux-tezis {
   display: flex;
