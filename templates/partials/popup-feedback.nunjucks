@@ -52,6 +52,10 @@
                       Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей политикой обработки персональных данных
                     </div>
                     <div class="request__button">
+                        <button>
+                            <span>Отправить заявку</span>
+                            <span>-&gt;</span>
+                        </button>
                         <button class="js-popup-feedback-send button-svg-animate-container">
                             <svg class="hoversvgrequest" width="337" height="78" viewbox="0 0 337 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="336" height="77" rx="38.5" fill="white"/>
