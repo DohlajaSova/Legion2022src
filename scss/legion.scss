@@ -11572,7 +11572,8 @@ svg.svg-hover-filter-clear {
 	padding: 0;
 	margin-bottom: 80px;
 	.container {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
 		align-items: center;
 	}
 	.h1 {
