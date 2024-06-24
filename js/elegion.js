@@ -2395,6 +2395,15 @@ docReady(function () {
         }
     }
 
+    if (document.querySelectorAll(".js-request-animate").length > 0) {
+        const btns = document.querySelectorAll(".js-request-animate");
+        for (i=0; i < btns.length; i++){
+            btns[i].onclick = function (e) {
+                this.classList.add('clicked');
+            }
+        }
+    }
+
     const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form");
     if (scrolltoapplicants.length > 0) {
         for (i = 0; i < scrolltoapplicants.length; i++) {

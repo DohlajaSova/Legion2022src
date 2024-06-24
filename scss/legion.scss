@@ -7111,7 +7111,8 @@ a.button {
             border-radius: 18px;
             position: relative;
 		}
-        &:hover{
+        &:hover,
+        .clicked{
             .request__button_arrow{
                 background-size: 100%;
             }

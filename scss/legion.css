@@ -5068,7 +5068,8 @@ a.button {
       color: #fff;
       border-radius: 18px;
       position: relative; }
-    .request__button:hover .request__button_arrow {
+    .request__button:hover .request__button_arrow,
+    .request__button .clicked .request__button_arrow {
       background-size: 100%; }
 
 /*Safari hack for range*/
@@ -8265,7 +8266,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   padding: 0;
   margin-bottom: 80px; }
   .top.redesign .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center; }
   .top.redesign .h1 {
     width: auto;

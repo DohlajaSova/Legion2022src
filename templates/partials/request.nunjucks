@@ -130,7 +130,7 @@
               Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей <a href="">политикой обработки персональных данных</a>
             </div>
             <div class="request__button">
-                <button class="button js-request-button">
+                <button class="button js-request-button js-request-animate">
                     <span class="request__button_label">Отправить заявку</span>
                     <span class="request__button_arrow"></span>
                 </button>
