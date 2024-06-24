@@ -7086,13 +7086,36 @@ a.button {
 	}
 
 	&__button {
-		width: 50%;
-
+        width: 100%;
+        height: 120px;
+        &_label{
+            font-size: 24px;
+            padding-right: 18px;
+        }
+        &_arrow{
+            display: inline-block;
+            position: relative;
+            width: 38px;
+            height: 36px;
+            background: url($img-path + "arrow5.svg") center left no-repeat;
+            background-size: 47%;
+            margin-top: -12px;
+            top: 11px;
+            transition: background-size 0.2s;
+        }
+        
 		.button {
 			width: 100%;
-			background: $color-blue-dark;
+			background: $color-blue-clean;
 			color: $color-white;
+            border-radius: 18px;
+            position: relative;
 		}
+        &:hover{
+            .request__button_arrow{
+                background-size: 100%;
+            }
+        }
 	}
 }
 
@@ -11563,7 +11586,8 @@ svg.svg-hover-filter-clear {
 	padding: 0;
 	margin-bottom: 80px;
 	.container {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
 		align-items: center;
 	}
 	.h1 {
