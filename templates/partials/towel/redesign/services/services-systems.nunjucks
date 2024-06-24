@@ -5,7 +5,7 @@
         Консалтинг
       </h1>
       <div class="services-v2__heading-caption">
-        Разберёмся, что и как создавать, выявим возможные риски и разработаем план на будущее
+        Разберёмся, что и&nbsp;как создавать, выявим возможные риски и&nbsp;разработаем план на&nbsp;будущее
       </div>
     </div>
     <div class="services-v2__accordion_wrapper js-accordion-redesign">
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="services-v2__accordion_tabs">
-        <div class="tab js-accordion-tab" data-accordion-tab="1">
+        <div class="tab js-accordion-tab active" data-accordion-tab="1">
           <div class="tab__head">
             <div class="tab__name">
               Дискавери фаза
@@ -39,7 +39,7 @@
             <img src="/assets/css/img/redesign/service-banner-1-1.png" alt="">
           </div>
           <div class="tab__desc">
-            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и поможем
+            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем
             быстрее окупить вложения.
           </div>
           <div class="redesign-tags-default">
@@ -67,7 +67,7 @@
             <img src="/assets/css/img/redesign/service-banner-1-2.png" alt="">
           </div>
           <div class="tab__desc">
-            Исследуем пользователей, проверим гипотезы, адаптируем смыслы, разработаем интерфейсы и «приземлим» бизнес.
+            Исследуем пользователей, проверим гипотезы, адаптируем смыслы, разработаем интерфейсы и&nbsp;«приземлим» бизнес.
           </div>
           <div class="redesign-tags-default">
             <div class="redesign-tags-default-tag">разработка WeChat</div>
@@ -93,7 +93,7 @@
             <img src="/assets/css/img/redesign/service-banner-1-3.png" alt="">
           </div>
           <div class="tab__desc">
-            Проанализируем техническую часть проекта, выявим неточности и сформируем рекомендации по оптимизации работы
+            Проанализируем техническую часть проекта, выявим неточности и&nbsp;сформируем рекомендации по&nbsp;оптимизации работы
             системы.
           </div>
           <div class="redesign-tags-default">
@@ -116,7 +116,7 @@
           Разработка
         </h1>
         <div class="services-v2__heading-caption">
-          Возьмём на себя весь процесс разработки или поддержим вас на определённом этапе работ
+          Возьмём на&nbsp;себя весь процесс разработки или&nbsp;поддержим вас&nbsp;на&nbsp;определённом этапе работ
         </div>
       </div>
       <div class="services-v2__accordion_wrapper js-accordion-redesign">
@@ -135,7 +135,7 @@
           </div>
         </div>
         <div class="services-v2__accordion_tabs">
-          <div class="tab js-accordion-tab" data-accordion-tab="1">
+          <div class="tab js-accordion-tab active" data-accordion-tab="1">
             <div class="tab__head">
               <div class="tab__name">
                 Импортозамещение
@@ -153,7 +153,7 @@
               <img src="/assets/css/img/redesign/service-banner-2-1.png" alt="">
             </div>
             <div class="tab__desc">
-              Разрабатываем и портируем цифровые решения на базе отечественных операционных систем, помогаем защитить
+              Разрабатываем и&nbsp;портируем цифровые решения на&nbsp;базе отечественных операционных систем, помогаем защитить
               чувствительные данные компании.
             </div>
             <div class="redesign-tags-default">
@@ -179,8 +179,7 @@
               <img src="/assets/css/img/redesign/service-banner-2-2.png" alt="">
             </div>
             <div class="tab__desc">
-              Выявляем и формируем требования, проектируем интерфейсы, пишем код, тестируем системы, поддерживаем и
-              масштабируем.
+              Выявляем и формируем требования, проектируем интерфейсы, пишем код, тестируем системы, поддерживаем и&nbsp;масштабируем.
             </div>
             <div class="redesign-tags-default">
               <div class="redesign-tags-default-tag">полный цикл</div>
@@ -206,8 +205,7 @@
               <img src="/assets/css/img/redesign/service-banner-2-3.png" alt="">
             </div>
             <div class="tab__desc">
-              Берём на себя работы по Frontend и Backend разработке, фокусируемся на удобстве, безопасности и
-              производительности решений.
+              Берём на&nbsp;себя работы по Frontend и&nbsp;Backend разработке, фокусируемся на&nbsp;удобстве, безопасности и&nbsp;производительности решений.
             </div>
             <div class="redesign-tags-default">
               <div class="redesign-tags-default-tag">cокращение расходов</div>
@@ -233,8 +231,7 @@
               <img src="/assets/css/img/redesign/service-banner-2-4.png" alt="">
             </div>
             <div class="tab__desc">
-              Обеспечим бесперебойную работу системы, оперативно среагируем и найдём уязвимости, чтобы с ними не
-              столкнулись пользователи
+              Обеспечим бесперебойную работу системы, оперативно среагируем и&nbsp;найдём уязвимости, чтобы с&nbsp;ними не&nbsp;столкнулись пользователи
             </div>
             <div class="redesign-tags-default">
               <div class="redesign-tags-default-tag">cокращение расходов</div>
@@ -287,7 +284,7 @@
         Решения
       </h1>
       <div class="services-v2__heading-caption">
-        С 2008 года разрабатываем приложения, знаем лучшие практики и делимся этим опытом с клиентами
+        С&nbsp;2008&nbsp;года разрабатываем приложения, знаем лучшие практики и&nbsp;делимся этим опытом с&nbsp;клиентами
       </div>
     </div>
     <div class="services-v2__accordion_wrapper js-accordion-redesign">
@@ -314,7 +311,7 @@
             <div class="tab__roll"></div>
           </div>
           <div class="tab__desc">
-            Система привлечения и удержания клиентов с помощью поощрений в виде скидок или бонусов.
+            Система привлечения и&nbsp;удержания клиентов с&nbsp;помощью поощрений в&nbsp;виде скидок или&nbsp;бонусов.
           </div>
           <div class="tab__cases">
             <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-retail-pyaterochka">
@@ -323,7 +320,7 @@
                 X5 Retail Group
               </span>
               <p class="name">
-                Приложение для федеральной торговой сети
+                Приложение для&nbsp;федеральной торговой сети
               </p>
             </a>
             <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-sdainakoronavirus">
@@ -353,7 +350,7 @@
           </div> -->
           </div>
           <div class="tab__desc">
-            Персональная страница пользователей приложения/сайта для работы с сервисом.
+            Персональная страница пользователей приложения/сайта для работы с&nbsp;сервисом.
           </div>
           <div class="tab__cases">
             <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-petersburgskaya-nedviginost">
@@ -371,7 +368,7 @@
                 Альфа-Банк
               </span>
               <p class="name">
-                Мобильное приложение для трейдинга
+                Мобильное приложение для&nbsp;трейдинга
               </p>
             </a>
           </div>
@@ -392,7 +389,7 @@
           </div> -->
           </div>
           <div class="tab__desc">
-            Этап взаимодействия с сервисом, на котором пользователь находится до регистрации.
+            Этап взаимодействия с&nbsp;сервисом, на&nbsp;котором пользователь находится до&nbsp;регистрации.
           </div>
           <div class="tab__cases">
             <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-tele2">
@@ -401,7 +398,7 @@
                 Tele2
               </span>
               <p class="name">
-                Приложение для федерального оператора
+                Приложение для&nbsp;федерального оператора
               </p>
             </a>
             <div class="tab__cases_card">
@@ -410,7 +407,7 @@
                 Venn
               </span>
               <p class="name">
-                Приложение для знакомств Venn
+                Приложение для&nbsp;знакомств Venn
               </p>
             </div>
           </div>
@@ -423,7 +420,7 @@
             <div class="tab__roll"></div>
           </div>
           <div class="tab__desc">
-            Онлайн-площадка для продажи товаров/услуг, объединяющая продукты различных продавцов.
+            Онлайн-площадка для&nbsp;продажи товаров/услуг, объединяющая продукты различных продавцов.
           </div>
           <div class="tab__cases">
             <div class="tab__cases_card">
@@ -432,7 +429,7 @@
                 Globus
               </span>
               <p class="name">
-                Приложение для сети гипермаркетов
+                Приложение для&nbsp;сети гипермаркетов
               </p>
             </div>
             <div class="tab__cases_card">
@@ -441,7 +438,7 @@
                 MAY24
               </span>
               <p class="name">
-                Оптовый маркетплейс для бизнеса
+                Оптовый маркетплейс для&nbsp;бизнеса
               </p>
             </div>
           </div>

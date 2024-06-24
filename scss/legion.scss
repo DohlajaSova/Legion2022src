@@ -8366,16 +8366,31 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			background-image: url(img/icon-social-vk-w.svg);
 			border: 1.5px solid #fff;
 			flex-shrink: 0;
+			&:hover {
+				background-image: url(img/icon-social-vk.svg);
+				background-color: #fff;
+				border: 1.5px solid black;
+			}
 		}
 		.social_yt {
 			background-image: url(img/icon-social-yt-w.svg);
 			border: 1.5px solid #fff;
 			flex-shrink: 0;
+			&:hover {
+				background-image: url(img/icon-social-yt.svg);
+				background-color: #fff;
+				border: 1.5px solid black;
+			}
 		}
 		.social_vc {
 			background-image: url(img/icon-social-vc-w.svg);
 			border: 1.5px solid #fff;
 			flex-shrink: 0;
+			&:hover {
+				background-image: url(img/icon-social-vc.svg);
+				background-color: #fff;
+				border: 1.5px solid black;
+			}
 		}
 		.social_blog {
 			color:#1960ff;
@@ -8383,8 +8398,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		.footer__copyright_about, .footer__info_copy {
 			color: #949191;
 			a {
-			color: #949191;
-
+				color: #949191;
 			}
 		}
 		.footer__logo {
@@ -11817,6 +11831,17 @@ svg.svg-hover-filter-clear {
 		line-height: 23.4px;
 		position: relative;
 		z-index: 2;
+		cursor: pointer;
+		transition: color .25s, padding .25s, background-color .25s;
+		&:hover {
+			color: #fff;
+			background-color: #949191;
+		}
+		&:active {
+			color: #fff;
+			background-color: #949191;
+			padding: 20px 38px;
+		}
 	}
 	&__timeline {
 		width: 100%;

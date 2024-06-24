@@ -2844,6 +2844,9 @@ docReady(function () {
                 const tabhead = tab.querySelector(".tab__head");
                 // const tabroll = tab.querySelector(".tab__roll");
                 tabhead?.addEventListener("click", () => {
+                    Array.from(tabs).forEach(tabinner=> {
+                        tabinner.classList.remove("active")
+                    })
                     tab.classList.contains("active") ? tab.classList.remove("active") : tab.classList.add("active")
                 })
             })
