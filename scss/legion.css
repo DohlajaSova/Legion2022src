@@ -5943,14 +5943,26 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     background-image: url(img/icon-social-vk-w.svg);
     border: 1.5px solid #fff;
     flex-shrink: 0; }
+    .body_services-v2 .footer .social_vk:hover {
+      background-image: url(img/icon-social-vk.svg);
+      background-color: #fff;
+      border: 1.5px solid black; }
   .body_services-v2 .footer .social_yt {
     background-image: url(img/icon-social-yt-w.svg);
     border: 1.5px solid #fff;
     flex-shrink: 0; }
+    .body_services-v2 .footer .social_yt:hover {
+      background-image: url(img/icon-social-yt.svg);
+      background-color: #fff;
+      border: 1.5px solid black; }
   .body_services-v2 .footer .social_vc {
     background-image: url(img/icon-social-vc-w.svg);
     border: 1.5px solid #fff;
     flex-shrink: 0; }
+    .body_services-v2 .footer .social_vc:hover {
+      background-image: url(img/icon-social-vc.svg);
+      background-color: #fff;
+      border: 1.5px solid black; }
   .body_services-v2 .footer .social_blog {
     color: #1960ff; }
   .body_services-v2 .footer .footer__copyright_about, .body_services-v2 .footer .footer__info_copy {
@@ -8445,7 +8457,16 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   font-size: 18px;
   line-height: 23.4px;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  cursor: pointer;
+  transition: color .25s, padding .25s, background-color .25s; }
+  .services-v2__button:hover {
+    color: #fff;
+    background-color: #949191; }
+  .services-v2__button:active {
+    color: #fff;
+    background-color: #949191;
+    padding: 20px 38px; }
 .services-v2__timeline {
   width: 100%; }
   .services-v2__timeline-wrapper {
@@ -14544,7 +14565,9 @@ svg.hoversvgrequest {
     line-height: 66px; }
     .services-v2__heading-2 {
       font-size: 36px;
-      line-height: 43.2px; } }
+      line-height: 43.2px; }
+  .services-v2 .svghover {
+    max-width: 100% !important; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
