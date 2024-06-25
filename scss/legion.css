@@ -8289,6 +8289,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     margin-bottom: 0; }
     .top.redesign .top__buttons_plus {
       height: unset; }
+  .main .top.redesign .container {
+    display: flex; }
 
 .services-v2__header svg {
   vertical-align: middle; }

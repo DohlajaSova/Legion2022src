@@ -11602,6 +11602,11 @@ svg.svg-hover-filter-clear {
 			height: unset;
 		}
 	}
+    .main &{
+        .container {
+            display: flex;
+        }
+    }
 }
 
 // versionate redesign
