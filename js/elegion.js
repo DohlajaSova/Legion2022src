@@ -1664,11 +1664,13 @@ docReady(function () {
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         // const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
+        const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
         // let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height + document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
         function simplifiedToc() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             // let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
             stickyTOC.style.height = 400 + "px";
+            
             if (bodyScrollTop > editorialTop + 67) {
                 // document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
@@ -1678,7 +1680,35 @@ docReady(function () {
                     else
                         document.getElementsByClassName('js-scrollsection-1')[0]?.classList.remove('floored');
                 }
+
+                const scrollsection1 = document.getElementsByClassName('js-scrollsection-1')[0].offsetTop;
+                const scrollsection2 = document.getElementsByClassName('js-scrollsection-2')[0].offsetTop;
+                const scrollsection3 = document.getElementsByClassName('js-scrollsection-3')[0].offsetTop;
+                const scrollsection4 = document.getElementsByClassName('js-scrollsection-4')[0].offsetTop;
+
+                if(bodyScrollTop > scrollsection4) {
+                    Array.from(lev1Sel).forEach((one) => {
+                        one.classList.remove("active")
+                    })
+                    lev1Sel[3].classList.add("active")
+                } else if(bodyScrollTop > scrollsection3) {
+                    Array.from(lev1Sel).forEach((one) => {
+                        one.classList.remove("active")
+                    })
+                    lev1Sel[2].classList.add("active")
+                } else if(bodyScrollTop > scrollsection2) {
+                    Array.from(lev1Sel).forEach((one) => {
+                        one.classList.remove("active")
+                    })
+                    lev1Sel[1].classList.add("active")
+                } else if(bodyScrollTop > scrollsection1) {
+                    Array.from(lev1Sel).forEach((one) => {
+                        one.classList.remove("active")
+                    })
+                    lev1Sel[0].classList.add("active")
+                }
             }
+
             else {
                 document.getElementsByClassName('case-container__toc-inner')[0]?.classList.remove('fixed');
                 stickyTOC.classList.remove('fixed');
@@ -1711,7 +1741,6 @@ docReady(function () {
         window.addEventListener('scroll', simplifiedToc, true);
         window.addEventListener('resize', simplifiedToc, true);
 
-        const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
         Array.from(lev1Sel).forEach((one, indexLv1) => one.addEventListener("click", (e) => {
             if (one.classList.contains("active")) {
                 return;
