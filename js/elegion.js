@@ -1686,22 +1686,22 @@ docReady(function () {
                 const scrollsection3 = document.getElementsByClassName('js-scrollsection-3')[0].offsetTop;
                 const scrollsection4 = document.getElementsByClassName('js-scrollsection-4')[0].offsetTop;
 
-                if(bodyScrollTop > scrollsection4) {
+                if(bodyScrollTop > scrollsection4 - 50) {
                     Array.from(lev1Sel).forEach((one) => {
                         one.classList.remove("active")
                     })
                     lev1Sel[3].classList.add("active")
-                } else if(bodyScrollTop > scrollsection3) {
+                } else if(bodyScrollTop > scrollsection3 - 50) {
                     Array.from(lev1Sel).forEach((one) => {
                         one.classList.remove("active")
                     })
                     lev1Sel[2].classList.add("active")
-                } else if(bodyScrollTop > scrollsection2) {
+                } else if(bodyScrollTop > scrollsection2 - 50) {
                     Array.from(lev1Sel).forEach((one) => {
                         one.classList.remove("active")
                     })
                     lev1Sel[1].classList.add("active")
-                } else if(bodyScrollTop > scrollsection1) {
+                } else if(bodyScrollTop > scrollsection1 - 50) {
                     Array.from(lev1Sel).forEach((one) => {
                         one.classList.remove("active")
                     })
