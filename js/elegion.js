@@ -2399,7 +2399,9 @@ docReady(function () {
         const btns = document.querySelectorAll(".js-request-animate");
         for (i=0; i < btns.length; i++){
             btns[i].onclick = function (e) {
-                this.classList.add('clicked');
+                let btn = this;
+                btn.classList.add('clicked');
+                setTimeout(function(){btn.classList.remove('clicked');}, 5000);
             }
         }
     }
