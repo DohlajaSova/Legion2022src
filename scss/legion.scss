@@ -9559,7 +9559,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             a{
 				text-decoration: none;
                 color: $color-grey-dark;
-				line-height: 26px;
+				line-height: 20px;
+
 				&.active{
 					color: $color-black;
 				}
@@ -9573,8 +9574,10 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
         }
         &-lev2{
             padding-left: 20px;
+			margin-top: 8px;
 			display: flex;
 			flex-flow: column;
+			gap: 8px;
         }
 		&-lev1 {
             &.active{
