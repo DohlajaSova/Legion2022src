@@ -1135,7 +1135,7 @@ a.button {
     margin-bottom: 0; }
     .popup-video .request__button,
     .popup-feedback .request__button {
-      width: auto; }
+      width: 100%; }
     .popup-video .request__form_item,
     .popup-feedback .request__form_item {
       margin-bottom: 20px; }
@@ -4837,6 +4837,7 @@ a.button {
 
 .request {
   margin-bottom: 120px;
+  overflow-x: hidden;
   overflow-y: auto;
   max-height: 100%; }
   .request__title {
@@ -4857,6 +4858,7 @@ a.button {
     .request__select.select-checkmark.platform .select-hide div, .request__select.select-checkmark.source .select-hide div {
       width: 33.3333%; }
   .request__textarea {
+    width: 100%;
     margin-top: 34px; }
     .request__textarea textarea {
       background-color: transparent;
@@ -4879,6 +4881,8 @@ a.button {
         max-width: 250px;
         font-size: 18px;
         white-space: nowrap; }
+    .request__textarea + div {
+      width: 100%; }
   .request__file {
     margin-bottom: 80px; }
     .request__file p {
@@ -5032,6 +5036,7 @@ a.button {
     flex-direction: row;
     justify-content: flex-start; }
     .request__comment-container.centered {
+      width: 100%;
       flex-direction: column-reverse;
       align-items: center; }
       .request__comment-container.centered .request__comment {
@@ -5043,7 +5048,7 @@ a.button {
   .request__comment {
     font-size: 16px;
     color: #949191;
-    width: 31%;
+    width: 100%;
     min-width: 445px;
     padding: 12px 0 0 20px; }
   .request__button {
@@ -6771,7 +6776,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     .case-container__toc-lev1 a, .case-container__toc-lev2 a {
       text-decoration: none;
       color: #949191;
-      line-height: 26px; }
+      line-height: 20px; }
       .case-container__toc-lev1 a.active, .case-container__toc-lev2 a.active {
         color: #141414; }
     .case-container__toc-lev1.active, .case-container__toc-lev2.active {
@@ -6780,8 +6785,10 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       margin-bottom: 0; }
   .case-container__toc-lev2 {
     padding-left: 20px;
+    margin-top: 8px;
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    gap: 8px; }
   .case-container__toc-lev1.active > a {
     color: #141414; }
   .case-container__toc .sidetoc-menu {

@@ -1286,7 +1286,7 @@ a.button {
 	.request{
 		margin-bottom: 0;
         &__button{
-            width: auto;
+            width: 100%;
         }
         &__form_item{
             margin-bottom: 20px;
@@ -6742,6 +6742,7 @@ a.button {
 
 .request {
 	margin-bottom: 120px;
+    overflow-x: hidden;
 	overflow-y: auto;
 	max-height: 100%;
 
@@ -6778,6 +6779,7 @@ a.button {
 	}
 
 	&__textarea {
+        width: 100%;
 		margin-top: 34px;
 
 		textarea {
@@ -6805,6 +6807,9 @@ a.button {
                 white-space: nowrap;
 			}
 		}
+        & + div{
+            width: 100%;
+        }
 	}
 
 	&__file {
@@ -7064,6 +7069,7 @@ a.button {
 		flex-direction: row;
 		justify-content: flex-start;
 		&.centered{
+            width: 100%;
 			flex-direction: column-reverse;
 			align-items: center;
 			.request__comment{
@@ -7080,7 +7086,7 @@ a.button {
 	&__comment {
 		font-size: 16px;
 		color: $color-grey-dark;
-		width: 31%;
+		width: 100%;
         min-width: 445px;
 		padding: 12px 0 0 20px;
 	}
