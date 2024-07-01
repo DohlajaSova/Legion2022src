@@ -7728,7 +7728,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       cursor: pointer;
       border-radius: 16px;
       width: 100px;
-      height: 460px;
+      height: 618px;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -12696,7 +12696,10 @@ svg.hoversvgrequest {
   /*Safari hack for range*/
   _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
     margin-left: -100px;
-    margin-right: -100px; } }
+    margin-right: -100px; }
+
+  .body_astralinux .redesign-projects-slide {
+    margin: 0; } }
 @media only screen and (max-width: 600px) {
   .dummy-v2 .dummy__container {
     background-image: url("img/404-bg-animation-small.svg");
