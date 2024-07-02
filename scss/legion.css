@@ -12374,8 +12374,6 @@ svg.hoversvgrequest {
   .did__slider .vacancy {
     padding-bottom: calc(38% - 60px); }
 
-  .request__file {
-    margin-bottom: 10px; }
   .request__select.select-inline_wide .select-selected {
     font-size: 16px;
     line-height: 24px; }
@@ -12400,7 +12398,7 @@ svg.hoversvgrequest {
     right: 20px; }
   .popup-feedback .request {
     padding-bottom: 170px; }
-  .popup-feedback .request__comment-container {
+  .popup-feedback .request__comment-container.centered {
     position: fixed;
     bottom: 0;
     left: 0;
