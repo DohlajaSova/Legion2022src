@@ -4123,7 +4123,8 @@ a.button {
   .news_featured {
     background: #F0F0F0;
     padding: 60px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    display: none; }
   .news .featured_content {
     font-size: 16px; }
     .news .featured_content .featured_content__image {
@@ -7749,7 +7750,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         font-size: 24px;
         line-height: 130%; }
     .redesign-projects-slide:first-child .img {
-      background-image: url("/assets/css/img/redesign/projects-back-1.png"); }
+      background-image: url("/assets/css/img/redesign/projects-back-1a.png"); }
     .redesign-projects-slide:nth-child(2) .img {
       background-image: url("/assets/css/img/redesign/projects-back-2.png"); }
     .redesign-projects-slide:nth-child(3) .img {

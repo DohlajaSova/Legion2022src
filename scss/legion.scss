@@ -5704,6 +5704,7 @@ a.button {
         background: $color-grey-light;
         padding: 60px;
         margin-bottom: 60px;
+        display: none;
     }
     .featured{
         &_content{
@@ -10906,7 +10907,7 @@ svg.svg-hover-filter-clear {
 			}
 			&:first-child {
 				.img {
-					background-image: url("/assets/css/img/redesign/projects-back-1.png");
+					background-image: url("/assets/css/img/redesign/projects-back-1a.png");
 				}
 			}
 			&:nth-child(2) {
