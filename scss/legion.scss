@@ -954,8 +954,9 @@ a.button {
 }
 
 .button.yaDiskUploader{
-    border-radius:100px;
-    padding:20px 60px;
+    border-radius: 100px;
+    padding: 20px 60px;
+    background: transparent;
 }
 
 .line-breaker {
@@ -11715,7 +11716,7 @@ svg.svg-hover-filter-clear {
 				display: flex;
 				flex-flow: column nowrap;
 				gap: 20px;
-				height: 75px;
+				height: 74px;
 				border-bottom: 1px solid $color-black;
 				padding-bottom: 30px;
 				overflow: hidden;

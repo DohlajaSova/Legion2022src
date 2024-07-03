@@ -895,7 +895,8 @@ a.button {
 
 .button.yaDiskUploader {
   border-radius: 100px;
-  padding: 20px 60px; }
+  padding: 20px 60px;
+  background: transparent; }
 
 .line-breaker {
   border: 1px solid #949191;
@@ -8354,7 +8355,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
-    height: 75px;
+    height: 74px;
     border-bottom: 1px solid #141414;
     padding-bottom: 30px;
     overflow: hidden;
