@@ -8,7 +8,7 @@
         Разберёмся, что и&nbsp;как создавать, выявим возможные риски и&nbsp;разработаем план на&nbsp;будущее
       </div>
     </div>
-    <div class="services-v2__accordion_wrapper js-accordion-redesign">
+    <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="1">
       <div class="services-v2__accordion_navigation">
         <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
           Дискавери фаза
@@ -119,7 +119,7 @@
           Возьмём на&nbsp;себя весь процесс разработки или&nbsp;поддержим вас&nbsp;на&nbsp;определённом этапе работ
         </div>
       </div>
-      <div class="services-v2__accordion_wrapper js-accordion-redesign">
+      <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="2">
         <div class="services-v2__accordion_navigation">
           <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
             Импортозамещение
@@ -289,7 +289,7 @@
         С&nbsp;2008&nbsp;года разрабатываем приложения, знаем лучшие практики и&nbsp;делимся этим опытом с&nbsp;клиентами
       </div>
     </div>
-    <div class="services-v2__accordion_wrapper js-accordion-redesign">
+    <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="3">
       <div class="services-v2__accordion_navigation">
         <div class="services-v2__accordion_navigation_link js-accordion-link active" data-accordion-link="1">
           Система лояльности

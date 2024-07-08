@@ -2878,12 +2878,25 @@ docReady(function () {
     // services redesign accordion 
     if (document.querySelectorAll(".js-accordion-redesign").length > 0) {
         const accordions = document.querySelectorAll(".js-accordion-redesign");
+        let scrollNavigationContainer = document.querySelector(".js-scroll-navigation");
+
         Array.from(accordions).forEach(acc => {
             const tabs = acc.querySelectorAll(".js-accordion-tab");
             Array.from(tabs).forEach(tab => {
                 const tabhead = tab.querySelector(".tab__head");
                 // const tabroll = tab.querySelector(".tab__roll");
-                tabhead?.addEventListener("click", () => {
+                tabhead?.addEventListener("click", (e) => {
+                    console.log("click")
+                    console.log(tab.dataset.accordionTab)
+                    if(scrollNavigationContainer) {
+                        const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
+                        let lev2Sel = Array.from(lev1Sel)[acc.dataset.accordionContainer-1].querySelectorAll(".case-container__toc-lev2 .js-scrollto")
+                        console.log({lev2Sel})
+                        Array.from(lev2Sel).forEach(lev2 => {
+                            lev2?.classList.remove("active")
+                        })
+                        Array.from(lev2Sel)[tab.dataset.accordionTab-1].classList.add("active")
+                    }
                     Array.from(tabs).forEach(tabinner=> {
                         tabinner.classList.remove("active")
                     })

@@ -15,6 +15,7 @@
         <div class="case-container__toc-lev2">
           <a href="#project" class="js-scrollto active">Импортозамещение</a>
           <a href="#project" class="js-scrollto">Комплексная разработка Mobile</a>
+          <a href="#project" class="js-scrollto">Web-решения</a>
           <a href="#project" class="js-scrollto">Техническая поддержка</a>
         </div>
       </div>

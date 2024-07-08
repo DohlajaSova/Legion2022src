@@ -5,7 +5,7 @@
                 Стек технологий
             </h1>
         </div>
-        <div class="services-v2__accordion_wrapper js-accordion-redesign">
+        <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="4">
             <div class="services-v2__accordion_navigation">
                 <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
                     Android
