@@ -6232,7 +6232,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       width: 100%;
       padding-right: 10%; }
       .client__info_stats-state__prop {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         color: #949191; }
       .client__info_stats-state__value {
         color: #1E2738;
