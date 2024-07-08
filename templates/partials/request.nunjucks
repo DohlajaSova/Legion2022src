@@ -127,7 +127,7 @@
 
         <div class="request__comment-container centered">
             <div class="request__comment">
-              Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей <a href="">политикой обработки персональных данных</a>
+              Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей <a href="/[[~47]]">политикой обработки персональных данных</a>
             </div>
             <div class="request__button">
                 <button class="button js-request-button js-request-animate">

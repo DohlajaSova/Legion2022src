@@ -1631,9 +1631,6 @@
         padding-bottom: calc(38% - 60px);
     }
     .request{
-        &__file{
-            margin-bottom: 10px;
-        }
         &__select.select-inline_wide .select-selected{
             font-size: 16px;
             line-height: 24px;
@@ -1670,7 +1667,7 @@
         .request{
             padding-bottom: 170px;
         }
-        .request__comment-container{
+        .request__comment-container.centered{
             position: fixed;
             bottom: 0;
             left: 0;
@@ -2162,8 +2159,9 @@
             margin-right: -100px;
         }
     }
-    .services-v2 {
-}
+    .body_astralinux .redesign-projects-slide{
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
