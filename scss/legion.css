@@ -6176,8 +6176,6 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
   position: relative;
   overflow: hidden;
   max-height: 740px; }
-  .client__present.venn {
-    height: 100vh; }
   .client__present.case-video {
     overflow: auto;
     max-height: none; }
@@ -6345,6 +6343,10 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     .client__grid_card-flex {
       display: grid;
       grid-template-rows: 1fr auto; }
+      .client__grid_card-flex.client__grid_card-std {
+        grid-template-rows: auto 1fr auto; }
+        .client__grid_card-flex.client__grid_card-std.cases__case-blue {
+          grid-template-rows: 1fr auto; }
     .client__grid_card-tall {
       padding: 0;
       grid-column-start: 1;
@@ -6358,7 +6360,6 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       .client__grid_card-tall-grey {
         background-color: #F0F0F0; }
       .client__grid_card-tall__preview {
-        height: stretch;
         padding: 40px 0 0 40px;
         position: relative;
         border-radius: inherit;
@@ -7666,11 +7667,13 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     gap: 40px;
     flex-basis: 650px; }
     .redesign-features-preview .header {
+      position: static;
       color: #141414;
       font-size: 46px;
       line-height: 120%;
       flex: 1;
-      padding: 0; }
+      padding: 0;
+      background: transparent; }
   .redesign-features-list {
     letter-spacing: 1.8px;
     display: flex;
@@ -10630,12 +10633,10 @@ svg.hoversvgrequest {
   .request__select.select-checkmark .same-as-selected {
     position: static; }
     .request__select.select-checkmark .same-as-selected::before {
-      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.9158 11.9997C18.9158 11.6056 18.5963 11.2862 18.2022 11.2862L12.7124 11.2862L12.7124 5.79635C12.7124 5.40227 12.3929 5.0828 11.9988 5.0828C11.6048 5.0828 11.2853 5.40227 11.2853 5.79635L11.2853 11.2862L5.79547 11.2862C5.40139 11.2862 5.08192 11.6056 5.08192 11.9997C5.08192 12.3938 5.40139 12.7133 5.79547 12.7133L11.2853 12.7133V18.2031C11.2853 18.5972 11.6048 18.9166 11.9988 18.9166C12.3929 18.9166 12.7124 18.5972 12.7124 18.2031V12.7133L18.2022 12.7133C18.5963 12.7133 18.9158 12.3938 18.9158 11.9997Z' fill='white'/%3E%3C/svg%3E");
       height: 24px;
       width: 24px;
       color: transparent;
-      margin-right: 10px;
-      font-size: inherit; }
+      margin-right: 10px; }
 
   .popup-feedback .request__select.select-checkmark .select-hide div {
     padding-right: 20px; }
@@ -12563,8 +12564,6 @@ svg.hoversvgrequest {
       padding: 0; }
       .client__grid_card-wide__info {
         padding: 20px 20px 14px 20px; }
-      .client__grid_card-wide__image {
-        max-width: 48%; }
     .client__grid_card-accent {
       line-height: 130%; }
     .client__grid_card-accent + .client__grid_card-content {
@@ -14088,9 +14087,6 @@ svg.hoversvgrequest {
   .client__present {
     min-height: 270px;
     margin-bottom: 40px; }
-    .client__present.venn {
-      min-height: 360px;
-      margin-bottom: 40px; }
     .client__present-play {
       width: 12vw !important;
       left: 44vw !important;
@@ -14655,8 +14651,6 @@ svg.hoversvgrequest {
       min-height: 190px; }
     .client__grid_card-tall__info {
       padding: 20px 20px; }
-    .client__grid_card-wide__image {
-      max-width: 48%; }
     .client__grid_card-heading {
       font-size: 6vw; }
     .client__grid_card-tall__preview_info-undertext {

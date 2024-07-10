@@ -337,8 +337,8 @@
             min-height: 270px;
             margin-bottom: 40px;
             &.venn {
-                min-height: 360px;
-                margin-bottom: 40px;
+                //min-height: 360px;
+                //margin-bottom: 40px;
             }
             &-play {
                 width: 12vw!important;
@@ -1237,7 +1237,7 @@
                 }
                 &-wide{
                     &__image{
-                        max-width: 48%;
+                        //max-width: 48%;
                     }
                 }
                 &-heading{
