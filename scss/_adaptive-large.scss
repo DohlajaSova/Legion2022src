@@ -2624,6 +2624,13 @@
             transition-delay: .2s;
         }
     }
+    .souvereign {
+        &-top-wrapper {
+            .svghover {
+                max-width: 100%!important;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: $screen-md) {

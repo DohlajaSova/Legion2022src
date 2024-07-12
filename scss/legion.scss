@@ -11383,9 +11383,13 @@ svg.svg-hover-filter-clear {
 	}
 	&-top-wrapper {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		gap: 40px;
 		margin-bottom: 80px;
+		justify-content: center;
+		.svghover {
+			max-width: 650px;
+		}
 	}
 	&-header-wrapper {
 		display: flex;
@@ -11895,6 +11899,7 @@ svg.svg-hover-filter-clear {
 	&__timeline {
 		width: 100%;
 		&-wrapper {
+			overflow: hidden;
 			padding: 40px 0 50px 0;
 			.container {
 				padding: 0;
