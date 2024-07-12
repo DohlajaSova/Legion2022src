@@ -8737,7 +8737,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		position: relative;
 		overflow: hidden;
 		&.venn {
-			height: 100vh;
+			//height: 100vh;
 		}
         &.case-video{
             //height: 740px;
@@ -8821,7 +8821,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 				padding-right: 10%;
 
 				&__prop {
-					margin-bottom: 15px;
+					margin-bottom: 5px;
 					color: $color-grey-dark;
 				}
 
@@ -8990,6 +8990,16 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 				flex-flow: column nowrap;
 				justify-content: space-between;
 			}
+            &-flex{
+                display: grid;
+                grid-template-rows: 1fr auto;
+                &.client__grid_card-std{
+                    grid-template-rows: auto 1fr auto;
+                    &.cases__case-blue{
+                        grid-template-rows: 1fr auto;
+                    }
+                }
+            }
 			&-tall{
 				padding: 0;
 				grid-column-start: 1;
@@ -9005,7 +9015,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 					background-color: $color-grey-light;
 				}
 				&__preview{
-					height: stretch;
+					//height: stretch;
 					padding: 40px 0 0 40px;
 					position: relative;
 					border-radius: inherit;
@@ -9018,7 +9028,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 						background-color: $color-blue-dark;
 						color: $color-white;
 					}
-					display: flex;
+					display: grid;
+                    grid-template-columns: 1fr 325px;
 					justify-content: space-between;
 					&_info{
 						display: flex;
@@ -9026,6 +9037,9 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 						height: 100%;
 						padding: 0 0px 40px 0;
 						max-width: 51%;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        max-width: none;
 						&-content {
 							margin-top: auto;
 							font-size: 46px;
@@ -9036,6 +9050,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 						width: 49%;
 						object-fit: contain;
 						object-position: bottom right;
+                        width: 100%;
 						&.abr{
 							position: absolute;
 							right: 0;
@@ -9045,7 +9060,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 				}
 				&__info{
 					padding: 40px;
-					display: flex;
+					display: grid;
 					font-size: 24px;
 					line-height: 130%;
 					color: $color-white;
@@ -9091,16 +9106,21 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 				padding: 0;
 				display: flex;
 				flex-flow: row nowrap;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
 				&__image {
 					max-height: 100%;
 					max-width: calc(50% - 10px);
 					width: 100%;
+                    max-width: calc(100% - 10px);
 					&.br {
 						border-radius: inherit;
 					}
 				}
 				&__info{
 					padding: $padd;
+                    display: grid;
+                    grid-template-rows: 1fr auto;
 				}
 				.cases-slider{
 					border-radius: inherit;
@@ -9155,9 +9175,15 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			// card color/style modify
 			&-light{
 				color: $color-white;
-				a {
+				a,
+                .client__grid_card-link{
 					color: $color-white;
 				}
+                &:hover{
+                    .client__grid_card-link{
+                        color: $color-blue-dark;
+                    }
+                }
 			}
 			&-venn_background{
 				background: $color-grey-light url("img/cases-bg-venn.webp") center/cover no-repeat;
@@ -10786,11 +10812,13 @@ svg.svg-hover-filter-clear {
 			flex-basis: 650px;
 			.header {
 				// display: contents;
+                position: static;
 				color: $color-black;
 				font-size: 46px;
 				line-height: 120%;
 				flex: 1;
 				padding: 0;
+                background: transparent;
 			}
 		}
 		&-list {
