@@ -7772,7 +7772,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     .redesign-projects-slide:first-child .img {
       background-image: url("/assets/css/img/redesign/projects-back-1a.png"); }
     .redesign-projects-slide:nth-child(2) .img {
-      background-image: url("/assets/css/img/redesign/projects-back-2.png"); }
+      background-image: url("/assets/css/img/redesign/projects-back-2a.jpg"); }
     .redesign-projects-slide:nth-child(3) .img {
       background-image: url("/assets/css/img/redesign/projects-back-3.png"); }
     .redesign-projects-slide:nth-child(4) .img {
@@ -8136,9 +8136,12 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     max-width: 1087px; }
   .souvereign-top-wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 40px;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    justify-content: center; }
+    .souvereign-top-wrapper .svghover {
+      max-width: 650px; }
   .souvereign-header-wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -8501,6 +8504,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
 .services-v2__timeline {
   width: 100%; }
   .services-v2__timeline-wrapper {
+    overflow: hidden;
     padding: 40px 0 50px 0; }
     .services-v2__timeline-wrapper .container {
       padding: 0; }
@@ -10215,7 +10219,22 @@ svg.hoversvgrequest {
     margin-bottom: 20px; }
   .services-v2-img-absolute {
     max-width: 80vw;
-    height: 170px; } }
+    height: 170px; }
+
+  svg.svghover path#svg-path-move-right, svg.svghover path#svg-path-move-right-2, svg.svghover path#svg-path-move-right-3, svg.svghover path#svg-path-move-right-4, svg.svghover path#svg-path-move-right-5 {
+    fill: #fff;
+    transform: translate(340px); }
+  svg.svghover rect#svg-rect-move-right, svg.svghover rect#svg-rect-move-right-2, svg.svghover rect#svg-rect-move-right-3, svg.svghover rect#svg-rect-move-right-4, svg.svghover rect#svg-rect-move-right-5 {
+    transform: translate(340px);
+    fill: #1A60FF;
+    stroke: #1A60FF; }
+  svg.svghover path#svg-path-fill, svg.svghover path#svg-path-fill-2, svg.svghover path#svg-path-fill-3, svg.svghover path#svg-path-fill-4, svg.svghover path#svg-path-fill-5 {
+    fill: black;
+    transition: fill .8s;
+    transition-delay: .2s; }
+
+  .souvereign-top-wrapper .svghover {
+    max-width: 100% !important; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
