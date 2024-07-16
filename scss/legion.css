@@ -12484,7 +12484,8 @@ svg.hoversvgrequest {
     transition: transform .5s ease-in;
     transform: translateY(0);
     padding-bottom: 23px;
-    z-index: 2001; }
+    z-index: 2001;
+    height: 70px; }
     .header.header_scrolled {
       transform: translateY(-100px);
       transition: transform .5s ease-in;
@@ -12492,14 +12493,16 @@ svg.hoversvgrequest {
       padding-bottom: 0;
       z-index: 2001; }
     .header.header_sticky {
-      transform: translateY(-100px); }
+      transform: translateY(-100px);
+      height: 70px; }
     .header.header_transparent {
       transition: transform .5s ease-in;
       opacity: 0.75;
       background-color: rgba(30, 39, 56, 0.4);
       backdrop-filter: brightness(0.5); }
       .header.header_transparent .js-top-menu {
-        background: url("img/icon-menu2.svg") 0 0 no-repeat; }
+        background: url("img/icon-menu2.svg") 0 0 no-repeat;
+        background-size: contain; }
       .header.header_transparent .header__logo {
         opacity: 0; }
     .header.header_shift {
