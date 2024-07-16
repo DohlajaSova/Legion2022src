@@ -11950,7 +11950,11 @@ svg.hoversvgrequest {
     overflow-x: scroll;
     overflow-y: hidden; }
   .expert .expert-content-switch {
-    overflow: scroll; }
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
+    .expert .expert-content-switch::-webkit-scrollbar {
+      display: none; }
     .expert .expert-content-switch svg {
       flex-shrink: 0; }
 
