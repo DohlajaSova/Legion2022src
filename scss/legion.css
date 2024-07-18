@@ -6788,7 +6788,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     top: 0;
     width: 300px; }
     .case-container__toc-inner.closed {
-      width: 105px; }
+      width: 105px;
+      padding-bottom: 5px; }
   .case-container__toc-lev1, .case-container__toc-lev2 {
     margin-bottom: 12px; }
     .case-container__toc-lev1 a, .case-container__toc-lev2 a {
