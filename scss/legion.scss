@@ -11819,7 +11819,7 @@ svg.svg-hover-filter-clear {
 						text-decoration: none;
 					}
 					&_card {
-						width: 50%;
+						width: calc(50% - 20px);
 						display: flex;
 						flex-flow: column nowrap;
 						gap: 20px;

@@ -8427,7 +8427,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         .services-v2__accordion_tabs .tab__cases a.tab__cases_card .name {
           color: #141414; }
       .services-v2__accordion_tabs .tab__cases_card {
-        width: 50%;
+        width: calc(50% - 20px);
         display: flex;
         flex-flow: column nowrap;
         gap: 20px; }
