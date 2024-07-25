@@ -9611,7 +9611,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 					color: $color-black;
 				}
             }
-            &.active{
+            &.active,
+            &.active a{
 				color: $color-black;
             }
             &:last-child{

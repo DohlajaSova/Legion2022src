@@ -849,79 +849,81 @@ function generateCaseTOC(caseOuter) {
         // 1. массив заголовков, их топ-координаты относительно скролла
         // 2. если какой-то заголовок попадает в область (видимость или выше), помечаем его активным
         // 3. в правом блоке подсвечиваем последний из активных, все остальные убираем
-        const allHeadings = caseBody.querySelectorAll('h3, h6');
-        const allTOCHeadings = stickyTOC.getElementsByTagName('div');
-        let allHeadingsTops = new Array();
-        if (allHeadings.length) {
-            Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
-                allHeadingsTops[index] = allHeadings[index].offsetTop;
-            });
-        }
-        allHeadingsTops.splice(0, 0, caseBody.getBoundingClientRect().top + window.pageYOffset + 60); // добавили начало кейса
-
-        function placeCaseTOC() {
-            bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0]?.getBoundingClientRect().height;
-            stickyTOC.style.height = TOCHeight + 68 + "px";
-            if (bodyScrollTop > caseTop + 50) {
-                document.getElementsByClassName('case-container__toc-inner')[0]?.classList.add('fixed');
-                stickyTOC.classList.add('fixed');
-                if (wWidth > 1024 && document.getElementsByClassName('case-container')[0] != undefined) {
-                    if (bodyScrollTop > caseTop + document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height - document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height - 79)
-                        document.getElementsByClassName('js-case-outer')[0].classList.add('floored');
-                    else
-                        document.getElementsByClassName('js-case-outer')[0].classList.remove('floored');
-                }
-            }
-            else {
-                document.getElementsByClassName('case-container__toc-inner')[0]?.classList.remove('fixed');
-                stickyTOC.classList.remove('fixed');
-            }
-
+        setTimeout(function(){
+            const allHeadings = caseBody.querySelectorAll('h3, h6');
+            const allTOCHeadings = stickyTOC.getElementsByTagName('div');
+            let allHeadingsTops = new Array();
             if (allHeadings.length) {
-                let activeHeading = -1;
-                for (i = 0; i < allHeadingsTops.length; i++) {
-                    if (bodyScrollTop > (allHeadingsTops[i] - wHeight)) {
-                        activeHeading = i;
+                Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
+                    allHeadingsTops[index] = allHeadings[index].offsetTop;
+                });
+            }
+            allHeadingsTops.splice(0, 0, caseBody.getBoundingClientRect().top + window.pageYOffset + 60); // добавили начало кейса
+
+            function placeCaseTOC() {
+                bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                let TOCHeight = document.getElementsByClassName('case-container__toc-inner')[0]?.getBoundingClientRect().height;
+                stickyTOC.style.height = TOCHeight + 68 + "px";
+                if (bodyScrollTop > caseTop + 50) {
+                    document.getElementsByClassName('case-container__toc-inner')[0]?.classList.add('fixed');
+                    stickyTOC.classList.add('fixed');
+                    if (wWidth > 1024 && document.getElementsByClassName('case-container')[0] != undefined) {
+                        if (bodyScrollTop > caseTop + document.getElementsByClassName('js-case-outer')[0].getBoundingClientRect().height - document.getElementsByClassName('case-container__toc-inner')[0].getBoundingClientRect().height - 79)
+                            document.getElementsByClassName('js-case-outer')[0].classList.add('floored');
+                        else
+                            document.getElementsByClassName('js-case-outer')[0].classList.remove('floored');
                     }
                 }
-                Array.prototype.slice.call(allHeadingsTops).forEach(function (heading, index) {
-                    if (index == activeHeading) {
-                        allTOCHeadings[index + 1].classList.add('active');
+                else {
+                    document.getElementsByClassName('case-container__toc-inner')[0]?.classList.remove('fixed');
+                    stickyTOC.classList.remove('fixed');
+                }
+
+                if (allHeadings.length) {
+                    let activeHeading = -1;
+                    for (i = 0; i < allHeadingsTops.length; i++) {
+                        if (bodyScrollTop > (allHeadingsTops[i] - wHeight)) {
+                            activeHeading = i;
+                        }
                     }
-                    else {
-                        allTOCHeadings[index + 1].classList.remove('active');
-                    }
-                });
+                    Array.prototype.slice.call(allHeadingsTops).forEach(function (heading, index) {
+                        if (index == activeHeading) {
+                            allTOCHeadings[index + 1].classList.add('active');
+                        }
+                        else {
+                            allTOCHeadings[index + 1].classList.remove('active');
+                        }
+                    });
+                }
+                else {
+                    Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
+                        allTOCHeadings[index].classList.remove('active');
+                    });
+                }
             }
-            else {
-                Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
-                    allTOCHeadings[index].classList.remove('active');
-                });
+            placeCaseTOC();
+            // переинициализируем слайдер
+            let sliderCases = document.querySelectorAll(".js-cases-slider-groups");
+            let sliderCasesLeftArrow = document.querySelectorAll(".js-cases-groups-arrows-left");
+            let sliderCasesRightArrow = document.querySelectorAll(".js-cases-groups-arrows-right");
+            let sliderCasesSlider = new Array();
+            if (sliderCases.length > 0) {
+                for (i = 0; i < sliderCases.length; i++) {
+                    sliderCasesSlider[i] = tns({
+                        container: sliderCases[i],
+                        items: 1,
+                        nav: false,
+                        prevButton: sliderCasesLeftArrow[i],
+                        nextButton: sliderCasesRightArrow[i],
+                        mouseDrag: true,
+                        slideBy: 'page'
+                    });
+                }
             }
-        }
-        placeCaseTOC();
-        // переинициализируем слайдер
-        let sliderCases = document.querySelectorAll(".js-cases-slider-groups");
-        let sliderCasesLeftArrow = document.querySelectorAll(".js-cases-groups-arrows-left");
-        let sliderCasesRightArrow = document.querySelectorAll(".js-cases-groups-arrows-right");
-        let sliderCasesSlider = new Array();
-        if (sliderCases.length > 0) {
-            for (i = 0; i < sliderCases.length; i++) {
-                sliderCasesSlider[i] = tns({
-                    container: sliderCases[i],
-                    items: 1,
-                    nav: false,
-                    prevButton: sliderCasesLeftArrow[i],
-                    nextButton: sliderCasesRightArrow[i],
-                    mouseDrag: true,
-                    slideBy: 'page'
-                });
-            }
-        }
-        window.addEventListener('touch', placeCaseTOC, true);
-        window.addEventListener('scroll', placeCaseTOC, true);
-        window.addEventListener('resize', placeCaseTOC, true);
+            window.addEventListener('touch', placeCaseTOC, true);
+            window.addEventListener('scroll', placeCaseTOC, true);
+            window.addEventListener('resize', placeCaseTOC, true);
+        }, 50);
     }
 }
 

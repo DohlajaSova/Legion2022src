@@ -6800,7 +6800,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       line-height: 20px; }
       .case-container__toc-lev1 a.active, .case-container__toc-lev2 a.active {
         color: #141414; }
-    .case-container__toc-lev1.active, .case-container__toc-lev2.active {
+    .case-container__toc-lev1.active, .case-container__toc-lev1.active a, .case-container__toc-lev2.active, .case-container__toc-lev2.active a {
       color: #141414; }
     .case-container__toc-lev1:last-child, .case-container__toc-lev2:last-child {
       margin-bottom: 0; }
