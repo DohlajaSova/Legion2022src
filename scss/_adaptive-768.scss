@@ -946,6 +946,12 @@
         }
         .expert-content-switch {
             overflow: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
             svg {
                 flex-shrink: 0;
 
@@ -1743,6 +1749,7 @@
         transform:translateY(0);
         padding-bottom:23px;
         z-index: 2001;
+        height: 70px;
         &.header_scrolled{
             transform:translateY(-100px);
             transition:transform .5s ease-in;
@@ -1752,6 +1759,7 @@
         }
         &.header_sticky{
             transform:translateY(-100px);
+            height: 70px;
         }
         &.header_transparent{
             transition:transform .5s ease-in;
@@ -1760,6 +1768,7 @@
             backdrop-filter: brightness(0.5);
             .js-top-menu {
                 background: url("img/icon-menu2.svg") 0 0 no-repeat;
+                background-size: contain;
             }
             .header__logo{
                 opacity: 0;

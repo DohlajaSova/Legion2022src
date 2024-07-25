@@ -9593,6 +9593,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             
             &.closed{
                 width: 105px;
+                padding-bottom: 5px;
             }
         }
         &-lev1,
@@ -10941,7 +10942,7 @@ svg.svg-hover-filter-clear {
 			}
 			&:nth-child(2) {
 				.img {
-					background-image: url("/assets/css/img/redesign/projects-back-2.png");
+					background-image: url("/assets/css/img/redesign/projects-back-2a.jpg");
 				}
 			}
 			&:nth-child(3) {
@@ -11818,7 +11819,7 @@ svg.svg-hover-filter-clear {
 						text-decoration: none;
 					}
 					&_card {
-						width: 50%;
+						width: calc(50% - 20px);
 						display: flex;
 						flex-flow: column nowrap;
 						gap: 20px;

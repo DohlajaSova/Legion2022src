@@ -6788,7 +6788,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     top: 0;
     width: 300px; }
     .case-container__toc-inner.closed {
-      width: 105px; }
+      width: 105px;
+      padding-bottom: 5px; }
   .case-container__toc-lev1, .case-container__toc-lev2 {
     margin-bottom: 12px; }
     .case-container__toc-lev1 a, .case-container__toc-lev2 a {
@@ -7772,7 +7773,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     .redesign-projects-slide:first-child .img {
       background-image: url("/assets/css/img/redesign/projects-back-1a.png"); }
     .redesign-projects-slide:nth-child(2) .img {
-      background-image: url("/assets/css/img/redesign/projects-back-2.png"); }
+      background-image: url("/assets/css/img/redesign/projects-back-2a.jpg"); }
     .redesign-projects-slide:nth-child(3) .img {
       background-image: url("/assets/css/img/redesign/projects-back-3.png"); }
     .redesign-projects-slide:nth-child(4) .img {
@@ -8136,9 +8137,12 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     max-width: 1087px; }
   .souvereign-top-wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 40px;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    justify-content: center; }
+    .souvereign-top-wrapper .svghover {
+      max-width: 650px; }
   .souvereign-header-wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -8423,7 +8427,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         .services-v2__accordion_tabs .tab__cases a.tab__cases_card .name {
           color: #141414; }
       .services-v2__accordion_tabs .tab__cases_card {
-        width: 50%;
+        width: calc(50% - 20px);
         display: flex;
         flex-flow: column nowrap;
         gap: 20px; }
@@ -8501,6 +8505,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
 .services-v2__timeline {
   width: 100%; }
   .services-v2__timeline-wrapper {
+    overflow: hidden;
     padding: 40px 0 50px 0; }
     .services-v2__timeline-wrapper .container {
       padding: 0; }
@@ -10215,7 +10220,22 @@ svg.hoversvgrequest {
     margin-bottom: 20px; }
   .services-v2-img-absolute {
     max-width: 80vw;
-    height: 170px; } }
+    height: 170px; }
+
+  svg.svghover path#svg-path-move-right, svg.svghover path#svg-path-move-right-2, svg.svghover path#svg-path-move-right-3, svg.svghover path#svg-path-move-right-4, svg.svghover path#svg-path-move-right-5 {
+    fill: #fff;
+    transform: translate(340px); }
+  svg.svghover rect#svg-rect-move-right, svg.svghover rect#svg-rect-move-right-2, svg.svghover rect#svg-rect-move-right-3, svg.svghover rect#svg-rect-move-right-4, svg.svghover rect#svg-rect-move-right-5 {
+    transform: translate(340px);
+    fill: #1A60FF;
+    stroke: #1A60FF; }
+  svg.svghover path#svg-path-fill, svg.svghover path#svg-path-fill-2, svg.svghover path#svg-path-fill-3, svg.svghover path#svg-path-fill-4, svg.svghover path#svg-path-fill-5 {
+    fill: black;
+    transition: fill .8s;
+    transition-delay: .2s; }
+
+  .souvereign-top-wrapper .svghover {
+    max-width: 100% !important; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
@@ -11931,7 +11951,11 @@ svg.hoversvgrequest {
     overflow-x: scroll;
     overflow-y: hidden; }
   .expert .expert-content-switch {
-    overflow: scroll; }
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
+    .expert .expert-content-switch::-webkit-scrollbar {
+      display: none; }
     .expert .expert-content-switch svg {
       flex-shrink: 0; }
 
@@ -12461,7 +12485,8 @@ svg.hoversvgrequest {
     transition: transform .5s ease-in;
     transform: translateY(0);
     padding-bottom: 23px;
-    z-index: 2001; }
+    z-index: 2001;
+    height: 70px; }
     .header.header_scrolled {
       transform: translateY(-100px);
       transition: transform .5s ease-in;
@@ -12469,14 +12494,16 @@ svg.hoversvgrequest {
       padding-bottom: 0;
       z-index: 2001; }
     .header.header_sticky {
-      transform: translateY(-100px); }
+      transform: translateY(-100px);
+      height: 70px; }
     .header.header_transparent {
       transition: transform .5s ease-in;
       opacity: 0.75;
       background-color: rgba(30, 39, 56, 0.4);
       backdrop-filter: brightness(0.5); }
       .header.header_transparent .js-top-menu {
-        background: url("img/icon-menu2.svg") 0 0 no-repeat; }
+        background: url("img/icon-menu2.svg") 0 0 no-repeat;
+        background-size: contain; }
       .header.header_transparent .header__logo {
         opacity: 0; }
     .header.header_shift {
