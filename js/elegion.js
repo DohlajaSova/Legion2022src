@@ -2856,6 +2856,24 @@ docReady(function () {
         })
     }
 
+    if (document.querySelectorAll(".js-service-v2-timeline-mobile-slider").length > 0) {
+        Array.from(document.querySelectorAll(".js-service-v2-timeline-mobile-slider")).forEach(slider => {
+            tns({
+                container: slider.querySelector(".slider-container"),
+                // navContainer: slider.querySelector(".js-service-v2-timeline-mobile-slider-dots"),
+                items: 1.25,
+                gutter: 0,
+                controls: false,
+                nav: false,
+                // navPosition: 'bottom',
+                mouseDrag: true,
+                infinite: true,
+                slideBy: 'page',
+                fixedWidth: 346
+            });
+        })
+    }
+
     if (document.querySelectorAll(".js-window-location").length > 0) {
         Array.from(document.querySelectorAll(".js-window-location")).forEach(link => {
             link.addEventListener("click", () => {
