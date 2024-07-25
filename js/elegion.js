@@ -831,7 +831,8 @@ function generateCaseTOC(caseOuter) {
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         let topAdjust = 0;
-        if (wWidth > 1180) topAdjust = 27;
+        if (wWidth > 1280) topAdjust = 27;
+        else if (wWidth > 1180) topAdjust = -3;
         stickyTOC.style.top = caseTop + 66 + topAdjust + 'px';
         if (wWidth <= 1024 && document.getElementsByClassName('case-container__toc-inner')[0] != undefined) {
             document.getElementsByClassName('case-container__toc-inner')[0].classList.add('closed');

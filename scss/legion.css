@@ -6781,7 +6781,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
   max-height: 450px;
   font-size: 16px; }
   .case-container__toc-inner {
-    padding: 80px 30px 20px 40px;
+    padding: 27px 30px 20px 40px;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(4px);
     position: absolute;
@@ -6831,7 +6831,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     left: 40px;
     top: 20px; }
   .case-container__toc.fixed .case-container__toc-inner {
-    position: fixed; }
+    position: fixed;
+    padding-top: 80px; }
 
 .case-accordion {
   margin-bottom: 40px; }
@@ -9745,14 +9746,17 @@ svg.hoversvgrequest {
     font-size: 40px;
     margin-bottom: 20px; }
 
-  .case-container__toc-inner.fixed.closed {
-    padding-top: 20px;
-    padding-left: 30px;
-    width: 90px; }
-    .case-container__toc-inner.fixed.closed .case-container__toc-inner {
-      padding-top: 20px; }
-    .case-container__toc-inner.fixed.closed .sidetoc-menu {
-      top: 0; } }
+  .case-container__toc-inner {
+    padding-left: 30px; }
+    .case-container__toc-inner.fixed.closed {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      width: 90px; }
+      .case-container__toc-inner.fixed.closed .case-container__toc-inner {
+        padding-top: 20px; }
+      .case-container__toc-inner.fixed.closed .sidetoc-menu {
+        top: 0; } }
 @media only screen and (max-width: 1080px) {
   .who-we-are__widget {
     grid-template-columns: 1fr 1fr; }
@@ -14561,8 +14565,12 @@ svg.hoversvgrequest {
     padding-left: 20px;
     padding-right: 20px; }
 
+  .case-container__toc-inner {
+    padding-left: 20px; }
+    .case-container__toc-inner.closed {
+      width: 80px; }
   .case-container__toc .sidetoc-menu {
-    left: 20px; }
+    left: 0; }
 
   .client__present.case-image {
     min-height: 0; }

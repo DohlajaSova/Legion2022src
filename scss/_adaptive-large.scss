@@ -1859,9 +1859,11 @@
     .case-container{
         &__toc{
             &-inner{
+                padding-left: 30px;
                 &.fixed{
                     &.closed{
                         padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 30px;
                         width: 90px;
                         .case-container__toc-inner{

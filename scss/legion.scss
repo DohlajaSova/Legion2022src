@@ -9584,7 +9584,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		max-height: 450px;
         font-size: 16px;
         &-inner{
-            padding: 80px 30px 20px 40px;
+            padding: 27px 30px 20px 40px;
 			background-color: rgba($color-white, 0.9);
             backdrop-filter: blur(4px);
 			position: absolute;
@@ -9660,6 +9660,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			}
 			.case-container__toc-inner{
 				position: fixed;
+                padding-top: 80px;
 			}
 		}
     }
