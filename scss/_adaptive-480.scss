@@ -1071,9 +1071,14 @@
         top: 20px;
     }
     .importhead {
+        .redesign-projects-slide {
+            margin: 0;
+        }
         .container {
-            padding-top: 20px;
-            padding-bottom: 40px;
+            padding: 20px 20px 40px 20px;
+            // padding-left: 20px;
+            // padding-top: 20px;
+            // padding-bottom: 40px;
         }
         &__text {
             font-size: 16px;
@@ -1096,6 +1101,10 @@
             margin-bottom: 40px;
             padding: 30px 20px;
             height: 250px;
+            &_caption {
+                font-size: 16px;
+                line-height: 20.8px;
+            }
         }
         &__header {
             font-size: 36px;
@@ -1134,8 +1143,8 @@
             display: none;
         }
         &__heading{
-            font-size: 60px;
-            line-height: 66px;
+            font-size: 46px;
+            line-height: 52px;
             &-2 {
                 font-size: 36px;
                 line-height: 43.2px;
@@ -1143,6 +1152,39 @@
         }
         .svghover {
             max-width: 100% !important;
+        }
+        &__header{
+            font-size: 40px;
+            line-height: 44px;
+            // svg {
+            //     width: 95px;
+            // }
+        }
+        .tab {
+            height: 62px;
+            &__name {
+                font-size: 36px;
+                // line-height: 43.2px;
+                line-height: 50px;
+            }
+            &__roll {
+                padding: 19px 19px;
+                &:before {
+                    scale: .9;
+                }
+            }
+            &.active {
+                .tab__name {
+                    line-height: 43.2px;
+
+                }
+            }
+        }
+    }
+    .services-v2__timeline-wrapper {
+        .container {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }
