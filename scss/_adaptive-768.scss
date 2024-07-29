@@ -1129,9 +1129,6 @@
             line-height: 9.5vw;
             padding-top: 0;
             margin-top: 0;
-            // svg {
-            //     width: 95px;
-            // }
         }
     }
 }
@@ -3958,6 +3955,14 @@
             &_desc {
                 font-size: 16px;                
             } 
+        }
+    }
+    .services-v2 {
+        .tab__cases {
+            flex-flow: column nowrap;
+            &_card {
+                width: 100%;
+            }
         }
     }
 }
