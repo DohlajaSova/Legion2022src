@@ -1022,6 +1022,10 @@
                 &:last-child{
                     margin-right: 20px;
                 }
+                &:only-child{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
         &-blog {
@@ -1066,8 +1070,16 @@
             }
         }
     }
-    .case-container__toc .sidetoc-menu{
-        left: 20px;
+    .case-container__toc{
+        &-inner{
+            padding-left: 20px;
+            &.closed{
+                width: 80px;
+            }
+        }
+        .sidetoc-menu{
+            left: 0;
+        }
     }
     .client__present.case-image{
         min-height: 0;

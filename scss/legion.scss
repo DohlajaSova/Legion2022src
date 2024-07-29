@@ -8388,6 +8388,12 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	.service__feature_inner {
 		width: 100%;
 	}
+    .redesign-projects-slide:first-child .img {
+        background-image: url(/assets/css/img/redesign/projects-back-4.png);
+    }
+    .redesign-projects .container:first-child{
+        margin-top: 80px;
+    }
 }
 
 //white-footer
@@ -9584,7 +9590,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		max-height: 450px;
         font-size: 16px;
         &-inner{
-            padding: 80px 30px 20px 40px;
+            padding: 27px 30px 20px 40px;
 			background-color: rgba($color-white, 0.9);
             backdrop-filter: blur(4px);
 			position: absolute;
@@ -9608,7 +9614,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 					color: $color-black;
 				}
             }
-            &.active{
+            &.active,
+            &.active a{
 				color: $color-black;
             }
             &:last-child{
@@ -9660,6 +9667,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			}
 			.case-container__toc-inner{
 				position: fixed;
+                padding-top: 80px;
 			}
 		}
     }
@@ -11421,6 +11429,7 @@ svg.svg-hover-filter-clear {
 		}
 	}
 	&-header-wrapper {
+        width: 100%;
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 20px;
