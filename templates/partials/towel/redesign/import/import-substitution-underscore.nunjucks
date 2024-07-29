@@ -1,28 +1,30 @@
 <div class="redesign-projects">
   <div class="redesign-projects-wrapper">
-    <div class="redesign-projects-slide active border-radius-none">
-      <div class="img"></div>
-      <div class="wrapper">
-        <div class="head">
-          Приложение на ОС Аврора «Заметки ПРО»
-        </div>
-        <div class="component-tags tags tags_onbg">
-          <div class="tag">
-            Дискавери фаза
+      <div class="container">
+        <div class="redesign-projects-slide active border-radius-none">
+          <div class="img"></div>
+          <div class="wrapper">
+            <div class="head">
+              Приложение на ОС Аврора «Заметки ПРО»
+            </div>
+            <div class="component-tags tags tags_onbg">
+              <div class="tag">
+                Дискавери фаза
+              </div>
+              <div class="tag">
+                ОС Аврора
+              </div>
+              <div class="tag">
+                Astra Linux
+              </div>
+              <div class="tag">
+                QT
+              </div>
+            </div>
           </div>
-          <div class="tag">
-            ОС Аврора
-          </div>
-          <div class="tag">
-            Astra Linux
-          </div>
-          <div class="tag">
-            QT
-          </div>
+          <div class="card-foreground border-radius-none"></div>
         </div>
       </div>
-      <div class="card-foreground border-radius-none"></div>
-    </div>
   </div>
   <div class="container">
     <svg class="svghover" width="828" height="268" viewbox="0 0 828 268" fill="none" xmlns="http://www.w3.org/2000/svg">

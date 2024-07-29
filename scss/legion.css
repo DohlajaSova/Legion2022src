@@ -7710,6 +7710,9 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     gap: 10px;
     margin-bottom: 40px;
     overflow: auto; }
+    .redesign-projects-wrapper .container {
+      width: 100%;
+      margin-top: 80px; }
   .redesign-projects-slide {
     flex: 0;
     transition: flex .25s;
@@ -9075,6 +9078,9 @@ svg.hoversvgrequest {
   .broadwise .container {
     max-width: 960px;
     margin: auto; }
+
+  .body_astralinux .redesign-projects .container {
+    margin-top: 60px; }
 
   .broadwise .container {
     padding: 0 30px; }

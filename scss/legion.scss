@@ -10863,6 +10863,10 @@ svg.svg-hover-filter-clear {
 			gap:10px;
 			margin-bottom: 40px;
 			overflow: auto;
+            .container{
+                width: 100%;
+                margin-top: 80px;
+            }
 		}
 		&-slide {
 			flex: 0;
