@@ -8391,6 +8391,9 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     .redesign-projects-slide:first-child .img {
         background-image: url(/assets/css/img/redesign/projects-back-4.png);
     }
+    .redesign-projects .container:first-child{
+        margin-top: 80px;
+    }
 }
 
 //white-footer
@@ -10863,10 +10866,6 @@ svg.svg-hover-filter-clear {
 			gap:10px;
 			margin-bottom: 40px;
 			overflow: auto;
-            .container{
-                width: 100%;
-                margin-top: 80px;
-            }
 		}
 		&-slide {
 			flex: 0;
@@ -11430,6 +11429,7 @@ svg.svg-hover-filter-clear {
 		}
 	}
 	&-header-wrapper {
+        width: 100%;
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 20px;

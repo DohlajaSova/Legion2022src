@@ -720,11 +720,6 @@
             margin: auto;
         }
     }
-    .body_astralinux{
-        .redesign-projects .container{
-            margin-top: 60px;
-        }
-    }
     .broadwise {
         .container {
 			padding: 0 30px;
@@ -1195,6 +1190,12 @@
             & > svg{
                 width: 100%;
             }
+        }
+    }
+    
+    .body_astralinux{
+        .redesign-projects .container:first-child{
+            margin-top: 60px;
         }
     }
 }

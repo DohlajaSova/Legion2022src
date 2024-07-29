@@ -11,7 +11,4 @@
 {% include "partials/towel/redesign/import/import-substitution-worksteps.nunjucks" %}
 {% include "partials/towel/redesign/import/import-substitution-underscore.nunjucks" %}
 
-
-{% include "partials/towel/redesign/blog.nunjucks" %}
-
 {% endblock %}

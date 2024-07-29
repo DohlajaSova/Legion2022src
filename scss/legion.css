@@ -5942,6 +5942,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
   width: 100%; }
 .body_astralinux .redesign-projects-slide:first-child .img {
   background-image: url(/assets/css/img/redesign/projects-back-4.png); }
+.body_astralinux .redesign-projects .container:first-child {
+  margin-top: 80px; }
 
 .body_services-v2 .footer {
   background-color: #141414; }
@@ -7710,9 +7712,6 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     gap: 10px;
     margin-bottom: 40px;
     overflow: auto; }
-    .redesign-projects-wrapper .container {
-      width: 100%;
-      margin-top: 80px; }
   .redesign-projects-slide {
     flex: 0;
     transition: flex .25s;
@@ -8150,6 +8149,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     .souvereign-top-wrapper .svghover {
       max-width: 650px; }
   .souvereign-header-wrapper {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     gap: 20px; }
@@ -9079,9 +9079,6 @@ svg.hoversvgrequest {
     max-width: 960px;
     margin: auto; }
 
-  .body_astralinux .redesign-projects .container {
-    margin-top: 60px; }
-
   .broadwise .container {
     padding: 0 30px; }
 
@@ -9349,7 +9346,10 @@ svg.hoversvgrequest {
   .popup-feedback .button-svg-animate-container {
     max-width: 300px; }
     .popup-feedback .button-svg-animate-container > svg {
-      width: 100%; } }
+      width: 100%; }
+
+  .body_astralinux .redesign-projects .container:first-child {
+    margin-top: 60px; } }
 @media only screen and (max-width: 1180px) {
   .mobile1180-show {
     display: block !important; }
