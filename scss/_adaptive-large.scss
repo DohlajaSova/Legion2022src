@@ -1193,6 +1193,11 @@
         }
     }
     
+    .services-v2__accordion_tabs .tab__cases_card .caption{
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    
     .body_astralinux{
         .redesign-projects .container:first-child{
             margin-top: 60px;
@@ -3994,6 +3999,11 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    .tab{
+        &__desc{
+            font-size: 16px;
         }
     }
 }
