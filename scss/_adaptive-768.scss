@@ -1111,6 +1111,12 @@
                     max-height: unset;
                 }
             }
+            &__cases {
+                flex-flow: column nowrap;
+                &_card {
+                    width: 100%;
+                }
+            }
         }
         &__block{
             flex-flow: column nowrap;
@@ -2175,6 +2181,22 @@
     }
     .body_astralinux .redesign-projects-slide{
         margin: 0;
+    }
+    .services-v2 {
+        .tab {
+            &.double-650 {
+                height: 110px;
+                &.active {
+                    height: auto;
+                    .tab__img, .tab__desc {
+                        margin-top: 0;
+                    }
+                }
+                .tab__img, .tab__desc {
+                    margin-top: 110px;
+                }
+            }
+        }
     }
 }
 
@@ -3955,14 +3977,6 @@
             &_desc {
                 font-size: 16px;                
             } 
-        }
-    }
-    .services-v2 {
-        .tab__cases {
-            flex-flow: column nowrap;
-            &_card {
-                width: 100%;
-            }
         }
     }
 }

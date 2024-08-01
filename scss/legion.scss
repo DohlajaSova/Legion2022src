@@ -11786,6 +11786,14 @@ svg.svg-hover-filter-clear {
 				}
 				&__img {
 					width: 100%;
+					position: relative;
+					height: 200px;
+					img {
+						
+					position: absolute;
+					left: 50%;
+					transform: translate(-50%, 0px);
+					}
 				}
 				&__roll {
 					display: flex;

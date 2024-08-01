@@ -21,10 +21,10 @@
         </div>
       </div>
       <div class="services-v2__accordion_tabs">
-        <div class="tab js-accordion-tab active" data-accordion-tab="1">
+        <div class="tab js-accordion-tab active double-481" data-accordion-tab="1">
           <div class="tab__head">
             <div class="tab__name">
-              Дискавери фаза
+              Дискавери<br class="double-break"> фаза
             </div>
             <div class="tab__roll">
               <!-- <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
           </div>
           <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
         </div>
-        <div class="tab js-accordion-tab" data-accordion-tab="2">
+        <div class="tab js-accordion-tab double-650" data-accordion-tab="2">
           <div class="tab__head">
             <div class="tab__name">
               Выход на рынок Китая
@@ -75,10 +75,10 @@
             <div class="redesign-tags-default-tag">локализация сервиса</div>
           </div>
         </div>
-        <div class="tab js-accordion-tab" data-accordion-tab="3">
+        <div class="tab js-accordion-tab double-481" data-accordion-tab="3">
           <div class="tab__head">
             <div class="tab__name">
-              Технический аудит
+              Технический<br class="double-break"> аудит
             </div>
             <div class="tab__roll">
               <!-- <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@
       <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="2">
         <div class="services-v2__accordion_navigation">
           <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
-            Импортозамещение
+            Импорто&shy;замещение
           </div>
           <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="2">
             Комплексная разработка Mobile
@@ -138,7 +138,7 @@
           <div class="tab js-accordion-tab active" data-accordion-tab="1">
             <div class="tab__head">
               <div class="tab__name">
-                Импортозамещение
+                Импорто&shy;замещение
               </div>
               <div class="tab__roll">
                 <!-- <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@
             </div>
           <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
         </div>
-          <div class="tab js-accordion-tab" data-accordion-tab="2">
+          <div class="tab js-accordion-tab double-650" data-accordion-tab="2">
             <div class="tab__head">
               <div class="tab__name">
                 Комплексная разработка Mobile
@@ -213,7 +213,7 @@
               <div class="redesign-tags-default-tag">выделение MVP</div>
             </div>
           </div>
-          <div class="tab js-accordion-tab" data-accordion-tab="4">
+          <div class="tab js-accordion-tab double-650" data-accordion-tab="4">
             <div class="tab__head">
               <div class="tab__name">
                 Техническая поддержка
@@ -298,7 +298,7 @@
           Личный кабинет
         </div>
         <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="3">
-          Неавторизованная зона
+          Неавтори&shy;зованная зона
         </div>
         <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="4">
           Маркетплейс
@@ -336,10 +336,10 @@
             </a>
           </div>
         </div>
-        <div class="tab js-accordion-tab" data-accordion-tab="2">
+        <div class="tab js-accordion-tab double-481" data-accordion-tab="2">
           <div class="tab__head">
             <div class="tab__name">
-              Личный кабинет
+              Личный<br class="double-break"> кабинет
             </div>
             <div class="tab__roll"></div>
             <!-- <div class="tab__roll">
@@ -375,10 +375,10 @@
             </a>
           </div>
         </div>
-        <div class="tab js-accordion-tab" data-accordion-tab="3">
+        <div class="tab js-accordion-tab double-650" data-accordion-tab="3">
           <div class="tab__head">
             <div class="tab__name">
-              Неавторизованная зона
+              Неавтори&shy;зованная<br class="double-break"> зона
             </div>
             <div class="tab__roll"></div>
             <!-- <div class="tab__roll">

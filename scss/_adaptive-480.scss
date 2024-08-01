@@ -1179,7 +1179,7 @@
             // }
         }
         .tab {
-            height: 62px;
+            height: 60px;
             &__name {
                 font-size: 36px;
                 // line-height: 43.2px;
@@ -1195,6 +1195,18 @@
                 .tab__name {
                     line-height: 43.2px;
 
+                }
+            }
+            &.double-481 {
+                height: 100px;
+                &.active {
+                    height: auto;
+                    .tab__img, .tab__desc {
+                        margin-top: 0;
+                    }
+                }
+                .tab__img, .tab__desc {
+                    margin-top: 110px;
                 }
             }
         }
