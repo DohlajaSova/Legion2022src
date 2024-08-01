@@ -1,9 +1,9 @@
 <div class="services-v2">
     <div class="container js-scrollsection-4">
         <div class="services-v2__heading_wrapper">
-            <h1 class="services-v2__heading">
+            <h2 class="services-v2__heading">
                 Стек технологий
-            </h1>
+            </h2>
         </div>
         <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="4">
             <div class="services-v2__accordion_navigation">

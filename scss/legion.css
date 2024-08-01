@@ -4588,7 +4588,7 @@ a.button {
     .footer__copyright_copy {
       white-space: nowrap; }
     .footer__copyright span {
-      margin-left: 93px; }
+      margin-left: 30px; }
       .footer__copyright span:first-child {
         margin-left: 0;
         margin-right: auto; }
@@ -7846,7 +7846,11 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
           line-height: 24px;
           max-height: 72px;
           text-overflow: ellipsis;
-          overflow: hidden; }
+          overflow: hidden;
+          line-clamp: 3;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          display: -webkit-box; }
       .redesign-blog__items .card_backfull {
         background-color: #84AEFF;
         padding: 20px 28px;
@@ -8331,8 +8335,11 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   .main .top.redesign .container {
     display: flex; }
 
-.services-v2__header svg {
-  vertical-align: middle; }
+.services-v2__header {
+  font-size: 74px; }
+  .services-v2__header svg {
+    vertical-align: middle;
+    width: 190px; }
 .services-v2 .container {
   max-width: 1087px;
   padding-top: 80px;
@@ -8401,7 +8408,13 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       cursor: pointer;
       align-items: center; }
     .services-v2__accordion_tabs .tab__img {
-      width: 100%; }
+      width: 100%;
+      position: relative;
+      height: 200px; }
+      .services-v2__accordion_tabs .tab__img img {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0px); }
     .services-v2__accordion_tabs .tab__roll {
       display: flex;
       height: fit-content;
@@ -8722,6 +8735,8 @@ svg.hoversvgrequest {
     margin-left: -130px;
     margin-right: -130px; }
 
+  .services-v2__header {
+    font-size: 64px; }
   .services-v2 .request {
     padding-top: 60px; } }
 @media only screen and (max-width: 1440px) {
@@ -12076,6 +12091,10 @@ svg.hoversvgrequest {
       max-height: 40px; }
     .services-v2 .tab.active .tab__name {
       max-height: unset; }
+    .services-v2 .tab__cases {
+      flex-flow: column nowrap; }
+      .services-v2 .tab__cases_card {
+        width: 100%; }
   .services-v2__block {
     flex-flow: column nowrap;
     gap: 30px; }
@@ -12764,7 +12783,16 @@ svg.hoversvgrequest {
     margin-right: -100px; }
 
   .body_astralinux .redesign-projects-slide {
-    margin: 0; } }
+    margin: 0; }
+
+  .services-v2 .tab.double-650 {
+    height: 110px; }
+    .services-v2 .tab.double-650.active {
+      height: auto; }
+      .services-v2 .tab.double-650.active .tab__img, .services-v2 .tab.double-650.active .tab__desc {
+        margin-top: 0; }
+    .services-v2 .tab.double-650 .tab__img, .services-v2 .tab.double-650 .tab__desc {
+      margin-top: 110px; } }
 @media only screen and (max-width: 600px) {
   .dummy-v2 .dummy__container {
     background-image: url("img/404-bg-animation-small.svg");
@@ -13913,12 +13941,7 @@ svg.hoversvgrequest {
     height: 58px; }
 
   .services-v2__accordion_tabs .tab_desc {
-    font-size: 16px; }
-
-  .services-v2 .tab__cases {
-    flex-flow: column nowrap; }
-    .services-v2 .tab__cases_card {
-      width: 100%; } }
+    font-size: 16px; } }
 @media only screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 40px; }
@@ -14675,7 +14698,7 @@ svg.hoversvgrequest {
     font-size: 40px;
     line-height: 44px; }
   .services-v2 .tab {
-    height: 62px; }
+    height: 60px; }
     .services-v2 .tab__name {
       font-size: 36px;
       line-height: 50px; }
@@ -14685,6 +14708,14 @@ svg.hoversvgrequest {
         scale: .9; }
     .services-v2 .tab.active .tab__name {
       line-height: 43.2px; }
+    .services-v2 .tab.double-481 {
+      height: 100px; }
+      .services-v2 .tab.double-481.active {
+        height: auto; }
+        .services-v2 .tab.double-481.active .tab__img, .services-v2 .tab.double-481.active .tab__desc {
+          margin-top: 0; }
+      .services-v2 .tab.double-481 .tab__img, .services-v2 .tab.double-481 .tab__desc {
+        margin-top: 110px; }
 
   .services-v2__timeline-wrapper .container {
     padding-top: 0; }

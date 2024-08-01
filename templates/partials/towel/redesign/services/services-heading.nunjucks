@@ -1,6 +1,6 @@
 <div class="services-v2">
     <div class="container">
-        <h2 class="services-v2__header">
+        <h1 class="services-v2__header">
             Полный цикл разработки: 
             <span class="nowrap">
                 от
@@ -10,6 +10,6 @@
                 </svg>
             </span>
             до&nbsp;масштаби&shy;рования
-        </h2>
+        </h1>
     </div>
 </div>

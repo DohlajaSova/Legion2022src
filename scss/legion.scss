@@ -6372,7 +6372,7 @@ a.button {
 		}
 
 		span {
-			margin-left: 93px;
+			margin-left: 30px;
 
 			&:first-child {
 				margin-left: 0;
@@ -11039,6 +11039,10 @@ svg.svg-hover-filter-clear {
 						max-height: 72px;
 						text-overflow: ellipsis;
 						overflow: hidden;
+                        line-clamp: 3;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
 					}
 				}
 
@@ -11673,8 +11677,10 @@ svg.svg-hover-filter-clear {
 // versionate redesign
 .services-v2 {
 	&__header {
+        font-size: 74px;
 		svg {
 			vertical-align: middle;
+            width: 190px;
 		}
 	}
 	.container {

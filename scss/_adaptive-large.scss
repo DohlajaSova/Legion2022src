@@ -129,8 +129,10 @@
         margin-right: -130px;
     }
     .services-v2 {
+        &__header{
+            font-size: 64px;
+        }
         .request {
-            // height: 350px;
             padding-top: 60px;
         }
     }

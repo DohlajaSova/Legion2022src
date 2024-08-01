@@ -1,9 +1,9 @@
 <div class="services-v2">
   <div class="container js-scrollsection-1">
     <div class="services-v2__heading_wrapper">
-      <h1 class="services-v2__heading">
+      <h2 class="services-v2__heading">
         Консалтинг
-      </h1>
+      </h2>
       <div class="services-v2__heading-caption">
         Разберёмся, что и&nbsp;как создавать, выявим возможные риски и&nbsp;разработаем план на&nbsp;будущее
       </div>
@@ -112,9 +112,9 @@
   <div class="services-v2__container-fullwidth bg2">
     <div class="container js-scrollsection-2">
       <div class="services-v2__heading_wrapper">
-        <h1 class="services-v2__heading">
+        <h2 class="services-v2__heading">
           Разработка
-        </h1>
+        </h2>
         <div class="services-v2__heading-caption">
           Возьмём на&nbsp;себя весь процесс разработки или&nbsp;поддержим вас&nbsp;на&nbsp;определённом этапе работ
         </div>
@@ -282,9 +282,9 @@
 <div class="services-v2">
   <div class="container js-scrollsection-3">
     <div class="services-v2__heading_wrapper">
-      <h1 class="services-v2__heading">
+      <h2 class="services-v2__heading">
         Решения
-      </h1>
+      </h2>
       <div class="services-v2__heading-caption">
         С&nbsp;2008&nbsp;года разрабатываем приложения, знаем лучшие практики и&nbsp;делимся этим опытом с&nbsp;клиентами
       </div>
