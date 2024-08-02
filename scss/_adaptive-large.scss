@@ -852,7 +852,7 @@
                 margin-bottom: 100px;
             }
             svg {
-                max-width: 69%!important;
+                max-width: 69% !important;
                 height: auto;
             }
             &-list {
@@ -862,6 +862,11 @@
                 .img {
                     width: 80px;
                 }
+				&.active{
+					.wrapper{
+						width: calc(100% - 40px);
+					}
+				}
             }
         }
     }
@@ -2569,9 +2574,9 @@
         &__header {
             margin-bottom: 0;
             margin-top: 40px;
-            svg {
-                width: 120px;
-            }
+			svg{
+				margin: -8px 0;
+			}
         }
         &__accordion {
             &_tabs{

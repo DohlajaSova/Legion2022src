@@ -1173,10 +1173,10 @@
         }
         &__header{
             font-size: 40px;
-            line-height: 44px;
-            // svg {
-            //     width: 95px;
-            // }
+            svg {
+                width: 133px;
+				margin: -10px 0 -6px;
+            }
         }
         .tab {
             height: 60px;
@@ -1453,7 +1453,8 @@
     .redesign-projects-slide .wrapper {
         width: calc(100% - 23px);
         .tags .tag {
-            font-size: 3vw;
+            font-size: 2.9vw;
+			white-space: nowrap;
         } 
     }
     .case-awards{
@@ -1563,6 +1564,16 @@
         font-size: 28px;
     }
     //--- import-sub
+	.services-v2__header{
+		font-size: 32px;
+		svg{
+			width: 100px;
+			margin: -5px 0;
+		}
+	}
+	.redesign-projects svg{
+		max-width: calc(100% - 40px) !important;
+	}
 }
 // --
 

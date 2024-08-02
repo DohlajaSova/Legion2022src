@@ -875,7 +875,7 @@
                     // bottom: 18px;
                     left: 18px;
                     .head {
-                        max-width: 210px;
+                        max-width: 80%;
                         font-size: 18px;
                     }
                     .tags {
@@ -886,6 +886,9 @@
                     }
                 }
             }
+			svg{
+				max-width: 80% !important;
+			}
         }
         &-feedback-text {
             font-size: 18px;
@@ -1131,10 +1134,12 @@
             }
         }
         &__header{
-            font-size: 9vw;
-            line-height: 9.5vw;
+            font-size: 60px;
             padding-top: 0;
             margin-top: 0;
+			svg{
+				margin: -12px 0 -9px;
+			}
         }
     }
 }
@@ -3964,11 +3969,6 @@
             &_desc {
                 font-size: 16px;                
             } 
-        }
-        &__header {
-            svg {
-                height: 58px;
-            }
         }
     }
     .services-v2__accordion_tabs {
