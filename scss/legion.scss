@@ -11760,14 +11760,15 @@ svg.svg-hover-filter-clear {
 		&_tabs {
 			display: flex;
 			flex-flow: column nowrap;
-			gap: 30px;
+			gap: 10px;
 			padding-left: 15vw;
 			.tab {
 				display: flex;
 				flex-flow: column nowrap;
 				gap: 20px;
-				height: 74px;
+				height: 119px;
 				border-bottom: 1px solid $color-black;
+				padding-top: 10px;
 				padding-bottom: 30px;
 				overflow: hidden;
 				transition: height .25s;
@@ -11832,6 +11833,12 @@ svg.svg-hover-filter-clear {
 					font-size: 46px;
 					line-height: 55.2px;
 					color: $color-black;
+					height: 94px;
+					display: flex;
+					align-items: center;
+					.double-break{
+						display: none;
+					}
 				}
 				&__cases {
 					display: flex;
