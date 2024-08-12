@@ -6364,7 +6364,7 @@ a.button {
 		width: 100%;
 		margin-top: 24px;
 		color: $color-grey-dark;
-		font-size: 12px;
+		font-size: 14px;
 		justify-content: space-between;
 
 		&_copy{
@@ -11689,32 +11689,20 @@ svg.svg-hover-filter-clear {
 		max-width: 1087px;
 		padding-top: 80px;
 		padding-bottom: 80px;
-		// &.justify-center {
-		// 	display: flex;
-		// 	justify-content: center;
-		// }
 	}
 	&__container-fullwidth {
 		background-color: $color-grey-light;
-		// margin-left: 0;
-		// margin-right: 0;
-		// width: 100%!important;
-		// padding-left: 0!important;
-		// padding-right: 0!important;
-		// padding-top: 80px;
-		// padding-bottom: 80px;
-		max-width: 100%!important;
+		max-width: 100% !important;
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
-		// max-width: 1087px;
 		margin: 0 auto;
 		&.bg2 {
 			background-color: $color-grey-light;
 			.redesign-tags-default {
 				&-tag {
-					background: #FFFFFF;
-					color: #949191;
+					background: $color-white;
+					color: $color-grey-dark;
 				}
 			}
 		}
@@ -11743,7 +11731,6 @@ svg.svg-hover-filter-clear {
 		line-height: 88px;
 
 		&-caption {
-			// align-self: flex-end;
 			padding-top: 46px;
 			font-size: 20px;
 			line-height: 26px;
@@ -11760,61 +11747,77 @@ svg.svg-hover-filter-clear {
 		&_tabs {
 			display: flex;
 			flex-flow: column nowrap;
-			gap: 10px;
+			gap: 0;
 			padding-left: 15vw;
 			.tab {
 				display: flex;
 				flex-flow: column nowrap;
-				gap: 20px;
-				height: 119px;
+				gap: 0;
 				border-bottom: 1px solid $color-black;
-				padding-top: 10px;
-				padding-bottom: 30px;
-				overflow: hidden;
-				transition: height .25s;
+                padding: 20px 0;
+				
 				&:last-child {
 					border-bottom: none;
-				}
-				&.active {
-					height: auto;
-					.tab__roll {
-						// background: url(img/icon-accordion.svg) center center no-repeat #fff
-						// svg {
-    					// 	transform: rotate(90deg);
-						// }
-						&:before {
-							transform: rotate(180deg);
-						}
-					}
 				}
 				&__head {
 					display: flex;
 					justify-content: space-between;
 					cursor: pointer;
     				align-items: center;
+                    margin-bottom: -40px;
+				}
+                &__body{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+    				max-height: 0;
+    				overflow: hidden;
+                    transition: max-height 0s;
+                    margin: 20px 0;
+                    &.custom-format{
+                        padding-left: 0;
+                        .tab__list{
+                            margin-bottom: 0;
+                            li{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+				&.active {
+					.tab__roll {
+						&:before {
+							transform: rotate(180deg);
+						}
+					}
+                    .tab__head{
+                        margin-bottom: 0;
+                    }
+                    .tab__body{
+                        max-height: 1500px;
+                        transition: max-height .8s;
+                    }
 				}
 				&__img {
 					width: 100%;
-					position: relative;
-					height: 200px;
+                    overflow: hidden;
 					img {
-						
-					position: absolute;
-					left: 50%;
-					transform: translate(-50%, 0px);
+                        min-width: 100%;
+                        width: 802px;
+                        height: 200px;
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%, 0px);
+                        object-fit: cover;
 					}
 				}
 				&__roll {
 					display: flex;
 					height: fit-content;
 					padding: 22px 20px;
-					// padding: 14px 10px;
 					border: 1px solid $color-black;
 					border-radius: 8px;
 					cursor: pointer;
-					// svg {
-					// 	transition: transform .25s;
-					// }
 					position: relative;
 					&:before {
 						content: "";
@@ -11825,15 +11828,14 @@ svg.svg-hover-filter-clear {
 						left: -50%;
 						z-index: 1;
 						background: url(img/icon-accordion.svg) center center no-repeat transparent;
-						// transform: rotate(30deg);
 						transition: transform .25s;
 					}
 				}
 				&__name {
 					font-size: 46px;
-					line-height: 55.2px;
+					line-height: 1.2;
+                    padding-right: 10px;
 					color: $color-black;
-					height: 94px;
 					display: flex;
 					align-items: center;
 					.double-break{

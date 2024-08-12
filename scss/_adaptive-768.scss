@@ -939,8 +939,13 @@
             }
         }
     }
-    .footer__menu-list-wrapper{
-        gap: 60px;
+    .footer{
+        &__copyright{
+            font-size: 12px;
+        }
+        &__menu-list-wrapper{
+            gap: 60px;
+        }
     }
     .expert {
         .expert-content {
@@ -1086,6 +1091,10 @@
                 width: 100%;
                 max-width: unset;
             }
+            &_wrapper{
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
         }
         &__timeline {
             .container {
@@ -1102,17 +1111,8 @@
             margin-bottom: 0px;
         }
         .tab {
-            height: 65px;
             &__name {
-                // padding-bottom: 40px;
-                // line-height: 48px;
                 font-size: 40px;
-                max-height: 40px;
-            }
-            &.active {
-                .tab__name {
-                    max-height: unset;
-                }
             }
             &__cases {
                 flex-flow: column nowrap;
@@ -2186,22 +2186,6 @@
     }
     .body_astralinux .redesign-projects-slide{
         margin: 0;
-    }
-    .services-v2 {
-        .tab {
-            &.double-650 {
-                height: 110px;
-                &.active {
-                    height: auto;
-                    .tab__img, .tab__desc {
-                        margin-top: 0;
-                    }
-                }
-                .tab__img, .tab__desc {
-                    margin-top: 110px;
-                }
-            }
-        }
     }
 }
 

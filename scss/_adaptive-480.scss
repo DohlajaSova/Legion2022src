@@ -1179,11 +1179,8 @@
             }
         }
         .tab {
-            height: 60px;
             &__name {
                 font-size: 36px;
-                // line-height: 43.2px;
-                line-height: 50px;
             }
             &__roll {
                 padding: 19px 19px;
@@ -1191,16 +1188,8 @@
                     scale: .9;
                 }
             }
-            &.active {
-                .tab__name {
-                    line-height: 43.2px;
-
-                }
-            }
             &.double-481 {
-                height: 100px;
                 &.active {
-                    height: auto;
                     .tab__img, .tab__desc {
                         margin-top: 0;
                     }

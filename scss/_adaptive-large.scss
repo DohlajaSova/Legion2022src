@@ -2581,9 +2581,6 @@
         &__accordion {
             &_tabs{
                 padding-left: 0;
-                .tab__name {
-                    line-height: 66px;
-                }
             }
             &_navigation {
                 width: 0;
@@ -2607,6 +2604,7 @@
                 flex-flow: column nowrap;
                 gap: 10px;
                 padding-bottom: 40px;
+                margin-bottom: 30px;
             }
             &-caption {
                 padding-top: 0;

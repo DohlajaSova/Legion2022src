@@ -31,32 +31,34 @@
                         </div>
                         <div class="tab__roll"></div>
                     </div>
-                    <ul class="tab__list">
-                        <li>
-                            Kotlin
-                        </li>
-                        <li>
-                            Clean Architecture с&nbsp;MVVM, MVI presentation слоем
-                        </li>
-                        <li>
-                            Google Navigation Component, Decompose, Cicerone, Кастомная
-                        </li>
-                        <li>
-                            Сoroutines (предпочтительно) или RxJava, RxKotlin
-                        </li>
-                        <li>
-                            Room, SQLDelight
-                        </li>
-                        <li>
-                            Koin, Dagger2
-                        </li>
-                        <li>
-                            Retrofit + okHttp, Ktor
-                        </li>
-                        <li>
-                            View / Compose
-                        </li>
-                    </ul>
+                    <div class="tab__body custom-format">
+                        <ul class="tab__list">
+                            <li>
+                                Kotlin
+                            </li>
+                            <li>
+                                Clean Architecture с&nbsp;MVVM, MVI presentation слоем
+                            </li>
+                            <li>
+                                Google Navigation Component, Decompose, Cicerone, Кастомная
+                            </li>
+                            <li>
+                                Сoroutines (предпочтительно) или RxJava, RxKotlin
+                            </li>
+                            <li>
+                                Room, SQLDelight
+                            </li>
+                            <li>
+                                Koin, Dagger2
+                            </li>
+                            <li>
+                                Retrofit + okHttp, Ktor
+                            </li>
+                            <li>
+                                View / Compose
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="tab js-accordion-tab" data-accordion-tab="2">
                     <div class="tab__head">
@@ -65,35 +67,37 @@
                         </div>
                         <div class="tab__roll"></div>
                     </div>
-                    <ol class="tab__list">
-                        <li>
-                            Swift
-                        </li>
-                        <li>
-                            UIKit, SwiftUI
-                        </li>
-                        <li>
-                            Clean Swift, Modularization
-                        </li>
-                        <li>
-                            GCD, async/await
-                        </li>
-                        <li>
-                            Combine
-                        </li>
-                        <li>
-                            Core Data
-                        </li>
-                        <li>
-                            Alamofire
-                        </li>
-                        <li>
-                            Swift Package Manager, Cocoapods
-                        </li>
-                        <li>
-                            Gitlab CI, fastlane
-                        </li>
-                    </ol>
+                    <div class="tab__body custom-format">
+                        <ul class="tab__list">
+                            <li>
+                                Swift
+                            </li>
+                            <li>
+                                UIKit, SwiftUI
+                            </li>
+                            <li>
+                                Clean Swift, Modularization
+                            </li>
+                            <li>
+                                GCD, async/await
+                            </li>
+                            <li>
+                                Combine
+                            </li>
+                            <li>
+                                Core Data
+                            </li>
+                            <li>
+                                Alamofire
+                            </li>
+                            <li>
+                                Swift Package Manager, Cocoapods
+                            </li>
+                            <li>
+                                Gitlab CI, fastlane
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="tab js-accordion-tab" data-accordion-tab="3">
                     <div class="tab__head">
@@ -102,37 +106,39 @@
                         </div>
                         <div class="tab__roll"></div>
                     </div>
-                    <div class="tab__list">
-                        <li>
-                            Java, SpringBoot, Lombok, MapStruct, FeignClient, KeyCloak, Camunda
-                        </li>
-                        <li>
-                            ASP.NET, ASP.NET Core, C#
-                        </li>
-                        <li>
-                            Python, Django, Celery, FastApi
-                        </li>
-                        <li>
-                            PHP, Laravel, Yii2
-                        </li>
-                        <li>
-                            Node.js
-                        </li>
-                        <li>
-                            PostgreSQL, MySQL, MS SQL, Liquibase, Redis, Mongo
-                        </li>
-                        <li>
-                            RabbitMQ, Kafka
-                        </li>
-                        <li>
-                            Docker, Gitlab CI, Jenkins, TeamCity, ELK, AWS
-                        </li>
-                        <li>
-                            Jest, NUnit, Selenium, Mocha
-                        </li>
-                        <li>
-                            Swagger
-                        </li>
+                    <div class="tab__body custom-format">
+                        <ul class="tab__list">
+                            <li>
+                                Java, SpringBoot, Lombok, MapStruct, FeignClient, KeyCloak, Camunda
+                            </li>
+                            <li>
+                                ASP.NET, ASP.NET Core, C#
+                            </li>
+                            <li>
+                                Python, Django, Celery, FastApi
+                            </li>
+                            <li>
+                                PHP, Laravel, Yii2
+                            </li>
+                            <li>
+                                Node.js
+                            </li>
+                            <li>
+                                PostgreSQL, MySQL, MS SQL, Liquibase, Redis, Mongo
+                            </li>
+                            <li>
+                                RabbitMQ, Kafka
+                            </li>
+                            <li>
+                                Docker, Gitlab CI, Jenkins, TeamCity, ELK, AWS
+                            </li>
+                            <li>
+                                Jest, NUnit, Selenium, Mocha
+                            </li>
+                            <li>
+                                Swagger
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="tab js-accordion-tab" data-accordion-tab="4">
@@ -142,25 +148,27 @@
                         </div>
                         <div class="tab__roll"></div>
                     </div>
-                    <div class="tab__list">
-                        <li>
-                            HTML, CSS, SCSS, Stylus, Less, PostCSS, Bootstrap, BEM, Jade, Nunjucks, FreeMarker
-                        </li>
-                        <li>
-                            JavaScript, jQuery, Typescript, Handlebars, Backbone
-                        </li>
-                        <li>
-                            Socket.io, Express.js, NPM
-                        </li>
-                        <li>
-                            VueJS, Nuxt, React, Redux, Angular, Next
-                        </li>
-                        <li>
-                            Bitrix, MODX, Wordpress, Joomla
-                        </li>
-                        <li>
-                            Webpack, Gulp
-                        </li>
+                    <div class="tab__body custom-format">
+                        <ul class="tab__list">
+                            <li>
+                                HTML, CSS, SCSS, Stylus, Less, PostCSS, Bootstrap, BEM, Jade, Nunjucks, FreeMarker
+                            </li>
+                            <li>
+                                JavaScript, jQuery, Typescript, Handlebars, Backbone
+                            </li>
+                            <li>
+                                Socket.io, Express.js, NPM
+                            </li>
+                            <li>
+                                VueJS, Nuxt, React, Redux, Angular, Next
+                            </li>
+                            <li>
+                                Bitrix, MODX, Wordpress, Joomla
+                            </li>
+                            <li>
+                                Webpack, Gulp
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="tab js-accordion-tab" data-accordion-tab="5">
@@ -170,31 +178,33 @@
                         </div>
                         <div class="tab__roll"></div>
                     </div>
-                    <div class="tab__list">
-                        <li>
-                            Bitbucket, Gitlab, Jenkins
-                        </li>
-                        <li>
-                            Zeplin, Figma, Sketch
-                        </li>
-                        <li>
-                            iOS Simulator, Android Emulator, Stetho, ADB, физические устройства
-                        </li>
-                        <li>
-                            Qase.io, Allure TestOps, TestRail
-                        </li>
-                        <li>
-                            Charles, Fiddler, Proxyman, Postman, Chrome DevTools
-                        </li>
-                        <li>
-                            Pytest, Selenium, HP UFT/ALM, Appium, Espresso, XCUITest
-                        </li>
-                        <li>
-                            Slack, Mattermost
-                        </li>
-                        <li>
-                            Jira, Redmine, Trello, Confluence, Notion, Trac, IBM Jazz
-                        </li>
+                    <div class="tab__body custom-format">
+                        <ul class="tab__list">
+                            <li>
+                                Bitbucket, Gitlab, Jenkins
+                            </li>
+                            <li>
+                                Zeplin, Figma, Sketch
+                            </li>
+                            <li>
+                                iOS Simulator, Android Emulator, Stetho, ADB, физические устройства
+                            </li>
+                            <li>
+                                Qase.io, Allure TestOps, TestRail
+                            </li>
+                            <li>
+                                Charles, Fiddler, Proxyman, Postman, Chrome DevTools
+                            </li>
+                            <li>
+                                Pytest, Selenium, HP UFT/ALM, Appium, Espresso, XCUITest
+                            </li>
+                            <li>
+                                Slack, Mattermost
+                            </li>
+                            <li>
+                                Jira, Redmine, Trello, Confluence, Notion, Trac, IBM Jazz
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
