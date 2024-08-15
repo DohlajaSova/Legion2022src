@@ -10722,12 +10722,20 @@ svg.svg-hover-filter-clear {
 	&-blocks {
 		display: flex;
 		flex-flow: column nowrap;
-		gap: 100px;
+		gap: 48px;
 		.card {
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-between;
-			gap: 90px;
+			gap: 40px;
+            padding-bottom: 46px;
+            border-bottom: 1px solid $color-black;
+            align-items: center;
+            
+            &:last-child{
+                border-bottom: none;
+                padding-bottom: 0;
+            }
 			&-info {
 				display: flex;
 				flex-flow: column nowrap;
@@ -10741,6 +10749,12 @@ svg.svg-hover-filter-clear {
 			&-text {
 				font-size: 20px;
 				line-height: 130%;
+                a{
+                    color: $color-black;
+                    & > span{
+                        color: $color-blue-clean;
+                    }
+                }
 			}
 			&-tags {
 				display: flex;
@@ -10767,7 +10781,7 @@ svg.svg-hover-filter-clear {
 				border-radius: 30px;
 				flex-shrink: 0;
 				width:44%;
-				max-width: 574px;
+				max-width: 398px;
                 text-align: center;
                 img{
                     max-width: 100%;

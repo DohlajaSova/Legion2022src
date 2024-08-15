@@ -7585,12 +7585,18 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   .preservice-blocks {
     display: flex;
     flex-flow: column nowrap;
-    gap: 100px; }
+    gap: 48px; }
     .preservice-blocks .card {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      gap: 90px; }
+      gap: 40px;
+      padding-bottom: 46px;
+      border-bottom: 1px solid #141414;
+      align-items: center; }
+      .preservice-blocks .card:last-child {
+        border-bottom: none;
+        padding-bottom: 0; }
       .preservice-blocks .card-info {
         display: flex;
         flex-flow: column nowrap;
@@ -7602,6 +7608,10 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       .preservice-blocks .card-text {
         font-size: 20px;
         line-height: 130%; }
+        .preservice-blocks .card-text a {
+          color: #141414; }
+          .preservice-blocks .card-text a > span {
+            color: #1960FF; }
       .preservice-blocks .card-tags {
         display: flex;
         flex-flow: row wrap;
@@ -7624,7 +7634,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         border-radius: 30px;
         flex-shrink: 0;
         width: 44%;
-        max-width: 574px;
+        max-width: 398px;
         text-align: center; }
         .preservice-blocks .card-image img {
           max-width: 100%; }
