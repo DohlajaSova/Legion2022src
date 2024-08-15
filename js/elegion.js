@@ -2919,6 +2919,9 @@ docReady(function () {
                         tabinner.classList.remove("active");
                     })
                     tab.classList.contains("active") ? tab.classList.remove("active") : tab.classList.add("active");
+                    e.target.scrollIntoView({
+                        behavior: "smooth"
+                    })
                 })
             })
 

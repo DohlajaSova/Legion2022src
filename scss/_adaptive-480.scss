@@ -1211,6 +1211,18 @@
             flex-flow: column nowrap;
         }
     }
+    .popup-feedback{
+        &__content{
+            padding-left: 20px;
+        }
+        .request{
+            padding-right: 20px;
+            &__comment-container.centered{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {

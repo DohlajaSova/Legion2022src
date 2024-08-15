@@ -307,7 +307,6 @@ a:hover {
 .bottom-dummy {
 	height: 0;
 	.body_contacts &,
-	.body_request &,
 	.body_about &,
 	.body_news &{
 		height:74px;
@@ -7136,6 +7135,15 @@ a.button {
 	}
 }
 
+.body_request{
+    .request__textarea .button{
+        margin-bottom: 0;
+    }
+    .request__form_container{
+        padding-bottom: 0;
+    }
+}
+
 /*Safari hack for range*/
 _::-webkit-full-page-media, _:future, :root .safari_only {
     .request__range{
@@ -7552,16 +7560,16 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		background-color: transparent;
 
 		&__logo {
-			background-image: url($img-path + "logo-white.svg");
+			//background-image: url($img-path + "logo-white.svg");
 		}
 
 		&__hmenu {
-			background-image: url($img-path + "icon-menu2.svg");
+			//background-image: url($img-path + "icon-menu2.svg");
 		}
 
 		&__mmenu {
 			&>a {
-				color: $color-white;
+				//color: $color-white;
 
 				&.header__mmenu_lang {
 					color: $color-blue-dark;
@@ -7593,6 +7601,13 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     
     .feedback{
         margin-bottom: 0;
+    }
+    
+    .not-all-the-same_background{
+        margin-bottom: 0;
+        & + .news{
+            display: none;
+        }
     }
 }
 

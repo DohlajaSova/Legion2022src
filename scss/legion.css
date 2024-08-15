@@ -442,7 +442,7 @@ a:hover {
 
 .bottom-dummy {
   height: 0; }
-  .body_contacts .bottom-dummy, .body_request .bottom-dummy, .body_about .bottom-dummy, .body_news .bottom-dummy {
+  .body_contacts .bottom-dummy, .body_about .bottom-dummy, .body_news .bottom-dummy {
     height: 74px; }
   .body_news.body_news-ver2 .bottom-dummy {
     height: 0; }
@@ -5080,6 +5080,11 @@ a.button {
       transform: translateX(40vw);
       transition: 0.75s ease-in-out; }
 
+.body_request .request__textarea .button {
+  margin-bottom: 0; }
+.body_request .request__form_container {
+  padding-bottom: 0; }
+
 /*Safari hack for range*/
 _::-webkit-full-page-media .request__range, _:future .request__range, :root .safari_only .request__range {
   margin-left: -120px;
@@ -5364,15 +5369,9 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
 
 .body_career .header {
   background-color: transparent; }
-  .body_career .header__logo {
-    background-image: url("img/logo-white.svg"); }
-  .body_career .header__hmenu {
-    background-image: url("img/icon-menu2.svg"); }
-  .body_career .header__mmenu > a {
-    color: #fff; }
-    .body_career .header__mmenu > a.header__mmenu_lang {
-      color: #1E2738;
-      background-color: #fff; }
+  .body_career .header__mmenu > a.header__mmenu_lang {
+    color: #1E2738;
+    background-color: #fff; }
 .body_career .top {
   background: url("img/career.webp") top center no-repeat;
   background-size: cover;
@@ -5389,6 +5388,10 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     width: 100%; }
 .body_career .feedback {
   margin-bottom: 0; }
+.body_career .not-all-the-same_background {
+  margin-bottom: 0; }
+  .body_career .not-all-the-same_background + .news {
+    display: none; }
 
 .body_service .header {
   background-color: transparent; }
@@ -14732,7 +14735,15 @@ svg.hoversvgrequest {
     padding-top: 0; }
 
   .services-v2__accordion_tabs .tab__cases {
-    flex-flow: column nowrap; } }
+    flex-flow: column nowrap; }
+
+  .popup-feedback__content {
+    padding-left: 20px; }
+  .popup-feedback .request {
+    padding-right: 20px; }
+    .popup-feedback .request__comment-container.centered {
+      padding-left: 20px;
+      padding-right: 20px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
