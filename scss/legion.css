@@ -7963,8 +7963,9 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       /* 23.4px */ }
   .redesign-experty-projects {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
+    padding: 0 30px;
     gap: 50px; }
     .redesign-experty-projects .svg-hover-filter-clear {
       cursor: pointer; }
@@ -10205,8 +10206,6 @@ svg.hoversvgrequest {
       font-size: 22px; }
     .redesign-blog__items .card .info-wrapper .description {
       font-size: 16px; }
-  .redesign-experty-projects {
-    flex-wrap: wrap; }
   .redesign-experty .info .desc {
     width: 80%; }
   .redesign-portfolio__list .card__wrapper {
