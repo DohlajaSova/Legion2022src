@@ -10103,12 +10103,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 
 		grid-template-rows: repeat(2, 210px);
 		grid-template-columns: auto repeat(3, 210px);
-		// old
-		// grid-template-rows: repeat(2, 280px);
-		// grid-template-columns: auto repeat(3, 280px);
 		grid-auto-flow: column;
 		gap: 10px;
-		// gap: 1vw;
 		&-card {
 			$parent: &;
 			border-radius: $brad;
@@ -10119,10 +10115,10 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			justify-content: center;
 			grid-template-columns: 100%;
 			padding: 18px;
-			// aspect-ratio: 1;
 			grid-row: auto / auto;
 			cursor: pointer;
 			transition: background-color .25s;
+            position: relative;
 			&-header {
 				color: $color-blue-clean;
 				font-size: 74px;
@@ -10137,8 +10133,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 
 				transition: filter .25s;
 				align-self: end;
-				margin-right: auto;
-				margin-left: auto;
+				margin: auto;
 			}
 			&-category {
 				border-radius: $catbrad;
@@ -10149,6 +10144,9 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 				margin-right: auto;
 				opacity: 0;
 				transition: opacity .25s;
+                position: absolute;
+                bottom: 18px;
+                left: 18px;
 			}
 			&-double {
 				grid-column: 3 /5;

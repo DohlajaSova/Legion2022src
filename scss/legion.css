@@ -7163,7 +7163,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       padding: 18px;
       grid-row: auto / auto;
       cursor: pointer;
-      transition: background-color .25s; }
+      transition: background-color .25s;
+      position: relative; }
       .subheader-grid-card-header {
         color: #1960FF;
         font-size: 74px;
@@ -7177,8 +7178,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
         width: 140px;
         transition: filter .25s;
         align-self: end;
-        margin-right: auto;
-        margin-left: auto; }
+        margin: auto; }
       .subheader-grid-card-category {
         border-radius: 18px;
         background-color: #fff;
@@ -7187,7 +7187,10 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
         align-self: end;
         margin-right: auto;
         opacity: 0;
-        transition: opacity .25s; }
+        transition: opacity .25s;
+        position: absolute;
+        bottom: 18px;
+        left: 18px; }
       .subheader-grid-card-double {
         grid-column: 3 /5;
         grid-row: 2 / 2;
