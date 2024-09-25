@@ -10306,6 +10306,15 @@ svg.svg-added-filter {
 			*[fill="#F5EBDC"]{
 				fill: #F5EBDC;
 			}
+            //t2
+            *[fill="#929292"]
+            {
+                fill: #FF3495;
+            }
+            *[fill="#696868"]
+            {
+                fill: #141414;
+            }
 			//Medlinx
 			*[fill="#2B2B2B"]{
 				fill: #1F5EC7;
@@ -10457,6 +10466,15 @@ svg.svg-hover-filter-clear {
 		stop[stop-color="#F45E00"]{
 			stop-color: #F45E00;
 		}
+        //t2
+        *[fill="#929292"]
+        {
+            fill: #FF3495;
+        }
+        *[fill="#696868"]
+        {
+            fill: #141414;
+        }
 		// sber svg
 		
 		stop[stop-color="#F2E913"]{

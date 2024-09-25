@@ -7301,6 +7301,10 @@ svg.svg-added-filter stop {
   fill: #F2E913; }
 .svg-hover-filter-clear:hover svg *[fill="#F5EBDC"] {
   fill: #F5EBDC; }
+.svg-hover-filter-clear:hover svg *[fill="#929292"] {
+  fill: #FF3495; }
+.svg-hover-filter-clear:hover svg *[fill="#696868"] {
+  fill: #141414; }
 .svg-hover-filter-clear:hover svg *[fill="#2B2B2B"] {
   fill: #1F5EC7; }
 .svg-hover-filter-clear:hover svg *[fill="#767676"] {
@@ -7396,6 +7400,10 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#C9155C"] {
   stop-color: #C9155C; }
 svg.svg-hover-filter-clear:hover stop[stop-color="#F45E00"] {
   stop-color: #F45E00; }
+svg.svg-hover-filter-clear:hover *[fill="#929292"] {
+  fill: #FF3495; }
+svg.svg-hover-filter-clear:hover *[fill="#696868"] {
+  fill: #141414; }
 svg.svg-hover-filter-clear:hover stop[stop-color="#F2E913"] {
   stop-color: #F2E913; }
 svg.svg-hover-filter-clear:hover stop[stop-color="#E7E518"] {
