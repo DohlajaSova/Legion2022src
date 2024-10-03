@@ -210,103 +210,52 @@ function ContactMap(container, switcherItems, selectControl) {
     }
 }
 
-function ContactMapYandex(container, switcherItems, selectControl) {
+function ContactMapYandex(containers, switcherItems, selectControl) {
     function init() {
         ymaps.ready(function () {
-            let map = new ymaps.Map(container, {
-                center: [59.99512, 30.25057],
-                zoom: 10
-            });
-            //initMap(map);
-            initSwitcher(map);
-            putMarkers(map);
-            drawRoutes(map);
+            for (let container of containers) {
+                let data = container.previousElementSibling.dataset;
+                let lat = data.centerLat || data.markerLat;
+                let lng = data.centerLng || data.markerLng;
+                let zoom = data.zoom;
+                let map = new ymaps.Map(container, {
+                    center: [lat, lng],
+                    zoom: zoom
+                });
+                insertAddress(map);
+                putMarkers(map);
+                drawRoutes(map);
+            }
         });
     }
-
-    function initMap(map) {
-        let opts = {
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDefaultUI: true,
-            panControl: true,
-            panControlOptions: {
-                position: google.maps.ControlPosition.LEFT_CENTER
-            },
-            zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.SMALL,
-                position: google.maps.ControlPosition.LEFT_CENTER
-            },
-            mapTypeControl: false,
-            scaleControl: false,
-            streetViewControl: true,
-            overviewMapControl: true,
-            overviewMapControlOptions: {
-                opened: true
+    
+    function insertAddress(map){
+        for (let container of containers) {
+            for (let item of switcherItems) {
+                let addrBlock = item.querySelector('.map__addresses_block').innerHTML;
+                let telephone = addrBlock.querySelector('[itemprop="telephone"]').innerHTML;
+                let email = addrBlock.querySelector('[itemprop="email"]').innerHTML;
+                let country = addrBlock.querySelector('[itemprop="addressCountry"]').innerHTML;
+                let city = addrBlock.querySelector('[itemprop="addressLocality"]').innerHTML;
+                let postalCode = addrBlock.querySelector('[itemprop="postalCode"]').innerHTML;
+                let streetAddress = addrBlock.querySelector('[itemprop="streetAddress"]').innerHTML;
+                let metro = addrBlock.querySelector('.js-map-metro').innerHTML;
             }
-        };
-        map.setOptions(opts);
-    }
-
-    function toggleActiveTab(target) {
-        let clickedIndex = 0;
-        if (target.parentNode) {
-            clickedIndex = Array.from(Array.prototype.slice.call(selectControl.children)[2].children).indexOf(target);
-            let cityTabs = Array.prototype.slice.call(Array.prototype.slice.call(selectControl.children)[2].children);
-            for (let item of cityTabs) {
-                item.classList.remove('same-as-selected');
-            }
-            cityTabs[clickedIndex].classList.add('same-as-selected');
         }
-        return clickedIndex;
-    }
-
-    function toggleActiveText(index) {
-        for (let item of switcherItems) {
-            item.classList.remove('active');
-        }
-        switcherItems[index].classList.add('active');
-    }
-
-    function centerMap(map, lat, lng, zoom) {
-        map.setCenter([lat, lng], zoom, {
-            checkZoomRange: true
-        });
-    }
-
-    function initSwitcher(map) {
-        let onClick = function () {
-            let clickedIndex = toggleActiveTab(this);
-            let data = switcherItems[clickedIndex].dataset;// номер кликнутого
-            toggleActiveText(clickedIndex);
-            let lat = data.centerLat || data.markerLat;
-            let lng = data.centerLng || data.markerLng;
-            centerMap(map, lat, lng, data.zoom);
-        };
-        for (let item of Array.prototype.slice.call(selectControl.children)[2].children) {
-            item.addEventListener('click', onClick);
-        }
-        onClick.apply(selectControl[0]);
     }
 
     function putMarkers(map) {
-        officePlacemark = new ymaps.Placemark(map.getCenter(), {}, {
-            iconLayout: 'default#image',
-            iconImageHref: container.dataset.markerImage,
-            iconImageSize: [48, 48],
-            iconImageOffset: [-24, -48]
-        });
-        map.geoObjects.add(officePlacemark)
-
-        for (let item of switcherItems) {
-            let data = item.dataset;
-            officePlacemark = new ymaps.Placemark([data.markerLat, data.markerLng], {}, {
-                iconLayout: 'default#image',
-                iconImageHref: container.dataset.markerImage,
-                iconImageSize: [48, 48],
-                iconImageOffset: [-24, -48]
-            });
-            map.geoObjects.add(officePlacemark)
+        for (let container of containers) {
+            for (let item of switcherItems) {
+                let data = item.dataset;
+                officePlacemark = new ymaps.Placemark([data.markerLat, data.markerLng], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: container.dataset.markerImage,
+                    iconImageSize: [48, 48],
+                    iconImageOffset: [-24, -48]
+                });
+                map.geoObjects.add(officePlacemark)
+            }
         }
     }
 
@@ -340,8 +289,8 @@ function ContactMapYandex(container, switcherItems, selectControl) {
         let getUrl = function () {
             let base = 'https://api-maps.yandex.ru/2.1';
             let options = {
-                apikey: container.dataset.apiKeyYandex,
-                lang: container.dataset.lang
+                apikey: containers[0].dataset.apiKeyYandex,
+                lang: containers[0].dataset.lang
             };
             let args = objToQuery(options);
             return [base, args].join('?');
@@ -352,7 +301,7 @@ function ContactMapYandex(container, switcherItems, selectControl) {
         script.onload = init;
     }
 
-    if (container) {
+    if (containers) {
         load();
     }
 }
@@ -2062,7 +2011,7 @@ docReady(function () {
     }
 
     if (document.querySelector('.js-map-container')) {
-        new ContactMapYandex(document.querySelector('.js-map-container'),
+        new ContactMapYandex(document.querySelectorAll('.js-map-container'),
             document.querySelectorAll('.js-map-address'),
             document.querySelector('.js-map-select'));
     }

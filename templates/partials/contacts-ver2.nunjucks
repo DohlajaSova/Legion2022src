@@ -1,0 +1,142 @@
+<div class="contacts contacts-v2 services-v2">
+    <div class="container js-scrollsection-1">
+        <h1>Нужно что-то интереснее, чем «Наши контакты»</h1>
+        <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="1">
+            <div class="services-v2__accordion_navigation">
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
+                    Санкт-Петербург
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="2">
+                    Москва
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="3">
+                    Казань
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="4">
+                    Калининград
+                </div>
+            </div>
+            <div class="services-v2__accordion_tabs">
+                <div class="tab js-accordion-tab active" data-accordion-tab="1">
+                    <div class="tab__head">
+                        <div class="tab__name">Санкт-Петербург</div>
+                        <div class="tab__roll"></div>
+                    </div>
+                    <div class="tab__body">
+                        <div class="tab__desc">
+                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                        </div>
+                        <div class="tab__img">
+                            <address class="js-map-address active" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="15" data-center-lat="59.99350" data-center-lng="30.25057" data-marker-lat="59.99512" data-marker-lng="30.25057" data-route-points="59.989610,30.255414; 59.989744,30.255387; 59.989728,30.254567; 59.990681,30.254357; 59.990756,30.254073; 59.990764,30.252963; 59.995204,30.252893; 59.995427,30.251048; 59.995054,30.250833; 59.995121,30.25057" data-id="spb">
+                                <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="59.99512"/>
+                                    <meta itemprop="longitude" content="30.25057"/>
+                                </span>
+                                <div class="map__addresses_block">
+                                    <p class="map__addresses_title" itemprop="addressCountry">Россия</p>
+                                    <p class="map__addresses_title" itemprop="addressLocality">Санкт-Петербург</p>
+                                    <div class="map__addresses_street">
+                                        <span itemprop="postalCode">197374</span>, <span itemprop="streetAddress">ул.&nbsp;Оптиков&nbsp;4</span><br>
+                                        <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
+                                        <span class="js-map-metro">м. Старая Деревня</span>
+                                    </div>
+                                    <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
+                                </div>
+                            </address>
+                            <div id="mapSpb" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="2">
+                    <div class="tab__head">
+                        <div class="tab__name">Москва</div>
+                        <div class="tab__roll"></div>
+                    </div>
+                    <div class="tab__body">
+                        <div class="tab__desc">
+                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                        </div>
+                        <div class="tab__img">
+                            <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="55.655888" data-marker-lng="37.551484" data-id="msk">
+                                <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="55.655888"/>
+                                    <meta itemprop="longitude" content="37.551484"/>
+                                </span>
+                                <div class="map__addresses_block">
+                                    <p class="map__addresses_title" itemprop="addressCountry">Россия</p>
+                                    <p class="map__addresses_title" itemprop="addressLocality">Москва</p>
+                                    <p class="map__addresses_street">
+                                        <span itemprop="postalCode">117246</span>, <span itemprop="streetAddress">Научный проезд&nbsp;8&nbsp;стр.&nbsp;1, офис&nbsp;431</span><br>
+                                        <a href="tel:+74996537156" itemprop="telephone">+7&nbsp;499&nbsp;653&nbsp;71&nbsp;56</a>
+                                        <span class="js-map-metro">м. Калужская, Воронцовская</span>
+                                    </p>
+                                    <p class="map__addresses_email"><a href="mailto:sales@dz.ru" itemprop="email">sales@dz.ru</a></p>
+                                </div>
+                            </address>
+                            <div id="mapMsk" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="3">
+                    <div class="tab__head">
+                        <div class="tab__name">Казань</div>
+                        <div class="tab__roll"></div>
+                    </div>
+                    <div class="tab__body">
+                        <div class="tab__desc">
+                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                        </div>
+                        <div class="tab__img">
+                            <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="55.782066" data-marker-lng="49.131561" data-id="kzn">
+                                <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="55.782066"/>
+                                    <meta itemprop="longitude" content="49.131561"/>
+                                </span>
+                                <div class="map__addresses_block">
+                                    <p class="map__addresses_title" itemprop="addressCountry">Россия</p>
+                                    <p class="map__addresses_title" itemprop="addressLocality">Казань</p>
+                                    <p class="map__addresses_street">
+                                        <span itemprop="postalCode">420107</span>, <span itemprop="streetAddress">ул.&nbsp;Петербургская&nbsp;50, к.&nbsp;5, офис&nbsp;404</span><br>
+                                        <a href="tel:+78435705407" itemprop="telephone">+7&nbsp;843&nbsp;570&nbsp;540&nbsp;7</a>
+                                        <span class="js-map-metro">м. Площадь Тукая</span>
+                                    </p>
+                                    <p class="map__addresses_email"><a href="mailto:kazan@dz.ru" itemprop="email">kazan@dz.ru</a></p>
+                                </div>
+                            </address>
+                            <div id="mapKzn" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="4">
+                    <div class="tab__head">
+                        <div class="tab__name">Калининград</div>
+                        <div class="tab__roll"></div>
+                    </div>
+                    <div class="tab__body">
+                        <div class="tab__desc">
+                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                        </div>
+                        <div class="tab__img">
+                            <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="54.724697" data-marker-lng="20.467470" data-id="klg">
+                                <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
+                                    <meta itemprop="latitude" content="54.724697"/>
+                                    <meta itemprop="longitude" content="20.467470"/>
+                                </span>
+                                <div class="map__addresses_block">
+                                    <p class="map__addresses_title" itemprop="addressCountry">Россия</p>
+                                    <p class="map__addresses_title" itemprop="addressLocality">Калининград</p>
+                                    <p class="map__addresses_street">
+                                        <span itemprop="postalCode">236022</span>, <span itemprop="streetAddress">ул.&nbsp;Карла Маркса&nbsp;59</span><br>
+                                        <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
+                                    </p>
+                                    <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
+                                </div>
+                            </address>
+                            <div id="mapKlg" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

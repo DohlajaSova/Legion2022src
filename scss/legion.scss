@@ -6743,6 +6743,14 @@ a.button {
 			height: 650px;
 		}
 	}
+    
+    &.contacts-v2{
+        .map__container{
+            height: 464px;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+    }
 }
 
 .request {

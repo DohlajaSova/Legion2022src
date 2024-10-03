@@ -1,0 +1,7 @@
+<!-- contacts.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Контакты - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+    {% include "partials/contacts-ver2.nunjucks" %}
+{% endblock %}
