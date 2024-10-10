@@ -6745,10 +6745,37 @@ a.button {
 	}
     
     &.contacts-v2{
+        .container{
+            padding-top: 0;
+        }
+        h1{
+            margin-bottom: 80px;
+        }
+        .services-v2__accordion_wrapper{
+            border-top: 1px solid #000;
+            padding-top: 30px;
+        }
         .map__container{
             height: 464px;
             border-radius: 18px;
             overflow: hidden;
+        }
+        .tab__desc{
+            font-size: 20px;
+            width: 65%;
+        }
+        .tab__img{
+            .addr_short{
+                font-size: 46px;
+                margin: 20px 0 33px;
+                a{
+                    color: $color-black;
+                }
+            }
+            .addr_full{
+                font-size: 24px;
+                margin-top: 24px;
+            }
         }
     }
 }

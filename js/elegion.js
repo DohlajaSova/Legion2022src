@@ -222,26 +222,31 @@ function ContactMapYandex(containers, switcherItems, selectControl) {
                     center: [lat, lng],
                     zoom: zoom
                 });
-                insertAddress(map);
                 putMarkers(map);
                 drawRoutes(map);
+                insertAddress(container);
             }
         });
     }
     
-    function insertAddress(map){
-        for (let container of containers) {
-            for (let item of switcherItems) {
-                let addrBlock = item.querySelector('.map__addresses_block').innerHTML;
-                let telephone = addrBlock.querySelector('[itemprop="telephone"]').innerHTML;
-                let email = addrBlock.querySelector('[itemprop="email"]').innerHTML;
-                let country = addrBlock.querySelector('[itemprop="addressCountry"]').innerHTML;
-                let city = addrBlock.querySelector('[itemprop="addressLocality"]').innerHTML;
-                let postalCode = addrBlock.querySelector('[itemprop="postalCode"]').innerHTML;
-                let streetAddress = addrBlock.querySelector('[itemprop="streetAddress"]').innerHTML;
-                let metro = addrBlock.querySelector('.js-map-metro').innerHTML;
-            }
-        }
+    function insertAddress(container){
+        let addrBlock = container.parentElement.querySelector('.map__addresses_block');
+        let telephone = addrBlock.querySelector('[itemprop="telephone"]').innerHTML;
+        let email = addrBlock.querySelector('[itemprop="email"]').innerHTML;
+        let country = addrBlock.querySelector('[itemprop="addressCountry"]').innerHTML;
+        let city = addrBlock.querySelector('[itemprop="addressLocality"]').innerHTML;
+        let postalCode = addrBlock.querySelector('[itemprop="postalCode"]').innerHTML;
+        let streetAddress = addrBlock.querySelector('[itemprop="streetAddress"]').innerHTML;
+        let metro = addrBlock.querySelector('.js-map-metro') == null? '' : addrBlock.querySelector('.js-map-metro').innerHTML;
+        let addrShort = document.createElement("div");
+        addrShort.innerHTML = '<a href="tel:'+telephone.replace(/&nbsp;/g, '')+'">'+telephone+'</a><br><a href="mailto:'+email+'">'+email+'</a>';
+        addrShort.classList.add('addr_short');
+        let addrFull = document.createElement("div");
+        addrFull.innerHTML = country+", "+city+", "+postalCode+", "+streetAddress;
+        addrFull.classList.add('addr_full');
+        if (metro) addrFull.innerHTML += ", "+metro;
+        container.parentNode.insertBefore(addrShort, container);
+        container.insertAdjacentElement("afterend", addrFull);
     }
 
     function putMarkers(map) {
