@@ -1223,6 +1223,14 @@
             }
         }
     }
+    .contacts.contacts-v2{
+        .card{
+            width: 100%;
+        }
+        .tab__img .addr_short{
+            font-size: 36px;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {

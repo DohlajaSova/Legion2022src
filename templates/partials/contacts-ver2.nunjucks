@@ -1,6 +1,6 @@
 <div class="contacts contacts-v2 services-v2">
     <div class="container">
-        <h1>Нужно что-то интереснее, чем «Наши контакты»</h1>
+        <h1>Наши контакты</h1>
         <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="1">
             <div class="services-v2__accordion_navigation">
                 <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
@@ -12,9 +12,6 @@
                 <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="3">
                     Казань
                 </div>
-                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="4">
-                    Калининград
-                </div>
             </div>
             <div class="services-v2__accordion_tabs">
                 <div class="tab js-accordion-tab active" data-accordion-tab="1">
@@ -24,7 +21,7 @@
                     </div>
                     <div class="tab__body">
                         <div class="tab__desc">
-                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                            Главный офис компании e-legion по&nbsp;разработке цифровых решений для&nbsp;бизнеса
                         </div>
                         <div class="tab__img">
                             <address class="js-map-address active" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="15" data-center-lat="59.99250" data-center-lng="30.25057" data-marker-lat="59.99512" data-marker-lng="30.25057" data-route-points="59.989610,30.255414; 59.989744,30.255387; 59.989728,30.254567; 59.990681,30.254357; 59.990756,30.254073; 59.990764,30.252963; 59.995204,30.252893; 59.995427,30.251048; 59.995054,30.250833; 59.995121,30.25057" data-id="spb">
@@ -37,7 +34,7 @@
                                     <p class="map__addresses_title" itemprop="addressLocality">Санкт-Петербург</p>
                                     <div class="map__addresses_street">
                                         <span itemprop="postalCode">197374</span>, <span itemprop="streetAddress">ул.&nbsp;Оптиков&nbsp;4</span><br>
-                                        <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
+                                        <a href="tel:+78124158046" itemprop="telephone">+7&nbsp;812&nbsp;415&nbsp;80&nbsp;46</a>
                                         <span class="js-map-metro">м.&nbsp;Старая Деревня</span>
                                     </div>
                                     <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
@@ -54,7 +51,7 @@
                     </div>
                     <div class="tab__body">
                         <div class="tab__desc">
-                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                            Главный офис IT-холдинга DZ&nbsp;SYSTEMS
                         </div>
                         <div class="tab__img">
                             <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-center-lat="55.656981" data-center-lng="37.547366" data-marker-lat="55.655707" data-marker-lng="37.55168" data-route-points="55.657876,37.541976; 55.657816,37.542239; 55.657562,37.543049; 55.657425,37.543623; 55.657044,37.544642; 55.65699,37.544846; 55.656981,37.545366; 55.657102,37.546171; 55.657047,37.546342; 55.657084,37.54697; 55.65705,37.547394; 55.656984,37.547657; 55.65692,37.547893; 55.656941,37.547995; 55.656596,37.548912; 55.656167,37.550022; 55.656148,37.550253; 55.655619,37.551578; 55.655707,37.55168" data-id="msk">
@@ -67,7 +64,7 @@
                                     <p class="map__addresses_title" itemprop="addressLocality">Москва</p>
                                     <p class="map__addresses_street">
                                         <span itemprop="postalCode">117246</span>, <span itemprop="streetAddress">Научный проезд&nbsp;8&nbsp;стр.&nbsp;1, офис&nbsp;431</span><br>
-                                        <a href="tel:+74996537156" itemprop="telephone">+7&nbsp;499&nbsp;653&nbsp;71&nbsp;56</a>
+                                        <a href="tel:+74952257693" itemprop="telephone">+7&nbsp;495&nbsp;225&nbsp;76&nbsp;93</a>
                                         <span class="js-map-metro">м.&nbsp;Калужская, Воронцовская</span>
                                     </p>
                                     <p class="map__addresses_email"><a href="mailto:sales@dz.ru" itemprop="email">sales@dz.ru</a></p>
@@ -84,7 +81,7 @@
                     </div>
                     <div class="tab__body">
                         <div class="tab__desc">
-                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
+                            Представительство холдинга в&nbsp;Татарстане
                         </div>
                         <div class="tab__img">
                             <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-center-lat="55.783761" data-center-lng="49.128014" data-marker-lat="55.781753" data-marker-lng="49.132316" data-route-points="55.785171,49.126147; 55.785041,49.125932; 55.783759,49.12825; 55.783442,49.128791; 55.782884,49.129982; 55.782314,49.131232; 55.781786,49.132369; 55.781753,49.132316" data-id="kzn">
@@ -100,39 +97,10 @@
                                         <a href="tel:+78435705407" itemprop="telephone">+7&nbsp;843&nbsp;570&nbsp;540&nbsp;7</a>
                                         <span class="js-map-metro">м.&nbsp;Площадь Тукая</span>
                                     </p>
-                                    <p class="map__addresses_email"><a href="mailto:kazan@dz.ru" itemprop="email">kazan@dz.ru</a></p>
+                                    <p class="map__addresses_email"><a href="mailto:sales-kzn@dz.ru" itemprop="email">sales-kzn@dz.ru</a></p>
                                 </div>
                             </address>
                             <div id="mapKzn" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab js-accordion-tab" data-accordion-tab="4">
-                    <div class="tab__head">
-                        <div class="tab__name">Калининград</div>
-                        <div class="tab__roll"></div>
-                    </div>
-                    <div class="tab__body">
-                        <div class="tab__desc">
-                            Проведём предпроектное исследование: проанализируем рынок, спроектируем решение, выделим MVP и&nbsp;поможем быстрее окупить вложения.
-                        </div>
-                        <div class="tab__img">
-                            <address class="js-map-address" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" data-zoom="16" data-marker-lat="54.724697" data-marker-lng="20.467470" data-id="klg">
-                                <span itemscope="itemscope" itemtype="http://www.schema.org/GeoCoordinates">
-                                    <meta itemprop="latitude" content="54.724697"/>
-                                    <meta itemprop="longitude" content="20.467470"/>
-                                </span>
-                                <div class="map__addresses_block">
-                                    <p class="map__addresses_title" itemprop="addressCountry">Россия</p>
-                                    <p class="map__addresses_title" itemprop="addressLocality">Калининград</p>
-                                    <p class="map__addresses_street">
-                                        <span itemprop="postalCode">236022</span>, <span itemprop="streetAddress">ул.&nbsp;Карла Маркса&nbsp;59</span><br>
-                                        <a href="tel:+78122009509" itemprop="telephone">+7&nbsp;812&nbsp;200&nbsp;95&nbsp;09</a>
-                                    </p>
-                                    <p class="map__addresses_email"><a href="mailto:hello@e-legion.com" itemprop="email">hello@e-legion.com</a></p>
-                                </div>
-                            </address>
-                            <div id="mapKlg" class="map__container js-map-container" data-api-key="AIzaSyDyxxybb387cer7kj1H7o73NHe7KnPfIBQ" data-api-key-yandex="fac539a2-2153-4e62-98a6-4a25e7564042" data-language="ru" data-lang="ru_RU" data-marker-image="/assets/css/img/map-point-active.svg"></div>
                         </div>
                     </div>
                 </div>
@@ -141,14 +109,7 @@
     </div>
 
   <div class="container">
-    <div class="services-v2__heading_wrapper">
-      <h2 class="services-v2__heading">
-        Писанина
-      </h2>
-      <div class="services-v2__heading-caption">
-        Разберёмся, что и&nbsp;как создавать, выявим возможные риски и&nbsp;разработаем план на&nbsp;будущее
-      </div>
-    </div>
+    <h2 class="h1">Обратная связь</h2>
     <div class="services-v2__accordion_wrapper">
       <div class="services-v2__accordion_tabs">
         <div class="tab active">
@@ -159,55 +120,114 @@
           </div>
           <div class="tab__body">
               <div class="tab__desc">
-                Коммерческие предложения и подробная информация о наших продуктах  и услугах
+                Коммерческие предложения и&nbsp;подробная информация о&nbsp;наших продуктах и&nbsp;услугах
               </div>
               <div class="redesign-tags-default">
-                <div class="redesign-tags-default-tag">cокращение расходов</div>
-                <div class="redesign-tags-default-tag">проверка гипотез</div>
-                <div class="redesign-tags-default-tag">выделение MVP</div>
+                <div class="redesign-tags-default-tag">клиенты</div>
+                <div class="redesign-tags-default-tag">услуги</div>
+                <div class="redesign-tags-default-tag">кп</div>
+                <div class="redesign-tags-default-tag">заявки</div>
               </div>
-              <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
           </div>
         </div>
         <div class="tab active">
           <div class="tab__head">
             <div class="tab__name">
-              <a href="mailto:hello@e-legion.com">hello@e-legion.com</a>
+              <a href="mailto:marketing@e-legion.com">marketing@e-legion.com</a>
             </div>
           </div>
           <div class="tab__body">
               <div class="tab__desc">
-                Коммерческие предложения и подробная информация о наших продуктах  и услугах
+                Вопросы профильных мероприятий, конкурсов и&nbsp;предложения о&nbsp;сотрудничестве
               </div>
               <div class="redesign-tags-default">
-                <div class="redesign-tags-default-tag">cокращение расходов</div>
-                <div class="redesign-tags-default-tag">проверка гипотез</div>
-                <div class="redesign-tags-default-tag">выделение MVP</div>
+                <div class="redesign-tags-default-tag">сми</div>
+                <div class="redesign-tags-default-tag">партнеры</div>
+                <div class="redesign-tags-default-tag">мероприятия</div>
+                <div class="redesign-tags-default-tag">конкурсы</div>
               </div>
-              <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
           </div>
         </div>
         <div class="tab active">
           <div class="tab__head">
             <div class="tab__name">
-              <a href="mailto:hello@e-legion.com">hello@e-legion.com</a>
+              <a href="mailto:hr@e-legion.com">hr@e-legion.com</a>
             </div>
           </div>
           <div class="tab__body">
               <div class="tab__desc">
-                Коммерческие предложения и подробная информация о наших продуктах  и услугах
+                Актуальные вакансии, стажировки и&nbsp;работа с&nbsp;персоналом
               </div>
               <div class="redesign-tags-default">
-                <div class="redesign-tags-default-tag">cокращение расходов</div>
-                <div class="redesign-tags-default-tag">проверка гипотез</div>
-                <div class="redesign-tags-default-tag">выделение MVP</div>
+                <div class="redesign-tags-default-tag">работа</div>
+                <div class="redesign-tags-default-tag">вакансии</div>
+                <div class="redesign-tags-default-tag">комьюнити</div>
+                <div class="redesign-tags-default-tag">социальные проекты</div>
               </div>
-              <a class="card-link" href="">подробнее &gt;&gt;&gt;</a>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
+  <div class="contacts-v2 services-v2__container-fullwidth bg3 services-v2-relative">
+    <div class="container">
+      <div class="services-v2__heading-2">
+        Страницы e-legion в&nbsp;социальных сетях и&nbsp;на&nbsp;web-платформах
+      </div>
+      <div class="services-v2__block_wrapper">
+        <div class="services-v2__block">
+          <div class="card">
+            <div class="head social">
+              <a href="https://www.youtube.com/channel/UCM3TgJ2rmwcnD_xKMdEeOtQ" target="_blank" class="social_yt2"></a>
+            </div>
+            <div class="text">
+              Подкасты, интервью и&nbsp;отчёты с&nbsp;мероприятий
+            </div>
+          </div>
+          <div class="card">
+            <div class="head social">
+              <a href="https://vk.com/elegion" target="_blank" class="social_vk2"></a>
+            </div>
+            <div class="text">
+              Новости компании и&nbsp;легионеров
+            </div>
+          </div>
+          <div class="card">
+            <div class="head social">
+              <a href="https://vc.ru/u/414482-e-legion" target="_blank" class="social_vc2"></a>
+            </div>
+            <div class="text">
+              Экспертные статьи и&nbsp;исследования
+            </div>
+          </div>
+          <div class="card">
+            <div class="head social">
+              <a href="https://habr.com/ru/companies/e-legion/articles/" target="_blank" class="social_h2"></a>
+            </div>
+            <div class="text">
+              Профильные публикации и&nbsp;лонгриды
+            </div>
+          </div>
+          <div class="card">
+            <div class="head social">
+              <a href="https://vc.ru/u/2191281-e-legioncn" target="_blank" class="social_cn"></a>
+            </div>
+            <div class="text">
+              Новости, исследования и&nbsp;разбор бизнес-кейсов рынка Китая
+            </div>
+          </div>
+          <div class="card height-zero">
+            <div class="head social">
+              <a href="" target="_blank" class="social_rt"></a>
+            </div>
+            <div class="text">
+              Rutube
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
 </div>

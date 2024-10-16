@@ -1,7 +1,10 @@
 <!-- contacts.nunjucks -->
-{% extends "layout.nunjucks" %}
+{% extends "layout-service-v2.nunjucks" %}
 {% block title %} Контакты - {% endblock %}
 {% block links %} {% endblock %}
 {% block content %}
     {% include "partials/contacts-ver2.nunjucks" %}
+<div class="contacts-v2">
+    {% include "partials/towel/redesign/services/services-feedback.nunjucks" %}
+</div>
 {% endblock %}

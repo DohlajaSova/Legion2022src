@@ -1142,6 +1142,14 @@
 			}
         }
     }
+    .contacts.contacts-v2{
+        .card{
+            width: calc(50% - 30px);
+        }
+        .tab__img .addr_short{
+            font-size: 40px;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {

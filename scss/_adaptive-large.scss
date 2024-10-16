@@ -136,6 +136,22 @@
             padding-top: 60px;
         }
     }
+    .contacts-v2{
+        &.services-v2 {
+            .container{
+                padding-bottom: 60px;
+            }
+            .request .container,
+            &__container-fullwidth{
+                padding-bottom: 40px;
+            }
+        }
+        &.contacts{
+            .services-v2__heading-2{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1440px) {
