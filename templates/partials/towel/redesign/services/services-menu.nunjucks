@@ -1,5 +1,5 @@
 <div class="js-scroll-navigation services-v2">
-  <aside class="case-container__toc js-toc" style="top: 1249.58px; height: 329.958px;">
+  <aside class="case-container__toc js-toc">
     <div class="case-container__toc-inner">
       <a href="#" class="sidetoc-menu js-sidetoc"></a>
       <div class="case-container__toc-lev1 active" data-scroll-tab="1">
