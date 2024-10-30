@@ -1620,15 +1620,19 @@ docReady(function () {
         const editorialTop = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
         const wWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         // const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        //stickyTOC.style.height = 400 + "px";
 
         const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
         // let editorialTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height + document.getElementsByClassName('top_news')[0].getBoundingClientRect().height;
         function simplifiedToc() {
             bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            // let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
-            stickyTOC.style.height = 400 + "px";
+            //let TOCHeight = document.getElementsByClassName('js-scrollsection-1')[0]?.getBoundingClientRect().height;
+            //stickyTOC.style.height = TOCHeight + "px";
+            let contentTop = document.getElementsByClassName('header')[0].getBoundingClientRect().height +
+                        document.getElementsByClassName('services-v2')[0].getBoundingClientRect().height +
+                        document.getElementsByClassName('services-v2')[1].getBoundingClientRect().height + 80;
             
-            if (bodyScrollTop > editorialTop + 67) {
+            if (bodyScrollTop > editorialTop) {
                 // document.getElementsByClassName('case-container__toc-inner')[0].classList.add('fixed');
                 stickyTOC.classList.add('fixed');
                 if (wWidth > 1024 && document.getElementsByClassName('js-scrollsection-1')[0] != undefined) {
@@ -1664,11 +1668,13 @@ docReady(function () {
                     })
                     lev1Sel[0].classList.add("active")
                 }
+                stickyTOC.style.top =  "";
             }
 
             else {
                 document.getElementsByClassName('case-container__toc-inner')[0]?.classList.remove('fixed');
                 stickyTOC.classList.remove('fixed');
+                stickyTOC.style.top = contentTop + "px";
             }
 
             // if (allHeadings.length) {
@@ -1776,6 +1782,20 @@ docReady(function () {
         // })
         // "case-container__toc-lev1 active";
         // "js-scrollsection-1";
+
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('js-sidetoc')) {
+                e.preventDefault();
+                if (e.target.classList.contains('closed')) {
+                    e.target.classList.remove('closed');
+                    e.target.parentElement.classList.remove('closed');
+                }
+                else {
+                    e.target.classList.add('closed');
+                    e.target.parentElement.classList.add('closed');
+                }
+            }
+        }, true);
     }
 
 

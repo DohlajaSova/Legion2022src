@@ -5464,7 +5464,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
 .body_career .feedback {
   margin-bottom: 0; }
 .body_career .not-all-the-same_background {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-bottom: 45px; }
   .body_career .not-all-the-same_background + .news {
     display: none; }
 
