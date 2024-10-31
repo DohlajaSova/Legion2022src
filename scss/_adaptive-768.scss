@@ -908,7 +908,9 @@
     }
     .preservice {
         &-blocks {
+            gap: 60px;
             .card {
+                gap: 30px;
                 &-head {
                     font-size: 28px;
                 }
@@ -922,7 +924,7 @@
                     font-size: 16px;
                 }
                 &-image {
-                    aspect-ratio: 1.75;
+                    max-width: 398px;
                 }
             }
         }
@@ -3214,13 +3216,13 @@
     .social{
         justify-content: flex-start;
         a{
-            background-size:auto 33%;
-            // width:58px;
-            // height:58px;
-            // margin-bottom:13px;
+            background-size: auto 33%;
             &.social_tw,
             &.social_in{
-                background-size:auto 45%;
+                background-size: auto 45%;
+            }
+            &.social_h2{
+                background-size: 70%;
             }
         }
         &-editorial{
@@ -3717,6 +3719,9 @@
         }
         &-blocks {
             gap: 40px;
+            .card-image{
+                max-width: 300px;
+            }
         }
         &-top-wrapper {
             gap: 7px;

@@ -2394,17 +2394,20 @@
     }
     // redesign
     .preservice-blocks {
+        gap: 60px;
         .card {
-            flex-flow: column nowrap;
+            flex-flow: column-reverse nowrap;
             &-head {
                 font-size: 42px;
+            }
+            &-info{
+                width: 100%;
             }
             &-image {
                 order: 2;
                 width: 100%;
                 height: unset;
                 max-width: 574px;
-				aspect-ratio: 1.65;
                 margin: auto;
             }
             &-icons {

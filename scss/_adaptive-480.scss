@@ -462,6 +462,15 @@
             }
         }
     }
+    .popup-feedback .request{
+        padding-bottom: 130px;
+        &__comment-container{
+            padding-bottom: 20px;
+            &-container.centered{
+                padding-bottom: 0;
+            }
+        }
+    }
     .years{
         &__year{
             font-size:46px;

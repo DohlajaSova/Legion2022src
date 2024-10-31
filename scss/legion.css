@@ -4852,8 +4852,7 @@ a.button {
   .contacts.contacts-v2 .tab__name a {
     color: #141414; }
   .contacts.contacts-v2 .tab__desc {
-    font-size: 20px;
-    width: 65%; }
+    font-size: 20px; }
   .contacts.contacts-v2 .h1 + .services-v2__accordion_wrapper .tab__desc {
     width: 100%; }
   .contacts.contacts-v2 .tab__img .addr_short {
@@ -6039,7 +6038,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       background-color: #fff;
       border: 1.5px solid black; }
   .body_services-v2 .footer .social_yt {
-    background-image: url(img/icon-social-yt-w.svg);
+    background-image: url(img/icon-social-yt-w-d.svg);
     border: 1.5px solid #fff;
     flex-shrink: 0; }
     .body_services-v2 .footer .social_yt:hover {
@@ -10233,20 +10232,23 @@ svg.hoversvgrequest {
   .feedback.feedback_astralinux.feedback_compact .feedback__button {
     width: 30%; }
 
-  .preservice-blocks .card {
-    flex-flow: column nowrap; }
-    .preservice-blocks .card-head {
-      font-size: 42px; }
-    .preservice-blocks .card-image {
-      order: 2;
-      width: 100%;
-      height: unset;
-      max-width: 574px;
-      aspect-ratio: 1.65;
-      margin: auto; }
-    .preservice-blocks .card-icons svg {
-      width: 70px;
-      height: 70px; }
+  .preservice-blocks {
+    gap: 60px; }
+    .preservice-blocks .card {
+      flex-flow: column-reverse nowrap; }
+      .preservice-blocks .card-head {
+        font-size: 42px; }
+      .preservice-blocks .card-info {
+        width: 100%; }
+      .preservice-blocks .card-image {
+        order: 2;
+        width: 100%;
+        height: unset;
+        max-width: 574px;
+        margin: auto; }
+      .preservice-blocks .card-icons svg {
+        width: 70px;
+        height: 70px; }
 
   .expert {
     padding-top: 60px; }
@@ -12097,16 +12099,20 @@ svg.hoversvgrequest {
   .redesign-experty .info .desc {
     width: 100%; }
 
-  .preservice-blocks .card-head {
-    font-size: 28px; }
-  .preservice-blocks .card-text {
-    font-size: 16px; }
-  .preservice-blocks .card-tags-tag {
-    font-size: 14px; }
-  .preservice-blocks .card-link {
-    font-size: 16px; }
-  .preservice-blocks .card-image {
-    aspect-ratio: 1.75; }
+  .preservice-blocks {
+    gap: 60px; }
+    .preservice-blocks .card {
+      gap: 30px; }
+      .preservice-blocks .card-head {
+        font-size: 28px; }
+      .preservice-blocks .card-text {
+        font-size: 16px; }
+      .preservice-blocks .card-tags-tag {
+        font-size: 14px; }
+      .preservice-blocks .card-link {
+        font-size: 16px; }
+      .preservice-blocks .card-image {
+        max-width: 398px; }
   .preservice-header-wrapper h1 {
     font-size: 46px; }
   .preservice-top-wrapper {
@@ -13598,6 +13604,8 @@ svg.hoversvgrequest {
       background-size: auto 33%; }
       .social a.social_tw, .social a.social_in {
         background-size: auto 45%; }
+      .social a.social_h2 {
+        background-size: 70%; }
     .social-editorial a {
       width: 40px;
       height: 40px; }
@@ -13908,6 +13916,8 @@ svg.hoversvgrequest {
     padding-bottom: 40px; }
   .preservice-blocks {
     gap: 40px; }
+    .preservice-blocks .card-image {
+      max-width: 300px; }
   .preservice-top-wrapper {
     gap: 7px; }
   .preservice-header-wrapper span {
@@ -14382,6 +14392,13 @@ svg.hoversvgrequest {
     .request__form_tip {
       font-size: 16px;
       margin-bottom: 0; }
+
+  .popup-feedback .request {
+    padding-bottom: 130px; }
+    .popup-feedback .request__comment-container {
+      padding-bottom: 20px; }
+      .popup-feedback .request__comment-container-container.centered {
+        padding-bottom: 0; }
 
   .years__year {
     font-size: 46px;
