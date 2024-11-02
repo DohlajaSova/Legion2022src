@@ -466,8 +466,12 @@
         padding-bottom: 130px;
         &__comment-container{
             padding-bottom: 20px;
-            &-container.centered{
+            &.centered{
                 padding-bottom: 0;
+                padding-top: 20px;
+                .request__comment{
+                    padding-bottom: 25px;
+                }
             }
         }
     }

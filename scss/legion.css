@@ -4013,6 +4013,7 @@ a.button {
           top: -5px;
           margin: 0 10px -10px 0; }
       .news__grid_card-heading {
+        display: block;
         margin-bottom: 10px;
         font-size: 24px;
         line-height: 130%; }
@@ -5090,6 +5091,7 @@ a.button {
       height: 40px;
       border: none;
       border-bottom: 1px solid rgba(20, 20, 20, 0.3);
+      border-radius: 0;
       color: #141414;
       font-size: 18px; }
       .request__form_input[type="text"]:focus, .request__form_input[type="email"]:focus, .request__form_input[type="tel"]:focus, .request__form_textarea:focus {
@@ -7386,6 +7388,8 @@ svg.svg-added-filter stop {
   fill: #18C0EB; }
 .svg-hover-filter-clear:hover svg *[fill="#A2A2A2"] {
   fill: #6EE9D5; }
+.svg-hover-filter-clear:hover svg *[fill="#B2B2B2"] {
+  fill: #ffdd2d; }
 .svg-hover-filter-clear:hover svg stop[stop-color="#6600C6"] {
   stop-color: #6600C6; }
 .svg-hover-filter-clear:hover svg stop[stop-color="#C9155C"] {
@@ -7479,6 +7483,8 @@ svg.svg-hover-filter-clear:hover *[fill="#929292"] {
   fill: #FF3495; }
 svg.svg-hover-filter-clear:hover *[fill="#696868"] {
   fill: #141414; }
+svg.svg-hover-filter-clear:hover *[fill="#B2B2B2"] {
+  fill: #ffdd2d; }
 svg.svg-hover-filter-clear:hover stop[stop-color="#F2E913"] {
   stop-color: #F2E913; }
 svg.svg-hover-filter-clear:hover stop[stop-color="#E7E518"] {
@@ -12639,6 +12645,8 @@ svg.hoversvgrequest {
   .popup-feedback .select-checkmark .select-hide div {
     width: 100%;
     padding-right: 0; }
+  .popup-feedback .select-checkmark .select-hide div:nth-child(2n) {
+    width: 100%; }
 
   .popup-feedback .answer__container {
     padding-right: 15%;
@@ -14397,8 +14405,11 @@ svg.hoversvgrequest {
     padding-bottom: 130px; }
     .popup-feedback .request__comment-container {
       padding-bottom: 20px; }
-      .popup-feedback .request__comment-container-container.centered {
-        padding-bottom: 0; }
+      .popup-feedback .request__comment-container.centered {
+        padding-bottom: 0;
+        padding-top: 20px; }
+        .popup-feedback .request__comment-container.centered .request__comment {
+          padding-bottom: 25px; }
 
   .years__year {
     font-size: 46px;

@@ -5551,6 +5551,7 @@ a.button {
                 }
             }
 			&-heading{
+                display: block;
 				margin-bottom: 10px;
 				font-size: 24px;
 				line-height: 130%;
@@ -7165,6 +7166,7 @@ a.button {
 			height: 40px;
 			border: none;
 			border-bottom: 1px solid rgba($color-black, 0.3);
+            border-radius: 0;
 			color: $color-black;
 			font-size: 18px;
 
@@ -10455,6 +10457,10 @@ svg.svg-added-filter {
 			*[fill="#A2A2A2"]{
 				fill: #6EE9D5;
 			}
+			//--T-bank
+			*[fill="#B2B2B2"]{
+				fill: #ffdd2d;
+			}
 			//--Medlinx
 			stop[stop-color="#6600C6"]{
 				stop-color: #6600C6;
@@ -10466,7 +10472,6 @@ svg.svg-added-filter {
 				stop-color: #F45E00;
 			}
 			// sber svg
-			
 			stop[stop-color="#F2E913"]{
 				stop-color: #F2E913;
 			}
@@ -10605,8 +10610,11 @@ svg.svg-hover-filter-clear {
         {
             fill: #141414;
         }
+        //--T-bank
+        *[fill="#B2B2B2"]{
+            fill: #ffdd2d;
+        }
 		// sber svg
-		
 		stop[stop-color="#F2E913"]{
 			stop-color: #F2E913;
 		}

@@ -1711,6 +1711,9 @@
             width: 100%;
             padding-right: 0;
         }
+        .select-checkmark .select-hide div:nth-child(2n){
+            width: 100%;
+        }
     }
     .popup-feedback .answer__container{
         padding-right: 15%;
