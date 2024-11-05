@@ -917,6 +917,7 @@ a.button {
 			&-hide {
 				display: flex;
 				flex-wrap: wrap;
+                gap: 0 20px;
 	
 				div {
 					color: $color-grey-dark;
@@ -924,7 +925,7 @@ a.button {
 					flex-direction: row;
 					align-items: center;
 					margin-bottom: 24px;
-					width: 50%;
+					width: calc(50% - 10px);
 					cursor: pointer;
 					&:before {
 						content: "";

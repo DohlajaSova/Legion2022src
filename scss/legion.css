@@ -870,14 +870,15 @@ a.button {
     display: none; }
   .select-checkmark .select-hide {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    gap: 0 20px; }
     .select-checkmark .select-hide div {
       color: #949191;
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-bottom: 24px;
-      width: 50%;
+      width: calc(50% - 10px);
       cursor: pointer; }
       .select-checkmark .select-hide div:before {
         content: "";
