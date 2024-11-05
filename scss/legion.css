@@ -1250,7 +1250,7 @@ a.button {
       .popup-feedback__content_success .answer p small {
         font-size: 100%; }
 .popup-feedback .request {
-  padding-right: 30px; }
+  padding-right: 80px; }
 .popup-feedback .request__form {
   gap: 39px; }
 .popup-feedback .request__select {
@@ -4944,6 +4944,7 @@ a.button {
       min-height: 36px;
       border: none;
       border-bottom: 1px solid #949191;
+      border-radius: 0;
       color: #141414;
       font-size: 18px;
       resize: none;
@@ -7295,7 +7296,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
           margin-bottom: 20px; }
       .subheader-grid-card-image {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        border-radius: 18px; }
       .subheader-grid-card:hover {
         background-color: #F8F8F8; }
         .subheader-grid-card:hover .subheader-grid-card-category {
@@ -9263,6 +9265,8 @@ svg.hoversvgrequest {
       .subheader-grid-card-sub .asterisk {
         height: 24px;
         font-size: 40px; }
+      .subheader-grid-card-image {
+        border-radius: 16px; }
 
   .expert-header {
     font-size: 40px; }
@@ -9708,6 +9712,9 @@ svg.hoversvgrequest {
 
   .popup-feedback__content {
     padding: 30px 0 30px 30px; }
+  .popup-feedback__close {
+    top: 30px;
+    right: 30px; }
   .popup-feedback .request {
     padding-right: 30px; }
     .popup-feedback .request__comment-container {
@@ -14405,11 +14412,13 @@ svg.hoversvgrequest {
     padding-bottom: 130px; }
     .popup-feedback .request__comment-container {
       padding-bottom: 20px; }
+      .popup-feedback .request__comment-container .request__comment {
+        width: 100%; }
       .popup-feedback .request__comment-container.centered {
         padding-bottom: 0;
-        padding-top: 20px; }
+        padding-top: 10px; }
         .popup-feedback .request__comment-container.centered .request__comment {
-          padding-bottom: 25px; }
+          padding-bottom: 8px; }
 
   .years__year {
     font-size: 46px;
@@ -14874,7 +14883,8 @@ svg.hoversvgrequest {
     flex-flow: column nowrap; }
 
   .popup-feedback__content {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-bottom: 0; }
   .popup-feedback .request {
     padding-right: 20px; }
     .popup-feedback .request__comment-container.centered {
@@ -15050,6 +15060,8 @@ svg.hoversvgrequest {
       aspect-ratio: 2; }
     .subheader-grid-card svg {
       width: 110px; }
+    .subheader-grid-card-t2 svg {
+      width: 55px; }
 
   .top.redesign {
     margin-bottom: 20px; }

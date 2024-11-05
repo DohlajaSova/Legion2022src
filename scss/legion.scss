@@ -1435,7 +1435,7 @@ a.button {
 		}
 	}
     .request{
-        padding-right: 30px;
+        padding-right: 80px;
     }
     .request__form{
         gap: 39px;
@@ -6925,6 +6925,7 @@ a.button {
 			min-height: 36px;
 			border: none;
 			border-bottom: 1px solid $color-grey-dark;
+            border-radius: 0;
 			color: $color-black;
 			font-size: 18px;
 			resize: none;
@@ -7158,7 +7159,7 @@ a.button {
 		&_input[type="text"],
 		&_input[type="email"],
 		&_input[type="tel"],
-		&_textarea {
+		&_textarea{
 			background-color: transparent;
 			outline: none;
 			display: block;
@@ -10311,6 +10312,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			&-image {
 				width: 100%;
 				height: 100%;
+                border-radius: $catbrad;
 			}
 			&:hover {
 				background-color: $color-grey-mid;

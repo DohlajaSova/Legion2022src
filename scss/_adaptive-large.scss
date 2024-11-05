@@ -793,7 +793,10 @@
                         height: 24px;
                         font-size: 40px;
                     }
-                }    
+                } 
+                &-image{
+                    border-radius: $brad;
+                }
             }
         }
     }
@@ -1530,6 +1533,10 @@
     .popup-feedback{
         &__content{
             padding: 30px 0 30px 30px;
+        }
+        &__close{
+            top: 30px;
+            right: 30px;
         }
         .request{
             padding-right: 30px;

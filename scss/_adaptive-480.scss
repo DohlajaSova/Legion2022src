@@ -466,11 +466,14 @@
         padding-bottom: 130px;
         &__comment-container{
             padding-bottom: 20px;
+            .request__comment{
+                width: 100%;
+            }
             &.centered{
                 padding-bottom: 0;
-                padding-top: 20px;
+                padding-top: 10px;
                 .request__comment{
-                    padding-bottom: 25px;
+                    padding-bottom: 8px;
                 }
             }
         }
@@ -1227,6 +1230,7 @@
     .popup-feedback{
         &__content{
             padding-left: 20px;
+            padding-bottom: 0;
         }
         .request{
             padding-right: 20px;
@@ -1540,6 +1544,11 @@
             }
             svg {
                 width: 110px;
+            }
+            &-t2{
+                svg{
+                    width: 55px;
+                }
             }
         }
     }
