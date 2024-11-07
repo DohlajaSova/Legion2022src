@@ -1333,6 +1333,10 @@ docReady(function () {
         let curLimit = document.querySelectorAll(".js-vacancies-container")[0].dataset.limit * 1;
         let moreButton = document.querySelectorAll(".js-vacancies-more")[0];
         const transitionButtons = document.querySelectorAll(".js-vacancies-page");
+        if (vacanciesBlocks[0].children.length == 1){
+            if (vacanciesBlocks[0].children[0].classList.contains("hide"))
+                vacanciesBlocks[0].children[0].classList.remove("hide");
+        }
         if (moreButton) {
             moreButton.addEventListener("click", function (e) {
                 e.preventDefault();

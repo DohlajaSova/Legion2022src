@@ -17,7 +17,7 @@
         <div class="vacancies__container">
             <div class="vacancies__list js-vacancies-container" data-limit="4" data-page="0">
                 <div class="vacancies__container_inner">
-                <a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
+                <!--<a href="/vacancy.html" class="vacancies__list_item vacancy" data-types="['all','remote']">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
                             <div class="vacancy__title_icon"></div>
@@ -181,7 +181,7 @@
                             <div class="vacancy__body_link">Подробнее →</div>
                         </div>
                     </div>
-                </a>
+                </a>-->
                 <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide" data-types="[]">
                     <div class="vacancy__container">
                         <h3 class="vacancy__title">
