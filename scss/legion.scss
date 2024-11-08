@@ -8917,11 +8917,17 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                 min-width: 370px;
                 background: rgba($color-white, 0.6);
                 padding: 20px;
+				&:empty{
+					display: none;
+				}
             }
             &_black{
                 & + p{
                     background: rgba($color-black, 0.6);
                     color: $color-white;
+					&:empty{
+						display: none;
+					}
                 }
             }
         }
