@@ -2331,7 +2331,7 @@ a.button {
         .cases-slider-info__statics_arrows-left svg,
         .project-slider-article__statics_arrows-left svg,
         .problems-slider-groups__statics_arrows-left svg {
-          margin: 14px 23px 14px 18px; }
+          margin: 12px 23px 14px 18px; }
       .cases-slider-info__statics_arrows-right,
       .project-slider-article__statics_arrows-right,
       .problems-slider-groups__statics_arrows-right {
@@ -2339,7 +2339,7 @@ a.button {
         .cases-slider-info__statics_arrows-right svg,
         .project-slider-article__statics_arrows-right svg,
         .problems-slider-groups__statics_arrows-right svg {
-          margin: 14px 18px 14px 23px; }
+          margin: 12px 18px 14px 23px; }
       .cases-slider-info__statics_arrows svg path,
       .project-slider-article__statics_arrows svg path,
       .problems-slider-groups__statics_arrows svg path {
@@ -6281,9 +6281,13 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       min-width: 370px;
       background: rgba(255, 255, 255, 0.6);
       padding: 20px; }
+      .client__present.case-image + p:empty {
+        display: none; }
     .client__present.case-image_black + p {
       background: rgba(20, 20, 20, 0.6);
       color: #fff; }
+      .client__present.case-image_black + p:empty {
+        display: none; }
   .client__present > img {
     width: 100%; }
     .client__present > img.venn {
@@ -14535,11 +14539,11 @@ svg.hoversvgrequest {
   .problems-slider-groups__statics_arrows-left {
     left: 20px; }
     .problems-slider-groups__statics_arrows-left svg {
-      margin: 9px 15px 6px 12px; }
+      margin: 9px 14px 6px 13px; }
   .problems-slider-groups__statics_arrows-right {
     right: 20px; }
     .problems-slider-groups__statics_arrows-right svg {
-      margin: 9px 12px 6px 15px; }
+      margin: 9px 9px 6px 18px; }
 
   .news .news-item__lead {
     font-size: 14px; }
