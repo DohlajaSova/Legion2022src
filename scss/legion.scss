@@ -488,7 +488,7 @@ a.button {
         width:100%;
         background: $color-grey-light;
         border: none;
-        border-radius:42px;
+        border-radius:$border-radius;
 
         td,
         th {
@@ -562,7 +562,7 @@ a.button {
     img{
         width: 100%;
         height: auto;
-        border-radius: 42px;
+        border-radius: $border-radius;
     }
     
     .picture-title{
@@ -576,18 +576,18 @@ a.button {
             background-color: $color-blue-dark;
             color: $color-white;
             padding: 5px 10px;
-            border-radius: 42px;
+            border-radius: $border-radius;
         }
         &_grey{
             background-color: $color-grey-light;
             padding: 5px 10px;
-            border-radius: 42px;
+            border-radius: $border-radius;
         }
         &_blue{
             background-color: $color-blue;
             color: $color-white;
             padding: 5px 10px;
-            border-radius: 42px;
+            border-radius: $border-radius;
         }
     }
     
@@ -694,7 +694,7 @@ a.button {
 		top: 0;
 		margin: 0;
 		width: calc(100% - 20px);
-		border-radius: 40px;
+		border-radius: $border-radius;
 	}
 
 	&__phone {
@@ -793,7 +793,7 @@ a.button {
 			width: calc(100% - 20px);
 			left: 0;
 			top: 0;
-			border-radius: 40px;
+			border-radius: $border-radius;
 		}
 
 		.device__shadow {
@@ -815,7 +815,7 @@ a.button {
 		.device__screen {
 			width: 365px;
 			top: 8px;
-			border-radius: 40px;
+			border-radius: $border-radius;
 		}
 
 		.device__shadow {
@@ -854,7 +854,7 @@ a.button {
 					height: 61px;
 					margin-bottom: 40px;
 					padding: 12px 35px 10px;
-					border-radius: 42px;
+					border-radius: $border-radius;
 					line-height: 23px;
 					cursor: pointer;
 				}
@@ -1216,7 +1216,7 @@ a.button {
         }
         a.social_text{
             width: auto;
-            border-radius: 40px;
+            border-radius: $border-radius;
             line-height: 19px;
         }
     }
@@ -1409,7 +1409,7 @@ a.button {
 		height: inherit;
 		max-width: 1246px;
 		background: $color-white;
-		border-radius: 18px;
+		border-radius: $border-radius-small;
 		padding: 80px 0 60px 80px;
 		text-align: left;
 
@@ -1914,7 +1914,7 @@ a.button {
             width:100%;
             height:100%;
             position: absolute;
-            border-radius: 18px;
+            border-radius: $border-radius-small;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) -11.48%, rgba(0, 0, 0, 0.066) 46%, rgba(0, 0, 0, 0.6) 100%);
         }
         &_img{
@@ -1923,7 +1923,7 @@ a.button {
             bottom: 0;
             left: 0;
             right: 0;
-            border-radius: 18px;
+            border-radius: $border-radius-small;
             overflow: hidden;
             img{
                 //min-height: 100%;
@@ -2558,7 +2558,7 @@ a.button {
 					height: 100%;
 					padding: 14px;
 					background-color: transparent;
-					border-radius: 0px;
+					border-radius: 0;
 
 					&_wrapper {
 						border-radius: 30px;
@@ -2604,7 +2604,7 @@ a.button {
 			margin-bottom: 20px;
 		}
 		&_card{
-			border-radius: 42px;
+			border-radius: $border-radius;
 			position: relative;
 			&-heading{
 				font-size: 46px;
@@ -3024,7 +3024,7 @@ a.button {
 		height: 84px;
 		font-size: 46px;
 		line-height: 84px;
-		border-radius: 42px;
+		border-radius: $border-radius;
 		color: $color-white;
 		background: $color-blue;
 		text-align: center;
@@ -3117,7 +3117,7 @@ a.button {
 		&_inner {
 			padding: 60px 40px;
 			height: 100%;
-			border-radius: 42px;
+			border-radius: $border-radius;
 		}
 
 		&.problems__item p {
@@ -3709,7 +3709,7 @@ a.button {
             background-size: cover;
             color: $color-white;
             padding-top: 40px;
-            border-radius: 45px;
+            border-radius: $border-radius;
            >* {
                 padding: 0 40px;
                 line-height: 130%;
@@ -3773,7 +3773,7 @@ a.button {
                 padding: 60px 40px calc(100% - 60px);
                 background-color: $color-grey-light;
                 overflow: hidden;
-                border-radius: 42px;
+                border-radius: $border-radius;
             }
         }
     }
@@ -3794,7 +3794,7 @@ a.button {
             background-size: cover;
             color: $color-white;
             padding-top: 40px;
-            border-radius: 45px;
+            border-radius: $border-radius;
             &:hover{
                 color:$color-white;
                 text-decoration: none;
@@ -3824,11 +3824,11 @@ a.button {
             &-image{
                 margin-top: 0;
                 padding: 0;
-                border-radius: 45px;
+                border-radius: $border-radius;
             }
         }
         &_publication{
-            border-radius: 45px 45px 60px 60px;
+            border-radius: $border-radius $border-radius 60px 60px;
             height: 0;
             padding-bottom: calc(100% - 40px);
             position: relative;
@@ -3910,8 +3910,8 @@ a.button {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-bottom: 89px;
         &_item{
-            background-color:$color-grey-light;
-            border-radius:$border-radius;
+            background-color: $color-grey-light;
+            border-radius: $border-radius;
             position:relative;
             &.double{
                 grid-row-end: span 2;
@@ -4099,7 +4099,7 @@ a.button {
 			opacity: 0.2;
 			position: relative;
 			z-index: 1;
-			border-radius: 40px;
+			border-radius: $border-radius;
 			float: left;
 			margin: -20px 27px 0 0;
 		}
@@ -4738,9 +4738,9 @@ a.button {
 		}
 	}
     .project{
-        background-color:$color-grey-light;
-        border-radius:$border-radius;
-        position:relative;
+        background-color: $color-grey-light;
+        border-radius: $border-radius;
+        position: relative;
         &-with-slider{
             padding-bottom:49.3333%;
 		}
@@ -4920,7 +4920,7 @@ a.button {
 							border-radius: $border-radius $border-radius 0 0;
 						}
 						&-nodesc {
-							border-radius: 42px!important;
+							border-radius: $border-radius !important;
 							&-rubr1{
 								flex-grow: 2;
 							}
@@ -5491,7 +5491,7 @@ a.button {
 	&__grid{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		border-radius: 42px;
+		border-radius: $border-radius;
 		gap: 60px 32px;
 		a:hover {
 			text-decoration: none;
@@ -5653,7 +5653,7 @@ a.button {
                 margin-left: auto;
 	            background: url($img-path + "icon-eye.svg") center left 12px no-repeat $color-grey-light;
                 padding: 10px 12px 10px 42px;
-                border-radius:42px;
+                border-radius: $border-radius;
                 color: $color-blue-dark;
                 line-height: 20px;
             }
@@ -5724,7 +5724,7 @@ a.button {
                     object-position: center;
                     position: relative;
                     padding-bottom: 73.03%;
-					border-radius: 42px;
+					border-radius: $border-radius;
                 }
             }
 			.featured_content__tags{
@@ -5803,7 +5803,7 @@ a.button {
                 & > div{
                     height: 100%;
                     background: $color-blue-light;
-                    border-radius: 42px;
+                    border-radius: $border-radius;
                     padding: 100px 30px 0;
                     *{
                         color:$color-white;
@@ -6740,7 +6740,7 @@ a.button {
 		}
 
 		&__container {
-			border-radius: 42px;
+			border-radius: $border-radius;
 			width: 100%;
 			height: 650px;
 		}
@@ -6761,7 +6761,7 @@ a.button {
         }
         .map__container{
             height: 464px;
-            border-radius: 18px;
+            border-radius: $border-radius-small;
             overflow: hidden;
         }
         .tab__name{
@@ -7252,7 +7252,7 @@ a.button {
 			width: 100%;
 			background: $color-blue-clean;
 			color: $color-white;
-            border-radius: 18px;
+            border-radius: $border-radius-small;
             position: relative;
 		}
         &:hover,
@@ -7794,7 +7794,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	flex-direction: column;
 	background-color: $color-blue-dark;
 	height: 100%;
-	border-radius: 70px 70px 42px 42px;
+	border-radius: 70px 70px $border-radius $border-radius;
 
 	&__history {
 		display: inline-block;
@@ -7802,7 +7802,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		color: $color-blue-dark;
 		text-align: center;
 		border: 1px solid $color-grey-dark;
-		border-radius: 20px;
+		border-radius: $border-radius-small;
 		padding: 4px 10px 2px;
 	}
 
@@ -7846,7 +7846,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 
 	&__container {
 		background-color: $color-grey-light;
-		border-radius: 42px;
+		border-radius: $border-radius;
 		flex-grow: 1;
 		padding: 35px 40px;
 	}
@@ -7895,12 +7895,12 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		background: $color-grey-light;
-		border-radius: 42px;
+		border-radius: $border-radius;
 		margin: 60px 0px 120px;
 
 		&_img {
 			width: 50%;
-			border-radius: 42px;
+			border-radius: $border-radius;
 			overflow: hidden;
 			position: relative;
 			height: 0;
@@ -8018,7 +8018,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			&-case {
 				width: 50%;
 				background: $color-grey-light;
-				border-radius: 42px;
+				border-radius: $border-radius;
 				display: grid;
 				grid-template-columns: max-content auto;
 				grid-template-rows: auto;
@@ -8029,7 +8029,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 					grid-template-columns: repeat(2, minmax(calc(50% - 6px), 137px));
 					grid-template-rows: repeat(2, minmax(auto, 137px));
 					background-color: $color-blue-dark;
-					border-radius: 42px;
+					border-radius: $border-radius;
 					row-gap: 12px;
 					column-gap: 12px;
 					padding: 13px 18px;
@@ -8236,7 +8236,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		border-radius: inherit;
 	}
 	.service__feature_inner-case {
-		border-radius: 44px;
+		border-radius: $border-radius;
 	}
 	.service__feature_inner-case__visual_full-wrapper{
 		border-radius: 38px;
@@ -8396,7 +8396,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 					height: 100%;
 					top: 0;
 					left: 0;
-					border-radius: 42px;
+					border-radius: $border-radius;
 					box-shadow: inset 0 -90px 90px -90px $color-black;
 					z-index: 1;
 					opacity: 0;
@@ -9133,7 +9133,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 			text-decoration: none;
 		}
 		&_card{
-			border-radius: 42px;
+			border-radius: $border-radius;
 			padding: $padd;
 			background-color: $color-grey-light;
 			overflow: hidden;
@@ -9478,7 +9478,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             background-size: cover;
             color: $color-white;
             padding-top: 40px;
-            border-radius: 45px;
+            border-radius: $border-radius;
             > * {
                 padding: 0 40px;
                 line-height: 130%;
@@ -9676,7 +9676,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
         &-inner{
             border: 1px solid $color-grey-dark;
             padding: 30px 20px 20px;
-            border-radius: 42px;
+            border-radius: $border-radius;
 			background-color:$color-white;
             position: fixed;
             top:20px;
@@ -10236,8 +10236,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	margin-bottom: 80px;
 	color: $color-black;
 	&-grid {
-		$brad: 18px;
-		$catbrad: 18px;
+		$brad: $border-radius-small;
+		$catbrad: $border-radius-small;
 
 		display: grid;
 
@@ -11110,7 +11110,7 @@ svg.svg-hover-filter-clear {
 			}
 			.img {
 				cursor: pointer;
-				border-radius: 16px;
+				border-radius: $border-radius-small;
 				width: 100px;
 				height: 618px;
 				background-position: center center;
@@ -11534,7 +11534,7 @@ svg.svg-hover-filter-clear {
 				&.active {
 					color: var(--Black, #141414);
 					border: 1px solid var(--Black, #141414);
-					border-radius: 20px;
+					border-radius: $border-radius-small;
 				}
 				color: var(--Grey-Dark, #949191);
 				padding: 0 12px;

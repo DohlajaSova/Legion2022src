@@ -727,7 +727,7 @@ a.button {
     top: 0;
     margin: 0;
     width: calc(100% - 20px);
-    border-radius: 40px; }
+    border-radius: 42px; }
   .device__phone {
     width: 324px;
     margin: -10px;
@@ -799,7 +799,7 @@ a.button {
       width: calc(100% - 20px);
       left: 0;
       top: 0;
-      border-radius: 40px; }
+      border-radius: 42px; }
     .device_fit-width .device__shadow {
       width: 100%; }
     .device_fit-width .device__phone {
@@ -811,7 +811,7 @@ a.button {
     .device_wide .device__screen {
       width: 365px;
       top: 8px;
-      border-radius: 40px; }
+      border-radius: 42px; }
     .device_wide .device__shadow {
       width: 380px; }
     .device_wide .device__phone {
@@ -1082,7 +1082,7 @@ a.button {
       color: #fff; }
     .social-editorial a.social_text {
       width: auto;
-      border-radius: 40px;
+      border-radius: 42px;
       line-height: 19px; }
 
 .circle {
@@ -2016,7 +2016,7 @@ a.button {
           height: 100%;
           padding: 14px;
           background-color: transparent;
-          border-radius: 0px; }
+          border-radius: 0; }
           .cases__case + .zero-case .cases__case_container .service__feature_inner-case__visual_wrapper {
             border-radius: 30px; }
     .cases__case_desc {
@@ -2809,7 +2809,7 @@ a.button {
     background-size: cover;
     color: #fff;
     padding-top: 40px;
-    border-radius: 45px; }
+    border-radius: 42px; }
     .case3__content_card > * {
       padding: 0 40px;
       line-height: 130%; }
@@ -2876,7 +2876,7 @@ a.button {
     background-size: cover;
     color: #fff;
     padding-top: 40px;
-    border-radius: 45px; }
+    border-radius: 42px; }
     .case-common__content_card:hover {
       color: #fff;
       text-decoration: none; }
@@ -2900,9 +2900,9 @@ a.button {
     .case-common__content_card-image {
       margin-top: 0;
       padding: 0;
-      border-radius: 45px; }
+      border-radius: 42px; }
   .case-common__content_publication {
-    border-radius: 45px 45px 60px 60px;
+    border-radius: 42px 42px 60px 60px;
     height: 0;
     padding-bottom: calc(100% - 40px);
     position: relative; }
@@ -3092,7 +3092,7 @@ a.button {
       opacity: 0.2;
       position: relative;
       z-index: 1;
-      border-radius: 40px;
+      border-radius: 42px;
       float: left;
       margin: -20px 27px 0 0; }
     .problems__more::after {
@@ -5509,7 +5509,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     color: #1E2738;
     text-align: center;
     border: 1px solid #949191;
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 4px 10px 2px; }
   .years__year {
     font-size: 180px;
@@ -5809,7 +5809,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
 .body_aurora .service__feature_inner-case__visual_full, .body_astralinux .service__feature_inner-case__visual_full {
   border-radius: inherit; }
 .body_aurora .service__feature_inner-case, .body_astralinux .service__feature_inner-case {
-  border-radius: 44px; }
+  border-radius: 42px; }
 .body_aurora .service__feature_inner-case__visual_full-wrapper, .body_astralinux .service__feature_inner-case__visual_full-wrapper {
   border-radius: 38px; }
 .body_aurora .service__feature_inner-case__visual, .body_astralinux .service__feature_inner-case__visual {
@@ -6660,7 +6660,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     background-size: cover;
     color: #fff;
     padding-top: 40px;
-    border-radius: 45px; }
+    border-radius: 42px; }
     .case3__content_card > * {
       padding: 0 40px;
       line-height: 130%; }
@@ -7865,7 +7865,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
         border-radius: 0; }
     .redesign-projects-slide .img {
       cursor: pointer;
-      border-radius: 16px;
+      border-radius: 18px;
       width: 100px;
       height: 618px;
       background-position: center center;
@@ -8201,7 +8201,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
       .redesign-archive__pagination .page-wrapper.active {
         color: var(--Black, #141414);
         border: 1px solid var(--Black, #141414);
-        border-radius: 20px; }
+        border-radius: 18px; }
 .redesign-tags-default {
   display: flex;
   flex-flow: row wrap;
