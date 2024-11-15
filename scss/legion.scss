@@ -11064,7 +11064,7 @@ svg.svg-hover-filter-clear {
 			flex: 0;
 			transition: flex .25s;
 			position: relative;
-			$brad: 16px;
+			$brad: 18px;
 			&.border-radius-none {
 				border-radius: 0;
 				.img {
@@ -11274,7 +11274,7 @@ svg.svg-hover-filter-clear {
 		}
 	}
 	&-portfolio {
-		$brad: 16px;
+		$brad: 18px;
 		$fbasis: 125px;
 		padding-bottom: 90px;
 		&__list {
@@ -11431,7 +11431,7 @@ svg.svg-hover-filter-clear {
 			gap: 20px;
 			padding-bottom: 40px;
 			border-bottom: 1px solid $color-black;
-			$brad: 16px;
+			$brad: 18px;
 			&:last-child {
 				border-bottom: none;
 			}
