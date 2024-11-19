@@ -1876,6 +1876,9 @@ a.button {
                 height: 40px;
 				font-size: 0;
                 margin-top: 10px;
+                & > span{
+                    display: inline-block;
+                }
                 a{
                     display: inline-block;
                     width: 135px;
@@ -1883,12 +1886,19 @@ a.button {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: 0 0;
+                    &[href=""]{
+                        pointer-events: none;
+                        cursor: default;
+                    }
                 }
                 .store_android{
                     background-image: url($img-path + "icon-store-googleplay3.svg");
 					&:hover{
 						background-image: url($img-path + "icon-store-googleplay3hover.svg");
 					}
+                    &[href=""]{
+                        background-image: url($img-path + "icon-store-googleplay4.svg");
+                    }
                 }
                 .store_ios{
                     background-image: url($img-path + "icon-store-appstore3.svg");
@@ -1896,6 +1906,9 @@ a.button {
 					&:hover{
 						background-image: url($img-path + "icon-store-appstore3hover.svg");
 					}
+                    &[href=""]{
+                        background-image: url($img-path + "icon-store-appstore4.svg");
+                    }
                 }
             }
         }
@@ -1964,9 +1977,6 @@ a.button {
         border-top: 1px solid $color-black;
         border-bottom: 1px solid $color-black;
     }
-    &.broadwise_nopadding{
-        padding: 0;
-    }
     &.broadwise_download{
         padding: 0;
         .button{
@@ -1976,10 +1986,21 @@ a.button {
             transform: translate(-50%, -50%);
         }
     }
+    &.broadwise_nopadding{
+        padding: 0;
+    }
     .container{
         //padding: 0 170px;
         display: flex;
         flex-direction: row;
+        &.container_midimage{
+            .client__present.case-image{
+                border-radius: $border-radius-small;
+                img{
+                    display: block;
+                }
+            }
+        }
     }
     &__item{
         padding-right: 40px;

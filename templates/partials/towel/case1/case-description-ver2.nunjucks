@@ -437,6 +437,14 @@
     <p>Необходимо заложить возможность добавить текст на изображение. Вот я вижу куст растёт в саду, воробьи играют в чехарду. На этом месте может быть цитата от команды проекта.</p>
 </div>
 
+<div class="broadwise broadwise_nopadding">
+    <div class="container container_midimage">
+        <div class="client__present case-image">
+            <img src="/assets/css/img/client-venn-preview.webp" alt="">
+        </div>
+    </div>
+</div>
+
 <div class="principles principles_case">
     <div class="container">
         <div class="principles__content">

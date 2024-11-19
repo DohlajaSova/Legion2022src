@@ -22,8 +22,8 @@
                 </div>
 
                 <div class="topcase__brief_stores store">
-                    <a href="" class="store_ios"></a>
-                    <a href="" class="store_android"></a>
+                    <span title="ios"><a href="" class="store_ios"></a></span>
+                    <span title="android"><a href="" class="store_android"></a></span>
                 </div>
             </div>
 
