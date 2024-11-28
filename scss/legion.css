@@ -4312,6 +4312,14 @@ a.button {
         color: #1E2738; }
     .body_news.body_news-ver2 .news-top__leadblock_lead {
       display: none; }
+  .body_news.body_news-ver2 .news-top.news-top_on-dark::before {
+    background: rgba(0, 0, 0, 0.55); }
+  .body_news.body_news-ver2 .news-top.news-top_on-dark h1, .body_news.body_news-ver2 .news-top.news-top_on-dark .h1 {
+    color: #F0F0F0; }
+  .body_news.body_news-ver2 .news-top.news-top_on-dark .news-top__tech,
+  .body_news.body_news-ver2 .news-top.news-top_on-dark .news-top__leadblock_author-name,
+  .body_news.body_news-ver2 .news-top.news-top_on-dark .news-top__leadblock_author-position {
+    color: #F8F8F8; }
 .body_news.body_news-ver2 .footer {
   background-color: #F0F0F0;
             /*a{

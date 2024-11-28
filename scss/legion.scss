@@ -5964,6 +5964,19 @@ a.button {
                     display: none;
                 }
             }
+            &.news-top_on-dark{
+                &::before{
+                    background: rgba(0,0,0,.55);
+                }
+                h1, .h1{
+                    color: $color-grey-light;
+                }
+                .news-top__tech,
+                .news-top__leadblock_author-name,
+                .news-top__leadblock_author-position{
+                    color: $color-grey-mid;
+                }
+            }
         }
         .footer{
             background-color: $color-grey-light;
