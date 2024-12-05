@@ -1756,6 +1756,17 @@ a.button {
 		.h1 {
 			width: 100%;
 		}
+        &.top_vacancy-ver2{
+            >.container {
+                max-width: 1067px;
+                flex-direction: column;
+                gap: 40px;
+            }
+            .h1,
+            .top-lead{
+                width: 90%;
+            }
+        }
 	}
     
     &_news{

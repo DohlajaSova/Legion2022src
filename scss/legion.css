@@ -1464,6 +1464,13 @@ a.button {
       display: none; }
   .top_vacancy .h1 {
     width: 100%; }
+  .top_vacancy.top_vacancy-ver2 > .container {
+    max-width: 1067px;
+    flex-direction: column;
+    gap: 40px; }
+  .top_vacancy.top_vacancy-ver2 .h1,
+  .top_vacancy.top_vacancy-ver2 .top-lead {
+    width: 90%; }
   .top_news > .container {
     flex-direction: column; }
   .top_news img {

@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+{% block title %} Вакансия - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/vacancy-ver2.nunjucks" %}
+  {% include "partials/towel/feedback-applicants.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+
+{% endblock %}
