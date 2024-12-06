@@ -1,6 +1,6 @@
 <div class="top top_vacancy top_vacancy-ver2">
     <div class="container">
-        <div class="component-tags tags">
+        <div class="component-tags tags tags_emph">
             <div class="tag">опыт — от 2 лет</div>
             <div class="tag">Санкт-Петербург</div>
             <div class="tag">удалённая работа</div>
@@ -15,23 +15,39 @@
 </div>
 <div class="vacancypage vacancypage_ver2">
     <div class="container">
-        <div class="vacancypage__content">
-            <div class="vacancypage__content_brief">
-                <h3>Описание</h3>
-                <div class="vacancypage__content_brief vacancypage__content_brief-container">
-                    <dl>
-                        <dt>Опыт</dt>
-                        <dd>1–3 года</dd>
-                    </dl>
-                    <dl>
-                        <dt>Город</dt>
-                        <dd>Санкт-Петербург, Удаленная работа</dd>
-                    </dl>
-                </div>
+	    <div class="vacancypage__requirements">
+        	<h2 class="h2">Обязанности</h2>
+            <div class="vacancypage__requirements_list custom-format">
+                <ul class="tab__list">
+                    <li>
+                        Закрывать сделки и выполнять план продаж
+                    </li>
+                    <li>
+                        Искать потенциальных клиентов на заказную разработку цифровых сервисов при поддержке отдела маркетинга
+                    </li>
+                    <li>
+                        Работать с входящим потоком лидов
+                    </li>
+                    <li>
+                        Выявлять потребности потенциальных заказчиков и формировать предложения для решения их бизнес-задач
+                    </li>
+                    <li>
+                        Искать возможности для сотрудничества
+                    </li>
+                    <li>
+                        Вести переговоры, подготавливать и проводить презентации
+                    </li>
+                    <li>
+                        Взаимодействовать с техническими специалистами для подготовки стоимостных предложений
+                    </li>
+                    <li>
+                        Готовить и согласовывать документы для заключения сделок (договор, первичные документы)
+                    </li>
+                </ul>
             </div>
-
-            
         </div>
+    </div>
+    <div class="container">
         <div class="vacancypage__accordion accordion js-accordion">
             <div class="accordion__item">
                 <h3 class="accordion__item_head">Обязанности</h3>

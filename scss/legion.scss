@@ -8917,6 +8917,14 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     & + .feedback_applicants{
         margin-bottom: 0;
     }
+	
+	&_ver2{
+		background-color: $color-grey-light;
+		padding: 80px 0;
+		& > .container{
+			max-width: 1087px;
+		}
+	}
 }
 
 .client {
@@ -10271,6 +10279,11 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                 border: 1px solid $color-white;
                 background: rgba(196, 196, 196, 0.40);
                 color: $color-white;
+            }
+        }
+        &.tags_emph{
+            .tag{
+                color: $color-black;
             }
         }
 	}
