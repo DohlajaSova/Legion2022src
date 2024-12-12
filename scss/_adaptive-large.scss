@@ -665,6 +665,11 @@
 		&__comment{
 			font-size:15px;
 		}
+        &.feedback_applicants.feedback_applicants2{
+            .request__button{
+                width: 100%;
+            }
+        }
 	}
 	.news{
         margin-bottom: 80px;
@@ -1286,11 +1291,26 @@
             padding: 0 30px 40px;
         }
     }
+    .top.top_vacancy-ver2,
+    .vacancypage.vacancypage_ver2{
+        padding-left: 0;
+        padding-right: 0;
+        & .container{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .button,
+        a.button,
+        a.button:visited{
+            padding: 20px 40px;
+            font-size: 16px;
+        }
+    }
     .button,
     a.button,
     a.button:visited{
-        padding:15px;
-        font-size:14px;
+        padding: 15px;
+        font-size: 14px;
     }
     .header{
         padding-bottom:43px;
@@ -1328,6 +1348,16 @@
         &_case{
             .h2{
                 font-size: 74px;
+            }
+        }
+        &_vacancy-ver2{
+            .h1{
+                font-size: 66px;
+            }
+            .button{
+                font-size: 16px;
+                padding-left: 40px;
+                padding-right: 40px;
             }
         }
     }
@@ -2669,6 +2699,16 @@
             .svghover {
                 max-width: 100%!important;
             }
+        }
+    }
+    .vacancypage_ver2{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .feedback.feedback_applicants.feedback_applicants2{
+        .feedback__container{
+            padding-top: 50px;
+            padding-bottom: 20px;
         }
     }
 }
@@ -4063,6 +4103,40 @@
                     margin-right: 30px;
                 }
             }
+        }
+    }
+    .top_vacancy.top_vacancy-ver2{
+        .h1{
+            width: 100%;
+            font-size: 60px;
+        }
+        & > .container{
+            gap: 30px;
+        }
+    }
+    .vacancypage{
+        &_ver2{
+            .vacancypage__requirements{
+                .h2,
+                &_list{
+                    width: 100%;
+                }
+                .custom-format ul li{
+                    padding-left: 35px;
+                }
+                .container{
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+        }
+    }
+    .feedback.feedback_applicants.feedback_applicants2{
+        .request__textarea .button{
+            margin-bottom: 50px;
+        }
+        .request__button .button{
+            padding: 32px 20px 34px;
         }
     }
 }

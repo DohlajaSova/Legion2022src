@@ -335,87 +335,95 @@ a:hover {
 	}
 }
 .sidetoc-menu{
-    transform:none;
+    transform: none;
 }
 
 h1,
 .h1 {
-	font: $h1;
-	color: $color-h1;
-	margin-bottom: 27px;
-	text-align: left;
+    font: $h1;
+    color: $color-h1;
+    margin-bottom: 27px;
+    text-align: left;
 }
 
 h2,
 .h2 {
-	font: $h2;
-	color: $color-h2;
-	margin-bottom: 8px;
-	text-align: left;
+    font: $h2;
+    color: $color-h2;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 h3,
 .h3 {
-	font: $h3;
-	color: $color-h3;
-	margin-bottom: 8px;
-	text-align: left;
+    font: $h3;
+    color: $color-h3;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 h4,
 .h4 {
-	font: $h4;
-	color: $color-h4;
-	margin-bottom: 8px;
-	text-align: left;
+    font: $h4;
+    color: $color-h4;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 .button,
 a.button {
-	border: 1px solid transparent;
-	color: $color-white;
-	font-size: 16px;
-	line-height: 1;
-	border-radius: 100px;
-	text-decoration: none;
-	display: inline-block;
-	padding: 20px 60px;
-	text-align: center;
-	cursor: pointer;
+    border: 1px solid transparent;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 60px;
+    text-align: center;
+    cursor: pointer;
 
-	&_wide {
-		width: 100%;
-	}
+    &_wide {
+        width: 100%;
+    }
 
-	&.button_default {
-		background: $color-blue-dark;
-		border-color: $color-blue-dark;
-		color: $color-white;
-	}
+    &.button_default {
+        background: $color-blue-dark;
+        border-color: $color-blue-dark;
+        color: $color-white;
+    }
 
-	&.button_white {
-		background: $color-white;
-		border-color: $color-white;
-		color: $color-black;
-	}
-
-	&.button_grey {
-		background-color: $color-grey-light;
-		border-color: $color-grey-light;
-		color: $color-blue-dark;
-	}
-
-	&.button_border {
-		border-color: $color-grey-dark;
-		color: $color-grey-dark;
-	}
-	&.button_border-dark {
+    &.button_white {
         background: $color-white;
-		border-color: $color-black;
-		color: $color-black;
-	}
+        border-color: $color-white;
+        color: $color-black;
+    }
+
+    &.button_grey {
+        background-color: $color-grey-light;
+        border-color: $color-grey-light;
+        color: $color-blue-dark;
+    }
+
+    &.button_blue {
+        background-color: $color-blue-clean;
+        border-color: $color-blue-clean;
+        color: $color-white;
+    }
+
+    &.button_border {
+        border-color: $color-grey-dark;
+        color: $color-grey-dark;
+    }
+
+    &.button_border-dark {
+        background: $color-white;
+        border-color: $color-black;
+        color: $color-black;
+    }
+
     &.button_small{
-        padding:10px 12px;
+        padding: 10px 12px;
     }
 }
 
@@ -1762,9 +1770,18 @@ a.button {
                 flex-direction: column;
                 gap: 40px;
             }
-            .h1,
+            .h1{
+                width: 90%;
+                margin-bottom: 0;
+            }
             .top-lead{
                 width: 90%;
+                font-size: 20px;
+            }
+            .button,
+            a.button,
+            a.button:visited{
+                padding: 20px 40px;
             }
         }
 	}
@@ -5298,6 +5315,61 @@ a.button {
 				}
 			}
 		}
+        &.feedback_applicants2{
+            background: $color-white;
+            & > .container{
+                max-width: 1087px;
+            }
+            h2{
+                font-size: 44px;
+                color: $color-black;
+                a{
+                    color: $color-black;
+                    white-space: nowrap;
+                }
+            }
+            .feedback__container{
+                flex-direction: column;
+                padding-bottom: 100px;
+                &_headwrap{
+                    width: 100%;
+                }
+            }
+            .feedback__form{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &_item{
+                    width: calc(50% - 30px);
+                    margin-bottom: 40px;
+                    &:last-child{
+                        width: 100%;
+                    }
+                }
+                &_input[type="text"],
+                &_input[type="email"],
+                &_input[type="tel"],
+                &_textarea {
+                    font-size: 18px;
+                    border-bottom: 1px solid $color-grey-dark;
+                    color: $color-black;
+                }
+                &_input,
+                &_textarea {
+                    &-placeholder::placeholder {
+                        font-size: 18px;
+                        color: $color-grey-dark;
+                    }
+                }
+            }
+            .request__file{
+                margin-bottom: 0;
+            }
+            .request__button .button{
+                padding: 44px 60px;
+            }
+        }
 	}
     
     &.feedback_subscribe {
@@ -8921,9 +8993,48 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	&_ver2{
 		background-color: $color-grey-light;
 		padding: 80px 0;
-		& > .container{
+		.container{
 			max-width: 1087px;
 		}
+        .vacancypage{
+            &__requirements{
+                padding: 40px 0;
+                border-bottom: 1px solid $color-black;
+                .container{
+                    display: flex;
+                    gap: 20px;
+                }
+                .h2{
+                    width: 38%;
+                    font-size: 40px;
+                }
+                &_list{
+                    padding: 12px 0 0;
+                    width: calc(62% - 20px);
+                    ul{
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        li{
+                            &::before{
+                                content: "—";
+                                text-indent: -5px;
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    
+                }
+                &:first-child{
+                    padding-top: 0;
+                }
+                &:last-child{
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+        }
 	}
 }
 

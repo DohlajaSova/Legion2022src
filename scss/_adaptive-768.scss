@@ -354,6 +354,20 @@
                 font-size: 46px;
             }
         }
+        &.feedback_applicants.feedback_applicants2{
+            .feedback__form_item{
+                width: 100%;
+            }
+            .request__textarea .button{
+                margin-bottom: 30px;
+            }
+            .request__file .request__comment{
+                width: auto;
+            }
+            .request__comment-container{
+                flex-wrap: nowrap;
+            }
+        }
     }
     .feedback ~ .projects{
         padding-top: 60px;
@@ -2200,6 +2214,61 @@
     .body_astralinux .redesign-projects-slide{
         margin: 0;
     }
+    
+    .top_vacancy.top_vacancy-ver2{
+        .h1{
+            font-size: 50px;
+        }
+        .top-lead{
+            width: 100%;
+            font-size: 19px;
+        }
+    }
+    
+    .vacancypage_ver2{
+        .vacancypage__requirements{
+            .h2{
+                font-size: 40px;
+            }
+            &_list ul{
+                font-size: 19px;
+                li{
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+    
+    .feedback.feedback_applicants.feedback_applicants2{
+        h2{
+            font-size: 40px;
+        }
+        .request__button .button{
+            padding: 27px 20px 29px;
+        }
+        .feedback__form{
+            &_input[type="text"],
+            &_input[type="email"],
+            &_input[type="tel"],
+            &_textarea{
+                font-size: 17px;
+            }
+        }
+        .request__textarea .button{
+            margin-bottom: 15px;
+        }
+        .request__comment{
+            font-size: 15px;
+            width: 100%;
+            padding: 0;
+        }
+        .request__comment-container{
+            flex-wrap: wrap;
+            .request__comment{
+                padding-top: 14px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -3977,6 +4046,16 @@
             &_desc {
                 font-size: 16px;                
             } 
+        }
+    }
+    .vacancypage_ver2 .vacancypage__requirements{
+        .custom-format ul li{
+            padding-left: 28px;
+        }
+    }
+    .feedback.feedback_applicants.feedback_applicants2{
+        .request__textarea textarea{
+            min-height: 54px;
         }
     }
 }

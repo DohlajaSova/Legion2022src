@@ -1,0 +1,47 @@
+<a name="feedback"></a>
+<div class="feedback feedback_applicants feedback_applicants2">
+    <div class="container">
+        <form onsubmit="return false">
+            <div class="feedback__container">
+                <div class="feedback__container_headwrap">
+                    <h2>Расскажи нам о&nbsp;себе или напиши на&nbsp;<a href="mailto:hr@e-legion.com">hr@e-legion.com</a></h2>
+                </div>
+                <div class="feedback__form">
+                    <div class="feedback__form_item">
+                        <input name="name" type="text" class="feedback__form_input feedback__form_input-placeholder" placeholder="Как тебя зовут?">
+                    </div>
+                    <div class="feedback__form_item">
+                        <input name="mail" type="email" class="feedback__form_input feedback__form_input-placeholder" placeholder="Почта">
+                    </div>
+                    <div class="feedback__form_item">
+                        <input name="phone" type="tel" class="feedback__form_input feedback__form_input-placeholder" placeholder="Номер телефона">
+                    </div>
+                    <div class="feedback__form_item">
+                        <input name="position" type="text" class="feedback__form_input feedback__form_input-placeholder" placeholder="Кем хочешь работать?">
+                    </div>
+                    <div class="request__textarea request__file">
+                        <textarea id="resume" name="message" class="feedback__form_textarea feedback__form_textarea-placeholder" placeholder="Краткая информация о себе или ссылка на портфолио"></textarea>
+                        <div class="request__comment-container">
+                            <div class="yaDiskUploader button button_border-dark dropzone_1 dz-clickable" data-name="af_files">
+                                <div class="dz-before-process">Загрузить файл</div>
+                                <div class="dz-addfiles"></div>
+                            </div>
+                            <div class="request__comment">Файл или текстовый документ. Не&nbsp;более 15&nbsp;Мбайт.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="request__comment-container centered">
+                    <div class="request__comment">
+                      Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь <a href="/[[~47]]" target="_blank">с&nbsp;нашей политикой обработки персональных данных</a>
+                    </div>
+                    <div class="request__button">
+                        <button class="button js-request-button js-request-animate">
+                            <span class="request__button_label">Отправить заявку</span>
+                            <span class="request__button_arrow"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

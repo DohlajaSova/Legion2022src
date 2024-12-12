@@ -40,6 +40,39 @@
         padding-left:20px;
         padding-right:20px;
     }
+    .top.top_vacancy-ver2,
+    .vacancypage.vacancypage_ver2{
+        padding-left: 0;
+        padding-right: 0;
+        & .container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .feedback.feedback_applicants.feedback_applicants2{
+        h2{
+            font-size: 36px;
+        }
+        .feedback__form{
+            &_input[type="text"],
+            &_input[type="email"],
+            &_input[type="tel"],
+            &_textarea{
+                font-size: 16px;
+            }
+        }
+        .request__textarea .button.yaDiskUploader{
+            font-size: 16px;
+            padding: 16px 24px;
+            margin-bottom: 0;
+        }
+        .request__button .button{
+            padding: 21px 20px 25px;
+        }
+        .request__button_label{
+            font-size: 20px;
+        }
+    }
     .body_news-ver2{
         .top .container{
             padding-left:20px;
@@ -1248,6 +1281,30 @@
             font-size: 36px;
         }
     }
+    .top_vacancy.top_vacancy-ver2{
+        & > .container{
+            gap: 20px;
+        }
+        .h1{
+            font-size: 40px;
+        }
+        .top-lead{
+            font-size: 18px;
+        }
+    }
+    .vacancypage_ver2{
+        .vacancypage__requirements{
+            padding: 30px 0 33px;
+            .h2{
+                font-size: 36px;
+            }
+            &_list ul{
+                li{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1605,6 +1662,59 @@
 	.redesign-projects svg{
 		max-width: calc(100% - 40px) !important;
 	}
+    .top_vacancy.top_vacancy-ver2{
+        .h1{
+            font-size: 32px;
+        }
+        .top-lead{
+            font-size: 16px;
+        }
+        .component-tags.tags .tag{
+            font-size: 14px;
+        }
+    }
+    .vacancypage_ver2{
+        .vacancypage__requirements{
+            .h2{
+                font-size: 28px;
+            }
+            &_list ul{
+                li{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .feedback.feedback_applicants.feedback_applicants2{
+        h2{
+            font-size: 28px;
+        }
+        .feedback__form{
+            &_input[type="text"],
+            &_input[type="email"],
+            &_input[type="tel"],
+            &_textarea {
+                font-size: 14px;
+            }
+            &_input,
+            &_textarea {
+                &-placeholder::placeholder {
+                    font-size: 14px;
+                }
+            }
+        }
+        .request__textarea{
+            margin-top: 8px;
+            textarea{
+                min-height: 45px;
+            }
+        }
+        .request__button .button{
+            padding: 14px 15px 19px;
+        }
+
+    }
 }
 // --
 
