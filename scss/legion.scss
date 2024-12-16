@@ -5365,6 +5365,7 @@ a.button {
             }
             .request__file{
                 margin-bottom: 0;
+                flex-direction: column;
             }
             .request__button .button{
                 padding: 44px 60px;
@@ -11220,7 +11221,7 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			flex-flow: column nowrap;
 		}
-		h1 {
+		.h1 {
 			margin-bottom: 60px;
 		}
 		&-wrapper {

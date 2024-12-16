@@ -1,6 +1,6 @@
 <div class="redesign-projects">
   <div class="container">
-    <h1 class="redesign-projects-header">Проекты</h1>
+    <h2 class="h1 redesign-projects-header">Проекты</h2>
     <div class="redesign-projects-wrapper js-children-click-set-active">
       <div class="redesign-projects-slide active" data-click-sync="1">
         <div class="img"></div>

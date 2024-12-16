@@ -3877,7 +3877,8 @@ a.button {
           font-size: 18px;
           color: #949191; }
       .feedback.feedback_applicants.feedback_applicants2 .request__file {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        flex-direction: column; }
       .feedback.feedback_applicants.feedback_applicants2 .request__button .button {
         padding: 44px 60px; }
   .feedback.feedback_subscribe {
@@ -7926,7 +7927,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   .redesign-projects .container {
     display: flex;
     flex-flow: column nowrap; }
-  .redesign-projects h1 {
+  .redesign-projects .h1 {
     margin-bottom: 60px; }
   .redesign-projects-wrapper {
     display: flex;
