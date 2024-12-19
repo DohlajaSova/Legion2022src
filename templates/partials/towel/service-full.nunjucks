@@ -28,15 +28,15 @@
                                         <div class="problems__item_contents problems__item_contents-slider">
                                             <div class="problems-slider-groups">
                                                 <div class="js-problems-slider-groups">
-                                                    <span class="problems-slider-groups__item">
+                                                    <div class="problems-slider-groups__item">
                                                         <h3>Техническое задание</h3>
-                                                    </span>
-                                                    <span class="problems-slider-groups__item">
+                                                    </div>
+                                                    <div class="problems-slider-groups__item">
                                                         <h3>Требования к&nbsp;API</h3>
-                                                    </span>
-                                                    <span class="problems-slider-groups__item">
+                                                    </div>
+                                                    <div class="problems-slider-groups__item">
                                                         <h3>Пользовательские сценарии</h3>
-                                                    </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -58,38 +58,38 @@
                                                 <div class="js-problems-slider-groups">
                                                     <span class="problems-slider-groups__item">
                                                         <a href="/client.html" class="cases__case">
-                                                            <div class="cases__case_number"></div>
-                                                            <div class="cases__case_container">
-                                                                <div class="cases__case_contents cases__case_contents-active">
+                                                            <span class="cases__case_number"></span>
+                                                            <span class="cases__case_container">
+                                                                <span class="cases__case_contents cases__case_contents-active">
                                                                     <span class="cases__case_logo"><img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                                                     <span class="cases__case_name">Пятёрочка</span>
                                                                     <span class="cases__case_arrow"></span>
-                                                                </div>
-                                                            </div>
+                                                                </span>
+                                                            </span>
                                                         </a>
                                                     </span>
                                                     <span class="problems-slider-groups__item">
                                                         <a href="/client-tele2.html" class="cases__case">
-                                                            <div class="cases__case_number"></div>
-                                                            <div class="cases__case_container">
-                                                                <div class="cases__case_contents cases__case_contents-active">
+                                                            <span class="cases__case_number"></span>
+                                                            <span class="cases__case_container">
+                                                                <span class="cases__case_contents cases__case_contents-active">
                                                                     <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                                                                     <span class="cases__case_name">Tele2</span>
                                                                     <span class="cases__case_arrow"></span>
-                                                                </div>
-                                                            </div>
+                                                                </span>
+                                                            </span>
                                                         </a>
                                                     </span>
                                                     <span class="problems-slider-groups__item">
                                                         <span class="cases__case">
-                                                            <div class="cases__case_number"></div>
-                                                            <div class="cases__case_container">
-                                                                <div class="cases__case_contents">
+                                                            <span class="cases__case_number"></span>
+                                                            <span class="cases__case_container">
+                                                                <span class="cases__case_contents">
                                                                     <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"> </span>
                                                                     <span class="cases__case_name">Globus</span>
                                                                     <span class="cases__case_arrow"></span>
-                                                                </div>
-                                                            </div>
+                                                                </span>
+                                                            </span>
                                                         </span>
                                                     </span>
                                                 </div>
@@ -125,15 +125,15 @@
                                     <div class="problems__item_contents problems__item_contents-slider">
                                         <div class="problems-slider-groups">
                                             <div class="js-problems-slider-groups">
-                                                <span class="problems-slider-groups__item">
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Карта экранов</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Концептуальная модель сервиса</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Интерактивный прототип</h3>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -155,39 +155,39 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tea.svg" alt="Tea.ru"> </span>
                                                                 <span class="cases__case_name">Tea.ru</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-alfa.html" class="cases__case">
-                                                        <div class="cases__case_number">
+                                                        <span class="cases__case_number">
                                                             <span>2</span>
-                                                        </div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        </span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"> </span>
                                                                 <span class="cases__case_name">Альфа-Инвестиции</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-tele2.html" class="cases__case">
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                                                                 <span class="cases__case_name">Tele2</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                             </div>
@@ -222,15 +222,15 @@
                                     <div class="problems__item_contents problems__item_contents-slider">
                                         <div class="problems-slider-groups">
                                             <div class="js-problems-slider-groups">
-                                                <span class="problems-slider-groups__item">
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Дизайн приложения</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>UI-kit</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Графические материалы</h3>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -252,37 +252,37 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-yota.svg" alt="Yota"> </span>
                                                                 <span class="cases__case_name">Yota</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-tele2.html" class="cases__case">
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                                                                 <span class="cases__case_name">Tele2</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-raif.svg" alt="Райф"> </span>
                                                                 <span class="cases__case_name">Райф</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                             </div>
@@ -317,15 +317,15 @@
                                     <div class="problems__item_contents problems__item_contents-slider">
                                         <div class="problems-slider-groups">
                                             <div class="js-problems-slider-groups">
-                                                <span class="problems-slider-groups__item">
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Файл для загрузки приложения в&nbsp;App Store, Google Play, AppGallery</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Исходный код приложения</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Автоматизированный процесс разработки, CI/CD</h3>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -347,40 +347,40 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number">
+                                                        <span class="cases__case_number">
                                                             <span>3</span>
-                                                        </div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        </span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-yandex.svg" alt="Yandex"> </span>
                                                                 <span class="cases__case_name">Yandex</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-burger.svg" alt="Burger King"> </span>
                                                                 <span class="cases__case_name">Burger King</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-spyking.svg" alt="Spiking"> </span>
                                                                 <span class="cases__case_name">Spiking</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                             </div>
@@ -415,15 +415,15 @@
                                     <div class="problems__item_contents problems__item_contents-slider">
                                         <div class="problems-slider-groups">
                                             <div class="js-problems-slider-groups">
-                                                <span class="problems-slider-groups__item">
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Чек-листы и&nbsp;тест-кейсы для проведения тестирования</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>UI-автотесты</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Автоматизация тестирования backend</h3>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -445,38 +445,38 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-sber.svg" alt="Сбер"> </span>
                                                                 <span class="cases__case_name">Сбер</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-tele2.html" class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                                                                 <span class="cases__case_name">Tele2</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client.html" class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                                                 <span class="cases__case_name">Пятёрочка</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                             </div>
@@ -510,15 +510,15 @@
                                     <div class="problems__item_contents problems__item_contents-slider">
                                         <div class="problems-slider-groups">
                                             <div class="js-problems-slider-groups">
-                                                <span class="problems-slider-groups__item">
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Оперативное решение технических проблем</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Работа с отзывами пользователей</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>«Первая помощь» при аварийных ситуациях</h3>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -540,38 +540,38 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <a href="client-tele2.html" class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-actve">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-actve">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-tele2.svg" alt="Tele2"> </span>
                                                                 <span class="cases__case_name">Tele2</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-globus.svg" alt="Globus"> </span>
                                                                 <span class="cases__case_name">Globus</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client.html" class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img class="cases__case_contents-img" src="/assets/css/img/case-5ka.svg" alt="Пятёрочка"> </span>
                                                                 <span class="cases__case_name">Пятёрочка</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                             </div>
@@ -606,15 +606,15 @@
                                     <div class="problems__item_contents problems__item_contents-slider">
                                         <div class="problems-slider-groups">
                                             <div class="js-problems-slider-groups">
-                                                <span class="problems-slider-groups__item">
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Отчётность</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Выбор методологии ведения проекта</h3>
-                                                </span>
-                                                <span class="problems-slider-groups__item">
+                                                </div>
+                                                <div class="problems-slider-groups__item">
                                                     <h3>Постоянная коммуникация с&nbsp;заказчиком</h3>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -636,37 +636,37 @@
                                             <div class="js-problems-slider-groups">
                                                 <span class="problems-slider-groups__item">
                                                     <a href="/client-alfa.html" class="cases__case">
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents cases__case_contents-active">
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents cases__case_contents-active">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-ad.svg" alt="Альфа-Инвестиции"> </span>
                                                                 <span class="cases__case_name">Альфа-Инвестиции</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </a>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-aushan.svg" alt="Ашан"> </span>
                                                                 <span class="cases__case_name">Ашан</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                                 <span class="problems-slider-groups__item">
                                                     <span class="cases__case">
-                                                        <div class="cases__case_number"></div>
-                                                        <div class="cases__case_container">
-                                                            <div class="cases__case_contents">
+                                                        <span class="cases__case_number"></span>
+                                                        <span class="cases__case_container">
+                                                            <span class="cases__case_contents">
                                                                 <span class="cases__case_logo"><img src="/assets/css/img/case-888.svg" alt="888"> </span>
                                                                 <span class="cases__case_name">888</span>
                                                                 <span class="cases__case_arrow"></span>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </span>
                                                     </span>
                                                 </span>
                                             </div>

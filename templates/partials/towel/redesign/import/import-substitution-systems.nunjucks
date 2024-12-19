@@ -62,7 +62,7 @@
               <rect x="0.5" y="0.5" width="79" height="79" rx="39.5" stroke="#141414"/>
               <defs>
                 <lineargradient id="paint0_linear_2_1998" x1="56" y1="40" x2="26.5" y2="58" gradientunits="userSpaceOnUse">
-                  <stop stop-color="#6600C6"/>
+                  <stop offset="0" stop-color="#6600C6"/>
                   <stop offset="0.457559" stop-color="#C9155C"/>
                   <stop offset="1" stop-color="#F45E00"/>
                 </lineargradient>

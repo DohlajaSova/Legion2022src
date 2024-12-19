@@ -1927,7 +1927,8 @@ a.button {
       overflow: hidden;
       position: absolute;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      left: 0; }
       .cases__case_container.bg_venn {
         background: url("img/cases-bg-venn.webp") center/cover no-repeat; }
     .cases__case_contents {
@@ -1935,6 +1936,7 @@ a.button {
       width: 100%;
       height: calc(100% + 107px);
       top: 0;
+      left: 0;
       transition: top ease 0.5s; }
       .cases__case_contents-slider {
         height: 100%;
