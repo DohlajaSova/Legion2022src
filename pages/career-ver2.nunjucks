@@ -1,0 +1,12 @@
+<!-- career.nunjucks -->
+{% extends "layout-career.nunjucks" %}
+{% block title %} Карьера - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/top-career-ver2.nunjucks" %}
+  {% include "partials/towel/vacancies2-ver2.nunjucks" %}
+  {% include "partials/towel/values-ver2.nunjucks" %}
+  {% include "partials/towel/feedback-applicants-ver2.nunjucks" %}
+
+{% endblock %}

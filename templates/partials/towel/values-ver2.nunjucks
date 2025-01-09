@@ -1,0 +1,113 @@
+<div class="not-all-the-same not-all-the-same_background">
+    <div class="container">
+        <div class="not-all-the-same__content">
+            <h2>Наши ценности</h2>
+        </div>
+        <div class="services-v2">
+          <div class="container">
+            <div class="services-v2__accordion_wrapper">
+              <div class="services-v2__accordion_tabs">
+                <div class="tab active">
+                  <div class="tab__head">
+                    <div class="tab__name">
+                      Инициатива
+                    </div>
+                  </div>
+                  <div class="tab__body">
+                      <div class="tab__desc">
+                        Организуем митапы, выступаем на конференциях, рассказываем как о лучших решениях, так и о сложностях. Поддерживаем коллег по бизнесу и всегда открыты к сотрудничеству.
+                      </div>
+                      <div class="tab__cases">
+                        <a class="tab__cases_card" href="https://e-legion.ru/news/e-legion-na-analyst-days">
+                          <img src="/assets/blog/80474d5775d697d6a2f16fcc5fd9144b.jpg" alt="">
+                          <span class="caption">
+                            опыт, выступления
+                          </span>
+                          <p class="name">
+                            e-legion на Analyst Days
+                          </p>
+                        </a>
+                        <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-sdainakoronavirus">
+                          <img src="/assets/blog/7b32c5a3c83da64d7a42943f550af93d.jpg" alt="">
+                          <span class="caption">
+                            видео, выступления
+                          </span>
+                          <p class="name">
+                            РИФ 2023: как адаптировать цифровой продукт под китайского пользователя?
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <div class="tab active">
+                  <div class="tab__head">
+                    <div class="tab__name">
+                      Эффективность
+                    </div>
+                  </div>
+                  <div class="tab__body">
+                      <div class="tab__desc">
+                        Непрерывно анализируем и оптимизируем процессы. Получаем новый опыт, разбираем сложности и фокусируемся на главном. Адаптируемся, чтобы каждый следующий результат был лучше предыдущего.
+                      </div>
+                      <div class="tab__cases">
+                        <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-petersburgskaya-nedviginost">
+                          <img src="/assets/blog/b4e4a88739f461904b70b175373f82ea.jpg" alt="">
+                          <span class="caption">
+                            опыт, разработка
+                          </span>
+                          <p class="name">
+                            Тестирование мобильных приложений
+                          </p>
+                        </a>
+                        <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-alfa-investitsii">
+                          <img src="/assets/blog/3632b80ce02bfa95c8f31b5cd6d6eb89.jpg" alt="">
+                          <span class="caption">
+                            бизнес, инструменты
+                          </span>
+                          <p class="name">
+                            Рынок Китая: как найти подход к пользователям
+                          </p>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <div class="tab active">
+                  <div class="tab__head">
+                    <div class="tab__name">
+                      Вовлечённость
+                    </div>
+                  </div>
+                  <div class="tab__body">
+                      <div class="tab__desc">
+                        Мы не только исполнители, но и партнёры наших клиентов. Участвуем в стратегических сессиях, глубоко интегрируемся в процессы заказчика и вместе отвечаем за результат.
+                      </div>
+                      <div class="tab__cases">
+                        <a class="tab__cases_card" href="https://e-legion.ru/portfolio/case-tele2">
+                          <img src="/assets/blog/225a77adea132410e974669e9fc79ae9.jpg" alt="">
+                          <span class="caption">
+                            сообщество
+                          </span>
+                          <p class="name">
+                            Итоги «Рейтинга Рунета» и Tagline Awards
+                          </p>
+                        </a>
+                        <div class="tab__cases_card">
+                          <img src="/assets/blog/4542fb1c83bc40de29f55551f05004b8.jpg" alt="">
+                          <span class="caption">
+                            видео, бизнес
+                          </span>
+                          <p class="name">
+                            Tele2: о санкциях, трендах и продуктовом подходе
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+</div>

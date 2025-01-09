@@ -1,0 +1,74 @@
+<div class="vacancies vacancies_page">
+    <div class="vacancies__container">
+        <div class="vacancies__list">
+            <div class="vacancies__container_inner">
+            <div class="vacancies__list_item vacancy">
+                <div class="vacancy__container">
+                    <h3 class="vacancy__title">
+                        <div class="vacancy__title_name">Менеджер по продажам IT–решений</div>
+                    </h3>
+                    <div class="vacancy__body">
+                        <div class="vacancy__body_item">Менеджер по продажам IT–решений — это не про звонки по скриптам или работу по готовым шаблонам. Она про глубокое погружение в бизнес процессы, поиск лучших решений и ответственность за результат.</div>
+                        <div class="vacancy__body_item">
+                            <div class="component-tags tags tags_emph">
+                                <div class="tag">опыт — от 1 года</div>
+                                <div class="tag">Санкт-Петербург</div>
+                                <div class="tag">удалённая работа</div>
+                            </div>
+                        </div>
+                        <div class="vacancy__body_link js-click-feedback">Откликнуться на вакансию</div>
+                    </div>
+                </div>
+            </div>
+            <div class="vacancies__list_item vacancy">
+                <div class="vacancy__container">
+                    <h3 class="vacancy__title">
+                        <div class="vacancy__title_name">Аккаунт-менеджер</div>
+                    </h3>
+                    <div class="vacancy__body">
+                        <div class="vacancy__body_item">Ищем специалиста по работе с ключевыми клиентами, который умеет выстраивать долгосрочные партнёрские отношения и успешно продвигать услуги компании.</div>
+                        <div class="vacancy__body_item">
+                            <div class="component-tags tags tags_emph">
+                                <div class="tag">опыт — от 2 лет</div>
+                                <div class="tag">Санкт-Петербург</div>
+                                <div class="tag">удалённая работа</div>
+                            </div>
+                        </div>
+                        <div class="vacancy__body_link js-click-feedback">Откликнуться на вакансию</div>
+                    </div>
+                </div>
+            </div>
+            <div class="vacancies__list_item vacancy">
+                <div class="vacancy__container">
+                    <h3 class="vacancy__title">
+                        <div class="vacancy__title_name">Системный аналитик</div>
+                    </h3>
+                    <div class="vacancy__body">
+                        <div class="vacancy__body_item">Ищем специалиста для работы над проектом «Приложение для сети частных клиник». В e-legion аналитики — не просто исполнители, пишущие требования, а ключевые участники продуктовой команды.</div>
+                        <div class="vacancy__body_item">
+                            <div class="component-tags tags tags_emph">
+                                <div class="tag">опыт — от 3 лет</div>
+                                <div class="tag">Санкт-Петербург</div>
+                                <div class="tag">удалённая работа</div>
+                            </div>
+                        </div>
+                        <div class="vacancy__body_link js-click-feedback">Откликнуться на вакансию</div>
+                    </div>
+                </div>
+            </div>
+            <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide" data-types="[]">
+                <div class="vacancy__container">
+                    <h3 class="vacancy__title">
+                        <div class="vacancy__title_icon"></div>
+                        <div class="vacancy__title_name">
+                            <p>Сейчас мы&nbsp;полностью укомплектованы и&nbsp;не&nbsp;ищем новых людей в&nbsp;команду.</p>
+                        </div>
+                    </h3>
+                    <div class="vacancy__body">
+                        <div class="vacancy__body_item">Мы&nbsp;добавим информацию о&nbsp;новых вакансиях на&nbsp;сайте, как только ситуация изменится.</div>
+                    </div>
+                </div>
+            </span>
+        </div></div>
+    </div>
+</div>

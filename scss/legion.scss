@@ -2001,6 +2001,19 @@ a.button {
     &.broadwise_bg{
         background-color: $color-grey-light;
     }
+    &.broadwise_career{
+        background: url($img-path + "career-ver2.jpg") center center no-repeat;
+        background-size: cover;
+        padding: 40px 0;
+        height: 300px;
+        .container{
+            height: 100%;
+            align-items: flex-end;
+        }
+        .broadwise__item_text{
+            font-size: 24px;
+        }
+    }
     &.broadwise_border{
         border-top: 1px solid $color-black;
         border-bottom: 1px solid $color-black;
@@ -7861,6 +7874,142 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		padding-bottom: 45px;
         & + .news{
             display: none;
+        }
+    }
+    
+    &-ver2{
+        .container{
+            max-width: 1087px;
+        }
+        
+        .top{
+            background: none;
+            min-height: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+            
+            & > .container {
+                flex-direction: column;
+            }
+            
+            .h1{
+                color: $color-black;
+                margin-bottom: 40px;
+            }
+        }
+        .vacancies{
+            &__container{
+                padding: 0;
+            }
+            &__list_item{
+                width: 100%;
+                height: auto;
+                padding: 38px 0;
+                border-radius: 0;
+                border-top: 1px solid $color-black;
+                &:first-child{
+                    border-top: none;
+                }
+            }
+            .vacancy{
+                &__container{
+                    position: static;
+                    height: auto;
+                    border-radius: 0;
+                    max-width: 1087px;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: flex-start;
+                }
+                &__title{
+                    position: static;
+                    background: none;
+                    width: 40%;
+                    padding: 0 20px 0 0;
+                    font-size: 40px;
+                }
+                &__body{
+                    position: static;
+                    color: $color-black;
+                    margin-top: 0;
+                    width: 60%;
+                    padding: 19px 0 0;
+                    font-size: 20px;
+                    gap: 30px;
+                    align-items: flex-start;
+                    
+                    &_link{
+                        border: 1px solid $color-black;
+                        color: $color-black;
+                        font-size: 16px;
+                        line-height: 1;
+                        border-radius: 100px;
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 20px 60px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+                &:hover{
+                    .vacancy__title{
+                        min-height: 0;
+                    }
+                    .vacancy__body{
+                        background: transparent;
+                        transition: none;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+        .not-all-the-same{
+            &_background{
+                background: $color-grey-light;
+                color: $color-black;
+            }
+            h2{
+                color: $color-black;
+            }
+            p{
+                color: $color-black;
+            }
+            &__content{
+                h2{
+                    font-size: 80px;
+                    width: 100%;
+                }
+            }
+            .services-v2 .container{
+                padding-top: 52px;
+                padding-bottom: 52px;
+            }
+            .services-v2__accordion_tabs{
+                padding-left: 0;
+                .tab{
+                    flex-flow: row;
+                    align-items: baseline;
+                    &__head{
+                        width: 40%;
+                        padding-right: 20px;
+                    }
+                    &__body{
+                        width: 60%;
+                    }
+                    &__desc{
+                        font-size: 20px;
+                    }
+                    &__cases{
+                        gap: 20px;
+                        &_card{
+                            width: calc(50% - 10px);
+                            img{
+                                border-radius: 18px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
