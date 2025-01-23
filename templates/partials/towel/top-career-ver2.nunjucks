@@ -1,7 +1,7 @@
 <div class="top">
     <div class="container">
         <h1 class="h1">
-            Развивай и&nbsp;развивайся вместе с&nbsp;e-legion
+            Развивай и&nbsp;развивайся вместе с&nbsp;e-legion
         </h1>
         <p class="top__lead">Мы всегда рады новым коллегам и&nbsp;профессионалам, готовым присоединиться к&nbsp;нашей команде. У&nbsp;нас масштабные проекты, сильная команда, гибкие методологии и&nbsp;отличные возможности для&nbsp;роста.</p>
     </div>
@@ -9,13 +9,13 @@
 <div class="broadwise broadwise_career">
     <div class="container">
         <div class="broadwise__item">
-            <div class="broadwise__item_text">Трудоустройство<br>в&nbsp;аккредитованной<br>IT-компании</div>
+            <div class="broadwise__item_text broadwise__icon broadwise__icon_career1">Трудоустройство в&nbsp;аккредитованной IT-компании</div>
         </div>
         <div class="broadwise__item">
-            <div class="broadwise__item_text">Гибкий формат работы:<br>гибрид, удалёнка или офис<br>в&nbsp;Санкт-Петербурге</div>
+            <div class="broadwise__item_text broadwise__icon broadwise__icon_career2">Гибкий формат работы: гибрид, удалёнка или офис в&nbsp;Санкт-Петербурге</div>
         </div>
         <div class="broadwise__item">
-            <div class="broadwise__item_text">Полис&nbsp;ДМС, частичная<br>компенсация расходов<br>на&nbsp;спорт и&nbsp;обучение</div>
+            <div class="broadwise__item_text broadwise__icon broadwise__icon_career3">Полис&nbsp;ДМС, частичная компенсация расходов на&nbsp;спорт и&nbsp;обучение</div>
         </div>
     </div>
 </div>

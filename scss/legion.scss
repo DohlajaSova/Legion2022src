@@ -2002,16 +2002,43 @@ a.button {
         background-color: $color-grey-light;
     }
     &.broadwise_career{
+        display: flex;
+        align-items: flex-end;
         background: url($img-path + "career-ver2.jpg") center center no-repeat;
         background-size: cover;
         padding: 40px 0;
-        height: 300px;
+        height: 500px;
         .container{
-            height: 100%;
-            align-items: flex-end;
+            height: auto;
+            align-items: flex-start;
         }
         .broadwise__item_text{
-            font-size: 24px;
+            font-size: 20px;
+        }
+        .broadwise__icon{
+            &::before{
+                content: "";
+                display: block;
+                height: 52px;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 40px;
+            }
+            &_career1{
+                &::before{
+                    background-image: url($img-path + "icon-career1.svg");
+                }
+            }
+            &_career2{
+                &::before{
+                    background-image: url($img-path + "icon-career2.svg");
+                }
+            }
+            &_career3{
+                &::before{
+                    background-image: url($img-path + "icon-career3.svg");
+                }
+            }
         }
     }
     &.broadwise_border{
@@ -4113,6 +4140,18 @@ a.button {
 				}
 			}
 		}
+        
+        .services-v2__accordion_tabs{
+            .tab__name{
+                font-size: 40px;
+            }
+            .tab__cases_card{
+                gap: 12px;
+                .caption{
+                    margin-top: 12px;
+                }
+            }
+        }
 	}
 }
 
@@ -7878,7 +7917,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
     }
     
     &-ver2{
-        .container{
+        .content-wrapper .container{
             max-width: 1087px;
         }
         
@@ -7890,11 +7929,17 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             
             & > .container {
                 flex-direction: column;
+                align-items: flex-start
             }
             
             .h1{
                 color: $color-black;
                 margin-bottom: 40px;
+            }
+            
+            &__lead{
+                width: 70%;
+                font-size: 20px;
             }
         }
         .vacancies{
@@ -7925,7 +7970,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                     position: static;
                     background: none;
                     width: 40%;
-                    padding: 0 20px 0 0;
+                    padding: 0 30px 0 0;
                     font-size: 40px;
                 }
                 &__body{
@@ -7951,9 +7996,44 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                         cursor: pointer;
                     }
                 }
+                &__hr{
+                    font-size: 0;
+                    display: flex;
+                    gap: 10px;
+                    &_email{
+                        font-size: 46px;
+                        color: $color-black;
+                    }
+                    &_icon{
+                        display: inline-block;
+                        width: 80px;
+                        height: 80px;
+                    }
+                    &_hh{
+                        background-image: url($img-path + "icon-hh-grey.svg");
+                        &:hover{
+                            background-image: url($img-path + "icon-hh.svg");
+                        }
+                    }
+                    &_habr{
+                        background-image: url($img-path + "icon-habr-grey.svg");
+                        &:hover{
+                            background-image: url($img-path + "icon-habr.svg");
+                        }
+                    }
+                }
+                &_send{
+                    border: none;
+                    .vacancy__container{
+                        justify-content: flex-end;
+                    }
+                }
                 &:hover{
+                    .vacancy__container{
+                        height: auto !important;
+                    }
                     .vacancy__title{
-                        min-height: 0;
+                        min-height: 0 !important;
                     }
                     .vacancy__body{
                         background: transparent;
@@ -7967,6 +8047,13 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             &_background{
                 background: $color-grey-light;
                 color: $color-black;
+                .container{
+                    max-width: 100%;
+                }
+                .not-all-the-same__content{
+                    max-width: 1087px;
+                    margin: 0 auto;
+                }
             }
             h2{
                 color: $color-black;
@@ -7982,16 +8069,22 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             }
             .services-v2 .container{
                 padding-top: 52px;
-                padding-bottom: 52px;
+                padding-bottom: 0;
             }
             .services-v2__accordion_tabs{
                 padding-left: 0;
                 .tab{
                     flex-flow: row;
                     align-items: baseline;
+                    border-bottom: none;
+                    max-width: 1087px;
+                    margin: 0 auto;
+                    position: relative;
+                    padding: 50px 0 25px;
                     &__head{
                         width: 40%;
                         padding-right: 20px;
+                        cursor: default;
                     }
                     &__body{
                         width: 60%;
@@ -8006,6 +8099,22 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                             img{
                                 border-radius: 18px;
                             }
+                        }
+                    }
+                    &::after{
+                        content: "";
+                        border-bottom: 1px solid $color-black;
+                        width: 300%;
+                        position: absolute;
+                        left: -100%;
+                        bottom: 0;
+                    }
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                    &:last-child{
+                        &::after{
+                            display: none;
                         }
                     }
                 }

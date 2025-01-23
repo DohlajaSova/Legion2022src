@@ -1226,6 +1226,32 @@ docReady(function () {
         }
     }
 
+    // слайдер values на странице вакансии ver.2
+    let valuesBlocks = document.querySelectorAll('.js-values');
+    if (valuesBlocks.length > 0 && windowWidth <= 700) {
+        for (i = 0; i < valuesBlocks.length; i++) {
+            tns({
+                container: valuesBlocks[i],
+                items: 1.5,
+                responsive: {
+                    320: {
+                        gutter: 20
+                    },
+                    481: {
+                        gutter: 30
+                    }
+                },
+                edgePadding: 30,
+                nav: false,
+                controls: false,
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        }
+    }
+
+
+
     // фильтр на странице портфолио
     let portfolioBlocks = document.querySelectorAll(".js-cases-container-portfolio .container_portfolio-inner");
     let portfolioTypes = document.querySelectorAll(".js-cases-types");

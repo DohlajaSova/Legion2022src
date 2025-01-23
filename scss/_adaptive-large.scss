@@ -37,7 +37,7 @@
         padding-left:60px;
         padding-right:60px;
     }
-
+    
     // redesign container padding
     // .redesign-features,
     // .redesign-graphics,
@@ -68,6 +68,16 @@
             &__body{
                 padding: 0;
             }
+        }
+    }
+    .body_career-ver2{
+        .vacancies{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .not-all-the-same_background{
+            padding-left: 0;
+            padding-right: 0;
         }
     }
     .top .breadcrumbs,
@@ -697,7 +707,21 @@
 	}
     .body_career{
         .top{
-            background-size:auto;
+            background-size: auto;
+        }
+        &.body_career-ver2{
+            .top{
+                margin-bottom: 62px;
+            }
+            .vacancies{
+                margin-bottom: 36px;
+            }
+            .not-all-the-same_background{
+                padding-top: 80px;
+                .services-v2 .container{
+                    padding-top: 27px;
+                }
+            }
         }
     }   
     .case-stages__layout h3{
@@ -747,6 +771,11 @@
         .container {
 			padding: 0 30px;
 		}
+        &_career{
+            .container{
+                margin: 0 auto;
+            }
+        }
 	}
     .redesign-portfolio {
         
@@ -1853,6 +1882,31 @@
 				font-size:16px;
 			}
 		}
+    }
+    .body_career{
+        &-ver2{
+            .content-wrapper .container,
+            .vacancies .vacancy__container,
+            .not-all-the-same_background .not-all-the-same__content,
+            .not-all-the-same .services-v2__accordion_tabs .tab,
+            .feedback.feedback_applicants.feedback_applicants2 > .container{
+                max-width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .top,
+            .not-all-the-same_background .container,
+            .feedback.feedback_applicants.feedback_applicants2 > .container{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .broadwise.broadwise_career .container{
+                width: 100%;
+            }
+            .vacancies .vacancy__container{
+                padding-right: 40px;
+            }
+        }
     }
     // redesign
     .top.redesign{ 
@@ -3727,6 +3781,67 @@
                 margin-bottom: 40px;
             }
         }
+        &-ver2{
+            .top{
+                .h1{
+                    font-size: 70px;
+                    margin-bottom: 36px;
+                }
+                &__lead{
+                    width: 100%;
+                }
+            }
+            .broadwise.broadwise_career{
+                height: 360px;
+                .broadwise__item_text{
+                    font-size: 18px;
+                }
+                .broadwise__icon::before{
+                    background-size: 30px;
+                    height: 42px;
+                }
+            }
+            .vacancies{
+                .vacancy{
+                    &__container{
+                        flex-direction: column;
+                    }
+                    &__title{
+                        width: 100%;
+                        padding: 0;
+                        font-size: 44px;
+                    }
+                    &__body{
+                        width: 100%;
+                    }
+                }
+            }
+            .not-all-the-same{
+                &__content{
+                    margin-bottom: 0;
+                }
+                .services-v2__accordion_tabs{
+                    .tab{
+                        flex-flow: column;
+                        &__head{
+                            width: 100%;
+                            padding-right: 0;
+                        }
+                        &__body{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .services-v2__accordion_tabs .tab__cases_card .caption{
+                font-size: 18px;
+            }
+        }
+        &.body_career-ver2{
+            .not-all-the-same_background .services-v2 .container{
+                padding-top: 10px;
+            }
+        }
     }
     .did__slider{
         .vacancy{
@@ -3886,15 +4001,22 @@
     }
     .not-all-the-same{
         &.not-all-the-same_background{
+            margin-bottom: 0;
             h2,
             .h2{
-                font-size: 56px;
+                font-size: 60px;
                 width: 68%;
+                margin-bottom: 0;
             }
             h3,
             .h3{
                 font-size: 46px;
                 margin-bottom: 0;
+            }
+            .services-v2__accordion_tabs{
+                .tab__name{
+                    font-size: 44px;
+                }
             }
             .accordion__item{
                 padding-bottom: 0;
@@ -4002,6 +4124,9 @@
             &_text{
                 font-size: 18px;
             }
+        }
+        &_career{
+            height: 420px;
         }
     }
     .case-column{
@@ -4527,6 +4652,12 @@
                     }
                 }
             }
+        }
+    }
+    .body_career-ver2 .top{
+        margin-bottom: 52px;
+        .h1{
+            font-size: 60px;
         }
     }
 }

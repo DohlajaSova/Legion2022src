@@ -56,19 +56,20 @@
                     </div>
                 </div>
             </div>
-            <span id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide" data-types="[]">
+            <div id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide1">
                 <div class="vacancy__container">
-                    <h3 class="vacancy__title">
-                        <div class="vacancy__title_icon"></div>
-                        <div class="vacancy__title_name">
-                            <p>Сейчас мы&nbsp;полностью укомплектованы и&nbsp;не&nbsp;ищем новых людей в&nbsp;команду.</p>
-                        </div>
-                    </h3>
                     <div class="vacancy__body">
-                        <div class="vacancy__body_item">Мы&nbsp;добавим информацию о&nbsp;новых вакансиях на&nbsp;сайте, как только ситуация изменится.</div>
+                        <div class="vacancy__body_item">Похоже, сейчас открытых вакансий нет, но&nbsp;мы&nbsp;всегда на&nbsp;связи и&nbsp;открыты к&nbsp;сотрудничеству. Напиши нам, и&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;тобой, как только появится подходящая позиция.</div>
+                        <div class="vacancy__body_item"><a href="mailto:hr@e-legion.com" class="vacancy__hr_email">hr@e-legion.com</a></div>
+                        <div class="vacancy__body_item">
+                            <div class="vacancy__hr">
+                                <a href="https://spb.hh.ru/employer/114525?hhtmFrom=vacancy" target="_blank" class="vacancy__hr_icon vacancy__hr_hh"></a>
+                                <a href="https://career.habr.com/companies/e-legion" target="_blank" class="vacancy__hr_icon vacancy__hr_habr"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </span>
+            </div>
         </div></div>
     </div>
 </div>
