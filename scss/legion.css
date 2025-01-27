@@ -12850,6 +12850,12 @@ svg.hoversvgrequest {
     padding: 19px 59px; }
   .body_career.body_career-ver2 .vacancies .vacancy__body .component-tags.tags .tag {
     font-size: 15px; }
+  .body_career.body_career-ver2 .vacancies .vacancy__hr_email {
+    font-size: 40px; }
+  .body_career.body_career-ver2 .vacancies .vacancy__hr_icon {
+    width: 75px;
+    height: 75px;
+    background-size: contain; }
   .body_career.body_career-ver2 .tab__values-outer {
     margin: 0 -30px; } }
 @media only screen and (max-width: 650px) {
@@ -14283,6 +14289,11 @@ svg.hoversvgrequest {
     font-size: 16px; }
   .body_career.body_career-ver2 .vacancies .vacancy__body .component-tags.tags .tag {
     font-size: 14px; }
+  .body_career.body_career-ver2 .vacancies .vacancy__hr_email {
+    font-size: 36px; }
+  .body_career.body_career-ver2 .vacancies .vacancy__hr_icon {
+    width: 70px;
+    height: 70px; }
   .body_career.body_career-ver2 .tab__values-outer {
     margin: 0 -30px; }
 
@@ -15543,6 +15554,10 @@ svg.hoversvgrequest {
         padding: 25px 0 0 !important; }
         .body_career-ver2 .vacancies .vacancy__title_name {
           transform: none !important; }
+      .body_career-ver2 .vacancies .vacancy_send .vacancy__body_item {
+        display: block; }
+      .body_career-ver2 .vacancies .vacancy_send .vacancy__body {
+        height: auto; }
 
   .body_career.body_career-ver2 .not-all-the-same_background {
     padding-top: 50px; }
@@ -15808,6 +15823,8 @@ svg.hoversvgrequest {
     font-size: 12px; }
   .body_career.body_career-ver2 .vacancies .vacancy__body_link {
     font-size: 14px; }
+  .body_career.body_career-ver2 .vacancies .vacancy__hr_email {
+    font-size: 28px; }
   .body_career.body_career-ver2 .not-all-the-same.not-all-the-same_background h2 {
     font-size: 32px; }
   .body_career.body_career-ver2 .not-all-the-same.not-all-the-same_background .services-v2__accordion_tabs .tab__name {

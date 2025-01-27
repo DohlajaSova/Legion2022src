@@ -1405,6 +1405,14 @@
                         font-size: 15px;
                     }
                 }
+                &__hr_email{
+                    font-size: 40px;
+                }
+                &__hr_icon{
+                    width: 75px;
+                    height: 75px;
+                    background-size: contain;
+                }
             }
         }
         .tab__values-outer{
@@ -3633,6 +3641,13 @@
                         .component-tags.tags .tag{
                             font-size: 14px;
                         }
+                    }
+                    &__hr_email{
+                        font-size: 36px;
+                    }
+                    &__hr_icon{
+                        width: 70px;
+                        height: 70px;
                     }
                 }
             }

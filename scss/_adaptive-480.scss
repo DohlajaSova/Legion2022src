@@ -1340,6 +1340,14 @@
                         transform: none !important;
                     }
                 }
+                &_send {
+                    .vacancy__body_item{
+                        display: block;
+                    }
+                    .vacancy__body {
+                        height: auto;
+                    }
+                }
             }
         }
     }
@@ -1813,6 +1821,9 @@
                 }
                 &__body_link{
                     font-size: 14px;
+                }
+                &__hr_email{
+                    font-size: 28px;
                 }
             }
         }

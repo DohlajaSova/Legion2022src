@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide1">
+            <div id="vac_send" class="vacancies__list_item vacancy vacancy_send js-scrollto-applicants-form1 empty hide">
                 <div class="vacancy__container">
                     <div class="vacancy__body">
                         <div class="vacancy__body_item">Похоже, сейчас открытых вакансий нет, но&nbsp;мы&nbsp;всегда на&nbsp;связи и&nbsp;открыты к&nbsp;сотрудничеству. Напиши нам, и&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;тобой, как только появится подходящая позиция.</div>
