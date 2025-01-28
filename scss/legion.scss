@@ -8028,6 +8028,12 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                         justify-content: flex-end;
                     }
                 }
+                a{
+                    color: $color-black;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
                 &:hover{
                     .vacancy__container{
                         height: auto !important;

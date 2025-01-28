@@ -5664,6 +5664,10 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
   border: none; }
   .body_career-ver2 .vacancies .vacancy_send .vacancy__container {
     justify-content: flex-end; }
+.body_career-ver2 .vacancies .vacancy a {
+  color: #141414; }
+  .body_career-ver2 .vacancies .vacancy a:hover {
+    text-decoration: none; }
 .body_career-ver2 .vacancies .vacancy:hover .vacancy__container {
   height: auto !important; }
 .body_career-ver2 .vacancies .vacancy:hover .vacancy__title {
