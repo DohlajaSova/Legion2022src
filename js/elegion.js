@@ -1444,6 +1444,26 @@ docReady(function () {
             })
         }
     }
+                
+    // клик на фидбек на странице карьера
+    let vacanciesList = document.querySelector(".vacancies__list");
+    if (vacanciesList) {
+        let activePositions = vacanciesList.querySelectorAll(".js-click-feedback");
+        let targetInput = document.querySelector("[name='position']");
+        const feedbackHead = document.querySelector("[name='feedback']");
+        for (i = 0; i < activePositions.length; i++) {
+            activePositions[i].addEventListener("click", function (e) {
+                e.preventDefault();
+                const positionTitle = new DOMParser().parseFromString(e.target.parentElement.previousElementSibling.querySelector(".vacancy__title_name").innerHTML, 'text/html').body.textContent;
+                targetInput.value = positionTitle;
+                if (feedbackHead) {
+                    feedbackHead.scrollIntoView({
+                        behavior: "smooth"
+                    })
+                }
+            }, false);
+        }
+    }
 
     // фильтр новостей
     let newsBlocks = document.querySelectorAll(".js-news-grid-container");
