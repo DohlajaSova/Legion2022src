@@ -5697,6 +5697,7 @@ a.button {
 				font-size: 16px;
 				color: $color-grey-dark;
 				line-height: 130%;
+                text-transform: lowercase;
                 &.longread{
                     &::before{
                         content:"";
@@ -6072,6 +6073,9 @@ a.button {
                 color: $color-blue-dark;
                 margin-bottom: 40px;
                 z-index: 1;
+                &_tags{
+                    text-transform: lowercase;
+                }
             }
             &__leadblock{
                 z-index: 1;

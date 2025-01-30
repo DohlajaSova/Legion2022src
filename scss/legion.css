@@ -4105,7 +4105,8 @@ a.button {
         margin-bottom: 10px;
         font-size: 16px;
         color: #949191;
-        line-height: 130%; }
+        line-height: 130%;
+        text-transform: lowercase; }
         .news__grid_card-tags.longread::before {
           content: "";
           display: inline-block;
@@ -4379,6 +4380,8 @@ a.button {
     color: #1E2738;
     margin-bottom: 40px;
     z-index: 1; }
+    .body_news.body_news-ver2 .news-top__tech_tags {
+      text-transform: lowercase; }
   .body_news.body_news-ver2 .news-top__leadblock {
     z-index: 1; }
     .body_news.body_news-ver2 .news-top__leadblock_author {
