@@ -1,0 +1,4 @@
+<div class="informer js-informer hide">
+    <div class="informer__text">Все вакансии мы&nbsp;публикуем только на&nbsp;этом сайте и&nbsp;<a href="https://spb.hh.ru/employer/114525?hhtmFrom=vacancy" target="_blank">на&nbsp;нашей странице&nbsp;hh.ru</a>. Наши рекрутеры никогда не&nbsp;запросят ваши персональные данные вне официальных каналов или в&nbsp;мессенджерах. Если у&nbsp;вас есть сомнения в&nbsp;подлинности предложения, пожалуйста, напишите нам на&nbsp;<a href="mailto:hr@e-legion.com">hr@e-legion.com</a>.</div>
+    <div class="informer__button"><a href="" class="button js-close-informer">Спасибо</a></div>
+</div>

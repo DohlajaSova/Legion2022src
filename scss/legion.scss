@@ -12751,6 +12751,43 @@ svg.hoversvgrequest {
 	}
 }
 
+.informer{
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background: $color-grey-light;
+    box-shadow: 0 0 10px rgba($color-black,0.23);
+    padding: 26px;
+    border-radius: 18px;
+    width: calc(100% - 60px);
+    max-width: 1245px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    &__text{
+        color: $color-black;
+        font-size: 20px;
+        a{
+            color: $color-black;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__button{
+        .button{
+            border-color: $color-black;
+            color: $color-black;
+            background: $color-grey-light;
+            padding: 20px 40px;
+        }
+    }
+}
+
 @keyframes arrowmove {
 	0% {
 		transform: rotate(-45deg) translate(0, 0)

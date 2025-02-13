@@ -881,6 +881,24 @@ function generateCaseTOC(caseOuter) {
     }
 }
 
+function setinformerIsRead(clicked){
+    let informerIsRead = localStorage.getItem('informerIsRead') || 'false';
+    let informerContainer = document.querySelector(".js-informer");
+    
+    if (clicked){
+        if (informerIsRead == 'false'){
+            localStorage.setItem('informerIsRead', 'true');
+            informerContainer.classList.add('hide');
+        }
+    }
+    else{
+        if (informerIsRead == 'false'){
+            informerContainer.classList.remove('hide');
+        }
+    }
+}
+
+
 docReady(function () {
     // global
     // listeners 
@@ -3175,15 +3193,20 @@ docReady(function () {
 
         }
 
-
         document.querySelector(".timeline_outer").addEventListener("mousedown", moveStart);
         document.querySelector(".timeline_outer").addEventListener("mousemove", moving);
         document.querySelector(".timeline_outer").addEventListener("mouseup", moveEnd);
-
-
-
-
-
-
     }
+
+    //информер внизу страницы
+    if (document.querySelectorAll('.js-close-informer').length > 0){
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('js-close-informer')) {
+                e.preventDefault();
+                setinformerIsRead(true);
+            }
+        }, true);
+        setinformerIsRead(false);
+    }
+
 });

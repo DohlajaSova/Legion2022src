@@ -8,5 +8,6 @@
   {% include "partials/towel/vacancies2-ver2.nunjucks" %}
   {% include "partials/towel/values-ver2.nunjucks" %}
   {% include "partials/towel/feedback-applicants-ver2.nunjucks" %}
+  {% include "partials/towel/career-security-informer.nunjucks" %}
 
 {% endblock %}

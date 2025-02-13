@@ -7,5 +7,6 @@
   {% include "partials/towel/feedback-applicants-ver2.nunjucks" %}
 
   {% include "partials/popup-feedback.nunjucks" %}
+  {% include "partials/towel/career-security-informer.nunjucks" %}
 
 {% endblock %}

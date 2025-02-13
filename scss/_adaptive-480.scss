@@ -1375,6 +1375,12 @@
     .broadwise.broadwise_career{
         margin-bottom: 55px;
     }
+    .informer{
+        bottom: 20px;
+        width: calc(100% - 40px);
+        padding: 16px;
+        gap: 16px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1845,6 +1851,11 @@
                     font-size: 20px;
                 }
             }
+        }
+    }
+    .informer{
+        &__text{
+            font-size: 14px;
         }
     }
 }

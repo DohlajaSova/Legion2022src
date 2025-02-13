@@ -10,5 +10,6 @@
   {% include "partials/towel/team2.nunjucks" %}
   {% include "partials/towel/to-work.nunjucks" %}
   {% include "partials/towel/cases-random.nunjucks" %}
+  {% include "partials/towel/career-security-informer.nunjucks" %}
 
 {% endblock %}

@@ -9059,6 +9059,36 @@ svg.hoversvgrequest {
   svg.hoversvgrequest:hover #v2-pathanimate2, svg.hoversvgrequest:hover #v2-pathanimate1 {
     transform: rotate(-45deg); }
 
+.informer {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: #F0F0F0;
+  box-shadow: 0 0 10px rgba(20, 20, 20, 0.23);
+  padding: 26px;
+  border-radius: 18px;
+  width: calc(100% - 60px);
+  max-width: 1245px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center; }
+  .informer__text {
+    color: #141414;
+    font-size: 20px; }
+    .informer__text a {
+      color: #141414;
+      text-decoration: underline; }
+      .informer__text a:hover {
+        text-decoration: none; }
+  .informer__button .button {
+    border-color: #141414;
+    color: #141414;
+    background: #F0F0F0;
+    padding: 20px 40px; }
+
 @keyframes arrowmove {
   0% {
     transform: rotate(-45deg) translate(0, 0); }
@@ -11706,7 +11736,16 @@ svg.hoversvgrequest {
       width: 100%; }
 
   .tab__desc {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .informer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; }
+    .informer__text {
+      font-size: 18px; }
+    .informer__button .button {
+      font-size: 16px; } }
 @media only screen and (max-width: 960px) {
   .redesign-blog .container {
     padding-left: 0;
@@ -14697,7 +14736,10 @@ svg.hoversvgrequest {
     padding-left: 28px; }
 
   .feedback.feedback_applicants.feedback_applicants2 .request__textarea textarea {
-    min-height: 54px; } }
+    min-height: 54px; }
+
+  .informer__text {
+    font-size: 16px; } }
 @media only screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 40px; }
@@ -15581,7 +15623,13 @@ svg.hoversvgrequest {
     padding: 15px 59px; }
 
   .broadwise.broadwise_career {
-    margin-bottom: 55px; } }
+    margin-bottom: 55px; }
+
+  .informer {
+    bottom: 20px;
+    width: calc(100% - 40px);
+    padding: 16px;
+    gap: 16px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
@@ -15841,7 +15889,10 @@ svg.hoversvgrequest {
   .body_career.body_career-ver2 .not-all-the-same.not-all-the-same_background .services-v2__accordion_tabs .tab__cases .caption {
     font-size: 14px; }
   .body_career.body_career-ver2 .not-all-the-same.not-all-the-same_background .services-v2__accordion_tabs .tab__cases .name {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .informer__text {
+    font-size: 14px; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }
