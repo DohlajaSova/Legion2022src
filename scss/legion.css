@@ -9089,6 +9089,47 @@ svg.hoversvgrequest {
     background: #F0F0F0;
     padding: 20px 40px; }
 
+.info-block {
+  margin-bottom: 80px; }
+  .info-block__container {
+    background: #F0F0F0;
+    border-radius: 18px;
+    padding: 40px; }
+  .info-block__columns {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px; }
+    .info-block__columns p {
+      font-size: 20px;
+      margin-bottom: 21px; }
+  .info-block__column {
+    width: 100%; }
+  .info-block__message {
+    margin-top: 26px;
+    font-size: 20px;
+    padding-left: 56px;
+    background: url(img/icon-career1-red.svg) 0 0 no-repeat; }
+  .info-block a {
+    color: #141414;
+    text-decoration: underline; }
+    .info-block a:hover {
+      text-decoration: none; }
+  .info-block ul {
+    padding: 0; }
+  .info-block ul li {
+    font-size: 20px;
+    padding-left: 33px;
+    list-style: none;
+    margin-bottom: 10px; }
+  .info-block ul li:before {
+    content: '—';
+    float: left;
+    margin-left: -33px;
+    padding-right: 7px;
+    width: 18px;
+    text-align: right;
+    white-space: nowrap; }
+
 @keyframes arrowmove {
   0% {
     transform: rotate(-45deg) translate(0, 0); }
@@ -10809,7 +10850,10 @@ svg.hoversvgrequest {
 
   .feedback.feedback_applicants.feedback_applicants2 .feedback__container {
     padding-top: 50px;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+
+  .info-block {
+    margin-top: 40px; } }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 14px; }
@@ -11745,7 +11789,18 @@ svg.hoversvgrequest {
     .informer__text {
       font-size: 18px; }
     .informer__button .button {
-      font-size: 16px; } }
+      font-size: 16px; }
+
+  .info-block {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    .info-block h3 {
+      font-size: 40px; }
+    .info-block__columns {
+      flex-direction: column;
+      gap: 0; }
+    .info-block__message {
+      margin-top: 14px; } }
 @media only screen and (max-width: 960px) {
   .redesign-blog .container {
     padding-left: 0;
@@ -15629,7 +15684,23 @@ svg.hoversvgrequest {
     bottom: 20px;
     width: calc(100% - 40px);
     padding: 16px;
-    gap: 16px; } }
+    gap: 16px; }
+
+  .info-block {
+    margin-bottom: 30px; }
+    .info-block .container {
+      padding-left: 0;
+      padding-right: 0; }
+    .info-block h3 {
+      font-size: 36px; }
+    .info-block p,
+    .info-block ul li, .info-block__message {
+      font-size: 18px; }
+    .info-block__message {
+      background-size: 30px 30px;
+      padding-left: 40px; }
+    .info-block__container {
+      padding: 20px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
@@ -15892,7 +15963,13 @@ svg.hoversvgrequest {
     font-size: 20px; }
 
   .informer__text {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .info-block h3 {
+    font-size: 28px; }
+  .info-block p,
+  .info-block ul li, .info-block__message {
+    font-size: 16px; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }

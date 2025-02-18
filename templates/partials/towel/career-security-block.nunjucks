@@ -1,0 +1,26 @@
+<div class="info-block">
+    <div class="container">
+        <div class="info-block__container">
+            <h3>Безопасность личных данных</h3>
+            <div class="info-block__columns">
+                <div class="info-block__column">
+                    <p>В&nbsp;сети появились случаи обмана от&nbsp;лица нашей компании. Мошенники размещают на&nbsp;hh.ru ложные вакансии от&nbsp;частных рекрутеров.</p>
+                    <p>В&nbsp;объявлении они просят кандидатов сразу писать им&nbsp;в&nbsp;Telegram, утверждая, что не&nbsp;принимают отклики на&nbsp;hh.ru. В&nbsp;профиле Telegram часто указано некорректное название компании (e-Legion) и&nbsp;ссылка на&nbsp;наш сайт.</p>
+                    <p>Далее мошенники предлагают рассмотреть несуществующую вакансию, заполнить анкету с&nbsp;персональными данными, указать модель устройства на&nbsp;iOS и&nbsp;зайти под чужим Apple&nbsp;ID.</p>
+                </div>
+                <div class="info-block__column">
+                    <p style="margin-bottom: 11px;">Мы заботимся о&nbsp;вашей безопасности и&nbsp;напоминаем:</p>
+                    <ul>
+                        <li>Наши сотрудники не&nbsp;пишут в&nbsp;WhatsApp.</li>
+                        <li>Мы&nbsp;не&nbsp;просим кандидатов сразу переходить в&nbsp;Telegram вместо отклика на&nbsp;hh.ru или e-legion.ru.</li>
+                        <li>Мы&nbsp;никогда не&nbsp;запрашиваем ваши персональные данные вне официальных каналов.</li>
+                        <li>Все актуальные вакансии размещены только на&nbsp;нашем официальном сайте. Если вам предлагают что-то вне списка&nbsp;— это обман.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-block__message">
+                Если у&nbsp;вас появились сомнения в&nbsp;подлинности предложения, лучше напишите нам на&nbsp;<a href="mailto:hr@e-legion.com" class="nowrap">hr@e-legion.com</a> и&nbsp;уточните информацию. Берегите свои данные и&nbsp;будьте внимательны!
+            </div>
+        </div>
+    </div>
+</div>

@@ -1381,6 +1381,28 @@
         padding: 16px;
         gap: 16px;
     }
+    .info-block{
+        margin-bottom: 30px;
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        h3{
+            font-size: 36px;
+        }
+        p,
+        ul li,
+        &__message{
+            font-size: 18px;
+        }
+        &__message{
+            background-size: 30px 30px;
+            padding-left: 40px;
+        }
+        &__container{
+            padding: 20px;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1856,6 +1878,16 @@
     .informer{
         &__text{
             font-size: 14px;
+        }
+    }
+    .info-block{
+        h3{
+            font-size: 28px;
+        }
+        p,
+        ul li,
+        &__message{
+            font-size: 16px;
         }
     }
 }

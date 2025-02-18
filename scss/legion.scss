@@ -12788,6 +12788,60 @@ svg.hoversvgrequest {
     }
 }
 
+.info-block{
+    margin-bottom: 80px;
+    &__container{
+        background: $color-grey-light;
+        border-radius: 18px;
+        padding: 40px;
+    }
+    &__columns{
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+        p{
+            font-size: 20px;
+            margin-bottom: 21px;
+        }
+    }
+    &__column{
+        width: 100%;
+    }
+    &__message{
+        margin-top: 26px;
+        font-size: 20px;
+        padding-left: 56px;
+        background: url(img/icon-career1-red.svg) 0 0 no-repeat;
+    }
+    a{
+        color: $color-black;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+	ul{
+		padding: 0;
+	}
+
+	ul li{
+        font-size: 20px;
+		padding-left: 33px;
+		list-style: none;
+		margin-bottom: 10px;
+	}
+    
+	ul li:before{
+		content: '—';
+		float: left;
+		margin-left: -33px;
+		padding-right: 7px;
+		width: 18px;
+		text-align: right;
+        white-space: nowrap;
+	}
+}
+
 @keyframes arrowmove {
 	0% {
 		transform: rotate(-45deg) translate(0, 0)
