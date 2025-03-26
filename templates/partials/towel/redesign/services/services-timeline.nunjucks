@@ -1,11 +1,6 @@
 <div class="services-v2">
   <div class="services-v2__container-fullwidth bg4">
     <div class="services-v2__timeline-wrapper">
-      <div class="container">
-        <div class="services-v2__timeline-caption">
-          Предпроектные исследования и&nbsp;аудит, дизайн, разработка, контроль качества и&nbsp;поддержка
-        </div>
-      </div>
 
     <div class="card__slider js-service-v2-timeline-mobile-slider mobile480-show">
       <div class="card__slider-container slider-container">

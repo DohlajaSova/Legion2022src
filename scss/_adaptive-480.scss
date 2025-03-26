@@ -1217,11 +1217,15 @@
                 line-height: 43.2px;
             }
         }
+        &__lead{
+            font-size: 16px;
+        }
         .svghover {
             max-width: 100% !important;
         }
         &__header{
             font-size: 40px;
+            margin-bottom: 18px;
             svg {
                 width: 133px;
 				margin: -10px 0 -6px;
@@ -1750,13 +1754,6 @@
         font-size: 28px;
     }
     //--- import-sub
-	.services-v2__header{
-		font-size: 32px;
-		svg{
-			width: 100px;
-			margin: -5px 0;
-		}
-	}
 	.redesign-projects svg{
 		max-width: calc(100% - 40px) !important;
 	}

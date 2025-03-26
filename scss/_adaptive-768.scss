@@ -2410,6 +2410,12 @@
             }
         }
     }
+    
+    .services-v2 {
+        &__lead{
+            max-width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {

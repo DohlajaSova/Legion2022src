@@ -8748,6 +8748,9 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     vertical-align: middle;
     width: 190px;
     height: auto; }
+.services-v2__lead {
+  font-size: 20px;
+  max-width: 60%; }
 .services-v2 .container {
   max-width: 1087px;
   padding-top: 80px;
@@ -8956,7 +8959,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   width: 100%; }
   .services-v2__timeline-wrapper {
     overflow: hidden;
-    padding: 40px 0 50px 0; }
+    padding: 40px 0 44px 0; }
     .services-v2__timeline-wrapper .container {
       padding: 0; }
   .services-v2__timeline-caption {
@@ -8992,6 +8995,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   right: 0; }
 .services-v2 .request__file {
   margin-bottom: 0; }
+.services-v2__top .container {
+  padding-top: 0 !important; }
 
 .button-svg-animate-container {
   border: none;
@@ -10792,10 +10797,11 @@ svg.hoversvgrequest {
     padding-top: 40px;
     padding-bottom: 40px; }
   .services-v2__header {
-    margin-bottom: 0;
     margin-top: 40px; }
     .services-v2__header svg {
       margin: -8px 0; }
+  .services-v2__lead {
+    max-width: 85%; }
   .services-v2__accordion_tabs {
     padding-left: 0; }
   .services-v2__accordion_navigation {
@@ -13591,7 +13597,10 @@ svg.hoversvgrequest {
   .feedback.feedback_applicants.feedback_applicants2 .request__comment-container {
     flex-wrap: wrap; }
     .feedback.feedback_applicants.feedback_applicants2 .request__comment-container .request__comment {
-      padding-top: 14px; } }
+      padding-top: 14px; }
+
+  .services-v2__lead {
+    max-width: 100%; } }
 @media only screen and (max-width: 600px) {
   .dummy-v2 .dummy__container {
     background-image: url("img/404-bg-animation-small.svg");
@@ -15579,10 +15588,13 @@ svg.hoversvgrequest {
     .services-v2__heading-2 {
       font-size: 36px;
       line-height: 43.2px; }
+  .services-v2__lead {
+    font-size: 16px; }
   .services-v2 .svghover {
     max-width: 100% !important; }
   .services-v2__header {
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: 18px; }
     .services-v2__header svg {
       width: 133px;
       margin: -10px 0 -6px; }
@@ -15889,12 +15901,6 @@ svg.hoversvgrequest {
 
   .importhead__header {
     font-size: 28px; }
-
-  .services-v2__header {
-    font-size: 32px; }
-    .services-v2__header svg {
-      width: 100px;
-      margin: -5px 0; }
 
   .redesign-projects svg {
     max-width: calc(100% - 40px) !important; }

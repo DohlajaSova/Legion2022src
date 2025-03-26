@@ -12317,6 +12317,10 @@ svg.svg-hover-filter-clear {
 			height: auto;
 		}
 	}
+    &__lead{
+        font-size: 20px;
+        max-width: 60%;
+    }
 	.container {
 		max-width: 1087px;
 		padding-top: 80px;
@@ -12595,7 +12599,7 @@ svg.svg-hover-filter-clear {
 		width: 100%;
 		&-wrapper {
 			overflow: hidden;
-			padding: 40px 0 50px 0;
+			padding: 40px 0 44px 0;
 			.container {
 				padding: 0;
 			}
@@ -12648,6 +12652,11 @@ svg.svg-hover-filter-clear {
 	.request__file {
 		margin-bottom: 0;
 	}
+    &__top{
+        .container{
+            padding-top: 0 !important;
+        }
+    }
 }
 // --versionate redesign
 
