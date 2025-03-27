@@ -8513,13 +8513,16 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   padding-bottom: 80px; }
 .importhead__header {
   font-size: 80px; }
+.importhead__lead {
+  font-size: 20px;
+  max-width: 60%; }
 .importhead__banner {
   width: 100%;
   height: auto;
-  background-size: cover;
-  height: 480px;
+  height: 400px;
   padding: 40px 60px;
-  background-image: url("img/import-substitution-banner.png");
+  background: url("img/import-substitution-banner.png") center center no-repeat;
+  background-size: cover;
   margin-bottom: 60px; }
   .importhead__banner svg {
     margin-bottom: 20px; }
@@ -8996,7 +8999,8 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
 .services-v2 .request__file {
   margin-bottom: 0; }
 .services-v2__top .container {
-  padding-top: 0 !important; }
+  padding-top: 0 !important;
+  padding-bottom: 65px; }
 
 .button-svg-animate-container {
   border: none;
@@ -10796,10 +10800,8 @@ svg.hoversvgrequest {
   .services-v2 .container {
     padding-top: 40px;
     padding-bottom: 40px; }
-  .services-v2__header {
-    margin-top: 40px; }
-    .services-v2__header svg {
-      margin: -8px 0; }
+  .services-v2__header svg {
+    margin: -8px 0; }
   .services-v2__lead {
     max-width: 85%; }
   .services-v2__accordion_tabs {

@@ -1,17 +1,11 @@
-<div class="importhead">
+<div class="services-v2 services-v2__top importhead">
     <div class="container">
-        <h2 class="importhead__header">
-            Импортозамещение*
-        </h2>
+        <h1 class="importhead__header">
+            Импортозамещение в&nbsp;IT
+        </h1>
+        <p class="services-v2__lead importhead__lead">Разрабатываем и&nbsp;адаптируем цифровые продукты под отечественные операционные системы</p>
     </div>
-    <div class="importhead__banner">
-        <svg width="28" height="27" viewbox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.5925 16.0583L7.45845 26.0424L3.62467 23.5988L10.3861 13.6147L0 11.6597L0.975872 7.19134L11.571 9.77463L11.2922 0H15.8928L15.6836 9.77463L26.2091 7.26116L27.1153 11.6597L27.0456 11.7296L16.8686 13.6147L23.5603 23.5988L19.7265 26.0424L13.5925 16.0583Z" fill="white"/>
-        </svg>
-        <p class="importhead__banner_caption">
-            Разрабатываем и&nbsp;адаптируем цифровые продукты под&nbsp;отечественные операционные системы
-        </p>
-    </div>
+    <div class="importhead__banner"></div>
     <div class="container">
         <p class="importhead__text">
             Переход на&nbsp;российское ПО&nbsp;позволяет избежать рисков прекращения техподдержки, защитить чувствительные данные компании и&nbsp;сократить зависимость от&nbsp;иностранных компонентов.
