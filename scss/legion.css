@@ -5553,7 +5553,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
   padding-bottom: 70px;
   margin-top: -152px; }
   .body_about .top > .container {
-    align-items: flex-end; }
+    align-items: flex-end;
+    width: 100%; }
   .body_about .top .h1 {
     color: #fff;
     width: 100%; }
