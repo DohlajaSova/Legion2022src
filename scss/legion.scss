@@ -11235,6 +11235,13 @@ svg.svg-hover-filter-clear {
 					&-text {
 						font-size: 18px;
 						line-height: 130%; /* 23.4px */
+                        a{
+                            color: $color-black;
+                            text-decoration: underline;
+                            &:hover{
+                                text-decoration: none;
+                            }
+                        }
 					}
 				}
 			}

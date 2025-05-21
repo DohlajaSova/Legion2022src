@@ -7914,6 +7914,11 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
             font-size: 18px;
             line-height: 130%;
             /* 23.4px */ }
+            .expert-content .slide-left-part .tezis-text a {
+              color: #141414;
+              text-decoration: underline; }
+              .expert-content .slide-left-part .tezis-text a:hover {
+                text-decoration: none; }
       .expert-content .slide-right-part {
         flex-shrink: 0; }
         .expert-content .slide-right-part-image .img {
