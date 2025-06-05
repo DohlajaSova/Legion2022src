@@ -307,7 +307,6 @@ a:hover {
 .bottom-dummy {
 	height: 0;
 	.body_contacts &,
-	.body_about &,
 	.body_news &{
 		height:74px;
 	}
@@ -7843,25 +7842,18 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 	.header {
 		background-color: transparent;
 	}
+    
 
 	.top {
-		background: url($img-path + "about.webp") top center no-repeat;
-		background-size: 100% auto;
-		min-height: 544px;
-		display: flex;
-		justify-content: flex-end;
-		padding-bottom: 70px;
-		margin-top: -152px;
-
-		&>.container {
-			align-items: flex-end;
-            width: 100%;
-		}
-
-		.h1 {
-			color: $color-white;
-			width: 100%;
-		}
+        & > .container{
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__lead{
+            width: 50%;
+            font-size: 20px;
+            line-height: 1.3;
+        }
 	}
 }
 

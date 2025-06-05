@@ -3209,4 +3209,21 @@ docReady(function () {
         setinformerIsRead(false);
     }
 
+    //слайдер на странице about ver.2
+    if (document.querySelectorAll(".js-about-rewards-slider").length > 0) {
+        Array.from(document.querySelectorAll(".js-about-rewards-slider")).forEach(slider => {
+            tns({
+                container: slider.querySelector(".about-rewards__slider-container"),
+                navContainer: slider.querySelector(".about-rewards-slider-dots"),
+                items: 1,
+                gutter: 10,
+                controls: false,
+                nav: true,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        })
+    }
+
 });
