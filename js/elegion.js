@@ -2480,6 +2480,17 @@ docReady(function () {
         }
     }
 
+    // функциональность чекбокса согласия с политиками
+    if (document.querySelector('.js-request-agreed')) {
+        const cont = document.querySelector('.js-request-agreed');
+        const chk = document.querySelector('#agreed');
+        const btn = cont.nextElementSibling.querySelector('.button');
+        cont.onclick = function (e) {
+            if (!chk.checked) btn.setAttribute('disabled', 'disabled');
+            else btn.removeAttribute('disabled');
+        }
+    }
+
     const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form");
     if (scrolltoapplicants.length > 0) {
         for (i = 0; i < scrolltoapplicants.length; i++) {
@@ -3214,7 +3225,7 @@ docReady(function () {
         Array.from(document.querySelectorAll(".js-about-rewards-slider")).forEach(slider => {
             tns({
                 container: slider.querySelector(".about-rewards__slider-container"),
-                navContainer: slider.querySelector(".about-rewards-slider-dots"),
+                navContainer: slider.querySelector(".about-rewards__slider-dots ul"),
                 items: 1,
                 gutter: 10,
                 controls: false,

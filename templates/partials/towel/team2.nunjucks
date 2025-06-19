@@ -1,103 +1,94 @@
-<div class="team">
+<div class="team team_ver2">
     <div class="container">
         <div class="team__content">
-            <h2>Команда <em>легионеров</em></h2>
+            <h2>Команда</h2>
             <div class="team__content_text">
-                <p>e-legion&nbsp;– это прежде всего команда профессионалов, выполняющих свою работу на&nbsp;все&nbsp;сто! Каждый отдел компании вносит свой вклад в&nbsp;общее дело, что позволяет выдавать качественный продукт нашим клиентам.</p>
+                <p>Наш главный ресурс&nbsp;— люди, которые стоят за&nbsp;каждым проектом.</p>
             </div>
         </div>
         <div class="team__slider js-team-container">
             <div class="team__list">
-                <span class="team__list_item teammate">
+                <div class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Zherebcov_v2.webp" alt="Никита Жеребцов"></div>
-                        <div class="teammate__body">
-                            <div class="teammate__body_name">Никита Жеребцов</div>
-                            <div class="teammate__body_position">руководитель отдела дизайна</div>
-                        </div>
-                    </div></div>
-                </span>
-                <span class="team__list_item teammate">
-                    <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Volkov.webp" alt="Виктор Волков"></div>
-                        <div class="teammate__body">
-                            <div class="teammate__body_name">Виктор Волков</div>
-                            <div class="teammate__body_position">руководитель отдела iOS-разработки</div>
-                        </div>
-                    </div></div>
-                </span>
-                <span class="team__list_item teammate">
-                    <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Trofimov.webp" alt="Никита Трофимов"></div>
-                        <div class="teammate__body">
-                            <div class="teammate__body_name">Никита Трофимов</div>
-                            <div class="teammate__body_position">руководитель клиентской службы</div>
-                        </div>
-                    </div></div>
-                </span>
-                <span class="team__list_item teammate">
-                    <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Rizvanova.webp" alt="Екатерина Ризванова"></div>
-                        <div class="teammate__body">
-                            <div class="teammate__body_name">Катя Ризванова</div>
-                            <div class="teammate__body_position">директор по персоналу</div>
-                        </div>
-                    </div></div>
-                </span>
-                <span class="team__list_item teammate">
-                    <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Nikiforov.webp" alt="Григорий Никифоров"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Nikiforov_2025.webp" alt="Григорий Никифоров"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Гриша Никифоров</div>
                             <div class="teammate__body_position">руководитель проектного офиса</div>
                         </div>
                     </div></div>
-                </span>
-                <span class="team__list_item teammate">
+                </div>
+                <div class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Glazunov.webp" alt="Алексей Глазунов"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Rizvanova_2025.webp" alt="Екатерина Ризванова"></div>
                         <div class="teammate__body">
-                            <div class="teammate__body_name">Алексей Глазунов</div>
-                            <div class="teammate__body_position">руководитель отдела анализа</div>
+                            <div class="teammate__body_name">Катя Ризванова</div>
+                            <div class="teammate__body_position">руководитель отдела персонала</div>
                         </div>
                     </div></div>
-                </span>
-                <span class="team__list_item teammate">
+                </div>
+                <div class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Denisova.webp" alt="Елена Денисова"></div>
-                        <div class="teammate__body">
-                            <div class="teammate__body_name">Елена Денисова</div>
-                            <div class="teammate__body_position">заместитель исполнительного директора</div>
-                        </div>
-                    </div></div>
-                </span>
-                <span class="team__list_item teammate">
-                    <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Barannikov.webp" alt="Михаил Баранников"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Barannikov_2022.webp" alt="Михаил Баранников"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Миша Баранников</div>
                             <div class="teammate__body_position">руководитель отдела мобильной разработки</div>
                         </div>
                     </div></div>
-                </span>
-                <span class="team__list_item teammate">
+                </div>
+                <div class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Usmanov.webp" alt="Рамиль Усманов"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Volkov_2022.webp" alt="Виктор Волков"></div>
                         <div class="teammate__body">
-                            <div class="teammate__body_name">Рамиль Усманов</div>
-                            <div class="teammate__body_position">руководитель отдела качества</div>
+                            <div class="teammate__body_name">Виктор Волков</div>
+                            <div class="teammate__body_position">руководитель отдела iOS-разработки</div>
                         </div>
                     </div></div>
-                </span>
-                <span class="team__list_item teammate">
+                </div>
+                <div class="team__list_item teammate">
                     <div class="teammate__container"><div class="teammate__contents">
-                        <div class="teammate__photo"><img src="/assets/css/img/Team_Afonin.webp" alt="Сергей Афонин"></div>
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Denisova_2022.webp" alt="Елена Денисова"></div>
+                        <div class="teammate__body">
+                            <div class="teammate__body_name">Елена Денисова</div>
+                            <div class="teammate__body_position">заместитель исполнительного директора</div>
+                        </div>
+                    </div></div>
+                </div>
+                <div class="team__list_item teammate">
+                    <div class="teammate__container"><div class="teammate__contents">
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Afonin_2022.webp" alt="Сергей Афонин"></div>
                         <div class="teammate__body">
                             <div class="teammate__body_name">Сергей Афонин</div>
                             <div class="teammate__body_position">руководитель отдела заказной разработки</div>
                         </div>
                     </div></div>
-                </span>
+                </div>
+                <div class="team__list_item teammate">
+                    <div class="teammate__container"><div class="teammate__contents">
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_Zherebcov_2025.webp" alt="Никита Жеребцов"></div>
+                        <div class="teammate__body">
+                            <div class="teammate__body_name">Никита Жеребцов</div>
+                            <div class="teammate__body_position">руководитель отдела дизайна</div>
+                        </div>
+                    </div></div>
+                </div>
+                <div class="team__list_item teammate">
+                    <div class="teammate__container"><div class="teammate__contents">
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_UniversalPicture.webp" alt="Елизавета Сологуб"></div>
+                        <div class="teammate__body">
+                            <div class="teammate__body_name">Елизавета Сологуб</div>
+                            <div class="teammate__body_position">руководитель клиентской службы</div>
+                        </div>
+                    </div></div>
+                </div>
+                <div class="team__list_item teammate">
+                    <div class="teammate__container"><div class="teammate__contents">
+                        <div class="teammate__photo"><img src="/assets/css/img/Team_UniversalPicture.webp" alt="Юлия Воронкова"></div>
+                        <div class="teammate__body">
+                            <div class="teammate__body_name">Юлия Воронкова</div>
+                            <div class="teammate__body_position">заместитель директора по&nbsp;операционной деятельности</div>
+                        </div>
+                    </div></div>
+                </div>
             </div>
         </div>
     </div>

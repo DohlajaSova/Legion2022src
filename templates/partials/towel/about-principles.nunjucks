@@ -1,0 +1,25 @@
+<div class="not-all-the-same not-all-the-same_grey">
+    <div class="container">
+        <h2>Наши принципы</h2>
+    </div>
+    <div class="not-all-the-same__list">
+        <div class="not-all-the-same__list-item">
+            <div class="container">
+                <h3 class="not-all-the-same__list-heading">Поиск новых решений</h3>
+                <p class="not-all-the-same__list-lead">Всегда ищем возможности улучшения проекта клиента. Если видим, как сделать лучше&nbsp;— говорим об этом. Развиваем отрасль вместе с&nbsp;коллегами, активно делимся опытом и&nbsp;знаниями на&nbsp;профессиональных мероприятиях.</p>
+            </div>
+        </div>
+        <div class="not-all-the-same__list-item">
+            <div class="container">
+                <h3 class="not-all-the-same__list-heading">Прозрачная коммуникация</h3>
+                <p class="not-all-the-same__list-lead">Выстраиваем чёткие процессы внутри команды и&nbsp;эффективно управляем проектными рисками. Клиент всегда имеет полный доступ к&nbsp;документации и&nbsp;актуальным статусам проекта.</p>
+            </div>
+        </div>
+        <div class="not-all-the-same__list-item">
+            <div class="container">
+                <h3 class="not-all-the-same__list-heading">Внимание к&nbsp;запросам</h3>
+                <p class="not-all-the-same__list-lead">Поддерживаем тесную коммуникацию с&nbsp;клиентом на&nbsp;всех этапах работы. Прислушиваемся к&nbsp;пожеланиям, задачам и&nbsp;возможным сомнениям. Анализируем риски и&nbsp;помогаем выбрать оптимальное решение для&nbsp;проекта.</p>
+            </div>
+        </div>
+    </div>
+</div>

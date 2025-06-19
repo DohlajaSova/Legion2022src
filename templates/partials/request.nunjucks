@@ -124,13 +124,16 @@
                 <option value="Я не помню">Я не помню</option>
             </select>
         </div>
-
-        <div class="request__comment-container centered">
-            <div class="request__comment">
-              Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;нашей <a href="/[[~47]]">политикой обработки персональных данных</a>
+        
+        <div class="request__comment-container centered checkbox">
+            <div class="request__comment js-request-agreed">
+                <input type="checkbox" id="agreed">
+                <label for="agreed">
+                    Я ознакомился с <a href="/[[~144]]" target="_blank">«Политикой оператора обработки персональных данных на администрируемом интернет–сайте»</a> и даю своё <a href="/[[~47]]" target="_blank">«Согласие на обработку персональных данных на сайте в сети Интернет»</a>.
+                </label>
             </div>
             <div class="request__button">
-                <button class="button js-request-button js-request-animate">
+                <button class="button js-request-button js-request-animate" disabled="disabled">
                     <span class="request__button_label">Отправить заявку</span>
                     <span class="request__button_arrow"></span>
                 </button>

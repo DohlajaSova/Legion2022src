@@ -1223,6 +1223,11 @@
                 .request__comment{
                     padding-top: 14px;
                 }
+                &.checkbox{
+                    .button{
+                        padding: 20px 10px 20px 30px;
+                    }
+                }
             }
         }
         &__range{

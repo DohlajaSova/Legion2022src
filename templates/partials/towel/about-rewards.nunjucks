@@ -3,8 +3,8 @@
         <div class="about-rewards__slider-container">
             <div class="about-rewards__slide" style="background-color: #FFDD2D;"><div class="container">
                 <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
-                    <span>t2. Новый уровень</span>
-                    <span>Золото, серебро и&nbsp;бронза на&nbsp;конкурсе Workspace&nbsp;— за&nbsp;мобильное приложение для одного из&nbsp;лидеров телеком–рынка&nbsp;→</span>
+                    <span class="about-rewards__slide-heading">t2. Новый уровень</span>
+                    <span class="about-rewards__slide-lead">Золото, серебро и&nbsp;бронза на&nbsp;конкурсе Workspace&nbsp;— за&nbsp;мобильное приложение для одного из&nbsp;лидеров телеком–рынка&nbsp;→</span>
                 </a>
                 <div class="about-rewards__slide-image">
                     <img src="assets/css/img/about-tbank.webp" alt="">
@@ -12,8 +12,8 @@
             </div></div>
             <div class="about-rewards__slide" style="background-color: #FFDD2D;"><div class="container">
                 <a href="https://goldensite.ru/work/obrazovatelnyy-servis/9666/" target="_blank" class="about-rewards__slide-text">
-                    <span>Академия инвестиций Тинькофф</span>
-                    <span>Серебро в&nbsp;номинации «Образовательные сервисы»&nbsp;— за&nbsp;продуманный&nbsp;UX и&nbsp;эффективный подход к&nbsp;обучению&nbsp;→</span>
+                    <span class="about-rewards__slide-heading">Академия инвестиций Тинькофф</span>
+                    <span class="about-rewards__slide-lead">Серебро в&nbsp;номинации «Образовательные сервисы»&nbsp;— за&nbsp;продуманный&nbsp;UX и&nbsp;эффективный подход к&nbsp;обучению&nbsp;→</span>
                 </a>
                 <div class="about-rewards__slide-image">
                     <img src="assets/css/img/about-tbank.webp" alt="">
@@ -21,8 +21,8 @@
             </div></div>
             <div class="about-rewards__slide" style="background-color: #f0f0f0;"><div class="container">
                 <a href="https://goldensite.ru/work/prilozheniya-dlya-obektov-nedvizhimosti/9664/" target="_blank" class="about-rewards__slide-text">
-                    <span>Петербургская Недвижимость</span>
-                    <span>Награды в&nbsp;номинациях «Приложения для объектов недвижимости» и&nbsp;«Приложения для девелоперской компании»&nbsp;— за&nbsp;удобный&nbsp;UX и&nbsp;лаконичный дизайн&nbsp;→</span>
+                    <span class="about-rewards__slide-heading">Петербургская Недвижимость</span>
+                    <span class="about-rewards__slide-lead">Награды в&nbsp;номинациях «Приложения для объектов недвижимости» и&nbsp;«Приложения для девелоперской компании»&nbsp;— за&nbsp;удобный&nbsp;UX и&nbsp;лаконичный дизайн&nbsp;→</span>
                 </a>
                 <div class="about-rewards__slide-image">
                     <img src="assets/css/img/about-tbank.webp" alt="">
@@ -30,8 +30,8 @@
             </div></div>
 
         </div>
-        <div>
-            <ul class="about-rewards-slider-dots">
+        <div class="about-rewards__slider-dots">
+            <ul>
                 <li></li>
                 <li></li>
                 <li></li>
