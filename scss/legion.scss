@@ -3463,6 +3463,51 @@ a.button {
         & > .container{
             max-width: 1087px;
         }
+        h2{
+            margin-bottom: 24px;
+        }
+        &__lead{
+            width: 75%;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        &__list{
+            margin-top: 60px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 60px 20px;
+            margin-bottom: 80px;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: calc(50% - 10px);
+            &-img{
+                display: block;
+                margin-bottom: 10px;
+            }
+            &-tags{
+                color: $color-grey-dark;
+                font-size: 18px;
+                line-height: 1.3;
+            }
+            &-heading{
+                color: $color-black;
+                font-size: 24px;
+                line-height: 1.3;
+                text-decoration: underline;
+            }
+            &-lead{
+                color: $color-black;
+                font-size: 18px;
+                line-height: 1.3;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 }
 
@@ -12985,6 +13030,12 @@ svg.svg-hover-filter-clear {
 		margin-bottom: 0;
 		border-bottom: 1px solid $color-black;
 		// height: 400px;
+        &__form{
+            gap: 0;
+            h3{
+                margin-bottom: 24px;
+            }
+        }
 		&__form_item {
 			margin-bottom: 60px;
 		}

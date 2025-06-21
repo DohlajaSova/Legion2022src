@@ -2653,6 +2653,42 @@ a.button {
     margin-bottom: 20px; }
     .about-projects > .container {
       max-width: 1087px; }
+    .about-projects h2 {
+      margin-bottom: 24px; }
+    .about-projects__lead {
+      width: 75%;
+      font-size: 24px;
+      line-height: 1.2; }
+    .about-projects__list {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 60px 20px;
+      margin-bottom: 80px; }
+    .about-projects__item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: calc(50% - 10px); }
+      .about-projects__item-img {
+        display: block;
+        margin-bottom: 10px; }
+      .about-projects__item-tags {
+        color: #949191;
+        font-size: 18px;
+        line-height: 1.3; }
+      .about-projects__item-heading {
+        color: #141414;
+        font-size: 24px;
+        line-height: 1.3;
+        text-decoration: underline; }
+      .about-projects__item-lead {
+        color: #141414;
+        font-size: 18px;
+        line-height: 1.3; }
+      .about-projects__item:hover {
+        text-decoration: none; }
 
 .category {
   margin-bottom: 106px; }
@@ -9219,6 +9255,10 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
 .services-v2 .request {
   margin-bottom: 0;
   border-bottom: 1px solid #141414; }
+  .services-v2 .request__form {
+    gap: 0; }
+    .services-v2 .request__form h3 {
+      margin-bottom: 24px; }
   .services-v2 .request__form_item {
     margin-bottom: 60px; }
   .services-v2 .request.clicked {
