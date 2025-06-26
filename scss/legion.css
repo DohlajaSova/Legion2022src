@@ -2607,6 +2607,8 @@ a.button {
         position: relative;
         z-index: 2;
         width: 50%; }
+        .about-rewards__slide-text:hover {
+          text-decoration: none; }
       .about-rewards__slide-heading {
         font-size: 46px;
         font-weight: 700;
@@ -2638,7 +2640,9 @@ a.button {
       line-height: 1.2;
       align-items: flex-start; }
       .about-clients__info .button {
-        white-space: nowrap; }
+        font-size: 18px;
+        white-space: nowrap;
+        padding: 21px 39px; }
     .about-clients__logos {
       justify-content: center;
       display: flex;
@@ -5685,7 +5689,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
     position: relative;
     padding: 20px;
     transition: top ease 0.5s;
-    top: 0; }
+    top: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 22%, rgba(30, 39, 56, 0.26) 60%, rgba(30, 39, 56, 0.8) 111%); }
     .team_ver2 .teammate__body_name {
       color: #fff;
       font-size: 20px;
@@ -5720,8 +5725,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
         font-style: normal;
         white-space: nowrap; }
   .to-work_ver2 {
-    background: url("img/career2.webp") right top no-repeat #141414;
-    background-size: auto 100%; }
+    background: url("img/career2.webp") right bottom -22px no-repeat #141414;
+    background-size: auto 130%; }
     .to-work_ver2 > .container {
       max-width: 1087px; }
     .to-work_ver2 h2 {
@@ -10194,7 +10199,10 @@ svg.hoversvgrequest {
     line-height: 1.3; }
 
   .body_astralinux .redesign-projects .container:first-child {
-    margin-top: 60px; } }
+    margin-top: 60px; }
+
+  .body_about .top .h1 {
+    font-size: 80px; } }
 @media only screen and (max-width: 1180px) {
   .mobile1180-show {
     display: block !important; }
@@ -10325,6 +10333,28 @@ svg.hoversvgrequest {
 
   .about {
     padding: 80px 30px 150px; }
+    .about-rewards {
+      margin-bottom: 70px; }
+      .about-rewards__slide {
+        height: 420px; }
+        .about-rewards__slide > .container {
+          max-width: none;
+          padding: 0 30px; }
+    .about-clients {
+      margin-bottom: 45px; }
+      .about-clients > .container {
+        max-width: none;
+        padding: 0 30px; }
+      .about-clients__info .button {
+        font-size: 18px;
+        padding: 21px 39px; }
+    .about-projects > .container {
+      max-width: none;
+      padding: 0 30px; }
+    .about-projects__list {
+      gap: 40px 20px;
+      margin-top: 50px;
+      margin-bottom: 70px; }
 
   .category__content {
     font-size: 80px;
@@ -10653,7 +10683,26 @@ svg.hoversvgrequest {
       .case-container__toc-inner.fixed.closed .case-container__toc-inner {
         padding-top: 20px; }
       .case-container__toc-inner.fixed.closed .sidetoc-menu {
-        top: 0; } }
+        top: 0; }
+
+  .body_about .top {
+    margin-bottom: 50px; }
+    .body_about .top > .container {
+      gap: 0;
+      max-width: none; }
+    .body_about .top .h1 {
+      font-size: 70px;
+      margin-bottom: 30px; }
+  .body_about .not-all-the-same {
+    margin-bottom: 80px; }
+  .body_about .team {
+    margin-bottom: 65px; }
+    .body_about .team__content {
+      margin-bottom: 55px; }
+    .body_about .team_ver2 > .container {
+      max-width: none; }
+  .body_about .to-work_ver2 > .container {
+    max-width: none; } }
 @media only screen and (max-width: 1080px) {
   .who-we-are__widget {
     grid-template-columns: 1fr 1fr; }
@@ -11198,6 +11247,81 @@ svg.hoversvgrequest {
         padding-top: 13px; }
         .about__text_link a {
           font-size: 16px; }
+    .about-clients {
+      margin-bottom: 35px; }
+      .about-clients__info {
+        flex-direction: column;
+        gap: 30px;
+        font-size: 22px;
+        margin-bottom: 50px; }
+      .about-clients__logos {
+        margin: 0 -30px; }
+        .about-clients__logos .svg-hover-filter-clear {
+          margin: 0 25px 30px; }
+    .about-rewards__slide {
+      height: 360px; }
+      .about-rewards__slide-heading {
+        font-size: 36px;
+        text-decoration: none; }
+      .about-rewards__slide-image {
+        right: -90px; }
+    .about-projects h2 {
+      font-size: 60px; }
+    .about-projects__lead {
+      font-size: 22px;
+      width: 100%; }
+    .about-projects__list {
+      gap: 40px; }
+    .about-projects__item {
+      width: 75%; }
+      .about-projects__item-heading {
+        font-size: 22px; }
+
+  .body_about .top {
+    margin-bottom: 40px; }
+    .body_about .top .h1 {
+      font-size: 60px;
+      margin-bottom: 20px; }
+    .body_about .top__lead {
+      width: 100%; }
+  .body_about .not-all-the-same_grey {
+    padding: 60px 30px 30px;
+    margin-bottom: 60px; }
+    .body_about .not-all-the-same_grey h2 {
+      font-size: 60px; }
+    .body_about .not-all-the-same_grey .not-all-the-same__list {
+      margin-top: 20px; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-item {
+        padding: 20px 0 30px; }
+        .body_about .not-all-the-same_grey .not-all-the-same__list-item > .container {
+          flex-direction: column;
+          gap: 0; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-heading {
+        width: 100%; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-lead {
+        width: 100%;
+        padding-top: 9px; }
+  .body_about .team_ver2 {
+    margin-bottom: 55px; }
+    .body_about .team_ver2 .teammate__body_name {
+      font-size: 18px; }
+    .body_about .team_ver2 .teammate__body_position {
+      font-size: 14px; }
+  .body_about .team__content {
+    flex-direction: column;
+    margin-bottom: 45px; }
+    .body_about .team__content h2 {
+      font-size: 60px;
+      width: 100%;
+      padding-right: 0; }
+    .body_about .team__content_text {
+      font-size: 22px;
+      width: 100%; }
+  .body_about .to-work_ver2 h2 {
+    font-size: 44px; }
+  .body_about .to-work_ver2 .button, .body_about .to-work_ver2 a.button, .body_about .to-work_ver2 a.button:visited {
+    padding: 21px 25px;
+    font-size: 16px; }
 
   .circle-case {
     height: 344px;
@@ -12093,7 +12217,13 @@ svg.hoversvgrequest {
       flex-direction: column;
       gap: 0; }
     .info-block__message {
-      margin-top: 14px; } }
+      margin-top: 14px; }
+
+  .to-work_ver2 {
+    background-position: right -70px center;
+    background-size: auto 92%; }
+    .to-work_ver2 .to-work__content {
+      padding: 60px 0; } }
 @media only screen and (max-width: 960px) {
   .redesign-blog .container {
     padding-left: 0;
@@ -12710,15 +12840,12 @@ svg.hoversvgrequest {
   .client ~ .feedback {
     margin-bottom: 0; }
 
-  .body_career .top,
-  .body_about .top {
+  .body_career .top {
     background-size: cover;
     min-height: 700px; }
-    .body_career .top > .container,
-    .body_about .top > .container {
+    .body_career .top > .container {
       padding-top: 233px; }
-  .body_career .not-all-the-same_background,
-  .body_about .not-all-the-same_background {
+  .body_career .not-all-the-same_background {
     margin-bottom: 80px; }
 
   .body_career.body_career-ver2 .top {
@@ -13391,6 +13518,44 @@ svg.hoversvgrequest {
         font-size: 20px; }
       .about__text_link a {
         font-size: 16px; }
+    .about-rewards {
+      margin-bottom: 50px; }
+      .about-rewards__slide {
+        height: 300px; }
+        .about-rewards__slide-heading {
+          font-size: 28px; }
+        .about-rewards__slide-lead {
+          font-size: 18px; }
+        .about-rewards__slide-text {
+          width: 66%; }
+    .about-clients {
+      margin-bottom: 15px; }
+      .about-clients__info {
+        font-size: 20px;
+        margin-bottom: 30px; }
+      .about-clients__logos {
+        margin: 0 -10px; }
+        .about-clients__logos .svg-added-filter {
+          height: 50px; }
+        .about-clients__logos .svg-hover-filter-clear {
+          margin: 0 10px 10px; }
+    .about-projects h2 {
+      font-size: 50px;
+      margin-bottom: 20px; }
+    .about-projects__lead {
+      font-size: 20px; }
+    .about-projects__list {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      gap: 35px; }
+    .about-projects__item {
+      width: 100%; }
+      .about-projects__item-tags {
+        font-size: 17px; }
+      .about-projects__item-heading {
+        font-size: 21px; }
+      .about-projects__item-lead {
+        font-size: 17px; }
 
   .vacancies {
     margin-bottom: 40px; }
@@ -13472,6 +13637,37 @@ svg.hoversvgrequest {
   .category__content {
     font-size: 60px; }
 
+  .body_about .top .h1 {
+    font-size: 48px; }
+  .body_about .top__lead {
+    font-size: 19px; }
+  .body_about .not-all-the-same_grey {
+    padding-bottom: 20px;
+    margin-bottom: 50px; }
+    .body_about .not-all-the-same_grey h2 {
+      font-size: 50px; }
+    .body_about .not-all-the-same_grey .not-all-the-same__list {
+      margin-top: 10px; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-heading {
+        font-size: 32px;
+        margin-bottom: 3px; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-lead {
+        font-size: 17px; }
+  .body_about .team__content {
+    margin-bottom: 28px; }
+    .body_about .team__content h2 {
+      font-size: 50px; }
+    .body_about .team__content_text {
+      font-size: 21px;
+      padding-top: 5px; }
+  .body_about .to-work_ver2 {
+    margin-bottom: 60px; }
+    .body_about .to-work_ver2 h2 {
+      font-size: 40px;
+      width: 90%; }
+    .body_about .to-work_ver2 p {
+      font-size: 19px;
+      width: 90%; }
   .body_about .cases {
     margin-bottom: 0; }
 

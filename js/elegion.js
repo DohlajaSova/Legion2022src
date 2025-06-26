@@ -2275,10 +2275,10 @@ docReady(function () {
             gutter: 15,
             responsive: {
                 320: {
-                    items: 1
-                },
-                640: {
                     items: 2
+                },
+                650: {
+                    items: 3
                 },
                 992: {
                     items: 4

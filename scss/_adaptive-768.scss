@@ -535,8 +535,7 @@
         margin-bottom: 0; //было 60 пиксел!!!
     }
 
-    .body_career,
-	.body_about {
+    .body_career {
         .top {
             background-size:cover;
             min-height: 700px;
@@ -1623,6 +1622,63 @@
                 }
             }
         }
+        &-rewards{
+            margin-bottom: 50px;
+            &__slide{
+                height: 300px;
+                &-heading{
+                    font-size: 28px;
+                }
+                &-lead{
+                    font-size: 18px;
+                }
+                &-text{
+                    width: 66%;
+                }
+            }
+        }
+        &-clients{
+            margin-bottom: 15px;
+            &__info{
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+            &__logos{
+                margin: 0 -10px;
+                .svg-added-filter{
+                    height: 50px;
+                }
+                .svg-hover-filter-clear{
+                    margin: 0 10px 10px;
+                }
+            }
+        }
+        &-projects{
+            h2{
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            &__lead{
+                font-size: 20px;
+            }
+            &__list{
+                margin-top: 40px;
+                margin-bottom: 60px;
+                gap: 35px;
+            }
+            &__item{
+                width: 100%;
+                &-tags{
+                    font-size: 17px;
+                }
+                &-heading{
+                    font-size: 21px;
+                }
+                &-lead{
+                    font-size: 17px;
+                }
+            }
+        }
     }
     .vacancies{
         margin-bottom:40px;
@@ -1746,6 +1802,52 @@
         }
     }
     .body_about {
+        .top{
+            .h1{
+                font-size: 48px;
+            }
+            &__lead{
+                font-size: 19px;
+            }
+        }
+        .not-all-the-same_grey{
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            h2{
+                font-size: 50px;
+            }
+            .not-all-the-same__list{
+                margin-top: 10px;
+                &-heading{
+                    font-size: 32px;
+                    margin-bottom: 3px;
+                }
+                &-lead{
+                    font-size: 17px;
+                }
+            }
+        }
+        .team__content{
+            margin-bottom: 28px;
+            h2{
+                font-size: 50px;
+            }
+            &_text{
+                font-size: 21px;
+                padding-top: 5px;
+            }
+        }
+        .to-work_ver2{
+            margin-bottom: 60px;
+            h2{
+                font-size: 40px;
+                width: 90%;
+            }
+            p{
+                font-size: 19px;
+                width: 90%;
+            }
+        }
         .cases {
             margin-bottom: 0;
         }

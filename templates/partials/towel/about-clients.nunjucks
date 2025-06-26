@@ -1,8 +1,8 @@
 <div class="about-clients">
     <div class="container">
         <div class="about-clients__info">
-            <p>С 2008 года помогаем цифровизировать ведущие российские и зарубежные компании. Вместе с нашими клиентами регулярно выигрываем награды в отраслевых конкурсах и рейтингах.</p>
-            <a href="" class="button button_border-dark">Отраслевые конкурсы</a>
+            <p>С 2008 года помогаем цифровизировать ведущие российские и&nbsp;зарубежные компании. Вместе с&nbsp;нашими клиентами регулярно выигрываем награды в&nbsp;отраслевых конкурсах и&nbsp;рейтингах.</p>
+            <a href="https://disk.360.yandex.ru/i/kQFXvkQYGaDzbg" target="_blank" class="button button_border-dark">Отраслевые конкурсы</a>
         </div>
         <div class="about-clients__logos">
             <div class="svg-hover-filter-clear">

@@ -1268,6 +1268,12 @@
             margin-top: 60px;
         }
     }
+    
+    .body_about{
+        .top .h1{
+            font-size: 80px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -1439,6 +1445,40 @@
     }
     .about{
         padding:80px 30px 150px;
+        &-rewards{
+            margin-bottom: 70px;
+            &__slide{
+                height: 420px;
+                & > .container{
+                    max-width: none;
+                    padding: 0 30px;
+                }
+            }
+        }
+        &-clients{
+            margin-bottom: 45px;
+            & > .container{
+                max-width: none;
+                padding: 0 30px;
+            }
+            &__info{
+                .button{
+                    font-size: 18px;
+                    padding: 21px 39px;
+                }
+            }
+        }
+        &-projects{
+            & > .container{
+                max-width: none;
+                padding: 0 30px;
+            }
+            &__list{
+                gap: 40px 20px;
+                margin-top: 50px;
+                margin-bottom: 70px;
+            }
+        }
     }
     .category{
         &__content{
@@ -2005,6 +2045,34 @@
                     }
                 }
             }
+        }
+    }
+    .body_about{
+        .top{
+            margin-bottom: 50px;
+            & > .container{
+                gap: 0;
+                max-width: none;
+            }
+            .h1{
+                font-size: 70px;
+                margin-bottom: 30px;
+            }
+        }
+        .not-all-the-same{
+            margin-bottom: 80px;
+        }
+        .team{
+            margin-bottom: 65px;
+            &__content{
+                margin-bottom: 55px;
+            }
+            &_ver2 > .container{
+                max-width: none;
+            }
+        }
+        .to-work_ver2 > .container{
+            max-width: none;
         }
     }
 }
@@ -2851,7 +2919,121 @@
                 }
             }
 		}
+        &-clients{
+            margin-bottom: 35px;
+            &__info{
+                flex-direction: column;
+                gap: 30px;
+                font-size: 22px;
+                margin-bottom: 50px;
+            }
+            &__logos{
+                margin: 0 -30px;
+                .svg-hover-filter-clear{
+                    margin: 0 25px 30px;
+                }
+            }
+        }
+        &-rewards{
+            &__slide{
+                height: 360px;
+                &-heading{
+                    font-size: 36px;
+                    text-decoration: none;
+                }
+                &-image{
+                    right: -90px;
+                }
+            }
+        }
+        &-projects{
+            h2{
+                font-size: 60px;
+            }
+            &__lead{
+                font-size: 22px;
+                width: 100%;
+            }
+            &__list{
+                gap: 40px;
+            }
+            &__item{
+                width: 75%;
+                &-heading{
+                    font-size: 22px;
+                }
+            }
+        }
 	}
+    .body_about{
+        .top{
+            margin-bottom: 40px;
+            .h1{
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+            &__lead{
+                width: 100%;
+            }
+        }
+        .not-all-the-same_grey{
+            padding: 60px 30px 30px;
+            margin-bottom: 60px;
+            h2{
+                font-size: 60px;
+            }
+            .not-all-the-same__list{
+                margin-top: 20px;
+                &-item{
+                    padding: 20px 0 30px;
+                    & > .container{
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+                &-heading{
+                    width: 100%;
+                }
+                &-lead{
+                    width: 100%;
+                    padding-top: 9px;
+                }
+            }
+        }
+        .team_ver2{
+            margin-bottom: 55px;
+            .teammate__body{
+                &_name{
+                    font-size: 18px;
+                }
+                &_position{
+                    font-size: 14px;
+                }
+            }
+        }
+        .team__content{
+            flex-direction: column;
+            margin-bottom: 45px;
+            h2{
+                font-size: 60px;
+                width: 100%;
+                padding-right: 0;
+            }
+            &_text{
+                font-size: 22px;
+                width: 100%;
+            }
+        }
+        .to-work_ver2{
+            h2{
+                font-size: 44px;
+            }
+            .button, a.button, a.button:visited{
+                padding: 21px 25px;
+                font-size: 16px;
+            }
+        }
+    }
     .circle-case{
         height:344px;
         overflow:hidden;
@@ -4233,6 +4415,13 @@
         }
         &__message{
             margin-top: 14px;
+        }
+    }
+    .to-work_ver2{
+        background-position: right -70px center;
+        background-size: auto 92%;
+        .to-work__content{
+            padding: 60px 0;
         }
     }
 }

@@ -3401,6 +3401,9 @@ a.button {
                 position: relative;
                 z-index: 2;
                 width: 50%;
+                &:hover{
+                    text-decoration: none;
+                }
             }
             &-heading{
                 font-size: 46px;
@@ -3441,7 +3444,9 @@ a.button {
             line-height: 1.2;
             align-items: flex-start;
             .button{
+                font-size: 18px;
                 white-space: nowrap;
+                padding: 21px 39px;
             }
         }
         &__logos{
@@ -8007,6 +8012,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                 padding: 20px;
                 transition: top ease 0.5s;
                 top: 0;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 22%, rgba(30, 39, 56, 0.26) 60%, rgba(30, 39, 56, 0.8) 111%);
                 &_name{
                     color: $color-white;
                     font-size: 20px;
@@ -8063,8 +8069,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		}
 	}
     &_ver2{
-        background: url($img-path + "career2.webp") right top no-repeat $color-black;
-        background-size: auto 100%;
+        background: url($img-path + "career2.webp") right bottom -22px no-repeat $color-black;
+        background-size: auto 130%;
         & > .container{
             max-width: 1087px;
         }
