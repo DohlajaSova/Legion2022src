@@ -2657,14 +2657,61 @@
 		.header.header_sticky{
 			background:$color-blue-dark;
 		}
-		.top {
-			min-height: 568px;
-		}
-		.to-work{
-			margin-bottom:0;
-		}
 		.projects.some-projects{
 			margin-bottom:40px;
+		}
+		.top{
+			margin-bottom: 28px;
+			.h1{
+				font-size: 36px;
+				margin-bottom:16px;
+			}
+			&__lead{
+				font-size: 18px;
+			}
+		}
+		.not-all-the-same_grey{
+			padding-top: 40px;
+			padding-bottom: 10px;
+			margin-bottom: 40px;
+			h2{
+				font-size: 40px;
+			}
+			.not-all-the-same__list{
+				margin-top: 0;
+				&-item{
+					padding: 14px 0 18px;
+				}
+				&-heading{
+					font-size: 28px;
+				}
+				&-lead{
+					font-size: 16px;
+				}
+			}
+		}
+		.team_ver2{
+			margin-bottom: 45px;
+		}
+		.team__content{
+			margin-bottom: 24px;
+			h2{
+				font-size: 40px;
+			}
+			&_text{
+				font-size: 20px;
+			}
+		}
+		.to-work_ver2{
+			.to-work__content{
+				padding: 40px 0;
+			}
+			h2{
+				font-size: 36px;
+			}
+			p{
+				font-size: 18px;
+			}
 		}
 	}
     .body_service{
@@ -2738,6 +2785,32 @@
         &__animation {
             margin-bottom: 0;
         }
+		&-rewards{
+			margin-bottom: 40px;
+			&__slide{
+				height: 230px;
+				&-heading{
+					font-size: 20px;
+				}
+				&-lead{
+					font-size: 16px;
+				}
+			}
+		}
+		&-clients{
+			&__info{
+				font-size: 18px;
+				margin-bottom: 26px;
+			}
+			&__logos{
+				.svg-hover-filter-clear{
+					margin: 0 0px 10px;
+				}
+				.svg-added-filter{
+					height: 42px;
+				}
+			}
+		}
     }
     .category{
         margin-bottom:0;
