@@ -35,7 +35,6 @@
     .vacancypage,
     .custom-format,
     .body_services-v2 .container,
-    // .body_services-v2 .services-v2 .container,
     .body_astralinux>.container{
         padding-left:20px;
         padding-right:20px;
@@ -48,6 +47,13 @@
             padding-left: 20px;
             padding-right: 20px;
         }
+    }
+    .about-rewards__slide > .container,
+    .about-clients > .container,
+    .about-projects > .container,
+    .body_about .not-all-the-same_grey{
+        padding-left:20px;
+        padding-right:20px;
     }
     .feedback.feedback_applicants.feedback_applicants2{
         h2{
@@ -1885,6 +1891,74 @@
         ul li,
         &__message{
             font-size: 16px;
+        }
+    }
+    .body_about{
+        .top{
+            .h1{
+                font-size: 28px;
+            }
+            &__lead{
+                font-size: 16px;
+            }
+        }
+        .not-all-the-same_grey{
+            h2{
+                font-size: 32px;
+            }
+            .not-all-the-same__list{
+                &-heading{
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+                &-lead{
+                    font-size: 14px;
+                }
+            }
+        }
+        .team__content{
+            h2{
+                font-size: 32px;
+            }
+        }
+        .to-work_ver2{
+            background-position: right -138px center;
+            margin-bottom: 40px;
+            h2{
+                font-size: 28px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    .about{
+        &-rewards{
+            margin-bottom: 30px;
+            &__slide{
+                &-lead{
+                    font-size: 14px;
+                }
+            }
+        }
+        &-clients{
+            &__info{
+                font-size: 16px;
+            }
+        }
+        &-projects{
+            h2{
+                font-size: 32px;
+                margin-bottom: 16px;
+            }
+            &__lead{
+                font-size: 16px;
+            }
+            &__item{
+                &-lead{
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

@@ -2787,6 +2787,9 @@
         }
 		&-rewards{
 			margin-bottom: 40px;
+            &__slider-dots{
+                display: none;
+            }
 			&__slide{
 				height: 230px;
 				&-heading{
@@ -2811,6 +2814,35 @@
 				}
 			}
 		}
+        &-projects{
+            h2{
+                font-size: 40px;
+            }
+            &__lead{
+                font-size: 18px;
+            }
+            &__list{
+                margin-top: 30px;
+                margin-bottom: 45px;
+                gap: 22px;
+            }
+            &__item{
+                gap: 8px;
+                &-img{
+                    margin-bottom: 6px;
+                }
+                &-tags{
+                    font-size: 16px;
+                }
+                &-heading{
+                    font-size: 20px;
+                    margin-bottom: 2px;
+                }
+                &-lead{
+                    font-size: 16px;
+                }
+            }
+        }
     }
     .category{
         margin-bottom:0;

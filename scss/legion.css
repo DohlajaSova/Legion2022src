@@ -14170,12 +14170,43 @@ svg.hoversvgrequest {
 
   .body_about .header.header_sticky {
     background: #1E2738; }
-  .body_about .top {
-    min-height: 568px; }
-  .body_about .to-work {
-    margin-bottom: 0; }
   .body_about .projects.some-projects {
     margin-bottom: 40px; }
+  .body_about .top {
+    margin-bottom: 28px; }
+    .body_about .top .h1 {
+      font-size: 36px;
+      margin-bottom: 16px; }
+    .body_about .top__lead {
+      font-size: 18px; }
+  .body_about .not-all-the-same_grey {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 40px; }
+    .body_about .not-all-the-same_grey h2 {
+      font-size: 40px; }
+    .body_about .not-all-the-same_grey .not-all-the-same__list {
+      margin-top: 0; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-item {
+        padding: 14px 0 18px; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-heading {
+        font-size: 28px; }
+      .body_about .not-all-the-same_grey .not-all-the-same__list-lead {
+        font-size: 16px; }
+  .body_about .team_ver2 {
+    margin-bottom: 45px; }
+  .body_about .team__content {
+    margin-bottom: 24px; }
+    .body_about .team__content h2 {
+      font-size: 40px; }
+    .body_about .team__content_text {
+      font-size: 20px; }
+  .body_about .to-work_ver2 .to-work__content {
+    padding: 40px 0; }
+  .body_about .to-work_ver2 h2 {
+    font-size: 36px; }
+  .body_about .to-work_ver2 p {
+    font-size: 18px; }
 
   .body_service .header.header_scrolled .breadcrumbs {
     display: none; }
@@ -14225,6 +14256,42 @@ svg.hoversvgrequest {
           font-size: 14px; }
     .about__animation {
       margin-bottom: 0; }
+    .about-rewards {
+      margin-bottom: 40px; }
+      .about-rewards__slider-dots {
+        display: none; }
+      .about-rewards__slide {
+        height: 230px; }
+        .about-rewards__slide-heading {
+          font-size: 20px; }
+        .about-rewards__slide-lead {
+          font-size: 16px; }
+    .about-clients__info {
+      font-size: 18px;
+      margin-bottom: 26px; }
+    .about-clients__logos .svg-hover-filter-clear {
+      margin: 0 0px 10px; }
+    .about-clients__logos .svg-added-filter {
+      height: 42px; }
+    .about-projects h2 {
+      font-size: 40px; }
+    .about-projects__lead {
+      font-size: 18px; }
+    .about-projects__list {
+      margin-top: 30px;
+      margin-bottom: 45px;
+      gap: 22px; }
+    .about-projects__item {
+      gap: 8px; }
+      .about-projects__item-img {
+        margin-bottom: 6px; }
+      .about-projects__item-tags {
+        font-size: 16px; }
+      .about-projects__item-heading {
+        font-size: 20px;
+        margin-bottom: 2px; }
+      .about-projects__item-lead {
+        font-size: 16px; }
 
   .category {
     margin-bottom: 0; }
@@ -15337,6 +15404,13 @@ svg.hoversvgrequest {
     .vacancypage.vacancypage_ver2 .container {
       padding-left: 20px;
       padding-right: 20px; }
+
+  .about-rewards__slide > .container,
+  .about-clients > .container,
+  .about-projects > .container,
+  .body_about .not-all-the-same_grey {
+    padding-left: 20px;
+    padding-right: 20px; }
 
   .feedback.feedback_applicants.feedback_applicants2 h2 {
     font-size: 36px; }
@@ -16460,7 +16534,42 @@ svg.hoversvgrequest {
     font-size: 28px; }
   .info-block p,
   .info-block ul li, .info-block__message {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .body_about .top .h1 {
+    font-size: 28px; }
+  .body_about .top__lead {
+    font-size: 16px; }
+  .body_about .not-all-the-same_grey h2 {
+    font-size: 32px; }
+  .body_about .not-all-the-same_grey .not-all-the-same__list-heading {
+    font-size: 24px;
+    margin-bottom: 0; }
+  .body_about .not-all-the-same_grey .not-all-the-same__list-lead {
+    font-size: 14px; }
+  .body_about .team__content h2 {
+    font-size: 32px; }
+  .body_about .to-work_ver2 {
+    background-position: right -138px center;
+    margin-bottom: 40px; }
+    .body_about .to-work_ver2 h2 {
+      font-size: 28px; }
+    .body_about .to-work_ver2 p {
+      font-size: 16px; }
+
+  .about-rewards {
+    margin-bottom: 30px; }
+    .about-rewards__slide-lead {
+      font-size: 14px; }
+  .about-clients__info {
+    font-size: 16px; }
+  .about-projects h2 {
+    font-size: 32px;
+    margin-bottom: 16px; }
+  .about-projects__lead {
+    font-size: 16px; }
+  .about-projects__item-lead {
+    font-size: 14px; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }
