@@ -9362,16 +9362,20 @@ svg.hoversvgrequest {
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  background: #F0F0F0;
-  box-shadow: 0 0 10px rgba(20, 20, 20, 0.23);
-  padding: 26px;
-  border-radius: 18px;
   width: calc(100% - 60px);
   max-width: 1245px;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center; }
+  flex-direction: column;
+  gap: 20px; }
+  .informer__item {
+    background: #F0F0F0;
+    box-shadow: 0 0 10px rgba(20, 20, 20, 0.23);
+    padding: 26px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; }
   .informer__text {
     color: #141414;
     font-size: 20px; }
@@ -9380,11 +9384,19 @@ svg.hoversvgrequest {
       text-decoration: underline; }
       .informer__text a:hover {
         text-decoration: none; }
-  .informer__button .button {
-    border-color: #141414;
-    color: #141414;
-    background: #F0F0F0;
-    padding: 20px 40px; }
+  .informer__button {
+    max-width: 178px;
+    width: 100%; }
+    .informer__button .button {
+      border-color: #141414;
+      color: #141414;
+      background: #F0F0F0;
+      padding: 20px 40px;
+      width: 100%; }
+      .informer__button .button:hover {
+        border-color: #2864D9;
+        color: #fff;
+        background: #2864D9; }
 
 .info-block {
   margin-bottom: 80px; }

@@ -1,4 +1,10 @@
-<div class="informer js-informer hide">
-    <div class="informer__text">Все вакансии мы&nbsp;публикуем только на&nbsp;этом сайте и&nbsp;<a href="https://spb.hh.ru/employer/114525?hhtmFrom=vacancy" target="_blank">на&nbsp;нашей странице&nbsp;hh.ru</a>. Наши рекрутеры никогда не&nbsp;запросят ваши персональные данные вне официальных каналов или в&nbsp;мессенджерах. Если у&nbsp;вас есть сомнения в&nbsp;подлинности предложения, пожалуйста, напишите нам на&nbsp;<a href="mailto:hr@e-legion.com">hr@e-legion.com</a>.</div>
-    <div class="informer__button"><a href="" class="button js-close-informer">Спасибо</a></div>
+<div class="informer">
+    <div class="informer__item js-informer hide" data-informerid="1">
+        <div class="informer__text">Мы используем файлы Cookie для персонализации и&nbsp;статистического анализа. Оставаясь на&nbsp;сайте, вы&nbsp;соглашаетесь с&nbsp;<a href="/[[~148]]">политикой конфиденциальности</a> и&nbsp;<a href="/[[~149]]">использования файлов Cookie</a>.</div>
+        <div class="informer__button"><a href="" class="button js-close-informer">Соглашаюсь</a></div>
+    </div>
+    <div class="informer__item js-informer hide" data-informerid="">
+        <div class="informer__text">Все вакансии мы&nbsp;публикуем только на&nbsp;этом сайте и&nbsp;<a href="https://spb.hh.ru/employer/114525?hhtmFrom=vacancy" target="_blank">на&nbsp;нашей странице&nbsp;hh.ru</a>. Наши рекрутеры никогда не&nbsp;запросят ваши персональные данные вне официальных каналов или в&nbsp;мессенджерах. Если у&nbsp;вас есть сомнения в&nbsp;подлинности предложения, пожалуйста, напишите нам на&nbsp;<a href="mailto:hr@e-legion.com">hr@e-legion.com</a>.</div>
+        <div class="informer__button"><a href="" class="button js-close-informer">Спасибо</a></div>
+    </div>
 </div>

@@ -13190,16 +13190,21 @@ svg.hoversvgrequest {
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    background: $color-grey-light;
-    box-shadow: 0 0 10px rgba($color-black,0.23);
-    padding: 26px;
-    border-radius: 18px;
     width: calc(100% - 60px);
     max-width: 1245px;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    &__item{
+        background: $color-grey-light;
+        box-shadow: 0 0 10px rgba($color-black,0.23);
+        padding: 26px;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
     &__text{
         color: $color-black;
         font-size: 20px;
@@ -13212,11 +13217,19 @@ svg.hoversvgrequest {
         }
     }
     &__button{
+        max-width: 178px;
+        width: 100%;
         .button{
             border-color: $color-black;
             color: $color-black;
             background: $color-grey-light;
             padding: 20px 40px;
+            width: 100%;
+            &:hover{
+                border-color: $color-blue;
+                color: $color-white;
+                background: $color-blue;
+            }
         }
     }
 }

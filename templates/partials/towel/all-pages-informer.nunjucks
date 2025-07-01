@@ -1,0 +1,6 @@
+<div class="informer">
+    <div class="informer__item js-informer hide" data-informerid="1">
+        <div class="informer__text">Мы используем файлы Cookie для персонализации и&nbsp;статистического анализа. Оставаясь на&nbsp;сайте, вы&nbsp;соглашаетесь с&nbsp;<a href="/[[~148]]">политикой конфиденциальности</a> и&nbsp;<a href="/[[~149]]">использования файлов Cookie</a>.</div>
+        <div class="informer__button"><a href="" class="button js-close-informer">Соглашаюсь</a></div>
+    </div>
+</div>

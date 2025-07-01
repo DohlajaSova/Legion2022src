@@ -881,19 +881,27 @@ function generateCaseTOC(caseOuter) {
     }
 }
 
-function setinformerIsRead(clicked){
-    let informerIsRead = localStorage.getItem('informerIsRead') || 'false';
-    let informerContainer = document.querySelector(".js-informer");
+function setinformerIsRead(clicked, informer){
+    let informerContainer = document.querySelectorAll(".js-informer");
+    let informerIsRead = new Array();
     
-    if (clicked){
-        if (informerIsRead == 'false'){
-            localStorage.setItem('informerIsRead', 'true');
-            informerContainer.classList.add('hide');
+    if (informer != null){
+        let infID = informer.parentElement.parentElement.dataset.informerid;
+        informerIsRead[infID] = localStorage.getItem('informerIsRead'+infID) || 'false';
+        if (informerIsRead[infID] == 'false'){
+            localStorage.setItem('informerIsRead'+infID, 'true');
+            informer.parentElement.parentElement.classList.add('hide');
         }
     }
     else{
-        if (informerIsRead == 'false'){
-            informerContainer.classList.remove('hide');
+        if (informerContainer.length > 0){
+            informerContainer.forEach(function (infItem, index) {
+                let infID = infItem.dataset.informerid;
+                informerIsRead[infID] = localStorage.getItem('informerIsRead'+infID) || 'false';
+                if (informerIsRead[infID] == 'false'){
+                    infItem.classList.remove('hide');
+                }
+            });
         }
     }
 }
@@ -3214,10 +3222,10 @@ docReady(function () {
         document.addEventListener('click', function (e) {
             if (e.target.classList.contains('js-close-informer')) {
                 e.preventDefault();
-                setinformerIsRead(true);
+                setinformerIsRead(true, e.target);
             }
         }, true);
-        setinformerIsRead(false);
+        setinformerIsRead(false, null);
     }
 
     //слайдер на странице about ver.2

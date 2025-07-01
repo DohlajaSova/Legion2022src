@@ -4,4 +4,5 @@
 {% block links %} {% endblock %}
 {% block content %}
 {% include "partials/request.nunjucks" %}
+{% include "partials/towel/all-pages-informer.nunjucks" %}
 {% endblock %}
