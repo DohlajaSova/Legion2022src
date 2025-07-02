@@ -2626,6 +2626,8 @@ a.button {
         height: 100%; }
         .about-rewards__slide-image > img {
           height: 100%; }
+      .about-rewards__slide_dark .about-rewards__slide-heading, .about-rewards__slide_dark .about-rewards__slide-lead {
+        color: #fff; }
   .about-clients {
     margin-bottom: 70px; }
     .about-clients > .container {

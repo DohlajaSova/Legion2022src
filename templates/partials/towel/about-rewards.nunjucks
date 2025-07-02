@@ -1,13 +1,13 @@
 <div class="about-rewards">
     <div class="about-rewards__slider js-about-rewards-slider">
         <div class="about-rewards__slider-container">
-            <div class="about-rewards__slide" style="background-color: #FFDD2D;"><div class="container">
+            <div class="about-rewards__slide about-rewards__slide_dark" style="background-color: #121212;"><div class="container">
                 <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
                     <span class="about-rewards__slide-heading">t2. Новый уровень</span>
                     <span class="about-rewards__slide-lead">Золото, серебро и&nbsp;бронза на&nbsp;конкурсе Workspace&nbsp;— за&nbsp;мобильное приложение для одного из&nbsp;лидеров телеком–рынка&nbsp;→</span>
                 </a>
                 <div class="about-rewards__slide-image">
-                    <img src="assets/css/img/about-tbank.webp" alt="">
+                    <img src="assets/css/img/about-t2.webp" alt="">
                 </div>
             </div></div>
             <div class="about-rewards__slide" style="background-color: #FFDD2D;"><div class="container">
@@ -19,13 +19,13 @@
                     <img src="assets/css/img/about-tbank.webp" alt="">
                 </div>
             </div></div>
-            <div class="about-rewards__slide" style="background-color: #f0f0f0;"><div class="container">
+            <div class="about-rewards__slide about-rewards__slide_dark" style="background-color: #F62424;"><div class="container">
                 <a href="https://goldensite.ru/work/prilozheniya-dlya-obektov-nedvizhimosti/9664/" target="_blank" class="about-rewards__slide-text">
                     <span class="about-rewards__slide-heading">Петербургская Недвижимость</span>
                     <span class="about-rewards__slide-lead">Награды в&nbsp;номинациях «Приложения для объектов недвижимости» и&nbsp;«Приложения для девелоперской компании»&nbsp;— за&nbsp;удобный&nbsp;UX и&nbsp;лаконичный дизайн&nbsp;→</span>
                 </a>
                 <div class="about-rewards__slide-image">
-                    <img src="assets/css/img/about-tbank.webp" alt="">
+                    <img src="assets/css/img/about-pn.webp" alt="">
                 </div>
             </div></div>
 

@@ -3427,6 +3427,14 @@ a.button {
                     height: 100%;
                 }
             }
+            &_dark{
+                .about-rewards__slide{
+                    &-heading,
+                    &-lead{
+                        color: $color-white;
+                    }
+                }
+            }
         }
     }
     &-clients{
