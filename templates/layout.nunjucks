@@ -15,7 +15,7 @@
     <link rel="icon" type="image/webp" sizes="16x16" href="/assets/css/img/favicon-16x16.webp">
 	{% block links %}{% endblock %}
 </head>
-<body class="body_blog">
+<body>
 <div class="content-wrapper">
 	<header class="header">
 		<div class="container">

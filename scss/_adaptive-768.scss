@@ -3634,7 +3634,7 @@
 		position:relative;
         &__container{
             &_top{
-                flex-direction:column;
+                flex-direction: column;
             }
         }
         &__logo{
@@ -3644,6 +3644,9 @@
             font-size:24px;
             width:100%;
             justify-content: flex-start;
+        }
+        &__info_wrapper{
+            margin-left: 0;
         }
     }
     .social{

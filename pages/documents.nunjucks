@@ -1,0 +1,35 @@
+<!-- documents.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Юридические документы - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+<div class="documents">
+    <div class="container">
+        <h1 class="h1">Юридические документы</h1>
+        <p class="documents__lead">Юридические документы и&nbsp;соглашения пользователей для&nbsp;защиты персональных данных</p>
+        <div class="documents__list">
+            <div class="documents__list-item">
+                <h3 class="documents__list-heading"><a href="">Политика оператора обработки персональных данных на&nbsp;администрируемом интернет–сайте</a></h3>
+                <p class="documents__list-lead">Настоящая Политика обработки персональных данных (далее&nbsp;— «Политика») разработана на&nbsp;основании Федерального закона от&nbsp;27.07.2006 № 152-ФЗ «О&nbsp;персональных данных», а&nbsp;также иных нормативных актов Российской Федерации в&nbsp;области защиты информации и&nbsp;определяет порядок обработки и&nbsp;обеспечения безопасности персональных данных, осуществляемых Оператором.</p>
+            </div>
+            <div class="documents__list-item">
+                <h3 class="documents__list-heading"><a href="">Политика обработки персональных данных</a></h3>
+                <p class="documents__list-lead">Настоящая Политика обработки персональных данных (далее&nbsp;— Политика) разработана в&nbsp;соответствии с&nbsp;требованиями Федерального закона от&nbsp;27.07.2006 № 152-ФЗ «О&nbsp;персональных данных» (далее&nbsp;— Закон) и&nbsp;иными нормативными правовыми актами Российской Федерации в&nbsp;сфере защиты и&nbsp;обработки персональных данных.</p>
+            </div>
+            <div class="documents__list-item">
+                <h3 class="documents__list-heading"><a href="">Политика конфиденциальности интернет-сайта</a></h3>
+                <p class="documents__list-lead">Настоящая политика конфиденциальности (далее&nbsp;— «Политика») регулирует порядок обработки и&nbsp;защиты информации о&nbsp;пользователях, посещающих интернет-сайт, расположенный по&nbsp;адресу: <span class="nowrap">https://e-legion.ru</span> (далее&nbsp;— «Сайт»).</p>
+            </div>
+            <div class="documents__list-item">
+                <h3 class="documents__list-heading"><a href="">Политика использования файлов Cookie</a></h3>
+                <p class="documents__list-lead">Настоящая Политика использования файлов Cookie (далее&nbsp;— «Политика») действует в&nbsp;отношении сайта <span class="nowrap">https://e-legion.ru</span> (далее&nbsp;— «Сайт»), владельцем которого является <span class="nowrap">ООО «Е-Легион»</span> (далее&nbsp;— «Оператор»).<br>
+                Цель Политики&nbsp;— информировать пользователей о&nbsp;том, какие файлы Cookie используются на&nbsp;Сайте, для чего они применяются и&nbsp;какие у&nbsp;пользователя есть права и&nbsp;возможности по&nbsp;их&nbsp;контролю.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "partials/popup-feedback.nunjucks" %}
+{% include "partials/towel/all-pages-informer.nunjucks" %}
+{% endblock %}

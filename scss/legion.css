@@ -4957,6 +4957,8 @@ a.button {
     flex-flow: column nowrap; }
     .footer__info_wrapper .footer__info_copy {
       margin-left: 0; }
+    .footer__info_wrapper + .footer__info_wrapper {
+      margin: 0 auto 0 30px; }
   .footer .footer__redesign .footer__menu-list-wrapper {
     width: unset; }
 
@@ -9439,6 +9441,37 @@ svg.hoversvgrequest {
     text-align: right;
     white-space: nowrap; }
 
+.documents > .container {
+  width: 100%;
+  max-width: 1087px;
+  margin: 0 auto; }
+.documents__lead {
+  font-size: 20px; }
+.documents .documents__list {
+  margin: 40px 0; }
+  .documents .documents__list-item {
+    border-bottom: 1px solid #141414;
+    padding: 40px 0;
+    color: #141414;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: 60px; }
+    .documents .documents__list-item:last-child {
+      border-bottom: none; }
+  .documents .documents__list-heading {
+    width: calc(44% - 60px);
+    font-size: 24px;
+    line-height: 1.2; }
+    .documents .documents__list-heading a {
+      color: #141414; }
+  .documents .documents__list-lead {
+    width: 56%;
+    font-size: 18px;
+    line-height: 1.3;
+    padding-top: 3px;
+    color: #949191; }
+
 @keyframes arrowmove {
   0% {
     transform: rotate(-45deg) translate(0, 0); }
@@ -10249,9 +10282,13 @@ svg.hoversvgrequest {
   .custom-format,
   .body_astralinux .container,
   .case-column > .container,
-  .case-accordion {
+  .case-accordion,
+  .documents > .container {
     padding-left: 30px;
     padding-right: 30px; }
+
+  .documents .documents__list {
+    margin-top: 20px; }
 
   .case-column > .container,
   .case-accordion {
@@ -11595,6 +11632,15 @@ svg.hoversvgrequest {
     width: 50%; }
     .dummy .footer .footer__button_link {
       padding: 15px; }
+  .footer__copyright {
+    flex-wrap: wrap; }
+    .footer__copyright span {
+      margin-left: 20px; }
+    .footer__copyright_about {
+      width: 100%;
+      margin-left: 0; }
+  .footer__info_wrapper + .footer__info_wrapper {
+    margin-left: 20px; }
 
   .dummy-inprocess {
     padding-bottom: 200px; }
@@ -12499,7 +12545,19 @@ svg.hoversvgrequest {
   .body_career-ver2 .top {
     margin-bottom: 52px; }
     .body_career-ver2 .top .h1 {
-      font-size: 60px; } }
+      font-size: 60px; }
+
+  .documents .h1 {
+    font-size: 60px; }
+  .documents .documents__list-item {
+    flex-direction: column;
+    gap: 6px;
+    padding: 28px 0 24px; }
+  .documents .documents__list-heading {
+    width: 100%;
+    font-size: 22px; }
+  .documents .documents__list-lead {
+    width: 100%; } }
 @media only screen and (max-width: 768px) {
   .contacts {
     margin-bottom: 60px; }
@@ -14832,6 +14890,8 @@ svg.hoversvgrequest {
       font-size: 24px;
       width: 100%;
       justify-content: flex-start; }
+    .footer__info_wrapper {
+      margin-left: 0; }
 
   .social {
     justify-content: flex-start; }
@@ -16283,7 +16343,22 @@ svg.hoversvgrequest {
       background-size: 30px 30px;
       padding-left: 40px; }
     .info-block__container {
-      padding: 20px; } }
+      padding: 20px; }
+
+  .documents > .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .documents .h1 {
+    font-size: 36px; }
+  .documents__lead {
+    font-size: 18px; }
+  .documents .documents__list-item {
+    gap: 4px;
+    padding: 22px 0 18px; }
+  .documents .documents__list-heading {
+    font-size: 20px; }
+  .documents .documents__list-lead {
+    font-size: 16px; } }
 @media only screen and (max-width: 450px) {
   .who-we-are__widget {
     grid-template-columns: 1fr;
@@ -16581,7 +16656,21 @@ svg.hoversvgrequest {
   .about-projects__lead {
     font-size: 16px; }
   .about-projects__item-lead {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .documents .h1 {
+    font-size: 28px; }
+  .documents__lead {
+    font-size: 16px; }
+  .documents .documents__list {
+    margin: 10px 0 25px; }
+    .documents .documents__list-item {
+      gap: 4px;
+      padding: 16px 0 12px; }
+    .documents .documents__list-heading {
+      font-size: 20px; }
+    .documents .documents__list-lead {
+      font-size: 14px; } }
 @media only screen and (max-width: 375px) {
   .top__buttons {
     min-width: 0; }

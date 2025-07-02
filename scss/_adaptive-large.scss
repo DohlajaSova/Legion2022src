@@ -1311,9 +1311,13 @@
     .custom-format,
     .body_astralinux .container,
 	.case-column > .container,
-	.case-accordion{
+	.case-accordion,
+    .documents > .container{
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .documents .documents__list{
+        margin-top: 20px;
     }
 	.case-column > .container,
 	.case-accordion{
@@ -3442,6 +3446,19 @@
                 }
             }
         }
+        &__copyright{
+            flex-wrap: wrap;
+            span{
+                margin-left: 20px;
+            }
+            &_about{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        &__info_wrapper + .footer__info_wrapper{
+            margin-left: 20px;
+        }
     }
     .dummy{
         &-inprocess{
@@ -4884,6 +4901,25 @@
         margin-bottom: 52px;
         .h1{
             font-size: 60px;
+        }
+    }
+    .documents{
+        .h1{
+            font-size: 60px;
+        }
+        .documents__list{
+            &-item{
+                flex-direction: column;
+                gap: 6px;
+                padding: 28px 0 24px;
+            }
+            &-heading{
+                width: 100%;
+                font-size: 22px;
+            }
+            &-lead{
+                width: 100%;
+            }
         }
     }
 }

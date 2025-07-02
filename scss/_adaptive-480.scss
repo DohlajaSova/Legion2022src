@@ -1413,6 +1413,30 @@
             padding: 20px;
         }
     }
+    .documents{
+        & > .container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .h1{
+            font-size: 36px;
+        }
+        &__lead{
+            font-size: 18px;
+        }
+        .documents__list{
+            &-item{
+                gap: 4px;
+                padding: 22px 0 18px;
+            }
+            &-heading{
+                font-size: 20px;
+            }
+            &-lead{
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1961,6 +1985,28 @@
             }
         }
     }
+    .documents{
+        .h1{
+            font-size: 28px;
+        }
+        &__lead{
+            font-size: 16px;
+        }
+        .documents__list{
+            margin: 10px 0 25px;
+            &-item{
+                gap: 4px;
+                padding: 16px 0 12px;
+            }
+            &-heading{
+                font-size: 20px;
+            }
+            &-lead{
+                font-size: 14px;
+            }
+        }
+    }
+
 }
 // --
 
