@@ -2490,13 +2490,16 @@ docReady(function () {
 
     // функциональность чекбокса согласия с политиками
     if (document.querySelector('.js-request-agreed')) {
-        const cont = document.querySelector('.js-request-agreed');
-        const chk = document.querySelector('#agreed');
-        const btn = cont.nextElementSibling.querySelector('.button');
-        cont.onclick = function (e) {
-            if (!chk.checked) btn.setAttribute('disabled', 'disabled');
-            else btn.removeAttribute('disabled');
-        }
+        const conts = document.querySelectorAll('.js-request-agreed');
+        const btn = conts[conts.length-1].nextElementSibling.querySelector('.button');
+        conts.forEach(function (cont, index) {
+            const chk = document.querySelector('#agreed'+index);
+            cont.onclick = function (e) {
+                let checkedCheckboxes = document.querySelectorAll('.js-request-agreed input[type="checkbox"]:checked');
+                if (conts.length != checkedCheckboxes.length) btn.setAttribute('disabled', 'disabled');
+                else btn.removeAttribute('disabled');
+            }
+        });
     }
 
     const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form");

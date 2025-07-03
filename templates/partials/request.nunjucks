@@ -127,9 +127,15 @@
         
         <div class="request__comment-container centered checkbox">
             <div class="request__comment js-request-agreed">
-                <input type="checkbox" id="agreed">
-                <label for="agreed">
-                    Я ознакомился с <a href="/[[~144]]" target="_blank">«Политикой оператора обработки персональных данных на администрируемом интернет–сайте»</a> и даю своё <a href="/[[~47]]" target="_blank">«Согласие на обработку персональных данных на сайте в сети Интернет»</a>.
+                <input type="checkbox" id="agreed1">
+                <label for="agreed1">
+                    Я&nbsp;ознакомился и&nbsp;согласен с&nbsp;<a href="/[[~47]]" target="_blank">«Политикой обработки персональных данных»</a>
+                </label>
+            </div>
+            <div class="request__comment js-request-agreed">
+                <input type="checkbox" id="agreed2">
+                <label for="agreed2">
+                    Я&nbsp;ознакомился и&nbsp;согласен с&nbsp;<a href="/[[~144]]" target="_blank">«Политикой оператора обработки персональных данных»</a>
                 </label>
             </div>
             <div class="request__button">
