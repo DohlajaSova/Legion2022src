@@ -1451,6 +1451,17 @@ a.button {
     .request__select{
         margin-bottom: 48px;
     }
+    &_cookies{
+        .request__comment-container.centered.checkbox .request__comment{
+            border-bottom: 1px solid $color-black;
+            label{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 44px;
+            }
+        }
+    }
 }
 
 .pmenu {
@@ -7662,6 +7673,11 @@ a.button {
                             background-size: contain;
                         }
                     }
+                    [type="checkbox"]:checked:disabled + label{
+                        &::before{
+                            opacity: 0.5;
+                        }
+                    }
                 }
                 .button[disabled]{
                     opacity: 0.5;
@@ -13210,22 +13226,28 @@ svg.hoversvgrequest {
         border-radius: 18px;
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 20px;
         align-items: center;
     }
     &__text{
         color: $color-black;
         font-size: 20px;
+        p{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         a{
-            color: $color-black;
-            text-decoration: underline;
+            color: $color-blue;
+            text-decoration: none;
             &:hover{
-                text-decoration: none;
+                text-decoration: underline;
             }
         }
     }
     &__button{
-        max-width: 178px;
+        max-width: 200px;
         width: 100%;
         .button{
             border-color: $color-black;
@@ -13233,6 +13255,7 @@ svg.hoversvgrequest {
             background: $color-grey-light;
             padding: 20px 40px;
             width: 100%;
+            white-space: nowrap;
             &:hover{
                 border-color: $color-blue;
                 color: $color-white;

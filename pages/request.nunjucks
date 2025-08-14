@@ -5,4 +5,5 @@
 {% block content %}
 {% include "partials/request.nunjucks" %}
 {% include "partials/towel/all-pages-informer.nunjucks" %}
+{% include "partials/popup-cookies.nunjucks" %}
 {% endblock %}

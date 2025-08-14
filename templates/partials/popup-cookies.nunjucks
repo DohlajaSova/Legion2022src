@@ -1,0 +1,35 @@
+<div class="popup-feedback popup-feedback_cookies" style="display: block;">
+    <div class="popup-feedback__container">
+        <div class="popup-feedback__content">
+            <div class="popup-feedback__close">
+                <a href="" class="js-popup-feedback-close"></a>
+            </div>
+            <div class="request">
+                <div class="container">
+                    <h3>Настройки файлов Сookie</h3>
+                    <div class="request__comment-container centered checkbox">
+                        <div class="request__comment">
+                            <input type="checkbox" id="cookies1" checked="checked" disabled="disabled">
+                            <label for="cookies1">
+                                <span class="request__comment_cookie-head">Технические (обязательные) файлы</span>
+                                <span class="request__comment_cookie-text">Эти файлы Сookie обеспечивают авторизацию, навигацию и другие важные функции сайта. Эти файлы не сохраняют информацию о пользователе и не передают её в сторонние аналитические системы. Технические файлы используются по умолчанию.</span>
+                            </label>
+                        </div>
+                        <div class="request__comment">
+                            <input type="checkbox" id="cookies2" checked="checked">
+                            <label for="cookies2">
+                                <span class="request__comment_cookie-head">Аналитические и маркетинговые файлы</span>
+                                <span class="request__comment_cookie-text">Эти файлы Сookie используются для оценки поведения пользователя на нашем сайте. Они помогают понять как используется сайт, улучшить производительность и сделать его удобным для пользователя.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="request__buttons">
+                        <a href="">← Назад</a>
+                        <button class="button button_border">Разрешить только обязательные</button>
+                        <button class="button button_blue">Разрешить выбранные</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
