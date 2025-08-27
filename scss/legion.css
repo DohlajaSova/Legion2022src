@@ -13329,7 +13329,11 @@ svg.hoversvgrequest {
   .contacts.contacts-v2 .card {
     width: calc(50% - 30px); }
   .contacts.contacts-v2 .tab__img .addr_short {
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .informer__item {
+    flex-direction: column;
+    align-items: flex-start; } }
 @media only screen and (max-width: 700px) {
   .header__logo {
     width: calc(50% - 46px);
@@ -15999,6 +16003,9 @@ svg.hoversvgrequest {
       .news_portfolio .cases__filter .select {
         margin-bottom: 40px; }
 
+  .who-we-are {
+    margin-bottom: -50px; }
+
   .breadcrumbs li::after {
     top: -1px; }
 
@@ -16340,8 +16347,10 @@ svg.hoversvgrequest {
   .informer {
     bottom: 20px;
     width: calc(100% - 40px);
-    padding: 16px;
+    padding: 0;
     gap: 16px; }
+    .informer__item {
+      padding: 16px; }
 
   .info-block {
     margin-bottom: 30px; }

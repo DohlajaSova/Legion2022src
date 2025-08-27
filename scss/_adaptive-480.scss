@@ -828,6 +828,9 @@
             }
         }
     }
+    .who-we-are{
+        margin-bottom: -50px;
+    }
     .breadcrumbs{
         li{
             &::after{
@@ -1388,8 +1391,11 @@
     .informer{
         bottom: 20px;
         width: calc(100% - 40px);
-        padding: 16px;
+        padding: 0;
         gap: 16px;
+        &__item{
+            padding: 16px;
+        }
     }
     .info-block{
         margin-bottom: 30px;
