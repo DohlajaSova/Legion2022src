@@ -4153,10 +4153,12 @@ a.button {
 
 .news {
   margin-bottom: 120px; }
-  .news h2 {
+  .news h2,
+  .news .h2 {
     width: 100%;
     margin-bottom: 70px; }
-    .news h2 em {
+    .news h2 em,
+    .news .h2 em {
       color: #84AEFF;
       font-style: normal;
       white-space: nowrap; }
@@ -7383,11 +7385,14 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       position: fixed;
       top: 20px;
       width: 16%; }
-    .editorial-container__toc h3 {
+    .editorial-container__toc h3,
+    .editorial-container__toc .h3 {
       font-size: 20px; }
-      .editorial-container__toc h3 a {
+      .editorial-container__toc h3 a,
+      .editorial-container__toc .h3 a {
         color: #949191; }
-      .editorial-container__toc h3.active a {
+      .editorial-container__toc h3.active a,
+      .editorial-container__toc .h3.active a {
         color: #1E2738; }
     .editorial-container__toc .back {
       position: absolute;

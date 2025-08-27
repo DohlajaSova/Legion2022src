@@ -5760,7 +5760,8 @@ a.button {
 
 .news {
 	margin-bottom: 120px;
-	h2 {
+	h2,
+    .h2{
 		width: 100%;
 		margin-bottom: 70px;
 
@@ -10475,7 +10476,8 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             top:20px;
             width:16%;
         }
-		h3{
+		h3,
+        .h3{
 			font-size:20px;
 			a{
 				color:$color-grey-dark;

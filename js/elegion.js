@@ -567,7 +567,7 @@ function generateEditorialTOC(editorial) {
         headings.forEach(function (heading, index) {
             let headName = heading.innerHTML;
             heading.innerHTML = '<a name="head' + index + '" id="#head' + index + '"></a>' + headName;
-            toc += '<h3><a href="#head' + index + '" class="js-scrollto">' + headName + '</a></h3>';
+            toc += '<div class="h3"><a href="#head' + index + '" class="js-scrollto">' + headName + '</a></div>';
         });
 
         // разбиваем статью на блоки <section> по вхождению заголовков <h2>
@@ -626,7 +626,7 @@ function generateEditorialTOC(editorial) {
         // 2. если какой-то заголовок попадает в область (видимость или выше), помечаем его активным
         // 3. в правом блоке подсвечиваем последний из активных, все остальные убираем
         const allHeadings = editorialBody.getElementsByTagName('h2');
-        const allTOCHeadings = stickyTOC.getElementsByTagName('h3');
+        const allTOCHeadings = stickyTOC.getElementsByClassName('h3');
         let allHeadingsTops = new Array();
         if (allHeadings.length) {
             Array.prototype.slice.call(allHeadings).forEach(function (heading, index) {
