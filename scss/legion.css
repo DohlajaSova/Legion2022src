@@ -2686,7 +2686,8 @@ a.button {
       width: calc(50% - 10px); }
       .about-projects__item-img {
         display: block;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        border-radius: 18px; }
       .about-projects__item-tags {
         color: #949191;
         font-size: 18px;

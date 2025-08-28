@@ -4,25 +4,25 @@
         <div class="about-projects__lead">Cтроим прочные связи с&nbsp;ведущими компаниями, научными центрами и&nbsp;профессиональными сообществами. Участвуем в&nbsp;конференциях, поддерживаем образовательные инициативы и&nbsp;делимся экспертностью.</div>
         <div class="about-projects__list">
             <a href="https://habr.com/ru/companies/e-legion/articles/571472/" target="_blank" class="about-projects__item">
-                <img src="/assets/css/img/temp_about.jpg" class="about-projects__item-img" alt="MBLT">
+                <img src="/assets/css/img/temp-about1.webp" class="about-projects__item-img" alt="MBLT">
                 <span class="about-projects__item-tags">сообщество, индустрия</span>
                 <span class="about-projects__item-heading">MBLT</span>
                 <span class="about-projects__item-lead">Международная конференция от&nbsp;e‑legion, которая на&nbsp;протяжении многих лет формировала повестку мобильной индустрии в&nbsp;России.</span>
             </a>
             <a href="/[[~61]]" class="about-projects__item">
-                <img src="/assets/css/img/temp_about.jpg" class="about-projects__item-img" alt="Беломорская Биологическая Станция">
+                <img src="/assets/css/img/temp-about2.webp" class="about-projects__item-img" alt="Беломорская Биологическая Станция">
                 <span class="about-projects__item-tags">наука, сотрудничество</span>
                 <span class="about-projects__item-heading">Беломорская Биологическая Станция</span>
                 <span class="about-projects__item-lead">Сотрудничаем с&nbsp;ББС&nbsp;«Картеш»: развиваем телеком–инфраструктуру станции и&nbsp;поддерживаем исследователей в&nbsp;условиях экспедиционной работы.</span>
             </a>
             <a href="https://www.youtube.com/watch?v=vwVamf5ZLNE" target="_blank" class="about-projects__item">
-                <img src="/assets/css/img/temp_about.jpg" class="about-projects__item-img" alt="Профессиональные митапы">
+                <img src="/assets/css/img/temp-about3.webp" class="about-projects__item-img" alt="Профессиональные митапы">
                 <span class="about-projects__item-tags">опыт, образование</span>
                 <span class="about-projects__item-heading">Профессиональные митапы</span>
                 <span class="about-projects__item-lead">e-legion регулярно проводит и&nbsp;принимает участие в&nbsp;профессиональных митапах. Темы охватывают ключевые направления нашей экспертности.</span>
             </a>
             <a href="https://dzsystems.ru/" target="_blank" class="about-projects__item">
-                <img src="/assets/css/img/temp_about.jpg" class="about-projects__item-img" alt="Холдинг DZ Systems">
+                <img src="/assets/css/img/temp-about4.webp" class="about-projects__item-img" alt="Холдинг DZ Systems">
                 <span class="about-projects__item-tags">экспертиза</span>
                 <span class="about-projects__item-heading">Холдинг DZ&nbsp;Systems</span>
                 <span class="about-projects__item-lead">Входим в&nbsp;группу компаний&nbsp;DZ: высоконагруженные системы, мобильные и&nbsp;десктопные приложения, операционные системы и&nbsp;их&nbsp;компоненты.</span>
