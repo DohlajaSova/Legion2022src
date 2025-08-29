@@ -502,6 +502,10 @@ a.button {
             padding: 10px 15px;
             border:none;
             border-bottom: 1px solid $color-grey-dark;
+			
+			p{
+				margin: 10px 0;
+			}
         }
 
         th {
