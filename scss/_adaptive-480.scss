@@ -1446,6 +1446,15 @@
 }
 
 @media only screen and (max-width: 450px) {
+    .custom-format{
+        table{
+            td,
+            th{
+                padding: 10px 8px; 
+                font-size: 12px;
+            }
+        }
+    }
     .who-we-are__widget{
         grid-template-columns: 1fr;
         grid-gap:30px;

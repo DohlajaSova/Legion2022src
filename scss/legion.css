@@ -593,12 +593,20 @@ a.button {
     border-radius: 42px; }
     .custom-format table td,
     .custom-format table th {
-      padding: 10px 15px;
+      padding: 14px 15px;
       border: none;
-      border-bottom: 1px solid #949191; }
+      border-bottom: 1px solid #949191;
+      font-size: 18px;
+      vertical-align: top; }
+      .custom-format table td p,
+      .custom-format table th p {
+        margin: 0; }
+    .custom-format table tr:first-child td {
+      padding-top: 24px; }
     .custom-format table th {
       text-align: center;
-      font-weight: 700; }
+      font-weight: 700;
+      padding-top: 24px; }
     .custom-format table tr:last-child td,
     .custom-format table tr:last-child th {
       border-bottom: none; }
@@ -7388,7 +7396,7 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
       width: 16%; }
     .editorial-container__toc h3,
     .editorial-container__toc .h3 {
-      font-size: 20px; }
+      font-size: 18px; }
       .editorial-container__toc h3 a,
       .editorial-container__toc .h3 a {
         color: #949191; }
@@ -15127,6 +15135,9 @@ svg.hoversvgrequest {
     .custom-format table {
       margin-bottom: 25px;
       border-radius: 30px; }
+      .custom-format table td,
+      .custom-format table th {
+        font-size: 14px; }
       .custom-format table.table_bg tbody th,
       .custom-format table.table_bg tbody td {
         font-size: 13px; }
@@ -16389,6 +16400,11 @@ svg.hoversvgrequest {
   .documents .documents__list-lead {
     font-size: 16px; } }
 @media only screen and (max-width: 450px) {
+  .custom-format table td,
+  .custom-format table th {
+    padding: 10px 8px;
+    font-size: 12px; }
+
   .who-we-are__widget {
     grid-template-columns: 1fr;
     grid-gap: 30px; }

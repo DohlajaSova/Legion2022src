@@ -499,18 +499,25 @@ a.button {
 
         td,
         th {
-            padding: 10px 15px;
+            padding: 14px 15px;
             border:none;
             border-bottom: 1px solid $color-grey-dark;
+            font-size: 18px;
+            vertical-align: top;
 			
 			p{
-				margin: 10px 0;
+				margin: 0;
 			}
+        }
+        
+        tr:first-child td{
+            padding-top: 24px;
         }
 
         th {
             text-align: center;
             font-weight: 700;
+            padding-top: 24px;
         }
         
         tr:last-child{
@@ -10483,7 +10490,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
         }
 		h3,
         .h3{
-			font-size:20px;
+			font-size: 18px;
 			a{
 				color:$color-grey-dark;
 			}

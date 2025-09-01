@@ -1,25 +1,40 @@
 <p>Customer Journey Map&rsquo;ом уже давно никого не удивишь: <span class="accent_dark">в больших</span> продуктовых <span class="accent_grey">компаниях</span> открывают целые отделы по исследованию <span class="accent_blue">клиентского опыта</span>, а консалтинговые организации регулярно используют этот инструмент для анализа продукта клиента. Так зачем мы решили написать этот материал?</p>
-<table style="border-collapse: collapse; width: 99.80525803310614%;" border="1" class="table_bg">
+<table style="border-collapse: collapse; width: 99.80525803310614%;" border="1">
 <tbody>
 <tr>
-<td style="width: 24.682926829268293%;">fasdfasdfasd<br>
-dfasdfa<br>
-sdfasdfs</td>
-<td style="width: 24.682926829268293%;">asdfasdfasd</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 37.364865%;"><span style="color: #7e8c8d;">Инструмент</span></td>
+<td><span style="color: #7e8c8d;">Что это такое</span></td>
+<td><span style="color: #7e8c8d;">Когда применять</span></td>
 </tr>
 <tr>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 37.364865%;"><p>Customer Journey Map</p></td>
+<td>Визуализация пути пользователя от первого касания до целевого действия</td>
+<td>Когда нужно понять поведение и точки контакта пользователя</td>
 </tr>
 <tr>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
-<td style="width: 24.682926829268293%;">&nbsp;</td>
+<td style="width: 37.364865%;"><p>User Flow</p></td>
+<td>Схема действий пользователя в интерфейсе</td>
+<td>Для проработки логики сценариев использования продукта</td>
+</tr>
+<tr>
+<td style="width: 37.364865%;"><p>Кастдев-интервью (CustDev)</p></td>
+<td>Глубинные интервью с пользователями для выявления мотиваций и болей</td>
+<td>На раннем этапе, чтобы понять реальные потребности аудитории</td>
+</tr>
+<tr>
+<td style="width: 37.364865%;"><p>Юзабилити-тест</p></td>
+<td>Проверка удобства интерфейса через наблюдение за реальными пользователями</td>
+<td>При редизайне или проверке гипотез по UX</td>
+</tr>
+<tr>
+<td style="width: 37.364865%;"><p>Анализ AS IS / TO BE</p></td>
+<td>Описание текущего состояния и целевой модели</td>
+<td>В проектах с доработкой/цифровизацией существующих процессов</td>
+</tr>
+<tr>
+<td style="width: 37.364865%;"><p>Mind Map / CJM / UX-схемы</p></td>
+<td>Визуализация ключевых идей, ролей, взаимодействий</td>
+<td>Для структурирования данных после интервью и наблюдений</td>
 </tr>
 </tbody>
 </table>

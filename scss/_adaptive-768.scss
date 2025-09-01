@@ -3985,6 +3985,10 @@
         table{
             margin-bottom: 25px;
             border-radius: 30px;
+            td,
+            th{
+                font-size: 14px;
+            }
             &.table_bg{
                 tbody{
                     th,
