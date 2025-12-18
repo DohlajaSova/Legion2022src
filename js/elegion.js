@@ -2498,6 +2498,37 @@ docReady(function () {
                 let checkedCheckboxes = document.querySelectorAll('.js-request-agreed input[type="checkbox"]:checked');
                 if (conts.length != checkedCheckboxes.length) btn.setAttribute('disabled', 'disabled');
                 else btn.removeAttribute('disabled');
+                
+                conts.forEach(function (contInner, indexInner) {
+                    let thisCheckbox = contInner.querySelector("input");
+                    let nameInput = document.querySelector("#name");
+                    let phoneInput = document.querySelector("#phonefield");
+                    
+                    if (!thisCheckbox.checked)
+                        thisCheckbox.classList.add("error");
+                    else
+                        thisCheckbox.classList.remove("error");
+                    
+                    if (nameInput.value == "")
+                        nameInput.classList.add("error");
+                    else
+                        nameInput.classList.remove("error");
+                    
+                    if (phoneInput.value == "")
+                        phoneInput.classList.add("error");
+                    else
+                        phoneInput.classList.remove("error");
+                    
+                    nameInput.onchange = function(ename){
+                        if (ename.target.value != "") ename.target.classList.remove("error");
+                        else ename.target.classList.add("error");
+                    }
+                    phoneInput.onchange = function(ephone){
+                        if (ephone.target.value != "") ephone.target.classList.remove("error");
+                        else ephone.target.classList.add("error");
+                    }
+                });
+                
             }
         });
     }

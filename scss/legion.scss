@@ -7691,6 +7691,11 @@ a.button {
                             opacity: 0.5;
                         }
                     }
+                    .error{
+                        & + label::before{
+                            border-color: #EB3131;
+                        }
+                    }
                 }
                 .button[disabled]{
                     opacity: 0.5;
