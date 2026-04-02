@@ -5212,6 +5212,11 @@ a.button {
       .contacts.contacts-v2 .card .social_cn {
         background-image: url("img/icon-social-cn-w.svg"); }
 
+[data-region="msk"] .contacts.contacts-v2 .services-v2__accordion_tabs {
+  flex-flow: column-reverse; }
+  [data-region="msk"] .contacts.contacts-v2 .services-v2__accordion_tabs .tab:first-child {
+    border-bottom: none; }
+
 .request {
   margin-bottom: 120px;
   overflow-x: hidden;
@@ -5467,6 +5472,8 @@ a.button {
             background-size: contain; }
           .request__comment-container.centered.checkbox .request__comment [type="checkbox"]:checked:disabled + label::before {
             opacity: 0.5; }
+          .request__comment-container.centered.checkbox .request__comment .error + label::before {
+            border-color: #EB3131; }
         .request__comment-container.centered.checkbox .button[disabled] {
           opacity: 0.5;
           cursor: not-allowed; }
@@ -9082,7 +9089,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
   .services-v2__container-fullwidth.bg3 {
     background-color: #141414; }
   .services-v2__container-fullwidth.bg4 {
-    background-image: url("img/redesign/service-v2-background.png");
+    background-image: url("img/redesign/service-v2-background.webp");
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover; }

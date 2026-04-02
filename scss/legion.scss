@@ -7295,6 +7295,12 @@ a.button {
         }
     }
 }
+[data-region="msk"] .contacts.contacts-v2 .services-v2__accordion_tabs{
+    flex-flow: column-reverse;
+    .tab:first-child{
+        border-bottom: none;
+    }
+}
 
 .request {
 	margin-bottom: 120px;

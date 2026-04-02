@@ -2995,6 +2995,20 @@ docReady(function () {
     if (document.querySelectorAll(".js-accordion-redesign").length > 0) {
         const accordions = document.querySelectorAll(".js-accordion-redesign");
         let scrollNavigationContainer = document.querySelector(".js-scroll-navigation");
+        
+        if (document.querySelectorAll(".contacts").length > 0 && document.querySelector(".content-wrapper").dataset.region == "msk"){
+            const tabs = accordions[0].querySelectorAll(".js-accordion-tab");
+            Array.from(tabs).forEach(tab => {
+                const tabhead = tab.querySelector(".tab__head").querySelector(".tab__name");
+                if (tabhead.innerHTML == "Москва"){
+                    tab.classList.add("active");
+                }
+                else{
+                    tab.classList.remove("active");
+                }
+                
+            })
+        }
 
         Array.from(accordions).forEach(acc => {
             const tabs = acc.querySelectorAll(".js-accordion-tab");
