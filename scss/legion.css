@@ -8019,6 +8019,8 @@ svg.svg-added-filter stop {
   stop-color: #0FA8E0; }
 .svg-hover-filter-clear.svg-hover-filter-clear__alfa:hover svg *[fill="#767676"] {
   fill: #EF3124; }
+.svg-hover-filter-clear.svg-hover-filter-clear__alfa:hover svg *[fill="#333333"] {
+  fill: #EF3124; }
 .svg-hover-filter-clear.svg-hover-filter-clear__tbank:hover svg *[fill="#2B2B2B"] {
   fill: #333333; }
 .svg-hover-filter-clear.svg-hover-filter-clear__tbank:hover svg *[fill="#A2A2A2"] {
@@ -8041,6 +8043,18 @@ svg.svg-added-filter stop {
   fill: #1a1919; }
 .svg-hover-filter-clear.svg-hover-filter-clear__1channel:hover svg *[fill="#767676"] {
   fill: #00387F; }
+.svg-hover-filter-clear.svg-hover-filter-clear__docmed:hover svg *[fill="#333333"] {
+  fill: #034694; }
+.svg-hover-filter-clear.svg-hover-filter-clear__docmed:hover svg *[fill="#919090"] {
+  fill: #41A4FF; }
+.svg-hover-filter-clear.svg-hover-filter-clear__pn:hover svg *[fill="#696868"] {
+  fill: #E30613; }
+.svg-hover-filter-clear.svg-hover-filter-clear__pn:hover svg *[fill="#333333"] {
+  fill: #1D1D1B; }
+.svg-hover-filter-clear.svg-hover-filter-clear__5ka:hover svg *[fill="#333333"] {
+  fill: #E52322; }
+.svg-hover-filter-clear.svg-hover-filter-clear__5ka:hover svg *[fill="#696868"] {
+  fill: #00923A; }
 
 svg.svg-hover-filter-clear:hover *[fill="black"], svg.svg-hover-filter-clear:hover *[fill="#000"], svg.svg-hover-filter-clear:hover *[fill="#000000"] {
   fill: #000; }
@@ -8517,6 +8531,16 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     cursor: pointer;
     display: flex;
     margin: auto; }
+  .redesign-projects__item {
+    height: 300px;
+    display: flex; }
+    .redesign-projects__item-text {
+      display: flex;
+      flex-direction: column; }
+      .redesign-projects__item-text-head {
+        display: block; }
+      .redesign-projects__item-text-body {
+        display: block; }
 .redesign-blog {
   padding-top: 80px;
   padding-bottom: 100px; }
@@ -8524,6 +8548,7 @@ svg.svg-hover-filter-clear:hover stop[stop-color="#0FA8E0"] {
     display: flex;
     flex-flow: column nowrap; }
   .redesign-blog h2 {
+    font-size: 54px;
     margin-bottom: 20px; }
   .redesign-blog__items {
     margin-bottom: 60px; }

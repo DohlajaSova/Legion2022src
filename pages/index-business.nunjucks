@@ -9,7 +9,7 @@
   {% include "partials/towel/redesign/expert-block.nunjucks" %}
   {% include "partials/towel/redesign/service-block.nunjucks" %}
   {% include "partials/towel/redesign/features.nunjucks" %}
-  {% include "partials/towel/redesign/projects.nunjucks" %}
+  {% include "partials/towel/redesign/projects2.nunjucks" %}
   {% include "partials/towel/redesign/blog.nunjucks" %}
   {# {% include "partials/towel/cases.nunjucks" %} #}
   {# {% include "partials/towel/about.nunjucks" %} #}

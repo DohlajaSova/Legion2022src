@@ -1,0 +1,35 @@
+<div class="redesign-projects redesign-projects_slider">
+    <div class="container">
+        <h2 class="h1 redesign-projects-header">Наши клиенты — действующие и&nbsp;будущие лидеры рынка</h2>
+        <p class="lead">Ставим в приоритет задачи бизнеса, но&nbsp;не&nbsp;забываем о&nbsp;пользователях наших клиентов. Ищем инициативы и&nbsp;помогаем отстраиваться от&nbsp;конкурентов.</p>
+    </div>
+    <div class="redesign-projects__items js-projects">
+        <div class="wrapper">
+            <span class="redesign-projects__item">
+                <span class="redesign-projects__item-text">
+                    <span class="redesign-projects__item-text-head">Дискавери фаза для девелопера ГК&nbsp;Основа</span>
+                    <span class="redesign-projects__item-text-body">Провели UX/UI-аудит корпоративного мобильного приложения, разработали сценарии для лучшего пользовательского опыта и&nbsp;создали дизайн-концепт, помогающий повысить вовлечённость пользователей.
+                    </span>
+                </span>
+                <img src="/assets/css/img/temp_cases_1pn.webp" alt="Дискавери фаза для девелопера ГК Основа" class="redesign-projects__item-img">
+            </span>
+            <a href="" class="redesign-projects__item">
+                <span class="redesign-projects__item-text">
+                    <span class="redesign-projects__item-text-head">Приложение Академия Инвестиций от&nbsp;Т-Банка</span>
+                    <span class="redesign-projects__item-text-body">Сделали инвестирование доступным для каждого. Создали нативное мобильное приложение для&nbsp;iOS и&nbsp;Android на&nbsp;основе контента и&nbsp;логики работы веб-версии курсов, не&nbsp;имея исходных кодов.
+                    </span>
+                </span>
+                <img src="/assets/css/img/temp_cases_2tb.webp" alt="Приложение Академия Инвестиций от Т-Банка" class="redesign-projects__item-img">
+            </a>
+            <a href="" class="redesign-projects__item">
+                <span class="redesign-projects__item-text">
+                    <span class="redesign-projects__item-text-head">Приложение для сети клиник docmed</span>
+                    <span class="redesign-projects__item-text-body">Разработали личный кабинет пациентов сети клиник. Добавили важную функциональность&nbsp;— удобный чат между пациентом и&nbsp;врачом. Помогли оптимизировать процесс записи на&nbsp;приём.
+                    </span>
+                </span>
+                <img src="/assets/css/img/temp_cases_3dm.webp" alt="Приложение для сети клиник docmed" class="redesign-projects__item-img">
+            </a>
+        </div>
+    </div>
+    <a href="">Проекты и&nbsp;кейсы&nbsp;→</a>
+</div>

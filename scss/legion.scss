@@ -11364,6 +11364,9 @@ svg.svg-added-filter {
                 *[fill="#767676"]{
                     fill: #EF3124;
                 }
+                *[fill="#333333"]{
+                    fill: #EF3124;
+                }
             }
         }
     }
@@ -11426,6 +11429,42 @@ svg.svg-added-filter {
             svg {
                 *[fill="#767676"]{
                     fill: #00387F;
+                }
+            }
+        }
+    }
+    &.svg-hover-filter-clear__docmed{
+        &:hover {
+            svg {
+                *[fill="#333333"]{
+                    fill: #034694;
+                }
+                *[fill="#919090"]{
+                    fill: #41A4FF;
+                }
+            }
+        }
+    }
+    &.svg-hover-filter-clear__pn{
+        &:hover {
+            svg {
+                *[fill="#696868"]{
+                    fill: #E30613;
+                }
+                *[fill="#333333"]{
+                    fill: #1D1D1B;
+                }
+            }
+        }
+    }
+    &.svg-hover-filter-clear__5ka{
+        &:hover {
+            svg {
+                *[fill="#333333"]{
+                    fill: #E52322;
+                }
+                *[fill="#696868"]{
+                    fill: #00923A;
                 }
             }
         }
@@ -12072,6 +12111,26 @@ svg.svg-hover-filter-clear {
 			display: flex;
 			margin: auto;
 		}
+        &__items{
+            
+        }
+        &__item{
+            height: 300px;
+            display: flex;
+            &-text{
+                display: flex;
+                flex-direction: column;
+                &-head{
+                    display: block;
+                }
+                &-body{
+                    display: block;
+                }
+            }
+            &-img{
+                
+            }
+        }
 	}
 	&-blog {
 		padding-top: 80px;
@@ -12081,6 +12140,7 @@ svg.svg-hover-filter-clear {
 			flex-flow: column nowrap;
 		}
 		h2 {
+            font-size: 54px;
 			margin-bottom: 20px;
 		}
 		&__items {

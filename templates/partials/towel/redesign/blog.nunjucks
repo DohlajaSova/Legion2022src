@@ -1,6 +1,8 @@
 <div class="redesign-blog">
     <div class="container">
-        <h2>Блог</h2>
+        <h2>Релизы. Анонсы.<br>
+        Исследования</h2>
+        
         <div class="redesign-blog__items">
             <div class="wrapper">
                 <a href="https://vk.com/wall-34196694_2040?w=wall-34196694_2040" target="_blank" class="card">
