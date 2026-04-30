@@ -11893,6 +11893,82 @@ svg.svg-hover-filter-clear {
 			}
 		}
 	}
+    &_ver2{
+        .lead{
+            font-size: 20px;
+            max-width: 75%;
+        }
+        .container{
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+        .preservice{
+            &-header{
+                font-size: 54px;
+                margin-bottom: 20px;
+                max-width: 90%;
+                &-wrapper{
+                    gap: 10px;
+                }
+                i{
+                    font-style: normal;
+                }
+            }
+            &-blocks {
+                gap: 20px;
+                .card{
+                    display: block;
+                    position: relative;
+                    min-height: 284px;
+                    overflow: hidden;
+                    padding-bottom: 0;
+                    border-bottom: none;
+                    border-radius: 18px;
+                    background-color: $color-grey-light;
+                    &-tags-tag{
+                        padding: 9px 16px;
+                        background-color: $color-white;
+                    }
+                    &-info{
+                        display: inline-block;
+                        width: calc(100% - 400px);
+                        padding: 40px 0 40px 40px;
+                        gap: 0;
+                    }
+                    &-head{
+                        display: block;
+                        font-size: 40px;
+                        margin-bottom: 0;
+                        color: $color-black;
+                    }
+                    &-text{
+                        display: block;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                        color: $color-black;
+                    }
+                    &-image{
+                        display: inline-block;
+                        position: absolute;
+                        right: 0;
+                        height: 100%;
+                        img{
+                            width: 400px;
+                            position: relative;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    &-tags-tag{
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        background-color: $color-grey-mid;
+                    }
+                }
+            }
+        }
+    }
 }
 .svghover:hover  {
 	path#svg-path-move-right, path#svg-path-move-right-2, path#svg-path-move-right-3, path#svg-path-move-right-4, path#svg-path-move-right-5 {
@@ -11984,6 +12060,20 @@ svg.svg-hover-filter-clear {
 				@include vertical-border;
 			}
 		}
+        &_ver2{
+            border-top: none;
+            border-bottom: none;
+            .container{
+                padding: 0;
+            }
+            .button-redesign{
+                border-color: $color-black;
+                color: $color-black;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
 	}
 	&-projects {
 		padding-bottom: 130px;
@@ -12129,6 +12219,104 @@ svg.svg-hover-filter-clear {
             }
             &-img{
                 
+            }
+        }
+        &_slider{
+            .lead{
+                font-size: 20px;
+                max-width: 80%;
+            }
+            .redesign-projects{
+                &-header{
+                    max-width: 80%;
+                    font-size: 54px;
+                    margin-bottom: 20px;
+                }
+                &__items{
+                    margin-top: 40px;
+                    &-nav{
+                        
+                    }
+                    &-link{
+                        font-size: 18px;
+                        color: $color-black;
+                        &:hover{
+                            color: $color-black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &__item{
+                    background-color: $color-grey-light;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    color: $color-black;
+                    &-text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding: 40px 20px 40px 26px;
+                        &-head{
+                            font-size: 36px;
+                        }
+                        &-body{
+                            font-size: 18px;
+                        }
+                    }
+                    &-img-cont{
+                        width: 340px;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 0 18px 18px 0;
+                        flex-shrink: 0;
+                    }
+                    &-img{
+                        height: 100%;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &:hover{
+                        color: $color-black;
+                        text-decoration: none;
+                    }
+                }
+                &__navigation{
+                    margin-top: 20px;
+                    .container{
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    button{
+                        width: 40px;
+                        height: 12px;
+                        border: 1px solid $color-grey-dark;
+                        border-radius: 20px;
+                        background-color: transparent;
+                        margin-right: 6px;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                        padding: 0;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 0;
+                            background-color: $color-grey-dark;
+                            transition: width 0s ease;
+                        }
+                        &.tns-nav-active{
+                            &::before {
+                                width: 100%;
+                                transition: width 0.2s ease;
+                            }
+                        }
+                    }
+                }
             }
         }
 	}

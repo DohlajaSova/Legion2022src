@@ -1,0 +1,77 @@
+<div class="preservice preservice_ver2">
+  <div class="container">
+    <div class="preservice-top-wrapper">
+      <div class="preservice-header-wrapper">
+        <h2 class="preservice-header">
+          От&nbsp;мобильной разработки до&nbsp;создания комплексных <i class="nowrap">IT-систем</i>
+        </h2>
+        <p class="lead">Обеспечиваем полный цикл разработки всего продукта или его отдельных блоков. Знаем, как автоматизировать процессы команд для эффективной работы.</p>
+      </div>
+    </div>
+    <div class="preservice-blocks">
+      <a href="" class="card">
+        <span class="card-info">
+          <span class="card-head">
+            Разработка IT-решений
+          </span>
+          <span class="card-text">
+            Создаём индивидуальные программные решения, направленные на&nbsp;рост эффективности вашего бизнеса. Решаем комплексную задачу или масштабируем текущую систему, обеспечиваем необходимую автоматизацию с&nbsp;минимальными издержками. 
+          </span>
+          <span class="card-tags">
+            <span class="card-tags-tag">
+              15 лет опыта
+            </span>
+            <span class="card-tags-tag">
+              настройка процессов
+            </span>
+            <span class="card-tags-tag">
+              управление рисками
+            </span>
+          </span>
+        </span>
+        <span class="card-image"><img src="assets/css/img/service-pic2-1.webp" alt=""></span>
+      </a>
+      <a href="" class="card">
+        <span class="card-info">
+          <span class="card-head">
+            IT-консалтинг
+          </span>
+          <span class="card-text">
+            Выявляем и проектируем изменения, необходимые IT-ландшафту вашего бизнеса. Анализируем текущую архитектуру (AS&nbsp;IS), создаём видение перспективной системы (TO&nbsp;BE), формируем дорожную карту по&nbsp;переходу на&nbsp;обновленные решения. 
+          </span>
+          <span class="card-tags">
+            <span class="card-tags-tag">
+              cокращение расходов
+            </span>
+            <span class="card-tags-tag">
+              проверка гипотез
+            </span>
+            <span class="card-tags-tag">
+              MVP
+            </span>
+          </span>
+        </span>
+        <span class="card-image"><img src="assets/css/img/service-pic2-2.webp" alt=""></span>
+      </a>
+      <span class="card">
+        <span class="card-info">
+          <span class="card-head">
+            Аутстаффинг
+          </span>
+          <span class="card-text">
+            Подбираем опытных IT-специалистов из&nbsp;команды аккредитованного разработчика. Оперативно предоставляем отдельных разработчиков и&nbsp;масштабируем команды. Контролируем эффективность работы наших специалистов.
+          </span>
+          <span class="card-tags">
+            <span class="card-tags-tag">
+              рекрутинг
+            </span>
+            <span class="card-tags-tag">
+              комплектование команд
+            </span>
+          </span>
+        </span>
+        <span class="card-image"><img src="assets/css/img/service-pic2-3.webp" alt=""></span>
+      </span>
+    </div>
+  </div>
+</div>

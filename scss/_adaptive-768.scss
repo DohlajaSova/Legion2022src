@@ -2531,6 +2531,40 @@
             max-width: 100%;
         }
     }
+    
+    .preservice_ver2 {
+        .preservice-blocks {
+            .card-info{
+                width: 100%;
+                padding-right: 20px;
+            }
+            .card-image{
+                opacity: 0.5;
+                right: -7%;
+            }
+        }
+    }
+    
+    .redesign-projects_slider{
+        .lead{
+            padding: 0 30px;
+        }
+        .redesign-projects-header{
+            padding-right: 30px;
+        }
+    }
+    .redesign-projects__navigation{
+        padding: 0 30px;
+    }
+    
+    .preservice_ver2 .preservice-header,
+    .redesign-projects_slider .redesign-projects-header{
+        font-size: 36px;
+    }
+    .preservice_ver2 .lead,
+    .redesign-projects_slider .lead{
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 600px) {

@@ -1231,7 +1231,7 @@ docReady(function () {
                 container: '.js-cases-container-inner',
                 items: 1,
                 gutter: 15,
-                axis: "horizontal",
+                axis: 'horizontal',
                 controls: false,
                 navPosition: 'bottom',
                 mouseDrag: true,
@@ -1243,7 +1243,7 @@ docReady(function () {
                 container: '.js-cases-container-inner',
                 items: 2,
                 gutter: 15,
-                axis: "vertical",
+                axis: 'vertical',
                 controls: false,
                 navPosition: 'bottom',
                 mouseDrag: true,
@@ -1276,6 +1276,48 @@ docReady(function () {
         }
     }
 
+    // слайдер проектов ver.2
+    let projectsBlocks = document.querySelector('.js-projects');
+    if (projectsBlocks != undefined) {
+        const navContainer = document.querySelector('#js-projects-nav');
+        const slideCount = projectsBlocks.children.length;
+        const windowWidth = window.innerWidth;
+        let containerWidth = 1087;
+        if (windowWidth < 1407 && windowWidth > 1280){
+            containerWidth = windowWidth - 320;
+        }
+        else if (windowWidth <= 1280 && windowWidth > 1024){
+            containerWidth = 960;
+        }
+        else if (windowWidth <= 1024 && windowWidth > 961){
+            containerWidth = 900;
+        }
+        else if (windowWidth <= 960 && windowWidth > 481){
+            containerWidth = windowWidth - 60;
+        }
+        else if (windowWidth <= 480){
+            containerWidth = windowWidth - 40;
+        }
+        const dynamicPadding = windowWidth > containerWidth ? (windowWidth - containerWidth) / 2 : 0;
+        for (let i = 0; i < slideCount; i++) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            navContainer.appendChild(btn);
+        }
+        tns({
+            container: projectsBlocks,
+            items: 1.25,
+            gutter: 20,
+            axis: 'horizontal',
+            edgePadding: dynamicPadding,
+            nav: true,
+            navContainer: '#js-projects-nav',
+            controls: false,
+            mouseDrag: true,
+            center: false,
+            slideBy: 'page'
+        });
+    }
 
 
     // фильтр на странице портфолио

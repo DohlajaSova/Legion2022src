@@ -1443,6 +1443,35 @@
             }
         }
     }
+    
+    .redesign-projects_slider .lead,
+    .redesign-projects__navigation{
+        padding: 0 20px;
+    }
+    .preservice_ver2{
+        .preservice-header{
+            margin-bottom: 8px;
+        }
+        .preservice-top-wrapper{
+            margin-bottom: 32px;
+        }
+        .preservice-blocks {
+            .card-info{
+                padding: 16px;
+            }
+            .card-head{
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+            .card-body{
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .card-tags{
+                gap: 6px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {

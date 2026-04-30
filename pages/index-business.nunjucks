@@ -6,9 +6,9 @@
 
   {% include "partials/towel/top.nunjucks" %}
   {% include "partials/towel/redesign/subheader.nunjucks" %}
-  {% include "partials/towel/redesign/expert-block.nunjucks" %}
-  {% include "partials/towel/redesign/service-block.nunjucks" %}
-  {% include "partials/towel/redesign/features.nunjucks" %}
+  {# {% include "partials/towel/redesign/expert-block.nunjucks" %} #}
+  {% include "partials/towel/redesign/service-block2.nunjucks" %}
+  {% include "partials/towel/redesign/features2.nunjucks" %}
   {% include "partials/towel/redesign/projects2.nunjucks" %}
   {% include "partials/towel/redesign/blog.nunjucks" %}
   {# {% include "partials/towel/cases.nunjucks" %} #}
