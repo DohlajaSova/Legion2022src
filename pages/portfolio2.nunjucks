@@ -1,0 +1,985 @@
+<!-- portfolio.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% block title %} Портфолио - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+<div class="redesign-portfolio">
+    <div class="container">
+        <h1 class="redesign-portfolio__header">Проекты и&nbsp;кейсы</h1>
+        <p class="lead">Ставим в&nbsp;приоритет задачи бизнеса, но&nbsp;не&nbsp;забываем о&nbsp;пользователях наших клиентов. Ищем инициативы и&nbsp;помогаем отстраиваться от&nbsp;конкурентов.</p>
+    </div>
+    <div class="filter-tags-component__wrapper">
+        <div class="tags">
+            <div class="tags__container container">
+                <div class="tags__categories js-tag-categories-container">
+                    <div class="tags-category active" data-cats="all">
+                        все проекты
+                    </div>
+                    <div class="tags-category" data-cats="development">
+                        разработка
+                    </div>
+                    <div class="tags-category" data-cats="consulting">
+                        консалтинг
+                    </div>
+                </div>
+            </div>
+            <div class="tags__container container">
+                <div class="tags__selected">
+                    <div class="tag-active hidden" data-filter-tag="fintech">
+                        финтех
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="retail">
+                        ритейл
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="real_estate">
+                        недвижимость
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="telecom">
+                        телеком
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="medtech">
+                        медицина
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="edtech">
+                        образование
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="IT">
+                        ИТ
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="sports">
+                        спорт
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="media">
+                        медиа
+                    </div>
+                    <div class="tag-active hidden" data-filter-tag="other">
+                        другое
+                    </div>
+                </div>
+                <div id="tags-filters" class="tags-filters opacity-0 js-tag-filters-container">
+                    <div class="tags-filters__container ">
+                        <div class="filters-wrapper">
+                            <div class="filter-tag" data-filter-tag="fintech">
+                                финтех
+                            </div>
+                            <div class="filter-tag" data-filter-tag="retail">
+                                ритейл
+                            </div>
+                            <div class="filter-tag" data-filter-tag="real_estate">
+                                недвижимость
+                            </div>
+                            <div class="filter-tag" data-filter-tag="telecom">
+                                телеком
+                            </div>
+                            <div class="filter-tag" data-filter-tag="medtech">
+                                медицина
+                            </div>
+                            <div class="filter-tag" data-filter-tag="edtech">
+                                образование
+                            </div>
+                            <div class="filter-tag" data-filter-tag="IT">
+                                ИТ
+                            </div>
+                            <div class="filter-tag" data-filter-tag="sports">
+                                спорт
+                            </div>
+                            <div class="filter-tag" data-filter-tag="media">
+                                медиа
+                            </div>
+                            <div class="filter-tag" data-filter-tag="other">
+                                другое
+                            </div>
+                            <div class="filter-tag filter-clear" data-filter-tag="clear">
+                                сброс
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="redesign-portfolio__list redesign-portfolio__list_ver2 js-tag-publications">
+            <a href="/[[~100]]" class="card" data-tag="telecom" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/02-t2.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/02-t2.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение федерального оператора t2
+                    </span>
+                    <span class="desc">
+                        Запустили основной digital-канала коммуникации&nbsp;t2 (Tele2) с&nbsp;абонентами. Развили канала коммерциализации и&nbsp;апсейла продуктов оператора. Учавствовали в&nbsp;создании уникальных продуктов в&nbsp;телеком: Конструктор тарифов, Маркет Tele2, Центр управления&nbsp;ГБ, программа «Выгодно вместе». 
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            телеком
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a href="/[[~107]]" class="card" data-tag="retail" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/01-5ka.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/01-5ka.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение торговой сети Пятёрочка
+                    </span>
+                    <span class="desc">
+                        С&nbsp;2019&nbsp;года разрабатывали и&nbsp;развивали мобильное приложение «Пятёрочка». Сделали удобный сервис для совершения покупок с&nbsp;доставкой и&nbsp;программой лояльности. Внедрили уникальную функциональность для ритейла&nbsp;— «Шпионский клуб». Поддерживали непрерывную работу приложения, во&nbsp;время создания новой архитектуры и&nbsp;функциональностей. 
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            ритейл
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a href="/[[~99]]" class="card" data-tag="edtech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/03-tbank.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/03-tbank.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение Академия Инвестиций от&nbsp;Т-Банка
+                    </span>
+                    <span class="desc">
+                        Сделали инвестирование доступным для каждого. Создали нативное мобильное приложение для iOS и&nbsp;Android на&nbsp;основе контента и&nbsp;логики работы веб-версии курсов, не&nbsp;имея исходных кодов.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            образование
+                        </span>
+                        <span class="card-tags-tag">
+                            финтех
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a href="/[[~105]]" class="card" data-tag="fintech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/04-alfa.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/04-alfa.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для трейдинга Альфа-Инвестиции
+                    </span>
+                    <span class="desc">
+                        Разработали мобильный инструмент для трейдинга и&nbsp;инвестирования от&nbsp;Альфа-Банка, который позволяет контролировать и&nbsp;управлять финансовыми активами в&nbsp;режиме реального времени.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            финтех
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <a href="/[[~98]]" class="card" data-tag="real_estate" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/05-pn.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/05-pn.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение девелопера Петербургская Недвижимость
+                    </span>
+                    <span class="desc">
+                        Разработали мобильное приложение для удобного поиска и&nbsp;бронирования квартир, включая варианты с&nbsp;ипотекой. Обновили дизайн и&nbsp;улучшили взаимодействие девелопера с&nbsp;клиентами. Запустили реферальную программу, чтобы помочь заказчику привлечь ещё больше клиентов.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            недвижимость
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <span class="card" data-tag="real_estate" data-cat="consulting">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/06-osnova.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/06-osnova.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Дискавери фаза для девелопера ГК&nbsp;Основа
+                    </span>
+                    <span class="desc">
+                        Провели UX/UI-аудит корпоративного мобильного приложения для девелоперской компании «Основа». Разработали сценарии для идеального пользовательского опыта. На&nbsp;основе Дискавери фазы создали дизайн-концепт нового приложения, который значительно повысит вовлечённость пользователей.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            недвижимость
+                        </span>
+                        <span class="card-tags-tag">
+                            консалтинг
+                        </span>
+                        <span class="card-tags-tag">
+                            дискавери фаза
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <a href="/[[~104]]" class="card" data-tag="edtech" data-cat="consulting">
+                <span class="card__image">
+                    <img src="/assets/css/img/portfolio/07-san.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/07-san.svg" alt=""></span>
+                </span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Дискавери фаза для школы САН
+                    </span>
+                    <span class="desc">
+                        Проанализировали бизнес-процессы обучения для школы корейского языка САН и&nbsp;сформировали MVP нового продукта&nbsp;— образовательной онлайн-платформы. Предоставили документацию: AS&nbsp;IS, TO&nbsp;BE, точки роста и&nbsp;дорожную карту запуска MVP.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            образование
+                        </span>
+                        <span class="card-tags-tag">
+                            консалтинг
+                        </span>
+                        <span class="card-tags-tag">
+                            дискавери фаза
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <span class="card" data-tag="medtech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/08-dm.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/08-dm.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение сети клиник docmed
+                    </span>
+                    <span class="desc">
+                        Разработали личный кабинет пациентов сети клиник docdeti, docmed, docdent и&nbsp;docmed ЭКО. Добавили важную функциональность&nbsp;— чат между пациентом и&nbsp;врачом. Оптимизировали процесс записи на&nbsp;приём и&nbsp;сделали запись максимально удобной. Повысили эффективность разработки мобильного приложения.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            медицина
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <a href="/[[~166]]" class="card" data-tag="other" data-cat="consulting">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/09-zetta.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/09-zetta.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Дискавери фаза для Зетта Страхование
+                    </span>
+                    <span class="desc">
+                        Мы провели UX/UI-анализ и&nbsp;юзабилити-тестирование мобильного приложения MyZetta. Благодаря этому выявили препятствия в&nbsp;пользовательском опыте и&nbsp;подчеркнули конкурентные преимущества. Созданный нами дизайн-концепт нового приложения позволит улучшить удобство использования, повысить лояльность клиентов и&nbsp;укрепить позиции компании на&nbsp;рынке цифровых ДМС-сервисов.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            страхование
+                        </span>
+                        <span class="card-tags-tag">
+                            дискавери фаза
+                        </span>
+                        <span class="card-tags-tag">
+                            консалтинг
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <span class="card" data-tag="other" data-cat="consulting">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/10-auchan.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/10-auchan.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Дискавери фаза для АШАН
+                    </span>
+                    <span class="desc">
+                        Провели предпроектное исследование для тендера на&nbsp;редизайн мобильного приложения и&nbsp;сайта сети АШАН. Мы тщательно проанализировали UX/UI текущих решений и&nbsp;конкурентную среду, чтобы выявить возможности для улучшения пользовательского опыта. На&nbsp;основе этих данных создали дизайн-концепт ключевого пользовательского сценария.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            страхование
+                        </span>
+                        <span class="card-tags-tag">
+                            консалтинг
+                        </span>
+                        <span class="card-tags-tag">
+                            дискавери фаза
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <a href="/[[~101]]" class="card" data-tag="medtech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/11-snc.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/11-snc.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение мед-сервиса Сдайнакоронавирус.рф
+                    </span>
+                    <span class="desc">
+                        Разработали мобильное приложение, которое позволяет оперативно решать проблемы пациентов, связанные с&nbsp;COVID-19, в&nbsp;режиме real-time.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            медицина
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <span class="card" data-tag="other" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/12-pm.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/12-pm.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение сети пиццерий Pizzaman
+                    </span>
+                    <span class="desc">
+                        Разработали мобильное приложение для пермской сети пиццерий Pizzaman. Новое приложение помогло упростить процесс оформления заказа для клиентов до&nbsp;«заказа в&nbsp;пару кликов», повысить лояльность постоянных покупателей и&nbsp;увеличить количество регулярных онлайн-заказов.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            фудтех
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="other" data-cat="consulting">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/27-vim.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/27-vim.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Дискавери фаза для торгового дома «ВИМОС»
+                    </span>
+                    <span class="desc">
+                        Провели аудит действующего приложения для покупателей торговой сети «ВИМОС». Нам удалось выявить ряд барьеров, которые усложняют покупку через приложение. Мы&nbsp;предоставили список рекомендаций для исправления ошибок и&nbsp;снижения нагрузки на&nbsp;службу поддержки.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            е-ком
+                        </span>
+                        <span class="card-tags-tag">
+                            консалтинг
+                        </span>
+                        <span class="card-tags-tag">
+                            дискавери-фаза
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="sports" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/28-leef.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/28-leef.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение Leef Fit для фитнес-трекеров
+                    </span>
+                    <span class="desc">
+                        Участвовали в&nbsp;создании мобильного приложения для носимых устройств линейки LEEF (умные спортивные часы и&nbsp;фитнес-трекеры). LEEF&nbsp;FIT помогает поддерживать ежедневную физическую активность: различные режимы тренировок, анализ результатов, контроль физических показателей и&nbsp;установка долгосрочных целей. 
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            носимые устройства
+                        </span>
+                        <span class="card-tags-tag">
+                            спорт
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="fintech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/13-zu.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/13-zu.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение сети ломбардов Залог Успеха
+                    </span>
+                    <span class="desc">
+                        Разработали приложение «Залог Успеха Ювелирный ломбард» с&nbsp;личным кабинетом для клиентов и&nbsp;программой лояльности. В&nbsp;приложении пользователи могут управлять своими финансовыми операциями по&nbsp;займам, оперативно получить поддержку в&nbsp;онлайн-режиме.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                        <span class="card-tags-tag">
+                            2022
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="retail" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/14-globus.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/14-globus.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение сети гипермаркетов Globus
+                    </span>
+                    <span class="desc">
+                        Команда e-legion разрабатывала приложение для покупателей международной сеть гипермаркетов Globus с&nbsp;2016&nbsp;года. Нам удалось создать удобный инструмент для планирования покупок с&nbsp;полным каталогом товаров.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            ритейл
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="foodtech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/29-bk.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/29-bk.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Первое приложение сети ресторанов Бургер Кинг
+                    </span>
+                    <span class="desc">
+                        Мы разработали первое в&nbsp;России приложение крупнейший cети ресторанов быстрого питания «Бургер Кинг Россия». Гости получили удобный инструмент для оформления заказа и&nbsp;доступ к&nbsp;программе лояльности. Приложение повысило скорость обслуживания и&nbsp;общую конверсию пользователей в&nbsp;онлайн-заказы и&nbsp;способствовало росту LTV бизнеса на&nbsp;18%.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            фудтех
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                        <span class="card-tags-tag">
+                            2018
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="other" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/15-venn.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/15-venn.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для поиска друзей Venn
+                    </span>
+                    <span class="desc">
+                        Вместе с&nbsp;норвежским стартапом Friendr&nbsp;AS создали мобильное приложения для поиска друзей. Cервис Venn,&nbsp;на базе ИИ–алгоритмов, помогает знакомиться и&nbsp;объединяет людей по&nbsp;всему миру на&nbsp;основе их&nbsp;интересов и&nbsp;общих ценностей. 
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            социальные сети
+                        </span>
+                        <span class="card-tags-tag">
+                            разработка
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="media" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/17-sports.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/17-sports.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение спортивного портала Sports.ru
+                    </span>
+                    <span class="desc">
+                        Создали мобильное приложение для Windows Phone для первого профессионального спортивного интернет-проекта в&nbsp;России&nbsp;— Sports.ru. Внедрили интерактивные настраиваемые карточки матчей, которые отображаются поверх основного контента, позволяя пользователям быстро просматривать статистику без запуска приложения.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            медиа
+                        </span>
+                        <span class="card-tags-tag">
+                            спорт
+                        </span>
+                        <span class="card-tags-tag">
+                            2013
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="media" data-cat="development">
+                <span class="card__image">
+                    <img src="/assets/css/img/portfolio/18-1tv.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/18-1tv.svg" alt=""></span>
+                </span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для Первого канала
+                    </span>
+                    <span class="desc">
+                        Разработали приложение для Первого канала под Windows Phone и&nbsp;Windows 8 с&nbsp;архивом передач и новостей. Все выпуски можно было сохранить в&nbsp;«Избранное» и&nbsp;смотреть любимую передачу в&nbsp;офлайне.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            медиа
+                        </span>
+                        <span class="card-tags-tag">
+                            2014
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="fintech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/19-raif.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/19-raif.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для Райффайзен Банк
+                    </span>
+                    <span class="desc">
+                        Разработали приложение для клиентов Райффайзен Банка&nbsp;— мобильный банк R-Mobile. С&nbsp;его помощью можно было совершать денежные переводы, оплачивать услуги, следить за&nbsp;скидками компаний-партнёров.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            финтех
+                        </span>
+                        <span class="card-tags-tag">
+                            2015
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="sports" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/20-888.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/20-888.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для сервиса букмекеров 888.ru
+                    </span>
+                    <span class="desc">
+                        Разработали приложение для просмотра спортивных событий, анализа и&nbsp;ставок. Доступно более 130&nbsp;видов спорта, от&nbsp;футбольных матчей до&nbsp;турниров по&nbsp;Dota&nbsp;2. Фильтр видеопотока, статистика по&nbsp;спортивным событиям и&nbsp;удобные блиц-ставки одним движением пальца.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            букмекинг
+                        </span>
+                        <span class="card-tags-tag">
+                            спорт
+                        </span>
+                        <span class="card-tags-tag">
+                            2020
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="other" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/21-pobeda.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/21-pobeda.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Корпоративный инструмент авиакомпании Победа
+                    </span>
+                    <span class="desc">
+                        Мы разработали корпоративное iPad-приложение для авиакомпании «Победа». Приложение записывает разговоры членов экипажа в&nbsp;кабине пилота в&nbsp;фоновом режиме. Для обеспечения безопасности все данные передаются по&nbsp;протоколу SFTP и&nbsp;после удаляются из&nbsp;памяти устройства.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            бизнес
+                        </span>
+                        <span class="card-tags-tag">
+                            инструменты
+                        </span>
+                        <span class="card-tags-tag">
+                            2018
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="retail" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/22-mega.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/22-mega.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для торговых центров МЕГА
+                    </span>
+                    <span class="desc">
+                        Разработали Android-приложение для торговых центров МЕГА. Добавили систему поиска по&nbsp;названиям, тегам и&nbsp;категориям, а&nbsp;также карты торговых центров, чтобы пользователь мог легко находить нужный магазин и&nbsp;получает о&nbsp;нём подробную информацию.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            ритейл
+                        </span>
+                        <span class="card-tags-tag">
+                            навигация
+                        </span>
+                        <span class="card-tags-tag">
+                            2014
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="other" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/23-bmw.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/23-bmw.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Мобильный каталог BMW
+                    </span>
+                    <span class="desc">
+                        В&nbsp;условиях жёстких дедлайнов наша команда разработала мобильный каталог для погружения пользователей в&nbsp;BMW–культуру: с&nbsp;помощью приложения можно было приобрести брендовую одежду и&nbsp;аксессуары, а&nbsp;также быстро подобрать нужные запчасти и&nbsp;автохимию.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            е-ком
+                        </span>
+                        <span class="card-tags-tag">
+                            2013
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="other" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/24-ginza.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/24-ginza.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для ресторанов Ginza Project
+                    </span>
+                    <span class="desc">
+                        Создали мобильное приложение GDS для ресторанов холдинга Ginza Project. С&nbsp;его помощью гости могли посматривать меню и&nbsp;заказывать блюда с&nbsp;доставкой из&nbsp;любого ресторана сети Ginza.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            фудтех
+                        </span>
+                        <span class="card-tags-tag">
+                            2012
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="edtech" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/25-ll.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/25-ll.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Приложение для школы LinguaLeo
+                    </span>
+                    <span class="desc">
+                        Разработали приложение для смартфонов и&nbsp;планшетов на&nbsp;Android для изучения английского языка. Результат&nbsp;— миллионы скачиваний и&nbsp;75&nbsp;000&nbsp;отзывов со&nbsp;средней оценкой на&nbsp;сторах&nbsp;4,7.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            образование
+                        </span>
+                        <span class="card-tags-tag">
+                            2014
+                        </span>
+                    </span>
+                </span>
+            </span>
+            <span class="card" data-tag="media" data-cat="development">
+                <span class="card__image"><span class="card__image-container">
+                    <img src="/assets/css/img/portfolio/26-smesh.webp" alt="" class="card__image-bg">
+                    <span class="card__image-logo"><img src="/assets/css/img/portfolio/26-smesh.svg" alt=""></span>
+                </span></span>
+                <span class="card__wrapper">
+                    <span class="head">
+                        Windows-приложение анимационного проекта Смешарики
+                    </span>
+                    <span class="desc">
+                        Чтобы сделать Смешариков ещё мобильнее, мы&nbsp;разработали приложение для Windows Store. Проект был создан в&nbsp;трёхстороннем партнёрстве компаний e-legion, Microsoft и&nbsp;Marmelad.
+                    </span>
+                    <span class="card-tags">
+                        <span class="card-tags-tag">
+                            медиа
+                        </span>
+                        <span class="card-tags-tag">
+                            2013
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="redesign-archive__pagination">
+            <div class="page-wrapper js-page-switcher active" data-page-switch="1">
+                <div class="page" data-page-switch="1">
+                    1
+                </div>
+            </div>
+            <div class="page-wrapper js-page-switcher" data-page-switch="2">
+                <div class="page" data-page-switch="2">
+                    2
+                </div>
+            </div>
+            <div class="page-wrapper js-page-switcher" data-page-switch="3">
+                <div class="page" data-page-switch="3">
+                    3
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="redesign-experty">
+    <div class="container">
+        <div class="info">
+            <div class="head">NDA-проекты</div>
+            <div class="desc">Не&nbsp;о&nbsp;всех проектах мы&nbsp;можем рассказать, так&nbsp;как&nbsp;уважаем наши договоренности с клиентом. Логотипы, вот всё, мы можем показать.</div>
+        </div>
+    </div>
+
+  <div class="redesign-experty-projects">
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="107" height="80" viewbox="0 0 107 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M43.3333 29.3334H47.6667L45.5333 36.8L48.9333 35.9334L50.8667 29.3334H54.9333L51.6667 40.5334L57.0667 33.3334L58.2667 29.2667H62L59.6667 37.2C59.6 37.4667 59.0667 39.2 59.4667 39.2C59.8667 39.2 60.9333 37.4 62.0667 35.2667C63.3333 33 64.4 30.6 64.9333 29.2667H68.8667L66.9333 36L71.9333 29.2667H106.6L23 65.0667L24.6667 59.4L90.3333 32.5334H77.5333L76.2667 36.7334L72.2 38L73.8667 32.5334H71.8667L66.2 39.8667L62.6667 41.0667C62.8667 39.2667 63.1333 37.5334 63.6 35.8L61.9333 38.8667C60.6 41.2667 59.5333 43.2 57.5333 43.2C56.0667 43.2 55.4 41.8667 55.4 40.0667C55.4 39.4667 55.4667 38.7334 55.6667 38.0667L50.3333 45.2L45.9333 46.6667L48 39L44.6667 39.8667L42.3333 47.9334L37.5333 49.5334L39.6667 42.0667L34.8 48.2667C32.7333 50.9334 30.6 52.3334 28.9333 52.3334C25.6667 52.3334 25.2 46.9334 25.5333 44.8C23.7333 45.6 23.1333 45.9334 22.5333 46.2667C23.3333 57.8 11.5333 73.7334 4.06667 73.7334C1.73333 73.7334 0 71.9334 0 67.9334C0 61.9334 4.46667 53.2667 16.5333 46.4C16.2 44.0667 15.4 42.0667 13.9333 40.8V40.5334C18 37.4 21.1333 33.8667 21.1333 30.7334C21.1333 29.2667 20 28.7334 18.8 28.7334C16.5333 28.7334 13.5333 31.5334 11.9333 33.8667H11.0667L12.4 29.3334C15.4667 25.2667 20.4 23.8 23.0667 23.8C25.8 23.8 28.1333 24.8667 28.1333 28.1334C28.1333 32 24.7333 36.0667 19.7333 39.1334C20.8667 40.4667 21.6667 41.9334 22.0667 43.5334C23.2667 42.9334 24.5333 42.2667 25.8667 41.6667C27.3333 34.6 32.4 29.1334 36.8667 29.1334C39.1333 29.1334 40.1333 30.4667 40.1333 32.3334C40.1333 36.6 36.2667 39.8667 30.7333 42.7334C30.6 43.7334 30.6 44.2667 30.6 44.8667C30.6 46.8 31 47.7334 31.7333 47.7334C32.2 47.7334 32.8 47.2667 33.4667 46.5334L40.8667 37.7334L43.3333 29.3334ZM5.66667 66.6C5.66667 67.5334 5.93333 69 7 69C11.1333 69 16.4 58 16.6 49.4C9.33333 54.3334 5.66667 61.5334 5.66667 66.6ZM35.6667 33.1334C35.6667 32.4667 35.4 32 35 32C33.8667 32 32.2667 35.5334 31.3333 39.5334C34.3333 37.6667 35.6667 35.1334 35.6667 33.1334Z" fill="#009EE1"/>
+            <path d="M93.1334 57.2L93.2668 55.8H96.7334V53.8667H91.5334L91.0001 59.1334C91.6001 58.9334 92.3334 58.8 92.8001 58.8C94.1334 58.8 94.9334 59.4 94.9334 60.2C94.9334 60.8 94.3334 61.4667 93.2668 61.4667C92.4668 61.4667 91.5334 61.1334 90.8668 60.5334L90.6001 62.6667C91.3334 63.1334 92.3334 63.5334 93.4001 63.5334C95.8668 63.5334 97.2668 62.0667 97.2668 60.2C97.2668 57.9334 95.1334 56.7334 93.1334 57.2Z" fill="#009EE1"/>
+            <path d="M89.7334 56.6666C89.7334 55.0666 88.4667 53.6666 86.2 53.6666C84.0667 53.6666 82.6667 55 82.6667 57.1333V57.2H84.9334V57.0666C84.9334 56.0666 85.4 55.5333 86.2 55.5333C86.8667 55.5333 87.3334 56 87.3334 56.6666C87.3334 57.1333 87.0667 57.6 86.6 58.2L82.3334 63.2666H89.6V61.2666H86.6667L88.4001 59.4C89.2667 58.4 89.7334 57.6666 89.7334 56.6666Z" fill="#009EE1"/>
+            <path d="M69.4667 56H71.5333V63.2667H73.8667V53.8667H70.6L69.4667 56Z" fill="#009EE1"/>
+            <path d="M78.4667 53.6C76.2 53.6 74.8 55.1334 74.8 57.0667C74.8 58.8667 76.2001 60.0667 77.7334 60.0667C78.0667 60.0667 78.2667 60.0667 78.6001 60L76.4001 63.2667H79.0667L80.4001 61.2667C81.4667 59.6667 82.0667 58.4667 82.0667 57.0667C82.0667 55.0667 80.7334 53.6 78.4667 53.6ZM78.4667 58.4667C77.6667 58.4667 77.0001 57.9334 77.0001 57C77.0001 56.2 77.5334 55.5334 78.4667 55.5334C79.3334 55.5334 79.9334 56.2 79.9334 57C79.8667 57.8667 79.3334 58.4667 78.4667 58.4667Z" fill="#009EE1"/>
+            <path d="M46.0001 6L47.9334 12H54.2001L49.1334 15.6667L51.0667 21.6666L46.0001 18L40.8667 21.6666L42.8001 15.6667L37.7334 12H44.0001L46.0001 6Z" fill="#D0AF2C"/>
+            <path d="M65.2 6L67.1334 12H73.4667L68.3334 15.6667L70.3334 21.6666L65.2 18L60.1334 21.6666L62.0667 15.6667L56.9333 12H63.2667L65.2 6Z" fill="#D0AF2C"/>
+        </svg>
+    </div>
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="253" height="80" viewbox="0 0 253 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2989_12964)">
+                <path d="M113.349 35.6984L118.631 31.774H100.942V55.2849H118.631V51.3572H105.994V45.3564H116.795V41.4319H105.994V35.6984H113.349Z" fill="#21A038"/>
+                <path d="M87.5768 40.9299H81.4484V35.6984H91.2524L96.538 31.774H76.3956V55.2849H86.9242C92.823 55.2849 96.2298 52.5893 96.2298 47.8955C96.2298 43.3941 93.1673 40.9299 87.5768 40.9299ZM86.7341 51.3572H81.4484V44.8544H86.7341C89.9507 44.8544 91.4426 45.9333 91.4426 48.127C91.4426 50.3206 89.8359 51.3572 86.7341 51.3572Z" fill="#21A038"/>
+                <path d="M132.954 31.774H123.343V55.2849H128.396V48.6257H132.993C139.118 48.6257 142.948 45.3955 142.948 40.1998C142.948 35.0041 139.118 31.774 132.954 31.774ZM132.839 44.7012H128.36V35.6984H132.839C136.095 35.6984 137.856 37.3151 137.856 40.1998C137.856 43.0845 136.095 44.7012 132.839 44.7012Z" fill="#21A038"/>
+                <path d="M67.7392 50.2033C66.4014 50.9367 64.9062 51.3213 63.3749 51.3213C58.8172 51.3213 55.5252 48.0487 55.5252 43.5473C55.5252 39.0459 58.8172 35.7734 63.3749 35.7734C65.021 35.7375 66.6309 36.2753 67.9687 37.2369L71.6083 34.5445L71.3788 34.3131C69.2737 32.4259 66.4374 31.4643 63.2208 31.4643C59.7386 31.4643 56.5581 32.6573 54.2628 34.8118C51.9643 37.0446 50.6626 40.1607 50.738 43.3941C50.6986 46.6634 51.9643 49.8187 54.2628 52.1264C56.6728 54.3983 59.8894 55.6695 63.1848 55.5913C66.8211 55.5913 69.9984 54.32 72.1428 52.0123L68.8901 49.5872L67.7392 50.2033Z" fill="#21A038"/>
+                <path d="M203.719 31.8131V55.3207H208.772V45.7019H219.534V55.3207H224.59V31.8131H219.534V41.471H208.772V31.8131H203.719ZM195.027 55.3207H200.349L190.469 31.8131H185.338L175.268 55.3207H180.36L182.39 50.5879H193.112L195.027 55.3207ZM183.921 46.6634L187.827 37.2369L191.502 46.6634H183.921ZM235.925 45.8192H239.063L246.798 55.2849H253.307L242.968 43.1236L252.005 31.774H246.224L238.719 41.8556H235.925V31.774H230.869V55.2849H235.925V45.8192ZM158.572 40.9691V35.7375H171.783V31.8131H153.516V55.3207H164.048C169.943 55.3207 173.353 52.6284 173.353 47.9347C173.353 43.4333 170.291 40.9691 164.697 40.9691H158.572ZM158.572 51.3963V44.8935H163.858C167.071 44.8935 168.566 45.9724 168.566 48.1661C168.566 50.3597 166.996 51.4354 163.858 51.4354H158.572V51.3963Z" fill="#21A038"/>
+                <path d="M34.9238 31.6208C35.8419 32.8137 36.6091 34.1208 37.2584 35.5061L19.5686 48.6257L12.1385 43.932V38.3158L19.5292 42.9704L34.9238 31.6208Z" fill="#21A038"/>
+                <path d="M4.59375 43.5473C4.59375 43.2768 4.59375 43.0486 4.6331 42.7781L0.154093 42.5467C0.154093 42.8563 0.114746 43.2018 0.114746 43.5082C0.114746 48.8962 2.29851 53.7822 5.82007 57.3221L8.99734 54.1277C6.27912 51.4354 4.59375 47.7032 4.59375 43.5473Z" fill="url(#paint0_linear_2989_12964)"/>
+                <path d="M19.5292 28.5405C19.7981 28.5405 20.0276 28.5405 20.2965 28.5796L20.526 24.0782C20.2178 24.0782 19.8735 24.0391 19.5686 24.0391C14.2076 24.0391 9.34491 26.2328 5.82007 29.7726L8.99734 32.9669C11.6795 30.2355 15.4306 28.5405 19.5292 28.5405Z" fill="url(#paint1_linear_2989_12964)"/>
+                <path d="M19.5293 58.5542C19.2604 58.5542 19.0309 58.5542 18.762 58.5151L18.5325 63.0165C18.8407 63.0165 19.185 63.0556 19.4899 63.0556C24.851 63.0556 29.7169 60.8619 33.2384 57.3221L30.0612 54.1277C27.379 56.8983 23.664 58.5542 19.5293 58.5542Z" fill="url(#paint2_linear_2989_12964)"/>
+                <path d="M27.9528 31.1579L31.7433 28.3482C28.4119 25.6558 24.1624 24 19.5293 24V28.5014C22.6705 28.5405 25.5789 29.5021 27.9528 31.1579Z" fill="url(#paint3_linear_2989_12964)"/>
+                <path d="M38.9831 43.5473C38.9831 42.3544 38.8683 41.2005 38.6749 40.0466L34.5008 43.1627C34.5008 43.2768 34.5008 43.4333 34.5008 43.5473C34.5008 47.9738 32.5859 51.9373 29.5627 54.6688L32.5859 58.0163C36.4944 54.4765 38.9831 49.2808 38.9831 43.5473Z" fill="#21A038"/>
+                <path d="M19.5292 58.5542C15.1256 58.5542 11.1811 56.6311 8.46285 53.5899L5.13147 56.6311C8.69238 60.5946 13.8239 63.0556 19.5292 63.0556V58.5542Z" fill="url(#paint4_linear_2989_12964)"/>
+                <path d="M9.53509 32.4259L6.50864 29.0783C2.5641 32.6573 0.114746 37.8139 0.114746 43.5473H4.59375C4.59375 39.16 6.50864 35.1606 9.53509 32.4259Z" fill="url(#paint5_linear_2989_12964)"/>
+            </g>
+            <defs>
+                <lineargradient id="paint0_linear_2989_12964" x1="5.34243" y1="56.7748" x2="0.790895" y2="43.4799" gradientunits="userSpaceOnUse">
+                    <stop offset="0.1444" stop-color="#F2E913"/>
+                    <stop offset="0.3037" stop-color="#E7E518"/>
+                    <stop offset="0.5823" stop-color="#CADB26"/>
+                    <stop offset="0.891" stop-color="#A3CD39"/>
+                </lineargradient>
+                <lineargradient id="paint1_linear_2989_12964" x1="7.09764" y1="29.2645" x2="18.7028" y2="24.7954" gradientunits="userSpaceOnUse">
+                    <stop offset="0.0592" stop-color="#0FA8E0"/>
+                    <stop offset="0.5385" stop-color="#0099F9"/>
+                    <stop offset="0.9234" stop-color="#0291EB"/>
+                </lineargradient>
+                <lineargradient id="paint2_linear_2989_12964" x1="18.2708" y1="59.227" x2="32.1121" y2="56.066" gradientunits="userSpaceOnUse">
+                    <stop offset="0.1226" stop-color="#A3CD39"/>
+                    <stop offset="0.2846" stop-color="#86C339"/>
+                    <stop offset="0.8693" stop-color="#21A038"/>
+                </lineargradient>
+                <lineargradient id="paint3_linear_2989_12964" x1="18.609" y1="26.8682" x2="30.1145" y2="30.4555" gradientunits="userSpaceOnUse">
+                    <stop offset="0.0566" stop-color="#0291EB"/>
+                    <stop offset="0.79" stop-color="#0C8ACB"/>
+                </lineargradient>
+                <lineargradient id="paint4_linear_2989_12964" x1="6.27042" y1="57.3432" x2="18.6262" y2="62.0083" gradientunits="userSpaceOnUse">
+                    <stop offset="0.1324" stop-color="#F2E913"/>
+                    <stop offset="0.2977" stop-color="#EBE716"/>
+                    <stop offset="0.5306" stop-color="#D9E01F"/>
+                    <stop offset="0.8023" stop-color="#BBD62D"/>
+                    <stop offset="0.9829" stop-color="#A3CD39"/>
+                </lineargradient>
+                <lineargradient id="paint5_linear_2989_12964" x1="3.54775" y1="44.0913" x2="8.46899" y2="31.1548" gradientunits="userSpaceOnUse">
+                    <stop offset="0.0698" stop-color="#A3CD39"/>
+                    <stop offset="0.2599" stop-color="#81C55F"/>
+                    <stop offset="0.9216" stop-color="#0FA8E0"/>
+                </lineargradient>
+                <clippath id="clip0_2989_12964">
+                    <rect width="253" height="80" fill="white"/>
+                </clippath>
+            </defs>
+        </svg>
+    </div>
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="133" height="80" viewbox="0 0 133 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M126.382 55.1208C128.982 55.1208 130.824 54.6547 132.197 53.6509V49.0981C130.788 50.066 129.091 50.6755 126.707 50.6755C122.698 50.6755 121.036 47.5925 121.036 42.717C121.036 37.5906 123.059 34.9736 126.743 34.9736C128.91 34.9736 131.041 35.7264 132.161 36.4434V31.7113C130.969 31.066 128.91 30.6 126.093 30.6C118.905 30.6 115.185 35.7264 115.185 42.8962C115.221 50.7472 118.869 55.1208 126.382 55.1208ZM91.2375 53.0415V48.4887C89.5038 49.6717 86.542 50.7113 83.8331 50.7113C79.7155 50.7113 78.1623 48.7755 77.9095 44.8321H91.4904V41.8925C91.4904 33.683 87.8423 30.6 82.2438 30.6C75.3811 30.6 72.1304 35.7981 72.1304 42.9321C72.1304 51.1415 76.2119 55.1208 83.3635 55.1208C86.9393 55.1208 89.5761 54.1528 91.2375 53.0415ZM39.6952 31.0302V40.3509H32.1824V31.0302H26.5477V54.6547H32.1824V44.7962H39.6952V54.6547H45.3298V31.0302H39.6952ZM70.7217 50.2094H68.2295V31.0302H51.8313V33.0377C51.8313 38.8094 51.4701 46.266 49.4835 50.2094H47.6776V60.0321H52.8788V54.6547H65.4844V60.0321H70.6856V50.2094H70.7217ZM109.189 54.6547H115.582L106.552 41.9283L114.498 31.0302H108.828L100.881 41.9283V31.0302H95.2468V54.6547H100.881V43.0396L109.189 54.6547ZM82.0993 34.9736C84.8805 34.9736 85.7474 37.2679 85.7474 40.2434V40.7094H77.9095C78.054 36.9453 79.4265 34.9736 82.0993 34.9736ZM62.5949 50.2094H54.6486C56.2017 46.6604 56.6352 40.2076 56.6352 36.1208V35.4038H62.5949V50.2094Z" fill="black"/>
+            <path d="M21.8522 54.6226H16.1092V26.4094H13.5448C8.84925 26.4094 6.39313 28.7396 6.39313 32.217C6.39313 36.1604 8.09074 37.9887 11.5943 40.3189L14.4839 42.2547L6.17642 54.6226H0L7.47671 43.5811C3.17851 40.534 0.758507 37.5585 0.758507 32.5396C0.758507 26.266 5.16507 22 13.5087 22H21.8161V54.6226H21.8522Z" fill="#FC3F1D"/>
+        </svg>
+    </div>
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="61" height="80" viewbox="0 0 61 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.324 71.871C17.835 71.871 10.927 70.8427 6.42963 68.2987C3.12402 66.4311 1.06543 63.6169 1.06543 60.9644V25.7542C1.06543 21.8025 3.96393 17.283 8.5969 13.9809C12.4446 11.2472 19.3521 8 30.324 8C49.4237 8 59.5833 18.3113 59.5833 25.7542V60.9363C59.5833 63.6158 57.5241 66.4304 54.1916 68.2979C49.7218 70.8427 42.8137 71.871 30.324 71.871Z" fill="#F5EBDC"/>
+            <path d="M52.6541 65.5177C48.2968 67.9748 40.8212 68.6774 30.4807 68.6774C20.1403 68.6774 12.6646 67.9748 8.30788 65.5177C5.69184 64.0461 4.36853 62.0399 4.36853 60.6013C4.36853 59.7827 4.80463 59.3137 5.77559 59.3137H55.1848C56.1565 59.3137 56.5926 59.7825 56.5926 60.6013C56.5933 62.0399 55.2688 64.0459 52.6541 65.5177ZM55.1851 27.395H5.77569C4.80399 27.395 4.36864 26.8936 4.36864 25.9911C4.36864 20.64 12.43 11.1935 30.4807 11.1935C48.3647 11.1935 56.5934 20.64 56.5934 25.9911C56.5934 26.8936 56.1574 27.395 55.1851 27.395Z" fill="#FF8732"/>
+            <path d="M14.8931 49.4663C14.7423 49.2325 14.7263 49.0818 14.7263 49.0154C14.7263 48.8314 14.8266 48.698 15.0274 48.514C15.4967 48.0784 16.6538 46.9919 17.2904 46.0057C17.7763 45.2534 17.977 44.5679 17.977 44.0001C17.977 42.5453 16.6537 41.4076 15.2114 41.4076C14.2895 41.4076 13.4182 41.9262 12.832 42.8792C12.0443 44.1496 11.1053 45.6211 10.5025 46.2068C10.3516 46.3577 10.2679 46.3909 10.1509 46.3909C9.94946 46.3909 9.86582 46.2568 9.86582 46.0397V44.3681C9.86582 42.7297 8.89412 41.4082 7.13407 41.4082C5.35751 41.4082 4.40168 42.7291 4.40168 44.3681V54.6679C4.40168 56.3062 5.35677 57.6284 7.13407 57.6284C8.89412 57.6284 9.86582 56.3075 9.86582 54.6679V52.2945C9.86582 52.0933 9.94946 51.9432 10.1509 51.9432C10.4194 51.9432 10.4865 52.211 10.5537 52.3445C10.9391 53.2643 12.061 55.22 13.1011 56.3741C13.8049 57.1433 14.6763 57.6286 15.5983 57.6286C17.1568 57.6286 18.4648 56.2739 18.4648 54.8189C18.4648 53.9163 18.0787 53.2474 17.3416 52.4453C16.4026 51.4234 15.2959 50.0854 14.8931 49.467V49.4663ZM35.7944 40.4541C38.4256 40.4541 40.0851 38.782 40.0851 36.3408C40.0851 34.7862 39.1454 33.7157 37.2691 33.7157H36.7334C35.7438 33.7157 34.9728 34.1845 34.9728 35.2378C34.9728 36.1741 35.7943 36.6257 36.4144 36.6257C36.7328 36.6257 36.9348 36.7259 36.9348 36.9604C36.9348 37.2605 36.5832 37.4617 36.1803 37.4617C34.9228 37.4617 34.0682 36.5751 34.0682 34.9197C34.0682 33.0808 35.2421 32.4127 36.1466 32.4127C37.2526 32.4127 37.4372 32.9812 38.2083 32.9812C39.0968 32.9812 39.7004 32.2454 39.7004 31.4764C39.7004 30.9079 39.4485 30.4736 39.0631 30.1721C38.3593 29.6535 37.3709 29.2697 35.896 29.2697C33.2974 29.2697 30.7671 30.975 30.7671 34.921C30.7658 38.6983 33.2968 40.4541 35.7944 40.4541ZM6.32869 40.3538H8.69274C10.9219 40.3538 12.2791 38.8657 12.2791 37.0095C12.2791 35.5213 11.3905 34.836 11.1898 34.6687C11.1067 34.6016 11.0229 34.5352 11.0229 34.4681C11.0229 34.3851 11.0728 34.3512 11.1572 34.2509C11.4749 33.8831 11.7934 33.298 11.7934 32.4447C11.7934 30.4391 10.4355 29.368 8.32388 29.368H6.32933C5.00538 29.368 4.36865 30.1383 4.36865 31.1743V38.5475C4.36865 39.5848 5.00538 40.3538 6.32869 40.3538ZM7.31829 32.2448C7.31829 32.0276 7.45265 31.8596 7.73702 31.8596H7.95502C8.67548 31.8596 8.89412 32.361 8.89412 32.7966C8.89412 33.1977 8.67666 33.7662 7.95502 33.7662H7.73766C7.45254 33.7662 7.31819 33.5995 7.31819 33.3817L7.31829 32.2448ZM7.31829 36.1575C7.31829 35.9403 7.45265 35.7724 7.73702 35.7724H8.03887C8.84372 35.7724 9.0777 36.307 9.0777 36.7924C9.0777 37.228 8.84308 37.8462 8.03887 37.8462H7.73777C7.45265 37.8462 7.31829 37.6789 7.31829 37.4611V36.1575ZM50.0907 40.4368C51.1632 40.4368 51.7496 39.634 51.7496 38.6312V36.8588C51.7496 36.6415 51.8505 36.5414 52.0182 36.5414C52.2189 36.5414 52.2854 36.6582 52.3185 36.8588C52.47 37.7115 52.872 38.865 53.3241 39.4507C53.8944 40.2037 54.4301 40.4382 54.967 40.4382C55.8377 40.4382 56.5928 39.7522 56.5928 38.8988C56.5928 38.3304 56.3582 37.912 56.0564 37.5282C55.4861 36.8096 55.1348 36.3417 54.9174 35.7564C54.8668 35.6223 54.9001 35.5047 55.0516 35.3884C55.5714 34.9873 56.1749 34.1007 56.1749 32.6969C56.1749 30.5732 54.4144 29.3692 52.2855 29.3692H50.3924C49.0683 29.3692 48.4318 30.1376 48.4318 31.1748V38.6324C48.4318 39.6352 49.018 40.4367 50.0914 40.4367L50.0907 40.4368ZM51.5654 32.5296C51.5654 32.3125 51.6997 32.1438 51.9843 32.1438H52.2188C52.9233 32.1438 53.1406 32.6459 53.1406 33.0808C53.1406 33.4992 52.9233 34.0504 52.2188 34.0504H51.9843C51.6991 34.0504 51.5654 33.8843 51.5654 33.6659V32.529V32.5296ZM22.5364 41.407C20.6594 41.407 19.6365 42.8109 19.6365 44.5667V54.4661C19.6365 56.2226 20.6594 57.6264 22.5364 57.6264C24.4132 57.6264 25.4355 56.222 25.4355 54.4661V44.5667C25.4355 42.8121 24.4139 41.407 22.5364 41.407ZM52.3358 47.8446H51.5148C50.0401 47.8446 48.9003 48.5299 48.9003 50.0341C48.9003 51.4054 50.1406 52.0575 51.0622 52.0575C51.5148 52.0575 51.8332 52.1917 51.8332 52.5423C51.8332 52.9766 51.2968 53.2609 50.7272 53.2609C48.833 53.2609 47.5423 51.9732 47.5423 49.5819C47.5423 46.9236 49.3024 45.954 50.6595 45.954C52.319 45.954 52.5869 46.7907 53.7433 46.7907C55.0837 46.7907 55.9889 45.7035 55.9889 44.6C55.9889 43.7811 55.6202 43.1454 55.0339 42.7107C54.011 41.9576 52.4699 41.4056 50.2904 41.4056C46.3857 41.4056 42.5807 43.8633 42.5807 49.5819C42.5807 55.0491 46.3844 57.6079 50.1395 57.6079C54.0775 57.6079 56.5749 55.1835 56.5749 51.6385C56.576 49.3992 55.1691 47.8446 52.3358 47.8446ZM46.0005 40.3538C46.9402 40.3538 47.6773 39.802 47.6773 38.7987C47.6773 37.8118 46.9396 37.26 46.0011 37.26H44.4926C44.2081 37.26 44.0737 37.0933 44.0737 36.8755V36.5574C44.0737 36.3403 44.2081 36.1729 44.4932 36.1729H45.6496C46.4546 36.1729 47.0913 35.6881 47.0913 34.8348C47.0913 33.9828 46.4545 33.4974 45.6496 33.4974H44.4928C44.2082 33.4974 44.0739 33.33 44.0739 33.1122V32.8446C44.0739 32.6275 44.2082 32.4601 44.4934 32.4601H46.0014C46.9399 32.4601 47.6776 31.9083 47.6776 30.9055C47.6776 29.9181 46.9398 29.3662 46.0014 29.3662H42.8338C41.5106 29.3662 40.8732 30.1352 40.8732 31.1725V38.5458C40.8732 39.5824 41.51 40.352 42.8338 40.352H46.0014V40.354H46.0006M17.2067 40.4368C19.9217 40.4368 21.3633 38.8145 21.3633 36.7758V31.1404C21.3633 30.1377 20.7771 29.3342 19.7038 29.3342C18.6311 29.3342 18.0449 30.1377 18.0449 31.1404V36.5912C18.0449 36.9917 17.8103 37.4598 17.2068 37.4598C16.6033 37.4598 16.4013 36.9917 16.4013 36.5912V31.1404C16.4013 30.1377 15.7985 29.3342 14.7252 29.3342C13.6526 29.3342 13.0663 30.1377 13.0663 31.1404V36.7751C13.067 38.8153 14.492 40.4363 17.2069 40.4363L17.2067 40.4368ZM28.9726 40.4368C29.8442 40.4368 30.5991 39.7515 30.5991 38.8982C30.5991 38.3297 30.3645 37.9114 30.0627 37.5275C29.5769 36.892 29.1409 36.3402 28.9235 35.7557C28.873 35.6216 28.9064 35.5041 29.0579 35.3872C29.5776 34.9867 30.1811 34.1002 30.1811 32.6957C30.1811 30.572 28.4205 29.368 26.2917 29.368H24.3969C23.0736 29.368 22.4362 30.137 22.4362 31.1743V38.6319C22.4362 39.6346 23.0232 40.4382 24.0958 40.4382C25.1685 40.4382 25.7554 39.6346 25.7554 38.6319V36.8601C25.7554 36.6429 25.8556 36.542 26.0232 36.542C26.2246 36.542 26.2911 36.6589 26.3243 36.8601C26.4753 37.7121 26.8772 38.8656 27.3299 39.452C27.8999 40.2031 28.4356 40.4368 28.9726 40.4368ZM26.2237 34.0498H25.9885C25.7034 34.0498 25.5697 33.8831 25.5697 33.6653V32.529C25.5697 32.3118 25.704 32.1438 25.9885 32.1438H26.2231C26.9276 32.1438 27.1449 32.6459 27.1449 33.0808C27.1449 33.4979 26.9276 34.0498 26.2231 34.0498H26.2237ZM38.6091 41.407C36.8832 41.407 35.9446 42.694 35.9446 44.3164V47.9276C35.9446 48.2278 35.8436 48.3626 35.6595 48.3626C35.5253 48.3626 35.4249 48.2796 35.3079 48.0452L32.9784 43.5314C32.0898 41.8088 31.1679 41.4078 30.1125 41.4078C28.3525 41.4078 27.3802 42.728 27.3802 44.3842V54.7179C27.3802 56.3401 28.3186 57.6273 30.0447 57.6273C31.7714 57.6273 32.7092 56.3395 32.7092 54.7179V51.1065C32.7092 50.8064 32.8102 50.6709 32.9945 50.6709C33.1287 50.6709 33.2297 50.7546 33.3461 50.989L35.6755 55.5034C36.5641 57.226 37.5193 57.6271 38.542 57.6271C40.3021 57.6271 41.2744 56.3061 41.2744 54.6507V44.317C41.2744 42.6947 40.3357 41.4077 38.6091 41.4077V41.407Z" fill="#D62300"/>
+        </svg>
+    </div>
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="138" height="80" viewbox="0 0 138 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2989_12994)">
+                <path d="M10.4817 32.4058C8.33429 32.3595 6.20226 32.7831 4.23097 33.6482C2.58603 34.4458 -0.333252 36.9959 -0.333252 41.8351V55.2143H5.11961V43.0967C5.11961 42.4642 5.21037 40.5659 5.29356 40.0713C5.79271 37.6017 7.56244 37.0035 10.1755 37.0035C10.4363 37.0035 10.754 37.0035 11.064 37.0419L12.3346 32.5399C11.7216 32.4442 11.1019 32.3993 10.4817 32.4058Z" fill="black"/>
+                <path d="M16.7787 41.5353C17.0132 39.2882 18.4274 36.1667 21.8005 36.1667C25.4269 36.1667 26.3118 39.4914 26.2664 41.5162L16.7787 41.5353ZM31.4092 43.0691C31.4092 38.249 29.1404 32.405 22.1068 32.405C15.1792 32.405 11.549 38.1186 11.549 44.185C11.549 50.8919 15.686 55.3055 22.6817 55.3055C25.2573 55.3314 27.814 54.8575 30.2143 53.9098L29.4164 50.0751C27.5006 50.7865 25.4698 51.1249 23.4303 51.0721C19.9778 51.0721 16.9186 49.3657 16.7787 45.3967H31.2391C31.3585 44.627 31.4155 43.8485 31.4092 43.0691Z" fill="black"/>
+                <path d="M116.686 32.4021C114.54 32.3563 112.41 32.7801 110.439 33.6446C108.798 34.4422 105.875 36.9922 105.875 41.8317V55.2109H111.327V43.0933C111.327 42.4605 111.414 40.5623 111.505 40.0677C111.993 37.5981 113.774 36.9999 116.38 36.9999C116.645 36.9999 116.954 36.9999 117.28 37.0382L118.539 32.5287C117.926 32.4329 117.306 32.3879 116.686 32.3945" fill="#E83A89"/>
+                <path d="M122.986 41.5353C123.212 39.2882 124.63 36.1667 128.004 36.1667C131.645 36.1667 132.522 39.4914 132.476 41.5162L122.986 41.5353ZM137.624 43.0691C137.624 38.249 135.355 32.405 128.306 32.405C121.39 32.405 117.752 38.1186 117.752 44.185C117.752 50.8919 121.881 55.3055 128.885 55.3055C131.471 55.3346 134.037 54.8621 136.447 53.9137L135.645 50.0789C133.729 50.7877 131.698 51.1234 129.659 51.0683C126.196 51.0683 123.141 49.3618 123.012 45.393H137.469C137.59 44.6233 137.648 43.8447 137.642 43.0654" fill="#E83A89"/>
+                <path d="M58.7337 37.1759C54.7518 35.5999 53.0162 34.5223 53.0162 32.1909C53.0162 30.4346 54.5287 28.5479 57.9811 28.5479C60.0555 28.5234 62.1043 29.0145 63.9482 29.9782L65.2604 25.5339C63.7139 24.7286 61.3165 24 58.0757 24C51.6093 24 47.5179 27.781 47.5179 32.7278C47.5179 37.0915 50.6716 39.7451 55.5988 41.5474C59.4105 42.9318 60.9232 44.2739 60.9232 46.5747C60.9232 49.0481 58.9569 50.7123 55.459 50.7123C52.9284 50.6997 50.4416 50.0402 48.2288 48.795L47.0262 53.3966C48.6787 54.3859 51.9421 55.3139 55.0997 55.3139C62.8291 55.3139 66.4668 51.0382 66.4668 46.1835C66.4668 41.8159 63.9369 39.1662 58.7374 37.1913" fill="#E83A89"/>
+                <path d="M77.8041 50.7583C75.7167 50.7583 75.0059 49.3663 75.0134 46.7051V37.0302H78.7948L79.9557 32.8925H75.0057V26.6842L69.6815 29.3685V47.3378C69.6815 50.2177 70.2184 52.1925 71.368 53.4733C72.389 54.593 74.0868 55.3138 76.0722 55.3138C77.4161 55.347 78.7559 55.1499 80.0351 54.731L79.9331 50.5129C79.2425 50.7195 78.5236 50.8115 77.8041 50.7851" fill="#E83A89"/>
+                <path d="M92.3121 51.2907C88.9844 51.2907 86.9425 48.1041 86.9425 43.8745C86.9425 40.2277 88.493 36.4582 92.3575 36.4582C96.0823 36.4582 97.5872 40.3619 97.5872 43.7786C97.5872 48.1923 95.4163 51.2907 92.3121 51.2907ZM92.4899 32.405C85.9707 32.405 81.3043 36.811 81.3043 44.0049C81.3043 51.0223 86.0161 55.2979 92.1307 55.2979C97.6368 55.2979 103.214 51.7049 103.214 43.6519C103.214 36.9951 98.9219 32.405 92.4899 32.405Z" fill="#E83A89"/>
+                <path d="M38.9932 40.1053H39.0385C41.0768 40.1053 42.404 38.625 42.404 36.6003C42.404 34.5757 41.0351 33.0455 39.0385 33.0455C37.042 33.0455 35.6731 34.5334 35.6731 36.6003C35.6731 38.6673 37.0533 40.1053 38.9932 40.1053Z" fill="black"/>
+                <path d="M39.0565 47.7467C37.1052 47.7467 35.691 49.2346 35.691 51.3015C35.691 53.2839 37.0562 54.8102 39.0112 54.8102H39.0565C41.0947 54.8102 42.422 53.2763 42.422 51.3015C42.3804 49.1923 41.0493 47.7467 39.0565 47.7467Z" fill="black"/>
+            </g>
+            <defs>
+            <clippath id="clip0_2989_12994">
+                <rect width="138" height="80" fill="white"/>
+            </clippath>
+            </defs>
+        </svg>
+    </div>
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="166" height="80" viewbox="0 0 166 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M117.264 35.4748H121.569V53.9937H117.264V35.4748Z" fill="#1F5EC7"/>
+            <path d="M52.4936 53.9938L52.4657 42.8837L47.0045 50.5556H45.0694L39.6361 43.1282V54H35.6045V35.4749H39.1585L46.1052 45.5019L52.9433 35.4749H56.4694L56.5221 53.9938H52.4936Z" fill="#1F5EC7"/>
+            <path d="M75.6872 50.5555V53.9937H61.3163V35.4748H75.3399V38.9162H65.5835V42.9393H74.2018V46.2723H65.5835V50.5585L75.6872 50.5555Z" fill="#1F5EC7"/>
+            <path d="M80.273 35.475H88.6959C90.5426 35.4379 92.3724 35.8321 94.0392 36.6262C95.5264 37.3398 96.7771 38.4644 97.6428 39.8664C98.4863 41.3508 98.9297 43.028 98.9297 44.7344C98.9297 46.4408 98.4863 48.118 97.6428 49.6024C96.7781 51.0052 95.5271 52.13 94.0392 52.8426C92.3724 53.6367 90.5426 54.0309 88.6959 53.9938H80.273V35.475ZM88.4912 50.4751C90.3519 50.4751 91.8322 49.9593 92.9321 48.9278C94.032 47.8962 94.584 46.4984 94.5882 44.7344C94.5882 42.9704 94.0361 41.5726 92.9321 40.541C91.8281 39.5095 90.3478 38.9937 88.4912 38.9937H84.5651V50.4751H88.4912Z" fill="#1F5EC7"/>
+            <path d="M102.125 35.4748H106.417V50.5028H114.496V53.9937H102.125V35.4748Z" fill="#1F5EC7"/>
+            <path d="M143.542 35.4748V53.9937H140.016L130.765 42.7505V53.9937H126.529V35.4748H130.08L139.303 46.7304V35.4748H143.542Z" fill="#1F5EC7"/>
+            <path d="M160.397 53.9937L155.919 47.566L151.515 53.9937H146.584L153.45 44.5641L146.937 35.4625H151.816L156.077 41.4694L160.266 35.4625H164.918L158.449 44.4063L165.368 53.9814L160.397 53.9937Z" fill="#1F5EC7"/>
+            <path d="M31.563 16.9746V0L24.3 7.25096V24.2256H41.3349L48.5979 16.9746H31.563Z" fill="#18C0EB"/>
+            <path d="M17.0349 31.4734V48.448L24.301 41.2002V24.2256H7.26611L0 31.4734H17.0349Z" fill="#6EE9D5"/>
+        </svg>
+    </div>
+    <div class="svg-hover-filter-clear">
+        <svg class="svg-added-filter" width="141" height="80" viewbox="0 0 141 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2989_13005)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.92321 57.1909C7.54181 57.5721 7.02468 57.7862 6.48549 57.7862C5.9463 57.7862 5.42917 57.5721 5.04778 57.1909L0.594992 52.7406C0.406164 52.5519 0.256368 52.3279 0.154166 52.0813C0.0519636 51.8347 -0.000640869 51.5704 -0.000640869 51.3035C-0.000640869 51.0366 0.0519636 50.7722 0.154166 50.5257C0.256368 50.2791 0.406164 50.055 0.594992 49.8664L1.53485 48.9265C2.5247 47.9375 3.30994 46.7631 3.84569 45.4705C4.38145 44.1779 4.6572 42.7923 4.6572 41.3931C4.6572 39.9938 4.38145 38.6083 3.84569 37.3157C3.30994 36.023 2.5247 34.8487 1.53485 33.8597L0.594992 32.9198C0.406164 32.7311 0.256368 32.5071 0.154166 32.2605C0.0519636 32.0139 -0.000640869 31.7496 -0.000640869 31.4827C-0.000640869 31.2158 0.0519636 30.9515 0.154166 30.7049C0.256368 30.4583 0.406164 30.2343 0.594992 30.0456L5.04778 25.5952C5.42917 25.2141 5.9463 25 6.48549 25C7.02468 25 7.54181 25.2141 7.92321 25.5952L8.86428 26.5363C10.8635 28.5347 13.5746 29.6573 16.4014 29.6573C19.2281 29.6573 21.9392 28.5347 23.9384 26.5363L24.8795 25.5952C25.2609 25.2141 25.778 25 26.3172 25C26.8564 25 27.3735 25.2141 27.7549 25.5952L32.2065 30.0456C32.3953 30.2343 32.5451 30.4583 32.6473 30.7049C32.7495 30.9515 32.8021 31.2158 32.8021 31.4827C32.8021 31.7496 32.7495 32.0139 32.6473 32.2605C32.5451 32.5071 32.3953 32.7311 32.2065 32.9198L31.2654 33.8597C30.2756 34.8487 29.4903 36.023 28.9546 37.3157C28.4188 38.6083 28.1431 39.9938 28.1431 41.3931C28.1431 42.7923 28.4188 44.1779 28.9546 45.4705C29.4903 46.7631 30.2756 47.9375 31.2654 48.9265L32.2065 49.8664C32.3953 50.055 32.5451 50.2791 32.6473 50.5257C32.7495 50.7722 32.8021 51.0366 32.8021 51.3035C32.8021 51.5704 32.7495 51.8347 32.6473 52.0813C32.5451 52.3279 32.3953 52.5519 32.2065 52.7406L27.7549 57.1909C27.5661 57.3799 27.3418 57.5297 27.095 57.6319C26.8482 57.7342 26.5837 57.7868 26.3166 57.7868C26.0495 57.7868 25.785 57.7342 25.5382 57.6319C25.2914 57.5297 25.0672 57.3799 24.8783 57.1909L23.9384 56.2499C21.9392 54.2515 19.2281 53.1289 16.4014 53.1289C13.5746 53.1289 10.8635 54.2515 8.86428 56.2499L7.92321 57.1909ZM134.599 45.2229L140.578 36.7314H133.439L130.932 40.3257L128.424 36.7314H121.287L127.302 45.2229L121.007 54.1358H128.147L130.932 50.1578L133.717 54.1346H140.857L134.599 45.2229ZM119.084 54.1346V36.7314H112.641V54.1346H119.084ZM100.491 45.3541L97.7051 36.7327H90.5651L97.1829 54.1346H103.798L110.415 36.7314H103.275L100.489 45.3541H100.491ZM79.2771 47.6624C78.7549 47.0674 78.4757 46.3389 78.4757 45.4318C78.4757 44.5284 78.7549 43.7986 79.2771 43.2412C79.8344 42.6499 80.5314 42.3706 81.4021 42.3706C82.2715 42.3706 82.9685 42.6499 83.4907 43.2412C84.0492 43.7986 84.3273 44.5284 84.3273 45.4318C84.3273 46.3377 84.048 47.0687 83.4907 47.6624C82.9685 48.2174 82.2715 48.4954 81.4021 48.4954C80.5314 48.4954 79.8344 48.2162 79.2771 47.6624ZM81.4021 54.6227C84.0128 54.6227 86.241 53.7533 88.0527 51.9768C89.8632 50.2015 90.7691 48.0437 90.7691 45.4318C90.7691 42.8223 89.8632 40.6645 88.0527 38.8892C86.241 37.1139 84.0128 36.2445 81.4021 36.2445C78.7914 36.2445 76.5619 37.1139 74.7502 38.8892C72.9397 40.6645 72.0339 42.8235 72.0339 45.4318C72.0339 48.0437 72.9397 50.2015 74.7502 51.9768C76.5959 53.7533 78.7914 54.6227 81.4021 54.6227ZM61.6809 31.8233L57.1224 39.7684L52.5664 31.8233H44.4125V54.1346H51.3764V42.4216L56.8104 51.3867H57.4369L62.8684 42.4216V54.1346H69.8348V31.8245L61.6809 31.8233Z" fill="black"/>
+                <path d="M115.862 36.8885C116.776 36.8887 117.653 36.5257 118.3 35.8794C118.946 35.2331 119.31 34.3565 119.31 33.4424C119.31 32.5282 118.947 31.6515 118.301 31.005C117.654 30.3584 116.778 29.9952 115.864 29.995C114.949 29.9948 114.073 30.3578 113.426 31.0041C112.78 31.6504 112.416 32.527 112.416 33.4411C112.416 34.3553 112.779 35.232 113.425 35.8785C114.072 36.525 114.948 36.8883 115.862 36.8885Z" fill="black"/>
+            </g>
+            <defs>
+            <clippath id="clip0_2989_13005">
+                <rect width="141" height="80" fill="white"/>
+            </clippath>
+            </defs>
+        </svg>
+    </div>
+  </div>
+</div>
+
+<!-- svg Обсудить -->
+<div class="redesign-common redesign-feedback">
+  <div class="container">
+    <div class="redesign-feedback-text centered-text">
+      На&nbsp;протяжении 18-ти&nbsp;лет цифровизируем ведущие российские <br class="display-tablet-lower"/>и&nbsp;зарубежные компании из&nbsp;финтеха,
+      телекома, ритейла и&nbsp;других отраслей.
+    </div>
+    <!-- <svg class="margin-auto" width="653" height="200" viewbox="0 0 653 200" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0.5 100C0.5 45.0477 45.0477 0.5 100 0.5H553C607.952 0.5 652.5 45.0477 652.5 100C652.5 154.952 607.952 199.5 553 199.5H100C45.0477 199.5 0.5 154.952 0.5 100Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M18.5 99.8572C18.5 47.6663 60.8091 5.35718 113 5.35718H539.857C592.048 5.35718 634.357 47.6663 634.357 99.8572C634.357 152.048 592.048 194.357 539.857 194.357H113C60.8091 194.357 18.5 152.048 18.5 99.8572Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M36.5 99.7144C36.5 50.2849 76.5705 10.2144 126 10.2144H526.714C576.144 10.2144 616.214 50.2849 616.214 99.7144C616.214 149.144 576.144 189.214 526.714 189.214H126C76.5705 189.214 36.5 149.144 36.5 99.7144Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M54.5 99.5715C54.5 52.9035 92.3319 15.0715 139 15.0715H513.571C560.24 15.0715 598.071 52.9035 598.071 99.5715C598.071 146.24 560.24 184.072 513.571 184.072H139C92.3319 184.072 54.5 146.24 54.5 99.5715Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M72.5 99.4285C72.5 55.5218 108.093 19.9285 152 19.9285H500.429C544.335 19.9285 579.929 55.5218 579.929 99.4285C579.929 143.335 544.335 178.928 500.429 178.928H152C108.093 178.928 72.5 143.335 72.5 99.4285Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M90.5 99.2856C90.5 58.1404 123.855 24.7856 165 24.7856H487.286C528.431 24.7856 561.786 58.1404 561.786 99.2856C561.786 140.431 528.431 173.786 487.286 173.786H165C123.855 173.786 90.5 140.431 90.5 99.2856Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M108.5 99.1428C108.5 60.759 139.616 29.6428 178 29.6428H474.143C512.527 29.6428 543.643 60.759 543.643 99.1428C543.643 137.527 512.527 168.643 474.143 168.643H178C139.616 168.643 108.5 137.527 108.5 99.1428Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M127.5 99C127.5 63.3776 156.378 34.5 192 34.5H462C497.622 34.5 526.5 63.3776 526.5 99C526.5 134.622 497.622 163.5 462 163.5H192C156.378 163.5 127.5 134.622 127.5 99Z"
+        fill="white" stroke="#141414" />
+      <path
+        d="M193.04 82.2167C202.04 82.2167 206.72 88.6567 206.72 96.5767C206.72 104.497 202.04 110.937 193.04 110.937C184.08 110.937 179.4 104.497 179.4 96.5767C179.4 88.6567 184.08 82.2167 193.04 82.2167ZM193.04 85.5767C186.36 85.5767 183.4 90.4967 183.4 96.5767C183.4 102.657 186.36 107.577 193.04 107.577C199.76 107.577 202.72 102.657 202.72 96.5767C202.72 90.4967 199.76 85.5767 193.04 85.5767ZM216.66 92.8567H216.9C218.38 91.1367 220.74 90.0167 223.42 89.9767C229.66 89.9367 233.66 94.2567 233.66 100.457C233.66 106.257 230.06 110.937 223.5 110.937C216.1 110.937 213.1 105.537 213.1 98.6167C213.1 94.0567 213.78 88.7367 217.5 85.8967C219.9 84.0567 223.62 83.2167 227.38 83.2167C228.1 83.2167 229.06 83.1767 229.06 82.2167H232.54C232.58 85.5767 230.02 86.6967 227.1 86.6967C225.38 86.6967 223.74 86.7767 222.1 87.2567C219.82 87.9767 217.26 89.4567 216.66 92.8567ZM223.5 92.8167C219.06 92.8167 216.86 96.2567 216.86 100.457C216.86 104.697 219.06 108.057 223.5 108.057C227.98 108.057 229.98 104.697 229.98 100.457C229.98 96.2567 227.98 92.8167 223.5 92.8167ZM255.31 103.297L258.51 104.177C257.43 108.137 254.03 110.937 249.39 110.937C243.03 110.937 239.27 106.257 239.27 100.417C239.27 94.6567 243.03 89.9367 249.39 89.9367C253.59 89.9367 256.63 92.2567 258.07 95.6167L254.95 96.8567C254.03 94.4567 252.23 92.8167 249.39 92.8167C245.15 92.8167 242.95 96.2567 242.95 100.417C242.95 104.657 245.15 108.057 249.39 108.057C252.51 108.057 254.51 106.137 255.31 103.297ZM271.331 105.977L277.171 90.2967H280.811L272.051 113.697C270.891 116.777 269.811 119.057 266.051 119.057C265.331 119.057 264.651 118.937 263.931 118.777L263.651 115.697C264.211 115.937 264.811 116.097 265.651 116.097C266.771 116.097 267.771 115.497 268.251 114.217L269.651 110.497L260.931 90.2967H264.691L269.891 102.457L271.131 105.977H271.331ZM281.203 107.737H283.403C284.043 106.937 284.643 105.777 285.163 104.337C286.523 100.697 287.203 95.5767 287.203 90.2967H301.083V107.737H303.443V115.297H300.603V110.577H284.043V115.297H281.203V107.737ZM288.123 105.457C287.803 106.297 287.443 107.057 287.083 107.737H297.563V93.1367H290.283C290.083 97.7767 289.363 102.137 288.123 105.457ZM326.459 90.2967V110.577H322.939V100.497L323.179 97.0967H322.939L312.179 107.857V110.577H308.659V90.2967H312.179V100.457L311.939 103.857H312.179L322.939 93.1367V90.2967H326.459ZM348.058 90.2967V93.1367H341.218V110.577H337.698V93.1367H330.858V90.2967H348.058ZM355.965 90.2967V98.3367H362.085C366.005 98.3367 368.565 101.097 368.565 104.457C368.565 107.817 365.885 110.577 361.925 110.577H352.445V90.2967H355.965ZM361.245 101.177H355.965V107.737H361.125C363.725 107.737 364.885 106.257 364.885 104.457C364.885 102.657 363.725 101.177 361.245 101.177Z"
+        fill="#141414" />
+      <rect x="409.5" y="46.5" width="105" height="105" rx="52.5" fill="#1960FF" stroke="#1960FF" />
+      <path d="M462.027 73.2329L462.027 98.3258L462.027 123.419" stroke="white" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path d="M487.12 98.3259L436.934 98.3259" stroke="white" stroke-width="2" stroke-linecap="round" />
+    </svg> -->
+
+    <svg class="svghover margin-auto" width="828" height="268" viewbox="0 0 828 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="158.5" y="50.5" width="511" height="167" rx="83.5" stroke="black" />
+      <rect x="0.5" y="0.5" width="827" height="267" rx="133.5" stroke="black" />
+      <rect x="135.5" y="44.5" width="557" height="179" rx="89.5" stroke="black" />
+      <rect x="114.5" y="37.5" width="600" height="193" rx="96.5" stroke="black" />
+      <rect x="90.5" y="29.5" width="648" height="209" rx="104.5" stroke="black" />
+      <rect x="61.5" y="20.5" width="703" height="227" rx="113.308" stroke="black" />
+      <rect x="32.5" y="11.5" width="763" height="245" rx="122.5" stroke="black" />
+      <path
+        id="svg-path-fill-3"
+        d="M253.219 120.68C255.579 118 258.939 116.64 263.259 116.64C267.579 116.64 270.939 118 273.339 120.68C275.739 123.4 276.939 126.84 276.939 131C276.939 135.16 275.739 138.6 273.339 141.28C270.939 144 267.579 145.36 263.259 145.36C258.939 145.36 255.579 144 253.219 141.28C250.819 138.6 249.619 135.16 249.619 131C249.619 126.84 250.819 123.4 253.219 120.68ZM263.259 120C260.099 120 257.699 121.04 256.059 123.08C254.419 125.12 253.619 127.76 253.619 131C253.619 134.24 254.419 136.88 256.059 138.92C257.699 140.96 260.099 142 263.259 142C266.459 142 268.859 140.96 270.499 138.92C272.139 136.88 272.939 134.24 272.939 131C272.939 127.76 272.139 125.12 270.499 123.08C268.859 121.04 266.459 120 263.259 120ZM285.279 127.28H285.519C287.159 125.4 289.319 124.44 292.039 124.4C295.119 124.36 297.599 125.32 299.479 127.28C301.359 129.24 302.279 131.76 302.279 134.88C302.279 137.88 301.399 140.4 299.599 142.36C297.799 144.36 295.279 145.36 292.119 145.36C288.599 145.36 285.999 144.24 284.279 141.96C282.559 139.72 281.719 136.76 281.719 133.04C281.719 126.8 283.199 122.56 286.119 120.32C288.439 118.52 291.719 117.64 295.999 117.64C297.119 117.64 297.679 117.32 297.679 116.64H301.159C301.199 119.8 298.959 121.12 295.719 121.12C293.679 121.12 291.999 121.32 290.719 121.68C287.559 122.68 285.759 124.52 285.279 127.28ZM296.959 129.36C295.879 127.96 294.239 127.24 292.119 127.24C289.999 127.24 288.359 127.96 287.199 129.4C286.039 130.84 285.479 132.68 285.479 134.88C285.479 137.08 286.039 138.92 287.199 140.32C288.359 141.76 289.999 142.48 292.119 142.48C294.239 142.48 295.879 141.76 296.959 140.36C298.039 138.96 298.599 137.12 298.599 134.88C298.599 132.64 298.039 130.8 296.959 129.36ZM322.329 137.72L325.529 138.6C324.409 142.64 320.929 145.36 316.409 145.36C313.329 145.36 310.849 144.36 309.049 142.36C307.209 140.36 306.289 137.84 306.289 134.84C306.289 131.84 307.209 129.36 309.049 127.36C310.849 125.36 313.329 124.36 316.409 124.36C320.529 124.36 323.609 126.56 325.089 130.04L321.969 131.28C320.929 128.6 319.089 127.24 316.409 127.24C312.369 127.24 309.969 130.48 309.969 134.84C309.969 139.28 312.289 142.48 316.409 142.48C319.449 142.48 321.489 140.64 322.329 137.72ZM336.55 140.4H336.75L342.59 124.72H346.23L337.47 148.12C336.79 149.96 336.03 151.32 335.23 152.2C334.43 153.04 333.19 153.48 331.47 153.48C330.87 153.48 330.19 153.4 329.35 153.2L329.07 150.12C329.67 150.4 330.35 150.52 331.07 150.52C332.31 150.52 333.19 149.88 333.67 148.64L335.07 144.92L326.35 124.72H330.11L335.31 136.88L336.55 140.4ZM345.022 149.72V142.16H347.222C347.862 141.36 348.462 140.24 348.982 138.76C350.342 135.12 351.022 130.44 351.022 124.72H364.902V142.16H367.262V149.72H364.422V145H347.862V149.72H345.022ZM351.942 139.88C351.662 140.64 351.302 141.4 350.902 142.16H361.382V127.56H354.102C353.902 132.48 353.182 136.6 351.942 139.88ZM385.158 124.72H388.678V145H385.158V134.92L385.398 131.52H385.158L374.398 142.28V145H370.878V124.72H374.398V134.88L374.158 138.28H374.398L385.158 127.56V124.72ZM391.477 124.72H408.677V127.56H401.837V145H398.317V127.56H391.477V124.72ZM411.464 124.72H414.984V132.76H421.104C423.024 132.76 424.584 133.36 425.784 134.52C426.984 135.68 427.584 137.16 427.584 138.88C427.584 140.6 426.984 142.04 425.744 143.2C424.504 144.4 422.904 145 420.944 145H411.464V124.72ZM420.264 135.6H414.984V142.16H420.144C422.584 142.16 423.904 140.8 423.904 138.88C423.904 136.96 422.624 135.6 420.264 135.6Z"
+        fill="#fff">
+        </path>
+        <rect id="svg-rect-move-right-3" x="174.5" y="66.5" width="135" height="135" rx="67.5" stroke="black" >
+        </rect>
+      <path id="svg-path-move-right-3" fill-rule="evenodd" clip-rule="evenodd"
+        d="M241.287 101.298C241.675 100.905 242.308 100.9 242.702 101.287L275.202 133.287C275.393 133.475 275.5 133.732 275.5 134C275.5 134.268 275.393 134.524 275.202 134.712L242.702 166.712C242.308 167.1 241.675 167.095 241.287 166.701C240.9 166.308 240.905 165.675 241.298 165.287L272.059 135H210C209.448 135 209 134.552 209 134C209 133.448 209.448 133 210 133L272.059 133L241.298 102.712C240.905 102.325 240.9 101.692 241.287 101.298Z"
+        fill="#141414">
+          <animate attributename="stroke-dashoffset" values="0; 1000" dur="1s" repeatcount="0" begin="svghover.mouseenter" end="svghover.mouseleave" fill="freeze"></animate>
+          <animate attributename="stroke-dasharray" values="0; 1000" dur="1s" repeatcount="0" begin="svghover.mouseenter" end="svghover.mouseleave" fill="freeze"></animate>
+        </path>
+    </svg>
+  </div>
+</div>
+
+{# {% include "partials/towel/cases2.nunjucks" %}
+{% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+
+{% include "partials/popup-feedback.nunjucks" %} #}
+{% endblock %}

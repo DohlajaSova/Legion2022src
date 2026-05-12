@@ -2677,7 +2677,7 @@ docReady(function () {
         let activeType = "all";
         // let limit = 4;
         const tagsGroups = {
-            consulting: [
+            /*consulting: [
                 "edtech",
                 "retail",
                 "real_estate",
@@ -2695,7 +2695,9 @@ docReady(function () {
                 "IT",
                 "real_estate",
                 "clear"
-            ]
+            ]*/
+            consulting: [],
+            development: []
         }
         const classToClick = [
             "tags-category",
@@ -2716,21 +2718,19 @@ docReady(function () {
         Array.from(tagCatsContainer.children).forEach((one, index) => one.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            toggleClass(elemToToggle, classToToggle, false);
+            if (e.target.dataset.cats != "development" && e.target.dataset.cats != "consulting")
+                toggleClass(elemToToggle, classToToggle, false);
+            else
+                elemToToggle.classList.add(classToToggle);
             // add listener -- outer click
-            if (!tagCategoriesListener) {
-                document.addEventListener("click", function (e) {
-                    // e.preventDefault();
-                    tagCategoriesListener = true;
-                    if (!hasCommonElements(
-                        [...Array.from(e.target.classList), ...Array.from(e.target.parentNode.classList)],
-                        classToClick)
-                    ) {
+            if (!window.tagCategoriesListener) {
+                document.addEventListener("click", (e) => {
+                    const isClickInside = e.target.closest(`.${classToClick}`);
+                    if (!isClickInside) {
                         toggleClass(elemToToggle, classToToggle, true);
                     }
-                    // !!remove
-                    // document.removeEventListener("click", this)
-                })
+                });
+                window.tagCategoriesListener = true;
             }
             if (activeType === e.target?.dataset?.cats) return;
 
@@ -2743,6 +2743,8 @@ docReady(function () {
             // clear after switching category
             Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
             Array.from(tagFilters).forEach(tag => tag.classList.remove("active"));
+            Array.from(publications).forEach(card => card.classList.remove("hide"));
+            generateCasesPaging(1);
 
             // cats highlight
             one.classList.add("active")
@@ -2769,6 +2771,8 @@ docReady(function () {
                     Array.from(tagActives).forEach(tag => tag.classList.add("hidden"));
                     Array.from(publications).forEach(pub => pub.classList.remove("hidden"));
                     Array.from(tagFilters).forEach(filt => filt.classList.remove("active"));
+                    Array.from(publications).forEach(card => card.classList.remove("hide"));
+                    generateCasesPaging(1);
                 } else {
                     // active tags
                     const tagToToggle = Array.from(tagActives).find(tag => tag.dataset.filterTag === filt.dataset.filterTag);
@@ -2785,6 +2789,7 @@ docReady(function () {
                                     // no filters
                                     Array.from(publications).forEach(pub => {
                                         pub.classList.remove("hidden");
+                                        generateCasesPaging(1);
                                     })
                                 } else {
                                     // with filters
@@ -2823,14 +2828,18 @@ docReady(function () {
                         })
                     }
                 }
+                Array.from(publications).forEach(card => card.classList.remove("hide"));
+                generateCasesPaging(1);
             })
         })
     }
     //tags single filters
-
+                
     //Архив портфолио, пейджинг. Размер страницы - 4 элемента
+    //После редизайна тут же обрабатываем список всех кейсов
     let archiveList = document.querySelector(".js-portfolio-archive");
-    const pageSize = 4;
+    let caseList = document.querySelector(".js-tag-publications");
+    let pageSize = 4;
     if (archiveList) {
         let archiveCards = archiveList.querySelectorAll('.card');
         if (archiveCards.length > pageSize) {
@@ -2864,12 +2873,66 @@ docReady(function () {
             archiveList.innerHTML += paginatorContainer.outerHTML;
         }
     }
+                
+    function generateCasesPaging(index){
+        const paginationContainer = document.querySelector(".redesign-archive__pagination");
+        const caseList = document.querySelector(".js-tag-publications");
+        const hideClass = "hide";
+        const pageSize = 5;
+        let caseCards = caseList.querySelectorAll('.card:not(.hidden)');
+        if (caseCards.length <= pageSize)
+            paginationContainer.classList.add("hide");
+        else{
+            let numOfPages = Math.ceil(caseCards.length / pageSize);
+            let pagingContent = "";
+            let activeClass = "";
+            for (i=1; i < (caseCards.length+1); i++){
+                if (i <= pageSize*(index-1) || i > pageSize*index) caseCards[i-1].classList.add(hideClass);
+                else caseCards[i-1].classList.remove(hideClass);
+            }
+            for (i=1; i < (numOfPages+1); i++){
+                if (i == index) activeClass = " active";
+                else activeClass = "";
+                pagingContent += '<div class="page-wrapper js-page-switcher'+activeClass+'" data-page-switch="'+i+'"><div class="page" data-page-switch="'+i+'">'+i+'</div></div>'
+            }
+            paginationContainer.innerHTML = pagingContent;
+            paginationContainer.classList.remove("hide");
+        }
+    }
 
     if (document.querySelectorAll(".js-page-switcher").length > 0) {
+        generateCasesPaging(1);
         const pagination = document.querySelectorAll(".js-page-switcher");
         const pages = document.querySelectorAll(".js-archive-projects-page");
         const anchor = document.getElementById("redesign-archive__header")
-        Array.from(pagination).forEach((one) => one.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
+            const target = e.target.closest(".js-page-switcher");
+
+            if (target) {
+                const allItems = Array.from(document.querySelectorAll(".js-page-switcher"));
+                const index = allItems.indexOf(target);
+
+                e.preventDefault();
+                e.stopPropagation();
+                const selected = e?.target?.dataset?.pageSwitch;
+                Array.from(pagination).forEach((two) => two.classList.remove("active"));
+                pagination[index].classList.add("active");
+                if (!selected && selected !== 0) return;
+                Array.from(pages).forEach((page) => {
+                    page.dataset.filterPage === selected ? page.classList.remove("hidden") : page.classList.add("hidden");
+                })
+                if (anchor) {
+                    anchor.scrollIntoView({
+                        behavior: "smooth"
+                    })
+                }
+                if (caseList)
+                    generateCasesPaging(index+1);
+            }
+        });
+                
+                
+/*        Array.from(pagination).forEach((one, index) => one.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
             const selected = e?.target?.dataset?.pageSwitch;
@@ -2884,7 +2947,9 @@ docReady(function () {
                     behavior: "smooth"
                 })
             }
-        }))
+            if (caseList)
+                generateCasesPaging(index+1);
+        }))*/
     }
     //обработчик загрузки файлов в форме заявки
     if (document.querySelectorAll(".yaDiskUploader").length > 0) {

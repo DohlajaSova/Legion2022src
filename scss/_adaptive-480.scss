@@ -1472,6 +1472,27 @@
             }
         }
     }
+    .redesign-portfolio{
+        padding-bottom: 60px;
+        .filter-tags-component__wrapper .tags__categories,
+        .filter-tags-component__wrapper .tags__container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .filter-tags-component__wrapper .tags{
+            margin-bottom: 0;
+        }
+        &__list_ver2{
+            .card__wrapper{
+                .head{
+                    font-size: 24px;
+                }
+                .desc{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
