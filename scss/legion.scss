@@ -8961,7 +8961,59 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 		&+.feedback.feedback_applicants {
 			background-image: none;
 		}
-	}
+        &_dark{
+            background-color: $color-black;
+            padding: 60px 0;
+            margin: 40px 0 60px;
+            .preservice-header{
+                color: $color-white;
+            }
+            &.preservice_ver2 .preservice-blocks{
+                .card{
+                    background-color: #242424;
+                    &-head{
+                        color: $color-white;
+                    }
+                    &-text{
+                        color: $color-white;
+                    }
+                    &-tags-tag{
+                        background-color: #343434;
+                        color: $color-grey-dark;
+                    }
+                    &:hover{
+                        background-color: #242424;
+                    }
+                    &_emph{
+                        background-color: #FB5F26;
+                        .card-head{
+                            color: $color-black;
+                        }
+                        .card-text{
+                            color: $color-black;
+                        }
+                        .card-image img{
+                            height: 100%;
+                            width: auto;
+                            object-fit: cover;
+                            object-position: left center;
+                        }
+                        .button{
+                            color: $color-black;
+                            border-color: $color-black;
+                            padding: 22px 47px;
+                        }
+                        &:hover{
+                            background-color: #FB5F26;
+                        }
+                    }
+                }
+            }
+            .lead{
+                color: $color-white;
+            }
+        }
+    }
 
 	&+.feedback.feedback_applicants {
 		background-image: none;
@@ -9378,6 +9430,66 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 
 		}
 	}
+}
+
+.body_services-v3 {
+	.header {
+		background-color: transparent;
+
+		&__logo {
+			background: url($img-path + "logo.svg") 0 0 no-repeat;
+			background-size: contain;
+		}
+		
+		&__hmenu {
+			background: url($img-path + "icon-menu4.svg") 0 0 no-repeat;
+			background-size: contain;
+		}
+		&__mmenu {
+			&>a {
+				color: $color-black;
+
+				&.header__mmenu_lang {
+					color: $color-black;
+					background-color: $color-white;
+				}
+			}
+		}
+	}
+
+	.top {
+        margin-bottom: 0;
+		h1, .h1 {
+			color: $color-black;
+			width: 100%;
+            max-width: 80%;
+		}
+        .services-v2__lead{
+            max-width: 65%;
+        }
+		background: url("img/services_v3_main.webp") top center no-repeat;
+		background-size: cover;
+		min-height: 544px;
+		display: flex;
+		padding-bottom: 80px;
+		margin-top: -171px;
+		flex-flow: column nowrap;
+		.container {
+			margin: 0 auto;
+			max-width: 1087px;
+			width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+		}
+	}
+    
+    .filter-tags-component__wrapper .tags__categories{
+        gap: 100px;
+        .tags-category{
+            white-space: nowrap;
+            flex-basis: auto;
+        }
+    }
 }
 
 .astralinux {
@@ -11972,6 +12084,12 @@ svg.svg-hover-filter-clear {
                 }
             }
         }
+        .services-v2__heading_wrapper{
+            padding-top: 60px;
+            padding-bottom: 0;
+            margin-bottom: 24px;
+            border-bottom: none;
+        }
     }
 }
 .svghover:hover  {
@@ -13256,7 +13374,7 @@ svg.svg-hover-filter-clear {
 				&__roll {
 					display: flex;
 					height: fit-content;
-					padding: 22px 20px;
+					padding: 19px;
 					border: 1px solid $color-black;
 					border-radius: 8px;
 					cursor: pointer;
@@ -13274,7 +13392,7 @@ svg.svg-hover-filter-clear {
 					}
 				}
 				&__name {
-					font-size: 46px;
+					font-size: 40px;
 					line-height: 1.2;
                     padding-right: 10px;
 					color: $color-black;

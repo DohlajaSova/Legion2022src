@@ -412,6 +412,17 @@
             box-sizing: content-box;
         }
     }
+    .body_services-v3 .top .container,
+    .body_services-v3 .filter-tags-component__wrapper .tags__categories{
+        max-width: 1087px;
+        padding-left: 160px;
+        padding-right: 160px;
+        box-sizing: content-box;
+    }
+    .body_services-v3 .top{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -790,6 +801,13 @@
             }
         }
 	}
+    .body_services-v3 .top .container,
+    .body_services-v3 .filter-tags-component__wrapper .tags__categories{
+        max-width: 960px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .redesign-portfolio {
         
         .filter-tags-component__wrapper  {
@@ -2217,6 +2235,14 @@
             }
         }
     }
+    
+    .body_services-v3 .filter-tags-component__wrapper .tags__categories,
+    .body_services-v3 .top .container{
+        padding-left: 30px;
+        padding-right: 30px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
 
     .line-breaker {
         margin: 60px 0;
@@ -2632,6 +2658,17 @@
                 }
             }
         }
+        &.service-descr_dark{
+            .preservice-blocks{
+                .card{
+                    &_emph{
+                        .card-image{
+                            width: 31.5%;
+                        }
+                    }
+                }
+            }
+        }
     }
     .expert {
         padding-top: 60px;
@@ -2892,6 +2929,21 @@
     }
     .info-block{
         margin-top: 40px;
+    }
+    .body_services-v3{
+        .top{
+            padding: 0 0 60px;
+            h1, .h1{
+                font-size: 60px;
+                margin-bottom: 17px;
+            }
+            .services-v2__lead{
+                max-width: 100%;
+            }
+        }
+        .filter-tags-component__wrapper .tags__categories{
+            gap: 80px;
+        }
     }
 }
 
@@ -5037,6 +5089,14 @@
                     font-size: 12px;
                     padding: 5px 12px;
                 }
+                &_emph{
+                    .card-image{
+                        right: 0;
+                        img{
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
             }
         }
     }
@@ -5044,6 +5104,11 @@
         .button-redesign{
             font-size: 16px;
             width: 250px;
+        }
+    }
+    .body_services-v3 .top{
+        h1, .h1{
+            max-width: none;
         }
     }
 }

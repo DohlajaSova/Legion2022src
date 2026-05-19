@@ -1,9 +1,7 @@
-<div class="services-v2">
+<div class="service-descr preservice preservice_ver2">
     <div class="container js-scrollsection-4">
         <div class="services-v2__heading_wrapper">
-            <h2 class="services-v2__heading">
-                Стек технологий
-            </h2>
+            <h2 class="preservice-header" id="stack">Стек технологий</h2>
         </div>
         <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="4">
             <div class="services-v2__accordion_navigation">

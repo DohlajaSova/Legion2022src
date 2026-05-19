@@ -3400,4 +3400,26 @@ docReady(function () {
         })
     }
 
+    // плавный скролл в якорю с текущей страницы
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const url = new URL(this.href);
+            const targetId = url.hash; 
+
+            if (targetId) {
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    history.replaceState(null, null, window.location.pathname);
+                }
+            }
+        });
+    });
+
+
+
 });

@@ -1,0 +1,14 @@
+<!-- service.nunjucks -->
+{% extends "layout-service-v3.nunjucks" %}
+{% block title %} Услуги - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/services-heading2.nunjucks" %}
+  {% include "partials/towel/service-full.nunjucks" %}
+  {% include "partials/towel/redesign/services/services-stack.nunjucks" %}
+  {% include "partials/towel/feedback-applicants-compact.nunjucks" %}
+  {% include "partials/towel/cases-client-more.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+{% endblock %}

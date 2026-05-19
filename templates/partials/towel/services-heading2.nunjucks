@@ -1,0 +1,26 @@
+<div class="top">
+    <div class="container">
+        <h1 class="services-v2__header"> Полный цикл разработки: от&nbsp;идей до&nbsp;масштабирования </h1>
+        <p class="services-v2__lead">Предпроектные исследования, разработка, дизайн, контроль качества, техническая поддержка и&nbsp;подбор специалистов</p>
+    </div>
+</div>
+<div class="filter-tags-component__wrapper">
+    <div class="tags">
+        <div class="tags__container container">
+            <div class="tags__categories">
+                <a href="#development" class="tags-category active">
+                    разработка <span class="mobile768-hide">IT-решений</span>
+                </a>
+                <a href="#consulting" class="tags-category">
+                    консалтинг
+                </a>
+                <a href="#outstaff" class="tags-category">
+                    аутстаффинг
+                </a>
+                <a href="#stack" class="tags-category">
+                    стек <span class="mobile480-hide">технологий</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1242,6 +1242,12 @@
             align-items: flex-start;
         }
     }
+    .body_services-v3{
+        .top{
+            background-image: url(img/services_v3_main2.webp);
+            min-height: 480px;
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1447,6 +1453,24 @@
         }
         .tab__values-outer{
             margin: 0 -30px;
+        }
+    }
+    .body_services-v3{
+        .top{
+            min-height: 380px;
+            padding-bottom: 30px;
+            h1, .h1{
+                font-size: 42px;
+                margin-bottom: 10px;
+            }
+            .services-v2__lead{
+                font-size: 18px;
+            }
+        }
+        .filter-tags-component__wrapper{
+            .tags__categories{
+                gap: 30px;
+            }
         }
     }
 }
@@ -2586,6 +2610,29 @@
     .redesign-projects_slider .lead{
         font-size: 18px;
     }
+    .preservice_ver2.service-descr_dark .preservice-blocks .card_emph .card-image{
+        width: 50%;
+    }
+    .body_services-v3{
+        .services-v2__accordion_tabs{
+            .tab__head{
+                margin-bottom: -24px;
+            }
+            .tab__name{
+                font-size: 24px;
+            }
+            .tab__roll{
+                padding: 16px;
+            }
+            .tab__body{
+                margin: 10px 0;
+            }
+            .tab__list{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2637,6 +2684,22 @@
             font-size: 18px;
             max-width: 100%;
             margin-bottom: 24px;
+        }
+    }
+    .body_services-v3{
+        .top{
+            padding-bottom: 20px;
+        }
+        .preservice-top-wrapper{
+            margin-bottom: 40px;
+        }
+        .service-descr_dark{
+            margin: 20px 0 40px;
+            padding: 40px 0 20px;
+        }
+        .preservice_ver2 .services-v2__heading_wrapper{
+            padding-top: 30px;
+            margin-bottom: 0;
         }
     }
 }
@@ -4326,6 +4389,16 @@
         &-header-wrapper{
             span {
                 font-size: 16px;
+            }
+        }
+    }
+    .body_services-v3{
+        .top{
+            margin-bottom: 0;
+        }
+        .preservice.preservice_ver2{
+            .container{
+                padding-top: 0;
             }
         }
     }
