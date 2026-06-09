@@ -1,0 +1,30 @@
+<div class="top">
+    <div class="container">
+        <h1 class="h1">
+            Стратегический IT-партнёр для решения бизнес-задач
+        </h1>
+        <div class="lead">
+            Осуществляем полный цикл услуг по&nbsp;заказной разработке: от&nbsp;консалтинга и&nbsp;создания сложносоставных IT-решений до&nbsp;аутстаффинга специалистов. 
+        </div>
+        <div class="top__kpi">
+            <div class="broadwise">
+                <div class="container">
+                    <div class="broadwise__item">
+                        <div class="broadwise__item_title">Ruward <br>топ-3</div>
+                        <div class="broadwise__item_text">мобильная разработка outsource, рейтинг 2025</div>
+                    </div>
+
+                    <div class="broadwise__item">
+                        <div class="broadwise__item_title">CNews <br>топ-10</div>
+                        <div class="broadwise__item_text">заказная разработка&nbsp;ПО, рейтинг 2025</div>
+                    </div>
+
+                    <div class="broadwise__item">
+                        <div class="broadwise__item_title">Рейтинг Рунета <br>топ-10</div>
+                        <div class="broadwise__item_text">разработчики мобильных приложений, рейтинг 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

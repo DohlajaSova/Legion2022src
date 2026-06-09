@@ -1448,30 +1448,6 @@
     .redesign-projects__navigation{
         padding: 0 20px;
     }
-    .preservice_ver2{
-        .preservice-header{
-            margin-bottom: 8px;
-        }
-        .preservice-top-wrapper{
-            margin-bottom: 32px;
-        }
-        .preservice-blocks {
-            .card-info{
-                padding: 16px;
-            }
-            .card-head{
-                font-size: 24px;
-                margin-bottom: 8px;
-            }
-            .card-body{
-                font-size: 14px;
-                margin-bottom: 12px;
-            }
-            .card-tags{
-                gap: 6px;
-            }
-        }
-    }
     .redesign-portfolio{
         padding-bottom: 60px;
         .filter-tags-component__wrapper .tags__categories,
@@ -1795,6 +1771,9 @@
             .preservice-blocks .card-image{
                 right: -12%;
             }
+        }
+        .service-descr_dark.preservice_ver2 .preservice-blocks .card_emph .card-image{
+            right: -3%;
         }
     }
 }

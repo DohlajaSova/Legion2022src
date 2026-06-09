@@ -1,0 +1,71 @@
+<div class="about-rewards about-rewards_ver2"><div class="container">
+    <p class="lead">С&nbsp;2008&nbsp;года помогаем цифровизировать ведущие российские и&nbsp;зарубежные компании. Вместе с&nbsp;нашими клиентами регулярно выигрываем награды в&nbsp;отраслевых конкурсах и&nbsp;рейтингах.</p>
+    <div class="about-rewards__slider js-about-rewards-slider2">
+        <div class="about-rewards__slider-container">
+            <div class="about-rewards__slide"><div class="container">
+                <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
+                    <span class="about-rewards__slide-year">2026</span>
+                    <span class="about-rewards__slide-heading">«t2. Новый уровень», Золотое приложение</span>
+                    <span class="about-rewards__slide-lead">2&nbsp;и&nbsp;3&nbsp;место в&nbsp;номинациях «Лучшее приложение для потребителя (b2c)» и&nbsp;«Образ жизни»</span>
+                    <span class="about-rewards__slide-image">
+                        <img src="/assets/css/img/about-reward1.webp" alt="">
+                    </span>
+                </a>
+            </div></div>
+            <div class="about-rewards__slide"><div class="container">
+                <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
+                    <span class="about-rewards__slide-year">2026</span>
+                    <span class="about-rewards__slide-heading">«Петербургская Недвижимость», Золотое приложение</span>
+                    <span class="about-rewards__slide-lead">1&nbsp;и&nbsp;2&nbsp;место в&nbsp;номинациях  «Приложения для объектов недвижимости» и&nbsp;«Приложение девелоперской компании»</span>
+                    <span class="about-rewards__slide-image">
+                        <img src="/assets/css/img/about-reward2.webp" alt="">
+                    </span>
+                </a>
+            </div></div>
+            <div class="about-rewards__slide"><div class="container">
+                <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
+                    <span class="about-rewards__slide-year">2026</span>
+                    <span class="about-rewards__slide-heading">«Сеть docdeti: запись, медкарта», Золотое приложение</span>
+                    <span class="about-rewards__slide-lead">3&nbsp;место в&nbsp;номинации «Приложение для здоровья»</span>
+                    <span class="about-rewards__slide-image">
+                        <img src="/assets/css/img/about-reward3.webp" alt="">
+                    </span>
+                </a>
+            </div></div>
+            <div class="about-rewards__slide"><div class="container">
+                <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
+                    <span class="about-rewards__slide-year">2025</span>
+                    <span class="about-rewards__slide-heading">«t2. Новый уровень», Tagline Awards</span>
+                    <span class="about-rewards__slide-lead">Серебро и&nbsp;бронза в&nbsp;номинациях «Лучший мобильный сервис» и&nbsp;«Телеком, IT&nbsp;и&nbsp;интернет-бизнес»</span>
+                    <span class="about-rewards__slide-image">
+                        <img src="/assets/css/img/about-reward4.webp" alt="">
+                    </span>
+                </a>
+            </div></div>
+            <div class="about-rewards__slide"><div class="container">
+                <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
+                    <span class="about-rewards__slide-year">2023</span>
+                    <span class="about-rewards__slide-heading">«Петербургская Недвижимость», Золотое приложение</span>
+                    <span class="about-rewards__slide-lead">Золото и&nbsp;бронза в&nbsp;номинациях «Приложения для объектов недвижимости» и&nbsp;«Приложение девелоперской компании»</span>
+                    <span class="about-rewards__slide-image">
+                        <img src="/assets/css/img/about-reward5.webp" alt="">
+                    </span>
+                </a>
+            </div></div>
+            <div class="about-rewards__slide"><div class="container">
+                <a href="https://workspace.ru/cases/prilozhenie-dlya-federalnogo-operatora-tele2/?agency=e-legion" target="_blank" class="about-rewards__slide-text">
+                    <span class="about-rewards__slide-year">2023</span>
+                    <span class="about-rewards__slide-heading">«Академия Инвестиций» от&nbsp;Т-Банка, Золотое приложение</span>
+                    <span class="about-rewards__slide-lead">Серебро в&nbsp;номинации «Образовательные сервисы»</span>
+                    <span class="about-rewards__slide-image">
+                        <img src="/assets/css/img/about-reward6.webp" alt="">
+                    </span>
+                </a>
+            </div></div>
+        </div>
+        <div class="about-rewards__slider-dots"><div class="container">
+            <div class="about-rewards__items-nav" id="js-rewards-nav"></div>
+            <a class="about-rewards__items-link" href="/[[~10]]">Проекты и&nbsp;кейсы&nbsp;→</a>
+        </div></div>
+    </div>
+</div></div>

@@ -1281,7 +1281,7 @@ docReady(function () {
     if (projectsBlocks != undefined) {
         const navContainer = document.querySelector('#js-projects-nav');
         const slideCount = projectsBlocks.children.length;
-        const windowWidth = window.innerWidth;
+        const windowWidth = document.documentElement.clientWidth;
         let containerWidth = 1087;
         if (windowWidth < 1407 && windowWidth > 1280){
             containerWidth = windowWidth - 320;
@@ -2181,12 +2181,15 @@ docReady(function () {
             div2Created.setAttribute("class", "select-items select-hide");
 
             for (j = 0; j < SBTLength; j++) {
+                if (selectsByTag.options[j].hasAttribute('hidden') || selectsByTag.options[j].hasAttribute('disabled')) {
+                    continue; 
+                }
                 /* For each option in the original select element,
                 create a new DIV that will act as an option item: */
                 div3Created = document.createElement("DIV");
                 div3Created.innerHTML = selectsByTag.options[j].innerHTML;
 
-                if (j == 0) { div3Created.setAttribute("class", "same-as-selected"); }
+                if (j === selectsByTag.selectedIndex) { div3Created.setAttribute("class", "same-as-selected"); }
                 /*custom options*/
                 if (selectsByTag.options[j].value == "ios" ||
                     selectsByTag.options[j].value == "android" ||
@@ -3119,48 +3122,51 @@ docReady(function () {
 
         Array.from(accordions).forEach(acc => {
             const tabs = acc.querySelectorAll(".js-accordion-tab");
-            Array.from(tabs).forEach(tab => {
-                const tabhead = tab.querySelector(".tab__head");
-                // const tabroll = tab.querySelector(".tab__roll");
-                tabhead?.addEventListener("click", (e) => {
-                    if(scrollNavigationContainer) {
-                        const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
-                        let lev2Sel = Array.from(lev1Sel)[acc.dataset.accordionContainer-1].querySelectorAll(".case-container__toc-lev2 .js-scrollto");
-                        Array.from(lev2Sel).forEach(lev2 => {
-                            lev2?.classList.remove("active");
-                        })
-                        Array.from(lev2Sel)[tab.dataset.accordionTab-1].classList.add("active");
-                    }
-                    Array.from(tabs).forEach(tabinner=> {
-                        tabinner.classList.remove("active");
-                    })
-                    tab.classList.contains("active") ? tab.classList.remove("active") : tab.classList.add("active");
-                    e.target.scrollIntoView({
-                        behavior: "smooth"
-                    })
-                })
-            })
-
             const navlinks = acc.querySelectorAll(".js-accordion-link");
 
-            Array.from(navlinks).forEach((nav, index) => {
-                nav?.addEventListener("click", (e) => {
-                    if (!tabs[index].classList.contains("active")) {
-                        Array.from(tabs).forEach(tab => {
-                            tab.classList.remove("active");
-                        })
-                        tabs[index].classList.add("active");
-                        // })
+            Array.from(tabs).forEach(tab => {
+                const tabhead = tab.querySelector(".tab__head");
+
+                tabhead?.addEventListener("click", () => {
+                    const isActive = tab.classList.toggle("active");
+
+                    const tabIndex = tab.dataset.accordionTab;
+                    const correspondingNav = acc.querySelector(`.js-accordion-link[data-accordion-link="${tabIndex}"]`);
+
+                    correspondingNav?.classList.toggle("active", isActive);
+
+                    if (scrollNavigationContainer) {
+                        const lev1Sel = scrollNavigationContainer.querySelectorAll(".case-container__toc-lev1");
+                        const currentLev1 = Array.from(lev1Sel)[acc.dataset.accordionContainer - 1];
+
+                        if (currentLev1) {
+                            const lev2Sel = currentLev1.querySelectorAll(".case-container__toc-lev2 .js-scrollto");
+                            const currentLev2 = Array.from(lev2Sel)[tabIndex - 1];
+
+                            currentLev2?.classList.toggle("active", isActive);
+                        }
                     }
-                    if (!nav.classList.contains("active")) {
-                        Array.from(navlinks).forEach((nav2) => {
-                            nav2.classList.remove("active");
-                        })
-                        nav.classList.add("active");
+
+                    if (isActive) {
+                        tabhead.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
                     }
-                })
-            })
-        })
+                });
+            });
+
+            Array.from(navlinks).forEach((nav) => {
+                nav?.addEventListener("click", () => {
+                    const targetIndex = nav.dataset.accordionLink;
+                    const targetTab = acc.querySelector(`.js-accordion-tab[data-accordion-tab="${targetIndex}"]`);
+
+                    const isActive = nav.classList.toggle("active");
+
+                    targetTab?.classList.toggle("active", isActive);
+                });
+            });
+        });
     }
 
 
@@ -3393,6 +3399,40 @@ docReady(function () {
                 gutter: 10,
                 controls: false,
                 nav: true,
+                navPosition: 'bottom',
+                mouseDrag: true,
+                slideBy: 'page'
+            });
+        })
+    }
+
+    //слайдер на странице about ver.3
+    if (document.querySelectorAll(".js-about-rewards-slider2").length > 0) {
+        const navContainer = document.querySelector('#js-rewards-nav');
+        Array.from(document.querySelectorAll(".js-about-rewards-slider2")).forEach(slider => {
+            for (let i = 0; i < slider.children.length; i++) {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                navContainer.appendChild(btn);
+            }
+            tns({
+                container: '.about-rewards__slider-container',
+                navContainer: slider.querySelector("#js-rewards-nav"),
+                items: 3,
+                gutter: 20,
+                responsive: {
+                    320: {
+                        items: 1.5
+                    },
+                    480: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                },
+                axis: "horizontal",
+                controls: false,
                 navPosition: 'bottom',
                 mouseDrag: true,
                 slideBy: 'page'

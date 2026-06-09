@@ -6,98 +6,20 @@
         <div class="services-v2__accordion_wrapper js-accordion-redesign" data-accordion-container="4">
             <div class="services-v2__accordion_navigation">
                 <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="1">
-                    Android
-                </div>
-                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="2">
-                    iOS
-                </div>
-                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="3">
                     Backend
                 </div>
-                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="4">
-                    Frontend
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="2">
+                    Web frontend
                 </div>
-                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="5">
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="3">
+                    Мobile (Android, iOS, Аврора)
+                </div>
+                <div class="services-v2__accordion_navigation_link js-accordion-link" data-accordion-link="4">
                     QA
                 </div>
             </div>
             <div class="services-v2__accordion_tabs">
                 <div class="tab js-accordion-tab active" data-accordion-tab="1">
-                    <div class="tab__head">
-                        <div class="tab__name">
-                            Android
-                        </div>
-                        <div class="tab__roll"></div>
-                    </div>
-                    <div class="tab__body custom-format">
-                        <ul class="tab__list">
-                            <li>
-                                Kotlin
-                            </li>
-                            <li>
-                                Clean Architecture с&nbsp;MVVM, MVI presentation слоем
-                            </li>
-                            <li>
-                                Google Navigation Component, Decompose, Cicerone, Кастомная
-                            </li>
-                            <li>
-                                Сoroutines (предпочтительно) или RxJava, RxKotlin
-                            </li>
-                            <li>
-                                Room, SQLDelight
-                            </li>
-                            <li>
-                                Koin, Dagger2
-                            </li>
-                            <li>
-                                Retrofit + okHttp, Ktor
-                            </li>
-                            <li>
-                                View / Compose
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tab js-accordion-tab" data-accordion-tab="2">
-                    <div class="tab__head">
-                        <div class="tab__name">
-                            iOS
-                        </div>
-                        <div class="tab__roll"></div>
-                    </div>
-                    <div class="tab__body custom-format">
-                        <ul class="tab__list">
-                            <li>
-                                Swift
-                            </li>
-                            <li>
-                                UIKit, SwiftUI
-                            </li>
-                            <li>
-                                Clean Swift, Modularization
-                            </li>
-                            <li>
-                                GCD, async/await
-                            </li>
-                            <li>
-                                Combine
-                            </li>
-                            <li>
-                                Core Data
-                            </li>
-                            <li>
-                                Alamofire
-                            </li>
-                            <li>
-                                Swift Package Manager, Cocoapods
-                            </li>
-                            <li>
-                                Gitlab CI, fastlane
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tab js-accordion-tab" data-accordion-tab="3">
                     <div class="tab__head">
                         <div class="tab__name">
                             Backend
@@ -139,10 +61,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab js-accordion-tab" data-accordion-tab="4">
+                <div class="tab js-accordion-tab" data-accordion-tab="2">
                     <div class="tab__head">
                         <div class="tab__name">
-                            Frontend
+                            Web frontend
                         </div>
                         <div class="tab__roll"></div>
                     </div>
@@ -169,7 +91,73 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab js-accordion-tab" data-accordion-tab="5">
+                <div class="tab js-accordion-tab" data-accordion-tab="3">
+                    <div class="tab__head">
+                        <div class="tab__name">
+                            Мobile (Android, iOS, Аврора)
+                        </div>
+                        <div class="tab__roll"></div>
+                    </div>
+                    <div class="tab__body custom-format">
+                        <ul class="tab__list">
+                            <li>
+                                Kotlin
+                            </li>
+                            <li>
+                                Clean Architecture с MVVM, MVI presentation слоем
+                            </li>
+                            <li>
+                                Google Navigation Component, Decompose, Cicerone, Кастомная
+                            </li>
+                            <li>
+                                Сoroutines (предпочтительно) или RxJava, RxKotlin
+                            </li>
+                            <li>
+                                Room, SQLDelight
+                            </li>
+                            <li>
+                                Koin, Dagger2
+                            </li>
+                            <li>
+                                Retrofit + okHttp, Ktor
+                            </li>
+                            <li>
+                                View / Compose
+                            </li>
+                            <li>
+                                Swift
+                            </li>
+                            <li>
+                                UIKit, SwiftUI
+                            </li>
+                            <li>
+                                Clean Swift, Modularization
+                            </li>
+                            <li>
+                                GCD, async/await
+                            </li>
+                            <li>
+                                Combine
+                            </li>
+                            <li>
+                                Core Data
+                            </li>
+                            <li>
+                                Alamofire
+                            </li>
+                            <li>
+                                Swift Package Manager, Cocoapods
+                            </li>
+                            <li>
+                                Gitlab CI, fastlane
+                            </li>
+                            <li>
+                                Qt
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab js-accordion-tab" data-accordion-tab="4">
                     <div class="tab__head">
                         <div class="tab__name">
                             QA

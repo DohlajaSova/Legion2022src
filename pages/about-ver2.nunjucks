@@ -1,0 +1,16 @@
+<!-- about.nunjucks -->
+{% extends "layout-about.nunjucks" %}
+{% block title %} О компании - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/top-about-ver2.nunjucks" %}
+  {% include "partials/towel/about-rewards-ver2.nunjucks" %}
+  {% include "partials/towel/about-principles-ver2.nunjucks" %}
+  {% include "partials/towel/team2.nunjucks" %}
+  {% include "partials/towel/to-work.nunjucks" %}
+  {% include "partials/towel/redesign/blog.nunjucks" %}
+  {% include "partials/towel/redesign/services/services-feedback.nunjucks" %}
+  {% include "partials/towel/career-security-informer.nunjucks" %}
+
+{% endblock %}

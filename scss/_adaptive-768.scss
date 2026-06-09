@@ -2411,6 +2411,10 @@
             }
         }
     }
+    .main-redesign .subheader-grid-card.subheader-grid-card-sub{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .redesign-projects-slide{
         &.active {
             .img {
@@ -2484,6 +2488,17 @@
                 &:last-child{
                     margin-right: 30px;
                 }
+            }
+        }
+        &-experty{
+            &-projects{
+                gap: 28px 36px;
+                .svg-added-filter{
+                    height: 60px;
+                }
+            }
+            .info{
+                margin-bottom: 40px;
             }
         }
     }
@@ -2579,13 +2594,23 @@
     
     .preservice_ver2 {
         .preservice-blocks {
+            .card{
+                min-height: 300px;
+            }
             .card-info{
                 width: 100%;
                 padding-right: 20px;
             }
+            .card-tags{
+                max-width: 65%;
+            }
             .card-image{
-                opacity: 0.5;
-                right: -7%;
+                //opacity: 0.5;
+                right: -15%;
+                bottom: -25%;
+                img{
+                    transform: translateY(-50%) scale(.65);
+                }
             }
         }
     }
@@ -2610,8 +2635,17 @@
     .redesign-projects_slider .lead{
         font-size: 18px;
     }
-    .preservice_ver2.service-descr_dark .preservice-blocks .card_emph .card-image{
-        width: 50%;
+    .preservice_ver2.service-descr_dark .preservice-blocks .card_emph{
+        .card-text{
+            width: 80%;
+        }
+        .card-image{
+            width: 56%;
+            img{
+                height: 83%;
+                bottom: -10px;
+            }
+        }
     }
     .body_services-v3{
         .services-v2__accordion_tabs{
@@ -2700,6 +2734,16 @@
         .preservice_ver2 .services-v2__heading_wrapper{
             padding-top: 30px;
             margin-bottom: 0;
+        }
+    }
+    .preservice_ver2.service-descr_dark .preservice-blocks .card_emph{
+        .card-text{
+            width: 100%;
+        }
+        .card-image{
+            img{
+                bottom: -20px;
+            }
         }
     }
 }
@@ -4368,6 +4412,25 @@
                 }
             }
         }
+        &-experty{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            &-projects{
+                gap: 16px 30px;
+                .svg-added-filter{
+                    height: 52px;
+                }
+            }
+            .info{
+                margin-bottom: 20px;
+                .head{
+                    font-size: 28px;
+                }
+                .desc{
+                    font-size: 16px;
+                }
+            }
+        }
     }
     .redesign-features-list-wrapper.mobile {
         height: 132px;
@@ -4661,5 +4724,49 @@
             font-size: 16px;
         }
     }
-
+    .preservice_ver2{
+        .preservice-header{
+            margin-bottom: 8px;
+        }
+        .preservice-top-wrapper{
+            margin-bottom: 32px;
+        }
+        .preservice-blocks {
+            .card-info{
+                padding: 16px;
+            }
+            .card-head{
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+            .card-text{
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .card-tags{
+                gap: 6px;
+            }
+        }
+    }
+    .service-descr_dark.preservice_ver2 .preservice-blocks .card_emph .button{
+        padding: 13px 33px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .redesign-projects_slider .redesign-projects__item{
+        &-text{
+            padding: 16px;
+            &-head{
+                font-size: 24px;
+            }
+            &-body{
+                font-size: 14px;
+            }
+        }
+        &-img{
+            &-cont{
+                height: 220px;
+            }
+        }
+    }
 }
