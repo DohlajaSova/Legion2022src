@@ -1248,6 +1248,15 @@
             min-height: 480px;
         }
     }
+    .body_about-v2 .top{
+        padding-bottom: 50px;
+    }
+    .body_about-v2 .top__kpi .broadwise .container{
+        gap: 10px;
+    }
+    .body_about-v2 .about-rewards__slide{
+        height: 536px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1473,6 +1482,86 @@
             }
         }
     }
+    .body_about.body_about-v2{
+        .top{
+            .h1, h1{
+                font-size: 51px;
+            }
+            .lead{
+                font-size: 19px;
+            }
+        }
+    }
+    .body_about-v2{
+        .top__kpi{
+            .broadwise__item{
+                &_title{
+                    font-size: 24px;
+                }
+            }
+        }
+        .redesign-blog{
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+    }
+    .about-rewards_ver2{
+        .lead{
+            font-size: 19px;
+        }
+        .about-rewards__slide{
+            &-year{
+                font-size: 17px;
+                margin-bottom: 2px;
+            }
+            &-lead{
+                font-size: 17px;
+            }
+        }
+    }
+    .body_about{
+        .not-all-the-same_grey{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 45px;
+            h2, .h2{
+                font-size: 45px;
+            }
+        }
+        .to-work_ver2{
+            h2, .h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 19px;
+            }
+            .to-work__content{
+                padding: 30px 0 35px;
+            }
+        }
+        .team_ver2{
+            margin-bottom: 45px;
+        }
+        .team__content{
+            margin-bottom: 38px;
+            h2{
+                font-size: 47px;
+            }
+        }
+    }
+    .not-all-the-same_ver2{
+        .not-all-the-same__list{
+            &-item-text{
+                padding: 16px;
+            }
+            &-heading{
+                font-size: 30px;
+            }
+            &-lead{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1683,6 +1772,9 @@
                 &-text{
                     width: 66%;
                 }
+            }
+            &_ver2{
+                margin-bottom: 0;
             }
         }
         &-clients{
@@ -1898,6 +1990,77 @@
         }
         .cases {
             margin-bottom: 0;
+        }
+        &-v2{
+            .top{
+                padding-bottom: 40px;
+            }
+            .not-all-the-same_grey{
+                padding-bottom: 40px;
+                .not-all-the-same__list-item {
+                    > .container{
+                        flex-direction: column;
+                        gap: 16px;
+                    }
+                    &-text{
+                        width: 100%;
+                    }
+                    &-video{
+                        width: 100%;
+                        height: 300px;
+                        video{
+                            min-width: 100%;
+                        }
+                    }
+                    &:nth-child(2n){
+                        > .container{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+            .team__content h2{
+                font-size: 42px;
+            }
+            .about-rewards__slider{
+                margin: 0 -30px;
+                &-dots .container{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+            }
+        }
+        &.body_about-v2{
+            .top{
+                h1, .h1{
+                    font-size: 40px;
+                }
+                .lead{
+                    font-size: 18px;
+                }
+                &__kpi{
+                    .broadwise{
+                        margin-top: 60px;
+                        .container{
+                            flex-direction: column;
+                            gap: 20px 10px;
+                        }
+                        &__item{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 20px;
+                            width: 100%;
+                            &_title{
+                                width: calc(50% - 10px);
+                            }
+                            &_text{
+                                width: calc(50% - 10px);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .cases{
@@ -2900,6 +3063,14 @@
 				font-size: 18px;
 			}
 		}
+        &-v2{
+            .about-rewards__slide{
+                height: 496px;
+                &-lead{
+                    font-size: 16px;
+                }
+            }
+        }
 	}
     .body_service{
         .header{
@@ -3030,6 +3201,9 @@
                 }
             }
         }
+    }
+    .about-rewards_ver2 .about-rewards__slider-dots{
+        display: block;
     }
     .category{
         margin-bottom:0;

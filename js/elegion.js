@@ -3408,36 +3408,59 @@ docReady(function () {
 
     //слайдер на странице about ver.3
     if (document.querySelectorAll(".js-about-rewards-slider2").length > 0) {
+        const sliderElement = document.querySelector(".js-about-rewards-slider2 .about-rewards__slider-container");
         const navContainer = document.querySelector('#js-rewards-nav');
-        Array.from(document.querySelectorAll(".js-about-rewards-slider2")).forEach(slider => {
-            for (let i = 0; i < slider.children.length; i++) {
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                navContainer.appendChild(btn);
-            }
-            tns({
-                container: '.about-rewards__slider-container',
-                navContainer: slider.querySelector("#js-rewards-nav"),
+
+        if (sliderElement && navContainer) {
+            navContainer.innerHTML = '';
+
+            const slider = tns({
+                container: sliderElement,
+                nav: false,
                 items: 3,
                 gutter: 20,
                 responsive: {
-                    320: {
-                        items: 1.5
-                    },
-                    480: {
-                        items: 2
-                    },
-                    992: {
-                        items: 3
-                    }
+                    320: { items: 1.5, slideBy: 1, edgePadding: 20 },
+                    480: { items: 1.5, slideBy: 1, edgePadding: 30 },
+                    650: { items: 2, slideBy: 1, edgePadding: 0 },
+                    900: { items: 3, slideBy: 'page' }
                 },
-                axis: "horizontal",
+                axis: 'horizontal',
                 controls: false,
-                navPosition: 'bottom',
-                mouseDrag: true,
-                slideBy: 'page'
+                mouseDrag: true
             });
-        })
+
+            const sliderInfo = slider.getInfo();
+            const itemsPerScreen = sliderInfo.items;
+            const pagesCount = Math.ceil(sliderInfo.slideCount / sliderInfo.items);
+
+            for (let i = 0; i < pagesCount; i++) {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                if (i === 0) btn.classList.add('tns-nav-active');
+                navContainer.appendChild(btn);
+            }
+
+            const buttons = navContainer.querySelectorAll('button');
+
+            buttons.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    slider.goTo(index * itemsPerScreen);
+                });
+            });
+
+            slider.events.on('indexChanged', (info) => {
+                const currentPage = Math.floor((info.displayIndex - 1) / info.items);
+
+                buttons.forEach((btn, idx) => {
+                if (idx === currentPage) {
+                    btn.classList.add('tns-nav-active');
+                } else {
+                    btn.classList.remove('tns-nav-active');
+                }
+                });
+            });
+        }
     }
 
     // плавный скролл в якорю с текущей страницы

@@ -24,7 +24,7 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-4.webp" alt=""></span>
+            <span class="card-image"><img src="/assets/css/img/service-pic2-4.webp" alt=""></span>
           </span>
           <a href="/[[~14]]" class="card">
             <span class="card-info">
@@ -46,7 +46,7 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-5.webp" alt=""></span>
+            <span class="card-image"><img src="/assets/css/img/service-pic2-5.webp" alt=""></span>
           </a>
         </div>
     </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="preservice-blocks">
-          <a href="/[[~59]]" class="card">
+          <a href="/[[~59]]" class="card"><span>
             <span class="card-info">
               <span class="card-head">
                 Предпроектное исследование
@@ -81,9 +81,9 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-6.webp" alt=""></span>
-          </a>
-          <span class="card">
+            <span class="card-image"><img src="/assets/css/img/service-pic2-6.webp" alt=""></span>
+          </span></a>
+          <span class="card"><span>
             <span class="card-info">
               <span class="card-head">
                 Технический аудит
@@ -106,9 +106,9 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-7.webp" alt=""></span>
-          </span>
-          <span class="card">
+            <span class="card-image"><img src="/assets/css/img/service-pic2-7.webp" alt=""></span>
+          </span></span>
+          <span class="card"><span>
             <span class="card-info">
               <span class="card-head">
                 Кибербезопасность
@@ -128,9 +128,9 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-8.webp" alt=""></span>
-          </span>
-          <span class="card card_emph">
+            <span class="card-image"><img src="/assets/css/img/service-pic2-8.webp" alt=""></span>
+          </span></span>
+          <span class="card card_emph"><span>
             <span class="card-info">
               <span class="card-head">
                 Консультация по&nbsp;услугам
@@ -142,8 +142,8 @@
                 <a href="/[[~11]]" class="button">Оставить заявку</a>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-11.webp" alt=""></span>
-          </span>
+            <span class="card-image"><img src="/assets/css/img/service-pic2-11.webp" alt=""></span>
+          </span></span>
         </div>
     </div>
 </div>
@@ -177,7 +177,7 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-10.webp" alt=""></span>
+            <span class="card-image"><img src="/assets/css/img/service-pic2-10.webp" alt=""></span>
           </span>
           <span class="card">
             <span class="card-info">
@@ -196,7 +196,7 @@
                 </span>
               </span>
             </span>
-            <span class="card-image"><img src="assets/css/img/service-pic2-3.webp" alt=""></span>
+            <span class="card-image"><img src="/assets/css/img/service-pic2-3.webp" alt=""></span>
           </span>
         </div>
     </div>

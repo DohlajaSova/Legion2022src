@@ -10,6 +10,7 @@
                     <p class="not-all-the-same__list-lead">Всегда ищем возможности улучшения проекта клиента. Если видим, как сделать лучше&nbsp;— говорим об этом. Развиваем отрасль вместе с&nbsp;коллегами, активно делимся опытом и&nbsp;знаниями на&nbsp;профессиональных мероприятиях.</p>
                 </div>
                 <div class="not-all-the-same__list-item-video">
+                    <a href="https://www.youtube.com/watch?v=HgP1cwkQ6_4" class="not-all-the-same__list-video-link" target="_blank"></a>
                     <video class="not-all-the-same__list-video" preload="auto" playsinline loop autoplay muted>
                         <source src="/assets/css/img/video_about-morshagin.mp4" type="video/mp4">
                     </video>
@@ -23,6 +24,7 @@
                     <p class="not-all-the-same__list-lead">Выстраиваем чёткие процессы внутри команды и&nbsp;эффективно управляем проектными рисками. Клиент всегда имеет полный доступ к&nbsp;документации и&nbsp;актуальным статусам проекта.</p>
                 </div>
                 <div class="not-all-the-same__list-item-video">
+                    <a href="https://www.youtube.com/watch?v=egWoorNu7a8&t=1s" class="not-all-the-same__list-video-link" target="_blank"></a>
                     <video class="not-all-the-same__list-video" preload="auto" playsinline loop autoplay muted>
                         <source src="/assets/css/img/video_about-jakimova.mp4" type="video/mp4">
                     </video>
@@ -36,6 +38,7 @@
                     <p class="not-all-the-same__list-lead">Поддерживаем тесную коммуникацию с&nbsp;клиентом на&nbsp;всех этапах работы. Прислушиваемся к&nbsp;пожеланиям, задачам и&nbsp;возможным сомнениям. Анализируем риски и&nbsp;помогаем выбрать оптимальное решение для проекта.</p>
                 </div>
                 <div class="not-all-the-same__list-item-video">
+                    <a href="https://www.youtube.com/watch?v=M747GemG6IU&t=59s" class="not-all-the-same__list-video-link" target="_blank"></a>
                     <video class="not-all-the-same__list-video" preload="auto" playsinline loop autoplay muted>
                         <source src="/assets/css/img/video_about-trinoga.mp4" type="video/mp4">
                     </video>

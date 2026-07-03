@@ -63,9 +63,9 @@
                 </a>
             </div></div>
         </div>
-        <div class="about-rewards__slider-dots"><div class="container">
-            <div class="about-rewards__items-nav" id="js-rewards-nav"></div>
-            <a class="about-rewards__items-link" href="/[[~10]]">Проекты и&nbsp;кейсы&nbsp;→</a>
-        </div></div>
     </div>
+    <div class="about-rewards__slider-dots"><div class="container">
+        <div class="about-rewards__items-nav" id="js-rewards-nav"></div>
+        <a class="about-rewards__items-link" href="/[[~10]]">Проекты и&nbsp;кейсы&nbsp;→</a>
+    </div></div>
 </div></div>

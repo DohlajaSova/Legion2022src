@@ -3405,7 +3405,7 @@ a.button {
             }
         }
         &__slide{
-            height: 480px;
+            height: 550px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -3510,6 +3510,7 @@ a.button {
                             }
                         }
                         .about-rewards__items-link{
+                            font-size: 18px;
                             color: $color-black;
                         }
                     }
@@ -3519,9 +3520,13 @@ a.button {
                         background-color: $color-grey-light;
                         border-radius: 18px;
                         padding: 20px;
+                        padding-bottom: 0;
+                        justify-content: space-between;
                     }
                     &-text{
                         width: 100%;
+                        height: 100%;
+                        justify-content: space-between;
                     }
                     &-year{
                         font-size: 18px;
@@ -3541,8 +3546,12 @@ a.button {
                     }
                     &-image{
                         position: static;
+                        display: flex;
+                        flex-direction: column-reverse;
                         > img{
                             max-width: 100%;
+                            max-height: 100%;
+                            height: auto;
                         }
                     }
                 }
@@ -4539,6 +4548,14 @@ a.button {
                 left: 50%;
                 object-fit: cover;
                 object-position: center;
+                &-link{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 1000;
+                }
             }
         }
     }
@@ -8248,7 +8265,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                 width: 100%;
             }
             &_text{
-                font-size: 18px;
+                font-size: 20px;
                 width: 100%;
             }
         }
@@ -9215,6 +9232,14 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             &.preservice_ver2 .preservice-blocks{
                 .card{
                     background-color: #242424;
+                    padding: 1px;
+                    & > span{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #242424;
+                        border-radius: 18px;
+                    }
                     &-head{
                         color: $color-white;
                     }
@@ -9230,6 +9255,9 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                     }
                     &_emph{
                         background-color: #FB5F26;
+                        & > span{
+                            background-color: #FB5F26;
+                        }
                         .card-head{
                             color: $color-black;
                         }
@@ -9254,8 +9282,17 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                             padding: 22px 47px;
                         }
                         &:hover{
-                            background-color: #FB5F26;
+                            background: #FB5F26 !important;
+                            box-shadow: 0px 0px 20px 0px rgba(242, 106, 37, 0.5);
+                            .button{
+                                background-color: $color-black;
+                                color: $color-white;
+                            }
                         }
+                    }
+                    &:hover{
+                        background: linear-gradient(180deg, #FF7024 0%, rgba(255, 112, 36, 0) 100%);
+                        box-shadow: 0px 0px 20px 0px rgba(242, 106, 37, 0.5);
                     }
                 }
             }
@@ -9769,10 +9806,6 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
 
 	.top {
         margin-bottom: 0;
-		h1, .h1 {
-			color: $color-black;
-			width: 100%;
-		}
 		background: url($img-path + "about-v2.webp") top center no-repeat;
 		background-size: cover;
 		min-height: 770px;
@@ -9790,18 +9823,75 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
             align-items: flex-start;
             flex-grow: 1;
 		}
+		h1, .h1 {
+			color: $color-black;
+			width: 100%;
+            font-size: 74px;
+		}
+        .lead{
+            margin-bottom: 50px;
+            font-size: 20px;
+            width: 74%;
+        }
         &__kpi{
+            width: 100%;
+            margin-top: auto;
             .broadwise{
                 padding: 0;
                 margin-bottom: 0;
+                justify-content: space-between;
+                width: 100%;
                 .container{
                     padding: 0;
                     flex-direction: row;
+                    gap: 40px;
+                    width: 100%;
+                    justify-content: space-between;
                 }
-                &__item_title{
-                    font-size: 40px;
+                &__item{
+                    padding-left: 70px;
+                    padding-right: 0;
+                    flex-grow: 0;
+                    color: $color-black;
+                    text-decoration: none;
+                    &_img{
+                        border: 1px solid $color-black;
+                        border-radius: 8px;
+                        width: 56px;
+                        height: 56px;
+                        display: flex;
+                        float: left;
+                        margin-left: -70px;
+                        svg{
+                            margin: auto;
+                        }
+                    }
+                    &_title{
+                        display: block;
+                        font-size: 32px;
+                        white-space: nowrap;
+                        margin-bottom: 0;
+                    }
+                    &_text{
+                        display: block;
+                        font-size: 16px;
+                        white-space: nowrap;
+                    }
+                    &:hover{
+                        .broadwise__item_img{
+                            background-color: $color-black;
+                            svg{
+                                *[fill="#141414"]{
+                                    fill: $color-white;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
+        &__comment{
+            color: $color-grey-dark;
         }
 	}
 }

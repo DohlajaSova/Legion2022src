@@ -1308,6 +1308,15 @@
         .top .h1{
             font-size: 80px;
         }
+        &.body_about-v2{
+            .top{
+                margin-top: -130px;
+            }
+            .top .h1{
+                font-size: 74px;
+                margin-bottom: 0;
+            }
+        }
     }
     .redesign-projects_slider{
         .redesign-projects__item{
@@ -1360,6 +1369,10 @@
 	.case-column > .container,
 	.case-accordion,
     .documents > .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .about-rewards_ver2{
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -2124,6 +2137,25 @@
         }
         .to-work_ver2 > .container{
             max-width: none;
+        }
+        &.body_about-v2{
+            .top{
+                margin-bottom: 0;
+            }
+            .top .h1{
+                font-size: 70px;
+            }
+        }
+        &-v2{
+            .top__kpi .broadwise__item_title{
+                font-size: 36px;
+            }
+        }
+    }
+    .about-rewards_ver2{
+        margin-bottom: 0;
+        .lead{
+            width: 90%;
         }
     }
 }
@@ -2950,6 +2982,39 @@
             gap: 80px;
         }
     }
+    .body_about.body_about-v2{
+        .top{
+            h1, .h1{
+                font-size: 60px;
+                margin-bottom: 27px;
+            }
+            .lead{
+                width: 100%;
+                margin-bottom: auto;
+            }
+        }
+    }
+    .body_about-v2{
+        .top{
+            min-height: 740px;
+        }
+        .top__kpi .broadwise__item_title{
+            font-size: 28px;
+        }
+        .redesign-blog .container{
+            max-width: 100%;
+        }
+        .redesign-blog{
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+        .services-v2 .request{
+            padding-top: 20px;
+        }
+        .not-all-the-same{
+            margin-bottom: 70px;
+        }
+    }
 }
 
 @media only screen and (max-width: $screen-md) {
@@ -3118,6 +3183,11 @@
                 }
             }
         }
+        .team_ver3{
+            .team__content_text{
+                font-size: 20px;
+            }
+        }
         .team__content{
             flex-direction: column;
             margin-bottom: 45px;
@@ -3138,6 +3208,50 @@
             .button, a.button, a.button:visited{
                 padding: 21px 25px;
                 font-size: 16px;
+            }
+        }
+        &-v2{
+            .about-rewards__slide{
+                height: 550px;
+                > .container{
+                    padding-bottom: 0;
+                }
+            }
+            .not-all-the-same_grey{
+                padding-bottom: 60px;
+            }
+            .not-all-the-same_grey .not-all-the-same__list-item {
+                padding: 0;
+                > .container{
+                    flex-direction: row;
+                    gap: 20px;
+                }
+                &:nth-child(2n){
+                    > .container{
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+            .to-work_ver2 p{
+                width: 100%;
+            }
+        }
+    }
+    .about-rewards_ver2{
+        .about-rewards__slide{
+            &-text{
+                margin: 0;
+            }
+            &-heading{
+                font-size: 22px;
+                margin-bottom: 4px;
+            }
+            &-image{
+                display: flex;
+                flex-direction: column-reverse;
+                & > img{
+                    height: auto;
+                }
             }
         }
     }
@@ -4354,6 +4468,16 @@
                 }
             }
         }
+        &_ver2{
+            .not-all-the-same__list-item{
+                &-text{
+                    width: 70%;
+                }
+                &-video{
+                    width: 30%;
+                }
+            }
+        }
     }
     .subheader-grid {
         grid-template-columns: repeat(3, auto);
@@ -5120,6 +5244,44 @@
     .body_services-v3 .top{
         h1, .h1{
             max-width: none;
+        }
+    }
+    .body_about-v2{
+        .top{
+            background-image: url($img-path + "about-v22.webp")
+        }
+        .broadwise__item_text{
+            font-size: 16px;
+        }
+        .team__content h2{
+            font-size: 54px;
+        }
+    }
+    .about-rewards_ver2{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .lead{
+            font-size: 20px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+    .not-all-the-same_ver2 {
+        .not-all-the-same__list{
+            &-item-text{
+                width: 67.5%;
+                padding: 20px;
+            }
+            &-item-video{
+                width: 32.5%;
+            }
+            &-heading{
+                font-size: 36px;
+                margin-bottom: 0;
+            }
+            &-lead{
+                font-size: 16px;
+            }
         }
     }
 }

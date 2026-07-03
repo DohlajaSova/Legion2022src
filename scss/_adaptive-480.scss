@@ -1475,6 +1475,22 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .about-rewards_ver2{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+    .body_about-v2{
+        .about-rewards__slider{
+            margin: 0 -20px;
+        }
+        .about-rewards__slide{
+            height: 477px;
+            &-lead{
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
