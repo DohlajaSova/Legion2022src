@@ -6528,7 +6528,8 @@ _::-webkit-full-page-media .request__range, _:future .request__range, :root .saf
         width: 100%;
         height: 100%;
         background-color: #242424;
-        border-radius: 18px; }
+        border-radius: 18px;
+        position: absolute; }
       .service-descr_dark.preservice_ver2 .preservice-blocks .card-head {
         color: #fff; }
       .service-descr_dark.preservice_ver2 .preservice-blocks .card-text {

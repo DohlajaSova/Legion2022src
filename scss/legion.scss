@@ -9239,6 +9239,7 @@ _::-webkit-full-page-media, _:future, :root .safari_only {
                         height: 100%;
                         background-color: #242424;
                         border-radius: 18px;
+                        position: absolute;
                     }
                     &-head{
                         color: $color-white;
