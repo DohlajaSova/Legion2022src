@@ -1,0 +1,71 @@
+
+<div class="objectives">
+    <div class="container">
+        <h2 class="h1">Глубоко разбираемся<br>в&nbsp;отраслевых задачах</h2>
+        <p class="lead">Мы не просто пишем код. Мы понимаем, как работают бизнес-процессы в&nbsp;разных сферах и&nbsp;создаём решения, которые приносят видимый результат.</p>
+
+        {# <div class="objectives_container"> #}
+            <div class="objectives_container__items js-objectives">
+                <div class="objectives_container__item">
+                    {# <a href="/[[~106]]" class="objectives_container__item"> #}
+                    <span class="objectives_container__item-text">
+                        <span class="objectives_container__item-text-head">Производство</span>
+                        <span class="objectives_container__item-text-body">Системы контроля оборудования, автоматическая маркировка, ПАК, SCADA-системы, управление оборудованием, АСУ ТП
+                        </span>
+                    </span>
+                    <span class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/factory.webp" alt="Производство" class="objectives_container__item-img"></span>
+                    {# </a> #}
+                </div>
+                <div class="objectives_container__item">
+                    {# <a href="/[[~106]]" class="objectives_container__item"> #}
+                    <span class="objectives_container__item-text">
+                        <span class="objectives_container__item-text-head">Финансы и&nbsp;учёт</span>
+                        <span class="objectives_container__item-text-body">Интеграция финансовых систем, автоматизация отчётности, интеграция документооборота, управление данными
+                        </span>
+                    </span>
+                    <span class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/money.webp" alt="Финансы и учёт" class="objectives_container__item-img"></span>
+                    {# </a> #}
+                </div>
+                <div class="objectives_container__item">
+                    {# <a href="/[[~106]]" class="objectives_container__item"> #}
+                    <span class="objectives_container__item-text">
+                        <span class="objectives_container__item-text-head">Транспорт и&nbsp;логистика</span>
+                        <span class="objectives_container__item-text-body">Системы управления складом, маршрутизаторы, мониторинг потоков и трекинг товаров
+                        </span>
+                    </span>
+                    <span class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/transport.webp" alt="Транспорт и логистика" class="objectives_container__item-img"></span>
+                    {# </a> #}
+                </div>
+                <div class="objectives_container__item">
+                    {# <a href="/[[~106]]" class="objectives_container__item"> #}
+                    <span class="objectives_container__item-text">
+                        <span class="objectives_container__item-text-head">Маркетинг и&nbsp;продажи</span>
+                        <span class="objectives_container__item-text-body">Индивидуальные системы аналитики и&nbsp;автоматизация обработки лидов
+                        </span>
+                    </span>
+                    <span class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/marketing.webp" alt="Маркетинг и продажи" class="objectives_container__item-img"></span>
+                    {# </a> #}
+                </div>
+                <div class="objectives_container__item">
+                    {# <a href="/[[~106]]" class="objectives_container__item"> #}
+                    <span class="objectives_container__item-text">
+                        <span class="objectives_container__item-text-head">Работа с&nbsp;персоналом</span>
+                        <span class="objectives_container__item-text-body">Системы обучения сотрудников, кадровый документооборот и&nbsp;корпоративные платформы
+                        </span>
+                    </span>
+                    <span class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Работа с персоналом" class="objectives_container__item-img"></span>
+                    {# </a> #}
+                </div>
+            </div>
+            <div class="objectives_container__navigation">
+              
+                    <div class="objectives_container__items-nav" id="js-objectives-nav"></div>
+                    
+            </div>
+            <div class="objectives__cta">
+                <div class="objectives__cta-text">Разработка индивидуальных решений для роста эффективности вашего бизнеса</div>
+                <a href="/[[~11]]" class="objectives__cta-button">Оставить заявку</a>
+            </div>
+        {# </div> #}
+    </div>
+</div>

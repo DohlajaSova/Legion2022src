@@ -911,6 +911,8 @@ docReady(function () {
     // global
     // listeners 
     let tagCategoriesListener = false;
+    // минимальная ширина окна для включения меню при обратном скролле (было 650)
+    const minWindowWidthForAction = 9999999999;
     const params = getParamsByUrl();
     const scrollIV = params?.scrollinto;
     if (scrollIV) {
@@ -920,11 +922,12 @@ docReady(function () {
     const stickyHeader = document.getElementsByClassName('header')[0];
     //let headerOffset = findOffset(stickyHeader);
     let lastScrollTop = 0;
+    let headerHideTimeout;
     const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     let i, j;
     // const backButton = document.querySelector(".js-top");
     const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    if (windowWidth <= 650) {
+    if (windowWidth <= minWindowWidthForAction) {
         window.onscroll = function () {
             let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             if (bodyScrollTop > 50) {
@@ -936,14 +939,21 @@ docReady(function () {
             if (bodyScrollTop > wHeight) {
                 if (bodyScrollTop > lastScrollTop) {
                     stickyHeader.classList.remove('header_shift');
+                    clearTimeout(headerHideTimeout);
+                    headerHideTimeout = setTimeout(() => {
+                        stickyHeader.classList.remove('header_transparent');
+                        stickyHeader.classList.remove('header_sticky');
+                    }, 500);
                 } else {
+                    clearTimeout(headerHideTimeout);
                     stickyHeader.classList.add('header_sticky');
                     stickyHeader.classList.add('header_transparent');
                     stickyHeader.classList.add('header_shift');
                 }
             } else {
                 stickyHeader.classList.remove('header_shift');
-                setTimeout(() => {
+                clearTimeout(headerHideTimeout);
+                headerHideTimeout = setTimeout(() => {
                     stickyHeader.classList.remove('header_transparent');
                     stickyHeader.classList.remove('header_sticky');
                 }, 500);
@@ -958,12 +968,13 @@ docReady(function () {
     // else {
     //     window.onscroll = function () {
     //         let bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-    //         if (bodyScrollTop < 500) backButton.classList.add("hide");
-    //         else backButton.classList.remove("hide");
-    //     }
+    //         if (bodyScrollTop > headerOffset.top) {
+    //             stickyHeader.classList.add('header_sticky');
+    //         } else {
+    //             stickyHeader.classList.remove('header_sticky');
+    //         }
+    //     };
     // }
-
     // обработка свайпа
     const sliders = document.querySelectorAll('.cases-slider');
     if (sliders.length) {
@@ -1317,6 +1328,53 @@ docReady(function () {
             center: false,
             slideBy: 'page'
         });
+    }
+
+    // слайдер отраслевых задач (dev2b-objectives)
+    let objectivesBlocks = document.querySelector('.js-objectives');
+    if (objectivesBlocks != undefined) {
+        const navContainer = document.querySelector('#js-objectives-nav');
+        const slideCount = objectivesBlocks.children.length;
+        const isObjectivesMobile = document.documentElement.clientWidth <= 768;
+        const slideWidth = isObjectivesMobile ? Math.round(objectivesBlocks.children[0].getBoundingClientRect().width) : 349;
+        const slideGutter = isObjectivesMobile ? 0 : 20;
+        const containerRect = objectivesBlocks.closest('.container').getBoundingClientRect();
+        const sliderWidth = document.documentElement.clientWidth - containerRect.left;
+        const slidesPerPage = Math.max(1, Math.floor((sliderWidth + slideGutter) / (slideWidth + slideGutter)));
+        const pagesCount = Math.ceil(slideCount / slidesPerPage);
+        for (let i = 0; i < pagesCount; i++) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            navContainer.appendChild(btn);
+        }
+        const objectivesSlider = tns({
+            container: objectivesBlocks,
+            items: slidesPerPage,
+            gutter: slideGutter,
+            axis: 'horizontal',
+            fixedWidth: slideWidth,
+            loop: false,
+            nav: false,
+            controls: false,
+            mouseDrag: true,
+            center: false,
+            slideBy: slidesPerPage
+        });
+        const navButtons = navContainer.querySelectorAll('button');
+        const setObjectivesNav = function () {
+            const info = objectivesSlider.getInfo();
+            const activeIndex = Math.min(pagesCount - 1, Math.floor((info.displayIndex - 1) / slidesPerPage));
+            navButtons.forEach(function (btn, index) {
+                btn.classList.toggle('tns-nav-active', index === activeIndex);
+            });
+        };
+        navButtons.forEach(function (btn, index) {
+            btn.addEventListener('click', function () {
+                objectivesSlider.goTo(index * slidesPerPage);
+            });
+        });
+        setObjectivesNav();
+        objectivesSlider.events.on('indexChanged', setObjectivesNav);
     }
 
 
@@ -3147,7 +3205,7 @@ docReady(function () {
                         }
                     }
 
-                    if (isActive) {
+                    if (isActive && acc.dataset.accordionNoScroll !== "true") {
                         tabhead.scrollIntoView({
                             behavior: "smooth",
                             block: "start"

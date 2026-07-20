@@ -29,7 +29,7 @@
     {% include "partials/towel/pmenu.nunjucks" %}
 	{% block content %} {% endblock %}
 </div>
-<footer class="footer cleared">
+    <footer class="footer cleared footer_black-background">
     {% include "partials/footer-back.nunjucks" %}
     <div class="container cleared">
         {% include "partials/footer.nunjucks" %}

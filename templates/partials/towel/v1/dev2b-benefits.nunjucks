@@ -1,0 +1,32 @@
+<div class="benefits">
+    <div class="container">
+        <div class="benefits__item">
+            <div class="benefits__icon">
+                <img src="/assets/css/img/dev2b/benefit1-1.svg" alt="">
+            </div>
+            <h3 class="benefits__title">Предоставляем измеримый результат</h3>
+            <p class="benefits__text">Считаем конкретные метрики: сокращение времени на&nbsp;операцию, снижение количества ошибок, экономию на&nbsp;штатных единицах.</p>
+        </div>
+        <div class="benefits__item">
+            <div class="benefits__icon">
+                <img src="/assets/css/img/dev2b/benefit1-2.svg" alt="">
+            </div>
+            <h3 class="benefits__title">Внимательно работаем с&nbsp;интересами бизнеса</h3>
+            <p class="benefits__text">Мы разрабатываем IT-решения, которые опираются на&nbsp;анализ существующих процессов и&nbsp;закрывают индивидуальные запросы клиента.</p>
+        </div>
+        <div class="benefits__item">
+            <div class="benefits__icon">
+                <img src="/assets/css/img/dev2b/benefit2-1.svg" alt="">
+            </div>
+            <h3 class="benefits__title">Помогаем повысить эффективность сотрудников</h3>
+            <p class="benefits__text">Разрабатываем автоматические системы, которые ускоряют ручные процессы, минимизируют рутину и оптимизизируют загрузку персонала.</p>
+        </div>
+        <div class="benefits__item">
+            <div class="benefits__icon">
+                <img src="/assets/css/img/dev2b/benefit2-2.svg" alt="">
+            </div>
+            <h3 class="benefits__title">Обеспечиваем бесшовную интеграцию систем</h3>
+            <p class="benefits__text">Интегрируем новую систему с&nbsp;уже работающими у&nbsp;вас инструментами. Создаём новое единое информационное пространство.</p>
+        </div>
+    </div>
+</div>

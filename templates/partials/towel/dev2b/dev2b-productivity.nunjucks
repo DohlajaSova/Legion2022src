@@ -1,0 +1,149 @@
+<div class="productivity">
+    <div class="container">
+        <h2 class="productivity__title">Продуктивность на&nbsp;каждом этапе заказной разработки</h2>
+
+        <div class="productivity__accordion js-accordion-redesign" data-accordion-container="4" data-accordion-no-scroll="true">
+            <div class="productivity__list">
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="1">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-analysis.svg" alt="">
+                            <h3 class="productivity__name">Анализ и&nbsp;составление ТЗ</h3>
+                        </div>
+                        <p class="productivity__text">Погружаемся в&nbsp;предметную область: исследуем ваши бизнес-процессы, анализируем объёмы и&nbsp;структуру данных, собираем и&nbsp;приоритизируем требования, фиксируем архитектуру решения <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Согласованное техническое задание и&nbsp;карта пользовательских сценариев.</li>
+                            <li>— Описание интеграций, источников данных и&nbsp;ограничений проекта.</li>
+                            <li>— Приоритетный backlog с&nbsp;оценкой трудоёмкости и&nbsp;этапами запуска.</li>
+                            <li>— Архитектурная схема будущего продукта.</li>
+                            <li>— Понятные критерии готовности для команды и&nbsp;заказчика.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="2">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-prototyping.svg" alt="">
+                            <h3 class="productivity__name">Прототипирование</h3>
+                        </div>
+                        <p class="productivity__text">Продумываем общую структуру и&nbsp;логику переходов в&nbsp;системе, формируем визуальный образ будущего приложения <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Интерактивный прототип ключевых пользовательских сценариев.</li>
+                            <li>— Проверенная навигация и&nbsp;логика переходов между экранами.</li>
+                            <li>— Быстрое согласование состава функций до&nbsp;начала дизайна и&nbsp;разработки.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="3">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-design.svg" alt="">
+                            <h3 class="productivity__name">Дизайн</h3>
+                        </div>
+                        <p class="productivity__text">Создаём удобные и&nbsp;интуитивно понятные интерфейсы. Прорабатываем сценарии и&nbsp;взаимодействия, отрисовываем состояния экранов и&nbsp;элементов дизайна, готовим графику <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Макеты экранов для всех согласованных сценариев.</li>
+                            <li>— UI-kit с&nbsp;компонентами, состояниями и&nbsp;правилами использования.</li>
+                            <li>— Подготовленные материалы для передачи в&nbsp;разработку.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="4">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-development.svg" alt="">
+                            <h3 class="productivity__name">Разработка</h3>
+                        </div>
+                        <p class="productivity__text">Пишем чистый и&nbsp;стабильный код, используем современные подходы и&nbsp;автоматизированный процесс разработки. Бесшовно интегрируем новое решение в&nbsp;вашу систему <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Рабочий продукт с реализованными пользовательскими сценариями.</li>
+                            <li>— Настроенные API, интеграции и&nbsp;обмен данными.</li>
+                            <li>— Кодовая база, готовая к&nbsp;развитию и&nbsp;поддержке.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="5">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-qa.svg" alt="">
+                            <h3 class="productivity__name">Контроль качества (QA)</h3>
+                        </div>
+                        <p class="productivity__text">Контролируем разработку на&nbsp;всех этапах. Проводим ручное, автоматическое и&nbsp;стресс-тестирование на&nbsp;реальных устройствах, устраняя дефекты на&nbsp;ранних стадиях <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Проверенные пользовательские сценарии и&nbsp;регрессионные проверки.</li>
+                            <li>— Список найденных дефектов с&nbsp;приоритетами и&nbsp;статусами исправления.</li>
+                            <li>— Стабильная версия продукта, готовая к&nbsp;релизу.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="6">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-launch.svg" alt="">
+                            <h3 class="productivity__name">Запуск и&nbsp;внедрение</h3>
+                        </div>
+                        <p class="productivity__text">Настраиваем инфраструктуру, проводим интеграцию и&nbsp;миграцию данных. Берём на&nbsp;себя весь цикл публикации и&nbsp;обеспечиваем переход на&nbsp;новую систему через онбординг <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Настроенные окружения и&nbsp;опубликованная рабочая версия.</li>
+                            <li>— План миграции данных и&nbsp;запуска пользователей.</li>
+                            <li>— Документация для команды заказчика.</li>
+                            <li>— Контроль первых дней эксплуатации продукта.</li>
+                            <li>— Рекомендации по&nbsp;дальнейшему развитию решения.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="productivity__item js-accordion-tab" data-accordion-tab="7">
+                    <div class="productivity__preview tab__head">
+                        <div class="productivity__heading">
+                            <img class="productivity__icon" src="/assets/css/img/dev2b/icon-productivity-support.svg" alt="">
+                            <h3 class="productivity__name">Техническая поддержка</h3>
+                        </div>
+                        <p class="productivity__text">Обеспечиваем комплексное сопровождение продукта после релиза — от&nbsp;разбора пользовательских обращений до&nbsp;системного администрирования. Гарантируем развитие и&nbsp;стабильную работу <span class="productivity__roll-arrow arrow-down">↓</span><span class="productivity__roll-arrow arrow-up">↑</span></p>
+                        <span class="productivity__roll tab__roll"><span class="productivity__roll-result">Результаты этапа:</span></span>
+                    </div>
+                    <div class="productivity__body tab__body">
+                        <ol class="productivity__result-list">
+                            <li>— Регулярный мониторинг продукта и&nbsp;оперативная реакция на&nbsp;обращения.</li>
+                            <li>— Плановые обновления, исправления и&nbsp;улучшения функциональности.</li>
+                            <li>— Поддержка пользователей и&nbsp;администраторов системы.</li>
+                            <li>— Прозрачная отчётность по&nbsp;задачам сопровождения.</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="productivity__consultation">
+            {# <a href="#feedback" class="productivity__consultation-label text-content_tcallback__link">Разработка IT-решений</a> #}
+            <span class="productivity__consultation-label">Разработка IT-решений</span>
+            <div class="productivity__consultation-content">
+                <h3 class="productivity__consultation-title">Комплексная разработка и&nbsp;дизайн мобильных приложений</h3>
+                <p class="productivity__consultation-text">Помогаем запустить вашу идею или усилить цифровое присутствие бренда: от&nbsp;MVP до&nbsp;сложных решений с&nbsp;интеграциями. Создаём конкурентное преимущество с&nbsp;помощью IT-сервисов.</p>
+            </div>
+        </div>
+    </div>
+</div>

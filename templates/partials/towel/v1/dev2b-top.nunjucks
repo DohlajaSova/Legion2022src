@@ -1,0 +1,28 @@
+
+
+
+
+<div class="top">
+    <div class="container">
+        <div class="text-content">
+            <div class="text-content_tcallback">
+                {# <a href="#feedback" class="text-content_tcallback__link"> #}
+                    Разработка IT-решений
+                {# </a> #}
+            </div>
+            <h1 class="text-content_header">
+                Результативные IT-решения под запросы бизнеса
+            </h1>
+            <div class="text-content_text">
+                    Помогаем настроить бизнес-процессы с&nbsp;помощью IT-инструментов: автоматизируем ручные операции, интегрируем специализированные сервисы и&nbsp;выстраиваем прозрачную архитектуру.
+            </div>
+            <div class="text-content_bcallback">
+                <a href="/[[~11]]" class="text-content_bcallback__link button">
+                    Консультация по услуге
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

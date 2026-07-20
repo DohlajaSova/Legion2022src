@@ -1,4 +1,4 @@
-@media only screen and (max-width: $screen-lg) {
+﻿@media only screen and (max-width: $screen-lg) {
     .desktop-show{
         display:block;
     }
@@ -443,7 +443,6 @@
 		font-size: 40px;
 	}
     .header{
-        height: 130px;
         padding-bottom: 63px;
     }
     .breadcrumbs li::after{
@@ -1340,6 +1339,17 @@
         display: none !important;
     }
 
+    .body_dev2b {
+        .benefits .container,
+        .objectives .container,
+        .productivity .container,
+        .qa .container{
+            margin-left: 40px;
+            margin-right: 40px;
+            max-width: none;
+        }
+    }
+
     .header,
     .footer,
     .pmenu,
@@ -2158,6 +2168,7 @@
             width: 90%;
         }
     }
+
 }
 @media only screen and (max-width: 1080px) {
     .who-we-are{
@@ -2217,6 +2228,18 @@
     }
     .redesign-features_ver2 .redesign-features-preview{
         margin-bottom: 0;
+    }
+
+    .body_dev2b {
+        .qa .container,
+        .clients__inner{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .clients__title{
+            max-width: calc(100% - 118px);
+        }
     }
 }
 @media(min-width: 1025px) {
@@ -3013,6 +3036,11 @@
         }
         .not-all-the-same{
             margin-bottom: 70px;
+        }
+    }
+    .body_dev2b .productivity{
+        &__consultation{
+            background-position: right -40px center;
         }
     }
 }
@@ -4786,6 +4814,11 @@
             }
         }
     }
+    .body_dev2b .productivity{
+        &__consultation{
+            background-position: right -80px center;
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {
@@ -5282,6 +5315,49 @@
             &-lead{
                 font-size: 16px;
             }
+        }
+    }
+    .body_about-v2{
+        .top{
+            background-image: url($img-path + "about-v22.webp")
+        }
+        .broadwise__item_text{
+            font-size: 16px;
+        }
+        .team__content h2{
+            font-size: 54px;
+        }
+    }
+    .about-rewards_ver2{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .lead{
+            font-size: 20px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+    .not-all-the-same_ver2 {
+        .not-all-the-same__list{
+            &-item-text{
+                width: 67.5%;
+                padding: 20px;
+            }
+            &-item-video{
+                width: 32.5%;
+            }
+            &-heading{
+                font-size: 36px;
+                margin-bottom: 0;
+            }
+            &-lead{
+                font-size: 16px;
+            }
+        }
+    }
+    .body_dev2b .productivity{
+        &__consultation{
+            background-position: right -120px center;
         }
     }
 }

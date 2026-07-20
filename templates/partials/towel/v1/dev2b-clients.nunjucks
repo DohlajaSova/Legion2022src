@@ -1,0 +1,44 @@
+<div class="clients">
+    <div class="clients__inner">
+        <h2 class="clients__title">С&nbsp;2005 года помогаем цифровизировать ведущие отраслевые компании</h2>
+        <a href="https://ratingruneta.ru/apps/" class="broadwise__item" target="_blank">
+            <img class="clients__mark" src="/assets/css/img/dev2b/logo_rr.svg" alt="">
+        </a>
+    </div>
+
+    <div class="clients__logos" aria-label="Клиенты">
+        <div class="clients__logos-track">
+            <div class="clients__logos-group">
+                <img class="clients__logo clients__logo--sberbank" src="/assets/css/img/dev2b/logo_sberbank.svg" alt="Сбер Банк">
+                <img class="clients__logo clients__logo--t2" src="/assets/css/img/dev2b/logo_t2.svg" alt="t2">
+                <img class="clients__logo clients__logo--alfa" src="/assets/css/img/dev2b/logo_alfa.svg" alt="Альфа-Банк">
+                <img class="clients__logo clients__logo--tbank" src="/assets/css/img/dev2b/logo_inkoff.svg" alt="Т-Банк">
+                <img class="clients__logo clients__logo--yandex" src="/assets/css/img/dev2b/logo_yandex_rus.svg" alt="Яндекс">
+                <img class="clients__logo clients__logo--five" src="/assets/css/img/dev2b/logo_5ka.svg" alt="Пятёрочка">
+                <img class="clients__logo clients__logo--auchan" src="/assets/css/img/dev2b/logo_auchan.svg" alt="Ашан">
+                <img class="clients__logo clients__logo--burger" src="/assets/css/img/dev2b/logo_bking.svg" alt="Burger King">
+                <img class="clients__logo clients__logo--medlinx" src="/assets/css/img/dev2b/logo_medlinx.svg" alt="Medlinx">
+                <img class="clients__logo clients__logo--peter-ned" src="/assets/css/img/dev2b/logo_peter_ned.svg" alt="Петербургская Недвижимость">
+                <img class="clients__logo clients__logo--globus" src="/assets/css/img/dev2b/logo_globus.svg" alt="Глобус">
+                <img class="clients__logo clients__logo--docmed" src="/assets/css/img/dev2b/logo_docmed.svg" alt="Docmed">
+                <img class="clients__logo clients__logo--zenit" src="/assets/css/img/dev2b/logo_zenit.svg" alt="Зенит">
+            </div>
+
+            <div class="clients__logos-group" aria-hidden="true">
+                <img class="clients__logo clients__logo--sberbank" src="/assets/css/img/dev2b/logo_sberbank.svg" alt="">
+                <img class="clients__logo clients__logo--t2" src="/assets/css/img/dev2b/logo_t2.svg" alt="">
+                <img class="clients__logo clients__logo--alfa" src="/assets/css/img/dev2b/logo_alfa.svg" alt="">
+                <img class="clients__logo clients__logo--tbank" src="/assets/css/img/dev2b/logo_inkoff.svg" alt="">
+                <img class="clients__logo clients__logo--yandex" src="/assets/css/img/dev2b/logo_yandex_rus.svg" alt="">
+                <img class="clients__logo clients__logo--five" src="/assets/css/img/dev2b/logo_5ka.svg" alt="">
+                <img class="clients__logo clients__logo--auchan" src="/assets/css/img/dev2b/logo_auchan.svg" alt="">
+                <img class="clients__logo clients__logo--burger" src="/assets/css/img/dev2b/logo_bking.svg" alt="">
+                <img class="clients__logo clients__logo--medlinx" src="/assets/css/img/dev2b/logo_medlinx.svg" alt="">
+                <img class="clients__logo clients__logo--peter-ned" src="/assets/css/img/dev2b/logo_peter_ned.svg" alt="">
+                <img class="clients__logo clients__logo--globus" src="/assets/css/img/dev2b/logo_globus.svg" alt="">
+                <img class="clients__logo clients__logo--docmed" src="/assets/css/img/dev2b/logo_docmed.svg" alt="">
+                <img class="clients__logo clients__logo--zenit" src="/assets/css/img/dev2b/logo_zenit.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

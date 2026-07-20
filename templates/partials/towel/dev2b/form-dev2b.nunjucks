@@ -1,0 +1,79 @@
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<div class="services-v2">
+    <div class="services-v2__container-fullwidth bg2">
+        <div class="request js-activate-request">
+            <div class="container">
+                <form method="post" action="[[~[[*id]]]]" enctype="multipart/form-data">
+                <div class="request__form" id="request__form">
+                    <h3>Консультируем по&nbsp;услуге и&nbsp;помогаем сформировать задачу</h3>
+                    <span class="request__form_tip show">Помогаем подобрать оптимальное решение для развития вашего бизнеса. Готовы рассказать о задаче подробнее? <br>Заполните <a href="/[[~11]]">полную форму заявки →</a></span>
+                    <div class="request__form_container">
+                        <div class="request__form_item">
+                            <input name="name" id="name" type="text" class="request__form_input" placeholder="Как вас зовут?">
+                            <label for="name" class="request__form_label">Как вас зовут?</label>
+                            <span class="request__form_error">Введите ваше имя</span>
+                        </div>
+                        <div class="request__form_item">
+                            <input name="company" id="company" type="text" class="request__form_input" placeholder="Из какой вы компании?">
+                            <label for="company" class="request__form_label">Из какой вы компании?</label>
+                            <span class="request__form_error">Введите название компании</span>
+                        </div>
+                        <div class="request__form_item">
+                            <input name="phone" id="phonefield" type="tel" placeholder="+7 ___ ___ ____" class="request__form_input phone">
+                            <label for="phonefield" class="request__form_label">Номер телефона</label>
+                            <span class="request__form_error">Введите номер для связи</span>
+                        </div>
+                        <div class="request__form_item">
+                            <input name="email" id="email" type="email" class="request__form_input" placeholder="Почта">
+                            <label for="email" class="request__form_label">Почта</label>
+                            <span class="request__form_error">Введите почту для связи</span>
+                        </div>
+                    </div>
+                <h3>Что нужно сделать?</h3>
+                <div class="request__select select select-checkmark">
+                    <select id="multiple-1" name="todo" multiple>
+                        <option value="" disabled selected hidden>Выберите</option>
+                        <option value="Разработать/доработать приложение" selected>Разработка/развитие приложения</option>
+                        <option value="Провести аудит системы">Аудит системы</option>
+                        <option value="Подобрать IT-специалистов">Подбор IT-специалистов</option>
+                        <!-- <option value="Проработать дизайн-решение">Проработать дизайн-решение</option>
+                        <option value="Запустить продукт на рынок">Запустить продукт на рынок</option> -->
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                
+        <div>
+            [[!recaptchav3_render]]
+            [[!+fi.error.recaptchav3_error]]
+        </div>
+        <div class="request__comment-container centered checkbox">
+            <div class="request__comment js-request-agreed">
+                <input type="checkbox" id="agreed1">
+                <label for="agreed1">
+                    Я&nbsp;ознакомился и&nbsp;согласен с&nbsp;<a href="/[[~47]]" target="_blank">«Политикой обработки персональных данных»</a>
+                </label>
+            </div>
+            <div class="request__comment js-request-agreed">
+                <input type="checkbox" id="agreed2">
+                <label for="agreed2">
+                    Я&nbsp;ознакомился и&nbsp;согласен с&nbsp;<a href="/[[~144]]" target="_blank">«Политикой оператора обработки персональных данных»</a>
+                </label>
+            </div>
+            <div class="request__button">
+                <button class="button js-request-button js-request-animate" disabled="disabled">
+                    <span class="request__button_label">Отправить заявку</span>
+                    <span class="request__button_arrow"></span>
+                </button>
+            </div>
+        </div>
+                
+                <input id="af_files" name="files" type="hidden" />
+                </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

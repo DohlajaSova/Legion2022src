@@ -1032,6 +1032,9 @@
         &__menu-list-wrapper{
             gap: 60px;
         }
+        &__copyright span {
+            margin-left: 0;
+        }
     }
     .expert {
         .expert-content {
@@ -1588,6 +1591,7 @@
         }
     }
     .top.redesign {
+        margin-top: 8px;
         .h1 {
             font-size: 8.5vw;
         }
@@ -2239,6 +2243,7 @@
             }
         }
     }
+
     .header{
         position:fixed;
         transition:transform .5s ease-in;
@@ -2246,6 +2251,7 @@
         padding-bottom:23px;
         z-index: 2001;
         height: 70px;
+
         &.header_scrolled{
             transform:translateY(-100px);
             transition:transform .5s ease-in;
@@ -2260,15 +2266,23 @@
         &.header_transparent{
             transition:transform .5s ease-in;
             opacity: 0.75;
-            background-color: rgba(30, 39, 56, 0.4);;
-            backdrop-filter: brightness(0.5);
+            //background-color: rgba(30, 39, 56, 0.4);
+            backdrop-filter: brightness(0.8);
             .js-top-menu {
+                // white
                 background: url("img/icon-menu2.svg") 0 0 no-repeat;
                 background-size: contain;
             }
-            .header__logo{
-                opacity: 0;
+            &.header-black-content {
+                .js-top-menu {
+                    // black
+                    background: url("img/icon-menu.svg") 0 0 no-repeat;
+                    background-size: contain;
+                }
             }
+            // .header__logo{
+            //     opacity: 0.75;
+            // }
         }
         &.header_shift {
             transform: translateY(0px);
@@ -4006,7 +4020,7 @@
             width:100%;
             justify-content: flex-start;
         }
-        &__info_wrapper{
+        &__info_wrapper + .footer__info_wrapper {
             margin-left: 0;
         }
     }
@@ -4940,6 +4954,315 @@
         &-img{
             &-cont{
                 height: 220px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screen-sm) {
+    .body_dev2b {
+        .top{
+            // margin-top: -13px;
+            padding-bottom: 40px;
+
+            .container{
+                max-width: 708px;
+                width: calc(100vw - 60px);
+            }
+
+            .text-content{
+                background-position: right -142px bottom -73px;
+                background-size: 498px auto;
+                min-height: 505px;
+                padding: 44px 20px;
+            }
+
+            .text-content_header{
+                font-size: 52px;
+                margin-bottom: 14px;
+                max-width: 664px;
+            }
+
+            .text-content_tcallback{
+                margin-bottom: 14px;
+            }
+
+            .text-content_text{
+                margin-bottom: 34px;
+                max-width: 520px;
+            }
+        }
+
+        .benefits{
+            box-sizing: border-box;
+            padding-left: 30px;
+            padding-bottom: 60px;
+            padding-right: 30px;
+
+            .container{
+                gap: 10px;
+                grid-template-columns: 1fr;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 708px;
+                width: calc(100vw - 60px);
+            }
+
+            &__item{
+                border-radius: 16px;
+                gap: 10px;
+                height: auto;
+                min-height: 198px;
+                padding: 20px;
+            }
+
+            &__icon{
+                border-radius: 7px;
+                height: 48px;
+                margin-bottom: 10px;
+                width: 48px;
+            }
+
+            &__icon img{
+                height: 48px;
+                width: 48px;
+            }
+
+            &__title{
+                font-size: 28px;
+                max-width: none;
+            }
+
+            &__text{
+                color: #949191;
+                font-size: 18px;
+            }
+        }
+
+        .objectives{
+            padding: 60px 0;
+
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 708px;
+                width: calc(100vw - 60px);
+            }
+
+            .h1{
+                font-size: 44px;
+                line-height: 1.2;
+            }
+
+            .lead{
+                max-width: none;
+            }
+
+            .tns-outer{
+                width: calc(100vw - ((100vw - 708px) / 2));
+            }
+
+            &_container__item{
+                border-radius: 16px;
+                height: 347px;
+                padding: 20px 40px 0 20px;
+                width: 327px;
+
+                // &.tns-item{
+                //     width: 327px !important;
+                // }
+            }
+
+            &_container__item:before{
+                border-radius: 16px;
+                right: 20px;
+            }
+
+            &_container__item-text{
+                gap: 16px;
+                min-height: 154px;
+            }
+
+            &_container__item-text-head{
+                font-size: 28px;
+            }
+
+            &_container__item-text-body{
+                font-size: 16px;
+            }
+
+            &_container__item-img{
+                height: 240px;
+                width: 240px;
+            }
+
+            &__cta{
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &__cta-text{
+                max-width: none;
+                width: 100%;
+            }
+
+            &__cta-button{
+                align-self: flex-start;
+            }
+        }
+
+        .productivity{
+            padding: 60px 0;
+
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 708px;
+                width: calc(100vw - 60px);
+            }
+
+            &__title{
+                margin-bottom: 40px;
+                font-size: 44px;
+                line-height: 1.2;
+            }
+
+            &__accordion{
+                margin-bottom: 40px;
+            }
+
+            &__list{
+                margin-left: 0;
+                max-width: none;
+            }
+
+			&__item{
+				padding: 20px 0 0;
+			}
+
+            &__item.active{
+                .productivity__body{
+                    max-height: 520px;
+                }
+            }
+
+			&__heading{
+				align-items: flex-start;
+				flex-direction: column;
+			}
+
+            &__name{
+                font-size: 36px;
+            }
+
+			&__text,
+			&__result-list li{
+				font-size: 18px;
+			}
+
+			&__roll{
+				height: 8px;
+			}
+
+			&__result-list{
+				li:last-child{
+					margin-bottom: 20px;
+				}
+
+				li:first-child{
+					margin-top: 20px;
+				}
+			}
+
+			&__consultation-text{
+				font-size: 16px;
+			}
+
+            &__consultation{
+                background-position: right center;
+                background-size: 280px auto;
+                min-height: 230px;
+                padding: 20px;
+            }
+
+            &__consultation-label{
+                margin-bottom: 20px;
+            }
+
+            &__consultation-content{
+                gap: 10px;
+                max-width: 520px;
+            }
+
+            &__consultation-title{
+                font-size: 32px;
+            }
+        }
+
+        .clients{
+            padding: 60px 0;
+            min-height: auto;
+
+            &__inner{
+                margin-left: 30px;
+                margin-right: 30px;
+                min-height: 0;
+            }
+
+            &__title{
+                font-size: 36px;
+                line-height: 1.2;
+                max-width: 540px;
+                padding-right: 100px;
+            }
+
+            &__mark{
+                height: 64px;
+                width: 64px;
+            }
+
+            &__logos{
+                margin-top: 60px;
+            }
+
+            &__logos-group{
+                gap: 56px;
+                padding-right: 56px;
+            }
+        }
+
+        .qa{
+            padding: 60px 0;
+
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 708px;
+                width: calc(100vw - 60px);
+            }
+
+            &__title{
+                font-size: 44px;
+                line-height: 1.2;
+            }
+
+            &__item{
+                border-radius: 16px;
+                padding: 20px;
+            }
+
+            &__question{
+                font-size: 20px;
+                max-width: 588px;
+            }
+
+            &__body{
+                font-size: 18px;
+            }
+
+            &__item.active .qa__body{
+                max-height: 620px;
             }
         }
     }

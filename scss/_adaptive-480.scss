@@ -2311,3 +2311,293 @@
         padding-right: 10px;
     }
 }
+
+@media only screen and (max-width: $screen-xs) {
+    .body_dev2b {
+        .top{
+            margin-top: -23px;
+            padding-bottom: 40px;
+
+            .container{
+                max-width: 440px;
+                width: calc(100vw - 40px);
+            }
+
+            .text-content{
+                background-position: right -76px bottom -66px;
+                background-size: 336px auto;
+                min-height: 500px;
+                padding: 40px 20px;
+            }
+
+            .text-content_tcallback{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .text-content_header{
+                font-size: 36px;
+                line-height: 1.2;
+                max-width: 400px;
+            }
+
+            .text-content_text{
+                font-size: 16px;
+                margin-bottom: 20px;
+                max-width: 400px;
+            }
+
+            .text-content_bcallback .button{
+                font-size: 16px;
+                margin-bottom: 0;
+                padding: 20px 40px;
+            }
+        }
+
+        .benefits{
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-bottom: 60px;
+            padding-right: 20px;
+
+            .container{
+                max-width: 440px;
+                width: calc(100vw - 40px);
+            }
+
+            &__item{
+                gap: 10px;
+                height: auto;
+                min-height: 218px;
+                padding: 16px;
+            }
+
+            &__icon{
+                height: 44px;
+                margin-bottom: 10px;
+                width: 44px;
+            }
+
+            &__icon img{
+                height: 48px;
+                width: 48px;
+            }
+
+            &__title{
+                font-size: 24px;
+            }
+
+            &__text{
+                color: #949191;
+                font-size: 14px;
+            }
+        }
+
+        .objectives{
+            .container{
+                max-width: 440px;
+                width: calc(100vw - 40px);
+            }
+
+            .h1{
+                font-size: 36px;
+            }
+
+            .lead{
+                font-size: 18px;
+            }
+
+            .tns-outer{
+                width: calc(100vw - ((100vw - 440px) / 2));
+            }
+
+            &_container__item{
+                padding-left: 16px;
+                padding-right: 32px ;
+            }
+
+            &_container__item:before{
+                right: 20px;
+            }
+
+            &_container__item-text{
+                gap: 10px;
+                min-height: 131px;
+            }
+
+            &_container__item-text-head{
+                font-size: 24px;
+            }
+
+            &_container__item-text-body{
+                font-size: 14px;
+            }
+
+            &__cta{
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            &__cta-text{
+                font-size: 20px;
+                max-width: none;
+                width: 100%;
+            }
+
+            &__cta-button{
+                align-self: flex-start;
+            }
+        }
+
+        .productivity{
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 440px;
+                width: calc(100vw - 40px);
+            }
+
+            &__title{
+                font-size: 36px;
+            }
+
+			&__item{
+				gap: 0;
+				padding: 20px 0 0;
+			}
+
+            &__heading{
+                align-items: flex-start;
+				flex-direction: column;
+                min-height: 0;
+            }
+
+            &__name{
+                font-size: 28px;
+            }
+
+			&__text,
+			&__result-list li,
+			&__consultation-text{
+				font-size: 16px;
+			}
+
+			&__roll{
+				height: 8px;
+			}
+
+			&__result-list{
+				li:last-child{
+					margin-bottom: 20px;
+				}
+
+				li:first-child{
+					margin-top: 20px;
+				}
+			}
+
+			&__consultation{
+                background-position: right -34px bottom -20px;
+                background-size: 280px auto;
+                border-radius: 14px;
+                min-height: 340px;
+                padding: 20px 16px;
+            }
+
+            &__consultation-label{
+                margin-bottom: 18px;
+            }
+
+            &__consultation-content{
+                gap: 6px;
+            }
+
+            &__consultation-title{
+                font-size: 24px;
+            }
+        }
+
+        .clients{
+            padding: 48px 0;
+
+            &__inner{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            &__title{
+                font-size: 24px;
+                max-width: 350px;
+                padding-right: 68px;
+            }
+
+            &__mark{
+                height: 48px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 48px;
+            }
+
+            &__logos{
+                margin-top: 40px;
+            }
+
+            &__logos-group{
+                gap: 48px;
+                padding-right: 48px;
+            }
+        }
+
+        .qa{
+            padding: 48px 0;
+
+            .container{
+                margin-left: 20px;
+                margin-right: 20px;
+                max-width: 440px;
+                width: calc(100vw - 40px);
+            }
+
+            &__title{
+                font-size: 36px;
+            }
+
+            &__item{
+                border-radius: 14px;
+                padding: 20px 16px;
+            }
+
+            &__head{
+                gap: 14px;
+            }
+
+            &__question{
+                font-size: 20px;
+                max-width: 348px;
+            }
+
+            &__button{
+                flex-basis: 32px;
+                height: 32px;
+                width: 32px;
+            }
+
+            &__button-icon{
+                background-size: 16px 15px;
+                height: 16px;
+                width: 16px;
+            }
+
+            &__body{
+                font-size: 16px;
+            }
+
+            &__item.active .qa__body{
+                max-height: 760px;
+            }
+        }
+    }
+}

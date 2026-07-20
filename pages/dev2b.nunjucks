@@ -1,0 +1,40 @@
+﻿{% extends "layout-dev2b.nunjucks" %}
+{% block title %} Решения для бизнеса - {% endblock %}
+{% block links %} {% endblock %}
+{% block content %}
+
+  {% include "partials/towel/dev2b/dev2b-top.nunjucks" %}
+  {# {% include "partials/towel/dev2b/dev2b-b.nunjucks" %} #}
+  {% include "partials/towel/dev2b/dev2b-benefits.nunjucks" %}
+  {% include "partials/towel/dev2b/dev2b-objectives.nunjucks" %}
+  {% include "partials/towel/dev2b/dev2b-productivity.nunjucks" %}
+  {% include "partials/towel/dev2b/dev2b-clients.nunjucks" %}
+  {% include "partials/towel/dev2b/form-dev2b.nunjucks" %}
+    {# [[!AjaxForm?
+        &snippet=`FormIt`
+        &form=`form-dev2b`
+        &emailTpl=`tpl-form-request`
+        &hooks=`recaptchav3,amoCRMAddContact,spam,email`
+        &amoCRMmodxAmoFieldsEq=`name||email||phone||company||todo==1635679||platform==1635681||message==1635309||source==1635303||range==1635685||files==1635687`
+        &emailSubject=`Сообщение с сайта [[++site_url]] (страница Разработка/Решения для бизнеса)`
+        &emailTo=`www.e-legion.com@dzsystems.ru,hello@e-legion.com`
+        &validate=`name:required,phone:required,todo:required`
+        &validationErrorMessage=`
+        <h2>Что-то пошло не&nbsp;так</h2>
+        <p>пожалуйста, проверьте данные или напишите нам<br>hello@e-legion.com</p>
+        `
+        &successMessage=`
+        <h2>Спасибо!</h2>
+        <p>мы свяжемся с&nbsp;вами в&nbsp;течение одного рабочего дня<br>(если это не&nbsp;пятница)</p>
+        `
+        &errorMessage=`
+        <h2>Что-то пошло не так</h2>
+        <p>пожалуйста, обновите страницу или напишите нам<br>hello@e-legion.com</p>
+        `
+    ]] #}
+
+  {% include "partials/towel/dev2b/dev2b-qa.nunjucks" %}
+
+  {% include "partials/popup-feedback.nunjucks" %}
+
+{% endblock %}
