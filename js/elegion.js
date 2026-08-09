@@ -1353,7 +1353,7 @@ docReady(function () {
             gutter: slideGutter,
             axis: 'horizontal',
             fixedWidth: slideWidth,
-            loop: false,
+            loop: true,
             nav: false,
             controls: false,
             mouseDrag: true,

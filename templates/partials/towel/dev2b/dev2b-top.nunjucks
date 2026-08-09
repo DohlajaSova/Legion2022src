@@ -1,7 +1,3 @@
-
-
-
-
 <div class="top">
     <div class="container">
         <div class="text-content">
@@ -11,14 +7,14 @@
                 {# </a> #}
             </div>
             <h1 class="text-content_header">
-                Результативные IT-решения под запросы бизнеса
+                Результативные IT-решения под&nbsp;запросы бизнеса
             </h1>
             <div class="text-content_text">
                     Помогаем настроить бизнес-процессы с&nbsp;помощью IT-инструментов: автоматизируем ручные операции, интегрируем специализированные сервисы и&nbsp;выстраиваем прозрачную архитектуру.
             </div>
             <div class="text-content_bcallback">
                 <a href="/[[~11]]" class="text-content_bcallback__link button">
-                    Консультация по услуге
+                    Консультация по&nbsp;услуге
                 </a>
             </div>
         </div>
