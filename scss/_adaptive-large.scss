@@ -164,6 +164,13 @@
     }
 }
 
+@media only screen and (max-width: $screen-lg) {
+    .body_dev2b .feedback.feedback--dev-mobile {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     .body_about .top {
         background-size:cover;
@@ -1343,6 +1350,7 @@
         .benefits .container,
         .objectives .container,
         .productivity .container,
+        .feedback__container,
         .qa .container{
             margin-left: 40px;
             margin-right: 40px;
@@ -2240,7 +2248,16 @@
         .clients__title{
             max-width: calc(100% - 118px);
         }
+        .top{
+            .text-content{
+                &__img2{
+                    background-position: right 0px bottom -30px;
+                    background-size: 440px auto;
+                }
+            }
+        }
     }
+
 }
 @media(min-width: 1025px) {
     .astralinux-container-interactive .content-container .content-card:hover{
@@ -4709,6 +4726,11 @@
             }
         }
     }
+    .body_dev2b .top {
+        .text-content_header.text-content_header__dev-mobile {
+            font-size: 55px;
+        }
+    }   
 }
 
 @media only screen and (max-width: 960px) {
@@ -4814,10 +4836,18 @@
             }
         }
     }
-    .body_dev2b .productivity{
-        &__consultation{
-            background-position: right -80px center;
+    .body_dev2b {
+        .productivity{
+            &__consultation{
+                background-position: right -80px center;
+            }
         }
+
+        .top { 
+            .text-content_header.text-content_header__dev-mobile {
+                font-size: 47px;
+            }
+        }  
     }
 }
 
@@ -5355,9 +5385,20 @@
             }
         }
     }
-    .body_dev2b .productivity{
-        &__consultation{
-            background-position: right -120px center;
+    .body_dev2b{
+        .productivity{
+            &__consultation{
+                background-position: right -120px center;
+            }
+        }
+        .top{
+            .text-content{
+                &__img2{
+                    background-position: right 0px bottom -50px;
+                    background-size: 425px auto;
+                }
+            }
         }
     }
+    
 }

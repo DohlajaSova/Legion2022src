@@ -1,0 +1,54 @@
+<div class="qa">
+    <div class="container">
+        <h2 class="qa__title">Частые вопросы о&nbsp;мобильной разработке</h2>
+
+        <div class="qa__accordion js-accordion-redesign" data-accordion-container="5" data-accordion-no-scroll="true">
+            <div class="qa__list">
+                <article class="qa__item js-accordion-tab" data-accordion-tab="1">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Сколько стоит разработка мобильного приложения?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Стоимость зависит от&nbsp;масштаба продукта: функциональности, количества платформ, сложности дизайна, серверной части и&nbsp;интеграций.</p><p>Чтобы дать реалистичную оценку, сначала разбираемся в&nbsp;задаче и&nbsp;требованиях. Затем определяем состав команды, сроки и&nbsp;бюджет — без оценки «на&nbsp;глаз».</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="2">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Сколько времени занимает разработка приложения?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Зависит от&nbsp;объёма и&nbsp;сложности продукта. Чем больше функций, интеграций и&nbsp;нестандартных сценариев, тем больше времени потребуется на&nbsp;проектирование, разработку и&nbsp;тестирование.</p><p>До&nbsp;старта оцениваем проект, выделяем этапы и&nbsp;планируем релизы. Если продукт большой, можем запускать его по&nbsp;частям — от&nbsp;первой рабочей версии к&nbsp;полноценному решению.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="3">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Что нужно подготовить перед началом разработки?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Для первого разговора достаточно задачи: что хотите сделать, для кого и&nbsp;какую проблему должен решать продукт.</p><p>Готовое техническое задание необязательно. Если есть исследования, аналитика, прототипы, дизайн или описание API — изучим их и&nbsp;используем в&nbsp;работе.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="4">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Можно прийти только с&nbsp;идеей?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Да. Поможем превратить идею в&nbsp;понятную концепцию продукта.</p><p>Разберём задачу, изучим пользователей и&nbsp;рынок, определим ключевые сценарии и&nbsp;функциональность. В&nbsp;результате станет понятно, что именно стоит разрабатывать и&nbsp;с чего начинать.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="5">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Что выбрать: iOS, Android или обе платформы?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Смотрим на&nbsp;аудиторию, бизнес-задачу и&nbsp;требования к&nbsp;продукту.</p><p>Иногда разумнее начать с&nbsp;одной платформы. Иногда важно сразу охватить пользователей iOS и&nbsp;Android. Не предлагаем платформу по&nbsp;умолчанию — выбираем вариант, который лучше решает задачу бизнеса.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="6">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Что лучше: нативная или кроссплатформенная разработка?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Зависит от&nbsp;продукта.</p><p>Нативная разработка даёт больше возможностей для сложных интерфейсов, высокой производительности и&nbsp;глубокой работы с&nbsp;платформой. Кроссплатформенная может ускорить разработку и&nbsp;сократить объём общего кода.</p><p>Выбираем технологию после анализа требований — не&nbsp;подстраиваем задачу под&nbsp;заранее выбранный стек.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="7">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Вы разрабатываете backend и&nbsp;интеграции?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Да. Можем разработать мобильное приложение, серверную часть и&nbsp;архитектуру всей системы.</p><p>Если backend уже существует — подключим приложение через API. Интегрируем продукты с&nbsp;CRM, ERP, 1С, платёжными системами, программами лояльности, аналитикой и&nbsp;другими корпоративными сервисами.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="8">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Как проходит разработка мобильного приложения?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Начинаем с&nbsp;задачи и&nbsp;требований. Затем проектируем пользовательские сценарии и&nbsp;архитектуру, создаём дизайн, разрабатываем и&nbsp;тестируем продукт.</p><p>Делим проект на&nbsp;понятные этапы с&nbsp;конкретным результатом на&nbsp;каждом из&nbsp;них. Регулярно показываем прогресс и&nbsp;при необходимости корректируем следующие шаги.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="9">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Можно менять требования в&nbsp;процессе разработки?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Да. Продукт развивается, появляются новые данные и&nbsp;меняются приоритеты — это нормальная часть работы.</p><p>Планируем разработку итерациями, поэтому можем корректировать требования по&nbsp;ходу проекта. Если изменения влияют на&nbsp;сроки или бюджет, оцениваем это заранее.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="10">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Как вы контролируете качество и&nbsp;помогаете с&nbsp;запуском?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>Тестируем продукт на&nbsp;протяжении всей разработки, а&nbsp;не только перед релизом.</p><p>Проверяем пользовательские сценарии, бизнес-логику, интерфейсы, API и&nbsp;интеграции, используем ручное и&nbsp;автоматизированное тестирование.</p><p>Перед запуском готовим релизные сборки и&nbsp;помогаем опубликовать приложение в&nbsp;App Store и&nbsp;Google Play.</p></div>
+                </article>
+                <article class="qa__item js-accordion-tab" data-accordion-tab="11">
+                    <div class="qa__head tab__head"><h3 class="qa__question">Что происходит после запуска?</h3><button class="qa__button" type="button" aria-label="Свернуть или развернуть ответ"><span class="qa__button-icon"></span></button></div>
+                    <div class="qa__body tab__body"><p>После релиза продукт продолжает развиваться.</p><p>Следим за&nbsp;стабильностью, исправляем ошибки, адаптируем приложение к&nbsp;изменениям платформ и&nbsp;развиваем функциональность. Анализируем обратную связь и&nbsp;данные, чтобы следующие изменения решали реальные задачи пользователей и&nbsp;бизнеса.</p><p>Можем продолжить развитие продукта своей командой или подготовить его к&nbsp;передаче внутренней команде заказчика.</p></div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2391,6 +2391,51 @@
                 color: #949191;
                 font-size: 14px;
             }
+
+			&--dev-mobile{
+				padding: 60px 20px 40px;
+
+				& .benefits__container{
+					gap: 40px;
+					max-width: 440px;
+					width: 100%;
+				}
+
+				& .benefits__lead{
+					font-size: 18px;
+				}
+
+				& .benefits__list{
+					gap: 12px;
+				}
+
+				& .benefits__item{
+					border: 1px solid #F0F0F0;
+					border-radius: 16px;
+					gap: 20px;
+					min-height: 171px;
+					padding: 16px;
+				}
+
+				& .benefits__icon{
+					flex-basis: 44px;
+					height: 44px;
+					width: 44px;
+				}
+
+				& .benefits__content{
+					gap: 10px;
+				}
+
+				& .benefits__title{
+					font-size: 24px;
+				}
+
+				& .benefits__text{
+					color: #949191;
+					font-size: 14px;
+				}
+			}
         }
 
         .objectives{
@@ -2449,6 +2494,24 @@
             &__cta-button{
                 align-self: flex-start;
             }
+
+            &--dev-mobile{
+                padding: 60px 0;
+
+                .objectives__container{
+                    max-width: 440px;
+                    width: calc(100vw - 40px);
+                }
+
+                .objectives__title{
+                    font-size: 36px;
+                }
+
+                .objectives__lead{
+                    font-size: 18px;
+                }
+
+            }
         }
 
         .productivity{
@@ -2499,10 +2562,10 @@
 			}
 
 			&__consultation{
-                background-position: right -34px bottom -20px;
-                background-size: 280px auto;
+                background-position: right -70px bottom -9px;
+                background-size: 250px auto;
                 border-radius: 14px;
-                min-height: 340px;
+                // min-height: 340px;
                 padding: 20px 16px;
             }
 
@@ -2512,6 +2575,7 @@
 
             &__consultation-content{
                 gap: 6px;
+                width: 320px;
             }
 
             &__consultation-title{

@@ -1337,7 +1337,7 @@ docReady(function () {
         const slideCount = objectivesBlocks.children.length;
         const isObjectivesMobile = document.documentElement.clientWidth <= 768;
         const slideWidth = isObjectivesMobile ? Math.round(objectivesBlocks.children[0].getBoundingClientRect().width) : 349;
-        const slideGutter = isObjectivesMobile ? 0 : 20;
+        const slideGutter = 0;
         const containerRect = objectivesBlocks.closest('.container').getBoundingClientRect();
         const sliderWidth = document.documentElement.clientWidth - containerRect.left;
         const slidesPerPage = Math.max(1, Math.floor((sliderWidth + slideGutter) / (slideWidth + slideGutter)));
@@ -1363,7 +1363,7 @@ docReady(function () {
         const navButtons = navContainer.querySelectorAll('button');
         const setObjectivesNav = function () {
             const info = objectivesSlider.getInfo();
-            const activeIndex = Math.min(pagesCount - 1, Math.floor((info.displayIndex - 1) / slidesPerPage));
+            const activeIndex = Math.min(pagesCount - 1, Math.ceil((info.displayIndex - 1) / slidesPerPage));
             navButtons.forEach(function (btn, index) {
                 btn.classList.toggle('tns-nav-active', index === activeIndex);
             });
@@ -1376,6 +1376,65 @@ docReady(function () {
         setObjectivesNav();
         objectivesSlider.events.on('indexChanged', setObjectivesNav);
     }
+
+    const feedbackBlocks = document.querySelectorAll('[data-feedback-slider]');
+    feedbackBlocks.forEach(function (feedbackBlocks) {
+        const navContainer = feedbackBlocks.closest('.feedback__container').querySelector('#js-feedback-nav');
+        if (!navContainer || !feedbackBlocks.children.length) return;
+        const slideCount = feedbackBlocks.children.length;
+        const isMobile = document.documentElement.clientWidth <= 768;
+        const slideWidth = isMobile ? Math.round(feedbackBlocks.children[0].getBoundingClientRect().width) : 533;
+        const containerRect = feedbackBlocks.closest('.container').getBoundingClientRect();
+        const sliderWidth = document.documentElement.clientWidth - containerRect.left;
+        const slidesPerPage = isMobile ? 1 : Math.max(1, Math.floor(sliderWidth / slideWidth));
+        for (let i = 0; i < slideCount; i++) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            navContainer.appendChild(btn);
+        }
+        // Пустой хвост позволяет последней карточке занять первую позицию
+        // при отключённом loop, не добавляя лишнюю кнопку навигации.
+        const spacer = document.createElement('div');
+        spacer.className = 'feedback__card feedback__card--spacer';
+        spacer.setAttribute('aria-hidden', 'true');
+        feedbackBlocks.appendChild(spacer);
+        const feedbackSlider = tns({
+            container: feedbackBlocks,
+            items: slidesPerPage,
+            gutter: 20,
+            axis: 'horizontal',
+            fixedWidth: slideWidth,
+            loop: false,
+            startIndex: 0,
+            nav: false,
+            controls: false,
+            mouseDrag: true,
+            center: false,
+            slideBy: slidesPerPage
+        });
+        const feedbackCards = Array.prototype.slice.call(feedbackBlocks.children);
+        const equalizeFeedbackCards = function () {
+            feedbackCards.forEach(function (card) { card.style.height = 'auto'; });
+            const realCards = feedbackCards.filter(function (card) { return !card.classList.contains('feedback__card--spacer'); });
+            const maxHeight = Math.max.apply(null, realCards.map(function (card) { return card.getBoundingClientRect().height; }));
+            feedbackCards.forEach(function (card) { card.style.height = maxHeight + 'px'; });
+        };
+        equalizeFeedbackCards();
+        let feedbackResizeFrame;
+        window.addEventListener('resize', function () {
+            window.cancelAnimationFrame(feedbackResizeFrame);
+            feedbackResizeFrame = window.requestAnimationFrame(equalizeFeedbackCards);
+        });
+        const navButtons = navContainer.querySelectorAll('button');
+        const setFeedbackNav = function () {
+            const info = feedbackSlider.getInfo();
+            const activeIndex = Math.min(slideCount - 1, info.displayIndex - 1);
+            navButtons.forEach(function (btn, index) { btn.classList.toggle('tns-nav-active', index === activeIndex); });
+        };
+        navButtons.forEach(function (btn, index) { btn.addEventListener('click', function () { feedbackSlider.goTo(index); }); });
+        setFeedbackNav();
+        feedbackSlider.events.on('indexChanged', setFeedbackNav);
+    });
 
 
     // фильтр на странице портфолио

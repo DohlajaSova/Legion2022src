@@ -1,0 +1,38 @@
+<section class="objectives objectives--dev-mobile" aria-label="Отраслевые решения">
+    <div class="objectives__container container">
+        <div class="objectives__header">
+            <h2 class="objectives__title">Полный цикл разработки цифрового продукта или отдельных блоков</h2>
+            <p class="objectives__lead">Создаём мобильные приложения для iOS/Android и&nbsp;кроссплатформы. Анализируем рынок, проектируем архитектуру, разрабатываем интерфейсы, пишем код, тестируем и&nbsp;готовим к&nbsp;масштабированию.</p>
+        </div>
+
+        <div class="objectives__slider objectives_container__items js-objectives">
+            <article class="objectives_container__item">
+                <div class="objectives_container__item-text"><h3 class="objectives_container__item-text-head">Личный кабинет пользователя</h3><p class="objectives_container__item-text-body">Удобный личный кабинет пользователя для управления заказами, оплатами, документами, подписками, обращениями или персональными настройками</p></div>
+                <div class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Личный кабинет пользователя" class="objectives_container__item-img"></div>
+            </article>
+            <article class="objectives_container__item">
+                <div class="objectives_container__item-text"><h3 class="objectives_container__item-text-head">Корпоративные приложения</h3><p class="objectives_container__item-text-body">Закрытые мобильные сервисы для автоматизации и&nbsp;управления внутренними процессами и&nbsp;ресурсами, согласования, учёта времени и&nbsp;коммуникаций</p></div>
+                <div class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Корпоративные приложения" class="objectives_container__item-img"></div>
+            </article>
+            <article class="objectives_container__item">
+                <div class="objectives_container__item-text"><h3 class="objectives_container__item-text-head">Программы лояльности и&nbsp;промо-акции</h3><p class="objectives_container__item-text-body">Решения для удержания клиентов: бонусные программы, карты лояльности, персональные акции, промокоды и&nbsp;геймификация сервисов</p></div>
+                <div class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Программы лояльности и&nbsp;промо-акции" class="objectives_container__item-img"></div>
+            </article>
+            <article class="objectives_container__item">
+                <div class="objectives_container__item-text"><h3 class="objectives_container__item-text-head">Каталоги товаров и&nbsp;онлайн-витрины</h3><p class="objectives_container__item-text-body">Онлайн-каталоги и&nbsp;витрины для товаров и&nbsp;услуг: умные системы поиска, алгоритмы рекомендаций, информативные карточки и&nbsp;Nudge-маркетинг</p></div>
+                <div class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Каталоги товаров и&nbsp;онлайн-витрины" class="objectives_container__item-img"></div>
+            </article>
+            <article class="objectives_container__item">
+                <div class="objectives_container__item-text"><h3 class="objectives_container__item-text-head">Образовательные сервисы</h3><p class="objectives_container__item-text-body">Платформы для обучения: курсы, тестирование, системы аттестации, библиотеки материалов, контроль прогресса и&nbsp;чаты для общения с&nbsp;преподавателями</p></div>
+                <div class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Образовательные сервисы" class="objectives_container__item-img"></div>
+            </article>
+            <article class="objectives_container__item">
+                <div class="objectives_container__item-text"><h3 class="objectives_container__item-text-head">Финансовые инструменты</h3><p class="objectives_container__item-text-body">Инвестиционные платформы, управление бюджетом, личные финансовые трекеры, аналитика, брокерские инструменты и&nbsp;цифровой банкинг</p></div>
+                <div class="objectives_container__item-img-cont"><img src="/assets/css/img/dev2b/hr.webp" alt="Финансовые инструменты" class="objectives_container__item-img"></div>
+            </article>
+        </div>
+
+        <div class="objectives_container__navigation"><div class="objectives_container__items-nav" id="js-objectives-nav"></div></div>
+        <div class="objectives__cta"><div class="objectives__cta-text">Разработка индивидуальных мобильных сервисов и&nbsp;решений любой сложности</div><a href="/[[~11]]" class="objectives__cta-button">Оставить заявку</a></div>
+    </div>
+</section>

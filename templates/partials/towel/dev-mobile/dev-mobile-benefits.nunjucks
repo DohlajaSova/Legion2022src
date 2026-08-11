@@ -1,0 +1,31 @@
+<section class="benefits benefits--dev-mobile" aria-label="Преимущества мобильной разработки">
+    <div class="benefits__container container">
+        <p class="benefits__lead">Моильные приложения позволяют легче тестировать гипотезы и&nbsp;предложения маркетинга, быть ближе к&nbsp;клиентам и&nbsp;помогают бизнесу развиваться быстрее.</p>
+
+        <div class="benefits__list">
+            <article class="benefits__item">
+                <img class="benefits__icon" src="/assets/css/img/dev-mobile/benefit-startups.svg" alt="" aria-hidden="true">
+                <div class="benefits__content">
+                    <h2 class="benefits__title">Стартапам</h2>
+                    <p class="benefits__text">Запустить MVP, проверить идею и&nbsp;выйти в&nbsp;рынок с&nbsp;минимальными затратами</p>
+                </div>
+            </article>
+
+            <article class="benefits__item">
+                <img class="benefits__icon" src="/assets/css/img/dev-mobile/benefit-brands.svg" alt="" aria-hidden="true">
+                <div class="benefits__content">
+                    <h2 class="benefits__title">Брендам</h2>
+                    <p class="benefits__text">Выйти в&nbsp;мобильный digital, укрепить лояльность клиентов и&nbsp;расширить охват</p>
+                </div>
+            </article>
+
+            <article class="benefits__item">
+                <img class="benefits__icon" src="/assets/css/img/dev-mobile/benefit-services.svg" alt="" aria-hidden="true">
+                <div class="benefits__content">
+                    <h2 class="benefits__title">Онлайн-сервисам</h2>
+                    <p class="benefits__text">Собрать аналитику, повысить вовлечённость аудитории и&nbsp;регулярнось использования</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
