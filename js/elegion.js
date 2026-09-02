@@ -2651,49 +2651,54 @@ docReady(function () {
     }
 
     // функциональность чекбокса согласия с политиками
-    if (document.querySelector('.js-request-agreed')) {
-        const conts = document.querySelectorAll('.js-request-agreed');
-        const btn = conts[conts.length-1].nextElementSibling.querySelector('.button');
-        conts.forEach(function (cont, index) {
-            const chk = document.querySelector('#agreed'+index);
-            cont.onclick = function (e) {
-                let checkedCheckboxes = document.querySelectorAll('.js-request-agreed input[type="checkbox"]:checked');
-                if (conts.length != checkedCheckboxes.length) btn.setAttribute('disabled', 'disabled');
-                else btn.removeAttribute('disabled');
-                
-                conts.forEach(function (contInner, indexInner) {
-                    let thisCheckbox = contInner.querySelector("input");
-                    let nameInput = document.querySelector("#name");
-                    let phoneInput = document.querySelector("#phonefield");
-                    
-                    if (!thisCheckbox.checked)
-                        thisCheckbox.classList.add("error");
-                    else
-                        thisCheckbox.classList.remove("error");
-                    
-                    if (nameInput.value == "")
-                        nameInput.classList.add("error");
-                    else
-                        nameInput.classList.remove("error");
-                    
-                    if (phoneInput.value == "")
-                        phoneInput.classList.add("error");
-                    else
-                        phoneInput.classList.remove("error");
-                    
-                    nameInput.onchange = function(ename){
-                        if (ename.target.value != "") ename.target.classList.remove("error");
-                        else ename.target.classList.add("error");
-                    }
-                    phoneInput.onchange = function(ephone){
-                        if (ephone.target.value != "") ephone.target.classList.remove("error");
-                        else ephone.target.classList.add("error");
-                    }
-                });
-                
-            }
+    document.querySelectorAll('.js-request-button').forEach(function (button) {
+        const form = button.closest('form');
+        if (!form) return;
+
+        const checkboxes = form.querySelectorAll(
+            '.js-request-agreed input[type="checkbox"]'
+        );
+        const requiredFields = form.querySelectorAll(
+            'input[name="name"], input[name="phone"]'
+        );
+        if (!checkboxes.length) return;
+
+        const formIndex = Array.from(document.querySelectorAll('form')).indexOf(form);
+        checkboxes.forEach(function (checkbox, index) {
+            const label = checkbox.closest('.js-request-agreed').querySelector('label');
+            const checkboxId = 'request-agreed-' + formIndex + '-' + (index + 1);
+
+            checkbox.id = checkboxId;
+            if (label) label.htmlFor = checkboxId;
         });
-    }
+
+        function syncButtonState() {
+            button.disabled = Array.from(checkboxes).some(function (checkbox) {
+                return !checkbox.checked;
+            });
+        }
+
+        function syncRequiredFieldsState() {
+            requiredFields.forEach(function (field) {
+                field.classList.toggle('error', !field.value);
+            });
+        }
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                syncButtonState();
+                syncRequiredFieldsState();
+            });
+        });
+
+        requiredFields.forEach(function (field) {
+            field.addEventListener('change', function () {
+                field.classList.toggle('error', !field.value);
+            });
+        });
+
+        syncButtonState();
+    });
 
     const scrolltoapplicants = document.querySelectorAll(".js-scrollto-applicants-form");
     if (scrolltoapplicants.length > 0) {
